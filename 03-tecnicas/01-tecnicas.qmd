@@ -169,15 +169,16 @@ n 	Cn 	Bn 	V.An = (Bn – Cn) / (1 + r / 100) n
 
 El proyecto será viable si ∑ VAi > C0 a lo largo del periodo fijado.
 
-### Casos de Uso
+### Casos de Uso {#casos-de-uso}
 
 Los objetivos de los casos de uso son los siguientes:
 
-    Capturar los requisitos funcionales del sistema y expresarlos desde el punto de vista del usuario.
-    Guiar todo el proceso de desarrollo del sistema de información.
+* Capturar los requisitos funcionales del sistema y expresarlos desde el punto de vista del usuario.
+* Guiar todo el proceso de desarrollo del sistema de información.
 
 Los casos de uso proporcionan, por tanto, un modo claro y preciso de comunicación entre cliente y desarrollador. Desde el punto de vista del cliente proporcionan una visión de “caja negra” del sistema, esto es, cómo aparece el sistema desde el exterior sin necesidad de entrar en los detalles de su construcción. Para los desarrolladores, suponen el punto de partida y el eje sobre el que se apoya todo el desarrollo del sistema en sus procesos de análisis y diseño.
-Descripción
+
+### Descripción {.unnumbered .unlisted}
 
 Un caso de uso es una secuencia de acciones realizadas por el sistema, que producen un resultado observable y valioso para un usuario en particular, es decir, representa el comportamiento del sistema con el fin de dar respuestas a los usuarios.
 
@@ -185,7 +186,7 @@ Aquellos casos de uso que resulten demasiado complejos se pueden descomponer en 
 
 Para especificar este comportamiento existen una serie de recomendaciones o técnicas que se aplican dependiendo del momento del desarrollo que se esté y de la complejidad del caso de uso. Puede ser desde una simple descripción textual que recoja un requisito funcional a una especificación del caso de uso, e incluso un conjunto de diagramas:
 
-Especificación de un caso de uso
+#### Especificación de un caso de uso {.unnumbered .unlisted}
 
 Un caso de uso recoge, en un primer momento, una descripción general. Esta descripción reflejará posiblemente uno o varios requisitos funcionales del sistema o formará parte de algún requisito.
 
@@ -193,12 +194,12 @@ Se puede completar la descripción definiendo cuáles son las precondiciones y
 
 También se pueden enumerar los diferentes escenarios del caso de uso si los tuviese y dar una breve descripción de ellos. Los escenarios son los distintos caminos por los que puede evolucionar un caso de uso, dependiendo de las condiciones que se van dando en su realización.
 
-Diagrama de casos de uso
+#### Diagrama de casos de uso {.unnumbered .unlisted}
 
 Estos diagramas presentan dos tipos de elementos fundamentales:
 
-    Actores. Un actor es algo o alguien que se encuentra fuera del sistema y que interactúa con él. En general, los actores serán los usuarios del sistema y los sistemas externos al que se esté desarrollando. Si se habla de usuarios, un actor es el papel que puede llevar a cabo en cuanto a su forma de interactuar con el sistema, es decir, un único actor puede representar a muchos usuarios diferentes y de la misma forma, un usuario puede actuar como actores diferentes.
-    Casos de uso. Un caso de uso representa el comportamiento que ofrece el sistema de información desde el punto de vista del usuario. Típicamente será un conjunto de transacciones ejecutadas entre el sistema y los actores. Para facilitar la comprensión de los casos de uso del sistema de información en el análisis, es posible agruparlos en paquetes según funcionalidades semejantes o relacionadas.
+* *Actores*. Un actor es algo o alguien que se encuentra fuera del sistema y que interactúa con él. En general, los actores serán los usuarios del sistema y los sistemas externos al que se esté desarrollando. Si se habla de usuarios, un actor es el papel que puede llevar a cabo en cuanto a su forma de interactuar con el sistema, es decir, un único actor puede representar a muchos usuarios diferentes y de la misma forma, un usuario puede actuar como actores diferentes.
+* *Casos de uso*. Un caso de uso representa el comportamiento que ofrece el sistema de información desde el punto de vista del usuario. Típicamente será un conjunto de transacciones ejecutadas entre el sistema y los actores. Para facilitar la comprensión de los casos de uso del sistema de información en el análisis, es posible agruparlos en paquetes según funcionalidades semejantes o relacionadas.
 
 Además de estos elementos, un diagrama de casos de uso presenta relaciones. Las relaciones pueden tener lugar entre actores y casos de uso o entre casos de uso.
 
@@ -206,33 +207,33 @@ La relación entre un actor y un caso de uso es una relación de comunicació
 
 La relación entre casos de uso es una relación unidireccional. Esta relación puede presentar uno de los dos siguientes tipos: “usa” y “extiende”.
 
-- La relación “usa” se utiliza cuando se quiere reflejar un comportamiento común en varios casos de uso. Es decir, si los casos de uso A y B presentan una parte común, ésta se puede sacar a un tercer caso de uso C. Entonces, habrá una relación “usa” del caso de uso A al C y otra del B al C.
+* La relación “usa” se utiliza cuando se quiere reflejar un comportamiento común en varios casos de uso. Es decir, si los casos de uso A y B presentan una parte común, ésta se puede sacar a un tercer caso de uso C. Entonces, habrá una relación “usa” del caso de uso A al C y otra del B al C.
 
   ![](../images/relacion-usa.png)
 
-- La relación “extiende” se utiliza cuando se quiere reflejar un comportamiento opcional de un caso de uso. Por ejemplo, se tiene el caso de uso A que representa un comportamiento habitual del sistema. Sin embargo, dependiendo de algún factor, este caso de uso puede presentar un comportamiento adicional o ligeramente diferente, que se podría reflejar en un caso de uso B. En este caso, habrá una relación “extiende” del caso de uso B al A.
+* La relación “extiende” se utiliza cuando se quiere reflejar un comportamiento opcional de un caso de uso. Por ejemplo, se tiene el caso de uso A que representa un comportamiento habitual del sistema. Sin embargo, dependiendo de algún factor, este caso de uso puede presentar un comportamiento adicional o ligeramente diferente, que se podría reflejar en un caso de uso B. En este caso, habrá una relación “extiende” del caso de uso B al A.
 
   ![](../images/relacion-extiende.png)
 
-Notación
+#### Notación {.unnumbered .unlisted}
 
 El diagrama de casos de uso es un grafo de actores, casos de uso y las relaciones entre estos elementos.
 
 Opcionalmente, los casos de uso se pueden enmarcar en un cuadrado que representa los límites del sistema.
 
-Caso de Uso
-
-![](../images/caso-de-uso.png)
+##### Caso de Uso {.unnumbered .unlisted}
 
 Un caso de uso se representa mediante una elipse con el nombre del caso de uso dentro o debajo.
 
-Actor
+![](../images/caso-de-uso.png)
+
+##### Actor {.unnumbered .unlisted}
 
 Un actor se representa con una figura de ‘hombre de palo’ con el nombre del actor debajo de la figura.
 
 ![](../images/actor.png)
 
-Relación
+##### Relación {.unnumbered .unlisted}
 
 Dependiendo del tipo de relación, la representación en los diagramas será distinta. Así pues, las relaciones entre un actor y un caso de uso se representan mediante una línea continua entre ellos. Las relaciones entre casos de uso se representan con una flecha discontinua con el nombre del tipo de relación como etiqueta. En las relaciones “extensión” la flecha parte del caso de uso con el comportamiento adicional hacia aquel que recoge el comportamiento básico y en las relaciones “usa” desde el caso de uso básico hacia el que representa el comportamiento común.
 
@@ -240,12 +241,13 @@ Dependiendo del tipo de relación, la representación en los diagramas será 
 
 Paquete
 
-Un paquete se representa con un icono con forma de carpeta y con el nombre colocado en la ‘pestaña’. Los paquetes también pueden formar diagramas que complementen al diagrama de casos de uso (ver Diagrama de paquetes).
+Un paquete se representa con un icono con forma de carpeta y con el nombre colocado en la ‘pestaña’. Los paquetes también pueden formar diagramas que complementen al diagrama de casos de uso (ver [Diagrama de paquetes](#diagrama-de-paquetes)).
 
 ![](../images/paquete.png)
 
 (Nota.- Esta notación es la más habitual, pero MÉTRICA Versión 3 no exige su utilización).
-Ejemplo
+
+#### Ejemplo {.unnumbered .unlisted}
 
 Estudio de una aplicación que se encarga de la gestión de los préstamos y reservas de libros y revistas en una biblioteca.
 
