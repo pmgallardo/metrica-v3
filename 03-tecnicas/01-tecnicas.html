@@ -459,20 +459,30 @@ n Cn Bn V.An = (Bn – Cn) / (1 + r / 100) n</p>
 <section id="casos-de-uso" class="level3" data-number="13.2.2">
 <h3 data-number="13.2.2" class="anchored" data-anchor-id="casos-de-uso"><span class="header-section-number">13.2.2</span> Casos de Uso</h3>
 <p>Los objetivos de los casos de uso son los siguientes:</p>
-<pre><code>Capturar los requisitos funcionales del sistema y expresarlos desde el punto de vista del usuario.
-Guiar todo el proceso de desarrollo del sistema de información.</code></pre>
-<p>Los casos de uso proporcionan, por tanto, un modo claro y preciso de comunicación entre cliente y desarrollador. Desde el punto de vista del cliente proporcionan una visión de “caja negra” del sistema, esto es, cómo aparece el sistema desde el exterior sin necesidad de entrar en los detalles de su construcción.&nbsp;Para los desarrolladores, suponen el punto de partida y el eje sobre el que se apoya todo el desarrollo del sistema en sus procesos de análisis y diseño. Descripción</p>
+<ul>
+<li>Capturar los requisitos funcionales del sistema y expresarlos desde el punto de vista del usuario.</li>
+<li>Guiar todo el proceso de desarrollo del sistema de información.</li>
+</ul>
+<p>Los casos de uso proporcionan, por tanto, un modo claro y preciso de comunicación entre cliente y desarrollador. Desde el punto de vista del cliente proporcionan una visión de “caja negra” del sistema, esto es, cómo aparece el sistema desde el exterior sin necesidad de entrar en los detalles de su construcción.&nbsp;Para los desarrolladores, suponen el punto de partida y el eje sobre el que se apoya todo el desarrollo del sistema en sus procesos de análisis y diseño.</p>
+</section>
+<section id="descripción" class="level3 unnumbered unlisted">
+<h3 class="unnumbered unlisted anchored" data-anchor-id="descripción">Descripción</h3>
 <p>Un caso de uso es una secuencia de acciones realizadas por el sistema, que producen un resultado observable y valioso para un usuario en particular, es decir, representa el comportamiento del sistema con el fin de dar respuestas a los usuarios.</p>
 <p>Aquellos casos de uso que resulten demasiado complejos se pueden descomponer en un segundo nivel, en el que los nuevos casos de uso que intervengan resulten más sencillos y manejables.</p>
 <p>Para especificar este comportamiento existen una serie de recomendaciones o técnicas que se aplican dependiendo del momento del desarrollo que se esté y de la complejidad del caso de uso. Puede ser desde una simple descripción textual que recoja un requisito funcional a una especificación del caso de uso, e incluso un conjunto de diagramas:</p>
-<p>Especificación de un caso de uso</p>
+<section id="especificacion-de-un-caso-de-uso" class="level4 unnumbered unlisted">
+<h4 class="unnumbered unlisted anchored" data-anchor-id="especificacion-de-un-caso-de-uso">Especificación de un caso de uso</h4>
 <p>Un caso de uso recoge, en un primer momento, una descripción general. Esta descripción reflejará posiblemente uno o varios requisitos funcionales del sistema o formará parte de algún requisito.</p>
 <p>Se puede completar la descripción definiendo cuáles son las precondiciones y postcondiciones del sistema, es decir, qué condiciones deben cumplirse para que se realice un caso de uso y cuáles son aquellas condiciones que se cumplen posteriormente al caso de uso.</p>
 <p>También se pueden enumerar los diferentes escenarios del caso de uso si los tuviese y dar una breve descripción de ellos. Los escenarios son los distintos caminos por los que puede evolucionar un caso de uso, dependiendo de las condiciones que se van dando en su realización.</p>
-<p>Diagrama de casos de uso</p>
+</section>
+<section id="diagrama-de-casos-de-uso" class="level4 unnumbered unlisted">
+<h4 class="unnumbered unlisted anchored" data-anchor-id="diagrama-de-casos-de-uso">Diagrama de casos de uso</h4>
 <p>Estos diagramas presentan dos tipos de elementos fundamentales:</p>
-<pre><code>Actores. Un actor es algo o alguien que se encuentra fuera del sistema y que interactúa con él. En general, los actores serán los usuarios del sistema y los sistemas externos al que se esté desarrollando. Si se habla de usuarios, un actor es el papel que puede llevar a cabo en cuanto a su forma de interactuar con el sistema, es decir, un único actor puede representar a muchos usuarios diferentes y de la misma forma, un usuario puede actuar como actores diferentes.
-Casos de uso. Un caso de uso representa el comportamiento que ofrece el sistema de información desde el punto de vista del usuario. Típicamente será un conjunto de transacciones ejecutadas entre el sistema y los actores. Para facilitar la comprensión de los casos de uso del sistema de información en el análisis, es posible agruparlos en paquetes según funcionalidades semejantes o relacionadas.</code></pre>
+<ul>
+<li><em>Actores</em>. Un actor es algo o alguien que se encuentra fuera del sistema y que interactúa con él. En general, los actores serán los usuarios del sistema y los sistemas externos al que se esté desarrollando. Si se habla de usuarios, un actor es el papel que puede llevar a cabo en cuanto a su forma de interactuar con el sistema, es decir, un único actor puede representar a muchos usuarios diferentes y de la misma forma, un usuario puede actuar como actores diferentes.</li>
+<li><em>Casos de uso</em>. Un caso de uso representa el comportamiento que ofrece el sistema de información desde el punto de vista del usuario. Típicamente será un conjunto de transacciones ejecutadas entre el sistema y los actores. Para facilitar la comprensión de los casos de uso del sistema de información en el análisis, es posible agruparlos en paquetes según funcionalidades semejantes o relacionadas.</li>
+</ul>
 <p>Además de estos elementos, un diagrama de casos de uso presenta relaciones. Las relaciones pueden tener lugar entre actores y casos de uso o entre casos de uso.</p>
 <p>La relación entre un actor y un caso de uso es una relación de comunicación, que indica que un actor interviene en el caso de uso. Normalmente, el actor aporta información para la realización de un caso de uso o recibe información como resultado de la realización del mismo, por ello, esta relación puede ser unidireccional o bidireccional, aunque generalmente se muestra como bidireccional, ya que no es necesario especificar en detalle estas relaciones.</p>
 <p>La relación entre casos de uso es una relación unidireccional. Esta relación puede presentar uno de los dos siguientes tipos: “usa” y “extiende”.</p>
@@ -482,24 +492,36 @@ Casos de uso. Un caso de uso representa el comportamiento que ofrece el sistema 
 <li><p>La relación “extiende” se utiliza cuando se quiere reflejar un comportamiento opcional de un caso de uso. Por ejemplo, se tiene el caso de uso A que representa un comportamiento habitual del sistema. Sin embargo, dependiendo de algún factor, este caso de uso puede presentar un comportamiento adicional o ligeramente diferente, que se podría reflejar en un caso de uso B. En este caso, habrá una relación “extiende” del caso de uso B al A.</p>
 <p><img src="../images/relacion-extiende.png" class="img-fluid"></p></li>
 </ul>
-<p>Notación</p>
+</section>
+<section id="notación" class="level4 unnumbered unlisted">
+<h4 class="unnumbered unlisted anchored" data-anchor-id="notación">Notación</h4>
 <p>El diagrama de casos de uso es un grafo de actores, casos de uso y las relaciones entre estos elementos.</p>
 <p>Opcionalmente, los casos de uso se pueden enmarcar en un cuadrado que representa los límites del sistema.</p>
-<p>Caso de Uso</p>
-<p><img src="../images/caso-de-uso.png" class="img-fluid"></p>
+<section id="caso-de-uso" class="level5 unnumbered unlisted">
+<h5 class="unnumbered unlisted anchored" data-anchor-id="caso-de-uso">Caso de Uso</h5>
 <p>Un caso de uso se representa mediante una elipse con el nombre del caso de uso dentro o debajo.</p>
-<p>Actor</p>
+<p><img src="../images/caso-de-uso.png" class="img-fluid"></p>
+</section>
+<section id="actor" class="level5 unnumbered unlisted">
+<h5 class="unnumbered unlisted anchored" data-anchor-id="actor">Actor</h5>
 <p>Un actor se representa con una figura de ‘hombre de palo’ con el nombre del actor debajo de la figura.</p>
 <p><img src="../images/actor.png" class="img-fluid"></p>
-<p>Relación</p>
+</section>
+<section id="relacion" class="level5 unnumbered unlisted">
+<h5 class="unnumbered unlisted anchored" data-anchor-id="relacion">Relación</h5>
 <p>Dependiendo del tipo de relación, la representación en los diagramas será distinta. Así pues, las relaciones entre un actor y un caso de uso se representan mediante una línea continua entre ellos. Las relaciones entre casos de uso se representan con una flecha discontinua con el nombre del tipo de relación como etiqueta. En las relaciones “extensión” la flecha parte del caso de uso con el comportamiento adicional hacia aquel que recoge el comportamiento básico y en las relaciones “usa” desde el caso de uso básico hacia el que representa el comportamiento común.</p>
 <p><img src="../images/relacion.png" class="img-fluid"></p>
 <p>Paquete</p>
-<p>Un paquete se representa con un icono con forma de carpeta y con el nombre colocado en la ‘pestaña’. Los paquetes también pueden formar diagramas que complementen al diagrama de casos de uso (ver Diagrama de paquetes).</p>
+<p>Un paquete se representa con un icono con forma de carpeta y con el nombre colocado en la ‘pestaña’. Los paquetes también pueden formar diagramas que complementen al diagrama de casos de uso (ver <a href="#diagrama-de-paquetes">Diagrama de paquetes</a>).</p>
 <p><img src="../images/paquete.png" class="img-fluid"></p>
-<p>(Nota.- Esta notación es la más habitual, pero MÉTRICA Versión 3 no exige su utilización). Ejemplo</p>
+<p>(Nota.- Esta notación es la más habitual, pero MÉTRICA Versión 3 no exige su utilización).</p>
+</section>
+</section>
+<section id="ejemplo" class="level4 unnumbered unlisted">
+<h4 class="unnumbered unlisted anchored" data-anchor-id="ejemplo">Ejemplo</h4>
 <p>Estudio de una aplicación que se encarga de la gestión de los préstamos y reservas de libros y revistas en una biblioteca.</p>
 <p><img src="../images/ejemplo-casos-de-uso.png" class="img-fluid"></p>
+</section>
 </section>
 <section id="diagrama-de-clases" class="level3" data-number="13.2.3">
 <h3 data-number="13.2.3" class="anchored" data-anchor-id="diagrama-de-clases"><span class="header-section-number">13.2.3</span> Diagrama de Clases</h3>
@@ -758,8 +780,8 @@ Casual: un módulo realiza un conjunto de tareas que tienen poca o ninguna rela
 <li>Simplificar la complejidad del sistema, representando los diferentes procesos de que consta.</li>
 <li>Facilitar el mantenimiento del sistema.</li>
 </ul>
-<section id="descripción" class="level4 unnumbered unlisted">
-<h4 class="unnumbered unlisted anchored" data-anchor-id="descripción">Descripción</h4>
+<section id="descripción-1" class="level4 unnumbered unlisted">
+<h4 class="unnumbered unlisted anchored" data-anchor-id="descripción-1">Descripción</h4>
 <p>Un diagrama de flujo de datos es una técnica muy apropiada para reflejar de una forma clara y precisa los procesos que conforman el sistema de información.&nbsp;Permite representar gráficamente los límites del sistema y la lógica de los procesos, estableciendo qué funciones hay que desarrollar. Además, muestra el flujo o movimiento de los datos a través del sistema y sus transformaciones como resultado de la ejecución de los procesos.</p>
 <p>Esta técnica consiste en la descomposición sucesiva de los procesos, desde un nivel general, hasta llegar al nivel de detalle necesario para reflejar toda la semántica que debe soportar el sistema en estudio.</p>
 <p>El diagrama de flujo de datos se compone de los siguientes elementos:</p>
@@ -810,8 +832,8 @@ Casual: un módulo realiza un conjunto de tareas que tienen poca o ninguna rela
 </div>
 </section>
 </section>
-<section id="notación" class="level4 unnumbered unlisted">
-<h4 class="unnumbered unlisted anchored" data-anchor-id="notación">Notación</h4>
+<section id="notación-1" class="level4 unnumbered unlisted">
+<h4 class="unnumbered unlisted anchored" data-anchor-id="notación-1">Notación</h4>
 <section id="entidad-externa" class="level5 unnumbered unlisted">
 <h5 class="unnumbered unlisted anchored" data-anchor-id="entidad-externa">Entidad externa</h5>
 <p>Se representa mediante una elipse con un identificador y un nombre significativo en su interior.</p>
@@ -859,8 +881,8 @@ Casual: un módulo realiza un conjunto de tareas que tienen poca o ninguna rela
 <p><img src="../images/dfd-control-2.png" class="img-fluid"></p>
 </section>
 </section>
-<section id="ejemplo" class="level4 unnumbered unlisted">
-<h4 class="unnumbered unlisted anchored" data-anchor-id="ejemplo">Ejemplo</h4>
+<section id="ejemplo-1" class="level4 unnumbered unlisted">
+<h4 class="unnumbered unlisted anchored" data-anchor-id="ejemplo-1">Ejemplo</h4>
 <p>La figura es un diagrama de flujos de un Sistema Gestor de Pedidos. En él están representados todos los elementos que pueden intervenir en una Diagrama de Flujo de Datos.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -885,13 +907,13 @@ Casual: un módulo realiza un conjunto de tareas que tienen poca o ninguna rela
 <section id="diagrama-de-secuencia" class="level4" data-number="13.2.9.1">
 <h4 data-number="13.2.9.1" class="anchored" data-anchor-id="diagrama-de-secuencia"><span class="header-section-number">13.2.9.1</span> Diagrama de Secuencia</h4>
 <p>El diagrama de secuencia es un tipo de diagrama de interacción cuyo objetivo es describir el comportamiento dinámico del sistema de información haciendo énfasis en la secuencia de los mensajes intercambiados por los objetos.</p>
-<section id="descripción-1" class="level5 unnumbered unlisted">
-<h5 class="unnumbered unlisted anchored" data-anchor-id="descripción-1">Descripción</h5>
+<section id="descripción-2" class="level5 unnumbered unlisted">
+<h5 class="unnumbered unlisted anchored" data-anchor-id="descripción-2">Descripción</h5>
 <p>Un diagrama de secuencia tiene dos dimensiones, el eje vertical representa el tiempo y el eje horizontal los diferentes objetos. El tiempo avanza desde la parte superior del diagrama hacia la inferior. Normalmente, en relación al tiempo sólo es importante la secuencia de los mensajes, sin embargo, en aplicaciones de tiempo real se podría introducir una escala en el eje vertical. Respecto a los objetos, es irrelevante el orden en que se representan, aunque su colocación debería poseer la mayor claridad posible.</p>
 <p>Cada objeto tiene asociados una <em>línea de vida</em> y <em>focos de control</em>. La línea de vida indica el intervalo de tiempo durante el que existe ese objeto. Un foco de control o activación muestra el periodo de tiempo en el cual el objeto se encuentra ejecutando alguna operación, ya sea directamente o mediante un procedimiento concurrente.</p>
 </section>
-<section id="notación-1" class="level5 unnumbered unlisted">
-<h5 class="unnumbered unlisted anchored" data-anchor-id="notación-1">Notación</h5>
+<section id="notación-2" class="level5 unnumbered unlisted">
+<h5 class="unnumbered unlisted anchored" data-anchor-id="notación-2">Notación</h5>
 <section id="objeto-y-linea-de-vida" class="level6 unnumbered unlisted">
 <h6 class="unnumbered unlisted anchored" data-anchor-id="objeto-y-linea-de-vida">Objeto y línea de vida</h6>
 <p>Un objeto se representa como una línea vertical discontinua, llamada línea de vida, con un rectángulo de encabezado con el nombre del objeto en su interior. También se puede incluir a continuación el nombre de la clase, separando ambos por dos puntos.</p>
@@ -912,8 +934,8 @@ Casual: un módulo realiza un conjunto de tareas que tienen poca o ninguna rela
 <p>(Nota.- Esta notación es la más habitual, pero MÉTRICA Versión 3 no exige su utilización).</p>
 </section>
 </section>
-<section id="ejemplo-1" class="level5 unnumbered unlisted">
-<h5 class="unnumbered unlisted anchored" data-anchor-id="ejemplo-1">Ejemplo</h5>
+<section id="ejemplo-2" class="level5 unnumbered unlisted">
+<h5 class="unnumbered unlisted anchored" data-anchor-id="ejemplo-2">Ejemplo</h5>
 <p>Diagrama de secuencia para el caso de uso: Prestar un ejemplar de una aplicación encargada de los préstamos y reservas de una biblioteca:</p>
 <p><a href="../images/secuencia-ejemplo.png">Ejemplo de Diagrama de secuencia</a></p>
 </section>
@@ -922,8 +944,8 @@ Casual: un módulo realiza un conjunto de tareas que tienen poca o ninguna rela
 <h4 data-number="13.2.9.2" class="anchored" data-anchor-id="diagrama-de-colaboración"><span class="header-section-number">13.2.9.2</span> Diagrama de Colaboración</h4>
 <p>El diagrama de colaboración es un tipo de diagrama de interacción cuyo objetivo es describir el comportamiento dinámico del sistema de información mostrando cómo interactúan los objetos entre sí, es decir, con qué otros objetos tiene vínculos o intercambia mensajes un determinado objeto. Descripción</p>
 <p>Un diagrama de colaboración muestra la misma información que un diagrama de secuencia pero de forma diferente. En los diagramas de colaboración no existe una secuencia temporal en el eje vertical; es decir, la colocación de los mensajes en el diagrama no indica cuál es el orden en el que se suceden. Además, la colocación de los objetos es más flexible y permite mostrar de forma más clara cuáles son las colaboraciones entre ellos. En estos diagramas la comunicación entre objetos se denomina vínculo o enlace (link) y estará particularizada mediante los mensajes que intercambian.</p>
-<section id="notación-2" class="level5 unnumbered unlisted">
-<h5 class="unnumbered unlisted anchored" data-anchor-id="notación-2">Notación</h5>
+<section id="notación-3" class="level5 unnumbered unlisted">
+<h5 class="unnumbered unlisted anchored" data-anchor-id="notación-3">Notación</h5>
 <section id="objeto" class="level6 unnumbered unlisted">
 <h6 class="unnumbered unlisted anchored" data-anchor-id="objeto">Objeto</h6>
 <p>Un objeto se representa con un rectángulo dentro del que se incluye el nombre del objeto y, si se desea, el nombre de la clase, separando ambos por dos puntos.</p>
@@ -939,8 +961,8 @@ Casual: un módulo realiza un conjunto de tareas que tienen poca o ninguna rela
 <p>Además, los mensajes pueden tener asociadas condiciones e iteraciones que se representarán como en los diagramas de secuencia.</p>
 </section>
 </section>
-<section id="ejemplo-2" class="level5 unnumbered unlisted">
-<h5 class="unnumbered unlisted anchored" data-anchor-id="ejemplo-2">Ejemplo</h5>
+<section id="ejemplo-3" class="level5 unnumbered unlisted">
+<h5 class="unnumbered unlisted anchored" data-anchor-id="ejemplo-3">Ejemplo</h5>
 <p>Diagrama de colaboración para el caso de uso: Prestar un ejemplar de una aplicación encargada de los préstamos y reservas de una biblioteca.</p>
 <p><a href="../images/colaboracion-ejemplo.png">Ejemplo de Diagrama de colaboración</a></p>
 <p>(Nota.- Esta notación es la más habitual, pero MÉTRICA Versión 3 no exige su utilización).</p>
@@ -961,6 +983,116 @@ Casual: un módulo realiza un conjunto de tareas que tienen poca o ninguna rela
 </section>
 <section id="modelo-entidadrelación-extendido" class="level3" data-number="13.2.13">
 <h3 data-number="13.2.13" class="anchored" data-anchor-id="modelo-entidadrelación-extendido"><span class="header-section-number">13.2.13</span> Modelo Entidad/Relación Extendido</h3>
+<p>Se trata de una técnica cuyo objetivo es la representación y definición de todos los datos que se introducen, almacenan, transforman y producen dentro de un sistema de información, sin tener en cuenta las necesidades de la tecnología existente, ni otras restricciones.</p>
+<p>Dado que el modelo de datos es un medio para comunicar el significado de los datos, las relaciones entre ellos y las reglas de negocio de un sistema de información, una organización puede obtener numerosos beneficios de la aplicación de esta técnica, pues la definición de los datos y la manera en que éstos operan son compartidos por todos los usuarios.</p>
+<p>Las ventajas de realizar un modelo de datos son, entre otras:</p>
+<ul>
+<li>Comprensión de los datos de una organización y del funcionamiento de la organización.</li>
+<li>Obtención de estructuras de datos independientes del entorno físico.</li>
+<li>Control de los posibles errores desde el principio, o al menos, darse cuenta de las deficiencias lo antes posible.</li>
+<li>Mejora del mantenimiento.</li>
+</ul>
+<p>Aunque la estructura de datos puede ser cambiante y dinámica, normalmente es mucho más estable que la estructura de procesos. Como resultado, una estructura de datos estable e integrada proporciona datos consistentes que puedan ser fácilmente accesibles según las necesidades de los usuarios, de manera que, aunque se produzcan cambios organizativos, los datos permanecerán estables.</p>
+<p>Este diagrama se centra en los datos, independientemente del procesamiento que los transforma y sin entrar en consideraciones de eficiencia. Por ello, es independiente del entorno físico y debe ser una fiel representación del sistema de información objeto del estudio, proporcionando a los usuarios toda la información que necesiten y en la forma en que la necesiten.</p>
+<section id="descripción-3" class="level4 unnumbered unlisted">
+<h4 class="unnumbered unlisted anchored" data-anchor-id="descripción-3">Descripción</h4>
+<p>El modelo entidad/relación extendido describe con un alto nivel de abstracción la distribución de datos almacenados en un sistema. Existen dos elementos principales: las entidades y las relaciones. Las extensiones al modelo básico añaden además los atributos de las entidades y la jerarquía entre éstas. Estas extensiones tienen como finalidad aportar al modelo una mayor capacidad expresiva.</p>
+<p>Los elementos fundamentales del modelo son los siguientes:</p>
+<section id="entidad" class="level5 unnumbered unlisted">
+<h5 class="unnumbered unlisted anchored" data-anchor-id="entidad">Entidad</h5>
+<p>Es aquel objeto, real o abstracto, acerca del cual se desea almacenar información en la base de datos. La estructura genérica de un conjunto de entidades con las mismas características se denomina tipo de entidad.</p>
+<p>Existen dos clases de entidades: regulares, que tienen existencia por sí mismas, y débiles cuya existencia depende de otra entidad. Las entidades deben cumplir las siguientes tres reglas:</p>
+<ul>
+<li>Tienen que tener existencia propia.</li>
+<li>Cada ocurrencia de un tipo de entidad debe poder distinguirse de las demás.</li>
+<li>Todas las ocurrencias de un tipo de entidad deben tener los mismos atributos.</li>
+</ul>
+</section>
+<section id="relacion-1" class="level5 unnumbered unlisted">
+<h5 class="unnumbered unlisted anchored" data-anchor-id="relacion-1">Relación</h5>
+<p>Es una asociación o correspondencia existente entre una o varias entidades. La relación puede ser regular, si asocia tipos de entidad regulares, o débil, si asocia un tipo de entidad débil con un tipo de entidad regular. Dentro de las relaciones débiles se distinguen la <strong>dependencia en existencia</strong> y la <strong>dependencia en identificación</strong>.</p>
+<p>Se dice que la dependencia es en existencia cuando las ocurrencias de un tipo de entidad débil no pueden existir sin la ocurrencia de la entidad regular de la que dependen. Se dice que la dependencia es en identificación cuando, además de lo anterior, las ocurrencias del tipo de entidad débil no se pueden identificar sólo mediante sus propios atributos, sino que se les tiene que añadir el identificador de la ocurrencia de la entidad regular de la cual dependen.</p>
+<p>Además, se dice que una relación es <strong>exclusiva</strong> cuando la existencia de una relación entre dos tipos de entidades implica la no existencia de las otras relaciones.</p>
+<p>Una relación se caracteriza por:</p>
+<ul>
+<li><strong>Nombre</strong>: que lo distingue unívocamente del resto de relaciones del modelo.</li>
+<li><strong>Tipo de correspondencia</strong>: es el número máximo de ocurrencias de cada tipo de entidad que pueden intervenir en una ocurrencia de la relación que se está tratando.</li>
+<li>Conceptualmente se pueden identificar tres clases de relaciones:
+<ul>
+<li>Relaciones 1:1: Cada ocurrencia de una entidad se relaciona con una y sólo una ocurrencia de la otra entidad.</li>
+<li>Relaciones 1:N: Cada ocurrencia de una entidad puede estar relacionada con cero, una o varias ocurrencias de la otra entidad.</li>
+<li>Relaciones M:N: Cada ocurrencia de una entidad puede estar relacionada con cero, una o varias ocurrencias de la otra entidad y cada ocurrencia de la otra entidad puede corresponder a cero, una o varias ocurrencias de la primera.</li>
+</ul></li>
+<li><strong>Cardinalidad</strong>: representa la participación en la relación de cada una de las entidades afectadas, es decir, el número máximo y mínimo de ocurrencias de un tipo de entidad que pueden estar interrelacionadas con una ocurrencia de otro tipo de entidad. La cardinalidad máxima coincide con el tipo de correspondencia.</li>
+</ul>
+<p>Según la cardinalidad, una relación es obligatoria, cuando para toda ocurrencia de un tipo de entidad existe al menos una ocurrencia del tipo de entidad asociado, y es opcional cuando, para toda ocurrencia de un tipo de entidad, puede existir o no una o varias ocurrencias del tipo de entidad asociado.</p>
+</section>
+<section id="dominio" class="level5 unnumbered unlisted">
+<h5 class="unnumbered unlisted anchored" data-anchor-id="dominio">Dominio</h5>
+<p>Es un conjunto nominado de valores homogéneos. El dominio tiene existencia propia con independencia de cualquier entidad, relación o atributo.</p>
+</section>
+<section id="atributo" class="level5 unnumbered unlisted">
+<h5 class="unnumbered unlisted anchored" data-anchor-id="atributo">Atributo</h5>
+<p>Es una propiedad o característica de un tipo de entidad. Se trata de la unidad básica de información que sirve para identificar o describir la entidad. Un atributo se define sobre un dominio. Cada tipo de entidad ha de tener un conjunto mínimo de atributos que identifiquen unívocamente cada ocurrencia del tipo de entidad. Este atributo o atributos se denomina identificador principal. Se pueden definir restricciones sobre los atributos, según las cuales un atributo puede ser:</p>
+<ul>
+<li>Univaluado, atributo que sólo puede tomar un valor para todas y cada una de las ocurrencias del tipo de entidad al que pertenece.</li>
+<li>Obligatorio, atributo que tiene que tomar al menos un valor para todas y cada una de las ocurrencias del tipo de entidad al que pertenece.</li>
+</ul>
+<p>Además de estos elementos, existen extensiones del modelo entidad/relación que incorporan determinados conceptos o mecanismos de abstracción para facilitar la representación de ciertas estructuras del mundo real:</p>
+<ul>
+<li>La <strong>generalización</strong>, permite abstraer un tipo de entidad de nivel superior (supertipo) a partir de varios tipos de entidad (subtipos); en estos casos los atributos comunes y relaciones de los subtipos se asignan al supertipo. Se pueden generalizar por ejemplo los tipos <em>profesor</em> y <em>estudiante</em> obteniendo el supertipo <em>persona</em>.</li>
+<li>La <strong>especialización</strong> es la operación inversa a la generalización, en ella un supertipo se descompone en uno o varios subtipos, los cuales heredan todos los atributos y relaciones del supertipo, además de tener los suyos propios. Un ejemplo es el caso del tipo <em>empleado</em>, del que se pueden obtener los subtipos <em>secretaria</em>, <em>técnico</em> e <em>ingeniero</em>.</li>
+<li><strong>Categorías</strong>. Se denomina categoría al subtipo que aparece como resultado de la unión de varios tipos de entidad. En este caso, hay varios supertipos y un sólo subtipo. Si por ejemplo se tienen los tipos persona y compañía y es necesario establecer una relación con <em>vehículo</em>, se puede crear propietario como un subtipo unión de los dos primeros.</li>
+<li>La <strong>agregación</strong>, consiste en construir un nuevo tipo de entidad como composición de otros y su tipo de relación y así poder manejarlo en un nivel de abstracción mayor. Por ejemplo, se tienen los tipos de entidad <em>empresa</em> y <em>solicitante de empleo</em> relacionados mediante el tipo de relación entrevista; pero es necesario que cada entrevista se corresponda con una determinada <em>oferta de empleo</em>. Como no se permite la relación entre tipos de relación, se puede crear un tipo de entidad compuesto por <em>empresa</em>, <em>entrevista</em> y <em>solicitante de empleo</em> y relacionarla con el tipo de entidad <em>oferta de empleo</em>. El proceso inverso se denomina desagregación.</li>
+<li>La <strong>asociación</strong>, consiste en relacionar dos tipos de entidades que normalmente son de dominios independientes, pero coyunturalmente se asocian.</li>
+</ul>
+<p>La existencia de supertipos y subtipos, en uno o varios niveles, da lugar a una <strong>jerarquía</strong>, que permitirá representar una restricción del mundo real.</p>
+<p>Una vez construido el modelo entidad/relación, hay que analizar si se presentan redundancias. Para poder asegurar su existencia se deben estudiar con mucho detenimiento las cardinalidades mínimas de las entidades, así como la semántica de las relaciones.</p>
+<p>Los atributos redundantes, los que se derivan de otros elementos mediante algún calculo, deben ser eliminados del modelo entidad/relación o marcarse como redundantes.</p>
+<p>Igualmente, las relaciones redundantes deben eliminarse del modelo, comprobando que al eliminarlas sigue siendo posible el paso, tanto en un sentido como en el inverso, entre las dos entidades que unían.</p>
+</section>
+</section>
+<section id="notación-4" class="level4 unnumbered unlisted">
+<h4 class="unnumbered unlisted anchored" data-anchor-id="notación-4">Notación</h4>
+<section id="entidad-1" class="level5 unnumbered unlisted">
+<h5 class="unnumbered unlisted anchored" data-anchor-id="entidad-1">Entidad</h5>
+<p>La representación gráfica de un tipo de entidad regular es un rectángulo etiquetado con el nombre del tipo de entidad. Un tipo de entidad débil se representa con dos rectángulos concéntricos con su nombre en el interior.</p>
+<p><a href="../images/MERE_Entidad.png"></a></p>
+</section>
+<section id="relacion-2" class="level5 unnumbered unlisted">
+<h5 class="unnumbered unlisted anchored" data-anchor-id="relacion-2">Relación</h5>
+<p>Se representa por un rombo unido a las entidades relacionadas por dos líneas rectas a los lados. El tipo de correspondencia se representa gráficamente con una etiqueta 1:1, 1:N o M:N, cerca de alguno de los vértices del rombo, o bien situando cada número o letra cerca de la entidad correspondiente, para mayor claridad.</p>
+<p><a href="../images/MERE_Relacion-1.png"></a></p>
+<p>La representación gráfica de las cardinalidades se realiza mediante una etiqueta del tipo (0,1), (1,1), (0,n) o (1,n), que se coloca en el extremo de la entidad que corresponda. Si se representan las cardinalidades, la representación del tipo de correspondencia es redundante.</p>
+<p><a href="../images/MERE_Relacion-2.png"></a></p>
+</section>
+<section id="atributo-1" class="level5 unnumbered unlisted">
+<h5 class="unnumbered unlisted anchored" data-anchor-id="atributo-1">Atributo</h5>
+<p>Un atributo se representa mediante una elipse, con su nombre dentro, conectada por una línea al tipo de entidad o relación.</p>
+<p>En lugar de una elipse puede utilizarse un círculo con el nombre dentro, o un círculo más pequeño con el nombre del atributo a un lado. También pueden representarse en una lista asociada a la entidad. El identificador aparece con el nombre marcado o subrayado, o bien con su círculo en negro.</p>
+<p><a href="../images/MERE_Atributo.png"></a></p>
+</section>
+<section id="exclusividad" class="level5 unnumbered unlisted">
+<h5 class="unnumbered unlisted anchored" data-anchor-id="exclusividad">Exclusividad</h5>
+<p>En la representación de las relaciones exclusivas se incluye un arco sobre las líneas que conectan el tipo de entidad a los dos o más tipos de relación.</p>
+<p><a href="../images/MERE_Exclusividad.png"></a></p>
+</section>
+<section id="jerarquia-tipos-y-subtipos" class="level5 unnumbered unlisted">
+<h5 class="unnumbered unlisted anchored" data-anchor-id="jerarquia-tipos-y-subtipos">Jerarquía (tipos y subtipos)</h5>
+<p>La representación de las jerarquías se realiza mediante un triángulo invertido, con la base paralela al rectángulo que representa el supertipo y conectando a éste y a los subtipos. Si la división en subtipos viene determinada en función de los valores de un atributo discriminante, éste se representará asociado al triángulo que representa la relación.</p>
+<p><a href="../images/MERE_Supertipo.png"></a></p>
+<p>En el triángulo se representará: con una letra d el hecho de que los subtipos sean disjuntos, con un círculo o una O si los subtipos pueden solaparse y con una U el caso de uniones por categorías. La presencia de una jerarquía total se representa con una doble línea entre el supertipo y el triángulo.</p>
+<p><a href="../images/MERE_Jerarquia.png"></a></p>
+</section>
+</section>
+<section id="ejemplo-4" class="level4 unnumbered unlisted">
+<h4 class="unnumbered unlisted anchored" data-anchor-id="ejemplo-4">Ejemplo</h4>
+<p>Modelo entidad-relación extendido para un sistema de gestión de técnicos y su asignación a proyectos dentro de una empresa u organización.</p>
+<p>Como se aprecia en el diagrama, TÉCNICO es un subtipo de EMPLEADO, generado por especialización, pues era necesario para establecer la relación Trabaja en con PROYECTO, ya que no todos los empleados de la empresa, como los administrativos, son susceptibles de trabajar en un proyecto. La entidad TÉCNICO tendrá los atributos de EMPLEADO más el atributo nivel.</p>
+<p><a href="../images/MERE_Ejemplo.png">Ejemplo de Modelo Entidad/Relación Extendido</a></p>
+<p>Los tipos de correspondencia son <code>1:N</code> entre DEPARTAMENTO y EMPLEADO, pues un departamento tiene 1 o varios empleados. Entre TÉCNICO y PROYECTO es <code>M:N</code>, pues un técnico puede trabajar en 1 o varios proyectos, y en un proyecto trabajan 1 o varios técnicos.</p>
+<p>Por otro lado, se han incluido atributos que caracterizan la relación <em>Trabaja en</em>, como son <em>fecha de asignación</em> y <em>fecha de cese</em>, ya que un técnico no siempre estará trabajando en un proyecto, sino en determinado periodo. (Nota.- Esta notación es la más habitual, pero MÉTRICA Versión 3 no exige su utilización).</p>
+</section>
 </section>
 <section id="normalización" class="level3" data-number="13.2.14">
 <h3 data-number="13.2.14" class="anchored" data-anchor-id="normalización"><span class="header-section-number">13.2.14</span> Normalización</h3>
