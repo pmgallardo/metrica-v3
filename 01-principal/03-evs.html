@@ -1,0 +1,1489 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.38">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>3&nbsp; Estudio de Viabilidad del Sistema – Métrica v.3</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../01-principal/04-asi.html" rel="next">
+<link href="../01-principal/02-psi.html" rel="prev">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-5d2bbbc7808559eb98ab364e0d5f4cb2.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No se han encontrado resultados",
+    "search-matching-documents-text": "documentos encontrados",
+    "search-copy-link-title": "Copiar el enlace en la búsqueda",
+    "search-hide-matches-text": "Ocultar resultados adicionales",
+    "search-more-match-text": "resultado adicional en este documento",
+    "search-more-matches-text": "resultados adicionales en este documento",
+    "search-clear-button-title": "Borrar",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancelar",
+    "search-submit-button-title": "Enviar",
+    "search-label": "Buscar"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../styles.css">
+</head>
+
+<body class="nav-sidebar docked quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../01-principal/01-introduccion.html">Estructura principal</a></li><li class="breadcrumb-item"><a href="../01-principal/03-evs.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Estudio de Viabilidad del Sistema</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Buscar" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../">Métrica v.3</a> 
+        <div class="sidebar-tools-main">
+    <a href="https://github.com/pmgallardo/metrica-v3" title="Ejecutar el código" class="quarto-navigation-tool px-1" aria-label="Ejecutar el código"><i class="bi bi-github"></i></a>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Buscar"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Métrica v.3</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Estructura principal</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Alternar sección">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../01-principal/01-introduccion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introducción</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../01-principal/02-psi.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Planificación de Sistemas de Información</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../01-principal/03-evs.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Estudio de Viabilidad del Sistema</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../01-principal/04-asi.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Análisis del Sistema de Información</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../01-principal/05-dsi.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Diseño del Sistema de Información</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../01-principal/06-csi.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Construcción del Sistema de Información</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../01-principal/07-ias.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Implantación y Aceptación del Sistema</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../01-principal/08-msi.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Mantenimiento del Sistema de Información</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Interfaces</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Alternar sección">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../02-interfaces/01-calidad.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Aseguramiento de la Calidad</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../02-interfaces/02-seguridad.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Seguridad</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../02-interfaces/03-configuracion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Gestión de Configuración</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../02-interfaces/04-proyectos.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Gestión de Proyectos</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">Técnicas</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Alternar sección">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../03-tecnicas/01-tecnicas.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Técnicas</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
+ <span class="menu-text">Participantes</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Alternar sección">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../04-participantes/01-participantes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Participantes</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Tabla de contenidos</h2>
+   
+  <ul>
+  <li><a href="#descripción-y-objetivos" id="toc-descripción-y-objetivos" class="nav-link active" data-scroll-target="#descripción-y-objetivos"><span class="header-section-number">3.1</span> Descripción y objetivos</a></li>
+  <li><a href="#actividad-evs-1-establecimiento-del-alcance-del-sistema" id="toc-actividad-evs-1-establecimiento-del-alcance-del-sistema" class="nav-link" data-scroll-target="#actividad-evs-1-establecimiento-del-alcance-del-sistema"><span class="header-section-number">3.2</span> Actividad EVS 1: Establecimiento del Alcance del Sistema</a>
+  <ul class="collapse">
+  <li><a href="#tarea-evs-1.1-estudio-de-la-solicitud" id="toc-tarea-evs-1.1-estudio-de-la-solicitud" class="nav-link" data-scroll-target="#tarea-evs-1.1-estudio-de-la-solicitud"><span class="header-section-number">3.2.1</span> Tarea EVS 1.1: Estudio de la Solicitud</a></li>
+  <li><a href="#tarea-evs-1.2-identificación-del-alcance-del-sistema" id="toc-tarea-evs-1.2-identificación-del-alcance-del-sistema" class="nav-link" data-scroll-target="#tarea-evs-1.2-identificación-del-alcance-del-sistema"><span class="header-section-number">3.2.2</span> Tarea EVS 1.2: Identificación del Alcance del Sistema</a></li>
+  <li><a href="#tarea-evs-1.3-especificación-del-alcance-del-evs" id="toc-tarea-evs-1.3-especificación-del-alcance-del-evs" class="nav-link" data-scroll-target="#tarea-evs-1.3-especificación-del-alcance-del-evs"><span class="header-section-number">3.2.3</span> Tarea EVS 1.3: Especificación del Alcance del EVS</a></li>
+  </ul></li>
+  <li><a href="#actividad-evs-2-estudio-de-la-situación-actual" id="toc-actividad-evs-2-estudio-de-la-situación-actual" class="nav-link" data-scroll-target="#actividad-evs-2-estudio-de-la-situación-actual"><span class="header-section-number">3.3</span> Actividad EVS 2: Estudio de la Situación Actual</a>
+  <ul class="collapse">
+  <li><a href="#tarea-evs-2.1-valoración-del-estudio-de-la-situación-actual" id="toc-tarea-evs-2.1-valoración-del-estudio-de-la-situación-actual" class="nav-link" data-scroll-target="#tarea-evs-2.1-valoración-del-estudio-de-la-situación-actual"><span class="header-section-number">3.3.1</span> Tarea EVS 2.1: Valoración del Estudio de la Situación Actual</a></li>
+  <li><a href="#tarea-evs-2.2-identificación-de-los-usuarios-participantes-en-el-estudio-de-la-situación-actual" id="toc-tarea-evs-2.2-identificación-de-los-usuarios-participantes-en-el-estudio-de-la-situación-actual" class="nav-link" data-scroll-target="#tarea-evs-2.2-identificación-de-los-usuarios-participantes-en-el-estudio-de-la-situación-actual"><span class="header-section-number">3.3.2</span> Tarea EVS 2.2: Identificación de los Usuarios Participantes en el Estudio de la Situación Actual</a></li>
+  <li><a href="#tarea-evs-2.3-descripción-de-los-sistemas-de-información-existentes" id="toc-tarea-evs-2.3-descripción-de-los-sistemas-de-información-existentes" class="nav-link" data-scroll-target="#tarea-evs-2.3-descripción-de-los-sistemas-de-información-existentes"><span class="header-section-number">3.3.3</span> Tarea EVS 2.3: Descripción de los Sistemas de Información Existentes</a></li>
+  <li><a href="#tarea-evs-2.4-realización-del-diagnóstico-de-la-situación-actual" id="toc-tarea-evs-2.4-realización-del-diagnóstico-de-la-situación-actual" class="nav-link" data-scroll-target="#tarea-evs-2.4-realización-del-diagnóstico-de-la-situación-actual"><span class="header-section-number">3.3.4</span> Tarea EVS 2.4: Realización del Diagnóstico de la Situación Actual</a></li>
+  </ul></li>
+  <li><a href="#actividad-evs-3-definición-de-requisitos-del-sistema" id="toc-actividad-evs-3-definición-de-requisitos-del-sistema" class="nav-link" data-scroll-target="#actividad-evs-3-definición-de-requisitos-del-sistema"><span class="header-section-number">3.4</span> Actividad EVS 3: Definición de Requisitos del Sistema</a>
+  <ul class="collapse">
+  <li><a href="#tarea-evs-3.1-identificación-de-las-directrices-técnicas-y-de-gestión" id="toc-tarea-evs-3.1-identificación-de-las-directrices-técnicas-y-de-gestión" class="nav-link" data-scroll-target="#tarea-evs-3.1-identificación-de-las-directrices-técnicas-y-de-gestión"><span class="header-section-number">3.4.1</span> Tarea EVS 3.1: Identificación de las Directrices Técnicas y de Gestión</a></li>
+  <li><a href="#tarea-evs-3.2-identificación-de-requisitos" id="toc-tarea-evs-3.2-identificación-de-requisitos" class="nav-link" data-scroll-target="#tarea-evs-3.2-identificación-de-requisitos"><span class="header-section-number">3.4.2</span> Tarea EVS 3.2: Identificación de Requisitos</a></li>
+  <li><a href="#tarea-evs-3.3-catalogación-de-requisitos" id="toc-tarea-evs-3.3-catalogación-de-requisitos" class="nav-link" data-scroll-target="#tarea-evs-3.3-catalogación-de-requisitos"><span class="header-section-number">3.4.3</span> Tarea EVS 3.3: Catalogación de Requisitos</a></li>
+  </ul></li>
+  <li><a href="#actividad-evs-4-estudio-de-alternativas-de-solución" id="toc-actividad-evs-4-estudio-de-alternativas-de-solución" class="nav-link" data-scroll-target="#actividad-evs-4-estudio-de-alternativas-de-solución"><span class="header-section-number">3.5</span> Actividad EVS 4: Estudio de Alternativas de Solución</a>
+  <ul class="collapse">
+  <li><a href="#tarea-evs-4.1-preselección-de-alternativas-de-solución" id="toc-tarea-evs-4.1-preselección-de-alternativas-de-solución" class="nav-link" data-scroll-target="#tarea-evs-4.1-preselección-de-alternativas-de-solución"><span class="header-section-number">3.5.1</span> Tarea EVS 4.1: Preselección de Alternativas de Solución</a></li>
+  <li><a href="#tarea-evs-4.2-descripción-de-las-alternativas-de-solución" id="toc-tarea-evs-4.2-descripción-de-las-alternativas-de-solución" class="nav-link" data-scroll-target="#tarea-evs-4.2-descripción-de-las-alternativas-de-solución"><span class="header-section-number">3.5.2</span> Tarea EVS 4.2: Descripción de las Alternativas de Solución</a></li>
+  </ul></li>
+  <li><a href="#actividad-evs-5-valoración-de-las-alternativas" id="toc-actividad-evs-5-valoración-de-las-alternativas" class="nav-link" data-scroll-target="#actividad-evs-5-valoración-de-las-alternativas"><span class="header-section-number">3.6</span> Actividad EVS 5: Valoración de las Alternativas</a>
+  <ul class="collapse">
+  <li><a href="#tarea-evs-5.1-estudio-de-la-inversión" id="toc-tarea-evs-5.1-estudio-de-la-inversión" class="nav-link" data-scroll-target="#tarea-evs-5.1-estudio-de-la-inversión"><span class="header-section-number">3.6.1</span> Tarea EVS 5.1: Estudio de la Inversión</a></li>
+  <li><a href="#tarea-evs-5.2-estudio-de-los-riesgos" id="toc-tarea-evs-5.2-estudio-de-los-riesgos" class="nav-link" data-scroll-target="#tarea-evs-5.2-estudio-de-los-riesgos"><span class="header-section-number">3.6.2</span> Tarea EVS 5.2: Estudio de los Riesgos</a></li>
+  <li><a href="#tarea-evs-5.3-planificación-de-alternativas" id="toc-tarea-evs-5.3-planificación-de-alternativas" class="nav-link" data-scroll-target="#tarea-evs-5.3-planificación-de-alternativas"><span class="header-section-number">3.6.3</span> Tarea EVS 5.3: Planificación de Alternativas</a></li>
+  </ul></li>
+  <li><a href="#actividad-evs-6-selección-de-la-solución" id="toc-actividad-evs-6-selección-de-la-solución" class="nav-link" data-scroll-target="#actividad-evs-6-selección-de-la-solución"><span class="header-section-number">3.7</span> Actividad EVS 6: Selección de la Solución</a>
+  <ul class="collapse">
+  <li><a href="#tarea-evs-6.1-convocatoria-de-la-presentación" id="toc-tarea-evs-6.1-convocatoria-de-la-presentación" class="nav-link" data-scroll-target="#tarea-evs-6.1-convocatoria-de-la-presentación"><span class="header-section-number">3.7.1</span> Tarea EVS 6.1: Convocatoria de la Presentación</a></li>
+  <li><a href="#tarea-evs-6.2-evaluación-de-las-alternativas-y-selección" id="toc-tarea-evs-6.2-evaluación-de-las-alternativas-y-selección" class="nav-link" data-scroll-target="#tarea-evs-6.2-evaluación-de-las-alternativas-y-selección"><span class="header-section-number">3.7.2</span> Tarea EVS 6.2: Evaluación de las Alternativas y Selección</a></li>
+  <li><a href="#tarea-evs-6.3-aprobación-de-la-solución" id="toc-tarea-evs-6.3-aprobación-de-la-solución" class="nav-link" data-scroll-target="#tarea-evs-6.3-aprobación-de-la-solución"><span class="header-section-number">3.7.3</span> Tarea EVS 6.3: Aprobación de la Solución</a></li>
+  </ul></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/pmgallardo/metrica-v3/edit/main/01-principal/03-evs.qmd" class="toc-action"><i class="bi bi-github"></i>Editar esta página</a></li><li><a href="https://github.com/pmgallardo/metrica-v3/issues/new" class="toc-action"><i class="bi empty"></i>Informar sobre problema</a></li><li><a href="https://github.com/pmgallardo/metrica-v3/blob/main/01-principal/03-evs.qmd" class="toc-action"><i class="bi empty"></i>Ver el código</a></li></ul></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../01-principal/01-introduccion.html">Estructura principal</a></li><li class="breadcrumb-item"><a href="../01-principal/03-evs.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Estudio de Viabilidad del Sistema</span></a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Estudio de Viabilidad del Sistema</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="descripción-y-objetivos" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="descripción-y-objetivos"><span class="header-section-number">3.1</span> Descripción y objetivos</h2>
+<p>Mientras que el Plan de Sistemas de Información tiene como objetivo proporcionar un marco estratégico que sirva de referencia para los Sistemas de Información de un ámbito concreto de una organización, el objetivo del Estudio de Viabilidad del Sistema es el análisis de un conjunto concreto de necesidades para proponer una solución a corto plazo, que tenga en cuenta restricciones económicas, técnicas, legales y operativas. La solución obtenida como resultado del estudio puede ser la definición de uno o varios proyectos que afecten a uno o varios sistemas de información ya existentes o nuevos. Para ello, se identifican los requisitos que se ha de satisfacer y se estudia, si procede, la situación actual.</p>
+<p>A partir del estado inicial, la situación actual y los requisitos planteados, se estudian las alternativas de solución. Dichas alternativas pueden incluir soluciones que impliquen desarrollos a medida, soluciones basadas en la adquisición de productos software del mercado o soluciones mixtas. Se describe cada una de las alternativas, indicando los requisitos que cubre.</p>
+<p>Una vez descritas cada una de las alternativas planteadas, se valora su impacto en la organización, la inversión a realizar en cada caso y los riesgos asociados. Esta información se analiza con el fin de evaluar las distintas alternativas y seleccionar la más adecuada, definiendo y estableciendo su planificación.</p>
+<p>Si en la organización se ha realizado con anterioridad un Plan de Sistemas de Información que afecte al sistema objeto de este estudio, se dispondrá de un conjunto de productos que proporcionarán información a tener en cuenta en todo el proceso.</p>
+<p>Las actividades que engloba este proceso se recogen en la siguiente figura, en la que se indican las actividades que pueden ejecutarse en paralelo y las que precisan para su realización resultados originados en actividades anteriores.</p>
+<p><img src="../images/evs-actividades.jpg" class="img-fluid"></p>
+<section id="estudio-de-viabilidad-del-sistema" class="level3 unnumbered unlisted">
+<h3 class="unnumbered unlisted anchored" data-anchor-id="estudio-de-viabilidad-del-sistema">ESTUDIO DE VIABILIDAD DEL SISTEMA</h3>
+<p><img src="../images/evs-plan.jpg" class="img-fluid"></p>
+</section>
+<section id="participantes-en-las-actividades-del-proceso-evs" class="level3 unnumbered unlisted">
+<h3 class="unnumbered unlisted anchored" data-anchor-id="participantes-en-las-actividades-del-proceso-evs">PARTICIPANTES EN LAS ACTIVIDADES DEL PROCESO EVS</h3>
+<p>ESTUDIO DE VIABILIDAD DEL SISTEMA ACTIVIDADES EVS 1 EVS 2 EVS 3 EVS 4 EVS 5 EVS 6 Analistas X X X X X X Comité de Dirección X X Directores Usuarios X<br>
+Equipo de Soporte Técnico X<br>
+Especialistas en Comunicaciones X<br>
+Jefe de Proyecto X X X X X X Responsable Mantenimiento X<br>
+Responsables de Seguridad X<br>
+Técnicos de Sistemas X<br>
+Usuarios Expertos X X X<br>
+TÉCNICAS/PRÁCTICAS UTILIZADAS EN LAS ACTIVIDADES DEL PROCESO EVS ESTUDIO DE VIABILIDAD DEL SISTEMA ACTIVIDADES EVS 1 EVS 2 EVS 3 EVS 4 EVS 5 EVS 6 Análisis Coste/Beneficio X<br>
+Casos de Uso X<br>
+Catalogación X X X X<br>
+Diagrama de Clases X X<br>
+Diagrama de Descomposición Funcional X<br>
+Diagrama de Flujo de Datos X X X<br>
+Diagrama de Interacción de Objetos X<br>
+Diagrama de Representación X X<br>
+Impacto en la Organización X<br>
+Matricial X X<br>
+Modelo Entidad/Relación Extendido X X<br>
+Planificación X<br>
+Presentación X Sesiones de trabajo X X X X Actividades</p>
+<pre><code>Actividad EVS 1: Establecimiento del Alcance del Sistema
+Actividad EVS 2: Estudio de la Situación Actual
+Actividad EVS 3: Definición de Requisitos del Sistema
+Actividad EVS 4: Estudio de Alternativas de Solución
+Actividad EVS 5: Valoración de las Alternativas
+Actividad EVS 6: Selección de la Solución</code></pre>
+</section>
+</section>
+<section id="actividad-evs-1-establecimiento-del-alcance-del-sistema" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="actividad-evs-1-establecimiento-del-alcance-del-sistema"><span class="header-section-number">3.2</span> Actividad EVS 1: Establecimiento del Alcance del Sistema</h2>
+<p>En esta actividad se estudia el alcance de la necesidad planteada por el cliente o usuario, o como consecuencia de la realización de un PSI, realizando una descripción general de la misma. Se determinan los objetivos, se inicia el estudio de los requisitos y se identifican las unidades organizativas afectadas estableciendo su estructura.</p>
+<p>Se analizan las posibles restricciones, tanto generales como específicas, que puedan condicionar el estudio y la planificación de las alternativas de solución que se propongan.</p>
+<p>Si la justificación económica es obvia, el riesgo técnico bajo, se esperan pocos problemas legales y no existe ninguna alternativa razonable, no es necesario profundizar en el estudio de viabilidad del sistema, analizando posibles alternativas y realizando una valoración y evaluación de las mismas, sino que éste se orientará a la especificación de requisitos, descripción del nuevo sistema y planificación.</p>
+<p>Se detalla la composición del equipo de trabajo necesario para este proceso y su planificación. Finalmente, con el fin de facilitar la implicación activa de los usuarios en la definición del sistema, se identifican sus perfiles, dejando claras sus tareas y responsabilidades. TAREA PRODUCTOS TÉCNICAS Y PRÁCTICAS PARTICIPANTES EVS 1.1: Estudio de la Solicitud</p>
+<pre><code>Descripción General del Sistema
+Catálogo Objetivos EVS
+Catálogo de Requisitos
+
+
+
+Catalogación
+Sesiones de trabajo
+
+
+
+Comité de Dirección
+Jefe de Proyecto
+Analistas</code></pre>
+<p>EVS 1.2: Identificación del Alcance del Sistema</p>
+<pre><code>Descripción General del Sistema:
+    Contexto del Sistema
+    Estructura Organizativa
+Catálogo de Requisitos
+Catálogo de Usuarios
+
+
+
+Diagrama de Flujo de Datos
+Diagrama de Descomposición Funcional
+Catalogación
+Sesiones de trabajo
+
+
+
+Comité de Dirección
+Jefe de Proyecto
+Analistas</code></pre>
+<p>EVS 1.3: Especificación del Alcance del EVS</p>
+<pre><code>Catálogo de Objetivos del EVS
+Catálogo de Usuarios
+Plan de Trabajo
+
+
+
+Catalogación
+Sesiones de trabajo
+
+
+
+Comité de Dirección
+Jefe de Proyecto
+Analistas</code></pre>
+<section id="tarea-evs-1.1-estudio-de-la-solicitud" class="level3" data-number="3.2.1">
+<h3 data-number="3.2.1" class="anchored" data-anchor-id="tarea-evs-1.1-estudio-de-la-solicitud"><span class="header-section-number">3.2.1</span> Tarea EVS 1.1: Estudio de la Solicitud</h3>
+<p>Se realiza una descripción general de la necesidad planteada por el usuario, y se estudian las posibles restricciones de carácter económico, técnico, operativo y legal que puedan afectar al sistema. Antes de iniciar el estudio de los requisitos del sistema se establecen los objetivos generales del Estudio de Viabilidad, teniendo en cuenta las restricciones identificadas anteriormente.</p>
+<p>Si el sistema objeto de estudio se encuentra en el ámbito de un Plan de Sistemas de Información vigente, se debe de tomar como referencia el catálogo de requisitos y la arquitectura de información resultante del mismo, como información adicional para la descripción general del sistema y determinación de los requisitos iniciales. Productos</p>
+<p>De entrada</p>
+<pre><code>Catálogo de Requisitos del PSI (PSI 9.2)
+Arquitectura de Información (PSI 9.2)
+Solicitud (externo)</code></pre>
+<p>De salida</p>
+<pre><code>Descripción General del Sistema
+Catálogo de Objetivos del EVS
+Catálogo de Requisitos</code></pre>
+<p>Prácticas</p>
+<pre><code>Catalogación
+Sesiones de trabajo</code></pre>
+<p>Participantes</p>
+<pre><code>Comité de Dirección
+Jefe de Proyecto
+Analistas</code></pre>
+</section>
+<section id="tarea-evs-1.2-identificación-del-alcance-del-sistema" class="level3" data-number="3.2.2">
+<h3 data-number="3.2.2" class="anchored" data-anchor-id="tarea-evs-1.2-identificación-del-alcance-del-sistema"><span class="header-section-number">3.2.2</span> Tarea EVS 1.2: Identificación del Alcance del Sistema</h3>
+<p>Se analiza el alcance de la necesidad planteada y se identifican las restricciones relativas a la sincronización con otros proyectos, que puedan interferir en la planificación y futura puesta a punto del sistema objeto del estudio. Esta información se recoge en el catálogo de requisitos.</p>
+<p>Si el sistema pertenece al ámbito de un Plan de Sistemas de Información, se debe tener en cuenta la arquitectura de información propuesta para analizar el alcance del sistema e identificar los sistemas de información que quedan fuera del ámbito del estudio. Además, se estudia el plan de proyectos, para determinar las posibles dependencias con otros proyectos.</p>
+<p>Una vez establecido el alcance, se identifican las unidades organizativas afectadas por el sistema, así como su estructura y responsables de las mismas. Para determinar los responsables se tiene en cuenta a quiénes afecta directamente y quiénes pueden influir en el éxito o fracaso del mismo. Productos</p>
+<p>De entrada</p>
+<pre><code>Plan de Proyectos (PSI 9.2)
+Arquitectura de Información (PSI 9.2)
+Descripción General del Sistema (EVS 1.1)
+Catálogo de Objetivos del EVS (EVS 1.1)
+Catálogo de Requisitos (EVS 1.1)</code></pre>
+<p>De salida</p>
+<pre><code>Descripción General del Sistema:
+    Contexto del Sistema
+    Estructura Organizativa
+Catálogo de Requisitos:
+    Requisitos Relativos a Restricciones o Dependencias con Otros Proyectos
+Catálogo de Usuarios</code></pre>
+<p>Técnicas</p>
+<pre><code>Diagrama de Flujo de Datos
+Diagrama de Descomposición Funcional</code></pre>
+<p>Prácticas</p>
+<pre><code>Catalogación
+Sesiones de trabajo</code></pre>
+<p>Participantes</p>
+<pre><code>Comité de Dirección
+Jefe de Proyecto
+Analistas</code></pre>
+</section>
+<section id="tarea-evs-1.3-especificación-del-alcance-del-evs" class="level3" data-number="3.2.3">
+<h3 data-number="3.2.3" class="anchored" data-anchor-id="tarea-evs-1.3-especificación-del-alcance-del-evs"><span class="header-section-number">3.2.3</span> Tarea EVS 1.3: Especificación del Alcance del EVS</h3>
+<p>En función del alcance del sistema y los objetivos del Estudio de Viabilidad del Sistema, se determinan las actividades y tareas a realizar. En particular, hay que decidir si se realiza o no el estudio de la situación actual y, en el caso de considerarlo necesario, con qué objetivo. Si el sistema pertenece al ámbito de un Plan de Sistemas de Información, los criterios que pueden orientar sobre la necesidad de llevar a cabo el estudio de la situación actual dependen de la arquitectura de información propuesta, en cuanto a la identificación de los sistemas de información actuales, implicados en el ámbito de este estudio, que se haya decidido conservar.</p>
+<p>Se identifican los usuarios participantes de las distintas unidades organizativas afectadas para la realización del Estudio de Viabilidad del Sistema, determinando previamente sus perfiles y responsabilidades.</p>
+<p>Debe comunicarse el plan de trabajo a los usuarios identificados como implicados en el Estudio de Viabilidad, solicitando su aceptación y esperado su confirmación. Productos</p>
+<p>De entrada</p>
+<pre><code>Arquitectura de Información (PSI 9.2)
+Catálogo de Objetivos del EVS (EVS 1.1)
+Descripción General del Sistema (EVS 1.2)
+Catálogo de Usuarios (EVS 1.2)</code></pre>
+<p>De salida</p>
+<pre><code>Catálogo de Objetivos del EVS:
+    Objetivos del Estudio de la Situación Actual
+Catálogo de Usuarios
+Plan de Trabajo</code></pre>
+<p>Prácticas</p>
+<pre><code>Catalogación
+Sesiones de trabajo</code></pre>
+<p>Participantes</p>
+<pre><code>Comité de Dirección
+Jefe de Proyecto
+Analistas</code></pre>
+</section>
+</section>
+<section id="actividad-evs-2-estudio-de-la-situación-actual" class="level2" data-number="3.3">
+<h2 data-number="3.3" class="anchored" data-anchor-id="actividad-evs-2-estudio-de-la-situación-actual"><span class="header-section-number">3.3</span> Actividad EVS 2: Estudio de la Situación Actual</h2>
+<p>La situación actual es el estado en el que se encuentran los sistemas de información existentes en el momento en el que se inicia su estudio.</p>
+<p>Teniendo en cuenta el objetivo del estudio de la situación actual, se realiza una valoración de la información existente acerca de los sistemas de información afectados. En función de dicha valoración, se especifica el nivel de detalle con que se debe llevar a cabo el estudio. Si es necesario, se constituye un equipo de trabajo específico para su realización y se identifican los usuarios participantes en el mismo.</p>
+<p>Si se decide documentar la situación actual, normalmente es conveniente dividir el sistema actual en subsistemas. Si es posible se describirá cada uno de los subsistemas, valorando qué información puede ser relevante para la descripción.</p>
+<p>Como resultado de esta actividad se genera un diagnóstico, estimando la eficiencia de los sistemas de información existentes e identificando los posibles problemas y las mejoras. TAREA PRODUCTOS TÉCNICAS Y PRÁCTICAS PARTICIPANTES EVS 2.1: Valoración del Estudio de la Situación Actual</p>
+<pre><code>Descripción de la Situación Actual:
+    Contexto del Sistema Actual
+    Descripción de los Sistemas de Información Actuales
+
+
+
+Diagrama de Flujo de Datos
+Diagrama de Representación
+Sesiones de trabajo
+
+
+
+Jefe de Proyecto
+Analistas
+Directores de Usuarios</code></pre>
+<p>EVS 2.2: Identificación de los Usuarios Participantes en el Estudio de la Situación Actual</p>
+<pre><code>Catálogo de Usuarios
+
+
+
+Sesiones de trabajo
+Catalogación
+
+
+
+Jefe de Proyecto
+Directores de Usuarios</code></pre>
+<p>EVS 2.3: Descripción de los Sistemas de Información Existentes</p>
+<pre><code>Descripción de la Situación Actual:
+    Descripción Lógica del Sistema Actual
+    Modelo Físico del Sistema Actual (opcional)
+    Matriz Localización Módulos y Datos
+
+
+
+Modelo Entidad/Relación Extendido
+Diagrama de Flujo de Datos
+Diagrama de Clases
+Diagrama de Interacción de Objetos
+Matricial
+Diagrama de Representación
+Sesiones de trabajo
+
+
+
+Analistas
+Usuarios Expertos
+Equipo de Soporte Técnico</code></pre>
+<p>EVS 2.4: Realización del Diagnóstico de la Situación Actual</p>
+<pre><code>Descripción de la Situación Actual:
+    Diagnóstico de la Situación Actual
+
+
+
+Analistas
+Responsable de Mantenimiento</code></pre>
+<section id="tarea-evs-2.1-valoración-del-estudio-de-la-situación-actual" class="level3" data-number="3.3.1">
+<h3 data-number="3.3.1" class="anchored" data-anchor-id="tarea-evs-2.1-valoración-del-estudio-de-la-situación-actual"><span class="header-section-number">3.3.1</span> Tarea EVS 2.1: Valoración del Estudio de la Situación Actual</h3>
+<p>En función de los objetivos establecidos para el estudio de la situación actual, y considerando el contexto del sistema especificado en la descripción general del mismo, se identifican los sistemas de información existentes que es necesario analizar con el fin de determinar el alcance del sistema actual. Asimismo, se decide el nivel de detalle con el que se va a llevar a cabo el estudio de cada uno de los sistemas de información implicados. En el caso de haber realizado un Plan de Sistemas de Información que afecte a dicho sistema, se toma como punto de partida para este análisis la arquitectura de información propuesta.</p>
+<p>Para poder abordar el estudio, se realiza previamente una valoración de la información existente acerca de los sistemas de información afectados por el EVS. Se debe decidir si se realizan o no los modelos lógicos del sistema actual o si se describe el modelo físico, en función de los siguientes criterios:</p>
+<pre><code>Si existen los modelos lógicos, y son fiables, se utilizan en la tarea Descripción de los Sistemas de Información Existentes (EVS 2.3)
+Si no existen dichos modelos, o no son fiables, se considera el tiempo de vida estimado para el sistema de información en función de la antigüedad, la obsolescencia de la tecnología o la falta de adecuación funcional para determinar sí se obtienen los modelos lógicos y físicos del sistema actual o por el contrario no se elabora ningún modelo.</code></pre>
+<p>La información relativa a los sistemas de información que se decida analizar, se obtiene mediante sesiones de trabajo con los Directores de Usuarios y el apoyo de los profesionales de Sistemas y Tecnologías de la Información y Comunicaciones (STIC) que se considere necesario. Productos</p>
+<p>De entrada</p>
+<pre><code>Información Existente del Sistema Actual (externo)
+Arquitectura de Información (PSI 9.2)
+Catálogo de Objetivos del EVS (EVS 1.3)
+Descripción General del Sistema (EVS 1.2)</code></pre>
+<p>De salida</p>
+<pre><code>Descripción de la Situación Actual:
+    Contexto del Sistema Actual
+    Descripción de los Sistemas de Información Actuales</code></pre>
+<p>Técnicas</p>
+<pre><code>Diagrama de Flujo de Datos</code></pre>
+<p>Prácticas</p>
+<pre><code>Diagrama de Representación
+Sesiones de Trabajo</code></pre>
+<p>Participantes</p>
+<pre><code>Jefe de Proyecto
+Analistas
+Directores de Usuarios</code></pre>
+</section>
+<section id="tarea-evs-2.2-identificación-de-los-usuarios-participantes-en-el-estudio-de-la-situación-actual" class="level3" data-number="3.3.2">
+<h3 data-number="3.3.2" class="anchored" data-anchor-id="tarea-evs-2.2-identificación-de-los-usuarios-participantes-en-el-estudio-de-la-situación-actual"><span class="header-section-number">3.3.2</span> Tarea EVS 2.2: Identificación de los Usuarios Participantes en el Estudio de la Situación Actual</h3>
+<p>En función del nivel de detalle establecido para el estudio de la situación actual, se identifican los usuarios participantes de cada una de las unidades organizativas afectadas por dicho estudio. Se informa a los usuarios identificados como implicados en el Estudio de la Situación Actual, se solicita su aceptación y se espera su confirmación. Productos</p>
+<p>De entrada</p>
+<pre><code>Descripción General del Sistema (EVS 1.2)
+Catálogo de Usuarios (EVS 1.2)
+Descripción de la Situación Actual (EVS 1.2)</code></pre>
+<p>De salida</p>
+<pre><code>Catálogo de Usuarios</code></pre>
+<p>Prácticas</p>
+<pre><code>Catalogación
+Sesiones de Trabajo</code></pre>
+<p>Participantes</p>
+<pre><code>Jefe de Proyecto
+Directores de Usuarios</code></pre>
+</section>
+<section id="tarea-evs-2.3-descripción-de-los-sistemas-de-información-existentes" class="level3" data-number="3.3.3">
+<h3 data-number="3.3.3" class="anchored" data-anchor-id="tarea-evs-2.3-descripción-de-los-sistemas-de-información-existentes"><span class="header-section-number">3.3.3</span> Tarea EVS 2.3: Descripción de los Sistemas de Información Existentes</h3>
+<p>En esta tarea se describen los sistemas de información existentes afectados, según el alcance y nivel de detalle establecido en la tarea Valoración del Estudio de la Situación Actual (EVS 2.1), mediante sesiones de trabajo con los usuarios designados para este estudio.</p>
+<p>Si se ha decidido describir los sistemas a nivel lógico, y si existe un conocimiento suficiente de los sistemas de información a especificar, puede hacerse directamente, aplicando las técnicas de modelización y siguiendo un método descendente. Si no se dispone del conocimiento suficiente, se construyen los modelos a partir de la descripción del modelo físico, es decir, de forma ascendente.</p>
+<p>Si se tiene que describir el modelo físico, se puede hacer mediante un Diagrama de Representación en el que se recojan todos los componentes físicos y sus referencias cruzadas. Otra opción es describir el modelo físico de forma más detallada, para lo que es necesaria la utilización de herramientas de tipo scanner.</p>
+<p>Es conveniente indicar la localización geográfica y física actual de los módulos y datos de los sistemas de información afectados, evaluando al mismo tiempo la redundancia en las distintas unidades organizativas. Productos</p>
+<p>De entrada</p>
+<pre><code>Descripción de la Situación Actual (EVS 2.1)
+Catálogo de Usuarios (EVS 2.2)</code></pre>
+<p>De salida</p>
+<pre><code>Descripción de la Situación Actual:
+    Descripción Lógica del Sistema Actual
+    Modelo Físico del Sistema Actual (opcional)
+    Matriz de Localización Geográfica y Física de Módulos y Datos, incluidas las redundancias</code></pre>
+<p>Técnicas</p>
+<pre><code>Diagrama de Flujo de Datos
+Modelo Entidad/Relación extendido
+Diagrama de Clases
+Diagrama de Interacción de Objetos
+Matricial</code></pre>
+<p>Prácticas</p>
+<pre><code>Diagrama de Representación
+Sesiones de Trabajo</code></pre>
+<p>Participantes</p>
+<pre><code>Analistas
+Usuarios Expertos
+Equipo de Soporte Técnico</code></pre>
+</section>
+<section id="tarea-evs-2.4-realización-del-diagnóstico-de-la-situación-actual" class="level3" data-number="3.3.4">
+<h3 data-number="3.3.4" class="anchored" data-anchor-id="tarea-evs-2.4-realización-del-diagnóstico-de-la-situación-actual"><span class="header-section-number">3.3.4</span> Tarea EVS 2.4: Realización del Diagnóstico de la Situación Actual</h3>
+<p>Con el fin de elaborar el diagnóstico de la situación actual se analiza la información de los sistemas de información existentes, obtenida en la tarea anterior y se identifican problemas, deficiencias y mejoras. Estas últimas deben tenerse en cuenta en la definición de los requisitos.</p>
+<p>En el caso de haber realizado un Plan de Sistemas de Información, se considera la valoración realizada sobre los sistemas de información actuales que pertenecen al ámbito de este estudio.</p>
+<p>Si se ha tomado la decisión de no describir la situación actual, se realiza un diagnóstico global justificando esta decisión. Productos</p>
+<p>De entrada</p>
+<pre><code>Descripción de la Situación Actual (EVS 2.3)
+Catálogo de Objetivos del EVS (EVS 1.3)
+Valoración de la Situación actual (PSI 5.3)</code></pre>
+<p>De salida</p>
+<pre><code>Descripción de la Situación Actual:
+    Diagnóstico de Situación Actual</code></pre>
+<p>Participantes</p>
+<pre><code>Analistas
+Responsable de Mantenimiento</code></pre>
+</section>
+</section>
+<section id="actividad-evs-3-definición-de-requisitos-del-sistema" class="level2" data-number="3.4">
+<h2 data-number="3.4" class="anchored" data-anchor-id="actividad-evs-3-definición-de-requisitos-del-sistema"><span class="header-section-number">3.4</span> Actividad EVS 3: Definición de Requisitos del Sistema</h2>
+<p>Esta actividad incluye la determinación de los requisitos generales, mediante una serie de sesiones de trabajo con los usuarios participantes, que hay que planificar y realizar. Una vez finalizadas, se analiza la información obtenida definiendo los requisitos y sus prioridades, que se añaden al catálogo de requisitos que servirá para el estudio y valoración de las distintas alternativas de solución que se propongan. TAREA PRODUCTOS TÉCNICAS Y PRÁCTICAS PARTICIPANTES EVS 3.1: Identificación de las Directrices Técnicas y de Gestión</p>
+<pre><code>Catálogo de Normas
+
+
+
+Catalogación
+
+
+
+Jefe de Proyecto
+Analistas
+Usuarios Expertos</code></pre>
+<p>EVS 3.2: Identificación de Requisitos</p>
+<pre><code>Identificación de Requisitos
+
+
+
+Sesiones de trabajo
+
+
+
+Jefe de Proyecto
+Analistas
+Usuarios Expertos</code></pre>
+<p>EVS 3.3: Catalogación de Requisitos</p>
+<pre><code>Catálogo de Requisitos
+
+
+
+Catalogación
+
+
+
+Jefe de Proyecto
+Analistas
+Usuarios Expertos</code></pre>
+<section id="tarea-evs-3.1-identificación-de-las-directrices-técnicas-y-de-gestión" class="level3" data-number="3.4.1">
+<h3 data-number="3.4.1" class="anchored" data-anchor-id="tarea-evs-3.1-identificación-de-las-directrices-técnicas-y-de-gestión"><span class="header-section-number">3.4.1</span> Tarea EVS 3.1: Identificación de las Directrices Técnicas y de Gestión</h3>
+<p>La realización de esta tarea permite considerar los términos de referencia para el sistema en estudio desde el punto de vista de directrices tanto técnicas como de gestión. Si el sistema en estudio pertenece al ámbito de un Plan de Sistemas de Información vigente, éste proporciona un marco de referencia a considerar en esta tarea.</p>
+<p>Con este fin, se recoge información sobre los estándares y procedimientos que deben considerarse al proponer una solución, relativos a:</p>
+<pre><code>Políticas técnicas:
+    Gestión de Proyectos (seguimiento, revisión y aprobación final).
+    Desarrollo de Sistemas (existencia de normativas, metodologías y técnicas de programación).
+    Arquitectura de Sistemas (centralizada, distribuida).
+Política de Seguridad (control de accesos, integridad de datos, disponibilidad de aplicaciones).
+Directrices de Planificación.
+Directrices de Gestión de Cambios.
+Directrices de Gestión de Calidad.</code></pre>
+<p>Productos</p>
+<p>De entrada</p>
+<pre><code>Catálogo de Normas del PSI (PSI 3.2)
+Recopilación de Directrices Técnicas y de Gestión (externo)</code></pre>
+<p>De salida</p>
+<pre><code>Catálogo de Normas</code></pre>
+<p>Prácticas</p>
+<pre><code>Catalogación</code></pre>
+<p>Participantes</p>
+<pre><code>Jefe de Proyecto
+Analistas
+Usuarios Expertos</code></pre>
+</section>
+<section id="tarea-evs-3.2-identificación-de-requisitos" class="level3" data-number="3.4.2">
+<h3 data-number="3.4.2" class="anchored" data-anchor-id="tarea-evs-3.2-identificación-de-requisitos"><span class="header-section-number">3.4.2</span> Tarea EVS 3.2: Identificación de Requisitos</h3>
+<p>Para la obtención de las necesidades que ha de cubrir el sistema en estudio, se debe decidir qué tipo de sesiones de trabajo se realizarán y con qué frecuencia tendrán lugar, en función de la disponibilidad de los usuarios participantes.</p>
+<p>Si se ha realizado el Estudio de la Situación Actual (EVS 2), puede ser conveniente seleccionar la información de los sistemas de información existentes que resulte de interés para el desarrollo de dichas sesiones de trabajo.</p>
+<p>Una vez establecidos los puntos anteriores, se planifican las sesiones de trabajo con los usuarios participantes identificados al estudiar el alcance del Estudio de Viabilidad del Sistema (EVS 1.3), y se realizan de acuerdo al plan previsto. La información obtenida depende del tipo de sesión de trabajo seleccionado. Productos</p>
+<p>De entrada</p>
+<pre><code>Descripción General del Sistema (EVS 1.2)
+Catálogo de Requisitos (EVS 1.2)
+Equipo de Trabajo del EVS (EVS 1.3)
+Catálogo de Usuarios (EVS 2.2/1.3)
+Descripción de la Situación Actual (EVS 2.4)</code></pre>
+<p>De salida</p>
+<pre><code>Identificación de Requisitos</code></pre>
+<p>Prácticas</p>
+<pre><code>Sesiones de Trabajo</code></pre>
+<p>Participantes</p>
+<pre><code>Jefe de Proyecto
+Analistas
+Usuarios Expertos</code></pre>
+</section>
+<section id="tarea-evs-3.3-catalogación-de-requisitos" class="level3" data-number="3.4.3">
+<h3 data-number="3.4.3" class="anchored" data-anchor-id="tarea-evs-3.3-catalogación-de-requisitos"><span class="header-section-number">3.4.3</span> Tarea EVS 3.3: Catalogación de Requisitos</h3>
+<p>Se analiza la información obtenida en las sesiones de trabajo para la Identificación de Requisitos, definiendo y catalogando los requisitos (funcionales y no funcionales) que debe satisfacer el sistema, indicando sus prioridades.</p>
+<p>Se incluirán también requisitos relativos a distribución geográfica y entorno tecnológico. Productos</p>
+<p>De entrada</p>
+<pre><code>Identificación de Requisitos (EVS 3.2)
+Catálogo de Requisitos (EVS 1.2)</code></pre>
+<p>De salida</p>
+<pre><code>Catálogo de Requisitos</code></pre>
+<p>Prácticas</p>
+<pre><code>Catalogación</code></pre>
+<p>Participantes</p>
+<pre><code>Jefe de Proyecto
+Analistas
+Usuarios Expertos</code></pre>
+</section>
+</section>
+<section id="actividad-evs-4-estudio-de-alternativas-de-solución" class="level2" data-number="3.5">
+<h2 data-number="3.5" class="anchored" data-anchor-id="actividad-evs-4-estudio-de-alternativas-de-solución"><span class="header-section-number">3.5</span> Actividad EVS 4: Estudio de Alternativas de Solución</h2>
+<p>Este estudio se centra en proponer diversas alternativas que respondan satisfactoriamente a los requisitos planteados, considerando también los resultados obtenidos en el Estudio de la Situación Actual (EVS 2), en el caso de que se haya realizado.</p>
+<p>Teniendo en cuenta el ámbito y funcionalidad que debe cubrir el sistema, puede ser conveniente realizar, previamente a la definición de cada alternativa, una descomposición del sistema en subsistemas.</p>
+<p>En la descripción de las distintas alternativas de solución propuestas, se debe especificar si alguna de ellas está basada, total o parcialmente, en un producto existente en el mercado. Si la alternativa incluye un desarrollo a medida, se debe incorporar en la descripción de la misma un modelo abstracto de datos y un modelo de procesos, y en orientación a objetos, un modelo de negocio y un modelo de dominio. TAREA PRODUCTOS TÉCNICAS Y PRÁCTICAS PARTICIPANTES EVS 4.1: Preselección de Alternativas de Solución</p>
+<pre><code>Descripción Inicial del Sistema en Subsistemas (opcional)
+Alternativas de Solución a Estudiar
+
+
+
+Diagrama de Representación
+
+
+
+Jefe de Proyecto
+Analistas
+Técnico de sistemas</code></pre>
+<p>EVS 4.2: Descripción de las Alternativas de Solución</p>
+<pre><code>Catálogo de Requisitos
+Alternativas de solución a estudiar:
+    Catálogo de Requisitos (actualizado)
+    Modelo de Descomposición en Subsistemas
+    Matroz Procesos / Localización Geográfica
+    Matriz Datos / Localización Geográfica
+    Entorno Tecnológico y Comunicaciones
+    Estrategia de Implantación Global del Sistema
+    Si la alternativa requiere desarrollo:
+    Modelo Abstracto de Datos / Modelo de Procesos (En caso de Estructurado)
+    Modelo de Negocio / Modelo de Dominio (En caso de Orientación a Objetos)
+    Si la alternativa incluye producto software estándar:
+    Descripción del Producto
+    Previsión de Evolución del Producto
+    Costes Ocasionados por Producto
+    Estándares del Producto
+    Descripción de Adaptación (si es necesaria)
+
+
+
+Matricial
+Modelo Entidad/Relación Extendido
+Diagrama de Flujo de Datos
+Casos de Uso
+Diagrama de Clases
+Catalogación
+Diagrama de Representación
+
+
+
+Jefe de Proyecto
+Analistas
+Usuarios Expertos
+Técnicos de sistemas
+Responsables de Seguridad
+Especialistas en Comunicaciones</code></pre>
+<section id="tarea-evs-4.1-preselección-de-alternativas-de-solución" class="level3" data-number="3.5.1">
+<h3 data-number="3.5.1" class="anchored" data-anchor-id="tarea-evs-4.1-preselección-de-alternativas-de-solución"><span class="header-section-number">3.5.1</span> Tarea EVS 4.1: Preselección de Alternativas de Solución</h3>
+<p>Una vez definidos los requisitos a cubrir por el sistema, se estudian las diferentes opciones que hay para configurar la solución. Entre ellas, hay que considerar la adquisición de productos software estándar del mercado, desarrollos a medida o soluciones mixtas.</p>
+<p>Dependiendo del alcance del sistema y las posibles opciones, puede ser conveniente realizar inicialmente una descomposición del sistema en subsistemas. Se establecen las posibles alternativas sobre las que se va a centrar el estudio de la solución, combinando las opciones que se consideren más adecuadas. Productos</p>
+<p>De entrada</p>
+<pre><code>Información de Productos Software del Mercado (externo)
+Descripción General del Sistema (EVS 1.2)
+Descripción de la Situación Actual (EVS 2.4)
+Catálogo de Requisitos (EVS 3.3)</code></pre>
+<p>De salida</p>
+<pre><code>Descomposición Inicial del Sistema en Subsistemas (opcional)
+Alternativas de Solución a Estudiar</code></pre>
+<p>Prácticas</p>
+<pre><code>Diagrama de Representación</code></pre>
+<p>Participantes</p>
+<pre><code>Jefe de Proyecto
+Analistas
+Técnicos de Sistema</code></pre>
+</section>
+<section id="tarea-evs-4.2-descripción-de-las-alternativas-de-solución" class="level3" data-number="3.5.2">
+<h3 data-number="3.5.2" class="anchored" data-anchor-id="tarea-evs-4.2-descripción-de-las-alternativas-de-solución"><span class="header-section-number">3.5.2</span> Tarea EVS 4.2: Descripción de las Alternativas de Solución</h3>
+<p>Para cada alternativa propuesta, se identifican los subsistemas que cubre y los requisitos a los que se da respuesta.</p>
+<p>Se deben considerar también aspectos relativos a la cobertura geográfica (ámbito y limitaciones) de procesos y datos, teniendo en cuenta a su vez la gestión de comunicaciones y control de red.</p>
+<p>En la definición de cada alternativa, se propone una estrategia de implantación teniendo en cuenta tanto la cobertura global del sistema como la cobertura geográfica.</p>
+<p>Si la alternativa incluye desarrollo se describe el modelo abstracto de datos y el modelo de procesos, y en el caso de Orientación a Objetos, el modelo de negocio y, opcionalmente, el modelo de dominio. Se propone el entorno tecnológico que se considera más apropiado para la parte del sistema basada en desarrollo y se describen los procesos manuales.</p>
+<p>Si la alternativa incluye una solución basada en producto se analiza su evolución prevista, adaptabilidad y portabilidad, así como los costes ocasionados por licencias, y los estándares del producto. Igualmente se valora y determina su entorno tecnológico. Productos</p>
+<p>De entrada</p>
+<pre><code>Descripción General del Sistema (EVS 1.2)
+Descripción de la Situación Actual (EVS 2.4)
+Catálogo de Requisitos (EVS 3.3)
+Descomposición Inicial del Sistema en Subsistemas (EVS 4.1) (opcional)
+Alternativas de Solución a Estudiar (EVS 4.1)</code></pre>
+<p>De salida</p>
+<pre><code>Catálogo de Requisitos (actualizado)
+Alternativas de Solución a Estudiar:
+    Catálogo de Requisitos (cobertura)
+    Modelo de Descomposición en Subsistemas
+    Matriz Procesos / Localización Geográfica
+    Matriz Datos / Localización Geográfica
+    Entorno Tecnológico y Comunicaciones
+    Estrategia de Implantación Global del Sistema
+    Descripción de Procesos Manuales
+    Si la alternativa incluye desarrollo:
+    Modelo Abstracto de Datos / Modelo de Procesos
+    Modelo de Negocio / Modelo de Dominio (en caso de Orientación a Objetos)
+    Si la alternativa incluye un producto software estándar de mercado:
+    Descripción del Producto
+    Evolución del Producto
+    Costes Ocasionados por Producto
+    Estándares del Producto
+    Descripción de Adaptación (si es necesaria)</code></pre>
+<p>Técnicas</p>
+<pre><code>Matricial
+Diagrama de Flujo de Datos
+Modelo Entidad/ Relación extendido
+Diagrama de Clases
+Casos de Uso</code></pre>
+<p>Prácticas</p>
+<pre><code>Catalogación
+Diagrama de Representación</code></pre>
+<p>Participantes</p>
+<pre><code>Jefe de Proyecto
+Analistas
+Usuarios Expertos
+Técnicos de Sistemas
+Responsable de Seguridad
+Especialistas en Comunicaciones</code></pre>
+</section>
+</section>
+<section id="actividad-evs-5-valoración-de-las-alternativas" class="level2" data-number="3.6">
+<h2 data-number="3.6" class="anchored" data-anchor-id="actividad-evs-5-valoración-de-las-alternativas"><span class="header-section-number">3.6</span> Actividad EVS 5: Valoración de las Alternativas</h2>
+<p>Una vez descritas las alternativas se realiza una valoración de las mismas, considerando el impacto en la organización, tanto desde el punto de vista tecnológico y organizativo como de operación, y los posibles beneficios que se esperan contrastados con los costes asociados. Se realiza también un análisis de los riesgos, decidiendo cómo enfocar el plan de acción para minimizar los mismos y cuantificando los recursos y plazos precisos para planificar cada alternativa. TAREA PRODUCTOS TÉCNICAS Y PRÁCTICAS PARTICIPANTES EVS 5.1: Estudio de la Inversión</p>
+<pre><code>Valoración de Alternativas:
+    Impacto en la Organización de Alternativas
+    Coste/Beneficio de Alternativas
+
+
+
+Análisis Coste/Beneficio
+
+
+
+Jefe de Proyecto
+Analistas</code></pre>
+<p>EVS 5.2: Estudio de los Riesgos</p>
+<pre><code>Valoración de Alternativas:
+    Valoración de Riesgos
+
+
+
+Impacto en la Organización
+
+
+
+Jefe de Proyecto
+Analistas</code></pre>
+<p>EVS 5.3: Planificación de Alternativas</p>
+<pre><code>Plan de Trabajo de Cada Alternativa:
+    Enfoque del Plan de Trabajo de Cada Alternativa
+    Planificación de Cada Alternativa
+
+
+
+Planificación
+
+
+
+Jefe de Proyecto
+Analistas</code></pre>
+<section id="tarea-evs-5.1-estudio-de-la-inversión" class="level3" data-number="3.6.1">
+<h3 data-number="3.6.1" class="anchored" data-anchor-id="tarea-evs-5.1-estudio-de-la-inversión"><span class="header-section-number">3.6.1</span> Tarea EVS 5.1: Estudio de la Inversión</h3>
+<p>Para cada alternativa de solución propuesta, se valora el impacto en la organización y se establece su viabilidad económica. Para ello, se realiza un análisis coste/beneficio que determina los costes del sistema y los pondera con los beneficios tangibles, cuantificables directamente, y con los beneficios intangibles, buscando el modo de cuantificarlos. Productos</p>
+<p>De entrada</p>
+<pre><code>Alternativas de Solución a Estudiar (EVS 4.2)</code></pre>
+<p>De salida</p>
+<pre><code>Valoración de Alternativas:
+    Impacto en la Organización de Alternativas
+    Coste / beneficio de Alternativas</code></pre>
+<p>Técnicas</p>
+<pre><code>Análisis Coste/Beneficio</code></pre>
+<p>Participantes</p>
+<pre><code>Jefe de Proyecto
+Analistas</code></pre>
+</section>
+<section id="tarea-evs-5.2-estudio-de-los-riesgos" class="level3" data-number="3.6.2">
+<h3 data-number="3.6.2" class="anchored" data-anchor-id="tarea-evs-5.2-estudio-de-los-riesgos"><span class="header-section-number">3.6.2</span> Tarea EVS 5.2: Estudio de los Riesgos</h3>
+<p>Para cada alternativa se seleccionan los factores de situación que habrá que considerar, relativos tanto a la incertidumbre como a la complejidad del sistema. Se identifican y valoran los riesgos asociados y se determinan las medidas a tomar para minimizarlos. Productos</p>
+<p>De entrada</p>
+<pre><code>Alternativas de Solución a Estudiar (EVS 4.2)
+Valoración de Alternativas (EVS 5.1)</code></pre>
+<p>De salida</p>
+<pre><code>Valoración de Alternativas:
+    Valoración de Riesgos</code></pre>
+<p>Prácticas</p>
+<pre><code>Impacto en la Organización</code></pre>
+<p>Participantes</p>
+<pre><code>Jefe de Proyecto
+Analistas</code></pre>
+</section>
+<section id="tarea-evs-5.3-planificación-de-alternativas" class="level3" data-number="3.6.3">
+<h3 data-number="3.6.3" class="anchored" data-anchor-id="tarea-evs-5.3-planificación-de-alternativas"><span class="header-section-number">3.6.3</span> Tarea EVS 5.3: Planificación de Alternativas</h3>
+<p>En función del análisis de riesgos realizado en la tarea anterior, y para cada una de las alternativas existentes:</p>
+<pre><code>Se determina el enfoque más adecuado para llevar a buen fin la solución propuesta en cada alternativa.
+Se realiza una planificación, teniendo en cuenta los puntos de sincronismo con otros proyectos en desarrollo o que esté previsto desarrollar, según se ha recogido en el catálogo de requisitos.</code></pre>
+<p>De esta manera se garantiza el cumplimiento del plan de trabajo en los restantes procesos del ciclo de vida. Productos</p>
+<p>De entrada</p>
+<pre><code>Catálogo de Requisitos (EVS 4.2)
+Alternativas de Solución a Estudiar (EVS 4.2)
+Valoración de Alternativas (EVS 5.2)</code></pre>
+<p>De salida</p>
+<pre><code>Plan de Trabajo de Cada Alternativa:
+    Enfoque del Plan de Trabajo de Cada Alternativa
+    Planificación de Cada Alternativa</code></pre>
+<p>Técnicas</p>
+<pre><code>Planificación</code></pre>
+<p>Participantes</p>
+<pre><code>Jefe de Proyecto
+Analistas</code></pre>
+</section>
+</section>
+<section id="actividad-evs-6-selección-de-la-solución" class="level2" data-number="3.7">
+<h2 data-number="3.7" class="anchored" data-anchor-id="actividad-evs-6-selección-de-la-solución"><span class="header-section-number">3.7</span> Actividad EVS 6: Selección de la Solución</h2>
+<p>Antes de finalizar el Estudio de Viabilidad del Sistema, se convoca al Comité de Dirección para la presentación de las distintas alternativas de solución, resultantes de la actividad anterior. En dicha presentación, se debaten las ventajas de cada una de ellas, incorporando las modificaciones que se consideren oportunas, con el fin de seleccionar la más adecuada. Finalmente, se aprueba la solución o se determina su inviabilidad. TAREA PRODUCTOS TÉCNICAS Y PRÁCTICAS PARTICIPANTES EVS 6.1: Convocatoria de la Presentación</p>
+<pre><code>Plan de Presentación de Alternativas
+
+
+
+Presentación
+
+
+
+Jefe de Proyecto</code></pre>
+<p>EVS 6.2: Evaluación de las Alternativas y Selección</p>
+<pre><code>Plan de Presentación de Alternativas
+Catálogo de Requisitos
+Solución Propuesta:
+    Descripción de la Solución
+    Contexto del Sistema (con la definición de las interfaces)
+    Impacto en Organización de la Solución
+    Coste/Beneficio de la Solución
+    Valoración de Riesgos de la Solución
+    Enfoque del Plan de Trabajo de la Solución
+    Planificación de la Solución
+
+
+
+Presentación
+Sesiones de trabajo
+
+
+
+Comité de Dirección
+Jefe de Proyecto
+Analistas</code></pre>
+<p>EVS 6.3: Aprobación de la Solución</p>
+<pre><code>Aprobación de la Solución
+
+
+
+Comité de Dirección
+Jefe de Proyecto</code></pre>
+<section id="tarea-evs-6.1-convocatoria-de-la-presentación" class="level3" data-number="3.7.1">
+<h3 data-number="3.7.1" class="anchored" data-anchor-id="tarea-evs-6.1-convocatoria-de-la-presentación"><span class="header-section-number">3.7.1</span> Tarea EVS 6.1: Convocatoria de la Presentación</h3>
+<p>Se efectúa la convocatoria de la presentación de las distintas alternativas propuestas, adjuntando los productos de la actividad anterior con el fin de que el Comité de Dirección pueda estudiar previamente su contenido. Se espera confirmación por parte del Comité de Dirección de las alternativas a presentar. Productos</p>
+<p>De entrada</p>
+<pre><code>Catálogo de Usuarios (EVS 2.2/1.3)
+Alternativas de Solución a Estudiar (EVS 4.2)
+Valoración de Alternativas (EVS 5.2)
+Plan de Trabajo de Cada Alternativa (EVS 5.3)</code></pre>
+<p>De salida</p>
+<pre><code>Plan de Presentación de Alternativas</code></pre>
+<p>Prácticas</p>
+<pre><code>Presentación</code></pre>
+<p>Participantes</p>
+<pre><code>Jefe de Proyecto</code></pre>
+</section>
+<section id="tarea-evs-6.2-evaluación-de-las-alternativas-y-selección" class="level3" data-number="3.7.2">
+<h3 data-number="3.7.2" class="anchored" data-anchor-id="tarea-evs-6.2-evaluación-de-las-alternativas-y-selección"><span class="header-section-number">3.7.2</span> Tarea EVS 6.2: Evaluación de las Alternativas y Selección</h3>
+<p>Una vez recibida la confirmación de qué alternativas van a ser presentadas para su valoración, se efectúa su presentación al Comité de Dirección, debatiendo sobre las ventajas e inconvenientes de cada una de ellas y realizando las modificaciones que sugiera dicho Comité, hasta la selección de la solución final. Productos</p>
+<p>De entrada</p>
+<pre><code>Descripción General del Sistema (Contexto del Sistema) (EVS 1.2)
+Catálogo de Requisitos (EVS 4.2)
+Alternativas de Solución a Estudiar (EVS 4.2)
+Valoración de Alternativas (EVS 5.2)
+Plan de Trabajo de Cada Alternativa (EVS 5.3)
+Plan de Presentación de Alternativas (EVS 6.1)</code></pre>
+<p>De salida</p>
+<pre><code>Plan de Presentación de Alternativas
+Catálogo de Requisitos (Actualizado en Función de la Cobertura de la Solución)
+Solución Propuesta:
+    Descripción de la Solución
+        Modelo de Descomposición en Subsistemas
+        Matriz Procesos / Localización Geográfica
+        Matriz Datos / Localización Geográfica
+        Entorno Tecnológico y Comunicaciones
+        Estrategia de Implantación Global del Sistema
+        Descripción de Procesos Manuales
+        Si la alternativa incluye desarrollo:
+        Modelo Abstracto de Datos / Modelo de Procesos
+        Modelo de Negocio / Modelo de Dominio
+        Si la alternativa incluye un producto software estándar de mercado:
+        Descripción del Producto
+        Evolución del Producto
+        Costes Ocasionados por Producto
+        Estándares del Producto
+        Descripción de Adaptación (si es necesaria)
+    Contexto del Sistema (con la Definición de las Interfaces en Función de la Solución)
+    Impacto en la Organización de la Solución
+    Coste / Beneficio de la Solución
+    Valoración de Riesgos de la Solución
+    Enfoque del Plan de Trabajo de la Solución
+    Planificación de la Solución</code></pre>
+<p>Prácticas</p>
+<pre><code>Presentación
+Sesiones de Trabajo</code></pre>
+<p>Participantes</p>
+<pre><code>Comité de Dirección
+Jefe de Proyecto
+Analistas</code></pre>
+</section>
+<section id="tarea-evs-6.3-aprobación-de-la-solución" class="level3" data-number="3.7.3">
+<h3 data-number="3.7.3" class="anchored" data-anchor-id="tarea-evs-6.3-aprobación-de-la-solución"><span class="header-section-number">3.7.3</span> Tarea EVS 6.3: Aprobación de la Solución</h3>
+<p>El Comité de Dirección da su aprobación formal o determina la inviabilidad del sistema, por motivos económicos, de funcionalidad como resultado del incumplimiento de los requisitos identificados en plazos razonables o de cobertura de los mismos, etc. Productos</p>
+<p>De entrada</p>
+<pre><code>Catálogo de Requisitos (EVS 6.2)
+Solución Propuesta (EVS 6.2)</code></pre>
+<p>De salida</p>
+<pre><code>Aprobación de la Solución</code></pre>
+<p>Participantes</p>
+<pre><code>Comité de Dirección
+Jefe de Proyecto</code></pre>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copiado");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copiado");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/pmgallardo\.github\.io\/metrica-v3\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../01-principal/02-psi.html" class="pagination-link" aria-label="Planificación de Sistemas de Información">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Planificación de Sistemas de Información</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../01-principal/04-asi.html" class="pagination-link" aria-label="Análisis del Sistema de Información">
+        <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Análisis del Sistema de Información</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/pmgallardo/metrica-v3/edit/main/01-principal/03-evs.qmd" class="toc-action"><i class="bi bi-github"></i>Editar esta página</a></li><li><a href="https://github.com/pmgallardo/metrica-v3/issues/new" class="toc-action"><i class="bi empty"></i>Informar sobre problema</a></li><li><a href="https://github.com/pmgallardo/metrica-v3/blob/main/01-principal/03-evs.qmd" class="toc-action"><i class="bi empty"></i>Ver el código</a></li></ul></div></div></div></footer></body></html>

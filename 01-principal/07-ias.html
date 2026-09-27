@@ -1,0 +1,1478 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.38">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>7&nbsp; Implantación y Aceptación del Sistema – Métrica v.3</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../01-principal/08-msi.html" rel="next">
+<link href="../01-principal/06-csi.html" rel="prev">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-5d2bbbc7808559eb98ab364e0d5f4cb2.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No se han encontrado resultados",
+    "search-matching-documents-text": "documentos encontrados",
+    "search-copy-link-title": "Copiar el enlace en la búsqueda",
+    "search-hide-matches-text": "Ocultar resultados adicionales",
+    "search-more-match-text": "resultado adicional en este documento",
+    "search-more-matches-text": "resultados adicionales en este documento",
+    "search-clear-button-title": "Borrar",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancelar",
+    "search-submit-button-title": "Enviar",
+    "search-label": "Buscar"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../styles.css">
+</head>
+
+<body class="nav-sidebar docked quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../01-principal/01-introduccion.html">Estructura principal</a></li><li class="breadcrumb-item"><a href="../01-principal/07-ias.html"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Implantación y Aceptación del Sistema</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Buscar" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../">Métrica v.3</a> 
+        <div class="sidebar-tools-main">
+    <a href="https://github.com/pmgallardo/metrica-v3" title="Ejecutar el código" class="quarto-navigation-tool px-1" aria-label="Ejecutar el código"><i class="bi bi-github"></i></a>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Buscar"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Métrica v.3</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Estructura principal</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Alternar sección">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../01-principal/01-introduccion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introducción</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../01-principal/02-psi.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Planificación de Sistemas de Información</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../01-principal/03-evs.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Estudio de Viabilidad del Sistema</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../01-principal/04-asi.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Análisis del Sistema de Información</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../01-principal/05-dsi.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Diseño del Sistema de Información</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../01-principal/06-csi.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Construcción del Sistema de Información</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../01-principal/07-ias.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Implantación y Aceptación del Sistema</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../01-principal/08-msi.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Mantenimiento del Sistema de Información</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Interfaces</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Alternar sección">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../02-interfaces/01-calidad.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Aseguramiento de la Calidad</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../02-interfaces/02-seguridad.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Seguridad</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../02-interfaces/03-configuracion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Gestión de Configuración</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../02-interfaces/04-proyectos.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Gestión de Proyectos</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">Técnicas</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Alternar sección">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../03-tecnicas/01-tecnicas.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Técnicas</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
+ <span class="menu-text">Participantes</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Alternar sección">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../04-participantes/01-participantes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Participantes</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Tabla de contenidos</h2>
+   
+  <ul>
+  <li><a href="#participantes-en-las-actividades-del-proceso-ias" id="toc-participantes-en-las-actividades-del-proceso-ias" class="nav-link active" data-scroll-target="#participantes-en-las-actividades-del-proceso-ias"><span class="header-section-number">7.1</span> PARTICIPANTES EN LAS ACTIVIDADES DEL PROCESO IAS</a></li>
+  <li><a href="#técnicasprácticas-utilizadas-en-las-actividades-del-proceso-ias" id="toc-técnicasprácticas-utilizadas-en-las-actividades-del-proceso-ias" class="nav-link" data-scroll-target="#técnicasprácticas-utilizadas-en-las-actividades-del-proceso-ias"><span class="header-section-number">7.2</span> TÉCNICAS/PRÁCTICAS UTILIZADAS EN LAS ACTIVIDADES DEL PROCESO IAS</a>
+  <ul class="collapse">
+  <li><a href="#actividad-ias-1-establecimiento-del-plan-de-implantación" id="toc-actividad-ias-1-establecimiento-del-plan-de-implantación" class="nav-link" data-scroll-target="#actividad-ias-1-establecimiento-del-plan-de-implantación"><span class="header-section-number">7.2.1</span> Actividad IAS 1: Establecimiento del Plan de Implantación</a></li>
+  <li><a href="#actividad-ias-2-formación-necesaria-para-la-implantación" id="toc-actividad-ias-2-formación-necesaria-para-la-implantación" class="nav-link" data-scroll-target="#actividad-ias-2-formación-necesaria-para-la-implantación"><span class="header-section-number">7.2.2</span> Actividad IAS 2: Formación Necesaria para la Implantación</a></li>
+  <li><a href="#actividad-ias-3-incorporación-del-sistema-al-entorno-de-operación" id="toc-actividad-ias-3-incorporación-del-sistema-al-entorno-de-operación" class="nav-link" data-scroll-target="#actividad-ias-3-incorporación-del-sistema-al-entorno-de-operación"><span class="header-section-number">7.2.3</span> Actividad IAS 3: Incorporación del Sistema al Entorno de Operación</a></li>
+  <li><a href="#actividad-ias-4-carga-de-datos-al-entorno-de-operación" id="toc-actividad-ias-4-carga-de-datos-al-entorno-de-operación" class="nav-link" data-scroll-target="#actividad-ias-4-carga-de-datos-al-entorno-de-operación"><span class="header-section-number">7.2.4</span> Actividad IAS 4: Carga de Datos al Entorno de Operación</a></li>
+  <li><a href="#actividad-ias-5-pruebas-de-implantación-del-sistema" id="toc-actividad-ias-5-pruebas-de-implantación-del-sistema" class="nav-link" data-scroll-target="#actividad-ias-5-pruebas-de-implantación-del-sistema"><span class="header-section-number">7.2.5</span> Actividad IAS 5: Pruebas de Implantación del Sistema</a></li>
+  <li><a href="#actividad-ias-6-pruebas-de-aceptación-del-sistema" id="toc-actividad-ias-6-pruebas-de-aceptación-del-sistema" class="nav-link" data-scroll-target="#actividad-ias-6-pruebas-de-aceptación-del-sistema"><span class="header-section-number">7.2.6</span> Actividad IAS 6: Pruebas de Aceptación del Sistema</a></li>
+  <li><a href="#actividad-ias-7-preparación-del-mantenimiento-del-sistema" id="toc-actividad-ias-7-preparación-del-mantenimiento-del-sistema" class="nav-link" data-scroll-target="#actividad-ias-7-preparación-del-mantenimiento-del-sistema"><span class="header-section-number">7.2.7</span> Actividad IAS 7: Preparación del Mantenimiento del Sistema</a></li>
+  <li><a href="#actividad-ias-8-establecimiento-del-acuerdo-de-nivel-de-servicio" id="toc-actividad-ias-8-establecimiento-del-acuerdo-de-nivel-de-servicio" class="nav-link" data-scroll-target="#actividad-ias-8-establecimiento-del-acuerdo-de-nivel-de-servicio"><span class="header-section-number">7.2.8</span> Actividad IAS 8: Establecimiento del Acuerdo de Nivel de Servicio</a></li>
+  <li><a href="#actividad-ias-9-presentación-y-aprobación-del-sistema" id="toc-actividad-ias-9-presentación-y-aprobación-del-sistema" class="nav-link" data-scroll-target="#actividad-ias-9-presentación-y-aprobación-del-sistema"><span class="header-section-number">7.2.9</span> Actividad IAS 9: Presentación y Aprobación del Sistema</a></li>
+  <li><a href="#actividad-ias-10-paso-a-producción" id="toc-actividad-ias-10-paso-a-producción" class="nav-link" data-scroll-target="#actividad-ias-10-paso-a-producción"><span class="header-section-number">7.2.10</span> Actividad IAS 10: Paso a Producción</a></li>
+  </ul></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/pmgallardo/metrica-v3/edit/main/01-principal/07-ias.qmd" class="toc-action"><i class="bi bi-github"></i>Editar esta página</a></li><li><a href="https://github.com/pmgallardo/metrica-v3/issues/new" class="toc-action"><i class="bi empty"></i>Informar sobre problema</a></li><li><a href="https://github.com/pmgallardo/metrica-v3/blob/main/01-principal/07-ias.qmd" class="toc-action"><i class="bi empty"></i>Ver el código</a></li></ul></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../01-principal/01-introduccion.html">Estructura principal</a></li><li class="breadcrumb-item"><a href="../01-principal/07-ias.html"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Implantación y Aceptación del Sistema</span></a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Implantación y Aceptación del Sistema</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>DESCRIPCIÓN Y OBJETIVOS</p>
+<p>Este proceso tiene como objetivo principal la entrega y aceptación del sistema en su totalidad, y la realización de todas las actividades necesarias para el paso a producción del mismo.</p>
+<p>En primer lugar, se revisa la estrategia de implantación que ya se determinó en el proceso Estudio de Viabilidad del Sistema (EVS). Se estudia su alcance y, en función de sus características, se define un plan de implantación y se especifica el equipo que lo va a llevar a cabo. Conviene señalar la participación del usuario de operación en las pruebas de implantación, del usuario final en las pruebas de aceptación, y del responsable de mantenimiento.</p>
+<p>Las actividades previas al inicio de la producción incluyen la preparación de la infraestructura necesaria para configurar el entorno, la instalación de los componentes, la activación de los procedimientos manuales y automáticos asociados y, cuando proceda, la migración o carga inicial de datos. Para ello se toman como punto de partida los productos software probados, obtenidos en el proceso Construcción del Sistema de Información (CSI) y su documentación asociada.</p>
+<p>Se realizan las pruebas de implantación y de aceptación del sistema en su totalidad. Responden a los siguientes propósitos:</p>
+<pre><code>Las pruebas de implantación cubren un rango muy amplio, que va desde la comprobación de cualquier detalle de diseño interno hasta aspectos tales como las comunicaciones. Se debe comprobar que el sistema puede gestionar los volúmenes de información requeridos, se ajusta a los tiempos de respuesta deseados y que los procedimientos de respaldo, seguridad e interfaces con otros sistemas funcionan correctamente. Se debe verificar también el comportamiento del sistema bajo las condiciones más extremas.
+Las pruebas de aceptación se realizan por y para los usuarios. Tienen como objetivo validar formalmente que el sistema se ajusta a sus necesidades.</code></pre>
+<p>Asimismo, se llevan a cabo las tareas necesarias para la preparación del mantenimiento, siempre y cuando se haya decidido que éste va a efectuarse. En cualquier caso, es necesario que la persona que vaya a asumir el mantenimiento conozca el sistema, antes de su incorporación al entorno de producción.</p>
+<p>Además hay que determinar los servicios (y niveles para cada uno) que requiere el sistema que se va a implantar, y el acuerdo que se adquiere una vez que se inicie la producción. Hay que distinguir entre servicios de gestión de operaciones (servicios por lotes, seguridad, comunicaciones, etc.) y servicios al cliente (servicio de atención a usuario, mantenimiento, etc.) que se deben negociar en cuanto a recursos, horarios, coste, etc. Se fija el nivel con el que se prestará el servicio como indicador de la calidad del mismo.</p>
+<p>Conviene señalar que la implantación puede ser un proceso iterativo que se realiza de acuerdo al plan establecido para el comienzo de la producción del sistema en su entorno de operación. Para establecer este plan se tiene en cuenta:</p>
+<pre><code>El cumplimiento de los requisitos de implantación definidos en la actividad Establecimiento de Requisitos (ASI 2) y especificados en la actividad Establecimiento de Requisitos de Implantación (DSI 11).
+La estrategia de transición del sistema antiguo al nuevo.</code></pre>
+<p>Finalmente, se realizan las acciones necesarias para el inicio de la producción.</p>
+<p>En el siguiente gráfico se muestra la relación de actividades de este proceso.</p>
+<p><img src="../images/ias-actividades.jpg" class="img-fluid"></p>
+<p>IMPLANTACIÓN Y ACEPTACIÓN DEL SISTEMA</p>
+<p><img src="../images/ias-plan.jpg" class="img-fluid"></p>
+<section id="participantes-en-las-actividades-del-proceso-ias" class="level2" data-number="7.1">
+<h2 data-number="7.1" class="anchored" data-anchor-id="participantes-en-las-actividades-del-proceso-ias"><span class="header-section-number">7.1</span> PARTICIPANTES EN LAS ACTIVIDADES DEL PROCESO IAS</h2>
+<p>IMPLANTACIÓN Y ACEPTACIÓN DEL SISTEMA ACTIVIDADES IAS 1 IAS 2 IAS 3 IAS 4 IAS 5 IAS 6 IAS 7 IAS 8 IAS 9 IAS 10 Administrador de B/D X<br>
+Comité de Dirección X X X Comité de Seguimiento X<br>
+Directores Usuarios X X X X X X<br>
+Equipo de Formación X<br>
+Equipo de Implantación X X X X X Equipo de Operación X X<br>
+Equipo de Soporte Técnico X X Jefe de Proyecto X X X X X X X X X Responsable de Implantación X X X X X X X Responsable de Mantenimiento X<br>
+Responsable de Operación X<br>
+Responsable de Sistemas X<br>
+Usuarios Expertos X X</p>
+</section>
+<section id="técnicasprácticas-utilizadas-en-las-actividades-del-proceso-ias" class="level2" data-number="7.2">
+<h2 data-number="7.2" class="anchored" data-anchor-id="técnicasprácticas-utilizadas-en-las-actividades-del-proceso-ias"><span class="header-section-number">7.2</span> TÉCNICAS/PRÁCTICAS UTILIZADAS EN LAS ACTIVIDADES DEL PROCESO IAS</h2>
+<p>IMPLANTACIÓN Y ACEPTACIÓN DEL SISTEMA ACTIVIDADES IAS 1 IAS 2 IAS 3 IAS 4 IAS 5 IAS 6 IAS 7 IAS 8 IAS 9 IAS 10 Diagrama de Representación X<br>
+Presentación X<br>
+Pruebas de Aceptación X<br>
+Pruebas de Implantación X<br>
+Sesiones de Trabajo X X X<br>
+Actividades</p>
+<pre><code>Actividad IAS 1: Establecimiento del Plan de Implantación
+Actividad IAS 2: Formación Necesaria para la Implantación
+Actividad IAS 3: Incorporación del Sistema al Entorno de Operación
+Actividad IAS 4: Carga de Datos al Entorno de Operación
+Actividad IAS 5: Pruebas de Implantación del Sistema
+Actividad IAS 6: Pruebas de Aceptación del Sistema
+Actividad IAS 7: Preparación del Mantenimiento del Sistema
+Actividad IAS 8: Establecimiento del Acuerdo de Nivel de Servicio
+Actividad IAS 9: Presentación y Aprobación del Sistema
+Actividad IAS 10: Paso a Producción </code></pre>
+<section id="actividad-ias-1-establecimiento-del-plan-de-implantación" class="level3" data-number="7.2.1">
+<h3 data-number="7.2.1" class="anchored" data-anchor-id="actividad-ias-1-establecimiento-del-plan-de-implantación"><span class="header-section-number">7.2.1</span> Actividad IAS 1: Establecimiento del Plan de Implantación</h3>
+<p>En esta actividad se revisa la estrategia de implantación para el sistema, establecida inicialmente en el proceso Estudio de Viabilidad del Sistema (EVS). Se identifican los distintos sistemas de información que forman parte del sistema objeto de la implantación. Para cada sistema se analizan las posibles dependencias con otros proyectos, que puedan condicionar el plan de implantación.</p>
+<p>Una vez estudiado el alcance y los condicionantes de la implantación, se decide si ésta se puede llevar a cabo. Será preciso establecer, en su caso, la estrategia que se concretará de forma definitiva en el plan de implantación.</p>
+<p>Se constituye el equipo de implantación, determinando los recursos humanos necesarios para la propia instalación del sistema, para las pruebas de implantación y aceptación, y para la preparación del mantenimiento. Se identifican, para cada uno de ellos, sus perfiles y niveles de responsabilidad. TAREA PRODUCTOS TÉCNICAS Y PRÁCTICAS PARTICIPANTES IAS 1.1: Definición del Plan de Implantación</p>
+<pre><code>Plan de implantación
+
+
+
+Sesiones de trabajo
+
+
+
+Jefe de Proyecto
+Responsable de Implantación
+Responsable de Operación
+Responsable de Sistemas
+Directores de los Usuarios</code></pre>
+<p>IAS 1.2: Especificación del Equipo de Implantación</p>
+<pre><code>Equipo de implantación
+Jefe de Proyecto
+Responsable de Implantación
+Responsable de Operación
+Responsable de Sistemas
+Directores de los Usuarios</code></pre>
+<section id="tarea-ias-1.1-definición-del-plan-de-implantación" class="level4" data-number="7.2.1.1">
+<h4 data-number="7.2.1.1" class="anchored" data-anchor-id="tarea-ias-1.1-definición-del-plan-de-implantación"><span class="header-section-number">7.2.1.1</span> Tarea IAS 1.1: Definición del Plan de Implantación</h4>
+<p>La estrategia de implantación del sistema se habrá determinado en la tarea Evaluación de las Alternativas y Selección (EVS 6.2) del proceso Estudio de Viabilidad del Sistema (EVS), en función de la envergadura del sistema, es decir el número de sistemas de información implicados en la implantación y la cobertura geográfica, cuyo alcance depende de las características y complejidad de los sistemas de información que conforman el sistema objeto de la implantación.</p>
+<p>Se revisan los requisitos de implantación (instalación, infraestructura, formación) establecidos en la tarea Especificación de Requisitos de Implantación (DSI 11.2) y los procedimientos implicados en la implantación, establecidos para cada uno de los sistemas de información en la tarea Especificación de Requisitos de Operación y Seguridad (DSI 1.7), con el fin de asegurar su adecuación a la estrategia global de implantación.</p>
+<p>Una vez analizada la información anterior, se define un plan de implantación que permita calc ular adecuadamente el esfuerzo y los recursos necesarios para llevar a cabo con éxito la implantación. Dicho plan debe contemplar todas las tareas relacionadas con:</p>
+<pre><code>La formación necesaria para la implantación, tanto a usuarios finales como al equipo que se encarga de realizar las pruebas de implantación y aceptación del sistema.
+La preparación de la infraestructura necesaria para la incorporación del sistema al entorno de operación.
+La instalación de todos los componentes y procedimientos manuales y automáticos asociados a cada sistema de información implicado en la implantación.
+La ejecución de los procedimientos de carga inicial y migración de datos, si se determinó su necesidad.
+La realización de las pruebas de implantación y aceptación del sistema.
+La formalización del plan de mantenimiento.</code></pre>
+<p>Productos</p>
+<p>De entrada</p>
+<pre><code>Solución Propuesta (EVS 6.2)
+Diseño de la Arquitectura del Sistema (DSI 7.2)
+Entorno Tecnológico del Sistema (DSI 7.2)
+Procedimientos de Operación y Administración del Sistema (DSI 1.7)
+Procedimientos de Seguridad y Control de Acceso (DSI 1.7)
+Plan de Migración y Carga Inicial de Datos (DSI 9.4)
+Plan de Pruebas (DSI 10.3)
+Catálogo de Requisitos (DSI 11.2)</code></pre>
+<p>De salida</p>
+<pre><code>Plan de Implantación</code></pre>
+<p>Prácticas</p>
+<pre><code>Sesiones de trabajo</code></pre>
+<p>Participantes</p>
+<pre><code>Jefe de Proyecto
+Responsable de Implantación
+Responsable de Operación
+Responsable de Sistemas
+Directores de los Usuarios</code></pre>
+</section>
+<section id="tarea-ias-1.2-especificación-del-equipo-de-implantación" class="level4" data-number="7.2.1.2">
+<h4 data-number="7.2.1.2" class="anchored" data-anchor-id="tarea-ias-1.2-especificación-del-equipo-de-implantación"><span class="header-section-number">7.2.1.2</span> Tarea IAS 1.2: Especificación del Equipo de Implantación</h4>
+<p>Se constituye el equipo de trabajo necesario para llevar a cabo la implantación y aceptación del sistema, según el plan de implantación establecido en la tarea anterior.</p>
+<p>Para ello se identifican, en función del nivel de esfuerzo requerido, los distintos participantes implicados en la implantación del sistema (usuarios, equipo técnico y responsable de mantenimiento), determinando previamente sus perfiles, responsabilidades, nivel de implicación y fechas previstas de participación a lo largo de toda la implantación. Productos</p>
+<p>De entrada</p>
+<pre><code>Recursos Humanos y Técnicos Disponibles (externo)
+Catálogo de Usuarios (ASI 1.4)
+Plan de Implantación (IAS 1.1)</code></pre>
+<p>De salida</p>
+<pre><code>Equipo de Implantación</code></pre>
+<p>Participantes</p>
+<pre><code>Jefe de Proyecto
+Responsable de Implantación
+Responsable de Operación
+Responsable de Sistemas
+Directores de los Usuarios</code></pre>
+</section>
+</section>
+<section id="actividad-ias-2-formación-necesaria-para-la-implantación" class="level3" data-number="7.2.2">
+<h3 data-number="7.2.2" class="anchored" data-anchor-id="actividad-ias-2-formación-necesaria-para-la-implantación"><span class="header-section-number">7.2.2</span> Actividad IAS 2: Formación Necesaria para la Implantación</h3>
+<p>En esta actividad se prepara y se imparte la formación al equipo que participará en la implantación y aceptación del sistema. Se realiza también el seguimiento de la formación de los usuarios finales, cuya impartición queda fuera del ámbito de MÉTRICA Versión 3. De esta forma, se asegura que la implantación se va a llevar a cabo correctamente.</p>
+<p>Se determina la formación necesaria para el equipo de implantación, en función de los distintos perfiles y niveles de responsabilidad identificados en la actividad anterior. Para ello, se establece un plan de formación que incluye los esquemas de formación correspondientes, los recursos humanos y de infraestructura requeridos para llevarlo a cabo, así como una planificación que queda reflejada en el plan de formación.</p>
+<p>La formación para que los usuarios finales sean capaces de utilizar el sistema de manera satisfactoria ha sido establecida, previamente, en la actividad Definición de la Formación de Usuarios Finales (CSI 7). En esta actividad, se analizan los esquemas de formación definidos según los diferentes perfiles, y se elabora un plan de formación que esté alineado con el plan de implantación. TAREA PRODUCTOS TÉCNICAS Y PRÁCTICAS PARTICIPANTES IAS 2.1: Preparación de la Formación del Equipo de Implantación</p>
+<pre><code>Plan de Formación del Equipo de Implantación
+    Esquema de Formación
+    Materiales de Formación
+    Recursos de Formación
+    Planificación de Formación
+
+
+
+Jefe de Proyecto
+Responsable de Implantación
+Directores de los Usuarios
+Equipo de Formación</code></pre>
+<p>IAS 2.2: Formación del Equipo de Implantación</p>
+<pre><code>Plan de Formación del Equipo de Implantación
+    Registro de Asistencia
+
+
+
+Equipo de Formación
+Equipo de Implantación</code></pre>
+<p>IAS 2.3: Preparación de la Formación a Usuarios Finales</p>
+<pre><code>Plan de Formación a Usuarios Finales
+    Esquema de Formación
+    Materiales de Formación
+    Planificación de la Formación
+
+
+
+Equipo de Operación
+Jefe de Proyecto
+Directores de los Usuarios</code></pre>
+<p>IAS 2.4: Seguimiento de la Formación a Usuarios Finales</p>
+<pre><code>Plan de Formación a Usuarios Finales
+    Registro de Asistencia
+
+
+
+Jefe de Proyecto
+Directores de los Usuarios</code></pre>
+<section id="tarea-ias-2.1-preparación-de-la-formación-del-equipo-de-implantación" class="level4" data-number="7.2.2.1">
+<h4 data-number="7.2.2.1" class="anchored" data-anchor-id="tarea-ias-2.1-preparación-de-la-formación-del-equipo-de-implantación"><span class="header-section-number">7.2.2.1</span> Tarea IAS 2.1: Preparación de la Formación del Equipo de Implantación</h4>
+<p>Se define la formación necesaria para el equipo de trabajo responsable de la implantación y aceptación del sistema, estableciendo el esquema de formación para cada tipo de perfil dentro del equipo y la duración estimada de los cursos.</p>
+<p>Asimismo, se aseguran los recursos humanos, técnicos y materiales necesarios para realizar la formación al equipo de implantación.</p>
+<p>Por último, se convoca a las personas que deben asistir a los cursos de formación y se espera la confirmación. Productos</p>
+<p>De entrada</p>
+<pre><code>Plan de Implantación (IAS 1.1)
+Equipo de Implantación (IAS 1.2)</code></pre>
+<p>De salida</p>
+<pre><code>Plan de Formación del Equipo de Implantación:
+    Esquema de Formación
+    Materiales de Formación
+    Recursos de Formación
+    Planificación de la Formación</code></pre>
+<p>Participantes</p>
+<pre><code>Jefe de Proyecto
+Responsable de Implantación
+Directores de los Usuarios
+Equipo de Formación</code></pre>
+</section>
+<section id="tarea-ias-2.2-formación-del-equipo-de-implantación" class="level4" data-number="7.2.2.2">
+<h4 data-number="7.2.2.2" class="anchored" data-anchor-id="tarea-ias-2.2-formación-del-equipo-de-implantación"><span class="header-section-number">7.2.2.2</span> Tarea IAS 2.2: Formación del Equipo de Implantación</h4>
+<p>En esta tarea se lleva a cabo la formación del equipo que va a ser responsable de la implantación y aceptación del sistema, según el plan de formación que se haya establecido en la tarea anterior, asegurando la asistencia de todos sus integrantes. Productos</p>
+<p>De entrada</p>
+<pre><code>Equipo de Implantación (IAS 1.2)
+Plan de Formación del Equipo de Implantación (IAS 2.1)</code></pre>
+<p>De salida</p>
+<pre><code>Plan de Formación del Equipo de Implantación:
+    Registro de Asistencia</code></pre>
+<p>Participantes</p>
+<pre><code>Equipo de Formación
+Equipo de Implantación</code></pre>
+</section>
+<section id="tarea-ias-2.3-preparación-de-la-formación-a-usuarios-finales" class="level4" data-number="7.2.2.3">
+<h4 data-number="7.2.2.3" class="anchored" data-anchor-id="tarea-ias-2.3-preparación-de-la-formación-a-usuarios-finales"><span class="header-section-number">7.2.2.3</span> Tarea IAS 2.3: Preparación de la Formación a Usuarios finales</h4>
+<p>En función del plan de implantación establecido, se revisa el esquema de formación a los usuarios finales, elaborado en la actividad Definición de la Formación de Usuarios Finales (CSI 7). Se asegura que se cuenta con los recursos humanos, técnicos y materiales necesarios para realizar la formación correspondiente.</p>
+<p>Se establece el plan de formación del sistema a implantar en su totalidad, con el fin de garantizar el éxito de la implantación. Se determina, en función de los esquemas de formación asociados a los distintos perfiles, los contenidos definitivos que tienen los cursos, cuándo deben impartirse, quiénes han de recibirlos y con qué prioridad. Productos</p>
+<p>De entrada</p>
+<pre><code>Plan de Implantación (IAS 1.1)
+Catálogo de Usuarios (ASI 1.4)
+Especificación de la Formación a Usuarios Finales (CSI 7.2)</code></pre>
+<p>De salida</p>
+<pre><code>Plan de Formación a Usuarios Finales:
+    Esquema de Formación
+    Materiales de Formación
+    Planificación de la Formación</code></pre>
+<p>Participantes</p>
+<pre><code>Equipo de Formación
+Jefe de Proyecto
+Directores de los Usuarios</code></pre>
+</section>
+<section id="tarea-ias-2.4-seguimiento-de-la-formación-a-usuarios-finales" class="level4" data-number="7.2.2.4">
+<h4 data-number="7.2.2.4" class="anchored" data-anchor-id="tarea-ias-2.4-seguimiento-de-la-formación-a-usuarios-finales"><span class="header-section-number">7.2.2.4</span> Tarea IAS 2.4: Seguimiento de la Formación a Usuarios Finales</h4>
+<p>La impartición de la formación a los usuarios finales queda fuera del ámbito de MÉTRICA Versión 3. Sin embargo, es necesario llevar a cabo su seguimiento con el fin de asegurar el cumplimiento del plan de formación previsto e informar de las posibles desviaciones para tomar las medidas oportunas. Productos</p>
+<p>De entrada</p>
+<pre><code>Plan de Formación a Usuarios Finales (IAS 2.3)</code></pre>
+<p>De salida</p>
+<pre><code>Plan de Formación a Usuarios Finales:
+    Registro de Asistencia</code></pre>
+<p>Participantes</p>
+<pre><code>Jefe de Proyecto
+Directores de los Usuarios</code></pre>
+</section>
+</section>
+<section id="actividad-ias-3-incorporación-del-sistema-al-entorno-de-operación" class="level3" data-number="7.2.3">
+<h3 data-number="7.2.3" class="anchored" data-anchor-id="actividad-ias-3-incorporación-del-sistema-al-entorno-de-operación"><span class="header-section-number">7.2.3</span> Actividad IAS 3: Incorporación del Sistema al Entorno de Operación</h3>
+<p>En esta actividad se realizan todas las tareas necesarias para la incorporación del sistema al entorno de operación en el que se van a llevar a cabo las pruebas de implantación y aceptación del sistema.</p>
+<p>Mientras que las pruebas unitarias, de integración y del sistema se pueden ejecutar en un entorno distinto de aquél en el que finalmente se implantará, las pruebas de implantación y aceptación del sistema deben ejecutarse en el entorno real de operación. El propósito es comprobar que el sistema satisface todos los requisitos especificados por el usuario en las mismas condiciones que cuando se inicie la producción.</p>
+<p>Por tanto, como paso previo a la realización de dichas pruebas y de acuerdo al plan de implantación establecido, se verifica que los recursos necesarios están disponibles para que se pueda realizar, adecuadamente, la instalación de todos los componentes que integran el sistema, así como la creación y puesta a punto de las bases de datos en el entorno de operación. Asimismo, se establecen los procedimientos de explotación y uso de las bases de datos de acuerdo a la normativa existente en dicho entorno. TAREA PRODUCTOS TÉCNICAS Y PRÁCTICAS PARTICIPANTES IAS 3.1: Preparación de la Instalación</p>
+<pre><code>Incidencias de Preparación de Instalación
+
+
+
+Jefe de Proyecto
+Responsable de Implantación
+Equipo de Implantación</code></pre>
+<p>IAS 3.2: Realización de la Instalación</p>
+<pre><code>Producto Software (instalado)
+Código Fuente de los Componentes de Migración y Carga Inicial de Datos (instalado)
+Procedimientos de Migración y Carga Inicial de Datos (instalado)
+
+
+
+Jefe de Proyecto
+Equipo de Implantación</code></pre>
+<section id="tarea-ias-3.1-preparación-de-la-instalación" class="level4" data-number="7.2.3.1">
+<h4 data-number="7.2.3.1" class="anchored" data-anchor-id="tarea-ias-3.1-preparación-de-la-instalación"><span class="header-section-number">7.2.3.1</span> Tarea IAS 3.1: Preparación de la Instalación</h4>
+<p>En esta tarea se verifica que está disponible la infraestructura necesaria para configurar el entorno. Dicha infraestructura debe cumplir los requisitos de implantación (instalación e infraestructura) y tener en cuenta los procedimientos de seguridad y control de acceso (mantenimiento de la integridad y confidencialidad de los datos, control de accesos al sistema, copias de seguridad y recuperación de datos, etc.), y operación y administración del sistema (estándares, recuperación y reanudación de trabajos, planificación de trabajos, etc.).</p>
+<p>Además, si alguno de los sistemas de información implicados en la implantación lleva implícita una migración de datos habrá que tener en cuenta, también, las características del entorno y los procedimientos propios de la migración establecidos en el plan de migración y carga inicial de datos, obtenido en la actividad Diseño de la Migración y Carga Inicial de Datos (DSI 9).</p>
+<p>Una vez comprobada la idoneidad de los distintos elementos relacionados con la infraestructura, se realiza la instalación del software de base necesario para la incorporación posterior de los componentes asociados a los sistemas de información implicados en la implantación.</p>
+<p>También se debe asegurar que el equipo responsable de la realización de las pruebas de implantación y aceptación del sistema ha recibido la formación necesaria. Productos</p>
+<p>De entrada</p>
+<pre><code>Plan de Implantación (IAS 1.1)
+Plan de Formación del Equipo de Implantación (IAS 2.2)
+Catálogo de Requisitos (DSI 11.2)
+Diseño de la Arquitectura del Sistema (DSI 7.2)
+Entorno Tecnológico del Sistema (DSI 7.2)
+Especificaciones de Construcción del Sistema de Información (DSI 8.4)
+Plan de Migración y Carga Inicial de Datos (DSI 9.4)</code></pre>
+<p>De salida</p>
+<pre><code>Incidencias de Preparación de Instalación</code></pre>
+<p>Participantes</p>
+<pre><code>Jefe de Proyecto
+Responsable de Implantación
+Equipo de Implantación</code></pre>
+</section>
+<section id="tarea-ias-3.2-realización-de-la-instalación" class="level4" data-number="7.2.3.2">
+<h4 data-number="7.2.3.2" class="anchored" data-anchor-id="tarea-ias-3.2-realización-de-la-instalación"><span class="header-section-number">7.2.3.2</span> Tarea IAS 3.2: Realización de la Instalación</h4>
+<p>Se realiza la instalación de todos los componentes del nuevo sistema, incluidos los procedimientos manuales y automáticos, de acuerdo al plan de implantación y a su ubicación física, establecida en el proceso Diseño del Sistema de Información (DSI). Se deben tener en cuenta los estándares y normativas por los que se rige la organización en los entornos de operación.</p>
+<p>Asimismo, se prepara el entorno de datos identificando los sistemas de información que forman parte del sistema objeto de la implantación. Para cada uno de ellos:</p>
+<pre><code>Se crean las bases de datos a partir del esquema físico elaborado en el proceso de construcción.
+Se establecen los procedimientos de explotación y uso de las bases de datos, es decir, la normativa necesaria para la utilización de las bases de datos, actualización, consulta, etc.
+Se revisan los procedimientos necesarios para realizar las copias de seguridad de los datos y de restauración de las copias indicando su frecuencia, así como los procedimientos de consolidación y sincronización de la información, éstos últimos cuando proceda.
+Se preparan las autorizaciones de acceso a los datos para los distintos perfiles de usuarios.</code></pre>
+<p>Una vez comprobada la correcta instalación del nuevo sistema, se activan los procedimientos de operación, de administración del sistema, de seguridad y de control de acceso. Incluyen el arranque y cierre del sistema según la frecuencia establecida, la planificación de trabajos, su recuperación y reanudación, las autorizaciones de acceso al sistema según los distintos perfiles de usuario, etc.</p>
+<p>Asimismo, si es necesaria una migración de datos se activarán también los procedimientos asociados. Productos</p>
+<p>De entrada</p>
+<pre><code>Plan de Implantación (IAS 1.1)
+Equipo de Implantación (IAS 1.2)
+Especificaciones de Construcción del Sistema de Información (DSI 8.4)
+Producto Software (CSI 6.1)
+Código Fuente de los Componentes de Migración y Carga Inicial de Datos (CSI 8.2)
+Procedimientos de Migración y Carga Inicial de Datos (CSI 8.2)</code></pre>
+<p>De salida</p>
+<pre><code>Producto Software (instalado)
+Código Fuente de los Componentes de Migración y Carga Inicial de Datos (instalado)
+Procedimientos de Migración y Carga Inicial de Datos (instalado)</code></pre>
+<p>Participantes</p>
+<pre><code>Jefe de Proyecto
+Equipo de Implantación</code></pre>
+</section>
+</section>
+<section id="actividad-ias-4-carga-de-datos-al-entorno-de-operación" class="level3" data-number="7.2.4">
+<h3 data-number="7.2.4" class="anchored" data-anchor-id="actividad-ias-4-carga-de-datos-al-entorno-de-operación"><span class="header-section-number">7.2.4</span> Actividad IAS 4: Carga de Datos al Entorno de Operación</h3>
+<p>Teniendo en cuenta que los sistemas de información que forman parte del sistema a implantar pueden mejorar, ampliar o sustituir a otros ya existentes en la organización, puede ser necesaria una carga inicial y/o una migración de datos cuyo alcance dependerá de las características y cobertura de cada sistema de información implicado. Por tanto, la necesidad de una migración de datos puede venir determinada desde el proceso Estudio de Viabilidad del Sistema (EVS), en la actividad Selección de la Solución (EVS 6). Allí se habrá establecido la estrategia a seguir en la sustitución, evaluando las opciones del enfoque de desarrollo e instalación más apropiados para llevarlo a cabo.</p>
+<p>En cualquier caso, en la actividad Diseño de la Migración y Carga Inicial de Datos (DSI 9) se habrán definido y planificado los procesos y procedimientos necesarios para llevar a cabo la migración, realizándose su codificación en la actividad Construcción de los Componentes y Procedimientos de Migración y Carga Inicial de Datos (CSI 8). TAREA PRODUCTOS TÉCNICAS Y PRÁCTICAS PARTICIPANTES IAS 4.1: Migración y Carga Inicial de Datos</p>
+<pre><code>Bases de datos / ficheros cargados
+Equipo de Implantación
+Equipo de Operación
+Administradores de Bases de Datos
+Usuarios Expertos</code></pre>
+<section id="tarea-ias-4.1-migración-y-carga-inicial-de-datos" class="level4" data-number="7.2.4.1">
+<h4 data-number="7.2.4.1" class="anchored" data-anchor-id="tarea-ias-4.1-migración-y-carga-inicial-de-datos"><span class="header-section-number">7.2.4.1</span> Tarea IAS 4.1: Migración y Carga inicial de Datos</h4>
+<p>Se realiza la carga inicial de datos del nuevo sistema, y se comprueba que ha finalizado correctamente.</p>
+<p>A continuación, si procede, se hace la migración de datos, activando los procedimientos correspondientes, para efectuar la transformación de los datos de la estructura existente a la nueva. Se lleva a cabo la depuración de los datos que no sean consistentes, hasta comprobar su correcta finalización. Productos</p>
+<p>De entrada</p>
+<pre><code>Plan de implantación (IAS 1.1)
+Equipo de implantación (IAS 1.2)
+Plan de migración y carga inicial de datos (DSI 9.4)
+Código Fuente de los Componentes de Migración y Carga Inicial de Datos (instalado) (IAS 3.2)
+Procedimientos de Migración y Carga Inicial de Datos (instalados) (IAS 3.2)</code></pre>
+<p>De salida</p>
+<pre><code>Bases de Datos / Ficheros Cargados</code></pre>
+<p>Participantes</p>
+<pre><code>Equipo de Implantación
+Equipo de Operación
+Administradores de Bases de Datos
+Usuarios Expertos</code></pre>
+</section>
+</section>
+<section id="actividad-ias-5-pruebas-de-implantación-del-sistema" class="level3" data-number="7.2.5">
+<h3 data-number="7.2.5" class="anchored" data-anchor-id="actividad-ias-5-pruebas-de-implantación-del-sistema"><span class="header-section-number">7.2.5</span> Actividad IAS 5: Pruebas de Implantación del Sistema</h3>
+<p>La finalidad de las pruebas de implantación es doble:</p>
+<pre><code>Comprobar el funcionamiento correcto del mismo en el entorno de operación.
+Permitir que el usuario determine, desde el punto de vista de operación, la aceptación del sistema instalado en su entorno real, según el cumplimiento de los requisitos especificados.</code></pre>
+<p>Para ello, el responsable de implantación revisa el plan de pruebas de implantación y los criterios de aceptación del sistema, previamente elaborados. Las pruebas las realizan los técnicos de sistemas y de operación, que forman parte del grupo de usuarios técnicos que ha recibido la formación necesaria para llevarlas a cabo.</p>
+<p>Una vez ejecutadas estas pruebas, el equipo de usuarios técnicos informa de las incidencias detectadas al responsable de implantación, el cual analiza la información y toma las medidas correctoras que considere necesarias para que el sistema dé respuesta a las especificaciones previstas, momento en el que el equipo de operación lo da por probado. TAREA PRODUCTOS TÉCNICAS Y PRÁCTICAS PARTICIPANTES IAS 5.1: Preparación de las Pruebas de Implantación</p>
+<pre><code>Plan de pruebas
+
+
+
+Jefe de Proyecto
+Responsable de Implantación</code></pre>
+<p>IAS 5.2: Realización de las Pruebas de Implantación</p>
+<pre><code>Resultado de las pruebas de implantación
+
+
+
+Pruebas de implantación
+
+
+
+Equipo de Implantación</code></pre>
+<p>IAS 5.3: Evaluación del Resultado de las Pruebas de Implantación</p>
+<pre><code>Evaluación del resultado de las pruebas de implantación
+
+
+
+Jefe de Proyecto
+Responsable de Implantación</code></pre>
+<section id="tarea-ias-5.1-preparación-de-las-pruebas-de-implantación" class="level4" data-number="7.2.5.1">
+<h4 data-number="7.2.5.1" class="anchored" data-anchor-id="tarea-ias-5.1-preparación-de-las-pruebas-de-implantación"><span class="header-section-number">7.2.5.1</span> Tarea IAS 5.1: Preparación de las Pruebas de Implantación</h4>
+<p>Se comprueba la disponibilidad de los recursos humanos y técnicos necesarios para realizar las pruebas de implantación. Se revisan las verificaciones establecidas en el plan de pruebas.</p>
+<p>Si fuera necesario, se crea algún caso de prueba adicional que se considere importante y que no se haya tenido en cuenta hasta entonces. Se preparan las condiciones que permitan simular las situaciones límite previstas para las pruebas.</p>
+<p>Se comunica el plan de pruebas de implantación al equipo responsable de llevarlas a cabo. Productos</p>
+<p>De entrada</p>
+<pre><code>Plan de Implantación (IAS 1.1)
+Equipo de Implantación (IAS 1.2)
+Plan de Pruebas (DSI 10.3)</code></pre>
+<p>De salida</p>
+<pre><code>Plan de Pruebas</code></pre>
+<p>Participantes</p>
+<pre><code>Jefe de Proyecto
+Responsable de Implantación</code></pre>
+</section>
+<section id="tarea-ias-5.2-realización-de-las-pruebas-de-implantación" class="level4" data-number="7.2.5.2">
+<h4 data-number="7.2.5.2" class="anchored" data-anchor-id="tarea-ias-5.2-realización-de-las-pruebas-de-implantación"><span class="header-section-number">7.2.5.2</span> Tarea IAS 5.2: Realización de las Pruebas de implantación</h4>
+<p>Se realizan las pruebas de implantación, de acuerdo a las verificaciones establecidas en el plan de pruebas definido en la actividad Especificación Técnica del Plan de Pruebas (DSI 10). Es necesario tener en cuenta las posibles pruebas adicionales incorporadas a dicho plan en la tarea anterior.</p>
+<p>El objetivo de estas pruebas es asegurar que el sistema se comporta de la forma prevista en el entorno de operación, y que responde a todas las especificaciones dadas en cuanto a:</p>
+<pre><code>Recuperación, forzando el fallo del sistema y verificando si la recuperación se lleva a cabo de forma apropiada. En caso de que sea de forma automática, se evalúa la inicialización, los mecanismos de recuperación del estado del sistema, datos, etc.
+Seguridad, verificando que los mecanismos de protección incorporados al sistema cumplen su objetivo.
+Rendimiento, probando el sistema en cuanto al tiempo de respuesta de ejecución y al tiempo de utilización de recursos.
+Comunicaciones, etc.</code></pre>
+<p>Se registra la realización de las pruebas incluyendo un informe que recoja la desviación de los requisitos establecidos y los problemas que quedan sin resolver. Productos</p>
+<p>De entrada</p>
+<pre><code>Producto Software (IAS 3.2)
+Bases de Datos / Ficheros Cargados (IAS 4.1)
+Plan de Pruebas (IAS 5.1)</code></pre>
+<p>De salida</p>
+<pre><code>Resultado de las Pruebas de Implantación</code></pre>
+<p>Prácticas</p>
+<pre><code>Pruebas de Implantación</code></pre>
+<p>Participantes</p>
+<pre><code>Equipo de Implantación</code></pre>
+</section>
+<section id="tarea-ias-5.3-evaluación-del-resultado-de-las-pruebas-de-implantación" class="level4" data-number="7.2.5.3">
+<h4 data-number="7.2.5.3" class="anchored" data-anchor-id="tarea-ias-5.3-evaluación-del-resultado-de-las-pruebas-de-implantación"><span class="header-section-number">7.2.5.3</span> Tarea IAS 5.3: Evaluación del Resultado de las Pruebas de Implantación</h4>
+<p>Se evalúan los resultados de las pruebas analizando las incidencias recibidas y comprobando que se han llevado a cabo todos los casos de pruebas establecidos en el plan de pruebas. Dicha evaluación consiste en:</p>
+<pre><code>Comparar los resultados obtenidos con los esperados.
+Identificar el origen de cada problema para poder remitirlo a quién proceda, determinar la envergadura de las modificaciones y las acciones que deben llevarse a cabo para resolverlo de forma satisfactoria.
+Indicar si el plan de pruebas debe volver a realizarse total o parcialmente, y si será necesario contemplar nuevos casos de prueba no considerados anteriormente.</code></pre>
+<p>Una vez realizadas las medidas correctoras consideradas necesarias y comprobado que el sistema cumple todos los requisitos de implantación, se registra el resultado de la evaluación de las pruebas de implantación que incluye la aprobación o rechazo del sistema por parte de operación. Productos</p>
+<p>De entrada</p>
+<pre><code>Plan de Pruebas (IAS 5.1)
+Resultado de las Pruebas de Implantación (IAS 5.2)</code></pre>
+<p>De salida</p>
+<pre><code>Evaluación del Resultado de las Pruebas de Implantación</code></pre>
+<p>Participantes</p>
+<pre><code>Jefe de Proyecto
+Responsable de Implantación</code></pre>
+</section>
+</section>
+<section id="actividad-ias-6-pruebas-de-aceptación-del-sistema" class="level3" data-number="7.2.6">
+<h3 data-number="7.2.6" class="anchored" data-anchor-id="actividad-ias-6-pruebas-de-aceptación-del-sistema"><span class="header-section-number">7.2.6</span> Actividad IAS 6: Pruebas de Aceptación del Sistema</h3>
+<p>Las pruebas de aceptación tienen como fin validar que el sistema cumple los requisitos básicos de funcionamiento esperado y permitir que el usuario determine la aceptación del sistema. Por este motivo, estas pruebas son realizadas por el usuario final que, durante este periodo de tiempo, debe plantear todas las deficiencias o errores que encuentre antes de dar por aprobado el sistema definitivamente.</p>
+<p>Los Directores de los Usuarios revisan los criterios de aceptación, especificados previamente en el plan de pruebas del sistema, y dirigen las pruebas de aceptación final que llevan a cabo los usuarios expertos. A su vez, éstos últimos deben elaborar un informe que los Directores de los Usuarios analizan y evalúan para determinar la aceptación o rechazo del sistema. TAREA PRODUCTOS TÉCNICAS Y PRÁCTICAS PARTICIPANTES IAS 6.1: Preparación de las Pruebas de Aceptación</p>
+<pre><code>Plan de Pruebas
+
+
+
+Jefe de Proyecto
+Directores de los Usuarios</code></pre>
+<p>IAS 6.2: Realización de las Pruebas de Aceptación</p>
+<pre><code>Resultado de las Pruebas de Aceptación
+
+
+
+Pruebas de Aceptación
+
+
+
+Usuarios Expertos</code></pre>
+<p>IAS 6.3: Evaluación del Resultado de las Pruebas de Aceptación</p>
+<pre><code>Evaluación del Resultado de las Pruebas de Aceptación
+
+
+
+Jefe de Proyecto
+Directores de los Usuarios</code></pre>
+<section id="tarea-ias-6.1-preparación-de-las-pruebas-de-aceptación" class="level4" data-number="7.2.6.1">
+<h4 data-number="7.2.6.1" class="anchored" data-anchor-id="tarea-ias-6.1-preparación-de-las-pruebas-de-aceptación"><span class="header-section-number">7.2.6.1</span> Tarea IAS 6.1: Preparación de las Pruebas de Aceptación</h4>
+<p>Se analizan los criterios de aceptación establecidos por el usuario y recogidos en las verificaciones del plan de pruebas, por si fuera necesario incorporar algún caso de prueba adicional.</p>
+<p>Se comunica el plan de pruebas de aceptación una vez actualizado, a los usuarios implicados según los distintos perfiles identificados en la tarea Especificación del equipo de implantación (IAS 1.2). Productos</p>
+<p>De entrada</p>
+<pre><code>Plan de Pruebas (DSI 10.3)
+Plan de implantación (IAS 1.1)
+Equipo de implantación (IAS 1.2)
+Plan de pruebas (IAS 5.1)</code></pre>
+<p>De salida</p>
+<pre><code>Plan de pruebas</code></pre>
+<p>Participantes</p>
+<pre><code>Jefe de Proyecto
+Directores de los Usuarios</code></pre>
+</section>
+<section id="tarea-ias-6.2-realización-de-las-pruebas-de-aceptación" class="level4" data-number="7.2.6.2">
+<h4 data-number="7.2.6.2" class="anchored" data-anchor-id="tarea-ias-6.2-realización-de-las-pruebas-de-aceptación"><span class="header-section-number">7.2.6.2</span> Tarea IAS 6.2: Realización de las Pruebas de Aceptación</h4>
+<p>Se llevan a cabo las pruebas de aceptación final del sistema para asegurar que todos los componentes responden a los criterios de aceptación especificados.</p>
+<p>Se registra la realización de las pruebas, incluyendo un informe que recoja la desviación de los requisitos establecidos y los problemas que quedan sin resolver. Productos</p>
+<p>De entrada</p>
+<pre><code>Producto Software (IAS 3.2)
+Bases de Datos / Ficheros Cargados (IAS 4.1)
+Plan de Pruebas (IAS 6.1)</code></pre>
+<p>De salida</p>
+<pre><code>Resultado de las Pruebas de Aceptación</code></pre>
+<p>Técnicas</p>
+<pre><code>Pruebas de Aceptación</code></pre>
+<p>Participantes</p>
+<pre><code>Usuarios Expertos</code></pre>
+</section>
+<section id="tarea-ias-6.3-evaluación-del-resultado-de-las-pruebas-de-aceptación" class="level4" data-number="7.2.6.3">
+<h4 data-number="7.2.6.3" class="anchored" data-anchor-id="tarea-ias-6.3-evaluación-del-resultado-de-las-pruebas-de-aceptación"><span class="header-section-number">7.2.6.3</span> Tarea IAS 6.3: Evaluación del Resultado de las Pruebas de Aceptación</h4>
+<p>Se evalúan los resultados de las pruebas, analizando las incidencias recibidas y comprobando que se han llevado a cabo todos los casos de pruebas establecidos en el plan de pruebas. Dicha evaluación consiste en:</p>
+<pre><code>Comparar los resultados obtenidos con los esperados.
+Identificar el origen de cada problema para poder remitirlo a quién proceda y determinar qué acciones o medidas correctoras es preciso llevar a cabo para resolverlo de forma satisfactoria.
+Indicar qué pruebas se debe volver a realizar, o si será necesario contemplar nuevos casos de prueba.</code></pre>
+<p>Una vez realizadas las medidas correctoras necesarias, y comprobado que su comportamiento es adecuado, se documenta el resultado global de la evaluación de las pruebas de aceptación que incluye la aprobación del sistema por parte del usuario final. Productos</p>
+<p>De entrada</p>
+<pre><code>Plan de Pruebas (IAS 6.1)
+Resultado de las Pruebas de Aceptación (IAS 6.2)</code></pre>
+<p>De salida</p>
+<pre><code>Evaluación del Resultado de las Pruebas de Aceptación</code></pre>
+<p>Participantes</p>
+<pre><code>Jefe de Proyecto
+Directores de los Usuarios</code></pre>
+</section>
+</section>
+<section id="actividad-ias-7-preparación-del-mantenimiento-del-sistema" class="level3" data-number="7.2.7">
+<h3 data-number="7.2.7" class="anchored" data-anchor-id="actividad-ias-7-preparación-del-mantenimiento-del-sistema"><span class="header-section-number">7.2.7</span> Actividad IAS 7: Preparación del Mantenimiento del Sistema</h3>
+<p>El objetivo de esta actividad es permitir que el equipo que va a asumir el mantenimiento del sistema esté familiarizado con él antes de que el sistema pase a producción. Para conseguir este objetivo, se ha considerado al responsable de mantenimiento como parte integrante del equipo de implantación. Por lo tanto, se habrá tenido en cuenta su perfil al elaborar el esquema de formación correspondiente.</p>
+<p>Una vez que el responsable de mantenimiento ha recibido la formación necesaria y adquirido una visión global del sistema que se va a implantar, se le entregan los productos que serán objeto del mantenimiento. De esta manera, obtiene de una forma gradual un conocimiento profundo del funcionamiento y facilidades que incorpora el sistema, que van a permitirle acometer los cambios solicitados por los usuarios con mayor facilidad y eficiencia. Se reduce, en consecuencia, el esfuerzo invertido en el mantenimiento.</p>
+<p>Es importante resaltar que la existencia de una configuración del software permite reducir el esfuerzo requerido y mejora la calidad general del software a mantener, aunque no garantiza un mantenimiento libre de problemas. Una pobre configuración del software puede tener un impacto negativo sobre su facilidad de mantenimiento. TAREA PRODUCTOS TÉCNICAS Y PRÁCTICAS PARTICIPANTES IAS 7.1: Establecimiento de la Infraestructura para el Mantenimiento</p>
+<pre><code>Plan de Mantenimiento
+
+
+
+Diagrama de Representación
+Sesiones de trabajo
+
+
+
+Jefe de Proyecto
+Responsable de Mantenimiento
+Equipo de Soporte Técnico</code></pre>
+<p>IAS 7.2: Formalización del Plan de Mantenimiento</p>
+<pre><code>Plan de Mantenimiento
+
+
+
+Sesiones de trabajo
+
+
+
+Responsable de Mantenimiento
+Directores de los Usuarios</code></pre>
+<section id="tarea-ias-7.1-establecimiento-de-la-infraestructura-para-el-mantenimiento" class="level4" data-number="7.2.7.1">
+<h4 data-number="7.2.7.1" class="anchored" data-anchor-id="tarea-ias-7.1-establecimiento-de-la-infraestructura-para-el-mantenimiento"><span class="header-section-number">7.2.7.1</span> Tarea IAS 7.1: Establecimiento de la Infraestructura para el Mantenimiento</h4>
+<p>En esta tarea se recopilan los productos de cada uno de los sistemas de información implicados en la implantación que van a ser objeto de mantenimiento. Se entregan a su responsable con el fin de implicarle más activamente en el dominio del sistema, para que una vez aceptado e implantado responda de forma satisfactoria a las peticiones de mantenimiento. El conjunto de productos a entregar dependerá del alcance y nivel de soporte que se haya establecido previamente para el mantenimiento del sistema.</p>
+<p>Una vez que el responsable de mantenimiento ha analizado en detalle la funcionalidad del sistema a implantar, valorará si la información disponible es suficiente para poder abordar en condiciones óptimas el futuro mantenimiento, asegurando que cuando el sistema se incorpore al entorno de producción todos los productos relacionados estén completos, actualizados y sean consistentes y precisos. La revisión de la configuración asegura que todos los elementos de la configuración delsoftware son completos y comprensibles, garantizando el control de modificaciones futuras.</p>
+<p>Asimismo, aunque el entorno en que va a funcionar el sistema ya está predefinido, es necesario preparar el entorno en el que se va a realizar el mantenimiento identificando las necesidades de hardware y software adicional para acometer los cambios de una forma más ágil y segura. Por tanto, es necesario evaluar las herramientas disponibles en la organización para la gestión del mantenimiento y determinar su nivel de adecuación a las necesidades del nuevo sistema. Si las herramientas son insuficientes, o no están del todo integradas, se debe analizar y valorar qué herramientas de las existentes en el mercado son las más apropiadas, y seleccionar aquéllas que garanticen la integración entre los distintos productos objeto del mantenimiento.</p>
+<p>Es conveniente definir mecanismos para registrar y evaluar cada petición de mantenimiento, controlar y realizar los cambios y asegurar que se implementan adecuadamente.</p>
+<p>Finalmente, se recoge en el plan de mantenimiento toda la infraestructura necesaria para la gestión del futuro mantenimiento. Productos</p>
+<p>De entrada</p>
+<pre><code>Catálogo de Requisitos (DSI 11.2)</code></pre>
+<p>De salida</p>
+<pre><code>Plan de Mantenimiento</code></pre>
+<p>Prácticas</p>
+<pre><code>Diagrama de Representación
+Sesiones de trabajo</code></pre>
+<p>Participantes</p>
+<pre><code>Jefe de Proyecto
+Responsable de Mantenimiento
+Equipo de Soporte Técnico</code></pre>
+</section>
+<section id="tarea-ias-7.2-formalización-del-plan-de-mantenimiento" class="level4" data-number="7.2.7.2">
+<h4 data-number="7.2.7.2" class="anchored" data-anchor-id="tarea-ias-7.2-formalización-del-plan-de-mantenimiento"><span class="header-section-number">7.2.7.2</span> Tarea IAS 7.2: Formalización del Plan de Mantenimiento</h4>
+<p>Se establece formalmente el plan de mantenimiento para el sistema, una vez que haya sido aceptado y se incorpore al entorno de producción. Se fija el tipo de mantenimiento que se va a asumir para cada sistema de información, determinando los criterios de regulación necesarios para cada tipo de mantenimiento contemplado y reflejando los requisitos de formación esenciales, de manera que se pueda responder satisfactoriamente a las peticiones de mantenimiento.</p>
+<p>Se estiman los recursos humanos necesarios para el servicio de mantenimiento establecido, definiendo claramente sus perfiles, asignando responsabilidades y determinando las funciones que van a llevar a cabo, con el fin de garantizar la coordinación en la gestión del mantenimiento. Productos</p>
+<p>De entrada</p>
+<pre><code>Plan de Mantenimiento (IAS 7.1)</code></pre>
+<p>De salida</p>
+<pre><code>Plan de Mantenimiento</code></pre>
+<p>Prácticas</p>
+<pre><code>Sesiones de trabajo</code></pre>
+<p>Participantes</p>
+<pre><code>Responsable de Mantenimiento
+Directores de los Usuarios</code></pre>
+</section>
+</section>
+<section id="actividad-ias-8-establecimiento-del-acuerdo-de-nivel-de-servicio" class="level3" data-number="7.2.8">
+<h3 data-number="7.2.8" class="anchored" data-anchor-id="actividad-ias-8-establecimiento-del-acuerdo-de-nivel-de-servicio"><span class="header-section-number">7.2.8</span> Actividad IAS 8: Establecimiento del Acuerdo de Nivel de Servicio</h3>
+<p>Antes de la aprobación definitiva del sistema por parte del Comité de Dirección es conveniente:</p>
+<pre><code>Determinar los servicios que requiere el mismo.
+Especificar los niveles de servicio con los que se va a valorar la calidad de ese prestación.
+Definir qué compromisos se adquieren con la entrega del sistema.</code></pre>
+<p>Para ello, en primer lugar, se negocia entre los máximos responsables del usuario y de operación qué servicios y de qué tipo se van a prestar. Una vez acordados, se detallan los niveles de servicio definiendo sus propiedades funcionales y de calidad. Se establece cuáles de ellas son cuantificables y qué indicadores se van a aplicar. Es importante señalar que los niveles de servicio son específicos para cada uno de los subsistemas que componen el sistema de información, y dependen del entorno de operación y de la localización geográfica en que se implante un sistema de información concreto, pudiendo haber servicios básicos para todo el sistema o específicos para un subsistema de información concreto.</p>
+<p>Por último, se establece formalmente el acuerdo de nivel de servicio, considerando los recursos necesarios, plazos de restablecimiento del servicio, coste y mecanismos de regulación que están asociados a cada servicio especificado anteriormente.</p>
+<p>Según el ámbito y el alcance de los tipos de servicio que se vayan a prestar, se determinar los productos del ciclo de vida del software necesarios para poder establecer el acuerdo de nivel de servicio. TAREA PRODUCTOS TÉCNICAS Y PRÁCTICAS PARTICIPANTES IAS 8.1: Identificación de los Servicios</p>
+<pre><code>Especificación de Tipos de Servicio
+
+
+
+Sesiones de trabajo
+
+
+
+Jefe de Proyecto
+Directores de los Usuarios
+Comité de Dirección</code></pre>
+<p>IAS 8.2: Descripción de las Propiedades de cada Servicio</p>
+<pre><code>Especificación de Tipos de Servicio:
+    Niveles de Servicio
+
+
+
+Sesiones de trabajo
+
+
+
+Jefe de Proyecto
+Directores de los Usuarios
+Comité de Dirección
+Comité de Seguimiento</code></pre>
+<p>IAS 8.3: Determinación del Acuerdo de Nivel de Servicio</p>
+<pre><code>Acuerdo de Niveles de Servicio
+
+
+
+Sesiones de trabajo
+
+
+
+Comité de Dirección
+Jefe de Proyecto
+Responsable de Implantación</code></pre>
+<section id="tarea-ias-8.1-identificación-de-los-servicios" class="level4" data-number="7.2.8.1">
+<h4 data-number="7.2.8.1" class="anchored" data-anchor-id="tarea-ias-8.1-identificación-de-los-servicios"><span class="header-section-number">7.2.8.1</span> Tarea IAS 8.1: Identificación de los Servicios</h4>
+<p>Se identifican los tipos de servicio requeridos por el sistema objeto de la implantación, en función de los sistemas de información que componen el sistema, sus requisitos y su localización geográfica.</p>
+<p>Entre los tipos de servicio se pueden distinguir los servicios al cliente (servicio de atención a usuario, etc.) y servicios de gestión de operaciones:</p>
+<pre><code>Servicios en línea (tiempo de respuesta, rendimiento, disponibilidad).
+Servicios por lotes (planificación y reanudación de trabajos, prerrequisitos y condiciones de ejecución, condiciones de rearranque, etc.).
+Comunicaciones (gestión y control de red, estaciones de trabajo locales, etc.).
+Seguridad (vigilar el uso no autorizado de sistemas, redes y software; garantizar y restaurar la disponibilidad de sistemas y funciones, mediante procedimientos de copias de seguridad y recuperación).
+Gestión de la capacidad (posibilitar el cumplimiento de los requisitos de usuario en cuanto a horas de servicio, recuperación, etc.).</code></pre>
+<p>Se consideran los servicios comunes de los sistemas de información implicados en la implantación y los específicos de cada uno de ellos, teniendo en cuenta en ambos casos la cobertura geográfica. Productos</p>
+<p>De entrada</p>
+<pre><code>Catálogo de Requisitos (DSI 11.2)
+Plan de Implantación (IAS 1.1)</code></pre>
+<p>De salida</p>
+<pre><code>Especificación de Tipos de Servicio</code></pre>
+<p>Prácticas</p>
+<pre><code>Sesiones de trabajo</code></pre>
+<p>Participantes</p>
+<pre><code>Jefe de Proyecto
+Directores de los Usuarios
+Comité de Dirección</code></pre>
+</section>
+<section id="tarea-ias-8.2-descripción-de-las-propiedades-de-cada-servicio" class="level4" data-number="7.2.8.2">
+<h4 data-number="7.2.8.2" class="anchored" data-anchor-id="tarea-ias-8.2-descripción-de-las-propiedades-de-cada-servicio"><span class="header-section-number">7.2.8.2</span> Tarea IAS 8.2: Descripción de las Propiedades de cada Servicio</h4>
+<p>Para cada tipo de servicio identificado anteriormente se detallan sus propiedades funcionales, estableciendo las características que permiten especificar el funcionamiento del servicio (agentes que intervienen, acciones que se llevan a cabo, condiciones de activación, etc.).</p>
+<p>Asimismo, se especifican las propiedades de calidad que constituyen el nivel de servicio, y que permitenvalorar la calidad de dicho servicio. Estas propiedades hacen referencia a la eficiencia del sistema (en relación con el tiempo y recursos necesarios), y su fiabilidad y facilidad de uso, entre otros. Se debe determinar cuáles de estas propiedades son cuantificables y establecer, en caso de que lo sean:</p>
+<pre><code>en qué términos deben expresarse, es decir volumen, capacidad, carga de trabajo, tiempo, duración, frecuencia, etc.
+qué unidades de medida deben utilizarse, indicando todos los supuestos relativos a las condiciones en que se garantiza el nivel de servicio.</code></pre>
+<p>Productos</p>
+<p>De entrada</p>
+<pre><code>Especificación de Tipos de Servicio (IAS 8.1)</code></pre>
+<p>De salida</p>
+<pre><code>Especificación de Tipos de Servicio:
+    Niveles de Servicio</code></pre>
+<p>Prácticas</p>
+<pre><code>Sesiones de trabajo</code></pre>
+<p>Participantes</p>
+<pre><code>Jefe de Proyecto
+Directores de los Usuarios
+Comité de Dirección
+Comité de Seguimiento</code></pre>
+</section>
+<section id="tarea-ias-8.3-determinación-del-acuerdo-de-nivel-de-servicio" class="level4" data-number="7.2.8.3">
+<h4 data-number="7.2.8.3" class="anchored" data-anchor-id="tarea-ias-8.3-determinación-del-acuerdo-de-nivel-de-servicio"><span class="header-section-number">7.2.8.3</span> Tarea IAS 8.3: Determinación del Acuerdo de Nivel de Servicio</h4>
+<p>Una vez que el sistema se encuentra en su entorno de operación y ha sido aceptado se establecen formalmente los tipos de servicios a los que se debe dar respuesta, tanto por operación como por el usuario, mediante la especificación del acuerdo de servicio. En esta especificación se recoge el compromiso adquirido para cada tipo de servicio en términos de cumplimiento de los objetivos de nivel de servicio, considerando los recursos, plazos, coste, etc.</p>
+<p>Se determinan los mecanismos de regulación de los niveles de servicio para el nuevo sistema con el objeto de garantizar la prestación del servicio, tanto en el ámbito de soporte al usuario, como en el de operación.</p>
+<p>Se hace una estimación de los recursos humanos y de infraestructura necesaria para prestar el servicio con el nivel de calidad deseado, en función de la cobertura y grado de formalismo de los mecanismos de regulación establecidos. En cuanto a los recursos humanos, es conveniente especificar la cantidad y perfil de las personas requeridas, y su responsabilidad, determinando los niveles de cualificación necesarios. En cuanto a los recursos de infraestructura, se deben valorar, entre otros, la necesidad de software de apoyo. Productos</p>
+<p>De entrada</p>
+<pre><code>Especificación de Tipos de Servicio (IAS 8.2)</code></pre>
+<p>De salida</p>
+<pre><code>Acuerdo de Nivel de Servicio</code></pre>
+<p>Prácticas</p>
+<pre><code>Sesiones de trabajo</code></pre>
+<p>Participantes</p>
+<pre><code>Comité de Dirección
+Jefe de Proyecto
+Responsable de Implantación</code></pre>
+</section>
+</section>
+<section id="actividad-ias-9-presentación-y-aprobación-del-sistema" class="level3" data-number="7.2.9">
+<h3 data-number="7.2.9" class="anchored" data-anchor-id="actividad-ias-9-presentación-y-aprobación-del-sistema"><span class="header-section-number">7.2.9</span> Actividad IAS 9: Presentación y Aprobación del Sistema</h3>
+<p>Una vez que se han efectuado las pruebas de implantación y de aceptación, y que se ha fijado el acuerdo de nivel de servicio, el Comité de Dirección debe formalizar la aprobación del sistema. Para esto, se lleva a cabo una presentación general del sistema al Comité de Dirección y se espera la confirmación de su aprobación. TAREA PRODUCTOS TÉCNICAS Y PRÁCTICAS PARTICIPANTES IAS 9.1: Convocatoria de la Presentación del Sistema</p>
+<pre><code>Plan de presentación del sistema
+
+
+
+Presentación
+
+
+
+Jefe de Proyecto
+Responsable de Implantación
+Directores de los Usuarios</code></pre>
+<p>IAS 9.2: Aprobación del Sistema</p>
+<pre><code>Aprobación del sistema
+
+
+
+Presentación
+
+
+
+Comité de Dirección
+Jefe de Proyecto
+Directores de los Usuarios
+Responsable de Implantación</code></pre>
+<section id="tarea-ias-9.1-convocatoria-de-la-presentación-del-sistema" class="level5" data-number="7.2.9.0.1">
+<h5 data-number="7.2.9.0.1" class="anchored" data-anchor-id="tarea-ias-9.1-convocatoria-de-la-presentación-del-sistema"><span class="header-section-number">7.2.9.0.1</span> Tarea IAS 9.1: Convocatoria de la Presentación del Sistema</h5>
+<p>Se recopila la información del sistema que se debe entregar al Comité de Dirección (evaluación de las pruebas, acuerdo de nivel de servicio y plan de mantenimiento) y se realiza la convocatoria para la presentación del sistema.</p>
+<p>Se recibe la confirmación por parte del Comité de Dirección y se prepara la presentación del sistema. Productos</p>
+<p>De entrada</p>
+<pre><code>Evaluación del Resultado de las Pruebas de Implantación (IAS 5.3)
+Evaluación del Resultado de las Pruebas de Aceptación (IAS 6.3)
+Plan de Mantenimiento (IAS 7.2)
+Acuerdo de Nivel de Servicio (IAS 8.3)</code></pre>
+<p>De salida</p>
+<pre><code>Plan de Presentación del Sistema</code></pre>
+<p>Prácticas</p>
+<pre><code>Presentación</code></pre>
+<p>Participantes</p>
+<pre><code>Jefe de Proyecto
+Responsable de Implantación
+Directores de los Usuarios</code></pre>
+</section>
+<section id="tarea-ias-9.2-aprobación-del-sistema" class="level5" data-number="7.2.9.0.2">
+<h5 data-number="7.2.9.0.2" class="anchored" data-anchor-id="tarea-ias-9.2-aprobación-del-sistema"><span class="header-section-number">7.2.9.0.2</span> Tarea IAS 9.2: Aprobación del Sistema</h5>
+<p>Se presenta el sistema al Comité de Dirección según el plan previsto y se aprueba formalmente el sistema. Productos</p>
+<p>De entrada</p>
+<pre><code>Plan de Presentación (IAS 9.1)</code></pre>
+<p>De salida</p>
+<pre><code>Aprobación del Sistema</code></pre>
+<p>Prácticas</p>
+<pre><code>Presentación</code></pre>
+<p>Participantes</p>
+<pre><code>Comité de Dirección
+Jefe de proyecto
+Directores de los Usuarios
+Responsable de Implantación</code></pre>
+</section>
+</section>
+<section id="actividad-ias-10-paso-a-producción" class="level3" data-number="7.2.10">
+<h3 data-number="7.2.10" class="anchored" data-anchor-id="actividad-ias-10-paso-a-producción"><span class="header-section-number">7.2.10</span> Actividad IAS 10: Paso a Producción</h3>
+<p>Esta actividad tiene como objetivo establecer el punto de inicio en que el sistema pasa a producción, se traspasa la responsabilidad al equipo de mantenimiento y se empiezan a dar los servicios establecidos en el acuerdo de nivel de servicio, una vez que el Comité de Dirección ha aprobado el sistema.</p>
+<p>Para ello es necesario que, después de haber realizado las pruebas de implantación y de aceptación del sistema, se disponga del entorno de producción perfectamente instalado en cuanto a hardware y software de base, componentes del nuevo sistema y procedimientos manuales y automáticos.</p>
+<p>En función del entorno en el que se hayan llevado a cabo las pruebas de implantación y aceptación del sistema, habrá que instalar los componentes del sistema total o parcialmente. También se tendrá en cuenta la necesidad de migrar todos los datos o una parte de ellos.</p>
+<p>Una vez que el sistema ya está en producción, se le notifica al responsable de mantenimiento, al responsable de operación y al Comité de Dirección. TAREA PRODUCTOS TÉCNICAS Y PRÁCTICAS PARTICIPANTES IAS 10.1: Preparación del Entorno de Producción</p>
+<pre><code>Incidencias del Paso a Producción
+Jefe de Proyecto
+Responsable de Implantación
+Equipo de Implantación
+Equipo de Soporte Técnico</code></pre>
+<p>IAS 10.2: Activación del Sistema de Producción</p>
+<pre><code>Sistema en Producción
+Comité de Dirección
+Responsable de Implantación</code></pre>
+<section id="tarea-ias-10.1-preparación-del-entorno-de-producción" class="level4" data-number="7.2.10.1">
+<h4 data-number="7.2.10.1" class="anchored" data-anchor-id="tarea-ias-10.1-preparación-del-entorno-de-producción"><span class="header-section-number">7.2.10.1</span> Tarea IAS 10.1: Preparación del Entorno de Producción</h4>
+<p>Se analiza qué componentes es necesario incorporar al entorno de producción, de acuerdo a las características y condiciones del entorno en que se hayan llevado a cabo las pruebas y se realiza la instalación de los componentes necesarios. Se va lora también, en cuanto a los datos, la necesidad de realizar una nueva carga, una inicialización o una restauración.</p>
+<p>Se comprueba que la instalación del sistema es correcta. Por último, se determina la fecha para la activación del sistema y la eliminación del antiguo, si existiera, estableciendo cómo se va a llevar a cabo la transición de uno a otro. Productos</p>
+<p>De entrada</p>
+<pre><code>Plan de Implantación (IAS 1.1)
+Equipo de Implantación (IAS 1.2)
+Catálogo de Requisitos (DSI 11.2)
+Especificaciones de Construcción del Sistema de Información (DSI 8.4)
+Producto Software (CSI 6.1)
+Código Fuente de los Componentes de Migración y Carga Inicial de Datos (CSI 8.2)
+Procedimientos de Migración y Carga Inicial de Datos (CSI 8.2)
+Aprobación del Sistema (IAS 9.2)</code></pre>
+<p>De salida</p>
+<pre><code>Incidencias del Paso a Producción</code></pre>
+<p>Participantes</p>
+<pre><code>Jefe de Proyecto
+Responsable de Implantación
+Equipo de Implantación
+Equipo de Soporte Técnico</code></pre>
+</section>
+<section id="tarea-ias-10.2-activación-del-sistema-en-producción" class="level4" data-number="7.2.10.2">
+<h4 data-number="7.2.10.2" class="anchored" data-anchor-id="tarea-ias-10.2-activación-del-sistema-en-producción"><span class="header-section-number">7.2.10.2</span> Tarea IAS 10.2: Activación del Sistema en Producción</h4>
+<p>Se arranca el nuevo sistema en producción activando tanto el proceso de Mantenimiento, si se ha determinado en el sistema, como los servicios que se van a prestar. Productos</p>
+<p>De salida</p>
+<pre><code>Sistema en Producción</code></pre>
+<p>Participantes</p>
+<pre><code>Comité de Dirección
+Responsable de Implantación</code></pre>
+
+
+</section>
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copiado");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copiado");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/pmgallardo\.github\.io\/metrica-v3\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../01-principal/06-csi.html" class="pagination-link" aria-label="Construcción del Sistema de Información">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Construcción del Sistema de Información</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../01-principal/08-msi.html" class="pagination-link" aria-label="Mantenimiento del Sistema de Información">
+        <span class="nav-page-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Mantenimiento del Sistema de Información</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/pmgallardo/metrica-v3/edit/main/01-principal/07-ias.qmd" class="toc-action"><i class="bi bi-github"></i>Editar esta página</a></li><li><a href="https://github.com/pmgallardo/metrica-v3/issues/new" class="toc-action"><i class="bi empty"></i>Informar sobre problema</a></li><li><a href="https://github.com/pmgallardo/metrica-v3/blob/main/01-principal/07-ias.qmd" class="toc-action"><i class="bi empty"></i>Ver el código</a></li></ul></div></div></div></footer></body></html>

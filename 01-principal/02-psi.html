@@ -1,0 +1,1603 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.38">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>2&nbsp; Planificación de Sistemas de Información – Métrica v.3</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../01-principal/03-evs.html" rel="next">
+<link href="../01-principal/01-introduccion.html" rel="prev">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-5d2bbbc7808559eb98ab364e0d5f4cb2.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No se han encontrado resultados",
+    "search-matching-documents-text": "documentos encontrados",
+    "search-copy-link-title": "Copiar el enlace en la búsqueda",
+    "search-hide-matches-text": "Ocultar resultados adicionales",
+    "search-more-match-text": "resultado adicional en este documento",
+    "search-more-matches-text": "resultados adicionales en este documento",
+    "search-clear-button-title": "Borrar",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancelar",
+    "search-submit-button-title": "Enviar",
+    "search-label": "Buscar"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../styles.css">
+</head>
+
+<body class="nav-sidebar docked quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../01-principal/01-introduccion.html">Estructura principal</a></li><li class="breadcrumb-item"><a href="../01-principal/02-psi.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Planificación de Sistemas de Información</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Buscar" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../">Métrica v.3</a> 
+        <div class="sidebar-tools-main">
+    <a href="https://github.com/pmgallardo/metrica-v3" title="Ejecutar el código" class="quarto-navigation-tool px-1" aria-label="Ejecutar el código"><i class="bi bi-github"></i></a>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Buscar"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Métrica v.3</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Estructura principal</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Alternar sección">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../01-principal/01-introduccion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introducción</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../01-principal/02-psi.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Planificación de Sistemas de Información</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../01-principal/03-evs.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Estudio de Viabilidad del Sistema</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../01-principal/04-asi.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Análisis del Sistema de Información</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../01-principal/05-dsi.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Diseño del Sistema de Información</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../01-principal/06-csi.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Construcción del Sistema de Información</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../01-principal/07-ias.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Implantación y Aceptación del Sistema</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../01-principal/08-msi.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Mantenimiento del Sistema de Información</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Interfaces</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Alternar sección">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../02-interfaces/01-calidad.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Aseguramiento de la Calidad</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../02-interfaces/02-seguridad.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Seguridad</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../02-interfaces/03-configuracion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Gestión de Configuración</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../02-interfaces/04-proyectos.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Gestión de Proyectos</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">Técnicas</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Alternar sección">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../03-tecnicas/01-tecnicas.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Técnicas</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
+ <span class="menu-text">Participantes</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Alternar sección">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../04-participantes/01-participantes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Participantes</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Tabla de contenidos</h2>
+   
+  <ul>
+  <li><a href="#descripción-y-objetivos" id="toc-descripción-y-objetivos" class="nav-link active" data-scroll-target="#descripción-y-objetivos"><span class="header-section-number">2.1</span> Descripción y objetivos</a></li>
+  <li><a href="#actividad-psi-1-inicio-del-plan-de-sistemas-de-información" id="toc-actividad-psi-1-inicio-del-plan-de-sistemas-de-información" class="nav-link" data-scroll-target="#actividad-psi-1-inicio-del-plan-de-sistemas-de-información"><span class="header-section-number">2.2</span> Actividad PSI 1: Inicio del Plan de Sistemas de Información</a></li>
+  <li><a href="#actividad-psi-2-definición-y-organización-del-psi" id="toc-actividad-psi-2-definición-y-organización-del-psi" class="nav-link" data-scroll-target="#actividad-psi-2-definición-y-organización-del-psi"><span class="header-section-number">2.3</span> Actividad PSI 2: Definición y Organización del PSI</a>
+  <ul class="collapse">
+  <li><a href="#tarea-psi-2.1-especificación-del-ámbito-y-alcance" id="toc-tarea-psi-2.1-especificación-del-ámbito-y-alcance" class="nav-link" data-scroll-target="#tarea-psi-2.1-especificación-del-ámbito-y-alcance"><span class="header-section-number">2.3.1</span> Tarea PSI 2.1: Especificación del Ámbito y Alcance</a></li>
+  <li><a href="#tarea-psi-2.2-organización-del-psi" id="toc-tarea-psi-2.2-organización-del-psi" class="nav-link" data-scroll-target="#tarea-psi-2.2-organización-del-psi"><span class="header-section-number">2.3.2</span> Tarea PSI 2.2: Organización del PSI</a></li>
+  <li><a href="#tarea-psi-2.3-definición-del-plan-de-trabajo" id="toc-tarea-psi-2.3-definición-del-plan-de-trabajo" class="nav-link" data-scroll-target="#tarea-psi-2.3-definición-del-plan-de-trabajo"><span class="header-section-number">2.3.3</span> Tarea PSI 2.3: Definición del Plan de Trabajo</a></li>
+  <li><a href="#una-vez-definido-el-plan-de-trabajo-se-comunica-a-los-usuarios-del-plan-de-sistemas-de-información-con-el-fin-de-que-sea-aceptado.-esto-permite-que-los-usuarios-conozcan-el-método-de-trabajo-a-seguir-los-resultados-a-obtener-y-la-dedicación-necesaria-por-su-parte." id="toc-una-vez-definido-el-plan-de-trabajo-se-comunica-a-los-usuarios-del-plan-de-sistemas-de-información-con-el-fin-de-que-sea-aceptado.-esto-permite-que-los-usuarios-conozcan-el-método-de-trabajo-a-seguir-los-resultados-a-obtener-y-la-dedicación-necesaria-por-su-parte." class="nav-link" data-scroll-target="#una-vez-definido-el-plan-de-trabajo-se-comunica-a-los-usuarios-del-plan-de-sistemas-de-información-con-el-fin-de-que-sea-aceptado.-esto-permite-que-los-usuarios-conozcan-el-método-de-trabajo-a-seguir-los-resultados-a-obtener-y-la-dedicación-necesaria-por-su-parte."><span class="header-section-number">2.3.4</span> Una vez definido el plan de trabajo se comunica a los usuarios del Plan de Sistemas de Información con el fin de que sea aceptado. Esto permite que los usuarios conozcan el método de trabajo a seguir, los resultados a obtener y la dedicación necesaria por su parte.</a></li>
+  </ul></li>
+  <li><a href="#actividad-psi-3-estudio-de-la-información-relevante" id="toc-actividad-psi-3-estudio-de-la-información-relevante" class="nav-link" data-scroll-target="#actividad-psi-3-estudio-de-la-información-relevante"><span class="header-section-number">2.4</span> Actividad PSI 3: Estudio de la Información Relevante</a>
+  <ul class="collapse">
+  <li><a href="#tarea-psi-3.1-selección-y-análisis-de-antecedentes" id="toc-tarea-psi-3.1-selección-y-análisis-de-antecedentes" class="nav-link" data-scroll-target="#tarea-psi-3.1-selección-y-análisis-de-antecedentes"><span class="header-section-number">2.4.1</span> Tarea PSI 3.1: Selección y Análisis de Antecedentes</a></li>
+  <li><a href="#tarea-psi-3.2-valoración-de-antecedentes" id="toc-tarea-psi-3.2-valoración-de-antecedentes" class="nav-link" data-scroll-target="#tarea-psi-3.2-valoración-de-antecedentes"><span class="header-section-number">2.4.2</span> Tarea PSI 3.2: Valoración de Antecedentes</a></li>
+  </ul></li>
+  <li><a href="#actividad-psi-4-identificación-de-requisitos" id="toc-actividad-psi-4-identificación-de-requisitos" class="nav-link" data-scroll-target="#actividad-psi-4-identificación-de-requisitos"><span class="header-section-number">2.5</span> Actividad PSI 4: Identificación de Requisitos</a>
+  <ul class="collapse">
+  <li><a href="#tarea-psi-4.1-estudio-de-los-procesos-del-psi" id="toc-tarea-psi-4.1-estudio-de-los-procesos-del-psi" class="nav-link" data-scroll-target="#tarea-psi-4.1-estudio-de-los-procesos-del-psi"><span class="header-section-number">2.5.1</span> Tarea PSI 4.1: Estudio de los Procesos del PSI</a></li>
+  <li><a href="#tarea-psi-4.2-análisis-de-las-necesidades-de-información" id="toc-tarea-psi-4.2-análisis-de-las-necesidades-de-información" class="nav-link" data-scroll-target="#tarea-psi-4.2-análisis-de-las-necesidades-de-información"><span class="header-section-number">2.5.2</span> Tarea PSI 4.2: Análisis de las Necesidades de Información</a></li>
+  <li><a href="#tarea-psi-4.3-catalogación-de-requisitos" id="toc-tarea-psi-4.3-catalogación-de-requisitos" class="nav-link" data-scroll-target="#tarea-psi-4.3-catalogación-de-requisitos"><span class="header-section-number">2.5.3</span> Tarea PSI 4.3: Catalogación de Requisitos</a></li>
+  </ul></li>
+  <li><a href="#actividad-psi-5-estudio-de-los-sistemas-de-información-actuales" id="toc-actividad-psi-5-estudio-de-los-sistemas-de-información-actuales" class="nav-link" data-scroll-target="#actividad-psi-5-estudio-de-los-sistemas-de-información-actuales"><span class="header-section-number">2.6</span> Actividad PSI 5: Estudio de los Sistemas de Información Actuales</a>
+  <ul class="collapse">
+  <li><a href="#tarea-psi-5.1-alcance-y-objetivos-del-estudio-de-los-sistemas-de-información-actuales" id="toc-tarea-psi-5.1-alcance-y-objetivos-del-estudio-de-los-sistemas-de-información-actuales" class="nav-link" data-scroll-target="#tarea-psi-5.1-alcance-y-objetivos-del-estudio-de-los-sistemas-de-información-actuales"><span class="header-section-number">2.6.1</span> Tarea PSI 5.1: Alcance y Objetivos del Estudio de los Sistemas de Información Actuales</a></li>
+  <li><a href="#tarea-psi-5.2-análisis-de-los-sistemas-de-información-actuales" id="toc-tarea-psi-5.2-análisis-de-los-sistemas-de-información-actuales" class="nav-link" data-scroll-target="#tarea-psi-5.2-análisis-de-los-sistemas-de-información-actuales"><span class="header-section-number">2.6.2</span> Tarea PSI 5.2: Análisis de los Sistemas de Información Actuales</a></li>
+  <li><a href="#tarea-psi-5.3-valoración-de-los-sistemas-de-información-actuales" id="toc-tarea-psi-5.3-valoración-de-los-sistemas-de-información-actuales" class="nav-link" data-scroll-target="#tarea-psi-5.3-valoración-de-los-sistemas-de-información-actuales"><span class="header-section-number">2.6.3</span> Tarea PSI 5.3: Valoración de los Sistemas de Información Actuales</a></li>
+  </ul></li>
+  <li><a href="#actividad-psi-6-diseño-del-modelo-de-sistemas-de-información" id="toc-actividad-psi-6-diseño-del-modelo-de-sistemas-de-información" class="nav-link" data-scroll-target="#actividad-psi-6-diseño-del-modelo-de-sistemas-de-información"><span class="header-section-number">2.7</span> Actividad PSI 6: Diseño del Modelo de Sistemas de Información</a>
+  <ul class="collapse">
+  <li><a href="#tarea-psi-6.1-diagnóstico-de-la-situación-actual" id="toc-tarea-psi-6.1-diagnóstico-de-la-situación-actual" class="nav-link" data-scroll-target="#tarea-psi-6.1-diagnóstico-de-la-situación-actual"><span class="header-section-number">2.7.1</span> Tarea PSI 6.1: Diagnóstico de la Situación Actual</a></li>
+  <li><a href="#tarea-psi-6.2-definición-del-modelo-de-sistemas-de-información" id="toc-tarea-psi-6.2-definición-del-modelo-de-sistemas-de-información" class="nav-link" data-scroll-target="#tarea-psi-6.2-definición-del-modelo-de-sistemas-de-información"><span class="header-section-number">2.7.2</span> Tarea PSI 6.2: Definición del Modelo de Sistemas de Información</a></li>
+  </ul></li>
+  <li><a href="#actividad-psi-7-definición-de-la-arquitectura-tecnológica" id="toc-actividad-psi-7-definición-de-la-arquitectura-tecnológica" class="nav-link" data-scroll-target="#actividad-psi-7-definición-de-la-arquitectura-tecnológica"><span class="header-section-number">2.8</span> Actividad PSI 7: Definición de la Arquitectura Tecnológica</a>
+  <ul class="collapse">
+  <li><a href="#tarea-psi-7.1-identificación-de-las-necesidades-de-infraestructura-tecnológica" id="toc-tarea-psi-7.1-identificación-de-las-necesidades-de-infraestructura-tecnológica" class="nav-link" data-scroll-target="#tarea-psi-7.1-identificación-de-las-necesidades-de-infraestructura-tecnológica"><span class="header-section-number">2.8.1</span> Tarea PSI 7.1: Identificación de las Necesidades de Infraestructura Tecnológica</a></li>
+  <li><a href="#tarea-psi-7.2-selección-de-la-arquitectura-tecnológica" id="toc-tarea-psi-7.2-selección-de-la-arquitectura-tecnológica" class="nav-link" data-scroll-target="#tarea-psi-7.2-selección-de-la-arquitectura-tecnológica"><span class="header-section-number">2.8.2</span> Tarea PSI 7.2: Selección de la Arquitectura Tecnológica</a></li>
+  </ul></li>
+  <li><a href="#actividad-psi-8-definición-del-plan-de-acción" id="toc-actividad-psi-8-definición-del-plan-de-acción" class="nav-link" data-scroll-target="#actividad-psi-8-definición-del-plan-de-acción"><span class="header-section-number">2.9</span> Actividad PSI 8: Definición del Plan de Acción</a>
+  <ul class="collapse">
+  <li><a href="#tarea-psi-8.1-definición-de-proyectos-a-realizar" id="toc-tarea-psi-8.1-definición-de-proyectos-a-realizar" class="nav-link" data-scroll-target="#tarea-psi-8.1-definición-de-proyectos-a-realizar"><span class="header-section-number">2.9.1</span> Tarea PSI 8.1: Definición de Proyectos a Realizar</a></li>
+  <li><a href="#tarea-psi-8.2-elaboración-del-plan-de-mantenimiento-del-psi" id="toc-tarea-psi-8.2-elaboración-del-plan-de-mantenimiento-del-psi" class="nav-link" data-scroll-target="#tarea-psi-8.2-elaboración-del-plan-de-mantenimiento-del-psi"><span class="header-section-number">2.9.2</span> Tarea PSI 8.2: Elaboración del Plan de Mantenimiento del PSI</a></li>
+  </ul></li>
+  <li><a href="#actividad-psi-9-revisión-y-aprobación-del-psi" id="toc-actividad-psi-9-revisión-y-aprobación-del-psi" class="nav-link" data-scroll-target="#actividad-psi-9-revisión-y-aprobación-del-psi"><span class="header-section-number">2.10</span> Actividad PSI 9: Revisión y Aprobación del PSI</a>
+  <ul class="collapse">
+  <li><a href="#tarea-psi-9.1-convocatoria-de-la-presentación" id="toc-tarea-psi-9.1-convocatoria-de-la-presentación" class="nav-link" data-scroll-target="#tarea-psi-9.1-convocatoria-de-la-presentación"><span class="header-section-number">2.10.1</span> Tarea PSI 9.1: Convocatoria de la Presentación</a></li>
+  <li><a href="#tarea-psi-9.2-evaluación-y-mejora-de-la-propuesta" id="toc-tarea-psi-9.2-evaluación-y-mejora-de-la-propuesta" class="nav-link" data-scroll-target="#tarea-psi-9.2-evaluación-y-mejora-de-la-propuesta"><span class="header-section-number">2.10.2</span> Tarea PSI 9.2: Evaluación y Mejora de la Propuesta</a></li>
+  <li><a href="#tarea-psi-9.3-aprobación-del-psi" id="toc-tarea-psi-9.3-aprobación-del-psi" class="nav-link" data-scroll-target="#tarea-psi-9.3-aprobación-del-psi"><span class="header-section-number">2.10.3</span> Tarea PSI 9.3: Aprobación del PSI</a></li>
+  </ul></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/pmgallardo/metrica-v3/edit/main/01-principal/02-psi.qmd" class="toc-action"><i class="bi bi-github"></i>Editar esta página</a></li><li><a href="https://github.com/pmgallardo/metrica-v3/issues/new" class="toc-action"><i class="bi empty"></i>Informar sobre problema</a></li><li><a href="https://github.com/pmgallardo/metrica-v3/blob/main/01-principal/02-psi.qmd" class="toc-action"><i class="bi empty"></i>Ver el código</a></li></ul></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../01-principal/01-introduccion.html">Estructura principal</a></li><li class="breadcrumb-item"><a href="../01-principal/02-psi.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Planificación de Sistemas de Información</span></a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Planificación de Sistemas de Información</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="descripción-y-objetivos" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="descripción-y-objetivos"><span class="header-section-number">2.1</span> Descripción y objetivos</h2>
+<p>El Plan de Sistemas de Información tiene como objetivo la obtención de un marco de referencia para el desarrollo de sistemas de información que responda a los objetivos estratégicos de la organización. Este marco de referencia consta de:</p>
+<ul>
+<li>Una descripción de la situación actual, que constituirá el punto de partida del Plan de Sistemas de Información. Dicha descripción incluirá un análisis técnico de puntos fuertes y riesgos, así como el análisis de servicio a los objetivos de la organización.</li>
+<li>Un conjunto de modelos que constituya la arquitectura de información.</li>
+<li>Una propuesta de proyectos a desarrollar en los próximos años, así como la prioridad de realización de cada proyecto.</li>
+<li>Una propuesta de calendario para la ejecución de dichos proyectos.</li>
+<li>La evaluación de los recursos necesarios para los proyectos a desarrollar en el próximo año, con el objetivo de tenerlos en cuenta en los presupuestos. Para el resto de proyectos, bastará con una estimación de alto nivel.</li>
+<li>Un plan de seguimiento y cumplimiento de todo lo propuesto mediante unos mecanismos de evaluación adecuados.</li>
+</ul>
+<p>La perspectiva del plan debe ser estratégica y operativa, no tecnológica.</p>
+<p>Es fundamental que la alta dirección de la organización tome parte activa en la decisión del Plan de Sistemas de Información con el fin de posibilitar su éxito. La dirección debe convencer a sus colaboradores más directos de la necesidad de realización del plan; de su apoyo de forma constructiva, mentalizándose de que la ejecución del mismo requerirá la utilización de unos recursos de los cuales son responsables.</p>
+<p>La presentación del Plan de Sistemas de Información y la constitución del equipo supone el arranque del proyecto y es fundamental que las más altas instancias de la organización estén implicadas en ambos, dando el apoyo necesario y aportando todo tipo de medios. Explicar el plan a las personas de la organización y a las unidades organizativas afectadas sobre las que recaerá el Plan, el apoyo de los altos directivos y la cualificación de los recursos de las distintas unidades implicadas, serán factores críticos de éxito del Plan de Sistemas de Información.</p>
+<p>El nivel de detalle con el que se hará el estudio de la situación actual dependerá de la existencia de documentación actual, de si hay personas que conozcan dicha documentación y de la predisposición a una sustitución total o parcial por sistemas de información nuevos. En cualquier caso, como paso previo para detectar aspectos importantes que puedan afectar a la organización, es necesario investigar sus puntos fuertes, áreas de mejora, riesgos y amenazas posibles y hacer un diagnóstico de los mismos.</p>
+<p>Para la elaboración del Plan de Sistemas de Información se estudian las necesidades de información de los procesos de la organización afectados por el Plan, con el fin de definir los requisitos generales y obtener modelos conceptuales de información. Por otra parte se evalúan las opciones tecnológicas y se propone un entorno.</p>
+<p>Tras analizar las prioridades relacionadas con las distintas variables que afectan a los sistemas de información, se elabora un calendario de proyectos con una planificación lo más detallada posible de los más inmediatos. Además, se propone una sistemática para mantener actualizado el Plan de Sistemas de Información para incluir en él todos los cambios necesarios, garantizando el cumplimiento adecuado del mismo.</p>
+<p>A continuación se incluye un gráfico que representa la secuencia de actividades del proceso PSI.</p>
+<p><img src="../images/psi-actividades.jpg" class="img-fluid"></p>
+<p>Aunque los resultados de la actividad Estudio de la Información Relevante (PSI 3) deberán tenerse en cuenta para la definición de requisitos que se efectúa en la actividad Identificación de Requisitos (PSI 4), ambas podrán realizarse en paralelo, junto con el Estudio de los Sistemas de Información Actuales (PSI 5).</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../images/psi-plan.jpg" class="img-fluid figure-img"></p>
+<figcaption>Planificación de Sistemas de Información</figcaption>
+</figure>
+</div>
+<section id="participantes-en-las-actividades-del-proceso-psi" class="level3 unnumbered unlisted">
+<h3 class="unnumbered unlisted anchored" data-anchor-id="participantes-en-las-actividades-del-proceso-psi">Participantes en las Actividades del Proceso PSI</h3>
+<p>PLANIFICACIÓN DE SISTEMAS DE INFORMACIÓN ACTIVIDADES PSI 1 PSI 2 PSI 3 PSI 4 PSI 5 PSI 6 PSI 7 PSI 8 PSI 9 Comité de Dirección X X X Consultores X X X X X X X Consultores Informáticos X X X X X X Directores Usuarios X<br>
+Equipo de Soporte Técnico X X<br>
+Equipo del Proyecto X<br>
+Jefe de Proyecto X X Responsable Mantenimiento X<br>
+Usuarios Expertos X X X X X X X</p>
+</section>
+<section id="técnicasprácticas-utilizadas-en-las-actividades-del-proceso-psi" class="level3 unnumbered unlisted">
+<h3 class="unnumbered unlisted anchored" data-anchor-id="técnicasprácticas-utilizadas-en-las-actividades-del-proceso-psi">TÉCNICAS/PRÁCTICAS UTILIZADAS EN LAS ACTIVIDADES DEL PROCESO PSI</h3>
+<p>PLANIFICACIÓN DE SISTEMAS DE INFORMACIÓN ACTIVIDADES PSI 1 PSI 2 PSI 3 PSI 4 PSI 5 PSI 6 PSI 7 PSI 8 PSI 9 Análisis Coste/Beneficio X X<br>
+Catalogación X X X X X<br>
+Diagrama de Clases X<br>
+Diagrama de Representación X X X<br>
+Estimación X<br>
+Factores Críticos de Éxito X<br>
+Impacto en la Organización X X<br>
+Matricial X<br>
+Modelado de Procesos de la Organización X<br>
+Modelo Entidad/Relación Extendido X<br>
+Planificación X<br>
+Presentación X Sesiones de trabajo X X X X X X X X X</p>
+</section>
+<section id="actividades" class="level3 unnumbered unlisted">
+<h3 class="unnumbered unlisted anchored" data-anchor-id="actividades">Actividades</h3>
+<pre><code>Actividad PSI 1: Inicio del Plan de Sistemas de Información
+Actividad PSI 2: Definición y Organización del PSI
+Actividad PSI 3: Estudio de la Información Relevante
+Actividad PSI 4: Identificación de Requisitos
+Actividad PSI 5: Estudio de los Sistemas de Información Actuales
+Actividad PSI 6: Diseño del Modelo de Sistemas de Información
+Actividad PSI 7: Definición de la Arquitectura Tecnológica
+Actividad PSI 8: Definición del Plan de Acción
+Actividad PSI 9: Revisión y Aprobación del PSI</code></pre>
+</section>
+</section>
+<section id="actividad-psi-1-inicio-del-plan-de-sistemas-de-información" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="actividad-psi-1-inicio-del-plan-de-sistemas-de-información"><span class="header-section-number">2.2</span> Actividad PSI 1: Inicio del Plan de Sistemas de Información</h2>
+<p>El objetivo de esta actividad es determinar la necesidad del Plan de Sistemas de Información y llevar a cabo el arranque formal del mismo, con el apoyo del nivel más alto de la organización. Como resultado, se obtiene una descripción general del Plan de Sistemas de Información que proporciona una definición inicial del mismo, identificando los objetivos estratégicos a los que apoya, así como el ámbito general de la organización al que afecta, lo que permite implicar a las direcciones de las áreas afectadas por el Plan de Sistemas de Información.</p>
+<p>Además, se identifican los factores críticos de éxito y los participantes en el Plan de Sistemas de Información, nombrando a los máximos responsables.</p>
+<p>A continuación se incluye una tabla resumen con las tareas de la presente actividad: TAREA PRODUCTOS TÉCNICAS Y PRÁCTICAS PARTICIPANTES PSI 1.1: Análisis de la Necesidad del PSI</p>
+<pre><code>Descripción general del PSI
+    Aprobación de inicio del PSI
+
+
+
+Sesiones de trabajo
+
+
+
+Comité de Dirección</code></pre>
+<p>PSI 1.2: Identificación del Alcance del PSI</p>
+<pre><code>Descripción general del PSI
+    Ámbito y objetivos del PSI
+    Objetivos estratégicos relacionados con el PSI
+    Factores críticos de éxito
+
+
+
+Factores críticos de éxito
+Sesiones de trabajo
+
+
+
+Comité de Dirección</code></pre>
+<p>PSI 1.3: Determinación de Responsables</p>
+<pre><code>Descripcion general del PSI
+    Responsables del PSI
+
+
+
+Sesiones de trabajo
+
+
+
+Comité de Dirección</code></pre>
+</section>
+<section id="actividad-psi-2-definición-y-organización-del-psi" class="level2" data-number="2.3">
+<h2 data-number="2.3" class="anchored" data-anchor-id="actividad-psi-2-definición-y-organización-del-psi"><span class="header-section-number">2.3</span> Actividad PSI 2: Definición y Organización del PSI</h2>
+<p>En esta actividad se detalla el alcance del plan, se organiza el equipo de personas que lo va a llevar a cabo y se elabora un calendario de ejecución. Todos los resultados o productos de esta actividad constituirán el marco de actuación del proyecto más detallado que en PSI 1 en cuanto a objetivos, procesos afectados, participantes, resultados y fechas de entrega. TAREA PRODUCTOS TÉCNICAS Y PRÁCTICAS PARTICIPANTES PSI 2.1: Especificación del ámbito y Alcance</p>
+<pre><code>Descripción general de procesos de la organización afectados
+Catálogo de objetivos de PSI
+    Objetivos generales
+    Objetivos específicos de cada proceso (si los hubiera)
+
+
+
+Catalogación
+
+
+
+Comité de Dirección
+Directores de Usuarios
+Jefe de Proyecto del PSI</code></pre>
+<p>PSI 2.2: Organización del PSI</p>
+<pre><code>Catálogo de usuarios
+Equipos de trabajo
+
+
+
+Catalogación
+Sesiones de trabajo
+
+
+
+Directores de Usuarios
+Jefe de Proyecto del PSI</code></pre>
+<p>PSI 2.3: Definición del Plan de Trabajo</p>
+<pre><code>Plan de trabajo
+
+
+
+Planificación
+Estimación
+
+
+
+Directores de Usuarios
+Jefe de Proyecto del PSI</code></pre>
+<p>PSI 2.4: Comunicación del Plan de Trabajo</p>
+<pre><code>Plan de trabajo
+    Aceptación del Plan de Trabajo por parte de los implicados
+
+
+
+Comité de Dirección
+Directores de Usuarios
+Jefe de Proyecto del PSI</code></pre>
+<section id="tarea-psi-2.1-especificación-del-ámbito-y-alcance" class="level3" data-number="2.3.1">
+<h3 data-number="2.3.1" class="anchored" data-anchor-id="tarea-psi-2.1-especificación-del-ámbito-y-alcance"><span class="header-section-number">2.3.1</span> Tarea PSI 2.1: Especificación del Ámbito y Alcance</h3>
+<p>De manera más concreta que en la actividad Inicio del Plan de Sistemas de Información (PSI 1), en esta tarea se describe el ámbito de los procesos de la organización a considerar. Igualmente, se definirá el alcance, es decir, los objetivos específicos del Plan de Sistemas de Información. Puede ser necesario determinar distintos objetivos para cada proceso del proyecto. Los responsables de los distintos procesos de la organización afectados por el Plan de Sistemas de Información participarán de forma activa en la definición de los objetivos, sin perder de vista los resultados de la actividad anterior. Productos</p>
+<p>De entrada</p>
+<pre><code>Descripción general del PSI (PSI 1.3)</code></pre>
+<p>De salida</p>
+<pre><code>Descripción general de procesos de la organización afectados
+Catálogo de objetivos del PSI:
+    Objetivos generales
+    Objetivos específicos de cada proceso (si los hubiera)</code></pre>
+<p>Prácticas</p>
+<pre><code>Catalogación</code></pre>
+<p>Participantes</p>
+<pre><code>Comité de Dirección
+Directores de Usuarios
+Jefe de Proyecto del PSI</code></pre>
+</section>
+<section id="tarea-psi-2.2-organización-del-psi" class="level3" data-number="2.3.2">
+<h3 data-number="2.3.2" class="anchored" data-anchor-id="tarea-psi-2.2-organización-del-psi"><span class="header-section-number">2.3.2</span> Tarea PSI 2.2: Organización del PSI</h3>
+<p>En esta tarea se tratan cuestiones relacionadas con la organización del trabajo para llevar a cabo el Plan de Sistemas de Información. Se seleccionan los participantes, valorando el número y perfil de profesionales de Sistemas y Tecnologías de la Información y Comunicaciones (STIC) necesarios en función de los objetivos perseguidos.</p>
+<p>Asimismo, se determinan las funciones de los responsables de la dirección y seguimiento del Plan de Sistemas de Información. Adicionalmente, se concretan aspectos logísticos relacionados con el material, salas de reuniones, estándares de documentación, etc. Productos</p>
+<p>De entrada</p>
+<pre><code>Estructura organizativa (externo)
+Descripción general del PSI (PSI 1.3)
+Descripción general de procesos de la organización afectados (PSI 2.1)
+Catálogo de objetivos del PSI (PSI 2.1)</code></pre>
+<p>De salida</p>
+<pre><code>Catálogo de usuarios
+Equipos de trabajo</code></pre>
+<p>Prácticas</p>
+<pre><code>Catalogación
+Sesiones de trabajo</code></pre>
+<p>Participantes</p>
+<pre><code>Directores de Usuarios
+Jefe de Proyecto del PSI</code></pre>
+</section>
+<section id="tarea-psi-2.3-definición-del-plan-de-trabajo" class="level3" data-number="2.3.3">
+<h3 data-number="2.3.3" class="anchored" data-anchor-id="tarea-psi-2.3-definición-del-plan-de-trabajo"><span class="header-section-number">2.3.3</span> Tarea PSI 2.3: Definición del Plan de Trabajo</h3>
+<p>El objetivo de esta tarea es determinar todos los productos finales del Plan de Sistemas de Información, así como la fecha prevista de obtención y entrega de los mismos. Es necesario planificar las distintas actividades y estimar los tiempos requeridos para llevarlas a cabo, teniendo en cuenta la disponibilidad de los usuarios del Plan de Sistemas de Información. Se deben considerar también los factores críticos de éxito, identificados en la actividad anterior y recogidos en la descripción general de procesos de la organización afectados, ya que pueden condicionar la elaboración del plan de trabajo.</p>
+<p>Se detallan las actividades, asignando participantes, tiempos y responsables de cada una de ellas, los resultados esperados y el plan de trabajo a seguir. Productos</p>
+<p>De entrada</p>
+<pre><code>Equipos de trabajo (PSI 2.2)
+Descripción general del PSI (PSI 1.3)
+Catálogo de objetivos de PSI (PSI 2.1)
+Descripción general de procesos de la organización afectados (PSI 2.1)
+Catálogo de usuarios (PSI 2.2)</code></pre>
+<p>De salida</p>
+<pre><code>Plan de trabajo</code></pre>
+<p>Técnicas</p>
+<pre><code>Planificación
+Estimación</code></pre>
+<p>Participantes</p>
+<pre><code>Directores de Usuarios
+Jefe de Proyecto del PSI</code></pre>
+</section>
+<section id="una-vez-definido-el-plan-de-trabajo-se-comunica-a-los-usuarios-del-plan-de-sistemas-de-información-con-el-fin-de-que-sea-aceptado.-esto-permite-que-los-usuarios-conozcan-el-método-de-trabajo-a-seguir-los-resultados-a-obtener-y-la-dedicación-necesaria-por-su-parte." class="level3" data-number="2.3.4">
+<h3 data-number="2.3.4" class="anchored" data-anchor-id="una-vez-definido-el-plan-de-trabajo-se-comunica-a-los-usuarios-del-plan-de-sistemas-de-información-con-el-fin-de-que-sea-aceptado.-esto-permite-que-los-usuarios-conozcan-el-método-de-trabajo-a-seguir-los-resultados-a-obtener-y-la-dedicación-necesaria-por-su-parte."><span class="header-section-number">2.3.4</span> Una vez definido el plan de trabajo se comunica a los usuarios del Plan de Sistemas de Información con el fin de que sea aceptado. Esto permite que los usuarios conozcan el método de trabajo a seguir, los resultados a obtener y la dedicación necesaria por su parte.</h3>
+<p>Productos</p>
+<p>De entrada</p>
+<pre><code>Plan de trabajo (PSI 2.3)
+Catálogo de usuarios (PSI 2.2)</code></pre>
+<p>De salida</p>
+<pre><code>Plan de trabajo
+    Aceptación del Plan de Trabajo</code></pre>
+<p>Participantes</p>
+<pre><code>Comité de Dirección
+Directores de Usuarios
+Jefe de Proyecto del PSI</code></pre>
+</section>
+</section>
+<section id="actividad-psi-3-estudio-de-la-información-relevante" class="level2" data-number="2.4">
+<h2 data-number="2.4" class="anchored" data-anchor-id="actividad-psi-3-estudio-de-la-información-relevante"><span class="header-section-number">2.4</span> Actividad PSI 3: Estudio de la Información Relevante</h2>
+<p>El objetivo de esta actividad es recopilar y analizar todos los antecedentes generales que puedan afectar a los procesos y a las unidades organizativas implicadas en el Plan de Sistemas de Información, así como a los resultados del mismo. Pueden ser de especial interés los estudios realizados con anterioridad al Plan de Sistemas de Información, relativos a los sistemas de información de su ámbito, o bien a su entorno tecnológico, cuyas conclusiones deben ser conocidas por el equipo de trabajo del Plan de Sistemas de Información.</p>
+<p>La información obtenida en esta actividad se tendrá en cuenta en la elaboración de los requisitos. TAREA PRODUCTOS TÉCNICAS Y PRÁCTICAS PARTICIPANTES PSI 3.1: Selección y Análisis de Antecedentes</p>
+<pre><code>Valoración de antecedentes
+
+
+
+Sesiones de trabajo
+
+
+
+Consultores
+Consutores Informáticos
+Usuarios expertos</code></pre>
+<p>PSI 3.2: Valoración de Antecedentes</p>
+<pre><code>Catálogo de requisitos
+Requisitos generales
+Catálogo de normas del PSI
+
+
+
+Catalogación
+
+
+
+Consultores
+Consultores Informáticos</code></pre>
+<section id="tarea-psi-3.1-selección-y-análisis-de-antecedentes" class="level3" data-number="2.4.1">
+<h3 data-number="2.4.1" class="anchored" data-anchor-id="tarea-psi-3.1-selección-y-análisis-de-antecedentes"><span class="header-section-number">2.4.1</span> Tarea PSI 3.1: Selección y Análisis de Antecedentes</h3>
+<p>Se seleccionan las fuentes de información y documentación a considerar en este estudio, teniendo en cuenta todos aquellos antecedentes de interés: plan estratégico de sistemas de información, estudios previos, plan general informático, etc. y se analiza el contenido de la información anterior. En el inicio y organización del Plan de Sistemas de Información se habrá orientado sobre la existencia de estos antecedentes, para facilitar al equipo de trabajo el desarrollo de esta actividad.</p>
+<p>Asimismo, se debe entrevistar a las personas de la organización que puedan aportar información adicional sobre antecedentes que deban ser considerados en el Plan de Sistemas de Información, al margen de la documentación disponible. La información recogida se tiene también en cuenta en la valoración de los mismos. Productos</p>
+<p>De entrada</p>
+<pre><code>Información relevante (externo)
+Descripción general de procesos de la organización afectados (PSI 2.1)
+Catálogo de objetivos del PSI (PSI 2.1)
+Catálogo de usuarios (PSI 2.2)</code></pre>
+<p>De salida</p>
+<pre><code>Análisis de antecedentes</code></pre>
+<p>Prácticas</p>
+<pre><code>Sesiones de trabajo</code></pre>
+<p>Participantes</p>
+<pre><code>Consultores
+Consultores Informáticos
+Usuarios Expertos</code></pre>
+</section>
+<section id="tarea-psi-3.2-valoración-de-antecedentes" class="level3" data-number="2.4.2">
+<h3 data-number="2.4.2" class="anchored" data-anchor-id="tarea-psi-3.2-valoración-de-antecedentes"><span class="header-section-number">2.4.2</span> Tarea PSI 3.2: Valoración de Antecedentes</h3>
+<p>Se realiza la valoración de los antecedentes analizados en la tarea anterior y las conclusiones se recogerán en el catálogo de requisitos. La realización de esta valoración ayudará a establecer términos de referencia en cuanto a estándares, procedimientos, normativas, etc., si es que existen. Productos</p>
+<p>De entrada</p>
+<pre><code>Información relevante (externo)
+Análisis de antecedentes (PSI 3.1)</code></pre>
+<p>De salida</p>
+<pre><code>Catálogo de requisitos:
+    Requisitos generales
+Catálogo de normas del PSI</code></pre>
+<p>Prácticas</p>
+<pre><code>Catalogación</code></pre>
+<p>Participantes</p>
+<pre><code>Consultores
+Consultores Informáticos</code></pre>
+</section>
+</section>
+<section id="actividad-psi-4-identificación-de-requisitos" class="level2" data-number="2.5">
+<h2 data-number="2.5" class="anchored" data-anchor-id="actividad-psi-4-identificación-de-requisitos"><span class="header-section-number">2.5</span> Actividad PSI 4: Identificación de Requisitos</h2>
+<p>El objetivo final de esta actividad va a ser la especificación de los requisitos de información de la organización, así como obtener un modelo de información que los complemente.</p>
+<p>Para conseguir este objetivo, se estudia el proceso o procesos de la organización incluidos en el ámbito del Plan de Sistemas de Información. Para ello es necesario llevar a cabo sesiones de trabajo con los usuarios, analizando cada proceso tal y como debería ser, y no según su situación actual, ya que ésta puede estar condicionada por los sistemas de información existentes.</p>
+<p>Del mismo modo, se identifican los requisitos de información, y se elabora un modelo de información que represente las distintas entidades implicadas en el proceso, así como las relaciones entre ellas.</p>
+<p>Por último, se clasifican los requisitos identificados según su prioridad, con el objetivo de incorporarlos al catálogo de requisitos del Plan de Sistemas de Información. TAREA PRODUCTOS TÉCNICAS Y PRÁCTICAS PARTICIPANTES PSI 4.1: Estudio de los Procesos del PSI</p>
+<pre><code>Modelo de procesos de la organización
+
+
+
+Modelo de Procesos de la Organización
+Sesiones de trabajo
+
+
+
+Consultores
+Usuarios Expertos</code></pre>
+<p>PSI 4.2: Análisis de las Necesidades de Información</p>
+<pre><code>Necesidades de información
+Modelo de información
+
+
+
+Modelo Entidad/Relación Extendido
+Diagrama de clases
+Sesiones de trabajo
+
+
+
+Consultores
+Usuarios Expertos</code></pre>
+<p>PSI 4.3: Catalogación de Requisitos</p>
+<pre><code>Catálogo de requisitos
+    Requisitos de los procesos afectados por el PSI
+
+
+
+Catalogación
+
+
+
+Consultores
+Usuarios Expertos</code></pre>
+<section id="tarea-psi-4.1-estudio-de-los-procesos-del-psi" class="level3" data-number="2.5.1">
+<h3 data-number="2.5.1" class="anchored" data-anchor-id="tarea-psi-4.1-estudio-de-los-procesos-del-psi"><span class="header-section-number">2.5.1</span> Tarea PSI 4.1: Estudio de los Procesos del PSI</h3>
+<p>Se estudia cada proceso de la organización incluido en el ámbito del Plan de Sistemas de Información. Para cada uno de ellos, es necesario identificar las actividades o funciones, la información implicada en ellas y las unidades organizativas que participan en el desarrollo de cada actividad.</p>
+<p>Para obtener esta información es necesario llevar a cabo sesiones de trabajo con los usuarios implicados en cada uno de los procesos a analizar. Una vez contrastadas las conclusiones, se elabora el modelo correspondiente a cada proceso. Si existe relación entre los distintos modelos, se unifican en la medida de lo posible, con el fin de proporcionar una visión global en el contexto de la organización y facilitar una identificación de requisitos más objetiva. Productos</p>
+<p>De entrada</p>
+<pre><code>Descripción general de procesos de la organización afectados (PSI 2.1)
+Catálogo de objetivos de PSI (PSI 2.1)
+Catálogo de usuarios (PSI 2.2)
+Equipos de trabajo (PSI 2.2)</code></pre>
+<p>De salida</p>
+<pre><code>Modelo de procesos de la organización</code></pre>
+<p>Técnicas</p>
+<pre><code>Modelado de procesos de la organización</code></pre>
+<p>Prácticas</p>
+<pre><code>Sesiones de trabajo</code></pre>
+<p>Participantes</p>
+<pre><code>Consultores
+Usuarios Expertos</code></pre>
+</section>
+<section id="tarea-psi-4.2-análisis-de-las-necesidades-de-información" class="level3" data-number="2.5.2">
+<h3 data-number="2.5.2" class="anchored" data-anchor-id="tarea-psi-4.2-análisis-de-las-necesidades-de-información"><span class="header-section-number">2.5.2</span> Tarea PSI 4.2: Análisis de las Necesidades de Información</h3>
+<p>Mediante sesiones de trabajo, se identifican las necesidades de información de cada uno de los procesos analizados en la actividad anterior. Se elabora un modelo de información que refleje las principales entidades y relaciones existentes entre ellas. Todo esto se realiza con la perspectiva de lo que debe ser el proceso en cuanto a sus actividades y funciones, así como a la información de entrada y salida para cada una de ellas.</p>
+<p>Los resultados del análisis realizado en esta tarea son la base para la identificación de requisitos. Productos</p>
+<p>De entrada</p>
+<pre><code>Modelo de procesos de la organización (PSI 4.1)</code></pre>
+<p>De salida</p>
+<pre><code>Necesidades de información
+Modelo de información</code></pre>
+<p>Técnicas</p>
+<pre><code>Modelo Entidad/Relación extendido
+Diagrama de clases</code></pre>
+<p>Prácticas</p>
+<pre><code>Sesiones de trabajo</code></pre>
+<p>Participantes</p>
+<pre><code>Consultores
+Usuarios Expertos</code></pre>
+</section>
+<section id="tarea-psi-4.3-catalogación-de-requisitos" class="level3" data-number="2.5.3">
+<h3 data-number="2.5.3" class="anchored" data-anchor-id="tarea-psi-4.3-catalogación-de-requisitos"><span class="header-section-number">2.5.3</span> Tarea PSI 4.3: Catalogación de Requisitos</h3>
+<p>En esta tarea se analiza la información recogida en las tareas Estudio de los Procesos del PSI (PSI 4.1) y Análisis de las Necesidades de Información (PSI 4.2). Se definen los requisitos, incorporándolos al catálogo que se había comenzado a elaborar en la actividad Estudio de la Información Relevante (PSI 3) y se les asignan prioridades.</p>
+<p>Los criterios para asignar dichas prioridades deben ser definidos al comienzo de esta tarea, considerando la opinión de los usuarios sobre los procesos de la organización, así como los objetivos del Plan de Sistemas de Información. Productos</p>
+<p>De entrada</p>
+<pre><code>Catálogo de objetivos de PSI (PSI 2.1)
+Catálogo de requisitos (PSI 3.2)
+Modelo de procesos de la organización (PSI 4.1)
+Modelo de información (PSI 4.2)
+Necesidades de información (PSI 4.2)</code></pre>
+<p>De salida</p>
+<pre><code>Catálogo de requisitos:
+    Requisitos de los procesos afectados por el PSI</code></pre>
+<p>Prácticas</p>
+<pre><code>Catalogación</code></pre>
+<p>Participantes</p>
+<pre><code>Consultores
+Usuarios Expertos</code></pre>
+</section>
+</section>
+<section id="actividad-psi-5-estudio-de-los-sistemas-de-información-actuales" class="level2" data-number="2.6">
+<h2 data-number="2.6" class="anchored" data-anchor-id="actividad-psi-5-estudio-de-los-sistemas-de-información-actuales"><span class="header-section-number">2.6</span> Actividad PSI 5: Estudio de los Sistemas de Información Actuales</h2>
+<p>El objetivo de esta actividad es obtener una valoración de la situación actual al margen de los requisitos del catálogo, apoyándose en criterios relativos a facilidad de mantenimiento, documentación, flexibilidad, facilidad de uso, etc. En esta actividad se debe tener en cuenta la opinión de los usuarios, ya que aportarán elementos de valoración, como por ejemplo, su nivel de satisfacción con cada sistema de información.</p>
+<p>Se seleccionan los sistemas de información actuales que son objeto del análisis y se lleva a cabo el estudio de los mismos con la profundidad y el detalle que se determine conveniente en función de los objetivos definidos para el Plan de Sistemas de Información. Este estudio permite, para cada sistema, determinar sus carencias y valorarlos. Esta valoración se utilizará en la actividad Diseño del Modelo de Sistemas de Información (PSI 6), donde se analizará la cobertura de los sistemas de información actuales con respecto a los requisitos. TAREA PRODUCTOS TÉCNICAS Y PRÁCTICAS PARTICIPANTES PSI 5.1: Alcance y Objetivos del Estudio de los Sistemas de Información Actuales</p>
+<pre><code>Catálogo de objetivos del PSI
+    Objetivos del estudio de los Sistemas de Información actuales
+Identificación de los Sistemas de Información actuales
+
+
+
+Catalogación
+Sesiones de trabajo
+
+
+
+Consultores
+Consultores Informáticos
+Usuarios Expertos</code></pre>
+<p>PSI 5.2: Análisis de los Sistemas de Información Actuales</p>
+<pre><code>Descripción general de los Sistemas de Información actuales
+
+
+
+Sesiones de trabajo
+Diagrama de representación
+
+
+
+Consultores
+Consultores Informáticos
+Usuarios Expertos
+Equipo de Proyecto
+Equipo de Soporte Técnico
+Responsable de Mantenimiento</code></pre>
+<p>PSI 5.3: Valoración de los Sistemas de Información Actuales</p>
+<pre><code>Valoración de la situación actual
+
+
+
+Sesiones de trabajo
+
+
+
+Consultores
+Consultores Informáticos</code></pre>
+<section id="tarea-psi-5.1-alcance-y-objetivos-del-estudio-de-los-sistemas-de-información-actuales" class="level3" data-number="2.6.1">
+<h3 data-number="2.6.1" class="anchored" data-anchor-id="tarea-psi-5.1-alcance-y-objetivos-del-estudio-de-los-sistemas-de-información-actuales"><span class="header-section-number">2.6.1</span> Tarea PSI 5.1: Alcance y Objetivos del Estudio de los Sistemas de Información Actuales</h3>
+<p>A partir de la descripción general de los procesos de la organización afectados por el Plan de Sistemas de Información se determina qué sistemas de información actuales se encuentran dentro del ámbito del Plan de Sistemas de Información. Se seleccionan, de los sistemas existentes, los que deben ser analizados, así como los objetivos del estudio de cada uno. De esta forma, se establece el dominio de sistemas de información de la organización a considerar. También se tienen en cuenta los objetivos definidos para el Plan de Sistemas de Información, en función de los cuales se establece la amplitud y profundidad con la que se deberá desarrollar esta actividad.</p>
+<p>Los objetivos del Plan de Sistemas de Información se completan con los objetivos definidos en esta tarea para el estudio de los sistemas de información actuales.</p>
+<p>La información relativa a los sistemas de información que dan actualmente soporte a los procesos afectados por el Plan de Sistemas de Información, se obtiene mediante sesiones de trabajo con los usuarios y el apoyo del personal informático que se considere necesario. Productos</p>
+<p>De entrada</p>
+<pre><code>Catálogo de objetivos de PSI (PSI 2.1)
+Descripción general de procesos de la organización afectados (PSI 2.1)
+Catálogo de usuarios (PSI 2.2)
+Equipos de trabajo (PSI 2.2)</code></pre>
+<p>De salida</p>
+<pre><code>Catálogo de objetivos de PSI:
+    Objetivos del estudio de los sistemas de información actuales
+Identificación de sistemas de información actuales afectados por el PSI</code></pre>
+<p>Prácticas</p>
+<pre><code>Catalogación
+Sesiones de trabajo</code></pre>
+<p>Participantes</p>
+<pre><code>Consultores
+Consultores Informáticos
+Usuarios Expertos</code></pre>
+</section>
+<section id="tarea-psi-5.2-análisis-de-los-sistemas-de-información-actuales" class="level3" data-number="2.6.2">
+<h3 data-number="2.6.2" class="anchored" data-anchor-id="tarea-psi-5.2-análisis-de-los-sistemas-de-información-actuales"><span class="header-section-number">2.6.2</span> Tarea PSI 5.2: Análisis de los Sistemas de Información Actuales</h3>
+<p>En esta tarea se lleva a cabo el estudio de los sistemas de información actuales afectados por el PSI. Para cada sistema de información se recogen, al menos, las características básicas relativas a datos, software de aplicación, procesos de la organización a los que da soporte y de qué forma lo hace, flexibilidad, carencias, riesgos y posibles amenazas.</p>
+<p>En función del tipo de sistema de información y de los objetivos de su estudio se recopila además, para cada uno de ellos, información procedente de diversos puntos de vista (la opinión de usuarios de los sistemas de información, de analistas de desarrollo, de personal de operación, etc.). Productos</p>
+<p>De entrada</p>
+<pre><code>Descripción general de procesos de la organización afectados (PSI 2.1)
+Catálogo de objetivos de PSI (PSI 5.1)
+Identificación de sistemas de información actuales afectados por el PSI (PSI 5.1)</code></pre>
+<p>De salida</p>
+<pre><code>Descripción general de sistemas de información actuales</code></pre>
+<p>Prácticas</p>
+<pre><code>Sesiones de trabajo
+Diagrama de Representación</code></pre>
+<p>Participantes</p>
+<pre><code>Consultores
+Consultores Informáticos
+Usuarios Expertos
+Equipo del Proyecto
+Equipo de Soporte Técnico
+Responsable de Mantenimiento</code></pre>
+</section>
+<section id="tarea-psi-5.3-valoración-de-los-sistemas-de-información-actuales" class="level3" data-number="2.6.3">
+<h3 data-number="2.6.3" class="anchored" data-anchor-id="tarea-psi-5.3-valoración-de-los-sistemas-de-información-actuales"><span class="header-section-number">2.6.3</span> Tarea PSI 5.3: Valoración de los Sistemas de Información Actuales</h3>
+<p>Una vez descritas las características de los sistemas de información actuales, se analizan los problemas reales y potenciales, opiniones, etc. Se obtienen conclusiones y una valoración, lo más objetiva posible, de cada uno de ellos. Es importante lograr esta objetividad, ya que la valoración podrá influir en la decisión de la sustitución o mejora de los sistemas de información en los próximos años.</p>
+<p>Conviene señalar que esta valoración no se realiza en cuanto a cobertura de requisitos, sino con respecto a aspectos intrínsecos o de eficiencia de cada sistema de información, relativos a facilidad de mantenimiento, operatividad, nivel de servicio, costes, etc. Productos</p>
+<p>De entrada</p>
+<pre><code>Catálogo de objetivos de PSI (PSI 5.1)
+Descripción general de sistemas de información actuales (PSI 5.2)</code></pre>
+<p>De salida</p>
+<pre><code>Valoración de la situación actual</code></pre>
+<p>Prácticas</p>
+<pre><code>Sesiones de trabajo
+Impacto en la Organización</code></pre>
+<p>Participantes</p>
+<pre><code>Consultores
+Consultores Informáticos</code></pre>
+</section>
+</section>
+<section id="actividad-psi-6-diseño-del-modelo-de-sistemas-de-información" class="level2" data-number="2.7">
+<h2 data-number="2.7" class="anchored" data-anchor-id="actividad-psi-6-diseño-del-modelo-de-sistemas-de-información"><span class="header-section-number">2.7</span> Actividad PSI 6: Diseño del Modelo de Sistemas de Información</h2>
+<p>El objetivo de esta actividad es identificar y definir los sistemas de información que van a dar soporte a los procesos de la organización afectados por el Plan de Sistemas de Información. Para ello, en primer lugar, se analiza la cobertura que los sistemas de información actuales dan a los requisitos recogidos en el catálogo elaborado en las actividades Estudio de la Información Relevante (PSI 3) e Identificación de Requisitos (PSI 4). Esto permitirá efectuar un diagnóstico de la situación actual, a partir del cual se seleccionan los sistemas de información actuales considerados válidos, identificando las mejoras a realizar en los mismos.</p>
+<p>Por último, se definen los nuevos sistemas de información necesarios para cubrir los requisitos y funciones de los procesos no soportados por los sistemas actuales seleccionados.</p>
+<p>Teniendo en cuenta los resultados anteriores, se elabora el modelo de sistemas de información válido para dar soporte a los procesos de la organización incluidos en el ámbito del Plan de Sistemas de Información. TAREA PRODUCTOS TÉCNICAS Y PRÁCTICAS PARTICIPANTES PSI 6.1: Diagnóstico de la Situación Actual</p>
+<pre><code>Diagnóstico de la situación actual
+    Relación de sistemas de información que se conservan y mejoras necesarias
+
+
+
+Matricial
+
+
+
+Consultores</code></pre>
+<p>PSI 6.2: Definición del Modelo de Sistemas de Información</p>
+<pre><code>Modelo de sistemas de información
+
+
+
+Matricial
+Diagrama de representación
+Sesiones de trabajo
+
+
+
+Consultores
+Consultores Informáticos
+Usuarios Expertos</code></pre>
+<section id="tarea-psi-6.1-diagnóstico-de-la-situación-actual" class="level3" data-number="2.7.1">
+<h3 data-number="2.7.1" class="anchored" data-anchor-id="tarea-psi-6.1-diagnóstico-de-la-situación-actual"><span class="header-section-number">2.7.1</span> Tarea PSI 6.1: Diagnóstico de la Situación Actual</h3>
+<p>Para llegar a un diagnóstico sobre la situación actual, se tiene en cuenta la valoración de los sistemas de información actuales realizada en la actividad Estudio de los Sistemas de Información Actuales (PSI 5), y se estudia la cobertura de requisitos que se tiene con ellos. Esto permite determinar los requisitos del catálogo no cubiertos por los sistemas de información actuales, estudiando su criticidad y prioridad.</p>
+<p>En paralelo, se analiza el modelo de información obtenido en la tarea Análisis de las Necesidades de Información (PSI 4.2). Se determina si existen entidades o relaciones del mismo, que no aparecen recogidas en la situación actual o que, estando recogidas, su tratamiento actual no responde a los nuevos requisitos.</p>
+<p>Como resultado del análisis anterior, se seleccionan los sistemas de información a conservar y se elabora, si procede, la relación de mejoras a realizar en cada uno de ellos para cubrir los requisitos que le afectan. Productos</p>
+<p>De entrada</p>
+<pre><code>Modelo de información (PSI 4.2)
+Catálogo de requisitos (PSI 4.3)
+Valoración de la situación actual (PSI 5.3)</code></pre>
+<p>De salida</p>
+<pre><code>Diagnóstico de la situación actual:
+    Relación de sistemas de información que se conservan y mejoras necesarias</code></pre>
+<p>Técnicas</p>
+<pre><code>Matricial</code></pre>
+<p>Participantes</p>
+<pre><code>Consultores</code></pre>
+</section>
+<section id="tarea-psi-6.2-definición-del-modelo-de-sistemas-de-información" class="level3" data-number="2.7.2">
+<h3 data-number="2.7.2" class="anchored" data-anchor-id="tarea-psi-6.2-definición-del-modelo-de-sistemas-de-información"><span class="header-section-number">2.7.2</span> Tarea PSI 6.2: Definición del Modelo de Sistemas de Información</h3>
+<p>Esta tarea tiene como objetivo representar el conjunto de sistemas de información que da soporte a los procesos de la organización afectados, describiendo sus relaciones e interfaces, así como definir qué sistemas de información actuales se mantendrán con las mejoras propuestas, y qué sistemas de información nuevos cubrirán los requisitos no soportados por los sistemas de información actuales.</p>
+<p>Para identificar cada sistema de información nuevo se analizan:</p>
+<pre><code>Los sistemas de información actuales que se conservan.
+Los requisitos no cubiertos por los sistemas de información actuales. Se realiza una identificación inicial de sistemas de información, agrupando actividades homogéneas de los procesos de la organización afectados que actúan sobre información común.
+Diferentes tipos de sistemas de información (de gestión, de soporte a la toma de decisiones, especiales, etc.).
+Interfaces entre sistemas de información, con el objetivo de minimizarlas.
+Tecnología especial requerida, si procede.</code></pre>
+<p>Las conclusiones obtenidas de dicho análisis sirven para identificar cada sistema de información nuevo y elaborar el modelo de sistemas de información.</p>
+<p>Por último y contando con la experiencia de los participantes en esta tarea, se obtiene el modelo de sistemas de información, que incluye un diagrama de representación de todos ellos, con sus conexiones e interfaces, y una descripción de cada sistema de información con el conjunto de actividades y requisitos que cubre, así como el tipo de sistema de que se trata. Productos</p>
+<p>De entrada</p>
+<pre><code>Diagnóstico situación actual (PSI 6.1)
+Modelo de procesos de la organización (PSI 4.1)
+Modelo de información (PSI 4.2)
+Catálogo de requisitos (PSI 4.3)</code></pre>
+<p>De salida</p>
+<pre><code>Modelo de sistemas de información</code></pre>
+<p>Técnicas</p>
+<pre><code>Matricial</code></pre>
+<p>Prácticas</p>
+<pre><code>Diagrama de Representación
+Sesiones de trabajo</code></pre>
+<p>Participantes</p>
+<pre><code>Consultores
+Consultores Informáticos
+Usuarios Expertos</code></pre>
+</section>
+</section>
+<section id="actividad-psi-7-definición-de-la-arquitectura-tecnológica" class="level2" data-number="2.8">
+<h2 data-number="2.8" class="anchored" data-anchor-id="actividad-psi-7-definición-de-la-arquitectura-tecnológica"><span class="header-section-number">2.8</span> Actividad PSI 7: Definición de la Arquitectura Tecnológica</h2>
+<p>En esta actividad se propone una arquitectura tecnológica que de soporte al modelo de información y de sistemas de información incluyendo, si es necesario, opciones. Para esta actividad se tienen en cuenta especialmente los requisitos de carácter tecnológico, aunque es necesario considerar el catálogo completo de requisitos para entender las necesidades de los procesos y proponer los entornos tecnológicos que mejor se adapten a las mismas. TAREA PRODUCTOS TÉCNICAS Y PRÁCTICAS PARTICIPANTES PSI 7.1: Identificación de las Necesidades de Infraestructura Tecnológica</p>
+<pre><code>Alternativas de arquitectura tecnológica
+
+
+
+Diagrama de representación
+Sesiones de trabajo
+
+
+
+Consultores Informáticos
+Equipo de Soporte Técnico</code></pre>
+<p>PSI 7.2: Selección de la Arquitectura Tecnológica</p>
+<pre><code>Arquitectura tecnológica
+
+
+
+Análisis Coste/Beneficio
+Diagrama de representación
+Impacto en la organización
+
+
+
+Consultores
+Consultores Informáticos
+Usuarios expertos
+Equipo de Soporte Técnico</code></pre>
+<section id="tarea-psi-7.1-identificación-de-las-necesidades-de-infraestructura-tecnológica" class="level3" data-number="2.8.1">
+<h3 data-number="2.8.1" class="anchored" data-anchor-id="tarea-psi-7.1-identificación-de-las-necesidades-de-infraestructura-tecnológica"><span class="header-section-number">2.8.1</span> Tarea PSI 7.1: Identificación de las Necesidades de Infraestructura Tecnológica</h3>
+<p>Esta tarea tiene el objetivo de analizar las necesidades de infraestructura tecnológica y proponer las alternativas viables desde el punto de vista tecnológico, para dar respuesta a dichas necesidades.</p>
+<p>Para ello, se comienza analizando el modelo de sistemas de información y el catálogo de requisitos, en especial los de carácter técnico. Se identifican las necesidades (entornos necesarios, conectividad y comunicaciones entre ellos, disponibilidad, servicios críticos, etc.).</p>
+<p>A continuación se determinan las posibles alternativas de infraestructura tecnológica, definiendo los componentes, a alto nivel, y representando gráficamente cada una de ellas. Es necesario establecer la forma de gestionar la infraestructura tecnológica para responder a las necesidades identificadas. La visión aportada por los consultores de Tecnologías de la Información y Comunicaciones (TIC) debe ser de futuro, considerando la posible evolución de las distintas tecnologías candidatas, así como de las actualmente incorporadas en la organización. Es imprescindible contar, en este análisis, con la información relativa a los entornos tecnológicos de la situación actual, así como los estándares existentes en la organización. Productos</p>
+<p>De entrada</p>
+<pre><code>Entorno tecnológico actual y estándares (externo)
+Modelo de sistemas de información (PSI 6.2)
+Modelo de información (PSI 4.2)
+Catálogo de requisitos (PSI 4.3)
+Descripción general de sistemas de información actuales (PSI 5.2)
+Valoración de la situación actual (PSI 5.3)</code></pre>
+<p>De salida</p>
+<pre><code>Alternativas de arquitectura tecnológica</code></pre>
+<p>Prácticas</p>
+<pre><code>Diagrama de Representación
+Sesiones de trabajo</code></pre>
+<p>Participantes</p>
+<pre><code>Consultores Informáticos
+Equipo de Soporte Técnico</code></pre>
+</section>
+<section id="tarea-psi-7.2-selección-de-la-arquitectura-tecnológica" class="level3" data-number="2.8.2">
+<h3 data-number="2.8.2" class="anchored" data-anchor-id="tarea-psi-7.2-selección-de-la-arquitectura-tecnológica"><span class="header-section-number">2.8.2</span> Tarea PSI 7.2: Selección de la Arquitectura Tecnológica</h3>
+<p>Esta tarea está encaminada a la selección de una alternativa de plataforma tecnológica para determinar lo que llamaremos arquitectura tecnológica, que recoge la infraestructura más adecuada para dar soporte, en el contexto de la organización, al modelo de información y de sistemas de información propuesto.</p>
+<p>Para cada alternativa, se debe analizar su impacto en la organización, así como los medios y el tiempo necesarios para su implantación. Se deben tener en cuenta los recursos tecnológicos actuales para evaluar los cambios necesarios.</p>
+<p>Se realiza un estudio de cada propuesta, indicando ventajas e inconvenientes, así como el nivel de respuesta a las necesidades identificadas en la tarea anterior.</p>
+<p>Por último, una estimación económica global puede ayudar a elegir la alternativa que va a ser propuesta, para la cual pueden incluirse opciones. Productos</p>
+<p>De entrada</p>
+<pre><code>Entorno tecnológico actual y estándares (externo)
+Alternativas de arquitectura tecnológica (PSI 7.1)</code></pre>
+<p>De salida</p>
+<pre><code>Arquitectura tecnológica</code></pre>
+<p>Técnicas</p>
+<pre><code>Análisis Coste/Beneficio</code></pre>
+<p>Prácticas</p>
+<pre><code>Diagrama de Representación
+Impacto en la organización</code></pre>
+<p>Participantes</p>
+<pre><code>Consultores
+Consultores Informáticos
+Usuarios Expertos
+Equipo de Soporte Técnico</code></pre>
+</section>
+</section>
+<section id="actividad-psi-8-definición-del-plan-de-acción" class="level2" data-number="2.9">
+<h2 data-number="2.9" class="anchored" data-anchor-id="actividad-psi-8-definición-del-plan-de-acción"><span class="header-section-number">2.9</span> Actividad PSI 8: Definición del Plan de Acción</h2>
+<p>En el Plan de Acción, que se elabora en esta actividad, se definen los proyectos y acciones a llevar a cabo para la implantación de los modelos de información y de sistemas de información, determinados en las actividades Identificación de Requisitos (PSI 4) y Diseño del Modelo de Sistemas de Información (PSI 6), con la arquitectura tecnológica propuesta en la actividad Definición de la Arquitectura Tecnológica (PSI 7). El conjunto de estos tres modelos constituye la arquitectura de información.</p>
+<p>Dentro del Plan de Acción se incluye un calendario de proyectos, con posibles alternativas, y una estimación de recursos, cuyo detalle será mayor para los más inmediatos. Para la elaboración del calendario se tienen que analizar las distintas variables que afecten a la prioridad de cada proyecto y sistema de información. El orden definitivo de los proyectos y acciones debe pactarse con los usuarios, para llegar a una solución de compromiso que resulte la mejor posible para la organización.</p>
+<p>Por último, se propone un plan de mantenimiento para el control y seguimiento de la ejecución de los proyectos, así como para la actualización de los productos finales del Plan de Sistemas de Información. TAREA PRODUCTOS TÉCNICAS Y PRÁCTICAS PARTICIPANTES PSI 8.1: Definición de Proyectos a Realizar</p>
+<pre><code>Plan de proyectos
+    Definición de proyectos
+    Prioridad de proyectos
+    Calendario de proyectos y acciones
+
+
+
+Análisis Coste/Beneficio
+Impacto en la Organización
+Sesiones de trabajo
+
+
+
+Consultores
+Consultores Informáticos
+Usuarios expertos</code></pre>
+<p>PSI 8.2: Elaboración del Plan de Mantenimiento del PSI</p>
+<pre><code>Plan de mantenimiento del PSI
+
+
+
+Consultores
+Consultores Informáticos</code></pre>
+<section id="tarea-psi-8.1-definición-de-proyectos-a-realizar" class="level3" data-number="2.9.1">
+<h3 data-number="2.9.1" class="anchored" data-anchor-id="tarea-psi-8.1-definición-de-proyectos-a-realizar"><span class="header-section-number">2.9.1</span> Tarea PSI 8.1: Definición de Proyectos a Realizar</h3>
+<p>Se determinan los proyectos y acciones necesarios para implantar la arquitectura de información propuesta, definiendo para cada proyecto los objetivos que cubre y cualquier observación que se considere relevante.</p>
+<p>A continuación, se asignan prioridades tratando de combinar diferentes criterios como:</p>
+<pre><code>Relación con los objetivos considerados en el Plan de Sistemas de Información.
+Condicionantes técnicos que impliquen dependencias entre proyectos.
+Tiempo de implantación.
+Beneficios para la organización (tangibles e intangibles).
+Limitaciones y consideraciones relativas a la organización (impacto, necesidades de formación, etc.).
+Recursos disponibles a corto y medio plazo, tanto de las áreas de Sistemas de Información y Tecnologías de la Información como de los usuarios.
+Situación de riesgo de algunos de los sistemas actuales a sustituir o mejorar.
+Otros.</code></pre>
+<p>Después del estudio de todos los elementos anteriores, se propone el calendario de proyectos que mejor conjugue todas las restricciones analizadas previamente, estimando fechas de principio y fin de cada uno de ellos, así como los recursos necesarios para los más inmediatos. Se hará énfasis en los objetivos estratégicos soportados por el Plan de Sistemas de Información.</p>
+<p>Por último, se completa el plan de proyectos considerando los factores críticos de éxito para llevar a cabo la propuesta, así como el plan de acciones necesarias, deducidas del análisis de dichos factores (planes de formación, gestión del cambio, etc.).</p>
+<p>Las conclusiones obtenidas deben ser contrastadas y modificadas, si se estima conveniente, con las aportaciones de los usuarios. Productos</p>
+<p>De entrada</p>
+<pre><code>Descripción general del PSI (PSI 1.2)
+Catálogo de objetivos del PSI (PSI 5.1)
+Arquitectura de información:
+    Modelo de información (PSI 4.2)
+    Modelo de sistemas de información (PSI 6.2)
+    Arquitectura tecnológica (PSI 7.2)</code></pre>
+<p>De salida</p>
+<pre><code>Plan de proyectos:
+    Definición de proyectos
+    Prioridad de proyectos
+    Calendario de proyectos y acciones</code></pre>
+<p>Técnicas</p>
+<pre><code>Análisis Coste/Beneficio</code></pre>
+<p>Prácticas</p>
+<pre><code>Impacto en la organización
+Sesiones de trabajo</code></pre>
+<p>Participantes</p>
+<pre><code>Consultores
+Consultores Informáticos
+Usuarios Expertos</code></pre>
+</section>
+<section id="tarea-psi-8.2-elaboración-del-plan-de-mantenimiento-del-psi" class="level3" data-number="2.9.2">
+<h3 data-number="2.9.2" class="anchored" data-anchor-id="tarea-psi-8.2-elaboración-del-plan-de-mantenimiento-del-psi"><span class="header-section-number">2.9.2</span> Tarea PSI 8.2: Elaboración del Plan de Mantenimiento del PSI</h3>
+<p>Una vez establecido el plan de acción, se deben definir las acciones que permitan mantener actualizado el Plan de Sistemas de Información a su terminación, y conocer el grado de avance de los proyectos que en él se han definido. Todo ello se denomina Plan de Mantenimiento del Plan de Sistemas de Información.</p>
+<p>En este plan de mantenimiento, entre otros aspectos que se puedan considerar relevantes para la organización, se deben establecer los productos finales del Plan de Sistemas de Información que se van a mantener actualizados, el soporte para los mismos, y cuándo y por quién van a ser modificados, así como la frecuencia y situaciones en los que se debe revisar el plan de proyectos y los responsables de hacerlo.</p>
+<p>También se determina a quiénes se informará, y con qué periodicidad, del grado de avance del plan establecido o de los cambios que en él se produzcan. Productos</p>
+<p>De entrada</p>
+<pre><code>Plan de proyectos (PSI 8.1)</code></pre>
+<p>De salida</p>
+<pre><code>Plan de mantenimiento del PSI</code></pre>
+<p>Participantes</p>
+<pre><code>Consultores
+Consultores Informáticos</code></pre>
+</section>
+</section>
+<section id="actividad-psi-9-revisión-y-aprobación-del-psi" class="level2" data-number="2.10">
+<h2 data-number="2.10" class="anchored" data-anchor-id="actividad-psi-9-revisión-y-aprobación-del-psi"><span class="header-section-number">2.10</span> Actividad PSI 9: Revisión y Aprobación del PSI</h2>
+<p>Esta actividad tiene como objetivo contrastar con los responsables de la dirección del Plan de Sistemas de Información la arquitectura de información y el plan de acción elaborados anteriormente, para mejorar la propuesta si se considera necesario y por último, obtener su aprobación final. TAREA PRODUCTOS TÉCNICAS Y PRÁCTICAS PARTICIPANTES PSI 9.1: Convocatoria de la Presentación</p>
+<pre><code>Plan de presentación
+
+
+
+Presentación
+
+
+
+Jefe de Proyecto del PSI
+Consultores
+Consultores Informáticos</code></pre>
+<p>PSI 9.2: Evaluación y Mejora de la Propuesta</p>
+<pre><code>Resultado de las sesiones de trabajo
+Presentación
+Catálogo de requisitos del PSI
+Arquitectura de información
+    Modelo de información
+    Modelo de sistemas de información
+    Arquitectura tecnológica
+Plan de acción
+    Plan de proyectos
+    Plan de mantenimiento del PSI
+
+
+
+Sesiones de trabajo
+Presentación
+
+
+
+Comité de Dirección
+Jefe de Proyecto del PSI
+Consultores
+Consultores Informáticos
+Usuarios expertos</code></pre>
+<p>PSI 9.3: Aprobación del PSI</p>
+<pre><code>Aprobación formal del PSI
+Plan de comunicación del PSI
+
+
+
+Sesiones de trabajo
+
+
+
+Comité de Dirección
+Jefe de Proyecto del PSI</code></pre>
+<section id="tarea-psi-9.1-convocatoria-de-la-presentación" class="level3" data-number="2.10.1">
+<h3 data-number="2.10.1" class="anchored" data-anchor-id="tarea-psi-9.1-convocatoria-de-la-presentación"><span class="header-section-number">2.10.1</span> Tarea PSI 9.1: Convocatoria de la Presentación</h3>
+<p>Se elabora un resumen que recoja los resultados finales de las actividades Identificación de Requisitos (PSI 4), Estudio de los sistemas de Información Actuales (PSI 5), Diseño del Modelo de Sistemas de Información (PSI 6), Definición de la Arquitectura Tecnológica (PSI 7) y Definición del Plan de Acción (PSI 8). El Jefe de Proyecto del PSI envía esta información a quienes constituyen la dirección del Plan de Sistemas de Información, para su estudio junto con la convocatoria, y espera su confirmación. Productos</p>
+<p>De entrada</p>
+<pre><code>Catálogo de requisitos (PSI 4.3)
+Catálogo de objetivos (PSI 5.1)
+Arquitectura de información:
+    Modelo de información (PSI 4.2)
+    Modelo de sistemas de información (PSI 6.2)
+    Arquitectura tecnológica (PSI 7.2)
+Plan de acción:
+    Plan de proyectos (PSI 8.1)
+    Plan de mantenimiento del PSI (PSI 8.2)</code></pre>
+<p>De salida</p>
+<pre><code>Plan de presentación</code></pre>
+<p>Prácticas</p>
+<pre><code>Presentación</code></pre>
+<p>Participantes</p>
+<pre><code>Jefe de Proyecto del PSI
+Consultores
+Consultores Informáticos</code></pre>
+</section>
+<section id="tarea-psi-9.2-evaluación-y-mejora-de-la-propuesta" class="level3" data-number="2.10.2">
+<h3 data-number="2.10.2" class="anchored" data-anchor-id="tarea-psi-9.2-evaluación-y-mejora-de-la-propuesta"><span class="header-section-number">2.10.2</span> Tarea PSI 9.2: Evaluación y Mejora de la Propuesta</h3>
+<p>Se realiza la presentación de los resultados, manteniéndose a continuación sesiones de trabajo guiadas por el Jefe de Proyecto del PSI, para recoger las posibles mejoras y analizar su incorporación a la propuesta. Productos</p>
+<p>De entrada</p>
+<pre><code>Plan de Presentación (PSI 9.1)
+Catálogo de requisitos (PSI 4.3)
+Catálogo de objetivos (PSI 5.1)
+Arquitectura de información:
+    Modelo de información (PSI 4.2)
+    Modelo de sistemas de información (PSI 6.2)
+    Arquitectura tecnológica (PSI 7.2)
+Plan de acción:
+    Plan de proyectos (PSI 8.1)
+    Plan de mantenimiento del PSI (PSI 8.2)</code></pre>
+<p>De salida</p>
+<pre><code>Presentación
+Catálogo de requisitos del PSI
+Resultado de las sesiones de trabajo (mejora de la propuesta), que afectan a:
+    Arquitectura de información:
+        Modelo de información
+        Modelo de sistemas de información
+        Arquitectura tecnológica
+     Plan de acción:
+        Plan de proyectos
+        Plan de mantenimiento del PSI</code></pre>
+<p>Prácticas</p>
+<pre><code>Sesiones de trabajo
+Presentación</code></pre>
+<p>Participantes</p>
+<pre><code>Comité de Dirección
+Jefe de Proyecto del PSI
+Consultores
+Consultores Informáticos
+Usuarios Expertos</code></pre>
+</section>
+<section id="tarea-psi-9.3-aprobación-del-psi" class="level3" data-number="2.10.3">
+<h3 data-number="2.10.3" class="anchored" data-anchor-id="tarea-psi-9.3-aprobación-del-psi"><span class="header-section-number">2.10.3</span> Tarea PSI 9.3: Aprobación del PSI</h3>
+<p>Se entrega la propuesta final, y se solicita formalmente al Comité de Dirección del Plan de Sistemas de Información la aprobación de la misma. Por último, se debe informar de los resultados a las unidades organizativas participantes y a todas aquellas afectadas por los resultados del Plan de Sistemas de Información. Productos</p>
+<p>De entrada</p>
+<pre><code>Resultado de las sesiones de trabajo (PSI 9.2)
+Catálogo de requisitos del PSI (PSI 9.2)
+Arquitectura de información:
+    Modelo de información (PSI 9.2)
+    Modelo de sistemas de información (PSI 9.2)
+    Arquitectura tecnológica (PSI 9.2)
+Plan de acción:
+    Plan de proyectos (PSI 9.2)
+    Plan de mantenimiento del PSI (PSI 9.2)</code></pre>
+<p>De salida</p>
+<pre><code>Aprobación formal del PSI
+Plan de comunicación del PSI</code></pre>
+<p>Prácticas</p>
+<pre><code>Sesiones de trabajo</code></pre>
+<p>Participantes</p>
+<pre><code>Comité de Dirección
+Jefe de Proyecto del PSI</code></pre>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copiado");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copiado");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/pmgallardo\.github\.io\/metrica-v3\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../01-principal/01-introduccion.html" class="pagination-link" aria-label="Introducción">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introducción</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../01-principal/03-evs.html" class="pagination-link" aria-label="Estudio de Viabilidad del Sistema">
+        <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Estudio de Viabilidad del Sistema</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/pmgallardo/metrica-v3/edit/main/01-principal/02-psi.qmd" class="toc-action"><i class="bi bi-github"></i>Editar esta página</a></li><li><a href="https://github.com/pmgallardo/metrica-v3/issues/new" class="toc-action"><i class="bi empty"></i>Informar sobre problema</a></li><li><a href="https://github.com/pmgallardo/metrica-v3/blob/main/01-principal/02-psi.qmd" class="toc-action"><i class="bi empty"></i>Ver el código</a></li></ul></div></div></div></footer></body></html>

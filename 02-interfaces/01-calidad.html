@@ -1,0 +1,1204 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.38">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>9&nbsp; Aseguramiento de la Calidad – Métrica v.3</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../02-interfaces/02-seguridad.html" rel="next">
+<link href="../01-principal/08-msi.html" rel="prev">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-5d2bbbc7808559eb98ab364e0d5f4cb2.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No se han encontrado resultados",
+    "search-matching-documents-text": "documentos encontrados",
+    "search-copy-link-title": "Copiar el enlace en la búsqueda",
+    "search-hide-matches-text": "Ocultar resultados adicionales",
+    "search-more-match-text": "resultado adicional en este documento",
+    "search-more-matches-text": "resultados adicionales en este documento",
+    "search-clear-button-title": "Borrar",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancelar",
+    "search-submit-button-title": "Enviar",
+    "search-label": "Buscar"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../styles.css">
+</head>
+
+<body class="nav-sidebar docked quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../02-interfaces/01-calidad.html">Interfaces</a></li><li class="breadcrumb-item"><a href="../02-interfaces/01-calidad.html"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Aseguramiento de la Calidad</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Buscar" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../">Métrica v.3</a> 
+        <div class="sidebar-tools-main">
+    <a href="https://github.com/pmgallardo/metrica-v3" title="Ejecutar el código" class="quarto-navigation-tool px-1" aria-label="Ejecutar el código"><i class="bi bi-github"></i></a>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Buscar"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Métrica v.3</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Estructura principal</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Alternar sección">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../01-principal/01-introduccion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introducción</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../01-principal/02-psi.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Planificación de Sistemas de Información</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../01-principal/03-evs.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Estudio de Viabilidad del Sistema</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../01-principal/04-asi.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Análisis del Sistema de Información</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../01-principal/05-dsi.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Diseño del Sistema de Información</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../01-principal/06-csi.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Construcción del Sistema de Información</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../01-principal/07-ias.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Implantación y Aceptación del Sistema</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../01-principal/08-msi.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Mantenimiento del Sistema de Información</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Interfaces</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Alternar sección">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../02-interfaces/01-calidad.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Aseguramiento de la Calidad</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../02-interfaces/02-seguridad.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Seguridad</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../02-interfaces/03-configuracion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Gestión de Configuración</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../02-interfaces/04-proyectos.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Gestión de Proyectos</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">Técnicas</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Alternar sección">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../03-tecnicas/01-tecnicas.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Técnicas</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
+ <span class="menu-text">Participantes</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Alternar sección">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../04-participantes/01-participantes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Participantes</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Tabla de contenidos</h2>
+   
+  <ul>
+  <li><a href="#descripción-y-objetivos" id="toc-descripción-y-objetivos" class="nav-link active" data-scroll-target="#descripción-y-objetivos"><span class="header-section-number">9.1</span> Descripción y objetivos</a></li>
+  <li><a href="#estudio-de-viabilidad-del-sistema" id="toc-estudio-de-viabilidad-del-sistema" class="nav-link" data-scroll-target="#estudio-de-viabilidad-del-sistema"><span class="header-section-number">9.2</span> Estudio de viabilidad del sistema</a>
+  <ul class="collapse">
+  <li><a href="#actividad-evs-cal-1-identificación-de-las-propiedades-de-calidad-para-el-sistema" id="toc-actividad-evs-cal-1-identificación-de-las-propiedades-de-calidad-para-el-sistema" class="nav-link" data-scroll-target="#actividad-evs-cal-1-identificación-de-las-propiedades-de-calidad-para-el-sistema"><span class="header-section-number">9.2.1</span> Actividad EVS-CAL 1: Identificación de las Propiedades de Calidad para el Sistema</a></li>
+  <li><a href="#actividad-evs-cal-2-establecimiento-del-plan-de-aseguramiento-de-calidad" id="toc-actividad-evs-cal-2-establecimiento-del-plan-de-aseguramiento-de-calidad" class="nav-link" data-scroll-target="#actividad-evs-cal-2-establecimiento-del-plan-de-aseguramiento-de-calidad"><span class="header-section-number">9.2.2</span> Actividad EVS-CAL 2: Establecimiento del Plan de Aseguramiento de Calidad</a></li>
+  <li><a href="#actividad-evs-cal-3-adecuación-del-plan-de-aseguramiento-de-calidad-a-la-solución" id="toc-actividad-evs-cal-3-adecuación-del-plan-de-aseguramiento-de-calidad-a-la-solución" class="nav-link" data-scroll-target="#actividad-evs-cal-3-adecuación-del-plan-de-aseguramiento-de-calidad-a-la-solución"><span class="header-section-number">9.2.3</span> Actividad EVS-CAL 3: Adecuación del Plan de Aseguramiento de Calidad a la Solución</a></li>
+  </ul></li>
+  <li><a href="#análisis-del-sistema-de-información" id="toc-análisis-del-sistema-de-información" class="nav-link" data-scroll-target="#análisis-del-sistema-de-información"><span class="header-section-number">9.3</span> Análisis del sistema de información</a>
+  <ul class="collapse">
+  <li><a href="#actividad-asi-cal-1-especificación-inicial-del-plan-de-aseguramiento-de-calidad" id="toc-actividad-asi-cal-1-especificación-inicial-del-plan-de-aseguramiento-de-calidad" class="nav-link" data-scroll-target="#actividad-asi-cal-1-especificación-inicial-del-plan-de-aseguramiento-de-calidad"><span class="header-section-number">9.3.1</span> Actividad ASI-CAL 1: Especificación Inicial del Plan de Aseguramiento de Calidad</a></li>
+  <li><a href="#actividad-asi-cal-2-especificación-detallada-del-plan-de-aseguramiento-de-calidad" id="toc-actividad-asi-cal-2-especificación-detallada-del-plan-de-aseguramiento-de-calidad" class="nav-link" data-scroll-target="#actividad-asi-cal-2-especificación-detallada-del-plan-de-aseguramiento-de-calidad"><span class="header-section-number">9.3.2</span> Actividad ASI-CAL 2: Especificación Detallada del Plan de Aseguramiento de Calidad</a></li>
+  <li><a href="#actividad-asi-cal-3-revisión-del-análisis-de-consistencia" id="toc-actividad-asi-cal-3-revisión-del-análisis-de-consistencia" class="nav-link" data-scroll-target="#actividad-asi-cal-3-revisión-del-análisis-de-consistencia"><span class="header-section-number">9.3.3</span> Actividad ASI-CAL 3: Revisión del Análisis de Consistencia</a></li>
+  <li><a href="#actividad-asi-cal-4-revisión-del-plan-de-pruebas" id="toc-actividad-asi-cal-4-revisión-del-plan-de-pruebas" class="nav-link" data-scroll-target="#actividad-asi-cal-4-revisión-del-plan-de-pruebas"><span class="header-section-number">9.3.4</span> Actividad ASI-CAL 4: Revisión del Plan de Pruebas</a></li>
+  </ul></li>
+  <li><a href="#diseño-del-sistema-de-información" id="toc-diseño-del-sistema-de-información" class="nav-link" data-scroll-target="#diseño-del-sistema-de-información"><span class="header-section-number">9.4</span> Diseño del sistema de información</a>
+  <ul class="collapse">
+  <li><a href="#actividad-dsi-cal-1-revisión-de-la-verificación-de-la-arquitectura-del-sistema" id="toc-actividad-dsi-cal-1-revisión-de-la-verificación-de-la-arquitectura-del-sistema" class="nav-link" data-scroll-target="#actividad-dsi-cal-1-revisión-de-la-verificación-de-la-arquitectura-del-sistema"><span class="header-section-number">9.4.1</span> Actividad DSI-CAL 1: Revisión de la Verificación de la Arquitectura del Sistema</a></li>
+  <li><a href="#actividad-dsi-cal-2-revisión-de-la-especificación-técnica-del-plan-de-pruebas" id="toc-actividad-dsi-cal-2-revisión-de-la-especificación-técnica-del-plan-de-pruebas" class="nav-link" data-scroll-target="#actividad-dsi-cal-2-revisión-de-la-especificación-técnica-del-plan-de-pruebas"><span class="header-section-number">9.4.2</span> Actividad DSI-CAL 2: Revisión de la Especificación Técnica del Plan de Pruebas</a></li>
+  <li><a href="#actividad-dsi-cal-3-revisión-de-los-requisitos-de-implantación" id="toc-actividad-dsi-cal-3-revisión-de-los-requisitos-de-implantación" class="nav-link" data-scroll-target="#actividad-dsi-cal-3-revisión-de-los-requisitos-de-implantación"><span class="header-section-number">9.4.3</span> Actividad DSI-CAL 3: Revisión de los Requisitos de Implantación</a></li>
+  <li><a href="#actividad-dsi-cal-4-registro-de-la-aprobación-del-diseño-del-sistema-de-información" id="toc-actividad-dsi-cal-4-registro-de-la-aprobación-del-diseño-del-sistema-de-información" class="nav-link" data-scroll-target="#actividad-dsi-cal-4-registro-de-la-aprobación-del-diseño-del-sistema-de-información"><span class="header-section-number">9.4.4</span> Actividad DSI-CAL 4: Registro de la Aprobación del Diseño del Sistema de Información</a></li>
+  </ul></li>
+  <li><a href="#construcción-del-sistema-de-información" id="toc-construcción-del-sistema-de-información" class="nav-link" data-scroll-target="#construcción-del-sistema-de-información"><span class="header-section-number">9.5</span> Construcción del sistema de información</a>
+  <ul class="collapse">
+  <li><a href="#actividad-csi-cal-1-revisión-del-código-de-componentes-y-procedimientos" id="toc-actividad-csi-cal-1-revisión-del-código-de-componentes-y-procedimientos" class="nav-link" data-scroll-target="#actividad-csi-cal-1-revisión-del-código-de-componentes-y-procedimientos"><span class="header-section-number">9.5.1</span> Actividad CSI-CAL 1: Revisión del Código de Componentes y Procedimientos</a></li>
+  <li><a href="#actividad-csi-cal-2-revisión-de-las-pruebas-unitarias-de-integración-y-del-sistema" id="toc-actividad-csi-cal-2-revisión-de-las-pruebas-unitarias-de-integración-y-del-sistema" class="nav-link" data-scroll-target="#actividad-csi-cal-2-revisión-de-las-pruebas-unitarias-de-integración-y-del-sistema"><span class="header-section-number">9.5.2</span> Actividad CSI-CAL 2: Revisión de las Pruebas Unitarias, de Integración y del Sistema</a></li>
+  <li><a href="#actividad-csi-cal-3-revisión-de-los-manuales-de-usuario" id="toc-actividad-csi-cal-3-revisión-de-los-manuales-de-usuario" class="nav-link" data-scroll-target="#actividad-csi-cal-3-revisión-de-los-manuales-de-usuario"><span class="header-section-number">9.5.3</span> Actividad CSI-CAL 3: Revisión de los Manuales de Usuario</a></li>
+  <li><a href="#actividad-csi-cal-4-revisión-de-la-formación-a-usuarios-finales" id="toc-actividad-csi-cal-4-revisión-de-la-formación-a-usuarios-finales" class="nav-link" data-scroll-target="#actividad-csi-cal-4-revisión-de-la-formación-a-usuarios-finales"><span class="header-section-number">9.5.4</span> Actividad CSI-CAL 4: Revisión de la Formación a Usuarios Finales</a></li>
+  <li><a href="#actividad-csi-cal-5-registro-de-la-aprobación-del-sistema-de-información" id="toc-actividad-csi-cal-5-registro-de-la-aprobación-del-sistema-de-información" class="nav-link" data-scroll-target="#actividad-csi-cal-5-registro-de-la-aprobación-del-sistema-de-información"><span class="header-section-number">9.5.5</span> Actividad CSI-CAL 5: Registro de la Aprobación del Sistema de Información</a></li>
+  </ul></li>
+  <li><a href="#implantación-y-aceptación-del-sistema" id="toc-implantación-y-aceptación-del-sistema" class="nav-link" data-scroll-target="#implantación-y-aceptación-del-sistema"><span class="header-section-number">9.6</span> Implantación y aceptación del sistema</a>
+  <ul class="collapse">
+  <li><a href="#actividad-ias-cal-1-revisión-del-plan-de-implantación-del-sistema" id="toc-actividad-ias-cal-1-revisión-del-plan-de-implantación-del-sistema" class="nav-link" data-scroll-target="#actividad-ias-cal-1-revisión-del-plan-de-implantación-del-sistema"><span class="header-section-number">9.6.1</span> Actividad IAS-CAL 1: Revisión del Plan de Implantación del Sistema</a></li>
+  <li><a href="#actividad-ias-cal-2-revisión-de-las-pruebas-de-implantación-del-sistema" id="toc-actividad-ias-cal-2-revisión-de-las-pruebas-de-implantación-del-sistema" class="nav-link" data-scroll-target="#actividad-ias-cal-2-revisión-de-las-pruebas-de-implantación-del-sistema"><span class="header-section-number">9.6.2</span> Actividad IAS-CAL 2: Revisión de las Pruebas de Implantación del Sistema</a></li>
+  <li><a href="#actividad-ias-cal-3-revisión-de-las-pruebas-de-aceptación-del-sistema" id="toc-actividad-ias-cal-3-revisión-de-las-pruebas-de-aceptación-del-sistema" class="nav-link" data-scroll-target="#actividad-ias-cal-3-revisión-de-las-pruebas-de-aceptación-del-sistema"><span class="header-section-number">9.6.3</span> Actividad IAS-CAL 3: Revisión de las Pruebas de Aceptación del Sistema</a></li>
+  <li><a href="#actividad-ias-cal-4-revisión-del-plan-de-mantenimiento-del-sistema" id="toc-actividad-ias-cal-4-revisión-del-plan-de-mantenimiento-del-sistema" class="nav-link" data-scroll-target="#actividad-ias-cal-4-revisión-del-plan-de-mantenimiento-del-sistema"><span class="header-section-number">9.6.4</span> Actividad IAS-CAL 4: Revisión del Plan de Mantenimiento del Sistema</a></li>
+  <li><a href="#actividad-ias-cal-5-registro-de-la-aprobación-de-la-implantación-del-sistema" id="toc-actividad-ias-cal-5-registro-de-la-aprobación-de-la-implantación-del-sistema" class="nav-link" data-scroll-target="#actividad-ias-cal-5-registro-de-la-aprobación-de-la-implantación-del-sistema"><span class="header-section-number">9.6.5</span> Actividad IAS-CAL 5: Registro de la Aprobación de la Implantación del Sistema</a></li>
+  </ul></li>
+  <li><a href="#mantenimineto-del-sistema-de-información" id="toc-mantenimineto-del-sistema-de-información" class="nav-link" data-scroll-target="#mantenimineto-del-sistema-de-información"><span class="header-section-number">9.7</span> Mantenimineto del sistema de información</a>
+  <ul class="collapse">
+  <li><a href="#actividad-msi-cal-1-revisión-del-mantenimiento-del-sistema-de-información" id="toc-actividad-msi-cal-1-revisión-del-mantenimiento-del-sistema-de-información" class="nav-link" data-scroll-target="#actividad-msi-cal-1-revisión-del-mantenimiento-del-sistema-de-información"><span class="header-section-number">9.7.1</span> Actividad MSI-CAL 1: Revisión del Mantenimiento del Sistema de Información</a></li>
+  <li><a href="#actividad-msi-cal-2-revisión-del-plan-de-pruebas-de-regresión" id="toc-actividad-msi-cal-2-revisión-del-plan-de-pruebas-de-regresión" class="nav-link" data-scroll-target="#actividad-msi-cal-2-revisión-del-plan-de-pruebas-de-regresión"><span class="header-section-number">9.7.2</span> Actividad MSI-CAL 2: Revisión del Plan de Pruebas de Regresión</a></li>
+  <li><a href="#actividad-msi-cal-3-revisión-de-la-realización-de-las-pruebas-de-regresión" id="toc-actividad-msi-cal-3-revisión-de-la-realización-de-las-pruebas-de-regresión" class="nav-link" data-scroll-target="#actividad-msi-cal-3-revisión-de-la-realización-de-las-pruebas-de-regresión"><span class="header-section-number">9.7.3</span> Actividad MSI-CAL 3: Revisión de la Realización de las Pruebas de Regresión</a></li>
+  </ul></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/pmgallardo/metrica-v3/edit/main/02-interfaces/01-calidad.qmd" class="toc-action"><i class="bi bi-github"></i>Editar esta página</a></li><li><a href="https://github.com/pmgallardo/metrica-v3/issues/new" class="toc-action"><i class="bi empty"></i>Informar sobre problema</a></li><li><a href="https://github.com/pmgallardo/metrica-v3/blob/main/02-interfaces/01-calidad.qmd" class="toc-action"><i class="bi empty"></i>Ver el código</a></li></ul></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../02-interfaces/01-calidad.html">Interfaces</a></li><li class="breadcrumb-item"><a href="../02-interfaces/01-calidad.html"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Aseguramiento de la Calidad</span></a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Aseguramiento de la Calidad</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="descripción-y-objetivos" class="level2" data-number="9.1">
+<h2 data-number="9.1" class="anchored" data-anchor-id="descripción-y-objetivos"><span class="header-section-number">9.1</span> Descripción y objetivos</h2>
+<p>El objetivo de la interfaz de Aseguramiento de la Calidad de MÉTRICA Versión 3 es proporcionar un marco común de referencia para la definición y puesta en marcha de planes específicos de aseguramiento de calidad aplicables a proyectos concretos. Si en la organización ya existe un sistema de calidad, dichos planes deberán ser coherentes con el mismo, completándolo en los aspectos no contemplados relativos a normas particulares del cliente, usuario o sistema concreto.</p>
+<p>La calidad se define como “<strong>grado en que un conjunto de características inherentes cumple con unos requisitos</strong>” [ISO 9000:2000]. El Aseguramiento de la Calidad pretende dar confianza en que el producto reune las características necesarias para satisfacer todos los requisitos del Sistema de Información.</p>
+<p>Por tanto, para asegurar la calidad de los productos resultantes el equipo de calidad deberá realizar un conjunto de actividades que servirán para:</p>
+<pre><code>Reducir, eliminar y lo más importante, prevenir las deficiencias de calidad de los productos a obtener.
+Alcanzar una razonable confianza en que las prestaciones y servicios esperados por el cliente o el usuario queden satisfechas.</code></pre>
+<p>Para conseguir estos objetivos, es necesario desarrollar un plan de aseguramiento de calidad específico que se aplicará durante la planificación del proyecto de acuerdo a la estrategia de desarrollo adoptada en la gestión del proyecto. En el plan de aseguramiento de calidad se reflejan las actividades de calidad a realizar (normales o extraordinarias), los estándares a aplicar, los productos a revisar, los procedimientos a seguir en la obtención de los distintos productos durante el desarrollo en MÉTRICA Versión 3 y la normativa para informar de los defectos detectados a sus responsables y realizar el seguimiento de los mismos hasta su corrección.</p>
+<p>El grupo de aseguramiento de calidad participa en la revisión de los productos seleccionados para determinar si son conformes o no a los procedimientos, normas o criterios especificados, siendo totalmente independiente del equipo de desarrollo. Las actividades a realizar por el grupo de aseguramiento de calidad vienen gobernadas por el plan. Sus funciones están dirigidas a:</p>
+<pre><code>Identificar las posibles desviaciones en los estándares aplicados, así como en los requisitos y procedimientos especificados.
+Comprobar que se han llevado a cabo las medidas preventivas o correctoras necesarias.</code></pre>
+<p>Las revisiones son una de las actividades más importantes del aseguramiento de la calidad, debido a que permiten eliminar defectos lo más pronto posible, cuando son menos costosos de corregir. Además existen procedimientos extraordinarios, como las auditorías, aplicables en desarrollos singulares y en el transcurso de las cuales se revisarán tanto las actividades de desarrollo como las propias de aseguramiento de calidad. La detección anticipada de errores evita el que se propaguen a los restantes procesos de desarrollo, reduciendo substancialmente el esfuerzo invertido en los mismos. En este sentido es importante destacar que el establecimiento del plan de aseguramiento de calidad comienza en el Estudio de Viabilidad del Sistema y se aplica a lo largo de todo el desarrollo, en los procesos de Análisis, Diseño, Construcción, Implantación y Aceptación del Sistema y en su posterior Mantenimiento. Actividades</p>
+<p>ESTUDIO DE VIABILIDAD DEL SISTEMA</p>
+<pre><code>Actividad EVS-CAL 1: Identificación de las Propiedades de Calidad par el Sistema
+Actividad EVS-CAL 2: Establecimiento del Plan de Aseguramiento de Calidad
+Actividad EVS-CAL 3: Adecuación del Plan de Aseguramiento de Calidad a la Solución</code></pre>
+<p>ANÁLISIS DEL SISTEMA DE INFORMACIÓN</p>
+<pre><code>Actividad ASI-CAL 1: Especificación Inicial del Plan de Aseguramiento de Calidad
+Actividad ASI-CAL 2: Especificación Detallada del Plan de Aseguramiento de Calidad
+Actividad ASI-CAL 3: Revisión del Análisis de Consistencia
+Actividad ASI-CAL 4: Revisión del Plan de Pruebas
+Actividad ASI-CAL 5: Registro de la Aprobación del Análisis del Sistema</code></pre>
+<p>DISEÑO DEL SISTEMA DE INFORMACIÓN</p>
+<pre><code>Actividad DSI-CAL 1: Revisión de la Verificación de la Arquitectura del Sistema
+Actividad DSI-CAL 2: Revisión de la Especificación Técnica del Plan de Pruebas
+Actividad DSI-CAL 3: Revisión de los Requisitos de Implantación
+Actividad DSI-CAL 4: Registro de la Aprobación del Diseño del Sistema de Información</code></pre>
+<p>CONSTRUCCIÓN DEL SISTEMA DE INFORMACIÓN</p>
+<pre><code>Actividad CSI-CAL 1: Revisión del Código de Componentes y Procedimientos
+Actividad CSI-CAL 2: Revisión de las Pruebas Unitarias, de Integración y del Sistema
+Actividad CSI-CAL 3: Revisión de los Manuales de Usuario
+Actividad CSI-CAL 4: Revisión de la Formación a Usuarios Finales
+Actividad CSI-CAL 5: Registro de la Aprobación del Sistema de Información</code></pre>
+<p>IMPLANTACIÓN Y ACEPTACIÓN DEL SISTEMA</p>
+<pre><code>Actividad IAS-CAL 1: Revisión del Plan de Implantación del Sistema
+Actividad IAS-CAL 2: Revisión de las Pruebas de Implantación del Sistema
+Actividad IAS-CAL 3: Revisión de las Pruebas de Aceptación del Sistema
+Actividad IAS-CAL 4: Revisión del Plan de Mantenimiento del Sistema
+Actividad IAS-CAL 5: Registro de la Aprobación de la Implantación del Sistema</code></pre>
+<p>MANTENIMIENTO DEL SISTEMA DE INFORMACIÓN</p>
+<pre><code>Actividad MSI-CAL 1: Revisión del Mantenimiento del Sistema de Información
+Actividad MSI-CAL 2: Revisión del Plan de Pruebas de Regresión
+Actividad MSI-CAL 3: Revisión de la Realización de las Prueba de Regresión</code></pre>
+</section>
+<section id="estudio-de-viabilidad-del-sistema" class="level2" data-number="9.2">
+<h2 data-number="9.2" class="anchored" data-anchor-id="estudio-de-viabilidad-del-sistema"><span class="header-section-number">9.2</span> Estudio de viabilidad del sistema</h2>
+<p>En este proceso el grupo de aseguramiento de calidad inicia el estudio de los sistemas de información definidos en cada alternativa de solución propuesta, con el fin de identificar las condiciones en que se van a desarrollar y/o a implantar, así como las características que deben reunir en cuanto a operación, mantenibilidad y portabilidad, para satisfacer las necesidades del cliente y los requisitos especificados.</p>
+<p>La necesidad de establecer un plan específico de aseguramiento de calidad y el grado de intensidad con el que se aplican las actuaciones de calidad, vendrá determinada en función de este estudio y de los riesgos analizados por el equipo de desarrollo.</p>
+<p>Una vez tomada la decisión de llevar a cabo un plan de aseguramiento de calidad en las alternativas propuestas, se define el contenido de dicho plan, de acuerdo a los estándares de calidad, si existen en la organización, sino se recomienda acudir a los estándares <em>UNE-EN-ISO 9001:2000 Sistemas de Gestión de la Calidad – Requisitos y UNE-EN-ISO 9000:2000 Sistemas de Gestión de la Calidad – Fundamentos y vocabulario</em>. El plan de aseguramiento de calidad debe cubrir todas las necesidades establecidas de modo que, aquellas normas impuestas por los usuarios o clientes que difieran de las existentes en el sistema de calidad, deben quedar también reflejadas en el plan.</p>
+<p>El siguiente esquema muestra la correspondencia entre las actividades del proceso EVS y las de la interfaz de Aseguramiento de la Calidad.</p>
+<p><img src="../images/cal-evs.jpg" class="img-fluid"></p>
+<section id="actividad-evs-cal-1-identificación-de-las-propiedades-de-calidad-para-el-sistema" class="level3" data-number="9.2.1">
+<h3 data-number="9.2.1" class="anchored" data-anchor-id="actividad-evs-cal-1-identificación-de-las-propiedades-de-calidad-para-el-sistema"><span class="header-section-number">9.2.1</span> Actividad EVS-CAL 1: Identificación de las Propiedades de Calidad para el Sistema</h3>
+<p>TAREA PRODUCTOS TÉCNICAS Y PRÁCTICAS PARTICIPANTES EVS-CAL 1.1: Constitución del Equipo de Aseguramiento de Calidad</p>
+<pre><code>Equipo de aseguramiento de calidad
+Plan de acción
+
+
+
+Sesiones de trabajo
+Planificación
+
+
+
+Grupo de Aseguramiento de la Calidad
+Jefe de Proyecto</code></pre>
+<p>EVS-CAL 1.2: Determinación de los Sistemas de Información objeto de Aseguramiento de Calidad</p>
+<pre><code>Sistemas de Información objeto de aseguramiento de calidad
+
+
+
+Sesiones de trabajo
+
+
+
+Grupo de Aseguramiento de la Calidad
+Jefe de Proyecto</code></pre>
+<p>EVS-CAL 1.3: Identificación de las Propiedades de Calidad</p>
+<pre><code>Sistemas de Información objeto de aseguramiento de calidad
+    Propiedades de calidad
+
+
+
+Sesiones de trabajo
+
+
+
+Grupo de Aseguramiento de la Calidad
+Jefe de Proyecto</code></pre>
+<section id="tarea-evs-cal-1.1-constitución-del-equipo-de-aseguramiento-de-calidad" class="level4" data-number="9.2.1.1">
+<h4 data-number="9.2.1.1" class="anchored" data-anchor-id="tarea-evs-cal-1.1-constitución-del-equipo-de-aseguramiento-de-calidad"><span class="header-section-number">9.2.1.1</span> Tarea EVS-CAL 1.1: Constitución del Equipo de Aseguramiento de Calidad</h4>
+<p>Se constituye el equipo de trabajo inicial necesario para determinar y valorar la conveniencia de establecer un plan de aseguramiento de calidad para las alternativas de solución propuestas y se fija un plan de acción. Productos</p>
+<p>De entrada</p>
+<pre><code>Recursos disponibles (externo)</code></pre>
+<p>De salida</p>
+<pre><code>Equipo de aseguramiento de calidad
+Plan de acción</code></pre>
+<p>Técnicas</p>
+<pre><code>Planificación</code></pre>
+<p>Prácticas</p>
+<pre><code>Sesiones de Trabajo</code></pre>
+<p>Participantes</p>
+<pre><code>Grupo de Aseguramiento de la Calidad
+Jefe de Proyecto</code></pre>
+</section>
+<section id="tarea-evs-cal-1.2-determinación-de-los-sistemas-de-información-objeto-de-aseguramiento-de-calidad" class="level4" data-number="9.2.1.2">
+<h4 data-number="9.2.1.2" class="anchored" data-anchor-id="tarea-evs-cal-1.2-determinación-de-los-sistemas-de-información-objeto-de-aseguramiento-de-calidad"><span class="header-section-number">9.2.1.2</span> Tarea EVS-CAL 1.2: Determinación de los Sistemas de Información objeto de Aseguramiento de Calidad</h4>
+<p>Para cada alternativa de solución propuesta se determina qué sistemas de información van a estar afectados por un plan de aseguramiento de calidad. Para ello se pueden considerar varios criterios relativos a las características que reúna el sistema, como pueden ser:</p>
+<pre><code>Un período de vida largo.
+Sujeto a cambios constantes.
+Equipo de trabajo heterogéneo en el desarrollo del sistema.
+Operación continua.
+Alta disponibilidad.
+Fuerte interacción con otros sistemas.
+Portabilidad.</code></pre>
+<p>Productos</p>
+<p>De entrada</p>
+<pre><code>Equipo de aseguramiento de calidad
+Alternativas de solución a estudiar (EVS 4.2)</code></pre>
+<p>De salida</p>
+<pre><code>Sistemas de Información objeto de aseguramiento de calidad</code></pre>
+<p>Prácticas</p>
+<pre><code>Sesiones de Trabajo</code></pre>
+<p>Participantes</p>
+<pre><code>Grupo de Aseguramiento de la Calidad
+Jefe de Proyecto</code></pre>
+</section>
+<section id="tarea-evs-cal-1.3-identificación-de-las-propiedades-de-calidad" class="level4" data-number="9.2.1.3">
+<h4 data-number="9.2.1.3" class="anchored" data-anchor-id="tarea-evs-cal-1.3-identificación-de-las-propiedades-de-calidad"><span class="header-section-number">9.2.1.3</span> Tarea EVS-CAL 1.3: Identificación de las Propiedades de Calidad</h4>
+<p>Una vez identificados para cada alternativa propuesta los sistemas de información, se definen para cada uno de ellos aquellas propiedades que permitan evaluar la calidad en cuanto a las características de operación, facilidad de mantenimiento y adaptabilidad a nuevos entornos. Algunas de estas propiedades pueden ser, por ejemplo, la facilidad de uso, eficiencia, seguridad, portabilidad, integridad y fiabilidad. Productos</p>
+<p>De entrada</p>
+<pre><code>Sistemas de Información objeto de aseguramiento de calidad (EVS-CAL 1.2)</code></pre>
+<p>De salida</p>
+<pre><code>Sistemas de Información objeto de aseguramiento de calidad:
+    Propiedades de calidad</code></pre>
+<p>Prácticas</p>
+<pre><code>Sesiones de Trabajo</code></pre>
+<p>Participantes</p>
+<pre><code>Grupo de Aseguramiento de la Calidad
+Jefe de Proyecto</code></pre>
+</section>
+</section>
+<section id="actividad-evs-cal-2-establecimiento-del-plan-de-aseguramiento-de-calidad" class="level3" data-number="9.2.2">
+<h3 data-number="9.2.2" class="anchored" data-anchor-id="actividad-evs-cal-2-establecimiento-del-plan-de-aseguramiento-de-calidad"><span class="header-section-number">9.2.2</span> Actividad EVS-CAL 2: Establecimiento del Plan de Aseguramiento de Calidad</h3>
+<p>TAREA PRODUCTOS TÉCNICAS Y PRÁCTICAS PARTICIPANTES EVS-CAL 2.1: Necesidad del Plan de Aseguramiento de Calidad para las Alternativas Propuestas</p>
+<pre><code>Sistemas de Información objeto de aseguramiento de calidad
+    Necesidad de un plan de aseguramiento de calidad
+
+
+
+Sesiones de trabajo
+
+
+
+Grupo de Aseguramiento de la Calidad</code></pre>
+<p>EVS-CAL 2.2: Alcance del Plan de Aseguramiento de Calidad</p>
+<pre><code>Plan de aseguramiento de calidad de cada alternativa
+
+
+
+Sesiones de trabajo
+
+
+
+Grupo de Aseguramiento de la Calidad</code></pre>
+<p>EVS-CAL 2.3: Impacto en el Coste del Sistema</p>
+<pre><code>Valoración de alternativas
+    Coste del plan de aseguramiento de calidad
+
+
+
+Análisis coste/beneficio
+Grupo de Aseguramiento de la Calidad
+Jefe de Proyecto</code></pre>
+<section id="tarea-evs-cal-2.1-necesidad-del-plan-de-aseguramiento-de-calidad-para-las-alternativas-propuestas" class="level4" data-number="9.2.2.1">
+<h4 data-number="9.2.2.1" class="anchored" data-anchor-id="tarea-evs-cal-2.1-necesidad-del-plan-de-aseguramiento-de-calidad-para-las-alternativas-propuestas"><span class="header-section-number">9.2.2.1</span> Tarea EVS-CAL 2.1: Necesidad del Plan de Aseguramiento de Calidad para las Alternativas Propuestas</h4>
+<p>Se determina la necesidad de incluir un plan de aseguramiento de calidad en las alternativas propuestas teniendo en cuenta el análisis de riesgos y el enfoque del plan de trabajo establecido en la actividad Valoración de las Alternativas (EVS 5), así como las propiedades de calidad establecidas, para cada sistema de información objeto de aseguramiento de calidad, en la tarea Identificación de las Propiedades de Calidad (EVS-CAL 1.3). Productos</p>
+<p>De entrada</p>
+<pre><code>Valoración de alternativas (EVS 5.2)
+Plan de trabajo de cada alternativa (EVS 5.3)
+Necesidad de aseguramiento de calidad (EVS-CAL 1.3)</code></pre>
+<p>De salida</p>
+<pre><code>Sistemas de Información objeto de aseguramiento de calidad:
+    Necesidad de un plan de aseguramiento de calidad</code></pre>
+<p>Prácticas</p>
+<pre><code>Sesiones de Trabajo</code></pre>
+<p>Participantes</p>
+<pre><code>Grupo de Aseguramiento de la Calidad</code></pre>
+</section>
+<section id="tarea-evs-cal-2.2-alcance-del-plan-de-aseguramiento-de-calidad" class="level4" data-number="9.2.2.2">
+<h4 data-number="9.2.2.2" class="anchored" data-anchor-id="tarea-evs-cal-2.2-alcance-del-plan-de-aseguramiento-de-calidad"><span class="header-section-number">9.2.2.2</span> Tarea EVS-CAL 2.2: Alcance del Plan de Aseguramiento de Calidad</h4>
+<p>Si en la organización existe un sistema de calidad, se realiza una valoración de las directrices generales establecidas en el mismo, con el fin de proceder a su adaptación al plan de aseguramiento de calidad específico de cada sistema de información implicado, con el que se deben cubrir las propiedades de calidad identificadas anteriormente.</p>
+<p>En algunos casos puede ser necesario reflejar en el plan de aseguramiento de calidad ciertas normas que difieran en mayor o menor medida de las establecidas en el sistema de calidad. El contenido del plan de aseguramiento de calidad se fijará de acuerdo a los estándares del sistema de calidad, si existen, y en cualquier caso se incluirán aspectos tales como:</p>
+<pre><code>Propósito y alcance del plan en términos de propiedades de calidad.
+Objetivos.
+Actividades y tareas relacionadas con el aseguramiento de calidad a realizar a lo largo del desarrollo del software y responsabilidades.
+Productos mínimos exigibles de ingeniería del software.
+Estándares, prácticas y normas aplicables durante el desarrollo del software.
+Tipos de revisiones, verificaciones y validaciones que se van a llevar a cabo, así como los responsables de su realización.
+Criterios para la aceptación o rechazo de cada producto resultante de un proceso.
+Procedimientos para implementar acciones correctoras o preventivas y realizar su seguimiento, identificando responsables.
+Métodos para la salvaguarda y mantenimiento de la documentación obtenida en las actividades de aseguramiento de calidad..</code></pre>
+<p>Productos</p>
+<p>De entrada</p>
+<pre><code>Sistema de calidad existente en la organización (externo)
+Necesidad de aseguramiento de calidad (EVS-CAL 2.1)</code></pre>
+<p>De salida</p>
+<pre><code>Plan de aseguramiento de calidad de cada alternativa</code></pre>
+<p>Prácticas</p>
+<pre><code>Sesiones de Trabajo</code></pre>
+<p>Participantes</p>
+<pre><code>Grupo de Aseguramiento de la Calidad</code></pre>
+</section>
+<section id="tarea-evs-cal-2.3-impacto-en-el-coste-del-sistema" class="level4" data-number="9.2.2.3">
+<h4 data-number="9.2.2.3" class="anchored" data-anchor-id="tarea-evs-cal-2.3-impacto-en-el-coste-del-sistema"><span class="header-section-number">9.2.2.3</span> Tarea EVS-CAL 2.3: Impacto en el Coste del Sistema</h4>
+<p>Una vez identificada la necesidad de un plan de aseguramiento de calidad y definido su alcance, se establece el coste adicional asociado a cada sistema de información en las alternativas propuestas, con el fin de aportar esta información al coste total del sistema y en consecuencia determinar su viabilidad económica.</p>
+<p>Este coste aporta la información necesaria para poder valorar globalmente cada alternativa de solución y determinar su viabilidad en el caso de que sea necesario un plan de aseguramiento de calidad. Productos</p>
+<p>De entrada</p>
+<pre><code>Plan de aseguramiento de calidad (EVS-CAL 2.2)
+Valoración de alternativas (EVS 5.1)</code></pre>
+<p>De salida</p>
+<pre><code>Valoración de alternativas:
+    Coste del plan de aseguramiento de calidad</code></pre>
+<p>Técnicas</p>
+<pre><code>Análisis Coste/Beneficio</code></pre>
+<p>Participantes</p>
+<pre><code>Grupo de Aseguramiento de la Calidad
+Jefe de Proyecto</code></pre>
+</section>
+</section>
+<section id="actividad-evs-cal-3-adecuación-del-plan-de-aseguramiento-de-calidad-a-la-solución" class="level3" data-number="9.2.3">
+<h3 data-number="9.2.3" class="anchored" data-anchor-id="actividad-evs-cal-3-adecuación-del-plan-de-aseguramiento-de-calidad-a-la-solución"><span class="header-section-number">9.2.3</span> Actividad EVS-CAL 3: Adecuación del Plan de Aseguramiento de Calidad a la Solución</h3>
+<p>TAREA PRODUCTOS TÉCNICAS Y PRÁCTICAS PARTICIPANTES EVS-CAL 3.1: Ajuste del Plan de Aseguramiento de Calidad</p>
+<pre><code>Plan de aseguramiento de calidad de la alternativa elegida
+
+
+
+Sesiones de trabajo
+
+
+
+Grupo de Aseguramiento de la Calidad
+Jefe de Proyecto</code></pre>
+<p>EVS-CAL 3.2: Aprobación del Plan de Aseguramiento de Calidad</p>
+<pre><code>Registro de aprobación / rechazo
+
+
+
+Grupo de Aseguramiento de la Calidad</code></pre>
+<section id="tarea-evs-cal-3.1" class="level4" data-number="9.2.3.1">
+<h4 data-number="9.2.3.1" class="anchored" data-anchor-id="tarea-evs-cal-3.1"><span class="header-section-number">9.2.3.1</span> Tarea EVS-CAL 3.1</h4>
+<p>Una vez ponderadas las dificultades económicas, técnicas, etc. que surjan como consecuencia de incluir un plan de aseguramiento de calidad en la solución seleccionada, puede ser necesario modificar el enfoque de algunas de las propiedades de calidad y el modo en que se les da respuesta, recogiendo estas variaciones en el plan de aseguramiento de calidad. Productos</p>
+<p>De entrada</p>
+<pre><code>Plan de Aseguramiento de Calidad (EVS-CAL 2.2)
+Solución propuesta (EVS 6.2)</code></pre>
+<p>De salida</p>
+<pre><code>Plan de aseguramiento de calidad para la alternativa elegida</code></pre>
+<p>Prácticas</p>
+<pre><code>Sesiones de Trabajo</code></pre>
+<p>Participantes</p>
+<pre><code>Grupo de Aseguramiento de la Calidad
+Jefe de Proyecto</code></pre>
+</section>
+<section id="tarea-evs-cal-3.2" class="level4" data-number="9.2.3.2">
+<h4 data-number="9.2.3.2" class="anchored" data-anchor-id="tarea-evs-cal-3.2"><span class="header-section-number">9.2.3.2</span> Tarea EVS-CAL 3.2</h4>
+<p>Se registra la aprobación del plan de aseguramiento de calidad asociado a cada sistema de información que conforman la solución seleccionada. En caso de rechazo se incluirá el motivo. Productos</p>
+<p>De entrada</p>
+<pre><code>Aprobación de la solución (EVS 6.3)
+Plan de aseguramiento de calidad (EVS-CAL 3.1)</code></pre>
+<p>De salida</p>
+<pre><code>Registro de aprobación/rechazo del Plan de Aseguramiento de Calidad</code></pre>
+<p>Participantes</p>
+<pre><code>Grupo de Aseguramiento de la Calidad</code></pre>
+</section>
+</section>
+</section>
+<section id="análisis-del-sistema-de-información" class="level2" data-number="9.3">
+<h2 data-number="9.3" class="anchored" data-anchor-id="análisis-del-sistema-de-información"><span class="header-section-number">9.3</span> Análisis del sistema de información</h2>
+<p>En este proceso se define de forma detallada el plan de aseguramiento de calidad para un sistema de información, a partir de la especificación resultante del proceso Estudio de Viabilidad del Sistema (EVS).</p>
+<p>También se detallan los estándares y normas a cumplir, las revisiones a llevar a cabo y sobre qué productos, así como los procedimientos y mecanismos necesarios para resolver los problemas que surjan, definiendo las acciones preventivas o correctoras para su posterior corrección e identificando quiénes son los responsables en cada caso.</p>
+<p>En el proceso Análisis del Sistema de Información (ASI), el grupo de aseguramiento de calidad se implica directamente en la revisión de los siguientes productos:</p>
+<pre><code>Catálogo de requisitos, comprobando hasta que punto se han definido de una forma que facilite su comprensión y seguimiento.
+Modelos resultantes del análisis, asegurando que se han verificado y validado y que se ha realizado la trazabilidad de requisitos.
+Plan de pruebas, comprobando que se han tenido en cuenta en su definición los criterios establecidos en el plan de aseguramiento de calidad, con el fin de facilitar en los procesos Diseño del Sistema de Información (DSI), Construcción del Sistema de Información (CSI) e Implantación y Aceptación del Sistema (IAS) la revisión de los distintos niveles de prueba.</code></pre>
+<p><img src="../images/cal-asi.jpg" class="img-fluid"></p>
+<section id="actividad-asi-cal-1-especificación-inicial-del-plan-de-aseguramiento-de-calidad" class="level3" data-number="9.3.1">
+<h3 data-number="9.3.1" class="anchored" data-anchor-id="actividad-asi-cal-1-especificación-inicial-del-plan-de-aseguramiento-de-calidad"><span class="header-section-number">9.3.1</span> Actividad ASI-CAL 1: Especificación Inicial del Plan de Aseguramiento de Calidad</h3>
+<section id="tarea-asi-cal-1.1" class="level4" data-number="9.3.1.1">
+<h4 data-number="9.3.1.1" class="anchored" data-anchor-id="tarea-asi-cal-1.1"><span class="header-section-number">9.3.1.1</span> Tarea ASI-CAL 1.1</h4>
+</section>
+</section>
+<section id="actividad-asi-cal-2-especificación-detallada-del-plan-de-aseguramiento-de-calidad" class="level3" data-number="9.3.2">
+<h3 data-number="9.3.2" class="anchored" data-anchor-id="actividad-asi-cal-2-especificación-detallada-del-plan-de-aseguramiento-de-calidad"><span class="header-section-number">9.3.2</span> Actividad ASI-CAL 2: Especificación Detallada del Plan de Aseguramiento de Calidad</h3>
+<section id="tarea-asi-cal-2.1" class="level4" data-number="9.3.2.1">
+<h4 data-number="9.3.2.1" class="anchored" data-anchor-id="tarea-asi-cal-2.1"><span class="header-section-number">9.3.2.1</span> Tarea ASI-CAL 2.1</h4>
+</section>
+</section>
+<section id="actividad-asi-cal-3-revisión-del-análisis-de-consistencia" class="level3" data-number="9.3.3">
+<h3 data-number="9.3.3" class="anchored" data-anchor-id="actividad-asi-cal-3-revisión-del-análisis-de-consistencia"><span class="header-section-number">9.3.3</span> Actividad ASI-CAL 3: Revisión del Análisis de Consistencia</h3>
+<section id="tarea-asi-cal-3.1" class="level4" data-number="9.3.3.1">
+<h4 data-number="9.3.3.1" class="anchored" data-anchor-id="tarea-asi-cal-3.1"><span class="header-section-number">9.3.3.1</span> Tarea ASI-CAL 3.1</h4>
+</section>
+<section id="tarea-asi-cal-3.2" class="level4" data-number="9.3.3.2">
+<h4 data-number="9.3.3.2" class="anchored" data-anchor-id="tarea-asi-cal-3.2"><span class="header-section-number">9.3.3.2</span> Tarea ASI-CAL 3.2</h4>
+</section>
+</section>
+<section id="actividad-asi-cal-4-revisión-del-plan-de-pruebas" class="level3" data-number="9.3.4">
+<h3 data-number="9.3.4" class="anchored" data-anchor-id="actividad-asi-cal-4-revisión-del-plan-de-pruebas"><span class="header-section-number">9.3.4</span> Actividad ASI-CAL 4: Revisión del Plan de Pruebas</h3>
+<section id="tarea-asi-cal-4.1" class="level4" data-number="9.3.4.1">
+<h4 data-number="9.3.4.1" class="anchored" data-anchor-id="tarea-asi-cal-4.1"><span class="header-section-number">9.3.4.1</span> Tarea ASI-CAL 4.1</h4>
+</section>
+<section id="actividad-asi-cal-5-registro-de-la-aprobación-del-análisis-del-sistema" class="level4" data-number="9.3.4.2">
+<h4 data-number="9.3.4.2" class="anchored" data-anchor-id="actividad-asi-cal-5-registro-de-la-aprobación-del-análisis-del-sistema"><span class="header-section-number">9.3.4.2</span> Actividad ASI-CAL 5: Registro de la Aprobación del Análisis del Sistema</h4>
+</section>
+<section id="tarea-asi-cal-5.1" class="level4" data-number="9.3.4.3">
+<h4 data-number="9.3.4.3" class="anchored" data-anchor-id="tarea-asi-cal-5.1"><span class="header-section-number">9.3.4.3</span> Tarea ASI-CAL 5.1</h4>
+</section>
+</section>
+</section>
+<section id="diseño-del-sistema-de-información" class="level2" data-number="9.4">
+<h2 data-number="9.4" class="anchored" data-anchor-id="diseño-del-sistema-de-información"><span class="header-section-number">9.4</span> Diseño del sistema de información</h2>
+<section id="actividad-dsi-cal-1-revisión-de-la-verificación-de-la-arquitectura-del-sistema" class="level3" data-number="9.4.1">
+<h3 data-number="9.4.1" class="anchored" data-anchor-id="actividad-dsi-cal-1-revisión-de-la-verificación-de-la-arquitectura-del-sistema"><span class="header-section-number">9.4.1</span> Actividad DSI-CAL 1: Revisión de la Verificación de la Arquitectura del Sistema</h3>
+<section id="tarea-dsi-cal-1.1" class="level4" data-number="9.4.1.1">
+<h4 data-number="9.4.1.1" class="anchored" data-anchor-id="tarea-dsi-cal-1.1"><span class="header-section-number">9.4.1.1</span> Tarea DSI-CAL 1.1</h4>
+</section>
+<section id="tarea-dsi-cal-1.2" class="level4" data-number="9.4.1.2">
+<h4 data-number="9.4.1.2" class="anchored" data-anchor-id="tarea-dsi-cal-1.2"><span class="header-section-number">9.4.1.2</span> Tarea DSI-CAL 1.2</h4>
+</section>
+</section>
+<section id="actividad-dsi-cal-2-revisión-de-la-especificación-técnica-del-plan-de-pruebas" class="level3" data-number="9.4.2">
+<h3 data-number="9.4.2" class="anchored" data-anchor-id="actividad-dsi-cal-2-revisión-de-la-especificación-técnica-del-plan-de-pruebas"><span class="header-section-number">9.4.2</span> Actividad DSI-CAL 2: Revisión de la Especificación Técnica del Plan de Pruebas</h3>
+<section id="tarea-dsi-cal-2.1" class="level4" data-number="9.4.2.1">
+<h4 data-number="9.4.2.1" class="anchored" data-anchor-id="tarea-dsi-cal-2.1"><span class="header-section-number">9.4.2.1</span> Tarea DSI-CAL 2.1</h4>
+</section>
+<section id="tarea-dsi-cal-2.2" class="level4" data-number="9.4.2.2">
+<h4 data-number="9.4.2.2" class="anchored" data-anchor-id="tarea-dsi-cal-2.2"><span class="header-section-number">9.4.2.2</span> Tarea DSI-CAL 2.2</h4>
+</section>
+</section>
+<section id="actividad-dsi-cal-3-revisión-de-los-requisitos-de-implantación" class="level3" data-number="9.4.3">
+<h3 data-number="9.4.3" class="anchored" data-anchor-id="actividad-dsi-cal-3-revisión-de-los-requisitos-de-implantación"><span class="header-section-number">9.4.3</span> Actividad DSI-CAL 3: Revisión de los Requisitos de Implantación</h3>
+<section id="tarea-dsi-cal-3.1" class="level4" data-number="9.4.3.1">
+<h4 data-number="9.4.3.1" class="anchored" data-anchor-id="tarea-dsi-cal-3.1"><span class="header-section-number">9.4.3.1</span> Tarea DSI-CAL 3.1</h4>
+</section>
+<section id="tarea-dsi-cal-3.2" class="level4" data-number="9.4.3.2">
+<h4 data-number="9.4.3.2" class="anchored" data-anchor-id="tarea-dsi-cal-3.2"><span class="header-section-number">9.4.3.2</span> Tarea DSI-CAL 3.2</h4>
+</section>
+</section>
+<section id="actividad-dsi-cal-4-registro-de-la-aprobación-del-diseño-del-sistema-de-información" class="level3" data-number="9.4.4">
+<h3 data-number="9.4.4" class="anchored" data-anchor-id="actividad-dsi-cal-4-registro-de-la-aprobación-del-diseño-del-sistema-de-información"><span class="header-section-number">9.4.4</span> Actividad DSI-CAL 4: Registro de la Aprobación del Diseño del Sistema de Información</h3>
+<section id="tarea-dsi-cal-4.1" class="level4" data-number="9.4.4.1">
+<h4 data-number="9.4.4.1" class="anchored" data-anchor-id="tarea-dsi-cal-4.1"><span class="header-section-number">9.4.4.1</span> Tarea DSI-CAL 4.1</h4>
+</section>
+</section>
+</section>
+<section id="construcción-del-sistema-de-información" class="level2" data-number="9.5">
+<h2 data-number="9.5" class="anchored" data-anchor-id="construcción-del-sistema-de-información"><span class="header-section-number">9.5</span> Construcción del sistema de información</h2>
+<section id="actividad-csi-cal-1-revisión-del-código-de-componentes-y-procedimientos" class="level3" data-number="9.5.1">
+<h3 data-number="9.5.1" class="anchored" data-anchor-id="actividad-csi-cal-1-revisión-del-código-de-componentes-y-procedimientos"><span class="header-section-number">9.5.1</span> Actividad CSI-CAL 1: Revisión del Código de Componentes y Procedimientos</h3>
+<section id="tarea-csi-cal-1.1" class="level4" data-number="9.5.1.1">
+<h4 data-number="9.5.1.1" class="anchored" data-anchor-id="tarea-csi-cal-1.1"><span class="header-section-number">9.5.1.1</span> Tarea CSI-CAL 1.1</h4>
+</section>
+</section>
+<section id="actividad-csi-cal-2-revisión-de-las-pruebas-unitarias-de-integración-y-del-sistema" class="level3" data-number="9.5.2">
+<h3 data-number="9.5.2" class="anchored" data-anchor-id="actividad-csi-cal-2-revisión-de-las-pruebas-unitarias-de-integración-y-del-sistema"><span class="header-section-number">9.5.2</span> Actividad CSI-CAL 2: Revisión de las Pruebas Unitarias, de Integración y del Sistema</h3>
+<section id="tarea-csi-cal-2.1" class="level4" data-number="9.5.2.1">
+<h4 data-number="9.5.2.1" class="anchored" data-anchor-id="tarea-csi-cal-2.1"><span class="header-section-number">9.5.2.1</span> Tarea CSI-CAL 2.1</h4>
+</section>
+<section id="tarea-csi-cal-2.2" class="level4" data-number="9.5.2.2">
+<h4 data-number="9.5.2.2" class="anchored" data-anchor-id="tarea-csi-cal-2.2"><span class="header-section-number">9.5.2.2</span> Tarea CSI-CAL 2.2</h4>
+</section>
+<section id="tarea-csi-cal-2.3" class="level4" data-number="9.5.2.3">
+<h4 data-number="9.5.2.3" class="anchored" data-anchor-id="tarea-csi-cal-2.3"><span class="header-section-number">9.5.2.3</span> Tarea CSI-CAL 2.3</h4>
+</section>
+</section>
+<section id="actividad-csi-cal-3-revisión-de-los-manuales-de-usuario" class="level3" data-number="9.5.3">
+<h3 data-number="9.5.3" class="anchored" data-anchor-id="actividad-csi-cal-3-revisión-de-los-manuales-de-usuario"><span class="header-section-number">9.5.3</span> Actividad CSI-CAL 3: Revisión de los Manuales de Usuario</h3>
+<section id="tarea-csi-cal-3.1" class="level4" data-number="9.5.3.1">
+<h4 data-number="9.5.3.1" class="anchored" data-anchor-id="tarea-csi-cal-3.1"><span class="header-section-number">9.5.3.1</span> Tarea CSI-CAL 3.1</h4>
+</section>
+</section>
+<section id="actividad-csi-cal-4-revisión-de-la-formación-a-usuarios-finales" class="level3" data-number="9.5.4">
+<h3 data-number="9.5.4" class="anchored" data-anchor-id="actividad-csi-cal-4-revisión-de-la-formación-a-usuarios-finales"><span class="header-section-number">9.5.4</span> Actividad CSI-CAL 4: Revisión de la Formación a Usuarios Finales</h3>
+<section id="tarea-csi-cal-4.1" class="level4" data-number="9.5.4.1">
+<h4 data-number="9.5.4.1" class="anchored" data-anchor-id="tarea-csi-cal-4.1"><span class="header-section-number">9.5.4.1</span> Tarea CSI-CAL 4.1</h4>
+</section>
+</section>
+<section id="actividad-csi-cal-5-registro-de-la-aprobación-del-sistema-de-información" class="level3" data-number="9.5.5">
+<h3 data-number="9.5.5" class="anchored" data-anchor-id="actividad-csi-cal-5-registro-de-la-aprobación-del-sistema-de-información"><span class="header-section-number">9.5.5</span> Actividad CSI-CAL 5: Registro de la Aprobación del Sistema de Información</h3>
+<section id="tarea-csi-cal-5.1" class="level4" data-number="9.5.5.1">
+<h4 data-number="9.5.5.1" class="anchored" data-anchor-id="tarea-csi-cal-5.1"><span class="header-section-number">9.5.5.1</span> Tarea CSI-CAL 5.1</h4>
+</section>
+</section>
+</section>
+<section id="implantación-y-aceptación-del-sistema" class="level2" data-number="9.6">
+<h2 data-number="9.6" class="anchored" data-anchor-id="implantación-y-aceptación-del-sistema"><span class="header-section-number">9.6</span> Implantación y aceptación del sistema</h2>
+<section id="actividad-ias-cal-1-revisión-del-plan-de-implantación-del-sistema" class="level3" data-number="9.6.1">
+<h3 data-number="9.6.1" class="anchored" data-anchor-id="actividad-ias-cal-1-revisión-del-plan-de-implantación-del-sistema"><span class="header-section-number">9.6.1</span> Actividad IAS-CAL 1: Revisión del Plan de Implantación del Sistema</h3>
+<section id="tarea-ias-cal-1.1" class="level4" data-number="9.6.1.1">
+<h4 data-number="9.6.1.1" class="anchored" data-anchor-id="tarea-ias-cal-1.1"><span class="header-section-number">9.6.1.1</span> Tarea IAS-CAL 1.1</h4>
+</section>
+</section>
+<section id="actividad-ias-cal-2-revisión-de-las-pruebas-de-implantación-del-sistema" class="level3" data-number="9.6.2">
+<h3 data-number="9.6.2" class="anchored" data-anchor-id="actividad-ias-cal-2-revisión-de-las-pruebas-de-implantación-del-sistema"><span class="header-section-number">9.6.2</span> Actividad IAS-CAL 2: Revisión de las Pruebas de Implantación del Sistema</h3>
+<section id="tarea-ias-cal-2.1" class="level4" data-number="9.6.2.1">
+<h4 data-number="9.6.2.1" class="anchored" data-anchor-id="tarea-ias-cal-2.1"><span class="header-section-number">9.6.2.1</span> Tarea IAS-CAL 2.1</h4>
+</section>
+<section id="tarea-ias-cal-2.2" class="level4" data-number="9.6.2.2">
+<h4 data-number="9.6.2.2" class="anchored" data-anchor-id="tarea-ias-cal-2.2"><span class="header-section-number">9.6.2.2</span> Tarea IAS-CAL 2.2</h4>
+</section>
+</section>
+<section id="actividad-ias-cal-3-revisión-de-las-pruebas-de-aceptación-del-sistema" class="level3" data-number="9.6.3">
+<h3 data-number="9.6.3" class="anchored" data-anchor-id="actividad-ias-cal-3-revisión-de-las-pruebas-de-aceptación-del-sistema"><span class="header-section-number">9.6.3</span> Actividad IAS-CAL 3: Revisión de las Pruebas de Aceptación del Sistema</h3>
+<section id="tarea-ias-cal-3.1" class="level4" data-number="9.6.3.1">
+<h4 data-number="9.6.3.1" class="anchored" data-anchor-id="tarea-ias-cal-3.1"><span class="header-section-number">9.6.3.1</span> Tarea IAS-CAL 3.1</h4>
+</section>
+<section id="tarea-ias-cal-3.2" class="level4" data-number="9.6.3.2">
+<h4 data-number="9.6.3.2" class="anchored" data-anchor-id="tarea-ias-cal-3.2"><span class="header-section-number">9.6.3.2</span> Tarea IAS-CAL 3.2</h4>
+</section>
+</section>
+<section id="actividad-ias-cal-4-revisión-del-plan-de-mantenimiento-del-sistema" class="level3" data-number="9.6.4">
+<h3 data-number="9.6.4" class="anchored" data-anchor-id="actividad-ias-cal-4-revisión-del-plan-de-mantenimiento-del-sistema"><span class="header-section-number">9.6.4</span> Actividad IAS-CAL 4: Revisión del Plan de Mantenimiento del Sistema</h3>
+<section id="tarea-ias-cal-4.1" class="level4" data-number="9.6.4.1">
+<h4 data-number="9.6.4.1" class="anchored" data-anchor-id="tarea-ias-cal-4.1"><span class="header-section-number">9.6.4.1</span> Tarea IAS-CAL 4.1</h4>
+</section>
+</section>
+<section id="actividad-ias-cal-5-registro-de-la-aprobación-de-la-implantación-del-sistema" class="level3" data-number="9.6.5">
+<h3 data-number="9.6.5" class="anchored" data-anchor-id="actividad-ias-cal-5-registro-de-la-aprobación-de-la-implantación-del-sistema"><span class="header-section-number">9.6.5</span> Actividad IAS-CAL 5: Registro de la Aprobación de la Implantación del Sistema</h3>
+<section id="tarea-ias-cal-5.1" class="level4" data-number="9.6.5.1">
+<h4 data-number="9.6.5.1" class="anchored" data-anchor-id="tarea-ias-cal-5.1"><span class="header-section-number">9.6.5.1</span> Tarea IAS-CAL 5.1</h4>
+</section>
+</section>
+</section>
+<section id="mantenimineto-del-sistema-de-información" class="level2" data-number="9.7">
+<h2 data-number="9.7" class="anchored" data-anchor-id="mantenimineto-del-sistema-de-información"><span class="header-section-number">9.7</span> Mantenimineto del sistema de información</h2>
+<section id="actividad-msi-cal-1-revisión-del-mantenimiento-del-sistema-de-información" class="level3" data-number="9.7.1">
+<h3 data-number="9.7.1" class="anchored" data-anchor-id="actividad-msi-cal-1-revisión-del-mantenimiento-del-sistema-de-información"><span class="header-section-number">9.7.1</span> Actividad MSI-CAL 1: Revisión del Mantenimiento del Sistema de Información</h3>
+<section id="tarea-msi-cal-1.1" class="level4" data-number="9.7.1.1">
+<h4 data-number="9.7.1.1" class="anchored" data-anchor-id="tarea-msi-cal-1.1"><span class="header-section-number">9.7.1.1</span> Tarea MSI-CAL 1.1</h4>
+</section>
+</section>
+<section id="actividad-msi-cal-2-revisión-del-plan-de-pruebas-de-regresión" class="level3" data-number="9.7.2">
+<h3 data-number="9.7.2" class="anchored" data-anchor-id="actividad-msi-cal-2-revisión-del-plan-de-pruebas-de-regresión"><span class="header-section-number">9.7.2</span> Actividad MSI-CAL 2: Revisión del Plan de Pruebas de Regresión</h3>
+<section id="tarea-msi-cal-2.1" class="level4" data-number="9.7.2.1">
+<h4 data-number="9.7.2.1" class="anchored" data-anchor-id="tarea-msi-cal-2.1"><span class="header-section-number">9.7.2.1</span> Tarea MSI-CAL 2.1</h4>
+</section>
+</section>
+<section id="actividad-msi-cal-3-revisión-de-la-realización-de-las-pruebas-de-regresión" class="level3" data-number="9.7.3">
+<h3 data-number="9.7.3" class="anchored" data-anchor-id="actividad-msi-cal-3-revisión-de-la-realización-de-las-pruebas-de-regresión"><span class="header-section-number">9.7.3</span> Actividad MSI-CAL 3: Revisión de la Realización de las Pruebas de Regresión</h3>
+<section id="tarea-msi-cal-3.1" class="level4" data-number="9.7.3.1">
+<h4 data-number="9.7.3.1" class="anchored" data-anchor-id="tarea-msi-cal-3.1"><span class="header-section-number">9.7.3.1</span> Tarea MSI-CAL 3.1</h4>
+
+
+</section>
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copiado");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copiado");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/pmgallardo\.github\.io\/metrica-v3\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../01-principal/08-msi.html" class="pagination-link" aria-label="Mantenimiento del Sistema de Información">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Mantenimiento del Sistema de Información</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../02-interfaces/02-seguridad.html" class="pagination-link" aria-label="Seguridad">
+        <span class="nav-page-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Seguridad</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/pmgallardo/metrica-v3/edit/main/02-interfaces/01-calidad.qmd" class="toc-action"><i class="bi bi-github"></i>Editar esta página</a></li><li><a href="https://github.com/pmgallardo/metrica-v3/issues/new" class="toc-action"><i class="bi empty"></i>Informar sobre problema</a></li><li><a href="https://github.com/pmgallardo/metrica-v3/blob/main/02-interfaces/01-calidad.qmd" class="toc-action"><i class="bi empty"></i>Ver el código</a></li></ul></div></div></div></footer></body></html>
