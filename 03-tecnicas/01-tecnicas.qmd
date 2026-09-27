@@ -1008,7 +1008,7 @@ Modelo entidad-relación extendido para un sistema de gestión de técnicos y
 
 Como se aprecia en el diagrama, TÉCNICO es un subtipo de EMPLEADO, generado por especialización, pues era necesario para establecer la relación Trabaja en con PROYECTO, ya que no todos los empleados de la empresa, como los administrativos, son susceptibles de trabajar en un proyecto. La entidad TÉCNICO tendrá los atributos de EMPLEADO más el atributo nivel.
 
-[Ejemplo de Modelo Entidad/Relación Extendido](../images/MERE_Ejemplo.png)
+![Ejemplo de Modelo Entidad/Relación Extendido](../images/MERE_Ejemplo.png)
 
 Los tipos de correspondencia son `1:N` entre DEPARTAMENTO y EMPLEADO, pues un departamento tiene 1 o varios empleados. Entre TÉCNICO y PROYECTO es `M:N`, pues un técnico puede trabajar en 1 o varios proyectos, y en un proyecto trabajan 1 o varios técnicos.
 
