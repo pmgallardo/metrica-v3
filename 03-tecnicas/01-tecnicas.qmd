@@ -872,7 +872,7 @@ Además, los mensajes pueden tener asociadas condiciones e iteraciones que se r
 
 Diagrama de colaboración para el caso de uso: Prestar un ejemplar de una aplicación encargada de los préstamos y reservas de una biblioteca.
 
-[Ejemplo de Diagrama de colaboración](../images/colaboracion-ejemplo.png)
+![Ejemplo de Diagrama de colaboración](../images/colaboracion-ejemplo.png)
 
 (Nota.- Esta notación es la más habitual, pero MÉTRICA Versión 3 no exige su utilización).
 
