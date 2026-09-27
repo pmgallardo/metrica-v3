@@ -775,6 +775,23 @@ La figura es un diagrama de flujos de un Sistema Gestor de Pedidos. En él esta
 ![Ejemplo de Diagrama de Flujo de Datos](../images/dfd-ejemplo.png)
 
 ### Diagrama de Interacción
+
+El objetivo de esta técnica es describir el comportamiento dinámico del sistema de información mediante el paso de mensajes entre los objetos del mismo. Además representa un medio para verificar la coherencia del sistema mediante la validación con el modelo de clases.
+Descripción
+
+Un diagrama de interacción describe en detalle un determinado escenario de un caso de uso. En él se muestra la interacción entre el conjunto de objetos que cooperan en la realización de dicho escenario. Suele ser conveniente especificar en la parte izquierda del diagrama el caso de uso que se está representando para que resulte más sencilla su validación.
+
+Los elementos que componen los diagramas de interacción son los objetos y los mensajes:
+
+* Un *objeto* es una entidad que tiene un estado, un comportamiento e identidad. La estructura y el comportamiento común de diferentes objetos se recoge en una clase. En un diagrama de interacción, los objetos serán al final instancias de una determinada clase o de un actor.
+* Un *mensaje* es una comunicación entre dos objetos. El envío de un mensaje por parte de un objeto (emisor) a otro (receptor), puede provocar que se ejecute una operación, se produzca un evento o se cree o destruya un objeto.
+
+Hay dos tipos de diagramas de interacción: [diagramas de secuencia](#diagrama-de-secuencia) y [diagramas de colaboración](#diagrama-de-colaboracion). Ambos tipos de diagramas tratan la misma información pero cada uno hace énfasis en un aspecto particular en cuanto a la forma de mostrarla.
+
+Los diagramas de secuencia muestran de forma explícita la secuencia de los mensajes intercambiados por los objetos, mientras que los diagramas de colaboración muestran de forma más clara cómo colaboran los objetos, es decir, con qué otros objetos tiene vínculos o intercambia mensajes un determinado objeto.
+
+A continuación se detallan las particularidades de cada uno de ellos.
+
 #### Diagrama de Secuencia
 
 #### Diagrama de Colaboración
