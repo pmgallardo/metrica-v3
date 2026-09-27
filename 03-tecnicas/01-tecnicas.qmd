@@ -636,6 +636,144 @@ El siguiente ejemplo muestra un proceso de emisión de cheques para el pago de 
 ![Ejemplo de Diagrama de Estructura](../images/ejemplo-diagrama-de-estructura.png) 
 
 ### Diagrama de Flujo de Datos
+
+El objetivo del diagrama de flujo de datos es la obtención de un modelo lógico de procesos que represente el sistema, con independencia de las restricciones físicas del entorno. Así se facilita su comprensión por los usuarios y los miembros del equipo de desarrollo.
+
+El sistema se divide en distintos niveles de detalle, con el objetivo de:
+
+* Simplificar la complejidad del sistema, representando los diferentes procesos de que consta.
+* Facilitar el mantenimiento del sistema.
+
+#### Descripción {.unnumbered .unlisted}
+
+Un diagrama de flujo de datos es una técnica muy apropiada para reflejar de una forma clara y precisa los procesos que conforman el sistema de información. Permite representar gráficamente los límites del sistema y la lógica de los procesos, estableciendo qué funciones hay que desarrollar. Además, muestra el flujo o movimiento de los datos a través del sistema y sus transformaciones como resultado de la ejecución de los procesos.
+
+Esta técnica consiste en la descomposición sucesiva de los procesos, desde un nivel general, hasta llegar al nivel de detalle necesario para reflejar toda la semántica que debe soportar el sistema en estudio.
+
+El diagrama de flujo de datos se compone de los siguientes elementos:
+
+* **Entidad externa**: representa un ente ajeno al sistema que proporciona o recibe información del mismo. Puede hacer referencia a departamentos, personas, máquinas, recursos u otros sistemas. El estudio de las relaciones entre entidades externas no forma parte del modelo.
+  Puede aparecer varias veces en un mismo diagrama, así como en los distintos niveles del DFD para mejorar la claridad del diagrama.
+* **Proceso**: representa una funcionalidad que tiene que llevar a cabo el sistema para transformar o manipular datos. El proceso debe ser capaz de generar los flujos de datos de salida a partir de los de entrada, más una información constante o variable al proceso.
+  El proceso nunca es el origen ni el final de los datos, puede transformar un flujo de datos de entrada en varios de salida y siempre es necesario como intermediario entre una entidad externa y un almacén de datos.
+* **Almacén de datos**: representa la información en reposo utilizada por el sistema independientemente del sistema de gestión de datos (por ejemplo un. fichero, base de datos, archivador, etc.). Contiene la información necesaria para la ejecución del proceso.
+  El almacén no puede crear, transformar o destruir datos, no puede estar comunicado con otro almacén o entidad externa y aparecerá por primera vez en aquel nivel en que dos o más procesos accedan a él.
+* **Flujo de datos:** representa el movimiento de los datos, y establece la comunicación entre los procesos y los almacenes de datos o las entidades externas.
+* Un flujo de datos entre dos procesos sólo es posible cuando la información es síncrona, es decir, el proceso destino comienza cuando el proceso origen finaliza su función.
+* Los flujos de datos que comunican procesos con almacenes pueden ser de los siguientes tipos:
+  * *De consulta*: representan la utilización de los valores de uno o más campos de un almacén o la comprobación de que los valores de los campos seleccionados cumplen unos criterios determinados.
+  * *De actualización*: representan la alteración de los datos de un almacén como consecuencia de la creación de un nuevo elemento, por eliminación o modificación de otros ya existentes.
+  * *De diálogo:* es un flujo entre un proceso y un almacén que representa una consulta y una actualización.
+
+Existen sistemas que precisan de información orientada al control de datos y requieren flujos y procesos de control, así como los mecanismos que desencadenan su ejecución. Para que resulte adecuado el análisis de estos sistemas, se ha ampliado la notación de los diagramas de flujo de datos incorporando los siguientes elementos:
+
+* **Proceso de control**: representa procesos que coordinan y sincronizan las actividades de otros procesos del diagrama de flujo de datos.
+* **Flujo de control**: representa el flujo entre un proceso de control y otro proceso. El flujo de control que sale de un proceso de control activa al proceso que lo recibe y el que entra le informa de la situación de un proceso. A diferencia de los flujos tradicionales, que pueden considerarse como procesadores de datos porque reflejan el movimiento y transformación de los mismos, los flujos de control no representan datos con valores, sino que en cierto modo, se trata de eventos que activan los procesos (señales o interrupciones).
+
+##### Descomposición o explosión por niveles {.unnumbered .unlisted}
+
+Los diagramas de flujo de datos han de representar el sistema de la forma más clara posible, por ello su construcción se basa en el principio de descomposición o explosión en distintos niveles de detalle.
+
+La descomposición por niveles se realiza de arriba abajo (top-down), es decir, se comienza en el nivel más general y se termina en el más detallado, pasando por los niveles intermedios necesarios. De este modo se dispondrá de un conjunto de particiones del sistema que facilitarán su estudio y su desarrollo.
+
+La explosión de cada proceso de un DFD origina otro DFD y es necesario comprobar que se mantiene la consistencia de información entre ellos, es decir, que la información de entrada y de salida de un proceso cualquiera se corresponde con la información de entrada y de salida del diagrama de flujo de datos en el que se descompone.
+
+En cualquiera de las explosiones puede aparecer un proceso que no necesite descomposición. A éste se le denomina Proceso primitivo y sólo se detalla en él su entrada y su salida, además de una descripción de lo que realiza. En la construcción hay que evitar en lo posible la descomposición desigual, es decir, que un nivel contenga un proceso primitivo, y otro que necesite ser particionado en uno o varios niveles más.
+
+El modelo de procesos deberá contener:
+
+* Un diagrama de contexto (Nivel 0).
+* Un diagrama 0 (Nivel 1).
+* Tantos diagramas 1, 2, 3, … n como funciones haya en el diagrama 0 (Nivel 2).
+* Tantos niveles intermedios como sea necesario.
+* Varios DFD en el último nivel de detalle.
+
+El diagrama de contexto tiene como objetivo delimitar el ámbito del sistema con el mundo exterior definiendo sus interfaces. En este diagrama se representa un único proceso que corresponde al sistema en estudio, un conjunto de entidades externas que representan la procedencia y destino de la información y un conjunto de flujos de datos que representan los caminos por los que fluye dicha información.
+
+A continuación, este proceso se descompone en otro DFD, en el que se representan los procesos principales o subsistemas. Un subsistema es un conjunto de procesos cuyas funcionalidades tienen algo en común. Éstos deberán ser identificados en base a determinados criterios, como por ejemplo: funciones organizativas o administrativas propias del sistema, funciones homogéneas de los procesos, localización geográfica de los mismos, procesos que actualicen los mismos almacenes de datos, etc.
+
+Cada uno de los procesos principales se descompone a su vez en otros que representan funciones más simples y se sigue descomponiendo hasta que los procesos estén suficientemente detallados y tengan una funcionalidad concreta, es decir, sean procesos primitivos.
+
+Como resultado se obtiene un modelo de procesos del sistema de información que consta de un conjunto de diagramas de flujo de datos de diferentes niveles de abstracción, de modo que cada uno proporciona una visión más detallada de una parte definida en el nivel anterior.
+
+Además de los diagramas de flujo de datos, el modelo de procesos incluye la especificación de los flujos de datos, de los almacenes de datos y la especificación detallada de los procesos que no precisan descomposición, es decir los procesos de último nivel o primitivos. En la especificación de un proceso primitivo se debe describir, de una manera más o menos formal, cómo se obtienen los flujos de datos de salida a partir de los flujos de datos de entrada y características propias del proceso.
+
+Dependiendo del tipo de proceso se puede describir el procedimiento asociado utilizando un lenguaje estructurado o un pseudocódigo, apoyándose en tablas de decisión o árboles de decisión.
+
+A continuación se muestra un ejemplo gráfico que representa la de descomposición jerárquica de los diagramas de flujo de datos.
+
+![Descomposición jerárquica de los diagramas de flujo de datos](../images/dfd-jerarquia.png)
+
+#### Notación {.unnumbered .unlisted}
+
+##### Entidad externa {.unnumbered .unlisted}
+
+Se representa mediante una elipse con un identificador y un nombre significativo en su interior.
+
+![](../images/dfd-entidad.png)
+
+Si la entidad externa aparece varias veces en un mismo diagrama, se representa con una línea inclinada en el ángulo superior izquierdo.
+
+![](../images/dfd-entidad-2.png)
+
+##### Proceso {.unnumbered .unlisted}
+
+Se representa por un rectángulo subdividido en tres casillas donde se indica el nombre del proceso, un número identificativo y la localización.
+
+![](../images/dfd-proceso.png)
+
+Si el proceso es de último nivel, se representa con un asterisco en el ángulo inferior derecho separado con una línea inclinada.
+
+![](../images/dfd-proceso-2.png)
+
+El nombre del proceso debe ser lo más representativo posible. Normalmente estará constituido por un verbo más un sustantivo.
+
+El número identificativo se representa en la parte superior izquierda e indica el nivel del DFD en que se está. Hay que resaltar que el número no indica orden de ejecución alguno entre los procesos ya que en un DFD no se representa una secuencia en el tratamiento de los datos. El número que identifica el proceso es único en el sistema y debe seguir el siguiente estándar de notación:
+
+* El proceso del diagrama de contexto se numera como cero.
+* Los procesos del siguiente nivel se enumeran desde 1 y de forma creciente hasta completar el número de procesos del diagrama.
+* En los niveles inferiores se forma con el número del proceso en el que está incluido seguido de un número que lo identifica en ese contexto.
+
+La localización expresa el nombre del proceso origen de la descomposición que se esté tratando.
+
+##### Almacén de datos {.unnumbered .unlisted}
+
+Se representa por dos líneas paralelas cerradas en un extremo y una línea vertical que las une. En la parte derecha se indica el nombre del almacén de datos y en la parte izquierda el identificador de dicho almacén en el DFD.
+
+![](../images/dfd-almacen.png)
+
+Si un almacén aparece repetido dentro un DFD se puede representar de la siguiente forma:
+
+![](../images/dfd-almacen-2.png)
+
+##### Flujo de datos {.unnumbered .unlisted}
+
+Se representa por una flecha que indica la dirección de los datos, y que se etiqueta con un nombre representativo.
+
+![](../images/dfd-flujo.png)
+
+La representación de los flujos de datos entre procesos y almacenes es la siguiente:
+
+![](../images/dfd-flujo-2.png)
+
+##### Proceso de control {.unnumbered .unlisted}
+
+Se representa por un rectángulo, con trazo discontinuo, subdividido en tres casillas donde se indica el nombre del proceso, un número identificativo y la localización.
+
+![](../images/dfd-control.png)
+
+##### Flujo de control {.unnumbered .unlisted}
+
+Se representa por una flecha con trazo discontinuo que indica la dirección de flujo y que se etiqueta con un nombre representativo.
+
+![](../images/dfd-control-2.png)
+
+#### Ejemplo {.unnumbered .unlisted}
+
+La figura es un diagrama de flujos de un Sistema Gestor de Pedidos. En él están representados todos los elementos que pueden intervenir en una Diagrama de Flujo de Datos.
+
+![Ejemplo de Diagrama de Flujo de Datos](../images/dfd-ejemplo.png)
+
 ### Diagrama de Interacción
 #### Diagrama de Secuencia
 #### Diagrama de Colaboración
@@ -921,45 +1059,31 @@ Los 14 atributos que se contemplan en esta técnica y sus significados aparecen
         1 – Se preverá una flexible capacidad de peticiones para modificaciones sencillas.
         2 – Se preverá una flexible capacidad de peticiones para modificaciones medias.
         3 – Se preverá una flexible capacidad de peticiones para modificaciones complejas.
-        Se añadirán 1 ó 2 puntos dependiendo de que los datos de control significativos se guarden en tablas mantenidas por el usuario mediante procesos interactivos en línea:
-        1 para actualización diferida.
-        2 para actualización inmediata.
+
+Se añadirán 1 ó 2 puntos dependiendo de que los datos de control significativos se guarden en tablas mantenidas por el usuario mediante procesos interactivos en línea:
+
+- 1 para actualización diferida.
+- 2 para actualización inmediata.
 
 Los atributos anteriores, con sus valores correspondientes, se contemplan en la siguiente tabla:
 
-+----+---------------------------------------------------------+------------+
 |    | ATRIBUTOS                                               | INFLUENCIA |
-+====+=========================================================+============+
+|----|---------------------------------------------------------|------------|
 | 1  | Comunicación de datos                                   |            |
-+----+---------------------------------------------------------+------------+
 | 2  | Funciones distribuidas                                  |            |
-+----+---------------------------------------------------------+------------+
 | 3  | Prestaciones                                            |            |
-+----+---------------------------------------------------------+------------+
 | 4  | Gran uso de la configuración                            |            |
-+----+---------------------------------------------------------+------------+
 | 5  | Velocidad de las transacciones                          |            |
-+----+---------------------------------------------------------+------------+
 | 6  | Entrada de datos en línea                               |            |
-+----+---------------------------------------------------------+------------+
 | 7  | Diseño para la eficiencia del usuario final             |            |
-+----+---------------------------------------------------------+------------+
 | 8  | Actualización de datos en línea                         |            |
-+----+---------------------------------------------------------+------------+
 | 9  | Complejidad del proceso lógico interno de la aplicación |            |
-+----+---------------------------------------------------------+------------+
 | 10 | Reusabilidad del código                                 |            |
-+----+---------------------------------------------------------+------------+
 | 11 | Facilidad de instalación                                |            |
-+----+---------------------------------------------------------+------------+
 | 12 | Facilidad de operación                                  |            |
-+----+---------------------------------------------------------+------------+
 | 13 | Localizaciones múltiples                                |            |
-+----+---------------------------------------------------------+------------+
 | 14 | Facilidad de cambios                                    |            |
-+----+---------------------------------------------------------+------------+
-|                                                         SUMA |            |
-+--------------------------------------------------------------+------------+
+|    | **SUMA**                                                |            |
 
 Una vez obtenido el valor de los atributos y sumados se obtiene una cifra comprendida entre 0 y 70, a partir de la cual se obtendrá el factor de ajuste, según la fórmula:
 
