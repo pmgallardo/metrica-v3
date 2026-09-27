@@ -11,15 +11,11 @@ MÉTRICA versión 3 puede ser utilizada libremente y en cualquier explotación d
 \
 Para cualquier sugerencia o información sobre la metodología Métrica v3, contactar con: <metrica@correo.gob.es>
 
-Para cuestiones relacionadas con el repositorio o sus versiones web o PDF derivadas, abrir un issue en GitHub.
+Para cuestiones relacionadas con el repositorio de ficheros fuente o sus versiones web y PDF derivadas, abrir un issue en GitHub.
 
 \
-Versión web:
-<https://pmgallardo.github.io/metrica-v3>
-
-Repositorio de ficheros fuente:
-<https://github.com/pmgallardo/metrica-v3>
-
-Web original:
-<https://administracionelectronica.gob.es/pae_Home/pae_Documentacion/pae_Metodolog/pae_Metrica_v3.html?idioma=es>
-
+| Recurso | URL |
+| - | - |
+| Versión web | [pmgallardo.github.io/metrica-v3](https://pmgallardo.github.io/metrica-v3) |
+| Repositorio de ficheros fuente | [github.com/pmgallardo/metrica-v3](https://github.com/pmgallardo/metrica-v3) |
+| Repositorio de documentación original | [administracionelectronica.gob.es/pae_Home/pae_Documentacion/pae_Metodolog/pae_Metrica_v3.html](https://administracionelectronica.gob.es/pae_Home/pae_Documentacion/pae_Metodolog/pae_Metrica_v3.html?idioma=es) |
