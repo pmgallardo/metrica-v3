@@ -239,7 +239,7 @@ Dependiendo del tipo de relación, la representación en los diagramas será 
 
 ![](../images/relacion.png)
 
-Paquete
+##### Paquete {.unnumbered .unlisted}
 
 Un paquete se representa con un icono con forma de carpeta y con el nombre colocado en la ‘pestaña’. Los paquetes también pueden formar diagramas que complementen al diagrama de casos de uso (ver [Diagrama de paquetes](#diagrama-de-paquetes)).
 
@@ -256,7 +256,8 @@ Estudio de una aplicación que se encarga de la gestión de los préstamos y 
 ### Diagrama de Clases
 
 El objetivo principal de este modelo es la representación de los aspectos estáticos del sistema, utilizando diversos mecanismos de abstracción (clasificación, generalización, agregación).
-Descripción
+
+#### Descripción {.unnumbered .unlisted}
 
 El diagrama de clases recoge las clases de objetos y sus asociaciones. En este diagrama se representa la estructura y el comportamiento de cada uno de los objetos del sistema y sus relaciones con los demás objetos, pero no muestra información temporal.
 
@@ -266,7 +267,7 @@ Este diagrama no refleja los comportamientos temporales de las clases, aunque pa
 
 Los elementos básicos del diagrama son:
 
-Clases
+##### Clases {.unnumbered .unlisted}
 
 Una clase describe un conjunto de objetos con propiedades (atributos) similares y un comportamiento común. Los objetos son instancias de las clases.
 
@@ -274,93 +275,94 @@ No existe un procedimiento inmediato que permita localizar las clases del diagra
 
 Dentro de la estructura de una clase se definen los atributos y las operaciones o métodos:
 
-    Los atributos de una clase representan los datos asociados a los objetos instanciados por esa clase.
-    Las operaciones o métodos representan las funciones o procesos propios de los objetos de una clase, caracterizando a dichos objetos.
+* Los atributos de una clase representan los datos asociados a los objetos instanciados por esa clase.
+* Las operaciones o métodos representan las funciones o procesos propios de los objetos de una clase, caracterizando a dichos objetos.
 
 El diagrama de clases permite representar clases abstractas. Una Clase abstracta es una clase que no puede existir en la realidad, pero que es útil conceptualmente para el diseño del modelo orientado a objetos. Las clases abstractas no son instanciables directamente sino en sus descendientes. Una clase abstracta suele ser situada en la jerarquía de clases en una posición que le permita ser un depósito de métodos y atributos para ser compartidos o heredados por las subclases de nivel inferior.
 
 Las clases y en general todos los elementos de los diagramas, pueden estar clasificados de acuerdo a varios criterios, como por ejemplo su objetivo dentro de un programa. Esta clasificación adicional se expresa mediante un Estereotipo. Algunos de los autores de métodos OO, establecen una clasificación de todos los objetos que pueden aparecer en un modelo. Los tipos son:
 
-    Objetos Entidad.
-    Objetos límite o interfaz.
-    Objetos de control.
+* Objetos Entidad.
+* Objetos límite o interfaz.
+* Objetos de control.
 
 Éstos son estereotipos de clases. Un estereotipo representa una la meta-clasificación de un elemento.
 
 Dependiendo de la herramienta utilizada, también se puede añadir información adicional a las clases para mostrar otras propiedades de las mismas, como son las reglas de negocio, responsabilidades, manejo de eventos, excepciones, etc.
 
-Relaciones
+##### Relaciones {.unnumbered .unlisted}
 
 Los tipos más importantes de relaciones estáticas entre clases son los siguientes:
 
-    Asociación. Las relaciones de asociación representan un conjunto de enlaces entre objetos o instancias de clases. Es el tipo de relación más general, y denota básicamente una dependencia semántica. Por ejemplo, una Persona trabaja para una Empresa.
-    Cada asociación puede presentar elementos adicionales que doten de mayor detalle al tipo de relación:
-        Rol, o nombre de la asociación, que describe la semántica de la relación en el sentido indicado. Por ejemplo, la asociación entre Persona y Empresa recibe el nombre de trabaja para, como rol en ese sentido.
-        Multiplicidad, que describe la cardinalidad de la relación, es decir, especifica cuántas instancias de una clase están asociadas a una instancia de la otra clase. Los tipos de multiplicidad son: Uno a uno, uno a muchos y muchos a muchos.
-    Herencia. Las jerarquías de generalización/especialización se conocen como herencia. Herencia es el mecanismo que permite a una clase de objetos incorporar atributos y métodos de otra clase, añadiéndolos a los que ya posee. Con la herencia se refleja una relación “es_un” entre clases. La clase de la cual se hereda se denomina superclase, y la que hereda subclase.
-    La generalización define una superclase a partir de otras. Por ejemplo, de las clases profesor y estudiante se obtiene la superclase persona. La especialización o especificación es la operación inversa, y en ella una clase se descompone en una o varias subclases. Por ejemplo, de la clase empleado se pueden obtener las subclases secretaria, técnico e ingeniero.
-    Agregación. La agregación es un tipo de relación jerárquica entre un objeto que representa la totalidad de ese objeto y las partes que lo componen. Permite el agrupamiento físico de estructuras relacionadas lógicamente. Los objetos “son-parte-de” otro objeto completo. Por ejemplo, motor, ruedas, carrocería son parte de automóvil.
-    Composición. La composición es una forma de agregación donde la relación de propiedad es más fuerte, e incluso coinciden los tiempos de vida del objeto completo y las partes que lo componen. Por ejemplo, en un sistema de Máquina de café, las relaciones entre la clase máquina y producto, o entre máquina y depósito de monedas, son de composición.
-    Dependencia. Una relación de dependencia se utiliza entre dos clases o entre una clase y una interfaz, e indica que una clase requiere de otra para proporcionar alguno de sus servicios.
+* **Asociación**. Las relaciones de asociación representan un conjunto de enlaces entre objetos o instancias de clases. Es el tipo de relación más general, y denota básicamente una dependencia semántica. Por ejemplo, una Persona *trabaja* para una Empresa.
+  Cada asociación puede presentar elementos adicionales que doten de mayor detalle al tipo de relación:
+  * *Rol*, o nombre de la asociación, que describe la semántica de la relación en el sentido indicado. Por ejemplo, la asociación entre Persona y Empresa recibe el nombre de trabaja para, como rol en ese sentido.
+  * *Multiplicidad*, que describe la cardinalidad de la relación, es decir, especifica cuántas instancias de una clase están asociadas a una instancia de la otra clase. Los tipos de multiplicidad son: Uno a uno, uno a muchos y muchos a muchos.
+ * **Herencia**. Las jerarquías de generalización/especialización se conocen como herencia. Herencia es el mecanismo que permite a una clase de objetos incorporar atributos y métodos de otra clase, añadiéndolos a los que ya posee. Con la herencia se refleja una relación “es_un” entre clases. La clase de la cual se hereda se denomina superclase, y la que hereda subclase.
+    La generalización define una superclase a partir de otras. Por ejemplo, de las clases profesor y estudiante se obtiene la superclase *persona*. La especialización o especificación es la operación inversa, y en ella una clase se descompone en una o varias subclases. Por ejemplo, de la clase empleado se pueden obtener las subclases *secretaria*, *técnico* e *ingeniero*.
+ * **Agregación**. La agregación es un tipo de relación jerárquica entre un objeto que representa la totalidad de ese objeto y las partes que lo componen. Permite el agrupamiento físico de estructuras relacionadas lógicamente. Los objetos “son-parte-de” otro objeto completo. Por ejemplo, *motor*, *ruedas*, *carrocería* son parte de *automóvil*.
+* **Composición**. La composición es una forma de agregación donde la relación de propiedad es más fuerte, e incluso coinciden los tiempos de vida del objeto completo y las partes que lo componen. Por ejemplo, en un sistema de Máquina de café, las relaciones entre la clase *máquina* y *producto*, o entre *máquina* y *depósito de monedas*, son de composición.
+* **Dependencia**. Una relación de dependencia se utiliza entre dos clases o entre una clase y una interfaz, e indica que una clase requiere de otra para proporcionar alguno de sus servicios.
 
-Interfaces
+##### Interfaces {.unnumbered .unlisted}
 
 Una interfaz es una especificación de la semántica de un conjunto de operaciones de una clase o paquete que son visibles desde otras clases o paquetes. Normalmente, se corresponde con una parte del comportamiento del elemento que la proporciona.
 
-Paquetes
+##### Paquetes {.unnumbered .unlisted}
 
 Los paquetes se usan para dividir el modelo de clases del sistema de información, agrupando clases u otros paquetes según los criterios que sean oportunos. Las dependencias entre ellos se definen a partir de las relaciones establecidas entre los distintos elementos que se agrupan en estos paquetes (ver Diagrama de paquetes).
-Notación
 
-Clases
+#### Notación {.unnumbered .unlisted}
+
+##### Clases {.unnumbered .unlisted}
 
 Una clase se representa como una caja, separada en tres zonas por líneas horizontales.
 
-En la zona superior se muestra el nombre de la clase y propiedades generales como el estereotipo. El nombre de la clase aparece centrado y si la clase es abstracta se representa en cursiva. El estereotipo, si se muestra, se sitúa sobre el nombre y entre el símbolo: << .... >>.
+En la zona superior se muestra el nombre de la clase y propiedades generales como el estereotipo. El nombre de la clase aparece centrado y si la clase es abstracta se representa en cursiva. El estereotipo, si se muestra, se sitúa sobre el nombre y entre el símbolo: `<< .... >>`.
 
 La zona central contiene una lista de atributos, uno en cada línea. La notación utilizada para representarlos incluye, dependiendo del detalle, el nombre del atributo, su tipo y su valor por defecto, con el formato:
 
-visibilidad nombre : tipo = valor-inicial { propiedades }
+`visibilidad nombre : tipo = valor-inicial { propiedades }`
 
-La visibilidad será en general publica (+), privada (-) o protegida (#), aunque puede haber otros tipos de visibilidad dependiendo del lenguaje de programación empleado.
+La visibilidad será en general publica (`+`), privada (`-`) o protegida (`#`), aunque puede haber otros tipos de visibilidad dependiendo del lenguaje de programación empleado.
 
 En la zona inferior se incluye una lista con las operaciones que proporciona la clase. Cada operación aparece en una línea con formato:
 
-visibilidad nombre (lista-de-parámetros): tipo-devuelto { propiedad }
+`visibilidad nombre (lista-de-parámetros): tipo-devuelto { propiedad }`
 
 La visibilidad será en general publica (+), privada (-) o protegida (#), aunque como con los atributos, puede haber otros tipos de visibilidad dependiendo del lenguaje de programación. La lista de parámetros es una lista con los parámetros recibidos en la operación separados por comas. El formato de un parámetro es:
 
-nombre : tipo = valor-por-defecto
+`nombre : tipo = valor-por-defecto`
 
 ![](../images/clase.png)
 
 La notación especificada se puede simplificar según el nivel de detalle con el que se quiera trabajar en un momento dado.
 
-Relaciones
+##### Relaciones {.unnumbered .unlisted}
 
 Una relación de asociación se representa como una línea continua entre las clases asociadas. En una relación de asociación, ambos extremos de la línea pueden conectar con la misma clase, indicando que una instancia de una clase, está asociada a otras instancias de la misma clase, lo que se conoce como asociación reflexiva.
 
-La relación puede tener un nombre y un estereotipo, que se colocan junto a la línea. El nombre suele corresponderse con expresiones verbales presentes en las especificaciones, y define la semántica de la asociación. Los estereotipos permiten clasificar las relaciones en familias y se escribirán entre el símbolo: << ... >>.
+La relación puede tener un nombre y un estereotipo, que se colocan junto a la línea. El nombre suele corresponderse con expresiones verbales presentes en las especificaciones, y define la semántica de la asociación. Los estereotipos permiten clasificar las relaciones en familias y se escribirán entre el símbolo: `<< ... >>`.
 
 Las diferentes propiedades de la relación se pueden representar con la siguiente notación:
 
-    Multiplicidad: La multiplicidad puede ser un número concreto, un rango o una colección de números. La letra ‘n’ y el símbolo ‘*’ representan cualquier número.
-    Orden: Se puede especificar si las instancias guardan un orden con la palabra clave ‘{ordered}’. Si el modelo es suficientemente detallado, se puede incluir una restricción que indique el criterio de ordenación.
-    Navegabilidad: La navegación desde una clase a la otra se representa poniendo una flecha sin relleno en el extremo de la línea, indicando el sentido de la navegación.
-    Rol o nombre de la asociación: Este nombre se coloca junto al extremo de la línea que esta unida a una clase, para expresar cómo esa clase hace uso de la otra clase con la que mantiene la asociación.
+* *Multiplicidad*: La multiplicidad puede ser un número concreto, un rango o una colección de números. La letra ‘`n`’ y el símbolo ‘`*`’ representan cualquier número.
+* *Orden*: Se puede especificar si las instancias guardan un orden con la palabra clave ‘`{ordered}`’. Si el modelo es suficientemente detallado, se puede incluir una restricción que indique el criterio de ordenación.
+* *Navegabilidad*: La navegación desde una clase a la otra se representa poniendo una flecha sin relleno en el extremo de la línea, indicando el sentido de la navegación.
+* *Rol* o *nombre de la asociación*: Este nombre se coloca junto al extremo de la línea que esta unida a una clase, para expresar cómo esa clase hace uso de la otra clase con la que mantiene la asociación.
 
 ![](../images/asociacion.png)
 
 Además, existen notaciones específicas para los otros tipos de relación, como son:
 
-    Agregación: Se representa con un rombo hueco en la clase cuya instancia es una agregación de las instancias de la otra.
-    Composición: Se representa con un rombo lleno en la clase cuya instancia contiene las instancias de la otra clase.
-    Dependencia: Una línea discontinua con una flecha apuntando a la clase cliente. La relación puede tener un estereotipo que se coloca junto a la línea, y entre el símbolo: << ... >>.
-    Herencia: Esta relación se representa como una línea continua con una flecha hueca en el extremo que apunta a la superclase.
+* *Agregación*: Se representa con un rombo hueco en la clase cuya instancia es una agregación de las instancias de la otra.
+* *Composición*: Se representa con un rombo lleno en la clase cuya instancia contiene las instancias de la otra clase.
+* *Dependencia*: Una línea discontinua con una flecha apuntando a la clase cliente. La relación puede tener un estereotipo que se coloca junto a la línea, y entre el símbolo: `<< ... >>`.
+* *Herencia*: Esta relación se representa como una línea continua con una flecha hueca en el extremo que apunta a la superclase.
 
 ![](../images/tipos-asociacion.png)
 
-Interfaces
+##### Interfaces {.unnumbered .unlisted}
 
 Una interfaz se representa como una caja con compartimentos, igual que las clases. En la zona superior se incluye el nombre y el estereotipo <>. La lista de operaciones se coloca en la zona inferior, igual que en las representaciones de clases. La zona en la que se listan los atributos estará vacía o puede omitirse.
 
@@ -368,10 +370,9 @@ Existe una representación más simple para la interfaz: un círculo pequeñ
 
 Entre una clase que implementa las operaciones que una interfaz ofrece y esa interfaz se establece una relación de realización que, dependiendo de la notación elegida, se representará con una línea continua entre ellas cuando la interfaz se representa como un círculo y con una flecha hueca discontinua apuntando a la interfaz cuando se represente como una clase.
 
-
 ![](../images/clase-interfaz.png)
 
-Paquetes
+##### Paquetes {.unnumbered .unlisted}
 
 Los paquetes se representan mediante un icono con forma de carpeta y las dependencias con flechas discontinuas entre los paquetes dependientes (ver Diagrama de paquetes).
 Ejemplo
@@ -392,6 +393,7 @@ Como ya se ha indicado, los elementos de estos diagramas son los componentes sof
 Un componente es un módulo de software que puede ser código fuente, código binario, un ejecutable, o una librería con una interfaz definida. Una interfaz establece las operaciones externas de un componente, las cuales determinan una parte del comportamiento del mismo. Además se representan las dependencias entre componentes o entre un componente y la interfaz de otro, es decir uno de ellos usa los servicios o facilidades del otro.
 
 Estos diagramas pueden incluir paquetes que permiten organizar la construcción del sistema de información en subsistemas y que recogen aspectos prácticos relacionados con la secuencia de compilación entre componentes, la agrupación de elementos en librerías, etc.
+
 Notación
 
 Componente
