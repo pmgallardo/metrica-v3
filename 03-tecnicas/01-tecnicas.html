@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.38">
+<meta name="generator" content="quarto-1.10.18">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -12,10 +12,13 @@
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
 */
-code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
@@ -41,10 +44,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-5d2bbbc7808559eb98ab364e0d5f4cb2.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-55729e142685bdf59498c7c2fcdcf840.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -74,7 +77,7 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
 
 <script type="text/javascript">
 const typesetMath = (el) => {
@@ -749,14 +752,199 @@ Casual: un módulo realiza un conjunto de tareas que tienen poca o ninguna rela
 </section>
 <section id="diagrama-de-flujo-de-datos" class="level3" data-number="13.2.8">
 <h3 data-number="13.2.8" class="anchored" data-anchor-id="diagrama-de-flujo-de-datos"><span class="header-section-number">13.2.8</span> Diagrama de Flujo de Datos</h3>
+<p>El objetivo del diagrama de flujo de datos es la obtención de un modelo lógico de procesos que represente el sistema, con independencia de las restricciones físicas del entorno. Así se facilita su comprensión por los usuarios y los miembros del equipo de desarrollo.</p>
+<p>El sistema se divide en distintos niveles de detalle, con el objetivo de:</p>
+<ul>
+<li>Simplificar la complejidad del sistema, representando los diferentes procesos de que consta.</li>
+<li>Facilitar el mantenimiento del sistema.</li>
+</ul>
+<section id="descripción" class="level4 unnumbered unlisted">
+<h4 class="unnumbered unlisted anchored" data-anchor-id="descripción">Descripción</h4>
+<p>Un diagrama de flujo de datos es una técnica muy apropiada para reflejar de una forma clara y precisa los procesos que conforman el sistema de información.&nbsp;Permite representar gráficamente los límites del sistema y la lógica de los procesos, estableciendo qué funciones hay que desarrollar. Además, muestra el flujo o movimiento de los datos a través del sistema y sus transformaciones como resultado de la ejecución de los procesos.</p>
+<p>Esta técnica consiste en la descomposición sucesiva de los procesos, desde un nivel general, hasta llegar al nivel de detalle necesario para reflejar toda la semántica que debe soportar el sistema en estudio.</p>
+<p>El diagrama de flujo de datos se compone de los siguientes elementos:</p>
+<ul>
+<li><strong>Entidad externa</strong>: representa un ente ajeno al sistema que proporciona o recibe información del mismo. Puede hacer referencia a departamentos, personas, máquinas, recursos u otros sistemas. El estudio de las relaciones entre entidades externas no forma parte del modelo. Puede aparecer varias veces en un mismo diagrama, así como en los distintos niveles del DFD para mejorar la claridad del diagrama.</li>
+<li><strong>Proceso</strong>: representa una funcionalidad que tiene que llevar a cabo el sistema para transformar o manipular datos. El proceso debe ser capaz de generar los flujos de datos de salida a partir de los de entrada, más una información constante o variable al proceso. El proceso nunca es el origen ni el final de los datos, puede transformar un flujo de datos de entrada en varios de salida y siempre es necesario como intermediario entre una entidad externa y un almacén de datos.</li>
+<li><strong>Almacén de datos</strong>: representa la información en reposo utilizada por el sistema independientemente del sistema de gestión de datos (por ejemplo un. fichero, base de datos, archivador, etc.). Contiene la información necesaria para la ejecución del proceso. El almacén no puede crear, transformar o destruir datos, no puede estar comunicado con otro almacén o entidad externa y aparecerá por primera vez en aquel nivel en que dos o más procesos accedan a él.</li>
+<li><strong>Flujo de datos:</strong> representa el movimiento de los datos, y establece la comunicación entre los procesos y los almacenes de datos o las entidades externas.</li>
+<li>Un flujo de datos entre dos procesos sólo es posible cuando la información es síncrona, es decir, el proceso destino comienza cuando el proceso origen finaliza su función.</li>
+<li>Los flujos de datos que comunican procesos con almacenes pueden ser de los siguientes tipos:
+<ul>
+<li><em>De consulta</em>: representan la utilización de los valores de uno o más campos de un almacén o la comprobación de que los valores de los campos seleccionados cumplen unos criterios determinados.</li>
+<li><em>De actualización</em>: representan la alteración de los datos de un almacén como consecuencia de la creación de un nuevo elemento, por eliminación o modificación de otros ya existentes.</li>
+<li><em>De diálogo:</em> es un flujo entre un proceso y un almacén que representa una consulta y una actualización.</li>
+</ul></li>
+</ul>
+<p>Existen sistemas que precisan de información orientada al control de datos y requieren flujos y procesos de control, así como los mecanismos que desencadenan su ejecución.&nbsp;Para que resulte adecuado el análisis de estos sistemas, se ha ampliado la notación de los diagramas de flujo de datos incorporando los siguientes elementos:</p>
+<ul>
+<li><strong>Proceso de control</strong>: representa procesos que coordinan y sincronizan las actividades de otros procesos del diagrama de flujo de datos.</li>
+<li><strong>Flujo de control</strong>: representa el flujo entre un proceso de control y otro proceso. El flujo de control que sale de un proceso de control activa al proceso que lo recibe y el que entra le informa de la situación de un proceso. A diferencia de los flujos tradicionales, que pueden considerarse como procesadores de datos porque reflejan el movimiento y transformación de los mismos, los flujos de control no representan datos con valores, sino que en cierto modo, se trata de eventos que activan los procesos (señales o interrupciones).</li>
+</ul>
+<section id="descomposicion-o-explosion-por-niveles" class="level5 unnumbered unlisted">
+<h5 class="unnumbered unlisted anchored" data-anchor-id="descomposicion-o-explosion-por-niveles">Descomposición o explosión por niveles</h5>
+<p>Los diagramas de flujo de datos han de representar el sistema de la forma más clara posible, por ello su construcción se basa en el principio de descomposición o explosión en distintos niveles de detalle.</p>
+<p>La descomposición por niveles se realiza de arriba abajo (top-down), es decir, se comienza en el nivel más general y se termina en el más detallado, pasando por los niveles intermedios necesarios. De este modo se dispondrá de un conjunto de particiones del sistema que facilitarán su estudio y su desarrollo.</p>
+<p>La explosión de cada proceso de un DFD origina otro DFD y es necesario comprobar que se mantiene la consistencia de información entre ellos, es decir, que la información de entrada y de salida de un proceso cualquiera se corresponde con la información de entrada y de salida del diagrama de flujo de datos en el que se descompone.</p>
+<p>En cualquiera de las explosiones puede aparecer un proceso que no necesite descomposición.&nbsp;A éste se le denomina Proceso primitivo y sólo se detalla en él su entrada y su salida, además de una descripción de lo que realiza. En la construcción hay que evitar en lo posible la descomposición desigual, es decir, que un nivel contenga un proceso primitivo, y otro que necesite ser particionado en uno o varios niveles más.</p>
+<p>El modelo de procesos deberá contener:</p>
+<ul>
+<li>Un diagrama de contexto (Nivel 0).</li>
+<li>Un diagrama 0 (Nivel 1).</li>
+<li>Tantos diagramas 1, 2, 3, … n como funciones haya en el diagrama 0 (Nivel 2).</li>
+<li>Tantos niveles intermedios como sea necesario.</li>
+<li>Varios DFD en el último nivel de detalle.</li>
+</ul>
+<p>El diagrama de contexto tiene como objetivo delimitar el ámbito del sistema con el mundo exterior definiendo sus interfaces. En este diagrama se representa un único proceso que corresponde al sistema en estudio, un conjunto de entidades externas que representan la procedencia y destino de la información y un conjunto de flujos de datos que representan los caminos por los que fluye dicha información.</p>
+<p>A continuación, este proceso se descompone en otro DFD, en el que se representan los procesos principales o subsistemas. Un subsistema es un conjunto de procesos cuyas funcionalidades tienen algo en común.&nbsp;Éstos deberán ser identificados en base a determinados criterios, como por ejemplo: funciones organizativas o administrativas propias del sistema, funciones homogéneas de los procesos, localización geográfica de los mismos, procesos que actualicen los mismos almacenes de datos, etc.</p>
+<p>Cada uno de los procesos principales se descompone a su vez en otros que representan funciones más simples y se sigue descomponiendo hasta que los procesos estén suficientemente detallados y tengan una funcionalidad concreta, es decir, sean procesos primitivos.</p>
+<p>Como resultado se obtiene un modelo de procesos del sistema de información que consta de un conjunto de diagramas de flujo de datos de diferentes niveles de abstracción, de modo que cada uno proporciona una visión más detallada de una parte definida en el nivel anterior.</p>
+<p>Además de los diagramas de flujo de datos, el modelo de procesos incluye la especificación de los flujos de datos, de los almacenes de datos y la especificación detallada de los procesos que no precisan descomposición, es decir los procesos de último nivel o primitivos. En la especificación de un proceso primitivo se debe describir, de una manera más o menos formal, cómo se obtienen los flujos de datos de salida a partir de los flujos de datos de entrada y características propias del proceso.</p>
+<p>Dependiendo del tipo de proceso se puede describir el procedimiento asociado utilizando un lenguaje estructurado o un pseudocódigo, apoyándose en tablas de decisión o árboles de decisión.</p>
+<p>A continuación se muestra un ejemplo gráfico que representa la de descomposición jerárquica de los diagramas de flujo de datos.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../images/dfd-jerarquia.png" class="img-fluid figure-img"></p>
+<figcaption>Descomposición jerárquica de los diagramas de flujo de datos</figcaption>
+</figure>
+</div>
+</section>
+</section>
+<section id="notación" class="level4 unnumbered unlisted">
+<h4 class="unnumbered unlisted anchored" data-anchor-id="notación">Notación</h4>
+<section id="entidad-externa" class="level5 unnumbered unlisted">
+<h5 class="unnumbered unlisted anchored" data-anchor-id="entidad-externa">Entidad externa</h5>
+<p>Se representa mediante una elipse con un identificador y un nombre significativo en su interior.</p>
+<p><img src="../images/dfd-entidad.png" class="img-fluid"></p>
+<p>Si la entidad externa aparece varias veces en un mismo diagrama, se representa con una línea inclinada en el ángulo superior izquierdo.</p>
+<p><img src="../images/dfd-entidad-2.png" class="img-fluid"></p>
+</section>
+<section id="proceso" class="level5 unnumbered unlisted">
+<h5 class="unnumbered unlisted anchored" data-anchor-id="proceso">Proceso</h5>
+<p>Se representa por un rectángulo subdividido en tres casillas donde se indica el nombre del proceso, un número identificativo y la localización.</p>
+<p><img src="../images/dfd-proceso.png" class="img-fluid"></p>
+<p>Si el proceso es de último nivel, se representa con un asterisco en el ángulo inferior derecho separado con una línea inclinada.</p>
+<p><img src="../images/dfd-proceso-2.png" class="img-fluid"></p>
+<p>El nombre del proceso debe ser lo más representativo posible. Normalmente estará constituido por un verbo más un sustantivo.</p>
+<p>El número identificativo se representa en la parte superior izquierda e indica el nivel del DFD en que se está. Hay que resaltar que el número no indica orden de ejecución alguno entre los procesos ya que en un DFD no se representa una secuencia en el tratamiento de los datos. El número que identifica el proceso es único en el sistema y debe seguir el siguiente estándar de notación:</p>
+<ul>
+<li>El proceso del diagrama de contexto se numera como cero.</li>
+<li>Los procesos del siguiente nivel se enumeran desde 1 y de forma creciente hasta completar el número de procesos del diagrama.</li>
+<li>En los niveles inferiores se forma con el número del proceso en el que está incluido seguido de un número que lo identifica en ese contexto.</li>
+</ul>
+<p>La localización expresa el nombre del proceso origen de la descomposición que se esté tratando.</p>
+</section>
+<section id="almacen-de-datos" class="level5 unnumbered unlisted">
+<h5 class="unnumbered unlisted anchored" data-anchor-id="almacen-de-datos">Almacén de datos</h5>
+<p>Se representa por dos líneas paralelas cerradas en un extremo y una línea vertical que las une. En la parte derecha se indica el nombre del almacén de datos y en la parte izquierda el identificador de dicho almacén en el DFD.</p>
+<p><img src="../images/dfd-almacen.png" class="img-fluid"></p>
+<p>Si un almacén aparece repetido dentro un DFD se puede representar de la siguiente forma:</p>
+<p><img src="../images/dfd-almacen-2.png" class="img-fluid"></p>
+</section>
+<section id="flujo-de-datos" class="level5 unnumbered unlisted">
+<h5 class="unnumbered unlisted anchored" data-anchor-id="flujo-de-datos">Flujo de datos</h5>
+<p>Se representa por una flecha que indica la dirección de los datos, y que se etiqueta con un nombre representativo.</p>
+<p><img src="../images/dfd-flujo.png" class="img-fluid"></p>
+<p>La representación de los flujos de datos entre procesos y almacenes es la siguiente:</p>
+<p><img src="../images/dfd-flujo-2.png" class="img-fluid"></p>
+</section>
+<section id="proceso-de-control" class="level5 unnumbered unlisted">
+<h5 class="unnumbered unlisted anchored" data-anchor-id="proceso-de-control">Proceso de control</h5>
+<p>Se representa por un rectángulo, con trazo discontinuo, subdividido en tres casillas donde se indica el nombre del proceso, un número identificativo y la localización.</p>
+<p><img src="../images/dfd-control.png" class="img-fluid"></p>
+</section>
+<section id="flujo-de-control" class="level5 unnumbered unlisted">
+<h5 class="unnumbered unlisted anchored" data-anchor-id="flujo-de-control">Flujo de control</h5>
+<p>Se representa por una flecha con trazo discontinuo que indica la dirección de flujo y que se etiqueta con un nombre representativo.</p>
+<p><img src="../images/dfd-control-2.png" class="img-fluid"></p>
+</section>
+</section>
+<section id="ejemplo" class="level4 unnumbered unlisted">
+<h4 class="unnumbered unlisted anchored" data-anchor-id="ejemplo">Ejemplo</h4>
+<p>La figura es un diagrama de flujos de un Sistema Gestor de Pedidos. En él están representados todos los elementos que pueden intervenir en una Diagrama de Flujo de Datos.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../images/dfd-ejemplo.png" class="img-fluid figure-img"></p>
+<figcaption>Ejemplo de Diagrama de Flujo de Datos</figcaption>
+</figure>
+</div>
+</section>
 </section>
 <section id="diagrama-de-interacción" class="level3" data-number="13.2.9">
 <h3 data-number="13.2.9" class="anchored" data-anchor-id="diagrama-de-interacción"><span class="header-section-number">13.2.9</span> Diagrama de Interacción</h3>
+<p>El objetivo de esta técnica es describir el comportamiento dinámico del sistema de información mediante el paso de mensajes entre los objetos del mismo. Además representa un medio para verificar la coherencia del sistema mediante la validación con el modelo de clases. Descripción</p>
+<p>Un diagrama de interacción describe en detalle un determinado escenario de un caso de uso. En él se muestra la interacción entre el conjunto de objetos que cooperan en la realización de dicho escenario. Suele ser conveniente especificar en la parte izquierda del diagrama el caso de uso que se está representando para que resulte más sencilla su validación.</p>
+<p>Los elementos que componen los diagramas de interacción son los objetos y los mensajes:</p>
+<ul>
+<li>Un <em>objeto</em> es una entidad que tiene un estado, un comportamiento e identidad. La estructura y el comportamiento común de diferentes objetos se recoge en una clase. En un diagrama de interacción, los objetos serán al final instancias de una determinada clase o de un actor.</li>
+<li>Un <em>mensaje</em> es una comunicación entre dos objetos. El envío de un mensaje por parte de un objeto (emisor) a otro (receptor), puede provocar que se ejecute una operación, se produzca un evento o se cree o destruya un objeto.</li>
+</ul>
+<p>Hay dos tipos de diagramas de interacción: <a href="#diagrama-de-secuencia">diagramas de secuencia</a> y <a href="#diagrama-de-colaboracion">diagramas de colaboración</a>. Ambos tipos de diagramas tratan la misma información pero cada uno hace énfasis en un aspecto particular en cuanto a la forma de mostrarla.</p>
+<p>Los diagramas de secuencia muestran de forma explícita la secuencia de los mensajes intercambiados por los objetos, mientras que los diagramas de colaboración muestran de forma más clara cómo colaboran los objetos, es decir, con qué otros objetos tiene vínculos o intercambia mensajes un determinado objeto.</p>
+<p>A continuación se detallan las particularidades de cada uno de ellos.</p>
 <section id="diagrama-de-secuencia" class="level4" data-number="13.2.9.1">
 <h4 data-number="13.2.9.1" class="anchored" data-anchor-id="diagrama-de-secuencia"><span class="header-section-number">13.2.9.1</span> Diagrama de Secuencia</h4>
+<p>El diagrama de secuencia es un tipo de diagrama de interacción cuyo objetivo es describir el comportamiento dinámico del sistema de información haciendo énfasis en la secuencia de los mensajes intercambiados por los objetos.</p>
+<section id="descripción-1" class="level5 unnumbered unlisted">
+<h5 class="unnumbered unlisted anchored" data-anchor-id="descripción-1">Descripción</h5>
+<p>Un diagrama de secuencia tiene dos dimensiones, el eje vertical representa el tiempo y el eje horizontal los diferentes objetos. El tiempo avanza desde la parte superior del diagrama hacia la inferior. Normalmente, en relación al tiempo sólo es importante la secuencia de los mensajes, sin embargo, en aplicaciones de tiempo real se podría introducir una escala en el eje vertical. Respecto a los objetos, es irrelevante el orden en que se representan, aunque su colocación debería poseer la mayor claridad posible.</p>
+<p>Cada objeto tiene asociados una <em>línea de vida</em> y <em>focos de control</em>. La línea de vida indica el intervalo de tiempo durante el que existe ese objeto. Un foco de control o activación muestra el periodo de tiempo en el cual el objeto se encuentra ejecutando alguna operación, ya sea directamente o mediante un procedimiento concurrente.</p>
+</section>
+<section id="notación-1" class="level5 unnumbered unlisted">
+<h5 class="unnumbered unlisted anchored" data-anchor-id="notación-1">Notación</h5>
+<section id="objeto-y-linea-de-vida" class="level6 unnumbered unlisted">
+<h6 class="unnumbered unlisted anchored" data-anchor-id="objeto-y-linea-de-vida">Objeto y línea de vida</h6>
+<p>Un objeto se representa como una línea vertical discontinua, llamada línea de vida, con un rectángulo de encabezado con el nombre del objeto en su interior. También se puede incluir a continuación el nombre de la clase, separando ambos por dos puntos.</p>
+<p>Si el objeto es creado en el intervalo de tiempo representado en el diagrama, la línea comienza en el punto que representa ese instante y encima se coloca el objeto. Si el objeto es destruido durante la interacción que muestra el diagrama, la línea de vida termina en ese punto y se señala con un aspa de ancho equivalente al del foco de control.</p>
+<p>En el caso de que un objeto existiese al principio de la interacción representada en el diagrama, dicho objeto se situará en la parte superior del diagrama, por encima del primer mensaje. Si un objeto no es eliminado en el tiempo que dura la interacción, su línea de vida se prolonga hasta la parte inferior del diagrama.</p>
+<p>La línea de vida de un objeto puede desplegarse en dos o más líneas para mostrar los diferentes flujos de mensajes que puede intercambiar un objeto, dependiendo de alguna condición.</p>
+</section>
+<section id="foco-de-control-o-activacion" class="level6 unnumbered unlisted">
+<h6 class="unnumbered unlisted anchored" data-anchor-id="foco-de-control-o-activacion">Foco de control o activación</h6>
+<p>Se representa como un rectángulo delgado superpuesto a la línea de vida del objeto. Su largo dependerá de la duración de la acción.&nbsp;La parte superior del rectángulo indica el inicio de una acción ejecutada por el objeto y la parte inferior su finalización.</p>
+</section>
+<section id="mensaje" class="level6 unnumbered unlisted">
+<h6 class="unnumbered unlisted anchored" data-anchor-id="mensaje">Mensaje</h6>
+<p>Un mensaje se representa como una flecha horizontal entre las líneas de vida de los objetos que intercambian el mensaje. La flecha va desde el objeto que envía el mensaje al que lo recibe. Además, un objeto puede mandarse un mensaje a sí mismo, en este caso la flecha comienza y termina en su línea de vida.</p>
+<p>La flecha tiene asociada una etiqueta con el nombre del mensaje y los argumentos. También pueden ser etiquetados los mensajes con un número de secuencia, sin embargo, este número no es necesario porque la localización física de las flechas que representan a los mensajes ya indica el orden de los mismos.</p>
+<p><img src="../images/secuencia.png" class="img-fluid"></p>
+<p>Los mensajes pueden presentar también condiciones e iteraciones. Una condición se representa mediante una expresión booleana encerrada entre corchetes junto a un mensaje, e indica que ese mensaje sólo es enviado en caso de ser cierta la condición.&nbsp;Una iteración se representa con un asterisco y una expresión entre corchetes, que indica el número de veces que se produce.</p>
+<p>(Nota.- Esta notación es la más habitual, pero MÉTRICA Versión 3 no exige su utilización).</p>
+</section>
+</section>
+<section id="ejemplo-1" class="level5 unnumbered unlisted">
+<h5 class="unnumbered unlisted anchored" data-anchor-id="ejemplo-1">Ejemplo</h5>
+<p>Diagrama de secuencia para el caso de uso: Prestar un ejemplar de una aplicación encargada de los préstamos y reservas de una biblioteca:</p>
+<p><a href="../images/secuencia-ejemplo.png">Ejemplo de Diagrama de secuencia</a></p>
+</section>
 </section>
 <section id="diagrama-de-colaboración" class="level4" data-number="13.2.9.2">
 <h4 data-number="13.2.9.2" class="anchored" data-anchor-id="diagrama-de-colaboración"><span class="header-section-number">13.2.9.2</span> Diagrama de Colaboración</h4>
+<p>El diagrama de colaboración es un tipo de diagrama de interacción cuyo objetivo es describir el comportamiento dinámico del sistema de información mostrando cómo interactúan los objetos entre sí, es decir, con qué otros objetos tiene vínculos o intercambia mensajes un determinado objeto. Descripción</p>
+<p>Un diagrama de colaboración muestra la misma información que un diagrama de secuencia pero de forma diferente. En los diagramas de colaboración no existe una secuencia temporal en el eje vertical; es decir, la colocación de los mensajes en el diagrama no indica cuál es el orden en el que se suceden. Además, la colocación de los objetos es más flexible y permite mostrar de forma más clara cuáles son las colaboraciones entre ellos. En estos diagramas la comunicación entre objetos se denomina vínculo o enlace (link) y estará particularizada mediante los mensajes que intercambian.</p>
+<section id="notación-2" class="level5 unnumbered unlisted">
+<h5 class="unnumbered unlisted anchored" data-anchor-id="notación-2">Notación</h5>
+<section id="objeto" class="level6 unnumbered unlisted">
+<h6 class="unnumbered unlisted anchored" data-anchor-id="objeto">Objeto</h6>
+<p>Un objeto se representa con un rectángulo dentro del que se incluye el nombre del objeto y, si se desea, el nombre de la clase, separando ambos por dos puntos.</p>
+</section>
+<section id="vinculo" class="level6 unnumbered unlisted">
+<h6 class="unnumbered unlisted anchored" data-anchor-id="vinculo">Vínculo</h6>
+<p>En el diagrama, un vínculo se representa como una línea continua que une ambos objetos y que puede tener uno o varios mensajes asociados en ambas direcciones. Como un vínculo instancia una relación de asociación entre clases, también se puede indicar la navegabilidad del mismo mediante una flecha.</p>
+</section>
+<section id="mensaje-1" class="level6 unnumbered unlisted">
+<h6 class="unnumbered unlisted anchored" data-anchor-id="mensaje-1">Mensaje</h6>
+<p>Un mensaje se representa con una pequeña flecha colocada junto a la línea del vínculo al que está asociado. La dirección de la flecha va del objeto emisor del mensaje al receptor del mismo. Junto a ella, se coloca el nombre del mensaje y sus argumentos.</p>
+<p>A diferencia de los diagramas de secuencia, en los diagramas de colaboración siempre se muestra el número de secuencia del mensaje delante de su nombre, ya que no hay otra forma de conocer la secuencia de los mismos.</p>
+<p>Además, los mensajes pueden tener asociadas condiciones e iteraciones que se representarán como en los diagramas de secuencia.</p>
+</section>
+</section>
+<section id="ejemplo-2" class="level5 unnumbered unlisted">
+<h5 class="unnumbered unlisted anchored" data-anchor-id="ejemplo-2">Ejemplo</h5>
+<p>Diagrama de colaboración para el caso de uso: Prestar un ejemplar de una aplicación encargada de los préstamos y reservas de una biblioteca.</p>
+<p><a href="../images/colaboracion-ejemplo.png">Ejemplo de Diagrama de colaboración</a></p>
+<p>(Nota.- Esta notación es la más habitual, pero MÉTRICA Versión 3 no exige su utilización).</p>
+</section>
 </section>
 </section>
 <section id="diagrama-de-paquetes" class="level3" data-number="13.2.10">
