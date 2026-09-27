@@ -447,7 +447,8 @@ Diagrama de Descomposición Organizativo:
 ### Diagrama de Despliegue
 
 El objetivo de estos diagramas es mostrar la disposición de las particiones físicas del sistema de información y la asignación de los componentes software a estas particiones. Es decir, las relaciones físicas entre los componentes software y hardware en el sistema a entregar.
-Descripción
+
+#### Descripción {.unnumbered .unlisted}
 
 En estos diagramas se representan dos tipos de elementos, nodos y conexiones, así como la distribución de componentes del sistema de información con respecto a la partición física del sistema.
 
@@ -456,16 +457,18 @@ En MÉTRICA Versión 3 se propone una definición concreta de nodo, prescindi
 Las conexiones representan las formas de comunicación entre nodos.
 
 Además, a cada nodo se le asocia un subsistema de construcción que agrupa componentes software, permitiendo de este modo, determinar la distribución de estos componentes. Por lo tanto, un diagrama de despliegue puede incluir, dependiendo del nivel de detalle, todos los elementos descritos en la técnica de diagrama de componentes, además los nodos y las conexiones propios de esta técnica.
-Notación
 
-Nodo
+#### Notación {.unnumbered .unlisted}
+
+##### Nodo {.unnumbered .unlisted}
 
 Se representa con la figura de un cubo. El nodo se etiqueta con un nombre representativo de la partición física que simboliza. Se pueden asociar a los nodos subsistemas de construcción.
 
-Conexión
+##### Conexión {.unnumbered .unlisted}
 
 Las conexiones se representan con una línea continua que une ambos nodos y pueden tener una etiqueta que indique el tipo de conexión. (ejemplo: canal, red, protocolo, etc.)
-Ejemplo
+
+#### Ejemplo {.unnumbered .unlisted}
 
 El diagrama representa una arquitectura compuesta por un servidor central de lógica de negocio y acceso a datos, en un monitor de teleproceso de tipo XXX, al cual hay conectados 10 servidores departamentales, con clientes (100) e impresora conectados a cada uno de ellos. No interesa tanto recoger en el diagrama la infraestructura real (la exactitud de la configuración, número de procesadores que pueden cambiar con el tiempo y en principio no afecta ni al diseño ni a la construcción), como el tipo “genérico” de los servidores, los volúmenes en el caso de que sean significativos (por ejemplo: 100 puestos por departamento).
 
