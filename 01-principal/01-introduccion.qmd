@@ -1,0 +1,361 @@
+# Introducción
+
+## Introducción
+
+La metodología MÉTRICA Versión 3 ofrece a las Organizaciones un instrumento útil para la sistematización de las actividades que dan soporte al ciclo de vida del software dentro del marco que permite alcanzar los siguientes objetivos:
+
+- Proporcionar o definir Sistemas de Información que ayuden a conseguir los fines de la Organización mediante la definición de un marco estratégico para el desarrollo de los mismos.
+- Dotar a la Organización de productos software que satisfagan las necesidades de los usuarios dando una mayor importancia al análisis de requisitos.
+- Mejorar la productividad de los departamentos de Sistemas y Tecnologías de la Información y las Comunicaciones, permitiendo una mayor capacidad de adaptación a los cambios y teniendo en cuenta la reutilización en la medida de lo posible.
+- Facilitar la comunicación y entendimiento entre los distintos participantes en la producción de software a lo largo del ciclo de vida del proyecto, teniendo en cuenta su papel y responsabilidad, así como las necesidades de todos y cada uno de ellos.
+- Facilitar la operación, mantenimiento y uso de los productos software obtenidos.
+
+La nueva versión de MÉTRICA contempla el desarrollo de Sistemas de Información para las distintas tecnologías que actualmente están conviviendo y los aspectos de gestión que aseguran que un Proyecto cumple sus objetivos en términos de calidad, coste y plazos.
+
+Su punto de partida es la versión anterior de MÉTRICA de la cual se han conservado la adaptabilidad, flexibilidad y sencillez, así como la estructura de actividades y tareas, si bien las fases y módulos de MÉTRICA versión 2.1 han dado paso a la división en Procesos, más adecuada a la entrada-transformación-salida que se produce en cada una de las divisiones del ciclo de vida de un proyecto. Para cada tarea se detallan los participantes que intervienen, los productos de entrada y de salida así como las técnicas y prácticas a emplear para su obtención.
+
+En la elaboración de MÉTRICA Versión 3 se han tenido en cuenta los métodos de desarrollo más extendidos, así como los últimos estándares de ingeniería del software y calidad, además de referencias específicas en cuanto a seguridad y gestión de proyectos. También se ha tenido en cuenta la experiencia de los usuarios de las versiones anteriores para solventar los problemas o deficiencias detectados.
+
+En una única estructura la metodología MÉTRICA Versión 3 cubre distintos tipos de desarrollo: estructurado y orientado a objetos, facilitando a través de interfaces la realización de los procesos de apoyo u organizativos: Gestión de Proyectos, Gestión de Configuración, Aseguramiento de Calidad y Seguridad.
+
+La automatización de las actividades propuestas en la estructura de MÉTRICA Versión 3 es posible ya que sus técnicas están soportadas por una amplia variedad de herramientas de ayuda al desarrollo.
+
+Además, para facilitar la utilización de MÉTRICA Versión 3 se ha desarrollado una herramienta software, Gestor Metodológico, de ayuda a la aplicación de la metodología en cada proyecto concreto y que permite adaptar la estructura de MÉTRICA Versión 3 de acuerdo a las características del mismo, permitiendo el seguimiento y control de sus actividades y tareas realizadas por distintos perfiles de usuario asignados a los participantes por el jefe de proyecto.
+
+Se ha desarrollado también un software, Selector de Herramientas, que ayuda a seleccionar entre las CASE del mercado la que mejor se adapta a las necesidades de cada proyecto teniendo en cuenta las características de cada organización.
+
+Así mismo se ha elaborado un curso de autoformación, que sirva para aprender todos los conceptos y elementos de la metodología MÉTRICA Versión 3 contemplando varios niveles y diversos perfiles.
+
+Tanto la metodología como todas estas herramientas estarán disponibles en la web del Portal de Administración Electrónica del Gobierno de España: Metodología y guías (originalmente en la web del Consejo Superior de Informática: <http://www.map.es/csi>).
+
+## Aportaciones de Métrica Versión 3
+
+En lo que se refiere a estándares se ha tenido en cuenta como referencia el Modelo de Ciclo de Vida de Desarrollo propuesto en la norma ISO 12.207 «Information technology – Software life cycle processes«. Siguiendo este modelo se ha elaborado la estructura de MÉTRICA Versión 3 en la que se distinguen procesos principales (Planificación, Desarrollo y Mantenimiento) e interfaces (Gestión de Proyectos, Aseguramiento de la Calidad, Seguridad y Gestión de la Configuración) cuyo objetivo es dar soporte al proyecto en los aspectos organizativos. Además de la norma ISO 12.207, entre los estándares de referencia hay que destacar las normas ISO/IEC TR 15.504/SPICE “Software Process Improvement and Assurance Standards Capability Determination”, UNE-EN-ISO 9001:2000 Sistemas de Gestión de la Calidad. Requisitos, UNE-EN-ISO 9000:2000 Sistemas de Gestión de la Calidad. Fundamentos y Vocabulario y el estándar IEEE 610.12-1.990 “Standard Glossary of Software Engineering Terminology”. Igualmente se han tenido en cuenta otras metodologías como SSADM, Merise, Information Engineering, MAGERIT. Metodología de Análisis y Gestión de Riesgos de los Sistemas de Información promovida por el Consejo Superior de Informática y EUROMÉTODO. Referencias a estas últimas metodologías pueden localizarse en las páginas del CSI: <http://www.map.es/csi>.
+
+Se ha ampliado el enfoque de la Planificación de Sistemas de Información respecto a MÉTRICA Versión 2.1, incluyendo planificación estratégica y recogiendo las actividades de más alto nivel de la fase PSI de MÉTRICA Versión 2.1. Las actividades restantes de la antigua fase PSI se han incorporado al proceso de Desarrollo de la actual versión. Igualmente, aparece el proceso de Mantenimiento de Sistemas de Información que no estaba contemplado en MÉTRICA Versión 2.1.
+
+Se ha reforzado el ciclo de vida de las pruebas a través del plan de pruebas y se han mejorado los procedimientos de prueba. Se ha dado respuesta formal a problemáticas específicas de diseño con la incorporación de tecnologías tipo cliente/servidor, interfaces de usuario basadas en entornos gráficos, etc.
+
+Los procesos principales se han enriquecido especificando el contenido, la forma y el momento en que se obtienen los productos, así como la relación entre los productos obtenidos en cada tarea, su reutilización en tareas posteriores y el producto final de cada actividad o proceso. También se han especificado los participantes de forma más precisa en cada tarea, reformando la participación de los usuarios, bien sea usuario final o de sistemas, de forma que dicha participación no se limite a labores informativas frente a las tareas de verificación, aumentando así su responsabilidad.
+
+Se ha diferenciado entre la aplicación de Técnicas, como conjunto de heurísticas y procedimientos apoyados en estándares que utilizan notaciones específicas en términos de sintaxis y semántica, y de Prácticas cuya utilización no conlleva reglas preestablecidas con la misma rigidez. Las nuevas técnicas están ampliamente soportadas por herramientas comerciales.
+
+## Procesos Principales de Métrica Versión 3
+
+MÉTRICA Versión 3 tiene un enfoque orientado al proceso, ya que la tendencia general en los estándares se encamina en este sentido y por ello, como ya se ha dicho, se ha enmarcado dentro de la norma ISO 12.207, que se centra en la clasificación y definición de los procesos del ciclo de vida del software. Como punto de partida y atendiendo a dicha norma, MÉTRICA Versión 3 cubre el Proceso de Desarrollo y el Proceso de Mantenimiento de Sistemas de Información.
+
+MÉTRICA Versión 3 ha sido concebida para abarcar el desarrollo completo de Sistemas de Información sea cual sea su complejidad y magnitud, por lo cual su estructura responde a desarrollos máximos y deberá adaptarse y dimensionarse en cada momento de acuerdo a las características particulares de cada proyecto.
+
+La metodología descompone cada uno de los procesos en actividades, y éstas a su vez en tareas. Para cada tarea se describe su contenido haciendo referencia a sus principales acciones, productos, técnicas, prácticas y participantes.
+
+El orden asignado a las actividades no debe interpretarse como secuencia en su realización, ya que éstas pueden realizare en orden diferente a su numeración o bien en paralelo, como se muestra en los gráficos de cada proceso. Sin embargo, no se dará por acabado un proceso hasta no haber finalizado todas las actividades del mismo determinadas al inicio del proyecto.
+
+Así los procesos de la estructura principal de MÉTRICA Versión 3 son los siguientes:
+
+    PLANIFICACIÓN DE SISTEMAS DE INFORMACIÓN.
+    DESARROLLO DE SISTEMAS DE INFORMACIÓN.
+    MANTENIMIENTO DE SISTEMAS DE INFORMACIÓN.
+
+El enfoque del proceso de Planificación de Sistemas de Información, al no estar dentro del ámbito de la norma ISO 12.207 de Procesos del Ciclo de Vida de Software, se ha determinado a partir del estudio de los últimos avances en este campo, la alta competitividad y el cambio a que están sometidas las organizaciones. El entorno de alta competitividad y cambio en el que actualmente se encuentran las organizaciones, hace cada vez más crítico el requerimiento de disponer de los sistemas y las tecnologías de la información con flexibilidad para adaptarse a las nuevas exigencias, con la velocidad que demanda dicho entorno.
+
+La existencia de tecnología de reciente aparición, permite disponer de sistemas que apoyan la toma de decisiones a partir de grandes volúmenes de información procedentes de los sistemas de gestión e integrados en una plataforma corporativa. MÉTRICA Versión 3 ayuda en la planificación de sistemas de información facilitando una visión general necesaria para posibilitar dicha integración y un modelo de información global de la organización.
+
+En cuanto al proceso de Desarrollo de Sistemas de Información, para facilitar la comprensión y dada su amplitud y complejidad se ha subdividido en cinco procesos:
+
+    ESTUDIO DE VIABILIDAD DEL SISTEMA (EVS).
+    ANÁLISIS DEL SISTEMA DE INFORMACIÓN (ASI).
+    DISEÑO DEL SISTEMA DE INFORMACIÓN (DSI).
+    CONSTRUCCIÓN DEL SISTEMA DE INFORMACIÓN (CSI).
+    IMPLANTACIÓN Y ACEPTACIÓN DEL SISTEMA (IAS).
+
+La necesidad de acortar el ciclo de desarrollo de los sistemas de información ha orientado a muchas organizaciones a la elección de productos software del mercado cuya adaptación a sus requerimientos suponía un esfuerzo bastante inferior al de un desarrollo a medida, por no hablar de los costes de mantenimiento. Esta decisión, que es estratégica en muchas ocasiones para una organización, debe tomarse con las debidas precauciones, y es una realidad que está cambiando el escenario del desarrollo del software. Otra consecuencia de lo anterior es la práctica, cada vez más habitual en las organizaciones, de la contratación de servicios externos en relación con los sistemas y tecnologías de la información y las comunicaciones, llevando a la necesidad de una buena gestión y control de dichos servicios externos y del riesgo implícito en todo ello, para que sus resultados supongan un beneficio para la organización. MÉTRICA Versión 3 facilita la toma de decisión y la realización de todas las tareas que comprende el desarrollo de un sistema de información.
+
+Desde el enfoque de la norma ISO 12.207, el proceso de Mantenimiento de Sistemas de Información comprende actividades y tareas de modificación o retirada de todos los componentes de un sistema de información (hardware, software, software de base, operaciones manuales, redes, etc.). Este marco de actuación no es el objetivo de MÉTRICA Versión 3, ya que esta metodología está dirigida principalmente al proceso de desarrollo del software. Por lo tanto, MÉTRICA Versión 3 refleja los aspectos del Mantenimiento, correctivo y evolutivo, que tienen relación con el Proceso de Desarrollo.
+
+### Planificación de Sistemas de Información (PSI)
+
+El objetivo de un Plan de Sistemas de Información es proporcionar un marco estratégico de referencia para los Sistemas de Información de un determinado ámbito de la Organización. El resultado del Plan de Sistemas debe, por tanto, orientar las actuaciones en materia de desarrollo de Sistemas de Información con el objetivo básico de apoyar la estrategia corporativa, elaborando una arquitectura de información y un plan de proyectos informáticos para dar apoyo a los objetivos estratégicos.
+
+Por este motivo es necesario un proceso como el de Planificación de Sistemas de Información, en el que participen, por un lado los responsables de los procesos de la organización con una visión estratégica y por otro, los profesionales de SI capaces de enriquecer dicha visión con la aportación de ventajas competitivas por medio de los sistemas y tecnologías de la información y comunicaciones.
+
+Como productos finales de este proceso se obtienen los siguientes, que podrán constituir la entrada para el siguiente proceso de Estudio de Viabilidad del Sistema:
+
+    Catálogo de requisitos de PSI que surge del estudio de la situación actual en el caso de que sea significativo dicho estudio, del diagnóstico que se haya llevado a cabo y de las necesidades de información de los procesos de la organización afectados por el plan de sistemas.
+    Arquitectura de información que se compone a su vez de los siguientes productos:
+        Modelo de información.
+        Modelo de sistemas de información.
+        Arquitectura tecnológica.
+        Plan de proyectos.
+        Plan de mantenimiento del PSI.
+
+Un Plan de Sistemas de Información proporcionará un marco de referencia en materia de Sistemas de Información. En ocasiones podrá servir de palanca de cambio para los procesos de la Organización, pero su objetivo estará siempre diferenciado del de un análisis de dichos procesos por sí mismos. Dicho en otras palabras, no se debe confundir el resultado que se persigue con un Plan de Sistemas de Información, con el de una mejora o reingeniería de procesos, ya que los objetivos en ambos casos no son los mismos, aunque el medio para conseguirlos tenga puntos en común (estudio de los procesos y alineamiento con los objetivos estratégicos).
+
+Este nuevo enfoque de alineamiento de los sistemas de información con la estrategia de la organización, la implicación directa de la alta dirección y la propuesta de solución presenta como ventajas:
+
+    La implicación de la alta dirección facilita que se pueda desarrollar con los recursos necesarios y el calendario establecido.
+    La perspectiva horizontal de los procesos dentro de la Organización facilita que se atienda a intereses globales y no particulares de unidades organizativas que puedan desvirtuar los objetivos del Plan. Para mantener la visión general que apoye los objetivos estratégicos, el enfoque de un Plan de Sistemas de Información debe orientarse al estudio por procesos.
+    La prioridad del desarrollo de los sistemas de información de la organización por objetivos estratégicos.
+    La propuesta de Arquitectura de Información que se hace en el plan es más estratégica que tecnológica. El modelo de sistemas de información de la propuesta no es teórico y se contemplan los sistemas de información actuales que se mantendrán.
+
+### Desarrollo de Sistemas de Información
+
+El proceso de Desarrollo de MÉTRICA Versión 3 contiene todas las actividades y tareas que se deben llevar a cabo para desarrollar un sistema, cubriendo desde el análisis de requisitos hasta la instalación del software. Además de las tareas relativas al análisis, incluye dos partes en el diseño de sistemas: arquitectónico y detallado. También cubre las pruebas unitarias y de integración del sistema, aunque siguiendo la norma ISO 12.207 no propone ninguna técnica específica y destaca la importancia de la evolución de los requisitos. Este proceso es, sin duda, el más importante de los identificados en el ciclo de vida de un sistema y se relaciona con todos los demás.
+
+Las actividades y tareas propuestas por la norma se encuentran más en la línea de un desarrollo clásico, separando datos y procesos, que en la de un enfoque orientado a objetos. En MÉTRICA Versión 3 se han abordado los dos tipos de desarrollo: estructurado y orientado a objeto, por lo que ha sido necesario establecer actividades específicas a realizar en alguno de los procesos cuando se utiliza la tecnología de orientación a objetos. Para este último caso se ha analizado alguna de las propuestas de otras metodologías orientadas a objetos y se han tenido en cuenta la mayoría de las técnicas que contempla UML 1.2 (Unified Modeling Language).
+
+El desarrollo en MÉTRICA Versión 3 lo constituyen los procesos que se listan a continuación:
+
+    Estudio de Viabilidad del Sistema (EVS)
+    Análisis del Sistema de Información (ASI)
+    Diseño del Sistema de Información (DSI)
+    Construcción del Sistema de Información (CSI)
+    Implantación y Aceptación del Sistema (IAS)
+
+### Estudio de Viabilidad del Sistema (EVS)
+
+El propósito de este proceso es analizar un conjunto concreto de necesidades, con la idea de proponer una solución a corto plazo. Los criterios con los que se hace esta propuesta no serán estratégicos sino tácticos y relacionados con aspectos económicos, técnicos, legales y operativos.
+
+Los resultados del Estudio de Viabilidad del Sistema constituirán la base para tomar la decisión de seguir adelante o abandonar. Si se decide seguir adelante pueden surgir uno o varios proyectos que afecten a uno o varios sistemas de información. Dichos sistemas se desarrollarán según el resultado obtenido en el estudio de viabilidad y teniendo en cuenta la cartera de proyectos para la estrategia de implantación del sistema global.
+
+Se ha considerado que este proceso es obligatorio, aunque el nivel de profundidad con el que se lleve a cabo dependerá de cada caso. La conveniencia de la realización del estudio de la situación actual depende del valor añadido previsto para la especificación de requisitos y para el planteamiento de alternativas de solución. En las alternativas se considerarán soluciones «a medida«, soluciones basadas en la adquisición de productos software del mercado o soluciones mixtas.
+
+Para valorar las alternativas planteadas y determinar una única solución, se estudiará el impacto en la organización de cada una de ellas, la inversión y los riesgos asociados.
+
+El resultado final de este proceso son los productos relacionados con la solución que se propone para cubrir la necesidad concreta que se planteó en el proceso, y que depende de si la solución conlleva desarrollo a medida o no:
+
+    Contexto del sistema (con la definición de las interfaces en función de la solución).
+    Impacto en la organización.
+    Coste/beneficio de la solución.
+    Valoración de riesgos de la solución.
+    Enfoque del plan de trabajo de la solución.
+    Planificación de la solución.
+    Solución propuesta:
+        Descripción de la solución.
+        Modelo de descomposición en subsistemas.
+        Matriz de procesos/localización geográfica.
+        Matriz datos/localización geográfica. Entorno tecnológico y comunicaciones.
+        Estrategia de implantación global del sistema.
+        Descripción de los procesos manuales.
+        Si la alternativa incluye desarrollo:
+        Modelo abstracto de datos/Modelo de procesos.
+        Modelo de negocio/Modelo de dominio.
+        Si la alternativa incluye un producto software estándar de mercado:
+        Descripción del producto.
+        Evolución del producto.
+        Costes ocasionados por el producto.
+        Estándares del producto.
+        Descripción de adaptación si es necesaria.
+
+Si en la organización se ha realizado con anterioridad un Plan de Sistemas de Información que afecte al sistema objeto de este estudio, se dispondrá de un conjunto de productos que proporcionarán información a tener en cuenta en todo el proceso.
+
+### Análisis del Sistema de Información (ASI)
+
+El propósito de este proceso es conseguir la especificación detallada del sistema de información, a través de un catálogo de requisitos y una serie de modelos que cubran las necesidades de información de los usuarios para los que se desarrollará el sistema de información y que serán la entrada para el proceso de Diseño del Sistema de Información.
+
+Como ya se ha dicho MÉTRICA Versión 3 cubre tanto desarrollos estructurados como orientados a objetos, y las actividades de ambas aproximaciones están integradas en una estructura común aunque presenta alguna actividad exclusiva para cada tipo de desarrollo.
+
+En primer lugar se describe inicialmente el sistema de información, a partir de los productos generados en el proceso Estudio de Viabilidad del Sistema (EVS). Se delimita su alcance, se genera un catálogo de requisitos generales y se describe el sistema mediante unos modelos iniciales de alto nivel.
+
+Se recogen de forma detallada los requisitos funcionales que el sistema de información debe cubrir, catalogándolos, lo que permite hacer la traza a lo largo de los procesos de desarrollo. Además, se identifican los requisitos no funcionales del sistema, es decir, las facilidades que ha de proporcionar el sistema, y las restricciones a que estará sometido, en cuanto a rendimiento, frecuencia de tratamiento, seguridad, etc.
+
+Para facilitar el análisis del sistema se identifican los subsistemas de análisis, y se elaboran los modelos de Casos de Uso y de Clases, en desarrollos orientados a objetos, y de Datos y Procesos en desarrollos estructurados. Se ha incorporado una actividad específica para la definición de Interfaces de Usuario al tiempo que se van obteniendo y depurando los requisitos y los anteriores modelos. Se especificarán todas las interfaces entre el sistema y el usuario, como formatos de pantallas, diálogos, formatos de informes y formularios de entrada.
+
+Finalizados los modelos, se realiza un análisis de consistencia, mediante una verificación y validación, lo que puede forzar la modificación de algunos de los modelos obtenidos.
+
+Una vez realizado dicho análisis de consistencia se elabora el producto Especificación de Requisitos Software, que constituye un punto de referencia en el desarrollo del software y la línea base de referencia para las peticiones de cambio sobre los requisitos inicialmente especificados.
+
+En este proceso se inicia también la especificación del Plan de Pruebas, que se completará en el proceso Diseño del Sistema de Información (DSI).
+
+Los productos resultantes del Análisis del Sistema de Información, dependen del tipo de desarrollo de que se trate y se detallan a continuación especificando los que son distintos, según los dos tipos de desarrollo a los que da respuesta MÉTRICA Versión 3:
+
+    Descripción general del entorno tecnológico.
+    Glosario de términos.
+    Catálogo de normas.
+    Catálogo de requisitos.
+    Especificación de interfaz de usuario.
+    Además, en Análisis Estructurado:
+    Plan de migración y carga inicial de datos.
+    Contexto del sistema.
+    Matriz de procesos/localización geográfica.
+    Descripción de interfaz con otros sistemas.
+    Modelo de procesos.
+    Modelo lógico de datos normalizado.
+    Además, en Análisis Orientado a Objetos:
+    Descripción de subsistemas de análisis.
+    Descripción de interfaces entre subsistemas.
+    Modelo de clases de análisis.
+    Comportamiento de clases de análisis.
+    Análisis de la realización de los casos de uso.
+
+En este proceso es muy importante la participación de los usuarios, a través de técnicas interactivas, como diseño de diálogos y prototipos, que permiten al usuario familiarizarse con el nuevo sistema y colaborar en la construcción y perfeccionamiento del mismo.
+
+### Diseño del Sistema de Información (DSI)
+
+El propósito del Diseño del Sistema de Información (DSI) es obtener la definición de la arquitectura del sistema y del entorno tecnológico que le va a dar soporte, junto con la especificación detallada de los componentes del sistema de información. A partir de dicha información, se generan todas las especificaciones de construcción relativas al propio sistema, así como la especificación técnica del plan de pruebas, la definición de los requisitos de implantación y el diseño de los procedimientos de migración y carga inicial, éstos últimos cuando proceda.
+
+El diseño de la arquitectura del sistema dependerá en gran medida de las características de la instalación, de modo que se ha de tener en cuenta una participación activa de los responsables de Sistemas y Explotación de las Organizaciones para las que se desarrolla el sistema de información.
+
+Este proceso consta de un primer bloque de actividades, que se realizan en paralelo, y cuyo objetivo es obtener el diseño de detalle del sistema de información que comprende la partición física del sistema de información, independiente de un entorno tecnológico concreto, la organización en subsistemas de diseño, la especificación del entorno tecnológico sobre el que se despliegan dichos subsistemas y la definición de los requisitos de operación, administración del sistema, seguridad y control de acceso. En el caso de diseño orientado a objetos, conviene señalar que se ha contemplado que el diseño de la persistencia se lleva a cabo sobre bases de datos relacionales.
+
+De este primer bloque de actividades se obtienen los siguientes productos:
+
+    Catálogo de requisitos (se completa).
+    Catálogo de excepciones.
+    Catálogo de normas para el diseño y construcción.
+    Diseño de la arquitectura del sistema.
+    Entorno tecnológico del sistema.
+    Procedimientos de operación y administración del sistema.
+    Procedimientos de seguridad y control de acceso.
+    Diseño detallado de los subsistemas de soporte.
+    Modelo físico de datos optimizado.
+    Asignación de esquemas físicos de datos a nodos.
+    Además, en Diseño Estructurado:
+    Diseño de la arquitectura modular.
+    Diseño de interfaz de usuario.
+    Además, en Diseño Orientado a Objetos:
+    Diseño de la realización de casos de uso.
+    Modelo de clases de diseño.
+    Comportamiento de clases de diseño.
+    Diseño de interfaz de usuario.
+
+Al igual que en el proceso de Análisis del Sistema de Información (ASI), antes de proceder a la especificación de los componentes, se realiza una verificación y validación, con objeto de analizar la consistencia entre los distintos modelos y formalizar la aceptación del diseño de la arquitectura del sistema por parte de los usuarios de Explotación y Sistemas.
+
+Un segundo bloque de actividades complementa el diseño del sistema de información, en el que se generan todas las especificaciones necesarias para la construcción del sistema de información:
+
+    Las especificaciones de construcción de los componentes del sistema (módulos o clases, según el caso) y de las estructuras de datos.
+    Los procedimientos de migración y sus componentes asociados.
+    La definición y revisión del plan de pruebas, y el diseño de las verificaciones de los niveles de prueba establecidos.
+    El catálogo de excepciones que permite establecer un conjunto de verificaciones relacionadas con el propio diseño o con la arquitectura del sistema.
+    La especificación de los requisitos de implantación.
+
+### Construcción del Sistema de Información (CSI)
+
+La construcción del Sistema de Información (CSI) tiene como objetivo final la construcción y prueba de los distintos componentes del sistema de información, a partir del conjunto de especificaciones lógicas y físicas del mismo, obtenido en el proceso de Diseño del Sistema de Información (DSI). Se desarrollan los procedimientos de operación y seguridad y se elaboran los manuales de usuario final y de explotación, estos últimos cuando proceda.
+
+Para conseguir dicho objetivo, se recoge la información relativa al producto del diseño Especificaciones de construcción del sistema de información, se prepara el entorno de construcción, se genera el código de cada uno de los componentes del sistema de información y se van realizando, a medida que se vaya finalizando la construcción, las pruebas unitarias de cada uno de ellos y las de integración entre subsistemas.
+
+Si fuera necesario realizar una migración de datos, es en este proceso donde se lleva a cabo la construcción de los componentes de migración y procedimientos de migración y carga inicial de datos.
+
+Como resultado de dicho proceso se obtiene:
+
+    Resultado de las pruebas unitarias.
+    Evaluación del resultado de las pruebas de integración.
+    Evaluación del resultado de las pruebas del sistema.
+    Producto software:
+        Código fuente de los componentes.
+        Procedimientos de operación y administración del sistema.
+        Procedimientos de seguridad y control de acceso.
+        Manuales de usuario.
+        Especificación de la formación a usuarios finales.
+        Código fuente de los componentes de migración y carga inicial de datos.
+        Procedimientos de migración y carga inicial de datos.
+        Evaluación del resultado de las pruebas de migración y carga inicial de datos.
+
+
+### Implantación y Aceptación del Sistema (IAS)
+
+Este proceso tiene como objetivo principal, la entrega y aceptación del sistema en su totalidad, que puede comprender varios sistemas de información desarrollados de manera independiente, según se haya establecido en el proceso de Estudio de Viabilidad del Sistema (EVS), y un segundo objetivo que es llevar a cabo las actividades oportunas para el paso a producción del sistema.
+
+Se establece el plan de implantación, una vez revisada la estrategia de implantación y se detalla el equipo que lo realizará.
+
+Para el inicio de este proceso se toman como punto de partida los componentes del sistema probados de forma unitaria e integrados en el proceso Construcción del Sistema de Información (CSI), así como la documentación asociada. El Sistema se someterá a las Pruebas de Implantación con la participación del usuario de operación cuya responsabilidad, entre otros aspectos, es comprobar el comportamiento del sistema bajo las condiciones más extremas. También se someterá a las Pruebas de Aceptación cuya ejecución es responsabilidad del usuario final.
+
+En este proceso se elabora el plan de mantenimiento del sistema de forma que el responsable del mantenimiento conozca el sistema antes de que éste pase a producción. También se establece el acuerdo de nivel de servicio requerido una vez que se inicie la producción. El acuerdo de nivel de servicio hace referencia a servicios de gestión de operaciones, de soporte a usuarios y al nivel con el que se prestarán dichos servicios.
+
+Como resultado de este proceso se obtienen los siguientes productos:
+
+    Plan de implantación del sistema en su totalidad.
+    Equipo de implantación que realizará la implantación.
+    Plan de formación del equipo de implantación (esquema, materiales, recursos necesarios, planificación y especificación de la formación de usuarios finales).
+    Evaluación de las pruebas de implantación del sistema por parte del usuario de operación.
+    Evaluación de las pruebas de aceptación del sistema por parte del usuario final.
+    Plan de mantenimiento previo al paso a producción.
+    Acuerdo de nivel de servicio del sistema.
+    Sistema en producción.
+
+### Mantenimiento de Sistemas de Información (MSI)
+
+El objetivo de este proceso es la obtención de una nueva versión de un sistema de información desarrollado con MÉTRICA, a partir de las peticiones de mantenimiento que los usuarios realizan con motivo de un problema detectado en el sistema o por la necesidad de una mejora del mismo.
+
+Como consecuencia de esto, sólo se considerarán en MÉTRICA Versión 3 los tipos de Mantenimiento Correctivo y Evolutivo. Se excluyen los tipos de Mantenimiento Adaptativo y Perfectivo, que abarcan actividades tales como la migración y la retirada de software que precisarían el desarrollo de un tipo de metodología específica para resolver su cometido.
+
+Ante una petición de cambio de un sistema de información ya en producción, se realiza un registro de las peticiones, se diagnostica el tipo de mantenimiento y se decide si se le da respuesta o no, en función del plan de mantenimiento asociado al sistema afectado por la petición, y se establece con qué prioridad.
+
+La definición de la solución al problema o necesidad planteada por el usuario que realiza el responsable de mantenimiento, incluye un estudio del impacto, la valoración del esfuerzo y coste, las actividades y tareas del proceso de desarrollo a realizar y el plan de pruebas de regresión.
+
+Los productos que se obtienen en este proceso son los siguientes:
+
+    Catálogo de peticiones de cambio.
+    Resultado del estudio de la petición.
+    Propuesta de solución.
+    Análisis de impacto de los cambios.
+    Plan de acción para la modificación.
+    Plan de pruebas de regresión.
+    Evaluación del cambio.
+    Evaluación del resultado de las pruebas de regresión.
+
+## Interfaces de Métrica Versión 3
+
+La estructura de MÉTRICA Versión 3 incluye también un conjunto de interfaces que definen una serie de actividades de tipo organizativo o de soporte al proceso de desarrollo y a los productos, que en el caso de existir en la organización se deberán aplicar para enriquecer o influir en la ejecución de las actividades de los procesos principales de la metodología y que si no existen habrá que realizar para complementar y garantizar el éxito del proyecto desarrollado con MÉTRICA Versión 3.
+
+La aplicación de MÉTRICA Versión 3 proporciona sistemas con calidad y seguridad, no obstante puede ser necesario en función de las características del sistema un refuerzo especial en estos aspectos, refuerzo que se obtendría aplicando la interfaz.
+
+Las interfaces descritas en la metodología se listan a continuación:
+
+- Gestión de Proyectos
+- Seguridad
+- Gestión de la Configuración
+- Aseguramiento de la Calidad
+
+### Gestión de Proyectos
+
+La Gestión de Proyectos tiene como finalidad principal la planificación, el seguimiento y control de las actividades y de los recursos humanos y materiales que intervienen en el desarrollo de un Sistema de Información. Como consecuencia de este control es posible conocer en todo momento qué problemas se producen y resolverlos o paliarlos lo más pronto posible, lo cual evitará desviaciones temporales y económicas.
+
+La Interfaz de Gestión de Proyectos de MÉTRICA Versión 3 contempla proyectos de desarrollo de Sistemas de Información en sentido amplio, acorde con EUROMÉTODO se consideran proyectos de desarrollo de nuevos Sistemas de Información y también los proyectos de ampliación y mejora de los ya existentes.
+
+Las actividades de la Interfaz de Gestión de Proyectos son de tres tipos:
+
+- Actividades de Inicio del Proyecto (GPI), que permiten estimar el esfuerzo y establecer la planificación del proyecto.
+- Actividades de Seguimiento y Control (GPS), supervisando la realización de las tareas por parte del equipo de proyecto y gestionando las incidencias y cambios en los requisitos que puedan presentarse y afectar a la planificación del proyecto.
+- Actividades de Finalización del Proyecto, cierre y registro de la documentación de gestión.
+
+Estas actividades pueden requerir, en función de la complejidad del proyecto, el soporte de herramientas comerciales de gestión de proyectos.
+
+### Seguridad
+
+El análisis de los riesgos constituye una pieza fundamental en el diseño y desarrollo de sistemas de información seguros. Si bien los riesgos que afectan a un sistema de información son de distinta índole: naturales (inundaciones, incendios, etc.) o lógicos (fallos propios, ataques externos, virus, etc.) son estos últimos los contemplados en la interfaz de Seguridad de MÉTRICA Versión 3.
+
+El objetivo de la interfaz de seguridad de MÉTRICA Versión 3 es incorporar en los sistemas de información mecanismos de seguridad adicionales a los que se proponen en la propia metodología, asegurando el desarrollo de cualquier tipo de sistema a lo largo de los procesos que se realicen para su obtención.
+
+La interfaz de Seguridad hace posible incorporar durante la fase de desarrollo las funciones y mecanismos que refuerzan la seguridad del nuevo sistema y del propio proceso de desarrollo, asegurando su consistencia y seguridad, completando el plan de seguridad vigente en la organización o desarrollándolo desde el principio, utilizando MAGERIT como metodología de análisis y gestión de riesgos en el caso de que la organización no disponga de su propia metodología.
+
+En consecuencia, la interfaz contempla dos tipos de actividades diferenciadas:
+
+- Actividades relacionadas con la seguridad intrínseca del sistema de información.
+- Actividades que velan por la seguridad del propio proceso de desarrollo del sistema de información.
+
+Así mismo se hace especial hincapié en la formación en materia de seguridad.
+
+Las valoraciones sobre la seguridad deben realizarse en función de las características del sistema sin perder de vista además que, al ser finitos los recursos, no pueden asegurarse todos los aspectos del desarrollo de los sistemas de información, por lo que habrá que aceptar un determinado nivel de riesgo concentrándose en los aspectos más comprometidos o amenazados, que serán diferentes según las circunstancias.
+
+### Gestión de la Configuración
+
+La interfaz de gestión de la configuración consiste en la aplicación de procedimientos administrativos y técnicos durante el desarrollo del sistema de información y su posterior mantenimiento. Su finalidad es identificar, definir, proporcionar información y controlar los cambios en la configuración del sistema, así como las modificaciones y versiones de los mismos. Este proceso permitirá conocer el estado de cada uno de los productos que se hayan definido como elementos de configuración, garantizando que no se realizan cambios incontrolados y que todos los participantes en el desarrollo del sistema disponen de la versión adecuada de los productos que manejan.
+
+La interfaz de gestión de configuración de MÉTRICA Versión 3 permite definir las necesidades de gestión de configuración para cada sistema de información, recogiéndolas en un plan de gestión de configuración, en el que se especifican actividades de identificación y registro de productos, que se realizan durante todas las actividades de MÉTRICA Versión 3 asociadas al desarrollo y mantenimiento del sistema de información.
+
+Asimismo, permite controlar el sistema como producto global a lo largo de su creación, obtener informes sobre el estado de desarrollo en que se encuentra y reducir el número de errores durante el mismo, lo que se traduce en un aumento de calidad del proceso de desarrollo y de mejora de la productividad en la organización.
+
+La gestión de configuración facilita además el mantenimiento del sistema, aportando información precisa para valorar el impacto de los cambios solicitados y reduciendo el tiempo de implementación de un cambio, tanto evolutivo como correctivo.
+
+### Aseguramiento de Calidad
+
+El objetivo de la interfaz de Aseguramiento de la Calidad de MÉTRICA Versión 3 es proporcionar un marco común de referencia para la definición y puesta en marcha de planes específicos de aseguramiento de calidad aplicables a proyectos concretos.
+
+Las actividades propias de la interfaz de Calidad en MÉTRICA Versión 3 están orientadas a verificar la calidad de los productos. Son actividades que evalúan la calidad y que son realizadas por un grupo de Asesoramiento de la Calidad independiente de los responsables de la obtención de los productos. Estas actividades de interfaz de MÉTRICA Versión 3 no entran en contradicción con el Plan General de Garantía de Calidad (PGGC), siendo lo suficientemente abiertas como para soportar una nueva versión del PGGC en el futuro.
+
+Las actividades contempladas en la interfaz de Aseguramiento de la Calidad permitirán:
+
+    Reducir, eliminar y prevenir las deficiencias de calidad de los productos a obtener.
+    Alcanzar una razonable confianza en que las prestaciones y servicios esperados por el cliente o el usuario queden satisfechas.
+

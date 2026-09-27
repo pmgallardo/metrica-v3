@@ -1,0 +1,25 @@
+# Métrica v.3 {.unnumbered .unlisted}
+
+La metodología MÉTRICA Versión 3 ofrece a las Organizaciones un instrumento útil para la sistematización de las actividades que dan soporte al ciclo de vida del software.
+
+**Metodología de Planificación, Desarrollo y Mantenimiento de sistemas de información**
+
+Se presentan en esta página los documentos que componen la metodología MÉTRICA VERSIÓN 3. Iniciativa promovida por el Consejo Superior de Informática –publicada en 2001 en la web del CSI–. 
+
+MÉTRICA versión 3 puede ser utilizada libremente y en cualquier explotación de la obra se hará constar la autoría original.
+
+\
+Para cualquier sugerencia o información sobre Métrica v3, contactar con: <metrica@correo.gob.es>
+
+Para otras cuestiones relacionadas con esta web o el repositorio, abrir un issue en GitHub.
+
+\
+Versión web:
+<https://pmgallardo.github.io/metrica-v3>
+
+Repositorio de ficheros fuente:
+<https://github.com/pmgallardo/metrica-v3>
+
+Web original:
+<https://administracionelectronica.gob.es/pae_Home/pae_Documentacion/pae_Metodolog/pae_Metrica_v3.html?idioma=es>
+

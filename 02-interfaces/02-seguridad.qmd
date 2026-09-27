@@ -1,0 +1,73 @@
+# Seguridad
+
+## Descripción y objetivos
+
+El objetivo de la interfaz de seguridad de MÉTRICA Versión 3 es incorporar en los sistemas de información mecanismos de seguridad adicionales a los que se proponen en la propia metodología, asegurando el desarrollo de cualquier tipo de sistema a lo largo de los procesos que se realicen para su obtención.
+
+La seguridad del sistema de información ya se considera en MÉTRICA Versión 3 como requisito funcional (ASI 2.1), es decir previamente al desarrollo del mismo. La interfaz de Seguridad hace posible incorporar durante la fase de desarrollo las funciones y mecanismos que refuerzan la seguridad del nuevo sistema y del propio proceso de desarrollo, asegurando su consistencia y seguridad.
+
+El análisis de los riesgos constituye una pieza fundamental en el diseño y desarrollo de sistemas de información seguros. Si bien los riesgos que afectan a un sistema de información son de distinta índole: naturales (inundaciones, incendios, etc.) o lógicos (fallos propios, ataques externos, virus, etc.) son estos últimos los contemplados en la interfaz de Seguridad de MÉTRICA Versión 3.
+
+De lo anterior se desprende que existen dentro de la interfaz dos tipos de actividades diferenciadas:
+
+    Actividades relacionadas con la seguridad intrínseca del sistema de información (representadas en la parte inferior del gráfico).
+    Actividades que velan por la seguridad del propio proceso de desarrollo del sistema de información (representadas en la parte superior del gráfico).
+
+Si en la organización ya existe un plan de seguridad o una metodología de análisis y gestión de riesgos como por ejemplo MAGERIT, para cada sistema de información deberán analizarse las necesidades de seguridad del sistema respecto al método vigente, y determinar las diferencias si las hubiera, así como aquellas necesidades concretas que no se encuentren recogidas, estableciendo así el plan de seguridad del sistema de información. Si no existe un plan de seguridad en la organización habrá que desarrollarlo desde el principio. El plan recogerá además las medidas de seguridad activas o preventivas y reactivas, en respuesta a situaciones en que se produce un fallo reduciendo su efecto, relacionadas con la seguridad del sistema de información y del proceso de desarrollo.
+
+Las valoraciones sobre la seguridad deben ser realizadas en función de las características del sistema: complejidad, tamaño, incertidumbre, participantes, etc. por los responsables de la seguridad del sistema de información, quienes se apoyarán para sus decisiones en su conocimiento y experiencia en la materia sin perder de vista además que, al ser finitos los recursos, no pueden asegurarse todos los aspectos del desarrollo de los sistemas de información, por lo que habrá que aceptar un determinado nivel de riesgo concentrándose en los aspectos más comprometidos o amenazados, que serán diferentes según las circunstancias.
+
+Actividades
+
+PLANIFICACIÓN DE SISTEMAS DE INFORMACIÓN
+
+    Actividad PSI-SEG 1: Planificación de la Seguridad Requerida en el Proceso Planificación de Sistemas de Información
+    Actividad PSI-SEG 2: Evaluación del Riesgo para la Arquitectura Tecnológica
+    Actividad PSI-SEG 3: Determinación de la Seguridad en el Plan de Acción
+    Actividad PSI-SEG 4: Catalogación de los Productos Generados Durante el Proceso de Planificación de Sistemas de Información
+
+ESTUDIO DE VIABILIDAD DEL SISTEMA
+
+    Actividad EVS-SEG 1: Estudio de la Seguridad Requerida en el Proceso Estudio de Viabilidad del Sistema
+    Actividad EVS-SEG 2: Selección del Equipo de Seguridad
+    Actividad EVS-SEG 3: Recomendaciones Adicionales de Seguridad para el Sistema de Información
+    Actividad EVS-SEG 4: Evaluación de la Seguridad de las Alternativas de Solución
+    Actividad EVS-SEG 5: Evaluación Detallada de la Seguridad de la Solución Propuesta
+    Actividad EVS-SEG 6: Catalogación de los Productos Generados Durante el Proceso de Estudio de Viabilidad del Sistema
+
+ANÁLISIS DEL SISTEMA DE INFORMACIÓN
+
+    Actividad ASI-SEG 1: Estudio de la Seguridad Requerida en el Proceso de Análisis del Sistema de Información
+    Actividad ASI-SEG 2: Descripción de las Funciones y Mecanismos de Seguridad
+    Actividad ASI-SEG 3: Definición de los Criterios de Aceptación de la Seguridad
+    Actividad ASI-SEG 4: Catalogación de los Productos Generados Durante el Proceso de Análisis del Sistema de Información
+
+DISEÑO DEL SISTEMA DE INFORMACIÓN
+
+    Actividad DSI-SEG 1: Estudio de la Seguridad Requerida en el Proceso de Diseño del Sistema de Información
+    Actividad DSI-SEG 2: Especificación de Requisitos de Seguridad del Entorno Tecnológico
+    Actividad DSI-SEG 3: Requisitos de Seguridad del Entorno de Construcción
+    Actividad DSI-SEG 4: Diseño de Pruebas de Seguridad
+    Actividad DSI-SEG 5: Catalogación de los Productos Generados Durante el Proceso de Diseño del Sistema de Información
+
+CONSTRUCCIÓN DEL SISTEMA DE INFORMACIÓN
+
+    Actividad CSI-SEG 1: Estudio de la Seguridad Requerida en el Proceso de Construcción del Sistema de Información
+    Actividad CSI-SEG 2: Evaluación de los Resultados de Pruebas de Seguridad
+    Actividad CSI-SEG 3: Elaboración del Plan de Formación de Seguridad
+    Actividad CSI-SEG 4: Catalogación de los Productos Generados Durante el Proceso de Construcción del Sistema de Información
+
+IMPLANTACIÓN Y ACEPTACIÓN DEL SISTEMA
+
+    Actividad IAS-SEG 1: Estudio de la Seguridad Requerida en el Proceso de Implantación y Aceptación del Sistema
+    Actividad IAS-SEG 2: Revisión de Medidas de Seguridad del Entorno de Operación
+    Actividad IAS-SEG 3: Evaluación de Resultados de Pruebas de Seguridad de Implantación del Sistema
+    Actividad IAS-SEG 4: Catalogación de los Productos Generados Durante el Proceso de Implantación y Aceptación del Sistema
+    Actividad IAS-SEG 5: Revisión de Medidas de Seguridad en el Entorno de Producción
+
+MANTENIMIENTO DE SISTEMAS DE INFORMACIÓN
+
+    Actividad MSI-SEG 1: Estudio de la Seguridad Requerida en el Proceso Mantenimiento de Sistemas de Información
+    Actividad MSI-SEG 2: Especificación e Identificación de las Funciones y Mecanismos de Seguridad
+    Actividad MSI-SEG 3: Catalogación de los Productos Generados Durante el Proceso de Mantenimiento de Sistemas de Información
+

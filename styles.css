@@ -1,0 +1,90 @@
+/* Importamos fuentes limpias y modernas desde Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Lora:ital,wght@0,400;0,600;1,400&display=swap');
+
+/* --- CUERPO Y TEXTO GENERAL --- */
+body {
+  font-family: 'Lora', serif; 
+  color: #333333;           /* Gris oscuro, menos agresivo que el negro puro */
+  background-color: #FCFCFC; /* Un blanco roto muy sutil para descansar la vista */
+  line-height: 1.7;
+  font-size: 1.15rem;
+}
+
+/* --- ENCABEZADOS --- */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Inter', sans-serif;
+  color: #111111;
+  font-weight: 600;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Título principal del documento (Quarto) */
+h1.title {
+  font-weight: 800;
+  font-size: 2.5rem;
+  letter-spacing: -0.03em;
+  margin-bottom: 0.5rem;
+}
+
+/* Nombre del autor y fecha en Quarto */
+.quarto-title-meta {
+  font-family: 'Inter', sans-serif;
+  color: #666666;
+  font-size: 0.95rem;
+  border-bottom: 1px solid #eeeeee;
+  padding-bottom: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+/* --- ENLACES --- */
+a {
+  color: #0060a0; /* Un azul clásico y elegante */
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-bottom 0.2s ease, color 0.2s ease;
+}
+
+a:hover {
+  color: #003d66;
+  border-bottom: 1px solid #003d66;
+}
+
+/* --- CITAS (BLOCKQUOTES) --- */
+blockquote {
+  border-left: 4px solid #0060a0; /* Línea lateral con el color de acento */
+  margin-left: 0;
+  color: #555555;
+  font-style: italic;
+  background-color: #f7f9fa;
+  padding: 1rem 1.5rem;
+  border-radius: 0 8px 8px 0;
+}
+
+/* --- CÓDIGO --- */
+/* Código en línea */
+code {
+  font-family: 'Fira Code', 'Courier New', monospace;
+  background-color: #f1f3f5;
+  padding: 0.2em 0.4em;
+  border-radius: 4px;
+  font-size: 0.85em;
+  color: #b00b69; /* Tono magenta oscuro para destacar funciones/variables */
+}
+
+/* Bloques de código (para que no hereden el magenta del código en línea) */
+pre code {
+  color: inherit;
+  background-color: transparent;
+  padding: 0;
+}
+
+/* --- IMÁGENES --- */
+img {
+  border-radius: 6px;
+  max-width: 100%;
+  height: auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); /* Sombra muy sutil para dar volumen */
+  margin: 2rem auto;
+  display: block;
+}

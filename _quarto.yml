@@ -1,0 +1,79 @@
+project:
+  type: book
+  output-dir: _book
+
+book:
+  title: "Métrica v.3"
+  author: "Ministerio de Administraciones Públicas"
+  date: 01/01/2001
+  date-format: "YYYY"
+  language: es
+  
+  site-url: https://pmgallardo.github.io/metrica-v3/
+  repo-url: https://github.com/pmgallardo/metrica-v3
+  repo-actions: [edit, issue, source]
+
+  sidebar:
+    style: "docked"
+    search: true
+    
+  chapters:
+    - index.qmd
+    - part: "Estructura principal"
+      chapters:
+      - 01-principal/01-introduccion.qmd
+      - 01-principal/02-psi.qmd
+      - 01-principal/03-evs.qmd
+      - 01-principal/04-asi.qmd
+      - 01-principal/05-dsi.qmd
+      - 01-principal/06-csi.qmd
+      - 01-principal/07-ias.qmd
+      - 01-principal/08-msi.qmd
+    - part: "Interfaces"
+      chapters:
+      - 02-interfaces/01-calidad.qmd
+      - 02-interfaces/02-seguridad.qmd
+      - 02-interfaces/03-configuracion.qmd
+      - 02-interfaces/04-proyectos.qmd
+    - part: "Técnicas"
+      chapters:
+      - 03-tecnicas/01-tecnicas.qmd
+    - part: "Participantes"
+      chapters:
+      - 04-participantes/01-participantes.qmd
+
+lang: es
+
+format: 
+  html:
+    theme: minimal
+    css: styles.css
+    toc: true
+    toc-depth: 3
+    number-sections: true
+  pdf:
+    documentclass: scrreprt
+    pdf-engine: lualatex
+    mainfont: "Source Sans 3"
+    sansfont: "Source Sans 3"
+    monofont: "Source Code Pro"
+    fontsize: 11pt
+    linestretch: 1.15
+    papersize: a4
+    geometry:
+      - top=25mm
+      - bottom=25mm
+      - left=27mm
+      - right=25mm
+    toc: true
+    toc-depth: 3
+    number-sections: true
+    colorlinks: true
+    linkcolor: agebluelink
+    urlcolor: agebluelink
+    citecolor: agebluelink
+    toccolor: agebluelink
+    code-block-bg: "#f7f9fc"
+    code-block-border-left: "#003399"
+    include-in-header:
+      - latex/preamble.tex
