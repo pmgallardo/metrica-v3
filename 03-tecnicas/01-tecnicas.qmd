@@ -836,7 +836,7 @@ Los mensajes pueden presentar también condiciones e iteraciones. Una condicio�
 
 Diagrama de secuencia para el caso de uso: Prestar un ejemplar de una aplicación encargada de los préstamos y reservas de una biblioteca:
 
-[Ejemplo de Diagrama de secuencia](../images/secuencia-ejemplo.png)
+![Ejemplo de Diagrama de secuencia](../images/secuencia-ejemplo.png)
 
 #### Diagrama de Colaboración
 
