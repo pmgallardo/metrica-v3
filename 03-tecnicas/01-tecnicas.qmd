@@ -386,7 +386,8 @@ Estudio del sistema encargado de la gestión de préstamos y reservas de libro
 ### Diagrama de Componentes
 
 El diagrama de componentes proporciona una visión física de la construcción del sistema de información. Muestra la organización de los componentes software, sus interfaces y las dependencias entre ellos.
-Descripción
+
+#### Descripción {.unnumbered .unlisted}
 
 Como ya se ha indicado, los elementos de estos diagramas son los componentes software y las dependencias entre ellos.
 
@@ -394,32 +395,31 @@ Un componente es un módulo de software que puede ser código fuente, código
 
 Estos diagramas pueden incluir paquetes que permiten organizar la construcción del sistema de información en subsistemas y que recogen aspectos prácticos relacionados con la secuencia de compilación entre componentes, la agrupación de elementos en librerías, etc.
 
-Notación
+#### Notación {.unnumbered .unlisted}
 
-Componente
+##### Componente {.unnumbered .unlisted}
 
 Un componente se representa como un rectángulo, con dos pequeños rectángulos superpuestos perpendicularmente en el lado izquierdo.
 
 ![](../images/componente.png)
 
-
 Para distinguir distintos tipos de componentes se les puede asignar un estereotipo, cuyo nombre estará dentro del símbolo: << ... >>
 
-Interfaz
+##### Interfaz {.unnumbered .unlisted}
 
 Se representa como un pequeño círculo situado junto al componente que lo implementa y unido a él por una línea continua. La interfaz puede tener un nombre que se escribe junto al círculo. Un componente puede proporcionar más de una interfaz.
 
 ![](../images/interfaz.png)
 
-Paquete
+##### Paquete {.unnumbered .unlisted}
 
-Un paquete se representa con un icono de carpeta (ver Diagrama de Paquetes).
+Un paquete se representa con un icono de carpeta (ver [Diagrama de Paquetes](#diagrama-de-paquetes)).
 
-Relación de dependencia
+##### Relación de dependencia {.unnumbered .unlisted}
 
-Una relación de dependencia se representa mediante una línea discontinua con una flecha que apunta al componente o interfaz que provee del servicio o facilidad al otro. La relación puede tener un estereotipo que se coloca junto a la línea, entre el símbolo: <<...>>
+Una relación de dependencia se representa mediante una línea discontinua con una flecha que apunta al componente o interfaz que provee del servicio o facilidad al otro. La relación puede tener un estereotipo que se coloca junto a la línea, entre el símbolo: `<<...>>`
 
-Ejemplo
+#### Ejemplo {.unnumbered .unlisted}
 
 Sistema encargado de la gestión de los préstamos y reservas de libros y revistas en una biblioteca. El lenguaje de desarrollo será Java, y los accesos a la información del prestatario serán mediante un paquete de Base de Datos.
 
