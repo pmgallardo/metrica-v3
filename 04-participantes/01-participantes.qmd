@@ -6,19 +6,19 @@ Para poder exponer una estructura de los participantes que se han identificado a
 
 Los perfiles establecidos son:
 
-    Directivo
-    Jefe de Proyecto
-    Consultor
-    Analista
-    Programador
+- Directivo
+- Jefe de Proyecto
+- Consultor
+- Analista
+- Programador
 
 Para cada uno de estos perfiles se analizan una serie de características importantes a la hora de delimitar su participación en el proyecto:
 
-    Correspondencia con Participantes de MÉTRICA Versión 3.
-    Responsabilidades o funciones a desempeñar en cada uno de los procesos.
-    Perfil o características propias de cada uno de los participantes.
+- Correspondencia con Participantes de MÉTRICA Versión 3.
+- Responsabilidades o funciones a desempeñar en cada uno de los procesos.
+- Perfil o características propias de cada uno de los participantes.
 
-## Directivo
+## Perfil directivo {#perfil-directivo}
 
 Dentro de esta categoría se agrupan los siguientes participantes:
 
@@ -37,7 +37,7 @@ Los Directores de las áreas organizativas y de usuarios afectadas por el proyec
 
 El seguimiento y control del desarrollo del proyecto es responsabilidad del Comité de Seguimiento, que se ocupará de resolver cualquier contingencia que pueda presentarse durante la ejecución del mismo y asegurará la disponibilidad de recursos humanos con los perfiles adecuados y su participación en las actividades donde es necesaria su colaboración.
 
-## Jefe de Proyecto
+## Perfil jefe de Proyecto {#perfil-jefe-de-proyecto}
 
 Los participantes que se engloban dentro de este perfil son los que se detallan a continuación:
 
@@ -57,7 +57,7 @@ Los Responsables de Implantación, Operación, Sistemas y Mantenimiento intervie
 
 Los Responsables de Seguridad y Calidad aportan información relativa a las normas y procedimientos habituales en la organización, completándolos en su caso de acuerdo con los requerimientos particulares del sistema en colaboración con el Jefe de Proyecto. Ofrecen asesoramiento sobre todos los aspectos de seguridad y calidad relativos tanto al producto como al proceso seguido para su obtención, analizando los riesgos y determinando las medidas de control oportunas. Coordinan a los integrantes del Equipo de Seguridad y el Grupo de Aseguramiento de la Calidad.
 
-## Consultor
+## Perfil consultor {#perfil-consultor}
 
 En este perfil se incluyen los siguientes participantes:
 
@@ -75,7 +75,7 @@ En el ámbito de la Consultoría Informática se distingue entre Tecnologías de
 
 Los Técnicos y Especialistas en Sistemas y Comunicaciones cuentan con una visión más precisa de la tecnología existente en la actualidad en la organización o que se valora incorporar, en cuanto a sus requerimientos técnicos, entorno e infraestructura que precisan, implantación, integración con otros sistemas existentes, configuración y pruebas. Aportan su conocimiento y experiencia práctica a la hora de valorar alternativas tecnológicas para el sistema de información, participando activamente durante su implantación y puesta en producción.
 
-## Analista
+## Perfil analista {#perfil-analista}
 
 En el perfil de Analista se agrupan los siguientes participantes de MÉTRICA Versión 3:
 
@@ -100,7 +100,7 @@ El Equipo de Formación es el encargado de preparar e impartir la formación al 
 
 El Grupo de Aseguramiento de la Calidad, dirigido por el Responsable de Calidad, desarrolla el plan de aseguramiento de calidad específico para el proyecto, reflejando en dicho plan entre otros aspectos las actividades de calidad a realizar (normales o extraordinarias). Participa en la revisión de los productos seleccionados para determinar si son conformes o no a los procedimientos, normas o criterios especificados, comprobando que se han llevado a cabo las medidas preventivas o correctoras necesarias. Este grupo es completamente independiente del equipo de proyecto.
 
-## Programador
+## Perfil programador {#perfil-programador}
 
 Dado que la participación y funciones de los programadores son concretas y limitadas a los procesos de Construcción y Mantenimiento de Sistemas de Información, el perfil de Programador hace referencia únicamente al participante Programador descrito en MÉTRICA Versión 3.
 
