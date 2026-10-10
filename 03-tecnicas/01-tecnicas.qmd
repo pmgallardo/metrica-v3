@@ -253,7 +253,7 @@ Estudio de una aplicación que se encarga de la gestión de los préstamos y 
 
 ![](../images/ejemplo-casos-de-uso.png)
 
-### Diagrama de Clases
+### Diagrama de Clases {#diagrama-de-clases}
 
 El objetivo principal de este modelo es la representación de los aspectos estáticos del sistema, utilizando diversos mecanismos de abstracción (clasificación, generalización, agregación).
 
@@ -642,7 +642,7 @@ El siguiente ejemplo muestra un proceso de emisión de cheques para el pago de 
 
 ![Ejemplo de Diagrama de Estructura](../images/ejemplo-diagrama-de-estructura.png) 
 
-### Diagrama de Flujo de Datos
+### Diagrama de Flujo de Datos {#diagrama-de-flujo-de-datos}
 
 El objetivo del diagrama de flujo de datos es la obtención de un modelo lógico de procesos que represente el sistema, con independencia de las restricciones físicas del entorno. Así se facilita su comprensión por los usuarios y los miembros del equipo de desarrollo.
 
@@ -878,7 +878,7 @@ Diagrama de colaboración para el caso de uso: Prestar un ejemplar de una aplic
 
 ### Diagrama de Paquetes
 ### Diagrama de Transición de Estados
-### Modelado de Procesos de la Organización
+### Modelado de Procesos de la Organización {#modelado-de-procesos-de-la-organizacion}
 #### SADT (Structured Analysis and Design Technique)
 
 ### Modelo Entidad/Relación Extendido
@@ -1360,7 +1360,7 @@ Hay quien estima que, inicialmente, se asigne 1 día de esfuerzo por cada Punto
 
 #### Diagrama de Extrapolación
 
-## Prácticas
+## Prácticas {#practicas}
 
 ### Análisis de Impacto
 
