@@ -1,4 +1,4 @@
-#  Planificación de Sistemas de Información
+# Planificación de Sistemas de Información
 
 ## Descripción y objetivos
 
@@ -31,50 +31,6 @@ Aunque los resultados de la actividad Estudio de la Información Relevante (PSI 
 
 ![Planificación de Sistemas de Información](../images/psi-plan.jpg)
 
-### Participantes en las Actividades del Proceso PSI {.unnumbered .unlisted}
-
-PLANIFICACIÓN DE SISTEMAS DE INFORMACIÓN 	ACTIVIDADES
-PSI 1 	PSI 2 	PSI 3 	PSI 4 	PSI 5 	PSI 6 	PSI 7 	PSI 8 	PSI 9
-Comité de Dirección 	X 	X 							X
-Consultores 			X 	X 	X 	X 	X 	X 	X
-Consultores Informáticos 			X 		X 	X 	X 	X 	X
-Directores Usuarios 		X 							
-Equipo de Soporte Técnico 					X 		X 		
-Equipo del Proyecto 					X 				
-Jefe de Proyecto 		X 							X
-Responsable Mantenimiento 					X 				
-Usuarios Expertos 			X 	X 	X 	X 	X 	X 	X
-
-### TÉCNICAS/PRÁCTICAS UTILIZADAS EN LAS ACTIVIDADES DEL PROCESO PSI {.unnumbered .unlisted}
-
-PLANIFICACIÓN DE SISTEMAS DE INFORMACIÓN 	ACTIVIDADES
-PSI 1 	PSI 2 	PSI 3 	PSI 4 	PSI 5 	PSI 6 	PSI 7 	PSI 8 	PSI 9
-Análisis Coste/Beneficio 							X 	X 	
-Catalogación 		X 	X 	X 	X 	X 			
-Diagrama de Clases 				X 					
-Diagrama de Representación 					X 	X 	X 		
-Estimación 		X 							
-Factores Críticos de Éxito 	X 								
-Impacto en la Organización 							X 	X 	
-Matricial 						X 			
-Modelado de Procesos de la Organización 				X 					
-Modelo Entidad/Relación Extendido 				X 					
-Planificación 		X 							
-Presentación 									X
-Sesiones de trabajo 	X 	X 	X 	X 	X 	X 	X 	X 	X
-
-### Actividades {.unnumbered .unlisted}
-
-    Actividad PSI 1: Inicio del Plan de Sistemas de Información
-    Actividad PSI 2: Definición y Organización del PSI
-    Actividad PSI 3: Estudio de la Información Relevante
-    Actividad PSI 4: Identificación de Requisitos
-    Actividad PSI 5: Estudio de los Sistemas de Información Actuales
-    Actividad PSI 6: Diseño del Modelo de Sistemas de Información
-    Actividad PSI 7: Definición de la Arquitectura Tecnológica
-    Actividad PSI 8: Definición del Plan de Acción
-    Actividad PSI 9: Revisión y Aprobación del PSI
-
 ## Actividad PSI 1: Inicio del Plan de Sistemas de Información
 
 El objetivo de esta actividad es determinar la necesidad del Plan de Sistemas de Información y llevar a cabo el arranque formal del mismo, con el apoyo del nivel más alto de la organización. Como resultado, se obtiene una descripción general del Plan de Sistemas de Información que proporciona una definición inicial del mismo, identificando los objetivos estratégicos a los que apoya, así como el ámbito general de la organización al que afecta, lo que permite implicar a las direcciones de las áreas afectadas por el Plan de Sistemas de Información.
@@ -82,48 +38,95 @@ El objetivo de esta actividad es determinar la necesidad del Plan de Sistemas de
 Además, se identifican los factores críticos de éxito y los participantes en el Plan de Sistemas de Información, nombrando a los máximos responsables.
 
 A continuación se incluye una tabla resumen con las tareas de la presente actividad:
-TAREA 	PRODUCTOS 	TÉCNICAS Y PRÁCTICAS 	PARTICIPANTES
-PSI 1.1: Análisis de la Necesidad del PSI 	
 
-    Descripción general del PSI
-        Aprobación de inicio del PSI
++----------------------------------------------------------+----------------------------------------------------+-------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------+
+| Tarea                                                    | Productos                                          | Técnicas y prácticas                                                                      | Participantes                                                                      |
++=========+================================================+====================================================+===========================================================================================+====================================================================================+
+| PSI 1.1 | [Análisis de la Necesidad del PSI](#psi-1-1)   | - Descripción general del PSI                      | - [Sesiones de trabajo](../03-tecnicas/01-tecnicas.qmd#sesiones-de-trabajo)               | - [Comité de Dirección](../04-participantes/01-participantes.qmd#perfil-directivo) |
+|         |                                                |   - Aprobación de inicio del PSI                   |                                                                                           |                                                                                    |
++---------+------------------------------------------------+----------------------------------------------------+-------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------+
+| PSI 1.2 | [Identificación del Alcance del PSI](#psi-2-2) | - Descripción general del PSI                      | - [Factores críticos de éxito](../03-tecnicas/01-tecnicas.qmd#factores-criticos-de-exito) | - [Comité de Dirección](../04-participantes/01-participantes.qmd#perfil-directivo) |
+|         |                                                |   - Ámbito y objetivos del PSI                     | - [Sesiones de trabajo](../03-tecnicas/01-tecnicas.qmd#sesiones-de-trabajo)               |                                                                                    |
+|         |                                                |   - Objetivos estratégicos relacionados con el PSI |                                                                                           |                                                                                    |
+|         |                                                |   - Factores críticos de éxito                     |                                                                                           |                                                                                    |
++---------+------------------------------------------------+----------------------------------------------------+-------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------+
+| PSI 1.3 | [Determinación de Responsables](#psi-2-3)      | - Descripción general del PSI                      | - [Sesiones de trabajo](../03-tecnicas/01-tecnicas.qmd#sesiones-de-trabajo)               | - [Comité de Dirección](../04-participantes/01-participantes.qmd#perfil-directivo) |
+|         |                                                |   - Responsables del PSI                           |                                                                                           |                                                                                    |
++---------+------------------------------------------------+----------------------------------------------------+-------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------+
 
-	
+### Tarea PSI 1.1: Análisis de la Necesidad del PSI {#psi-1-1}
 
-    Sesiones de trabajo
+Se analizan las expectativas de las áreas que han planteado la necesidad de llevar a cabo el Plan de Sistemas de Información, así como los productos finales esperados. Una vez verificado que las necesidades de la organización se deben cubrir con un Plan de Sistemas de Información, se toma la decisión de su inicio.
 
-	
+#### Productos {.unnumbered .unlisted}
 
-    Comité de Dirección
+##### De entrada {.unnumbered .unlisted}
 
-PSI 1.2: Identificación del Alcance del PSI 	
+- Solicitud formal de PSI (externo)
 
-    Descripción general del PSI
-        Ámbito y objetivos del PSI
-        Objetivos estratégicos relacionados con el PSI
-        Factores críticos de éxito
+##### De salida {.unnumbered .unlisted}
 
-	
+- Descripción general del PSI:
+  - Aprobación de inicio del PSI
 
-    Factores críticos de éxito
-    Sesiones de trabajo
+#### Prácticas {.unnumbered .unlisted}
 
-	
+- [Sesiones de trabajo](../03-tecnicas/01-tecnicas.qmd#sesiones-de-trabajo)
 
-    Comité de Dirección
+#### Participantes {.unnumbered .unlisted}
 
-PSI 1.3: Determinación de Responsables 	
+- [Comité de Dirección](../04-participantes/01-participantes.qmd#perfil-directivo)
 
-    Descripcion general del PSI
-        Responsables del PSI
+### Tarea PSI 1.2: Identificación del Alcance del PSI {#psi-1-2}
 
-	
+Se define el ámbito del Plan de Sistemas de Información en términos de procesos de la organización afectados y, como consecuencia, las direcciones de las áreas implicadas. Se determinan los objetivos estratégicos de la organización que deben ser considerados en el Plan de Sistemas de Información, así como aquellos aspectos que la dirección considera factores críticos de éxito para el mismo.
 
-    Sesiones de trabajo
+#### Productos {.unnumbered .unlisted}
 
-	
+##### De entrada {.unnumbered .unlisted}
 
-    Comité de Dirección
+- Descripción general del PSI ([PSI 1.1](#psi-1-1))
+
+##### De salida {.unnumbered .unlisted}
+
+- Descripción general del PSI:
+  - Ámbito y objetivos del PSI
+  - Objetivos estratégicos relacionados con el PSI
+  - Factores críticos de éxito
+
+#### Prácticas {.unnumbered .unlisted}
+
+- [Sesiones de trabajo](../03-tecnicas/01-tecnicas.qmd#sesiones-de-trabajo)
+- [Factores críticos de éxito](../03-tecnicas/01-tecnicas.qmd#factores-criticos-de-exito)
+
+#### Participantes {.unnumbered .unlisted}
+
+- [Comité de Dirección](../04-participantes/01-participantes.qmd#perfil-directivo)
+
+### Tarea PSI 1.3: Determinación de Responsables {#psi-1-3}
+
+Delimitado el ámbito del Plan de Sistemas de Información, se implica a las unidades organizativas afectadas, informándoles de la decisión y solicitando su participación en el estudio que se va a iniciar. En sesiones de trabajo con las distintas unidades se determinan los principales responsables del Plan de Sistemas de Información a los que seguidamente se les debe comunicar su nombramiento y solicitar su aceptación. Las personas seleccionadas serán los participantes en la Dirección del Plan de Sistemas de Información.
+
+También se determina la necesidad de apoyo en la función de seguimiento que determine el Plan de Sistemas de Información. Dicha necesidad depende de la amplitud del Plan de Sistemas de Información y de la duración prevista para el mismo. Si se considera necesario, en esta actividad se proponen los responsables de dicho seguimiento.
+
+#### Productos {.unnumbered .unlisted}
+
+##### De entrada {.unnumbered .unlisted}
+
+- Descripción general del PSI ([PSI 1.2](#psi-1-2))
+
+##### De salida {.unnumbered .unlisted}
+
+- Descripción general del PSI:
+  - Responsables del PSI
+
+#### Prácticas {.unnumbered .unlisted}
+
+- [Sesiones de trabajo](../03-tecnicas/01-tecnicas.qmd#sesiones-de-trabajo)
+
+#### Participantes {.unnumbered .unlisted}
+
+- [Comité de Dirección](../04-participantes/01-participantes.qmd#perfil-directivo)
 
 ## Actividad PSI 2: Definición y Organización del PSI
 
@@ -1151,4 +1154,49 @@ Participantes
 
     Comité de Dirección
     Jefe de Proyecto del PSI
+
+### Participantes en las Actividades del Proceso PSI {.unnumbered .unlisted}
+
+PLANIFICACIÓN DE SISTEMAS DE INFORMACIÓN 	ACTIVIDADES
+PSI 1 	PSI 2 	PSI 3 	PSI 4 	PSI 5 	PSI 6 	PSI 7 	PSI 8 	PSI 9
+Comité de Dirección 	X 	X 							X
+Consultores 			X 	X 	X 	X 	X 	X 	X
+Consultores Informáticos 			X 		X 	X 	X 	X 	X
+Directores Usuarios 		X 							
+Equipo de Soporte Técnico 					X 		X 		
+Equipo del Proyecto 					X 				
+Jefe de Proyecto 		X 							X
+Responsable Mantenimiento 					X 				
+Usuarios Expertos 			X 	X 	X 	X 	X 	X 	X
+
+### TÉCNICAS/PRÁCTICAS UTILIZADAS EN LAS ACTIVIDADES DEL PROCESO PSI {.unnumbered .unlisted}
+
+PLANIFICACIÓN DE SISTEMAS DE INFORMACIÓN 	ACTIVIDADES
+PSI 1 	PSI 2 	PSI 3 	PSI 4 	PSI 5 	PSI 6 	PSI 7 	PSI 8 	PSI 9
+Análisis Coste/Beneficio 							X 	X 	
+Catalogación 		X 	X 	X 	X 	X 			
+Diagrama de Clases 				X 					
+Diagrama de Representación 					X 	X 	X 		
+Estimación 		X 							
+Factores Críticos de Éxito 	X 								
+Impacto en la Organización 							X 	X 	
+Matricial 						X 			
+Modelado de Procesos de la Organización 				X 					
+Modelo Entidad/Relación Extendido 				X 					
+Planificación 		X 							
+Presentación 									X
+Sesiones de trabajo 	X 	X 	X 	X 	X 	X 	X 	X 	X
+
+
+### Actividades {.unnumbered .unlisted}
+
+    Actividad PSI 1: Inicio del Plan de Sistemas de Información
+    Actividad PSI 2: Definición y Organización del PSI
+    Actividad PSI 3: Estudio de la Información Relevante
+    Actividad PSI 4: Identificación de Requisitos
+    Actividad PSI 5: Estudio de los Sistemas de Información Actuales
+    Actividad PSI 6: Diseño del Modelo de Sistemas de Información
+    Actividad PSI 7: Definición de la Arquitectura Tecnológica
+    Actividad PSI 8: Definición del Plan de Acción
+    Actividad PSI 9: Revisión y Aprobación del PSI
 
