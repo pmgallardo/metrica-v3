@@ -6,11 +6,11 @@ Para poder exponer una estructura de los participantes que se han identificado a
 
 Los perfiles establecidos son:
 
-- Directivo
-- Jefe de Proyecto
-- Consultor
-- Analista
-- Programador
+- [Directivo](#perfil-directivo)
+- [Jefe de Proyecto](#perfil-jefe-de-proyecto)
+- [Consultor](#perfil-jefe-de-proyecto)
+- [Analista](#perfil-analista)
+- [Programador](#perfil-programador)
 
 Para cada uno de estos perfiles se analizan una serie de características importantes a la hora de delimitar su participación en el proyecto:
 
