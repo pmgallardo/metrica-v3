@@ -1372,7 +1372,7 @@ Hay quien estima que, inicialmente, se asigne 1 día de esfuerzo por cada Punto
 
 ### Diagrama de Representación
 
-### Factores Críticos de Éxito
+### Factores Críticos de Éxito {#factores-criticos-de-exito}
 
 ### Impacto en la Organización
 
@@ -1398,7 +1398,7 @@ Hay quien estima que, inicialmente, se asigne 1 día de esfuerzo por cada Punto
 
 ### Revisión Técnica
 
-### Sesiones de Trabajo
+### Sesiones de Trabajo {#sesiones-de-trabajo}
 
 #### Entrevistas
 
