@@ -881,7 +881,7 @@ Diagrama de colaboración para el caso de uso: Prestar un ejemplar de una aplic
 ### Modelado de Procesos de la Organización {#modelado-de-procesos-de-la-organizacion}
 #### SADT (Structured Analysis and Design Technique)
 
-### Modelo Entidad/Relación Extendido
+### Modelo Entidad/Relación Extendido {#modelo-entidad-relacion-extendido}
 
 Se trata de una técnica cuyo objetivo es la representación y definición de todos los datos que se introducen, almacenan, transforman y producen dentro de un sistema de información, sin tener en cuenta las necesidades de la tecnología existente, ni otras restricciones.
 
@@ -1348,7 +1348,7 @@ Hay quien estima que, inicialmente, se asigne 1 día de esfuerzo por cada Punto
 
 #### Método MARK II para el Análisis de los Puntos Función
 
-### Staffing Size (Orientación a Objetos)
+### Staffing Size (Orientación a Objetos) {#staffing-size}
 
 ### Planificación
 
