@@ -30,7 +30,7 @@ Tanto la metodología como todas estas herramientas estarán disponibles en la w
 
 ## Aportaciones de MÉTRICA Versión 3
 
-En lo que se refiere a estándares se ha tenido en cuenta como referencia el Modelo de Ciclo de Vida de Desarrollo propuesto en la norma ISO 12.207 "*Information technology – Software life cycle processes*". Siguiendo este modelo se ha elaborado la estructura de MÉTRICA Versión 3 en la que se distinguen [procesos principales](#procesos-principales) ([Planificación](#psi), [Desarrollo](#dsi) y [Mantenimiento](#msi)) e [interfaces](#interfaces) ([Gestión de Proyectos](#gestion-de-proyectos), [Aseguramiento de la Calidad](#aseguramiento-de-la-calidad), [Seguridad](#seguridad) y [Gestión de la Configuración](#gestion-de-la-configuracion)) cuyo objetivo es dar soporte al proyecto en los aspectos organizativos. Además de la norma ISO 12.207, entre los estándares de referencia hay que destacar las normas ISO/IEC TR 15.504/SPICE "*Software Process Improvement and Assurance Standards Capability Determination*", *UNE-EN-ISO 9001:2000 Sistemas de Gestión de la Calidad. Requisitos*, *UNE-EN-ISO 9000:2000 Sistemas de Gestión de la Calidad. Fundamentos y Vocabulario y el estándar IEEE 610.12-1.990 “Standard Glossary of Software Engineering Terminology”*. Igualmente se han tenido en cuenta otras metodologías como SSADM, Merise, Information Engineering, MAGERIT. Metodología de Análisis y Gestión de Riesgos de los Sistemas de Información promovida por el Consejo Superior de Informática y EUROMÉTODO. Referencias a estas últimas metodologías pueden localizarse en las páginas del CSI: <http://www.map.es/csi>.
+En lo que se refiere a estándares se ha tenido en cuenta como referencia el Modelo de Ciclo de Vida de Desarrollo propuesto en la norma ISO 12.207 "*Information technology – Software life cycle processes*". Siguiendo este modelo se ha elaborado la estructura de MÉTRICA Versión 3 en la que se distinguen [procesos principales](#procesos-principales) ([Planificación](#psi), [Desarrollo](#desarrollo-de-sistemas-de-informacion) y [Mantenimiento](#msi)) e [interfaces](#interfaces) ([Gestión de Proyectos](#gestion-de-proyectos), [Aseguramiento de la Calidad](#aseguramiento-de-la-calidad), [Seguridad](#seguridad) y [Gestión de la Configuración](#gestion-de-la-configuracion)) cuyo objetivo es dar soporte al proyecto en los aspectos organizativos. Además de la norma ISO 12.207, entre los estándares de referencia hay que destacar las normas ISO/IEC TR 15.504/SPICE "*Software Process Improvement and Assurance Standards Capability Determination*", *UNE-EN-ISO 9001:2000 Sistemas de Gestión de la Calidad. Requisitos*, *UNE-EN-ISO 9000:2000 Sistemas de Gestión de la Calidad. Fundamentos y Vocabulario y el estándar IEEE 610.12-1.990 “Standard Glossary of Software Engineering Terminology”*. Igualmente se han tenido en cuenta otras metodologías como SSADM, Merise, Information Engineering, MAGERIT. Metodología de Análisis y Gestión de Riesgos de los Sistemas de Información promovida por el Consejo Superior de Informática y EUROMÉTODO. Referencias a estas últimas metodologías pueden localizarse en las páginas del CSI: <http://www.map.es/csi>.
 
 Se ha ampliado el enfoque de la [Planificación de Sistemas de Información](#psi) respecto a MÉTRICA Versión 2.1, incluyendo planificación estratégica y recogiendo las actividades de más alto nivel de la fase PSI de MÉTRICA Versión 2.1. Las actividades restantes de la antigua fase PSI se han incorporado al proceso de Desarrollo de la actual versión. Igualmente, aparece el proceso de Mantenimiento de Sistemas de Información que no estaba contemplado en MÉTRICA Versión 2.1.
 
@@ -53,14 +53,14 @@ El orden asignado a las actividades no debe interpretarse como secuencia en su r
 Así los procesos de la estructura principal de MÉTRICA Versión 3 son los siguientes:
 
 - [Planificación de Sistemas de Información](#psi){style="text-transform: uppercase;"}.
-- [Desarrollo de Sistemas de Información](#dsi){style="text-transform: uppercase;"}.
+- [Desarrollo de Sistemas de Información](#desarrollo-de-sistemas-de-informacion){style="text-transform: uppercase;"}.
 - [Mantenimiento de Sistemas de Información](#msi){style="text-transform: uppercase;"}.
 
 El enfoque del proceso de [**Planificación de Sistemas de Información**](#psi), al no estar dentro del ámbito de la norma ISO 12.207 de Procesos del Ciclo de Vida de Software, se ha determinado a partir del estudio de los últimos avances en este campo, la alta competitividad y el cambio a que están sometidas las organizaciones. El entorno de alta competitividad y cambio en el que actualmente se encuentran las organizaciones, hace cada vez más crítico el requerimiento de disponer de los sistemas y las tecnologías de la información con flexibilidad para adaptarse a las nuevas exigencias, con la velocidad que demanda dicho entorno.
 
 La existencia de tecnología de reciente aparición, permite disponer de sistemas que apoyan la toma de decisiones a partir de grandes volúmenes de información procedentes de los sistemas de gestión e integrados en una plataforma corporativa. MÉTRICA Versión 3 ayuda en la planificación de sistemas de información facilitando una visión general necesaria para posibilitar dicha integración y un modelo de información global de la organización.
 
-En cuanto al [**proceso de Desarrollo de Sistemas de Información**](#dsi), para facilitar la comprensión y dada su amplitud y complejidad se ha subdividido en cinco procesos:
+En cuanto al [**proceso de Desarrollo de Sistemas de Información**](#desarrollo-de-sistemas-de-informacion), para facilitar la comprensión y dada su amplitud y complejidad se ha subdividido en cinco procesos:
 
 - [Estudio de Viabilidad del Sistema (EVS)](./03-evs.qmd){style="text-transform: uppercase;"}.
 - [Análisis del Sistema de Información (ASI)](./04-asi.qmd){style="text-transform: uppercase;"}.
@@ -97,7 +97,7 @@ Este nuevo enfoque de alineamiento de los sistemas de información con la estrat
 - La prioridad del desarrollo de los sistemas de información de la organización por objetivos estratégicos.
 - La propuesta de Arquitectura de Información que se hace en el plan es más estratégica que tecnológica. El modelo de sistemas de información de la propuesta no es teórico y se contemplan los sistemas de información actuales que se mantendrán.
 
-### Desarrollo de Sistemas de Información {#dsi}
+### Desarrollo de Sistemas de Información {#desarrollo-de-sistemas-de-informacion}
 
 El proceso de Desarrollo de MÉTRICA Versión 3 contiene todas las actividades y tareas que se deben llevar a cabo para desarrollar un sistema, cubriendo desde el análisis de requisitos hasta la instalación del software. Además de las tareas relativas al análisis, incluye dos partes en el diseño de sistemas: arquitectónico y detallado. También cubre las pruebas unitarias y de integración del sistema, aunque siguiendo la norma ISO 12.207 no propone ninguna técnica específica y destaca la importancia de la evolución de los requisitos. Este proceso es, sin duda, el más importante de los identificados en el ciclo de vida de un sistema y se relaciona con todos los demás.
 
@@ -150,7 +150,7 @@ Si en la organización se ha realizado con anterioridad un Plan de Sistemas de I
 
 ### Análisis del Sistema de Información (ASI)
 
-El propósito de este proceso es conseguir la especificación detallada del sistema de información, a través de un catálogo de requisitos y una serie de modelos que cubran las necesidades de información de los usuarios para los que se desarrollará el sistema de información y que serán la entrada para el proceso de [Diseño del Sistema de Información](#dsi).
+El propósito de este proceso es conseguir la especificación detallada del sistema de información, a través de un catálogo de requisitos y una serie de modelos que cubran las necesidades de información de los usuarios para los que se desarrollará el sistema de información y que serán la entrada para el proceso de [Diseño del Sistema de Información](./06-dsi.mq).
 
 Como ya se ha dicho MÉTRICA Versión 3 cubre tanto desarrollos estructurados como orientados a objetos, y las actividades de ambas aproximaciones están integradas en una estructura común aunque presenta alguna actividad exclusiva para cada tipo de desarrollo.
 
@@ -193,7 +193,7 @@ Además, en ***Análisis Orientado a Objetos***:
 
 En este proceso es muy importante la participación de los usuarios, a través de técnicas interactivas, como diseño de diálogos y prototipos, que permiten al usuario familiarizarse con el nuevo sistema y colaborar en la construcción y perfeccionamiento del mismo.
 
-### Diseño del Sistema de Información (DSI) {#dsi}
+### Diseño del Sistema de Información (DSI)
 
 El propósito del Diseño del Sistema de Información (DSI) es obtener la definición de la arquitectura del sistema y del entorno tecnológico que le va a dar soporte, junto con la especificación detallada de los componentes del sistema de información. A partir de dicha información, se generan todas las especificaciones de construcción relativas al propio sistema, así como la especificación técnica del plan de pruebas, la definición de los requisitos de implantación y el diseño de los procedimientos de migración y carga inicial, éstos últimos cuando proceda.
 
