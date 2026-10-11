@@ -1,6 +1,6 @@
 # Métrica versión 3
 
-Métrica versión 3 es una metodología que ofrece a las organizaciones un instrumento para la sistematización de las actividades que dan soporte al ciclo de vida del software.
+Métrica versión 3 es una metodología de Planificación, Desarrollo y Mantenimiento de sistemas de información que se ofrece a las organizaciones como un instrumento para la sistematización de las actividades que dan soporte al ciclo de vida del software.
 
 ## Autoría
 
