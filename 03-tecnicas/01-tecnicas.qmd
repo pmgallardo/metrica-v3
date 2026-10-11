@@ -1460,7 +1460,7 @@ Nota.- El Nivel de Soporte en blanco significa que o bien no se conocen herramie
 - MARTIN, J. (1991) “Rapid Application Development” Ed. Macmillan Publising Company.
 - MÉTRICA Versión 2.1.: Metodología de Planificación y Desarrollo de Sistemas de Información. Guías de Referencia, de Técnicas y del Usuario. Ministerio para las Administraciones Públicas. Editorial TECNOS, Madrid, 1995.
 - MIKE COTTERELL, BOB HUGHES, “Software Project Management”, International Thomson Computer Press, 1995
-- PAGE-JONES, M. (1988), “ The Practical Guide to Structured Systems Design”. Second Edition. Ed. Prentice-Hall, Inc. Yourdon Press.
+- PAGE-JONES, M. (1988), “The Practical Guide to Structured Systems Design”. Second Edition. Ed. Prentice-Hall, Inc. Yourdon Press.
 - PERRY, W. (1995) “Effective Methods for Software Testing” Ed. John Wiley & Sons, Inc.
 - PIATTINI, M. y DARYANANI, S. N (1995), “Elementos y Herramientas en el Desarrollo de Sistemas de Información”, RA-MA.
 - PIATTINI, M., CALVO-MANZANO, J., CERVERA, J. Y FERNÁNDEZ, L. (1996). «Análisis y Diseño Detallado de Aplicaciones Informáticas de Gestión». Ed. Ra-Ma.
