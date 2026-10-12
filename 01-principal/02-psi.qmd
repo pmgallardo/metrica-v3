@@ -39,6 +39,7 @@ Además, se identifican los factores críticos de éxito y los participantes en 
 
 A continuación se incluye una tabla resumen con las tareas de la presente actividad:
 
+<!-- Versión de la tabla en formato Grid Table de Quarto
 +----------------------------------------------------------+----------------------------------------------------+-------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------+
 | Tarea                                                    | Productos                                          | Técnicas y prácticas                                                                      | Participantes                                                                      |
 +=========+================================================+====================================================+===========================================================================================+====================================================================================+
@@ -53,6 +54,89 @@ A continuación se incluye una tabla resumen con las tareas de la presente activ
 | PSI 1.3 | [Determinación de Responsables](#psi-2-3)      | - Descripción general del PSI                      | - [Sesiones de trabajo](../03-tecnicas/01-tecnicas.qmd#sesiones-de-trabajo)               | - [Comité de Dirección](../04-participantes/01-participantes.qmd#perfil-directivo) |
 |         |                                                |   - Responsables del PSI                           |                                                                                           |                                                                                    |
 +---------+------------------------------------------------+----------------------------------------------------+-------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------+
+-->
+
+```{=html}
+<table class="avia-table avia-data-table">
+<tbody>
+<tr>
+<td text-align: left; width: 25%;"><strong>TAREA</strong></td>
+<td text-align: left; width: 30%;"><strong>PRODUCTOS</strong></td>
+<td text-align: left; width: 25%;"><strong>TÉCNICAS Y PRÁCTICAS</strong></td>
+<td text-align: left; width: 20%;"><strong>PARTICIPANTES</strong></td>
+</tr>
+<tr>
+<td style="text-align: left; vertical-align: top;"><a href="#psi-1-1"><strong>PSI 1.1</strong>: Análisis de la Necesidad del PSI</a></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li>Descripción general del PSI
+<ul>
+<li>Aprobación de inicio del PSI</li>
+</ul>
+</li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#sesiones-de-trabajo">Sesiones de trabajo</a></li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-directivo">Comité de Dirección</a></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td style="text-align: left; vertical-align: top;"><a href="#psi-1-2"><strong>PSI 1.2</strong>: Identificación del Alcance del PSI</a></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li>Descripción general del PSI
+<ul>
+<li>Ámbito y objetivos del PSI</li>
+<li>Objetivos estratégicos relacionados con el PSI</li>
+<li>Factores críticos de éxito</li>
+</ul>
+</li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#factores-criticos-de-exito">Factores críticos de éxito</a></li>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#sesiones-de-trabajo">Sesiones de trabajo</a></li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-directivo">Comité de Dirección</a></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td style="text-align: left; vertical-align: top;"><a href="#psi-1-3"><strong>PSI 1.3</strong>: Determinación de Responsables</a></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li>Descripcion general del PSI
+<ul>
+<li>Responsables del PSI</li>
+</ul>
+</li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#sesiones-de-trabajo">Sesiones de trabajo</a></li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-directivo">Comité de Dirección</a></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+```
 
 #### Tarea PSI 1.1: Análisis de la Necesidad del PSI {#psi-1-1}
 
@@ -136,24 +220,24 @@ En esta actividad se detalla el alcance del plan, se organiza el equipo de perso
 <table class="avia-table avia-data-table">
   <tbody>
     <tr>
-      <td style="background-color: #000033; text-align: left; width: 25%;">
+      <td style="text-align: left; width: 25%;">
         <strong>
-          <span style="color: #ffffff;">TAREA</span>
+          TAREA
         </strong>
       </td>
-      <td style="background-color: #000033; text-align: left; width: 30%;">
+      <td style="text-align: left; width: 30%;">
         <strong>
-          <span style="color: #ffffff;">PRODUCTOS</span>
+          PRODUCTOS
         </strong>
       </td>
-      <td style="background-color: #000033; text-align: left; width: 25%;">
+      <td style="text-align: left; width: 25%;">
         <strong>
-          <span style="color: #ffffff;">TÉCNICAS Y PRÁCTICAS</span>
+          TÉCNICAS Y PRÁCTICAS
         </strong>
       </td>
-      <td style="background-color: #000033; text-align: left; width: 20%;">
+      <td style="text-align: left; width: 20%;">
         <strong>
-          <span style="color: #ffffff;">PARTICIPANTES</span>
+          PARTICIPANTES
         </strong>
       </td>
     </tr>
@@ -203,9 +287,7 @@ En esta actividad se detalla el alcance del plan, se organiza el equipo de perso
     </tr>
     <tr>
       <td style="text-align: left; vertical-align: top;">
-        <a
-          href="#psi-2-2"
-        >
+        <a href="#psi-2-2">
           <strong>PSI 2.2</strong>: Organización del PSI
         </a>
       </td>
@@ -423,88 +505,115 @@ Una vez definido el plan de trabajo se comunica a los usuarios del Plan de Siste
 El objetivo de esta actividad es recopilar y analizar todos los antecedentes generales que puedan afectar a los procesos y a las unidades organizativas implicadas en el Plan de Sistemas de Información, así como a los resultados del mismo. Pueden ser de especial interés los estudios realizados con anterioridad al Plan de Sistemas de Información, relativos a los sistemas de información de su ámbito, o bien a su entorno tecnológico, cuyas conclusiones deben ser conocidas por el equipo de trabajo del Plan de Sistemas de Información.
 
 La información obtenida en esta actividad se tendrá en cuenta en la elaboración de los requisitos.
-TAREA 	PRODUCTOS 	TÉCNICAS Y PRÁCTICAS 	PARTICIPANTES
-PSI 3.1: Selección y Análisis de Antecedentes 	
 
-    Valoración de antecedentes
-
-	
-
-    Sesiones de trabajo
-
-	
-
-    Consultores
-    Consutores Informáticos
-    Usuarios expertos
-
-PSI 3.2: Valoración de Antecedentes 	
-
-    Catálogo de requisitos
-    Requisitos generales
-    Catálogo de normas del PSI
-
-	
-
-    Catalogación
-
-	
-
-    Consultores
-    Consultores Informáticos
+```{=html}
+<table class="avia-table avia-data-table">
+<tbody>
+<tr>
+<td style="text-align: left; width: 25%;"><strong>TAREA</strong></td>
+<td style="text-align: left; width: 30%;"><strong>PRODUCTOS</strong></td>
+<td style="text-align: left; width: 25%;"><strong>TÉCNICAS Y PRÁCTICAS</strong></td>
+<td style="text-align: left; width: 20%;"><strong>PARTICIPANTES</strong></td>
+</tr>
+<tr>
+<td style="text-align: left; vertical-align: top;"><a href="#psi-3-1"><strong>PSI 3.1</strong>: Selección y Análisis de Antecedentes</a></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li>Valoración de antecedentes</li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#sesiones-de-trabajo">Sesiones de trabajo</a></li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-consultor">Consultores</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-consultor">Consutores Informáticos</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-directivo">Usuarios expertos</a></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td style="text-align: left; vertical-align: top;"><a href="#psi-3-2"><strong>PSI 3.2</strong>: Valoración de Antecedentes</a></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li>Catálogo de requisitos</li>
+<li>Requisitos generales</li>
+<li>Catálogo de normas del PSI</li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#catalogacion">Catalogación</a></li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-consultor">Consultores</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-consultor">Consultores Informáticos</a></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+```
 
 #### Tarea PSI 3.1: Selección y Análisis de Antecedentes {#psi-3-1}
 
 Se seleccionan las fuentes de información y documentación a considerar en este estudio, teniendo en cuenta todos aquellos antecedentes de interés: plan estratégico de sistemas de información, estudios previos, plan general informático, etc. y se analiza el contenido de la información anterior. En el inicio y organización del Plan de Sistemas de Información se habrá orientado sobre la existencia de estos antecedentes, para facilitar al equipo de trabajo el desarrollo de esta actividad.
 
 Asimismo, se debe entrevistar a las personas de la organización que puedan aportar información adicional sobre antecedentes que deban ser considerados en el Plan de Sistemas de Información, al margen de la documentación disponible. La información recogida se tiene también en cuenta en la valoración de los mismos.
-Productos
 
-De entrada
+##### Productos {.unnumbered .unlisted}
 
-    Información relevante (externo)
-    Descripción general de procesos de la organización afectados (PSI 2.1)
-    Catálogo de objetivos del PSI (PSI 2.1)
-    Catálogo de usuarios (PSI 2.2)
+###### De entrada {.unnumbered .unlisted}
 
-De salida
+- Información relevante (externo)
+- Descripción general de procesos de la organización afectados ([PSI 2.1](#psi-2-1))
+- Catálogo de objetivos del PSI ([PSI 2.1](#psi-2-1))
+- Catálogo de usuarios ([PSI 2.2](#psi-2-2))
 
-    Análisis de antecedentes
+###### De salida {.unnumbered .unlisted}
 
-Prácticas
+- Análisis de antecedentes
 
-    Sesiones de trabajo
+##### Prácticas {.unnumbered .unlisted}
 
-Participantes
+- [Sesiones de trabajo](../03-tecnicas/01-tecnicas.qmd#sesiones-de-trabajo)
 
-    Consultores
-    Consultores Informáticos
-    Usuarios Expertos
+##### Participantes {.unnumbered .unlisted}
+
+- [Consultores](../04-participantes/01-participantes.qmd#perfil-consultor)
+- [Consultores Informáticos](../04-participantes/01-participantes.qmd#perfil-consultor)
+- [Usuarios Expertos](../04-participantes/01-participantes.qmd#perfil-directivo)
 
 #### Tarea PSI 3.2: Valoración de Antecedentes {#psi-3-2}
 
 Se realiza la valoración de los antecedentes analizados en la tarea anterior y las conclusiones se recogerán en el catálogo de requisitos. La realización de esta valoración ayudará a establecer términos de referencia en cuanto a estándares, procedimientos, normativas, etc., si es que existen.
-Productos
 
-De entrada
+##### Productos {.unnumbered .unlisted}
 
-    Información relevante (externo)
-    Análisis de antecedentes (PSI 3.1)
+###### De entrada {.unnumbered .unlisted}
 
-De salida
+- Información relevante (externo)
+- Análisis de antecedentes ([PSI 3.1](#psi-3-1))
 
-    Catálogo de requisitos:
-        Requisitos generales
-    Catálogo de normas del PSI
+###### De salida {.unnumbered .unlisted}
 
-Prácticas
+- Catálogo de requisitos:
+  - Requisitos generales
+- Catálogo de normas del PSI
 
-    Catalogación
+##### Prácticas {.unnumbered .unlisted}
 
-Participantes
+- [Catalogación](../03-tecnicas/01-tecnicas.qmd#catalogacion)
 
-    Consultores
-    Consultores Informáticos
+##### Participantes {.unnumbered .unlisted}
+
+- [Consultores](../04-participantes/01-participantes.qmd#perfil-consultor)
+- [Consultores Informáticos](../04-participantes/01-participantes.qmd#perfil-consultor)
 
 ### Actividad PSI 4: Identificación de Requisitos {#psi-4}
 
@@ -515,6 +624,7 @@ Para conseguir este objetivo, se estudia el proceso o procesos de la organizaci�
 Del mismo modo, se identifican los requisitos de información, y se elabora un modelo de información que represente las distintas entidades implicadas en el proceso, así como las relaciones entre ellas.
 
 Por último, se clasifican los requisitos identificados según su prioridad, con el objetivo de incorporarlos al catálogo de requisitos del Plan de Sistemas de Información.
+
 TAREA 	PRODUCTOS 	TÉCNICAS Y PRÁCTICAS 	PARTICIPANTES
 PSI 4.1: Estudio de los Procesos del PSI 	
 
@@ -565,28 +675,29 @@ PSI 4.3: Catalogación de Requisitos
 Se estudia cada proceso de la organización incluido en el ámbito del Plan de Sistemas de Información. Para cada uno de ellos, es necesario identificar las actividades o funciones, la información implicada en ellas y las unidades organizativas que participan en el desarrollo de cada actividad.
 
 Para obtener esta información es necesario llevar a cabo sesiones de trabajo con los usuarios implicados en cada uno de los procesos a analizar. Una vez contrastadas las conclusiones, se elabora el modelo correspondiente a cada proceso. Si existe relación entre los distintos modelos, se unifican en la medida de lo posible, con el fin de proporcionar una visión global en el contexto de la organización y facilitar una identificación de requisitos más objetiva.
-Productos
 
-De entrada
+##### Productos {.unnumbered .unlisted}
+
+###### De entrada {.unnumbered .unlisted}
 
     Descripción general de procesos de la organización afectados (PSI 2.1)
     Catálogo de objetivos de PSI (PSI 2.1)
     Catálogo de usuarios (PSI 2.2)
     Equipos de trabajo (PSI 2.2)
 
-De salida
+###### De salida {.unnumbered .unlisted}
 
     Modelo de procesos de la organización
 
-Técnicas
+##### Técnicas {.unnumbered .unlisted}
 
     Modelado de procesos de la organización
 
-Prácticas
+##### Prácticas {.unnumbered .unlisted}
 
     Sesiones de trabajo
 
-Participantes
+##### Participantes {.unnumbered .unlisted}
 
     Consultores
     Usuarios Expertos
@@ -596,27 +707,28 @@ Participantes
 Mediante sesiones de trabajo, se identifican las necesidades de información de cada uno de los procesos analizados en la actividad anterior. Se elabora un modelo de información que refleje las principales entidades y relaciones existentes entre ellas. Todo esto se realiza con la perspectiva de lo que debe ser el proceso en cuanto a sus actividades y funciones, así como a la información de entrada y salida para cada una de ellas.
 
 Los resultados del análisis realizado en esta tarea son la base para la identificación de requisitos.
-Productos
 
-De entrada
+##### Productos {.unnumbered .unlisted}
+
+###### De entrada {.unnumbered .unlisted}
 
     Modelo de procesos de la organización (PSI 4.1)
 
-De salida
+###### De salida {.unnumbered .unlisted}
 
     Necesidades de información
     Modelo de información
 
-Técnicas
+##### Técnicas {.unnumbered .unlisted}
 
     Modelo Entidad/Relación extendido
     Diagrama de clases
 
-Prácticas
+##### Prácticas {.unnumbered .unlisted}
 
     Sesiones de trabajo
 
-Participantes
+##### Participantes {.unnumbered .unlisted}
 
     Consultores
     Usuarios Expertos
@@ -626,9 +738,10 @@ Participantes
 En esta tarea se analiza la información recogida en las tareas Estudio de los Procesos del PSI (PSI 4.1) y Análisis de las Necesidades de Información (PSI 4.2). Se definen los requisitos, incorporándolos al catálogo que se había comenzado a elaborar en la actividad Estudio de la Información Relevante (PSI 3) y se les asignan prioridades.
 
 Los criterios para asignar dichas prioridades deben ser definidos al comienzo de esta tarea, considerando la opinión de los usuarios sobre los procesos de la organización, así como los objetivos del Plan de Sistemas de Información.
-Productos
 
-De entrada
+##### Productos {.unnumbered .unlisted}
+
+###### De entrada {.unnumbered .unlisted}
 
     Catálogo de objetivos de PSI (PSI 2.1)
     Catálogo de requisitos (PSI 3.2)
@@ -636,16 +749,16 @@ De entrada
     Modelo de información (PSI 4.2)
     Necesidades de información (PSI 4.2)
 
-De salida
+###### De salida {.unnumbered .unlisted}
 
     Catálogo de requisitos:
         Requisitos de los procesos afectados por el PSI
 
-Prácticas
+##### Prácticas {.unnumbered .unlisted}
 
     Catalogación
 
-Participantes
+##### Participantes {.unnumbered .unlisted}
 
     Consultores
     Usuarios Expertos
@@ -655,6 +768,7 @@ Participantes
 El objetivo de esta actividad es obtener una valoración de la situación actual al margen de los requisitos del catálogo, apoyándose en criterios relativos a facilidad de mantenimiento, documentación, flexibilidad, facilidad de uso, etc. En esta actividad se debe tener en cuenta la opinión de los usuarios, ya que aportarán elementos de valoración, como por ejemplo, su nivel de satisfacción con cada sistema de información.
 
 Se seleccionan los sistemas de información actuales que son objeto del análisis y se lleva a cabo el estudio de los mismos con la profundidad y el detalle que se determine conveniente en función de los objetivos definidos para el Plan de Sistemas de Información. Este estudio permite, para cada sistema, determinar sus carencias y valorarlos. Esta valoración se utilizará en la actividad Diseño del Modelo de Sistemas de Información (PSI 6), donde se analizará la cobertura de los sistemas de información actuales con respecto a los requisitos.
+
 TAREA 	PRODUCTOS 	TÉCNICAS Y PRÁCTICAS 	PARTICIPANTES
 PSI 5.1: Alcance y Objetivos del Estudio de los Sistemas de Información Actuales 	
 
@@ -711,27 +825,28 @@ A partir de la descripción general de los procesos de la organización afectado
 Los objetivos del Plan de Sistemas de Información se completan con los objetivos definidos en esta tarea para el estudio de los sistemas de información actuales.
 
 La información relativa a los sistemas de información que dan actualmente soporte a los procesos afectados por el Plan de Sistemas de Información, se obtiene mediante sesiones de trabajo con los usuarios y el apoyo del personal informático que se considere necesario.
-Productos
 
-De entrada
+##### Productos {.unnumbered .unlisted}
+
+###### De entrada {.unnumbered .unlisted}
 
     Catálogo de objetivos de PSI (PSI 2.1)
     Descripción general de procesos de la organización afectados (PSI 2.1)
     Catálogo de usuarios (PSI 2.2)
     Equipos de trabajo (PSI 2.2)
 
-De salida
+###### De salida {.unnumbered .unlisted}
 
     Catálogo de objetivos de PSI:
         Objetivos del estudio de los sistemas de información actuales
     Identificación de sistemas de información actuales afectados por el PSI
 
-Prácticas
+##### Prácticas {.unnumbered .unlisted}
 
     Catalogación
     Sesiones de trabajo
 
-Participantes
+##### Participantes {.unnumbered .unlisted}
 
     Consultores
     Consultores Informáticos
@@ -742,24 +857,25 @@ Participantes
 En esta tarea se lleva a cabo el estudio de los sistemas de información actuales afectados por el PSI. Para cada sistema de información se recogen, al menos, las características básicas relativas a datos, software de aplicación, procesos de la organización a los que da soporte y de qué forma lo hace, flexibilidad, carencias, riesgos y posibles amenazas.
 
 En función del tipo de sistema de información y de los objetivos de su estudio se recopila además, para cada uno de ellos, información procedente de diversos puntos de vista (la opinión de usuarios de los sistemas de información, de analistas de desarrollo, de personal de operación, etc.).
-Productos
 
-De entrada
+##### Productos {.unnumbered .unlisted}
+
+###### De entrada {.unnumbered .unlisted}
 
     Descripción general de procesos de la organización afectados (PSI 2.1)
     Catálogo de objetivos de PSI (PSI 5.1)
     Identificación de sistemas de información actuales afectados por el PSI (PSI 5.1)
 
-De salida
+###### De salida {.unnumbered .unlisted}
 
     Descripción general de sistemas de información actuales
 
-Prácticas
+##### Prácticas {.unnumbered .unlisted}
 
     Sesiones de trabajo
     Diagrama de Representación
 
-Participantes
+##### Participantes {.unnumbered .unlisted}
 
     Consultores
     Consultores Informáticos
@@ -773,23 +889,24 @@ Participantes
 Una vez descritas las características de los sistemas de información actuales, se analizan los problemas reales y potenciales, opiniones, etc. Se obtienen conclusiones y una valoración, lo más objetiva posible, de cada uno de ellos. Es importante lograr esta objetividad, ya que la valoración podrá influir en la decisión de la sustitución o mejora de los sistemas de información en los próximos años.
 
 Conviene señalar que esta valoración no se realiza en cuanto a cobertura de requisitos, sino con respecto a aspectos intrínsecos o de eficiencia de cada sistema de información, relativos a facilidad de mantenimiento, operatividad, nivel de servicio, costes, etc.
-Productos
 
-De entrada
+##### Productos {.unnumbered .unlisted}
+
+###### De entrada {.unnumbered .unlisted}
 
     Catálogo de objetivos de PSI (PSI 5.1)
     Descripción general de sistemas de información actuales (PSI 5.2)
 
-De salida
+###### De salida {.unnumbered .unlisted}
 
     Valoración de la situación actual
 
-Prácticas
+##### Prácticas {.unnumbered .unlisted}
 
     Sesiones de trabajo
     Impacto en la Organización
 
-Participantes
+##### Participantes {.unnumbered .unlisted}
 
     Consultores
     Consultores Informáticos
@@ -801,6 +918,7 @@ El objetivo de esta actividad es identificar y definir los sistemas de informaci
 Por último, se definen los nuevos sistemas de información necesarios para cubrir los requisitos y funciones de los procesos no soportados por los sistemas actuales seleccionados.
 
 Teniendo en cuenta los resultados anteriores, se elabora el modelo de sistemas de información válido para dar soporte a los procesos de la organización incluidos en el ámbito del Plan de Sistemas de Información.
+
 TAREA 	PRODUCTOS 	TÉCNICAS Y PRÁCTICAS 	PARTICIPANTES
 PSI 6.1: Diagnóstico de la Situación Actual 	
 
@@ -838,24 +956,25 @@ Para llegar a un diagnóstico sobre la situación actual, se tiene en cuenta la 
 En paralelo, se analiza el modelo de información obtenido en la tarea Análisis de las Necesidades de Información (PSI 4.2). Se determina si existen entidades o relaciones del mismo, que no aparecen recogidas en la situación actual o que, estando recogidas, su tratamiento actual no responde a los nuevos requisitos.
 
 Como resultado del análisis anterior, se seleccionan los sistemas de información a conservar y se elabora, si procede, la relación de mejoras a realizar en cada uno de ellos para cubrir los requisitos que le afectan.
-Productos
 
-De entrada
+##### Productos {.unnumbered .unlisted}
+
+###### De entrada {.unnumbered .unlisted}
 
     Modelo de información (PSI 4.2)
     Catálogo de requisitos (PSI 4.3)
     Valoración de la situación actual (PSI 5.3)
 
-De salida
+###### De salida {.unnumbered .unlisted}
 
     Diagnóstico de la situación actual:
         Relación de sistemas de información que se conservan y mejoras necesarias
 
-Técnicas
+##### Técnicas {.unnumbered .unlisted}
 
     Matricial
 
-Participantes
+##### Participantes {.unnumbered .unlisted}
 
     Consultores
 
@@ -874,29 +993,30 @@ Para identificar cada sistema de información nuevo se analizan:
 Las conclusiones obtenidas de dicho análisis sirven para identificar cada sistema de información nuevo y elaborar el modelo de sistemas de información.
 
 Por último y contando con la experiencia de los participantes en esta tarea, se obtiene el modelo de sistemas de información, que incluye un diagrama de representación de todos ellos, con sus conexiones e interfaces, y una descripción de cada sistema de información con el conjunto de actividades y requisitos que cubre, así como el tipo de sistema de que se trata.
-Productos
 
-De entrada
+##### Productos {.unnumbered .unlisted}
+
+###### De entrada {.unnumbered .unlisted}
 
     Diagnóstico situación actual (PSI 6.1)
     Modelo de procesos de la organización (PSI 4.1)
     Modelo de información (PSI 4.2)
     Catálogo de requisitos (PSI 4.3)
 
-De salida
+###### De salida {.unnumbered .unlisted}
 
     Modelo de sistemas de información
 
-Técnicas
+##### Técnicas {.unnumbered .unlisted}
 
     Matricial
 
-Prácticas
+##### Prácticas {.unnumbered .unlisted}
 
     Diagrama de Representación
     Sesiones de trabajo
 
-Participantes
+##### Participantes {.unnumbered .unlisted}
 
     Consultores
     Consultores Informáticos
@@ -905,6 +1025,7 @@ Participantes
 ### Actividad PSI 7: Definición de la Arquitectura Tecnológica {#psi-7}
 
 En esta actividad se propone una arquitectura tecnológica que de soporte al modelo de información y de sistemas de información incluyendo, si es necesario, opciones. Para esta actividad se tienen en cuenta especialmente los requisitos de carácter tecnológico, aunque es necesario considerar el catálogo completo de requisitos para entender las necesidades de los procesos y proponer los entornos tecnológicos que mejor se adapten a las mismas.
+
 TAREA 	PRODUCTOS 	TÉCNICAS Y PRÁCTICAS 	PARTICIPANTES
 PSI 7.1: Identificación de las Necesidades de Infraestructura Tecnológica 	
 
@@ -944,9 +1065,10 @@ Esta tarea tiene el objetivo de analizar las necesidades de infraestructura tecn
 Para ello, se comienza analizando el modelo de sistemas de información y el catálogo de requisitos, en especial los de carácter técnico. Se identifican las necesidades (entornos necesarios, conectividad y comunicaciones entre ellos, disponibilidad, servicios críticos, etc.).
 
 A continuación se determinan las posibles alternativas de infraestructura tecnológica, definiendo los componentes, a alto nivel, y representando gráficamente cada una de ellas. Es necesario establecer la forma de gestionar la infraestructura tecnológica para responder a las necesidades identificadas. La visión aportada por los consultores de Tecnologías de la Información y Comunicaciones (TIC) debe ser de futuro, considerando la posible evolución de las distintas tecnologías candidatas, así como de las actualmente incorporadas en la organización. Es imprescindible contar, en este análisis, con la información relativa a los entornos tecnológicos de la situación actual, así como los estándares existentes en la organización.
-Productos
 
-De entrada
+##### Productos {.unnumbered .unlisted}
+
+###### De entrada {.unnumbered .unlisted}
 
     Entorno tecnológico actual y estándares (externo)
     Modelo de sistemas de información (PSI 6.2)
@@ -955,16 +1077,16 @@ De entrada
     Descripción general de sistemas de información actuales (PSI 5.2)
     Valoración de la situación actual (PSI 5.3)
 
-De salida
+###### De salida {.unnumbered .unlisted}
 
     Alternativas de arquitectura tecnológica
 
-Prácticas
+##### Prácticas {.unnumbered .unlisted}
 
     Diagrama de Representación
     Sesiones de trabajo
 
-Participantes
+##### Participantes {.unnumbered .unlisted}
 
     Consultores Informáticos
     Equipo de Soporte Técnico
@@ -978,27 +1100,28 @@ Para cada alternativa, se debe analizar su impacto en la organización, así com
 Se realiza un estudio de cada propuesta, indicando ventajas e inconvenientes, así como el nivel de respuesta a las necesidades identificadas en la tarea anterior.
 
 Por último, una estimación económica global puede ayudar a elegir la alternativa que va a ser propuesta, para la cual pueden incluirse opciones.
-Productos
 
-De entrada
+##### Productos {.unnumbered .unlisted}
+
+###### De entrada {.unnumbered .unlisted}
 
     Entorno tecnológico actual y estándares (externo)
     Alternativas de arquitectura tecnológica (PSI 7.1)
 
-De salida
+###### De salida {.unnumbered .unlisted}
 
     Arquitectura tecnológica
 
-Técnicas
+##### Técnicas {.unnumbered .unlisted}
 
     Análisis Coste/Beneficio
 
-Prácticas
+##### Prácticas {.unnumbered .unlisted}
 
     Diagrama de Representación
     Impacto en la organización
 
-Participantes
+##### Participantes {.unnumbered .unlisted}
 
     Consultores
     Consultores Informáticos
@@ -1012,6 +1135,7 @@ En el Plan de Acción, que se elabora en esta actividad, se definen los proyecto
 Dentro del Plan de Acción se incluye un calendario de proyectos, con posibles alternativas, y una estimación de recursos, cuyo detalle será mayor para los más inmediatos. Para la elaboración del calendario se tienen que analizar las distintas variables que afecten a la prioridad de cada proyecto y sistema de información. El orden definitivo de los proyectos y acciones debe pactarse con los usuarios, para llegar a una solución de compromiso que resulte la mejor posible para la organización.
 
 Por último, se propone un plan de mantenimiento para el control y seguimiento de la ejecución de los proyectos, así como para la actualización de los productos finales del Plan de Sistemas de Información.
+
 TAREA 	PRODUCTOS 	TÉCNICAS Y PRÁCTICAS 	PARTICIPANTES
 PSI 8.1: Definición de Proyectos a Realizar 	
 
@@ -1061,9 +1185,10 @@ Después del estudio de todos los elementos anteriores, se propone el calendario
 Por último, se completa el plan de proyectos considerando los factores críticos de éxito para llevar a cabo la propuesta, así como el plan de acciones necesarias, deducidas del análisis de dichos factores (planes de formación, gestión del cambio, etc.).
 
 Las conclusiones obtenidas deben ser contrastadas y modificadas, si se estima conveniente, con las aportaciones de los usuarios.
-Productos
 
-De entrada
+###### Productos {.unnumbered .unlisted}
+
+##### De entrada {.unnumbered .unlisted}
 
     Descripción general del PSI (PSI 1.2)
     Catálogo de objetivos del PSI (PSI 5.1)
@@ -1072,23 +1197,23 @@ De entrada
         Modelo de sistemas de información (PSI 6.2)
         Arquitectura tecnológica (PSI 7.2)
 
-De salida
+##### De salida {.unnumbered .unlisted}
 
     Plan de proyectos:
         Definición de proyectos
         Prioridad de proyectos
         Calendario de proyectos y acciones
 
-Técnicas
+###### Técnicas {.unnumbered .unlisted}
 
     Análisis Coste/Beneficio
 
-Prácticas
+###### Prácticas {.unnumbered .unlisted}
 
     Impacto en la organización
     Sesiones de trabajo
 
-Participantes
+###### Participantes {.unnumbered .unlisted}
 
     Consultores
     Consultores Informáticos
@@ -1101,25 +1226,26 @@ Una vez establecido el plan de acción, se deben definir las acciones que permit
 En este plan de mantenimiento, entre otros aspectos que se puedan considerar relevantes para la organización, se deben establecer los productos finales del Plan de Sistemas de Información que se van a mantener actualizados, el soporte para los mismos, y cuándo y por quién van a ser modificados, así como la frecuencia y situaciones en los que se debe revisar el plan de proyectos y los responsables de hacerlo.
 
 También se determina a quiénes se informará, y con qué periodicidad, del grado de avance del plan establecido o de los cambios que en él se produzcan.
-Productos
 
-De entrada
+##### Productos {.unnumbered .unlisted}
+
+###### De entrada {.unnumbered .unlisted}
 
     Plan de proyectos (PSI 8.1)
 
-De salida
+###### De salida {.unnumbered .unlisted}
 
     Plan de mantenimiento del PSI
 
-Participantes
+##### Participantes {.unnumbered .unlisted}
 
     Consultores
     Consultores Informáticos
 
-
 ### Actividad PSI 9: Revisión y Aprobación del PSI {#psi-9}
 
 Esta actividad tiene como objetivo contrastar con los responsables de la dirección del Plan de Sistemas de Información la arquitectura de información y el plan de acción elaborados anteriormente, para mejorar la propuesta si se considera necesario y por último, obtener su aprobación final.
+
 TAREA 	PRODUCTOS 	TÉCNICAS Y PRÁCTICAS 	PARTICIPANTES
 PSI 9.1: Convocatoria de la Presentación 	
 
@@ -1178,9 +1304,10 @@ PSI 9.3: Aprobación del PSI
 #### Tarea PSI 9.1: Convocatoria de la Presentación {#psi-9-1}
 
 Se elabora un resumen que recoja los resultados finales de las actividades Identificación de Requisitos (PSI 4), Estudio de los sistemas de Información Actuales (PSI 5), Diseño del Modelo de Sistemas de Información (PSI 6), Definición de la Arquitectura Tecnológica (PSI 7) y Definición del Plan de Acción (PSI 8). El Jefe de Proyecto del PSI envía esta información a quienes constituyen la dirección del Plan de Sistemas de Información, para su estudio junto con la convocatoria, y espera su confirmación.
-Productos
 
-De entrada
+##### Productos {.unnumbered .unlisted}
+
+###### De entrada {.unnumbered .unlisted}
 
     Catálogo de requisitos (PSI 4.3)
     Catálogo de objetivos (PSI 5.1)
@@ -1192,15 +1319,15 @@ De entrada
         Plan de proyectos (PSI 8.1)
         Plan de mantenimiento del PSI (PSI 8.2)
 
-De salida
+###### De salida {.unnumbered .unlisted}
 
     Plan de presentación
 
-Prácticas
+##### Prácticas {.unnumbered .unlisted}
 
     Presentación
 
-Participantes
+##### Participantes {.unnumbered .unlisted}
 
     Jefe de Proyecto del PSI
     Consultores
@@ -1209,9 +1336,10 @@ Participantes
 #### Tarea PSI 9.2: Evaluación y Mejora de la Propuesta {#psi-9-2}
 
 Se realiza la presentación de los resultados, manteniéndose a continuación sesiones de trabajo guiadas por el Jefe de Proyecto del PSI, para recoger las posibles mejoras y analizar su incorporación a la propuesta.
-Productos
 
-De entrada
+##### Productos {.unnumbered .unlisted}
+
+###### De entrada {.unnumbered .unlisted}
 
     Plan de Presentación (PSI 9.1)
     Catálogo de requisitos (PSI 4.3)
@@ -1224,7 +1352,7 @@ De entrada
         Plan de proyectos (PSI 8.1)
         Plan de mantenimiento del PSI (PSI 8.2)
 
-De salida
+###### De salida {.unnumbered .unlisted}
 
     Presentación
     Catálogo de requisitos del PSI
@@ -1237,12 +1365,12 @@ De salida
             Plan de proyectos
             Plan de mantenimiento del PSI
 
-Prácticas
+##### Prácticas {.unnumbered .unlisted}
 
     Sesiones de trabajo
     Presentación
 
-Participantes
+##### Participantes {.unnumbered .unlisted}
 
     Comité de Dirección
     Jefe de Proyecto del PSI
@@ -1253,9 +1381,10 @@ Participantes
 #### Tarea PSI 9.3: Aprobación del PSI {#psi-9-3}
 
 Se entrega la propuesta final, y se solicita formalmente al Comité de Dirección del Plan de Sistemas de Información la aprobación de la misma. Por último, se debe informar de los resultados a las unidades organizativas participantes y a todas aquellas afectadas por los resultados del Plan de Sistemas de Información.
-Productos
 
-De entrada
+##### Productos {.unnumbered .unlisted}
+
+###### De entrada {.unnumbered .unlisted}
 
     Resultado de las sesiones de trabajo (PSI 9.2)
     Catálogo de requisitos del PSI (PSI 9.2)
@@ -1267,21 +1396,21 @@ De entrada
         Plan de proyectos (PSI 9.2)
         Plan de mantenimiento del PSI (PSI 9.2)
 
-De salida
+###### De salida {.unnumbered .unlisted}
 
     Aprobación formal del PSI
     Plan de comunicación del PSI
 
-Prácticas
+##### Prácticas {.unnumbered .unlisted}
 
     Sesiones de trabajo
 
-Participantes
+##### Participantes {.unnumbered .unlisted}
 
     Comité de Dirección
     Jefe de Proyecto del PSI
 
-## Participantes en las Actividades del Proceso PSI
+## Participantes en las Actividades del Proceso PSI {#participantes-psi}
 
 ```{=html}
 <table class="avia-table avia-data-table">
@@ -1510,7 +1639,7 @@ Participantes
 </table>
 ```
 
-## Técnicas/prácticas utilizadas en las actividades del proceso PSI
+## Técnicas/prácticas utilizadas en las actividades del proceso PSI {#tecnicas-practicas-psi}
 
 ```{=html}
 <table class="avia-table avia-data-table">
