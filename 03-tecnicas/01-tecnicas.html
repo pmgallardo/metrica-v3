@@ -290,10 +290,10 @@ window.Quarto = {
     <h2 id="toc-title">Tabla de contenidos</h2>
    
   <ul>
-  <li><a href="#introducción" id="toc-introducción" class="nav-link active" data-scroll-target="#introducción"><span class="header-section-number">13.1</span> Introducción</a></li>
-  <li><a href="#técnicas-de-desarrollo" id="toc-técnicas-de-desarrollo" class="nav-link" data-scroll-target="#técnicas-de-desarrollo"><span class="header-section-number">13.2</span> Técnicas de desarrollo</a>
-  <ul class="collapse">
-  <li><a href="#análisis-costebeneficio" id="toc-análisis-costebeneficio" class="nav-link" data-scroll-target="#análisis-costebeneficio"><span class="header-section-number">13.2.1</span> Análisis Coste/Beneficio</a></li>
+  <li><a href="#introduccion" id="toc-introduccion" class="nav-link active" data-scroll-target="#introduccion"><span class="header-section-number">13.1</span> Introducción</a></li>
+  <li><a href="#tecnicas-de-desarrollo" id="toc-tecnicas-de-desarrollo" class="nav-link" data-scroll-target="#tecnicas-de-desarrollo"><span class="header-section-number">13.2</span> Técnicas de desarrollo</a>
+  <ul>
+  <li><a href="#analisis-coste-beneficio" id="toc-analisis-coste-beneficio" class="nav-link" data-scroll-target="#analisis-coste-beneficio"><span class="header-section-number">13.2.1</span> Análisis Coste/Beneficio</a></li>
   <li><a href="#casos-de-uso" id="toc-casos-de-uso" class="nav-link" data-scroll-target="#casos-de-uso"><span class="header-section-number">13.2.2</span> Casos de Uso</a></li>
   <li><a href="#diagrama-de-clases" id="toc-diagrama-de-clases" class="nav-link" data-scroll-target="#diagrama-de-clases"><span class="header-section-number">13.2.3</span> Diagrama de Clases</a></li>
   <li><a href="#diagrama-de-componentes" id="toc-diagrama-de-componentes" class="nav-link" data-scroll-target="#diagrama-de-componentes"><span class="header-section-number">13.2.4</span> Diagrama de Componentes</a></li>
@@ -301,41 +301,72 @@ window.Quarto = {
   <li><a href="#diagrama-de-despliegue" id="toc-diagrama-de-despliegue" class="nav-link" data-scroll-target="#diagrama-de-despliegue"><span class="header-section-number">13.2.6</span> Diagrama de Despliegue</a></li>
   <li><a href="#diagrama-de-estructura" id="toc-diagrama-de-estructura" class="nav-link" data-scroll-target="#diagrama-de-estructura"><span class="header-section-number">13.2.7</span> Diagrama de Estructura</a></li>
   <li><a href="#diagrama-de-flujo-de-datos" id="toc-diagrama-de-flujo-de-datos" class="nav-link" data-scroll-target="#diagrama-de-flujo-de-datos"><span class="header-section-number">13.2.8</span> Diagrama de Flujo de Datos</a></li>
-  <li><a href="#diagrama-de-interacción" id="toc-diagrama-de-interacción" class="nav-link" data-scroll-target="#diagrama-de-interacción"><span class="header-section-number">13.2.9</span> Diagrama de Interacción</a></li>
-  <li><a href="#diagrama-de-paquetes" id="toc-diagrama-de-paquetes" class="nav-link" data-scroll-target="#diagrama-de-paquetes"><span class="header-section-number">13.2.10</span> Diagrama de Paquetes</a></li>
-  <li><a href="#diagrama-de-transición-de-estados" id="toc-diagrama-de-transición-de-estados" class="nav-link" data-scroll-target="#diagrama-de-transición-de-estados"><span class="header-section-number">13.2.11</span> Diagrama de Transición de Estados</a></li>
-  <li><a href="#modelado-de-procesos-de-la-organizacion" id="toc-modelado-de-procesos-de-la-organizacion" class="nav-link" data-scroll-target="#modelado-de-procesos-de-la-organizacion"><span class="header-section-number">13.2.12</span> Modelado de Procesos de la Organización</a></li>
-  <li><a href="#modelo-entidad-relacion-extendido" id="toc-modelo-entidad-relacion-extendido" class="nav-link" data-scroll-target="#modelo-entidad-relacion-extendido"><span class="header-section-number">13.2.13</span> Modelo Entidad/Relación Extendido</a></li>
-  <li><a href="#normalización" id="toc-normalización" class="nav-link" data-scroll-target="#normalización"><span class="header-section-number">13.2.14</span> Normalización</a></li>
-  <li><a href="#optimización" id="toc-optimización" class="nav-link" data-scroll-target="#optimización"><span class="header-section-number">13.2.15</span> Optimización</a></li>
-  <li><a href="#reglas-de-obtención-del-modelo-físico-a-partir-del-lógico" id="toc-reglas-de-obtención-del-modelo-físico-a-partir-del-lógico" class="nav-link" data-scroll-target="#reglas-de-obtención-del-modelo-físico-a-partir-del-lógico"><span class="header-section-number">13.2.16</span> Reglas de Obtención del Modelo Físico a partir del Lógico</a></li>
-  <li><a href="#reglas-de-transformación" id="toc-reglas-de-transformación" class="nav-link" data-scroll-target="#reglas-de-transformación"><span class="header-section-number">13.2.17</span> Reglas de Transformación</a></li>
-  <li><a href="#técnicas-matriciales" id="toc-técnicas-matriciales" class="nav-link" data-scroll-target="#técnicas-matriciales"><span class="header-section-number">13.2.18</span> Técnicas Matriciales</a></li>
-  </ul></li>
-  <li><a href="#técnicas-de-gestión-de-proyectos" id="toc-técnicas-de-gestión-de-proyectos" class="nav-link" data-scroll-target="#técnicas-de-gestión-de-proyectos"><span class="header-section-number">13.3</span> Técnicas de gestión de proyectos</a>
+  <li><a href="#diagrama-de-interacción" id="toc-diagrama-de-interacción" class="nav-link" data-scroll-target="#diagrama-de-interacción"><span class="header-section-number">13.2.9</span> Diagrama de Interacción</a>
   <ul class="collapse">
-  <li><a href="#técnicas-de-estimación" id="toc-técnicas-de-estimación" class="nav-link" data-scroll-target="#técnicas-de-estimación"><span class="header-section-number">13.3.1</span> Técnicas de Estimación</a></li>
+  <li><a href="#diagrama-de-secuencia" id="toc-diagrama-de-secuencia" class="nav-link" data-scroll-target="#diagrama-de-secuencia"><span class="header-section-number">13.2.9.1</span> Diagrama de Secuencia</a></li>
+  <li><a href="#diagrama-de-colaboracion" id="toc-diagrama-de-colaboracion" class="nav-link" data-scroll-target="#diagrama-de-colaboracion"><span class="header-section-number">13.2.9.2</span> Diagrama de Colaboración</a></li>
+  </ul></li>
+  <li><a href="#diagrama-de-paquetes" id="toc-diagrama-de-paquetes" class="nav-link" data-scroll-target="#diagrama-de-paquetes"><span class="header-section-number">13.2.10</span> Diagrama de Paquetes</a></li>
+  <li><a href="#diagrama-de-transicion-de-estados" id="toc-diagrama-de-transicion-de-estados" class="nav-link" data-scroll-target="#diagrama-de-transicion-de-estados"><span class="header-section-number">13.2.11</span> Diagrama de Transición de Estados</a></li>
+  <li><a href="#modelado-de-procesos-de-la-organizacion" id="toc-modelado-de-procesos-de-la-organizacion" class="nav-link" data-scroll-target="#modelado-de-procesos-de-la-organizacion"><span class="header-section-number">13.2.12</span> Modelado de Procesos de la Organización</a>
+  <ul class="collapse">
+  <li><a href="#sadt" id="toc-sadt" class="nav-link" data-scroll-target="#sadt"><span class="header-section-number">13.2.12.1</span> SADT (Structured Analysis and Design Technique)</a></li>
+  </ul></li>
+  <li><a href="#modelo-entidad-relacion-extendido" id="toc-modelo-entidad-relacion-extendido" class="nav-link" data-scroll-target="#modelo-entidad-relacion-extendido"><span class="header-section-number">13.2.13</span> Modelo Entidad/Relación Extendido</a></li>
+  <li><a href="#normalizacion" id="toc-normalizacion" class="nav-link" data-scroll-target="#normalizacion"><span class="header-section-number">13.2.14</span> Normalización</a></li>
+  <li><a href="#optimizacion" id="toc-optimizacion" class="nav-link" data-scroll-target="#optimizacion"><span class="header-section-number">13.2.15</span> Optimización</a></li>
+  <li><a href="#reglas-de-obtencion-del-modelo-fisico-a-partir-del-logico" id="toc-reglas-de-obtencion-del-modelo-fisico-a-partir-del-logico" class="nav-link" data-scroll-target="#reglas-de-obtencion-del-modelo-fisico-a-partir-del-logico"><span class="header-section-number">13.2.16</span> Reglas de Obtención del Modelo Físico a partir del Lógico</a></li>
+  <li><a href="#reglas-de-transformacion" id="toc-reglas-de-transformacion" class="nav-link" data-scroll-target="#reglas-de-transformacion"><span class="header-section-number">13.2.17</span> Reglas de Transformación</a></li>
+  <li><a href="#tecnicas-matriciales" id="toc-tecnicas-matriciales" class="nav-link" data-scroll-target="#tecnicas-matriciales"><span class="header-section-number">13.2.18</span> Técnicas Matriciales</a></li>
+  </ul></li>
+  <li><a href="#tecnicas-de-gestion-de-proyectos" id="toc-tecnicas-de-gestion-de-proyectos" class="nav-link" data-scroll-target="#tecnicas-de-gestion-de-proyectos"><span class="header-section-number">13.3</span> Técnicas de gestión de proyectos</a>
+  <ul>
+  <li><a href="#tecnicas-de-estimacion" id="toc-tecnicas-de-estimacion" class="nav-link" data-scroll-target="#tecnicas-de-estimacion"><span class="header-section-number">13.3.1</span> Técnicas de Estimación</a>
+  <ul class="collapse">
+  <li><a href="#metodo-albrecht" id="toc-metodo-albrecht" class="nav-link" data-scroll-target="#metodo-albrecht"><span class="header-section-number">13.3.1.1</span> Método Albrecht para el Análisis de los Puntos Función</a></li>
+  <li><a href="#metodo-mark-ii" id="toc-metodo-mark-ii" class="nav-link" data-scroll-target="#metodo-mark-ii"><span class="header-section-number">13.3.1.2</span> Método MARK II para el Análisis de los Puntos Función</a></li>
+  </ul></li>
   <li><a href="#staffing-size" id="toc-staffing-size" class="nav-link" data-scroll-target="#staffing-size"><span class="header-section-number">13.3.2</span> Staffing Size (Orientación a Objetos)</a></li>
-  <li><a href="#planificación" id="toc-planificación" class="nav-link" data-scroll-target="#planificación"><span class="header-section-number">13.3.3</span> Planificación</a></li>
+  <li><a href="#planificacion" id="toc-planificacion" class="nav-link" data-scroll-target="#planificacion"><span class="header-section-number">13.3.3</span> Planificación</a>
+  <ul class="collapse">
+  <li><a href="#pert" id="toc-pert" class="nav-link" data-scroll-target="#pert"><span class="header-section-number">13.3.3.1</span> Program Evaluation &amp; Review Technique – PERT</a></li>
+  <li><a href="#diagrama-de-gantt" id="toc-diagrama-de-gantt" class="nav-link" data-scroll-target="#diagrama-de-gantt"><span class="header-section-number">13.3.3.2</span> Diagrama de Gantt</a></li>
+  <li><a href="#estructura-de-descomposicion-de-trabajo" id="toc-estructura-de-descomposicion-de-trabajo" class="nav-link" data-scroll-target="#estructura-de-descomposicion-de-trabajo"><span class="header-section-number">13.3.3.3</span> Estructura de Descomposición de Trabajo (WBS – Work Breakdown Structure)</a></li>
+  <li><a href="#diagrama-de-extrapolacion" id="toc-diagrama-de-extrapolacion" class="nav-link" data-scroll-target="#diagrama-de-extrapolacion"><span class="header-section-number">13.3.3.4</span> Diagrama de Extrapolación</a></li>
+  </ul></li>
   </ul></li>
   <li><a href="#practicas" id="toc-practicas" class="nav-link" data-scroll-target="#practicas"><span class="header-section-number">13.4</span> Prácticas</a>
-  <ul class="collapse">
-  <li><a href="#análisis-de-impacto" id="toc-análisis-de-impacto" class="nav-link" data-scroll-target="#análisis-de-impacto"><span class="header-section-number">13.4.1</span> Análisis de Impacto</a></li>
-  <li><a href="#catalogación" id="toc-catalogación" class="nav-link" data-scroll-target="#catalogación"><span class="header-section-number">13.4.2</span> Catalogación</a></li>
-  <li><a href="#cálculo-de-accesos" id="toc-cálculo-de-accesos" class="nav-link" data-scroll-target="#cálculo-de-accesos"><span class="header-section-number">13.4.3</span> Cálculo de Accesos</a></li>
+  <ul>
+  <li><a href="#analisis-de-impacto" id="toc-analisis-de-impacto" class="nav-link" data-scroll-target="#analisis-de-impacto"><span class="header-section-number">13.4.1</span> Análisis de Impacto</a></li>
+  <li><a href="#catalogacion" id="toc-catalogacion" class="nav-link" data-scroll-target="#catalogacion"><span class="header-section-number">13.4.2</span> Catalogación</a></li>
+  <li><a href="#calculo-de-accesos" id="toc-calculo-de-accesos" class="nav-link" data-scroll-target="#calculo-de-accesos"><span class="header-section-number">13.4.3</span> Cálculo de Accesos</a></li>
   <li><a href="#caminos-de-acceso" id="toc-caminos-de-acceso" class="nav-link" data-scroll-target="#caminos-de-acceso"><span class="header-section-number">13.4.4</span> Caminos de Acceso</a></li>
-  <li><a href="#diagrama-de-representación" id="toc-diagrama-de-representación" class="nav-link" data-scroll-target="#diagrama-de-representación"><span class="header-section-number">13.4.5</span> Diagrama de Representación</a></li>
+  <li><a href="#diagrama-de-representacion" id="toc-diagrama-de-representacion" class="nav-link" data-scroll-target="#diagrama-de-representacion"><span class="header-section-number">13.4.5</span> Diagrama de Representación</a></li>
   <li><a href="#factores-criticos-de-exito" id="toc-factores-criticos-de-exito" class="nav-link" data-scroll-target="#factores-criticos-de-exito"><span class="header-section-number">13.4.6</span> Factores Críticos de Éxito</a></li>
-  <li><a href="#impacto-en-la-organización" id="toc-impacto-en-la-organización" class="nav-link" data-scroll-target="#impacto-en-la-organización"><span class="header-section-number">13.4.7</span> Impacto en la Organización</a></li>
+  <li><a href="#impacto-en-la-organizacion" id="toc-impacto-en-la-organizacion" class="nav-link" data-scroll-target="#impacto-en-la-organizacion"><span class="header-section-number">13.4.7</span> Impacto en la Organización</a></li>
   <li><a href="#presentaciones" id="toc-presentaciones" class="nav-link" data-scroll-target="#presentaciones"><span class="header-section-number">13.4.8</span> Presentaciones</a></li>
   <li><a href="#prototipado" id="toc-prototipado" class="nav-link" data-scroll-target="#prototipado"><span class="header-section-number">13.4.9</span> Prototipado</a></li>
-  <li><a href="#pruebas" id="toc-pruebas" class="nav-link" data-scroll-target="#pruebas"><span class="header-section-number">13.4.10</span> Pruebas</a></li>
-  <li><a href="#revisión-formal" id="toc-revisión-formal" class="nav-link" data-scroll-target="#revisión-formal"><span class="header-section-number">13.4.11</span> Revisión Formal</a></li>
-  <li><a href="#revisión-técnica" id="toc-revisión-técnica" class="nav-link" data-scroll-target="#revisión-técnica"><span class="header-section-number">13.4.12</span> Revisión Técnica</a></li>
-  <li><a href="#sesiones-de-trabajo" id="toc-sesiones-de-trabajo" class="nav-link" data-scroll-target="#sesiones-de-trabajo"><span class="header-section-number">13.4.13</span> Sesiones de Trabajo</a></li>
+  <li><a href="#pruebas" id="toc-pruebas" class="nav-link" data-scroll-target="#pruebas"><span class="header-section-number">13.4.10</span> Pruebas</a>
+  <ul class="collapse">
+  <li><a href="#pruebas-unitarias" id="toc-pruebas-unitarias" class="nav-link" data-scroll-target="#pruebas-unitarias"><span class="header-section-number">13.4.10.1</span> Pruebas Unitarias</a></li>
+  <li><a href="#pruebas-de-integracion" id="toc-pruebas-de-integracion" class="nav-link" data-scroll-target="#pruebas-de-integracion"><span class="header-section-number">13.4.10.2</span> Pruebas de Integración</a></li>
+  <li><a href="#pruebas-del-sistema" id="toc-pruebas-del-sistema" class="nav-link" data-scroll-target="#pruebas-del-sistema"><span class="header-section-number">13.4.10.3</span> Pruebas del Sistema</a></li>
+  <li><a href="#pruebas-de-implantacion" id="toc-pruebas-de-implantacion" class="nav-link" data-scroll-target="#pruebas-de-implantacion"><span class="header-section-number">13.4.10.4</span> Pruebas de Implantación</a></li>
+  <li><a href="#pruebas-de-aceptacion" id="toc-pruebas-de-aceptacion" class="nav-link" data-scroll-target="#pruebas-de-aceptacion"><span class="header-section-number">13.4.10.5</span> Pruebas de Aceptación</a></li>
+  <li><a href="#pruebas-de-regresion" id="toc-pruebas-de-regresion" class="nav-link" data-scroll-target="#pruebas-de-regresion"><span class="header-section-number">13.4.10.6</span> Pruebas de Regresión</a></li>
+  </ul></li>
+  <li><a href="#revision-formal" id="toc-revision-formal" class="nav-link" data-scroll-target="#revision-formal"><span class="header-section-number">13.4.11</span> Revisión Formal</a></li>
+  <li><a href="#revision-tecnica" id="toc-revision-tecnica" class="nav-link" data-scroll-target="#revision-tecnica"><span class="header-section-number">13.4.12</span> Revisión Técnica</a></li>
+  <li><a href="#sesiones-de-trabajo" id="toc-sesiones-de-trabajo" class="nav-link" data-scroll-target="#sesiones-de-trabajo"><span class="header-section-number">13.4.13</span> Sesiones de Trabajo</a>
+  <ul class="collapse">
+  <li><a href="#entrevistas" id="toc-entrevistas" class="nav-link" data-scroll-target="#entrevistas"><span class="header-section-number">13.4.13.1</span> Entrevistas</a></li>
+  <li><a href="#reuniones" id="toc-reuniones" class="nav-link" data-scroll-target="#reuniones"><span class="header-section-number">13.4.13.2</span> Reuniones</a></li>
+  <li><a href="#jad" id="toc-jad" class="nav-link" data-scroll-target="#jad"><span class="header-section-number">13.4.13.3</span> JAD (Joint Application Design)</a></li>
+  <li><a href="#jrp" id="toc-jrp" class="nav-link" data-scroll-target="#jrp"><span class="header-section-number">13.4.13.4</span> JRP (Joint Requeriments Planning)</a></li>
+  </ul></li>
   </ul></li>
   <li><a href="#soporte-por-herramientas" id="toc-soporte-por-herramientas" class="nav-link" data-scroll-target="#soporte-por-herramientas"><span class="header-section-number">13.5</span> Soporte por herramientas</a></li>
-  <li><a href="#bibliografía" id="toc-bibliografía" class="nav-link" data-scroll-target="#bibliografía"><span class="header-section-number">13.6</span> Bibliografía</a></li>
+  <li><a href="#bibliografia" id="toc-bibliografia" class="nav-link" data-scroll-target="#bibliografia"><span class="header-section-number">13.6</span> Bibliografía</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/pmgallardo/metrica-v3/edit/main/03-tecnicas/01-tecnicas.qmd" class="toc-action"><i class="bi bi-github"></i>Editar esta página</a></li><li><a href="https://github.com/pmgallardo/metrica-v3/issues/new" class="toc-action"><i class="bi empty"></i>Informar sobre problema</a></li><li><a href="https://github.com/pmgallardo/metrica-v3/blob/main/03-tecnicas/01-tecnicas.qmd" class="toc-action"><i class="bi empty"></i>Ver el código</a></li></ul></div></nav>
     </div>
@@ -361,8 +392,8 @@ window.Quarto = {
 </header>
 
 
-<section id="introducción" class="level2" data-number="13.1">
-<h2 data-number="13.1" class="anchored" data-anchor-id="introducción"><span class="header-section-number">13.1</span> Introducción</h2>
+<section id="introduccion" class="level2" data-number="13.1">
+<h2 data-number="13.1" class="anchored" data-anchor-id="introduccion"><span class="header-section-number">13.1</span> Introducción</h2>
 <p>El objetivo de este documento es describir las técnicas utilizadas en los procesos principales y en el proceso de Gestión de Proyectos.</p>
 <p>En el proceso de Desarrollo de Sistemas de Información se incluyen tanto las técnicas propias de un desarrollo orientado a objetos como estructurado, ya que las actividades de ambas aproximaciones están integradas en una estructura común.</p>
 <p>La metodología MÉTRICA Versión 3 proporciona un conjunto de métodos y técnicas que guía a los distintos profesionales de Sistemas y Tecnologías de la Información y Comunicaciones (STIC) en la obtención de los diversos productos de los procesos del ciclo de vida de un proyecto informático. Con el fin de mejorar la productividad de los distintos participantes y asegurar la calidad de los productos resultantes, la mayoría de las técnicas propuestas están soportadas por herramientas disponibles en el mercado que automatizan en mayor o menor grado su utilización.&nbsp;En cualquier caso, no todos los productos resultantes de cada tarea son susceptibles de obtenerse de forma automatizada.</p>
@@ -371,8 +402,8 @@ window.Quarto = {
 <p>Por continuidad con MÉTRICA Versión 2.1 la notación empleada es la misma para aquellas técnicas que son comunes en ambas versiones. En el caso de desarrollos orientados a objetos se ha seguido la notación de UML.</p>
 <p>Es importante resaltar que la notación que se propone en la aplicación de la técnica en ningún caso se considerará obligatoria. Cada organización podrá utilizar la notación que desee, la que suele utilizar o la que ofrecen sus herramientas de desarrollo, respetando las reglas y restricciones específicas de las distintas técnicas.</p>
 </section>
-<section id="técnicas-de-desarrollo" class="level2" data-number="13.2">
-<h2 data-number="13.2" class="anchored" data-anchor-id="técnicas-de-desarrollo"><span class="header-section-number">13.2</span> Técnicas de desarrollo</h2>
+<section id="tecnicas-de-desarrollo" class="level2" data-number="13.2">
+<h2 data-number="13.2" class="anchored" data-anchor-id="tecnicas-de-desarrollo"><span class="header-section-number">13.2</span> Técnicas de desarrollo</h2>
 <p>Las técnicas de desarrollo son un conjunto de procedimientos que se basan en reglas y notaciones específicas en términos de sintaxis, semántica y gráficos, orientadas a la obtención de productos en el desarrollo de un sistema de información.&nbsp;En desarrollos del tipo estructurado o de orientación a objetos merecen especial atención las técnicas gráficas, que proponen símbolos y notaciones estándares para una mejor comprensión de los sistemas o sus componentes. De todos modos, y debido a la diversidad existente, las notaciones aquí propuestas no se consideran obligatorias en la metodología MÉTRICA Versión 3, pero sí que se deben aplicar rigurosamente sus reglas y validaciones para conseguir el objetivo propuesto con la mayor eficacia.</p>
 <p>Análisis Coste/Beneficio Casos de Uso Diagrama de Clases Diagrama de Componentes Diagrama de Descomposición Diagrama de Despliegue Diagrama de Estructura Diagrama de Flujo de Datos Diagrama de Interacción</p>
 <pre><code>Diagrama de Secuencia
@@ -380,8 +411,8 @@ Diagrama de Colaboración</code></pre>
 <p>Diagrama de Paquetes Diagrama de Transición de Estados Modelado de Procesos de la Organización</p>
 <pre><code>SADT (Structured Analysis and Design Technique)</code></pre>
 <p>Modelo Entidad/Relación Extendido Normalización Optimización Reglas de Obtención del Modelo Físico a partir del Lógico Reglas de Transformación Técnicas Matriciales</p>
-<section id="análisis-costebeneficio" class="level3" data-number="13.2.1">
-<h3 data-number="13.2.1" class="anchored" data-anchor-id="análisis-costebeneficio"><span class="header-section-number">13.2.1</span> Análisis Coste/Beneficio</h3>
+<section id="analisis-coste-beneficio" class="level3" data-number="13.2.1">
+<h3 data-number="13.2.1" class="anchored" data-anchor-id="analisis-coste-beneficio"><span class="header-section-number">13.2.1</span> Análisis Coste/Beneficio</h3>
 <p>La técnica de análisis coste/beneficio tiene como objetivo fundamental proporcionar una medida de los costes en que se incurre en la realización de un proyecto y comparar dichos costes previstos con los beneficios esperados de la realización de dicho proyecto. Esta medida o estimación servirá para:</p>
 <pre><code>Valorar la necesidad y oportunidad de acometer la realización del proyecto.
 Seleccionar la alternativa más beneficiosa para la realización del proyecto.
@@ -1008,8 +1039,8 @@ Casual: un módulo realiza un conjunto de tareas que tienen poca o ninguna rela
 </div>
 </section>
 </section>
-<section id="diagrama-de-colaboración" class="level4" data-number="13.2.9.2">
-<h4 data-number="13.2.9.2" class="anchored" data-anchor-id="diagrama-de-colaboración"><span class="header-section-number">13.2.9.2</span> Diagrama de Colaboración</h4>
+<section id="diagrama-de-colaboracion" class="level4" data-number="13.2.9.2">
+<h4 data-number="13.2.9.2" class="anchored" data-anchor-id="diagrama-de-colaboracion"><span class="header-section-number">13.2.9.2</span> Diagrama de Colaboración</h4>
 <p>El diagrama de colaboración es un tipo de diagrama de interacción cuyo objetivo es describir el comportamiento dinámico del sistema de información mostrando cómo interactúan los objetos entre sí, es decir, con qué otros objetos tiene vínculos o intercambia mensajes un determinado objeto. Descripción</p>
 <p>Un diagrama de colaboración muestra la misma información que un diagrama de secuencia pero de forma diferente. En los diagramas de colaboración no existe una secuencia temporal en el eje vertical; es decir, la colocación de los mensajes en el diagrama no indica cuál es el orden en el que se suceden. Además, la colocación de los objetos es más flexible y permite mostrar de forma más clara cuáles son las colaboraciones entre ellos. En estos diagramas la comunicación entre objetos se denomina vínculo o enlace (link) y estará particularizada mediante los mensajes que intercambian.</p>
 <section id="notación-6" class="level5 unnumbered unlisted">
@@ -1045,13 +1076,13 @@ Casual: un módulo realiza un conjunto de tareas que tienen poca o ninguna rela
 <section id="diagrama-de-paquetes" class="level3" data-number="13.2.10">
 <h3 data-number="13.2.10" class="anchored" data-anchor-id="diagrama-de-paquetes"><span class="header-section-number">13.2.10</span> Diagrama de Paquetes</h3>
 </section>
-<section id="diagrama-de-transición-de-estados" class="level3" data-number="13.2.11">
-<h3 data-number="13.2.11" class="anchored" data-anchor-id="diagrama-de-transición-de-estados"><span class="header-section-number">13.2.11</span> Diagrama de Transición de Estados</h3>
+<section id="diagrama-de-transicion-de-estados" class="level3" data-number="13.2.11">
+<h3 data-number="13.2.11" class="anchored" data-anchor-id="diagrama-de-transicion-de-estados"><span class="header-section-number">13.2.11</span> Diagrama de Transición de Estados</h3>
 </section>
 <section id="modelado-de-procesos-de-la-organizacion" class="level3" data-number="13.2.12">
 <h3 data-number="13.2.12" class="anchored" data-anchor-id="modelado-de-procesos-de-la-organizacion"><span class="header-section-number">13.2.12</span> Modelado de Procesos de la Organización</h3>
-<section id="sadt-structured-analysis-and-design-technique" class="level4" data-number="13.2.12.1">
-<h4 data-number="13.2.12.1" class="anchored" data-anchor-id="sadt-structured-analysis-and-design-technique"><span class="header-section-number">13.2.12.1</span> SADT (Structured Analysis and Design Technique)</h4>
+<section id="sadt" class="level4" data-number="13.2.12.1">
+<h4 data-number="13.2.12.1" class="anchored" data-anchor-id="sadt"><span class="header-section-number">13.2.12.1</span> SADT (Structured Analysis and Design Technique)</h4>
 </section>
 </section>
 <section id="modelo-entidad-relacion-extendido" class="level3" data-number="13.2.13">
@@ -1172,28 +1203,28 @@ Casual: un módulo realiza un conjunto de tareas que tienen poca o ninguna rela
 <p>Por otro lado, se han incluido atributos que caracterizan la relación <em>Trabaja en</em>, como son <em>fecha de asignación</em> y <em>fecha de cese</em>, ya que un técnico no siempre estará trabajando en un proyecto, sino en determinado periodo. (Nota.- Esta notación es la más habitual, pero MÉTRICA Versión 3 no exige su utilización).</p>
 </section>
 </section>
-<section id="normalización" class="level3" data-number="13.2.14">
-<h3 data-number="13.2.14" class="anchored" data-anchor-id="normalización"><span class="header-section-number">13.2.14</span> Normalización</h3>
+<section id="normalizacion" class="level3" data-number="13.2.14">
+<h3 data-number="13.2.14" class="anchored" data-anchor-id="normalizacion"><span class="header-section-number">13.2.14</span> Normalización</h3>
 </section>
-<section id="optimización" class="level3" data-number="13.2.15">
-<h3 data-number="13.2.15" class="anchored" data-anchor-id="optimización"><span class="header-section-number">13.2.15</span> Optimización</h3>
+<section id="optimizacion" class="level3" data-number="13.2.15">
+<h3 data-number="13.2.15" class="anchored" data-anchor-id="optimizacion"><span class="header-section-number">13.2.15</span> Optimización</h3>
 </section>
-<section id="reglas-de-obtención-del-modelo-físico-a-partir-del-lógico" class="level3" data-number="13.2.16">
-<h3 data-number="13.2.16" class="anchored" data-anchor-id="reglas-de-obtención-del-modelo-físico-a-partir-del-lógico"><span class="header-section-number">13.2.16</span> Reglas de Obtención del Modelo Físico a partir del Lógico</h3>
+<section id="reglas-de-obtencion-del-modelo-fisico-a-partir-del-logico" class="level3" data-number="13.2.16">
+<h3 data-number="13.2.16" class="anchored" data-anchor-id="reglas-de-obtencion-del-modelo-fisico-a-partir-del-logico"><span class="header-section-number">13.2.16</span> Reglas de Obtención del Modelo Físico a partir del Lógico</h3>
 </section>
-<section id="reglas-de-transformación" class="level3" data-number="13.2.17">
-<h3 data-number="13.2.17" class="anchored" data-anchor-id="reglas-de-transformación"><span class="header-section-number">13.2.17</span> Reglas de Transformación</h3>
+<section id="reglas-de-transformacion" class="level3" data-number="13.2.17">
+<h3 data-number="13.2.17" class="anchored" data-anchor-id="reglas-de-transformacion"><span class="header-section-number">13.2.17</span> Reglas de Transformación</h3>
 </section>
-<section id="técnicas-matriciales" class="level3" data-number="13.2.18">
-<h3 data-number="13.2.18" class="anchored" data-anchor-id="técnicas-matriciales"><span class="header-section-number">13.2.18</span> Técnicas Matriciales</h3>
+<section id="tecnicas-matriciales" class="level3" data-number="13.2.18">
+<h3 data-number="13.2.18" class="anchored" data-anchor-id="tecnicas-matriciales"><span class="header-section-number">13.2.18</span> Técnicas Matriciales</h3>
 </section>
 </section>
-<section id="técnicas-de-gestión-de-proyectos" class="level2" data-number="13.3">
-<h2 data-number="13.3" class="anchored" data-anchor-id="técnicas-de-gestión-de-proyectos"><span class="header-section-number">13.3</span> Técnicas de gestión de proyectos</h2>
-<section id="técnicas-de-estimación" class="level3" data-number="13.3.1">
-<h3 data-number="13.3.1" class="anchored" data-anchor-id="técnicas-de-estimación"><span class="header-section-number">13.3.1</span> Técnicas de Estimación</h3>
-<section id="método-albrecht-para-el-análisis-de-los-puntos-función" class="level4" data-number="13.3.1.1">
-<h4 data-number="13.3.1.1" class="anchored" data-anchor-id="método-albrecht-para-el-análisis-de-los-puntos-función"><span class="header-section-number">13.3.1.1</span> Método Albrecht para el Análisis de los Puntos Función</h4>
+<section id="tecnicas-de-gestion-de-proyectos" class="level2" data-number="13.3">
+<h2 data-number="13.3" class="anchored" data-anchor-id="tecnicas-de-gestion-de-proyectos"><span class="header-section-number">13.3</span> Técnicas de gestión de proyectos</h2>
+<section id="tecnicas-de-estimacion" class="level3" data-number="13.3.1">
+<h3 data-number="13.3.1" class="anchored" data-anchor-id="tecnicas-de-estimacion"><span class="header-section-number">13.3.1</span> Técnicas de Estimación</h3>
+<section id="metodo-albrecht" class="level4" data-number="13.3.1.1">
+<h4 data-number="13.3.1.1" class="anchored" data-anchor-id="metodo-albrecht"><span class="header-section-number">13.3.1.1</span> Método Albrecht para el Análisis de los Puntos Función</h4>
 <p>Para proceder al cálculo de los puntos función de un sistema han de realizarse tres etapas:</p>
 <ul>
 <li>Identificación de los componentes necesarios para el cálculo.</li>
@@ -1616,51 +1647,51 @@ Facilidad de cambios: Se han tenido en cuenta criterios que facilitarán el pos
 <p>Hay quien estima que, inicialmente, se asigne 1 día de esfuerzo por cada Punto Función, de manera que a medida que vayan cerrándose proyectos se vaya modificando tal valor. Otros, basándose en valores medios de la industria informática, recomiendan partir del valor siguiente: 1 Mes de esfuerzo (21 días aproximadamente) equivale a 13 Puntos Función.</p>
 </section>
 </section>
-<section id="método-mark-ii-para-el-análisis-de-los-puntos-función" class="level4" data-number="13.3.1.2">
-<h4 data-number="13.3.1.2" class="anchored" data-anchor-id="método-mark-ii-para-el-análisis-de-los-puntos-función"><span class="header-section-number">13.3.1.2</span> Método MARK II para el Análisis de los Puntos Función</h4>
+<section id="metodo-mark-ii" class="level4" data-number="13.3.1.2">
+<h4 data-number="13.3.1.2" class="anchored" data-anchor-id="metodo-mark-ii"><span class="header-section-number">13.3.1.2</span> Método MARK II para el Análisis de los Puntos Función</h4>
 </section>
 </section>
 <section id="staffing-size" class="level3" data-number="13.3.2">
 <h3 data-number="13.3.2" class="anchored" data-anchor-id="staffing-size"><span class="header-section-number">13.3.2</span> Staffing Size (Orientación a Objetos)</h3>
 </section>
-<section id="planificación" class="level3" data-number="13.3.3">
-<h3 data-number="13.3.3" class="anchored" data-anchor-id="planificación"><span class="header-section-number">13.3.3</span> Planificación</h3>
-<section id="program-evaluation-review-technique-pert" class="level4" data-number="13.3.3.1">
-<h4 data-number="13.3.3.1" class="anchored" data-anchor-id="program-evaluation-review-technique-pert"><span class="header-section-number">13.3.3.1</span> Program Evaluation &amp; Review Technique – PERT</h4>
+<section id="planificacion" class="level3" data-number="13.3.3">
+<h3 data-number="13.3.3" class="anchored" data-anchor-id="planificacion"><span class="header-section-number">13.3.3</span> Planificación</h3>
+<section id="pert" class="level4" data-number="13.3.3.1">
+<h4 data-number="13.3.3.1" class="anchored" data-anchor-id="pert"><span class="header-section-number">13.3.3.1</span> Program Evaluation &amp; Review Technique – PERT</h4>
 </section>
 <section id="diagrama-de-gantt" class="level4" data-number="13.3.3.2">
 <h4 data-number="13.3.3.2" class="anchored" data-anchor-id="diagrama-de-gantt"><span class="header-section-number">13.3.3.2</span> Diagrama de Gantt</h4>
 </section>
-<section id="estructura-de-descomposición-de-trabajo-wbs-work-breakdown-structure" class="level4" data-number="13.3.3.3">
-<h4 data-number="13.3.3.3" class="anchored" data-anchor-id="estructura-de-descomposición-de-trabajo-wbs-work-breakdown-structure"><span class="header-section-number">13.3.3.3</span> Estructura de Descomposición de Trabajo (WBS – Work Breakdown Structure)</h4>
+<section id="estructura-de-descomposicion-de-trabajo" class="level4" data-number="13.3.3.3">
+<h4 data-number="13.3.3.3" class="anchored" data-anchor-id="estructura-de-descomposicion-de-trabajo"><span class="header-section-number">13.3.3.3</span> Estructura de Descomposición de Trabajo (WBS – Work Breakdown Structure)</h4>
 </section>
-<section id="diagrama-de-extrapolación" class="level4" data-number="13.3.3.4">
-<h4 data-number="13.3.3.4" class="anchored" data-anchor-id="diagrama-de-extrapolación"><span class="header-section-number">13.3.3.4</span> Diagrama de Extrapolación</h4>
+<section id="diagrama-de-extrapolacion" class="level4" data-number="13.3.3.4">
+<h4 data-number="13.3.3.4" class="anchored" data-anchor-id="diagrama-de-extrapolacion"><span class="header-section-number">13.3.3.4</span> Diagrama de Extrapolación</h4>
 </section>
 </section>
 </section>
 <section id="practicas" class="level2" data-number="13.4">
 <h2 data-number="13.4" class="anchored" data-anchor-id="practicas"><span class="header-section-number">13.4</span> Prácticas</h2>
-<section id="análisis-de-impacto" class="level3" data-number="13.4.1">
-<h3 data-number="13.4.1" class="anchored" data-anchor-id="análisis-de-impacto"><span class="header-section-number">13.4.1</span> Análisis de Impacto</h3>
+<section id="analisis-de-impacto" class="level3" data-number="13.4.1">
+<h3 data-number="13.4.1" class="anchored" data-anchor-id="analisis-de-impacto"><span class="header-section-number">13.4.1</span> Análisis de Impacto</h3>
 </section>
-<section id="catalogación" class="level3" data-number="13.4.2">
-<h3 data-number="13.4.2" class="anchored" data-anchor-id="catalogación"><span class="header-section-number">13.4.2</span> Catalogación</h3>
+<section id="catalogacion" class="level3" data-number="13.4.2">
+<h3 data-number="13.4.2" class="anchored" data-anchor-id="catalogacion"><span class="header-section-number">13.4.2</span> Catalogación</h3>
 </section>
-<section id="cálculo-de-accesos" class="level3" data-number="13.4.3">
-<h3 data-number="13.4.3" class="anchored" data-anchor-id="cálculo-de-accesos"><span class="header-section-number">13.4.3</span> Cálculo de Accesos</h3>
+<section id="calculo-de-accesos" class="level3" data-number="13.4.3">
+<h3 data-number="13.4.3" class="anchored" data-anchor-id="calculo-de-accesos"><span class="header-section-number">13.4.3</span> Cálculo de Accesos</h3>
 </section>
 <section id="caminos-de-acceso" class="level3" data-number="13.4.4">
 <h3 data-number="13.4.4" class="anchored" data-anchor-id="caminos-de-acceso"><span class="header-section-number">13.4.4</span> Caminos de Acceso</h3>
 </section>
-<section id="diagrama-de-representación" class="level3" data-number="13.4.5">
-<h3 data-number="13.4.5" class="anchored" data-anchor-id="diagrama-de-representación"><span class="header-section-number">13.4.5</span> Diagrama de Representación</h3>
+<section id="diagrama-de-representacion" class="level3" data-number="13.4.5">
+<h3 data-number="13.4.5" class="anchored" data-anchor-id="diagrama-de-representacion"><span class="header-section-number">13.4.5</span> Diagrama de Representación</h3>
 </section>
 <section id="factores-criticos-de-exito" class="level3" data-number="13.4.6">
 <h3 data-number="13.4.6" class="anchored" data-anchor-id="factores-criticos-de-exito"><span class="header-section-number">13.4.6</span> Factores Críticos de Éxito</h3>
 </section>
-<section id="impacto-en-la-organización" class="level3" data-number="13.4.7">
-<h3 data-number="13.4.7" class="anchored" data-anchor-id="impacto-en-la-organización"><span class="header-section-number">13.4.7</span> Impacto en la Organización</h3>
+<section id="impacto-en-la-organizacion" class="level3" data-number="13.4.7">
+<h3 data-number="13.4.7" class="anchored" data-anchor-id="impacto-en-la-organizacion"><span class="header-section-number">13.4.7</span> Impacto en la Organización</h3>
 </section>
 <section id="presentaciones" class="level3" data-number="13.4.8">
 <h3 data-number="13.4.8" class="anchored" data-anchor-id="presentaciones"><span class="header-section-number">13.4.8</span> Presentaciones</h3>
@@ -1673,27 +1704,27 @@ Facilidad de cambios: Se han tenido en cuenta criterios que facilitarán el pos
 <section id="pruebas-unitarias" class="level4" data-number="13.4.10.1">
 <h4 data-number="13.4.10.1" class="anchored" data-anchor-id="pruebas-unitarias"><span class="header-section-number">13.4.10.1</span> Pruebas Unitarias</h4>
 </section>
-<section id="pruebas-de-integración" class="level4" data-number="13.4.10.2">
-<h4 data-number="13.4.10.2" class="anchored" data-anchor-id="pruebas-de-integración"><span class="header-section-number">13.4.10.2</span> Pruebas de Integración</h4>
+<section id="pruebas-de-integracion" class="level4" data-number="13.4.10.2">
+<h4 data-number="13.4.10.2" class="anchored" data-anchor-id="pruebas-de-integracion"><span class="header-section-number">13.4.10.2</span> Pruebas de Integración</h4>
 </section>
 <section id="pruebas-del-sistema" class="level4" data-number="13.4.10.3">
 <h4 data-number="13.4.10.3" class="anchored" data-anchor-id="pruebas-del-sistema"><span class="header-section-number">13.4.10.3</span> Pruebas del Sistema</h4>
 </section>
-<section id="pruebas-de-implantación" class="level4" data-number="13.4.10.4">
-<h4 data-number="13.4.10.4" class="anchored" data-anchor-id="pruebas-de-implantación"><span class="header-section-number">13.4.10.4</span> Pruebas de Implantación</h4>
+<section id="pruebas-de-implantacion" class="level4" data-number="13.4.10.4">
+<h4 data-number="13.4.10.4" class="anchored" data-anchor-id="pruebas-de-implantacion"><span class="header-section-number">13.4.10.4</span> Pruebas de Implantación</h4>
 </section>
-<section id="pruebas-de-aceptación" class="level4" data-number="13.4.10.5">
-<h4 data-number="13.4.10.5" class="anchored" data-anchor-id="pruebas-de-aceptación"><span class="header-section-number">13.4.10.5</span> Pruebas de Aceptación</h4>
+<section id="pruebas-de-aceptacion" class="level4" data-number="13.4.10.5">
+<h4 data-number="13.4.10.5" class="anchored" data-anchor-id="pruebas-de-aceptacion"><span class="header-section-number">13.4.10.5</span> Pruebas de Aceptación</h4>
 </section>
-<section id="pruebas-de-regresión" class="level4" data-number="13.4.10.6">
-<h4 data-number="13.4.10.6" class="anchored" data-anchor-id="pruebas-de-regresión"><span class="header-section-number">13.4.10.6</span> Pruebas de Regresión</h4>
+<section id="pruebas-de-regresion" class="level4" data-number="13.4.10.6">
+<h4 data-number="13.4.10.6" class="anchored" data-anchor-id="pruebas-de-regresion"><span class="header-section-number">13.4.10.6</span> Pruebas de Regresión</h4>
 </section>
 </section>
-<section id="revisión-formal" class="level3" data-number="13.4.11">
-<h3 data-number="13.4.11" class="anchored" data-anchor-id="revisión-formal"><span class="header-section-number">13.4.11</span> Revisión Formal</h3>
+<section id="revision-formal" class="level3" data-number="13.4.11">
+<h3 data-number="13.4.11" class="anchored" data-anchor-id="revision-formal"><span class="header-section-number">13.4.11</span> Revisión Formal</h3>
 </section>
-<section id="revisión-técnica" class="level3" data-number="13.4.12">
-<h3 data-number="13.4.12" class="anchored" data-anchor-id="revisión-técnica"><span class="header-section-number">13.4.12</span> Revisión Técnica</h3>
+<section id="revision-tecnica" class="level3" data-number="13.4.12">
+<h3 data-number="13.4.12" class="anchored" data-anchor-id="revision-tecnica"><span class="header-section-number">13.4.12</span> Revisión Técnica</h3>
 </section>
 <section id="sesiones-de-trabajo" class="level3" data-number="13.4.13">
 <h3 data-number="13.4.13" class="anchored" data-anchor-id="sesiones-de-trabajo"><span class="header-section-number">13.4.13</span> Sesiones de Trabajo</h3>
@@ -1703,11 +1734,11 @@ Facilidad de cambios: Se han tenido en cuenta criterios que facilitarán el pos
 <section id="reuniones" class="level4" data-number="13.4.13.2">
 <h4 data-number="13.4.13.2" class="anchored" data-anchor-id="reuniones"><span class="header-section-number">13.4.13.2</span> Reuniones</h4>
 </section>
-<section id="jad-joint-application-design" class="level4" data-number="13.4.13.3">
-<h4 data-number="13.4.13.3" class="anchored" data-anchor-id="jad-joint-application-design"><span class="header-section-number">13.4.13.3</span> JAD (Joint Application Design)</h4>
+<section id="jad" class="level4" data-number="13.4.13.3">
+<h4 data-number="13.4.13.3" class="anchored" data-anchor-id="jad"><span class="header-section-number">13.4.13.3</span> JAD (Joint Application Design)</h4>
 </section>
-<section id="jrp-joint-requeriments-planning" class="level4" data-number="13.4.13.4">
-<h4 data-number="13.4.13.4" class="anchored" data-anchor-id="jrp-joint-requeriments-planning"><span class="header-section-number">13.4.13.4</span> JRP (Joint Requeriments Planning)</h4>
+<section id="jrp" class="level4" data-number="13.4.13.4">
+<h4 data-number="13.4.13.4" class="anchored" data-anchor-id="jrp"><span class="header-section-number">13.4.13.4</span> JRP (Joint Requeriments Planning)</h4>
 </section>
 </section>
 </section>
@@ -1790,8 +1821,8 @@ Facilidad de cambios: Se han tenido en cuenta criterios que facilitarán el pos
 </table>
 <p>Nota.- El Nivel de Soporte en blanco significa que o bien no se conocen herramientas que soporten esa técnica o práctica, o bien no son necesarias</p>
 </section>
-<section id="bibliografía" class="level2" data-number="13.6">
-<h2 data-number="13.6" class="anchored" data-anchor-id="bibliografía"><span class="header-section-number">13.6</span> Bibliografía</h2>
+<section id="bibliografia" class="level2" data-number="13.6">
+<h2 data-number="13.6" class="anchored" data-anchor-id="bibliografia"><span class="header-section-number">13.6</span> Bibliografía</h2>
 <ul>
 <li>AMBLER, S. (1998), Mapping Objects To Relational Databases. www.AmblySoft.com/mappingObjects.pdf ( 29 November 1998).</li>
 <li>ARNOLD, ROBERT S. (1995). “Application Development Trends”. Software Productivity Group, Inc.</li>
