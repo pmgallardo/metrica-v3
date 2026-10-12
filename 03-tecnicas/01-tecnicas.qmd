@@ -1,6 +1,6 @@
 # Técnicas
 
-## Introducción
+## Introducción {#introduccion}
 
 El objetivo de este documento es describir las técnicas utilizadas en los procesos principales y en el proceso de Gestión de Proyectos.
 
@@ -16,7 +16,7 @@ Por continuidad con MÉTRICA Versión 2.1 la notación empleada es la misma p
 
 Es importante resaltar que la notación que se propone en la aplicación de la técnica en ningún caso se considerará obligatoria. Cada organización podrá utilizar la notación que desee, la que suele utilizar o la que ofrecen sus herramientas de desarrollo, respetando las reglas y restricciones específicas de las distintas técnicas.
 
-## Técnicas de desarrollo
+## Técnicas de desarrollo {#tecnicas-de-desarrollo}
 
 Las técnicas de desarrollo son un conjunto de procedimientos que se basan en reglas y notaciones específicas en términos de sintaxis, semántica y gráficos, orientadas a la obtención de productos en el desarrollo de un sistema de información. En desarrollos del tipo estructurado o de orientación a objetos merecen especial atención las técnicas gráficas, que proponen símbolos y notaciones estándares para una mejor comprensión de los sistemas o sus componentes. De todos modos, y debido a la diversidad existente, las notaciones aquí propuestas no se consideran obligatorias en la metodología MÉTRICA Versión 3, pero sí que se deben aplicar rigurosamente sus reglas y validaciones para conseguir el objetivo propuesto con la mayor eficacia.
 
@@ -383,7 +383,7 @@ Estudio del sistema encargado de la gestión de préstamos y reservas de libro
 
 (Nota.- Esta notación es la más habitual, pero MÉTRICA Versión 3 no exige su utilización).
 
-### Diagrama de Componentes
+### Diagrama de Componentes {#diagrama-de-componentes}
 
 El diagrama de componentes proporciona una visión física de la construcción del sistema de información. Muestra la organización de los componentes software, sus interfaces y las dependencias entre ellos.
 
@@ -843,7 +843,7 @@ Diagrama de secuencia para el caso de uso: Prestar un ejemplar de una aplicacio�
 
 ![Ejemplo de Diagrama de secuencia](../images/secuencia-ejemplo.png)
 
-#### Diagrama de Colaboración
+#### Diagrama de Colaboración {#diagrama-de-colaboracion}
 
 El diagrama de colaboración es un tipo de diagrama de interacción cuyo objetivo es describir el comportamiento dinámico del sistema de información mostrando cómo interactúan los objetos entre sí, es decir, con qué otros objetos tiene vínculos o intercambia mensajes un determinado objeto.
 Descripción
@@ -876,10 +876,10 @@ Diagrama de colaboración para el caso de uso: Prestar un ejemplar de una aplic
 
 (Nota.- Esta notación es la más habitual, pero MÉTRICA Versión 3 no exige su utilización).
 
-### Diagrama de Paquetes
-### Diagrama de Transición de Estados
+### Diagrama de Paquetes {#diagrama-de-paquetes}
+### Diagrama de Transición de Estados {#diagrama-de-transicion-de-estados}
 ### Modelado de Procesos de la Organización {#modelado-de-procesos-de-la-organizacion}
-#### SADT (Structured Analysis and Design Technique)
+#### SADT (Structured Analysis and Design Technique) {#sadt}
 
 ### Modelo Entidad/Relación Extendido {#modelo-entidad-relacion-extendido}
 
@@ -1014,17 +1014,18 @@ Los tipos de correspondencia son `1:N` entre DEPARTAMENTO y EMPLEADO, pues un de
 
 Por otro lado, se han incluido atributos que caracterizan la relación *Trabaja en*, como son *fecha de asignación* y *fecha de cese*, ya que un técnico no siempre estará trabajando en un proyecto, sino en determinado periodo. (Nota.- Esta notación es la más habitual, pero MÉTRICA Versión 3 no exige su utilización).
 
-### Normalización
-### Optimización
-### Reglas de Obtención del Modelo Físico a partir del Lógico
-### Reglas de Transformación
-### Técnicas Matriciales
+### Normalización {#normalizacion}
+### Optimización {#optimizacion}
+### Reglas de Obtención del Modelo Físico a partir del Lógico {#reglas-de-obtencion-del-modelo-fisico-a-partir-del-logico}
+### Reglas de Transformación {#reglas-de-transformacion}
 
-## Técnicas de gestión de proyectos
+### Técnicas Matriciales {#tecnicas-matriciales}
 
-### Técnicas de Estimación
+## Técnicas de gestión de proyectos {#tecnicas-de-gestion-de-proyectos}
 
-#### Método Albrecht para el Análisis de los Puntos Función
+### Técnicas de Estimación {#tecnicas-de-estimacion}
+
+#### Método Albrecht para el Análisis de los Puntos Función {#metodo-albrecht}
 
 Para proceder al cálculo de los puntos función de un sistema han de realizarse tres etapas:
 
@@ -1346,69 +1347,69 @@ En cada organización se asigna un valor en días diferente para el Punto Func
 
 Hay quien estima que, inicialmente, se asigne 1 día de esfuerzo por cada Punto Función, de manera que a medida que vayan cerrándose proyectos se vaya modificando tal valor. Otros, basándose en valores medios de la industria informática, recomiendan partir del valor siguiente: 1 Mes de esfuerzo (21 días aproximadamente) equivale a 13 Puntos Función.
 
-#### Método MARK II para el Análisis de los Puntos Función
+#### Método MARK II para el Análisis de los Puntos Función {#metodo-mark-ii}
 
 ### Staffing Size (Orientación a Objetos) {#staffing-size}
 
-### Planificación
+### Planificación {#planificacion}
 
-#### Program Evaluation & Review Technique – PERT
+#### Program Evaluation & Review Technique – PERT {#pert}
 
-#### Diagrama de Gantt
+#### Diagrama de Gantt {#diagrama-de-gantt}
 
-#### Estructura de Descomposición de Trabajo (WBS – Work Breakdown Structure)
+#### Estructura de Descomposición de Trabajo (WBS – Work Breakdown Structure) {#estructura-de-descomposicion-de-trabajo}
 
-#### Diagrama de Extrapolación
+#### Diagrama de Extrapolación {#diagrama-de-extrapolacion}
 
 ## Prácticas {#practicas}
 
-### Análisis de Impacto
+### Análisis de Impacto {#analisis-de-impacto}
 
-### Catalogación
+### Catalogación {#catalogacion}
 
-### Cálculo de Accesos
+### Cálculo de Accesos {#calculo-de-accesos}
 
-### Caminos de Acceso
+### Caminos de Acceso {#caminos-de-acceso}
 
 ### Diagrama de Representación
 
 ### Factores Críticos de Éxito {#factores-criticos-de-exito}
 
-### Impacto en la Organización
+### Impacto en la Organización {#impacto-en-la-organizacion}
 
-### Presentaciones
+### Presentaciones {#presentaciones}
 
-### Prototipado
+### Prototipado {#prototipado}
 
-### Pruebas
+### Pruebas {#pruebas}
 
-#### Pruebas Unitarias
+#### Pruebas Unitarias {#pruebas-unitarias}
 
-#### Pruebas de Integración
+#### Pruebas de Integración {#pruebas-de-integracion}
 
-#### Pruebas del Sistema
+#### Pruebas del Sistema {#pruebas-del-sistema}
 
-#### Pruebas de Implantación
+#### Pruebas de Implantación {#pruebas-de-implantacion}
 
-#### Pruebas de Aceptación
+#### Pruebas de Aceptación {#pruebas-de-aceptacion}
 
-#### Pruebas de Regresión
+#### Pruebas de Regresión {#pruebas-de-regresion}
 
-### Revisión Formal
+### Revisión Formal {#revision-formal}
 
-### Revisión Técnica
+### Revisión Técnica {#revision-tecnica}
 
 ### Sesiones de Trabajo {#sesiones-de-trabajo}
 
-#### Entrevistas
+#### Entrevistas {#entrevistas}
 
-#### Reuniones
+#### Reuniones {#reuniones}
 
-#### JAD (Joint Application Design)
+#### JAD (Joint Application Design) {#jad}
 
-#### JRP (Joint Requeriments Planning)
+#### JRP (Joint Requeriments Planning) {#jrp}
 
-## Soporte por herramientas
+## Soporte por herramientas {#soporte-por-herramientas}
 
 A continuación se presentan diversos cuadros para indicar el nivel de soporte por herramientas de las técnicas y prácticas descritas.
 
@@ -1433,7 +1434,7 @@ A continuación se presentan diversos cuadros para indicar el nivel de soporte p
 
 Nota.- El Nivel de Soporte en blanco significa que o bien no se conocen herramientas que soporten esa técnica o práctica, o bien no son necesarias
 
-## Bibliografía
+## Bibliografía {#bibliografia}
 
 - AMBLER, S. (1998), Mapping Objects To Relational Databases. www.AmblySoft.com/mappingObjects.pdf ( 29 November 1998).
 - ARNOLD, ROBERT S. (1995). "Application Development Trends". Software Productivity Group, Inc.
