@@ -46,7 +46,7 @@ Reglas de Obtención del Modelo Físico a partir del Lógico
 Reglas de Transformación
 Técnicas Matriciales
 
-### Análisis Coste/Beneficio
+### Análisis Coste/Beneficio {#analisis-coste-beneficio}
 
 La técnica de análisis coste/beneficio tiene como objetivo fundamental proporcionar una medida de los costes en que se incurre en la realización de un proyecto y comparar dichos costes previstos con los beneficios esperados de la realización de dicho proyecto. Esta medida o estimación servirá para:
 
@@ -1371,7 +1371,7 @@ Hay quien estima que, inicialmente, se asigne 1 día de esfuerzo por cada Punto
 
 ### Caminos de Acceso {#caminos-de-acceso}
 
-### Diagrama de Representación
+### Diagrama de Representación {#diagrama-de-representacion}
 
 ### Factores Críticos de Éxito {#factores-criticos-de-exito}
 
