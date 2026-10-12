@@ -8,7 +8,7 @@ Los perfiles establecidos son:
 
 - [Directivo](#perfil-directivo)
 - [Jefe de Proyecto](#perfil-jefe-de-proyecto)
-- [Consultor](#perfil-jefe-de-proyecto)
+- [Consultor](#perfil-consultor)
 - [Analista](#perfil-analista)
 - [Programador](#perfil-programador)
 
