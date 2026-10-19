@@ -1349,6 +1349,360 @@ Hay quien estima que, inicialmente, se asigne 1 día de esfuerzo por cada Punto
 
 #### Método MARK II para el Análisis de los Puntos Función {#metodo-mark-ii}
 
+Este método es una evolución del método de Allan J. Albrecht, siendo su principal característica que contempla el sistema como una colección de transacciones lógicas compuestas por componentes de entrada, de proceso y de salida. Estas transacciones lógicas se corresponden exactamente con las funciones del sistema, por ejemplo:
+
+- Dar de alta un empleado.
+- Actualizar una cuenta.
+- Consultar pedidos servidos.
+- Producir informe mensual de movimientos de dinero.
+
+Para cada una de estas funciones es necesario conocer las entidades que intervienen (tanto propias como de interfaz), los tipos de datos de entrada (considerando para cada tipo una única forma de tratamiento, como fechas, importes, etc.) y tipos de datos de salida (teniendo en cuenta en este caso que hay que considerar la forma de representación para su tratamiento). Es necesario conocer si se trata de una función por lotes o en línea, si se van a emplear lenguajes de tercera o de cuarta generación.
+
+##### Cálculo de los Puntos Función (método Mark II) {.unnumbered .unlisted}
+
+Para proceder al cálculo de los puntos función, según el método Mark II, habrá que realizar las siguientes etapas:
+
+- Identificación de todas las funciones.
+- Identificación de todas las entidades, tipos de datos de entrada y tipos de datos de salida.
+- Cálculo de los Puntos Función no ajustados.
+- Valoración de grados de influencia.
+- Ajuste de complejidad técnica.
+- Obtención del tamaño de las partes en línea y por lotes.
+- Cálculo del tamaño total del Sistema a partir de las partes en línea y por lotes.
+- Cálculo de la productividad estimada.
+- Cálculo del esfuerzo en horas.
+- Cálculo de la tasa del tiempo de entrega para el desarrollo.
+- Cálculo del plazo de entrega.
+- Descomposición en fases.
+
+###### Identificación de los componentes, según Mark II {.unnumbered .unlisted}
+
+En esta etapa se identifican los factores que se tienen en cuenta para el cálculo de los puntos función, siendo estos para cada función:
+
+- **Número de entidades** que intervienen en la función, tanto propias como de interfaz con otras funciones.
+- **Número de tipos de datos de entrada** que han de ser tratados por la función, considerando que para cada tipo de datos se van a realizar las mismas operaciones de validación, tratamiento, etc.
+- **Número de tipos de datos de salida** que han de ser presentados por el sistema, teniendo en cuenta para ello el tratamiento que hay que dar les para su presentación.
+
+####### Cálculo de los Puntos Función no ajustados {.unnumbered .unlisted}
+
+La tabla que aparece a continuación permite la valoración en Puntos Función no ajustados de todas las funciones que intervienen en el Sistema. Los pesos empleados para la ponderación de las entidades, tipos de datos de entrada y tipos de datos de salida han sido obtenidos por el autor del Método a partir de su experiencia y están basados en la media de la industria informática.
+
+![](../images/mark-ii-1.png)
+
+####### Valoración de grados de influencia {.unnumbered .unlisted}
+
+Al igual que en el método Albrecht, esta etapa tiene como objetivo la adaptación de la estimación a las condiciones de trabajo bajo las que el sistema ha de ser desarrollado.
+
+Mark II amplía los 14 atributos de ajuste a 19.
+
+A cada atributo se le asignará un valor entre 0 y 5, dependiendo del grado de influencia de éstos, siendo los posibles valores los siguientes:
+
+- **Sin influencia (0)**. El sistema no contempla este atributo.
+- **Influencia mínima (1)**. La influencia de este atributo es muy poco significativa.
+- **Influencia moderada (2)**. El sistema contempla este atributo y su influencia, aunque pequeña, ha de ser considerada.
+- **Influencia apreciable (3)**. La importancia de este atributo debe ser tenida en cuenta, aunque no es fundamental.
+- **Influencia significativa (4)**. Este atributo tiene una gran importancia para el Sistema.
+- **Influencia muy fuerte (5)**. Este atributo es esencial para el Sistema y ha de ser tenido en cuenta a la hora del diseño.
+
+Los 19 atributos que se contemplan en esta técnica y sus significados aparecen a continuación.
+
+1. Comunicación de datos: Los datos usados en la aplicación se envían o reciben por teleproceso. Los posibles valores para este atributo son:
+
+     0 – La aplicación es un proceso por lotes puro.  
+     1 – Proceso por lotes con impresión remota o entrada remota de datos.  
+     2 – Proceso por lotes con impresión remota y entrada remota de datos .  
+     3 – El TP es la interfaz para un proceso por lotes.  
+     4 – La aplicación está basada en un TP interactivo, pero con un solo protocolo de comunicaciones.  
+     5 – La aplicación está basada en un TP interactivo, pero con más de un protocolo de comunicaciones.  
+     
+2. Funciones distribuidas: Funciones de datos o procesos distribuidas. Los posibles valores para este atributo son:
+
+     0 – La aplicación no tiene el objetivo de transferir datos o funciones procesadas entre dos sistemas.  
+     1 – Datos preparados de la aplicación para su procesamiento por el usuario final sobre otro componente del sistema.  
+     2 – La aplicación prepara los datos para procesarlos sobre otra máquina diferente (no usuario final).  
+     3 – Proceso distribuido, en línea, con transferencia de datos en una única dirección.  
+     4 – Como el anterior, pero con transferencia de datos en ambas direcciones.  
+     5 – Las funciones de proceso se realizan dinámicamente sobre el componente del sistema más apropiado.  
+     
+3. Prestaciones: Consideración en el diseño, instalación y mantenimiento de factores de rendimiento como el tiempo de respuesta, la capacidad de proceso, etc. Los posibles valores para este atributo son:
+
+     0 – No hay requerimientos especiales.  
+     1 – Se establecen requerimientos para las prestaciones, pero sin tratamiento específico.  
+     2 – Respuesta crítica del Proceso en línea durante las horas punta. No hay especificaciones para la utilización de CPU.  
+     3 – Respuesta crítica del Proceso en línea durante los días laborables. No hay especificaciones para la utilización de CPU. Proceso afectado por aplicaciones de interfaz.  
+     4 – Las tareas de análisis de las prestaciones se incluyen en la fase de diseño para establecer los requerimientos de usuario.  
+     5 – Además, se emplearán herramientas específicas para el diseño que contemplen estás características.  
+
+4. Gran uso de la configuración: Cuando además de los objetivos de rendimiento se considera una gran utilización. El usuario ha de utilizar la aplicación en un entorno bastante cargado. Los posibles valores para este atributo son:
+
+     0-3 – Típica aplicación sobre máquina de producción, sin restricciones de operación declaradas.  
+     4 – Las restricciones de operación declaradas requieren imperativos especiales sobre la aplicación en el procesador central.  
+     5 – Además, existen imperativos especiales sobre la aplicación en componentes distribuidos del sistema.  
+
+5. Velocidad de las transacciones: Número alto de transacciones por unidad de tiempo que influyen en el diseño, instalación y posterior mantenimiento. Los posibles valores para este atributo son:
+   
+   0 – Las transacciones no están afectadas por picos de tráfico.  
+   1 – 10% de transacciones afectadas por los picos de tráfico.  
+   2 – 50% de transacciones afectadas por los picos de tráfico.  
+   3 – 100% de transacciones afectadas por los picos de tráfico.  
+   4 – Se incluyen tareas de análisis para las funciones en la fase de diseño para lograr los altos índices de función declarados por el usuario en los requerimientos de la aplicación o acuerdos de nivel de servicio (SLA).  
+   5 – Además, se utilizan herramientas de análisis para las prestaciones en las fases de diseño, desarrollo y / o instalación para lograr los altos índices de función declarados por el usuario en los requerimientos de la aplicación o acuerdos de nivel de servicio (SLA).  
+        
+6. Entrada de datos en línea: La toma de datos de la aplicación se realiza en línea. Los posibles valores para este atributo son:
+   
+   0 – Todas las transacciones son por lotes.
+   1 – Entre el 1 y el 7% de las funciones son entradas interactivas de datos.  
+   2 – Entre el 8 y el 15% de las funciones son entradas interactivas de datos.  
+   3 – Entre el 16 y el 23% de las funciones son entradas interactivas de datos.  
+   4 – Entre el 24 y el 30% de las funciones son entradas interactivas de datos.  
+   5 – Más del 30% de las funciones son entradas interactivas de datos.  
+        
+7. Diseño para la eficiencia del usuario final: Se incluyen tareas de diseño para consideraciones especiales del usuario en la Fase de Diseño para atender los requerimientos del usuario, por ejemplo:
+
+   Ayuda de navegación.  
+   Menús.  
+   Ayuda en línea.  
+   Movimiento automático del cursor.  
+   Scrolling.  
+   Impresión remota.  
+   Teclas de función preestablecidas.  
+   Procesos por lotes lanzados desde transacciones en línea.  
+   Selección de datos con el cursor.  
+   Gran uso de facilidades en el monitor (colores, textos resaltados, etc.).  
+   Copia impresa de las transacciones en línea.  
+   Ratón.  
+   Windows.  
+   Pantallas reducidas.  
+   Bilingüismo.  
+   Multilingüismo.  
+   
+   Los posibles valores para este atributo son:
+   
+     0 – No se han declarado ninguno de los anteriores requerimientos especiales de usuario.  
+     1 – De 1 a 3 de los requerimientos de la lista.  
+     2 – 4 ó 5 requerimientos de la lista.  
+     3 – Más de 6 requerimientos de la lista.  
+     4 – Se incluyen en la fase de diseño tareas de diseño para consideraciones de factores humanos para lograr los requerimientos de usuario declarados.  
+     5 – Además, se usan herramientas especiales o prototipos para suscitar la eficiencia del usuario final.  
+        
+8. Actualización de datos En línea: Los datos internos se actualizan mediante transacciones En línea. Los posibles valores para este atributo son:
+   
+   0 – Ninguna.  
+   1-2 – Actualización En línea de ficheros de control.  
+   3 – Actualización En línea de ficheros importantes internos.  
+   4 – También, se considera esencial la protección contra pérdida de información.  
+   5 – Además, grandes volúmenes implican consideraciones de coste en el proceso de recuperación.  
+        
+9. Complejidad del proceso lógico interno de la aplicación: Se considera complejo cuando hay muchas interacciones, puntos de decisión o gran número de ecuaciones lógicas o matemáticas. ¿Cuál de las siguientes características tienen aplicación para la aplicación?
+    
+    Extensiones de proceso lógicas.  
+    Extensiones de proceso matemáticas.  
+    Muchos procesos de excepción, muchas funciones incompletas y muchas iteraciones de funciones.  
+    Procesos sensibles de control y / o seguridad.  
+    Procesos complejos de manejo de múltiples posibilidades de Entrada / Salida (por ejemplo: multimedia, independencia de dispositivos,…).
+    
+    Los posibles valores para este atributo son:
+        0 – Ninguno de los anteriores es aplicable.  
+        1 – Es aplicable uno de los anteriores.  
+        2 – Son aplicables dos de los anteriores.  
+        3 – Son aplicables 3 de los anteriores.  
+        4 – Son aplicables 4 de los anteriores.  
+    5 – Todos ellos son aplicables.
+        
+10. Reusabilidad del código por otras aplicaciones. Los posibles valores para este atributo son:
+
+    0 – No hay que reutilizar el código.  
+    1 – Se emplea código reusable dentro de la aplicación.  
+    2 – Menos del 10% de la aplicación se considera reusable.  
+    3 – El 10% o más de la aplicación se considera reusable.  
+    4 – La aplicación está específicamente preparada y documentada para facilitar la reutilización y se adapta sobre código fuente.  
+    5 – La aplicación está específicamente preparada y documentada para facilitar la reutilización y, además, se adapta sobre parámetros.  
+        
+11. Facilidad de instalación: Durante el desarrollo se consideran factores que facilitan la ulterior conversión e instalación. Los posibles valores para este atributo son:
+
+    0 – El usuario no ha declarado consideraciones especiales para instalación y conversión.  
+    1 – El usuario no ha declarado consideraciones especiales para instalación y conversión, pero se requiere un set especial para la instalación.  
+    2 – El usuario ha declarado consideraciones especiales para la conversión e instalación y se requieren guías probadas de conversión e instalación.  
+    3 – El usuario ha declarado consideraciones especiales para la conversión e instalación y se requieren guías probadas de conversión e instalación y se considera importante el impacto.  
+    4 – El usuario ha declarado consideraciones especiales para la conversión e instalación y se requieren guías probadas de conversión e instalación y, además, se facilitan herramientas probadas para la conversión e instalación.  
+    5 – El usuario ha declarado consideraciones especiales para la conversión e instalación y se requieren guías probadas de conversión e instalación, considerándose importante el impacto. Además, se facilitan herramientas probadas para la conversión e instalación.  
+        
+12. Facilidad de operación: Se han tenido en cuenta factores de operatividad. Se han considerado procedimientos de arranque, de copia de respaldo y de recuperación. Los posibles valores para este atributo son:
+
+    0 – No hay consideraciones especiales de operación.  
+    1-2 – Se requieren procesos específicos de arranque, back-up y recuperación debidamente probados.  
+    3-4 – Además, la aplicación debe minimizar las necesidades de operaciones manuales, como manejo de papeles o montaje de cintas.  
+    5 – La aplicación debe diseñarse para una operación totalmente automática.  
+
+13. Localizaciones múltiples: La aplicación se diseña para ser utilizada en diversas instalaciones y por organizaciones. El valor para este atributo será la suma de los aplicables:
+
+    0 – No hay requerimientos de usuario para más de un lugar.  
+    1 – Se consideran múltiples instalaciones pero con idéntica configuración (tanto hardware como software).  
+    2 – Se consideran múltiples instalaciones pero con similar configuración (tanto hardware como software).  
+    3 – Se consideran múltiples instalaciones pero con diferente configuración (tanto hardware como software).  
+        
+    Se añadirá 1 punto por cada una de las siguientes consideraciones:
+    - Se proporcionará documentación y plan de soporte debidamente probados para soportar la aplicación en múltiples sitios.  
+    - Los lugares están en diferentes países.  
+
+14. Facilidad de cambios: Se han tenido en cuenta criterios que facilitarán el posterior mantenimiento. El valor para este atributo será la suma de los aplicables:
+
+    0 – No hay requerimientos especiales de diseño para minimizar o facilitar los cambios.  
+    1 – Se preverá una flexible capacidad de peticiones para modificaciones sencillas.  
+    2 – Se preverá una flexible capacidad de peticiones para modificaciones medias.  
+    3 – Se preverá una flexible capacidad de peticiones para modificaciones complejas.  
+    
+    Se añadirán 1 ó 2 puntos dependiendo de que los datos de control significativos se guarden en tablas mantenidas por el usuario mediante procesos interactivos En línea:  
+    1 Para actualización diferida.  
+    2 Para actualización inmediata.  
+        
+15. Requerimientos de otras aplicaciones. Los posibles valores para este atributo son:
+
+    0 – El sistema es absolutamente independiente.  
+    1-5 – Han de sincronizarse los requerimientos del sistema para la interfaz o participación de datos con otras aplicaciones. Se valorará con 1 punto por cada aplicación, siendo 5 el máximo de puntos.  
+    
+16. Seguridad, privacidad, auditabilidad. El valor para este atributo será la suma de los aplicables:
+
+    1 – Si un sistema tiene que cumplir requerimientos de privacidad personal.  
+    1 – Si el sistema debe cumplir requerimientos especiales de auditabilidad.  
+    2 – Si el sistema ha de cumplir requerimientos excepcionales de seguridad para prevenir pérdidas.  
+    1 – Si se requiere encriptación de comunicación de datos.  
+
+17. Necesidades de formación o capacitación de usuarios. Los posibles valores para este atributo son:
+
+    0 – Si no se desarrolla material especial para cursos de capacitación.    
+    1 – Se proporciona material estándar de tutorial.  
+    2 – Si se suministran facilidades de ayuda en línea o capacitación especial.  
+    3 – Se proporciona material para cursos de formación.  
+    4 – Se proporciona material para cursos de formación en línea.  
+    5 – Existen requerimientos para un sistema completo independiente de formación o simuladores.  
+    
+18. Utilización directa por terceras partes. Los posibles valores para este atributo son:
+      
+      0 – No hay conexión de terceras partes con el sistema.  
+      1 – Los datos son recibidos de o enviados a terceras partes conocidas.  
+      2 – Terceras partes conocidas se conectan directamente al sistema en modo de consulta, únicamente.  
+      3 – Terceras partes conocidas se conectan directamente al sistema con capacidad de modificación.  
+      4 – Terceras partes conocidas se conectan directamente al sistema con capacidad de modificación, creación y eliminación.  
+      5 – Terceras partes desconocidas pueden acceder al sistema.  
+      
+19. Documentación. Los posibles valores para este atributo son:
+      
+      0 – 0, 1 ó 2 tipos de documento.  
+      1 – 3 ó 4 tipos de documento.  
+      2 – 5 ó 6 tipos de documento.  
+      3 – 7 ú 8 tipos de documento.  
+      4 – 9 ó 10 tipos de documento.  
+      5 – 11 ó 12 tipos de documento.  
+      
+      Los tipos de documentos son los siguientes:
+      - Documento de Diseño Funcional.
+      - Documento de Diseño Técnico General.
+      - Documento de Diseño Técnico Detallado.
+      - Diccionario de datos.
+      - Referencias cruzadas de datos / Registros / Programas.
+      - Manual de Usuario.
+      - Manual de Operación.
+      - Presentación del Sistema.
+      - Dossier de Pruebas.
+      - Material de Formación.
+      - Documentos de seguimiento de Costes.
+      - Dossier de Cambios.
+
+Todos los atributos anteriores, con sus valores correspondientes, se contemplan en la siguiente tabla:
+
+![](../images/mark-ii-2.png)
+
+Ajuste por complejidad técnica
+
+Una vez obtenido el valor de los atributos y sumados se obtiene una cifra comprendida entre 0 y 95, a partir de la cual se obtendrá el factor de ajuste, según la fórmula:
+
+ACT = 0,65 + 0,005 * TGI
+
+Siendo:
+
+- ACT: Ajuste por Complejidad Técnica
+- TGI: Total Grados de Influencia (equivalente a la suma de los valores de los atributos en el método Albrecht).
+
+Obtención del tamaño de las partes en línea y por lotes
+
+A continuación hay que ajustar los puntos función para cada una de las partes, por lotes y en línea, mediante la aplicación de las siguientes fórmulas:
+
+PFAb = PFNAb * ACT
+
+PFAo = PFNAo * ACT
+
+Siendo:
+
+- PFAb: Puntos Función ajustados de las funciones por lotes
+- PFNAb: Puntos Función no ajustados de las funciones por lotes
+- PFAo: Puntos Función ajustados de las funciones En línea
+- PFNAo: Puntos Función no ajustados de las funciones En línea
+- ACT: Ajuste por Complejidad Técnica (calculado anteriormente).
+
+Cálculo del tamaño total del Sistema
+
+Seguidamente, habría que calcular el tamaño total, en Puntos Función, del sistema, para lo que habría que aplicar:
+
+PFA = PFAb + PFAo
+
+Donde:
+
+- PFA: Tamaño del Sistema completo en Puntos Función
+- PFAb: Tamaño de la parte Por lotes en Puntos Función
+- PFAo: Tamaño de la parte En línea en Puntos Función
+
+Cálculo de la productividad estimada
+
+Para el cálculo de la productividad estimada, es necesario aplicar la siguiente fórmula:
+
+$$P = A \left[ 0,11 e^{-\left(\frac{S-250}{575}\right)^2} + \frac{0,01 S^{1,1}}{522} \right]$$
+
+Siendo:
+
+- $P$: Productividad
+- $A$: Media de la Industria informática:
+  - $A = 1.0$ para 3GL
+  - $A = 1.6$ para 4GL
+ - $S$: Tamaño del Sistema en $\text{PFA}$
+
+Cálculo del esfuerzo en horas
+
+Una vez conocida la productividad estimada, habría que calcular el esfuerzo en horas de trabajo, para lo que se aplicaría la siguiente fórmula:
+
+$$W = \frac{B * \text{PFA}}{P}$$
+
+Siendo:
+
+- $W$: Esfuerzo en horas de trabajo
+- $B$: Factor de complejidad:
+  - $B = 1.0$ si es en línea
+  - $B = 1.5$ si es por lotes
+  - $B = (So + 1.5 Sb)/(So + Sb)$ si el sistema es mixto
+- $\text{PFA}$: Puntos Función ajustados
+- $P$: Productividad en PF/hora
+
+Cálculo del plazo de entrega
+
+En primer lugar habría que calcular el factor a aplicar, estando éste en relación directa con el tamaño del sistema y cuyo valor se obtiene mediante la aplicación de la siguiente fórmula:
+
+$$E = 0.45 * \sqrt{S}$$
+
+Siendo:
+
+- $E$: Puntos Función / semana
+- $S$: Tamaño del Sistema en PFA
+
+A continuación, se obtendría el tiempo estimado total para la entrega del Sistema, para lo que habría que aplicar la fórmula que aparece seguidamente:
+
+$$\text{PE} = \frac{S}{E}$$
+
+Siendo:
+
+- $\text{PE}$: Plazo de entrega, en semanas
+- $S$: Tamaño del Sistema en PFA
+- $E$: Puntos Función / semana
+
 ### Staffing Size (Orientación a Objetos) {#staffing-size}
 
 Staffing Size es un conjunto de métricas para estimar el número de personas necesarias en un desarrollo Orientación a Objetos, y para determinar el tiempo de su participación en el mismo.
