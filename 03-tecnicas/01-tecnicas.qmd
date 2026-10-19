@@ -1375,6 +1375,153 @@ Hay quien estima que, inicialmente, se asigne 1 día de esfuerzo por cada Punto
 
 ### Factores Críticos de Éxito {#factores-criticos-de-exito}
 
+Los factores críticos de éxito (FCE), tienen como objetivo ayudar a la planificación de las actividades y recursos de cualquier organización, facilitando la asignación de prioridades dentro de ella.
+
+Esta práctica implica, para su realización, los siguientes puntos básicos:
+
+- Definir los objetivos globales de la organización.
+- Definir una unidad de medida para evaluar el funcionamiento de la organización con respecto a esos objetivos.
+- Identificar los factores clave que contribuyen a ese funcionamiento.
+- Identificar las relaciones causa-efecto entre objetivos y factores clave.
+
+#### Descripción {.unnumbered .unlisted}
+
+El análisis de los factores críticos de éxito va dirigido a identificar aquellos factores del entorno cuyo funcionamiento adecuado o evolución favorable permitirán la implantación con éxito de una estrategia determinada. Como consecuencia de la identificación de estos factores externos, se podrá proceder a una aplicación adecuada de los recursos de la organización con el fin de conseguir una eficacia óptima de esta estrategia. En esta identificación se deben tener en cuenta cuestiones como:
+
+- Un proceso de la organización cuyo funcionamiento debe situarse a un nivel competitivo con el entorno.
+- Una actividad dentro de la organización que se debe realizar con especial atención.
+- Un suceso que ocurre en el entorno externo de la organización y sobre el cual se puede o no tener control.
+
+Es conveniente, diferenciar entre factores de éxito y factores críticos de éxito. Un factor de éxito es algo que debe ocurrir (o debe no ocurrir) para conseguir un objetivo. Este factor de éxito se define como crítico si su cumplimiento es absolutamente necesario para alcanzar los objetivos de la organización, de modo que se requiere una especial atención por parte de los responsables de la organización, con el fin de asegurar que se dedican los mejores recursos para la consecución de dicho factor de éxito.
+
+Se puede justificar el establecer esta diferencia entre factores de éxito (FE) y factores críticos de éxito (FCE) por dos razones:
+
+- Desde un punto de vista puramente metodológico, es más efectivo separar la consideración de todos los FE de la organización, de la evaluación de cuáles son realmente FCE.
+- Desde un punto de vista de eficacia dentro de la organización, la definición de un número demasiado elevado de FCE desvirtuaría el sentido de esta práctica.
+
+También se debe hacer énfasis en la diferencia existente entre factores de éxito y objetivos de la organización:
+
+- Objetivos son los «fines» hacia los cuales se dirige el esfuerzo y el trabajo de la organización.
+- Factores de éxito y como consecuencia los FCE son los «medios» o condiciones que se deben cumplir para alcanzar los objetivos. Para cada objetivo se debe definir al menos un factor de éxito.
+
+Esta distinción ayudará a la hora de delimitar y definir con claridad los objetivos debido a que éstos serán importantes como un fin en sí mismos. Por tanto, si se considera un objetivo importante sólo como medio de conseguir otros objetivos, se considerará dicho objetivo como un factor de éxito.
+
+A la hora de definir los factores críticos de éxito de la organización, es necesario que los objetivos que persigue la organización estén claramente definidos, dado que su especificación servirá de base para el estudio de los FCE.
+
+El análisis estructurado de los FCE constará de los siguientes pasos:
+
+1. Elaborar una lista de los objetivos de la organización.
+
+   Se determinará la misión, metas y objetivos de la organización. Es conveniente ser explícitos en la especificación de objetivos, intentando cuantificarlos en la medida de lo posible.
+
+2. Depurar la lista de objetivos.
+
+   En este paso se revisará la lista de objetivos obtenida en el paso anterior para asegurar que dichos objetivos constituyen un fin en sí mismos y no meramente un medio para obtener otro objetivo de la lista, en cuyo caso se consideraría como un factor de éxito.
+
+3. Identificar los factores de éxito.
+
+   Teniendo en cuenta el concepto de factor de éxito como medio necesario para alcanzar los objetivos especificados, se obtendrá una lista de factores de éxito para cada uno de dichos objetivos, contemplando tanto aquéllos que dependen de la organización como aquéllos externos que están fuera de su control (legislación, comportamiento de la economía, etc.).
+
+   En este punto no es necesario preocuparse demasiado si se repiten los factores de éxito con los objetivos, o si un factor de éxito para un objetivo está estrechamente relacionado con otro objetivo.
+
+4. Eliminar los factores de éxito no críticos.
+
+   Se utilizarán en este punto diferentes criterios para eliminar los factores de éxito, dependiendo de sí los mismos están dentro o fuera del control de la organización. Como se ha dicho, esta selección será realizada, mediante reuniones en grupo, por los responsables de la organización.
+
+   Los criterios que se seguirán son los siguientes:
+
+   - Factores de éxito dentro del control de la organización:
+     - ¿Es el factor de éxito esencial para cumplir los objetivos?.
+     - ¿Requiere especial cuidado en su realización, es decir, recursos especialmente cualificados?.
+
+   Si la respuesta a alguna de estas preguntas es «no», se eliminará el factor de éxito de la tabla.
+
+   - Factores de éxito fuera del control de la organización:
+     - ¿Es el factor de éxito esencial para cumplir los objetivos?.
+     - ¿Hay una probabilidad significativa de que el factor de éxito no ocurra?.
+     - Si no ocurre el factor de éxito ¿Podrían alterarse las estrategias con el fin de minimizar el impacto de dicho incumplimiento, suponiendo que hubiese suficiente tiempo disponible?.
+
+     Si la respuesta a alguna de estas preguntas es «no» se elimina el factor de éxito de la tabla. Esto se hace para no considerar aquellos factores de éxito que ocurrirán casi con toda seguridad (en caso de una respuesta negativa a la segunda pregunta) o aquellos factores de éxito cuyo no cumplimiento impide cualquier tipo de acción correctiva (en el caso de una respuesta negativa a la tercera pregunta).
+
+5. Agrupar los factores de éxito de acuerdo con los objetivos.
+
+   Este paso permite depurar la tabla, dado que al analizar cada objetivo por separado puede que los factores de éxito estén repetidos o sean sinónimos de un objetivo.
+
+6. Identificar los componentes de estos factores de éxito.
+
+   En este paso se analizan los factores de éxito para identificar lo que se debe hacer para conseguir cada uno de estos factores de éxito.
+
+   De la descomposición de los factores de éxito se pueden encontrar componentes que son verdaderamente críticos, mientras otros exigen menos esfuerzo o recursos.
+
+   El objetivo de este análisis es identificar de cinco a siete factores de éxito o componentes de estos factores que sean críticos, con el fin último de centrar el esfuerzo de la organización en su consecución.
+
+7. Seleccionar los factores críticos de éxito.
+
+   Se usarán los criterios de selección ya especificados en el paso 4 para los niveles más bajos de descomposición, con objeto de obtener un número de factores críticos de éxito entre 5 y 7.
+
+   Se representan en negrita los factores críticos de éxito seleccionados.
+
+8. Finalizar el estudio de los factores críticos de éxito.
+
+   En este paso se obtiene una lista final que representa las áreas que son cruciales para el éxito de la organización, y donde la dirección debe enfocar su atención.
+
+Para los factores críticos de éxito controlables por parte de los directivos, se deben asignar los recursos necesarios para garantizar su correcta realización, así como las herramientas e información necesarias para dicha realización. Asimismo, se deben establecer procedimientos que permitan asegurar un seguimiento y realimentación sobre el grado de cumplimiento de dichos factores críticos.
+
+Para aquellos FCE no controlables, son absolutamente necesarios procedimientos que permitan obtener información puntual sobre los mismos. Estos procedimientos proporcionan señales de aviso de manera que se puedan definir e implantar planes de contingencia.
+
+##### Ejemplo {.unnumbered .unlisted}
+
+1. Elaborar una lista de los objetivos de la organización.
+
+   Como ejemplo de una especificación de objetivos de una organización, puede imaginarse una empresa que se plantee:
+
+   - Alcanzar una cifra de ventas de 100 millones de pesetas.
+   - Obtener un beneficio antes de impuestos de 20 millones.
+   - Incrementar el margen bruto en las ventas en torno a un 10%.
+   - Mantener los gastos de funcionamiento en un 20% de las ventas.
+
+2. Depurar la lista de objetivos.
+
+   En el ejemplo que sigue, los objetivos de «Incrementar el margen bruto en las ventas en torno al 10%» y «Mantener los gastos de funcionamiento en un 20% de las ventas», son un medio para conseguir los beneficios de 20 millones, por lo cual se eliminarán de la lista de objetivos y se considerarán factores de éxito.
+
+   En este caso se tendría:
+   
+   ![](../images/FCE-1.png)
+
+3. Identificar los factores de éxito.
+
+   En el ejemplo, y mediante [entrevistas](#entrevistas) con los responsables de la organización, se obtendría la siguiente tabla:
+
+   ![](../images/FCE-2.png)
+
+4. Eliminar los factores de éxito no críticos.
+
+   En el ejemplo que se sigue, se decidió que el factor de éxito «Mantener los gastos de funcionamiento en un 20% de las ventas» no exigía recursos especialmente cualificados para conseguirlo, por lo cual se eliminó de la lista.
+
+   ![](../images/FCE-3.png)
+
+5. Agrupar los factores de éxito de acuerdo con los objetivos.
+
+   En el ejemplo, el factor de éxito «Incrementar ventas» es sinónimo del objetivo «ventas de 100 millones», por lo tanto se elimina.
+
+   ![](../images/FCE-4.png)
+
+6. Identificar los componentes de estos factores de éxito.
+
+   En el ejemplo que se está desarrollando se ha obtenido la siguiente tabla:
+
+   ![](../images/FCE-5.png)
+
+7. Seleccionar los factores críticos de éxito.
+
+   En la tabla siguiente se representan en negrita los factores críticos de éxito seleccionados.
+
+   ![](../images/FCE-6.png)
+
+8. Finalizar el estudio de los factores críticos de éxito.
+
+   En este paso se obtiene una lista final que representa las áreas que son cruciales para el éxito de la organización, y donde la dirección debe enfocar su atención.
+
 ### Impacto en la Organización {#impacto-en-la-organizacion}
 
 Uno de los objetivos del Plan de Sistemas de Información es proponer los Sistemas y Tecnologías de la Información y Comunicaciones (STIC) que mejor sitúen a la organización, siendo necesario justificar su adquisición en términos financieros y estratégicos. Pero además, la propuesta debe ser viable desde el punto de vista de la organización que tiene que estar preparada para asimilar el cambio. Esta viabilidad es la que se analiza con el impacto en la organización.
