@@ -1394,6 +1394,32 @@ En el caso de no disponer de un diccionario de recursos de información, existe
 
 ### Catalogación {#catalogacion}
 
+La catalogación tiene como objetivo estructurar y almacenar la información de un dominio concreto de forma única, con el fin de poder gestionarla de manera sencilla a medida que se va modificando y facilitar su trazabilidad a lo largo del ciclo de vida.
+
+#### Descripción {.unnumbered .unlisted}
+
+En primer lugar se establece el ámbito de aplicación relevante, objeto de la catalogación, con vista a su futura utilización. Ejemplo: requisitos, usuarios, objetivos, etc.
+
+A continuación, se fija la información de interés que está asociada a un ámbito concreto y se estructura del modo más conveniente asociándole un nombre y sus características propias. En algunos casos se recogen aspectos generales que definen la información a tratar y en otros, se registran elementos que pueden ir variando a lo largo del tiempo o que se necesitan para realizar la trazabilidad.
+
+Si se determina realizar una catalogación en el ámbito de los requisitos, las características asociadas a los mismos podrían ser, por ejemplo, las siguientes:
+
+- Identificador del requisito.
+- Autor.
+- Tipo de requisito.
+- Descripción.
+- Prioridad.
+- Estado.
+- Fecha de creación.
+- Fecha de revisión.
+- Etc.
+
+De acuerdo al ejemplo anterior, se puede hablar de, ***tipo de requisito***: funcional, no funcional, implantación, formación, documentación; ***Estado***: propuesto, aprobado, incorporado; ***Prioridad***: alta, media, baja; etc.
+
+Si se considera necesario por el tipo de dominio en el que se esté trabajando, se establecerán los distintos valores que pueden contener los campos de control.
+
+En función de la herramienta utilizada para realizar la catalogación, se podrán generar informes a medida, analizar el impacto de un cambio, realizar la trazabilidad, obtener referencias cruzadas a través de matrices y acceder a los documentos origen de la información, entre otros.
+
 ### Cálculo de Accesos {#calculo-de-accesos}
 
 ### Caminos de Acceso {#caminos-de-acceso}
