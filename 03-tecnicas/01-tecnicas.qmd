@@ -1351,6 +1351,147 @@ Hay quien estima que, inicialmente, se asigne 1 día de esfuerzo por cada Punto
 
 ### Staffing Size (Orientación a Objetos) {#staffing-size}
 
+Staffing Size es un conjunto de métricas para estimar el número de personas necesarias en un desarrollo Orientación a Objetos, y para determinar el tiempo de su participación en el mismo.
+
+#### Número medio de personas por día y por clase {.unnumbered .unlisted}
+
+El esfuerzo medio empleado en el desarrollo de una única clase es el mejor indicador de la cantidad de trabajo requerido en un proyecto. Esto supone contar con una estimación previa del número de clases a desarrollar.
+
+Hay una serie de aspectos que influyen directamente en la estimación del promedio de personas necesarias al día por clase:
+
+- El número de clases clave y clases secundarias existentes en el modelo.
+- El lenguaje de programación utilizado. Hay muchas diferencias, por ejemplo entre C++ y Smalltalk.
+
+##### Factores importantes {.unnumbered .unlisted}
+
+- Las clases de interfaz versus resto de clases del modelo:
+    Las clases de interfaz de usuario suelen tener muchos más métodos y son menos estables en memoria que las propias del modelo de clases.
+- Clases abstractas versus a clases concretas:
+    El sobreesfuerzo necesario para desarrollar una clase abstracta, se puede compensar con el que precisa el desarrollo de una clase concreta.
+- Clases clave versus clases de soporte:
+    Las clases clave generalmente conllevan un tiempo superior de desarrollo, porque son las clases que representan las características principales del dominio del negocio.
+- Clases avanzadas versus a clases sencillas:
+    La utilización de clases más complejas como los patrones y los marcos hace que el modelo sea muchos más efectivo, aunque el desarrollo de este tipo de clases requiere un mayor esfuerzo.
+- Clases “maduras” versus “inmaduras”:
+    Las clases maduras, aquellas que su funcionamiento y utilidad ha sido ampliamente comprobado porque se han utilizado durante un periodo de tiempo suficiente, suelen tener más métodos pero requieren menos tiempo de desarrollo, porque únicamente habrá que realizar algún desarrollo adicional sobre las ya existentes.
+- Profundidad de herencia en la jerarquía de clases:
+    Las clases más anidadas, es decir con una profundidad mayor en la jerarquía, suponen menos esfuerzo de desarrollo ya que suelen ser una especialización de superclases, y generalmente tienen menos métodos.
+- Ámbito de programación:
+    Depuradores de código integrados, visores de jerarquía de clases, compiladores incrementales y otro tipo de herramientas pueden facilitar y acelerar el desarrollo.
+- Librerías de clase:
+    El número, el tipo y la madurez de las clases disponibles para reutilizar, pueden afectar a los niveles de productividad.
+
+##### Umbrales {.unnumbered .unlisted}
+
+Basándose en el desarrollo de algunos tipos de proyectos se han establecido algunas estimaciones orientativas para el tiempo preciso de desarrollo de las clases:
+
+- De diez a quince días para una clase en producción, es decir, incluyendo la documentación y pruebas de las clases.
+- De seis a ocho días para desarrollar un prototipo, es decir, incluyendo código para las pruebas unitarias, pero sin tener en cuenta las pruebas de integración y las pruebas formales de casos.
+
+##### Sugerencias {.unnumbered .unlisted}
+
+- Utilizar una estimación mayor en los primeros proyectos. Una vez que se tiene experiencia en este tipo de proyectos, se cuenta con un equipo de gente ha participado en proyecto similares y que han desarrollado sus propias clases, se puede proceder a una estimación más baja.
+
+##### Métricas relacionadas {.unnumbered .unlisted}
+
+- Número de clases clave.
+- Número de clases secundarias.
+- Promedio de clases secundarias por clase clave.
+
+#### Número de clases clave {.unnumbered .unlisted}
+
+Las clases clave representan el dominio del negocio a desarrollar y son las que se definen en las etapas iniciales del análisis.
+
+Este tipo de clases, por sus características particulares, suelen ser punto de partida de futuros proyectos y se reutilizan frecuentemente porque representan generalidades del dominio del negocio de gran variedad de proyectos.
+
+El número de clases clave depende directamente de las clases identificadas y consideradas como de vital importancia para el negocio. Para descubrirlas se pueden plantear preguntas como:
+
+- ¿Se puede desarrollar la aplicación en este dominio sin esta clase?
+- ¿El cliente puede considerar este objeto importante?
+- ¿Los casos de uso incluyen esta clase?
+
+Las clases secundarias suelen representar interfaces de usuario, comunicaciones entre clases o clases de bases de datos, es decir, clases que complementan a las clases clave.
+
+##### Consideraciones {.unnumbered .unlisted}
+
+El número de clases clave es un indicador del volumen de trabajo necesario para el desarrollo de la aplicación. También es un indicador de la cantidad de objetos reutilizables en el futuro en proyectos con dominio de negocio similares. Esto es debido al hecho de que este tipo de objetos serán especialmente importantes para proyectos con las mismas características y dominio de negocio similares. Hay que tener en cuenta que la elaboración de componentes reutilizables es más laboriosa y su número influye especialmente en el proyecto.
+
+##### Factores importantes {.unnumbered .unlisted}
+
+Tipo de interfaces de usuario. Una aplicación con una interfaz de usuario importante, en la mayoría de los sistemas, se construye con clases secundarias para gestionar la interacción del usuario con la aplicación por medio de ventanas de diálogo.
+
+##### Umbrales {.unnumbered .unlisted}
+
+En general y basándose en la experiencia en este tipo de proyectos, el porcentaje de clases clave varía entre el 20 y el 40 por ciento, el resto suelen ser clases secundarias (interfaces de usuario, comunicaciones, bases de datos).
+
+##### Sugerencias {.unnumbered .unlisted}
+
+Un número especialmente bajo de clases clave (inferior a un 20 por ciento) puede indicar que es necesario seguir con el examen del dominio de negocio para descubrir las abstracciones que simulan el negocio.
+
+##### Métricas relacionadas {.unnumbered .unlisted}
+
+- Número de clases secundarias.
+- Número de clases secundarias por clase clave.
+
+#### Número de clases secundarias {.unnumbered .unlisted}
+
+Una clase secundaria es un tipo de clase que no es indispensable para el dominio del negocio. Este tipo de clases proporciona una serie de funcionalidades valiosas para las clases clave y las complementan.
+
+Entre las clases secundarias están incluidas las interfaces de usuario y las clases básicas que representan objetos de programación habituales (fichero, string, stream, base de datos, etc.). Por último también incorporan las numerosas clases de ayuda. Este tipo de clases incorporan la gestión de las clases especializadas con el fin de garantizar un buen desarrollo Orientado a Objetos.
+
+Las clases secundarias tienen especial interés porque nos da un método para estimar el esfuerzo. Las clases clave generalmente se descubren al principio del proceso de desarrollo. Si se conoce el número de clases secundarias y sus relaciones con las clases clave, la estimación y planificación del proyecto será más adecuada.
+
+El número de clases secundarias es un indicador del volumen de trabajo necesario para desarrollar la aplicación.
+
+##### Factores importantes {.unnumbered .unlisted}
+
+Hay que tener en cuenta las clases de interfaz de usuario, incluyendo las interfaces gráficas de usuario, ya que es uno de los factores más importante para estimar el número de clases secundarias.
+
+##### Umbrales {.unnumbered .unlisted}
+
+El número de clases secundarias suele variar de una a tres veces el número de clases clave. El intervalo depende principalmente del tipo de clases de usuario. Las interfaces gráficas de usuario incrementan en dos veces el número de clases en la aplicación final. Las aplicaciones sin interfaces de usuario se incrementan en una vez el número de clases, es decir, en una aplicación con unas 100 clases clave y con interfaces gráficas de usuarios, una estimación previa podría apuntar a unas 300 clases para la aplicación final.
+
+##### Sugerencias {.unnumbered .unlisted}
+
+- El contar con un número muy bajo de clases secundarias no indica necesariamente acciones correctoras en cuanto a la revisión del análisis realizado para conseguir el modelo.
+- Un número demasiado elevado, a parte de las consideraciones de las interfaces gráficas, puede indicar un factorización en clases muy pobres (sencillas). En ocasiones es preferible tener un número pequeño de clases más independientes, aunque sin llevarlo a extremos.
+
+##### Métricas relacionadas {.unnumbered .unlisted}
+
+- Número de clases clave.
+- Número de personas por día por clase.
+
+#### Promedio de clases secundarias por clase clave {.unnumbered .unlisted}
+
+Las clases secundarias van apareciendo a lo largo del proyecto, mientras que las clases clave suelen encontrarse en las fases iniciales. La relación entre las clases secundaria y clave no es sencilla, ya que se ve afectada por una serie de factores entre los que se incluye la complejidad de la interfaz de usuario.
+
+Esta métrica trata de encontrar relaciones útiles entre ambos tipos de clases, para poder realizar una estimación de su número al inicio del proyecto.
+
+##### Factores importantes {.unnumbered .unlisted}
+
+La métrica de promedio de clases secundarias por clase clave, indica el número total de clases del proyecto. También se pueden realizar estimaciones del número de total de clases de un proyecto basándose en los resultados de proyectos previos.
+
+Se puede concluir lo siguiente:
+
+- Proyectos con una importante gestión de interfaces de usuario conllevan de dos a tres veces el número de clases clave para las clases secundarias.
+- Proyectos con una gestión más sencilla de la interfaz de usuario implican una o dos veces el número de clases clave para las clases secundarias.
+
+Ejemplo:
+
+Si durante la fase de análisis se encuentran unas 100 clases clave y el proyecto implica una gestión importante de la interfaz de usuario, podemos dar un promedio de 2.5 y proporcionar una estimación de unas 250 clases secundarias. El número total de clases para el proyecto estimado sería unas 350 clases.
+
+##### Umbrales {.unnumbered .unlisted}
+
+Hay que tener en cuenta la complejidad de la interfaz de usuario y por otro lado es importante considerar la experiencia del equipo de desarrollo.
+
+Equipos con poca experiencia de desarrollo tienden a crear un modelo o muy complejo o muy sencillo.
+
+Para aplicaciones con una gestión sencilla de interfaces de usuario, debería existir al menos tantas clases secundarias como clases clave.
+
+##### Sugerencias {.unnumbered .unlisted}
+
+- Un promedio muy bajo puede indicar que se está haciendo muchas cosas con muy pocas clases. En este punto es conveniente examinar la funcionalidad de las clases existentes, tratando de dividir las que sean posibles en nuevas clases.
+
 ### Planificación {#planificacion}
 
 La planificación de un proyecto es la previsión en fechas de la realización del conjunto de actividades que lo componen, teniendo en cuenta que se deben emplear para ello unos recursos que implican unos costes cuyo conjunto forman el presupuesto base para lograr un resultado comprometido con el Cliente.
@@ -1659,7 +1800,7 @@ En función de la herramienta utilizada para realizar la catalogación, se pod
 
 El cálculo de accesos permite realizar una estimación del número de accesos aproximado que debe realizarse para obtener la información de cada consulta, tomando como referencia las vistas del modelo de datos obtenidas como consecuencia del análisis de los [caminos de acceso](#caminos-de-acceso) a los datos.
 
-Esta práctica se utiliza en los procesos **Análisis del Sistema de Información** ([ASI](../01-principal/04-asi.mqd)) y **Diseño del Sistema de Información** ([DSI](../01-principal/05-dsi.mqd)) aplicando los mismos criterios, la única diferencia es que mientras en el primero el acceso es lógico y permite determinar la viabilidad de las consultas, en el segundo es físico y permite establecer las pautas para la optimización del modelo físico de datos.
+Esta práctica se utiliza en los procesos **Análisis del Sistema de Información** ([ASI](../01-principal/04-asi.qmd)) y **Diseño del Sistema de Información** ([DSI](../01-principal/05-dsi.qmd)) aplicando los mismos criterios, la única diferencia es que mientras en el primero el acceso es lógico y permite determinar la viabilidad de las consultas, en el segundo es físico y permite establecer las pautas para la optimización del modelo físico de datos.
 
 #### Descripción {.unnumbered .unlisted}
 
@@ -1677,7 +1818,7 @@ Si el resultado final se sale de un intervalo razonable en el que se encuentran 
 
 El objetivo de esta práctica es analizar la secuencia de acceso a los datos que realizan los módulos a través del modelo de datos. También puede utilizarse para entornos de ficheros.
 
-Permite verificar en el proceso **Análisis del Sistema de Información** ([ASI](../01-principal/04-asi.mqd)) que el modelo lógico de datos normalizado satisface las principales consultas de información recogidas en el catálogo de requisitos, y en el proceso **Diseño del Sistema de Información** ([DSI](../01-principal/05-dsi.mqd)) que el modelo físico de datos soporta adecuadamente los principales accesos de actualización, cuando proceda, y de consulta.
+Permite verificar en el proceso **Análisis del Sistema de Información** ([ASI](../01-principal/04-asi.qmd)) que el modelo lógico de datos normalizado satisface las principales consultas de información recogidas en el catálogo de requisitos, y en el proceso **Diseño del Sistema de Información** ([DSI](../01-principal/05-dsi.qmd)) que el modelo físico de datos soporta adecuadamente los principales accesos de actualización, cuando proceda, y de consulta.
 
 #### Descripción {.unnumbered .unlisted}
 
