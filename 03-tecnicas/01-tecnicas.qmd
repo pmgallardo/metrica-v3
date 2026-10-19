@@ -1553,14 +1553,16 @@ Seguidamente puede verse gráficamente como debe realizarse la planificación 
 #### Estructura de Descomposición de Trabajo (WBS – Work Breakdown Structure) {#estructura-de-descomposicion-de-trabajo}
 
 En la organización de un proyecto software esta técnica permite estructurar las actividades, sirviendo de “lista de comprobación” y de herramienta de contabilidad analítica del proyecto software.
-Descripción
+
+##### Descripción {.unnumbered .unlisted}
 
 La WBS presenta una descomposición de las actividades de un proyecto según su naturaleza, las cuales posteriormente se asignarán a «cuentas» (identificativos numéricos de las actividades que pueden ser utilizados para soporte de la contabilidad). Es un árbol que agrupa actividades: desarrollo, calidad, gestión, etc.
 
-Los diagramas PERT y GANTT que se deduzcan de dicha WBS permitirán la planificación del proyecto.
+Los diagramas [PERT](#pert) y [GANTT](#gantt) que se deduzcan de dicha WBS permitirán la planificación del proyecto.
 
 En definitiva, los grupos de actividades servirán de soporte para el seguimiento (el presupuesto inicial se distribuye en cuentas sobre las que se realiza un control individual y global o contabilidad analítica del proyecto), y constituye un histórico útil para proyectos futuros.
-Notación
+
+##### Notación {.unnumbered .unlisted}
 
 A continuación se representa el formato de un WBS.
 
@@ -1571,6 +1573,28 @@ Por ejemplo, un WBS podría dividirse en los siguientes niveles:
 - Nivel 2: Dentro de [Desarrollo](../01-principal/01-introduccion.qmd#desarrollo-de-sistemas-de-informacion): Proceso [EVS](../01-principal/03-evs.qmd), Proceso [ASI](../01-principal/04-asi.qmd), Proceso [DSI](../01-principal/05-dsi.qmd), etc.
 
 #### Diagrama de Extrapolación {#diagrama-de-extrapolacion}
+
+Esta técnica se utiliza para realizar un seguimiento de los proyectos software. Con ella se obtienen previsiones de desviaciones en la duración del desarrollo del proyecto.
+
+##### Descripción {.unnumbered .unlisted}
+
+Los Diagramas de Extrapolación constituyen un modo de representación gráfica de la cronología de las estimaciones del consumo de recursos necesarios para la realización de un hito.
+
+El eje de abscisas representa los periodos de tiempo de seguimiento. El eje de ordenadas representa las estimaciones de duración (duraciones previstas) para la realización del hito considerado. Dado que los ejes tienen la misma escala, los hitos que procedan normalmente (sin retrasos ni adelantos) deben caer sobre la bisectriz.
+
+Los diagramas de extrapolación se inicializan para cada hito a evaluar en la fecha prevista de comienzo de los mismos, y se actualizan en cada etapa del seguimiento.
+
+La interpretación de estos diagramas se basa en la hipótesis de que si existe una desviación, su tendencia es a permanecer o empeorar hasta el final del proyecto, a no ser que se apliquen las medidas necesarias para evitarlo. También puede suceder que las medidas aplicadas (más recursos, nuevas tecnologías, etc.) den lugar a un acortamiento de las fechas previstas inicialmente. Por todo ello, se trata de estimar la nueva fecha de fin de proyecto extrapolando la tendencia constatada en un momento determinado del desarrollo.
+
+El método de previsión de una nueva fecha de fin de proyecto, consiste en realizar una estimación en un momento determinado del desarrollo, obteniendo un nuevo punto de horas de esfuerzo. A continuación se unirán el punto de ordenadas que indicaba el esfuerzo previsto inicial con el obtenido en la estimación, alargando la línea hasta que se corte con la bisectriz. Por último, se unirá este punto de corte con el eje de abscisas mediante una línea recta, obteniendo así la nueva previsión de tiempo para el fin del desarrollo del proyecto.
+
+###### Ejemplo {.unnumbered .unlisted}
+
+Sea un proyecto en que se estima un esfuerzo de 20.000 horas en un tiempo de 10 meses. En el diagrama inicial el Esfuerzo en miles de horas es 20, y el tiempo en meses es 10.
+
+Se hace una estimación en el mes 5, y se encuentra un punto de esfuerzo equivalente a 22.000 horas (marcado con un triángulo en la figura). Se une el punto de esfuerzo inicial del eje de ordenadas (20) con el punto estimado, y la prolongación efectúa un corte en la bisectriz. Desde el punto de corte una línea vertical indica, en el eje de abscisas, que el tiempo previsto de terminación será ahora de 12,2 meses. Es decir, el proyecto se va a alargar 2,2 meses más de lo previsto inicialmente.
+
+![](../images/extrapolacion.png)
 
 ## Prácticas {#practicas}
 
