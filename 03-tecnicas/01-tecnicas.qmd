@@ -1381,6 +1381,46 @@ Hay quien estima que, inicialmente, se asigne 1 día de esfuerzo por cada Punto
 
 ### Prototipado {#prototipado}
 
+El prototipado tiene como objetivo elaborar un modelo o maqueta de las interfaces entre el sistema y el usuario (formatos de pantallas, informes, formularios, etc.), que ayude al usuario a comprender cómo se producirá la interacción con el sistema.
+
+Es importante que el usuario colabore en su desarrollo sugiriendo los cambios que considere oportunos y evalúe hasta que punto las funciones se implementan de forma apropiada y cubren los requisitos identificados.
+
+#### Descripción {.unnumbered .unlisted}
+
+El prototipado constituye un medio a través del cual se simula el aspecto visual del sistema mediante la representación de los conceptos, componentes, objetos gráficos, entradas y salidas requeridas para la ejecución de cada función en respuesta a las necesidades planteadas.
+
+Con objeto de conseguir una interfaz eficiente y compatible con las necesidades de los usuarios evitando así futuras frustraciones, es importante contemplar, previamente, una serie de aspectos que son claves en el diseño de prototipos.
+
+El principal punto a considerar y que constituirá la base sobre la que se centrará el diseño de prototipos es la identificación de los usuarios a los que va dirigido, teniendo en cuenta que debe responder a diferentes individualidades, con distintos conocimientos y habilidades. Cuando los usuarios se sienten a gusto con la imagen del sistema, lo utilizan más eficazmente y cometen menos errores, mejorando su productividad.
+
+Después de estudiar los perfiles de usuarios se deben analizar las funciones que va a soportar el sistema, con el fin de establecer las dependencias existentes entre ellas y su secuencia de ejecución. Además, se debe determinar el tipo de información que requerirá el usuario para llevar a cabo cada función, así como el estilo de interacción más eficaz.
+
+Una vez considerados los dos elementos claves para el diseño de la interfaz, es decir, quiénes son los usuarios y qué funciones tienen asignadas, la forma en que se establezca la comunicación entre el usuario y el sistema será decisiva para conseguir su aceptación. Por tanto, al iniciar el diseño de prototipos de pantallas, es imprescindible tener en cuenta una serie de consideraciones, que potencien la facilidad de uso del sistema, que son reseñados a continuación:
+
+- Utilizar conceptos, términos y símbolos familiares al usuario, de modo que sea fácil de aprender y comprender.
+- Mantener la coherencia dentro del propio sistema y entre sistemas:
+  - Proporcionando abreviaturas estándar.
+  - Aplicando las mismas reglas de interacción a través de toda la interfaz.
+  - Utilizando el mismo formato para los mensajes de error, de aviso o advertencia, mandatos, títulos y comandos con significado similar.
+  De esta manera la experiencia y los conocimientos adquiridos por los usuarios en sistemas previos puede generalizarse a otros sistemas, reduciendo los costes y recursos necesarios para la formación.
+- Facilitar la exploración del sistema sin riesgo, permitiendo interrumpir y deshacer las acciones realizadas. De esta forma, el usuario puede utilizar todas las funcionalidades del sistema y trabajar de forma más rápida y eficiente, con la seguridad de que cualquier error puede rectificarse.
+- Dificultar la selección de acciones destructivas y no reversibles, pidiéndole verificación de cualquier acción que conlleve un riesgo importante.
+- Proporcionar información sobre el estado de ejecución de las funciones, es decir, si la función invocada está en proceso, si se ha completado satisfactoriamente o se ha producido algún error. El usuario nunca debería preguntarse si el sistema está ocupado procesando una transacción o está esperando una nueva entrada y si el sistema no responde a tiempo, iniciar nuevas tareas con el convencimiento de que la anterior finalizó de forma satisfactoria.
+- Agrupar las funciones de forma lógica y presentar primero las más utilizadas.
+- Buscar la eficiencia en el diálogo evitando cambios frecuentes entre los dispositivos de entrada, tales como el ratón y el teclado.
+
+Estos principios se aplicarán en mayor o menor medida en función de las características del entorno tecnológico y de las necesidades planteadas, no obstante, la adopción de una guía de estilos facilita la coordinación en el equipo de desarrollo y potencia la reutilización.
+
+Una vez considerados estos aspectos, para definir los formatos individuales de las pantallas se realiza un análisis de la información a presentar en cada una de ellas. Este análisis se debe centrar en los siguientes puntos:
+
+- Identificar los diferentes tipos de información como, por ejemplo, campos de datos, títulos, comandos y mensajes de error, con el fin de organizar la pantalla en áreas específicas y conseguir un equilibrio, regularidad, secuencialidad, así como, una simetría en la composición de las mismas.
+- Estudiar el espacio disponible en las pantallas para determinar qué datos y en qué situación deben aparecer en las mismas, utilizando un formato de visualización que permita al usuario una rápida asimilación de la información.
+- Intentar agrupar los datos relacionados y mostrar sólo aquéllos que son esenciales para la ejecución de la función o para la toma de una decisión, eliminado todas las entradas que sean innecesarias. Nunca se debe pedir al usuario que introduzca información que pueda adquirirse automáticamente o calcularse internamente.
+- Mantener la coherencia entre la entrada y la visualización de datos.
+- Proteger al usuario de intentar alguna acción que podría provocar errores, desactivando los comandos que no son operativos en ese contexto.
+
+Finalmente, con objeto de atraer la atención del usuario y mejorar su interacción con el sistema, se deben prestar especial atención a aquellos atributos relacionados con el aspecto estético como son el color y el sonido. Los beneficios de su aplicación son altos si se utilizan de una forma adecuada y consistente.
+
 ### Pruebas {#pruebas}
 
 Las pruebas son prácticas a realizar en diversos momentos de la vida del sistema de información para verificar:
