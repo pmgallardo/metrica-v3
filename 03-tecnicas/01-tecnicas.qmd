@@ -1422,6 +1422,22 @@ En función de la herramienta utilizada para realizar la catalogación, se pod
 
 ### Cálculo de Accesos {#calculo-de-accesos}
 
+El cálculo de accesos permite realizar una estimación del número de accesos aproximado que debe realizarse para obtener la información de cada consulta, tomando como referencia las vistas del modelo de datos obtenidas como consecuencia del análisis de los [caminos de acceso](#caminos-de-acceso) a los datos.
+
+Esta práctica se utiliza en los procesos **Análisis del Sistema de Información** ([ASI](../01-principal/04-asi.mqd)) y **Diseño del Sistema de Información** ([DSI](../01-principal/05-dsi.mqd)) aplicando los mismos criterios, la única diferencia es que mientras en el primero el acceso es lógico y permite determinar la viabilidad de las consultas, en el segundo es físico y permite establecer las pautas para la optimización del modelo físico de datos.
+
+#### Descripción {.unnumbered .unlisted}
+
+El cálculo de accesos consiste en realizar una estimación del número de ocurrencias o filas de cada entidad o tabla/fichero del modelo de datos que deben ser leídas, teniendo en cuenta los identificadores/claves candidatas o índices asociados a cada entidad o tabla/fichero a leer. La estimación de si una consulta es excesivamente costosa se realiza comparando el número de accesos necesarios para realizar el resto de las consultas.
+
+Una vez realizada la estimación inicial del número de accesos, se ajustan los valores obtenidos, dividiendo por la prioridad establecida para cada acceso (por ejemplo 1: alta, 2: media, 3: baja) y multiplicando el resultado obtenido por la frecuencia del acceso, es decir el número de veces que se ejecuta la consulta al día.
+
+Si el resultado final se sale de un intervalo razonable en el que se encuentran el resto de las consultas, se debe analizar si se modifica la consulta, o si por su prioridad y frecuencia es necesaria la modificación del modelo de datos.
+
+#### Notación {.unnumbered .unlisted}
+
+[Matricial](#tecnicas-matriciales).
+
 ### Caminos de Acceso {#caminos-de-acceso}
 
 ### Diagrama de Representación {#diagrama-de-representacion}
