@@ -1373,6 +1373,24 @@ Hay quien estima que, inicialmente, se asigne 1 día de esfuerzo por cada Punto
 
 ### Diagrama de Representación {#diagrama-de-representacion}
 
+El diagrama de representación tiene como objetivo documentar mediante una imagen una situación específica.
+
+#### Descripción {.unnumbered .unlisted}
+
+Se trata de un diagrama libre, en el que se utiliza cualquier objeto gráfico, con el fin de reflejar algo de interés para el caso y para el que no existe una técnica o práctica.
+
+Se describe, de la forma que se estime oportuno, cada uno de los elementos que componen el diagrama y, en el caso de ser necesario, la notación que se haya empleado, con el fin de facilitar la comprensión del mismo.
+
+#### Notación {.unnumbered .unlisted}
+
+Libre.
+
+##### Ejemplo {.unnumbered .unlisted}
+
+En la figura siguiente se presenta un mapa de pantallas en línea de una parte de una aplicación. El diagrama representa la navegación entre las pantallas y las teclas de función para el paso de unas a otras.
+
+![](../images/representacion.png)
+
 ### Factores Críticos de Éxito {#factores-criticos-de-exito}
 
 Los factores críticos de éxito (FCE), tienen como objetivo ayudar a la planificación de las actividades y recursos de cualquier organización, facilitando la asignación de prioridades dentro de ella.
