@@ -8,6 +8,7 @@ book:
   date: 01/01/2001
   date-format: "YYYY"
   language: es
+  favicon: images/favicon.png
   
   site-url: https://pmgallardo.github.io/metrica-v3/
   repo-url: https://github.com/pmgallardo/metrica-v3
