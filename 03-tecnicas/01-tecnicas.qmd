@@ -1473,7 +1473,7 @@ El gráfico de Gantt es la forma habitual de presentar el plan de ejecución d
 
 El siguiente diagrama es un ejemplo típico de un diagrama de Gantt, en el que aparecen fases, actividades, tareas e hitos.
 
-![Ejemplo de Diagrama de Gantt](Gantt-1.png)
+![Ejemplo de Diagrama de Gantt](../images/Gantt-1.png)
 
 Para que un Gantt sea realista y fiable debe ir acompañado de un gráfico que refleje la actividad de los técnicos (Histograma de Recursos) que componen el equipo del proyecto.
 
@@ -1522,7 +1522,7 @@ Esta técnica tiene como objetivo establecer los límites de recursos aproxima
 
 Como consecuencia de ello se obtiene el gráfico que aparece a continuación y que servirá para establecer los límites de la asignación de recursos.
 
-![Ejemplo de Diagrama de Gantt](Gantt-2.png)
+![Ejemplo de Diagrama de Gantt](../images/Gantt-2.png)
 
 ##### Histograma de recursos {.unnumbered .unlisted}
 
@@ -1532,7 +1532,7 @@ A medida que se incorporan recursos al proyecto, el gráfico aumenta y al contr
 
 A continuación puede verse un ejemplo gráfico.
 
-![Ejemplo de Diagrama de Gantt](Gantt-3.png)
+![Ejemplo de Diagrama de Gantt](../images/Gantt-3.png)
 
 ##### Planificación de actividades y recursos {.unnumbered .unlisted}
 
@@ -1548,7 +1548,7 @@ Para realizar adecuadamente la planificación es necesario observar lo siguient
 
 Seguidamente puede verse gráficamente como debe realizarse la planificación de actividades y la de recursos.
 
-![Ejemplo de Diagrama de Gantt](Gantt-4.png)
+![Ejemplo de Diagrama de Gantt](../images/Gantt-4.png)
 
 #### Estructura de Descomposición de Trabajo (WBS – Work Breakdown Structure) {#estructura-de-descomposicion-de-trabajo}
 
@@ -1558,7 +1558,7 @@ En la organización de un proyecto software esta técnica permite estructurar 
 
 La WBS presenta una descomposición de las actividades de un proyecto según su naturaleza, las cuales posteriormente se asignarán a «cuentas» (identificativos numéricos de las actividades que pueden ser utilizados para soporte de la contabilidad). Es un árbol que agrupa actividades: desarrollo, calidad, gestión, etc.
 
-Los diagramas [PERT](#pert) y [GANTT](#gantt) que se deduzcan de dicha WBS permitirán la planificación del proyecto.
+Los diagramas [PERT](#pert) y [GANTT](#diagrama-de-gantt) que se deduzcan de dicha WBS permitirán la planificación del proyecto.
 
 En definitiva, los grupos de actividades servirán de soporte para el seguimiento (el presupuesto inicial se distribuye en cuentas sobre las que se realiza un control individual y global o contabilidad analítica del proyecto), y constituye un histórico útil para proyectos futuros.
 
