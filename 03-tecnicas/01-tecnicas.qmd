@@ -1353,6 +1353,14 @@ Hay quien estima que, inicialmente, se asigne 1 día de esfuerzo por cada Punto
 
 ### Planificación {#planificacion}
 
+La planificación de un proyecto es la previsión en fechas de la realización del conjunto de actividades que lo componen, teniendo en cuenta que se deben emplear para ello unos recursos que implican unos costes cuyo conjunto forman el presupuesto base para lograr un resultado comprometido con el Cliente.
+
+El objetivo básico de la planificación del proyecto es definir y preparar las condiciones de trabajo (estableciendo recursos, fechas y costes) para lograr los objetivos que se persiguen con el proyecto.
+
+Para realizar una buena planificación se deben utilizar diversas técnicas, algunas de las cuales se exponen a continuación.
+
+El método [PERT](#pert) (**P**rogram **E**valuation and **R**eview **T**echnique – Técnica de Evaluación y Revisión de Programas) y el método CPM (**C**ritical **P**ath **M**ethod – Método del Camino Crítico) constituyen las dos técnicas pioneras en el campo de la moderna programación y control de proyectos. Tanto el PERT como el CPM hicieron su aparición aproximadamente hacia 1960. Aunque estas dos técnicas se gestaron a partir de investigaciones totalmente independientes, en sus formas esenciales son idénticas, existiendo sólo ligeras diferencias en sus aspectos formales y de notación.
+
 #### Program Evaluation & Review Technique – PERT {#pert}
 
 #### Diagrama de Gantt {#diagrama-de-gantt}
