@@ -1440,6 +1440,30 @@ Si el resultado final se sale de un intervalo razonable en el que se encuentran 
 
 ### Caminos de Acceso {#caminos-de-acceso}
 
+El objetivo de esta práctica es analizar la secuencia de acceso a los datos que realizan los módulos a través del modelo de datos. También puede utilizarse para entornos de ficheros.
+
+Permite verificar en el proceso **Análisis del Sistema de Información** ([ASI](../01-principal/04-asi.mqd)) que el modelo lógico de datos normalizado satisface las principales consultas de información recogidas en el catálogo de requisitos, y en el proceso **Diseño del Sistema de Información** ([DSI](../01-principal/05-dsi.mqd)) que el modelo físico de datos soporta adecuadamente los principales accesos de actualización, cuando proceda, y de consulta.
+
+#### Descripción {.unnumbered .unlisted}
+
+Los caminos de acceso representan la secuencia y tipo de acceso a los datos persistentes del sistema, que deben realizar los procesos primitivos a partir del modelo lógico de datos normalizado, o los módulos/clases a partir del modelo físico de datos.
+
+En función del modelo de datos sobre el que se realiza el acceso, se identifican las entidades o tablas/ficheros que deben ser accedidas por cada proceso primitivo o módulo/clase, y se crean vistas del modelo de datos en el que aparecen únicamente dichas entidades (subconjunto del modelo de datos). Es conveniente examinar todas las entidades relacionadas con las identificadas inicialmente, debido a que puede que aparezcan más entidades que no se habían contemplado en un primer momento.
+
+Para cada entidad identificada se indica el tipo de acceso realizado, es decir, si se trata de una lectura, inserción, modificación o eliminación.
+
+Una vez identificadas las entidades o tablas/ficheros y el tipo de acceso, el siguiente paso es determinar el orden que se sigue para la obtención de los datos a través del modelo de datos, con el fin de identificar accesos redundantes o excesivamente complejos que puedan comprometer el rendimiento final del sistema.
+
+Se recomienda aplicar esta práctica para aquellos módulos que presenten, entre otras, alguna de las siguientes características:
+
+- Tratamiento crítico.
+- Accesos complejos a datos.
+- Alta concurrencia.
+
+#### Notacion {.unnumbered .unlisted}
+
+Vistas del modelo de datos.
+
 ### Diagrama de Representación {#diagrama-de-representacion}
 
 El diagrama de representación tiene como objetivo documentar mediante una imagen una situación específica.
