@@ -1363,6 +1363,8 @@ Hay quien estima que, inicialmente, se asigne 1 día de esfuerzo por cada Punto
 
 ## Prácticas {#practicas}
 
+Las prácticas representan un medio para la consecución de unos objetivos específicos de manera rápida, segura y precisa, sin necesidad de cumplir unos criterios rígidos preestablecidos, aunque se aconsejan determinadas pautas a seguir para la consecución de los objetivos propuestos.
+
 ### Análisis de Impacto {#analisis-de-impacto}
 
 ### Catalogación {#catalogacion}
