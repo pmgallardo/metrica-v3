@@ -1367,6 +1367,31 @@ Las prácticas representan un medio para la consecución de unos objetivos esp
 
 ### Análisis de Impacto {#analisis-de-impacto}
 
+El análisis de impacto tiene como objetivo determinar, desde un punto de vista cuantitativo, qué elementos están realmente implicados en las peticiones de cambio solicitadas por los usuarios, una vez que los sistemas de información se encuentran en producción.
+
+#### Descripción {.unnumbered .unlisted}
+
+Para facilitar la identificación de dichos elementos, es imprescindible que exista en la organización un inventario de todos los componentes y las relaciones existentes entre ellos. Igualmente, es importante evaluar hasta qué punto dichos componentes se han documentado utilizando estándares de nomenclatura, lo que facilitará en mayor o menor medida su localización posterior.
+
+El tratar de encontrar todos los elementos afectados y controlarlos cuando están poco documentados y no hay estándares, es extremadamente costoso y difícil, además de poco fiable, debido a que un elemento no detectado puede tener serias implicaciones y ser la causa de que el sistema falle. Por tanto, es mucho más útil disponer de un diccionario de recursos de información que permita almacenar toda la información relativa a programas, bases de datos, JCL ́s, pantallas, módulos, clases, objetos y formularios, entre otros, de una forma estructurada con todas sus relaciones y dependencias definidas, asegurando la integridad entre los distintos sistemas de información. De esta manera, se podrán recuperar con mayor exactitud los elementos afectados y en consecuencia evaluar el nivel de implicación existente.
+
+La forma en que se almacene la información a identificar, constituye el punto de partida para realizar el análisis de impacto. Se comienza definiendo argumentos de búsqueda que utilicen un determinado patrón o estándar de nomenclatura, con el objetivo de localizar de una forma comprensible los elementos afectados y, a su vez, rechazar los que, aun estando afectados, no necesitan modificación.
+
+Como resultado de dicho análisis, se identifican todos los elementos software y hardware afectados por el cambio y se obtiene información relativa a su localización, líneas totales de código fuente, características de almacenamiento interno, referencias cruzadas, etc.
+
+Una vez identificados los elementos que están afectados, se determina la complejidad del cambio en base al conocimiento y experiencia existente, a los resultados obtenidos y a las características del entorno tecnológico.
+
+Es importante resaltar que el análisis de impacto constituye un medio para valorar el alcance e importancia del cambio. No obstante, sin la aplicación de indicadores que complementen las técnicas de estimación, se pueden tomar decisiones de implementación erróneas al no valorar, en su justa medida, el esfuerzo requerido. Esta forma de actuación conlleva un riesgo importante debido a que el plan de trabajo no será lo suficientemente fiable y seguro como para garantizar el cumplimiento de los plazos establecidos.
+
+Por tanto, en el caso de existir en la instalación indicadores, sería recomendable aplicar los valores asociados sobre los distintos tipos de elementos afectados, con el fin de establecer de una forma más rigurosa y precisa el alcance real del cambio y, en consecuencia:
+
+- Determinar la secuencia de implementación más adecuada.
+- Realizar una planificación detallada del desarrollo e implantación de los cambios que se ajuste a las fechas de compromiso establecidas.
+- Estimar los recursos necesarios.
+- Evaluar el coste asociado.
+
+En el caso de no disponer de un diccionario de recursos de información, existen herramientas que son capaces de poblar un repositorio a partir de los programas fuente, copys, cadenas, etc. de las aplicaciones. Este proceso se conoce como Ingeniería Inversa, pues se parte del código final para obtener información de los elementos que se utilizaron para generarlo.
+
 ### Catalogación {#catalogacion}
 
 ### Cálculo de Accesos {#calculo-de-accesos}
