@@ -1377,6 +1377,33 @@ Hay quien estima que, inicialmente, se asigne 1 día de esfuerzo por cada Punto
 
 ### Impacto en la Organización {#impacto-en-la-organizacion}
 
+Uno de los objetivos del Plan de Sistemas de Información es proponer los Sistemas y Tecnologías de la Información y Comunicaciones (STIC) que mejor sitúen a la organización, siendo necesario justificar su adquisición en términos financieros y estratégicos. Pero además, la propuesta debe ser viable desde el punto de vista de la organización que tiene que estar preparada para asimilar el cambio. Esta viabilidad es la que se analiza con el impacto en la organización.
+
+Conviene analizar el impacto en la organización cuando se proponen cambios que afectan a los sistemas de información, a los equipos para el acceso físico a dichos sistemas, a las herramientas de trabajo, etc. Antes de tomar una decisión de cambio importante y llevar a cabo su propuesta, se deben estudiar los posibles inconvenientes y analizar la viabilidad del cambio evaluando, frente a dichos inconvenientes, las ventajas que aporta o la urgencia o necesidad del mismo.
+
+#### Objetivo {.unnumbered .unlisted}
+
+El objetivo de la aplicación de esta práctica es analizar, anticipadamente, las consecuencias para una organización de una acción relacionada con un cambio de los Sistemas y Tecnologías de la Información y Comunicaciones (STIC). Este tipo de cambios se puede proponer en distintas actividades de un Plan de Sistemas de Información.
+
+Esta práctica reúne algunas variables comunes con el [análisis coste/beneficio](#analisis-coste-beneficio) y con el análisis de riesgos.
+
+#### Descripción {.unnumbered .unlisted}
+
+Ante cualquier cambio a llevar a cabo en el contexto de una organización, asociado con la propuesta de nuevos sistemas o tecnologías de información, se debe realizar un estudio que refleje las necesidades asociadas al cambio y las posibles consecuencias para la organización, así como reconsiderar la propuesta antes de hacerla definitiva.
+
+Por ejemplo, la implantación de una nueva tecnología puede suponer un cambio en la forma de trabajar de un número determinado de personas, para lo que va a ser necesario planificar y llevar a cabo una formación en las fechas oportunas. Como consecuencia habría que disponer de un presupuesto para la formación así como realizar una planificación de los cursos necesarios, coordinada con las personas afectadas dentro de la organización.
+
+Algunos de los aspectos a considerar en el impacto de un cambio en una organización son:
+
+- Complejidad de la nueva tecnología frente a las capacidades de los recursos de la organización, lo que puede llevar a la necesidad de inversión en formación así como un tiempo posterior para su asimilación.
+- Coste de adquisición de tecnología, que puede hacer inviable la propuesta, aunque sería conveniente un análisis coste/beneficio para profundizar más en esta cuestión.
+- Tiempo de sustitución de lo antiguo por lo nuevo, ya que puede no ser adecuado a las necesidades actuales.
+- Rechazo cultural de la organización, en caso de un cambio importante en la propuesta, lo que haría necesaria la ejecución de acciones para la adecuada gestión del cambio.
+- Miedo ante la elección de tecnologías inmaduras, de reciente aparición.
+- Tipo de sistemas de información implicados en el cambio. Si son de gestión, los beneficios pueden ser cuantificables a priori. Si son de ayuda a la toma de decisiones o de análisis, puede aportar beneficios menos tangibles en un principio, pero que pueden ser evaluados cualitativamente.
+- Recursos y medios necesarios para la situación de cambio, en caso de ser necesaria la contratación de personal, instalaciones con características especiales que impliquen la realización de obra civil, etc.
+- Terceros (personas, sistemas de información, etc. fuera del ámbito del Plan de Sistemas de Información) que se puedan ver afectados al recibir determinada información de los sistemas actuales a sustituir.
+
 ### Presentaciones {#presentaciones}
 
 El objetivo de las presentaciones es la comunicación de avances, conclusiones y resultados por parte del equipo de trabajo al auditorio que corresponda. Se llevan a cabo con el fin de informar sobre el estado de un proyecto en su totalidad o de alguno de los procesos, o exponer uno o varios productos finales de un proceso para su aprobación.
