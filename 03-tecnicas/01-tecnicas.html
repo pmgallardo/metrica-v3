@@ -1649,96 +1649,1239 @@ Facilidad de cambios: Se han tenido en cuenta criterios que facilitarán el pos
 </section>
 <section id="metodo-mark-ii" class="level4" data-number="13.3.1.2">
 <h4 data-number="13.3.1.2" class="anchored" data-anchor-id="metodo-mark-ii"><span class="header-section-number">13.3.1.2</span> Método MARK II para el Análisis de los Puntos Función</h4>
+<p>Este método es una evolución del método de Allan J. Albrecht, siendo su principal característica que contempla el sistema como una colección de transacciones lógicas compuestas por componentes de entrada, de proceso y de salida. Estas transacciones lógicas se corresponden exactamente con las funciones del sistema, por ejemplo:</p>
+<ul>
+<li>Dar de alta un empleado.</li>
+<li>Actualizar una cuenta.</li>
+<li>Consultar pedidos servidos.</li>
+<li>Producir informe mensual de movimientos de dinero.</li>
+</ul>
+<p>Para cada una de estas funciones es necesario conocer las entidades que intervienen (tanto propias como de interfaz), los tipos de datos de entrada (considerando para cada tipo una única forma de tratamiento, como fechas, importes, etc.) y tipos de datos de salida (teniendo en cuenta en este caso que hay que considerar la forma de representación para su tratamiento). Es necesario conocer si se trata de una función por lotes o en línea, si se van a emplear lenguajes de tercera o de cuarta generación.</p>
+<section id="cálculo-de-los-puntos-función-método-mark-ii" class="level5 unnumbered unlisted">
+<h5 class="unnumbered unlisted anchored" data-anchor-id="cálculo-de-los-puntos-función-método-mark-ii">Cálculo de los Puntos Función (método Mark II)</h5>
+<p>Para proceder al cálculo de los puntos función, según el método Mark II, habrá que realizar las siguientes etapas:</p>
+<ul>
+<li>Identificación de todas las funciones.</li>
+<li>Identificación de todas las entidades, tipos de datos de entrada y tipos de datos de salida.</li>
+<li>Cálculo de los Puntos Función no ajustados.</li>
+<li>Valoración de grados de influencia.</li>
+<li>Ajuste de complejidad técnica.</li>
+<li>Obtención del tamaño de las partes en línea y por lotes.</li>
+<li>Cálculo del tamaño total del Sistema a partir de las partes en línea y por lotes.</li>
+<li>Cálculo de la productividad estimada.</li>
+<li>Cálculo del esfuerzo en horas.</li>
+<li>Cálculo de la tasa del tiempo de entrega para el desarrollo.</li>
+<li>Cálculo del plazo de entrega.</li>
+<li>Descomposición en fases.</li>
+</ul>
+<section id="identificación-de-los-componentes-según-mark-ii" class="level6 unnumbered unlisted">
+<h6 class="unnumbered unlisted anchored" data-anchor-id="identificación-de-los-componentes-según-mark-ii">Identificación de los componentes, según Mark II</h6>
+<p>En esta etapa se identifican los factores que se tienen en cuenta para el cálculo de los puntos función, siendo estos para cada función:</p>
+<ul>
+<li><strong>Número de entidades</strong> que intervienen en la función, tanto propias como de interfaz con otras funciones.</li>
+<li><strong>Número de tipos de datos de entrada</strong> que han de ser tratados por la función, considerando que para cada tipo de datos se van a realizar las mismas operaciones de validación, tratamiento, etc.</li>
+<li><strong>Número de tipos de datos de salida</strong> que han de ser presentados por el sistema, teniendo en cuenta para ello el tratamiento que hay que dar les para su presentación.</li>
+</ul>
+<section id="calculo-de-los-puntos-funcion-no-ajustados" class="level7 unnumbered unlisted">
+<p class="heading unnumbered unlisted">Cálculo de los Puntos Función no ajustados</p>
+<p>La tabla que aparece a continuación permite la valoración en Puntos Función no ajustados de todas las funciones que intervienen en el Sistema. Los pesos empleados para la ponderación de las entidades, tipos de datos de entrada y tipos de datos de salida han sido obtenidos por el autor del Método a partir de su experiencia y están basados en la media de la industria informática.</p>
+<p><img src="../images/mark-ii-1.png" class="img-fluid"></p>
+</section>
+<section id="valoracion-de-grados-de-influencia" class="level7 unnumbered unlisted">
+<p class="heading unnumbered unlisted">Valoración de grados de influencia</p>
+<p>Al igual que en el método Albrecht, esta etapa tiene como objetivo la adaptación de la estimación a las condiciones de trabajo bajo las que el sistema ha de ser desarrollado.</p>
+<p>Mark II amplía los 14 atributos de ajuste a 19.</p>
+<p>A cada atributo se le asignará un valor entre 0 y 5, dependiendo del grado de influencia de éstos, siendo los posibles valores los siguientes:</p>
+<ul>
+<li><strong>Sin influencia (0)</strong>. El sistema no contempla este atributo.</li>
+<li><strong>Influencia mínima (1)</strong>. La influencia de este atributo es muy poco significativa.</li>
+<li><strong>Influencia moderada (2)</strong>. El sistema contempla este atributo y su influencia, aunque pequeña, ha de ser considerada.</li>
+<li><strong>Influencia apreciable (3)</strong>. La importancia de este atributo debe ser tenida en cuenta, aunque no es fundamental.</li>
+<li><strong>Influencia significativa (4)</strong>. Este atributo tiene una gran importancia para el Sistema.</li>
+<li><strong>Influencia muy fuerte (5)</strong>. Este atributo es esencial para el Sistema y ha de ser tenido en cuenta a la hora del diseño.</li>
+</ul>
+<p>Los 19 atributos que se contemplan en esta técnica y sus significados aparecen a continuación.</p>
+<ol type="1">
+<li><p>Comunicación de datos: Los datos usados en la aplicación se envían o reciben por teleproceso. Los posibles valores para este atributo son:</p>
+<p>0 – La aplicación es un proceso por lotes puro.<br>
+1 – Proceso por lotes con impresión remota o entrada remota de datos.<br>
+2 – Proceso por lotes con impresión remota y entrada remota de datos .<br>
+3 – El TP es la interfaz para un proceso por lotes.<br>
+4 – La aplicación está basada en un TP interactivo, pero con un solo protocolo de comunicaciones.<br>
+5 – La aplicación está basada en un TP interactivo, pero con más de un protocolo de comunicaciones.</p></li>
+<li><p>Funciones distribuidas: Funciones de datos o procesos distribuidas. Los posibles valores para este atributo son:</p>
+<p>0 – La aplicación no tiene el objetivo de transferir datos o funciones procesadas entre dos sistemas.<br>
+1 – Datos preparados de la aplicación para su procesamiento por el usuario final sobre otro componente del sistema.<br>
+2 – La aplicación prepara los datos para procesarlos sobre otra máquina diferente (no usuario final).<br>
+3 – Proceso distribuido, en línea, con transferencia de datos en una única dirección.<br>
+4 – Como el anterior, pero con transferencia de datos en ambas direcciones.<br>
+5 – Las funciones de proceso se realizan dinámicamente sobre el componente del sistema más apropiado.</p></li>
+<li><p>Prestaciones: Consideración en el diseño, instalación y mantenimiento de factores de rendimiento como el tiempo de respuesta, la capacidad de proceso, etc. Los posibles valores para este atributo son:</p>
+<p>0 – No hay requerimientos especiales.<br>
+1 – Se establecen requerimientos para las prestaciones, pero sin tratamiento específico.<br>
+2 – Respuesta crítica del Proceso en línea durante las horas punta. No hay especificaciones para la utilización de CPU.<br>
+3 – Respuesta crítica del Proceso en línea durante los días laborables. No hay especificaciones para la utilización de CPU. Proceso afectado por aplicaciones de interfaz.<br>
+4 – Las tareas de análisis de las prestaciones se incluyen en la fase de diseño para establecer los requerimientos de usuario.<br>
+5 – Además, se emplearán herramientas específicas para el diseño que contemplen estás características.</p></li>
+<li><p>Gran uso de la configuración: Cuando además de los objetivos de rendimiento se considera una gran utilización.&nbsp;El usuario ha de utilizar la aplicación en un entorno bastante cargado. Los posibles valores para este atributo son:</p>
+<p>0-3 – Típica aplicación sobre máquina de producción, sin restricciones de operación declaradas.<br>
+4 – Las restricciones de operación declaradas requieren imperativos especiales sobre la aplicación en el procesador central.<br>
+5 – Además, existen imperativos especiales sobre la aplicación en componentes distribuidos del sistema.</p></li>
+<li><p>Velocidad de las transacciones: Número alto de transacciones por unidad de tiempo que influyen en el diseño, instalación y posterior mantenimiento. Los posibles valores para este atributo son:</p>
+<p>0 – Las transacciones no están afectadas por picos de tráfico.<br>
+1 – 10% de transacciones afectadas por los picos de tráfico.<br>
+2 – 50% de transacciones afectadas por los picos de tráfico.<br>
+3 – 100% de transacciones afectadas por los picos de tráfico.<br>
+4 – Se incluyen tareas de análisis para las funciones en la fase de diseño para lograr los altos índices de función declarados por el usuario en los requerimientos de la aplicación o acuerdos de nivel de servicio (SLA).<br>
+5 – Además, se utilizan herramientas de análisis para las prestaciones en las fases de diseño, desarrollo y / o instalación para lograr los altos índices de función declarados por el usuario en los requerimientos de la aplicación o acuerdos de nivel de servicio (SLA).</p></li>
+<li><p>Entrada de datos en línea: La toma de datos de la aplicación se realiza en línea. Los posibles valores para este atributo son:</p>
+<p>0 – Todas las transacciones son por lotes. 1 – Entre el 1 y el 7% de las funciones son entradas interactivas de datos.<br>
+2 – Entre el 8 y el 15% de las funciones son entradas interactivas de datos.<br>
+3 – Entre el 16 y el 23% de las funciones son entradas interactivas de datos.<br>
+4 – Entre el 24 y el 30% de las funciones son entradas interactivas de datos.<br>
+5 – Más del 30% de las funciones son entradas interactivas de datos.</p></li>
+<li><p>Diseño para la eficiencia del usuario final: Se incluyen tareas de diseño para consideraciones especiales del usuario en la Fase de Diseño para atender los requerimientos del usuario, por ejemplo:</p>
+<p>Ayuda de navegación.<br>
+Menús.<br>
+Ayuda en línea.<br>
+Movimiento automático del cursor.<br>
+Scrolling.<br>
+Impresión remota.<br>
+Teclas de función preestablecidas.<br>
+Procesos por lotes lanzados desde transacciones en línea.<br>
+Selección de datos con el cursor.<br>
+Gran uso de facilidades en el monitor (colores, textos resaltados, etc.).<br>
+Copia impresa de las transacciones en línea.<br>
+Ratón.<br>
+Windows.<br>
+Pantallas reducidas.<br>
+Bilingüismo.<br>
+Multilingüismo.</p>
+<p>Los posibles valores para este atributo son:</p>
+<p>0 – No se han declarado ninguno de los anteriores requerimientos especiales de usuario.<br>
+1 – De 1 a 3 de los requerimientos de la lista.<br>
+2 – 4 ó 5 requerimientos de la lista.<br>
+3 – Más de 6 requerimientos de la lista.<br>
+4 – Se incluyen en la fase de diseño tareas de diseño para consideraciones de factores humanos para lograr los requerimientos de usuario declarados.<br>
+5 – Además, se usan herramientas especiales o prototipos para suscitar la eficiencia del usuario final.</p></li>
+<li><p>Actualización de datos En línea: Los datos internos se actualizan mediante transacciones En línea. Los posibles valores para este atributo son:</p>
+<p>0 – Ninguna.<br>
+1-2 – Actualización En línea de ficheros de control.<br>
+3 – Actualización En línea de ficheros importantes internos.<br>
+4 – También, se considera esencial la protección contra pérdida de información.<br>
+5 – Además, grandes volúmenes implican consideraciones de coste en el proceso de recuperación.&nbsp;</p></li>
+<li><p>Complejidad del proceso lógico interno de la aplicación: Se considera complejo cuando hay muchas interacciones, puntos de decisión o gran número de ecuaciones lógicas o matemáticas. ¿Cuál de las siguientes características tienen aplicación para la aplicación?</p>
+<p>Extensiones de proceso lógicas.<br>
+Extensiones de proceso matemáticas.<br>
+Muchos procesos de excepción, muchas funciones incompletas y muchas iteraciones de funciones.<br>
+Procesos sensibles de control y / o seguridad.<br>
+Procesos complejos de manejo de múltiples posibilidades de Entrada / Salida (por ejemplo: multimedia, independencia de dispositivos,…).</p>
+<p>Los posibles valores para este atributo son: 0 – Ninguno de los anteriores es aplicable.<br>
+1 – Es aplicable uno de los anteriores.<br>
+2 – Son aplicables dos de los anteriores.<br>
+3 – Son aplicables 3 de los anteriores.<br>
+4 – Son aplicables 4 de los anteriores.<br>
+5 – Todos ellos son aplicables.</p></li>
+<li><p>Reusabilidad del código por otras aplicaciones. Los posibles valores para este atributo son:</p>
+<p>0 – No hay que reutilizar el código.<br>
+1 – Se emplea código reusable dentro de la aplicación.<br>
+2 – Menos del 10% de la aplicación se considera reusable.<br>
+3 – El 10% o más de la aplicación se considera reusable.<br>
+4 – La aplicación está específicamente preparada y documentada para facilitar la reutilización y se adapta sobre código fuente.<br>
+5 – La aplicación está específicamente preparada y documentada para facilitar la reutilización y, además, se adapta sobre parámetros.</p></li>
+<li><p>Facilidad de instalación: Durante el desarrollo se consideran factores que facilitan la ulterior conversión e instalación.&nbsp;Los posibles valores para este atributo son:</p>
+<p>0 – El usuario no ha declarado consideraciones especiales para instalación y conversión.<br>
+1 – El usuario no ha declarado consideraciones especiales para instalación y conversión, pero se requiere un set especial para la instalación.<br>
+2 – El usuario ha declarado consideraciones especiales para la conversión e instalación y se requieren guías probadas de conversión e instalación.<br>
+3 – El usuario ha declarado consideraciones especiales para la conversión e instalación y se requieren guías probadas de conversión e instalación y se considera importante el impacto.<br>
+4 – El usuario ha declarado consideraciones especiales para la conversión e instalación y se requieren guías probadas de conversión e instalación y, además, se facilitan herramientas probadas para la conversión e instalación.<br>
+5 – El usuario ha declarado consideraciones especiales para la conversión e instalación y se requieren guías probadas de conversión e instalación, considerándose importante el impacto. Además, se facilitan herramientas probadas para la conversión e instalación.&nbsp;</p></li>
+<li><p>Facilidad de operación: Se han tenido en cuenta factores de operatividad. Se han considerado procedimientos de arranque, de copia de respaldo y de recuperación.&nbsp;Los posibles valores para este atributo son:</p>
+<p>0 – No hay consideraciones especiales de operación.<br>
+1-2 – Se requieren procesos específicos de arranque, back-up y recuperación debidamente probados.<br>
+3-4 – Además, la aplicación debe minimizar las necesidades de operaciones manuales, como manejo de papeles o montaje de cintas.<br>
+5 – La aplicación debe diseñarse para una operación totalmente automática.</p></li>
+<li><p>Localizaciones múltiples: La aplicación se diseña para ser utilizada en diversas instalaciones y por organizaciones. El valor para este atributo será la suma de los aplicables:</p>
+<p>0 – No hay requerimientos de usuario para más de un lugar.<br>
+1 – Se consideran múltiples instalaciones pero con idéntica configuración (tanto hardware como software).<br>
+2 – Se consideran múltiples instalaciones pero con similar configuración (tanto hardware como software).<br>
+3 – Se consideran múltiples instalaciones pero con diferente configuración (tanto hardware como software).</p>
+<p>Se añadirá 1 punto por cada una de las siguientes consideraciones:</p>
+<ul>
+<li>Se proporcionará documentación y plan de soporte debidamente probados para soportar la aplicación en múltiples sitios.<br>
+</li>
+<li>Los lugares están en diferentes países.</li>
+</ul></li>
+<li><p>Facilidad de cambios: Se han tenido en cuenta criterios que facilitarán el posterior mantenimiento. El valor para este atributo será la suma de los aplicables:</p>
+<p>0 – No hay requerimientos especiales de diseño para minimizar o facilitar los cambios.<br>
+1 – Se preverá una flexible capacidad de peticiones para modificaciones sencillas.<br>
+2 – Se preverá una flexible capacidad de peticiones para modificaciones medias.<br>
+3 – Se preverá una flexible capacidad de peticiones para modificaciones complejas.</p>
+<p>Se añadirán 1 ó 2 puntos dependiendo de que los datos de control significativos se guarden en tablas mantenidas por el usuario mediante procesos interactivos En línea:<br>
+1 Para actualización diferida.<br>
+2 Para actualización inmediata.</p></li>
+<li><p>Requerimientos de otras aplicaciones. Los posibles valores para este atributo son:</p>
+<p>0 – El sistema es absolutamente independiente.<br>
+1-5 – Han de sincronizarse los requerimientos del sistema para la interfaz o participación de datos con otras aplicaciones. Se valorará con 1 punto por cada aplicación, siendo 5 el máximo de puntos.</p></li>
+<li><p>Seguridad, privacidad, auditabilidad. El valor para este atributo será la suma de los aplicables:</p>
+<p>1 – Si un sistema tiene que cumplir requerimientos de privacidad personal.<br>
+1 – Si el sistema debe cumplir requerimientos especiales de auditabilidad.<br>
+2 – Si el sistema ha de cumplir requerimientos excepcionales de seguridad para prevenir pérdidas.<br>
+1 – Si se requiere encriptación de comunicación de datos.</p></li>
+<li><p>Necesidades de formación o capacitación de usuarios. Los posibles valores para este atributo son:</p>
+<p>0 – Si no se desarrolla material especial para cursos de capacitación.<br>
+1 – Se proporciona material estándar de tutorial.<br>
+2 – Si se suministran facilidades de ayuda en línea o capacitación especial.<br>
+3 – Se proporciona material para cursos de formación.<br>
+4 – Se proporciona material para cursos de formación en línea.<br>
+5 – Existen requerimientos para un sistema completo independiente de formación o simuladores.</p></li>
+<li><p>Utilización directa por terceras partes. Los posibles valores para este atributo son:</p>
+<p>0 – No hay conexión de terceras partes con el sistema.<br>
+1 – Los datos son recibidos de o enviados a terceras partes conocidas.<br>
+2 – Terceras partes conocidas se conectan directamente al sistema en modo de consulta, únicamente.<br>
+3 – Terceras partes conocidas se conectan directamente al sistema con capacidad de modificación.<br>
+4 – Terceras partes conocidas se conectan directamente al sistema con capacidad de modificación, creación y eliminación.<br>
+5 – Terceras partes desconocidas pueden acceder al sistema.</p></li>
+<li><p>Documentación.&nbsp;Los posibles valores para este atributo son:</p>
+<p>0 – 0, 1 ó 2 tipos de documento.<br>
+1 – 3 ó 4 tipos de documento.<br>
+2 – 5 ó 6 tipos de documento.<br>
+3 – 7 ú 8 tipos de documento.<br>
+4 – 9 ó 10 tipos de documento.<br>
+5 – 11 ó 12 tipos de documento.</p>
+<p>Los tipos de documentos son los siguientes:</p>
+<ul>
+<li>Documento de Diseño Funcional.</li>
+<li>Documento de Diseño Técnico General.</li>
+<li>Documento de Diseño Técnico Detallado.</li>
+<li>Diccionario de datos.</li>
+<li>Referencias cruzadas de datos / Registros / Programas.</li>
+<li>Manual de Usuario.</li>
+<li>Manual de Operación.</li>
+<li>Presentación del Sistema.</li>
+<li>Dossier de Pruebas.</li>
+<li>Material de Formación.</li>
+<li>Documentos de seguimiento de Costes.</li>
+<li>Dossier de Cambios.</li>
+</ul></li>
+</ol>
+<p>Todos los atributos anteriores, con sus valores correspondientes, se contemplan en la siguiente tabla:</p>
+<p><img src="../images/mark-ii-2.png" class="img-fluid"></p>
+<p>Ajuste por complejidad técnica</p>
+<p>Una vez obtenido el valor de los atributos y sumados se obtiene una cifra comprendida entre 0 y 95, a partir de la cual se obtendrá el factor de ajuste, según la fórmula:</p>
+<p>ACT = 0,65 + 0,005 * TGI</p>
+<p>Siendo:</p>
+<ul>
+<li>ACT: Ajuste por Complejidad Técnica</li>
+<li>TGI: Total Grados de Influencia (equivalente a la suma de los valores de los atributos en el método Albrecht).</li>
+</ul>
+<p>Obtención del tamaño de las partes en línea y por lotes</p>
+<p>A continuación hay que ajustar los puntos función para cada una de las partes, por lotes y en línea, mediante la aplicación de las siguientes fórmulas:</p>
+<p>PFAb = PFNAb * ACT</p>
+<p>PFAo = PFNAo * ACT</p>
+<p>Siendo:</p>
+<ul>
+<li>PFAb: Puntos Función ajustados de las funciones por lotes</li>
+<li>PFNAb: Puntos Función no ajustados de las funciones por lotes</li>
+<li>PFAo: Puntos Función ajustados de las funciones En línea</li>
+<li>PFNAo: Puntos Función no ajustados de las funciones En línea</li>
+<li>ACT: Ajuste por Complejidad Técnica (calculado anteriormente).</li>
+</ul>
+<p>Cálculo del tamaño total del Sistema</p>
+<p>Seguidamente, habría que calcular el tamaño total, en Puntos Función, del sistema, para lo que habría que aplicar:</p>
+<p>PFA = PFAb + PFAo</p>
+<p>Donde:</p>
+<ul>
+<li>PFA: Tamaño del Sistema completo en Puntos Función</li>
+<li>PFAb: Tamaño de la parte Por lotes en Puntos Función</li>
+<li>PFAo: Tamaño de la parte En línea en Puntos Función</li>
+</ul>
+<p>Cálculo de la productividad estimada</p>
+<p>Para el cálculo de la productividad estimada, es necesario aplicar la siguiente fórmula:</p>
+<p><span class="math display">\[P = A \left[ 0,11 e^{-\left(\frac{S-250}{575}\right)^2} + \frac{0,01 S^{1,1}}{522} \right]\]</span></p>
+<p>Siendo:</p>
+<ul>
+<li><span class="math inline">\(P\)</span>: Productividad</li>
+<li><span class="math inline">\(A\)</span>: Media de la Industria informática:
+<ul>
+<li><span class="math inline">\(A = 1.0\)</span> para 3GL</li>
+<li><span class="math inline">\(A = 1.6\)</span> para 4GL</li>
+</ul></li>
+<li><span class="math inline">\(S\)</span>: Tamaño del Sistema en <span class="math inline">\(\text{PFA}\)</span></li>
+</ul>
+<p>Cálculo del esfuerzo en horas</p>
+<p>Una vez conocida la productividad estimada, habría que calcular el esfuerzo en horas de trabajo, para lo que se aplicaría la siguiente fórmula:</p>
+<p><span class="math display">\[W = \frac{B * \text{PFA}}{P}\]</span></p>
+<p>Siendo:</p>
+<ul>
+<li><span class="math inline">\(W\)</span>: Esfuerzo en horas de trabajo</li>
+<li><span class="math inline">\(B\)</span>: Factor de complejidad:
+<ul>
+<li><span class="math inline">\(B = 1.0\)</span> si es en línea</li>
+<li><span class="math inline">\(B = 1.5\)</span> si es por lotes</li>
+<li><span class="math inline">\(B = (So + 1.5 Sb)/(So + Sb)\)</span> si el sistema es mixto</li>
+</ul></li>
+<li><span class="math inline">\(\text{PFA}\)</span>: Puntos Función ajustados</li>
+<li><span class="math inline">\(P\)</span>: Productividad en PF/hora</li>
+</ul>
+<p>Cálculo del plazo de entrega</p>
+<p>En primer lugar habría que calcular el factor a aplicar, estando éste en relación directa con el tamaño del sistema y cuyo valor se obtiene mediante la aplicación de la siguiente fórmula:</p>
+<p><span class="math display">\[E = 0.45 * \sqrt{S}\]</span></p>
+<p>Siendo:</p>
+<ul>
+<li><span class="math inline">\(E\)</span>: Puntos Función / semana</li>
+<li><span class="math inline">\(S\)</span>: Tamaño del Sistema en PFA</li>
+</ul>
+<p>A continuación, se obtendría el tiempo estimado total para la entrega del Sistema, para lo que habría que aplicar la fórmula que aparece seguidamente:</p>
+<p><span class="math display">\[\text{PE} = \frac{S}{E}\]</span></p>
+<p>Siendo:</p>
+<ul>
+<li><span class="math inline">\(\text{PE}\)</span>: Plazo de entrega, en semanas</li>
+<li><span class="math inline">\(S\)</span>: Tamaño del Sistema en PFA</li>
+<li><span class="math inline">\(E\)</span>: Puntos Función / semana</li>
+</ul>
+</section>
+</section>
+</section>
 </section>
 </section>
 <section id="staffing-size" class="level3" data-number="13.3.2">
 <h3 data-number="13.3.2" class="anchored" data-anchor-id="staffing-size"><span class="header-section-number">13.3.2</span> Staffing Size (Orientación a Objetos)</h3>
+<p>Staffing Size es un conjunto de métricas para estimar el número de personas necesarias en un desarrollo Orientación a Objetos, y para determinar el tiempo de su participación en el mismo.</p>
+<section id="número-medio-de-personas-por-día-y-por-clase" class="level4 unnumbered unlisted">
+<h4 class="unnumbered unlisted anchored" data-anchor-id="número-medio-de-personas-por-día-y-por-clase">Número medio de personas por día y por clase</h4>
+<p>El esfuerzo medio empleado en el desarrollo de una única clase es el mejor indicador de la cantidad de trabajo requerido en un proyecto. Esto supone contar con una estimación previa del número de clases a desarrollar.</p>
+<p>Hay una serie de aspectos que influyen directamente en la estimación del promedio de personas necesarias al día por clase:</p>
+<ul>
+<li>El número de clases clave y clases secundarias existentes en el modelo.</li>
+<li>El lenguaje de programación utilizado. Hay muchas diferencias, por ejemplo entre C++ y Smalltalk.</li>
+</ul>
+<section id="factores-importantes" class="level5 unnumbered unlisted">
+<h5 class="unnumbered unlisted anchored" data-anchor-id="factores-importantes">Factores importantes</h5>
+<ul>
+<li>Las clases de interfaz versus resto de clases del modelo: Las clases de interfaz de usuario suelen tener muchos más métodos y son menos estables en memoria que las propias del modelo de clases.</li>
+<li>Clases abstractas versus a clases concretas: El sobreesfuerzo necesario para desarrollar una clase abstracta, se puede compensar con el que precisa el desarrollo de una clase concreta.</li>
+<li>Clases clave versus clases de soporte: Las clases clave generalmente conllevan un tiempo superior de desarrollo, porque son las clases que representan las características principales del dominio del negocio.</li>
+<li>Clases avanzadas versus a clases sencillas: La utilización de clases más complejas como los patrones y los marcos hace que el modelo sea muchos más efectivo, aunque el desarrollo de este tipo de clases requiere un mayor esfuerzo.</li>
+<li>Clases “maduras” versus “inmaduras”: Las clases maduras, aquellas que su funcionamiento y utilidad ha sido ampliamente comprobado porque se han utilizado durante un periodo de tiempo suficiente, suelen tener más métodos pero requieren menos tiempo de desarrollo, porque únicamente habrá que realizar algún desarrollo adicional sobre las ya existentes.</li>
+<li>Profundidad de herencia en la jerarquía de clases: Las clases más anidadas, es decir con una profundidad mayor en la jerarquía, suponen menos esfuerzo de desarrollo ya que suelen ser una especialización de superclases, y generalmente tienen menos métodos.</li>
+<li>Ámbito de programación: Depuradores de código integrados, visores de jerarquía de clases, compiladores incrementales y otro tipo de herramientas pueden facilitar y acelerar el desarrollo.</li>
+<li>Librerías de clase: El número, el tipo y la madurez de las clases disponibles para reutilizar, pueden afectar a los niveles de productividad.</li>
+</ul>
+</section>
+<section id="umbrales" class="level5 unnumbered unlisted">
+<h5 class="unnumbered unlisted anchored" data-anchor-id="umbrales">Umbrales</h5>
+<p>Basándose en el desarrollo de algunos tipos de proyectos se han establecido algunas estimaciones orientativas para el tiempo preciso de desarrollo de las clases:</p>
+<ul>
+<li>De diez a quince días para una clase en producción, es decir, incluyendo la documentación y pruebas de las clases.</li>
+<li>De seis a ocho días para desarrollar un prototipo, es decir, incluyendo código para las pruebas unitarias, pero sin tener en cuenta las pruebas de integración y las pruebas formales de casos.</li>
+</ul>
+</section>
+<section id="sugerencias" class="level5 unnumbered unlisted">
+<h5 class="unnumbered unlisted anchored" data-anchor-id="sugerencias">Sugerencias</h5>
+<ul>
+<li>Utilizar una estimación mayor en los primeros proyectos. Una vez que se tiene experiencia en este tipo de proyectos, se cuenta con un equipo de gente ha participado en proyecto similares y que han desarrollado sus propias clases, se puede proceder a una estimación más baja.</li>
+</ul>
+</section>
+<section id="métricas-relacionadas" class="level5 unnumbered unlisted">
+<h5 class="unnumbered unlisted anchored" data-anchor-id="métricas-relacionadas">Métricas relacionadas</h5>
+<ul>
+<li>Número de clases clave.</li>
+<li>Número de clases secundarias.</li>
+<li>Promedio de clases secundarias por clase clave.</li>
+</ul>
+</section>
+</section>
+<section id="número-de-clases-clave" class="level4 unnumbered unlisted">
+<h4 class="unnumbered unlisted anchored" data-anchor-id="número-de-clases-clave">Número de clases clave</h4>
+<p>Las clases clave representan el dominio del negocio a desarrollar y son las que se definen en las etapas iniciales del análisis.</p>
+<p>Este tipo de clases, por sus características particulares, suelen ser punto de partida de futuros proyectos y se reutilizan frecuentemente porque representan generalidades del dominio del negocio de gran variedad de proyectos.</p>
+<p>El número de clases clave depende directamente de las clases identificadas y consideradas como de vital importancia para el negocio. Para descubrirlas se pueden plantear preguntas como:</p>
+<ul>
+<li>¿Se puede desarrollar la aplicación en este dominio sin esta clase?</li>
+<li>¿El cliente puede considerar este objeto importante?</li>
+<li>¿Los casos de uso incluyen esta clase?</li>
+</ul>
+<p>Las clases secundarias suelen representar interfaces de usuario, comunicaciones entre clases o clases de bases de datos, es decir, clases que complementan a las clases clave.</p>
+<section id="consideraciones" class="level5 unnumbered unlisted">
+<h5 class="unnumbered unlisted anchored" data-anchor-id="consideraciones">Consideraciones</h5>
+<p>El número de clases clave es un indicador del volumen de trabajo necesario para el desarrollo de la aplicación.&nbsp;También es un indicador de la cantidad de objetos reutilizables en el futuro en proyectos con dominio de negocio similares. Esto es debido al hecho de que este tipo de objetos serán especialmente importantes para proyectos con las mismas características y dominio de negocio similares. Hay que tener en cuenta que la elaboración de componentes reutilizables es más laboriosa y su número influye especialmente en el proyecto.</p>
+</section>
+<section id="factores-importantes-1" class="level5 unnumbered unlisted">
+<h5 class="unnumbered unlisted anchored" data-anchor-id="factores-importantes-1">Factores importantes</h5>
+<p>Tipo de interfaces de usuario. Una aplicación con una interfaz de usuario importante, en la mayoría de los sistemas, se construye con clases secundarias para gestionar la interacción del usuario con la aplicación por medio de ventanas de diálogo.</p>
+</section>
+<section id="umbrales-1" class="level5 unnumbered unlisted">
+<h5 class="unnumbered unlisted anchored" data-anchor-id="umbrales-1">Umbrales</h5>
+<p>En general y basándose en la experiencia en este tipo de proyectos, el porcentaje de clases clave varía entre el 20 y el 40 por ciento, el resto suelen ser clases secundarias (interfaces de usuario, comunicaciones, bases de datos).</p>
+</section>
+<section id="sugerencias-1" class="level5 unnumbered unlisted">
+<h5 class="unnumbered unlisted anchored" data-anchor-id="sugerencias-1">Sugerencias</h5>
+<p>Un número especialmente bajo de clases clave (inferior a un 20 por ciento) puede indicar que es necesario seguir con el examen del dominio de negocio para descubrir las abstracciones que simulan el negocio.</p>
+</section>
+<section id="métricas-relacionadas-1" class="level5 unnumbered unlisted">
+<h5 class="unnumbered unlisted anchored" data-anchor-id="métricas-relacionadas-1">Métricas relacionadas</h5>
+<ul>
+<li>Número de clases secundarias.</li>
+<li>Número de clases secundarias por clase clave.</li>
+</ul>
+</section>
+</section>
+<section id="número-de-clases-secundarias" class="level4 unnumbered unlisted">
+<h4 class="unnumbered unlisted anchored" data-anchor-id="número-de-clases-secundarias">Número de clases secundarias</h4>
+<p>Una clase secundaria es un tipo de clase que no es indispensable para el dominio del negocio. Este tipo de clases proporciona una serie de funcionalidades valiosas para las clases clave y las complementan.</p>
+<p>Entre las clases secundarias están incluidas las interfaces de usuario y las clases básicas que representan objetos de programación habituales (fichero, string, stream, base de datos, etc.). Por último también incorporan las numerosas clases de ayuda. Este tipo de clases incorporan la gestión de las clases especializadas con el fin de garantizar un buen desarrollo Orientado a Objetos.</p>
+<p>Las clases secundarias tienen especial interés porque nos da un método para estimar el esfuerzo. Las clases clave generalmente se descubren al principio del proceso de desarrollo. Si se conoce el número de clases secundarias y sus relaciones con las clases clave, la estimación y planificación del proyecto será más adecuada.</p>
+<p>El número de clases secundarias es un indicador del volumen de trabajo necesario para desarrollar la aplicación.</p>
+<section id="factores-importantes-2" class="level5 unnumbered unlisted">
+<h5 class="unnumbered unlisted anchored" data-anchor-id="factores-importantes-2">Factores importantes</h5>
+<p>Hay que tener en cuenta las clases de interfaz de usuario, incluyendo las interfaces gráficas de usuario, ya que es uno de los factores más importante para estimar el número de clases secundarias.</p>
+</section>
+<section id="umbrales-2" class="level5 unnumbered unlisted">
+<h5 class="unnumbered unlisted anchored" data-anchor-id="umbrales-2">Umbrales</h5>
+<p>El número de clases secundarias suele variar de una a tres veces el número de clases clave. El intervalo depende principalmente del tipo de clases de usuario. Las interfaces gráficas de usuario incrementan en dos veces el número de clases en la aplicación final. Las aplicaciones sin interfaces de usuario se incrementan en una vez el número de clases, es decir, en una aplicación con unas 100 clases clave y con interfaces gráficas de usuarios, una estimación previa podría apuntar a unas 300 clases para la aplicación final.</p>
+</section>
+<section id="sugerencias-2" class="level5 unnumbered unlisted">
+<h5 class="unnumbered unlisted anchored" data-anchor-id="sugerencias-2">Sugerencias</h5>
+<ul>
+<li>El contar con un número muy bajo de clases secundarias no indica necesariamente acciones correctoras en cuanto a la revisión del análisis realizado para conseguir el modelo.</li>
+<li>Un número demasiado elevado, a parte de las consideraciones de las interfaces gráficas, puede indicar un factorización en clases muy pobres (sencillas). En ocasiones es preferible tener un número pequeño de clases más independientes, aunque sin llevarlo a extremos.</li>
+</ul>
+</section>
+<section id="métricas-relacionadas-2" class="level5 unnumbered unlisted">
+<h5 class="unnumbered unlisted anchored" data-anchor-id="métricas-relacionadas-2">Métricas relacionadas</h5>
+<ul>
+<li>Número de clases clave.</li>
+<li>Número de personas por día por clase.</li>
+</ul>
+</section>
+</section>
+<section id="promedio-de-clases-secundarias-por-clase-clave" class="level4 unnumbered unlisted">
+<h4 class="unnumbered unlisted anchored" data-anchor-id="promedio-de-clases-secundarias-por-clase-clave">Promedio de clases secundarias por clase clave</h4>
+<p>Las clases secundarias van apareciendo a lo largo del proyecto, mientras que las clases clave suelen encontrarse en las fases iniciales. La relación entre las clases secundaria y clave no es sencilla, ya que se ve afectada por una serie de factores entre los que se incluye la complejidad de la interfaz de usuario.</p>
+<p>Esta métrica trata de encontrar relaciones útiles entre ambos tipos de clases, para poder realizar una estimación de su número al inicio del proyecto.</p>
+<section id="factores-importantes-3" class="level5 unnumbered unlisted">
+<h5 class="unnumbered unlisted anchored" data-anchor-id="factores-importantes-3">Factores importantes</h5>
+<p>La métrica de promedio de clases secundarias por clase clave, indica el número total de clases del proyecto. También se pueden realizar estimaciones del número de total de clases de un proyecto basándose en los resultados de proyectos previos.</p>
+<p>Se puede concluir lo siguiente:</p>
+<ul>
+<li>Proyectos con una importante gestión de interfaces de usuario conllevan de dos a tres veces el número de clases clave para las clases secundarias.</li>
+<li>Proyectos con una gestión más sencilla de la interfaz de usuario implican una o dos veces el número de clases clave para las clases secundarias.</li>
+</ul>
+<p>Ejemplo:</p>
+<p>Si durante la fase de análisis se encuentran unas 100 clases clave y el proyecto implica una gestión importante de la interfaz de usuario, podemos dar un promedio de 2.5 y proporcionar una estimación de unas 250 clases secundarias. El número total de clases para el proyecto estimado sería unas 350 clases.</p>
+</section>
+<section id="umbrales-3" class="level5 unnumbered unlisted">
+<h5 class="unnumbered unlisted anchored" data-anchor-id="umbrales-3">Umbrales</h5>
+<p>Hay que tener en cuenta la complejidad de la interfaz de usuario y por otro lado es importante considerar la experiencia del equipo de desarrollo.</p>
+<p>Equipos con poca experiencia de desarrollo tienden a crear un modelo o muy complejo o muy sencillo.</p>
+<p>Para aplicaciones con una gestión sencilla de interfaces de usuario, debería existir al menos tantas clases secundarias como clases clave.</p>
+</section>
+<section id="sugerencias-3" class="level5 unnumbered unlisted">
+<h5 class="unnumbered unlisted anchored" data-anchor-id="sugerencias-3">Sugerencias</h5>
+<ul>
+<li>Un promedio muy bajo puede indicar que se está haciendo muchas cosas con muy pocas clases. En este punto es conveniente examinar la funcionalidad de las clases existentes, tratando de dividir las que sean posibles en nuevas clases.</li>
+</ul>
+</section>
+</section>
 </section>
 <section id="planificacion" class="level3" data-number="13.3.3">
 <h3 data-number="13.3.3" class="anchored" data-anchor-id="planificacion"><span class="header-section-number">13.3.3</span> Planificación</h3>
+<p>La planificación de un proyecto es la previsión en fechas de la realización del conjunto de actividades que lo componen, teniendo en cuenta que se deben emplear para ello unos recursos que implican unos costes cuyo conjunto forman el presupuesto base para lograr un resultado comprometido con el Cliente.</p>
+<p>El objetivo básico de la planificación del proyecto es definir y preparar las condiciones de trabajo (estableciendo recursos, fechas y costes) para lograr los objetivos que se persiguen con el proyecto.</p>
+<p>Para realizar una buena planificación se deben utilizar diversas técnicas, algunas de las cuales se exponen a continuación.</p>
+<p>El método <a href="#pert">PERT</a> (<strong>P</strong>rogram <strong>E</strong>valuation and <strong>R</strong>eview <strong>T</strong>echnique – Técnica de Evaluación y Revisión de Programas) y el método CPM (<strong>C</strong>ritical <strong>P</strong>ath <strong>M</strong>ethod – Método del Camino Crítico) constituyen las dos técnicas pioneras en el campo de la moderna programación y control de proyectos. Tanto el PERT como el CPM hicieron su aparición aproximadamente hacia 1960. Aunque estas dos técnicas se gestaron a partir de investigaciones totalmente independientes, en sus formas esenciales son idénticas, existiendo sólo ligeras diferencias en sus aspectos formales y de notación.</p>
 <section id="pert" class="level4" data-number="13.3.3.1">
 <h4 data-number="13.3.3.1" class="anchored" data-anchor-id="pert"><span class="header-section-number">13.3.3.1</span> Program Evaluation &amp; Review Technique – PERT</h4>
+<p>El objetivo del PERT es establecer las dependencias entre las distintas tareas del proyecto para saber de qué manera han de encadenarse dichas tareas en la planificación.&nbsp;Estas dependencias o prelaciones se establecen a partir de las precedentes.</p>
+<section id="descripción-7" class="level5 unnumbered unlisted">
+<h5 class="unnumbered unlisted anchored" data-anchor-id="descripción-7">Descripción</h5>
+<p>El método PERT parte de la descomposición del proyecto en una serie de obras parciales o actividades. Entendiendo por actividad la ejecución de una tarea, que exige para su realización la utilización de recursos tales como: mano de obra, maquinaria, materiales,… Así, por ejemplo, la nivelación de terrenos, la excavación de cimientos, etc., son actividades en el proyecto de construcción de un edificio.</p>
+<p>Después del concepto de actividad, el método PERT establece el concepto de suceso. Un suceso es un acontecimiento, un punto en el tiempo, una fecha en el calendario. El suceso no consume recursos, sólo indica el principio o el fin de una actividad o de un conjunto de actividades.</p>
+</section>
+<section id="notación-8" class="level5 unnumbered unlisted">
+<h5 class="unnumbered unlisted anchored" data-anchor-id="notación-8">Notación</h5>
+<p>Para representar las diferentes actividades en que se descompone un proyecto, así como sus correspondiente sucesos, se utiliza una estructura de grafo. Los arcos del grafo representan las actividades, y los vértices los sucesos.</p>
+<p>Así el vértice 1 del diagrama que aparece a continuación indica el suceso inicio de la actividad A y el vértice 2 el suceso fin de dicha actividad. El arco que une los vértices 1 y 2 representa la propia realización de la actividad.</p>
+<p><img src="../images/PERT-1.png" class="img-fluid"></p>
+<p>Por otra parte, como se ha dicho, un suceso puede representar el principio o fin de un conjunto de actividades. En efecto, en la siguiente figura el vértice 1 representa el suceso inicio de las actividades A, B y C.</p>
+<p><img src="../images/PERT-2.png" class="img-fluid"></p>
+<p>Mientras que en la figura que aparece a continuación, el vértice 4 representa el suceso fin de las actividades A, B y C.</p>
+<p><img src="../images/PERT-3.png" class="img-fluid"></p>
+<p>Una vez descompuesto el proyecto en actividades, la fase siguiente del método PERT consiste en establecer las prelaciones existentes entre las diferentes actividades. Estas prelaciones indican el orden en que deben ejecutarse dichas actividades. El caso más sencillo son la prelaciones lineales, que se presentan cuando, para poder iniciar una actividad, es necesario que haya finalizado previamente una única actividad (la precedente).</p>
+<p>Observando la siguiente figura se aprecia que para poder iniciar la actividad B es necesario que haya finalizado la actividad A. Es decir, el vértice 2 representa el suceso fin de la actividad A y, a la vez, el suceso comienzo de la actividad B.</p>
+<p><img src="../images/PERT-4.png" class="img-fluid"></p>
+<p>A continuación, se va a estudiar el caso de las prelaciones que originan una convergencia. En el siguiente diagrama se representa este caso. Para poder iniciar la actividad D es necesario que se hayan finalizado las actividades A, B y C. Es decir, el vértice 4 representa el suceso fin de las actividades A, B y C y, a la vez, el suceso comienzo de la actividad D.</p>
+<p><img src="../images/PERT-5.png" class="img-fluid"></p>
+<p>El caso opuesto al anterior es el de las prelaciones que originan una divergencia, representado en el diagrama que aparece a continuación.&nbsp;En este caso, para poder iniciar las actividades B, C y D es necesario que se haya finalizado previamente la actividad A.</p>
+<p><img src="../images/PERT-6.png" class="img-fluid"></p>
+<p>Sean ahora las siguientes prelaciones: la actividad A es anterior a las actividades B, C y D y dichas actividades (B, C y D) son anteriores a la actividad E. Una forma de reflejarlas es la que viene representada en el siguiente diagrama. En él se muestran las prelaciones anteriores correctamente. Pero esta representación puede resultar confusa, ya que las actividades B, C y D tienen el mismo origen y el mismo destino.</p>
+<p><img src="../images/PERT-7.png" class="img-fluid"></p>
+<p>Para resolver este problema se puede recurrir a las actividades ficticias, como se muestra en el siguiente diagrama, donde se distinguen perfectamente las actividades B, C y D, ya que las tres actividades, aun naciendo en el mismo vértice, mueren en vértices distintos.</p>
+<p><img src="../images/PERT-8.png" class="img-fluid"></p>
+</section>
+<section id="ejemplo-7" class="level5 unnumbered unlisted">
+<h5 class="unnumbered unlisted anchored" data-anchor-id="ejemplo-7">Ejemplo</h5>
+<p>Mediante el siguiente ejemplo, se puede realizar la construcción del diagrama PERT de un proyecto completo. Para ello, debe comenzarse por introducir los conceptos de suceso inicio del proyecto y de suceso fin del proyecto. Se entiende por suceso inicio del proyecto aquel que, representando el comienzo de una o varias actividades, no representa, sin embargo, el fin de ninguna. Por el contrario, el suceso fin del proyecto es aquel que, representando el fin de una o más de una actividad, no representa, sin embargo, el comienzo de ninguna otra actividad. A este suceso se le reconoce en el grafo al estar representado por el único vértice al que llegan, pero no salen arcos.</p>
+<p>A continuación se va a construir el grafo PERT de un proyecto cuyas actividades y prelaciones existentes entre las mismas son:</p>
+<ul>
+<li><strong>A</strong> precede a <strong>C</strong>, <strong>D</strong>, <strong>E</strong></li>
+<li><strong>B</strong> precede a <strong>C</strong></li>
+<li><strong>C</strong> precede a <strong>K</strong></li>
+<li><strong>D</strong> precede a <strong>F</strong>, <strong>G</strong></li>
+<li><strong>E</strong> precede a <strong>J</strong></li>
+<li><strong>F</strong> precede a <strong>I</strong></li>
+<li><strong>G</strong> precede a H**</li>
+<li><strong>H</strong>, <strong>I</strong>, <strong>J</strong> preceden a L**</li>
+<li><strong>K</strong> precede a <strong>M</strong></li>
+<li><strong>L</strong> precede a <strong>P</strong></li>
+<li><strong>M</strong> precede a <strong>N</strong></li>
+<li><strong>N</strong>, <strong>P</strong> preceden a <strong>Q</strong></li>
+<li><strong>Q</strong> precede a <strong>R</strong></li>
+</ul>
+<p>Para construir el grafo PERT el primer paso debe ser recoger de una manera sistematizada la información contenida en el anterior conjunto de prelaciones. Para ello, existen básicamente dos procedimientos: la <strong>matriz de encadenamientos</strong> y el <strong>cuadro de prelaciones</strong>.</p>
+<p>La matriz de encadenamientos consiste en una matriz cuadrada cuya dimensión es igual al número de actividades en que se ha descompuesto el proyecto. Cuando un elemento de dicha matriz aparece marcado con una <strong>X</strong>, indica que para poder iniciar la actividad que corresponde a la fila que cruza ese elemento es necesario que se haya finalizado previamente la actividad que corresponde a la columna que cruza dicho elemento.</p>
+<p>Con arreglo a esta estructura, la matriz de encadenamientos para el ejemplo es la siguiente:</p>
+<p><img src="../images/PERT-9.png" class="img-fluid"></p>
+<p>Es interesante observar que aquellas filas de la matriz en las que no aparece ninguna <strong>X</strong> indican las actividades que no tienen ningún precedente. Es decir, aquellas actividades cuyo suceso inicial coincide con el suceso inicio del proyecto (actividades A y B). Por otra parte, aquellas columnas en las que no aparece ninguna <strong>X</strong> indican las actividades que no tienen ninguna actividad siguiente, es decir, aquellas actividades cuyo suceso final coincide con el suceso fin del proyecto (actividad R).</p>
+<p>El cuadro de prelaciones está formado por dos columnas. En la primera columna están representadas todas las actividades en que se ha descompuesto el proyecto. En la segunda columna figuran las actividades precedentes de su homóloga en la primera columna. Con los datos del ejemplo se elabora el cuadro de prelaciones, que es el siguiente:</p>
+<p><img src="../images/PERT-10.png" class="img-fluid"></p>
+<p>La actividad o actividades inicio del proyecto se reconocen en el cuadro de prelaciones por no tener ninguna actividad precedente (actividades A y B). La actividad o actividades fin del proyecto se reconocen por no aparecer en la columna (2) de dicho cuadro (actividad R).</p>
+<p>A partir de la matriz de encadenamientos o del cuadro de prelaciones se construye fácilmente el grafo PERT correspondiente. Para los datos del ejemplo, el grafo PERT está representado en el siguiente diagrama.</p>
+<p><img src="../images/PERT-11.png" class="img-fluid"></p>
+</section>
 </section>
 <section id="diagrama-de-gantt" class="level4" data-number="13.3.3.2">
 <h4 data-number="13.3.3.2" class="anchored" data-anchor-id="diagrama-de-gantt"><span class="header-section-number">13.3.3.2</span> Diagrama de Gantt</h4>
+<p>El diagrama de Gantt o cronograma tiene como objetivo la representación del plan de trabajo, mostrando las tareas a realizar, el momento de su comienzo y su terminación y la forma en que las distintas tareas están encadenadas entre sí.</p>
+<section id="descripción-8" class="level5 unnumbered unlisted">
+<h5 class="unnumbered unlisted anchored" data-anchor-id="descripción-8">Descripción</h5>
+<p>El gráfico de Gantt es la forma habitual de presentar el plan de ejecución de un proyecto, recogiendo en las filas la relación de actividades a realizar y en las columnas la escala de tiempos que se está manejando, mientras la duración y situación en el tiempo de cada actividad se representa mediante una línea dibujada en el lugar correspondiente.</p>
+</section>
+<section id="notación-9" class="level5 unnumbered unlisted">
+<h5 class="unnumbered unlisted anchored" data-anchor-id="notación-9">Notación</h5>
+<ul>
+<li>Es un Modelo realizado sobre ejes de coordenadas, donde las tareas se sitúan sobre el eje de ordenadas (y) y los tiempos sobre el de abscisas (x).</li>
+<li>Cada actividad se representa con una barra limitada por las fechas previstas de comienzo y fin.</li>
+<li>Las actividades se agrupan en fases y pueden descomponerse en tareas.</li>
+<li>Cada actividad debe tener recursos asociados.</li>
+<li>Los HITOS son un tipo de actividad que no representa trabajo ni tiene recursos asociados.</li>
+<li>Las actividades se pueden encadenar por dos motivos:
+<ul>
+<li>Encadenamiento funcional o por prelaciones. (Ej.: un programa no puede probarse hasta que haya sido escrito).</li>
+<li>Encadenamiento orgánico o por ocupación de recursos. (Ej.: un programador no puede empezar un programa hasta que haya terminado el anterior).</li>
+</ul></li>
+<li>Pueden realizarse actividades en paralelo siempre que no tengan dependencia funcional u orgánica.</li>
+</ul>
+<section id="ejemplo-8" class="level6 unnumbered unlisted">
+<h6 class="unnumbered unlisted anchored" data-anchor-id="ejemplo-8">Ejemplo</h6>
+<p>El siguiente diagrama es un ejemplo típico de un diagrama de Gantt, en el que aparecen fases, actividades, tareas e hitos.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../images/Gantt-1.png" class="img-fluid figure-img"></p>
+<figcaption>Ejemplo de Diagrama de Gantt</figcaption>
+</figure>
+</div>
+<p>Para que un Gantt sea realista y fiable debe ir acompañado de un gráfico que refleje la actividad de los técnicos (Histograma de Recursos) que componen el equipo del proyecto.</p>
+</section>
+</section>
+<section id="asignación-de-recursos" class="level5 unnumbered unlisted">
+<h5 class="unnumbered unlisted anchored" data-anchor-id="asignación-de-recursos">Asignación de recursos</h5>
+<p>La asignación de recursos es una tarea fundamental en la planificación, ya que hay que considerar aspectos técnicos de cada recurso como su disponibilidad, capacidad de trabajo, impedimentos horarios, etc.</p>
+<p>Es fundamental que los trabajos se descompongan hasta la unidad mínima de tratamiento, es decir: descomponer el proyecto en fases, las fases en actividades y las actividades en tareas, asignando una tarea a un recurso. No debe caerse en el error de asignar una actividad a varios recursos. De no hacerse así, es muy difícil contemplar la plena ocupación de todos los recursos, dándose situaciones anómalas, como es tener un recurso una ocupación muy baja y otro una ocupación excesiva. Conviene que la planificación esté perfectamente depurada, pues de lo contrario se producen los siguientes problemas:</p>
+<ul>
+<li>Se dilata innecesariamente el plazo de entrega.</li>
+<li>Se retiene sin trabajo a un número considerable de usuarios que podrían estar trabajando en otro proyecto.</li>
+<li>Se encarece considerablemente el coste del proyecto, ya que se tienen asignados unos recursos «que no están trabajando» todo el tiempo.</li>
+</ul>
+<p>Por ello es necesario tener en consideración los siguientes aspectos a la hora de asignar recursos.</p>
+<ul>
+<li>Cuantificar necesidades y fechas de incorporación de recursos.</li>
+<li>Obtener un patrón que marque los límites del proyecto.</li>
+<li>Considerar la capacidad, los conocimientos y la experiencia de cada recurso.</li>
+<li>Considerar la complejidad, el tamaño y los requerimientos técnicos de cada tarea.</li>
+<li>Asignar tareas sencillas a recursos con poca experiencia. Si se asignan tareas sencillas a recursos con mucha experiencia, se les estará infrautilizando.</li>
+<li>Asignar tareas complejas a recursos con mucha experiencia. Si las tareas complejas le son asignadas a recursos con poca experiencia, perderán mucho tiempo preguntando a sus compañeros y, lo que es más grave, harán perder mucho tiempo al resto del equipo.</li>
+<li>Construir el histograma de recursos, para poder ver la coherencia de las asignaciones.</li>
+<li>Tratar de asignar una tarea a un único recurso, descomponiendo cuanto sea necesario.</li>
+<li>Vigilar que no haya vacíos en el histograma.</li>
+</ul>
+</section>
+<section id="patrón-de-límites" class="level5 unnumbered unlisted">
+<h5 class="unnumbered unlisted anchored" data-anchor-id="patrón-de-límites">Patrón de límites</h5>
+<p>Esta técnica tiene como objetivo establecer los límites de recursos aproximados. Para ello, una vez conocidos por la estimación el esfuerzo total y el plazo de entrega, hay que realizar las siguientes operaciones:</p>
+<ul>
+<li>Establecer el esfuerzo en meses (con decimales).</li>
+<li>Deducir la parte correspondiente a Diseño Funcional, ya que es una fase con un tipo de actividades diferentes al resto.</li>
+<li>Establecer la duración en meses (con decimales). Normalmente este dato se conocerá por el compromiso adquirido.</li>
+<li>Deducir la duración correspondiente al Diseño Funcional.</li>
+<li>Considerar que todo proyecto tiene tres situaciones claramente diferenciadas:
+<ul>
+<li>Arranque. Durante esta situación se van incorporando paulatinamente recursos al proyecto hasta alcanzar el número máximo de recursos.</li>
+<li>Pleno rendimiento. Esta es una situación de estabilidad en cuanto al número de recursos.</li>
+<li>Finalización.&nbsp;Cuando las tareas van terminándose comienzan a abandonar el proyecto gradualmente los técnicos gradualmente.</li>
+</ul></li>
+<li>Seguidamente, hay que distribuir los recursos:
+<ul>
+<li>Una vez obtenido el número de recursos medios, considerar las tres situaciones que presenta el proyecto: arranque, pleno rendimiento y finalización.</li>
+<li>Considerar que estas tres fases tienen una duración en tiempo aproximadamente igual.</li>
+<li>Considerar que el Jefe del Proyecto está presente durante todo el ciclo de vida.</li>
+<li>Extraer de la parte de Diseño Funcional el esfuerzo correspondiente al Jefe del Proyecto.</li>
+<li>Dividir la duración estimada (sin la parte de Diseño Funcional) en tres partes iguales.</li>
+<li>Distribuir la mitad del esfuerzo estimado (sin la parte de análisis funcional) en la situación de PLENO RENDIMIENTO.</li>
+<li>Distribuir la otra mitad, a partes iguales, entre la situación de ARRANQUE y la de FINALIZACIÓN.</li>
+</ul></li>
+</ul>
+<p>Como consecuencia de ello se obtiene el gráfico que aparece a continuación y que servirá para establecer los límites de la asignación de recursos.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../images/Gantt-2.png" class="img-fluid figure-img"></p>
+<figcaption>Ejemplo de Diagrama de Gantt</figcaption>
+</figure>
+</div>
+</section>
+<section id="histograma-de-recursos" class="level5 unnumbered unlisted">
+<h5 class="unnumbered unlisted anchored" data-anchor-id="histograma-de-recursos">Histograma de recursos</h5>
+<p>Es un gráfico sobre unos ejes de coordenadas, estando los recursos sobre el eje de las ordenadas y el tiempo sobre el eje de las abscisas.</p>
+<p>A medida que se incorporan recursos al proyecto, el gráfico aumenta y al contrario cuando son desasignados.</p>
+<p>A continuación puede verse un ejemplo gráfico.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../images/Gantt-3.png" class="img-fluid figure-img"></p>
+<figcaption>Ejemplo de Diagrama de Gantt</figcaption>
+</figure>
+</div>
+</section>
+<section id="planificación-de-actividades-y-recursos" class="level5 unnumbered unlisted">
+<h5 class="unnumbered unlisted anchored" data-anchor-id="planificación-de-actividades-y-recursos">Planificación de actividades y recursos</h5>
+<p>Para realizar adecuadamente la planificación es necesario observar lo siguiente:</p>
+<ul>
+<li>Deben construirse paralelamente el Gantt y el histograma de recursos.</li>
+<li>Deben realizarse los encadenamientos funcionales a partir del PERT.</li>
+<li>Deben asignarse los recursos:
+<ul>
+<li>Con criterio de capacidad profesional.</li>
+<li>Encadenando sus actividades orgánicamente.</li>
+</ul></li>
+<li>Ha de considerarse el máximo de recursos que proporciona el patrón de límites para realizar el histograma de recursos.</li>
+<li>El histograma de recursos deberá reflejar con exactitud los recursos utilizados en el Gantt.</li>
+</ul>
+<p>Seguidamente puede verse gráficamente como debe realizarse la planificación de actividades y la de recursos.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../images/Gantt-4.png" class="img-fluid figure-img"></p>
+<figcaption>Ejemplo de Diagrama de Gantt</figcaption>
+</figure>
+</div>
+</section>
 </section>
 <section id="estructura-de-descomposicion-de-trabajo" class="level4" data-number="13.3.3.3">
 <h4 data-number="13.3.3.3" class="anchored" data-anchor-id="estructura-de-descomposicion-de-trabajo"><span class="header-section-number">13.3.3.3</span> Estructura de Descomposición de Trabajo (WBS – Work Breakdown Structure)</h4>
+<p>En la organización de un proyecto software esta técnica permite estructurar las actividades, sirviendo de “lista de comprobación” y de herramienta de contabilidad analítica del proyecto software.</p>
+<section id="descripción-9" class="level5 unnumbered unlisted">
+<h5 class="unnumbered unlisted anchored" data-anchor-id="descripción-9">Descripción</h5>
+<p>La WBS presenta una descomposición de las actividades de un proyecto según su naturaleza, las cuales posteriormente se asignarán a «cuentas» (identificativos numéricos de las actividades que pueden ser utilizados para soporte de la contabilidad). Es un árbol que agrupa actividades: desarrollo, calidad, gestión, etc.</p>
+<p>Los diagramas <a href="#pert">PERT</a> y <a href="#diagrama-de-gantt">GANTT</a> que se deduzcan de dicha WBS permitirán la planificación del proyecto.</p>
+<p>En definitiva, los grupos de actividades servirán de soporte para el seguimiento (el presupuesto inicial se distribuye en cuentas sobre las que se realiza un control individual y global o contabilidad analítica del proyecto), y constituye un histórico útil para proyectos futuros.</p>
+</section>
+<section id="notación-10" class="level5 unnumbered unlisted">
+<h5 class="unnumbered unlisted anchored" data-anchor-id="notación-10">Notación</h5>
+<p>A continuación se representa el formato de un WBS.</p>
+<p>Por ejemplo, un WBS podría dividirse en los siguientes niveles:</p>
+<ul>
+<li>Nivel 0: <a href="../02-interfaces/04-proyectos.html">Todo el proyecto</a>.</li>
+<li>Nivel 1: <a href="../01-principal/01-introduccion.html#desarrollo-de-sistemas-de-informacion">Desarrollo</a>, <a href="../02-interfaces/01-calidad.html">Gestión de Calidad</a>, <a href="../02-interfaces/03-configuracion.html">Gestión de Configuración</a>, etc.</li>
+<li>Nivel 2: Dentro de <a href="../01-principal/01-introduccion.html#desarrollo-de-sistemas-de-informacion">Desarrollo</a>: Proceso <a href="../01-principal/03-evs.html">EVS</a>, Proceso <a href="../01-principal/04-asi.html">ASI</a>, Proceso <a href="../01-principal/05-dsi.html">DSI</a>, etc.</li>
+</ul>
+</section>
 </section>
 <section id="diagrama-de-extrapolacion" class="level4" data-number="13.3.3.4">
 <h4 data-number="13.3.3.4" class="anchored" data-anchor-id="diagrama-de-extrapolacion"><span class="header-section-number">13.3.3.4</span> Diagrama de Extrapolación</h4>
+<p>Esta técnica se utiliza para realizar un seguimiento de los proyectos software. Con ella se obtienen previsiones de desviaciones en la duración del desarrollo del proyecto.</p>
+<section id="descripción-10" class="level5 unnumbered unlisted">
+<h5 class="unnumbered unlisted anchored" data-anchor-id="descripción-10">Descripción</h5>
+<p>Los Diagramas de Extrapolación constituyen un modo de representación gráfica de la cronología de las estimaciones del consumo de recursos necesarios para la realización de un hito.</p>
+<p>El eje de abscisas representa los periodos de tiempo de seguimiento. El eje de ordenadas representa las estimaciones de duración (duraciones previstas) para la realización del hito considerado. Dado que los ejes tienen la misma escala, los hitos que procedan normalmente (sin retrasos ni adelantos) deben caer sobre la bisectriz.</p>
+<p>Los diagramas de extrapolación se inicializan para cada hito a evaluar en la fecha prevista de comienzo de los mismos, y se actualizan en cada etapa del seguimiento.</p>
+<p>La interpretación de estos diagramas se basa en la hipótesis de que si existe una desviación, su tendencia es a permanecer o empeorar hasta el final del proyecto, a no ser que se apliquen las medidas necesarias para evitarlo. También puede suceder que las medidas aplicadas (más recursos, nuevas tecnologías, etc.) den lugar a un acortamiento de las fechas previstas inicialmente. Por todo ello, se trata de estimar la nueva fecha de fin de proyecto extrapolando la tendencia constatada en un momento determinado del desarrollo.</p>
+<p>El método de previsión de una nueva fecha de fin de proyecto, consiste en realizar una estimación en un momento determinado del desarrollo, obteniendo un nuevo punto de horas de esfuerzo. A continuación se unirán el punto de ordenadas que indicaba el esfuerzo previsto inicial con el obtenido en la estimación, alargando la línea hasta que se corte con la bisectriz. Por último, se unirá este punto de corte con el eje de abscisas mediante una línea recta, obteniendo así la nueva previsión de tiempo para el fin del desarrollo del proyecto.</p>
+<section id="ejemplo-9" class="level6 unnumbered unlisted">
+<h6 class="unnumbered unlisted anchored" data-anchor-id="ejemplo-9">Ejemplo</h6>
+<p>Sea un proyecto en que se estima un esfuerzo de 20.000 horas en un tiempo de 10 meses. En el diagrama inicial el Esfuerzo en miles de horas es 20, y el tiempo en meses es 10.</p>
+<p>Se hace una estimación en el mes 5, y se encuentra un punto de esfuerzo equivalente a 22.000 horas (marcado con un triángulo en la figura). Se une el punto de esfuerzo inicial del eje de ordenadas (20) con el punto estimado, y la prolongación efectúa un corte en la bisectriz. Desde el punto de corte una línea vertical indica, en el eje de abscisas, que el tiempo previsto de terminación será ahora de 12,2 meses. Es decir, el proyecto se va a alargar 2,2 meses más de lo previsto inicialmente.</p>
+<p><img src="../images/extrapolacion.png" class="img-fluid"></p>
+</section>
+</section>
 </section>
 </section>
 </section>
 <section id="practicas" class="level2" data-number="13.4">
 <h2 data-number="13.4" class="anchored" data-anchor-id="practicas"><span class="header-section-number">13.4</span> Prácticas</h2>
+<p>Las prácticas representan un medio para la consecución de unos objetivos específicos de manera rápida, segura y precisa, sin necesidad de cumplir unos criterios rígidos preestablecidos, aunque se aconsejan determinadas pautas a seguir para la consecución de los objetivos propuestos.</p>
 <section id="analisis-de-impacto" class="level3" data-number="13.4.1">
 <h3 data-number="13.4.1" class="anchored" data-anchor-id="analisis-de-impacto"><span class="header-section-number">13.4.1</span> Análisis de Impacto</h3>
+<p>El análisis de impacto tiene como objetivo determinar, desde un punto de vista cuantitativo, qué elementos están realmente implicados en las peticiones de cambio solicitadas por los usuarios, una vez que los sistemas de información se encuentran en producción.</p>
+<section id="descripción-11" class="level4 unnumbered unlisted">
+<h4 class="unnumbered unlisted anchored" data-anchor-id="descripción-11">Descripción</h4>
+<p>Para facilitar la identificación de dichos elementos, es imprescindible que exista en la organización un inventario de todos los componentes y las relaciones existentes entre ellos. Igualmente, es importante evaluar hasta qué punto dichos componentes se han documentado utilizando estándares de nomenclatura, lo que facilitará en mayor o menor medida su localización posterior.</p>
+<p>El tratar de encontrar todos los elementos afectados y controlarlos cuando están poco documentados y no hay estándares, es extremadamente costoso y difícil, además de poco fiable, debido a que un elemento no detectado puede tener serias implicaciones y ser la causa de que el sistema falle. Por tanto, es mucho más útil disponer de un diccionario de recursos de información que permita almacenar toda la información relativa a programas, bases de datos, JCL ́s, pantallas, módulos, clases, objetos y formularios, entre otros, de una forma estructurada con todas sus relaciones y dependencias definidas, asegurando la integridad entre los distintos sistemas de información.&nbsp;De esta manera, se podrán recuperar con mayor exactitud los elementos afectados y en consecuencia evaluar el nivel de implicación existente.</p>
+<p>La forma en que se almacene la información a identificar, constituye el punto de partida para realizar el análisis de impacto. Se comienza definiendo argumentos de búsqueda que utilicen un determinado patrón o estándar de nomenclatura, con el objetivo de localizar de una forma comprensible los elementos afectados y, a su vez, rechazar los que, aun estando afectados, no necesitan modificación.</p>
+<p>Como resultado de dicho análisis, se identifican todos los elementos software y hardware afectados por el cambio y se obtiene información relativa a su localización, líneas totales de código fuente, características de almacenamiento interno, referencias cruzadas, etc.</p>
+<p>Una vez identificados los elementos que están afectados, se determina la complejidad del cambio en base al conocimiento y experiencia existente, a los resultados obtenidos y a las características del entorno tecnológico.</p>
+<p>Es importante resaltar que el análisis de impacto constituye un medio para valorar el alcance e importancia del cambio. No obstante, sin la aplicación de indicadores que complementen las técnicas de estimación, se pueden tomar decisiones de implementación erróneas al no valorar, en su justa medida, el esfuerzo requerido. Esta forma de actuación conlleva un riesgo importante debido a que el plan de trabajo no será lo suficientemente fiable y seguro como para garantizar el cumplimiento de los plazos establecidos.</p>
+<p>Por tanto, en el caso de existir en la instalación indicadores, sería recomendable aplicar los valores asociados sobre los distintos tipos de elementos afectados, con el fin de establecer de una forma más rigurosa y precisa el alcance real del cambio y, en consecuencia:</p>
+<ul>
+<li>Determinar la secuencia de implementación más adecuada.</li>
+<li>Realizar una planificación detallada del desarrollo e implantación de los cambios que se ajuste a las fechas de compromiso establecidas.</li>
+<li>Estimar los recursos necesarios.</li>
+<li>Evaluar el coste asociado.</li>
+</ul>
+<p>En el caso de no disponer de un diccionario de recursos de información, existen herramientas que son capaces de poblar un repositorio a partir de los programas fuente, copys, cadenas, etc. de las aplicaciones. Este proceso se conoce como Ingeniería Inversa, pues se parte del código final para obtener información de los elementos que se utilizaron para generarlo.</p>
+</section>
 </section>
 <section id="catalogacion" class="level3" data-number="13.4.2">
 <h3 data-number="13.4.2" class="anchored" data-anchor-id="catalogacion"><span class="header-section-number">13.4.2</span> Catalogación</h3>
+<p>La catalogación tiene como objetivo estructurar y almacenar la información de un dominio concreto de forma única, con el fin de poder gestionarla de manera sencilla a medida que se va modificando y facilitar su trazabilidad a lo largo del ciclo de vida.</p>
+<section id="descripción-12" class="level4 unnumbered unlisted">
+<h4 class="unnumbered unlisted anchored" data-anchor-id="descripción-12">Descripción</h4>
+<p>En primer lugar se establece el ámbito de aplicación relevante, objeto de la catalogación, con vista a su futura utilización.&nbsp;Ejemplo: requisitos, usuarios, objetivos, etc.</p>
+<p>A continuación, se fija la información de interés que está asociada a un ámbito concreto y se estructura del modo más conveniente asociándole un nombre y sus características propias. En algunos casos se recogen aspectos generales que definen la información a tratar y en otros, se registran elementos que pueden ir variando a lo largo del tiempo o que se necesitan para realizar la trazabilidad.</p>
+<p>Si se determina realizar una catalogación en el ámbito de los requisitos, las características asociadas a los mismos podrían ser, por ejemplo, las siguientes:</p>
+<ul>
+<li>Identificador del requisito.</li>
+<li>Autor.</li>
+<li>Tipo de requisito.</li>
+<li>Descripción.</li>
+<li>Prioridad.</li>
+<li>Estado.</li>
+<li>Fecha de creación.</li>
+<li>Fecha de revisión.</li>
+<li>Etc.</li>
+</ul>
+<p>De acuerdo al ejemplo anterior, se puede hablar de, <strong><em>tipo de requisito</em></strong>: funcional, no funcional, implantación, formación, documentación; <strong><em>Estado</em></strong>: propuesto, aprobado, incorporado; <strong><em>Prioridad</em></strong>: alta, media, baja; etc.</p>
+<p>Si se considera necesario por el tipo de dominio en el que se esté trabajando, se establecerán los distintos valores que pueden contener los campos de control.</p>
+<p>En función de la herramienta utilizada para realizar la catalogación, se podrán generar informes a medida, analizar el impacto de un cambio, realizar la trazabilidad, obtener referencias cruzadas a través de matrices y acceder a los documentos origen de la información, entre otros.</p>
+</section>
 </section>
 <section id="calculo-de-accesos" class="level3" data-number="13.4.3">
 <h3 data-number="13.4.3" class="anchored" data-anchor-id="calculo-de-accesos"><span class="header-section-number">13.4.3</span> Cálculo de Accesos</h3>
+<p>El cálculo de accesos permite realizar una estimación del número de accesos aproximado que debe realizarse para obtener la información de cada consulta, tomando como referencia las vistas del modelo de datos obtenidas como consecuencia del análisis de los <a href="#caminos-de-acceso">caminos de acceso</a> a los datos.</p>
+<p>Esta práctica se utiliza en los procesos <strong>Análisis del Sistema de Información</strong> (<a href="../01-principal/04-asi.html">ASI</a>) y <strong>Diseño del Sistema de Información</strong> (<a href="../01-principal/05-dsi.html">DSI</a>) aplicando los mismos criterios, la única diferencia es que mientras en el primero el acceso es lógico y permite determinar la viabilidad de las consultas, en el segundo es físico y permite establecer las pautas para la optimización del modelo físico de datos.</p>
+<section id="descripción-13" class="level4 unnumbered unlisted">
+<h4 class="unnumbered unlisted anchored" data-anchor-id="descripción-13">Descripción</h4>
+<p>El cálculo de accesos consiste en realizar una estimación del número de ocurrencias o filas de cada entidad o tabla/fichero del modelo de datos que deben ser leídas, teniendo en cuenta los identificadores/claves candidatas o índices asociados a cada entidad o tabla/fichero a leer. La estimación de si una consulta es excesivamente costosa se realiza comparando el número de accesos necesarios para realizar el resto de las consultas.</p>
+<p>Una vez realizada la estimación inicial del número de accesos, se ajustan los valores obtenidos, dividiendo por la prioridad establecida para cada acceso (por ejemplo 1: alta, 2: media, 3: baja) y multiplicando el resultado obtenido por la frecuencia del acceso, es decir el número de veces que se ejecuta la consulta al día.</p>
+<p>Si el resultado final se sale de un intervalo razonable en el que se encuentran el resto de las consultas, se debe analizar si se modifica la consulta, o si por su prioridad y frecuencia es necesaria la modificación del modelo de datos.</p>
+</section>
+<section id="notación-11" class="level4 unnumbered unlisted">
+<h4 class="unnumbered unlisted anchored" data-anchor-id="notación-11">Notación</h4>
+<p><a href="#tecnicas-matriciales">Matricial</a>.</p>
+</section>
 </section>
 <section id="caminos-de-acceso" class="level3" data-number="13.4.4">
 <h3 data-number="13.4.4" class="anchored" data-anchor-id="caminos-de-acceso"><span class="header-section-number">13.4.4</span> Caminos de Acceso</h3>
+<p>El objetivo de esta práctica es analizar la secuencia de acceso a los datos que realizan los módulos a través del modelo de datos. También puede utilizarse para entornos de ficheros.</p>
+<p>Permite verificar en el proceso <strong>Análisis del Sistema de Información</strong> (<a href="../01-principal/04-asi.html">ASI</a>) que el modelo lógico de datos normalizado satisface las principales consultas de información recogidas en el catálogo de requisitos, y en el proceso <strong>Diseño del Sistema de Información</strong> (<a href="../01-principal/05-dsi.html">DSI</a>) que el modelo físico de datos soporta adecuadamente los principales accesos de actualización, cuando proceda, y de consulta.</p>
+<section id="descripción-14" class="level4 unnumbered unlisted">
+<h4 class="unnumbered unlisted anchored" data-anchor-id="descripción-14">Descripción</h4>
+<p>Los caminos de acceso representan la secuencia y tipo de acceso a los datos persistentes del sistema, que deben realizar los procesos primitivos a partir del modelo lógico de datos normalizado, o los módulos/clases a partir del modelo físico de datos.</p>
+<p>En función del modelo de datos sobre el que se realiza el acceso, se identifican las entidades o tablas/ficheros que deben ser accedidas por cada proceso primitivo o módulo/clase, y se crean vistas del modelo de datos en el que aparecen únicamente dichas entidades (subconjunto del modelo de datos). Es conveniente examinar todas las entidades relacionadas con las identificadas inicialmente, debido a que puede que aparezcan más entidades que no se habían contemplado en un primer momento.</p>
+<p>Para cada entidad identificada se indica el tipo de acceso realizado, es decir, si se trata de una lectura, inserción, modificación o eliminación.</p>
+<p>Una vez identificadas las entidades o tablas/ficheros y el tipo de acceso, el siguiente paso es determinar el orden que se sigue para la obtención de los datos a través del modelo de datos, con el fin de identificar accesos redundantes o excesivamente complejos que puedan comprometer el rendimiento final del sistema.</p>
+<p>Se recomienda aplicar esta práctica para aquellos módulos que presenten, entre otras, alguna de las siguientes características:</p>
+<ul>
+<li>Tratamiento crítico.</li>
+<li>Accesos complejos a datos.</li>
+<li>Alta concurrencia.</li>
+</ul>
+</section>
+<section id="notacion" class="level4 unnumbered unlisted">
+<h4 class="unnumbered unlisted anchored" data-anchor-id="notacion">Notacion</h4>
+<p>Vistas del modelo de datos.</p>
+</section>
 </section>
 <section id="diagrama-de-representacion" class="level3" data-number="13.4.5">
 <h3 data-number="13.4.5" class="anchored" data-anchor-id="diagrama-de-representacion"><span class="header-section-number">13.4.5</span> Diagrama de Representación</h3>
+<p>El diagrama de representación tiene como objetivo documentar mediante una imagen una situación específica.</p>
+<section id="descripción-15" class="level4 unnumbered unlisted">
+<h4 class="unnumbered unlisted anchored" data-anchor-id="descripción-15">Descripción</h4>
+<p>Se trata de un diagrama libre, en el que se utiliza cualquier objeto gráfico, con el fin de reflejar algo de interés para el caso y para el que no existe una técnica o práctica.</p>
+<p>Se describe, de la forma que se estime oportuno, cada uno de los elementos que componen el diagrama y, en el caso de ser necesario, la notación que se haya empleado, con el fin de facilitar la comprensión del mismo.</p>
+</section>
+<section id="notación-12" class="level4 unnumbered unlisted">
+<h4 class="unnumbered unlisted anchored" data-anchor-id="notación-12">Notación</h4>
+<p>Libre.</p>
+<section id="ejemplo-10" class="level5 unnumbered unlisted">
+<h5 class="unnumbered unlisted anchored" data-anchor-id="ejemplo-10">Ejemplo</h5>
+<p>En la figura siguiente se presenta un mapa de pantallas en línea de una parte de una aplicación.&nbsp;El diagrama representa la navegación entre las pantallas y las teclas de función para el paso de unas a otras.</p>
+<p><img src="../images/representacion.png" class="img-fluid"></p>
+</section>
+</section>
 </section>
 <section id="factores-criticos-de-exito" class="level3" data-number="13.4.6">
 <h3 data-number="13.4.6" class="anchored" data-anchor-id="factores-criticos-de-exito"><span class="header-section-number">13.4.6</span> Factores Críticos de Éxito</h3>
+<p>Los factores críticos de éxito (FCE), tienen como objetivo ayudar a la planificación de las actividades y recursos de cualquier organización, facilitando la asignación de prioridades dentro de ella.</p>
+<p>Esta práctica implica, para su realización, los siguientes puntos básicos:</p>
+<ul>
+<li>Definir los objetivos globales de la organización.</li>
+<li>Definir una unidad de medida para evaluar el funcionamiento de la organización con respecto a esos objetivos.</li>
+<li>Identificar los factores clave que contribuyen a ese funcionamiento.</li>
+<li>Identificar las relaciones causa-efecto entre objetivos y factores clave.</li>
+</ul>
+<section id="descripción-16" class="level4 unnumbered unlisted">
+<h4 class="unnumbered unlisted anchored" data-anchor-id="descripción-16">Descripción</h4>
+<p>El análisis de los factores críticos de éxito va dirigido a identificar aquellos factores del entorno cuyo funcionamiento adecuado o evolución favorable permitirán la implantación con éxito de una estrategia determinada. Como consecuencia de la identificación de estos factores externos, se podrá proceder a una aplicación adecuada de los recursos de la organización con el fin de conseguir una eficacia óptima de esta estrategia. En esta identificación se deben tener en cuenta cuestiones como:</p>
+<ul>
+<li>Un proceso de la organización cuyo funcionamiento debe situarse a un nivel competitivo con el entorno.</li>
+<li>Una actividad dentro de la organización que se debe realizar con especial atención.</li>
+<li>Un suceso que ocurre en el entorno externo de la organización y sobre el cual se puede o no tener control.</li>
+</ul>
+<p>Es conveniente, diferenciar entre factores de éxito y factores críticos de éxito. Un factor de éxito es algo que debe ocurrir (o debe no ocurrir) para conseguir un objetivo. Este factor de éxito se define como crítico si su cumplimiento es absolutamente necesario para alcanzar los objetivos de la organización, de modo que se requiere una especial atención por parte de los responsables de la organización, con el fin de asegurar que se dedican los mejores recursos para la consecución de dicho factor de éxito.</p>
+<p>Se puede justificar el establecer esta diferencia entre factores de éxito (FE) y factores críticos de éxito (FCE) por dos razones:</p>
+<ul>
+<li>Desde un punto de vista puramente metodológico, es más efectivo separar la consideración de todos los FE de la organización, de la evaluación de cuáles son realmente FCE.</li>
+<li>Desde un punto de vista de eficacia dentro de la organización, la definición de un número demasiado elevado de FCE desvirtuaría el sentido de esta práctica.</li>
+</ul>
+<p>También se debe hacer énfasis en la diferencia existente entre factores de éxito y objetivos de la organización:</p>
+<ul>
+<li>Objetivos son los «fines» hacia los cuales se dirige el esfuerzo y el trabajo de la organización.</li>
+<li>Factores de éxito y como consecuencia los FCE son los «medios» o condiciones que se deben cumplir para alcanzar los objetivos. Para cada objetivo se debe definir al menos un factor de éxito.</li>
+</ul>
+<p>Esta distinción ayudará a la hora de delimitar y definir con claridad los objetivos debido a que éstos serán importantes como un fin en sí mismos. Por tanto, si se considera un objetivo importante sólo como medio de conseguir otros objetivos, se considerará dicho objetivo como un factor de éxito.</p>
+<p>A la hora de definir los factores críticos de éxito de la organización, es necesario que los objetivos que persigue la organización estén claramente definidos, dado que su especificación servirá de base para el estudio de los FCE.</p>
+<p>El análisis estructurado de los FCE constará de los siguientes pasos:</p>
+<ol type="1">
+<li><p>Elaborar una lista de los objetivos de la organización.</p>
+<p>Se determinará la misión, metas y objetivos de la organización.&nbsp;Es conveniente ser explícitos en la especificación de objetivos, intentando cuantificarlos en la medida de lo posible.</p></li>
+<li><p>Depurar la lista de objetivos.</p>
+<p>En este paso se revisará la lista de objetivos obtenida en el paso anterior para asegurar que dichos objetivos constituyen un fin en sí mismos y no meramente un medio para obtener otro objetivo de la lista, en cuyo caso se consideraría como un factor de éxito.</p></li>
+<li><p>Identificar los factores de éxito.</p>
+<p>Teniendo en cuenta el concepto de factor de éxito como medio necesario para alcanzar los objetivos especificados, se obtendrá una lista de factores de éxito para cada uno de dichos objetivos, contemplando tanto aquéllos que dependen de la organización como aquéllos externos que están fuera de su control (legislación, comportamiento de la economía, etc.).</p>
+<p>En este punto no es necesario preocuparse demasiado si se repiten los factores de éxito con los objetivos, o si un factor de éxito para un objetivo está estrechamente relacionado con otro objetivo.</p></li>
+<li><p>Eliminar los factores de éxito no críticos.</p>
+<p>Se utilizarán en este punto diferentes criterios para eliminar los factores de éxito, dependiendo de sí los mismos están dentro o fuera del control de la organización.&nbsp;Como se ha dicho, esta selección será realizada, mediante reuniones en grupo, por los responsables de la organización.</p>
+<p>Los criterios que se seguirán son los siguientes:</p>
+<ul>
+<li>Factores de éxito dentro del control de la organización:
+<ul>
+<li>¿Es el factor de éxito esencial para cumplir los objetivos?.</li>
+<li>¿Requiere especial cuidado en su realización, es decir, recursos especialmente cualificados?.</li>
+</ul></li>
+</ul>
+<p>Si la respuesta a alguna de estas preguntas es «no», se eliminará el factor de éxito de la tabla.</p>
+<ul>
+<li>Factores de éxito fuera del control de la organización:
+<ul>
+<li>¿Es el factor de éxito esencial para cumplir los objetivos?.</li>
+<li>¿Hay una probabilidad significativa de que el factor de éxito no ocurra?.</li>
+<li>Si no ocurre el factor de éxito ¿Podrían alterarse las estrategias con el fin de minimizar el impacto de dicho incumplimiento, suponiendo que hubiese suficiente tiempo disponible?.</li>
+</ul>
+Si la respuesta a alguna de estas preguntas es «no» se elimina el factor de éxito de la tabla. Esto se hace para no considerar aquellos factores de éxito que ocurrirán casi con toda seguridad (en caso de una respuesta negativa a la segunda pregunta) o aquellos factores de éxito cuyo no cumplimiento impide cualquier tipo de acción correctiva (en el caso de una respuesta negativa a la tercera pregunta).</li>
+</ul></li>
+<li><p>Agrupar los factores de éxito de acuerdo con los objetivos.</p>
+<p>Este paso permite depurar la tabla, dado que al analizar cada objetivo por separado puede que los factores de éxito estén repetidos o sean sinónimos de un objetivo.</p></li>
+<li><p>Identificar los componentes de estos factores de éxito.</p>
+<p>En este paso se analizan los factores de éxito para identificar lo que se debe hacer para conseguir cada uno de estos factores de éxito.</p>
+<p>De la descomposición de los factores de éxito se pueden encontrar componentes que son verdaderamente críticos, mientras otros exigen menos esfuerzo o recursos.</p>
+<p>El objetivo de este análisis es identificar de cinco a siete factores de éxito o componentes de estos factores que sean críticos, con el fin último de centrar el esfuerzo de la organización en su consecución.</p></li>
+<li><p>Seleccionar los factores críticos de éxito.</p>
+<p>Se usarán los criterios de selección ya especificados en el paso 4 para los niveles más bajos de descomposición, con objeto de obtener un número de factores críticos de éxito entre 5 y 7.</p>
+<p>Se representan en negrita los factores críticos de éxito seleccionados.</p></li>
+<li><p>Finalizar el estudio de los factores críticos de éxito.</p>
+<p>En este paso se obtiene una lista final que representa las áreas que son cruciales para el éxito de la organización, y donde la dirección debe enfocar su atención.</p></li>
+</ol>
+<p>Para los factores críticos de éxito controlables por parte de los directivos, se deben asignar los recursos necesarios para garantizar su correcta realización, así como las herramientas e información necesarias para dicha realización.&nbsp;Asimismo, se deben establecer procedimientos que permitan asegurar un seguimiento y realimentación sobre el grado de cumplimiento de dichos factores críticos.</p>
+<p>Para aquellos FCE no controlables, son absolutamente necesarios procedimientos que permitan obtener información puntual sobre los mismos. Estos procedimientos proporcionan señales de aviso de manera que se puedan definir e implantar planes de contingencia.</p>
+<section id="ejemplo-11" class="level5 unnumbered unlisted">
+<h5 class="unnumbered unlisted anchored" data-anchor-id="ejemplo-11">Ejemplo</h5>
+<ol type="1">
+<li><p>Elaborar una lista de los objetivos de la organización.</p>
+<p>Como ejemplo de una especificación de objetivos de una organización, puede imaginarse una empresa que se plantee:</p>
+<ul>
+<li>Alcanzar una cifra de ventas de 100 millones de pesetas.</li>
+<li>Obtener un beneficio antes de impuestos de 20 millones.</li>
+<li>Incrementar el margen bruto en las ventas en torno a un 10%.</li>
+<li>Mantener los gastos de funcionamiento en un 20% de las ventas.</li>
+</ul></li>
+<li><p>Depurar la lista de objetivos.</p>
+<p>En el ejemplo que sigue, los objetivos de «Incrementar el margen bruto en las ventas en torno al 10%» y «Mantener los gastos de funcionamiento en un 20% de las ventas», son un medio para conseguir los beneficios de 20 millones, por lo cual se eliminarán de la lista de objetivos y se considerarán factores de éxito.</p>
+<p>En este caso se tendría:</p>
+<p><img src="../images/FCE-1.png" class="img-fluid"></p></li>
+<li><p>Identificar los factores de éxito.</p>
+<p>En el ejemplo, y mediante <a href="#entrevistas">entrevistas</a> con los responsables de la organización, se obtendría la siguiente tabla:</p>
+<p><img src="../images/FCE-2.png" class="img-fluid"></p></li>
+<li><p>Eliminar los factores de éxito no críticos.</p>
+<p>En el ejemplo que se sigue, se decidió que el factor de éxito «Mantener los gastos de funcionamiento en un 20% de las ventas» no exigía recursos especialmente cualificados para conseguirlo, por lo cual se eliminó de la lista.</p>
+<p><img src="../images/FCE-3.png" class="img-fluid"></p></li>
+<li><p>Agrupar los factores de éxito de acuerdo con los objetivos.</p>
+<p>En el ejemplo, el factor de éxito «Incrementar ventas» es sinónimo del objetivo «ventas de 100 millones», por lo tanto se elimina.</p>
+<p><img src="../images/FCE-4.png" class="img-fluid"></p></li>
+<li><p>Identificar los componentes de estos factores de éxito.</p>
+<p>En el ejemplo que se está desarrollando se ha obtenido la siguiente tabla:</p>
+<p><img src="../images/FCE-5.png" class="img-fluid"></p></li>
+<li><p>Seleccionar los factores críticos de éxito.</p>
+<p>En la tabla siguiente se representan en negrita los factores críticos de éxito seleccionados.</p>
+<p><img src="../images/FCE-6.png" class="img-fluid"></p></li>
+<li><p>Finalizar el estudio de los factores críticos de éxito.</p>
+<p>En este paso se obtiene una lista final que representa las áreas que son cruciales para el éxito de la organización, y donde la dirección debe enfocar su atención.</p></li>
+</ol>
+</section>
+</section>
 </section>
 <section id="impacto-en-la-organizacion" class="level3" data-number="13.4.7">
 <h3 data-number="13.4.7" class="anchored" data-anchor-id="impacto-en-la-organizacion"><span class="header-section-number">13.4.7</span> Impacto en la Organización</h3>
+<p>Uno de los objetivos del Plan de Sistemas de Información es proponer los Sistemas y Tecnologías de la Información y Comunicaciones (STIC) que mejor sitúen a la organización, siendo necesario justificar su adquisición en términos financieros y estratégicos. Pero además, la propuesta debe ser viable desde el punto de vista de la organización que tiene que estar preparada para asimilar el cambio. Esta viabilidad es la que se analiza con el impacto en la organización.</p>
+<p>Conviene analizar el impacto en la organización cuando se proponen cambios que afectan a los sistemas de información, a los equipos para el acceso físico a dichos sistemas, a las herramientas de trabajo, etc. Antes de tomar una decisión de cambio importante y llevar a cabo su propuesta, se deben estudiar los posibles inconvenientes y analizar la viabilidad del cambio evaluando, frente a dichos inconvenientes, las ventajas que aporta o la urgencia o necesidad del mismo.</p>
+<section id="objetivo" class="level4 unnumbered unlisted">
+<h4 class="unnumbered unlisted anchored" data-anchor-id="objetivo">Objetivo</h4>
+<p>El objetivo de la aplicación de esta práctica es analizar, anticipadamente, las consecuencias para una organización de una acción relacionada con un cambio de los Sistemas y Tecnologías de la Información y Comunicaciones (STIC). Este tipo de cambios se puede proponer en distintas actividades de un Plan de Sistemas de Información.</p>
+<p>Esta práctica reúne algunas variables comunes con el <a href="#analisis-coste-beneficio">análisis coste/beneficio</a> y con el análisis de riesgos.</p>
+</section>
+<section id="descripción-17" class="level4 unnumbered unlisted">
+<h4 class="unnumbered unlisted anchored" data-anchor-id="descripción-17">Descripción</h4>
+<p>Ante cualquier cambio a llevar a cabo en el contexto de una organización, asociado con la propuesta de nuevos sistemas o tecnologías de información, se debe realizar un estudio que refleje las necesidades asociadas al cambio y las posibles consecuencias para la organización, así como reconsiderar la propuesta antes de hacerla definitiva.</p>
+<p>Por ejemplo, la implantación de una nueva tecnología puede suponer un cambio en la forma de trabajar de un número determinado de personas, para lo que va a ser necesario planificar y llevar a cabo una formación en las fechas oportunas. Como consecuencia habría que disponer de un presupuesto para la formación así como realizar una planificación de los cursos necesarios, coordinada con las personas afectadas dentro de la organización.</p>
+<p>Algunos de los aspectos a considerar en el impacto de un cambio en una organización son:</p>
+<ul>
+<li>Complejidad de la nueva tecnología frente a las capacidades de los recursos de la organización, lo que puede llevar a la necesidad de inversión en formación así como un tiempo posterior para su asimilación.</li>
+<li>Coste de adquisición de tecnología, que puede hacer inviable la propuesta, aunque sería conveniente un análisis coste/beneficio para profundizar más en esta cuestión.</li>
+<li>Tiempo de sustitución de lo antiguo por lo nuevo, ya que puede no ser adecuado a las necesidades actuales.</li>
+<li>Rechazo cultural de la organización, en caso de un cambio importante en la propuesta, lo que haría necesaria la ejecución de acciones para la adecuada gestión del cambio.</li>
+<li>Miedo ante la elección de tecnologías inmaduras, de reciente aparición.</li>
+<li>Tipo de sistemas de información implicados en el cambio. Si son de gestión, los beneficios pueden ser cuantificables a priori. Si son de ayuda a la toma de decisiones o de análisis, puede aportar beneficios menos tangibles en un principio, pero que pueden ser evaluados cualitativamente.</li>
+<li>Recursos y medios necesarios para la situación de cambio, en caso de ser necesaria la contratación de personal, instalaciones con características especiales que impliquen la realización de obra civil, etc.</li>
+<li>Terceros (personas, sistemas de información, etc. fuera del ámbito del Plan de Sistemas de Información) que se puedan ver afectados al recibir determinada información de los sistemas actuales a sustituir.</li>
+</ul>
+</section>
 </section>
 <section id="presentaciones" class="level3" data-number="13.4.8">
 <h3 data-number="13.4.8" class="anchored" data-anchor-id="presentaciones"><span class="header-section-number">13.4.8</span> Presentaciones</h3>
+<p>El objetivo de las presentaciones es la comunicación de avances, conclusiones y resultados por parte del equipo de trabajo al auditorio que corresponda. Se llevan a cabo con el fin de informar sobre el estado de un proyecto en su totalidad o de alguno de los procesos, o exponer uno o varios productos finales de un proceso para su aprobación.</p>
+<section id="descripción-18" class="level4 unnumbered unlisted">
+<h4 class="unnumbered unlisted anchored" data-anchor-id="descripción-18">Descripción</h4>
+<p>En primer lugar se establece el alcance de la presentación, determinando cuál es el objetivo principal y qué contenido general se quiere comunicar.</p>
+<p>Una vez que están claros estos puntos, se inicia la preparación de la presentación considerando quién es el ponente, qué tema se va a exponer, cuál va ser la duración estimada y a qué tipo de audiencia o auditorio va dirigida la presentación considerando, a su vez, el nivel de decisión que tengan sus componentes. Todos estos factores van a influir en el tono más o menos formal de la presentación, en el nivel de detalle que requiere la presentación y en los medios a utilizar.</p>
+<p>La eficacia de una presentación está directamente relacionada con el conocimiento que posea el ponente sobre el tema a exponer, así como de la audiencia a quién va dirigido.</p>
+<p>Las cuestiones que guían esta preparación responden a las preguntas, a quién se dirige, qué se espera conseguir, de cuánto tiempo se dispone, dónde se va exponer y con qué medios.</p>
+<p>Una vez analizados todos estos aspectos, se estructura el mensaje que se quiere transmitir a la audiencia de forma que sea significativo y esté bien organizado. Su estructura se apoya en los objetivos y en el concepto esencial que se está tratando y se divide en una apertura o introducción, una visión previa, el cuerpo del tema, una revisión y la conclusión final. Previamente, el ponente debe decidir cuál es el enfoque más eficaz que le quiere dar al tema que va a exponer en función de la audiencia a quien va dirigido.</p>
+<p>Para conseguir el objetivo de una presentación no es suficiente preparar de una forma estructurada el mensaje, sino que además, el contenido se debe exponer de una forma convincente, utilizando pruebas o materiales de apoyo que refuercen la credibilidad a la audiencia. Por este motivo es importante seleccionar cuidadosamente el material de apoyo que se va a utilizar como pueden ser datos estadísticos, análisis de resultados, etc.</p>
+<p>También tiene especial relevancia escoger los apoyos audiovisuales oportunos que aclaren conceptos o datos difíciles de captar, resaltar puntos significativos, reforzar la comunicación verbal, despertar interés, cambiar el ritmo de la presentación, etc. Habrá que seleccionar los temas que requieren mayor soporte audiovisual.</p>
+<p>Conviene señalar que no se debe utilizar un número excesivo de medios ya que no son un fin en sí mismos y podrían dispersar la atención de la audiencia convirtiéndose en fuente de posibles imprevistos por fallos técnicos y repercutiendo negativamente en el ritmo de la presentación.&nbsp;Por este motivo, es importante conocer las ventajas e inconvenientes de cada medio como son pizarras, transparencias, diapositivas, vídeos, ayudas informatizadas, etc., para seleccionar el más apropiado y garantizar el éxito de la presentación.</p>
+<p>Antes de iniciar la exposición, habrá que asegurar la disponibilidad de todos los recursos materiales necesarios que se hayan considerado oportunos en la preparación de la presentación.</p>
+<p>Durante el desarrollo, es fundamental que el ponente hable con el ritmo adecuado y con un estilo verbal claro, correcto y conciso, y que cuide los aspectos formales. También debe mantener centrado el tema objeto de la presentación, resaltando los puntos más importantes y utilizando el material de soporte de forma adecuada y en el momento preciso, con el fin de captar la atención del auditorio.</p>
+<p>Conviene prestar atención a la corrección con que el ponente se relaciona con la audiencia. Debe intentar mantener una actitud positiva y abierta ante las posibles preguntas o comentarios.</p>
+<p>El estilo no verbal es la suma de todas las claves vocales (tono, voz, etc.) y visuales (expresión facial, gestos, movimiento, etc.) que el ponente transmite a la audiencia y es especialmente importante, ya que con él se puede ejercer un impacto significativo sobre la percepción y respuesta de la audiencia.</p>
+<p>Al finalizar la presentación, puede ser conveniente realizar una evaluación en la que se recojan las capacidades del ponente, el modo en que se llevó a cabo, las características del contenido, material utilizado, etc. y con esta información valorar el grado de satisfacción de la audiencia y tomar las medidas que se consideren oportunas.</p>
+</section>
 </section>
 <section id="prototipado" class="level3" data-number="13.4.9">
 <h3 data-number="13.4.9" class="anchored" data-anchor-id="prototipado"><span class="header-section-number">13.4.9</span> Prototipado</h3>
+<p>El prototipado tiene como objetivo elaborar un modelo o maqueta de las interfaces entre el sistema y el usuario (formatos de pantallas, informes, formularios, etc.), que ayude al usuario a comprender cómo se producirá la interacción con el sistema.</p>
+<p>Es importante que el usuario colabore en su desarrollo sugiriendo los cambios que considere oportunos y evalúe hasta que punto las funciones se implementan de forma apropiada y cubren los requisitos identificados.</p>
+<section id="descripción-19" class="level4 unnumbered unlisted">
+<h4 class="unnumbered unlisted anchored" data-anchor-id="descripción-19">Descripción</h4>
+<p>El prototipado constituye un medio a través del cual se simula el aspecto visual del sistema mediante la representación de los conceptos, componentes, objetos gráficos, entradas y salidas requeridas para la ejecución de cada función en respuesta a las necesidades planteadas.</p>
+<p>Con objeto de conseguir una interfaz eficiente y compatible con las necesidades de los usuarios evitando así futuras frustraciones, es importante contemplar, previamente, una serie de aspectos que son claves en el diseño de prototipos.</p>
+<p>El principal punto a considerar y que constituirá la base sobre la que se centrará el diseño de prototipos es la identificación de los usuarios a los que va dirigido, teniendo en cuenta que debe responder a diferentes individualidades, con distintos conocimientos y habilidades. Cuando los usuarios se sienten a gusto con la imagen del sistema, lo utilizan más eficazmente y cometen menos errores, mejorando su productividad.</p>
+<p>Después de estudiar los perfiles de usuarios se deben analizar las funciones que va a soportar el sistema, con el fin de establecer las dependencias existentes entre ellas y su secuencia de ejecución.&nbsp;Además, se debe determinar el tipo de información que requerirá el usuario para llevar a cabo cada función, así como el estilo de interacción más eficaz.</p>
+<p>Una vez considerados los dos elementos claves para el diseño de la interfaz, es decir, quiénes son los usuarios y qué funciones tienen asignadas, la forma en que se establezca la comunicación entre el usuario y el sistema será decisiva para conseguir su aceptación.&nbsp;Por tanto, al iniciar el diseño de prototipos de pantallas, es imprescindible tener en cuenta una serie de consideraciones, que potencien la facilidad de uso del sistema, que son reseñados a continuación:</p>
+<ul>
+<li>Utilizar conceptos, términos y símbolos familiares al usuario, de modo que sea fácil de aprender y comprender.</li>
+<li>Mantener la coherencia dentro del propio sistema y entre sistemas:
+<ul>
+<li>Proporcionando abreviaturas estándar.</li>
+<li>Aplicando las mismas reglas de interacción a través de toda la interfaz.</li>
+<li>Utilizando el mismo formato para los mensajes de error, de aviso o advertencia, mandatos, títulos y comandos con significado similar. De esta manera la experiencia y los conocimientos adquiridos por los usuarios en sistemas previos puede generalizarse a otros sistemas, reduciendo los costes y recursos necesarios para la formación.</li>
+</ul></li>
+<li>Facilitar la exploración del sistema sin riesgo, permitiendo interrumpir y deshacer las acciones realizadas. De esta forma, el usuario puede utilizar todas las funcionalidades del sistema y trabajar de forma más rápida y eficiente, con la seguridad de que cualquier error puede rectificarse.</li>
+<li>Dificultar la selección de acciones destructivas y no reversibles, pidiéndole verificación de cualquier acción que conlleve un riesgo importante.</li>
+<li>Proporcionar información sobre el estado de ejecución de las funciones, es decir, si la función invocada está en proceso, si se ha completado satisfactoriamente o se ha producido algún error. El usuario nunca debería preguntarse si el sistema está ocupado procesando una transacción o está esperando una nueva entrada y si el sistema no responde a tiempo, iniciar nuevas tareas con el convencimiento de que la anterior finalizó de forma satisfactoria.</li>
+<li>Agrupar las funciones de forma lógica y presentar primero las más utilizadas.</li>
+<li>Buscar la eficiencia en el diálogo evitando cambios frecuentes entre los dispositivos de entrada, tales como el ratón y el teclado.</li>
+</ul>
+<p>Estos principios se aplicarán en mayor o menor medida en función de las características del entorno tecnológico y de las necesidades planteadas, no obstante, la adopción de una guía de estilos facilita la coordinación en el equipo de desarrollo y potencia la reutilización.</p>
+<p>Una vez considerados estos aspectos, para definir los formatos individuales de las pantallas se realiza un análisis de la información a presentar en cada una de ellas. Este análisis se debe centrar en los siguientes puntos:</p>
+<ul>
+<li>Identificar los diferentes tipos de información como, por ejemplo, campos de datos, títulos, comandos y mensajes de error, con el fin de organizar la pantalla en áreas específicas y conseguir un equilibrio, regularidad, secuencialidad, así como, una simetría en la composición de las mismas.</li>
+<li>Estudiar el espacio disponible en las pantallas para determinar qué datos y en qué situación deben aparecer en las mismas, utilizando un formato de visualización que permita al usuario una rápida asimilación de la información.</li>
+<li>Intentar agrupar los datos relacionados y mostrar sólo aquéllos que son esenciales para la ejecución de la función o para la toma de una decisión, eliminado todas las entradas que sean innecesarias. Nunca se debe pedir al usuario que introduzca información que pueda adquirirse automáticamente o calcularse internamente.</li>
+<li>Mantener la coherencia entre la entrada y la visualización de datos.</li>
+<li>Proteger al usuario de intentar alguna acción que podría provocar errores, desactivando los comandos que no son operativos en ese contexto.</li>
+</ul>
+<p>Finalmente, con objeto de atraer la atención del usuario y mejorar su interacción con el sistema, se deben prestar especial atención a aquellos atributos relacionados con el aspecto estético como son el color y el sonido. Los beneficios de su aplicación son altos si se utilizan de una forma adecuada y consistente.</p>
+</section>
 </section>
 <section id="pruebas" class="level3" data-number="13.4.10">
 <h3 data-number="13.4.10" class="anchored" data-anchor-id="pruebas"><span class="header-section-number">13.4.10</span> Pruebas</h3>
+<p>Las pruebas son prácticas a realizar en diversos momentos de la vida del sistema de información para verificar:</p>
+<ul>
+<li>El correcto funcionamiento de los componentes del sistema.</li>
+<li>El correcto ensamblaje entre los distintos componentes.</li>
+<li>El funcionamiento correcto de las interfaces entre los distintos subsistemas que lo componen y con el resto de sistemas de información con los que se comunica.</li>
+<li>El funcionamiento correcto del sistema integrado de hardware y software en el entorno de operación.</li>
+<li>Que el sistema cumple con el funcionamiento esperado y permite al usuario de dicho sistema que determine su aceptación, desde el punto de vista de su funcionalidad y rendimiento.</li>
+<li>Que los cambios sobre un componente de un sistema de información, no introducen un comportamiento no deseado o errores adicionales en otros componentes no modificados.</li>
+</ul>
+<p>Las diversas pruebas a que debe ser sometido un sistema deben ser realizadas tanto por el equipo de desarrolladores, como por los usuarios, equipos de operación y mantenimiento en la implantación, aceptación y mantenimiento del sistema de información.</p>
+<p>Los tipos de pruebas que deben realizarse son:</p>
+<ul>
+<li><a href="#pruebas-unitarias">Pruebas Unitarias</a>.</li>
+<li><a href="#pruebas-de-integracion">Pruebas de Integración</a>.</li>
+<li><a href="#pruebas-del-sistema">Pruebas del Sistema</a>.</li>
+<li><a href="#pruebas-de-implantacion">Pruebas de Implantación</a>.</li>
+<li><a href="#pruebas-de-aceptacion">Pruebas de Aceptación</a>.</li>
+<li><a href="#pruebas-de-regresion">Pruebas de Regresión</a>.</li>
+</ul>
 <section id="pruebas-unitarias" class="level4" data-number="13.4.10.1">
 <h4 data-number="13.4.10.1" class="anchored" data-anchor-id="pruebas-unitarias"><span class="header-section-number">13.4.10.1</span> Pruebas Unitarias</h4>
+<p>Las pruebas unitarias tienen como objetivo verificar la funcionalidad y estructura de cada componente individualmente una vez que ha sido codificado.</p>
+</section>
+<section id="descripción-20" class="level4 unnumbered unlisted">
+<h4 class="unnumbered unlisted anchored" data-anchor-id="descripción-20">Descripción</h4>
+<p>Las pruebas unitarias constituyen la prueba inicial de un sistema y las demás pruebas deben apoyarse sobre ellas.</p>
+<p>Existen dos enfoques principales para el diseño de casos de prueba:</p>
+<ul>
+<li>Enfoque estructural o de caja blanca. Se verifica la estructura interna del componente con independencia de la funcionalidad establecida para el mismo. Por tanto, no se comprueba la corrección de los resultados si éstos se producen. Ejemplos de este tipo de pruebas pueden ser ejecutar todas las instrucciones del programa, localizar código no usado, comprobar los caminos lógicos del programa, etc.</li>
+<li>Enfoque funcional o de caja negra. Se comprueba el correcto funcionamiento de los componentes del sistema de información, analizando las entradas y salidas y verificando que el resultado es el esperado. Se consideran exclusivamente las entradas y salidas del sistema sin preocuparse por la estructura interna del mismo.</li>
+</ul>
+<p>El enfoque que suele adoptarse para una prueba unitaria está claramente orientado al diseño de casos de caja blanca, aunque se complemente con caja negra. El hecho de incorporar casos de caja blanca se debe, por una parte, a que el tamaño del componente es apropiado para poder examinar toda la lógica y por otra, a que el tipo de defectos que se busca, coincide con los propios de la lógica detallada en los componentes.</p>
+<p>Los pasos necesarios para llevar a cabo las pruebas unitarias son los siguientes:</p>
+<ul>
+<li>Ejecutar todos los casos de prueba asociados a cada verificación establecida en el plan de pruebas, registrando su resultado. Los casos de prueba deben contemplar tanto las condiciones válidas y esperadas como las inválidas e inesperadas.</li>
+<li>Corregir los errores o defectos encontrados y repetir las pruebas que los detectaron. Si se considera necesario, debido a su implicación o importancia, se repetirán otros casos de prueba ya realizados con anterioridad.</li>
+</ul>
+<p>La prueba unitaria se da por finalizada cuando se hayan realizado todas las verificaciones establecidas y no se encuentre ningún defecto, o bien se determine su suspensión.</p>
 </section>
 <section id="pruebas-de-integracion" class="level4" data-number="13.4.10.2">
 <h4 data-number="13.4.10.2" class="anchored" data-anchor-id="pruebas-de-integracion"><span class="header-section-number">13.4.10.2</span> Pruebas de Integración</h4>
+<p>El objetivo de las pruebas de integración es verificar el correcto ensamblaje entre los distintos componentes una vez que han sido probados unitariamente con el fin de comprobar que interactúan correctamente a través de sus interfaces, tanto internas como externas, cubren la funcionalidad establecida y se ajustan a los requisitos no funcionales especificados en las verificaciones correspondientes.</p>
+<section id="descripción-21" class="level5 unnumbered unlisted">
+<h5 class="unnumbered unlisted anchored" data-anchor-id="descripción-21">Descripción</h5>
+<p>En las pruebas de integración se examinan las interfaces entre grupos de componentes o subsistemas para asegurar que son llamados cuando es necesario y que los datos o mensajes que se transmiten son los requeridos.</p>
+<p>Debido a que en las pruebas unitarias es necesario crear módulos auxiliares que simulen las acciones de los componentes invocados por el que se está probando y a que se han de crear componentes «conductores» para establecer las precondiciones necesarias, llamar al componente objeto de la prueba y examinar los resultados de la prueba, a menudo se combinan los tipos de prueba unitarias y de integración.</p>
+<p>Los tipos fundamentales de integración son los siguientes:</p>
+<section id="integracion-incremental" class="level6 unnumbered unlisted">
+<h6 class="unnumbered unlisted anchored" data-anchor-id="integracion-incremental">Integración incremental</h6>
+<p>Se combina el siguiente componente que se debe probar con el conjunto de componentes que ya están probados y se va incrementando progresivamente el número de componentes a probar.</p>
+<p>Con el tipo de prueba incremental lo más probable es que los problemas que surjan al incorporar un nuevo componente o un grupo de componentes previamente probado, sean debidos a este último o a las interfaces entre éste y los otros componentes.</p>
+<p>Se distinguen las siguientes estrategias de integración:</p>
+<ul>
+<li><strong>De arriba abajo</strong> <strong><em>(top-down)</em></strong>. El primer componente que se desarrolla y prueba es el primero de la jerarquía (A). Los componentes de nivel más bajo se sustituyen por componentes auxiliares para simular a los componentes invocados. En este caso no son necesarios componentes conductores. Una de las ventajas de aplicar esta estrategia es que las interfaces entre los distintos componentes se prueban en una fase temprana y con frecuencia.</li>
+<li><strong>De abajo arriba</strong> <strong><em>(bottom-up)</em></strong>. En este caso se crean primero los componentes de más bajo nivel (E, F) y se crean componentes conductores para simular a los componentes que los llaman. A continuación se desarrollan los componentes de más alto nivel (B, C, D) y se prueban. Por último dichos componentes se combinan con el que los llama (A). Los componentes auxiliares son necesarios en raras ocasiones. Este tipo de enfoque permite un desarrollo más en paralelo que el enfoque de arriba abajo, pero presenta mayores dificultades a la hora de planificar y de gestionar.</li>
+<li><strong>Estrategias combinadas</strong>. A menudo es útil aplicar las estrategias anteriores conjuntamente. De este modo, se desarrollan partes del sistema con un enfoque «<em>top-down</em>», mientras que los componentes más críticos en el nivel más bajo se desarrollan siguiendo un enfoque «<em>bottom-up</em>». En este caso es necesaria una planificación cuidadosa y coordinada de modo que los componentes individuales se «encuentren» en el centro.</li>
+</ul>
+<p><img src="../images/pruebas-integracion.png" class="img-fluid"></p>
+</section>
+<section id="integracion-no-incremental" class="level6 unnumbered unlisted">
+<h6 class="unnumbered unlisted anchored" data-anchor-id="integracion-no-incremental">Integración no incremental</h6>
+<p>Se prueba cada componente por separado y posteriormente se integran todos de una vez realizando las pruebas pertinentes. Este tipo de integración se denomina también <em>Big-Bang</em> (gran explosión).</p>
+</section>
+</section>
 </section>
 <section id="pruebas-del-sistema" class="level4" data-number="13.4.10.3">
 <h4 data-number="13.4.10.3" class="anchored" data-anchor-id="pruebas-del-sistema"><span class="header-section-number">13.4.10.3</span> Pruebas del Sistema</h4>
+<p>Las pruebas del sistema tienen como objetivo ejercitar profundamente el sistema comprobando la integración del sistema de información globalmente, verificando el funcionamiento correcto de las interfaces entre los distintos subsistemas que lo componen y con el resto de sistemas de información con los que se comunica.</p>
+<p>Son pruebas de integración del sistema de información completo, y permiten probar el sistema en su conjunto y con otros sistemas con los que se relaciona para verificar que las especificaciones funcionales y técnicas se cumplen. Dan una visión muy similar a su comportamiento en el entorno de producción.</p>
+<section id="descripción-22" class="level5 unnumbered unlisted">
+<h5 class="unnumbered unlisted anchored" data-anchor-id="descripción-22">Descripción</h5>
+<p>Una vez que se han probado los componentes individuales y se han integrado, se prueba el sistema de forma global. En esta etapa pueden distinguirse los siguientes tipos de pruebas, cada uno con un objetivo claramente diferenciado:</p>
+<ul>
+<li><strong>Pruebas funcionales</strong>. Dirigidas a asegurar que el sistema de información realiza correctamente todas las funciones que se han detallado en las especificaciones dadas por el usuario del sistema.</li>
+<li><strong>Pruebas de comunicaciones</strong>. Determinan que las interfaces entre los componentes del sistema funcionan adecuadamente, tanto a través de dispositivos remotos, como locales. Asimismo, se han de probar las interfaces hombre/máquina.</li>
+<li><strong>Pruebas de rendimiento</strong>. Consisten en determinar que los tiempos de respuesta están dentro de los intervalos establecidos en las especificaciones del sistema.</li>
+<li><strong>Pruebas de volumen</strong>. Consisten en examinar el funcionamiento del sistema cuando está trabajando con grandes volúmenes de datos, simulando las cargas de trabajo esperadas.</li>
+<li><strong>Pruebas de sobrecarga</strong>. Consisten en comprobar el funcionamiento del sistema en el umbral límite de los recursos, sometiéndole a cargas masivas. El objetivo es establecer los puntos extremos en los cuales el sistema empieza a operar por debajo de los requisitos establecidos.</li>
+<li><strong>Pruebas de disponibilidad de datos</strong>. Consisten en demostrar que el sistema puede recuperarse ante fallos, tanto de equipo físico como lógico, sin comprometer la integridad de los datos.</li>
+<li><strong>Pruebas de facilidad de uso</strong>. Consisten en comprobar la adaptabilidad del sistema a las necesidades de los usuarios, tanto para asegurar que se acomoda a su modo habitual de trabajo, como para determinar las facilidades que aporta al introducir datos en el sistema y obtener los resultados.</li>
+<li><strong>Pruebas de operación</strong>. Consisten en comprobar la correcta implementación de los procedimientos de operación, incluyendo la planificación y control de trabajos, arranque y rearranque del sistema, etc.</li>
+<li><strong>Pruebas de entorno</strong>. Consisten en verificar las interacciones del sistema con otros sistemas dentro del mismo entorno.</li>
+<li><strong>Pruebas de seguridad</strong>. Consisten en verificar los mecanismos de control de acceso al sistema para evitar alteraciones indebidas en los datos.</li>
+</ul>
+</section>
 </section>
 <section id="pruebas-de-implantacion" class="level4" data-number="13.4.10.4">
 <h4 data-number="13.4.10.4" class="anchored" data-anchor-id="pruebas-de-implantacion"><span class="header-section-number">13.4.10.4</span> Pruebas de Implantación</h4>
+<p>El objetivo de las pruebas de implantación es comprobar el funcionamiento correcto del sistema integrado de hardware y software en el entorno de operación, y permitir al usuario que, desde el punto de vista de operación, realice la aceptación del sistema una vez instalado en su entorno real y en base al cumplimiento de los requisitos no funcionales especificados.</p>
+<section id="descripción-23" class="level5 unnumbered unlisted">
+<h5 class="unnumbered unlisted anchored" data-anchor-id="descripción-23">Descripción</h5>
+<p>Una vez que hayan sido realizadas las pruebas del sistema en el entorno de desarrollo, se llevan a cabo las verificaciones necesarias para asegurar que el sistema funcionará correctamente en el entorno de operación.&nbsp;Debe comprobarse que responde satisfactoriamente a los requisitos de rendimiento, seguridad, operación y coexistencia con el resto de los sistemas de la instalación para conseguir la aceptación del usuario de operación.</p>
+<p>Las pruebas de <strong>seguridad</strong> van dirigidas a verificar que los mecanismos de protección incorporados al sistema cumplen su objetivo; las de <strong>rendimiento</strong> a asegurar que el sistema responde satisfactoriamente en los márgenes establecidos en cuanto tiempos de respuesta, de ejecución y de utilización de recursos, así como los volúmenes de espacio en disco y capacidad; por último con las pruebas de <strong>operación</strong> se comprueba que la planificación y control de trabajos del sistema se realiza de acuerdo a los procedimientos establecidos, considerando la gestión y control de las comunicaciones y asegurando la disponibilidad de los distintos recursos.</p>
+<p>Asimismo, también son llevadas a cabo las pruebas de <strong>gestión de copias de seguridad y recuperación</strong>, con el objetivo de verificar que el sistema no ve comprometido su funcionamiento al existir un control y seguimiento de los procedimientos de salvaguarda y de recuperación de la información, en caso de caídas en los servicios o en algunos de sus componentes. Para comprobar estos últimos, se provoca el fallo del sistema, verificando si la recuperación se lleva a cabo de forma apropiada. En el caso de realizarse de forma automática, se evalúa la inicialización, los mecanismos de recuperación del estado del sistema, los datos y todos aquellos recursos que se vean implicados.</p>
+<p>Las verificaciones de las pruebas de implantación y las pruebas del sistema tienen muchos puntos en común al compartir algunas de las fuentes para su diseño como pueden ser los casos para probar el rendimiento (pruebas de sobrecarga o de <em>stress</em>).</p>
+<p>El responsable de implantación junto al equipo de desarrollo determina las verificaciones necesarias para realizar las pruebas así como los criterios de aceptación del sistema. Estas pruebas las realiza el equipo de operación, integrado por los técnicos de sistemas y de operación que han recibido previamente la formación necesaria para llevarlas a cabo.</p>
+</section>
 </section>
 <section id="pruebas-de-aceptacion" class="level4" data-number="13.4.10.5">
 <h4 data-number="13.4.10.5" class="anchored" data-anchor-id="pruebas-de-aceptacion"><span class="header-section-number">13.4.10.5</span> Pruebas de Aceptación</h4>
+<p>El objetivo de las pruebas de aceptación es validar que un sistema cumple con el funcionamiento esperado y permitir al usuario de dicho sistema que determine su aceptación, desde el punto de vista de su funcionalidad y rendimiento.</p>
+<section id="descripción-24" class="level5 unnumbered unlisted">
+<h5 class="unnumbered unlisted anchored" data-anchor-id="descripción-24">Descripción</h5>
+<p>Las pruebas de aceptación son definidas por el usuario del sistema y preparadas por el equipo de desarrollo, aunque la ejecución y aprobación final corresponden al usuario.</p>
+<p>Estas pruebas van dirigidas a comprobar que el sistema cumple los requisitos de funcionamiento esperado, recogidos en el catálogo de requisitos y en los criterios de aceptación del sistema de información, y conseguir así la aceptación final del sistema por parte del usuario.</p>
+<p>El responsable de usuarios debe revisar los criterios de aceptación que se especificaron previamente en el plan de pruebas del sistema y, posteriormente, dirigir las pruebas de aceptación final.</p>
+<p>La validación del sistema se consigue mediante la realización de pruebas de caja negra que demuestran la conformidad con los requisitos y que se recogen en el plan de pruebas, el cual define las verificaciones a realizar y los casos de prueba asociados. Dicho plan está diseñado para asegurar que se satisfacen todos los requisitos funcionales especificados por el usuario teniendo en cuenta también los requisitos no funcionales relacionados con el rendimiento, seguridad de acceso al sistema, a los datos y procesos, así como a los distintos recursos del sistema.</p>
+<p>La formalidad de estas pruebas dependerá en mayor o menor medida de cada organización, y vendrá dada por la criticidad del sistema, el número de usuarios implicados en las mismas y el tiempo del que se disponga para llevarlas cabo, entre otros.</p>
+</section>
 </section>
 <section id="pruebas-de-regresion" class="level4" data-number="13.4.10.6">
 <h4 data-number="13.4.10.6" class="anchored" data-anchor-id="pruebas-de-regresion"><span class="header-section-number">13.4.10.6</span> Pruebas de Regresión</h4>
+<p>El objetivo de las pruebas de regresión es eliminar el efecto onda, es decir, comprobar que los cambios sobre un componente de un sistema de información, no introducen un comportamiento no deseado o errores adicionales en otros componentes no modificados.</p>
+<section id="descripción-25" class="level5 unnumbered unlisted">
+<h5 class="unnumbered unlisted anchored" data-anchor-id="descripción-25">Descripción</h5>
+<p>Las pruebas de regresión se deben llevar a cabo cada vez que se hace un cambio en el sistema, tanto para corregir un error como para realizar una mejora. No es suficiente probar sólo los componentes modificados o añadidos, o las funciones que en ellos se realizan, sino que también es necesario controlar que las modificaciones no produzcan efectos negativos sobre el mismo u otros componentes.</p>
+<p>Normalmente, este tipo de pruebas implica la repetición de las pruebas que ya se han realizado previamente, con el fin de asegurar que no se introducen errores que puedan comprometer el funcionamiento de otros componentes que no han sido modificados y confirmar que el sistema funciona correctamente una vez realizados los cambios.</p>
+<p>Las pruebas de regresión pueden incluir:</p>
+<ul>
+<li>La repetición de los casos de pruebas que se han realizado anteriormente y están directamente relacionados con la parte del sistema modificada.</li>
+<li>La revisión de los procedimientos manuales preparados antes del cambio, para asegurar que permanecen correctamente.</li>
+<li>La obtención impresa del diccionario de datos de forma que se compruebe que los elementos de datos que han sufrido algún cambio son correctos.</li>
+</ul>
+<p>El responsable de realizar las pruebas de regresión será el equipo de desarrollo junto al técnico de mantenimiento, quien a su vez, será responsable de especificar el plan de pruebas de regresión y de evaluar los resultados de dichas pruebas.</p>
+</section>
 </section>
 </section>
 <section id="revision-formal" class="level3" data-number="13.4.11">
 <h3 data-number="13.4.11" class="anchored" data-anchor-id="revision-formal"><span class="header-section-number">13.4.11</span> Revisión Formal</h3>
+<p>El objetivo de la revisión formal es detectar y registrar los defectos de un producto intermedio verificando que satisface sus especificaciones y que se ajusta a los estándares establecidos, señalando las posibles desviaciones.</p>
+<section id="descripción-26" class="level4 unnumbered unlisted">
+<h4 class="unnumbered unlisted anchored" data-anchor-id="descripción-26">Descripción</h4>
+<p>Es un proceso de revisión riguroso en el que hay poca flexibilidad a la hora de llevarlo a cabo debido a que su objetivo es llegar a detectar lo antes posible, los posibles defectos o desviaciones en los productos que se van generando a lo lago del desarrollo. Esta característica fuerza a que se adopte esta práctica únicamente para productos que son de especial importancia, porque de otro modo podría frenar la marcha del proyecto.</p>
+<p>En este proceso intervienen varias personas del grupo de aseguramiento de calidad, el equipo de desarrollo y según el tipo de revisión formal puede participar también el usuario.</p>
+<p>El responsable del grupo de aseguramiento de calidad una vez que conoce los productos que se van a revisar formalmente, establece los grupos funcionales que van a llevar a cabo las revisiones, convocando a los participantes por adelantado, e informando del objetivo de la revisión, la agenda y las responsabilidades que tendrán asignadas en la revisión.</p>
+<p>Es importante que en el transcurso de la revisión se sigan las directrices que estableció el responsable del grupo de aseguramiento de calidad, con el fin de que sea productiva y no se pierda tiempo en discusiones o ataques al responsable del producto.</p>
+<p>Se concluye determinando las áreas de problemas y elaborando un informe de revisión formal y una lista de acciones correctivas que posee un carácter formal y vinculante.</p>
+</section>
 </section>
 <section id="revision-tecnica" class="level3" data-number="13.4.12">
 <h3 data-number="13.4.12" class="anchored" data-anchor-id="revision-tecnica"><span class="header-section-number">13.4.12</span> Revisión Técnica</h3>
+<p>El objetivo de la revisión técnica es evaluar un producto intermedio del desarrollo para comprobar que se ajusta a sus especificaciones y que se está elaborando de acuerdo a las normas, estándares y guías aplicables al proyecto.</p>
+<section id="descripción-27" class="level4 unnumbered unlisted">
+<h4 class="unnumbered unlisted anchored" data-anchor-id="descripción-27">Descripción</h4>
+<p>Con el fin de asegurar la calidad en el producto final del desarrollo, se deben llevar a cabo revisiones semiformales sobre los productos intermedios durante todo el ciclo de vida del software. Para ello, se fijan los objetivos de la revisión, la agenda que se podrá ir ajustando a lo largo del proyecto y el tipo de informe que se elaborará después de las revisiones.</p>
+<p>Los participantes en una revisión técnica son el jefe de proyecto y el responsable del grupo de aseguramiento de calidad que, de forma conjunta, revisarán el producto que corresponda en cada momento.</p>
+<p>Una vez fijado sobre qué productos intermedios se llevarán a cabo las revisiones, el responsable de aseguramiento de calidad recoge la información necesaria de cada producto para poder establecer los criterios de revisión y más adelante, evaluar si el producto cumple las especificaciones, es decir, si se ha elaborado de acuerdo a unas características concretas como pueden ser la aplicación de una técnica específica, la inclusión de algún tipo de información, etc. Además, se debe contar con la normativa y estándares aplicables al proyecto de forma que, no sólo se asegure que el producto cumpla sus especificaciones, sino también del modo adecuado.</p>
+<p>Si se detecta alguna desviación en cuanto a sus especificaciones o a los estándares aplicados, y se considera que es necesario realizar alguna modificación, el responsable del grupo de aseguramiento de calidad elabora un informe con el que el jefe de proyecto tomará las medidas que estime convenientes. Con dichos informes de calidad, el jefe de proyecto irá confeccionando el dossier de aseguramiento de calidad, que formará parte de la documentación del proyecto al finalizar el desarrollo.</p>
+</section>
 </section>
 <section id="sesiones-de-trabajo" class="level3" data-number="13.4.13">
 <h3 data-number="13.4.13" class="anchored" data-anchor-id="sesiones-de-trabajo"><span class="header-section-number">13.4.13</span> Sesiones de Trabajo</h3>
+<p>Las sesiones de trabajo tienen diversos objetivos. Dependiendo del tipo de sesión que se realice, los objetivos pueden ser: obtener información, comunicar resultados, reducir el tiempo de desarrollo, activar la participación de usuarios y directivos o aumentar la calidad de los productos son objetivos.</p>
+<section id="descripción-28" class="level4 unnumbered unlisted">
+<h4 class="unnumbered unlisted anchored" data-anchor-id="descripción-28">Descripción</h4>
+<p>Las sesiones de trabajo pueden ser de varios tipos en función de las personas que participen en ellas, el objetivo que se persiga y el modo de llevarlas a cabo.</p>
+<p>Dentro de estas sesiones de trabajo se encuentran algunas técnicas como son el <a href="#jad">JAD</a> (<em>Joint Application Design</em>) y el <a href="#jrp">JRP</a> (<em>Joint Requirements Planning</em>), y otras prácticas como las <a href="#entrevistas">entrevistas</a> y las <a href="#reuniones">reuniones</a>, en las que se pueden dar algunas orientaciones y recomendaciones para su realización.</p>
+<p>A continuación se explica brevemente el objetivo principal de cada una de ellas, antes de describir más en detalle la forma de llevarlas a cabo.</p>
+<p>Las <a href="#entrevistas">entrevistas</a> son un tipo de sesiones de trabajo dirigidas a obtener la información de una forma individual dónde aparecen los perfiles de entrevistado y entrevistador.</p>
+<p>Las <a href="#reuniones">reuniones</a> pueden tener el mismo objetivo, pero la información está dispersa entre varias personas y únicamente trabajando en grupo, se conseguirá extraer y depurar toda la información de forma global.</p>
+<p>Las sesiones <a href="#jad">JAD</a> y <a href="#jrp">JRP</a> son reuniones en las que se potencia el trabajo en equipo entre el cliente o usuario y el proveedor, con una participación más activa del cliente en los diferentes procesos del ciclo de vida que va a permitir identificar las necesidades planteadas, proponer soluciones, negociar enfoques diferentes y especificar el conjunto preliminar de requisitos que debe cumplir la solución para llegar al objetivo que se propone. Estas técnicas surgieron en el ámbito de un ciclo de vida de desarrollo rápido, pero en MÉTRICA Versión 3, se proponen independientemente del ciclo de vida, como medio para alcanzar una mayor productividad en las sesiones de trabajo.</p>
+</section>
 <section id="entrevistas" class="level4" data-number="13.4.13.1">
 <h4 data-number="13.4.13.1" class="anchored" data-anchor-id="entrevistas"><span class="header-section-number">13.4.13.1</span> Entrevistas</h4>
+<p>Las entrevistas constituyen un medio para obtener la información que se necesita sobre un determinado tema, como puede ser, el establecer el alcance de un problema, identificar los requisitos a cubrir por un sistema de información y analizar el funcionamiento de un sistema actual, entre otros, a partir de las personas que tienen conocimiento sobre el mismo.</p>
+<section id="descripción-29" class="level5 unnumbered unlisted">
+<h5 class="unnumbered unlisted anchored" data-anchor-id="descripción-29">Descripción</h5>
+<p>Se entiende por entrevista el encuentro que se realiza “cara a cara” entre un usuario y la persona responsable de obtener la información.</p>
+<p>Para realizar la entrevista solo es necesario designar a las personas que deben participar en ella y determinar el lugar en el que poder llevarla a cabo. Es importante identificar a qué tipo de perfil va dirigida la entrevista, a quiénes se va a entrevistar y cuál es el momento más oportuno, con el fin de evitar situaciones embarazosas y conseguir que la entrevista sea eficaz y productiva.</p>
+<p>Como paso previo a la realización de la entrevista se deben tener en cuenta una serie de reglas generales o directrices básicas:</p>
+<ul>
+<li>Desarrollar un plan global de la entrevista.</li>
+<li>Asegurarse de que se cuenta con la aprobación para hablar con los usuarios.</li>
+<li>Preparar la entrevista previamente.</li>
+<li>Realizar la entrevista.</li>
+<li>Consolidar el resultado de la entrevista.</li>
+</ul>
+<p>Además, es conveniente planificar las entrevistas estudiando la secuencia en que se van a llevar a cabo, en función de los distintos perfiles implicados y las relaciones existentes entre los entrevistados. Según la información a obtener y dependiendo de las distintas fuentes que pueden proporcionarla, puede ser necesario realizar una entrevista conjunta con varias personas.</p>
+<p>Durante la preparación de la entrevista es imprescindible remitir al usuario un guión previo sobre los puntos a tratar, para que pueda estudiarlo con tiempo y solicitar la información que estime conveniente para la entrevista. Se debe pensar bien el tipo de guión, según el perfil y las responsabilidades del entrevistado y su extensión, de forma que se pueda conseguir la suficiente información, sin provocar rechazo en el entrevistado. Si se considera apropiado se pueden utilizar herramientas automatizadas.</p>
+<p>Una vez que se dispone de la aprobación para hablar con los usuarios, se hace la convocatoria de la entrevista enviando la información oportuna y fijando los objetivos, el método de trabajo que se va a seguir y el tiempo del que se dispone.</p>
+<p>Para realizar la entrevista, es importante hacer un resumen general de los temas a tratar, utilizar un estilo apropiado y crear desde su inicio un clima de confianza entre los asistentes. Es posible que el entrevistado se resista a aportar información, siendo útil en estos casos utilizar técnicas específicas de comunicación.</p>
+<p>Antes de finalizar la entrevista es importante que el entrevistador sintetice las conclusiones y compruebe que todos los asistentes están de acuerdo, dejando siempre abierta la posibilidad de volver a contactar para aclarar temas que surjan al estudiar la información recopilada.</p>
+<p>Finalmente, el responsable depura y consolida el resultado de las entrevistas, elaborando un informe de conclusiones. En algunos casos puede ser conveniente elaborar un acta que refleje estas conclusiones y remitirla a los entrevistados con el objetivo de asegurar que se han comprendido bien las especificaciones dadas.</p>
+</section>
 </section>
 <section id="reuniones" class="level4" data-number="13.4.13.2">
 <h4 data-number="13.4.13.2" class="anchored" data-anchor-id="reuniones"><span class="header-section-number">13.4.13.2</span> Reuniones</h4>
+<p>Las reuniones tienen como objetivo obtener información que se encuentra repartida entre varias personas, tomar decisiones estratégicas, tácticas u operativas, transmitir ideas sobre un determinado tema, analizar nuevas necesidades de información, así como comunicar los resultados obtenidos como consecuencia de un estudio.</p>
+<section id="descripción-30" class="level5 unnumbered unlisted">
+<h5 class="unnumbered unlisted anchored" data-anchor-id="descripción-30">Descripción</h5>
+<p>Para realizar una reunión es necesario designar a las personas que deben participar en ella y determinar el lugar en el que poder llevarla a cabo. Las directrices básicas de una reunión son:</p>
+<ul>
+<li>Preparar y convocar la reunión (orden del día).</li>
+<li>Realizar la reunión.</li>
+<li>Consolidar el resultado de la reunión.</li>
+<li>Elaborar el acta de reunión.</li>
+</ul>
+<p>Previamente a la convocatoria de la reunión, se definen los objetivos, se planifica el método de trabajo que se va a seguir y el tiempo del que se dispone, se eligen los participantes y se prepara el material necesario.</p>
+<p>Después de la preparación, es imprescindible enviar al usuario la convocatoria con el orden del día de la reunión.&nbsp;Este orden incluye la fecha, hora de inicio, hora de finalización prevista, lugar, asistentes y los puntos a tratar, detallando, entre otros, el tiempo que se dedicará a cada tema y la persona responsable de exponerlo. Dicha convocatoria se envía con antelación suficiente para que los asistentes puedan organizar su agenda y prepararse para la reunión con tiempo.</p>
+<p>Al inicio de la reunión, es importante hacer un resumen general de los temas a tratar, los objetivos que se persiguen, el método de trabajo y la agenda de la reunión.&nbsp;Si se considera oportuno se puede utilizar la técnica de presentación.&nbsp;Desde su inicio se debe crear un clima de confianza entre los asistentes. La persona responsable de la reunión ejercita la dinámica de dirección de grupos, estimulando la participación, controlando el ritmo de la sesión y centrando o clarificando el tema cuando sea necesario. Al finalizar, se sintetizan las conclusiones, se comprueba si hay acuerdo o si quedan puntos pendientes de reflexión y se propone fechas para próximas reuniones.</p>
+<p>El responsable de tomar las notas en la reunión, levanta el acta y la remite a los asistentes que deben confirmar su recepción.</p>
+</section>
 </section>
 <section id="jad" class="level4" data-number="13.4.13.3">
 <h4 data-number="13.4.13.3" class="anchored" data-anchor-id="jad"><span class="header-section-number">13.4.13.3</span> JAD (Joint Application Design)</h4>
+<p>Las sesiones JAD tienen como objetivo reducir el tiempo de desarrollo de un sistema manteniendo la calidad del mismo. Para ello se involucra a los usuarios a lo largo de todo el desarrollo del sistema, es decir, desde la identificación de la necesidad, la propuesta de alternativas de solución y sobre todo en la especificación de los requisitos que debe cubrir el sistema y en la validación de prototipos.</p>
+<section id="descripción-31" class="level5 unnumbered unlisted">
+<h5 class="unnumbered unlisted anchored" data-anchor-id="descripción-31">Descripción</h5>
+<p>Las características de una sesión de trabajo tipo JAD se pueden resumir en los siguientes puntos:</p>
+<ul>
+<li>Se establece un equipo de trabajo cuyos componentes y responsabilidades están perfectamente identificados y su fin es conseguir el consenso entre las necesidades de los usuarios y los servicios del sistema en producción.</li>
+<li>Se llevan a cabo pocas reuniones, de larga duración y muy bien preparadas.</li>
+<li>Durante la propia sesión se elaboran los modelos empleando diagramas fáciles de entender y mantener, directamente sobre herramientas CASE.</li>
+<li>Al finalizar la sesión se obtienen un conjunto de modelos que deberán ser aprobados por los participantes.</li>
+</ul>
+<p>Es importante definir claramente el perfil y las responsabilidades de los participantes de una sesión JAD. Se pueden distinguir los siguientes perfiles:</p>
+<ul>
+<li><strong>Moderador</strong> (líder <em>Jad</em>) con amplios conocimientos de la metodología de trabajo, dinámica de grupos, psicología del comportamiento, así como de los procesos de la organización objeto del estudio.</li>
+<li><strong>Promotor</strong>, persona que ha impulsado el desarrollo.</li>
+<li><strong>Jefe de proyecto</strong>, responsable de la implantación del proyecto.</li>
+<li><strong>Especialista en modelización</strong>, responsable de la elaboración de los modelos en el transcurso de la sesión.</li>
+<li><strong>Desarrolladores</strong>, aseguran que los modelos son correctos y responden a los requisitos especificados.</li>
+<li><strong>Usuarios</strong>, responsables de definir los requisitos del sistema y validarlos.</li>
+</ul>
+<p>La sala en la que se llevarán a cabo este tipo de sesiones juega un papel muy importante debido a que, en las reuniones largas donde se requiere una alta concentración de todos los integrantes del equipo, es necesario prestar especial atención a aspectos relacionados con la temperatura, los medios audiovisuales, la buena visibilidad de los distintos participantes, etc.</p>
+<p>Para llevar a cabo una sesión JAD, es necesario realizar una serie de actividades antes de su inicio, durante el desarrollo y después de su finalización.&nbsp;Estas actividades se detallan a continuación:</p>
+<ul>
+<li>Inicio: se define el ámbito y la estructura del proyecto, los productos a obtener, se prepara el material necesario para la sesión, se determina el lugar donde se van a llevar a cabo, se seleccionan los participantes y se sugiere una agenda de trabajo.</li>
+<li>Desarrollo: se identifican las salidas del proyecto y se debe conseguir el consenso entre los participantes de modo que se materialice en los modelos.</li>
+<li>Finalización: se valida la información de la sesión y se generan los productos de la metodología de trabajo propuesta. Si fuera necesario se integran los productos de salida.</li>
+</ul>
+<p>En las sesiones de trabajo tipo JAD se distinguen dos tipos de productos:</p>
+<ul>
+<li>De <strong>preparación</strong> donde se incluye, entre otros, la historia y contexto del proyecto, los objetivos y límites, las actividades del entorno del negocio que pueden afectar al éxito del proyecto y los beneficios.</li>
+<li>De <strong>resultado</strong> de las sesiones de trabajo, que se establecen con anterioridad al inicio de las reuniones.</li>
+</ul>
+</section>
 </section>
 <section id="jrp" class="level4" data-number="13.4.13.4">
 <h4 data-number="13.4.13.4" class="anchored" data-anchor-id="jrp"><span class="header-section-number">13.4.13.4</span> JRP (Joint Requeriments Planning)</h4>
+<p>Las sesiones JRP tienen como objetivo potenciar la participación activa de la alta dirección como medio para obtener los mejores resultados en el menor tiempo posible y con una mayor calidad de los productos.</p>
+<section id="descripción-32" class="level5 unnumbered unlisted">
+<h5 class="unnumbered unlisted anchored" data-anchor-id="descripción-32">Descripción</h5>
+<p>Las características de las sesiones JRP y <a href="#jad">JAD</a> son comunes en cuanto a la dinámica del desarrollo de las sesiones y la obtención de los modelos con el soporte de las herramientas adecuadas. La diferencia radica en los productos de salida y en los perfiles de los participantes. En JRP son del nivel más alto en la organización en cuanto a visión global del negocio y capacidad de decisión.</p>
+<p>Los perfiles implicados en una sesión JRP son los siguientes:</p>
+<ul>
+<li><strong>Moderador</strong> (<em>líder JRP</em>), debe tener una gran capacidad de relación, habilidades de negociación y de gestión de dinámica de grupos, así como un alto nivel de conocimiento de los procesos de la organización afectados por el <strong>Plan de Sistemas de Información</strong> (<a href="../01-principal/02-psi.html">PSI</a>).</li>
+<li><strong>Promotor</strong>, persona que ha impulsado el Plan de Sistemas de Información y tiene un compromiso económico.</li>
+<li><strong>Director de proyecto</strong>, responsable de que el proyecto llegue a buen fin.</li>
+<li><strong>Consultores</strong>, responsable de traducir los requisitos especificados por el usuario en información estructurada, de tal forma, que los usuarios puedan entender y discutir los resultados.</li>
+<li><strong>Especialista en modelización</strong>, responsable de la elaboración de los modelos en el transcurso de la sesión.</li>
+<li><strong>Usuarios de alto nivel</strong>, responsables de definir los procesos de la organización y los sistemas de información afectados por el Plan de Sistemas de Información así como las prioridades para su implantación a largo o medio plazo en la organización.</li>
+</ul>
+<p>La sala de reuniones juega un papel muy importante, siendo necesario acondicionarla con el fin de facilitar el desarrollo de la sesión.&nbsp;Se debe prestar especial atención a aspectos como la temperatura, la luz, su orientación, la distribución de los participantes en la sala, etc. Hay que asegurar que se cuenta con los medios audiovisuales adecuados como pueden ser cámara de vídeo y apuntadores láser, entre otros.</p>
+<p>Para llevar a cabo una sesión JRP, es necesario realizar una serie de actividades:</p>
+<ul>
+<li><strong>Iniciación</strong>, se establece la necesidad del <strong>Plan de Sistemas de Información</strong> (<a href="../01-principal/02-psi.html">PSI</a>), su alcance, los procesos de negocio implicados, las unidades organizativas afectadas, así como los usuarios clave y los perfiles del equipo JRP.</li>
+<li><strong>Búsqueda</strong>, se identifican los objetivos del Plan de Sistemas de Información, se estudia la situación actual y se busca la información relevante, que pueda ser útil.</li>
+<li><strong>Preparación</strong>, se seleccionan los participantes, se prepara el material necesario, acondicionando también la sala, y se establece la agenda de JRP.</li>
+<li><strong>Realización</strong>: se introduce la reunión y se empieza a trabajar en la consecución de los objetivos marcados en la agenda, elaborando los productos objeto de la sesión.</li>
+<li><strong>Finalización</strong>: se completan los productos y se presenta a los participantes que corresponda.</li>
+</ul>
+<p>La información de salida que se obtiene al finalizar una sesión JRP, dependerá de la actividad del Plan de Sistemas de Información que se esté realizando, como por ejemplo:</p>
+<ul>
+<li>Modelos de procesos de la organización.</li>
+<li>Modelo de información.</li>
+<li>Modelo de sistemas de información, etc.</li>
+</ul>
+</section>
 </section>
 </section>
 </section>
