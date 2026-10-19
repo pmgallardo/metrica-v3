@@ -1521,9 +1521,9 @@ Normalmente, este tipo de pruebas implica la repetición de las pruebas que ya 
 
 Las pruebas de regresión pueden incluir:
 
-    La repetición de los casos de pruebas que se han realizado anteriormente y están directamente relacionados con la parte del sistema modificada.
-    La revisión de los procedimientos manuales preparados antes del cambio, para asegurar que permanecen correctamente.
-    La obtención impresa del diccionario de datos de forma que se compruebe que los elementos de datos que han sufrido algún cambio son correctos.
+- La repetición de los casos de pruebas que se han realizado anteriormente y están directamente relacionados con la parte del sistema modificada.
+- La revisión de los procedimientos manuales preparados antes del cambio, para asegurar que permanecen correctamente.
+- La obtención impresa del diccionario de datos de forma que se compruebe que los elementos de datos que han sufrido algún cambio son correctos.
 
 El responsable de realizar las pruebas de regresión será el equipo de desarrollo junto al técnico de mantenimiento, quien a su vez, será responsable de especificar el plan de pruebas de regresión y de evaluar los resultados de dichas pruebas.
 
