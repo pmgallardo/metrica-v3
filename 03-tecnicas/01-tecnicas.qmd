@@ -1451,7 +1451,124 @@ A partir de la matriz de encadenamientos o del cuadro de prelaciones se construy
 
 #### Diagrama de Gantt {#diagrama-de-gantt}
 
+El diagrama de Gantt o cronograma tiene como objetivo la representación del plan de trabajo, mostrando las tareas a realizar, el momento de su comienzo y su terminación y la forma en que las distintas tareas están encadenadas entre sí.
+
+##### Descripción {.unnumbered .unlisted}
+
+El gráfico de Gantt es la forma habitual de presentar el plan de ejecución de un proyecto, recogiendo en las filas la relación de actividades a realizar y en las columnas la escala de tiempos que se está manejando, mientras la duración y situación en el tiempo de cada actividad se representa mediante una línea dibujada en el lugar correspondiente.
+
+##### Notación {.unnumbered .unlisted}
+
+- Es un Modelo realizado sobre ejes de coordenadas, donde las tareas se sitúan sobre el eje de ordenadas (y) y los tiempos sobre el de abscisas (x).
+- Cada actividad se representa con una barra limitada por las fechas previstas de comienzo y fin.
+- Las actividades se agrupan en fases y pueden descomponerse en tareas.
+- Cada actividad debe tener recursos asociados.
+- Los HITOS son un tipo de actividad que no representa trabajo ni tiene recursos asociados.
+- Las actividades se pueden encadenar por dos motivos:
+  - Encadenamiento funcional o por prelaciones. (Ej.: un programa no puede probarse hasta que haya sido escrito).
+  - Encadenamiento orgánico o por ocupación de recursos. (Ej.: un programador no puede empezar un programa hasta que haya terminado el anterior).
+- Pueden realizarse actividades en paralelo siempre que no tengan dependencia funcional u orgánica.
+
+###### Ejemplo {.unnumbered .unlisted}
+
+El siguiente diagrama es un ejemplo típico de un diagrama de Gantt, en el que aparecen fases, actividades, tareas e hitos.
+
+![Ejemplo de Diagrama de Gantt](Gantt-1.png)
+
+Para que un Gantt sea realista y fiable debe ir acompañado de un gráfico que refleje la actividad de los técnicos (Histograma de Recursos) que componen el equipo del proyecto.
+
+##### Asignación de recursos {.unnumbered .unlisted}
+
+La asignación de recursos es una tarea fundamental en la planificación, ya que hay que considerar aspectos técnicos de cada recurso como su disponibilidad, capacidad de trabajo, impedimentos horarios, etc.
+
+Es fundamental que los trabajos se descompongan hasta la unidad mínima de tratamiento, es decir: descomponer el proyecto en fases, las fases en actividades y las actividades en tareas, asignando una tarea a un recurso. No debe caerse en el error de asignar una actividad a varios recursos. De no hacerse así, es muy difícil contemplar la plena ocupación de todos los recursos, dándose situaciones anómalas, como es tener un recurso una ocupación muy baja y otro una ocupación excesiva. Conviene que la planificación esté perfectamente depurada, pues de lo contrario se producen los siguientes problemas:
+
+- Se dilata innecesariamente el plazo de entrega.
+- Se retiene sin trabajo a un número considerable de usuarios que podrían estar trabajando en otro proyecto.
+- Se encarece considerablemente el coste del proyecto, ya que se tienen asignados unos recursos «que no están trabajando» todo el tiempo.
+
+Por ello es necesario tener en consideración los siguientes aspectos a la hora de asignar recursos.
+
+- Cuantificar necesidades y fechas de incorporación de recursos.
+- Obtener un patrón que marque los límites del proyecto.
+- Considerar la capacidad, los conocimientos y la experiencia de cada recurso.
+- Considerar la complejidad, el tamaño y los requerimientos técnicos de cada tarea.
+- Asignar tareas sencillas a recursos con poca experiencia. Si se asignan tareas sencillas a recursos con mucha experiencia, se les estará infrautilizando.
+- Asignar tareas complejas a recursos con mucha experiencia. Si las tareas complejas le son asignadas a recursos con poca experiencia, perderán mucho tiempo preguntando a sus compañeros y, lo que es más grave, harán perder mucho tiempo al resto del equipo.
+- Construir el histograma de recursos, para poder ver la coherencia de las asignaciones.
+- Tratar de asignar una tarea a un único recurso, descomponiendo cuanto sea necesario.
+- Vigilar que no haya vacíos en el histograma.
+
+##### Patrón de límites {.unnumbered .unlisted}
+
+Esta técnica tiene como objetivo establecer los límites de recursos aproximados. Para ello, una vez conocidos por la estimación el esfuerzo total y el plazo de entrega, hay que realizar las siguientes operaciones:
+
+- Establecer el esfuerzo en meses (con decimales).
+- Deducir la parte correspondiente a Diseño Funcional, ya que es una fase con un tipo de actividades diferentes al resto.
+- Establecer la duración en meses (con decimales). Normalmente este dato se conocerá por el compromiso adquirido.
+- Deducir la duración correspondiente al Diseño Funcional.
+- Considerar que todo proyecto tiene tres situaciones claramente diferenciadas:
+  - Arranque. Durante esta situación se van incorporando paulatinamente recursos al proyecto hasta alcanzar el número máximo de recursos.
+  - Pleno rendimiento. Esta es una situación de estabilidad en cuanto al número de recursos.
+  - Finalización. Cuando las tareas van terminándose comienzan a abandonar el proyecto gradualmente los técnicos gradualmente.
+- Seguidamente, hay que distribuir los recursos:
+  - Una vez obtenido el número de recursos medios, considerar las tres situaciones que presenta el proyecto: arranque, pleno rendimiento y finalización.
+  - Considerar que estas tres fases tienen una duración en tiempo aproximadamente igual.
+  - Considerar que el Jefe del Proyecto está presente durante todo el ciclo de vida.
+  - Extraer de la parte de Diseño Funcional el esfuerzo correspondiente al Jefe del Proyecto.
+  - Dividir la duración estimada (sin la parte de Diseño Funcional) en tres partes iguales.
+  - Distribuir la mitad del esfuerzo estimado (sin la parte de análisis funcional) en la situación de PLENO RENDIMIENTO.
+  - Distribuir la otra mitad, a partes iguales, entre la situación de ARRANQUE y la de FINALIZACIÓN.
+
+Como consecuencia de ello se obtiene el gráfico que aparece a continuación y que servirá para establecer los límites de la asignación de recursos.
+
+![Ejemplo de Diagrama de Gantt](Gantt-2.png)
+
+##### Histograma de recursos {.unnumbered .unlisted}
+
+Es un gráfico sobre unos ejes de coordenadas, estando los recursos sobre el eje de las ordenadas y el tiempo sobre el eje de las abscisas.
+
+A medida que se incorporan recursos al proyecto, el gráfico aumenta y al contrario cuando son desasignados.
+
+A continuación puede verse un ejemplo gráfico.
+
+![Ejemplo de Diagrama de Gantt](Gantt-3.png)
+
+##### Planificación de actividades y recursos {.unnumbered .unlisted}
+
+Para realizar adecuadamente la planificación es necesario observar lo siguiente:
+
+- Deben construirse paralelamente el Gantt y el histograma de recursos.
+- Deben realizarse los encadenamientos funcionales a partir del PERT.
+- Deben asignarse los recursos:
+  - Con criterio de capacidad profesional.
+  - Encadenando sus actividades orgánicamente.
+- Ha de considerarse el máximo de recursos que proporciona el patrón de límites para realizar el histograma de recursos.
+- El histograma de recursos deberá reflejar con exactitud los recursos utilizados en el Gantt.
+
+Seguidamente puede verse gráficamente como debe realizarse la planificación de actividades y la de recursos.
+
+![Ejemplo de Diagrama de Gantt](Gantt-4.png)
+
 #### Estructura de Descomposición de Trabajo (WBS – Work Breakdown Structure) {#estructura-de-descomposicion-de-trabajo}
+
+En la organización de un proyecto software esta técnica permite estructurar las actividades, sirviendo de “lista de comprobación” y de herramienta de contabilidad analítica del proyecto software.
+Descripción
+
+La WBS presenta una descomposición de las actividades de un proyecto según su naturaleza, las cuales posteriormente se asignarán a «cuentas» (identificativos numéricos de las actividades que pueden ser utilizados para soporte de la contabilidad). Es un árbol que agrupa actividades: desarrollo, calidad, gestión, etc.
+
+Los diagramas PERT y GANTT que se deduzcan de dicha WBS permitirán la planificación del proyecto.
+
+En definitiva, los grupos de actividades servirán de soporte para el seguimiento (el presupuesto inicial se distribuye en cuentas sobre las que se realiza un control individual y global o contabilidad analítica del proyecto), y constituye un histórico útil para proyectos futuros.
+Notación
+
+A continuación se representa el formato de un WBS.
+
+Por ejemplo, un WBS podría dividirse en los siguientes niveles:
+
+- Nivel 0: [Todo el proyecto](../02-interfaces/04-proyectos.qmd).
+- Nivel 1: [Desarrollo](../01-principal/01-introduccion.qmd#desarrollo-de-sistemas-de-informacion), [Gestión de Calidad](../02-interfaces/01-calidad.qmd), [Gestión de Configuración](../02-interfaces/03-configuracion.qmd), etc.
+- Nivel 2: Dentro de [Desarrollo](../01-principal/01-introduccion.qmd#desarrollo-de-sistemas-de-informacion): Proceso [EVS](../01-principal/03-evs.qmd), Proceso [ASI](../01-principal/04-asi.qmd), Proceso [DSI](../01-principal/05-dsi.qmd), etc.
 
 #### Diagrama de Extrapolación {#diagrama-de-extrapolacion}
 
