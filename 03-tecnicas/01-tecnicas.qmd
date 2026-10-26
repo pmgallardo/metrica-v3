@@ -166,10 +166,10 @@ Si la inversión es el C0, se determinará la viabilidad del proyecto consulta
 | AÑO | COSTE | BENEFICIO | VALOR ACTUAL |
 | - | - | - | - |
 | 0 | $C_0$ | | |
-| 1 | $C_1$ | $B_1$ | $\text{VA}_1 &= \frac{B_1 - C_1}{1 + \frac{r}{100}}$ |
-| 2 | $C_2$ | $B_2$ | $\text{VA}_2 &= \frac{B_2 - C_2}{\left(1 + \frac{r}{100}\right)^2}$ |
-| … | | | | 			
-| n | $C_n$ | $B_n$ | $\text{VA}_n &= \frac{B_n - C_n}{\left(1 + \frac{r}{100}\right)^n}$ |
+| 1 | $C_1$ | $B_1$ | $\text{VA}_1 = \frac{B_1 - C_1}{1 + \frac{r}{100}}$ |
+| 2 | $C_2$ | $B_2$ | $\text{VA}_2 = \frac{B_2 - C_2}{\left(1 + \frac{r}{100}\right)^2}$ |
+| … | | | |             
+| $n$ | $C_n$ | $B_n$ | $\text{VA}_n = \frac{B_n - C_n}{\left(1 + \frac{r}{100}\right)^n}$ |
 
 El proyecto será viable si $\sum \text{VA}_i > C_0$ a lo largo del periodo fijado.
 
