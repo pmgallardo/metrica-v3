@@ -744,7 +744,7 @@ El registro de este tipo de información proporciona una base cuantitativa sobre
 <td style="text-align: center;"></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../03-tecnicas/01-tecnicas.qmd#pruebas-regresion">Pruebas de Regresión</a></td>
+<td style="text-align: left;"><a href="../03-tecnicas/01-tecnicas.qmd#pruebas-de-regresion">Pruebas de Regresión</a></td>
 <td style="text-align: center;"></td>
 <td style="text-align: center;"></td>
 <td style="text-align: center;"></td>
