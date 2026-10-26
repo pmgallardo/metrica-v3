@@ -1015,7 +1015,34 @@ Los tipos de correspondencia son `1:N` entre DEPARTAMENTO y EMPLEADO, pues un de
 Por otro lado, se han incluido atributos que caracterizan la relación *Trabaja en*, como son *fecha de asignación* y *fecha de cese*, ya que un técnico no siempre estará trabajando en un proyecto, sino en determinado periodo. (Nota.- Esta notación es la más habitual, pero MÉTRICA Versión 3 no exige su utilización).
 
 ### Normalización {#normalizacion}
+
 ### Optimización {#optimizacion}
+
+El objetivo de esta técnica es reestructurar el modelo físico de datos con el fin de asegurar que satisface los requisitos de rendimiento establecidos y conseguir una adecuada eficiencia del sistema.
+Descripción
+
+La optimización consiste en una desnormalización controlada del modelo físico de datos que se aplica para reducir o simplificar el número de accesos a la base de datos.
+
+Para ello, se seguirán alguna de las recomendaciones que a continuación se indican:
+
+* Introducir elementos redundantes.
+* Dividir entidades.
+* Combinar entidades si los accesos son frecuentes dentro de la misma transacción.
+* Redefinir o añadir relaciones entre entidades para hacer más directo el acceso entre entidades.
+* Definir claves secundarias o índices para permitir [caminos de acceso](#caminos-de-acceso) alternativos.
+
+Con el fin de analizar la conveniencia o no de la desnormalización, se han de considerar, otros, los siguientes aspectos:
+
+* Los tiempos de respuesta requeridos.
+* La tasa de actualizaciones respecto a la de recuperaciones.
+* Las veces que se accede conjuntamente a los atributos.
+* La longitud de los mismos.
+* El tipo de aplicaciones (en línea / por lotes).
+* La frecuencia y tipo de acceso.
+* La prioridad de los accesos.
+* El tamaño de las tablas.
+* Los requisitos de seguridad: accesibilidad, confidencialidad, integridad y disponibilidad que se consideren relevantes.
+
 ### Reglas de Obtención del Modelo Físico a partir del Lógico  {#reglas-de-obtencion-del-modelo-fisico-a-partir-del-logico}
 
 El objetivo de esta técnica es obtener un modelo físico de datos a partir del modelo lógico de datos normalizado. Para ello es necesario aplicar un conjunto de reglas que conserven la semántica del modelo lógico.
