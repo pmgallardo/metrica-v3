@@ -108,9 +108,9 @@ Una vez analizada la información anterior, se define un plan de implantación q
 - La realización de las pruebas de implantación y aceptación del sistema.
 - La formalización del plan de mantenimiento.
 
-##### Productos {.unnumbered unlisted}
+##### Productos {.unnumbered .unlisted}
 
-###### De entrada {.unnumbered unlisted}
+###### De entrada {.unnumbered .unlisted}
 
 - Solución Propuesta (EVS 6.2)
 - Diseño de la Arquitectura del Sistema (DSI 7.2)
@@ -121,15 +121,15 @@ Una vez analizada la información anterior, se define un plan de implantación q
 - Plan de Pruebas (DSI 10.3)
 - Catálogo de Requisitos (DSI 11.2)
 
-###### De salida {.unnumbered unlisted}
+###### De salida {.unnumbered .unlisted}
 
 * Plan de Implantación
 
-##### Prácticas {.unnumbered unlisted}
+##### Prácticas {.unnumbered .unlisted}
 
 * Sesiones de trabajo
 
-##### Participantes {.unnumbered unlisted}
+##### Participantes {.unnumbered .unlisted}
 
 * Jefe de Proyecto
 * Responsable de Implantación
@@ -143,19 +143,19 @@ Se constituye el equipo de trabajo necesario para llevar a cabo la implantación
 
 Para ello se identifican, en función del nivel de esfuerzo requerido, los distintos participantes implicados en la implantación del sistema (usuarios, equipo técnico y responsable de mantenimiento), determinando previamente sus perfiles, responsabilidades, nivel de implicación y fechas previstas de participación a lo largo de toda la implantación.
 
-##### Productos {.unnumbered unlisted}
+##### Productos {.unnumbered .unlisted}
 
-###### De entrada {.unnumbered unlisted}
+###### De entrada {.unnumbered .unlisted}
 
 * Recursos Humanos y Técnicos Disponibles (externo)
 * Catálogo de Usuarios (ASI 1.4)
 * Plan de Implantación (IAS 1.1)
 
-###### De salida {.unnumbered unlisted}
+###### De salida {.unnumbered .unlisted}
 
 * Equipo de Implantación
 
-##### Participantes {.unnumbered unlisted}
+##### Participantes {.unnumbered .unlisted}
 
 * Jefe de Proyecto
 * Responsable de Implantación
@@ -276,14 +276,14 @@ Asimismo, se aseguran los recursos humanos, técnicos y materiales necesarios pa
 
 Por último, se convoca a las personas que deben asistir a los cursos de formación y se espera la confirmación.
 
-##### Productos {.unnumbered unlisted}
+##### Productos {.unnumbered .unlisted}
 
-###### De entrada {.unnumbered unlisted}
+###### De entrada {.unnumbered .unlisted}
 
 * Plan de Implantación (IAS 1.1)
 * Equipo de Implantación (IAS 1.2)
 
-###### De salida {.unnumbered unlisted}
+###### De salida {.unnumbered .unlisted}
 
 * Plan de Formación del Equipo de Implantación:
   * Esquema de Formación
@@ -291,7 +291,7 @@ Por último, se convoca a las personas que deben asistir a los cursos de formaci
   * Recursos de Formación
   * Planificación de la Formación
 
-##### Participantes {.unnumbered unlisted}
+##### Participantes {.unnumbered .unlisted}
 
 * Jefe de Proyecto
 * Responsable de Implantación
@@ -302,19 +302,19 @@ Por último, se convoca a las personas que deben asistir a los cursos de formaci
 
 En esta tarea se lleva a cabo la formación del equipo que va a ser responsable de la implantación y aceptación del sistema, según el plan de formación que se haya establecido en la tarea anterior, asegurando la asistencia de todos sus integrantes.
 
-##### Productos {.unnumbered unlisted}
+##### Productos {.unnumbered .unlisted}
 
-###### De entrada {.unnumbered unlisted}
+###### De entrada {.unnumbered .unlisted}
 
 * Equipo de Implantación (IAS 1.2)
 * Plan de Formación del Equipo de Implantación (IAS 2.1)
 
-###### De salida {.unnumbered unlisted}
+###### De salida {.unnumbered .unlisted}
 
 * Plan de Formación del Equipo de Implantación:
   * Registro de Asistencia
 
-##### Participantes {.unnumbered unlisted}
+##### Participantes {.unnumbered .unlisted}
 
 * Equipo de Formación
 * Equipo de Implantación
@@ -325,22 +325,22 @@ En función del plan de implantación establecido, se revisa el esquema de forma
 
 Se establece el plan de formación del sistema a implantar en su totalidad, con el fin de garantizar el éxito de la implantación. Se determina, en función de los esquemas de formación asociados a los distintos perfiles, los contenidos definitivos que tienen los cursos, cuándo deben impartirse, quiénes han de recibirlos y con qué prioridad.
 
-##### Productos {.unnumbered unlisted}
+##### Productos {.unnumbered .unlisted}
 
-###### De entrada {.unnumbered unlisted}
+###### De entrada {.unnumbered .unlisted}
 
 * Plan de Implantación (IAS 1.1)
 * Catálogo de Usuarios (ASI 1.4)
 * Especificación de la Formación a Usuarios Finales (CSI 7.2)
 
-###### De salida {.unnumbered unlisted}
+###### De salida {.unnumbered .unlisted}
 
 * Plan de Formación a Usuarios Finales:
   * Esquema de Formación
   * Materiales de Formación
   * Planificación de la Formación
 
-##### Participantes {.unnumbered unlisted}
+##### Participantes {.unnumbered .unlisted}
 
 * Equipo de Formación
 * Jefe de Proyecto
@@ -350,18 +350,18 @@ Se establece el plan de formación del sistema a implantar en su totalidad, con 
 
 La impartición de la formación a los usuarios finales queda fuera del ámbito de MÉTRICA Versión 3. Sin embargo, es necesario llevar a cabo su seguimiento con el fin de asegurar el cumplimiento del plan de formación previsto e informar de las posibles desviaciones para tomar las medidas oportunas.
 
-##### Productos {.unnumbered unlisted}
+##### Productos {.unnumbered .unlisted}
 
-###### De entrada {.unnumbered unlisted}
+###### De entrada {.unnumbered .unlisted}
 
 * Plan de Formación a Usuarios Finales (IAS 2.3)
 
-###### De salida {.unnumbered unlisted}
+###### De salida {.unnumbered .unlisted}
 
 * Plan de Formación a Usuarios Finales:
 * Registro de Asistencia
 
-##### Participantes {.unnumbered unlisted}
+##### Participantes {.unnumbered .unlisted}
 
 * Jefe de Proyecto
 * Directores de los Usuarios
@@ -430,9 +430,9 @@ Una vez comprobada la idoneidad de los distintos elementos relacionados con la i
 
 También se debe asegurar que el equipo responsable de la realización de las pruebas de implantación y aceptación del sistema ha recibido la formación necesaria.
 
-##### Productos {.unnumbered unlisted}
+##### Productos {.unnumbered .unlisted}
 
-###### De entrada {.unnumbered unlisted}
+###### De entrada {.unnumbered .unlisted}
 
 * Plan de Implantación (IAS 1.1)
 * Plan de Formación del Equipo de Implantación (IAS 2.2)
@@ -442,11 +442,11 @@ También se debe asegurar que el equipo responsable de la realización de las pr
 * Especificaciones de Construcción del Sistema de Información (DSI 8.4)
 * Plan de Migración y Carga Inicial de Datos (DSI 9.4)
 
-###### De salida {.unnumbered unlisted}
+###### De salida {.unnumbered .unlisted}
 
 * Incidencias de Preparación de Instalación
 
-##### Participantes {.unnumbered unlisted}
+##### Participantes {.unnumbered .unlisted}
 
 * Jefe de Proyecto
 * Responsable de Implantación
@@ -467,9 +467,9 @@ Una vez comprobada la correcta instalación del nuevo sistema, se activan los pr
 
 Asimismo, si es necesaria una migración de datos se activarán también los procedimientos asociados.
 
-##### Productos {.unnumbered unlisted}
+##### Productos {.unnumbered .unlisted}
 
-###### De entrada {.unnumbered unlisted}
+###### De entrada {.unnumbered .unlisted}
 
 * Plan de Implantación (IAS 1.1)
 * Equipo de Implantación (IAS 1.2)
@@ -478,13 +478,13 @@ Asimismo, si es necesaria una migración de datos se activarán también los pro
 * Código Fuente de los Componentes de Migración y Carga Inicial de Datos (CSI 8.2)
 * Procedimientos de Migración y Carga Inicial de Datos (CSI 8.2)
 
-###### De salida {.unnumbered unlisted}
+###### De salida {.unnumbered .unlisted}
 
 * Producto Software (instalado)
 * Código Fuente de los Componentes de Migración y Carga Inicial de Datos (instalado)
 * Procedimientos de Migración y Carga Inicial de Datos (instalado)
 
-##### Participantes {.unnumbered unlisted}
+##### Participantes {.unnumbered .unlisted}
 
 * Jefe de Proyecto
 * Equipo de Implantación
@@ -531,9 +531,9 @@ Se realiza la carga inicial de datos del nuevo sistema, y se comprueba que ha fi
 
 A continuación, si procede, se hace la migración de datos, activando los procedimientos correspondientes, para efectuar la transformación de los datos de la estructura existente a la nueva. Se lleva a cabo la depuración de los datos que no sean consistentes, hasta comprobar su correcta finalización.
 
-##### Productos {.unnumbered unlisted}
+##### Productos {.unnumbered .unlisted}
 
-###### De entrada {.unnumbered unlisted}
+###### De entrada {.unnumbered .unlisted}
 
 * Plan de implantación (IAS 1.1)
 * Equipo de implantación (IAS 1.2)
@@ -541,11 +541,11 @@ A continuación, si procede, se hace la migración de datos, activando los proce
 * Código Fuente de los Componentes de Migración y Carga Inicial de Datos (instalado) (IAS 3.2)
 * Procedimientos de Migración y Carga Inicial de Datos (instalados) (IAS 3.2)
 
-###### De salida {.unnumbered unlisted}
+###### De salida {.unnumbered .unlisted}
 
 * Bases de Datos / Ficheros Cargados
 
-###### Participantes {.unnumbered unlisted}
+###### Participantes {.unnumbered .unlisted}
 
 * Equipo de Implantación
 * Equipo de Operación
@@ -634,17 +634,17 @@ Se comunica el plan de pruebas de implantación al equipo responsable de llevarl
 
 ##### Productos
 
-###### De entrada {.unnumbered unlisted}
+###### De entrada {.unnumbered .unlisted}
 
 * Plan de Implantación (IAS 1.1)
 * Equipo de Implantación (IAS 1.2)
 * Plan de Pruebas (DSI 10.3)
 
-###### De salida {.unnumbered unlisted}
+###### De salida {.unnumbered .unlisted}
 
 * Plan de Pruebas
 
-##### Participantes {.unnumbered unlisted}
+##### Participantes {.unnumbered .unlisted}
 
 * Jefe de Proyecto
 * Responsable de Implantación
@@ -665,23 +665,23 @@ En caso de que sea de forma automática, se evalúa la inicialización, los meca
 
 Se registra la realización de las pruebas incluyendo un informe que recoja la desviación de los requisitos establecidos y los problemas que quedan sin resolver.
 
-##### Productos
+##### Productos {.unnumbered .unlisted}
 
-De entrada
+###### De entrada {.unnumbered .unlisted}
 
 * Producto Software (IAS 3.2)
 * Bases de Datos / Ficheros Cargados (IAS 4.1)
 * Plan de Pruebas (IAS 5.1)
 
-De salida
+###### De salida {.unnumbered .unlisted}
 
 * Resultado de las Pruebas de Implantación
 
-Prácticas
+##### Prácticas {.unnumbered .unlisted}
 
 * Pruebas de Implantación
 
-Participantes
+##### Participantes {.unnumbered .unlisted}
 
 * Equipo de Implantación
 
@@ -695,18 +695,18 @@ Se evalúan los resultados de las pruebas analizando las incidencias recibidas y
 
 Una vez realizadas las medidas correctoras consideradas necesarias y comprobado que el sistema cumple todos los requisitos de implantación, se registra el resultado de la evaluación de las pruebas de implantación que incluye la aprobación o rechazo del sistema por parte de operación.
 
-##### Productos {.unnumbered unlisted}
+##### Productos {.unnumbered .unlisted}
 
-###### De entrada {.unnumbered unlisted}
+###### De entrada {.unnumbered .unlisted}
 
 * Plan de Pruebas (IAS 5.1)
 * Resultado de las Pruebas de Implantación (IAS 5.2)
 
-###### De salida {.unnumbered unlisted}
+###### De salida {.unnumbered .unlisted}
 
 * Evaluación del Resultado de las Pruebas de Implantación
 
-##### Participantes {.unnumbered unlisted}
+##### Participantes {.unnumbered .unlisted}
 
 * Jefe de Proyecto
 * Responsable de Implantación
@@ -785,18 +785,18 @@ Se analizan los criterios de aceptación establecidos por el usuario y recogidos
 Se comunica el plan de pruebas de aceptación una vez actualizado, a los usuarios implicados según los distintos perfiles identificados en la tarea Especificación del equipo de implantación (IAS 1.2).
 Productos
 
-###### De entrada {.unnumbered unlisted}
+###### De entrada {.unnumbered .unlisted}
 
 * Plan de Pruebas (DSI 10.3)
 * Plan de implantación (IAS 1.1)
 * Equipo de implantación (IAS 1.2)
 * Plan de pruebas (IAS 5.1)
 
-###### De salida {.unnumbered unlisted}
+###### De salida {.unnumbered .unlisted}
 
 * Plan de pruebas
 
-##### Participantes {.unnumbered unlisted}
+##### Participantes {.unnumbered .unlisted}
 
 * Jefe de Proyecto
 * Directores de los Usuarios
@@ -808,21 +808,21 @@ Se llevan a cabo las pruebas de aceptación final del sistema para asegurar que 
 Se registra la realización de las pruebas, incluyendo un informe que recoja la desviación de los requisitos establecidos y los problemas que quedan sin resolver.
 Productos
 
-##### De entrada {.unnumbered unlisted}
+##### De entrada {.unnumbered .unlisted}
 
 * Producto Software (IAS 3.2)
 * Bases de Datos / Ficheros Cargados (IAS 4.1)
 * Plan de Pruebas (IAS 6.1)
 
-##### De salida {.unnumbered unlisted}
+##### De salida {.unnumbered .unlisted}
 
 * Resultado de las Pruebas de Aceptación
 
-##### Técnicas {.unnumbered unlisted}
+##### Técnicas {.unnumbered .unlisted}
 
 * Pruebas de Aceptación
 
-##### Participantes {.unnumbered unlisted}
+##### Participantes {.unnumbered .unlisted}
 
 * Usuarios Expertos
 
@@ -836,18 +836,18 @@ Se evalúan los resultados de las pruebas, analizando las incidencias recibidas 
 
 Una vez realizadas las medidas correctoras necesarias, y comprobado que su comportamiento es adecuado, se documenta el resultado global de la evaluación de las pruebas de aceptación que incluye la aprobación del sistema por parte del usuario final.
 
-##### Productos {.unnumbered unlisted}
+##### Productos {.unnumbered .unlisted}
 
-###### De entrada {.unnumbered unlisted}
+###### De entrada {.unnumbered .unlisted}
 
 * Plan de Pruebas (IAS 6.1)
 - Resultado de las Pruebas de Aceptación (IAS 6.2)
 
-###### De salida {.unnumbered unlisted}
+###### De salida {.unnumbered .unlisted}
 
 * Evaluación del Resultado de las Pruebas de Aceptación
 
-###### Participantes {.unnumbered unlisted}
+###### Participantes {.unnumbered .unlisted}
 
 * Jefe de Proyecto
 * Directores de los Usuarios
@@ -925,22 +925,22 @@ Es conveniente definir mecanismos para registrar y evaluar cada petición de man
 
 Finalmente, se recoge en el plan de mantenimiento toda la infraestructura necesaria para la gestión del futuro mantenimiento.
 
-##### Productos {.unnumbered unlisted}
+##### Productos {.unnumbered .unlisted}
 
-###### De entrada {.unnumbered unlisted}
+###### De entrada {.unnumbered .unlisted}
 
 * Catálogo de Requisitos (DSI 11.2)
 
-###### De salida {.unnumbered unlisted}
+###### De salida {.unnumbered .unlisted}
 
 * Plan de Mantenimiento
 
-##### Prácticas {.unnumbered unlisted}
+##### Prácticas {.unnumbered .unlisted}
 
 * Diagrama de Representación
 * Sesiones de trabajo
 
-##### Participantes {.unnumbered unlisted}
+##### Participantes {.unnumbered .unlisted}
 
 * Jefe de Proyecto
 * Responsable de Mantenimiento
@@ -954,19 +954,19 @@ Se estiman los recursos humanos necesarios para el servicio de mantenimiento est
 
 ##### Productos
 
-###### De entrada {.unnumbered unlisted}
+###### De entrada {.unnumbered .unlisted}
 
 * Plan de Mantenimiento (IAS 7.1)
 
-###### De salida {.unnumbered unlisted}
+###### De salida {.unnumbered .unlisted}
 
 * Plan de Mantenimiento
 
-##### Prácticas {.unnumbered unlisted}
+##### Prácticas {.unnumbered .unlisted}
 
 * Sesiones de trabajo
 
-##### Participantes {.unnumbered unlisted}
+##### Participantes {.unnumbered .unlisted}
 
 * Responsable de Mantenimiento
 * Directores de los Usuarios
@@ -1077,22 +1077,22 @@ Entre los tipos de servicio se pueden distinguir los servicios al cliente (servi
 
 Se consideran los servicios comunes de los sistemas de información implicados en la implantación y los específicos de cada uno de ellos, teniendo en cuenta en ambos casos la cobertura geográfica.
 
-##### Productos {.unnumbered unlisted}
+##### Productos {.unnumbered .unlisted}
 
-###### De entrada {.unnumbered unlisted}
+###### De entrada {.unnumbered .unlisted}
 
 * Catálogo de Requisitos (DSI 11.2)
 * Plan de Implantación (IAS 1.1)
 
-###### De salida {.unnumbered unlisted}
+###### De salida {.unnumbered .unlisted}
 
 * Especificación de Tipos de Servicio
 
-###### Prácticas {.unnumbered unlisted}
+###### Prácticas {.unnumbered .unlisted}
 
 * Sesiones de trabajo
 
-##### Participantes {.unnumbered unlisted}
+##### Participantes {.unnumbered .unlisted}
 
 * Jefe de Proyecto
 * Directores de los Usuarios
@@ -1107,22 +1107,22 @@ Asimismo, se especifican las propiedades de calidad que constituyen el nivel de 
 - en qué términos deben expresarse, es decir volumen, capacidad, carga de trabajo, tiempo, duración, frecuencia, etc.
 - qué unidades de medida deben utilizarse, indicando todos los supuestos relativos a las condiciones en que se garantiza el nivel de servicio.
 
-##### Productos {.unnumbered unlisted}
+##### Productos {.unnumbered .unlisted}
 
-###### De entrada {.unnumbered unlisted}
+###### De entrada {.unnumbered .unlisted}
 
 * Especificación de Tipos de Servicio (IAS 8.1)
 
-###### De salida {.unnumbered unlisted}
+###### De salida {.unnumbered .unlisted}
 
 * Especificación de Tipos de Servicio:
   * Niveles de Servicio
 
-##### Prácticas {.unnumbered unlisted}
+##### Prácticas {.unnumbered .unlisted}
 
 * Sesiones de trabajo
 
-##### Participantes {.unnumbered unlisted}
+##### Participantes {.unnumbered .unlisted}
 
 * Jefe de Proyecto
 * Directores de los Usuarios
@@ -1221,24 +1221,24 @@ Se recopila la información del sistema que se debe entregar al Comité de Direc
 
 Se recibe la confirmación por parte del Comité de Dirección y se prepara la presentación del sistema.
 
-##### Productos {.unnumbered unlisted}
+##### Productos {.unnumbered .unlisted}
 
-###### De entrada {.unnumbered unlisted}
+###### De entrada {.unnumbered .unlisted}
 
 * Evaluación del Resultado de las Pruebas de Implantación (IAS 5.3)
 * Evaluación del Resultado de las Pruebas de Aceptación (IAS 6.3)
 * Plan de Mantenimiento (IAS 7.2)
 * Acuerdo de Nivel de Servicio (IAS 8.3)
 
-###### De salida {.unnumbered unlisted}
+###### De salida {.unnumbered .unlisted}
 
 * Plan de Presentación del Sistema
 
-##### Prácticas {.unnumbered unlisted}
+##### Prácticas {.unnumbered .unlisted}
 
 * Presentación
 
-##### Participantes {.unnumbered unlisted}
+##### Participantes {.unnumbered .unlisted}
 
 * Jefe de Proyecto
 * Responsable de Implantación
@@ -1248,21 +1248,21 @@ Se recibe la confirmación por parte del Comité de Dirección y se prepara la p
 
 Se presenta el sistema al Comité de Dirección según el plan previsto y se aprueba formalmente el sistema.
 
-##### Productos {.unnumbered unlisted}
+##### Productos {.unnumbered .unlisted}
 
-###### De entrada {.unnumbered unlisted}
+###### De entrada {.unnumbered .unlisted}
 
 * Plan de Presentación (IAS 9.1)
 
-###### De salida {.unnumbered unlisted}
+###### De salida {.unnumbered .unlisted}
 
 * Aprobación del Sistema
 
-##### Prácticas {.unnumbered unlisted}
+##### Prácticas {.unnumbered .unlisted}
 
 * Presentación
 
-##### Participantes {.unnumbered unlisted}
+##### Participantes {.unnumbered .unlisted}
 
 * Comité de Dirección
 * Jefe de proyecto
@@ -1330,9 +1330,9 @@ Se analiza qué componentes es necesario incorporar al entorno de producción, d
 
 Se comprueba que la instalación del sistema es correcta. Por último, se determina la fecha para la activación del sistema y la eliminación del antiguo, si existiera, estableciendo cómo se va a llevar a cabo la transición de uno a otro.
 
-##### Productos {.unnumbered unlisted}
+##### Productos {.unnumbered .unlisted}
 
-###### De entrada {.unnumbered unlisted}
+###### De entrada {.unnumbered .unlisted}
 
 * Plan de Implantación (IAS 1.1)
 * Equipo de Implantación (IAS 1.2)
@@ -1343,11 +1343,11 @@ Se comprueba que la instalación del sistema es correcta. Por último, se determ
 * Procedimientos de Migración y Carga Inicial de Datos (CSI 8.2)
 * Aprobación del Sistema (IAS 9.2)
 
-###### De salida {.unnumbered unlisted}
+###### De salida {.unnumbered .unlisted}
 
 * Incidencias del Paso a Producción
 
-##### Participantes {.unnumbered unlisted}
+##### Participantes {.unnumbered .unlisted}
 
 * Jefe de Proyecto
 * Responsable de Implantación
@@ -1358,13 +1358,13 @@ Se comprueba que la instalación del sistema es correcta. Por último, se determ
 
 Se arranca el nuevo sistema en producción activando tanto el proceso de Mantenimiento, si se ha determinado en el sistema, como los servicios que se van a prestar.
 
-##### Productos {.unnumbered unlisted}
+##### Productos {.unnumbered .unlisted}
 
-###### De salida {.unnumbered unlisted}
+###### De salida {.unnumbered .unlisted}
 
 * Sistema en Producción
 
-##### Participantes {.unnumbered unlisted}
+##### Participantes {.unnumbered .unlisted}
 
 * Comité de Dirección
 * Responsable de Implantación
@@ -1666,7 +1666,7 @@ Se arranca el nuevo sistema en producción activando tanto el proceso de Manteni
 </table>
 ```	
 
-### Actividades {.unnumbered unlisted}
+### Actividades {.unnumbered .unlisted}
 
 - Actividad IAS 1: Establecimiento del Plan de Implantación
 - Actividad IAS 2: Formación Necesaria para la Implantación
