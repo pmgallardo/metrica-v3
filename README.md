@@ -4,7 +4,7 @@ Métrica versión 3 es una metodología de Planificación, Desarrollo y Mantenim
 
 ## Autoría
 
-Métrica versión 3 fue una iniciativa promovida por el Consejo Superior de Informática (CSI), del sector público español, y publicada originariamente en su web en formato PDF en 2001. Desde 2013, dicha documentación se aloja en la entrada de [Métrica v3](https://administracionelectronica.gob.es/pae_Home/pae_Documentacion/pae_Metodolog/pae_Metrica_v3.html) del Portal de la Administración electrónica (PAe).
+Métrica versión 3 fue una iniciativa promovida por el Consejo Superior de Informática (CSI), del sector público español, y publicada originariamente en [su web](https://web.archive.org/web/20010623220918/http://www.map.es/csi/metrica3/index.html) en formato PDF en enero de 2000. Desde 2013, dicha documentación se aloja en la entrada de [Métrica v3](https://administracionelectronica.gob.es/pae_Home/pae_Documentacion/pae_Metodolog/pae_Metrica_v3.html) del Portal de la Administración electrónica (PAe).
 
 La autoría y propiedad intelectual de la documentación original pertenece al Ministerio de Administraciones Públicas. En 2026, su organismo sucesor es el Ministerio para la Transformación Digital y Función Pública.
 
