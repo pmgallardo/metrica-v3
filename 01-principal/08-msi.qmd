@@ -53,7 +53,7 @@ Una vez que la petición ha sido registrada, que ha determinado el tipo de mante
 <td style="background-color: #000033; text-align: left; width: 20%;"><strong><span style="color: #ffffff;">PARTICIPANTES</span></strong></td>
 </tr>
 <tr>
-<td style="text-align: left; vertical-align: top;"><a href="msi-1-1"><strong>MSI 1.1</strong>: Registro de la Petición</a></td>
+<td style="text-align: left; vertical-align: top;"><a href="#msi-1-1"><strong>MSI 1.1</strong>: Registro de la Petición</a></td>
 <td style="text-align: left; vertical-align: top;">
 <ul>
 <li>Catálogo de Peticiones</li>
@@ -71,7 +71,7 @@ Una vez que la petición ha sido registrada, que ha determinado el tipo de mante
 </td>
 </tr>
 <tr>
-<td style="text-align: left; vertical-align: top;"><a href="msi-1-2"><strong>MSI 1.2</strong>: Asignación de la Petición</a></td>
+<td style="text-align: left; vertical-align: top;"><a href="#msi-1-2"><strong>MSI 1.2</strong>: Asignación de la Petición</a></td>
 <td style="text-align: left; vertical-align: top;">
 <ul>
 <li>Catálogo de Peticiones:
@@ -172,7 +172,7 @@ El enfoque de este estudio varía según el tipo de mantenimiento, teniendo en c
 <td style="background-color: #000033; text-align: left; width: 20%;"><strong><span style="color: #ffffff;">PARTICIPANTES</span></strong></td>
 </tr>
 <tr>
-<td style="text-align: left; vertical-align: top;"><a href="msi-2-1"><strong>MSI 2.1</strong>: Verificación y Estudio de la Petición</a></td>
+<td style="text-align: left; vertical-align: top;"><a href="#msi-2-1"><strong>MSI 2.1</strong>: Verificación y Estudio de la Petición</a></td>
 <td style="text-align: left; vertical-align: top;">
 <ul>
 <li>Catálogo de Peticiones:
@@ -196,7 +196,7 @@ El enfoque de este estudio varía según el tipo de mantenimiento, teniendo en c
 </td>
 </tr>
 <tr>
-<td style="text-align: left; vertical-align: top;"><a href="msi-2-2"><strong>MSI 2.2</strong>: Estudio de la Propuesta de Solución</a></td>
+<td style="text-align: left; vertical-align: top;"><a href="#msi-2-2"><strong>MSI 2.2</strong>: Estudio de la Propuesta de Solución</a></td>
 <td style="text-align: left; vertical-align: top;">
 <ul>
 <li>Propuesta de Solución</li>
@@ -323,7 +323,7 @@ Una vez aceptado el plan de acción, se activan los correspondientes procesos de
 <td style="background-color: #000033; text-align: left; width: 20%;"><strong><span style="color: #ffffff;">PARTICIPANTES</span></strong></td>
 </tr>
 <tr>
-<td style="text-align: left; vertical-align: top;"><a href="msi-3-1"><strong>MSI 3.1</strong>: Identificación de Elementos Afectados</a></td>
+<td style="text-align: left; vertical-align: top;"><a href="#msi-3-1"><strong>MSI 3.1</strong>: Identificación de Elementos Afectados</a></td>
 <td style="text-align: left; vertical-align: top;">
 <ul>
 <li>Catálogo de Peticiones:
@@ -348,7 +348,7 @@ Una vez aceptado el plan de acción, se activan los correspondientes procesos de
 </td>
 </tr>
 <tr>
-<td style="text-align: left; vertical-align: top;"><a href="msi-3-2"><strong>MSI 3.2</strong>: Establecimiento del Plan de Acción</a></td>
+<td style="text-align: left; vertical-align: top;"><a href="#msi-3-2"><strong>MSI 3.2</strong>: Establecimiento del Plan de Acción</a></td>
 <td style="text-align: left; vertical-align: top;">
 <ul>
 <li>Catálogo de Peticiones:
@@ -374,7 +374,7 @@ Una vez aceptado el plan de acción, se activan los correspondientes procesos de
 </td>
 </tr>
 <tr>
-<td style="text-align: left; vertical-align: top;"><a href="msi-3-3"><strong>MSI 3.3</strong>: Especificación del Plan de Pruebas de Regresión</a></td>
+<td style="text-align: left; vertical-align: top;"><a href="#msi-3-3"><strong>MSI 3.3</strong>: Especificación del Plan de Pruebas de Regresión</a></td>
 <td style="text-align: left; vertical-align: top;">
 <ul>
 <li>Plan de Pruebas de Regresión</li>
@@ -504,7 +504,7 @@ Con el cierre de la petición se podrán incluir enel catálogo, si se considera
 <td style="background-color: #000033; text-align: left; width: 20%;"><strong><span style="color: #ffffff;">PARTICIPANTES</span></strong></td>
 </tr>
 <tr>
-<td style="text-align: left; vertical-align: top;"><a href="msi-4-1"><strong>MSI 4.1</strong>: Seguimiento de los Cambios</a></td>
+<td style="text-align: left; vertical-align: top;"><a href="#msi-4-1"><strong>MSI 4.1</strong>: Seguimiento de los Cambios</a></td>
 <td style="text-align: left; vertical-align: top;">
 <ul>
 <li>Evaluación del Cambio</li>
@@ -520,7 +520,7 @@ Con el cierre de la petición se podrán incluir enel catálogo, si se considera
 </td>
 </tr>
 <tr>
-<td style="text-align: left; vertical-align: top;"><a href="msi-4-2"><strong>MSI 4.2</strong>: Realización de las Pruebas de Regresión</a></td>
+<td style="text-align: left; vertical-align: top;"><a href="#msi-4-2"><strong>MSI 4.2</strong>: Realización de las Pruebas de Regresión</a></td>
 <td style="text-align: left; vertical-align: top;">
 <ul>
 <li>Resultado de las Pruebas de Regresión</li>
@@ -541,7 +541,7 @@ Con el cierre de la petición se podrán incluir enel catálogo, si se considera
 </td>
 </tr>
 <tr>
-<td style="text-align: left; vertical-align: top;"><a href="msi-4-3"><strong>MSI 4.3</strong>: Aprobación y Cierre de la Petición</a></td>
+<td style="text-align: left; vertical-align: top;"><a href="#msi-4-3"><strong>MSI 4.3</strong>: Aprobación y Cierre de la Petición</a></td>
 <td style="text-align: left; vertical-align: top;">
 <ul>
 <li>Catálogo de Peticiones:
