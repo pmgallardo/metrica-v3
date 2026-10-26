@@ -131,7 +131,7 @@ Se basará en uno de los métodos siguientes:
 
 **Retorno de la Inversión**:
 
-Este método consiste en calcular el coste y el beneficio anual, conociendo el coste total al inicio del proyecto «C0", para determinar en qué año se recupera el coste total inicialmente estimado.
+Este método consiste en calcular el coste y el beneficio anual, conociendo el coste total al inicio del proyecto $C_0$, para determinar en qué año se recupera el coste total inicialmente estimado.
 
 | AÑO | COSTE | BENEFICIO | BENEFICIO NETO |
 | - | - | - | - |
