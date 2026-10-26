@@ -1015,6 +1015,76 @@ Entre las propiedades que reúne un buen modelo de procesos se encuentran las s
 
 #### SADT (Structured Analysis and Design Technique) {#sadt}
 
+La técnica que se describe a continuación se refiere al diagrama de actividades de SADT, que se puede emplear para el [modelado de procesos de la organización](#modelado-de-procesos-de-la-organizacion) debido a que permite representar un proceso con las actividades que lo componen.
+
+##### Descripción {.unnumbered .unlisted}
+
+Un modelo realizado con la técnica SADT permite representar las actividades de un proceso, definir las dependencias y relaciones entre dichas actividades, los controles que determinan o limitan su ejecución, los mecanismos que los ponen en marcha, así como los datos que se utilizan, comparten o transforman en los procesos.
+
+Los diagramas SADT incorporan los procesos de la organización en orden secuencial, de acuerdo a su lógica de ejecución mediante una numeración que se refleja en la esquina inferior derecha de cada actividad. De esta manera se consigue un modelo de actividades que refleja el nivel de influencia de una actividad sobre el resto de las del proceso.
+
+El resultado final es un conjunto de diagramas que contienen las actividades del proceso, cuidadosamente coordinados y organizados en niveles, que empiezan por el diagrama de nivel más general y terminan por los de detalle. Cualquier actividad compleja puede subdividirse en actividades más detalladas.
+
+Los flujos que interconectan actividades se clasifican en cuatro tipos de acuerdo a su significado:
+
+* Entrada: hace referencia a la información que se utilizará para producir las salidas de la actividad. La entrada es transformada por la actividad.
+* Salida: se trata de información que se produce en la actividad.
+* Control: se trata de restricciones que afectan a una actividad. Regula la producción de las salidas a partir de las entradas, pudiendo indicar cómo y cuando se producen las salidas.
+* Mecanismo: normalmente se refiere a máquinas, personas, recursos o sistemas existentes que ejecutan la actividad. Es importante incluir aquellos mecanismos que serán diferentes en el entorno actual y en el entorno futuro.
+
+Al incorporar controles que regulan las actividades, los flujos de salida de una actividad pueden actuar como controles e incluso mecanismos en la actividad precedente o dependiente.
+
+Los diagramas SADT requieren una serie de puntos de partida:
+
+* Concretar el tema a tratar.
+* Asumir un punto de vista determinado.
+* Fijar un objetivo.
+
+El primero permite definir el ámbito dentro y fuera de la organización y el segundo proporciona una guía al construir el modelo. Por último, el objetivo ayuda a decidir cuándo se finaliza en la construcción del modelo.
+
+##### Notación {.unnumbered .unlisted}
+
+En la cabecera del diagrama se incluye información relativa al autor, proyecto, fecha de creación o de última revisión y estado.
+
+Los dos elementos principales de los diagramas SADT son las actividades del proceso a modelizar y los flujos que establecen la comunicación entre las actividades.
+
+Las actividades se representan mediante una caja rectangular cuyo nombre contiene un verbo, que responde a una función o parte activa del proceso, y los flujos mediante flechas. El número de actividades en un diagrama, para hacerlo comprensible, debe oscilar entre 3 y 6.
+
+Cada lado de la caja tiene un significado específico:
+
+* El lado izquierdo está reservado para las **entradas**.
+* El superior corresponde a los **controles**.
+* El lado derecho para las **salidas**.
+* El inferior se reserva para los **mecanismos**.
+
+Esta notación responde a los siguientes principios: las entradas son transformadas en salidas, los controles son restricciones bajo las que se desarrollan las actividades y los mecanismos son los medios, humanos o materiales, que permiten su ejecución.
+
+Cada flujo (flecha) representa planes, datos, máquinas e información, etc., y debe nombrarse con un sustantivo.
+
+![](../images/sadt-notacion.png)
+
+Las actividades en los diagramas SADT no se ubican de forma aleatoria, sino por la influencia que una actividad tiene sobre otras. La más dominante, es decir, la que más influye en las restantes, debe ser normalmente la primera en la secuencia de actividades y se sitúa en la esquina superior izquierda del diagrama. Por ejemplo, si se trata de realizar un proceso de selección de personal, la actividad más dominante será la de revisar las referencias de los candidatos. La menos dominante, por el contrario, se sitúa en la esquina inferior derecha, por ejemplo, en el caso anterior, sería la de contratar o rechazar a un candidato a empleo. Cada actividad se numera siguiendo una secuencia que empieza en la que se corresponde con la actividad más dominante y así sucesivamente.
+
+La influencia de una actividad sobre otra se manifiesta en una salida de la primera que o bien es entrada o bien es un control en la segunda.
+
+Un diagrama de actividades SADT no es un diagrama de flujo de datos ya que recoge, además de las transformaciones de entrada y salida de información, las reglas que ponen restricciones a dicha transformación. En este sentido, las flechas documentan las interfaces entre las actividades del proceso y entre éste y su entorno.
+
+Existen cinco tipos de interconexiones entre actividades, que son las siguientes:
+
+* Control.
+* Entrada.
+* Control – Realimentación.
+* Entrada – Realimentación.
+* Salida – Mecanismo.
+
+La conexión por control o entrada se da cuando una salida de una actividad se convierte en control o entrada, respectivamente, de una actividad de menor influencia. Cualquiera de las conexiones con realimentación tienen lugar cuando una salida de una actividad afecta a otra de mayor influencia como entrada o como control. La conexión de una salida de una actividad que actúa como un mecanismo de otra, implica que la primera le proporciona medios a la segunda para su ejecución (aunque este tipo de conexión es poco usual).
+
+##### Ejemplo {.unnumbered .unlisted}
+
+A continuación se muestra un ejemplo del proceso de selección de personal de una empresa mediante la técnica SADT. (MÉTRICA Versión 3 no exige la notación aquí utilizada).
+
+![](../images/sadt.png)
+
 ### Modelo Entidad/Relación Extendido {#modelo-entidad-relacion-extendido}
 
 Se trata de una técnica cuyo objetivo es la representación y definición de todos los datos que se introducen, almacenan, transforman y producen dentro de un sistema de información, sin tener en cuenta las necesidades de la tecnología existente, ni otras restricciones.
