@@ -1016,6 +1016,132 @@ Por otro lado, se han incluido atributos que caracterizan la relación *Trabaja
 
 ### Normalización {#normalizacion}
 
+La teoría de la normalización tiene por objetivo la eliminación de dependencias entre atributos que originen anomalías en la actualización de los datos, y proporcionar una estructura más regular para la representación de las tablas, constituyendo el soporte para el diseño de bases de datos relacionales.
+
+Como resultado de la aplicación de esta técnica se obtiene un modelo lógico de datos normalizado.
+
+#### Descripción {.unnumbered .unlisted}
+
+La teoría de la normalización, como técnica formal para organizar los datos, ayuda a encontrar fallos y a corregirlos, evitando así introducir anomalías en las operaciones de manipulación de datos.
+
+Se dice que una relación está en una determinada forma normal si satisface un cierto conjunto de restricciones sobre los atributos. Cuanto más restricciones existan, menor será el número de relaciones que las satisfagan, así, por ejemplo, una relación en tercera forma normal estará también en segunda y en primera forma normal.
+
+Antes de definir las distintas formas normales se explican, muy brevemente, algunos conceptos necesarios para su comprensión.
+
+##### Dependencia funcional {.unnumbered .unlisted}
+
+Un atributo $Y$ se dice que depende funcionalmente de otro $X$ si, y sólo si, a cada valor de $X$ le corresponde un único valor de $Y$, lo que se expresa de la siguiente forma: $X \rightarrow Y$ (también se dice que $X$ determina o implica a $Y$).
+
+$X$ se denomina implicante o determinante e $Y$ es el implicado.
+
+##### Dependencia funcional completa {.unnumbered .unlisted}
+
+Un atributo $Y$ tiene dependencia funcional completa respecto de otro $X$, si depende funcionalmente de él en su totalidad, es decir, no depende de ninguno de los posibles atributos que formen parte de $X$.
+
+##### Dependencia transitiva {.unnumbered .unlisted}
+
+Un atributo depende transitivamente de otro si, y sólo si, depende de él a través de otro atributo. Así, $Z$ depende transitivamente de $X$, si:
+
+$X \rightarrow Y$
+$Y \not\rightarrow X$
+$Y \rightarrow Z$
+
+Se dice que $X$ implica a $Z$ a través de $Y$.
+
+Una vez definidas las anteriores dependencias, se pueden enunciar las siguientes formas normales:
+
+##### Primera forma normal (1FN) {.unnumbered .unlisted}
+
+Una entidad está en 1FN si no tiene grupos repetitivos, es decir, un atributo sólo puede tomar un único valor de un dominio simple.
+
+Una vez identificados los atributos que no dependen funcionalmente de la clave principal, se formará con ellos una nueva entidad y se eliminarán de la antigua. La clave principal de la nueva entidad estará formada por la concatenación de uno o varios de sus atributos más la clave principal de la antigua entidad.
+
+##### Segunda forma normal (2FN) {.unnumbered .unlisted}
+
+Una entidad está en 2FN si está en 1FN y todos los atributos que no forman parte de las claves candidatas (atributos no principales) tienen dependencia funcional completa respecto de éstas, es decir, no hay dependencias funcionales de atributos no principales respecto de una parte de las claves. Cada uno de los atributos de una entidad depende de toda la clave.
+
+Una vez identificados los atributos que no dependen funcionalmente de toda la clave, sino sólo de parte de la misma, se formará con ellos una nueva entidad y se eliminarán de la antigua. La clave principal de la nueva entidad estará formada por la parte de la antigua de la que dependen funcionalmente.
+
+##### Tercera forma normal (3FN) {.unnumbered .unlisted}
+
+Una entidad está en 3FN si está en 2FN y todos sus atributos no principales dependen directamente de la clave primaria, es decir, no hay dependencias funcionales transitivas de atributos no principales respecto de las claves.
+
+Una vez identificados los atributos que dependen de otro atributo distinto de la clave, se formará con ellos una nueva entidad y se eliminarán de la antigua. La clave principal de la nueva entidad será el atributo del cual dependen. Este atributo en la entidad antigua, pasará a ser una clave ajena.
+
+#### Notación {.unnumbered .unlisted}
+
+Una herramienta muy útil para visualizar las dependencias funcionales es el grafo o diagrama de dependencias funcionales, mediante el cual se representa un conjunto de atributos y las dependencias funcionales existentes entre ellos.
+
+En el grafo aparecen los nombres de los atributos unidos por flechas, las cuales indican las dependencias funcionales completas que existen entre ellos, partiendo del implicante hacia el implicado. Cuando el implicante de una dependencia no es un único atributo, es decir, se trata de un implicante compuesto, los atributos que lo componen se encierran en un recuadro y la flecha parte de éste, no de cada atributo.
+
+![](../images/Notacion-normalizacion.png)
+
+En la figura se presenta un ejemplo de cómo se visualizan las dependencias. Se puede observar que cod_libro determina funcionalmente el título del libro y la editorial, como indica la correspondiente flecha; de forma análoga, num_socio determina el nombre, domicilio y el tel. del socio (suponiendo que sólo se proporciona un teléfono); mientras que ambos atributos en conjunto cod_libro y num_socio (lo que se indica mediante el recuadro que los incluye) determinan fecha_préstamo y fecha_dev.
+
+#### Ejemplo {.unnumbered .unlisted}
+
+Sea una entidad TÉCNICOS de un grupo de empresas, con los siguientes atributos:
+
+* cod_empresa
+* cod_técnico
+* nombre_técnico
+* cod_categoría
+* categoría
+* nombre_empresa
+* fecha_alta
+* fecha_baja
+* cod_conoc
+* título_conoc
+* área_conoc
+* grado
+* cod_proyecto
+* nombre_proyecto
+* f_inicio
+* f_fin
+* f_asignación
+* f_cese
+* cod_cliente
+* nombre_cliente
+
+La entidad TÉCNICOS tiene la clave principal compuesta por cod_empresa y cod_técnico, ya que, al ser varias empresas, el código de técnico no será único, sino que puede coincidir con otros de otras empresas.
+
+##### Primera forma normal (1FN) {.unnumbered .unlisted}
+
+Evidentemente no se cumple la primera forma normal, ya que un técnico tendrá más de un conocimiento (lenguajes, sistemas operativos, bases de datos, etc.), es decir habrá varios valores de cod_conoc, por lo que este atributo y los asociados a conocimientos no dependen funcionalmente de la clave principal.
+
+Los atributos cod_conoc, título_conoc, área_conoc y grado identificados como no dependientes, formarán la nueva entidad CONOCIMIENTOS y desaparecerán de la entidad TÉCNICOS. La clave de la nueva entidad será cod_conoc concatenada con cod_empresa y cod_técnico.
+
+Por otro lado, en este sistema un técnico puede trabajar en más de un proyecto a tiempo parcial, por lo que cod_proyecto tampoco depende funcionalmente de la clave principal de TÉCNICOS.
+
+Se obtiene entonces la entidad PROYECTOS con los atributos de los proyectos, y su clave compuesta de cod_proyecto concatenada con cod_empresa y cod_técnico de la antigua entidad.
+
+Esta situación se completará con dos tipos de relaciones: Poseen, cuyo tipo de correspondencia es 1:N entre TÉCNICOS y CONOCIMIENTOS y Están asignados, también del tipo M:N entre TÉCNICOS y PROYECTOS, tal y como muestra el diagrama siguiente.
+
+![Ejemplo de Primera Forma Normal](../images/Ejemplo-normalizacion-1.png)
+
+Como se aprecia en la figura, se ha trasladado el atributo grado de la entidad CONOCIMIENTOS a la relación Poseen, pues es un atributo que determina la relación entre las dos entidades. También han sido trasladado los atributos que caracterizan la relación Están asignados, como son f_asignación y f_cese, ya que un técnico no siempre estará trabajando en un proyecto, sino en determinado periodo.
+Segunda forma normal (2FN)
+
+En la entidad TÉCNICOS se observa que el atributo nombre_empresa no tiene una dependencia funcional completa de la clave, sino que la tiene sólo de una parte de la misma: cod_empresa.
+
+El atributo identificado formará parte de una nueva entidad, EMPRESAS, siendo eliminado de la antigua. La clave principal de la nueva entidad será cod_empresa.
+
+Para representar la segunda forma normal en el modelo de datos, deberá añadirse un tipo de relación, Se componen, y el tipo de correspondencia 1:N.
+
+![Ejemplo de Segunda Formal Normal](../images/Ejemplo-normalizacion-2.png)
+
+##### Tercera forma normal (3FN) {.unnumbered .unlisted}
+
+En la entidad TÉCNICOS de la figura se puede observar que para un cod_técnico hay un único cod_categoría, es decir, el segundo depende funcionalmente del primero; para un cod_categoría hay una única categoría, es decir, que este atributo depende funcionalmente del cod_categoría; y por último, para un cod_categoría hay varios valores de cod_técnico. Así pues, la categoría depende transitivamente del cod_técnico, por lo que la entidad TÉCNICOS no está en 3FN.
+
+Una vez identificado el atributo categoría que depende de otro atributo distinto de la clave, cod_categoría, se formará con él una nueva entidad y se quitará de la antigua. La clave principal de la nueva entidad será el atributo del cual depende cod_categoría y en la entidad antigua pasará a ser una clave ajena.
+
+Del mismo modo, puede observarse que la entidad PROYECTOS tampoco está en 3FN, pues el nombre_cliente depende de cod_cliente, que no forma parte de la clave de la entidad.
+
+![Ejemplo de Tercera Forma Normal](../images/Ejemplo-normalizacion-3.png)
+
+Así pues, aparecen dos entidades nuevas en el modelo: CATEGORÍAS y CLIENTES, y sus respectivas relaciones y tipos de correspondencias: Están clasificados 1:N y Tiene contratados 1:N.
+
 ### Optimización {#optimizacion}
 
 El objetivo de esta técnica es reestructurar el modelo físico de datos con el fin de asegurar que satisface los requisitos de rendimiento establecidos y conseguir una adecuada eficiencia del sistema.
