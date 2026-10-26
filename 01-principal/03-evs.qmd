@@ -25,61 +25,95 @@ Se analizan las posibles restricciones, tanto generales como específicas, que p
 Si la justificación económica es obvia, el riesgo técnico bajo, se esperan pocos problemas legales y no existe ninguna alternativa razonable, no es necesario profundizar en el estudio de viabilidad del sistema, analizando posibles alternativas y realizando una valoración y evaluación de las mismas, sino que éste se orientará a la especificación de requisitos, descripción del nuevo sistema y planificación.
 
 Se detalla la composición del equipo de trabajo necesario para este proceso y su planificación. Finalmente, con el fin de facilitar la implicación activa de los usuarios en la definición del sistema, se identifican sus perfiles, dejando claras sus tareas y responsabilidades.
-TAREA 	PRODUCTOS 	TÉCNICAS Y PRÁCTICAS 	PARTICIPANTES
-EVS 1.1: Estudio de la Solicitud 	
 
-    Descripción General del Sistema
-    Catálogo Objetivos EVS
-    Catálogo de Requisitos
-
-	
-
-    Catalogación
-    Sesiones de trabajo
-
-	
-
-    Comité de Dirección
-    Jefe de Proyecto
-    Analistas
-
-EVS 1.2: Identificación del Alcance del Sistema 	
-
-    Descripción General del Sistema:
-        Contexto del Sistema
-        Estructura Organizativa
-    Catálogo de Requisitos
-    Catálogo de Usuarios
-
-	
-
-    Diagrama de Flujo de Datos
-    Diagrama de Descomposición Funcional
-    Catalogación
-    Sesiones de trabajo
-
-	
-
-    Comité de Dirección
-    Jefe de Proyecto
-    Analistas
-
-EVS 1.3: Especificación del Alcance del EVS 	
-
-    Catálogo de Objetivos del EVS
-    Catálogo de Usuarios
-    Plan de Trabajo
-
-	
-
-    Catalogación
-    Sesiones de trabajo
-
-	
-
-    Comité de Dirección
-    Jefe de Proyecto
-    Analistas
+```{=html}
+<table class="avia-table avia-data-table">
+<tbody>
+<tr>
+<td style="background-color: #000033; text-align: left; width: 25%;"><strong><span style="color: #ffffff;">TAREA</span></strong></td>
+<td style="background-color: #000033; text-align: left; width: 30%;"><strong><span style="color: #ffffff;">PRODUCTOS</span></strong></td>
+<td style="background-color: #000033; text-align: left; width: 25%;"><strong><span style="color: #ffffff;">TÉCNICAS Y PRÁCTICAS</span></strong></td>
+<td style="background-color: #000033; text-align: left; width: 20%;"><strong><span style="color: #ffffff;">PARTICIPANTES</span></strong></td>
+</tr>
+<tr>
+<td style="text-align: left; vertical-align: top;"><a href="#evs-1-1"><strong>EVS 1.1</strong>: Estudio de la Solicitud</a></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li>Descripción General del Sistema</li>
+<li>Catálogo Objetivos EVS</li>
+<li>Catálogo de Requisitos</li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#catalogacion">Catalogación</a></li>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#sesiones-de-trabajo">Sesiones de trabajo</a></li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-directivo">Comité de Dirección</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto">Jefe de Proyecto</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-analista">Analistas</a></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td style="text-align: left; vertical-align: top;"><a href="#evs-1-2"><strong>EVS 1.2</strong>: Identificación del Alcance del Sistema</a></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li>Descripción General del Sistema:
+<ul>
+<li>Contexto del Sistema</li>
+<li>Estructura Organizativa</li>
+</ul>
+</li>
+<li>Catálogo de Requisitos</li>
+<li>Catálogo de Usuarios</li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#diagrama-de-flujo-de-datos">Diagrama de Flujo de Datos</a></li>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#diagrama-de-descomposicion">Diagrama de Descomposición Funcional</a></li>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#catalogacion">Catalogación</a></li>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#sesiones-de-trabajo">Sesiones de trabajo</a></li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-directivo">Comité de Dirección</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto">Jefe de Proyecto</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-analista">Analistas</a></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td style="text-align: left; vertical-align: top;"><a href="#evs-1-3"><strong>EVS 1.3</strong>: Especificación del Alcance del EVS</a></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li>Catálogo de Objetivos del EVS</li>
+<li>Catálogo de Usuarios</li>
+<li>Plan de Trabajo</li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#catalogacion">Catalogación</a></li>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#sesiones-de-trabajo">Sesiones de trabajo</a></li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-directivo">Comité de Dirección</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto">Jefe de Proyecto</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-analista">Analistas</a></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+```
 
 #### Tarea EVS 1.1: Estudio de la Solicitud
 
@@ -198,71 +232,117 @@ Teniendo en cuenta el objetivo del estudio de la situación actual, se realiza u
 Si se decide documentar la situación actual, normalmente es conveniente dividir el sistema actual en subsistemas. Si es posible se describirá cada uno de los subsistemas, valorando qué información puede ser relevante para la descripción.
 
 Como resultado de esta actividad se genera un diagnóstico, estimando la eficiencia de los sistemas de información existentes e identificando los posibles problemas y las mejoras.
-TAREA 	PRODUCTOS 	TÉCNICAS Y PRÁCTICAS 	PARTICIPANTES
-EVS 2.1: Valoración del Estudio de la Situación Actual 	
 
-    Descripción de la Situación Actual:
-        Contexto del Sistema Actual
-        Descripción de los Sistemas de Información Actuales
-
-	
-
-    Diagrama de Flujo de Datos
-    Diagrama de Representación
-    Sesiones de trabajo
-
-	
-
-    Jefe de Proyecto
-    Analistas
-    Directores de Usuarios
-
-EVS 2.2: Identificación de los Usuarios Participantes en el Estudio de la Situación Actual 	
-
-    Catálogo de Usuarios
-
-	
-
-    Sesiones de trabajo
-    Catalogación
-
-	
-
-    Jefe de Proyecto
-    Directores de Usuarios
-
-EVS 2.3: Descripción de los Sistemas de Información Existentes 	
-
-    Descripción de la Situación Actual:
-        Descripción Lógica del Sistema Actual
-        Modelo Físico del Sistema Actual (opcional)
-        Matriz Localización Módulos y Datos
-
-	
-
-    Modelo Entidad/Relación Extendido
-    Diagrama de Flujo de Datos
-    Diagrama de Clases
-    Diagrama de Interacción de Objetos
-    Matricial
-    Diagrama de Representación
-    Sesiones de trabajo
-
-	
-
-    Analistas
-    Usuarios Expertos
-    Equipo de Soporte Técnico
-
-EVS 2.4: Realización del Diagnóstico de la Situación Actual 	
-
-    Descripción de la Situación Actual:
-        Diagnóstico de la Situación Actual
-
-		
-
-    Analistas
-    Responsable de Mantenimiento
+```{html}
+<table class="avia-table avia-data-table">
+<tbody>
+<tr>
+<td style="background-color: #000033; text-align: left; width: 25%;"><strong><span style="color: #ffffff;">TAREA</span></strong></td>
+<td style="background-color: #000033; text-align: left; width: 30%;"><strong><span style="color: #ffffff;">PRODUCTOS</span></strong></td>
+<td style="background-color: #000033; text-align: left; width: 25%;"><strong><span style="color: #ffffff;">TÉCNICAS Y PRÁCTICAS</span></strong></td>
+<td style="background-color: #000033; text-align: left; width: 20%;"><strong><span style="color: #ffffff;">PARTICIPANTES</span></strong></td>
+</tr>
+<tr>
+<td style="text-align: left; vertical-align: top;"><a href="#evs-2-1"><strong>EVS 2.1</strong>: Valoración del Estudio de la Situación Actual</a></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li>Descripción de la Situación Actual:
+<ul>
+<li>Contexto del Sistema Actual</li>
+<li>Descripción de los Sistemas de Información Actuales</li>
+</ul>
+</li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#diagrama-de-flujo-de-datos">Diagrama de Flujo de Datos</a></li>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#diagrama-de-representacion">Diagrama de Representación</a></li>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#sesiones-de-trabajo">Sesiones de trabajo</a></li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto">Jefe de Proyecto</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-analista">Analistas</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-directivo">Directores de Usuarios</a></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td style="text-align: left; vertical-align: top;"><a href="#evs-2-2"><strong>EVS 2.2</strong>: Identificación de los Usuarios Participantes en el Estudio de la Situación Actual</a></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li>Catálogo de Usuarios</li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#sesiones-de-trabajo">Sesiones de trabajo</a></li>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#catalogacion">Catalogación</a></li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto">Jefe de Proyecto</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-directivo">Directores de Usuarios</a></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td style="text-align: left; vertical-align: top;"><a href="#evs-2-3"><strong>EVS 2.3</strong>: Descripción de los Sistemas de Información Existentes</a></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li>Descripción de la Situación Actual:
+<ul>
+<li>Descripción Lógica del Sistema Actual</li>
+<li>Modelo Físico del Sistema Actual (opcional)</li>
+<li>Matriz Localización Módulos y Datos</li>
+</ul>
+</li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#modelo-entidad-relacion-extendido">Modelo Entidad/Relación Extendido</a></li>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#diagrama-de-flujo-de-datos">Diagrama de Flujo de Datos</a></li>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#diagrama-de-clases">Diagrama de Clases</a></li>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#diagrama-de-interaccion">Diagrama de Interacción de Objetos</a></li>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#tecnicas-matriciales">Matricial</a></li>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#diagrama-de-representacion">Diagrama de Representación</a></li>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#sesiones-de-trabajo">Sesiones de trabajo</a></li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-analista">Analistas</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-directivo">Usuarios Expertos</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-analista">Equipo de Soporte Técnico</a></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td style="text-align: left; vertical-align: top;"><a href="#evs-2-4"><strong>EVS 2.4</strong>: Realización del Diagnóstico de la Situación Actual</a></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li>Descripción de la Situación Actual:
+<ul>
+<li>Diagnóstico de la Situación Actual</li>
+</ul>
+</li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;"></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-analista">Analistas</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto">Responsable de Mantenimiento</a></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+```
 
 #### Tarea EVS 2.1: Valoración del Estudio de la Situación Actual
 
@@ -403,48 +483,79 @@ Si se ha tomado la decisión de no describir la situación actual, se realiza un
 ### Actividad EVS 3: Definición de Requisitos del Sistema
 
 Esta actividad incluye la determinación de los requisitos generales, mediante una serie de sesiones de trabajo con los usuarios participantes, que hay que planificar y realizar. Una vez finalizadas, se analiza la información obtenida definiendo los requisitos y sus prioridades, que se añaden al catálogo de requisitos que servirá para el estudio y valoración de las distintas alternativas de solución que se propongan.
-TAREA 	PRODUCTOS 	TÉCNICAS Y PRÁCTICAS 	PARTICIPANTES
-EVS 3.1: Identificación de las Directrices Técnicas y de Gestión 	
 
-    Catálogo de Normas
-
-	
-
-    Catalogación
-
-	
-
-    Jefe de Proyecto
-    Analistas
-    Usuarios Expertos
-
-EVS 3.2: Identificación de Requisitos 	
-
-    Identificación de Requisitos
-
-	
-
-    Sesiones de trabajo
-
-	
-
-    Jefe de Proyecto
-    Analistas
-    Usuarios Expertos
-
-EVS 3.3: Catalogación de Requisitos 	
-
-    Catálogo de Requisitos
-
-	
-
-    Catalogación
-
-	
-
-    Jefe de Proyecto
-    Analistas
-    Usuarios Expertos
+```{html}
+<table class="avia-table avia-data-table">
+<tbody>
+<tr>
+<td style="background-color: #000033; text-align: left; width: 25%;"><strong><span style="color: #ffffff;">TAREA</span></strong></td>
+<td style="background-color: #000033; text-align: left; width: 30%;"><strong><span style="color: #ffffff;">PRODUCTOS</span></strong></td>
+<td style="background-color: #000033; text-align: left; width: 25%;"><strong><span style="color: #ffffff;">TÉCNICAS Y PRÁCTICAS</span></strong></td>
+<td style="background-color: #000033; text-align: left; width: 20%;"><strong><span style="color: #ffffff;">PARTICIPANTES</span></strong></td>
+</tr>
+<tr>
+<td style="text-align: left; vertical-align: top;"><a href="#evs-3-1"><strong>EVS 3.1</strong>: Identificación de las Directrices Técnicas y de Gestión</a></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li>Catálogo de Normas</li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#catalogacion">Catalogación</a></li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto">Jefe de Proyecto</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-analista">Analistas</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-directivo">Usuarios Expertos</a></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td style="text-align: left; vertical-align: top;"><a href="#evs-3-2"><strong>EVS 3.2</strong>: Identificación de Requisitos</a></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li>Identificación de Requisitos</li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#sesiones-de-trabajo">Sesiones de trabajo</a></li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto">Jefe de Proyecto</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-analista">Analistas</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-directivo">Usuarios Expertos</a></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td style="text-align: left; vertical-align: top;"><a href="#evs-3-3"><strong>EVS 3.3</strong>: Catalogación de Requisitos</a></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li>Catálogo de Requisitos</li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#catalogacion">Catalogación</a></li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto">Jefe de Proyecto</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-analista">Analistas</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-directivo">Usuarios Expertos</a></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+```
 
 #### Tarea EVS 3.1: Identificación de las Directrices Técnicas y de Gestión
 
@@ -548,60 +659,92 @@ Este estudio se centra en proponer diversas alternativas que respondan satisfact
 Teniendo en cuenta el ámbito y funcionalidad que debe cubrir el sistema, puede ser conveniente realizar, previamente a la definición de cada alternativa, una descomposición del sistema en subsistemas.
 
 En la descripción de las distintas alternativas de solución propuestas, se debe especificar si alguna de ellas está basada, total o parcialmente, en un producto existente en el mercado. Si la alternativa incluye un desarrollo a medida, se debe incorporar en la descripción de la misma un modelo abstracto de datos y un modelo de procesos, y en orientación a objetos, un modelo de negocio y un modelo de dominio.
-TAREA 	PRODUCTOS 	TÉCNICAS Y PRÁCTICAS 	PARTICIPANTES
-EVS 4.1: Preselección de Alternativas de Solución 	
 
-    Descripción Inicial del Sistema en Subsistemas (opcional)
-    Alternativas de Solución a Estudiar
-
-	
-
-    Diagrama de Representación
-
-	
-
-    Jefe de Proyecto
-    Analistas
-    Técnico de sistemas
-
-EVS 4.2: Descripción de las Alternativas de Solución 	
-
-    Catálogo de Requisitos
-    Alternativas de solución a estudiar:
-        Catálogo de Requisitos (actualizado)
-        Modelo de Descomposición en Subsistemas
-        Matroz Procesos / Localización Geográfica
-        Matriz Datos / Localización Geográfica
-        Entorno Tecnológico y Comunicaciones
-        Estrategia de Implantación Global del Sistema
-        Si la alternativa requiere desarrollo:
-        Modelo Abstracto de Datos / Modelo de Procesos (En caso de Estructurado)
-        Modelo de Negocio / Modelo de Dominio (En caso de Orientación a Objetos)
-        Si la alternativa incluye producto software estándar:
-        Descripción del Producto
-        Previsión de Evolución del Producto
-        Costes Ocasionados por Producto
-        Estándares del Producto
-        Descripción de Adaptación (si es necesaria)
-
-	
-
-    Matricial
-    Modelo Entidad/Relación Extendido
-    Diagrama de Flujo de Datos
-    Casos de Uso
-    Diagrama de Clases
-    Catalogación
-    Diagrama de Representación
-
-	
-
-    Jefe de Proyecto
-    Analistas
-    Usuarios Expertos
-    Técnicos de sistemas
-    Responsables de Seguridad
-    Especialistas en Comunicaciones
+```{html}
+<table class="avia-table avia-data-table">
+<tbody>
+<tr>
+<td style="background-color: #000033; text-align: left; width: 25%;"><strong><span style="color: #ffffff;">TAREA</span></strong></td>
+<td style="background-color: #000033; text-align: left; width: 30%;"><strong><span style="color: #ffffff;">PRODUCTOS</span></strong></td>
+<td style="background-color: #000033; text-align: left; width: 25%;"><strong><span style="color: #ffffff;">TÉCNICAS Y PRÁCTICAS</span></strong></td>
+<td style="background-color: #000033; text-align: left; width: 20%;"><strong><span style="color: #ffffff;">PARTICIPANTES</span></strong></td>
+</tr>
+<tr>
+<td style="text-align: left; vertical-align: top;"><a href="#evs-4-1"><strong>EVS 4.1</strong>: Preselección de Alternativas de Solución</a></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li>Descripción Inicial del Sistema en Subsistemas (opcional)</li>
+<li>Alternativas de Solución a Estudiar</li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#diagrama-de-representacion">Diagrama de Representación</a></li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto">Jefe de Proyecto</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-analista">Analistas</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-consultor">Técnico de sistemas</a></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td style="text-align: left; vertical-align: top;"><a href="#evs-4-2"><strong>EVS 4.2</strong>: Descripción de las Alternativas de Solución</a></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li>Catálogo de Requisitos</li>
+<li>Alternativas de solución a estudiar:
+<ul>
+<li>Catálogo de Requisitos (actualizado)</li>
+<li>Modelo de Descomposición en Subsistemas</li>
+<li>Matroz Procesos / Localización Geográfica</li>
+<li>Matriz Datos / Localización Geográfica</li>
+<li>Entorno Tecnológico y Comunicaciones</li>
+<li>Estrategia de Implantación Global del Sistema</li>
+<li class="no-bullet">
+<h4>Si la alternativa requiere desarrollo:</h4>
+</li>
+<li>Modelo Abstracto de Datos / Modelo de Procesos (En caso de <em><strong>Estructurado</strong></em>)</li>
+<li>Modelo de Negocio / Modelo de Dominio (En caso de <em><strong>Orientación a Objetos</strong></em>)</li>
+<li class="no-bullet">
+<h4>Si la alternativa incluye producto software estándar:</h4>
+</li>
+<li>Descripción del Producto</li>
+<li>Previsión de Evolución del Producto</li>
+<li>Costes Ocasionados por Producto</li>
+<li>Estándares del Producto</li>
+<li>Descripción de Adaptación (si es necesaria)</li>
+</ul>
+</li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#tecnicas-matriciales">Matricial</a></li>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#modelo-entidad-relacion-extendido">Modelo Entidad/Relación Extendido</a></li>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#diagrama-de-flujo-de-datos">Diagrama de Flujo de Datos</a></li>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#casos-de-uso">Casos de Uso</a></li>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#diagrama-de-clases">Diagrama de Clases</a></li>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#catalogacion">Catalogación</a></li>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#diagrama-de-representacion">Diagrama de Representación</a></li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto">Jefe de Proyecto</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-analista">Analistas</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-directivo">Usuarios Expertos</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-consultor">Técnicos de sistemas</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto">Responsables de Seguridad</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-consultor">Especialistas en Comunicaciones</a></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+```
 
 #### Tarea EVS 4.1: Preselección de Alternativas de Solución
 
@@ -701,50 +844,90 @@ Si la alternativa incluye una solución basada en producto se analiza su evoluci
 ### Actividad EVS 5: Valoración de las Alternativas
 
 Una vez descritas las alternativas se realiza una valoración de las mismas, considerando el impacto en la organización, tanto desde el punto de vista tecnológico y organizativo como de operación, y los posibles beneficios que se esperan contrastados con los costes asociados. Se realiza también un análisis de los riesgos, decidiendo cómo enfocar el plan de acción para minimizar los mismos y cuantificando los recursos y plazos precisos para planificar cada alternativa.
-TAREA 	PRODUCTOS 	TÉCNICAS Y PRÁCTICAS 	PARTICIPANTES
-EVS 5.1: Estudio de la Inversión 	
 
-    Valoración de Alternativas:
-        Impacto en la Organización de Alternativas
-        Coste/Beneficio de Alternativas
-
-	
-
-    Análisis Coste/Beneficio
-
-	
-
-    Jefe de Proyecto
-    Analistas
-
-EVS 5.2: Estudio de los Riesgos 	
-
-    Valoración de Alternativas:
-        Valoración de Riesgos
-
-	
-
-    Impacto en la Organización
-
-	
-
-    Jefe de Proyecto
-    Analistas
-
-EVS 5.3: Planificación de Alternativas 	
-
-    Plan de Trabajo de Cada Alternativa:
-        Enfoque del Plan de Trabajo de Cada Alternativa
-        Planificación de Cada Alternativa
-
-	
-
-    Planificación
-
-	
-
-    Jefe de Proyecto
-    Analistas
+```{html}
+<table class="avia-table avia-data-table">
+<tbody>
+<tr>
+<td style="background-color: #000033; text-align: left; width: 25%;"><strong><span style="color: #ffffff;">TAREA</span></strong></td>
+<td style="background-color: #000033; text-align: left; width: 30%;"><strong><span style="color: #ffffff;">PRODUCTOS</span></strong></td>
+<td style="background-color: #000033; text-align: left; width: 25%;"><strong><span style="color: #ffffff;">TÉCNICAS Y PRÁCTICAS</span></strong></td>
+<td style="background-color: #000033; text-align: left; width: 20%;"><strong><span style="color: #ffffff;">PARTICIPANTES</span></strong></td>
+</tr>
+<tr>
+<td style="text-align: left; vertical-align: top;"><a href="#evs-5-1"><strong>EVS 5.1</strong>: Estudio de la Inversión</a></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li>Valoración de Alternativas:
+<ul>
+<li>Impacto en la Organización de Alternativas</li>
+<li>Coste/Beneficio de Alternativas</li>
+</ul>
+</li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#analisis-coste-beneficio">Análisis Coste/Beneficio</a></li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto">Jefe de Proyecto</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-analista">Analistas</a></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td style="text-align: left; vertical-align: top;"><a href="#evs-5-2"><strong>EVS 5.2</strong>: Estudio de los Riesgos</a></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li>Valoración de Alternativas:
+<ul>
+<li>Valoración de Riesgos</li>
+</ul>
+</li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#impacto-en-la-organizacion">Impacto en la Organización</a></li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto">Jefe de Proyecto</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-analista">Analistas</a></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td style="text-align: left; vertical-align: top;"><a href="#evs-5-3"><strong>EVS 5.3</strong>: Planificación de Alternativas</a></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li>Plan de Trabajo de Cada Alternativa:
+<ul>
+<li>Enfoque del Plan de Trabajo de Cada Alternativa</li>
+<li>Planificación de Cada Alternativa</li>
+</ul>
+</li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#planificacion">Planificación</a></li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto">Jefe de Proyecto</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-analista">Analistas</a></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+```
 
 #### Tarea EVS 5.1: Estudio de la Inversión
 
@@ -831,51 +1014,85 @@ De esta manera se garantiza el cumplimiento del plan de trabajo en los restantes
 ### Actividad EVS 6: Selección de la Solución
 
 Antes de finalizar el Estudio de Viabilidad del Sistema, se convoca al Comité de Dirección para la presentación de las distintas alternativas de solución, resultantes de la actividad anterior. En dicha presentación, se debaten las ventajas de cada una de ellas, incorporando las modificaciones que se consideren oportunas, con el fin de seleccionar la más adecuada. Finalmente, se aprueba la solución o se determina su inviabilidad.
-TAREA 	PRODUCTOS 	TÉCNICAS Y PRÁCTICAS 	PARTICIPANTES
-EVS 6.1: Convocatoria de la Presentación 	
 
-    Plan de Presentación de Alternativas
-
-	
-
-    Presentación
-
-	
-
-    Jefe de Proyecto
-
-EVS 6.2: Evaluación de las Alternativas y Selección 	
-
-    Plan de Presentación de Alternativas
-    Catálogo de Requisitos
-    Solución Propuesta:
-        Descripción de la Solución
-        Contexto del Sistema (con la definición de las interfaces)
-        Impacto en Organización de la Solución
-        Coste/Beneficio de la Solución
-        Valoración de Riesgos de la Solución
-        Enfoque del Plan de Trabajo de la Solución
-        Planificación de la Solución
-
-	
-
-    Presentación
-    Sesiones de trabajo
-
-	
-
-    Comité de Dirección
-    Jefe de Proyecto
-    Analistas
-
-EVS 6.3: Aprobación de la Solución 	
-
-    Aprobación de la Solución
-
-		
-
-    Comité de Dirección
-    Jefe de Proyecto
+```{html}
+<table class="avia-table avia-data-table">
+<tbody>
+<tr>
+<td style="background-color: #000033; text-align: left; width: 25%;"><strong><span style="color: #ffffff;">TAREA</span></strong></td>
+<td style="background-color: #000033; text-align: left; width: 30%;"><strong><span style="color: #ffffff;">PRODUCTOS</span></strong></td>
+<td style="background-color: #000033; text-align: left; width: 25%;"><strong><span style="color: #ffffff;">TÉCNICAS Y PRÁCTICAS</span></strong></td>
+<td style="background-color: #000033; text-align: left; width: 20%;"><strong><span style="color: #ffffff;">PARTICIPANTES</span></strong></td>
+</tr>
+<tr>
+<td style="text-align: left; vertical-align: top;"><a href="#evs-6-1"><strong>EVS 6.1</strong>: Convocatoria de la Presentación</a></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li>Plan de Presentación de Alternativas</li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#presentaciones">Presentación</a></li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto">Jefe de Proyecto</a></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td style="text-align: left; vertical-align: top;"><a href="#evs-6-2"><strong>EVS 6.2</strong>: Evaluación de las Alternativas y Selección</a></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li>Plan de Presentación de Alternativas</li>
+<li>Catálogo de Requisitos</li>
+<li>Solución Propuesta:
+<ul>
+<li>Descripción de la Solución</li>
+<li>Contexto del Sistema (con la definición de las interfaces)</li>
+<li>Impacto en Organización de la Solución</li>
+<li>Coste/Beneficio de la Solución</li>
+<li>Valoración de Riesgos de la Solución</li>
+<li>Enfoque del Plan de Trabajo de la Solución</li>
+<li>Planificación de la Solución</li>
+</ul>
+</li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#presentaciones">Presentación</a></li>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#sesiones-de-trabajo">Sesiones de trabajo</a></li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-directivo">Comité de Dirección</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto">Jefe de Proyecto</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-analista">Analistas</a></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td style="text-align: left; vertical-align: top;"><a href="#evs-6-3"><strong>EVS 6.3</strong>: Aprobación de la Solución</a></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li>Aprobación de la Solución</li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;"></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-directivo">Comité de Dirección</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto">Jefe de Proyecto</a></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+```
 
 #### Tarea EVS 6.1: Convocatoria de la Presentación
 
@@ -976,38 +1193,265 @@ El Comité de Dirección da su aprobación formal o determina la inviabilidad de
     Comité de Dirección
     Jefe de Proyecto
 
-### Participantes en las actividades del proceso EVS {.unnumbered .unlisted}
+## Participantes en las actividades del proceso EVS {.unnumbered .unlisted}
 
-ESTUDIO DE VIABILIDAD DEL SISTEMA 	ACTIVIDADES
-EVS 1 	EVS 2 	EVS 3 	EVS 4 	EVS 5 	EVS 6
-Analistas 	X 	X 	X 	X 	X 	X
-Comité de Dirección 	X 					X
-Directores Usuarios 		X 				
-Equipo de Soporte Técnico 		X 				
-Especialistas en Comunicaciones 				X 		
-Jefe de Proyecto 	X 	X 	X 	X 	X 	X
-Responsable Mantenimiento 		X 				
-Responsables de Seguridad 				X 		
-Técnicos de Sistemas 				X 		
-Usuarios Expertos 		X 	X 	X 		
-TÉCNICAS/PRÁCTICAS UTILIZADAS EN LAS ACTIVIDADES DEL PROCESO EVS
-ESTUDIO DE VIABILIDAD DEL SISTEMA 	ACTIVIDADES
-EVS 1 	EVS 2 	EVS 3 	EVS 4 	EVS 5 	EVS 6
-Análisis Coste/Beneficio 					X 	
-Casos de Uso 				X 		
-Catalogación 	X 	X 	X 	X 		
-Diagrama de Clases 		X 		X 		
-Diagrama de Descomposición Funcional 	X 					
-Diagrama de Flujo de Datos 	X 	X 		X 		
-Diagrama de Interacción de Objetos 		X 				
-Diagrama de Representación 		X 		X 		
-Impacto en la Organización 					X 	
-Matricial 		X 		X 		
-Modelo Entidad/Relación Extendido 		X 		X 		
-Planificación 					X 	
-Presentación 						X
-Sesiones de trabajo 	X 	X 	X 			X
-Actividades
+```{html}
+<table class="avia-table avia-data-table">
+<tbody>
+<tr>
+<td style="text-align: left; vertical-align: middle; width: 30%;" rowspan="2"><strong>ESTUDIO DE VIABILIDAD DEL SISTEMA</strong></td>
+<td style="text-align: center; width: 70%;" colspan="6" rowspan="1"><strong>ACTIVIDADES</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;"><a href="#evs-1"><strong>EVS 1</strong></a></td>
+<td style="text-align: center;"><a href="#evs-2"><strong>EVS 2</strong></a></td>
+<td style="text-align: center;"><a href="#evs-3"><strong>EVS 3</strong></a></td>
+<td style="text-align: center;"><a href="#evs-4"><strong>EVS 4</strong></a></td>
+<td style="text-align: center;"><a href="#evs-5"><strong>EVS 5</strong></a></td>
+<td style="text-align: center;"><a href="#evs-6"><strong>EVS</strong></a><a href="02-psi.qmd#psi-9"><strong> 6</strong></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../04-participantes/01-participantes.qmd#perfil-analista">Analistas</a></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;" colspan="4">X</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../04-participantes/01-participantes.qmd#perfil-directivo">Comité de Dirección</a></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;" colspan="4" rowspan="1">X</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../04-participantes/01-participantes.qmd#perfil-directivo">Directores Usuarios</a></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;" colspan="4"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../04-participantes/01-participantes.qmd#perfil-analista">Equipo de Soporte Técnico</a></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;" colspan="4" rowspan="1"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../04-participantes/01-participantes.qmd#perfil-consultor">Especialistas en Comunicaciones</a></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;" colspan="4"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto">Jefe de Proyecto</a></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;" colspan="4" rowspan="1">X</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto">Responsable Mantenimiento</a></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;" colspan="4" rowspan="1"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto">Responsables de Seguridad</a></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;" colspan="4" rowspan="1"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../04-participantes/01-participantes.qmd#perfil-consultor">Técnicos de Sistemas</a></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;" colspan="4" rowspan="1"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../04-participantes/01-participantes.qmd#perfil-directivo">Usuarios Expertos</a></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;" colspan="4" rowspan="1"></td>
+</tr>
+</tbody>
+</table>
+```
+
+## Técnicas/prácticas utilizadas en las actividades del proceso EVS {.unnumbered .unlisted}
+
+```{html}
+<table class="avia-table avia-data-table">
+<tbody>
+<tr>
+<td style="text-align: left; vertical-align: middle; width: 30%;" rowspan="2"><strong>ESTUDIO DE VIABILIDAD DEL SISTEMA</strong></td>
+<td style="text-align: center; width: 70%;" colspan="6" rowspan="1"><strong>ACTIVIDADES</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;"><a href="#evs-1"><strong>EVS 1</strong></a></td>
+<td style="text-align: center;"><a href="#evs-2"><strong>EVS 2</strong></a></td>
+<td style="text-align: center;"><a href="#evs-3"><strong>EVS 3</strong></a></td>
+<td style="text-align: center;"><a href="#evs-4"><strong>EVS 4</strong></a></td>
+<td style="text-align: center;"><a href="#evs-5"><strong>EVS 5</strong></a></td>
+<td style="text-align: center;"><a href="#evs-6"><strong>EVS</strong></a><a href="02-psi.qmd/psi-9"><strong> 6</strong></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../03-tecnicas/01-tecnicas.qmd#analisis-coste-beneficio">Análisis Coste/Beneficio</a></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;" colspan="4"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../03-tecnicas/01-tecnicas.qmd#casos-de-uso">Casos de Uso</a></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;" colspan="4" rowspan="1"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../03-tecnicas/01-tecnicas.qmd#catalogacion">Catalogación</a></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;" colspan="4"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../03-tecnicas/01-tecnicas.qmd#diagrama-de-clases">Diagrama de Clases</a></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;" colspan="4" rowspan="1"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../03-tecnicas/01-tecnicas.qmd#diagrama-de-descomposicion">Diagrama de Descomposición Funcional</a></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;" colspan="4"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../03-tecnicas/01-tecnicas.qmd#diagrama-de-flujo-de-datos">Diagrama de Flujo de Datos</a></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;" colspan="4" rowspan="1"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../03-tecnicas/01-tecnicas.qmd#diagrama-de-interaccion">Diagrama de Interacción de Objetos</a></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;" colspan="4" rowspan="1"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../03-tecnicas/01-tecnicas.qmd#diagrama-de-representacion">Diagrama de Representación</a></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;" colspan="4" rowspan="1"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../03-tecnicas/01-tecnicas.qmd#impacto-en-la-organizacion">Impacto en la Organización</a></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;" colspan="4" rowspan="1"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../03-tecnicas/01-tecnicas.qmd#tecnicas-matriciales">Matricial</a></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;" colspan="4" rowspan="1"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../03-tecnicas/01-tecnicas.qmd#modelo-entidad-relacion-extendido">Modelo Entidad/Relación Extendido</a></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;" colspan="4" rowspan="1"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../03-tecnicas/01-tecnicas.qmd#planificacion">Planificación</a></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;" colspan="4" rowspan="1"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../03-tecnicas/01-tecnicas.qmd#presentaciones">Presentación</a></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;" colspan="4" rowspan="1">X</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../03-tecnicas/01-tecnicas.qmd#sesiones-de-trabajo">Sesiones de trabajo</a></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;" colspan="4" rowspan="1">X</td>
+</tr>
+</tbody>
+</table>
+```
+
+### Actividades {.unnumbered .unlisted}
 
 - Actividad EVS 1: Establecimiento del Alcance del Sistema
 - Actividad EVS 2: Estudio de la Situación Actual

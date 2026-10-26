@@ -41,82 +41,119 @@ ANÁLISIS DEL SISTEMAS DE INFORMACIÓN (ORIENTACIÓN A OBJETOS)
 ### Actividad ASI 1: Definición del Sistema
 
 Esta actividad tiene como objetivo efectuar una descripción del sistema, delimitando su alcance, estableciendo las interfaces con otros sistemas e identificando a los usuarios representativos. Las tareas de esta actividad se pueden haber desarrollado ya en parte en el proceso de Estudio de Viabilidad del Sistema (EVS), de modo que se parte de los productos obtenidos en dicho proceso para proceder a su adecuación como punto de partida para definir el sistema de información.
-TAREA 	PRODUCTOS 	TÉCNICAS Y PRÁCTICAS 	PARTICIPANTES
-ASI 1.1: Determinación del Alcance del Sistema 	
 
-    Catálogo de Requisitos
-    Glosario
-    Estructurado:
-    Contexto del Sistema
-    Modelo Conceptual de Datos
-    Orientación a Objetos:
-    Modelo de Negocio
-    Modelo de Dominio
-
-	
-
-    Sesiones de trabajo
-    Catalogación
-    Diagrama de Flujo de Datos
-    Modelo Entidad/Relación Extendido
-    Casos de Uso
-    Diagrama de Clases
-
-	
-
-    Jefe de Proyecto
-    Analistas
-    Directores de Usuarios
-
-ASI 1.2: Identificación del Entorno Tecnológico 	
-
-    Catálogo de Requisitos
-    Descripción General del Entorno Tecnológico del Sistema
-
-	
-
-    Sesiones de trabajo
-    Catalogación
-    Diagramas de Representación
-
-	
-
-    Jefe de Proyecto
-    Analistas
-    Directores de Usuarios
-    Equipo de Soporte Técnico
-
-ASI 1.3: Especificación de Estándares y Normas 	
-
-    Catálogo de Normas
-
-	
-
-    Sesiones de trabajo
-    Catalogación
-
-	
-
-    Jefe de Proyecto
-    Analistas
-    Directores de Usuarios
-    Equipo de Soporte Técnico
-
-ASI 1.4: Identificación de Usuarios Participantes y Finales 	
-
-    Catálogo de Usuarios
-    Planificación
-
-	
-
-    Sesiones de trabajo
-    Catalogación
-
-	
-
-    Jefe de Proyecto
-    Analistas
-    Directores de Usuarios
+```{html}
+<table class="avia-table avia-data-table">
+<tbody>
+<tr>
+<td style="background-color: #000033; text-align: left; width: 25%;"><strong><span style="color: #ffffff;">TAREA</span></strong></td>
+<td style="background-color: #000033; text-align: left; width: 30%;"><strong><span style="color: #ffffff;">PRODUCTOS</span></strong></td>
+<td style="background-color: #000033; text-align: left; width: 25%;"><strong><span style="color: #ffffff;">TÉCNICAS Y PRÁCTICAS</span></strong></td>
+<td style="background-color: #000033; text-align: left; width: 20%;"><strong><span style="color: #ffffff;">PARTICIPANTES</span></strong></td>
+</tr>
+<tr>
+<td style="text-align: left; vertical-align: top;"><a href="#asi-1-1"><strong>ASI 1.1</strong>: Determinación del Alcance del Sistema</a></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li>Catálogo de Requisitos</li>
+<li>Glosario</li>
+<li class="no-bullet"><em><strong>Estructurado</strong></em>:</li>
+<li>Contexto del Sistema</li>
+<li>Modelo Conceptual de Datos</li>
+<li class="no-bullet"><em><strong>Orientación a Objetos</strong></em>:</li>
+<li>Modelo de Negocio</li>
+<li>Modelo de Dominio</li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#sesiones-de-trabajo">Sesiones de trabajo</a></li>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#catalogacion">Catalogación</a></li>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#diagrama-de-flujo-de-datos">Diagrama de Flujo de Datos</a></li>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#modelo-entidad-relacion-extendido">Modelo Entidad/Relación Extendido</a></li>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#casos-de-uso">Casos de Uso</a></li>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#diagrama-de-clases">Diagrama de Clases</a></li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto">Jefe de Proyecto</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-analista">Analistas</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-directivo">Directores de Usuarios</a></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td style="text-align: left; vertical-align: top;"><a href="#asi-1-2"><strong>ASI 1.2</strong>: Identificación del Entorno Tecnológico</a></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li>Catálogo de Requisitos</li>
+<li>Descripción General del Entorno Tecnológico del Sistema</li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#sesiones-de-trabajo">Sesiones de trabajo</a></li>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#catalogacion">Catalogación</a></li>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#diagrama-de-representacion">Diagramas de Representación</a></li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto">Jefe de Proyecto</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-analista">Analistas</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-directivo">Directores de Usuarios</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-analista">Equipo de Soporte Técnico</a></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td style="text-align: left; vertical-align: top;"><a href="#asi-1-3"><strong>ASI 1.3</strong>: Especificación de Estándares y Normas</a></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li>Catálogo de Normas</li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#sesiones-de-trabajo">Sesiones de trabajo</a></li>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#catalogacion">Catalogación</a></li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto">Jefe de Proyecto</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-analista">Analistas</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-directivo">Directores de Usuarios</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-analista">Equipo de Soporte Técnico</a></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td style="text-align: left; vertical-align: top;"><a href="#asi-1-4"><strong>ASI 1.4</strong>: Identificación de Usuarios Participantes y Finales</a></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li>Catálogo de Usuarios</li>
+<li>Planificación</li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#sesiones-de-trabajo">Sesiones de trabajo</a></li>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#catalogacion">Catalogación</a></li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto">Jefe de Proyecto</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-analista">Analistas</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-directivo">Directores de Usuarios</a></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+```
 
 #### Tarea ASI 1.1: Determinación del Alcance del Sistema
 
@@ -277,73 +314,110 @@ En esta actividad se lleva a cabo la definición, análisis y validación de los
 Esta actividad se descompone en un conjunto de tareas que, si bien tienen un orden, exige continuas realimentaciones y solapamientos, entre sí y con otras tareas realizadas en paralelo. No es necesaria la finalización de una tarea para el comienzo de la siguiente. Lo que se tiene en un momento determinado es un catálogo de requisitos especificado en función de la progresión del proceso de análisis.
 
 Se propone como técnica de obtención de requisitos la especificación de los casos de uso de la orientación a objetos, siendo opcional en el caso estructurado. Dicha técnica ofrece un diagrama simple y una guía de especificación en las sesiones de trabajo con el usuario.
-TAREA 	PRODUCTOS 	TÉCNICAS Y PRÁCTICAS 	PARTICIPANTES
-ASI 2.1: Obtención de Requisitos 	
 
-    Catálogo de Requisitos
-    Modelo de Casos de uso
-
-	
-
-    Sesiones de trabajo
-    Catalogación
-    Casos de Uso
-
-	
-
-    Usuarios Expertos
-    Analistas
-
-ASI 2.2: Especificación de Casos de Uso 	
-
-    Catálogo de Requisitos
-    Modelo de Casos de Uso
-    Especificación de Casos de Uso
-
-	
-
-    Sesiones de trabajo
-    Catalogación
-    Casos de Uso
-
-	
-
-    Usuarios Expertos
-    Analistas
-
-ASI 2.3: Análisis de Requisitos 	
-
-    Catálogo de Requistos
-    Modelo de Casos de Uso
-    Especificación de Casos de Uso
-
-	
-
-    Sesiones de trabajo
-    Catalogación
-    Casos de Uso
-
-	
-
-    Usuarios Expertos
-    Analistas
-
-ASI 2.4: Validación de Requisitos 	
-
-    Catálogo de Requistos
-    Modelo de Casos de Uso
-    Especificación de Casos de Uso
-
-	
-
-    Sesiones de trabajo
-    Catalogación
-    Casos de Uso
-
-	
-
-    Usuarios Expertos
-    Analistas
+```{html}
+<table class="avia-table avia-data-table">
+<tbody>
+<tr>
+<td style="background-color: #000033; text-align: left; width: 25%;"><strong><span style="color: #ffffff;">TAREA</span></strong></td>
+<td style="background-color: #000033; text-align: left; width: 30%;"><strong><span style="color: #ffffff;">PRODUCTOS</span></strong></td>
+<td style="background-color: #000033; text-align: left; width: 25%;"><strong><span style="color: #ffffff;">TÉCNICAS Y PRÁCTICAS</span></strong></td>
+<td style="background-color: #000033; text-align: left; width: 20%;"><strong><span style="color: #ffffff;">PARTICIPANTES</span></strong></td>
+</tr>
+<tr>
+<td style="text-align: left; vertical-align: top;"><a href="#asi-2-1"><strong>ASI 2.1</strong>: Obtención de Requisitos</a></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li>Catálogo de Requisitos</li>
+<li>Modelo de Casos de uso</li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#sesiones-de-trabajo">Sesiones de trabajo</a></li>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#catalogacion">Catalogación</a></li>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#casos-de-uso">Casos de Uso</a></li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-directivo">Usuarios Expertos</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-analista">Analistas</a></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td style="text-align: left; vertical-align: top;"><a href="#asi-2-2"><strong>ASI 2.2</strong>: Especificación de Casos de Uso</a></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li>Catálogo de Requisitos</li>
+<li>Modelo de Casos de Uso</li>
+<li>Especificación de Casos de Uso</li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#sesiones-de-trabajo">Sesiones de trabajo</a></li>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#catalogacion">Catalogación</a></li>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#casos-de-uso">Casos de Uso</a></li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-directivo">Usuarios Expertos</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-analista">Analistas</a></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td style="text-align: left; vertical-align: top;"><a href="#asi-2-3"><strong>ASI 2.3</strong>: Análisis de Requisitos</a></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li>Catálogo de Requistos</li>
+<li>Modelo de Casos de Uso</li>
+<li>Especificación de Casos de Uso</li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#sesiones-de-trabajo">Sesiones de trabajo</a></li>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#catalogacion">Catalogación</a></li>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#casos-de-uso">Casos de Uso</a></li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-directivo">Usuarios Expertos</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-analista">Analistas</a></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td style="text-align: left; vertical-align: top;"><a href="#asi-2-4"><strong>ASI 2.4</strong>: Validación de Requisitos</a></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li>Catálogo de Requistos</li>
+<li>Modelo de Casos de Uso</li>
+<li>Especificación de Casos de Uso</li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#sesiones-de-trabajo">Sesiones de trabajo</a></li>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#catalogacion">Catalogación</a></li>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#casos-de-uso">Casos de Uso</a></li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-directivo">Usuarios Expertos</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-analista">Analistas</a></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+```
 
 #### Tarea ASI 2.1: Obtención de Requisitos
 
@@ -520,48 +594,69 @@ Prácticas {.unnumbered .unlisted}
 
 ### Actividad ASI 3: Identificación de Subsistemas de Análisis
 
-Actividad ASI 3: Identificación de Subsistemas de Análisis
-Usted está aquí: Inicio1 / TIC-tac-DOC2 / Metodologías y guías3 / MÉTRICA 34 / PROCESOS PRINCIPALES DE MÉTRICA v35 / Análisis del Sistema de Información (ASI)6 / Actividad ASI 3: Identificación de Subsistemas de Análisis
-
 El objetivo de esta actividad, común tanto para análisis estructurado como para análisis orientado a objetos, es facilitar el análisis del sistema de información llevando a cabo la descomposición del sistema en subsistemas. Se realiza en paralelo con el resto de las actividades de generación de modelos del análisis. Por tanto, se asume la necesidad de una realimentación y ajuste continuo con respecto a la definición de los subsistemas, sus dependencias y sus interfaces.
 
-TAREA 	PRODUCTOS 	TÉCNICAS Y PRÁCTICAS 	PARTICIPANTES
-ASI 3.1: Determinación de Subsistemas de Análisis 	
-
-    Estructurado:
-    Modelo de Procesos
-    Orientación a Objetos:
-    Descripción de Subsistemas de Análisis
-    Descripción de Interfaces entre Subsistemas
-
-	
-
-    Diagrama de Flujo de Datos
-    Diagrama de Paquetes (Subsistemas)
-
-	
-
-    Jefe de Proyecto
-    Analistas
-
-ASI 3.2: Integración de Subsistemas de Análisis 	
-
-    Desarrollo y Aceptación
-    Estructurado:
-    Modelo de Procesos
-    Orientación a Objetos:
-    Descripción de Subsistemas de Análisis
-    Descripción de Interfaces entre Subsistemas
-
-	
-
-    Diagrama de Flujo de Datos
-    Diagrama de Paquetes (Subsistemas)
-
-	
-
-    Jefe de Proyecto
-    Analistas
+```{html}
+<table class="avia-table avia-data-table">
+<tbody>
+<tr>
+<td style="background-color: #000033; text-align: left; width: 25%;"><strong><span style="color: #ffffff;">TAREA</span></strong></td>
+<td style="background-color: #000033; text-align: left; width: 30%;"><strong><span style="color: #ffffff;">PRODUCTOS</span></strong></td>
+<td style="background-color: #000033; text-align: left; width: 25%;"><strong><span style="color: #ffffff;">TÉCNICAS Y PRÁCTICAS</span></strong></td>
+<td style="background-color: #000033; text-align: left; width: 20%;"><strong><span style="color: #ffffff;">PARTICIPANTES</span></strong></td>
+</tr>
+<tr>
+<td style="text-align: left; vertical-align: top;"><a href="#asi-3-1"><strong>ASI 3.1</strong>: Determinación de Subsistemas de Análisis</a></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li class="no-bullet"><em><strong>Estructurado</strong></em>:</li>
+<li>Modelo de Procesos</li>
+<li class="no-bullet"><em><strong>Orientación a Objetos</strong></em>:</li>
+<li>Descripción de Subsistemas de Análisis</li>
+<li>Descripción de Interfaces entre Subsistemas</li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#diagrama-de-flujo-de-datos">Diagrama de Flujo de Datos</a></li>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#diagrama-de-paquetes">Diagrama de Paquetes</a> (Subsistemas)</li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto">Jefe de Proyecto</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-analista">Analistas</a></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td style="text-align: left; vertical-align: top;"><a href="#asi-3-2"><strong>ASI 3.2:</strong> Integración de Subsistemas de Análisis</a></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li>Desarrollo y Aceptación</li>
+<li class="no-bullet"><em><strong>Estructurado</strong></em>:</li>
+<li>Modelo de Procesos</li>
+<li class="no-bullet"><em><strong>Orientación a Objetos</strong></em>:</li>
+<li>Descripción de Subsistemas de Análisis</li>
+<li>Descripción de Interfaces entre Subsistemas</li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#diagrama-de-flujo-de-datos">Diagrama de Flujo de Datos</a></li>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#diagrama-de-paquetes">Diagrama de Paquetes</a> (Subsistemas)</li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto">Jefe de Proyecto</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-analista">Analistas</a></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+```
 
 #### Tarea ASI 3.1: Determinación de Subsistemas de Análisis
 
@@ -609,7 +704,6 @@ En ambos casos, se asignan los requisitos y casos de uso a cada uno de los subsi
     Jefe de Proyecto
     Analistas
 
-
 #### Tarea ASI 3.2: Integración de Subsistemas de Análisis
 
 El objetivo de esta tarea es la coordinación en la elaboración de los distintos modelos de análisis de cada subsistema, asegurando la ausencia de duplicidad de elementos y la precisión en la utilización de los términos del glosario. Esta tarea se realiza en paralelo con el resto de las actividades de elaboración de modelos del análisis, y permite tener una visión global y unificada de los distintos modelos.
@@ -647,65 +741,59 @@ Como consecuencia de la coordinación de modelos, se pueden identificar elemento
 
 ### Actividad ASI 4: Análisis de los Casos de Uso
 
-Actividad ASI 4: Análisis de los Casos de Uso
-Usted está aquí: Inicio1 / TIC-tac-DOC2 / Metodologías y guías3 / MÉTRICA 34 / PROCESOS PRINCIPALES DE MÉTRICA v35 / Análisis del Sistema de Información (ASI)6 / Actividad ASI 4: Análisis de los Casos de Uso
-
 El objetivo de esta actividad, que sólo se realiza en el caso de Análisis Orientado a Objetos, es identificar las clases cuyos objetos son necesarios para realizar un caso de uso y describir su comportamiento mediante la interacción dichos objetos.
 
 Esta actividad se lleva a cabo para cada uno de los casos de uso contenidos en un subsistema de los definidos en la actividad Identificación de Subsistemas de Análisis (ASI 3). Las tareas de esta actividad no se realizan de forma secuencial sino en paralelo, con continuas realimentaciones entre ellas y con las realizadas en las actividades Establecimiento de Requisitos (ASI 2), Identificación de Subsistemas de Análisis (ASI 3), Análisis de Clases (ASI 5) y Definición de Interfaces de Usuario (ASI 8).
 
-TAREA 	PRODUCTOS 	TÉCNICAS Y PRÁCTICAS 	PARTICIPANTES
-ASI 4.1: Identificación de Clases Asociadas a un Caso de Uso 	
-
-    Modelo de Clases de Análisis
-
-	
-
-    Diagrama de Clases
-
-	
-
-    Analistas
-
-ASI 4.2: Descripción de la Interacción de Objetos 	
-
-    Análisis de la Realización de los Casos de Uso
-    Diagrama de Interacción de Objetos (secuencia o colaboración)
-    Analistas
-
-#### Tarea ASI 4.1: Identificación de Clases Asociadas a un Caso de Uso
-
-En esta tarea se comienzan a identificar los objetos necesarios para realizar el caso de uso, basándose en la especificación que tenemos del mismo.
-
-A partir del estudio del caso de uso, se extrae una lista de objetos candidatos a ser clases. Es posible que, inicialmente, no se disponga de la información necesaria para identificar todas, por lo que se hace una primera aproximación que se va refinando posteriormente, durante esta actividad y en el proceso de diseño. Además, algunos de los objetos representan mejor la información del sistema si se les identifica como atributos en vez de como clases. Para poder diferenciarlas, es necesario estudiar el comportamiento de esos objetos en el diagrama de interacción y además se debe tener en cuenta una serie de reglas, como puede ser el suprimir palabras no pertinentes, con significados vagos o sinónimos.
-
-Una vez definidas cada una de las clases, se incorporan al modelo de clases de la actividad Análisis de Clases (ASI 5), donde se identifican sus atributos, responsabilidades y relaciones.
-
-Las clases que se identifican en esta tarea pueden ser:
-
-    Clases de Entidad (representan la información manipulada en el caso de uso).
-    Clases de Interfaz de Usuario (se utilizan para describir la interacción entre el sistema y sus actores. Suelen representar abstracciones de ventanas, interfaces de comunicación, formularios, etc.).
-    Clases de Control (son responsables de la coordinación, secuencia de transacciones y control de los objetos relacionados con un caso de uso).
-
-##### Productos {.unnumbered .unlisted}
-
-###### De entrada {.unnumbered .unlisted}
-
-    Modelo de Casos de Uso (ASI 2.4)
-    Especificación de Casos de Uso (ASI 2.4)
-
-###### De salida {.unnumbered .unlisted}
-
-    Modelo de Clases de Análisis
-
-##### Técnicas {.unnumbered .unlisted}
-
-    Diagrama de Clases
-
-##### Participantes {.unnumbered .unlisted}
-
-    Analistas
-
+```{html}
+<div class="avia-data-table-wrap avia_scrollable_table">
+<table class="avia-table avia-data-table">
+<tbody>
+<tr>
+<td style="background-color: #000033; text-align: left; width: 25%;"><strong><span style="color: #ffffff;">TAREA</span></strong></td>
+<td style="background-color: #000033; text-align: left; width: 30%;"><strong><span style="color: #ffffff;">PRODUCTOS</span></strong></td>
+<td style="background-color: #000033; text-align: left; width: 25%;"><strong><span style="color: #ffffff;">TÉCNICAS Y PRÁCTICAS</span></strong></td>
+<td style="background-color: #000033; text-align: left; width: 20%;"><strong><span style="color: #ffffff;">PARTICIPANTES</span></strong></td>
+</tr>
+<tr>
+<td style="text-align: left; vertical-align: top;"><a href="#asi-4-1"><strong>ASI 4.1</strong>: Identificación de Clases Asociadas a un Caso de Uso</a></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li>Modelo de Clases de Análisis</li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#diagrama-de-clases">Diagrama de Clases</a></li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-analista">Analistas</a></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td style="text-align: left; vertical-align: top;"><a href="#asi-4-2"><strong>ASI 4.2</strong>: Descripción de la Interacción de Objetos</a></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li>Análisis de la Realización de los Casos de Uso</li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#diagrama-de-interaccion">Diagrama de Interacción de Objetos</a> (<a href="../03-tecnicas/01-tecnicas.qmd#diagrama-de-interaccion/diagrama-de-secuencia">secuencia</a> o <a href="../03-tecnicas/01-tecnicas.qmd#diagrama-de-interaccion/diagrama-de-colaboracion">colaboración</a>)</li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-analista">Analistas</a></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+```
 
 #### Tarea ASI 4.1: Identificación de Clases Asociadas a un Caso de Uso
 
@@ -740,6 +828,38 @@ Las clases que se identifican en esta tarea pueden ser:
 
     Analistas
 
+#### Tarea ASI 4.1: Identificación de Clases Asociadas a un Caso de Uso
+
+En esta tarea se comienzan a identificar los objetos necesarios para realizar el caso de uso, basándose en la especificación que tenemos del mismo.
+
+A partir del estudio del caso de uso, se extrae una lista de objetos candidatos a ser clases. Es posible que, inicialmente, no se disponga de la información necesaria para identificar todas, por lo que se hace una primera aproximación que se va refinando posteriormente, durante esta actividad y en el proceso de diseño. Además, algunos de los objetos representan mejor la información del sistema si se les identifica como atributos en vez de como clases. Para poder diferenciarlas, es necesario estudiar el comportamiento de esos objetos en el diagrama de interacción y además se debe tener en cuenta una serie de reglas, como puede ser el suprimir palabras no pertinentes, con significados vagos o sinónimos.
+
+Una vez definidas cada una de las clases, se incorporan al modelo de clases de la actividad Análisis de Clases (ASI 5), donde se identifican sus atributos, responsabilidades y relaciones.
+
+Las clases que se identifican en esta tarea pueden ser:
+
+    Clases de Entidad (representan la información manipulada en el caso de uso).
+    Clases de Interfaz de Usuario (se utilizan para describir la interacción entre el sistema y sus actores. Suelen representar abstracciones de ventanas, interfaces de comunicación, formularios, etc.).
+    Clases de Control (son responsables de la coordinación, secuencia de transacciones y control de los objetos relacionados con un caso de uso).
+
+##### Productos {.unnumbered .unlisted}
+
+###### De entrada {.unnumbered .unlisted}
+
+    Modelo de Casos de Uso (ASI 2.4)
+    Especificación de Casos de Uso (ASI 2.4)
+
+###### De salida {.unnumbered .unlisted}
+
+    Modelo de Clases de Análisis
+
+##### Técnicas {.unnumbered .unlisted}
+
+    Diagrama de Clases
+
+##### Participantes {.unnumbered .unlisted}
+
+    Analistas
 
 ### Actividad ASI 5: Análisis de Clases
 
@@ -747,44 +867,74 @@ El objetivo de esta actividad que sólo se realiza en el caso de Análisis Orien
 
 Teniendo en cuenta las clases identificadas en la actividad Análisis de los Casos de Uso (ASI 4), se elabora el modelo de clases para cada subsistema. A medida que avanza el análisis, dicho modelo se va completando con las clases que vayan apareciendo, tanto del estudio de los casos de uso, como de la interfaz de usuario necesaria para el sistema de información.
 
-TAREA 	PRODUCTOS 	TÉCNICAS Y PRÁCTICAS 	PARTICIPANTES
-ASI 5.1: Identificación de Responsabilidades y Atributos 	
-
-    Modelo de Clases de Análisis
-    Comportamiento de Clases de Análisis
-
-	
-
-    Diagrama de Clases
-    Diagrama de Transición de Estados
-
-	
-
-    Analistas
-
-ASI 5.2: Identificación de Asociaciones y Agregaciones 	
-
-    Modelo de Clases de Análisis
-
-	
-
-    Diagrama de Clases
-
-	
-
-    Analistas
-
-ASI 5.3: Identificación de Generalizaciones 	
-
-    Modelo de Clases de Análisis
-
-	
-
-    Diagrama de Clases
-
-	
-
-    Analistas
+```{html}
+<table class="avia-table avia-data-table">
+<tbody>
+<tr>
+<td style="background-color: #000033; text-align: left; width: 25%;"><strong><span style="color: #ffffff;">TAREA</span></strong></td>
+<td style="background-color: #000033; text-align: left; width: 30%;"><strong><span style="color: #ffffff;">PRODUCTOS</span></strong></td>
+<td style="background-color: #000033; text-align: left; width: 25%;"><strong><span style="color: #ffffff;">TÉCNICAS Y PRÁCTICAS</span></strong></td>
+<td style="background-color: #000033; text-align: left; width: 20%;"><strong><span style="color: #ffffff;">PARTICIPANTES</span></strong></td>
+</tr>
+<tr>
+<td style="text-align: left; vertical-align: top;"><a href="#asi-5-1"><strong>ASI 5.1</strong>: Identificación de Responsabilidades y Atributos</a></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li>Modelo de Clases de Análisis</li>
+<li>Comportamiento de Clases de Análisis</li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#diagrama-de-clases">Diagrama de Clases</a></li>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#diagrama-de-transicion-de-estados">Diagrama de Transición de Estados</a></li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-analista">Analistas</a></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td style="text-align: left; vertical-align: top;"><a href="#asi-5-2"><strong>ASI 5.2</strong>: Identificación de Asociaciones y Agregaciones</a></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li>Modelo de Clases de Análisis</li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#diagrama-de-clases">Diagrama de Clases</a></li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-analista">Analistas</a></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td style="text-align: left; vertical-align: top;"><a href="#asi-5-3"><strong>ASI 5.3</strong>: Identificación de Generalizaciones</a></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li>Modelo de Clases de Análisis</li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#diagrama-de-clases">Diagrama de Clases</a></li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-analista">Analistas</a></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+```
 
 #### Tarea ASI 5.1: Identificación de Responsabilidades y Atributos
 
@@ -855,7 +1005,6 @@ A medida que se establecen las relaciones entre las clases, se revisa la especif
 
     Analistas
 
-
 #### Tarea ASI 5.3: Identificación de Generalizaciones
 
 El objetivo de esta tarea es representar una organización de las clases que permita una implementación sencilla de la herencia y una agrupación semántica de las diferentes clases, basándose siempre en las normas y estándares definidos en la actividad Definición del Sistema (ASI 1).
@@ -868,16 +1017,15 @@ El objetivo de esta tarea es representar una organización de las clases que per
 
 ###### De salida {.unnumbered .unlisted}
 
-    Modelo de Clases de Análisis
+* Modelo de Clases de Análisis
 
 ##### Técnicas {.unnumbered .unlisted}
 
-    Diagrama de Clases
+* Diagrama de Clases
 
 ##### Participantes {.unnumbered .unlisted}
 
-    Analistas
-
+* Analistas
 
 ### Actividad ASI 6: Elaboración del Modelo de Datos
 
@@ -895,56 +1043,92 @@ Finalmente, si procede, se describen las necesidades de migración y carga inici
 
 Esta actividad se realiza en paralelo, y con continuas realimentaciones, con otras tareas realizadas en las actividades Establecimiento de Requisitos (ASI 2), Identificación de Subsistemas de Análisis (ASI 3), Elaboración del Modelo de Procesos (ASI 7) y Definición de Interfaces de Usuario (ASI 8).
 
-TAREA 	PRODUCTOS 	TÉCNICAS Y PRÁCTICAS 	PARTICIPANTES
-ASI 6.1: Elaboración del Modelo Conceptual de Datos 	
-
-    Modelo Conceptual de Datos
-
-	
-
-    Modelo Entidad/Relación Extendido
-
-	
-
-    Analistas
-
-ASI 6.2: Elaboración del Modelo Lógico de Datos 	
-
-    Modelo Lógico de Datos
-
-	
-
-    Modelo Entidad/Relación Extendido
-
-	
-
-    Analistas
-
-ASI 6.3: Normalización del Modelo Lógico de Datos 	
-
-    Modelo Lógico de Datos Normalizado
-
-	
-
-    Normalización
-
-	
-
-    Analistas
-
-ASI 6.4: Especificación de Necesidades de Migración de Datos y Carga Inicial 	
-
-    Plan de Migración y Carga Inicial de Datos
-
-	
-
-    Sesiones de Trabajo
-
-	
-
-    Usuarios Expertos
-    Analistas
-    Equipo de Soporte Técnico
+```{html}
+<table class="avia-table avia-data-table">
+<tbody>
+<tr>
+<td style="background-color: #000033; text-align: left; width: 25%;"><strong><span style="color: #ffffff;">TAREA</span></strong></td>
+<td style="background-color: #000033; text-align: left; width: 30%;"><strong><span style="color: #ffffff;">PRODUCTOS</span></strong></td>
+<td style="background-color: #000033; text-align: left; width: 25%;"><strong><span style="color: #ffffff;">TÉCNICAS Y PRÁCTICAS</span></strong></td>
+<td style="background-color: #000033; text-align: left; width: 20%;"><strong><span style="color: #ffffff;">PARTICIPANTES</span></strong></td>
+</tr>
+<tr>
+<td style="text-align: left; vertical-align: top;"><a href="#asi-6-1"><strong>ASI 6.1</strong>: Elaboración del Modelo Conceptual de Datos</a></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li>Modelo Conceptual de Datos</li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#modelo-entidad-relacion-extendido">Modelo Entidad/Relación Extendido</a></li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-analista">Analistas</a></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td style="text-align: left; vertical-align: top;"><a href="#asi-6-2"><strong>ASI 6.2</strong>: Elaboración del Modelo Lógico de Datos</a></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li>Modelo Lógico de Datos</li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#modelo-entidad-relacion-extendido">Modelo Entidad/Relación Extendido</a></li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-analista">Analistas</a></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td style="text-align: left; vertical-align: top;"><a href="#asi-6-3"><strong>ASI 6.3</strong>: Normalización del Modelo Lógico de Datos</a></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li>Modelo Lógico de Datos Normalizado</li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#normalizacion">Normalización</a></li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-analista">Analistas</a></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td style="text-align: left; vertical-align: top;"><a href="#asi-6-4"><strong>ASI 6.4</strong>: Especificación de Necesidades de Migración de Datos y Carga Inicial</a></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li>Plan de Migración y Carga Inicial de Datos</li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#sesiones-de-trabajo">Sesiones de Trabajo</a></li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-directivo">Usuarios Expertos</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-analista">Analistas</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-analista">Equipo de Soporte Técnico</a></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+```
 
 #### Tarea ASI 6.1: Elaboración del Modelo Conceptual de Datos
 
@@ -1005,7 +1189,6 @@ También se debe especificar para cada entidad el número máximo y medio de ocu
 ##### Participantes {.unnumbered .unlisted}
 
     Analistas
-
 
 #### Tarea ASI 6.3: Normalización del Modelo Lógico de Datos
 
@@ -1074,39 +1257,60 @@ Prácticas {.unnumbered .unlisted}
 - Analistas
 - Equipo de Soporte Técnico
 
-
 ### Actividad ASI 7: Elaboración del Modelo de Procesos
-
-Actividad ASI 7: Elaboración del Modelo de Procesos
-Usted está aquí: Inicio1 / TIC-tac-DOC2 / Metodologías y guías3 / MÉTRICA 34 / PROCESOS PRINCIPALES DE MÉTRICA v35 / Análisis del Sistema de Información (ASI)6 / Actividad ASI 7: Elaboración del Modelo de Procesos
 
 El objetivo de esta actividad, que se lleva a cabo únicamente en el caso de Análisis Estructurado, es analizar las necesidades del usuario para establecer el conjunto de procesos que conforma el sistema de información. Para ello, se realiza una descomposición de dichos procesos siguiendo un enfoque descendente (top-down), en varios niveles de abstracción, donde cada nivel proporciona una visión más detallada del proceso definido en el nivel anterior.
 
 Con el fin de facilitar el desarrollo posterior, se debe llegar a un nivel de descomposición en el que los procesos obtenidos sean claros y sencillos, es decir, buscar un punto de equilibrio en el que dichos procesos tengan significado por sí mismos dentro del sistema global y a su vez la máxima independencia y simplicidad.
 
 Esta actividad se lleva a cabo para cada uno de los subsistemas identificados en la actividad Identificación de Subsistemas de Análisis (ASI 3). Las tareas de esta actividad se realizan en paralelo y con continuas realimentaciones con otras tareas ejecutadas en las actividades Establecimiento de Requisitos (ASI 2), Elaboración del Modelo de Datos (ASI 6) y Definición de Interfaces de Usuario (ASI 8).
-TAREA 	PRODUCTOS 	TÉCNICAS Y PRÁCTICAS 	PARTICIPANTES
-ASI 7.1: Obtención del Modelo de Procesos del Sistema 	
 
-    Modelo de Procesos
-    Matriz de Procesos / Localización Geográfica (ampliada)
-
-	
-
-    Diagrama de Flujo de Datos
-    Matricial
-
-	
-
-    Analistas
-
-ASI 7.2: Especificación de Interfaces con Otros Sistemas 	
-
-    Descripción de Interfaz con otros Sisteas
-
-		
-
-    Analistas
+```{html}
+<table class="avia-table avia-data-table">
+<tbody>
+<tr>
+<td style="background-color: #000033; text-align: left; width: 25%;"><strong><span style="color: #ffffff;">TAREA</span></strong></td>
+<td style="background-color: #000033; text-align: left; width: 30%;"><strong><span style="color: #ffffff;">PRODUCTOS</span></strong></td>
+<td style="background-color: #000033; text-align: left; width: 25%;"><strong><span style="color: #ffffff;">TÉCNICAS Y PRÁCTICAS</span></strong></td>
+<td style="background-color: #000033; text-align: left; width: 20%;"><strong><span style="color: #ffffff;">PARTICIPANTES</span></strong></td>
+</tr>
+<tr>
+<td style="text-align: left; vertical-align: top;"><a href="#asi-7-1"><strong>ASI 7.1</strong>: Obtención del Modelo de Procesos del Sistema</a></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li>Modelo de Procesos</li>
+<li>Matriz de Procesos / Localización Geográfica (ampliada)</li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#diagrama-de-flujo-de-datos">Diagrama de Flujo de Datos</a></li>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#tecnicas-matriciales">Matricial</a></li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-analista">Analistas</a></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td style="text-align: left; vertical-align: top;"><a href="#asi-7-2"><strong>ASI 7.2</strong>: Especificación de Interfaces con Otros Sistemas</a></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li>Descripción de Interfaz con otros Sisteas</li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;"></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-analista">Analistas</a></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+```
 
 #### Tarea ASI 7.1: Obtención del Modelo de Procesos del Sistema
 
@@ -1173,9 +1377,6 @@ Las interfaces con otros sistemas forman parte del modelo de procesos, pero se r
 
 ### Actividad ASI 8: Definición de Interfaces de Usuario
 
-Actividad ASI 8: Definición de Interfaces de Usuario
-Usted está aquí: Inicio1 / TIC-tac-DOC2 / Metodologías y guías3 / MÉTRICA 34 / PROCESOS PRINCIPALES DE MÉTRICA v35 / Análisis del Sistema de Información (ASI)6 / Actividad ASI 8: Definición de Interfaces de Usuario
-
 En esta actividad se especifican las interfaces entre el sistema y el usuario: formatos de pantallas, diálogos, e informes, principalmente. El objetivo es realizar un análisis de los procesos del sistema de información en los que se requiere una interacción del usuario, con el fin de crear una interfaz que satisfaga todos los requisitos establecidos, teniendo en cuenta los diferentes perfiles a quiénes va dirigido.
 
 Al comienzo de este análisis es necesario seleccionar el entorno en el que es operativa la interfaz, considerando estándares internacionales y de la instalación, y establecer las directrices aplicables en los procesos de diseño y construcción. El propósito es construir una interfaz de usuario acorde a sus necesidades, flexible, coherente, eficiente y sencilla de utilizar, teniendo en cuenta la facilidad de cambio a otras plataformas, si fuera necesario.
@@ -1200,91 +1401,148 @@ Como resultado de esta actividad se genera la especificación de interfaz de usu
     Prototipo de interfaz interactiva.
     Prototipo de interfaz de impresión.
 
-TAREA 	PRODUCTOS 	TÉCNICAS Y PRÁCTICAS 	PARTICIPANTES
-ASI 8.1: Especificación de Principios Generales de la Interfaz 	
-
-    Especificación de Interfaz de Usuario:
-        Principios Generales de la Interfaz
-
-	
-
-    Sesiones de Trabajo
-
-	
-
-    Usuarios Expertos
-    Analistas
-
-ASI 8.2: Identificación de Perfiles y Diálogos 	
-
-    Especificación de Interfaz de Usuario:
-        Catálogo de Perfiles de Usuario
-        Descomposición Funcional en Diálogos
-
-	
-
-    Diagrama de Descomposión Funcional
-    Sesiones de Trabajo
-    Catalogación
-    Diagrama de Representación
-
-	
-
-    Usuarios Expertos
-    Analistas
-
-ASI 8.3: Especificación de Formatos Individuales de la Interfaz de Pantalla 	
-
-    Especificación de Interfaz de Usuario:
-        Formatos Individuales de Interfaz de Pantalla
-        Catálogo de Controles y Elementos de Diseño de Interfaz de Pantalla
-
-	
-
-    Prototipado
-    Catalogación
-    Sesiones de Trabajo
-    Casos de Uso
-
-	
-
-    Usuarios Expertos
-    Analistas
-
-ASI 8.4: Especificación del Comportamiento Dinámico de la Interfaz 	
-
-    Especificación de Interfaz de Usuario:
-        Modelo de Navegación de Interfaz de Pantalla
-        Prototipo de Interfaz Interactiva
-
-	
-
-    Diagrama de Transición de Estados
-    Prototipado
-    Sesiones de Trabajo
-    Matricial
-    Diagrama de Interacción de Objetos
-
-	
-
-    Usuarios Expertos
-    Analistas
-
-ASI 8.5: Especificación de Formatos de Impresión 	
-
-    Especificación de Interfaz de Usuario:
-        Formatos de Impresión
-        Prototipo de Interfaz de Impresión
-
-	
-
-    Prototipado
-    Sesiones de Trabajo
-
-	
-
-    Usuarios Expertos
-    Analistas
+```{html}
+<table class="avia-table avia-data-table">
+<tbody>
+<tr>
+<td style="background-color: #000033; text-align: left; width: 25%;"><strong><span style="color: #ffffff;">TAREA</span></strong></td>
+<td style="background-color: #000033; text-align: left; width: 30%;"><strong><span style="color: #ffffff;">PRODUCTOS</span></strong></td>
+<td style="background-color: #000033; text-align: left; width: 25%;"><strong><span style="color: #ffffff;">TÉCNICAS Y PRÁCTICAS</span></strong></td>
+<td style="background-color: #000033; text-align: left; width: 20%;"><strong><span style="color: #ffffff;">PARTICIPANTES</span></strong></td>
+</tr>
+<tr>
+<td style="text-align: left; vertical-align: top;"><a href="#asi-8-1"><strong>ASI 8.1</strong>: Especificación de Principios Generales de la Interfaz</a></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li>Especificación de Interfaz de Usuario:
+<ul>
+<li>Principios Generales de la Interfaz</li>
+</ul>
+</li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#sesiones-de-trabajo">Sesiones de Trabajo</a></li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-directivo">Usuarios Expertos</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-analista">Analistas</a></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td style="text-align: left; vertical-align: top;"><a href="#asi-8-2"><strong>ASI 8.2</strong>: Identificación de Perfiles y Diálogos</a></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li>Especificación de Interfaz de Usuario:
+<ul>
+<li>Catálogo de Perfiles de Usuario</li>
+<li>Descomposición Funcional en Diálogos</li>
+</ul>
+</li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#diagrama-de-descomposicion">Diagrama de Descomposión Funcional</a></li>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#sesiones-de-trabajo">Sesiones de Trabajo</a></li>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#catalogacion">Catalogación</a></li>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#diagrama-de-representacion">Diagrama de Representación</a></li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-directivo">Usuarios Expertos</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-analista">Analistas</a></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td style="text-align: left; vertical-align: top;"><a href="#asi-8-3"><strong>ASI 8.3</strong>: Especificación de Formatos Individuales de la Interfaz de Pantalla</a></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li>Especificación de Interfaz de Usuario:
+<ul>
+<li>Formatos Individuales de Interfaz de Pantalla</li>
+<li>Catálogo de Controles y Elementos de Diseño de Interfaz de Pantalla</li>
+</ul>
+</li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#prototipado">Prototipado</a></li>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#catalogacion">Catalogación</a></li>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#sesiones-de-trabajo">Sesiones de Trabajo</a></li>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#casos-de-uso">Casos de Uso</a></li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-directivo">Usuarios Expertos</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-analista">Analistas</a></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td style="text-align: left; vertical-align: top;"><a href="#asi-8-4"><strong>ASI 8.4</strong>: Especificación del Comportamiento Dinámico de la Interfaz</a></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li>Especificación de Interfaz de Usuario:
+<ul>
+<li>Modelo de Navegación de Interfaz de Pantalla</li>
+<li>Prototipo de Interfaz Interactiva</li>
+</ul>
+</li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#diagrama-de-transicion-de-estados">Diagrama de Transición de Estados</a></li>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#prototipado">Prototipado</a></li>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#sesiones-de-trabajo">Sesiones de Trabajo</a></li>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#tecnicas-matriciales">Matricial</a></li>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#diagrama-de-interaccion">Diagrama de Interacción de Objetos</a></li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-directivo">Usuarios Expertos</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-analista">Analistas</a></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td style="text-align: left; vertical-align: top;"><a href="#asi-8-5"><strong>ASI 8.5</strong>: Especificación de Formatos de Impresión</a></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li>Especificación de Interfaz de Usuario:
+<ul>
+<li>Formatos de Impresión</li>
+<li>Prototipo de Interfaz de Impresión</li>
+</ul>
+</li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#prototipado">Prototipado</a></li>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#sesiones-de-trabajo">Sesiones de Trabajo</a></li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-directivo">Usuarios Expertos</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-analista">Analistas</a></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+```
 
 #### Tarea ASI 8.1: Especificación de Principios Generales de la Interfaz
 
@@ -1488,11 +1746,7 @@ Prácticas {.unnumbered .unlisted}
     Usuarios Expertos
     Analistas
 
-
 ### Actividad ASI 9: Análisis de Consistencia y Especificación de Requisitos
-
-Actividad ASI 9: Análisis de Consistencia y Especificación de Requisitos
-Usted está aquí: Inicio1 / TIC-tac-DOC2 / Metodologías y guías3 / MÉTRICA 34 / PROCESOS PRINCIPALES DE MÉTRICA v35 / Análisis del Sistema de Información (ASI)6 / Actividad ASI 9: Análisis de Consistencia y Especificación de Requisit...
 
 El objetivo de esta actividad es garantizar la calidad de los distintos modelos generados en el proceso de Análisis del Sistema de Información, y asegurar que los usuarios y los Analistas tienen el mismo concepto del sistema. Para cumplir dicho objetivo, se llevan a cabo las siguientes acciones:
 
@@ -1504,82 +1758,121 @@ Esta actividad requiere una herramienta de apoyo para realizar el análisis de c
 
 La Especificación de Requisitos Software se convierte en la línea base para los procesos posteriores del desarrollo del software, de modo que cualquier petición de cambio en los requisitos que pueda surgir posteriormente, debe ser evaluada y aprobada.
 
-TAREA 	PRODUCTOS 	TÉCNICAS Y PRÁCTICAS 	PARTICIPANTES
-ASI 9.1: Verificación de los Modelos 	
-
-    Especificación de Interfaz de Usuario
-    Estructurado:
-    Modelo Lógico de Datos Normalizado
-    Modelo de Procesos
-    Orientación a Objetos:
-    Modelo de Casos de Uso
-    Especificación de Casos de Uso
-    Descripción de Subsistemas de Análisis
-    Descripción de Interfaces entre Subsistemas
-    Modelo Clases de Análisis
-    Comportamiento de Clases de Análisis
-    Análisis de la Realización de los Casos de Uso
-
-		
-
-    Analistas
-    Equipo de Arquitectura
-
-ASI 9.2: Análisis de Consistencia entre Modelos 	
-
-    Resultado de Análisis de Consistencia
-    Especificación de Interfaz de Usuario
-    Estructurado:
-    Modelo Lógico de Datos Normalizado
-    Modelo de Procesos
-    Orientación a Objetos:
-    Modelo de Casos de Uso
-    Especificación de Casos de Uso
-    Descripción de Subsistemas de Análisis
-    Descripción de Interfaces entre Subsistemas
-    Modelo de Clases de Análisis
-    Comportamiento de Clases de Análisis
-    Análisis de la Realización de los Casos de Uso
-
-	
-
-    Matricial
-    Cálculo de Accesos Lógicos
-    Caminos de Accesos Lógicos en Consultas
-
-	
-
-    Analistas
-    Equipo de Arquitectura
-
-ASI 9.3: Validación de los Modelos 	
-
-    Especificación de Interfaz de Usuario
-    Estructurado:
-    Modelo Lógico de Datos Normalizado
-    Modelo de Procesos
-    Orientación a Objetos:
-    Modelo de Casos de Uso
-    Especificación de Casos de Uso
-    Descripción de Subsistemas de Análisis
-    Descripción de Interfaces entre Subsistemas
-    Modelo de Clases de Análisis
-    Comportamiento de Clases de Análisis
-    Análisis de la Realización de los Casos de Uso
-
-	
-
-    Prototipado
-
-	
-
-    Analistas
-    Usuarios Expertos
-
-ASI 9.4: Elaboración de la Especificación de Requisitos Software (ERS) 	
-
-    Especificación de Requisitos Software (ERS)
-    Analistas
+```{html}
+<table class="avia-table avia-data-table">
+<tbody>
+<tr>
+<td style="background-color: #000033; text-align: left; width: 25%;"><strong><span style="color: #ffffff;">TAREA</span></strong></td>
+<td style="background-color: #000033; text-align: left; width: 30%;"><strong><span style="color: #ffffff;">PRODUCTOS</span></strong></td>
+<td style="background-color: #000033; text-align: left; width: 25%;"><strong><span style="color: #ffffff;">TÉCNICAS Y PRÁCTICAS</span></strong></td>
+<td style="background-color: #000033; text-align: left; width: 20%;"><strong><span style="color: #ffffff;">PARTICIPANTES</span></strong></td>
+</tr>
+<tr>
+<td style="text-align: left; vertical-align: top;"><a href="#asi-9-1"><strong>ASI 9.1</strong>: Verificación de los Modelos</a></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li>Especificación de Interfaz de Usuario</li>
+<li class="no-bullet"><em><strong>Estructurado:</strong></em></li>
+<li>Modelo Lógico de Datos Normalizado</li>
+<li>Modelo de Procesos</li>
+<li class="no-bullet"><em><strong>Orientación a Objetos:</strong></em></li>
+<li>Modelo de Casos de Uso</li>
+<li>Especificación de Casos de Uso</li>
+<li>Descripción de Subsistemas de Análisis</li>
+<li>Descripción de Interfaces entre Subsistemas</li>
+<li>Modelo Clases de Análisis</li>
+<li>Comportamiento de Clases de Análisis</li>
+<li>Análisis de la Realización de los Casos de Uso</li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;"></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-analista">Analistas</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-analista">Equipo de Arquitectura</a></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td style="text-align: left; vertical-align: top;"><a href="#asi-9-2"><strong>ASI 9.2</strong>: Análisis de Consistencia entre Modelos</a></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li>Resultado de Análisis de Consistencia</li>
+<li>Especificación de Interfaz de Usuario</li>
+<li class="no-bullet"><em><strong>Estructurado:</strong></em></li>
+<li>Modelo Lógico de Datos Normalizado</li>
+<li>Modelo de Procesos</li>
+<li class="no-bullet"><em><strong>Orientación a Objetos:</strong></em></li>
+<li>Modelo de Casos de Uso</li>
+<li>Especificación de Casos de Uso</li>
+<li>Descripción de Subsistemas de Análisis</li>
+<li>Descripción de Interfaces entre Subsistemas</li>
+<li>Modelo de Clases de Análisis</li>
+<li>Comportamiento de Clases de Análisis</li>
+<li>Análisis de la Realización de los Casos de Uso</li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#tecnicas-matriciales">Matricial</a></li>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#calculo-de-accesos">Cálculo de Accesos Lógicos</a></li>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#caminos-de-acceso">Caminos de Accesos Lógicos en Consultas</a></li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-analista">Analistas</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-analista">Equipo de Arquitectura</a></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td style="text-align: left; vertical-align: top;"><a href="#asi-9-3"><strong>ASI 9.3</strong>: Validación de los Modelos</a></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li>Especificación de Interfaz de Usuario</li>
+<li class="no-bullet"><em><strong>Estructurado:</strong></em></li>
+<li>Modelo Lógico de Datos Normalizado</li>
+<li>Modelo de Procesos</li>
+<li class="no-bullet"><em><strong>Orientación a Objetos:</strong></em></li>
+<li>Modelo de Casos de Uso</li>
+<li>Especificación de Casos de Uso</li>
+<li>Descripción de Subsistemas de Análisis</li>
+<li>Descripción de Interfaces entre Subsistemas</li>
+<li>Modelo de Clases de Análisis</li>
+<li>Comportamiento de Clases de Análisis</li>
+<li>Análisis de la Realización de los Casos de Uso</li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#prototipado">Prototipado</a></li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-analista">Analistas</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-directivo">Usuarios Expertos</a></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td style="text-align: left; vertical-align: top;"><a href="#asi-9-4"><strong>ASI 9.4</strong>: Elaboración de la Especificación de Requisitos Software (ERS)</a></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li>Especificación de Requisitos Software (ERS)</li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;"></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-analista">Analistas</a></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+```
 
 #### Tarea ASI 9.1: Verificación de los Modelos
 
@@ -1823,11 +2116,7 @@ Este producto incorporará la información necesaria para la aprobación final d
 
     Analistas
 
-
 ### Actividad ASI 10: Especificación del Plan de Pruebas
-
-Actividad ASI 10: Especificación del Plan de Pruebas
-Usted está aquí: Inicio1 / TIC-tac-DOC2 / Metodologías y guías3 / MÉTRICA 34 / PROCESOS PRINCIPALES DE MÉTRICA v35 / Análisis del Sistema de Información (ASI)6 / Actividad ASI 10: Especificación del Plan de Pruebas
 
 En esta actividad se inicia la definición del plan de pruebas, el cual sirve como guía para la realización de las pruebas, y permite verificar que el sistema de información cumple las necesidades establecidas por el usuario, con las debidas garantías de calidad.
 
@@ -1845,51 +2134,81 @@ Se plantean los siguientes niveles de prueba:
 
 En esta actividad también se avanza en la definición de las pruebas de aceptación del sistema. Con la información disponible, es posible establecer los criterios de aceptación de las pruebas incluidas en dicho nivel, al poseer la información sobre los requisitos que debe cumplir el sistema, recogidos en el catálogo de requisitos.
 
-TAREA 	PRODUCTOS 	TÉCNICAS Y PRÁCTICAS 	PARTICIPANTES
-ASI 10.1: Definición del Alcance de las Pruebas 	
-
-    Plan de Pruebas
-
-	
-
-    Sesiones de Trabajo
-
-	
-
-    Jefe de Proyecto
-    Analistas
-    Equipo de Soporte Técnico
-    Usuarios Expertos
-
-ASI 10.2: Definición de Requisitos del Entorno de Pruebas 	
-
-    Plan de Pruebas
-
-	
-
-    Sesiones de Trabajo
-
-	
-
-    Jefe de Proyecto
-    Analistas
-    Equipo de Soporte Técnico
-    Usuarios Expertos
-
-ASI 10.3: Definición de las Pruebas de Aceptación del Sistema 	
-
-    Plan de Pruebas
-
-	
-
-    Sesiones de Trabajo
-
-	
-
-    Jefe de Proyecto
-    Analistas
-    Equipo de Soporte Técnico
-    Usuarios Expertos
+```{html}
+<table class="avia-table avia-data-table">
+<tbody>
+<tr>
+<td style="background-color: #000033; text-align: left; width: 25%;"><strong><span style="color: #ffffff;">TAREA</span></strong></td>
+<td style="background-color: #000033; text-align: left; width: 30%;"><strong><span style="color: #ffffff;">PRODUCTOS</span></strong></td>
+<td style="background-color: #000033; text-align: left; width: 25%;"><strong><span style="color: #ffffff;">TÉCNICAS Y PRÁCTICAS</span></strong></td>
+<td style="background-color: #000033; text-align: left; width: 20%;"><strong><span style="color: #ffffff;">PARTICIPANTES</span></strong></td>
+</tr>
+<tr>
+<td style="text-align: left; vertical-align: top;"><a href="#asi-10-1"><strong>ASI 10.1</strong>: Definición del Alcance de las Pruebas</a></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li>Plan de Pruebas</li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#sesiones-de-trabajo">Sesiones de Trabajo</a></li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto">Jefe de Proyecto</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-analista">Analistas</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-analista">Equipo de Soporte Técnico</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-directivo">Usuarios Expertos</a></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td style="text-align: left; vertical-align: top;"><a href="#asi-10-2"><strong>ASI 10.2</strong>: Definición de Requisitos del Entorno de Pruebas</a></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li>Plan de Pruebas</li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#sesiones-de-trabajo">Sesiones de Trabajo</a></li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto">Jefe de Proyecto</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-analista">Analistas</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-analista">Equipo de Soporte Técnico</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-directivo">Usuarios Expertos</a></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td style="text-align: left; vertical-align: top;"><a href="#asi-10-3"><strong>ASI 10.3</strong>: Definición de las Pruebas de Aceptación del Sistema</a></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li>Plan de Pruebas</li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#sesiones-de-trabajo">Sesiones de Trabajo</a></li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto">Jefe de Proyecto</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-analista">Analistas</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-analista">Equipo de Soporte Técnico</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-directivo">Usuarios Expertos</a></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+```
 
 #### Tarea ASI 10.1: Definición del Alcance de las Pruebas
 
@@ -1980,7 +2299,6 @@ Prácticas {.unnumbered .unlisted}
     Equipo de Soporte Técnico
     Usuarios Expertos
 
-
 #### Tarea ASI 10.3: Definición de las Pruebas de Aceptación del Sistema
 
 En esta tarea se realiza la especificación de las pruebas de aceptación del sistema, labor fundamental para que el usuario valide el sistema, como último paso, previo a la puesta en explotación.
@@ -2030,18 +2348,39 @@ Prácticas {.unnumbered .unlisted}
     Equipo de Soporte Técnico
     Usuarios Expertos
 
-
 ### Actividad ASI 11: Aprobación del Análisis del Sistema de Información
 
-Actividad ASI 11: Aprobación del Análisis del Sistema de Información
-Usted está aquí: Inicio1 / TIC-tac-DOC2 / Metodologías y guías3 / MÉTRICA 34 / PROCESOS PRINCIPALES DE MÉTRICA v35 / Análisis del Sistema de Información (ASI)6 / Actividad ASI 11: Aprobación del Análisis del Sistema de Información...
-TAREA 	PRODUCTOS 	TÉCNICAS Y PRÁCTICAS 	PARTICIPANTES
-ASI 11.1: Presentación y Aprobación del Análisis del Sistema de Información 	
-
-    Aprobación del Análisis del Sistema de Información
-    Presentación
-    Comité de Dirección
-    Jefe de Proyecto
+```{html}
+<table class="avia-table avia-data-table">
+<tbody>
+<tr>
+<td style="background-color: #000033; text-align: left; width: 25%;"><strong><span style="color: #ffffff;">TAREA</span></strong></td>
+<td style="background-color: #000033; text-align: left; width: 30%;"><strong><span style="color: #ffffff;">PRODUCTOS</span></strong></td>
+<td style="background-color: #000033; text-align: left; width: 25%;"><strong><span style="color: #ffffff;">TÉCNICAS Y PRÁCTICAS</span></strong></td>
+<td style="background-color: #000033; text-align: left; width: 20%;"><strong><span style="color: #ffffff;">PARTICIPANTES</span></strong></td>
+</tr>
+<tr>
+<td style="text-align: left; vertical-align: top;"><a href="#asi-11-1"><strong>ASI 11.1</strong>: Presentación y Aprobación del Análisis del Sistema de Información</a></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li>Aprobación del Análisis del Sistema de Información</li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#presentaciones">Presentación</a></li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-directivo">Comité de Dirección</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto">Jefe de Proyecto</a></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+```
 
 #### Tarea 11.1: Presentación y Aprobación del Análisis del Sistema de Información
 
@@ -2067,40 +2406,393 @@ En esta tarea se realiza la presentación del análisis del sistema de informaci
     Comité de Seguimiento
     Jefe de Proyecto
 
-## PARTICIPANTES EN LAS ACTIVIDADES DEL PROCESO ASI
+## Participantes en las actividades del proceso ASI
 
-ANÁLISIS DEL SISTEMA DE INFORMACIÓN 	ACTIVIDADES
-ASI 1 	ASI 2 	ASI 3 	ASI 4 	ASI 5 	ASI 6 	ASI 7 	ASI 8 	ASI 9 	ASI 10 	ASI 11
-Analistas 	X 	X 	X 	X 	X 	X 	X 	X 	X 	X 	
-Comité de Dirección 											X
-Directores Usuarios 	X 										
-Equipo de Arquitectura 									X 		
-Equipo de Soporte Técnico 	X 					X 				X 	
-Jefe de Proyecto 	X 		X 							X 	X
-Usuarios Expertos 		X 				X 		X 	X 	X 	
+```{html}
+<table class="avia-table avia-data-table">
+<tbody>
+<tr>
+<td style="text-align: left; vertical-align: middle; width: 30%;" rowspan="2"><strong>ANÁLISIS DEL SISTEMA DE INFORMACIÓN</strong></td>
+<td style="text-align: center; width: 70%;" colspan="11" rowspan="1"><strong>ACTIVIDADES</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;"><a href="#asi-1"><strong>ASI 1</strong></a></td>
+<td style="text-align: center;"><a href="#asi-2"><strong>ASI 2</strong></a></td>
+<td style="text-align: center;"><a href="#asi-3"><strong>ASI 3</strong></a></td>
+<td style="text-align: center;"><a href="#asi-4"><strong>ASI 4</strong></a></td>
+<td style="text-align: center;"><a href="#asi-5"><strong>ASI 5</strong></a></td>
+<td style="text-align: center;"><a href="#asi-6"><strong>ASI 6</strong></a></td>
+<td style="text-align: center;"><a href="#asi-7"><strong>ASI 7</strong></a></td>
+<td style="text-align: center;"><a href="#asi-8"><strong>ASI 8</strong></a></td>
+<td style="text-align: center;"><a href="#asi-9"><strong>ASI 9</strong></a></td>
+<td style="text-align: center;"><strong><a href="#asi-10">ASI 10</a></strong></td>
+<td style="text-align: center;"><strong><a href="#asi-11">ASI 11</a></strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../04-participantes/01-participantes.qmd#perfil-analista">Analistas</a></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../04-participantes/01-participantes.qmd#perfil-directivo">Comité de Dirección</a></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../04-participantes/01-participantes.qmd#perfil-directivo">Directores Usuarios</a></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../04-participantes/01-participantes.qmd#perfil-analista">Equipo de Arquitectura</a></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../04-participantes/01-participantes.qmd#perfil-analista">Equipo de Soporte Técnico</a></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto">Jefe de Proyecto</a></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../04-participantes/01-participantes.qmd#perfil-directivo">Usuarios Expertos</a></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+</tr>
+</tbody>
+</table>
+```
 
-## TÉCNICAS/PRÁCTICAS UTILIZADAS EN LAS ACTIVIDADES DEL PROCESO ASI
+## Técnicas/prácticas utilizadas en las actividades del proceso ASI
 
-TÉCNICAS/PRÁCTICAS UTILIZADAS EN LAS ACTIVIDADES DEL PROCESO ASI
-ANÁLISIS DEL SISTEMA DE INFORMACIÓN 	ACTIVIDADES
-ASI 1 	ASI 2 	ASI 3 	ASI 4 	ASI 5 	ASI 6 	ASI 7 	ASI 8 	ASI 9 	ASI 10 	ASI 11
-Cálculo de Accesos Lógicos 									X 		
-Caminos de Accesos Lógicos en Consultas 									X 		
-Casos de Uso 	X 	X 						X 			
-Catalogación 	X 	X 						X 			
-Diagrama de Clases 	X 			X 	X 						
-Diagrama de Descomposición Funcional 								X 			
-Diagrama de Flujo de Datos 	X 		X 				X 				
-Diagrama de Interacción de objetos 				X 				X 			
-Diagrama de Paquetes (Subsistemas) 			X 								
-Diagrama de Representación 	X 							X 			
-Diagrama de Transición de Estados 					X 			X 			
-Matricial 							X 	X 	X 		
-Modelo Entidad/Relación Extendido 	X 					X 					
-Normalización 						X 					
-Presentación 											X
-Prototipado 								X 	X 		
-Sesiones de trabajo 	X 	X 				X 		X 		X
+```{html}
+<table class="avia-table avia-data-table">
+<tbody>
+<tr>
+<td style="text-align: left; vertical-align: middle; width: 30%;" rowspan="2"><strong>ANÁLISIS DEL SISTEMA DE INFORMACIÓN</strong></td>
+<td style="text-align: center; width: 70%;" colspan="11" rowspan="1"><strong>ACTIVIDADES</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;"><a href="#asi-1"><strong>ASI 1</strong></a></td>
+<td style="text-align: center;"><a href="#asi-2"><strong>ASI 2</strong></a></td>
+<td style="text-align: center;"><a href="#asi-3"><strong>ASI 3</strong></a></td>
+<td style="text-align: center;"><a href="#asi-4"><strong>ASI 4</strong></a></td>
+<td style="text-align: center;"><a href="#asi-5"><strong>ASI 5</strong></a></td>
+<td style="text-align: center;"><a href="#asi-6"><strong>ASI 6</strong></a></td>
+<td style="text-align: center;"><a href="#asi-7"><strong>ASI 7</strong></a></td>
+<td style="text-align: center;"><a href="#asi-8"><strong>ASI 8</strong></a></td>
+<td style="text-align: center;"><a href="#asi-9"><strong>ASI 9</strong></a></td>
+<td style="text-align: center;"><strong><a href="#asi-10">ASI 10</a></strong></td>
+<td style="text-align: center;"><strong><a href="#asi-11">ASI 11</a></strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../03-tecnicas/01-tecnicas.qmd#calculo-de-accesos">Cálculo de Accesos Lógicos</a></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../03-tecnicas/01-tecnicas.qmd#caminos-de-acceso">Caminos de Accesos Lógicos en Consultas</a></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../03-tecnicas/01-tecnicas.qmd#casos-de-uso">Casos de Uso</a></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../03-tecnicas/01-tecnicas.qmd#catalogacion">Catalogación</a></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../03-tecnicas/01-tecnicas.qmd#diagrama-de-clases">Diagrama de Clases</a></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../03-tecnicas/01-tecnicas.qmd#diagrama-de-descomposicion">Diagrama de Descomposición Funcional</a></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../03-tecnicas/01-tecnicas.qmd#diagrama-de-flujo-de-datos">Diagrama de Flujo de Datos</a></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../03-tecnicas/01-tecnicas.qmd#diagrama-de-interaccion">Diagrama de Interacción de objetos</a></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../03-tecnicas/01-tecnicas.qmd#diagrama-de-paquetes">Diagrama de Paquetes</a> (Subsistemas)</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../03-tecnicas/01-tecnicas.qmd#diagrama-de-representacion">Diagrama de Representación</a></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../03-tecnicas/01-tecnicas.qmd#diagrama-de-transicion-de-estados">Diagrama de Transición de Estados</a></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../03-tecnicas/01-tecnicas.qmd#tecnicas-matriciales">Matricial</a></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../03-tecnicas/01-tecnicas.qmd#modelo-entidad-relacion-extendido">Modelo Entidad/Relación Extendido</a></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../03-tecnicas/01-tecnicas.qmd#normalizacion">Normalización</a></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../03-tecnicas/01-tecnicas.qmd#presentaciones">Presentación</a></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../03-tecnicas/01-tecnicas.qmd#prototipado">Prototipado</a></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../03-tecnicas/01-tecnicas.qmd#sesiones-de-trabajo">Sesiones de trabajo</a></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+</tr>
+</tbody>
+</table>
+```
 
 ### Actividades
 
@@ -2115,4 +2807,3 @@ Sesiones de trabajo 	X 	X 				X 		X 		X
 - Actividad ASI 9: Análisis de Consistencia y Especificación de Requisitos
 - Actividad ASI 10: Especificación del Plan de Pruebas
 - Actividad ASI 11: Aprobación del Análisis del Sistema de Información
-

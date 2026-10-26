@@ -40,31 +40,58 @@ Una vez estudiado el alcance y los condicionantes de la implantación, se decide
 
 Se constituye el equipo de implantación, determinando los recursos humanos necesarios para la propia instalación del sistema, para las pruebas de implantación y aceptación, y para la preparación del mantenimiento. Se identifican, para cada uno de ellos, sus perfiles y niveles de responsabilidad.
 
-TAREA 	PRODUCTOS 	TÉCNICAS Y PRÁCTICAS 	PARTICIPANTES
-IAS 1.1: Definición del Plan de Implantación 	
-
-    Plan de implantación
-
-	
-
-    Sesiones de trabajo
-
-	
-
-    Jefe de Proyecto
-    Responsable de Implantación
-    Responsable de Operación
-    Responsable de Sistemas
-    Directores de los Usuarios
-
-IAS 1.2: Especificación del Equipo de Implantación 	
-
-    Equipo de implantación
-    Jefe de Proyecto
-    Responsable de Implantación
-    Responsable de Operación
-    Responsable de Sistemas
-    Directores de los Usuarios
+```{html}
+<table class="avia-table avia-data-table">
+<tbody>
+<tr>
+<td style="background-color: #000033; text-align: left; width: 25%;"><strong><span style="color: #ffffff;">TAREA</span></strong></td>
+<td style="background-color: #000033; text-align: left; width: 30%;"><strong><span style="color: #ffffff;">PRODUCTOS</span></strong></td>
+<td style="background-color: #000033; text-align: left; width: 25%;"><strong><span style="color: #ffffff;">TÉCNICAS Y PRÁCTICAS</span></strong></td>
+<td style="background-color: #000033; text-align: left; width: 20%;"><strong><span style="color: #ffffff;">PARTICIPANTES</span></strong></td>
+</tr>
+<tr>
+<td style="text-align: left; vertical-align: top;"><a href="#ias-1-1"><strong>IAS 1.1</strong>: Definición del Plan de Implantación</a></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li>Plan de implantación</li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#sesiones-de-trabajo">Sesiones de trabajo</a></li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto">Jefe de Proyecto</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto">Responsable de Implantación</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto">Responsable de Operación</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto">Responsable de Sistemas</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-directivo">Directores de los Usuarios</a></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td style="text-align: left; vertical-align: top;"><a href="#ias-1-2"><strong>IAS 1.2</strong>: Especificación del Equipo de Implantación</a></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li>Equipo de implantación</li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;"></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto">Jefe de Proyecto</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto">Responsable de Implantación</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto">Responsable de Operación</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto">Responsable de Sistemas</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-directivo">Directores de los Usuarios</a></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+```
 
 #### Tarea IAS 1.1: Definición del Plan de Implantación
 
@@ -144,54 +171,102 @@ Se determina la formación necesaria para el equipo de implantación, en funció
 
 La formación para que los usuarios finales sean capaces de utilizar el sistema de manera satisfactoria ha sido establecida, previamente, en la actividad Definición de la Formación de Usuarios Finales (CSI 7). En esta actividad, se analizan los esquemas de formación definidos según los diferentes perfiles, y se elabora un plan de formación que esté alineado con el plan de implantación.
 
-TAREA 	PRODUCTOS 	TÉCNICAS Y PRÁCTICAS 	PARTICIPANTES
-IAS 2.1: Preparación de la Formación del Equipo de Implantación 	
-
-    Plan de Formación del Equipo de Implantación
-        Esquema de Formación
-        Materiales de Formación
-        Recursos de Formación
-        Planificación de Formación
-
-		
-
-    Jefe de Proyecto
-    Responsable de Implantación
-    Directores de los Usuarios
-    Equipo de Formación
-
-IAS 2.2: Formación del Equipo de Implantación 	
-
-    Plan de Formación del Equipo de Implantación
-        Registro de Asistencia
-
-		
-
-    Equipo de Formación
-    Equipo de Implantación
-
-IAS 2.3: Preparación de la Formación a Usuarios Finales 	
-
-    Plan de Formación a Usuarios Finales
-        Esquema de Formación
-        Materiales de Formación
-        Planificación de la Formación
-
-		
-
-    Equipo de Operación
-    Jefe de Proyecto
-    Directores de los Usuarios
-
-IAS 2.4: Seguimiento de la Formación a Usuarios Finales 	
-
-    Plan de Formación a Usuarios Finales
-        Registro de Asistencia
-
-		
-
-    Jefe de Proyecto
-    Directores de los Usuarios
+```{html}
+<table class="avia-table avia-data-table">
+<tbody>
+<tr>
+<td style="background-color: #000033; text-align: left; width: 25%;"><strong><span style="color: #ffffff;">TAREA</span></strong></td>
+<td style="background-color: #000033; text-align: left; width: 30%;"><strong><span style="color: #ffffff;">PRODUCTOS</span></strong></td>
+<td style="background-color: #000033; text-align: left; width: 25%;"><strong><span style="color: #ffffff;">TÉCNICAS Y PRÁCTICAS</span></strong></td>
+<td style="background-color: #000033; text-align: left; width: 20%;"><strong><span style="color: #ffffff;">PARTICIPANTES</span></strong></td>
+</tr>
+<tr>
+<td style="text-align: left; vertical-align: top;"><a href="#ias-2-1"><strong>IAS 2.1</strong>: Preparación de la Formación del Equipo de Implantación</a></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li>Plan de Formación del Equipo de Implantación
+<ul>
+<li>Esquema de Formación</li>
+<li>Materiales de Formación</li>
+<li>Recursos de Formación</li>
+<li>Planificación de Formación</li>
+</ul>
+</li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;"></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto">Jefe de Proyecto</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto">Responsable de Implantación</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-directivo">Directores de los Usuarios</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-analista">Equipo de Formación</a></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td style="text-align: left; vertical-align: top;"><a href="#ias-2-2"><strong>IAS 2.2</strong>: Formación del Equipo de Implantación</a></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li>Plan de Formación del Equipo de Implantación
+<ul>
+<li>Registro de Asistencia</li>
+</ul>
+</li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;"></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-analista">Equipo de Formación</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-analista">Equipo de Implantación</a></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td style="text-align: left; vertical-align: top;"><a href="#ias-2-3"><strong>IAS 2.3</strong>: Preparación de la Formación a Usuarios Finales</a></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li>Plan de Formación a Usuarios Finales
+<ul>
+<li>Esquema de Formación</li>
+<li>Materiales de Formación</li>
+<li>Planificación de la Formación</li>
+</ul>
+</li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;"></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-analista">Equipo de Operación</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto">Jefe de Proyecto</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-directivo">Directores de los Usuarios</a></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td style="text-align: left; vertical-align: top;"><a href="#ias-2-4"><strong>IAS 2.4</strong>: Seguimiento de la Formación a Usuarios Finales</a></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li>Plan de Formación a Usuarios Finales
+<ul>
+<li>Registro de Asistencia</li>
+</ul>
+</li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;"></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto">Jefe de Proyecto</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-directivo">Directores de los Usuarios</a></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+```
 
 #### Tarea IAS 2.1: Preparación de la Formación del Equipo de Implantación
 
@@ -299,28 +374,51 @@ Mientras que las pruebas unitarias, de integración y del sistema se pueden ejec
 
 Por tanto, como paso previo a la realización de dichas pruebas y de acuerdo al plan de implantación establecido, se verifica que los recursos necesarios están disponibles para que se pueda realizar, adecuadamente, la instalación de todos los componentes que integran el sistema, así como la creación y puesta a punto de las bases de datos en el entorno de operación. Asimismo, se establecen los procedimientos de explotación y uso de las bases de datos de acuerdo a la normativa existente en dicho entorno.
 
-TAREA 	PRODUCTOS 	TÉCNICAS Y PRÁCTICAS 	PARTICIPANTES
-IAS 3.1: Preparación de la Instalación 	
-
-    Incidencias de Preparación de Instalación
-
-		
-
-    Jefe de Proyecto
-    Responsable de Implantación
-    Equipo de Implantación
-
-IAS 3.2: Realización de la Instalación 	
-
-    Producto Software (instalado)
-    Código Fuente de los Componentes de Migración y Carga Inicial de Datos (instalado)
-    Procedimientos de Migración y Carga Inicial de Datos (instalado)
-
-		
-
-    Jefe de Proyecto
-    Equipo de Implantación
-
+```{html}
+<table class="avia-table avia-data-table">
+<tbody>
+<tr>
+<td style="background-color: #000033; text-align: left; width: 25%;"><strong><span style="color: #ffffff;">TAREA</span></strong></td>
+<td style="background-color: #000033; text-align: left; width: 30%;"><strong><span style="color: #ffffff;">PRODUCTOS</span></strong></td>
+<td style="background-color: #000033; text-align: left; width: 25%;"><strong><span style="color: #ffffff;">TÉCNICAS Y PRÁCTICAS</span></strong></td>
+<td style="background-color: #000033; text-align: left; width: 20%;"><strong><span style="color: #ffffff;">PARTICIPANTES</span></strong></td>
+</tr>
+<tr>
+<td style="text-align: left; vertical-align: top;"><a href="#ias-3-1"><strong>IAS 3.1</strong>: Preparación de la Instalación</a></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li>Incidencias de Preparación de Instalación</li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;"></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto">Jefe de Proyecto</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto">Responsable de Implantación</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-analista">Equipo de Implantación</a></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td style="text-align: left; vertical-align: top;"><a href="#ias-3-2"><strong>IAS 3.2</strong>: Realización de la Instalación</a></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li>Producto Software (instalado)</li>
+<li>Código Fuente de los Componentes de Migración y Carga Inicial de Datos (instalado)</li>
+<li>Procedimientos de Migración y Carga Inicial de Datos (instalado)</li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;"></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto">Jefe de Proyecto</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-analista">Equipo de Implantación</a></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+```
 
 #### Tarea IAS 3.1: Preparación de la Instalación
 
@@ -397,14 +495,35 @@ Teniendo en cuenta que los sistemas de información que forman parte del sistema
 
 En cualquier caso, en la actividad Diseño de la Migración y Carga Inicial de Datos (DSI 9) se habrán definido y planificado los procesos y procedimientos necesarios para llevar a cabo la migración, realizándose su codificación en la actividad Construcción de los Componentes y Procedimientos de Migración y Carga Inicial de Datos (CSI 8).
 
-TAREA 	PRODUCTOS 	TÉCNICAS Y PRÁCTICAS 	PARTICIPANTES
-IAS 4.1: Migración y Carga Inicial de Datos 	
-
-* Bases de datos / ficheros cargados
-* Equipo de Implantación
-* Equipo de Operación
-* Administradores de Bases de Datos
-* Usuarios Expertos
+```{html}
+<table class="avia-table avia-data-table">
+<tbody>
+<tr>
+<td style="background-color: #000033; text-align: left; width: 25%;"><strong><span style="color: #ffffff;">TAREA</span></strong></td>
+<td style="background-color: #000033; text-align: left; width: 30%;"><strong><span style="color: #ffffff;">PRODUCTOS</span></strong></td>
+<td style="background-color: #000033; text-align: left; width: 25%;"><strong><span style="color: #ffffff;">TÉCNICAS Y PRÁCTICAS</span></strong></td>
+<td style="background-color: #000033; text-align: left; width: 20%;"><strong><span style="color: #ffffff;">PARTICIPANTES</span></strong></td>
+</tr>
+<tr>
+<td style="text-align: left; vertical-align: top;"><a href="#ias-4-1"><strong>IAS 4.1</strong>: Migración y Carga Inicial de Datos</a></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li>Bases de datos / ficheros cargados</li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;"></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-analista">Equipo de Implantación</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-analista">Equipo de Operación</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-analista">Administradores de Bases de Datos</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-directivo">Usuarios Expertos</a></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+```
 
 #### Tarea IAS 4.1: Migración y Carga inicial de Datos
 
@@ -444,35 +563,67 @@ Para ello, el responsable de implantación revisa el plan de pruebas de implanta
 
 Una vez ejecutadas estas pruebas, el equipo de usuarios técnicos informa de las incidencias detectadas al responsable de implantación, el cual analiza la información y toma las medidas correctoras que considere necesarias para que el sistema dé respuesta a las especificaciones previstas, momento en el que el equipo de operación lo da por probado.
 
-TAREA 	PRODUCTOS 	TÉCNICAS Y PRÁCTICAS 	PARTICIPANTES
-IAS 5.1: Preparación de las Pruebas de Implantación 	
+```{html}
+<table class="avia-table avia-data-table">
+<tbody>
+<tr>
+<td style="background-color: #000033; text-align: left; width: 25%;"><strong><span style="color: #ffffff;">TAREA</span></strong></td>
+<td style="background-color: #000033; text-align: left; width: 30%;"><strong><span style="color: #ffffff;">PRODUCTOS</span></strong></td>
+<td style="background-color: #000033; text-align: left; width: 25%;"><strong><span style="color: #ffffff;">TÉCNICAS Y PRÁCTICAS</span></strong></td>
+<td style="background-color: #000033; text-align: left; width: 20%;"><strong><span style="color: #ffffff;">PARTICIPANTES</span></strong></td>
+</tr>
+<tr>
+<td style="text-align: left; vertical-align: top;"><a href="#ias-5-1"><strong>IAS 5.1</strong>: Preparación de las Pruebas de Implantación</a></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li>Plan de pruebas</li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;"></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto">Jefe de Proyecto</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto">Responsable de Implantación</a></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td style="text-align: left; vertical-align: top;"><a href="#ias-5-2"><strong>IAS 5.2</strong>: Realización de las Pruebas de Implantación</a></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li>Resultado de las pruebas de implantación</li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#pruebas-de-implantacion">Pruebas de implantación</a></li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-analista">Equipo de Implantación</a></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td style="text-align: left; vertical-align: top;"><a href="#ias-5-3"><strong>IAS 5.3</strong>: Evaluación del Resultado de las Pruebas de Implantación</a></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li>Evaluación del resultado de las pruebas de implantación</li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;"></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto">Jefe de Proyecto</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto">Responsable de Implantación</a></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+```
 
-    Plan de pruebas
-
-		
-
-    Jefe de Proyecto
-    Responsable de Implantación
-
-IAS 5.2: Realización de las Pruebas de Implantación 	
-
-    Resultado de las pruebas de implantación
-
-
-    Pruebas de implantación
-
-
-    Equipo de Implantación
-
-IAS 5.3: Evaluación del Resultado de las Pruebas de Implantación 	
-
-    Evaluación del resultado de las pruebas de implantación
-
-
-    Jefe de Proyecto
-    Responsable de Implantación
-    
-    
 #### Tarea IAS 5.1: Preparación de las Pruebas de Implantación
 
 Se comprueba la disponibilidad de los recursos humanos y técnicos necesarios para realizar las pruebas de implantación. Se revisan las verificaciones establecidas en el plan de pruebas.
@@ -566,32 +717,66 @@ Las pruebas de aceptación tienen como fin validar que el sistema cumple los req
 
 Los Directores de los Usuarios revisan los criterios de aceptación, especificados previamente en el plan de pruebas del sistema, y dirigen las pruebas de aceptación final que llevan a cabo los usuarios expertos. A su vez, éstos últimos deben elaborar un informe que los Directores de los Usuarios analizan y evalúan para determinar la aceptación o rechazo del sistema.
 
-TAREA 	PRODUCTOS 	TÉCNICAS Y PRÁCTICAS 	PARTICIPANTES
-IAS 6.1: Preparación de las Pruebas de Aceptación 	
-
-    Plan de Pruebas
-    Jefe de Proyecto
-    Directores de los Usuarios
-
-IAS 6.2: Realización de las Pruebas de Aceptación 	
-
-    Resultado de las Pruebas de Aceptación
-
-
-    Pruebas de Aceptación
-
-	
-
-    Usuarios Expertos
-
-IAS 6.3: Evaluación del Resultado de las Pruebas de Aceptación 	
-
-    Evaluación del Resultado de las Pruebas de Aceptación
-
-		
-
-    Jefe de Proyecto
-    Directores de los Usuarios
+```{html}
+<table class="avia-table avia-data-table">
+<tbody>
+<tr>
+<td style="background-color: #000033; text-align: left; width: 25%;"><strong><span style="color: #ffffff;">TAREA</span></strong></td>
+<td style="background-color: #000033; text-align: left; width: 30%;"><strong><span style="color: #ffffff;">PRODUCTOS</span></strong></td>
+<td style="background-color: #000033; text-align: left; width: 25%;"><strong><span style="color: #ffffff;">TÉCNICAS Y PRÁCTICAS</span></strong></td>
+<td style="background-color: #000033; text-align: left; width: 20%;"><strong><span style="color: #ffffff;">PARTICIPANTES</span></strong></td>
+</tr>
+<tr>
+<td style="text-align: left; vertical-align: top;"><a href="#ias-6-1"><strong>IAS 6.1</strong>: Preparación de las Pruebas de Aceptación</a></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li>Plan de Pruebas</li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;"></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto">Jefe de Proyecto</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-directivo">Directores de los Usuarios</a></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td style="text-align: left; vertical-align: top;"><a href="#ias-6-2"><strong>IAS 6.2</strong>: Realización de las Pruebas de Aceptación</a></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li>Resultado de las Pruebas de Aceptación</li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#pruebas-de-aceptacion">Pruebas de Aceptación</a></li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-directivo">Usuarios Expertos</a></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td style="text-align: left; vertical-align: top;"><a href="#ias-6-3"><strong>IAS 6.3</strong>: Evaluación del Resultado de las Pruebas de Aceptación</a></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li>Evaluación del Resultado de las Pruebas de Aceptación</li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;"></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto">Jefe de Proyecto</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-directivo">Directores de los Usuarios</a></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+```
 
 #### Tarea IAS 6.1: Preparación de las Pruebas de Aceptación
 
@@ -675,34 +860,58 @@ Una vez que el responsable de mantenimiento ha recibido la formación necesaria 
 
 Es importante resaltar que la existencia de una configuración del software permite reducir el esfuerzo requerido y mejora la calidad general del software a mantener, aunque no garantiza un mantenimiento libre de problemas. Una pobre configuración del software puede tener un impacto negativo sobre su facilidad de mantenimiento.
 
-TAREA 	PRODUCTOS 	TÉCNICAS Y PRÁCTICAS 	PARTICIPANTES
-IAS 7.1: Establecimiento de la Infraestructura para el Mantenimiento 	
-
-    Plan de Mantenimiento
-
-	
-
-    Diagrama de Representación
-    Sesiones de trabajo
-
-	
-
-    Jefe de Proyecto
-    Responsable de Mantenimiento
-    Equipo de Soporte Técnico
-
-IAS 7.2: Formalización del Plan de Mantenimiento 	
-
-    Plan de Mantenimiento
-
-	
-
-    Sesiones de trabajo
-
-	
-
-    Responsable de Mantenimiento
-    Directores de los Usuarios
+```{html}
+<table class="avia-table avia-data-table">
+<tbody>
+<tr>
+<td style="background-color: #000033; text-align: left; width: 25%;"><strong><span style="color: #ffffff;">TAREA</span></strong></td>
+<td style="background-color: #000033; text-align: left; width: 30%;"><strong><span style="color: #ffffff;">PRODUCTOS</span></strong></td>
+<td style="background-color: #000033; text-align: left; width: 25%;"><strong><span style="color: #ffffff;">TÉCNICAS Y PRÁCTICAS</span></strong></td>
+<td style="background-color: #000033; text-align: left; width: 20%;"><strong><span style="color: #ffffff;">PARTICIPANTES</span></strong></td>
+</tr>
+<tr>
+<td style="text-align: left; vertical-align: top;"><a href="#ias-7-1"><strong>IAS 7.1</strong>: Establecimiento de la Infraestructura para el Mantenimiento</a></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li>Plan de Mantenimiento</li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#diagrama-de-representacion">Diagrama de Representación</a></li>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#sesiones-de-trabajo">Sesiones de trabajo</a></li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto">Jefe de Proyecto</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto">Responsable de Mantenimiento</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-analista">Equipo de Soporte Técnico</a></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td style="text-align: left; vertical-align: top;"><a href="#ias-7-2"><strong>IAS 7.2</strong>: Formalización del Plan de Mantenimiento</a></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li>Plan de Mantenimiento</li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#sesiones-de-trabajo">Sesiones de trabajo</a></li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto">Responsable de Mantenimiento</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-directivo">Directores de los Usuarios</a></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+```
 
 #### Tarea IAS 7.1: Establecimiento de la Infraestructura para el Mantenimiento
 
@@ -775,50 +984,83 @@ Por último, se establece formalmente el acuerdo de nivel de servicio, considera
 
 Según el ámbito y el alcance de los tipos de servicio que se vayan a prestar, se determinar los productos del ciclo de vida del software necesarios para poder establecer el acuerdo de nivel de servicio.
 
-TAREA 	PRODUCTOS 	TÉCNICAS Y PRÁCTICAS 	PARTICIPANTES
-IAS 8.1: Identificación de los Servicios 	
-
-    Especificación de Tipos de Servicio
-
-	
-
-    Sesiones de trabajo
-
-	
-
-    Jefe de Proyecto
-    Directores de los Usuarios
-    Comité de Dirección
-
-IAS 8.2: Descripción de las Propiedades de cada Servicio 	
-
-    Especificación de Tipos de Servicio:
-        Niveles de Servicio
-
-	
-
-    Sesiones de trabajo
-
-	
-
-    Jefe de Proyecto
-    Directores de los Usuarios
-    Comité de Dirección
-    Comité de Seguimiento
-
-IAS 8.3: Determinación del Acuerdo de Nivel de Servicio 	
-
-    Acuerdo de Niveles de Servicio
-
-	
-
-    Sesiones de trabajo
-
-	
-
-    Comité de Dirección
-    Jefe de Proyecto
-    Responsable de Implantación
+```{html}
+<table class="avia-table avia-data-table">
+<tbody>
+<tr>
+<td style="background-color: #000033; text-align: left; width: 25%;"><strong><span style="color: #ffffff;">TAREA</span></strong></td>
+<td style="background-color: #000033; text-align: left; width: 30%;"><strong><span style="color: #ffffff;">PRODUCTOS</span></strong></td>
+<td style="background-color: #000033; text-align: left; width: 25%;"><strong><span style="color: #ffffff;">TÉCNICAS Y PRÁCTICAS</span></strong></td>
+<td style="background-color: #000033; text-align: left; width: 20%;"><strong><span style="color: #ffffff;">PARTICIPANTES</span></strong></td>
+</tr>
+<tr>
+<td style="text-align: left; vertical-align: top;"><a href="#ias-8-1"><strong>IAS 8.1</strong>: Identificación de los Servicios</a></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li>Especificación de Tipos de Servicio</li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#sesiones-de-trabajo">Sesiones de trabajo</a></li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto">Jefe de Proyecto</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-directivo">Directores de los Usuarios</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-directivo">Comité de Dirección</a></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td style="text-align: left; vertical-align: top;"><a href="#ias-8-2"><strong>IAS 8.2</strong>: Descripción de las Propiedades de cada Servicio</a></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li>Especificación de Tipos de Servicio:
+<ul>
+<li>Niveles de Servicio</li>
+</ul>
+</li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#sesiones-de-trabajo">Sesiones de trabajo</a></li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto">Jefe de Proyecto</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-directivo">Directores de los Usuarios</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-directivo">Comité de Dirección</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-directivo">Comité de Seguimiento</a></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td style="text-align: left; vertical-align: top;"><a href="#ias-8-3"><strong>IAS 8.3</strong>: Determinación del Acuerdo de Nivel de Servicio</a></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li>Acuerdo de Niveles de Servicio</li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#sesiones-de-trabajo">Sesiones de trabajo</a></li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-directivo">Comité de Dirección</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto">Jefe de Proyecto</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto">Responsable de Implantación</a></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+```
 
 #### Tarea IAS 8.1: Identificación de los Servicios
 
@@ -918,31 +1160,59 @@ Se hace una estimación de los recursos humanos y de infraestructura necesaria p
 
 Una vez que se han efectuado las pruebas de implantación y de aceptación, y que se ha fijado el acuerdo de nivel de servicio, el Comité de Dirección debe formalizar la aprobación del sistema. Para esto, se lleva a cabo una presentación general del sistema al Comité de Dirección y se espera la confirmación de su aprobación.
 
-TAREA 	PRODUCTOS 	TÉCNICAS Y PRÁCTICAS 	PARTICIPANTES
-IAS 9.1: Convocatoria de la Presentación del Sistema 	
-
-    Plan de presentación del sistema
-	
-
-    Presentación
-	
-
-    Jefe de Proyecto
-    Responsable de Implantación
-    Directores de los Usuarios
-
-IAS 9.2: Aprobación del Sistema 	
-
-    Aprobación del sistema
-	
-
-    Presentación
-
-
-    Comité de Dirección
-    Jefe de Proyecto
-    Directores de los Usuarios
-    Responsable de Implantación
+```{html}
+<table class="avia-table avia-data-table">
+<tbody>
+<tr>
+<td style="background-color: #000033; text-align: left; width: 25%;"><strong><span style="color: #ffffff;">TAREA</span></strong></td>
+<td style="background-color: #000033; text-align: left; width: 30%;"><strong><span style="color: #ffffff;">PRODUCTOS</span></strong></td>
+<td style="background-color: #000033; text-align: left; width: 25%;"><strong><span style="color: #ffffff;">TÉCNICAS Y PRÁCTICAS</span></strong></td>
+<td style="background-color: #000033; text-align: left; width: 20%;"><strong><span style="color: #ffffff;">PARTICIPANTES</span></strong></td>
+</tr>
+<tr>
+<td style="text-align: left; vertical-align: top;"><a href="#ias-9-1"><strong>IAS 9.1</strong>: Convocatoria de la Presentación del Sistema</a></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li>Plan de presentación del sistema</li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#presentaciones">Presentación</a></li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto">Jefe de Proyecto</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto">Responsable de Implantación</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-directivo">Directores de los Usuarios</a></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td style="text-align: left; vertical-align: top;"><a href="#ias-9-2"><strong>IAS 9.2</strong>: Aprobación del Sistema</a></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li>Aprobación del sistema</li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#presentaciones">Presentación</a></li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-directivo">Comité de Dirección</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto">Jefe de Proyecto</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-directivo">Directores de los Usuarios</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto">Responsable de Implantación</a></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+```
 
 ##### Tarea IAS 9.1: Convocatoria de la Presentación del Sistema
 
@@ -1008,20 +1278,50 @@ En función del entorno en el que se hayan llevado a cabo las pruebas de implant
 
 Una vez que el sistema ya está en producción, se le notifica al responsable de mantenimiento, al responsable de operación y al Comité de Dirección.
 
-TAREA 	PRODUCTOS 	TÉCNICAS Y PRÁCTICAS 	PARTICIPANTES
-IAS 10.1: Preparación del Entorno de Producción 	
-
-    Incidencias del Paso a Producción
-    Jefe de Proyecto
-    Responsable de Implantación
-    Equipo de Implantación
-    Equipo de Soporte Técnico
-
-IAS 10.2: Activación del Sistema de Producción 	
-
-    Sistema en Producción
-    Comité de Dirección
-    Responsable de Implantación
+```{html}
+<table class="avia-table avia-data-table">
+<tbody>
+<tr>
+<td style="background-color: #000033; text-align: left; width: 25%;"><strong><span style="color: #ffffff;">TAREA</span></strong></td>
+<td style="background-color: #000033; text-align: left; width: 30%;"><strong><span style="color: #ffffff;">PRODUCTOS</span></strong></td>
+<td style="background-color: #000033; text-align: left; width: 25%;"><strong><span style="color: #ffffff;">TÉCNICAS Y PRÁCTICAS</span></strong></td>
+<td style="background-color: #000033; text-align: left; width: 20%;"><strong><span style="color: #ffffff;">PARTICIPANTES</span></strong></td>
+</tr>
+<tr>
+<td style="text-align: left; vertical-align: top;"><a href="#ias-10-1"><strong>IAS 10.1</strong>: Preparación del Entorno de Producción</a></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li>Incidencias del Paso a Producción</li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;"></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto">Jefe de Proyecto</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto">Responsable de Implantación</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-analista">Equipo de Implantación</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-analista">Equipo de Soporte Técnico</a></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td style="text-align: left; vertical-align: top;"><a href="#ias-10-2"><strong>IAS 10.2</strong>: Activación del Sistema de Producción</a></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li>Sistema en Producción</li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;"></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-directivo">Comité de Dirección</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto">Responsable de Implantación</a></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+```
 
 #### Tarea IAS 10.1: Preparación del Entorno de Producción
 
@@ -1070,32 +1370,300 @@ Se arranca el nuevo sistema en producción activando tanto el proceso de Manteni
 
 ## Participantes en las actividades del proceso IAS
 
-IMPLANTACIÓN Y ACEPTACIÓN DEL SISTEMA 	ACTIVIDADES
-IAS 1 	IAS 2 	IAS 3 	IAS 4 	IAS 5 	IAS 6 	IAS 7 	IAS 8 	IAS 9 	IAS 10
-Administrador de B/D 				X 						
-Comité de Dirección 								X 	X 	X
-Comité de Seguimiento 								X 		
-Directores Usuarios 	X 	X 				X 	X 	X 	X 	
-Equipo de Formación 		X 								
-Equipo de Implantación 		X 	X 	X 	X 					X
-Equipo de Operación 		X 		X 						
-Equipo de Soporte Técnico 							X 			X
-Jefe de Proyecto 	X 	X 	X 		X 	X 	X 	X 	X 	X
-Responsable de Implantación 	X 	X 	X 		X 			X 	X 	X
-Responsable de Mantenimiento 							X 			
-Responsable de Operación 	X 									
-Responsable de Sistemas 	X 									
-Usuarios Expertos 				X 		X 	
+```{html}
+<table class="avia-table avia-data-table">
+<tbody>
+<tr>
+<td style="text-align: left; vertical-align: middle; width: 30%;" rowspan="2"><strong>IMPLANTACIÓN Y ACEPTACIÓN DEL SISTEMA</strong></td>
+<td style="text-align: center; width: 70%;" colspan="10"><strong>ACTIVIDADES</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;"><a href="#ias-1"><strong>IAS 1</strong></a></td>
+<td style="text-align: center;"><a href="#ias-2"><strong>IAS 2</strong></a></td>
+<td style="text-align: center;"><a href="#ias-3"><strong>IAS 3</strong></a></td>
+<td style="text-align: center;"><a href="#ias-4"><strong>IAS 4</strong></a></td>
+<td style="text-align: center;"><a href="#ias-5"><strong>IAS 5</strong></a></td>
+<td style="text-align: center;"><a href="#ias-6"><strong>IAS 6</strong></a></td>
+<td style="text-align: center;"><a href="#ias-7"><strong>IAS 7</strong></a></td>
+<td style="text-align: center;"><a href="#ias-8"><strong>IAS 8</strong></a></td>
+<td style="text-align: center;"><a href="#ias-9"><strong>IAS 9</strong></a></td>
+<td style="text-align: center;"><a href="#ias-10"><strong>IAS 10</strong></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../04-participantes/01-participantes.qmd#perfil-analista">Administrador de B/D</a></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../04-participantes/01-participantes.qmd#perfil-directivo">Comité de Dirección</a></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../04-participantes/01-participantes.qmd#perfil-directivo">Comité de Seguimiento</a></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../04-participantes/01-participantes.qmd#perfil-directivo">Directores Usuarios</a></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../04-participantes/01-participantes.qmd#perfil-analista">Equipo de Formación</a></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../04-participantes/01-participantes.qmd#perfil-analista">Equipo de Implantación</a></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../04-participantes/01-participantes.qmd#perfil-analista">Equipo de Operación</a></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../04-participantes/01-participantes.qmd#perfil-analista">Equipo de Soporte Técnico</a></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto">Jefe de Proyecto</a></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto">Responsable de Implantación</a></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto">Responsable de Mantenimiento</a></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto">Responsable de Operación</a></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto">Responsable de Sistemas</a></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../04-participantes/01-participantes.qmd#perfil-directivo">Usuarios Expertos</a></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+</tbody>
+</table>
+```
 
 ## Técnicas/prácticas utilizadas en las actividades del proceso IAS
 
-IMPLANTACIÓN Y ACEPTACIÓN DEL SISTEMA 	ACTIVIDADES
-IAS 1 	IAS 2 	IAS 3 	IAS 4 	IAS 5 	IAS 6 	IAS 7 	IAS 8 	IAS 9 	IAS 10
-Diagrama de Representación 							X 			
-Presentación 									X 	
-Pruebas de Aceptación 						X 				
-Pruebas de Implantación 					X 					
-Sesiones de Trabajo 	X 						X 	X 		
+```{html}
+<table class="avia-table avia-data-table">
+<tbody>
+<tr>
+<td style="text-align: left; vertical-align: middle; width: 30%;" rowspan="2"><strong>IMPLANTACIÓN Y ACEPTACIÓN DEL SISTEMA</strong></td>
+<td style="text-align: center; width: 70%;" colspan="10"><strong>ACTIVIDADES</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;"><a href="#ias-1"><strong>IAS 1</strong></a></td>
+<td style="text-align: center;"><a href="#ias-2"><strong>IAS 2</strong></a></td>
+<td style="text-align: center;"><a href="#ias-3"><strong>IAS 3</strong></a></td>
+<td style="text-align: center;"><a href="#ias-4"><strong>IAS 4</strong></a></td>
+<td style="text-align: center;"><a href="#ias-5"><strong>IAS 5</strong></a></td>
+<td style="text-align: center;"><a href="#ias-6"><strong>IAS 6</strong></a></td>
+<td style="text-align: center;"><a href="#ias-7"><strong>IAS 7</strong></a></td>
+<td style="text-align: center;"><a href="#ias-8"><strong>IAS 8</strong></a></td>
+<td style="text-align: center;"><a href="#ias-9"><strong>IAS 9</strong></a></td>
+<td style="text-align: center;"><a href="#ias-10"><strong>IAS 10</strong></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../03-tecnicas/01-tecnicas.qmd#diagrama-de-representacion">Diagrama de Representación</a></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../03-tecnicas/01-tecnicas.qmd#presentaciones">Presentación</a></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../03-tecnicas/01-tecnicas.qmd#pruebas-de-aceptacion">Pruebas de Aceptación</a></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../03-tecnicas/01-tecnicas.qmd#pruebas-de-implantacion">Pruebas de Implantación</a></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../03-tecnicas/01-tecnicas.qmd#sesiones-de-trabajo">Sesiones de Trabajo</a></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+</tbody>
+</table>
+```	
 
 ### Actividades {.unnumbered unlisted}
 

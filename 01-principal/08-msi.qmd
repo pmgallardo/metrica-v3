@@ -42,32 +42,60 @@ El objetivo de esta actividad es establecer un sistema estandarizado de registro
 Es importante asignar responsabilidades para evitar la realización de cambios que beneficien a un usuario, pero que produzcan un impacto negativo sobre otros muchos. Por tanto, es necesario que todas las peticiones de mantenimiento sean presentadas de una forma estandarizada, que permita su clasificación y facilite la identificación del tipo de mantenimiento requerido.
 
 Una vez que la petición ha sido registrada, que ha determinado el tipo de mantenimiento y los sistemas de información a los que inicialmente puede afectar, se comprueba su viabilidad, de acuerdo a las prestaciones de mantenimiento establecidas para dichos sistemas de información.
-TAREA 	PRODUCTOS 	TÉCNICAS Y PRÁCTICAS 	PARTICIPANTES
-MSI 1.1: Registro de la Petición 	
 
-    Catálogo de Peticiones
-
-	
-
-    Catalogación
-    
-    
-    
-    Responsable de Mantenimiento
-
-MSI 1.2: Asignación de la Petición 	
-
-    Catálogo de Peticiones:
-        Aceptación / Rechazo de la Petición
-        Asignación de Responsable
-
-	
-
-    Catalogación
-
-	
-
-    Responsable de Mantenimiento
+```{html}
+<table class="avia-table avia-data-table">
+<tbody>
+<tr>
+<td style="background-color: #000033; text-align: left; width: 25%;"><strong><span style="color: #ffffff;">TAREA</span></strong></td>
+<td style="background-color: #000033; text-align: left; width: 30%;"><strong><span style="color: #ffffff;">PRODUCTOS</span></strong></td>
+<td style="background-color: #000033; text-align: left; width: 25%;"><strong><span style="color: #ffffff;">TÉCNICAS Y PRÁCTICAS</span></strong></td>
+<td style="background-color: #000033; text-align: left; width: 20%;"><strong><span style="color: #ffffff;">PARTICIPANTES</span></strong></td>
+</tr>
+<tr>
+<td style="text-align: left; vertical-align: top;"><a href="msi-1-1"><strong>MSI 1.1</strong>: Registro de la Petición</a></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li>Catálogo de Peticiones</li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="catalogacion">Catalogación</a></li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto">Responsable de Mantenimiento</a></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td style="text-align: left; vertical-align: top;"><a href="msi-1-2"><strong>MSI 1.2</strong>: Asignación de la Petición</a></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li>Catálogo de Peticiones:
+<ul>
+<li>Aceptación / Rechazo de la Petición</li>
+<li>Asignación de Responsable</li>
+</ul>
+</li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#catalogacion">Catalogación</a></li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto">Responsable de Mantenimiento</a></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+```
 
 #### MSI 1.1: Registro de la Petición
 
@@ -134,34 +162,68 @@ Se analiza el alcance de la petición en lo referente a los sistemas de informac
 
 El enfoque de este estudio varía según el tipo de mantenimiento, teniendo en cuenta que en el caso de un mantenimiento correctivo que implique un error crítico debe abordarse el cambio de forma inmediata sin profundizar en el origen del mismo. No obstante, una vez reanudado el servicio, es imprescindible analizar el problema y determinar cuál es la solución definitiva.
 
-TAREA 	PRODUCTOS 	TÉCNICAS Y PRÁCTICAS 	PARTICIPANTES
-MSI 2.1: Verificación y Estudio de la Petición 	
-
-    Catálogo de Peticiones:
-        Verificación de la Petición
-    Resultado del Estudio de la Petición
-
-	
-
-    Sesiones de trabajo
-    Catalogación
-
-	
-
-    Equipo de Mantenimiento
-
-MSI 2.2: Estudio de la Propuesta de Solución 	
-
-    Propuesta de Solución
-    Catálogo de Peticiones:
-        Estudio del Impacto
-        Aceptación / Rechazo de la Solución
-
-	
-    Sesiones de trabajo
-    Catalogación
-    Responsable de Mantenimiento
-    Equipo de Mantenimiento
+```{html}
+<table class="avia-table avia-data-table">
+<tbody>
+<tr>
+<td style="background-color: #000033; text-align: left; width: 25%;"><strong><span style="color: #ffffff;">TAREA</span></strong></td>
+<td style="background-color: #000033; text-align: left; width: 30%;"><strong><span style="color: #ffffff;">PRODUCTOS</span></strong></td>
+<td style="background-color: #000033; text-align: left; width: 25%;"><strong><span style="color: #ffffff;">TÉCNICAS Y PRÁCTICAS</span></strong></td>
+<td style="background-color: #000033; text-align: left; width: 20%;"><strong><span style="color: #ffffff;">PARTICIPANTES</span></strong></td>
+</tr>
+<tr>
+<td style="text-align: left; vertical-align: top;"><a href="msi-2-1"><strong>MSI 2.1</strong>: Verificación y Estudio de la Petición</a></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li>Catálogo de Peticiones:
+<ul>
+<li>Verificación de la Petición</li>
+</ul>
+</li>
+<li>Resultado del Estudio de la Petición</li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#sesiones-de-trabajo">Sesiones de trabajo</a></li>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#catalogacion">Catalogación</a></li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li>Equipo de Mantenimiento</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td style="text-align: left; vertical-align: top;"><a href="msi-2-2"><strong>MSI 2.2</strong>: Estudio de la Propuesta de Solución</a></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li>Propuesta de Solución</li>
+<li>Catálogo de Peticiones:
+<ul>
+<li>Estudio del Impacto</li>
+<li>Aceptación / Rechazo de la Solución</li>
+</ul>
+</li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#sesiones-de-trabajo">Sesiones de trabajo</a></li>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#catalogacion">Catalogación</a></li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto">Responsable de Mantenimiento</a></li>
+<li>Equipo de Mantenimiento</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+```
 
 #### Tarea MSI 2.1: Verificación y Estudio de la Petición
 
@@ -251,49 +313,84 @@ Con el resultado de este análisis se dispone de los datos cuantitativos sobre l
 
 Una vez aceptado el plan de acción, se activan los correspondientes procesos de desarrollo para llevar a cabo la implementación de la solución. Al mismo tiempo, se especifican las pruebas de regresión con el fin de evitar el efecto onda en el sistema, una vez realizados los cambios.
 
-TAREA 	PRODUCTOS 	TÉCNICAS Y PRÁCTICAS 	PARTICIPANTES
-MSI 3.1: Identificación de Elementos Afectados 	
-
-    Catálogo de Peticiones:
-        Elementos Afectados
-    Análisis de Impacto de los Cambios
-
-	
-
-    Catalogación
-    Análisis de Impacto
-
-	
-
-    Equipo de Mantenimiento
-    Jefe de Proyecto
-
-MSI 3.2: Establecimiento del Plan de Acción 	
-
-    Catálogo de Peticiones:
-        Actividades y Tareas de los Procesos de Desarrollo a Realizar
-    Plan de Acción para la Modificación
-
-	
-
-    Planificación
-    Catalogación
-
-	
-
-    Responsable de Mantenimiento
-    Equipo de Mantenimiento
-    Jefe de Proyecto
-
-MSI 3.3: Especificación del Plan de Pruebas de Regresión 	
-
-    Plan de Pruebas de Regresión
-
-		
-
-    Equipo de Mantenimiento
-    Jefe de Proyecto
-
+```{html}
+<table class="avia-table avia-data-table">
+<tbody>
+<tr>
+<td style="background-color: #000033; text-align: left; width: 25%;"><strong><span style="color: #ffffff;">TAREA</span></strong></td>
+<td style="background-color: #000033; text-align: left; width: 30%;"><strong><span style="color: #ffffff;">PRODUCTOS</span></strong></td>
+<td style="background-color: #000033; text-align: left; width: 25%;"><strong><span style="color: #ffffff;">TÉCNICAS Y PRÁCTICAS</span></strong></td>
+<td style="background-color: #000033; text-align: left; width: 20%;"><strong><span style="color: #ffffff;">PARTICIPANTES</span></strong></td>
+</tr>
+<tr>
+<td style="text-align: left; vertical-align: top;"><a href="msi-3-1"><strong>MSI 3.1</strong>: Identificación de Elementos Afectados</a></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li>Catálogo de Peticiones:
+<ul>
+<li>Elementos Afectados</li>
+</ul>
+</li>
+<li>Análisis de Impacto de los Cambios</li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#catalogacion">Catalogación</a></li>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#analisis-de-impacto">Análisis de Impacto</a></li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li>Equipo de Mantenimiento</li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto">Jefe de Proyecto</a></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td style="text-align: left; vertical-align: top;"><a href="msi-3-2"><strong>MSI 3.2</strong>: Establecimiento del Plan de Acción</a></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li>Catálogo de Peticiones:
+<ul>
+<li>Actividades y Tareas de los Procesos de Desarrollo a Realizar</li>
+</ul>
+</li>
+<li>Plan de Acción para la Modificación</li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#planificacion">Planificación</a></li>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#catalogacion">Catalogación</a></li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto">Responsable de Mantenimiento</a></li>
+<li>Equipo de Mantenimiento</li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto">Jefe de Proyecto</a></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td style="text-align: left; vertical-align: top;"><a href="msi-3-3"><strong>MSI 3.3</strong>: Especificación del Plan de Pruebas de Regresión</a></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li>Plan de Pruebas de Regresión</li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;"></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li>Equipo de Mantenimiento</li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto">Jefe de Proyecto</a></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+```
 
 #### Tarea MSI 3.1: Identificación de Elementos Afectados
 
@@ -388,6 +485,87 @@ Con este objetivo se deben especificar los casos de prueba en función de las re
 * Jefe de Proyecto
 
 ### Actividad MSI 4: Seguimiento y Evaluación de los Cambios hasta la Aceptación
+
+Se realiza el seguimiento de los cambios que se están llevando a cabo en los procesos de desarrollo, de acuerdo a los puntos de control del ciclo de vida del cambio establecidos en el plan de acción. Durante este seguimiento, se comprueba que sólo se han modificado los elementos que se ven afectados por el cambio y que se han realizado las pruebas correspondientes, especialmente las pruebas de integración y del sistema. Del resultado obtenido se hace una evaluación del cambio para la posterior aprobación.
+
+Una vez finalizado el cambio en desarrollo, se realizan las pruebas de regresión que especificadas en la actividad anterior, comprobando que ningún sistema no modificado, pero con posibilidades de verse afectado, ha variado su comportamiento habitual. Se informa si ha habido incidencias con el fin de que se resuelvan del modo más conveniente. Se evalúan las pruebas.
+
+La aprobación de la petición se realiza al finalizar las pruebas de regresión, y después de comprobar que todo lo que ha sido modificado o puede verse afectado por el cambio, funciona correctamente.
+
+Con el cierre de la petición se podrán incluir enel catálogo, si se considera oportuno, parte de la información obtenida durante el proceso de mantenimiento que pueda facilitar posteriores análisis.
+
+```{html}
+<table class="avia-table avia-data-table">
+<tbody>
+<tr>
+<td style="background-color: #000033; text-align: left; width: 25%;"><strong><span style="color: #ffffff;">TAREA</span></strong></td>
+<td style="background-color: #000033; text-align: left; width: 30%;"><strong><span style="color: #ffffff;">PRODUCTOS</span></strong></td>
+<td style="background-color: #000033; text-align: left; width: 25%;"><strong><span style="color: #ffffff;">TÉCNICAS Y PRÁCTICAS</span></strong></td>
+<td style="background-color: #000033; text-align: left; width: 20%;"><strong><span style="color: #ffffff;">PARTICIPANTES</span></strong></td>
+</tr>
+<tr>
+<td style="text-align: left; vertical-align: top;"><a href="msi-4-1"><strong>MSI 4.1</strong>: Seguimiento de los Cambios</a></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li>Evaluación del Cambio</li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;"></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li>Equipo de Mantenimienro</li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto">Responsable de Mantenimiento</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto">Jefe de Proyecto</a></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td style="text-align: left; vertical-align: top;"><a href="msi-4-2"><strong>MSI 4.2</strong>: Realización de las Pruebas de Regresión</a></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li>Resultado de las Pruebas de Regresión</li>
+<li>Evaluació del Resultado de las Pruebas de Regresión</li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#pruebas-de-regresion">Pruebas de Regresión</a></li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto">Responsable de Mantenimiento</a></li>
+<li>Equipo de Mantenimiento</li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto">Jefe de Proyecto</a></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td style="text-align: left; vertical-align: top;"><a href="msi-4-3"><strong>MSI 4.3</strong>: Aprobación y Cierre de la Petición</a></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li>Catálogo de Peticiones:
+<ul>
+<li>Nueva Versión y Aprobación</li>
+</ul>
+</li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#catalogacion">Catalogación</a></li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-directivo">Directores de los Usuarios</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto">Responsable de Mantenimiento</a></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+```
 
 #### Tarea MSI 4.1: Seguimiento de los Cambios
 
@@ -484,22 +662,104 @@ El registro de este tipo de información proporciona una base cuantitativa sobre
 
 ## Participantes en las actividades del proceso MSI
 
-MANTENIMIENTO DEL SISTEMA DE INFORMACIÓN 	ACTIVIDADES
-MSI 1 	MSI 2 	MSI 3 	MSI 4
-Directores Usuarios 				X
-Equipo de Mantenimiento 		X 	X 	X
-Jefe de Proyecto 			X 	X
-Responsable Mantenimiento 	X 	X 	X 	X
+```{html}
+<table class="avia-table avia-data-table">
+<tbody>
+<tr>
+<td style="text-align: left; vertical-align: middle; width: 30%;" rowspan="2"><strong>MANTENIMIENTO DEL SISTEMA DE INFORMACIÓN</strong></td>
+<td style="text-align: center; width: 70%;" colspan="4"><strong>ACTIVIDADES</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;"><a href="#msi-1"><strong>MSI 1</strong></a></td>
+<td style="text-align: center;"><a href="#msi-2"><strong>MSI 2</strong></a></td>
+<td style="text-align: center;"><a href="#msi-3"><strong>MSI 3</strong></a></td>
+<td style="text-align: center;"><a href="#msi-4"><strong>MSI 4</strong></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../04-participantes/01-participantes.qmd#perfil-directivo">Directores Usuarios</a></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+</tr>
+<tr>
+<td style="text-align: left;">Equipo de Mantenimiento</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto">Jefe de Proyecto</a></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto">Responsable Mantenimiento</a></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+</tr>
+</tbody>
+</table>
+```
 
 ## Técnicas/prácticas utilizadas en las actividades del proceso MSI
 
-MANTENIMIENTO DEL SISTEMA DE INFORMACIÓN 	ACTIVIDADES
-MSI 1 	MSI 2 	MSI 3 	MSI 4
-Análisis de Impacto 			X 	X
-Catalogación 	X 	X 	X 	X
-Planificación 			X 	
-Pruebas de Regresión 				X
-Sesiones de Trabajo 		X 	
+```{html}
+<table class="avia-table avia-data-table">
+<tbody>
+<tr>
+<td style="text-align: left; vertical-align: middle; width: 30%;" rowspan="2"><strong>MANTENIMIENTO DEL SISTEMA DE INFORMACIÓN</strong></td>
+<td style="text-align: center; width: 70%;" colspan="4"><strong>ACTIVIDADES</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;"><a href="#msi-1"><strong>MSI 1</strong></a></td>
+<td style="text-align: center;"><a href="#msi-2"><strong>MSI 2</strong></a></td>
+<td style="text-align: center;"><a href="#msi-3"><strong>MSI 3</strong></a></td>
+<td style="text-align: center;"><a href="#msi-4"><strong>MSI 4</strong></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../03-tecnicas/01-tecnicas.qmd#analisis-de-impacto">Análisis de Impacto</a></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../03-tecnicas/01-tecnicas.qmd#catalogacion">Catalogación</a></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../03-tecnicas/01-tecnicas.qmd#planificacion">Planificación</a></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../03-tecnicas/01-tecnicas.qmd#pruebas-regresion">Pruebas de Regresión</a></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../03-tecnicas/01-tecnicas.qmd#sesiones-de-trabajo">Sesiones de Trabajo</a></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+</tbody>
+</table>
+```
 
 ### Actividades {.unlisted .unnumbered}
 

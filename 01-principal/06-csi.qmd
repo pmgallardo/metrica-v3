@@ -40,25 +40,50 @@ El objetivo de esta actividad es asegurar la disponibilidad de todos los medios 
 
 Las características del entorno de construcción y sus requisitos de operación y seguridad, así como las especificaciones de construcción de la estructura física de datos, se establecen en la actividad Generación de Especificaciones de Construcción (DSI 8), y constituyen el punto de partida para la realización de esta actividad.
 
-TAREA 	PRODUCTOS 	TÉCNICAS Y PRÁCTICAS 	PARTICIPANTES
-CSI 1.1: Implantación de la Base de Datos Física o Ficheros 	
-
-    Base de Datos Física o Sistema de Ficheros
-
-		
-    Equipo del Proyecto
-    Administradores de Bases de Datos
-
-CSI 1.2: Preparación del Entorno de Construcción 	
-
-    Entorno de Construcción
-
-		
-
-    Equipo del Proyecto
-    Técnicos de Sistemas
-    Equipo de Operación
-    Administradores de Bases de Datos
+```{html}
+<table class="avia-table avia-data-table">
+<tbody>
+<tr>
+<td style="background-color: #000033; text-align: left; width: 25%;"><strong><span style="color: #ffffff;">TAREA</span></strong></td>
+<td style="background-color: #000033; text-align: left; width: 30%;"><strong><span style="color: #ffffff;">PRODUCTOS</span></strong></td>
+<td style="background-color: #000033; text-align: left; width: 25%;"><strong><span style="color: #ffffff;">TÉCNICAS Y PRÁCTICAS</span></strong></td>
+<td style="background-color: #000033; text-align: left; width: 20%;"><strong><span style="color: #ffffff;">PARTICIPANTES</span></strong></td>
+</tr>
+<tr>
+<td style="text-align: left; vertical-align: top;"><a href="#csi-1-1"><strong>CSI 1.1</strong>: Implantación de la Base de Datos Física o Ficheros</a></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li>Base de Datos Física o Sistema de Ficheros</li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;"></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-analista">Equipo del Proyecto</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-analista">Administradores de Bases de Datos</a></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td style="text-align: left; vertical-align: top;"><a href="#csi-1-2"><strong>CSI 1.2</strong>: Preparación del Entorno de Construcción</a></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li>Entorno de Construcción</li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;"></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-analista">Equipo del Proyecto</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-consultor">Técnicos de Sistemas</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-analista">Equipo de Operación</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-analista">Administradores de Bases de Datos</a></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+```
 
 #### Tarea CSI 1.1: Implantación de la Base de Datos Física o Ficheros
 
@@ -117,26 +142,58 @@ El objetivo de esta actividad es la codificación de los componentes del sistema
 
 En paralelo a esta actividad, se desarrollan las actividades relacionadas con las pruebas unitarias y de integración del sistema de información. Esto permite una construcción incremental, en el caso de que así se haya especificado en el plan de pruebas y en el plan de integración del sistema de información.
 
-TAREA 	PRODUCTOS 	TÉCNICAS Y PRÁCTICAS 	PARTICIPANTES
-CSI 2.1: Generación del Código de Componentes 	
-
-    Producto Software:
-        Código Fuente de los Componentes
-		
-
-    Programadores
-
-CSI 2.2: Generación del Código de los Procedimientos de Operación y Seguridad 	
-
-    Producto Software:
-        Procedimientos de Operación y Administración del Sistema
-        Procedimientos de Seguridad y Control de Acceso
-
-
-    Técnicos de Sistemas
-    Equipo de Operación
-    Administrador de la Base de Datos
-    Programadores
+```{html}
+<table class="avia-table avia-data-table">
+<tbody>
+<tr>
+<td style="background-color: #000033; text-align: left; width: 25%;"><strong><span style="color: #ffffff;">TAREA</span></strong></td>
+<td style="background-color: #000033; text-align: left; width: 30%;"><strong><span style="color: #ffffff;">PRODUCTOS</span></strong></td>
+<td style="background-color: #000033; text-align: left; width: 25%;"><strong><span style="color: #ffffff;">TÉCNICAS Y PRÁCTICAS</span></strong></td>
+<td style="background-color: #000033; text-align: left; width: 20%;"><strong><span style="color: #ffffff;">PARTICIPANTES</span></strong></td>
+</tr>
+<tr>
+<td style="text-align: left; vertical-align: top;"><a href="#csi-2-1"><strong>CSI 2.1</strong>: Generación del Código de Componentes</a></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li>Producto Software:
+<ul>
+<li>Código Fuente de los Componentes</li>
+</ul>
+</li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;"></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-programador">Programadores</a></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td style="text-align: left; vertical-align: top;"><a href="#csi-2-2"><strong>CSI 2.2</strong>: Generación del Código de los Procedimientos de Operación y Seguridad</a></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li>Producto Software:
+<ul>
+<li>Procedimientos de Operación y Administración del Sistema</li>
+<li>Procedimientos de Seguridad y Control de Acceso</li>
+</ul>
+</li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;"></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-consultor">Técnicos de Sistemas</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-analista">Equipo de Operación</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-analista">Administrador de la Base de Datos</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-programador">Programadores</a></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+```
 
 #### Tarea CSI 2.1: Generación del Código de Componentes
 
@@ -198,24 +255,51 @@ En esta actividad se realizan las pruebas unitarias de cada uno de los component
 
 En el plan de pruebas se ha definido el entorno necesario para la realización de cada nivel de prueba, así como las verificaciones asociadas a las pruebas unitarias, la coordinación y secuencia a seguir en la ejecución de las mismas y los criterios de registro y aceptación de los resultados.
 
-TAREA 	PRODUCTOS 	TÉCNICAS Y PRÁCTICAS 	PARTICIPANTES
-CSI 3.1: Preparación del Entorno de Pruebas Unitarias 	
-
-    Entorno de pruebas unitarias
-
-
-    Técnicos de Sistemas
-    Programadores
-
-CSI 3.2: Realización y Evaluación de las Pruebas Unitarias 	
-
-    Resultado de las pruebas unitarias
-	
-
-    Pruebas Unitarias
-	
-
-    Programadores
+```{html}
+<table class="avia-table avia-data-table">
+<tbody>
+<tr>
+<td style="background-color: #000033; text-align: left; width: 25%;"><strong><span style="color: #ffffff;">TAREA</span></strong></td>
+<td style="background-color: #000033; text-align: left; width: 30%;"><strong><span style="color: #ffffff;">PRODUCTOS</span></strong></td>
+<td style="background-color: #000033; text-align: left; width: 25%;"><strong><span style="color: #ffffff;">TÉCNICAS Y PRÁCTICAS</span></strong></td>
+<td style="background-color: #000033; text-align: left; width: 20%;"><strong><span style="color: #ffffff;">PARTICIPANTES</span></strong></td>
+</tr>
+<tr>
+<td style="text-align: left; vertical-align: top;"><a href="#csi-3-1"><strong>CSI 3.1</strong>: Preparación del Entorno de Pruebas Unitarias</a></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li>Entorno de pruebas unitarias</li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;"></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-consultor">Técnicos de Sistemas</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-programador">Programadores</a></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td style="text-align: left; vertical-align: top;"><a href="#csi-3-2"><strong>CSI 3.2</strong>: Realización y Evaluación de las Pruebas Unitarias</a></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li>Resultado de las pruebas unitarias</li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#pruebas-unitarias">Pruebas Unitarias</a></li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-programador">Programadores</a></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+```
 
 #### Tarea CSI 3.1: Preparación del Entorno de las Pruebas Unitarias
 
@@ -274,34 +358,67 @@ La estrategia a seguir en las pruebas de integración se establece en el plan de
 
 Esta actividad se realiza en paralelo a las actividades Generación del Código de los Componentes y Procedimientos (CSI 2) y Ejecución de las Pruebas Unitarias (CSI 3). Sin embargo, es necesario que los componentes objeto de las pruebas de integración se hayan verificado de manera unitaria.
 
-TAREA 	PRODUCTOS 	TÉCNICAS Y PRÁCTICAS 	PARTICIPANTES
-CSI 4.1: Preparación del Entorno de Pruebas de Integración 	
-
-    Entorno de Pruebas de Integración
-
-		
-
-    Técnicos de Sistemas
-    Técnicos de Comunicaciones
-    Equipo de Arquitectura
-    Equipo del Proyecto
-
-CSI 4.2: Realización de las Pruebas de Integración 	
-
-    Resultado de las Pruebas de Integración
-
-	
-
-    Pruebas de Integración
-
-	
-
-    Equipo del Proyecto
-
-CSI 4.3: Evaluación del Resultado de las Pruebas de Integración 	
-
-    Evaluación del Resultado de las Pruebas de Integración
-    Analistas
+```{html}
+<table class="avia-table avia-data-table">
+<tbody>
+<tr>
+<td style="background-color: #000033; text-align: left; width: 25%;"><strong><span style="color: #ffffff;">TAREA</span></strong></td>
+<td style="background-color: #000033; text-align: left; width: 30%;"><strong><span style="color: #ffffff;">PRODUCTOS</span></strong></td>
+<td style="background-color: #000033; text-align: left; width: 25%;"><strong><span style="color: #ffffff;">TÉCNICAS Y PRÁCTICAS</span></strong></td>
+<td style="background-color: #000033; text-align: left; width: 20%;"><strong><span style="color: #ffffff;">PARTICIPANTES</span></strong></td>
+</tr>
+<tr>
+<td style="text-align: left; vertical-align: top;"><a href="#csi-4-1"><strong>CSI 4.1</strong>: Preparación del Entorno de Pruebas de Integración</a></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li>Entorno de Pruebas de Integración</li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;"></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-consultor">Técnicos de Sistemas</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-consultor">Técnicos de Comunicaciones</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-analista">Equipo de Arquitectura</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-analista">Equipo del Proyecto</a></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td style="text-align: left; vertical-align: top;"><a href="#csi-4-2"><strong>CSI 4.2</strong>: Realización de las Pruebas de Integración</a></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li>Resultado de las Pruebas de Integración</li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#pruebas-integracion">Pruebas de Integración </a></li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-analista">Equipo del Proyecto</a></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td style="text-align: left; vertical-align: top;"><a href="#csi-4-3"><strong>CSI 4.3</strong>: Evaluación del Resultado de las Pruebas de Integración</a></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li>Evaluación del Resultado de las Pruebas de Integración</li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;"></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-analista">Analistas</a></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+```
 
 #### Tarea CSI 4.1: Preparación del Entorno de las Pruebas de Integración
 
@@ -381,34 +498,68 @@ El objetivo de las pruebas del sistema es comprobar la integración del sistema 
 
 En la realización de estas pruebas es importante comprobar la cobertura de los requisitos, dado que su incumplimiento puede comprometer la aceptación del sistema por el equipo de operación responsable de realizar las pruebas de implantación del sistema, que se llevarán a cabo en el proceso Implantación y Aceptación del Sistema (IAS).
 
-TAREA 	PRODUCTOS 	TÉCNICAS Y PRÁCTICAS 	PARTICIPANTES
-CSI 5.1: Preparación del Entorno de Pruebas del Sistema 	
-
-    Entorno de Pruebas del Sistema
-
-		
-    Técnicos de Sistemas
-    Técnicos de Comunicaciones
-    Equipo de Arquitectura
-    Equipo del Proyecto
-
-CSI 5.2: Realización de las Pruebas del Sistema 	
-
-    Resultado de las Pruebas del Sistema
-
-
-    Pruebas del Sistema
-
-	
-    Equipo del Proyecto
-
-CSI 5.3: Evaluación del Resultado de las Pruebas del Sistema 	
-
-    Evaluación del Resultado de las Pruebas del Sistema
-
-
-    Analistas
-    Jefe de Proyecto
+```{html}
+<table class="avia-table avia-data-table">
+<tbody>
+<tr>
+<td style="background-color: #000033; text-align: left; width: 25%;"><strong><span style="color: #ffffff;">TAREA</span></strong></td>
+<td style="background-color: #000033; text-align: left; width: 30%;"><strong><span style="color: #ffffff;">PRODUCTOS</span></strong></td>
+<td style="background-color: #000033; text-align: left; width: 25%;"><strong><span style="color: #ffffff;">TÉCNICAS Y PRÁCTICAS</span></strong></td>
+<td style="background-color: #000033; text-align: left; width: 20%;"><strong><span style="color: #ffffff;">PARTICIPANTES</span></strong></td>
+</tr>
+<tr>
+<td style="text-align: left; vertical-align: top;"><a href="#csi-5-1"><strong>CSI 5.1</strong>: Preparación del Entorno de Pruebas del Sistema</a></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li>Entorno de Pruebas del Sistema</li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;"></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-consultor">Técnicos de Sistemas</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-consultor">Técnicos de Comunicaciones</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-analista">Equipo de Arquitectura</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-analista">Equipo del Proyecto</a></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td style="text-align: left; vertical-align: top;"><a href="#csi-5-2"><strong>CSI 5.2</strong>: Realización de las Pruebas del Sistema</a></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li>Resultado de las Pruebas del Sistema</li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#pruebas-del-sistema">Pruebas del Sistema</a></li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-analista">Equipo del Proyecto</a></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td style="text-align: left; vertical-align: top;"><a href="#csi-5-3"><strong>CSI 5.3</strong>: Evaluación del Resultado de las Pruebas del Sistema</a></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li>Evaluación del Resultado de las Pruebas del Sistema</li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;"></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-analista">Analistas</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto">Jefe de Proyecto</a></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+```
 
 #### Tarea CSI 5.1: Preparación del Entorno de las Pruebas del Sistema
 
@@ -485,15 +636,36 @@ El objetivo de esta actividad es analizar los resultados de las pruebas del sist
 
 ### Actividad CSI 6: Elaboración de los Manuales de Usuario
 
-TAREA 	PRODUCTOS 	TÉCNICAS Y PRÁCTICAS 	PARTICIPANTES
-CSI 6.1: Elaboración de los Manuales de Usuario 	
-
-    Producto Software:
-        Manuales de Usuario
-
-		
-
-    Equipo del Proyecto
+```{html}
+<table class="avia-table avia-data-table">
+<tbody>
+<tr>
+<td style="background-color: #000033; text-align: left; width: 25%;"><strong><span style="color: #ffffff;">TAREA</span></strong></td>
+<td style="background-color: #000033; text-align: left; width: 30%;"><strong><span style="color: #ffffff;">PRODUCTOS</span></strong></td>
+<td style="background-color: #000033; text-align: left; width: 25%;"><strong><span style="color: #ffffff;">TÉCNICAS Y PRÁCTICAS</span></strong></td>
+<td style="background-color: #000033; text-align: left; width: 20%;"><strong><span style="color: #ffffff;">PARTICIPANTES</span></strong></td>
+</tr>
+<tr>
+<td style="text-align: left; vertical-align: top;"><a href="#csi-6-1"><strong>CSI 6.1</strong>: Elaboración de los Manuales de Usuario</a></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li>Producto Software:
+<ul>
+<li>Manuales de Usuario</li>
+</ul>
+</li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;"></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-analista">Equipo del Proyecto</a></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+```
 
 #### Tarea CSI 6.1: Elaboración de los Manuales de Usuario
 
@@ -534,25 +706,55 @@ El producto resultante de esta actividad es la especificación de la formación 
 
 En el proceso Implantación y Aceptación del Sistema (IAS), se unifican las especificaciones de formación de cada sistema de información implicado en la implantación y se elabora un único plan de formación que esté alineado con el plan de implantación del sistema.
 
-
-TAREA 	PRODUCTOS 	TÉCNICAS Y PRÁCTICAS 	PARTICIPANTES
-CSI 7.1: Definición del Esquema de Formación 	
-
-    Especificación de la Formación a Usuarios Finales:
-        Esquema de Formación
-
-		
-
-    Analistas
-
-CSI 7.2: Especificación de los Recursos y Entornos de Formación 	
-
-    Especificación de la Formación a Usuarios Finales:
-        Materiales y Entornos de Formación
-
-		
-    Analistas
-    Equipo de Formación
+```{html}
+<table class="avia-table avia-data-table">
+<tbody>
+<tr>
+<td style="background-color: #000033; text-align: left; width: 25%;"><strong><span style="color: #ffffff;">TAREA</span></strong></td>
+<td style="background-color: #000033; text-align: left; width: 30%;"><strong><span style="color: #ffffff;">PRODUCTOS</span></strong></td>
+<td style="background-color: #000033; text-align: left; width: 25%;"><strong><span style="color: #ffffff;">TÉCNICAS Y PRÁCTICAS</span></strong></td>
+<td style="background-color: #000033; text-align: left; width: 20%;"><strong><span style="color: #ffffff;">PARTICIPANTES</span></strong></td>
+</tr>
+<tr>
+<td style="text-align: left; vertical-align: top;"><a href="#csi-7-1"><strong>CSI 7.1</strong>: Definición del Esquema de Formación</a></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li>Especificación de la Formación a Usuarios Finales:
+<ul>
+<li>Esquema de Formación</li>
+</ul>
+</li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;"></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-analista">Analistas</a></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td style="text-align: left; vertical-align: top;"><a href="#csi-7-2"><strong>CSI 7.2</strong>: Especificación de los Recursos y Entornos de Formación</a></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li>Especificación de la Formación a Usuarios Finales:
+<ul>
+<li>Materiales y Entornos de Formación</li>
+</ul>
+</li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;"></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-analista">Analistas</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-analista">Equipo de Formación</a></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+```
 
 #### Tarea CSI 7.1: Definición del Esquema de Formación
 
@@ -606,42 +808,71 @@ Previamente a la generación del código, se prepara la infraestructura tecnoló
 
 Finalmente, se llevan a cabo las verificaciones establecidas en la especificación técnica del plan de pruebas propio de la migración.
 
-
-TAREA 	PRODUCTOS 	TÉCNICAS Y PRÁCTICAS 	PARTICIPANTES
-CSI 8.1: Preparación del Entorno de Migración y Carga Inicial de Datos 	
-
-    Entorno de Migración
-
-		
-
-    Equipo del Proyecto
-    Técnicos de Sistemas
-    Equipo de Operación
-    Equipo de Seguridad
-    Administradores de Bases de Datos
-
-CSI 8.2: Generación del Código de los Componentes y Procedimientos de Migración y Carga Inicial de Datos 	
-
-    Código Fuente de los Componentes de Migración y Carga Inicial de Datos
-    Procedimientos de Migración y Carga Inicial de Datos
-
-		
-
-    Programadores
-
-CSI 8.3: Realización y Evaluación de las Pruebas de Migración y Carga Inicial de Datos 	
-
-    Resultado de las Pruebas de Migración y Carga Inicial de Datos
-    Evaluación del Resultado de las Pruebas de Migración y Carga Inicial de Datos
-
-	
-
-    Pruebas Unitarias
-    Pruebas de Integración
-
-
-
-    Equipo del Proyecto
+```{html}
+<table class="avia-table avia-data-table">
+<tbody>
+<tr>
+<td style="background-color: #000033; text-align: left; width: 25%;"><strong><span style="color: #ffffff;">TAREA</span></strong></td>
+<td style="background-color: #000033; text-align: left; width: 30%;"><strong><span style="color: #ffffff;">PRODUCTOS</span></strong></td>
+<td style="background-color: #000033; text-align: left; width: 25%;"><strong><span style="color: #ffffff;">TÉCNICAS Y PRÁCTICAS</span></strong></td>
+<td style="background-color: #000033; text-align: left; width: 20%;"><strong><span style="color: #ffffff;">PARTICIPANTES</span></strong></td>
+</tr>
+<tr>
+<td style="text-align: left; vertical-align: top;"><a href="#csi-8-1"><strong>CSI 8.1</strong>: Preparación del Entorno de Migración y Carga Inicial de Datos</a></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li>Entorno de Migración</li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;"></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-analista">Equipo del Proyecto</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-consultor">Técnicos de Sistemas</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-analista">Equipo de Operación</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-analista">Equipo de Seguridad</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-analista">Administradores de Bases de Datos</a></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td style="text-align: left; vertical-align: top;"><a href="#csi-8-2"><strong>CSI 8.2</strong>: Generación del Código de los Componentes y Procedimientos de Migración y Carga Inicial de Datos</a></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li>Código Fuente de los Componentes de Migración y Carga Inicial de Datos</li>
+<li>Procedimientos de Migración y Carga Inicial de Datos</li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;"></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-programador">Programadores</a></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td style="text-align: left; vertical-align: top;"><a href="#csi-8-3"><strong>CSI 8.3</strong>: Realización y Evaluación de las Pruebas de Migración y Carga Inicial de Datos</a></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li>Resultado de las Pruebas de Migración y Carga Inicial de Datos</li>
+<li>Evaluación del Resultado de las Pruebas de Migración y Carga Inicial de Datos</li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#pruebas-unitarias">Pruebas Unitarias</a></li>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#pruebas-integracion">Pruebas de Integración</a></li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-analista">Equipo del Proyecto</a></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+```
 
 #### Tarea CSI 8.1: Preparación del Entorno de Migración y Carga Inicial de Datos
 
@@ -721,9 +952,37 @@ El objetivo de esta tarea es efectuar las pruebas de los distintos componentes y
 
 ### Actividad CSI 9: Aprobación del Sistema de Información
 
-| Tarea | Productos | Técnicas y prácticas | Participantes |
-| - | - | - | - |
-| [CSI 9.1: Presentación y Aprobación del Sistema de Información](#sec-9-1) | Sistema de Información: Aprobación del Sistema de Información | |  - Comité de Seguimiento<br>- Jefe de Proyecto |
+```{html}
+<table class="avia-table avia-data-table">
+<tbody>
+<tr>
+<td style="background-color: #000033; text-align: left; width: 25%;"><strong><span style="color: #ffffff;">TAREA</span></strong></td>
+<td style="background-color: #000033; text-align: left; width: 30%;"><strong><span style="color: #ffffff;">PRODUCTOS</span></strong></td>
+<td style="background-color: #000033; text-align: left; width: 25%;"><strong><span style="color: #ffffff;">TÉCNICAS Y PRÁCTICAS</span></strong></td>
+<td style="background-color: #000033; text-align: left; width: 20%;"><strong><span style="color: #ffffff;">PARTICIPANTES</span></strong></td>
+</tr>
+<tr>
+<td style="text-align: left; vertical-align: top;"><a href="#csi-9-1"><strong>CSI 9.1</strong>: Presentación y Aprobación del Sistema de Información</a></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li>Sistema de Información:
+<ul>
+<li>Aprobación del Sistema de Información</li>
+</ul>
+</li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;"></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-directivo">Comité de Seguimiento</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto">Jefe de Proyecto</a></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+```
 
 #### Tarea CSI 9.1: Presentación y Aprobación del Sistema de Información
 
@@ -756,32 +1015,257 @@ En esta tarea se recopilan los productos del sistema de información y se presen
 * Comité de Seguimiento
 * Jefe de Proyecto
 
-## Participantes en las Actividades del Proceso CSI {.unlisted}
+## Participantes en las Actividades del Proceso CSI
 
-CONSTRUCCIÓN DEL SISTEMA DE INFORMACIÓN 	ACTIVIDADES
-CSI 1 	CSI 2 	CSI 3 	CSI 4 	CSI 5 	CSI 6 	CSI 7 	CSI 8 	CSI 9
-Administrador de B/D 	X 							X 	
-Analistas 				X 	X 		X 		
-Comité de Dirección 									
-Comité de Seguimiento 									X
-Equipo de Arquitectura 				X 	X 				
-Equipo de Formación 							X 		
-Equipo de Operación 	X 							X 	
-Equipo de Proyecto 	X 			X 	X 	X 		X 	
-Equipo de Seguridad 								X 	
-Jefe de Proyecto 					X 				X
-Responsable de Operación 									
-Técnico de Comunicaciones 				X 	X 				
-Técnico de Sistemas 	X 		X 	X 	X 			X 	
-Programadores 		X 	X 					X 	
+```{html}
+<table class="avia-table avia-data-table">
+<tbody>
+<tr>
+<td style="text-align: left; vertical-align: middle; width: 30%;" rowspan="2"><strong>CONSTRUCCIÓN DEL SISTEMA DE INFORMACIÓN</strong></td>
+<td style="text-align: center; width: 70%;" colspan="9"><strong>ACTIVIDADES</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;"><a href="#csi-1"><strong>CSI 1</strong></a></td>
+<td style="text-align: center;"><a href="#csi-2"><strong>CSI 2</strong></a></td>
+<td style="text-align: center;"><a href="#csi-3"><strong>CSI 3</strong></a></td>
+<td style="text-align: center;"><a href="#csi-4"><strong>CSI 4</strong></a></td>
+<td style="text-align: center;"><a href="#csi-5"><strong>CSI 5</strong></a></td>
+<td style="text-align: center;"><a href="#csi-6"><strong>CSI 6</strong></a></td>
+<td style="text-align: center;"><a href="#csi-7"><strong>CSI 7</strong></a></td>
+<td style="text-align: center;"><a href="#csi-8"><strong>CSI 8</strong></a></td>
+<td style="text-align: center;"><a href="#csi-9"><strong>CSI 9</strong></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../04-participantes/01-participantes.qmd#perfil-analista">Administrador de B/D</a></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../04-participantes/01-participantes.qmd#perfil-analista">Analistas</a></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../04-participantes/01-participantes.qmd#perfil-directivo">Comité de Dirección</a></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../04-participantes/01-participantes.qmd#perfil-directivo">Comité de Seguimiento</a></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../04-participantes/01-participantes.qmd#perfil-analista">Equipo de Arquitectura</a></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../04-participantes/01-participantes.qmd#perfil-analista">Equipo de Formación</a></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../04-participantes/01-participantes.qmd#perfil-analista">Equipo de Operación</a></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../04-participantes/01-participantes.qmd#perfil-analista">Equipo de Proyecto</a></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../04-participantes/01-participantes.qmd#perfil-analista">Equipo de Seguridad</a></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto">Jefe de Proyecto</a></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto">Responsable de Operación</a></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../04-participantes/01-participantes.qmd#perfil-consultor">Técnico de Comunicaciones</a></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../04-participantes/01-participantes.qmd#perfil-consultor">Técnico de Sistemas</a></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../04-participantes/01-participantes.qmd#perfil-programador">Programadores</a></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+</tr>
+</tbody>
+</table>
+```
 
 ## Técnicas/prácticas utilizadas en las actividades del proceso CSI
 
-CONSTRUCCIÓN DEL SISTEMA DE INFORMACIÓN 	ACTIVIDADES
-CSI 1 	CSI 2 	CSI 3 	CSI 4 	CSI 5 	CSI 6 	CSI 7 	CSI 8 	CSI 9
-Pruebas de Integración 				X 				X 	
-Pruebas del Sistema 					X 				
-Pruebas Unitarias 			X 					X 	
+```{html}
+<table class="avia-table avia-data-table">
+<tbody>
+<tr>
+<td style="text-align: left; vertical-align: middle; width: 30%;" rowspan="2"><strong>CONSTRUCCIÓN DEL SISTEMA DE INFORMACIÓN</strong></td>
+<td style="text-align: center; width: 70%;" colspan="9"><strong>ACTIVIDADES</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;"><a href="#csi-1"><strong>CSI 1</strong></a></td>
+<td style="text-align: center;"><a href="#csi-2"><strong>CSI 2</strong></a></td>
+<td style="text-align: center;"><a href="#csi-3"><strong>CSI 3</strong></a></td>
+<td style="text-align: center;"><a href="#csi-4"><strong>CSI 4</strong></a></td>
+<td style="text-align: center;"><a href="#csi-5"><strong>CSI 5</strong></a></td>
+<td style="text-align: center;"><a href="#csi-6"><strong>CSI 6</strong></a></td>
+<td style="text-align: center;"><a href="#csi-7"><strong>CSI 7</strong></a></td>
+<td style="text-align: center;"><a href="#csi-8"><strong>CSI 8</strong></a></td>
+<td style="text-align: center;"><a href="#csi-9"><strong>CSI 9</strong></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../03-tecnicas/01-tecnicas.qmd#pruebas-integracion">Pruebas de Integración</a></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../03-tecnicas/01-tecnicas.qmd#pruebas-del-sistema">Pruebas del Sistema</a></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../03-tecnicas/01-tecnicas.qmd#pruebas-unitarias">Pruebas Unitarias</a></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+</tr>
+</tbody>
+</table>
+```
 
 ### Actividades {.unlisted .unnumbered}
 

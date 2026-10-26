@@ -49,7 +49,7 @@ Una vez finalizado el diseño de detalle, se realiza su revisión y validación 
 
   En el siguiente gráfico se muestra la relación de actividades del proceso Diseño del Sistema de Información (DSI), tanto para Desarrollos Estructurados como para Desarrollos Orientados a Objetos.
 
-![DISEÑO DEL SISTEMA DE INFORMACIÓN](../images/dsi-actividades.jpg)
+![Diseño del Sistema de Información](../images/dsi-actividades.jpg)
 
 Diseño del sistema información (estructurado)
 
@@ -87,108 +87,174 @@ Como resultado de esta actividad, se actualizan los catálogos de requisitos y n
 - Procedimientos de Operación y Administración del Sistema.
 - Procedimientos de Seguridad y Control de Acceso.
 
-TAREA 	PRODUCTOS 	TÉCNICAS Y PRÁCTICAS 	PARTICIPANTES
-DSI 1.1: Definición de Niveles de Arquitectura 	
-
-    Diseño de la Arquitectura del Sistema
-        Particionamiento Físico del Sistema de Información
-
-	
-
-    Diagrama de Representación
-    Diagrama de Desplegue
-
-	
-
-    Equipo de Arquitectura
-    Equipo de Soporte Técnico
-    Equipo de Seguridad
-
-DSI 1.2: Identificación de Requisitos de Diseño y Construcción 	
-
-    Catálogo de Requisitos
-
-	
-
-    Sesiones de Trabajo
-    Catalogación
-
-	
-
-    Equipo de Arquitectura
-    Equipo de Soporte Técnico
-
-DSI 1.3: Especificación de Excepciones 	
-
-    Catálogo de Excepciones
-
-	
-
-    Sesiones de Trabajo
-    Catalogación
-
-	
-
-    Equipo de Arquitectura
-    Equipo de Soporte Técnico
-
-DSI 1.4: Especificación de Estándares y Normas de Diseño y Construcción 	
-
-    Catálogo de Normas
-
-	
-
-    Sesiones de Trabajo
-    Catalogación
-
-	
-
-    Equipo de Arquitectura
-    Equipo de Soporte Técnico
-
-DSI 1.5: Identificación de Subsistemas de Diseño 	
-
-    Diseño de la Arquitectura del Sistema
-        Descripción de Subsistemas de Diseño
-
-	
-
-    Matricial
-    Diagrama de Estructura
-    Diagrama de Interacción de Objetos
-    Diagrama de Paquetes
-    Diagrama de Despliegue
-
-	
-
-    Equipo de Arquitectura
-    Equipo de Soporte Técnico
-    Equipo de Seguridad
-
-DSI 1.6: Especificación del Entorno Tecnológico 	
-
-    Entorno Tecnológico del Sistema
-        Especificación del Entorno Tecnológico
-        Restricciones Técnicas
-        Estimación de Planificación de Capacidades
-
-	
-
-    Sesiones de Trabajo
-    Diagrama de Representación
-
-	
-
-    Equipo de Arquitectura
-    Equipo de Soporte Técnico
-
-DSI 1.7: Especificación de Requisitos de Operación y Seguridad 	
-
-    Procedimientos de Seguridad y Control de Acceso
-    Procedimientos de Operación y Administración del Sistema
-    Equipo de Seguridad
-    Equipo de Arquitectura
-    Equipo de Soporte Técnico
+```{html}
+<table class="avia-table avia-data-table">
+<tbody>
+<tr>
+<td style="background-color: #000033; text-align: left; width: 25%;"><strong><span style="color: #ffffff;">TAREA</span></strong></td>
+<td style="background-color: #000033; text-align: left; width: 30%;"><strong><span style="color: #ffffff;">PRODUCTOS</span></strong></td>
+<td style="background-color: #000033; text-align: left; width: 25%;"><strong><span style="color: #ffffff;">TÉCNICAS Y PRÁCTICAS</span></strong></td>
+<td style="background-color: #000033; text-align: left; width: 20%;"><strong><span style="color: #ffffff;">PARTICIPANTES</span></strong></td>
+</tr>
+<tr>
+<td style="text-align: left; vertical-align: top;"><a href="#dsi-1-1"><strong>DSI 1.1</strong>: Definición de Niveles de Arquitectura</a></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li>Diseño de la Arquitectura del Sistema
+<ul>
+<li>Particionamiento Físico del Sistema de Información</li>
+</ul>
+</li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#diagrama-de-representacion">Diagrama de Representación</a></li>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#diagrama-de-despliegue">Diagrama de Desplegue</a></li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-analista">Equipo de Arquitectura</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-analista">Equipo de Soporte Técnico</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-analista">Equipo de Seguridad</a></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td style="text-align: left; vertical-align: top;"><a href="#dsi-1-2"><strong>DSI 1.2</strong>: Identificación de Requisitos de Diseño y Construcción</a></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li>Catálogo de Requisitos</li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#sesiones-de-trabajo">Sesiones de Trabajo</a></li>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#catalogacion">Catalogación</a></li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-analista">Equipo de Arquitectura</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-analista">Equipo de Soporte Técnico</a></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td style="text-align: left; vertical-align: top;"><a href="#dsi-1-3"><strong>DSI 1.3</strong>: Especificación de Excepciones</a></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li>Catálogo de Excepciones</li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#sesiones-de-trabajo">Sesiones de Trabajo</a></li>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#catalogacion">Catalogación</a></li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-analista">Equipo de Arquitectura</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-analista">Equipo de Soporte Técnico</a></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td style="text-align: left; vertical-align: top;"><a href="#dsi-1-4"><strong>DSI 1.4</strong>: Especificación de Estándares y Normas de Diseño y Construcción</a></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li>Catálogo de Normas</li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#sesiones-de-trabajo">Sesiones de Trabajo</a></li>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#catalogacion">Catalogación</a></li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-analista">Equipo de Arquitectura</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-analista">Equipo de Soporte Técnico</a></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td style="text-align: left; vertical-align: top;"><a href="#dsi-1-5"><strong>DSI 1.5</strong>: Identificación de Subsistemas de Diseño</a></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li>Diseño de la Arquitectura del Sistema
+<ul>
+<li>Descripción de Subsistemas de Diseño</li>
+</ul>
+</li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#tecnicas-matriciales">Matricial</a></li>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#diagrama-de-estructura">Diagrama de Estructura</a></li>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#diagrama-de-interaccion">Diagrama de Interacción de Objetos</a></li>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#diagrama-de-paquetes">Diagrama de Paquetes</a></li>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#diagrama-de-despliegue">Diagrama de Despliegue</a></li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-analista">Equipo de Arquitectura</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-analista">Equipo de Soporte Técnico</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-analista">Equipo de Seguridad</a></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td style="text-align: left; vertical-align: top;"><a href="#dsi-1-6"><strong>DSI 1.6</strong>: Especificación del Entorno Tecnológico</a></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li>Entorno Tecnológico del Sistema
+<ul>
+<li>Especificación del Entorno Tecnológico</li>
+<li>Restricciones Técnicas</li>
+<li>Estimación de Planificación de Capacidades</li>
+</ul>
+</li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#sesiones-de-trabajo">Sesiones de Trabajo</a></li>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#diagrama-de-representacion">Diagrama de Representación</a></li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-analista">Equipo de Arquitectura</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-analista">Equipo de Soporte Técnico</a></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td style="text-align: left; vertical-align: top;"><a href="#dsi-1-7"><strong>DSI 1.7</strong>: Especificación de Requisitos de Operación y Seguridad</a></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li>Procedimientos de Seguridad y Control de Acceso</li>
+<li>Procedimientos de Operación y Administración del Sistema</li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;"></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-analista">Equipo de Seguridad</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-analista">Equipo de Arquitectura</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-analista">Equipo de Soporte Técnico</a></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+```
 
 #### Tarea DSI 1.1: Definición de Niveles de Arquitectura
 
@@ -286,7 +352,6 @@ Por tanto, como resultado de esta tarea se actualiza el catálogo de requisitos 
 
 * Equipo de Arquitectura
 * Equipo de Soporte Técnico
-
 
 #### Tarea DSI 1.3: Especificación de Excepciones
 
@@ -433,7 +498,6 @@ La ubicación de subsistemas en nodos y la dependencia entre subsistemas se espe
     Equipo de Soporte Técnico
     Equipo de Seguridad
 
-
 #### Tarea DSI 1.6: Especificación del Entorno Tecnológico
 
 En esta tarea se definen en detalle los distintos elementos de la infraestructura técnica que dan soporte al sistema de información, determinando la implementación concreta de los nodos y comunicaciones especificados en la tarea Definición de Niveles de Arquitectura (DSI 1.1).
@@ -542,34 +606,58 @@ Los productos resultantes de esta actividad son:
     Diseño Detallado de los Subsistemas de Soporte.
     Mecanismos Genéricos de Diseño y Construcción.
 
-TAREA 	PRODUCTOS 	TÉCNICAS Y PRÁCTICAS 	PARTICIPANTES
-DSI 2.1: Diseño de Subsistemas  de Soporte 	
-
-    Diseño Detallado de los Subsistemasde Soporte
-
-	
-
-    Diagrama de Estructura
-    Diagrama de Interacción de Objetos
-    Diagrama de Clases
-
-	
-
-    Equipo de Arquitectura
-
-DSI 2.2: Identificación de Mecanismos Genéricos de Diseño 	
-
-    Mecanismos Genéricos de Diseño y Construcción
-
-	
-
-    Sesiones de Trabajo
-    Diagrama de Interacción de Objetos
-    Diagrama de Clases
-
-	
-
-    Equipo de Arquitectura
+```{html}
+<table class="avia-table avia-data-table">
+<tbody>
+<tr>
+<td style="background-color: #000033; text-align: left; width: 25%;"><strong><span style="color: #ffffff;">TAREA</span></strong></td>
+<td style="background-color: #000033; text-align: left; width: 30%;"><strong><span style="color: #ffffff;">PRODUCTOS</span></strong></td>
+<td style="background-color: #000033; text-align: left; width: 25%;"><strong><span style="color: #ffffff;">TÉCNICAS Y PRÁCTICAS</span></strong></td>
+<td style="background-color: #000033; text-align: left; width: 20%;"><strong><span style="color: #ffffff;">PARTICIPANTES</span></strong></td>
+</tr>
+<tr>
+<td style="text-align: left; vertical-align: top;"><a href="#dsi-2-1"><strong>DSI 2.1</strong>: Diseño de Subsistemas  de Soporte</a></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li>Diseño Detallado de los Subsistemasde Soporte</li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#diagrama-de-estructura">Diagrama de Estructura</a></li>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#diagrama-de-interaccion">Diagrama de Interacción de Objetos</a></li>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#diagrama-de-clases">Diagrama de Clases</a></li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-analista">Equipo de Arquitectura</a></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td style="text-align: left; vertical-align: top;"><a href="#dsi-2-2"><strong>DSI 2.2</strong>: Identificación de Mecanismos Genéricos de Diseño</a></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li>Mecanismos Genéricos de Diseño y Construcción</li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#sesiones-de-trabajo">Sesiones de Trabajo</a></li>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#diagrama-de-interaccion">Diagrama de Interacción de Objetos</a></li>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#diagrama-de-clases">Diagrama de Clases</a></li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-analista">Equipo de Arquitectura</a></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+```
 
 #### Tarea DSI 2.1: Diseño de Subsistemas de Soporte
 
@@ -634,7 +722,6 @@ Los mecanismos genéricos de diseño son de aplicación tanto en la definición 
 
     Equipo de Arquitectura
 
-
 ### Actividad DSI 3: Diseño de Casos de Uso Reales
 
 Esta actividad, que se realiza solo en el caso de Diseño Orientado a Objetos, tiene como propósito especificar el comportamiento del sistema de información para un caso de uso, mediante objetos o subsistemas de diseño que interactúan, y determinar las operaciones de las clases e interfaces de los distintos subsistemas de diseño.
@@ -647,69 +734,115 @@ Es importante validar que los subsistemas definidos en la tarea Identificación 
 
 Las tareas de esta actividad se realizan en paralelo con las de Diseño de Clases (DSI 4).
 
-TAREA 	PRODUCTOS 	TÉCNICAS Y PRÁCTICAS 	PARTICIPANTES
-DSI 3.1: Identificación de Clases Asociadas a un Caso de Uso 	
-
-    Diseño de la Realización de los Casos de Uso
-        Especificación Detallada
-
-	
-
-    Diagrama de Interacción de Objetos
-
-	
-
-    Equipo del Proyecto
-
-DSI 3.2: Diseño de la Realización de los Casos de Uso 	
-
-    Diseño de la Realización de los Casos de uso
-        Especificación Detallada
-
-	
-
-    Diagrama de Interacción de Objetos
-
-	
-
-    Equipo del Proyecto
-
-DSI 3.3: Revisión de la Interfaz de Usuario 	
-
-    Diseño de Interfaz de Usuario
-        Formatos Individuales de Interfaz de Pantalla Gráfica
-        Catálogo de Controles y Elementos de Diseño de Interfaz de Pantalla Gráfica
-        Modelo de Navegación de Interfaz de Pantalla Gráfica
-        Formatos de Impresión
-        Prototipo de Interfaz de Pantalla Gráfica
-
-	
-
-    Catalogación
-    Diagrama de Transición de Estados
-    Diagrama de Interacción de Objetos
-    Prototipado
-
-	
-
-    Equipo del Proyecto
-    Usuarios Expertos
-
-DSI 3.4: Revisión de Subsistemas de Diseño e Interfaces 	
-
-    Diseño de la Realización de los Casos de Uso
-        Definición a Nivel de Subsistemas e Interfaz
-
-	
-
-    Diagrama de Interacción de Objetos
-
-	
-
-    Equipo del Proyecto
-    Equipo de Arquitectura
-
-
+```{html}
+<table class="avia-table avia-data-table">
+<tbody>
+<tr>
+<td style="background-color: #000033; text-align: left; width: 25%;"><strong><span style="color: #ffffff;">TAREA</span></strong></td>
+<td style="background-color: #000033; text-align: left; width: 30%;"><strong><span style="color: #ffffff;">PRODUCTOS</span></strong></td>
+<td style="background-color: #000033; text-align: left; width: 25%;"><strong><span style="color: #ffffff;">TÉCNICAS Y PRÁCTICAS</span></strong></td>
+<td style="background-color: #000033; text-align: left; width: 20%;"><strong><span style="color: #ffffff;">PARTICIPANTES</span></strong></td>
+</tr>
+<tr>
+<td style="text-align: left; vertical-align: top;"><a href="#dsi-3-1"><strong>DSI 3.1</strong>: Identificación de Clases Asociadas a un Caso de Uso</a></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li>Diseño de la Realización de los Casos de Uso
+<ul>
+<li>Especificación Detallada</li>
+</ul>
+</li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#diagrama-de-interaccion">Diagrama de Interacción de Objetos</a></li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-analista">Equipo del Proyecto</a></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td style="text-align: left; vertical-align: top;"><a href="#dsi-3-2"><strong>DSI 3.2</strong>: Diseño de la Realización de los Casos de Uso</a></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li>Diseño de la Realización de los Casos de uso
+<ul>
+<li>Especificación Detallada</li>
+</ul>
+</li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#diagrama-de-interaccion">Diagrama de Interacción de Objetos</a></li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-analista">Equipo del Proyecto</a></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td style="text-align: left; vertical-align: top;"><a href="#dsi-3-3"><strong>DSI 3.3</strong>: Revisión de la Interfaz de Usuario</a></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li>Diseño de Interfaz de Usuario
+<ul>
+<li>Formatos Individuales de Interfaz de Pantalla Gráfica</li>
+<li>Catálogo de Controles y Elementos de Diseño de Interfaz de Pantalla Gráfica</li>
+<li>Modelo de Navegación de Interfaz de Pantalla Gráfica</li>
+<li>Formatos de Impresión</li>
+<li>Prototipo de Interfaz de Pantalla Gráfica</li>
+</ul>
+</li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#catalogacion">Catalogación</a></li>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#diagrama-de-transicion-de-estados">Diagrama de Transición de Estados</a></li>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#diagrama-de-interaccion">Diagrama de Interacción de Objetos</a></li>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#prototipado">Prototipado</a></li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-analista">Equipo del Proyecto</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-directivo">Usuarios Expertos</a></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td style="text-align: left; vertical-align: top;"><a href="#dsi-3-4"><strong>DSI 3.4</strong>: Revisión de Subsistemas de Diseño e Interfaces</a></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li>Diseño de la Realización de los Casos de Uso
+<ul>
+<li>Definición a Nivel de Subsistemas e Interfaz</li>
+</ul>
+</li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#diagrama-de-interaccion">Diagrama de Interacción de Objetos</a></li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-analista">Equipo del Proyecto</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-analista">Equipo de Arquitectura</a></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+```
 
 #### Tarea DSI 3.1: Identificación de Clases Asociadas a un Caso de Uso
 
@@ -839,7 +972,166 @@ Para un caso de uso hay que definir, además de los subsistemas y actores que in
     Equipo del Proyecto
     Equipo de Arquitectura
 
-### Actividad DSI 4: Diseño de Clases
+### Actividad DSI 4: Diseño de Clases {#dsi-4}
+
+El propósito de esta actividad, que se realiza sólo en el caso de ***Diseño Orientado a Objetos***, es transformar el modelo de clases lógico, que proviene del análisis, en un modelo de clases de diseño. Dicho modelo recoge la especificación detallada de cada una de las clases, es decir, sus atributos, operaciones, métodos, y el diseño preciso de las relaciones establecidas entre ellas, bien sean de agregación, asociación o jerarquía. Para llevar a cabo todos estos puntos, se tienen en cuenta las decisiones tomadas sobre el entorno tecnológico y el entorno de desarrollo elegido para la implementación.
+
+Se identifican las clases de diseño, que denominamos clases adicionales, en función del estudio de los escenarios de los casos de uso, que se está realizando en paralelo en la actividad ***Diseño de Casos de Uso Reales*** ([DSI 3](#dsi-3)), y aplicando los mecanismos genéricos de diseño que se consideren convenientes por el tipo de especificaciones tecnológicas y de desarrollo. Entre ellas se encuentran clases abstractas, que integran características comunes con el objetivo de especializarlas en clases derivadas. Se diseñan las clases de interfaz de usuario, que provienen del análisis. Como consecuencia del estudio de los escenarios secundarios que se está realizando, pueden aparecer nuevas clases de interfaz.
+
+También hay que considerar que, por el diseño de las asociaciones y agregaciones, pueden aparecer nuevas clases, o desaparecer incluyendo sus atributos y métodos en otras, si se considera conveniente por temas de optimización.
+
+La jerarquía entre las clases se va estableciendo a lo largo de esta actividad, a medida que se van identificando comportamientos comunes en las clases, aunque haya una tarea propia de diseño de la jerarquía.
+
+Otro de los objetivos del diseño de las clases es identificar para cada clase, los atributos, las operaciones que cubren las responsabilidades que se identificaron en el análisis, y la especificación de los métodos que implementan esas  operaciones, analizando los escenarios del **Diseño de Casos de Uso Reales** ([DSI 3](#dsi-3)). Se determina la visibilidad de los
+atributos y operaciones de cada clase, con respecto a las otras clases del modelo.
+
+Una vez que se ha elaborado el modelo de clases, se define la estructura física de los datos correspondiente a ese modelo, en la actividad **Diseño Físico de Datos** ([DSI 6](#dsi-6)).
+
+Además, en los casos en que sea necesaria una migración de datos de otros sistemas o una carga inicial de información, se realizará su especificación a partir del modelo de clases y las estructuras de datos de los sistemas origen.
+
+Como resultado de todo lo anterior se actualiza el modelo de clases del análisis, una vez recogidas las decisiones de diseño.
+
+```{html}
+<table class="avia-table avia-data-table">
+<tbody>
+<tr>
+<td style="background-color: #000033; text-align: left; width: 25%;"><strong><span style="color: #ffffff;">TAREA</span></strong></td>
+<td style="background-color: #000033; text-align: left; width: 30%;"><strong><span style="color: #ffffff;">PRODUCTOS</span></strong></td>
+<td style="background-color: #000033; text-align: left; width: 25%;"><strong><span style="color: #ffffff;">TÉCNICAS Y PRÁCTICAS</span></strong></td>
+<td style="background-color: #000033; text-align: left; width: 20%;"><strong><span style="color: #ffffff;">PARTICIPANTES</span></strong></td>
+</tr>
+<tr>
+<td style="text-align: left; vertical-align: top;"><a href="#dsi-4-1"><strong>DSI 4.1</strong>: Identificación de Clases Adicionales</a></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li>Modelo de Clases de Diseño</li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#diagrama-de-clases">Diagrama de Clases</a></li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-analista">Equipo del Proyecto</a></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td style="text-align: left; vertical-align: top;"><a href="#dsi-4-2"><strong>DSI 4.2</strong>: Diseño de Asociaciones y Agregaciones</a></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li>Modelo de Clases de Diseño</li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#diagrama-de-clases">Diagrama de Clases</a></li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-analista">Equipo del Proyecto</a></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td style="text-align: left; vertical-align: top;"><a href="#dsi-4-3"><strong>DSI 4.3</strong>: Identificación de Atributos de las Clases</a></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li>Modelo de Clases de Diseño</li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#diagrama-de-clases">Diagrama de Clases</a></li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-analista">Equipo del proyecto</a></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td style="text-align: left; vertical-align: top;"><a href="#dsi-4-4"><strong>DSI 4.4</strong>: Identificación de Operaciones de las Clases</a></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li>Modelo de Clases de Diseño</li>
+<li>Comportamiento de Clases de Diseño</li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#diagrama-de-clases">Diagrama de Clases</a></li>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#diagrama-de-transicion-de-estados">Diagrama de Transición de Estados</a></li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-analista">Equipo del proyecto</a></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td style="text-align: left; vertical-align: top;"><a href="#dsi-4-5"><strong>DSI 4.5</strong>: Diseño de la Jerarquía</a></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li>Modelo de Clases de Diseño</li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#diagrama-de-clases">Diagrama de Clases</a></li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-analista">Equipo del proyecto</a></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td style="text-align: left; vertical-align: top;"><a href="#dsi-4-6"><strong>DSI 4.6</strong>: Descripción de Métodos de las Operaciones</a></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li>Modelo de Clases de Diseño</li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#diagrama-de-clases">Diagrama de Clases</a></li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-analista">Equipo del proyecto</a></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td style="text-align: left; vertical-align: top;"><a href="#dsi-4-7"><strong>DSI 4.7</strong>: Especificación de Necesidades de Migración y Carga Inicial de Datos</a></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li>Plan de Migración y Carga Inicial de Datos</li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#sesiones-de-trabajo">Sesiones de Trabajo</a></li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-analista">Analistas</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-directivo">Usuarios Expertos</a></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+```
 
 #### Tarea DSI 4.1: Identificación de Clases Adicionales
 
@@ -1058,57 +1350,91 @@ Además, se analizan los comportamientos de excepción asociados a los diferente
 En esta actividad, se consideran los estándares y normas establecidas para el diseño, aplicando, cuando proceda, los mecanismos genéricos de diseño identificados en la tarea Identificación de Mecanismos Genéricos de Diseño (DSI 2.2).
 
 Las tareas de esta actividad no se realizan de forma secuencial, sino en paralelo, con continuas realimentaciones entre ellas y con las realizadas en las actividades Definición de la Arquitectura del Sistema (DSI 1), Diseño de la Arquitectura de Soporte (DSI 2) y Diseño Físico de Datos (DSI 6).
-TAREA 	PRODUCTOS 	TÉCNICAS Y PRÁCTICAS 	PARTICIPANTES
-DSI 5.1: Diseño de Módulos del Sistema 	
 
-    Diseño de la Arquitectura Modular del Sistema
-
-	
-
-    Diagrama de Estructura
-
-	
-
-    Equipo de Arquitectura
-    Equipo del Proyecto
-
-DSI 5.2: Diseño de Comunicaciones entre Módulos 	
-
-    Diseño de la Arquitectura Modular del Sistema
-
-	
-
-    Diagrama de Estructura
-
-	
-
-    Equipo de Arquitectura
-    Equipo del Proyecto
-    Equipo de Seguridad
-
-DSI 5.3: Revisión de la Interfaz de Usuario 	
-
-    Diseño de Interfaz de Usuario:
-        Descomposición Funcional en Diálogos
-        Formatos Individuales de Interfaz de Pantalla
-        Catálogo de Controles y Elementos de Diseño de Interfaz de Pantalla
-        Modelo de Navegación de Interfaz de Pantalla
-        Formatos de Impresión
-        Prototipo de Interfaz de Pantalla
-        Prototipo de Interfaz de Impresión
-
-	
-
-    Diagrama de Descomposición Funcional
-    Diagrama de Transición de Estados
-    Matricial
-    Catalogación
-    Prototipado
-
-	
-
-    Equipo del Proyecto
-    Usuarios Expertos
+```{html}
+<table class="avia-table avia-data-table">
+<tbody>
+<tr>
+<td style="background-color: #000033; text-align: left; width: 25%;"><strong><span style="color: #ffffff;">TAREA</span></strong></td>
+<td style="background-color: #000033; text-align: left; width: 30%;"><strong><span style="color: #ffffff;">PRODUCTOS</span></strong></td>
+<td style="background-color: #000033; text-align: left; width: 25%;"><strong><span style="color: #ffffff;">TÉCNICAS Y PRÁCTICAS</span></strong></td>
+<td style="background-color: #000033; text-align: left; width: 20%;"><strong><span style="color: #ffffff;">PARTICIPANTES</span></strong></td>
+</tr>
+<tr>
+<td style="text-align: left; vertical-align: top;"><a href="#dsi-5-1"><strong>DSI 5.1</strong>: Diseño de Módulos del Sistema</a></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li>Diseño de la Arquitectura Modular del Sistema</li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#diagrama-de-estructura">Diagrama de Estructura</a></li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-analista">Equipo de Arquitectura</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-analista">Equipo del Proyecto</a></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td style="text-align: left; vertical-align: top;"><a href="#dsi-5-2"><strong>DSI 5.2</strong>: Diseño de Comunicaciones entre Módulos</a></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li>Diseño de la Arquitectura Modular del Sistema</li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#diagrama-de-estructura">Diagrama de Estructura</a></li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-analista">Equipo de Arquitectura</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-analista">Equipo del Proyecto</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-analista">Equipo de Seguridad</a></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td style="text-align: left; vertical-align: top;"><a href="#dsi-5-3"><strong>DSI 5.3</strong>: Revisión de la Interfaz de Usuario</a></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li>Diseño de Interfaz de Usuario:
+<ul>
+<li>Descomposición Funcional en Diálogos</li>
+<li>Formatos Individuales de Interfaz de Pantalla</li>
+<li>Catálogo de Controles y Elementos de Diseño de Interfaz de Pantalla</li>
+<li>Modelo de Navegación de Interfaz de Pantalla</li>
+<li>Formatos de Impresión</li>
+<li>Prototipo de Interfaz de Pantalla</li>
+<li>Prototipo de Interfaz de Impresión</li>
+</ul>
+</li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#diagrama-de-descomposicion">Diagrama de Descomposición Funcional</a></li>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#diagrama-de-transicion-de-estados">Diagrama de Transición de Estados</a></li>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#tecnicas-matriciales">Matricial</a></li>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#catalogacion">Catalogación</a></li>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#prototipado">Prototipado</a></li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-analista">Equipo del Proyecto</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-directivo">Usuarios Expertos</a></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+```
 
 #### Tarea DSI 5.1: Diseño de Módulos del Sistema
 
@@ -1250,63 +1576,99 @@ En el caso de diseño orientado a objetos, esta actividad también es necesaria.
 
 Asimismo, en esta actividad hay que considerar los estándares y normas establecidos para el diseño aplicando, cuando proceda, los mecanismos genéricos de diseño identificados en la tarea Identificación de Mecanismos Genéricos de Diseño (DSI 2.2).
 
-TAREA 	PRODUCTOS 	TÉCNICAS Y PRÁCTICAS 	PARTICIPANTES
-DSI 6.1: Diseño del Modelo Físico de Datos 	
-
-    Modelo Físico de Datos
-
-	
-
-    Reglas de Obtención del Modelo Físico a Partir del Lógico
-    Reglas de Transformación
-
-	
-
-    Equipo de Arquitectura
-    Equipo del Proyecto
-    Administradores de Bases de Datos
-
-DSI 6.2: Especificación de los Caminos de Acceso a los Datos 	
-
-    Especificación de los Caminos de Acceso a los Datos
-
-	
-
-    Cálculo de Accesos Físicos
-    Caminos de Acceso
-
-	
-
-    Equipo del Proyecto
-
-DSI 6.3: Optimización del Modelo Físico de Datos 	
-
-    Modelo Físico de Datos Opimizado
-
-	
-
-    Optimización
-
-	
-
-    Equipo de Arquitectura
-    Equipo del Proyecto
-    Administradores de Bases de Datos
-    Equipo de Seguridad
-
-DSI 6.4: Especificación de la Distribución de Datos 	
-
-    Esquemas Físico de Datos
-    Asignación Esquemas Físicos de Datos a Nodos
-
-	
-
-    Matricial
-
-	
-
-    Equipo de Arquitectura
-    Equipo de Soporte Técnico
+```{html}
+<table class="avia-table avia-data-table">
+<tbody>
+<tr>
+<td style="background-color: #000033; text-align: left; width: 25%;"><strong><span style="color: #ffffff;">TAREA</span></strong></td>
+<td style="background-color: #000033; text-align: left; width: 30%;"><strong><span style="color: #ffffff;">PRODUCTOS</span></strong></td>
+<td style="background-color: #000033; text-align: left; width: 25%;"><strong><span style="color: #ffffff;">TÉCNICAS Y PRÁCTICAS</span></strong></td>
+<td style="background-color: #000033; text-align: left; width: 20%;"><strong><span style="color: #ffffff;">PARTICIPANTES</span></strong></td>
+</tr>
+<tr>
+<td style="text-align: left; vertical-align: top;"><a href="#dsi-6-1"><strong>DSI 6.1</strong>: Diseño del Modelo Físico de Datos</a></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li>Modelo Físico de Datos</li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#obtencion-del-modelo-fisico-desde-el-logico">Reglas de Obtención del Modelo Físico a Partir del Lógico</a></li>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#reglas-de-transformacion">Reglas de Transformación</a></li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-analista">Equipo de Arquitectura</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-analista">Equipo del Proyecto</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-analista">Administradores de Bases de Datos</a></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td style="text-align: left; vertical-align: top;"><a href="#dsi-6-2"><strong>DSI 6.2</strong>: Especificación de los Caminos de Acceso a los Datos</a></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li>Especificación de los Caminos de Acceso a los Datos</li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#calculo-de-accesos">Cálculo de Accesos Físicos</a></li>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#caminos-de-acceso">Caminos de Acceso</a></li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-analista">Equipo del Proyecto</a></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td style="text-align: left; vertical-align: top;"><a href="#dsi-6-3"><strong>DSI 6.3</strong>: Optimización del Modelo Físico de Datos</a></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li>Modelo Físico de Datos Opimizado</li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#optimizacion">Optimización</a></li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-analista">Equipo de Arquitectura</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-analista">Equipo del Proyecto</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-analista">Administradores de Bases de Datos</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-analista">Equipo de Seguridad</a></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td style="text-align: left; vertical-align: top;"><a href="#dsi-6-4"><strong>DSI 6.4</strong>: Especificación de la Distribución de Datos</a></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li>Esquemas Físico de Datos</li>
+<li>Asignación Esquemas Físicos de Datos a Nodos</li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#tecnicas-matriciales">Matricial</a></li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-analista">Equipo de Arquitectura</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-analista">Equipo de Soporte Técnico</a></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+```
 
 #### Tarea DSI 6.1: Diseño del Modelo Físico de Datos
 
@@ -1477,62 +1839,92 @@ Para cumplir dicho objetivo, se llevan a cabo las siguientes acciones:
 
 Esta actividad es compleja, por lo que es aconsejable utilizar herramientas de apoyo para la realización de sus tareas.
 
-TAREA 	PRODUCTOS 	TÉCNICAS Y PRÁCTICAS 	PARTICIPANTES
-DSI 7.1: Verificación de las Especificaciones de Diseño 	
-
-    Entorno Tecnológico del Sistema
-    Diseño de la Arquitectura del Sistema
-    Diseño Detallado de Subsistemas de Soporte
-    Modelo Físico de Datos Optimizado
-    Esquemas Físicos de Datos
-    Asignación de Esquemas Físicos de Datos a Nodos
-    Diseño de Interfaz de usuario
-    Estructurado:
-    Diseño de la Arquitectura Modular
-    Orientación a Objetos:
-    Diseño de la Realización de los Casos de Uso
-    Modelo de Clases de Diseño
-    Comportamiento de Clases de Diseño
-
-		
-
-    Equipo de Arquitectura
-    Equipo del Proyecto
-
-DSI 7.2: Análisis de Consistencia de las Especificaciones de Diseño 	
-
-    Entorno Tecnológico del Sistema
-    Diseño de la Arquitectura del Sistema
-    Diseño Detallado de Subsistemas de Soporte
-    Modelo Físico de Datos Optimizado
-    Esquemas Físicos de Datos
-    Asignación de Esquemas Físicos de Datos a Nodos
-    Diseño de Interfaz de usuario
-    Estructurado:
-    Diseño de la Arquitectura Modular
-    Orientación a Objetos:
-    Diseño de la Realización de los Casos de Uso
-    Modelo de Clases de Diseño
-    Comportamiento de Clases de Diseño
-
-	
-
-    Matricial
-
-	
-
-    Equipo de Arquitectura
-    Equipo del Proyecto
-
-DSI 7.3: Aceptación de la Arquitectura del Sistema 	
-
-    Aceptación Técnica del Diseño
-
-		
-
-    Jefe de Proyecto
-    Responsable de Operación
-    Responsable de Sistemas
+```{html}
+<table class="avia-table avia-data-table">
+<tbody>
+<tr>
+<td style="background-color: #000033; text-align: left; width: 25%;"><strong><span style="color: #ffffff;">TAREA</span></strong></td>
+<td style="background-color: #000033; text-align: left; width: 30%;"><strong><span style="color: #ffffff;">PRODUCTOS</span></strong></td>
+<td style="background-color: #000033; text-align: left; width: 25%;"><strong><span style="color: #ffffff;">TÉCNICAS Y PRÁCTICAS</span></strong></td>
+<td style="background-color: #000033; text-align: left; width: 20%;"><strong><span style="color: #ffffff;">PARTICIPANTES</span></strong></td>
+</tr>
+<tr>
+<td style="text-align: left; vertical-align: top;"><a href="#dsi-7-1"><strong>DSI 7.1</strong>: Verificación de las Especificaciones de Diseño</a></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li>Entorno Tecnológico del Sistema</li>
+<li>Diseño de la Arquitectura del Sistema</li>
+<li>Diseño Detallado de Subsistemas de Soporte</li>
+<li>Modelo Físico de Datos Optimizado</li>
+<li>Esquemas Físicos de Datos</li>
+<li>Asignación de Esquemas Físicos de Datos a Nodos</li>
+<li>Diseño de Interfaz de usuario</li>
+<li class="no-bullet"><em><strong>Estructurado</strong></em>:</li>
+<li>Diseño de la Arquitectura Modular</li>
+<li class="no-bullet"><em><strong>Orientación a Objetos</strong></em>:</li>
+<li>Diseño de la Realización de los Casos de Uso</li>
+<li>Modelo de Clases de Diseño</li>
+<li>Comportamiento de Clases de Diseño</li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;"></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-analista">Equipo de Arquitectura</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-analista">Equipo del Proyecto</a></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td style="text-align: left; vertical-align: top;"><a href="#dsi-7-2"><strong>DSI 7.2</strong>: Análisis de Consistencia de las Especificaciones de Diseño</a></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li>Entorno Tecnológico del Sistema</li>
+<li>Diseño de la Arquitectura del Sistema</li>
+<li>Diseño Detallado de Subsistemas de Soporte</li>
+<li>Modelo Físico de Datos Optimizado</li>
+<li>Esquemas Físicos de Datos</li>
+<li>Asignación de Esquemas Físicos de Datos a Nodos</li>
+<li>Diseño de Interfaz de usuario</li>
+<li class="no-bullet"><em><strong>Estructurado</strong></em>:</li>
+<li>Diseño de la Arquitectura Modular</li>
+<li class="no-bullet"><em><strong>Orientación a Objetos</strong></em>:</li>
+<li>Diseño de la Realización de los Casos de Uso</li>
+<li>Modelo de Clases de Diseño</li>
+<li>Comportamiento de Clases de Diseño</li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#tecnicas-matriciales">Matricial</a></li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-analista">Equipo de Arquitectura</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-analista">Equipo del Proyecto</a></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td style="text-align: left; vertical-align: top;"><a href="#dsi-7-3"><strong>DSI 7.3</strong>: Aceptación de la Arquitectura del Sistema</a></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li>Aceptación Técnica del Diseño</li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;"></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto">Jefe de Proyecto</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto">Responsable de Operación</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto">Responsable de Sistemas</a></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+```
 
 #### Tarea DSI 7.1: Verificación de las Especificaciones de Diseño
 
@@ -1734,61 +2126,109 @@ El producto resultante de esta actividad es el conjunto de las especificaciones 
     Especificación detallada de componentes.
     Especificación de la estructura física de datos.
 
-TAREA 	PRODUCTOS 	TÉCNICAS Y PRÁCTICAS 	PARTICIPANTES
-DSI 8.1: Especificación del Entorno de Construcción 	
-
-    Especificaciones de Construcción del Sistema de Información:
-        Especificación del Entorno de Construcción
-
-		
-
-    Equipo de Arquitectura
-    Equipo del Proyecto
-    Equipo de Soporte Técnico
-    Equipo de Sistemas
-    Equipo de Seguridad
-
-DSI 8.2: Definición de Componentes y Subsistemas de Construcción 	
-
-    Especificaciones de Construcción del Sistema de Información:
-        Descripción de Subsistemas de Construcción y Dependencias
-        Descripción de Componentes
-        Plan de Integración del Sistema de Información
-
-	
-
-    Diagrama de Estructura
-    Matricial
-    Diagrama de Componentes
-    Diagrama de Despliegue
-
-	
-
-    Equipo de Arquitectura
-    Equipo del Proyecto
-
-DSI 8.3: Elaboración de Especificaciones de Construcción 	
-
-    Especificaciones de Construcción del Sistema de Información:
-        Especificación Detallada de Componentes
-
-	
-
-    Diagrama de Componentes
-
-	
-
-    Equipo del Proyecto
-
-DSI 8.4: Elaboración de Especificaciones del Modelo Físico de Datos 	
-
-    Especificaciones de Construcción del Sistema de Información:
-        Especificación de la Estructura Física de Datos
-
-		
-
-    Equipo del Proyecto
-    Administradores de la Base de Datos
+```{html}
+<table class="avia-table avia-data-table">
+<tbody>
+<tr>
+<td style="background-color: #000033; text-align: left; width: 25%;"><strong><span style="color: #ffffff;">TAREA</span></strong></td>
+<td style="background-color: #000033; text-align: left; width: 30%;"><strong><span style="color: #ffffff;">PRODUCTOS</span></strong></td>
+<td style="background-color: #000033; text-align: left; width: 25%;"><strong><span style="color: #ffffff;">TÉCNICAS Y PRÁCTICAS</span></strong></td>
+<td style="background-color: #000033; text-align: left; width: 20%;"><strong><span style="color: #ffffff;">PARTICIPANTES</span></strong></td>
+</tr>
+<tr>
+<td style="text-align: left; vertical-align: top;"><a href="#dsi-8-1"><strong>DSI 8.1</strong>: Especificación del Entorno de Construcción</a></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li>Especificaciones de Construcción del Sistema de Información:
+<ul>
+<li>Especificación del Entorno de Construcción</li>
+</ul>
+</li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;"></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-analista">Equipo de Arquitectura</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-analista">Equipo del Proyecto</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-analista">Equipo de Soporte Técnico</a></li>
+<li>Equipo de Sistemas</li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-analista">Equipo de Seguridad</a></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td style="text-align: left; vertical-align: top;"><a href="#dsi-8-2"><strong>DSI 8.2</strong>: Definición de Componentes y Subsistemas de Construcción</a></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li>Especificaciones de Construcción del Sistema de Información:
+<ul>
+<li>Descripción de Subsistemas de Construcción y Dependencias</li>
+<li>Descripción de Componentes</li>
+<li>Plan de Integración del Sistema de Información</li>
+</ul>
+</li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#diagrama-de-estructura">Diagrama de Estructura</a></li>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#tecnicas-matriciales">Matricial</a></li>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#diagrama-de-componentes">Diagrama de Componentes</a></li>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#diagrama-de-despliegue">Diagrama de Despliegue</a></li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-analista">Equipo de Arquitectura</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-analista">Equipo del Proyecto</a></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td style="text-align: left; vertical-align: top;"><a href="#dsi-8-3"><strong>DSI 8.3</strong>: Elaboración de Especificaciones de Construcción</a></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li>Especificaciones de Construcción del Sistema de Información:
+<ul>
+<li>Especificación Detallada de Componentes</li>
+</ul>
+</li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#diagrama-de-componentes">Diagrama de Componentes</a></li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-analista">Equipo del Proyecto</a></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td style="text-align: left; vertical-align: top;"><a href="#dsi-8-4"><strong>DSI 8.4</strong>: Elaboración de Especificaciones del Modelo Físico de Datos</a></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li>Especificaciones de Construcción del Sistema de Información:
+<ul>
+<li>Especificación de la Estructura Física de Datos</li>
+</ul>
+</li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;"></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-analista">Equipo del Proyecto</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-analista">Administradores de la Base de Datos</a></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+```
 
 #### Tarea DSI 8.1: Especificación del Entorno de Construcción
 
@@ -1968,46 +2408,94 @@ Asimismo, se determinan las necesidades adicionales de infraestructura, tanto pa
 
 Es importante considerar que una carga inicial de información no tiene el mismo alcance y complejidad que una migración de datos, de modo que las tareas de esta actividad se deben llevar a cabo en mayor o menor medida en función de las características de los datos a cargar.
 
-TAREA 	PRODUCTOS 	TÉCNICAS Y PRÁCTICAS 	PARTICIPANTES
-DSI 9.1: Especificación del Entorno de Migración 	
-
-    Plan de Migración y Carga Inicial de Datos:
-        Especificación del Entorno de Migracióny Carga Inicial
-
-		
-
-    Equipo de Arquitectura
-    Equipo de Soporte Técnico
-
-DSI 9.2: Diseño de Procedimientos de Migración y Carga Inicial 	
-
-    Plan de Migración y Carga Inicial de Datos:
-        Definición de Procedimientos de Migración y Carga Inicial
-
-		
-
-    Equipo de Arquitectura
-    Equipo del Proyecto
-    Equipo de Seguridad
-
-DSI 9.3: Diseño Detallado de Componentes de Migración y Carga Inicial 	
-
-    Plan de Migración y Carga Inicial de Datos:
-        Diseño Detallado de Módulos de Migración y Carga Inicial
-        Especificación Técnica de las Pruebas de Migración y Carga Inicial
-
-		
-
-    Equipo del Proyecto
-
-DSI 9.4: Revisión de la Planificación de la Migración 	
-
-    Plan de Migración y Carga Inicial de Datos:
-        Planificación de la Migración y Carga Inicial
-
-		
-
-    Jefe de Proyecto
+```{html}
+<table class="avia-table avia-data-table">
+<tbody>
+<tr>
+<td style="background-color: #000033; text-align: left; width: 25%;"><strong><span style="color: #ffffff;">TAREA</span></strong></td>
+<td style="background-color: #000033; text-align: left; width: 30%;"><strong><span style="color: #ffffff;">PRODUCTOS</span></strong></td>
+<td style="background-color: #000033; text-align: left; width: 25%;"><strong><span style="color: #ffffff;">TÉCNICAS Y PRÁCTICAS</span></strong></td>
+<td style="background-color: #000033; text-align: left; width: 20%;"><strong><span style="color: #ffffff;">PARTICIPANTES</span></strong></td>
+</tr>
+<tr>
+<td style="text-align: left; vertical-align: top;"><a href="#dsi-9-1"><strong>DSI 9.1</strong>: Especificación del Entorno de Migración</a></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li>Plan de Migración y Carga Inicial de Datos:
+<ul>
+<li>Especificación del Entorno de Migracióny Carga Inicial</li>
+</ul>
+</li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;"></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-analista">Equipo de Arquitectura</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-analista">Equipo de Soporte Técnico</a></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td style="text-align: left; vertical-align: top;"><a href="#dsi-9-2"><strong>DSI 9.2</strong>: Diseño de Procedimientos de Migración y Carga Inicial</a></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li>Plan de Migración y Carga Inicial de Datos:
+<ul>
+<li>Definición de Procedimientos de Migración y Carga Inicial</li>
+</ul>
+</li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;"></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-analista">Equipo de Arquitectura</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-analista">Equipo del Proyecto</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-analista">Equipo de Seguridad</a></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td style="text-align: left; vertical-align: top;"><a href="#dsi-9-3"><strong>DSI 9.3</strong>: Diseño Detallado de Componentes de Migración y Carga Inicial</a></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li>Plan de Migración y Carga Inicial de Datos:
+<ul>
+<li>Diseño Detallado de Módulos de Migración y Carga Inicial</li>
+<li>Especificación Técnica de las Pruebas de Migración y Carga Inicial</li>
+</ul>
+</li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;"></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-analista">Equipo del Proyecto</a></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td style="text-align: left; vertical-align: top;"><a href="#dsi-9-4"><strong>DSI 9.4</strong>: Revisión de la Planificación de la Migración</a></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li>Plan de Migración y Carga Inicial de Datos:
+<ul>
+<li>Planificación de la Migración y Carga Inicial</li>
+</ul>
+</li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;"></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto">Jefe de Proyecto</a></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+```
 
 #### Tarea DSI 9.1: Especificación del Entorno de Migración
 
@@ -2158,38 +2646,77 @@ Como resultado de esta actividad se actualiza el plan de pruebas con la informac
     Especificación técnica de niveles de prueba.
     Planificación de las pruebas.
 
-TAREA 	PRODUCTOS 	TÉCNICAS Y PRÁCTICAS 	PARTICIPANTES
-DSI 10.1: Especificación del Entorno de Pruebas 	
-
-    Plan de Pruebas:
-        Especificación del Entorno de Pruebas
-
-		
-
-    Equipo de Arquitectura
-    Equipo de Soporte Técnico
-    Equipo del Proyecto
-    Equipo de Seguridad
-
-DSI 10.2: Especificación Técnica de Niveles de Prueba 	
-
-    Plan de Pruebas:
-        Especificación Técnica de Niveles de Prueba
-
-		
-
-    Jefe de Proyecto
-    Analistas
-    Usuarios Expertos
-
-DSI 10.3: Revisión de la Planificación de Pruebas 	
-
-    Plan de Pruebas:
-        Planificación de las Pruebas
-
-		
-
-    Jefe de Proyecto
+```{html}
+<table class="avia-table avia-data-table">
+<tbody>
+<tr>
+<td style="background-color: #000033; text-align: left; width: 25%;"><strong><span style="color: #ffffff;">TAREA</span></strong></td>
+<td style="background-color: #000033; text-align: left; width: 30%;"><strong><span style="color: #ffffff;">PRODUCTOS</span></strong></td>
+<td style="background-color: #000033; text-align: left; width: 25%;"><strong><span style="color: #ffffff;">TÉCNICAS Y PRÁCTICAS</span></strong></td>
+<td style="background-color: #000033; text-align: left; width: 20%;"><strong><span style="color: #ffffff;">PARTICIPANTES</span></strong></td>
+</tr>
+<tr>
+<td style="text-align: left; vertical-align: top;"><a href="#dsi-10-1"><strong>DSI 10.1</strong>: Especificación del Entorno de Pruebas</a></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li>Plan de Pruebas:
+<ul>
+<li>Especificación del Entorno de Pruebas</li>
+</ul>
+</li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;"></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-analista">Equipo de Arquitectura</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-analista">Equipo de Soporte Técnico</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-analista">Equipo del Proyecto</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-analista">Equipo de Seguridad</a></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td style="text-align: left; vertical-align: top;"><a href="#dsi-10-2"><strong>DSI 10.2</strong>: Especificación Técnica de Niveles de Prueba</a></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li>Plan de Pruebas:
+<ul>
+<li>Especificación Técnica de Niveles de Prueba</li>
+</ul>
+</li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;"></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto">Jefe de Proyecto</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-analista">Analistas</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-directivo">Usuarios Expertos</a></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td style="text-align: left; vertical-align: top;"><a href="#dsi-10-3"><strong>DSI 10.3</strong>: Revisión de la Planificación de Pruebas</a></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li>Plan de Pruebas:
+<ul>
+<li>Planificación de las Pruebas</li>
+</ul>
+</li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;"></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto">Jefe de Proyecto</a></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+```
 
 #### Tarea DSI 10.1: Especificación del Entorno de Pruebas
 
@@ -2323,38 +2850,62 @@ En esta actividad se completa el catálogo de requisitos con aquéllos relaciona
 
 La incorporación de estos requisitos permite ir preparando, en los procesos de Construcción del Sistema de Información (CSI) e Implantación y Aceptación del Sistema (IAS), los medios y recursos necesarios para que los usuarios, tanto finales como de operación, sean capaces de utilizar el nueva sistema de forma satisfactoria.
 
-TAREA 	PRODUCTOS 	TÉCNICAS Y PRÁCTICAS 	PARTICIPANTES
-DSI 11.1: Especificación de Requisitos de Documentación de Usuario 	
-
-    Catálogo de Requisitos
-
-	
-
-    Catalogación
-    Sesiones de Trabajo
-
-	
-
-    Jefe de Proyecto
-    Analistas
-    Usuarios Expertos
-    Responsable de Operación
-    Responsable de Sistemas
-
-DSI 11.2: Especificación de Requisitos de Implantación 	
-
-    Catálogo de Requisitos
-
-	
-
-    Catalogación
-    Sesiones de Trabajo
-
-	
-
-    Jefe de Proyecto
-    Directores de Usuarios
-    Equipo de Soporte Técnico
+```{html}
+<table class="avia-table avia-data-table">
+<tbody>
+<tr>
+<td style="background-color: #000033; text-align: left; width: 25%;"><strong><span style="color: #ffffff;">TAREA</span></strong></td>
+<td style="background-color: #000033; text-align: left; width: 30%;"><strong><span style="color: #ffffff;">PRODUCTOS</span></strong></td>
+<td style="background-color: #000033; text-align: left; width: 25%;"><strong><span style="color: #ffffff;">TÉCNICAS Y PRÁCTICAS</span></strong></td>
+<td style="background-color: #000033; text-align: left; width: 20%;"><strong><span style="color: #ffffff;">PARTICIPANTES</span></strong></td>
+</tr>
+<tr>
+<td style="text-align: left; vertical-align: top;"><a href="#dsi-11-1"><strong>DSI 11.1</strong>: Especificación de Requisitos de Documentación de Usuario</a></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li>Catálogo de Requisitos</li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#catalogacion">Catalogación</a></li>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#sesiones-de-trabajo">Sesiones de Trabajo</a></li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto">Jefe de Proyecto</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-analista">Analistas</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-directivo">Usuarios Expertos</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto">Responsable de Operación</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto">Responsable de Sistemas</a></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td style="text-align: left; vertical-align: top;"><a href="#dsi-11-2"><strong>DSI 11.2</strong>: Especificación de Requisitos de Implantación</a></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li>Catálogo de Requisitos</li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#catalogacion">Catalogación</a></li>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#sesiones-de-trabajo">Sesiones de Trabajo</a></li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto">Jefe de Proyecto</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-directivo">Directores de Usuarios</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-analista">Equipo de Soporte Técnico</a></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+```
 
 #### Tarea DSI 11.1: Especificación de Requisitos de Documentación de Usuario
 
@@ -2432,7 +2983,7 @@ Los requisitos de infraestructura e instalación hacen referencia a las necesida
 
 | TAREA | PRODUCTOS | TÉCNICAS Y PRÁCTICAS | PARTICIPANTES |
 | :--- | :--- | :--- | :--- |
-| **[DSI 12.1](#sec-12-1)**: Presentación y Aprobación del Diseño del Sistema de Información | - Aprobación del Diseño del Sistema de Información | - [Presentación](https://manuel.cillero.es/doc/metodologia/metrica-3/tecnicas/presentaciones) | - [Comité de Dirección](https://manuel.cillero.es/doc/metodologia/metrica-3/participantes/perfil-directivo)<br>- [Jefe de Proyecto](../04-participantes/01-participantes.qmd#sec-jdp) |
+| **[DSI 12.1](#sec-12-1)**: Presentación y Aprobación del Diseño del Sistema de Información | - Aprobación del Diseño del Sistema de Información | - [Presentación](../03-tecnicas/01-tecnicas.qmd#presentaciones) | - [Comité de Dirección](../04-participantes/01-participantes.qmd#perfil-directivo)<br>- [Jefe de Proyecto](../04-participantes/01-participantes.qmd#sec-jdp) |
 
 #### Tarea DSI 12.1: Presentación y Aprobación del Diseño del Sistema de Información {#sec-12-1}
 
@@ -2473,52 +3024,544 @@ En esta tarea se realiza la presentación del diseño del sistema de informació
 
 ##### Participantes {.unnumbered .unlisted}
 
-- Comité de Dirección
-- Jefe de Proyecto
+* Comité de Dirección
+* Jefe de Proyecto
 
-## PARTICIPANTES EN LAS ACTIVIDADES DEL PROCESO DSI
+## Participantes en las actividades del proceso DSI
 
-DISEÑO DEL SISTEMA DE INFORMACIÓN 	ACTIVIDADES
-DSI 1 	DSI 2 	DSI 3 	DSI 4 	DSI 5 	DSI 6 	DSI 7 	DSI 8 	DSI 9 	DSI 10 	DSI 11 	DSI 12
-Administrador de B/D 						X 		X 				
-Analistas 				X 						X 	X 	
-Comité de Dirección 												X
-Directores Usuarios 											X 	
-Equipo de Arquitectura 	X 	X 	X 		X 	X 	X 	X 	X 	X 		
-Equipo de Proyecto 			X 	X 	X 	X 	X 	X 	X 	X 		
-Equipo de Seguridad 	X 				X 	X 		X 	X 	X 		
-Equipo de Sistemas 								X 				
-Equipo de Soporte Técnico 	X 					X 		X 	X 	X 	X 	
-Jefe de Proyecto 							X 		X 	X 	X 	X
-Responsable de Operación 							X 				X 	
-Responsable de Sistemas 							X 				X 	
-Usuarios Expertos 
-			X 	X 	X 					X 	X 	
+```{html}
+<table class="avia-table avia-data-table">
+<tbody>
+<tr>
+<td style="text-align: left; vertical-align: middle; width: 30%;" rowspan="2"><strong>DISEÑO DEL SISTEMA DE INFORMACIÓN</strong></td>
+<td style="text-align: center; width: 70%;" colspan="12" rowspan="1"><strong>ACTIVIDADES</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;"><a href="#dsi-1"><strong>DSI 1</strong></a></td>
+<td style="text-align: center;"><a href="#dsi-2"><strong>DSI 2</strong></a></td>
+<td style="text-align: center;"><a href="#dsi-3"><strong>DSI 3</strong></a></td>
+<td style="text-align: center;"><a href="#dsi-4"><strong>DSI 4</strong></a></td>
+<td style="text-align: center;"><a href="#dsi-5"><strong>DSI 5</strong></a></td>
+<td style="text-align: center;"><a href="#dsi-6"><strong>DSI 6</strong></a></td>
+<td style="text-align: center;"><a href="#dsi-7"><strong>DSI 7</strong></a></td>
+<td style="text-align: center;"><a href="#dsi-8"><strong>DSI 8</strong></a></td>
+<td style="text-align: center;"><a href="#dsi-9"><strong>DSI 9</strong></a></td>
+<td style="text-align: center;"><strong><a href="#dsi-10">DSI 10</a></strong></td>
+<td style="text-align: center;"><strong><a href="#dsi-11">DSI 11</a></strong></td>
+<td style="text-align: center;"><strong><a href="#dsi-12">DSI 12</a></strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../04-participantes/01-participantes.qmd#perfil-analista">Administrador de B/D</a></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../04-participantes/01-participantes.qmd#perfil-analista">Analistas</a></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../04-participantes/01-participantes.qmd#perfil-directivo">Comité de Dirección</a></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../04-participantes/01-participantes.qmd#perfil-directivo">Directores Usuarios</a></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../04-participantes/01-participantes.qmd#perfil-analista">Equipo de Arquitectura</a></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../04-participantes/01-participantes.qmd#perfil-analista">Equipo de Proyecto</a></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../04-participantes/01-participantes.qmd#perfil-analista">Equipo de Seguridad</a></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">Equipo de Sistemas</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../04-participantes/01-participantes.qmd#perfil-analista">Equipo de Soporte Técnico</a></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto">Jefe de Proyecto</a></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto">Responsable de Operación</a></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto">Responsable de Sistemas</a></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../04-participantes/01-participantes.qmd#perfil-directivo">Usuarios Expertos</a></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+</tr>
+</tbody>
+</table>
+```
 
-## TÉCNICAS/PRÁCTICAS UTILIZADAS EN LAS ACTIVIDADES DEL PROCESO DSI
+## Técnicas/prácticas utilizadas en las actividades del proceso DSI
 
-DISEÑO DEL SISTEMA DE INFORMACIÓN 	ACTIVIDADES
-DSI 1 	DSI 2 	DSI 3 	DSI 4 	DSI 5 	DSI 6 	DSI 7 	DSI 8 	DSI 9 	DSI 10 	DSI 11 	DSI 12
-Cálculo de Accesos Físicos 						X 						
-Caminos de Acceso 						X 						
-Catalogación 	X 		X 		X 						X 	
-Diagrama de Clases 		X 		X 								
-Diagrama de Componentes 								X 				
-Diagrama de Descomposición Funcional 					X 							
-Diagrama de Despliegue 	X 							X 				
-Diagrama de Estructura 	X 	X 			X 			X 				
-Diagrama de Interacción de Objetos 	X 	X 	X 									
-Diagrama de Paquetes 	X 											
-Diagrama de Representación 	X 											
-Diagrama de Transición de Estados 			X 	X 	X 							
-Matricial 	X 				X 	X 	X 					
-Optimización 						X 						
-Presentación 												X
-Prototipado 			X 		X 							
-Reglas de Obtención del Modelo Físico a Partir del Lógico 						X 						
-Reglas de Transformación 						X 						
-Sesiones de Trabajo 	X 	X 		X 							X 	
-Actividades
+```{html}
+<table class="avia-table avia-data-table">
+<tbody>
+<tr>
+<td style="text-align: left; vertical-align: middle; width: 30%;" rowspan="2"><strong>DISEÑO DEL SISTEMA DE INFORMACIÓN</strong></td>
+<td style="text-align: center; width: 70%;" colspan="12" rowspan="1"><strong>ACTIVIDADES</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;"><a href="#dsi-1"><strong>DSI 1</strong></a></td>
+<td style="text-align: center;"><a href="#dsi-2"><strong>DSI 2</strong></a></td>
+<td style="text-align: center;"><a href="#dsi-3"><strong>DSI 3</strong></a></td>
+<td style="text-align: center;"><a href="#dsi-4"><strong>DSI 4</strong></a></td>
+<td style="text-align: center;"><a href="#dsi-5"><strong>DSI 5</strong></a></td>
+<td style="text-align: center;"><a href="#dsi-6"><strong>DSI 6</strong></a></td>
+<td style="text-align: center;"><a href="#dsi-7"><strong>DSI 7</strong></a></td>
+<td style="text-align: center;"><a href="#dsi-8"><strong>DSI 8</strong></a></td>
+<td style="text-align: center;"><a href="#dsi-9"><strong>DSI 9</strong></a></td>
+<td style="text-align: center;"><strong><a href="#dsi-10">DSI 10</a></strong></td>
+<td style="text-align: center;"><strong><a href="#dsi-11">DSI 11</a></strong></td>
+<td style="text-align: center;"><strong><a href="#dsi-12">DSI 12</a></strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../03-tecnicas/01-tecnicas.qmd#calculo-de-accesos">Cálculo de Accesos Físicos</a></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../03-tecnicas/01-tecnicas.qmd#caminos-de-acceso">Caminos de Acceso</a></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../03-tecnicas/01-tecnicas.qmd#catalogacion">Catalogación</a></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../03-tecnicas/01-tecnicas.qmd#diagrama-de-clases">Diagrama de Clases</a></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../03-tecnicas/01-tecnicas.qmd#diagrama-de-componentes">Diagrama de Componentes</a></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../03-tecnicas/01-tecnicas.qmd#diagrama-de-descomposicion">Diagrama de Descomposición Funcional</a></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../03-tecnicas/01-tecnicas.qmd#diagrama-de-despliegue">Diagrama de Despliegue</a></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../03-tecnicas/01-tecnicas.qmd#diagrama-de-estructura">Diagrama de Estructura</a></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../03-tecnicas/01-tecnicas.qmd#diagrama-de-interaccion">Diagrama de Interacción de Objetos</a></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../03-tecnicas/01-tecnicas.qmd#diagrama-de-paquetes">Diagrama de Paquetes</a></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../03-tecnicas/01-tecnicas.qmd#diagrama-de-representacion">Diagrama de Representación</a></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../03-tecnicas/01-tecnicas.qmd#diagrama-de-transicion-de-estados">Diagrama de Transición de Estados</a></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../03-tecnicas/01-tecnicas.qmd#tecnicas-matriciales">Matricial</a></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../03-tecnicas/01-tecnicas.qmd#optimizacion">Optimización</a></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../03-tecnicas/01-tecnicas.qmd#presentaciones">Presentación</a></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../03-tecnicas/01-tecnicas.qmd#prototipado">Prototipado</a></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../03-tecnicas/01-tecnicas.qmd#obtencion-del-modelo-fisico-desde-el-logico">Reglas de Obtención del Modelo Físico a Partir del Lógico</a></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../03-tecnicas/01-tecnicas.qmd#reglas-de-transformacion">Reglas de Transformación</a></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../03-tecnicas/01-tecnicas.qmd#sesiones-de-trabajo">Sesiones de Trabajo</a></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+</tr>
+</tbody>
+</table>
+```
+
+### Actividades {.unnumbered .unlisted}
 
 - Actividad DSI 1: Definición de la Arquitectura del Sistema
 - Actividad DSI 2: Diseño de la Arquitectura de Soporte
