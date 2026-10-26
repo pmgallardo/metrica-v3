@@ -924,51 +924,52 @@ Asimismo, aunque el entorno en que va a funcionar el sistema ya está predefinid
 Es conveniente definir mecanismos para registrar y evaluar cada petición de mantenimiento, controlar y realizar los cambios y asegurar que se implementan adecuadamente.
 
 Finalmente, se recoge en el plan de mantenimiento toda la infraestructura necesaria para la gestión del futuro mantenimiento.
-Productos
 
-De entrada
+##### Productos {.unnumbered unlisted}
 
-    Catálogo de Requisitos (DSI 11.2)
+###### De entrada {.unnumbered unlisted}
 
-De salida
+* Catálogo de Requisitos (DSI 11.2)
 
-    Plan de Mantenimiento
+###### De salida {.unnumbered unlisted}
 
-Prácticas
+* Plan de Mantenimiento
 
-    Diagrama de Representación
-    Sesiones de trabajo
+##### Prácticas {.unnumbered unlisted}
 
-Participantes
+* Diagrama de Representación
+* Sesiones de trabajo
 
-    Jefe de Proyecto
-    Responsable de Mantenimiento
-    Equipo de Soporte Técnico
+##### Participantes {.unnumbered unlisted}
 
+* Jefe de Proyecto
+* Responsable de Mantenimiento
+* Equipo de Soporte Técnico
 
 #### Tarea IAS 7.2: Formalización del Plan de Mantenimiento
 
 Se establece formalmente el plan de mantenimiento para el sistema, una vez que haya sido aceptado y se incorpore al entorno de producción. Se fija el tipo de mantenimiento que se va a asumir para cada sistema de información, determinando los criterios de regulación necesarios para cada tipo de mantenimiento contemplado y reflejando los requisitos de formación esenciales, de manera que se pueda responder satisfactoriamente a las peticiones de mantenimiento.
 
 Se estiman los recursos humanos necesarios para el servicio de mantenimiento establecido, definiendo claramente sus perfiles, asignando responsabilidades y determinando las funciones que van a llevar a cabo, con el fin de garantizar la coordinación en la gestión del mantenimiento.
-Productos
 
-De entrada
+##### Productos
 
-    Plan de Mantenimiento (IAS 7.1)
+###### De entrada {.unnumbered unlisted}
 
-De salida
+* Plan de Mantenimiento (IAS 7.1)
 
-    Plan de Mantenimiento
+###### De salida {.unnumbered unlisted}
 
-Prácticas
+* Plan de Mantenimiento
 
-    Sesiones de trabajo
+##### Prácticas {.unnumbered unlisted}
 
-Participantes
+* Sesiones de trabajo
 
-    Responsable de Mantenimiento
-    Directores de los Usuarios
+##### Participantes {.unnumbered unlisted}
+
+* Responsable de Mantenimiento
+* Directores de los Usuarios
 
 ### Actividad IAS 8: Establecimiento del Acuerdo de Nivel de Servicio
 
