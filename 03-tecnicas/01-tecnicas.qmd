@@ -1018,6 +1018,81 @@ Por otro lado, se han incluido atributos que caracterizan la relación *Trabaja
 ### Optimización {#optimizacion}
 ### Reglas de Obtención del Modelo Físico a partir del Lógico  {#reglas-de-obtencion-del-modelo-fisico-a-partir-del-logico}
 
+El objetivo de esta técnica es obtener un modelo físico de datos a partir del modelo lógico de datos normalizado. Para ello es necesario aplicar un conjunto de reglas que conserven la semántica del modelo lógico.
+
+#### Descripción {.unnumbered .unlisted}
+
+Cada uno de los elementos del modelo lógico se tiene que transformar en un elemento del modelo físico. En algunos casos la transformación es directa porque el concepto se soporta igual en ambos modelos, pero otras veces no existe esta correspondencia, por lo que es necesario buscar una transformación que conserve lo mejor posible la semántica, teniendo en cuenta los aspectos de eficiencia que sean necesarios en cada caso.
+
+##### Transformación de entidades {.unnumbered .unlisted}
+
+Una entidad se transforma en una tabla.
+
+##### Transformación de atributos de entidades {.unnumbered .unlisted}
+
+Cada atributo se transforma en una columna de la tabla en la que se transformó la entidad a la que pertenece. El identificador único se convierte en clave primaria.
+
+Si existen restricciones asociadas a los atributos, éstas pueden recogerse con algunas cláusulas del lenguaje lógico, que se convertirán en disparadores cuando éstos sean soportados por el sistema gestor de base de datos.
+
+##### Transformación de relaciones {.unnumbered .unlisted}
+
+Según el tipo de correspondencia:
+
+* **Relaciones 1:N**, se propaga el identificador de la entidad de cardinalidad máxima 1 a la que es N, teniendo en cuenta que:
+  * Si la relación es de asociación, la clave propagada es clave ajena en la tabla a la que se ha propagado.
+  * Si la relación es de dependencia, la clave primaria de la tabla correspondiente a la entidad débil está formada por la concatenación de los identificadores de ambas entidades.
+* **Relaciones 1:1**, es un caso particular de las 1:N y por tanto se propaga la clave en las dos direcciones. Se debe analizar la situación, intentando recoger la mayor semántica posible, y evitar valores nulos.
+
+Las relaciones de agregación se transforman del mismo modo que las 1:N.
+
+##### Transformación de relaciones exclusivas {.unnumbered .unlisted}
+
+Después de haber realizado la transformación según las relaciones 1:N, se debe tener en cuenta que si los identificadores propagados se han convertido en claves ajenas de la tabla originada por la entidad común a las relaciones, hay que comprobar que una y sólo una de esas claves es nula en cada ocurrencia. En otro caso, estas comprobaciones se deben hacer en las tablas resultantes de transformar las relaciones.
+
+Transformación de la jerarquía {.unnumbered .unlisted}
+
+Existen varias posibilidades que deben ser evaluadas por el diseñador a fin de elegir la que mejor se ajuste a los requisitos. Las opciones para tratar la transformación de la jerarquía son:
+
+* **Opción a**: Consiste en crear una tabla para el supertipo que tenga de clave primaria el identificador y una tabla para cada uno de los subtipos que tengan el identificador del supertipo como clave ajena.
+    Esta solución es apropiada cuando los subtipos tienen muchos atributos distintos y se quieren conservar los atributos comunes en una tabla. También se deben implantar las restricciones y aserciones adecuadas. Es la solución que mejor conserva la semántica.
+* **Opción b**: Se crea una tabla para cada subtipo, los atributos comunes aparecen en todos los subtipos y la clave primaria para cada tabla es el identificador del supertipo.
+    Esta opción mejora la eficiencia en los accesos a todos los atributos de un subtipo, sean los comunes al supertipo o los específicos.
+* **Opción c**: Agrupar en una tabla todos los atributos de la entidad supertipo y de los subtipos. La clave primaria de esta tabla es el identificador de la entidad. Se añade un atributo que indique a qué subtipo pertenece cada ocurrencia (el atributo discriminante de la jerarquía). Esta solución puede aplicarse cuando los subtipos se diferencien en pocos atributos y las relaciones entre los subtipos y otras entidades sean las mismas. Para el caso de que la jerarquía sea total, el atributo discriminante no podrá tomar valor nulo (ya que toda ocurrencia pertenece a alguna de las entidades subtipo).
+
+#### Notación {.unnumbered .unlisted}
+
+##### Tabla {.unnumbered .unlisted}
+
+La representación gráfica de una tabla es un rectángulo con una línea horizontal que lo divide en dos. La parte superior, de ancho menor, se etiqueta con el nombre de la tabla.
+
+![](../images/ROMF-notacion-1.png)
+
+##### Relación {.unnumbered .unlisted}
+
+La relación entre tablas se representa gráficamente mediante una línea que las une. En ella pueden aparecer en sus extremos diversos símbolos para indicar la cardinalidad de la relación, como se muestra a continuación:
+
+![](../images/ROMF-notacion-2.png)
+
+#### Ejemplo {.unnumbered .unlisted}
+
+Sea el diagrama entidad-relación del ejemplo realizado para la Normalización sobre conocimientos de técnicos informáticos y su asignación a proyectos.
+
+![Ejemplo de Obtención del Modelo Físico a partir del Lógico](../images/ROMF-ejemplo.png)
+
+El modelo físico de la figura muestra que cada una de las entidades se ha convertido en una tabla, cuyo contenido coincide con los atributos de la entidad. Pero hay dos tablas más: POSEEN, que surge de la relación del mismo nombre y ASIGNACIONES, que se origina a partir de la relación Están asignados.
+
+La tabla POSEEN está formada por su atributo grado, más cod_empresa, cod_tecnico y cod_conoc. La tabla ASIGNACIONES se forma con los atributos clave cod_empresa, cod_tecnico y cod_proyecto y los propios f_asignación y f_cese.
+
+La relación entre EMPRESAS y TÉCNICOS era 1:N, y la cardinalidad de la figura así lo muestra, pues la empresa siempre estará compuesta de uno o varios técnicos. Lo mismo sucede entre CLIENTES y PROYECTOS: un cliente siempre tendrá 1 o varios proyectos contratados.
+
+El caso de CATEGORÍAS y TÉCNICOS es (0,n). Cada técnico es de una categoría y una categoría corresponde, por regla general, a varios técnicos, pero puede existir alguna en la que no encaje ningún técnico (contable, secretaria de dirección, etc.).
+
+La situación del subconjunto TÉCNICOS-POSEEN-CONOCIMIENTOS tiene algo más de complejidad. Un técnico posee normalmente varios conocimientos, pero debe poseer al menos uno para que tenga sentido su situación. La cardinalidad es pues (1,n) entre TÉCNICOS y POSEEN. En el otro lado, lo natural es que un conocimiento sea poseído por varios técnicos, sin embargo puede existir algún conocimiento que no sea poseído por ningún técnico, por lo que la cardinalidad es (0,n) y dibujada desde la tabla CONOCIMIENTOS a POSEEN.
+
+Por último, en el subconjunto TÉCNICOS-ASIGNACIONES-PROYECTOS, se dispone de: una cardinalidad (0,n), pues a un proyecto estarán asignados uno o más técnicos, pero puede haber algún técnico que, en un momento dado, no esté asignado aún a ningún proyecto y una cardinalidad (1,n), pues un proyecto siempre tendrá asignado al menos a un técnico, o varios.
+
+(Nota.- La notación utilizada para el ejemplo es la más habitual, pero MÉTRICA Versión 3 no exige su utilización).
+
 ### Reglas de Transformación {#reglas-de-transformacion}
 
 El objetivo de esta técnica es obtener un modelo físico de datos a partir del modelo de clases. Para ello es necesario aplicar un conjunto de reglas de transformación que conserven la semántica del modelo de clases.
