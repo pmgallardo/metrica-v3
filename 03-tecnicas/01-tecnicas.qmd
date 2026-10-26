@@ -915,6 +915,55 @@ Sistema encargado de la gestión de los préstamos y reservas de libros y revi
 (Nota.- Esta notación es la más habitual, pero MÉTRICA Versión 3 no exige su utilización).
 
 ### Diagrama de Transición de Estados {#diagrama-de-transicion-de-estados}
+
+Un diagrama de transición de estados muestra el comportamiento dependiente del tiempo de un sistema de información. Representa los estados que puede tomar un componente o un sistema y muestra los eventos que implican el cambio de un estado a otro.
+Descripción
+
+Los dos elementos principales en estos diagramas son los estados y las posibles transiciones entre ellos.
+
+* El *estado* de un componente o sistema representa algún comportamiento que es observable externamente y que perdura durante un periodo de tiempo finito. Viene dado por el valor de uno o varios atributos que lo caracterizan en un momento dado.
+* Una *transición* es un cambio de estado producido por un evento y refleja los posibles caminos para llegar a un estado final desde un estado inicial.
+
+Desde un estado pueden surgir varias transiciones en función del evento que desencadena el cambio de estado, teniendo en cuenta que, las transiciones que provienen del mismo estado no pueden tener el mismo evento, salvo que exista alguna condición que se aplique al evento.
+
+Un sistema sólo puede tener un estado inicial, que se representa mediante una transición sin etiquetar al primer estado normal del diagrama. Pueden existir varias transiciones desde el estado inicial, pero deben tener asociadas condiciones, de manera que sólo una de ellas sea la responsable de iniciar el flujo. En ningún caso puede haber una transición dirigida al estado inicial.
+
+El estado final representa que un componente ha dejado de tener cualquier interacción o actividad. No se permiten transiciones que partan del estado final. Puede haber varios estados finales en un diagrama, ya que es posible concluir el ciclo de vida de un componente desde distintos estados y mediante diferentes eventos, pero dichos estados son mutuamente excluyentes, es decir, sólo uno de ellos puede ocurrir durante una ejecución del sistema.
+
+Los diagramas de transición de estados comprenden además otros dos elementos que ayudan a clarificar el significado de los distintos estados por los que pasa un componente o sistema. Estos elementos se conocen como acciones y actividades. Una acción es una operación instantánea asociada a un evento, cuya duración se considera no significativa y que se puede ejecutar: dentro de un estado, al entrar en un estado o al salir del mismo. Una actividad es una operación asociada a un estado que se ejecuta durante un intervalo de tiempo hasta que se produce el cambio a otro estado.
+
+Para aquellos estados que tengan un comportamiento complejo, se puede utilizar un diagrama de transición de estados de más bajo nivel. Estos diagramas se pueden mostrar por separado o bien incluirse en el diagrama de más alto nivel, dentro del contorno del estado que representa. En cualquier caso su contenido formará un contexto independiente del resto, con sus propios estados inicial y final.
+
+#### Notación {.unnumbered .unlisted}
+
+##### Estado {.unnumbered .unlisted}
+
+Un estado se representa como un rectángulo con las esquinas redondeadas. El nombre del estado se coloca dentro del rectángulo y debe ser único en el diagrama. Si se repite algún nombre, se asume que simboliza el mismo estado.
+
+Las acciones y actividades descritas como respuesta a eventos que no producen un cambio de estado, se representan dentro del rectángulo con el formato:
+
+```text
+nombre-evento (parámetros) [condición] /acción
+```
+
+El estado inicial se representa con un pequeño circulo relleno, y el estado final como un pequeño circulo relleno con una circunferencia que lo rodea.
+
+![](../images/estados.png)
+
+##### Transición {.unnumbered .unlisted}
+
+Una transición se representa con una flecha continua que une dos estados y que se dirige al estado al que cambia el componente. Junto a ella se coloca una etiqueta que debe contener al menos el nombre del evento que provoca la transición. Según el nivel de detalle, puede presentar otros elementos con el formato siguiente:
+
+```text
+nombre-evento (parámetros) [condición] /acción
+```
+
+#### Ejemplo {.unnumbered .unlisted}
+
+![Ejemplo de Diagrama de Transición de Estados](../images/estados-ejemplo.png)
+
+(Nota.- Esta notación es la más habitual, pero MÉTRICA Versión 3 no exige su utilización).
+
 ### Modelado de Procesos de la Organización {#modelado-de-procesos-de-la-organizacion}
 #### SADT (Structured Analysis and Design Technique) {#sadt}
 
