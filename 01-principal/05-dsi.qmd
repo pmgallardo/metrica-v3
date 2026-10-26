@@ -2287,38 +2287,38 @@ Opcionalmente, se propone la realización de un plan de integración del sistema
 
 ###### De entrada {.unnumbered .unlisted}
 
-    Especificaciones de Construcción del Sistema de Información (DSI 8.1)
-    Catálogo de Requisitos (DSI 1.2)
-    Catálogo de Normas (DSI 1.4)
-    Diseño de la Arquitectura del Sistema (DSI 7.2)
-    Diseño Detallado de los Subsistemas de Soporte (DSI 7.2)
-    Asignación de Esquemas Físicos de Datos a Nodos (DSI 7.2)
-    Diseño de Interfaz de Usuario (DSI 7.2)
-    En Diseño Estructurado:
-    Diseño de la Arquitectura Modular (DSI 7.2)
-    En Diseño Orientado a Objetos:
-    Diseño de la Realización de los Casos de Uso (DSI 7.2)
-    Modelo de Clases de Diseño (DSI 7.2)
-    Comportamiento de Clases de Diseño (DSI 7.2)
+* Especificaciones de Construcción del Sistema de Información (DSI 8.1)
+* Catálogo de Requisitos (DSI 1.2)
+* Catálogo de Normas (DSI 1.4)
+* Diseño de la Arquitectura del Sistema (DSI 7.2)
+* Diseño Detallado de los Subsistemas de Soporte (DSI 7.2)
+* Asignación de Esquemas Físicos de Datos a Nodos (DSI 7.2)
+* Diseño de Interfaz de Usuario (DSI 7.2)
+  ***En Diseño Estructurado***:
+* Diseño de la Arquitectura Modular (DSI 7.2)
+  ***En Diseño Orientado a Objetos***:
+* Diseño de la Realización de los Casos de Uso (DSI 7.2)
+* Modelo de Clases de Diseño (DSI 7.2)
+* Comportamiento de Clases de Diseño (DSI 7.2)
 
 ###### De salida {.unnumbered .unlisted}
 
-    Especificaciones de Construcción del Sistema de Información:
-        Descripción de Subsistemas de Construcción y Dependencias
-        Descripción de Componentes
-        Plan de Integración del Sistema de Información
+* Especificaciones de Construcción del Sistema de Información:
+  * Descripción de Subsistemas de Construcción y Dependencias
+  * Descripción de Componentes
+  * Plan de Integración del Sistema de Información
 
 ##### Técnicas {.unnumbered .unlisted}
 
-    Diagrama de Estructura
-    Matricial
-    Diagrama de Componentes
-    Diagrama de Despliegue
+* Diagrama de Estructura
+* Matricial
+* Diagrama de Componentes
+* Diagrama de Despliegue
 
 ##### Participantes {.unnumbered .unlisted}
 
-    Equipo de Arquitectura
-    Equipo del Proyecto
+* Equipo de Arquitectura
+* Equipo del Proyecto
 
 #### Tarea DSI 8.3: Elaboración de Especificaciones de Construcción
 
@@ -2330,36 +2330,36 @@ Asimismo, se determinan y especifican todos los elementos o parámetros compleme
 
 ###### De entrada {.unnumbered .unlisted}
 
-    Especificaciones de Construcción del Sistema de Información (DSI 8.2)
-    Catálogo de Requisitos (DSI 1.2)
-    Catálogo de Excepciones (DSI 1.3)
-    Catálogo de Normas (DSI 1.4)
-    Diseño de la Arquitectura del Sistema (DSI 7.2)
-    Entorno Tecnológico del Sistema (DSI 7.2)
-    Diseño Detallado de los Subsistemas de Soporte (DSI 7.2)
-    Modelo Físico de Datos Optimizado (DSI 7.2)
-    Esquemas Físicos de Datos (DSI 7.2)
-    Asignación de Esquemas Físicos de Datos a Nodos (DSI 7.2)
-    Diseño de Interfaz de Usuario (DSI 7.2)
-    En Diseño Estructurado:
-    Diseño de la Arquitectura Modular (DSI 7.2)
-    En Diseño Orientado a Objetos:
-    Diseño de la Realización de los Casos de Uso (DSI 7.2)
-    Modelo de Clases de Diseño (DSI 7.2)
-    Comportamiento de Clases de Diseño (DSI 7.2)
+* Especificaciones de Construcción del Sistema de Información (DSI 8.2)
+* Catálogo de Requisitos (DSI 1.2)
+* Catálogo de Excepciones (DSI 1.3)
+* Catálogo de Normas (DSI 1.4)
+* Diseño de la Arquitectura del Sistema (DSI 7.2)
+* Entorno Tecnológico del Sistema (DSI 7.2)
+* Diseño Detallado de los Subsistemas de Soporte (DSI 7.2)
+* Modelo Físico de Datos Optimizado (DSI 7.2)
+* Esquemas Físicos de Datos (DSI 7.2)
+* Asignación de Esquemas Físicos de Datos a Nodos (DSI 7.2)
+* Diseño de Interfaz de Usuario (DSI 7.2)
+  ***En Diseño Estructurado***:
+* Diseño de la Arquitectura Modular (DSI 7.2)
+  ***En Diseño Orientado a Objetos***:
+* Diseño de la Realización de los Casos de Uso (DSI 7.2)
+* Modelo de Clases de Diseño (DSI 7.2)
+* Comportamiento de Clases de Diseño (DSI 7.2)
 
 ###### De salida {.unnumbered .unlisted}
 
-    Especificaciones de Construcción del Sistema de Información
-        Especificación Detallada de Componentes
+* Especificaciones de Construcción del Sistema de Información
+  * Especificación Detallada de Componentes
 
 ##### Técnicas {.unnumbered .unlisted}
 
-    Diagrama de Componentes
+* Diagrama de Componentes
 
 ##### Participantes {.unnumbered .unlisted}
 
-    Equipo del Proyecto
+ * Equipo del Proyecto
 
 #### Tarea DSI 8.4: Elaboración de Especificaciones del Modelo Físico de Datos
 
@@ -2369,24 +2369,24 @@ En esta tarea se generan las especificaciones necesarias para la definición y c
 
 ###### De entrada {.unnumbered .unlisted}
 
-    Características específicas del SGBD o sistemas de ficheros a utilizar (externo)
-    Especificaciones de Construcción del Sistema de Información (DSI 8.3)
-    Catálogo de Requisitos (DSI 1.2)
-    Catálogo de Normas (DSI 1.4)
-    Entorno Tecnológico del Sistema (DSI 7.2)
-    Modelo Físico de Datos Optimizado (DSI 7.2)
-    Esquemas Físicos de Datos (DSI 7.2)
-    Asignación de Esquemas Físicos de Datos a Nodos (DSI 7.2)
+* Características específicas del SGBD o sistemas de ficheros a utilizar (externo)
+* Especificaciones de Construcción del Sistema de Información (DSI 8.3)
+* Catálogo de Requisitos (DSI 1.2)
+* Catálogo de Normas (DSI 1.4)
+* Entorno Tecnológico del Sistema (DSI 7.2)
+* Modelo Físico de Datos Optimizado (DSI 7.2)
+* Esquemas Físicos de Datos (DSI 7.2)
+* Asignación de Esquemas Físicos de Datos a Nodos (DSI 7.2)
 
 ###### De salida {.unnumbered .unlisted}
 
-    Especificaciones de Construcción del Sistema de Información
-        Especificación de la Estructura Física de Datos
+* Especificaciones de Construcción del Sistema de Información
+  * Especificación de la Estructura Física de Datos
 
 ##### Participantes {.unnumbered .unlisted}
 
-    Equipo del Proyecto
-    Administradores de Bases de Datos
+* Equipo del Proyecto
+* Administradores de Bases de Datos
 
 ### Actividad DSI 9: Diseño de la Migración y Carga Inicial de Datos
 
