@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es"><head>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es-ES" xml:lang="es-ES"><head>
 
 <meta charset="utf-8">
 <meta name="generator" content="quarto-1.10.19">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="dcterms.date" content="2000-01-01">
 
 <title>11&nbsp; Gestión de Configuración – Métrica v.3</title>
 <style>
@@ -108,6 +109,23 @@ ul.task-list li input[type="checkbox"] {
       <a href="../">Métrica v.3</a> 
         <div class="sidebar-tools-main">
     <a href="https://github.com/pmgallardo/metrica-v3" title="Ejecutar el código" class="quarto-navigation-tool px-1" aria-label="Ejecutar el código"><i class="bi bi-github"></i></a>
+    <div class="dropdown">
+      <a href="" title="Descargar" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" role="link" aria-label="Descargar"><i class="bi bi-download"></i></a>
+      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="../metrica-v3.pdf">
+              <i class="bi bi-file-pdf pe-1"></i>
+            Descargar PDF
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="../metrica-v3.epub">
+              <i class="bi bi-journal pe-1"></i>
+            Descargar ePub
+            </a>
+          </li>
+      </ul>
+    </div>
 </div>
     </div>
       </div>
@@ -257,8 +275,44 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Tabla de contenidos</h2>
+   
+  <ul>
+  <li><a href="#descripción-y-objetivos" id="toc-descripción-y-objetivos" class="nav-link active" data-scroll-target="#descripción-y-objetivos"><span class="header-section-number">11.1</span> Descripción y Objetivos</a></li>
+  <li><a href="#estudio-de-viabilidad-del-sistema" id="toc-estudio-de-viabilidad-del-sistema" class="nav-link" data-scroll-target="#estudio-de-viabilidad-del-sistema"><span class="header-section-number">11.2</span> Estudio de Viabilidad del Sistema</a>
+  <ul>
+  <li><a href="#evs-gc-1" id="toc-evs-gc-1" class="nav-link" data-scroll-target="#evs-gc-1"><span class="header-section-number">11.2.1</span> Actividad EVS-GC 1: Definición de los Requisitos de Gestión de Configuración</a>
+  <ul class="collapse">
+  <li><a href="#evs-gc-1.1" id="toc-evs-gc-1.1" class="nav-link" data-scroll-target="#evs-gc-1.1"><span class="header-section-number">11.2.1.1</span> Tarea EVS-GC 1.1: Definición de los Requisitos de Gestión de Configuración</a></li>
+  </ul></li>
+  <li><a href="#evs-gc-2" id="toc-evs-gc-2" class="nav-link" data-scroll-target="#evs-gc-2"><span class="header-section-number">11.2.2</span> Actividad EVS-GC 2: Establecimiento del Plan de Gestión de la Configuración</a>
+  <ul class="collapse">
+  <li><a href="#evs-gc-2-2" id="toc-evs-gc-2-2" class="nav-link" data-scroll-target="#evs-gc-2-2"><span class="header-section-number">11.2.2.1</span> Tarea EVS-GC 2.1: Definición del Plan de Gestión de la Configuración</a></li>
+  <li><a href="#evs-gc-2-2" id="toc-evs-gc-2-2" class="nav-link" data-scroll-target="#evs-gc-2-2"><span class="header-section-number">11.2.2.2</span> Tarea EVS-GC 2.2: Especificación del Entorno Tecnológico para la Gestión de Configuración</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#análisis-diseño-construcción-e-implantación-y-aceptación-del-sistema-de-información" id="toc-análisis-diseño-construcción-e-implantación-y-aceptación-del-sistema-de-información" class="nav-link" data-scroll-target="#análisis-diseño-construcción-e-implantación-y-aceptación-del-sistema-de-información"><span class="header-section-number">11.3</span> Análisis, diseño, construcción e implantación y aceptación del Sistema de Información</a>
+  <ul>
+  <li><a href="#gc-1" id="toc-gc-1" class="nav-link" data-scroll-target="#gc-1"><span class="header-section-number">11.3.1</span> Actividad GC 1: Identificación y registro de Productos</a>
+  <ul class="collapse">
+  <li><a href="#gc-1-1" id="toc-gc-1-1" class="nav-link" data-scroll-target="#gc-1-1"><span class="header-section-number">11.3.1.1</span> Tarea GC 1.1: Identificación y Registro de los Productos de los Procesos en el Sistema de Gestión de la Configuración</a></li>
+  </ul></li>
+  <li><a href="#gc-2" id="toc-gc-2" class="nav-link" data-scroll-target="#gc-2"><span class="header-section-number">11.3.2</span> Actividad GC 2: Identificación y registro del Producto Global</a></li>
+  <li><a href="#gc-2-1" id="toc-gc-2-1" class="nav-link" data-scroll-target="#gc-2-1"><span class="header-section-number">11.3.3</span> Tarea GC 2.1: Registro en el Sistema de Gestión de la Configuración del Producto Global de Proceso</a></li>
+  </ul></li>
+  <li><a href="#mantenimiento-del-sistema-de-información" id="toc-mantenimiento-del-sistema-de-información" class="nav-link" data-scroll-target="#mantenimiento-del-sistema-de-información"><span class="header-section-number">11.4</span> Mantenimiento del Sistema de Información</a>
+  <ul>
+  <li><a href="#msi-gc-1" id="toc-msi-gc-1" class="nav-link" data-scroll-target="#msi-gc-1"><span class="header-section-number">11.4.1</span> Actividad MSI-GC 1: Registro del Cambio en el Sistema de Gestión de la Configuración</a>
+  <ul class="collapse">
+  <li><a href="#msi-gc-1-1" id="toc-msi-gc-1-1" class="nav-link" data-scroll-target="#msi-gc-1-1"><span class="header-section-number">11.4.1.1</span> Tarea MSI-GC 1.1: Registro del Cambio en el Sistema de Gestión de la Configuración</a></li>
+  <li><a href="#msi-gc-1-2" id="toc-msi-gc-1-2" class="nav-link" data-scroll-target="#msi-gc-1-2"><span class="header-section-number">11.4.1.2</span> Tarea MSI-GC 1.2: Registro de la Nueva Versión de los Productos Afectados por el Cambio en el Sistema de Gestión de la Configuración</a></li>
+  <li><a href="#msi-gc-1-3" id="toc-msi-gc-1-3" class="nav-link" data-scroll-target="#msi-gc-1-3"><span class="header-section-number">11.4.1.3</span> Tarea MSI-GC 1.3: Registro de la Nueva Versión de los Sistemas de Información en el Sistema de Gestión de la Configuración</a></li>
+  </ul></li>
+  </ul></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/pmgallardo/metrica-v3/edit/main/02-interfaces/03-configuracion.qmd" class="toc-action"><i class="bi bi-github"></i>Editar esta página</a></li><li><a href="https://github.com/pmgallardo/metrica-v3/issues/new" class="toc-action"><i class="bi empty"></i>Informar sobre problema</a></li><li><a href="https://github.com/pmgallardo/metrica-v3/blob/main/02-interfaces/03-configuracion.qmd" class="toc-action"><i class="bi empty"></i>Ver el código</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -273,7 +327,19 @@ ul.task-list li input[type="checkbox"] {
 <div class="quarto-title-meta">
 
     
+    <div>
+    <div class="quarto-title-meta-heading">Fecha de publicación</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">01/01/2000</p>
+    </div>
+  </div>
   
+    <div>
+    <div class="quarto-title-meta-heading">Fecha de última modificación</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date-modified">26/10/2026</p>
+    </div>
+  </div>
     
   </div>
   
@@ -282,8 +348,64 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<section id="descripción-y-objetivos" class="level2" data-number="11.1">
+<h2 data-number="11.1" class="anchored" data-anchor-id="descripción-y-objetivos"><span class="header-section-number">11.1</span> Descripción y Objetivos</h2>
+</section>
+<section id="estudio-de-viabilidad-del-sistema" class="level2" data-number="11.2">
+<h2 data-number="11.2" class="anchored" data-anchor-id="estudio-de-viabilidad-del-sistema"><span class="header-section-number">11.2</span> Estudio de Viabilidad del Sistema</h2>
+<section id="evs-gc-1" class="level3" data-number="11.2.1">
+<h3 data-number="11.2.1" class="anchored" data-anchor-id="evs-gc-1"><span class="header-section-number">11.2.1</span> Actividad EVS-GC 1: Definición de los Requisitos de Gestión de Configuración</h3>
+
+<section id="evs-gc-1.1" class="level4" data-number="11.2.1.1">
+<h4 data-number="11.2.1.1" class="anchored" data-anchor-id="evs-gc-1.1"><span class="header-section-number">11.2.1.1</span> Tarea EVS-GC 1.1: Definición de los Requisitos de Gestión de Configuración</h4>
+</section>
+</section>
+<section id="evs-gc-2" class="level3" data-number="11.2.2">
+<h3 data-number="11.2.2" class="anchored" data-anchor-id="evs-gc-2"><span class="header-section-number">11.2.2</span> Actividad EVS-GC 2: Establecimiento del Plan de Gestión de la Configuración</h3>
+
+<section id="evs-gc-2-2" class="level4" data-number="11.2.2.1">
+<h4 data-number="11.2.2.1" class="anchored" data-anchor-id="evs-gc-2-2"><span class="header-section-number">11.2.2.1</span> Tarea EVS-GC 2.1: Definición del Plan de Gestión de la Configuración</h4>
+</section>
+<section id="evs-gc-2-2" class="level4" data-number="11.2.2.2">
+<h4 data-number="11.2.2.2" class="anchored" data-anchor-id="evs-gc-2-2"><span class="header-section-number">11.2.2.2</span> Tarea EVS-GC 2.2: Especificación del Entorno Tecnológico para la Gestión de Configuración</h4>
+</section>
+</section>
+</section>
+<section id="análisis-diseño-construcción-e-implantación-y-aceptación-del-sistema-de-información" class="level2" data-number="11.3">
+<h2 data-number="11.3" class="anchored" data-anchor-id="análisis-diseño-construcción-e-implantación-y-aceptación-del-sistema-de-información"><span class="header-section-number">11.3</span> Análisis, diseño, construcción e implantación y aceptación del Sistema de Información</h2>
+<section id="gc-1" class="level3" data-number="11.3.1">
+<h3 data-number="11.3.1" class="anchored" data-anchor-id="gc-1"><span class="header-section-number">11.3.1</span> Actividad GC 1: Identificación y registro de Productos</h3>
+
+<section id="gc-1-1" class="level4" data-number="11.3.1.1">
+<h4 data-number="11.3.1.1" class="anchored" data-anchor-id="gc-1-1"><span class="header-section-number">11.3.1.1</span> Tarea GC 1.1: Identificación y Registro de los Productos de los Procesos en el Sistema de Gestión de la Configuración</h4>
+</section>
+</section>
+<section id="gc-2" class="level3" data-number="11.3.2">
+<h3 data-number="11.3.2" class="anchored" data-anchor-id="gc-2"><span class="header-section-number">11.3.2</span> Actividad GC 2: Identificación y registro del Producto Global</h3>
+
+</section>
+<section id="gc-2-1" class="level3" data-number="11.3.3">
+<h3 data-number="11.3.3" class="anchored" data-anchor-id="gc-2-1"><span class="header-section-number">11.3.3</span> Tarea GC 2.1: Registro en el Sistema de Gestión de la Configuración del Producto Global de Proceso</h3>
+</section>
+</section>
+<section id="mantenimiento-del-sistema-de-información" class="level2" data-number="11.4">
+<h2 data-number="11.4" class="anchored" data-anchor-id="mantenimiento-del-sistema-de-información"><span class="header-section-number">11.4</span> Mantenimiento del Sistema de Información</h2>
+<section id="msi-gc-1" class="level3" data-number="11.4.1">
+<h3 data-number="11.4.1" class="anchored" data-anchor-id="msi-gc-1"><span class="header-section-number">11.4.1</span> Actividad MSI-GC 1: Registro del Cambio en el Sistema de Gestión de la Configuración</h3>
+
+<section id="msi-gc-1-1" class="level4" data-number="11.4.1.1">
+<h4 data-number="11.4.1.1" class="anchored" data-anchor-id="msi-gc-1-1"><span class="header-section-number">11.4.1.1</span> Tarea MSI-GC 1.1: Registro del Cambio en el Sistema de Gestión de la Configuración</h4>
+</section>
+<section id="msi-gc-1-2" class="level4" data-number="11.4.1.2">
+<h4 data-number="11.4.1.2" class="anchored" data-anchor-id="msi-gc-1-2"><span class="header-section-number">11.4.1.2</span> Tarea MSI-GC 1.2: Registro de la Nueva Versión de los Productos Afectados por el Cambio en el Sistema de Gestión de la Configuración</h4>
+</section>
+<section id="msi-gc-1-3" class="level4" data-number="11.4.1.3">
+<h4 data-number="11.4.1.3" class="anchored" data-anchor-id="msi-gc-1-3"><span class="header-section-number">11.4.1.3</span> Tarea MSI-GC 1.3: Registro de la Nueva Versión de los Sistemas de Información en el Sistema de Gestión de la Configuración</h4>
 
 
+</section>
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -703,4 +825,4 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions"><ul><li><a href="https://github.com/pmgallardo/metrica-v3/edit/main/02-interfaces/03-configuracion.qmd" class="toc-action"><i class="bi bi-github"></i>Editar esta página</a></li><li><a href="https://github.com/pmgallardo/metrica-v3/issues/new" class="toc-action"><i class="bi empty"></i>Informar sobre problema</a></li><li><a href="https://github.com/pmgallardo/metrica-v3/blob/main/02-interfaces/03-configuracion.qmd" class="toc-action"><i class="bi empty"></i>Ver el código</a></li></ul></div></div></div></footer></body></html>
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/pmgallardo/metrica-v3/edit/main/02-interfaces/03-configuracion.qmd" class="toc-action"><i class="bi bi-github"></i>Editar esta página</a></li><li><a href="https://github.com/pmgallardo/metrica-v3/issues/new" class="toc-action"><i class="bi empty"></i>Informar sobre problema</a></li><li><a href="https://github.com/pmgallardo/metrica-v3/blob/main/02-interfaces/03-configuracion.qmd" class="toc-action"><i class="bi empty"></i>Ver el código</a></li></ul></div></div></div></footer></body></html>
