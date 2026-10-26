@@ -35,7 +35,7 @@ Mantenimiento de sistemas de información
 
 ![Mantenimiento de sistemas de información](../images/msi-plan.jpg)
 
-### Actividad MSI 1: Registro de la Petición
+### Actividad MSI 1: Registro de la Petición {#msi-1}
 
 El objetivo de esta actividad es establecer un sistema estandarizado de registro de información para las peticiones de mantenimiento, con el fin de controlar y canalizar los cambios propuestos por un usuario o cliente, mejorando el flujo de trabajo de la organización y proporcionando una gestión efectiva del mantenimiento.
 
@@ -97,7 +97,7 @@ Una vez que la petición ha sido registrada, que ha determinado el tipo de mante
 </table>
 ```
 
-#### MSI 1.1: Registro de la Petición
+#### MSI 1.1: Registro de la Petición {#msi-1-1}
 
 ##### Tarea MSI 1.1: Registro de la Petición
 
@@ -125,7 +125,7 @@ En cualquier caso, será imprescindible recoger la identificación, origen y tip
 
 * Responsable del Mantenimiento
 
-#### Tarea MSI 1.2: Asignación de la Petición
+#### Tarea MSI 1.2: Asignación de la Petición {#msi-1-2}
 
 En esta tarea se determina el tipo de mantenimiento requerido por la petición catalogada, teniendo en cuenta toda la información que se ha registrado en la tarea anterior. Hay que identificar también los sistemas de información inicialmente afectados por petición.
 
@@ -154,7 +154,7 @@ Si la petición es aceptada, se determina de quién es la responsabilidad de ate
 
 * Responsable del Mantenimiento
 
-### Actividad MSI 2: Análisis de la Petición
+### Actividad MSI 2: Análisis de la Petición {#msi-2}
 
 En esta actividad se lleva a cabo el diagnóstico y análisis del cambio para dar respuesta a las peticiones de mantenimiento que han sido aceptadas en la actividad anterior.
 
@@ -225,7 +225,7 @@ El enfoque de este estudio varía según el tipo de mantenimiento, teniendo en c
 </table>
 ```
 
-#### Tarea MSI 2.1: Verificación y Estudio de la Petición
+#### Tarea MSI 2.1: Verificación y Estudio de la Petición {#msi-1-2}
 
 Antes de iniciar el estudio de la petición, se verifica que la información registrada es correcta. Para determinar su validez:
 
@@ -261,7 +261,7 @@ Una vez examinada la petición comienza su estudio, que será diferente en funci
 
 * Equipo de Mantenimiento
 
-#### Tarea MSI 2.2: Estudio de la Propuesta de Solución
+#### Tarea MSI 2.2: Estudio de la Propuesta de Solución {#msi-2-2}
 
 A partir del catálogo de peticiones, y para cada una de ellas, se estima su alcance valorando la prioridad inicialmente asignada, de acuerdo a los requisitos planteados. A continuación, se analiza la relación entre peticiones. Se decide cuáles pueden abordarse de forma conjunta asignando, si procede, una prioridad global a los grupos identificados y determinando en qué secuencia deben implementarse los cambios.
 
@@ -305,7 +305,7 @@ Por último, si se considera necesario, hay que proponer alternativas de soluci�
 * Responsable de Mantenimiento
 * Equipo de Mantenimiento
 
-### Actividad MSI 3: Preparación de la Implementación de la Modificación
+### Actividad MSI 3: Preparación de la Implementación de la Modificación {#msi-3}
 
 Una vez finalizado el estudio previo de la petición y aprobada su implementación, se pasa a identificar de forma detallada cada uno de los elementos afectados por el cambio mediante el análisis de impacto. Este análisis tiene como objetivo determinar qué parte del sistema de información se ve afectada, y en qué medida, dejando claramente definido y documentado qué componentes hay que modificar, tanto de software como de hardware.
 
@@ -392,7 +392,7 @@ Una vez aceptado el plan de acción, se activan los correspondientes procesos de
 </table>
 ```
 
-#### Tarea MSI 3.1: Identificación de Elementos Afectados
+#### Tarea MSI 3.1: Identificación de Elementos Afectados {#msi-3-1}
 
 Se realiza un análisis detallado del impacto de la petición, con el fin de conocer el alcance real de la modificación en función del número, características y relaciones existentes entre los elementos afectados. De esta manera se puede establecer una secuencia y planificación correcta del desarrollo de los cambios, valorando los recursos necesarios para llevarlo a cabo. En el caso de un mantenimiento evolutivo que implique una incorporación o eliminación, el alcance real de la modificación se determina después de realizar el proceso Análisis del Sistema de Información, según se indicó en la actividad anterior.
 
@@ -423,7 +423,7 @@ En este análisis quedarán reflejados, de la forma que se considere más conven
 * Equipo de Mantenimiento
 * Jefe de Proyecto
 
-#### Tarea MSI 3.2: Establecimiento del Plan de Acción
+#### Tarea MSI 3.2: Establecimiento del Plan de Acción {#msi-3-2}
 
 Se identifican las actividades y tareas de los procesos de desarrollo Estudio de Viabilidad del Sistema, Análisis del Sistema de Información, Diseño del Sistema de Información, Construcción del Sistema de Información e Implantación y Aceptación del Sistema que es preciso realizar, en función de las características, complejidad y alcance de la petición estudiada, así como del plan de mantenimiento establecido para los sistemas de información implicados.
 
@@ -461,7 +461,7 @@ Productos
 * Equipo de Mantenimiento
 * Jefe de Proyecto
 
-#### Tarea MSI 3.3: Especificación del Plan de Pruebas de Regresión
+#### Tarea MSI 3.3: Especificación del Plan de Pruebas de Regresión {#msi-3-3}
 
 Las pruebas de regresión tratan de eliminar el llamado efecto onda, es decir, que los cambios provocados por una petición no introduzcan un comportamiento no deseado o errores adicionales en otros componentes no modificados. Por tanto, es necesario comprobar que los cambios que se lleven a cabo en los componentes afectados, no produzcan estos efectos sobre el mismo u otros componentes.
 
@@ -484,7 +484,7 @@ Con este objetivo se deben especificar los casos de prueba en función de las re
 * Equipo de Mantenimiento
 * Jefe de Proyecto
 
-### Actividad MSI 4: Seguimiento y Evaluación de los Cambios hasta la Aceptación
+### Actividad MSI 4: Seguimiento y Evaluación de los Cambios hasta la Aceptación {#msi-4}
 
 Se realiza el seguimiento de los cambios que se están llevando a cabo en los procesos de desarrollo, de acuerdo a los puntos de control del ciclo de vida del cambio establecidos en el plan de acción. Durante este seguimiento, se comprueba que sólo se han modificado los elementos que se ven afectados por el cambio y que se han realizado las pruebas correspondientes, especialmente las pruebas de integración y del sistema. Del resultado obtenido se hace una evaluación del cambio para la posterior aprobación.
 
@@ -567,7 +567,7 @@ Con el cierre de la petición se podrán incluir enel catálogo, si se considera
 </table>
 ```
 
-#### Tarea MSI 4.1: Seguimiento de los Cambios
+#### Tarea MSI 4.1: Seguimiento de los Cambios {#msi-4-1}
 
 Se hace el seguimiento del plan de acción de acuerdo a los puntos de control establecidos en la actividad anterior.
 
@@ -629,7 +629,7 @@ Finalmente, una vez que el comportamiento es correcto, se documenta el resultado
 * Equipo de Mantenimiento
 * Jefe de Proyecto
 
-#### Tarea MSI 4.3: Aprobación y Cierre de la Petición
+#### Tarea MSI 4.3: Aprobación y Cierre de la Petición {#msi-4-3}
 
 Se aprueba formalmente la finalización de la petición de mantenimiento de acuerdo a los resultados obtenidos en la tarea anterior. Se actualiza el catálogo de peticiones registrando el cierre de la petición tratada.
 
