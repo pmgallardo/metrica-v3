@@ -20,73 +20,72 @@ Es importante resaltar que la notación que se propone en la aplicación de la
 
 Las técnicas de desarrollo son un conjunto de procedimientos que se basan en reglas y notaciones específicas en términos de sintaxis, semántica y gráficos, orientadas a la obtención de productos en el desarrollo de un sistema de información. En desarrollos del tipo estructurado o de orientación a objetos merecen especial atención las técnicas gráficas, que proponen símbolos y notaciones estándares para una mejor comprensión de los sistemas o sus componentes. De todos modos, y debido a la diversidad existente, las notaciones aquí propuestas no se consideran obligatorias en la metodología MÉTRICA Versión 3, pero sí que se deben aplicar rigurosamente sus reglas y validaciones para conseguir el objetivo propuesto con la mayor eficacia.
 
-Análisis Coste/Beneficio
-Casos de Uso
-Diagrama de Clases
-Diagrama de Componentes
-Diagrama de Descomposición
-Diagrama de Despliegue
-Diagrama de Estructura
-Diagrama de Flujo de Datos
-Diagrama de Interacción
-
-    Diagrama de Secuencia
-    Diagrama de Colaboración
-
-Diagrama de Paquetes
-Diagrama de Transición de Estados
-Modelado de Procesos de la Organización
-
-    SADT (Structured Analysis and Design Technique)
-
-Modelo Entidad/Relación Extendido
-Normalización
-Optimización
-Reglas de Obtención del Modelo Físico a partir del Lógico
-Reglas de Transformación
-Técnicas Matriciales
+* [Análisis Coste/Beneficio](analisis-coste-beneficio)
+* Casos de Uso
+* Diagrama de Clases
+* Diagrama de Componentes
+* Diagrama de Descomposición
+* Diagrama de Despliegue
+* Diagrama de Estructura
+* Diagrama de Flujo de Datos
+* Diagrama de Interacción
+  * Diagrama de Secuencia
+  * Diagrama de Colaboración
+* Diagrama de Paquetes
+* Diagrama de Transición de Estados
+* Modelado de Procesos de la Organización
+  * [SADT (Structured Analysis and Design Technique)](#sadt)
+* Modelo Entidad/Relación Extendido
+* Normalización
+* Optimización
+* Reglas de Obtención del Modelo Físico a partir del Lógico
+* Reglas de Transformación
+* Técnicas Matriciales
 
 ### Análisis Coste/Beneficio {#analisis-coste-beneficio}
 
 La técnica de análisis coste/beneficio tiene como objetivo fundamental proporcionar una medida de los costes en que se incurre en la realización de un proyecto y comparar dichos costes previstos con los beneficios esperados de la realización de dicho proyecto. Esta medida o estimación servirá para:
 
-    Valorar la necesidad y oportunidad de acometer la realización del proyecto.
-    Seleccionar la alternativa más beneficiosa para la realización del proyecto.
-    Estimar adecuadamente los recursos económicos necesarios en el plazo de realización del proyecto.
+- Valorar la necesidad y oportunidad de acometer la realización del proyecto.
+- Seleccionar la alternativa más beneficiosa para la realización del proyecto.
+- Estimar adecuadamente los recursos económicos necesarios en el plazo de realización del proyecto.
 
 Es de destacar la necesidad cada vez mayor de guiarse por criterios económicos y no sólo técnicos para la planificación de trabajos y proyectos. Por ello se hace una primera introducción sobre las técnicas y métodos de evaluación de conceptos económicos, con el fin de proporcionar a los profesionales criterios que les ayuden en la planificación de proyectos y evaluación de alternativas.
-Conceptos
 
-Punto de amortización (Break-Even Point)
+#### Conceptos {.unlisted .unnumbered}
+
+##### Punto de amortización (Break-Even Point) {.unlisted .unnumbered}
 
 Es el momento en el tiempo en que el conjunto de beneficios obtenidos por la explotación del nuevo sistema iguala al conjunto de costes de todo tipo que ha ocasionado. A partir del punto de amortización (Break-Even Point), el sistema entra en fase de aportar beneficios netos a la organización.
 
-Periodo de amortización (PayBack)
+##### Periodo de amortización (PayBack) {.unlisted .unnumbered}
 
 Es el periodo de tiempo que transcurre desde que los costes son máximos hasta que se alcanza el punto de amortización (Break-Even Point), es decir, en cuanto el sistema empieza a aportar beneficios. Cuanto menor sea el periodo de amortización (Payback) de un Sistema, más atractivo será para la organización acometer su implantación.
 
-Retorno de la Inversión – ROI (Return of Investment)
+##### Retorno de la Inversión – ROI (Return of Investment) {.unlisted .unnumbered}
 
 Es el rendimiento de la inversión expresada en términos de porcentaje. Se calcula mediante la fórmula siguiente:
 
-ROI = 100 x (Beneficio Neto Anual – Coste Desarrollo Anualizado) / Inversión Promedio
+$$
+\text{ROI} = 100 \times (\text{Beneficio Neto Anual} - \text{Coste Desarrollo Anualizado}) / \text{Inversión Promedio}
+$$
 
 Siendo:
 
-Beneficio Neto Anual: Es la ganancia que aporta el sistema como consecuencia de su uso, es decir los beneficios obtenidos más los gastos no incurridos. Deben restársele los gastos operacionales anuales y los de mantenimiento del sistema.
+  **Beneficio Neto Anual**: Es la ganancia que aporta el sistema como consecuencia de su uso, es decir los beneficios obtenidos más los gastos no incurridos. Deben restársele los gastos operacionales anuales y los de mantenimiento del sistema.
 
-Coste Desarrollo Anualizado: Total del gasto inicial de desarrollo del sistema, dividido por los años que se supone que va a ser operativo.
+  **Coste Desarrollo Anualizado**: Total del gasto inicial de desarrollo del sistema, dividido por los años que se supone que va a ser operativo.
 
-Inversión Promedio: Total de la inversión realizada (costes de desarrollo, hardware, software, etc.) dividido por el total de conceptos en los que se invierte.
+  **Inversión Promedio**: Total de la inversión realizada (costes de desarrollo, hardware, software, etc.) dividido por el total de conceptos en los que se invierte.
 
-Descripción
+##### Descripción {.unlisted .unnumbered}
 
 Para la realización del análisis coste/beneficio se seguirán los siguientes pasos:
 
-    Producir estimaciones de costes/beneficios.
-    Determinar la viabilidad del proyecto y su aceptación.
+1. [Producir estimaciones de costes/beneficios](#producir-estimaciones-de-costes-beneficios).
+2. [Determinar la viabilidad del proyecto](#determinar-la-viabilidad-del-proyecto) y su aceptación.
 
-1. PRODUCIR ESTIMACIONES DE COSTES-BENEFICIOS
+###### 1. Producir estimaciones de costes-beneficios {.unlisted .unnumbered #producir-estimaciones-de-costes-beneficios}
 
 Se realizará una lista de todo lo que es necesario para implementar el sistema y una lista de los beneficios esperados del nuevo sistema.
 
@@ -94,8 +93,8 @@ En general, los costes suelen ser medibles y estimables en unidades económicas
 
 Entre los beneficios no tangibles pueden estar:
 
-    El aumento de cuentas debido a un mejor servicio a los clientes.
-    La mejora en la toma de decisiones debido a una mejora en el soporte informático.
+- El aumento de cuentas debido a un mejor servicio a los clientes.
+- La mejora en la toma de decisiones debido a una mejora en el soporte informático.
 
 La valoración de los beneficios no tangibles se debe estimar de una forma subjetiva y será realizada por las áreas correspondientes.
 
@@ -103,72 +102,76 @@ A menudo es conveniente desglosar los costes estimados a lo largo del proyecto, 
 
 En la estimación de costes se considerarán, entre otros, los siguientes aspectos:
 
-    Adquisición de hardware y software: El que sea preciso para el desarrollo, implantación y normal funcionamiento del sistema. Se debe considerar la saturación de máquinas o sistemas actuales como consecuencia de la entrada en vigor del nuevo sistema.
-    Gastos de mantenimiento de hardware y software anteriores.
-    Gastos de comunicaciones: Líneas, teléfono, correo, etc.
-    Gastos de instalación: Cableado, acondicionamiento de sala, recursos humanos y materiales, gastos de viaje, etc.
-    Coste de desarrollo del sistema.
-    Gastos del mantenimiento del sistema: Coste anual.
-    Gastos de consultoría: En caso de requerirse algún consultor externo en cualquier etapa del proyecto.
-    Gastos de formación: De todo tipo (Desarrolladores, Operadores, Implantadores, Usuario Final, etc.).
-    Gastos de material: Papel, toner, etc.
-    Costes derivados de la curva de aprendizaje: De todo el personal involucrado: Desarrolladores, Técnicos de Sistemas, Operadores, y desde luego, Usuarios.
-    Costes financieros, de publicidad, etc.
+- **Adquisición de hardware y software**: El que sea preciso para el desarrollo, implantación y normal funcionamiento del sistema. Se debe considerar la saturación de máquinas o sistemas actuales como consecuencia de la entrada en vigor del nuevo sistema.
+- **Gastos de mantenimiento de hardware y software anteriores**.
+- **Gastos de comunicaciones**: Líneas, teléfono, correo, etc.
+- **Gastos de instalación**: Cableado, acondicionamiento de sala, recursos humanos y materiales, gastos de viaje, etc.
+- **Coste de desarrollo del sistema**.
+- **Gastos del mantenimiento del sistema**: Coste anual.
+- **Gastos de consultoría**: En caso de requerirse algún consultor externo en cualquier etapa del proyecto.
+- **Gastos de formación**: De todo tipo (Desarrolladores, Operadores, Implantadores, Usuario Final, etc.).
+- **Gastos de material**: Papel, toner, etc.
+- **Costes derivados de la curva de aprendizaje**: De todo el personal involucrado: Desarrolladores, Técnicos de Sistemas, Operadores, y desde luego, Usuarios.
+- **Costes financieros**, de publicidad, etc.
 
 En la estimación de beneficios se pueden considerar cuestiones como las siguientes:
 
-    Incremento de la productividad: Ahorro o mejor utilización de recursos humanos.
-    Ahorro de gastos de mantenimiento del sistema actual.
-    Ahorros de adquisición y mantenimiento de hardware y software, o reutilización de plataformas sustituidas.
-    Incremento de ventas o resultados, disminución de costes: Producidos por una mejora de la gestión (rotación de stock, «just in time», analítica de clientes, etc.).
-    Ahorro de material de todo tipo: Sustituido por datos electrónicos que proporciona el sistema, como por ejemplo: papel, correo, etc.
-    Beneficios financieros.
-    Otros beneficios tangibles: Ahorro de recursos externos, consultoría, formación, etc.
-    Beneficios intangibles: Incremento de la calidad del producto o servicio, mejora de la imagen de la compañía, mejora en la atención al cliente, mejora en la explotación, etc.
+- **Incremento de la productividad**: Ahorro o mejor utilización de recursos humanos.
+- **Ahorro de gastos de mantenimiento** del sistema actual.
+- **Ahorros de adquisición y mantenimiento de hardware y software**, o reutilización de plataformas sustituidas.
+- **Incremento de ventas o resultados, disminución de costes**: Producidos por una mejora de la gestión (rotación de stock, «just in time», analítica de clientes, etc.).
+- **Ahorro de material de todo tipo**: Sustituido por datos electrónicos que proporciona el sistema, como por ejemplo: papel, correo, etc.
+- **Beneficios financieros**.
+- **Otros beneficios tangibles**: Ahorro de recursos externos, consultoría, formación, etc.
+- **Beneficios intangibles**: Incremento de la calidad del producto o servicio, mejora de la imagen de la compañía, mejora en la atención al cliente, mejora en la explotación, etc.
 
-2. DETERMINAR LA VIABILIDAD DEL PROYECTO
+###### 2. Determinar la viabilidad del proyecto {.unlisted .unnumbered #determinar-la-viabilidad-del-proyecto}
 
 Se basará en uno de los métodos siguientes:
 
-Retorno de la Inversión:
+**Retorno de la Inversión**:
 
 Este método consiste en calcular el coste y el beneficio anual, conociendo el coste total al inicio del proyecto «C0", para determinar en qué año se recupera el coste total inicialmente estimado.
 
-AÑO 	COSTE 	BENEFICIO 	BENEFICIO NETO
-0 	C0 	0 	
-1 	C1 	B1 	B1 – C1
-2 	C2 	B2 	B2 – C2
-… 			
-n 	Cn 	Bn 	Bn – Cn
+| AÑO | COSTE | BENEFICIO | BENEFICIO NETO |
+| - | - | - | - |
+| 0 | $C_0$ | 0 | |
+| 1 | $C_1$ | $B_1$ | $B_1 - C_1$ |
+| 2 | $C_2$ | $B_2$ | $B_2 - C_2$ |
+| … | | | |
+| n | $C_n$ | $B_n$ | $B_n - C_n$ |
 
-El año de recuperación de la inversión se produce cuando ∑ Beneficio Neto = C0.
+El año de recuperación de la inversión se produce cuando $\sum \text{Beneficio Neto} = C_0$.
 
-Valor Actual:
+**Valor Actual**:
 
 Este método permite tener en cuenta que un gasto invertido durante un cierto tiempo produce un beneficio.
 
 El método consiste en determinar el dinero que es viable invertir inicialmente para que se recupere la inversión en un periodo de tiempo definido previamente.
 
-El resultado depende del tipo de interés (r) utilizado en la evaluación.
+El resultado depende del tipo de interés ($r$) utilizado en la evaluación.
 
-Se debe calcular, en primer lugar, el beneficio neto que se obtendrá cada año. Dicho beneficio no es real, ya que se debe estimar el valor real de dicha cantidad en el año n.
+Se debe calcular, en primer lugar, el beneficio neto que se obtendrá cada año. Dicho beneficio no es real, ya que se debe estimar el valor real de dicha cantidad en el año $n$.
 
 Para ello se aplica la fórmula:
 
-Valor Actual = Beneficio neto / (1 + r/100)n    siendo n = año 1,..,i
+$$
+\text{Valor Actual} = \frac{\text{Beneficio Neto}}{\left(1 + \frac{r}{100}\right)^n} \quad n = \text{año } 1, \dots, i
+$$
 
 Se debe estudiar en cuántos años se recupera la inversión realizada inicialmente, o bien, si en un periodo de años fijado previamente se retorna la inversión y, por tanto, es viable el proyecto.
 
 Si la inversión es el C0, se determinará la viabilidad del proyecto consultando la siguiente tabla:
 
-AÑO 	COSTE 	BENEFICIO 	VALOR ACTUAL
-0 	C0 		
-1 	C1 	B1 	V.A1 = (B1 – C1) / (1 + r / 100)
-2 	C2 	B2 	V.A2 = (B2 – C2) / (1 + r / 100) 2
-… 			
-n 	Cn 	Bn 	V.An = (Bn – Cn) / (1 + r / 100) n
+| AÑO | COSTE | BENEFICIO | VALOR ACTUAL |
+| - | - | - | - |
+| 0 | $C_0$ | | |
+| 1 | $C_1$ | $B_1$ | $\text{VA}_1 &= \frac{B_1 - C_1}{1 + \frac{r}{100}}$ |
+| 2 | $C_2$ | $B_2$ | $\text{VA}_2 &= \frac{B_2 - C_2}{\left(1 + \frac{r}{100}\right)^2}$ |
+| … | | | | 			
+| n | $C_n$ | $B_n$ | $\text{VA}_n &= \frac{B_n - C_n}{\left(1 + \frac{r}{100}\right)^n}$ |
 
-El proyecto será viable si ∑ VAi > C0 a lo largo del periodo fijado.
+El proyecto será viable si $\sum \text{VA}_i > C_0$ a lo largo del periodo fijado.
 
 ### Casos de Uso {#casos-de-uso}
 

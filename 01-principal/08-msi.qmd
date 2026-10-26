@@ -1,5 +1,7 @@
 # Mantenimiento del Sistema de Información
 
+## Descripción y objetivos
+
 El objetivo de este proceso es la obtención de una nueva versión de un sistema de información desarrollado con MÉTRICA Versión 3 ó Versión 2, a partir de las peticiones de mantenimiento que los usuarios realizan con motivo de un problema detectado en el sistema, o por la necesidad de una mejora del mismo.
 
 En este proceso se realiza el registro de las peticiones de mantenimiento recibidas, con el fin de llevar el control de las mismas y de proporcionar, si fuera necesario, datos estadísticos de peticiones recibidas o atendidas en un determinado periodo, sistemas que se han visto afectados por los cambios, en qué medida y el tiempo empleado en la resolución de dichos cambios. Es recomendable, por lo tanto, llevar un catálogo de peticiones de mantenimiento sobre los sistemas de información, en el que se registren una serie de datos que nos permitan disponer de la información antes mencionada.
@@ -33,7 +35,7 @@ Mantenimiento de sistemas de información
 
 ![Mantenimiento de sistemas de información](../images/msi-plan.jpg)
 
-## Actividad MSI 1: Registro de la Petición
+### Actividad MSI 1: Registro de la Petición
 
 El objetivo de esta actividad es establecer un sistema estandarizado de registro de información para las peticiones de mantenimiento, con el fin de controlar y canalizar los cambios propuestos por un usuario o cliente, mejorando el flujo de trabajo de la organización y proporcionando una gestión efectiva del mantenimiento.
 
@@ -67,9 +69,9 @@ MSI 1.2: Asignación de la Petición
 
     Responsable de Mantenimiento
 
-### MSI 1.1: Registro de la Petición
+#### MSI 1.1: Registro de la Petición
 
-#### Tarea MSI 1.1: Registro de la Petición
+##### Tarea MSI 1.1: Registro de la Petición
 
 Esta tarea tiene como objetivo registrar las peticiones que los usuarios solicitan con motivo de la detección de un problema o por la necesidad de una mejora. Se crea un catálogo que constituye un medio para la comunicación entre el usuario o cliente y el responsable de mantenimiento. Este catálogo servirá de base para abordar, en tareas posteriores, el análisis de la petición, realizar la modificación solicitada y proporcionar datos estadísticos sobre peticiones recibidas o atendidas.
 
@@ -77,9 +79,9 @@ La información que debe incluir dicho registro se determina de acuerdo a las no
 
 En cualquier caso, será imprescindible recoger la identificación, origen y tipo de petición, asignarle una prioridad inicial e incorporar una descripción, lo más precisa posible, que facilite su posterior análisis.
 
-#### Productos {.unlisted .unnumbered}
+##### Productos {.unlisted .unnumbered}
 
-##### De entrada {.unlisted .unnumbered}
+###### De entrada {.unlisted .unnumbered}
 
 * Petición de Mantenimiento (externo)
 
@@ -87,11 +89,11 @@ En cualquier caso, será imprescindible recoger la identificación, origen y tip
 
 * Catálogo de Peticiones
 
-###### Prácticas {.unlisted .unnumbered}
+##### Prácticas {.unlisted .unnumbered}
 
 * Catalogación
 
-###### Participantes {.unlisted .unnumbered}
+##### Participantes {.unlisted .unnumbered}
 
 * Responsable del Mantenimiento
 
@@ -499,7 +501,7 @@ Planificación 			X
 Pruebas de Regresión 				X
 Sesiones de Trabajo 		X 	
 
-### Actividades
+### Actividades {.unlisted .unnumbered}
 
 - Actividad MSI 1: Registro de la Petición
 - Actividad MSI 2: Análisis de la Petición
