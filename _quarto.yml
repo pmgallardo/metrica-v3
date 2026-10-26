@@ -2,11 +2,14 @@ project:
   type: book
   output-dir: _book
 
+lang: es-ES
+date: "01/01/2000"
+date-modified: today
+date-format: "DD/MM/YYYY"
+
 book:
   title: "Métrica v.3"
   author: "Ministerio de Administraciones Públicas"
-  date: 01/01/2001
-  date-format: "YYYY"
   favicon: images/favicon32.png
     
   site-url: https://pmgallardo.github.io/metrica-v3/
@@ -44,8 +47,6 @@ book:
       chapters:
       - 04-participantes/01-participantes.qmd
 
-lang: es-ES
-
 format: 
   html:
     theme: minimal
@@ -79,3 +80,7 @@ format:
     code-block-border-left: "#003399"
     include-in-header:
       - latex/preamble.tex
+  epub:
+    toc: true
+    toc-depth: 4
+    number-sections: true
