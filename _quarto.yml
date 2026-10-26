@@ -7,13 +7,14 @@ book:
   author: "Ministerio de Administraciones Públicas"
   date: 01/01/2001
   date-format: "YYYY"
-  language: es
   favicon: images/favicon32.png
-  
+    
   site-url: https://pmgallardo.github.io/metrica-v3/
   repo-url: https://github.com/pmgallardo/metrica-v3
   repo-actions: [edit, issue, source]
-
+  output-file: "metrica-v3"
+  downloads: [pdf, epub]
+  
   sidebar:
     style: "docked"
     search: true
@@ -43,7 +44,7 @@ book:
       chapters:
       - 04-participantes/01-participantes.qmd
 
-lang: es
+lang: es-ES
 
 format: 
   html:
