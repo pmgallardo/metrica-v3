@@ -1,2 +1,45 @@
 # Gestión de Configuración
 
+## Descripción y Objetivos
+
+## Estudio de Viabilidad del Sistema
+### Actividad EVS-GC 1: Definición de los Requisitos de Gestión de Configuración {#evs-gc-1}
+
+```{=html}
+
+```
+
+#### Tarea EVS-GC 1.1: Definición de los Requisitos de Gestión de Configuración {#evs-gc-1.1}
+### Actividad EVS-GC 2: Establecimiento del Plan de Gestión de la Configuración {#evs-gc-2}
+
+```{=html}
+
+```
+
+#### Tarea EVS-GC 2.1: Definición del Plan de Gestión de la Configuración {#evs-gc-2-2}
+#### Tarea EVS-GC 2.2: Especificación del Entorno Tecnológico para la Gestión de Configuración {#evs-gc-2-2}
+## Análisis, diseño, construcción e implantación y aceptación del Sistema de Información
+### Actividad GC 1: Identificación y registro de Productos {#gc-1}
+
+```{=html}
+
+```
+
+#### Tarea GC 1.1: Identificación y Registro de los Productos de los Procesos en el Sistema de Gestión de la Configuración {#gc-1-1}
+### Actividad GC 2: Identificación y registro del Producto Global {#gc-2}
+
+```{=html}
+
+```
+
+### Tarea GC 2.1: Registro en el Sistema de Gestión de la Configuración del Producto Global de Proceso {#gc-2-1}
+## Mantenimiento del Sistema de Información
+### Actividad MSI-GC 1: Registro del Cambio en el Sistema de Gestión de la Configuración {#msi-gc-1}
+
+```{=html}
+
+```
+
+#### Tarea MSI-GC 1.1: Registro del Cambio en el Sistema de Gestión de la Configuración {#msi-gc-1-1}
+#### Tarea MSI-GC 1.2: Registro de la Nueva Versión de los Productos Afectados por el Cambio en el Sistema de Gestión de la Configuración {#msi-gc-1-2}
+#### Tarea MSI-GC 1.3: Registro de la Nueva Versión de los Sistemas de Información en el Sistema de Gestión de la Configuración {#msi-gc-1-3}
