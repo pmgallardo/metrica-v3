@@ -6,10 +6,10 @@ En este proceso se realiza el registro de las peticiones de mantenimiento recibi
 
 En el momento en el que se registra la petición, se procede a diagnosticar de qué tipo de mantenimiento se trata. Atendiendo a los fines, podemos establecer los siguientes tipos de mantenimiento:
 
-    Correctivo: son aquellos cambios precisos para corregir errores del producto software.
-    Evolutivo: son las incorporaciones, modificaciones y eliminaciones necesarias en un producto software para cubrir la expansión o cambio en las necesidades del usuario.
-    Adaptativo: son las modificaciones que afectan a los entornos en los que el sistema opera, por ejemplo, cambios de configuración del hardware, software de base, gestores de base de datos, comunicaciones, etc.
-    Perfectivo: son las acciones llevadas a cabo para mejorar la calidad interna de los sistemas en cualquiera de sus aspectos: reestructuración del código, definición más clara del sistema y optimización del rendimiento y eficiencia.
+  **Correctivo**: son aquellos cambios precisos para corregir errores del producto software.
+  **Evolutivo**: son las incorporaciones, modificaciones y eliminaciones necesarias en un producto software para cubrir la expansión o cambio en las necesidades del usuario.
+  **Adaptativo**: son las modificaciones que afectan a los entornos en los que el sistema opera, por ejemplo, cambios de configuración del hardware, software de base, gestores de base de datos, comunicaciones, etc.
+  **Perfectivo**: son las acciones llevadas a cabo para mejorar la calidad interna de los sistemas en cualquiera de sus aspectos: reestructuración del código, definición más clara del sistema y optimización del rendimiento y eficiencia.
 
 Estos dos últimos tipos quedan fuera del ámbito de MÉTRICA Versión 3 ya que requieren actividades y perfiles distintos de los del proceso de desarrollo.
 
@@ -29,11 +29,11 @@ La estructura propuesta para el Proceso de Mantenimiento de MÉTRICA Versión 3 
 
 ![](../images/msi-actividades.jpg)
 
-MANTENIMIENTO DE SISTEMAS DE INFORMACIÓN
+Mantenimiento de sistemas de información
 
-![](../images/msi-plan.jpg)
+![Mantenimiento de sistemas de información](../images/msi-plan.jpg)
 
-### Actividad MSI 1: Registro de la Petición
+## Actividad MSI 1: Registro de la Petición
 
 El objetivo de esta actividad es establecer un sistema estandarizado de registro de información para las peticiones de mantenimiento, con el fin de controlar y canalizar los cambios propuestos por un usuario o cliente, mejorando el flujo de trabajo de la organización y proporcionando una gestión efectiva del mantenimiento.
 
@@ -67,32 +67,33 @@ MSI 1.2: Asignación de la Petición
 
     Responsable de Mantenimiento
 
-#### MSI 1.1: Registro de la Petición
+### MSI 1.1: Registro de la Petición
 
-Tarea MSI 1.1: Registro de la Petición
+#### Tarea MSI 1.1: Registro de la Petición
 
 Esta tarea tiene como objetivo registrar las peticiones que los usuarios solicitan con motivo de la detección de un problema o por la necesidad de una mejora. Se crea un catálogo que constituye un medio para la comunicación entre el usuario o cliente y el responsable de mantenimiento. Este catálogo servirá de base para abordar, en tareas posteriores, el análisis de la petición, realizar la modificación solicitada y proporcionar datos estadísticos sobre peticiones recibidas o atendidas.
 
 La información que debe incluir dicho registro se determina de acuerdo a las normas o estándares existentes en la organización para la recepción de peticiones de mantenimiento. En el caso de un error se debe incluir una completa descripción de las circunstancias que llevaron al fallo, adjuntando datos de entrada, listados, o cualquier otro material de soporte que se considere oportuno. Para peticiones de mejora se debe remitir una especificación de los requisitos a contemplar.
 
 En cualquier caso, será imprescindible recoger la identificación, origen y tipo de petición, asignarle una prioridad inicial e incorporar una descripción, lo más precisa posible, que facilite su posterior análisis.
-Productos
 
-De entrada
+#### Productos {.unlisted .unnumbered}
 
-    Petición de Mantenimiento (externo)
+##### De entrada {.unlisted .unnumbered}
 
-De salida
+* Petición de Mantenimiento (externo)
 
-    Catálogo de Peticiones
+###### De salida {.unlisted .unnumbered}
 
-Prácticas
+* Catálogo de Peticiones
 
-    Catalogación
+###### Prácticas {.unlisted .unnumbered}
 
-Participantes
+* Catalogación
 
-    Responsable del Mantenimiento
+###### Participantes {.unlisted .unnumbered}
+
+* Responsable del Mantenimiento
 
 #### Tarea MSI 1.2: Asignación de la Petición
 
@@ -101,27 +102,27 @@ En esta tarea se determina el tipo de mantenimiento requerido por la petición c
 A continuación, se comprueba que el servicio de mantenimiento, definido en el plan de mantenimiento para el sistema de información, cubre el tipo de mantenimiento que requiere la petición. Sobre la base de estos criterios, se acepta o rechaza la petición y se notifica a quién corresponda.
 
 Si la petición es aceptada, se determina de quién es la responsabilidad de atender la solicitud para proceder a su estudio posterior.
-Productos
 
-De entrada
+##### Productos {.unlisted .unnumbered}
 
-    Plan de Mantenimiento (IAS 7.2)
-    Catálogo de Peticiones (MSI 1.1)
+###### De entrada {.unlisted .unnumbered}
 
-De salida
+* Plan de Mantenimiento (IAS 7.2)
+* Catálogo de Peticiones (MSI 1.1)
 
-    Catálogo de Peticiones:
-        Aceptación / Rechazo de la Petición
-        Asignación de Responsable
+###### De salida {.unlisted .unnumbered}
 
-Prácticas
+* Catálogo de Peticiones:
+  * Aceptación / Rechazo de la Petición
+  * Asignación de Responsable
 
-    Catalogación
+##### Prácticas {.unlisted .unnumbered}
 
-Participantes
+* Catalogación
 
-    Responsable del Mantenimiento
+##### Participantes {.unlisted .unnumbered}
 
+* Responsable del Mantenimiento
 
 ### Actividad MSI 2: Análisis de la Petición
 
@@ -130,6 +131,7 @@ En esta actividad se lleva a cabo el diagnóstico y análisis del cambio para da
 Se analiza el alcance de la petición en lo referente a los sistemas de información afectados, valorando hasta que punto pueden ser modificados en función del ciclo de vida estimado para los mismos y determinando la necesidad de desviar la petición hacia el proceso Estudio de Viabilidad del Sistema (EVS) o Análisis del Sistema de Información (ASI), en función del impacto sobre los sistemas de información afectados.
 
 El enfoque de este estudio varía según el tipo de mantenimiento, teniendo en cuenta que en el caso de un mantenimiento correctivo que implique un error crítico debe abordarse el cambio de forma inmediata sin profundizar en el origen del mismo. No obstante, una vez reanudado el servicio, es imprescindible analizar el problema y determinar cuál es la solución definitiva.
+
 TAREA 	PRODUCTOS 	TÉCNICAS Y PRÁCTICAS 	PARTICIPANTES
 MSI 2.1: Verificación y Estudio de la Petición 	
 
@@ -163,38 +165,37 @@ MSI 2.2: Estudio de la Propuesta de Solución
 
 Antes de iniciar el estudio de la petición, se verifica que la información registrada es correcta. Para determinar su validez:
 
-    Si se trata de un mantenimiento correctivo, se debe reproducir el problema.
-    En el caso de un mantenimiento evolutivo, hay que comprobar que la petición es razonable o factible.
+- Si se trata de un mantenimiento correctivo, se debe reproducir el problema.
+- En el caso de un mantenimiento evolutivo, hay que comprobar que la petición es razonable o factible.
 
 Una vez examinada la petición comienza su estudio, que será diferente en función del tipo de mantenimiento establecido:
 
-    Si se trata de una petición de mantenimiento correctivo, y según el acuerdo de nivel de servicio establecido para los sistemas de información afectados, se evalúa hasta qué punto es crítico el problema. Así es posible determinar si la solución es a corto plazo, es decir, urgente o inmediata, o si es a medio o a largo plazo:
-        Si el problema es crítico, su análisis y solución comienza inmediatamente con el fin de reanudar rápidamente el nivel de servicio. Sin embargo, este modo de actuación no elimina la necesidad de una revisión posterior del problema para valorar los posibles efectos secundarios, establecer una solución definitiva y actualizar todos los productos implicados.
-        Si no es crítico, la petición se clasifica para proceder en la tarea siguiente a determinar cuál es la solución más adecuada.
-    En el caso de un mantenimiento evolutivo se delimita su alcance determinando si se trata de una modificación a los sistemas de información inicialmente afectados o de una incorporación para cubrir nuevas funcionalidades no contempladas hasta el momento en dichos sistemas de información.
+- Si se trata de una petición de mantenimiento correctivo, y según el acuerdo de nivel de servicio establecido para los sistemas de información afectados, se evalúa hasta qué punto es crítico el problema. Así es posible determinar si la solución es a corto plazo, es decir, urgente o inmediata, o si es a medio o a largo plazo:
+  - Si el problema es crítico, su análisis y solución comienza inmediatamente con el fin de reanudar rápidamente el nivel de servicio. Sin embargo, este modo de actuación no elimina la necesidad de una revisión posterior del problema para valorar los posibles efectos secundarios, establecer una solución definitiva y actualizar todos los productos implicados.
+  - Si no es crítico, la petición se clasifica para proceder en la tarea siguiente a determinar cuál es la solución más adecuada.
+- En el caso de un mantenimiento evolutivo se delimita su alcance determinando si se trata de una modificación a los sistemas de información inicialmente afectados o de una incorporación para cubrir nuevas funcionalidades no contempladas hasta el momento en dichos sistemas de información.
 
-Productos
+##### Productos {.unlisted .unnumbered}
 
-De entrada
+###### De entrada {.unlisted .unnumbered}
 
-    Catálogo de Peticiones (MSI 1.2)
-    Acuerdo de Nivel de Servicio (IAS 8.3)
+* Catálogo de Peticiones (MSI 1.2)
+* Acuerdo de Nivel de Servicio (IAS 8.3)
 
-De salida
+###### De salida {.unlisted .unnumbered}
 
-    Catálogo de Peticiones:
-        Verificación de la Petición.
-    Resultado del Estudio de la Petición
+* Catálogo de Peticiones:
+  * Verificación de la Petición.
+  * Resultado del Estudio de la Petición
 
-Prácticas
+##### Prácticas {.unlisted .unnumbered}
 
-    Sesiones de trabajo
-    Catalogación
+* Sesiones de trabajo
+* Catalogación
 
-Participantes
+##### Participantes {.unlisted .unnumbered}
 
-    Equipo de Mantenimiento
-
+* Equipo de Mantenimiento
 
 #### Tarea MSI 2.2: Estudio de la Propuesta de Solución
 
@@ -213,32 +214,32 @@ En el caso de peticiones de mantenimiento correctivo que hayan precisado de una 
 En cualquiera de las situaciones anteriores, se hace una estimación preliminar del esfuerzo requerido mediante los indicadores establecidos en el acuerdo de nivel de servicio para cada sistema de información, según la tecnología aplicada, naturaleza y tamaño del sistema de información y los tipos de lenguajes utilizados, bases de datos, etc.
 
 Por último, si se considera necesario, hay que proponer alternativas de solución para dar respuesta de forma satisfactoria a los requisitos planteados o problemas detectados, determinando una fecha límite de implantación y un coste aproximado en función de la estimación realizada anteriormente. Se elige, junto con el usuario, la solución más adecuada, y se obtiene la aprobación o rechazo de la petición. En caso de rechazo, la petición se da por cerrada en el catálogo.
-Productos
 
-De entrada
+##### Productos
 
-    Plan de Mantenimiento (IAS 7.2)
-    Acuerdo de Nivel de Servicio (IAS 8.3)
-    Catálogo de Peticiones (MSI 2.1)
-    Resultado del Estudio de la Petición (MSI 2.1)
+###### De entrada {.unlisted .unnumbered}
 
-De salida
+* Plan de Mantenimiento (IAS 7.2)
+* Acuerdo de Nivel de Servicio (IAS 8.3)
+* Catálogo de Peticiones (MSI 2.1)
+* Resultado del Estudio de la Petición (MSI 2.1)
 
-    Propuesta de Solución
-    Catálogo de Peticiones:
-        Estudio del Impacto
-        Aceptación / Rechazo de la Solución
+###### De salida {.unlisted .unnumbered}
 
-Prácticas
+* Propuesta de Solución
+* Catálogo de Peticiones:
+  * Estudio del Impacto
+  * Aceptación / Rechazo de la Solución
 
-    Sesiones de trabajo
-    Catalogación
+##### Prácticas {.unlisted .unnumbered}
 
-Participantes
+* Sesiones de trabajo
+* Catalogación
 
-    Responsable de Mantenimiento
-    Equipo de Mantenimiento
+##### Participantes {.unlisted .unnumbered}
 
+* Responsable de Mantenimiento
+* Equipo de Mantenimiento
 
 ### Actividad MSI 3: Preparación de la Implementación de la Modificación
 
@@ -247,6 +248,7 @@ Una vez finalizado el estudio previo de la petición y aprobada su implementaci�
 Con el resultado de este análisis se dispone de los datos cuantitativos sobre los que aplicar los indicadores establecidos. Esto permitirá fijar un plan de acción, valorando la necesidad de realizar un reajuste de dichos indicadores, con el fin de cumplir el plazo máximo de entrega.
 
 Una vez aceptado el plan de acción, se activan los correspondientes procesos de desarrollo para llevar a cabo la implementación de la solución. Al mismo tiempo, se especifican las pruebas de regresión con el fin de evitar el efecto onda en el sistema, una vez realizados los cambios.
+
 TAREA 	PRODUCTOS 	TÉCNICAS Y PRÁCTICAS 	PARTICIPANTES
 MSI 3.1: Identificación de Elementos Afectados 	
 
@@ -298,29 +300,29 @@ Se realiza un análisis detallado del impacto de la petición, con el fin de con
 Por tanto, a partir del resultado del estudio obtenido en la actividad anterior, se identifica cada sistema de información afectado creando argumentos de búsqueda para determinar qué elementos y en qué medida están implicados en el proceso de cambio.
 
 En este análisis quedarán reflejados, de la forma que se considere más conveniente, los elementos de la infraestructura tecnológica (hardware, software de base, comunicaciones, etc.) y los elementos asociados a los productos software implicados en cada petición (modelos, pantallas, informes, módulos, programas fuentes, programas objetos, JCL´s, archivos de datos, manuales de usuario, manuales de explotación…), así como las referencias cruzadas. La asociación de elementos a cada petición, permitirá el control de la gestión del cambio sobre un mismo elemento.
-Productos
 
-De entrada
+##### Productos {.unlisted .unnumbered}
 
-    Catálogo de Peticiones (MSI 2.2)
-    Propuesta de Solución (MSI 2.2)
+###### De entrada {.unlisted .unnumbered}
 
-De salida
+* Catálogo de Peticiones (MSI 2.2)
+* Propuesta de Solución (MSI 2.2)
 
-    Catálogo de Peticiones:
-        Elementos Afectados
-    Análisis de Impacto de los Cambios
+###### De salida {.unlisted .unnumbered}
 
-Prácticas
+* Catálogo de Peticiones:
+  * Elementos Afectados
+* Análisis de Impacto de los Cambios
 
-    Catalogación
-    Análisis de Impacto
+###### Prácticas {.unlisted .unnumbered}
 
-Participantes
+* Catalogación
+* Análisis de Impacto
 
-    Equipo de Mantenimiento
-    Jefe de Proyecto
+##### Participantes {.unlisted .unnumbered}
 
+* Equipo de Mantenimiento
+* Jefe de Proyecto
 
 #### Tarea MSI 3.2: Establecimiento del Plan de Acción
 
@@ -333,57 +335,55 @@ Finalmente, se definen puntos de control que permiten hacer un seguimiento del p
 Una vez aprobado el plan de acción y asignados los recursos, se lleva a cabo su inicio.
 Productos
 
-De entrada
+##### De entrada {.unlisted .unnumbered}
 
-    Plan de Mantenimiento (IAS 7.2)
-    Propuesta de Solución (MSI 2.2)
-    Análisis de Impacto de los Cambios (MSI 3.1)
-    Catálogo de Peticiones (MSI 3.1)
+* Plan de Mantenimiento (IAS 7.2)
+* Propuesta de Solución (MSI 2.2)
+* Análisis de Impacto de los Cambios (MSI 3.1)
+* Catálogo de Peticiones (MSI 3.1)
 
-De salida
+##### De salida {.unlisted .unnumbered}
 
-    Catálogo de Peticiones:
-        Actividades y Tareas de los Procesos de Desarrollo a Realizar
-    Plan de Acción para la Modificación
+* Catálogo de Peticiones:
+  * Actividades y Tareas de los Procesos de Desarrollo a Realizar
+* Plan de Acción para la Modificación
 
-Técnicas
+##### Técnicas {.unlisted .unnumbered}
 
-    Planificación
+* Planificación
 
-Prácticas
+##### Prácticas {.unlisted .unnumbered}
 
-    Catalogación
+* Catalogación
 
-Participantes
+##### Participantes {.unlisted .unnumbered}
 
-    Responsable de Mantenimiento
-    Equipo de Mantenimiento
-    Jefe de Proyecto
-
+* Responsable de Mantenimiento
+* Equipo de Mantenimiento
+* Jefe de Proyecto
 
 #### Tarea MSI 3.3: Especificación del Plan de Pruebas de Regresión
 
 Las pruebas de regresión tratan de eliminar el llamado efecto onda, es decir, que los cambios provocados por una petición no introduzcan un comportamiento no deseado o errores adicionales en otros componentes no modificados. Por tanto, es necesario comprobar que los cambios que se lleven a cabo en los componentes afectados, no produzcan estos efectos sobre el mismo u otros componentes.
 
 Con este objetivo se deben especificar los casos de prueba en función de las relaciones existentes entre los distintos componentes identificados en la tarea Identificación de Elementos Afectados (MSI 3.1). De esta forma, los casos de prueba aseguran que la nueva versión satisface las necesidades planteadas al considerar, a su vez, los sistemas de información que no han sido modificados pero están directamente relacionados con ellos y, en consecuencia, pueden verse afectados.
-Productos
 
-De entrada
+##### Productos
 
-    Propuesta de Solución (MSI 2.2)
-    Análisis de Impacto de los Cambios (MSI 3.1)
-    Catálogo de Peticiones (MSI 3.2)
+###### De entrada {.unlisted .unnumbered}
 
-De salida
+- Propuesta de Solución (MSI 2.2)
+- Análisis de Impacto de los Cambios (MSI 3.1)
+- Catálogo de Peticiones (MSI 3.2)
 
-    Plan de Pruebas de Regresión
+###### De salida {.unlisted .unnumbered}
 
-Participantes
+- Plan de Pruebas de Regresión
 
-    Equipo de Mantenimiento
-    Jefe de Proyecto
+##### Participantes {.unlisted .unnumbered}
 
-
+* Equipo de Mantenimiento
+* Jefe de Proyecto
 
 ### Actividad MSI 4: Seguimiento y Evaluación de los Cambios hasta la Aceptación
 
@@ -395,30 +395,29 @@ Se realiza el seguimiento de los cambios necesarios en los componentes de cada s
 
 Asimismo, se lleva a cabo el control de la planificación establecida, que abarca los siguientes aspectos:
 
-    Realizar la traza de los cambios que la petición ha provocado a lo largo de los procesos de desarrollo implicados.
-    Verificar que se han realizado satisfactoriamente las pruebas unitarias, de integración y del sistema que se consideraron necesarias para los componentes a modificar.
-    Comprobar que sólo se ha modificado lo establecido y, en caso contrario, justificar el motivo.
-    Asegurar que se han actualizado los productos correspondientes.
-    Llevar el control de los distintos desarrollos existentes en paralelo sobre un mismo componente, con el fin de coordinar las modificaciones incluidas en cada uno de ellos, y asegurar que en el paso a producción se implantan correctamente.
+- Realizar la traza de los cambios que la petición ha provocado a lo largo de los procesos de desarrollo implicados.
+- Verificar que se han realizado satisfactoriamente las pruebas unitarias, de integración y del sistema que se consideraron necesarias para los componentes a modificar.
+- Comprobar que sólo se ha modificado lo establecido y, en caso contrario, justificar el motivo.
+- Asegurar que se han actualizado los productos correspondientes.
+- Llevar el control de los distintos desarrollos existentes en paralelo sobre un mismo componente, con el fin de coordinar las modificaciones incluidas en cada uno de ellos, y asegurar que en el paso a producción se implantan correctamente.
 
-Productos
+##### Productos {.unlisted .unnumbered}
 
-De entrada
+###### De entrada {.unlisted .unnumbered}
 
-    Producto Software en Desarrollo (externo, procedente de los procesos de desarrollo)
-    Análisis de Impacto de los Cambios (MSI 3.1) (convivencia de distintas versiones)
-    Plan de Acción para la Modificación (MSI 3.2)
+* Producto Software en Desarrollo (externo, procedente de los procesos de desarrollo)
+* Análisis de Impacto de los Cambios (MSI 3.1) (convivencia de distintas versiones)
+* Plan de Acción para la Modificación (MSI 3.2)
 
-De salida
+###### De salida {.unlisted .unnumbered}
 
-    Evaluación del Cambio
+* Evaluación del Cambio
 
-Participantes
+###### Participantes {.unlisted .unnumbered}
 
-    Equipo de Mantenimiento
-    Responsable de Mantenimiento
-    Jefe de Proyecto
-
+* Equipo de Mantenimiento
+* Responsable de Mantenimiento
+* Jefe de Proyecto
 
 #### Tarea MSI 4.2: Realización de las Pruebas de Regresión
 
@@ -427,28 +426,28 @@ Una vez finalizadas las actividades correspondientes al proceso de construcción
 En el caso de detectarse problemas, se elabora un informe que recoge las incidencias y se remite a quién proceda para que tome las medidas correctivas que considere oportunas.
 
 Finalmente, una vez que el comportamiento es correcto, se documenta el resultado global de la evaluación de las pruebas que incluye la aprobación por parte del responsable de mantenimiento.
-Productos
 
-De entrada
+##### Productos {.unlisted .unnumbered}
 
-    Plan de Pruebas de Regresión (MSI 3.3)
-    Producto Software en Desarrollo (externo)
+###### De entrada {.unlisted .unnumbered}
 
-De salida
+* Plan de Pruebas de Regresión (MSI 3.3)
+* Producto Software en Desarrollo (externo)
 
-    Resultado de las Pruebas de Regresión
-    Evaluación del Resultado de las Pruebas de Regresión
+###### De salida {.unlisted .unnumbered}
 
-Prácticas
+* Resultado de las Pruebas de Regresión
+* Evaluación del Resultado de las Pruebas de Regresión
 
-    Pruebas de Regresión
+##### Prácticas {.unlisted .unnumbered}
 
-Participantes
+* Pruebas de Regresión
 
-    Responsable de Mantenimiento
-    Equipo de Mantenimiento
-    Jefe de Proyecto
+##### Participantes {.unlisted .unnumbered}
 
+* Responsable de Mantenimiento
+* Equipo de Mantenimiento
+* Jefe de Proyecto
 
 #### Tarea MSI 4.3: Aprobación y Cierre de la Petición
 
@@ -457,30 +456,31 @@ Se aprueba formalmente la finalización de la petición de mantenimiento de acue
 Asimismo, para llevar un control del coste y al mismo tiempo evaluar la facilidad de mantenimiento, es conveniente registrar datos cuantitativos relativos al tiempo empleado en el análisis de la petición, en el estudio del impacto, resolución del cambio, recursos empleados, etc.
 
 El registro de este tipo de información proporciona una base cuantitativa sobre la que tomar decisiones relativas a la eficacia de las técnicas y procedimientos de mantenimiento.
-Productos
 
-De entrada
+##### Productos
 
-    Catálogo de Peticiones (MSI 3.2)
-    Plan de Pruebas de Regresión (MSI 3.3)
-    Evaluación del Cambio (MSI 4.1)
-    Evaluación del Resultado de las Pruebas de Regresión (MSI 4.2)
+###### De entrada {.unlisted .unnumbered}
 
-De salida
+* Catálogo de Peticiones (MSI 3.2)
+* Plan de Pruebas de Regresión (MSI 3.3)
+* Evaluación del Cambio (MSI 4.1)
+* Evaluación del Resultado de las Pruebas de Regresión (MSI 4.2)
 
-    Catálogo de Peticiones:
-        Nueva versión y Aprobación
+###### De salida {.unlisted .unnumbered}
 
-Prácticas
+* Catálogo de Peticiones:
+  * Nueva versión y Aprobación
 
-    Catalogación
+##### Prácticas {.unlisted .unnumbered}
 
-Participantes
+* Catalogación
 
-    Directores de los Usuarios
-    Responsable de Mantenimiento
+##### Participantes {.unlisted .unnumbered}
 
-## PARTICIPANTES EN LAS ACTIVIDADES DEL PROCESO MSI
+* Directores de los Usuarios
+* Responsable de Mantenimiento
+
+## Participantes en las actividades del proceso MSI
 
 MANTENIMIENTO DEL SISTEMA DE INFORMACIÓN 	ACTIVIDADES
 MSI 1 	MSI 2 	MSI 3 	MSI 4
@@ -488,7 +488,9 @@ Directores Usuarios 				X
 Equipo de Mantenimiento 		X 	X 	X
 Jefe de Proyecto 			X 	X
 Responsable Mantenimiento 	X 	X 	X 	X
-TÉCNICAS/PRÁCTICAS UTILIZADAS EN LAS ACTIVIDADES DEL PROCESO MSI
+
+## Técnicas/prácticas utilizadas en las actividades del proceso MSI
+
 MANTENIMIENTO DEL SISTEMA DE INFORMACIÓN 	ACTIVIDADES
 MSI 1 	MSI 2 	MSI 3 	MSI 4
 Análisis de Impacto 			X 	X
@@ -497,10 +499,9 @@ Planificación 			X
 Pruebas de Regresión 				X
 Sesiones de Trabajo 		X 	
 
-## Actividades
+### Actividades
 
-    Actividad MSI 1: Registro de la Petición
-    Actividad MSI 2: Análisis de la Petición
-    Actividad MSI 3: Preparación de la Implementación de la Modificación
-    Actividad MSI 4: Seguimiento y Evaluación de los Cambios hasta la Aceptación
-
+- Actividad MSI 1: Registro de la Petición
+- Actividad MSI 2: Análisis de la Petición
+- Actividad MSI 3: Preparación de la Implementación de la Modificación
+- Actividad MSI 4: Seguimiento y Evaluación de los Cambios hasta la Aceptación

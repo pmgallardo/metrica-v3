@@ -10,56 +10,54 @@ Al ser MÉTRICA Versión 3 una metodología que cubre tanto desarrollos estructu
 
 Las actividades de este proceso se agrupan en dos grandes bloques.
 
-    En un primer bloque de actividades, que se llevan a cabo en paralelo, se obtiene el diseño de detalle del sistema de información. La realización de estas actividades exige una continua realimentación. En general, el orden real de ejecución de las mismas depende de las particularidades del sistema de información y, por lo tanto, de generación de sus productos.
+- En un primer bloque de actividades, que se llevan a cabo en paralelo, se obtiene el diseño de detalle del sistema de información. La realización de estas actividades exige una continua realimentación. En general, el orden real de ejecución de las mismas depende de las particularidades del sistema de información y, por lo tanto, de generación de sus productos.
 
-En la actividad Definición de la Arquitectura del Sistema (DSI 1), se establece el particionamiento físico del sistema de información, así como su organización en subsistemas de diseño, la especificación del entorno tecnológico, y sus requisitos de operación, administración, seguridad y control de acceso. Se completan los catálogos de requisitos y normas, en función de la definición del entorno tecnológico, con aquellos aspectos relativos al diseño y construcción que sea necesario contemplar. Asimismo, se crea un catálogo de excepciones del sistema, en el que se registran las situaciones de funcionamiento secundario o anómalo que se estime oportuno considerar y, por lo tanto, diseñar y probar. Este catálogo de excepciones se utiliza como referencia en la especificación técnica de las pruebas del sistema.
+  En la actividad Definición de la Arquitectura del Sistema (DSI 1), se establece el particionamiento físico del sistema de información, así como su organización en subsistemas de diseño, la especificación del entorno tecnológico, y sus requisitos de operación, administración, seguridad y control de acceso. Se completan los catálogos de requisitos y normas, en función de la definición del entorno tecnológico, con aquellos aspectos relativos al diseño y construcción que sea necesario contemplar. Asimismo, se crea un catálogo de excepciones del sistema, en el que se registran las situaciones de funcionamiento secundario o anómalo que se estime oportuno considerar y, por lo tanto, diseñar y probar. Este catálogo de excepciones se utiliza como referencia en la especificación técnica de las pruebas del sistema.
 
-El particionamiento físico del sistema de información permite organizar un diseño que contemple un sistema de información distribuido, como por ejemplo la arquitectura cliente/servidor, siendo aplicable a arquitecturas multinivel en general. Independientemente de la infraestructura tecnológica, dicho particionamiento representa los distintos niveles funcionales o físicos del sistema de información. La relación entre los elementos del diseño y particionamiento físico, y a su vez, entre el particionamiento físico y el entorno tecnológico, permite una especificación de la distribución de los elementos del sistema de información y, al mismo tiempo, un diseño orientado a la movilidad a otras plataformas o la reubicación de subsistemas.
+  El particionamiento físico del sistema de información permite organizar un diseño que contemple un sistema de información distribuido, como por ejemplo la arquitectura cliente/servidor, siendo aplicable a arquitecturas multinivel en general. Independientemente de la infraestructura tecnológica, dicho particionamiento representa los distintos niveles funcionales o físicos del sistema de información. La relación entre los elementos del diseño y particionamiento físico, y a su vez, entre el particionamiento físico y el entorno tecnológico, permite una especificación de la distribución de los elementos del sistema de información y, al mismo tiempo, un diseño orientado a la movilidad a otras plataformas o la reubicación de subsistemas.
 
-El sistema de información se estructura en subsistemas de diseño. Éstos a su vez se clasifican como de soporte o específicos, al responder a propósitos diferentes.
+  El sistema de información se estructura en subsistemas de diseño. Éstos a su vez se clasifican como de soporte o específicos, al responder a propósitos diferentes.
 
-    Los subsistemas de soporte contienen los elementos o servicios comunes al sistema y a la instalación, y generalmente están originados por la interacción con la infraestructura técnica o la reutilización de otros sistemas, con un nivel de complejidad técnica mayor.
-    Los subsistemas específicos contienen los elementos propios del sistema de información, generalmente con una continuidad de los subsistemas definidos en el proceso de Análisis del Sistema de Información (ASI).
+  - Los subsistemas de soporte contienen los elementos o servicios comunes al sistema y a la instalación, y generalmente están originados por la interacción con la infraestructura técnica o la reutilización de otros sistemas, con un nivel de complejidad técnica mayor.
+  - Los subsistemas específicos contienen los elementos propios del sistema de información, generalmente con una continuidad de los subsistemas definidos en el proceso de Análisis del Sistema de Información (ASI).
 
 También se especifica en detalle el entorno tecnológico del sistema de información, junto con su planificación de capacidades (capacity planning), y sus requisitos de operación, administración, seguridad y control de acceso.
 
 El diseño detallado del sistema de información, siguiendo un enfoque estructurado, comprende un conjunto de actividades que se llevan a cabo en paralelo a la Definición de la Arquitectura del Sistema (DSI 1). El alcance de cada una de estas actividades se resume a continuación:
 
-    Diseño de la Arquitectura de Soporte (DSI 2), que incluye el diseño detallado de los subsistemas de soporte, el establecimiento de las normas y requisitos propios del diseño y construcción, así como la identificación y definición de los mecanismos genéricos de diseño y construcción.
-    Diseño de la Arquitectura de Módulos del Sistema (DSI 5), donde se realiza el diseño de detalle de los subsistemas específicos del sistema de información y la revisión de la interfaz de usuario.
-    Diseño Físico de Datos (DSI 6), que incluye el diseño y optimización de las estructuras de datos del sistema, así como su localización en los nodos de la arquitectura propuesta.
+- Diseño de la Arquitectura de Soporte (DSI 2), que incluye el diseño detallado de los subsistemas de soporte, el establecimiento de las normas y requisitos propios del diseño y construcción, así como la identificación y definición de los mecanismos genéricos de diseño y construcción.
+- Diseño de la Arquitectura de Módulos del Sistema (DSI 5), donde se realiza el diseño de detalle de los subsistemas específicos del sistema de información y la revisión de la interfaz de usuario.
+- Diseño Físico de Datos (DSI 6), que incluye el diseño y optimización de las estructuras de datos del sistema, así como su localización en los nodos de la arquitectura propuesta.
 
 En el caso de Diseño Orientado a Objetos, conviene señalar que el diseño de la persistencia de los objetos se lleva a cabo sobre bases de datos relacionales, y que el diseño detallado del sistema de información se realiza en paralelo con la actividad de Diseño de la Arquitectura de Soporte (DSI 2), y se corresponde con las siguientes actividades:
 
-    Diseño de Casos de Uso Reales (DSI 3), con el diseño detallado del comportamiento del sistema de información para los casos de uso, el diseño de la interfaz de usuario y la validación de la división en subsistemas.
-    Diseño de Clases (DSI 4), con el diseño detallado de cada una de las clases que forman parte del sistema, sus atributos, operaciones, relaciones y métodos, y la estructura jerárquica del mismo. En el caso de que sea necesario, se realiza la definición de un plan de migración y carga inicial de datos.
+- Diseño de Casos de Uso Reales (DSI 3), con el diseño detallado del comportamiento del sistema de información para los casos de uso, el diseño de la interfaz de usuario y la validación de la división en subsistemas.
+- Diseño de Clases (DSI 4), con el diseño detallado de cada una de las clases que forman parte del sistema, sus atributos, operaciones, relaciones y métodos, y la estructura jerárquica del mismo. En el caso de que sea necesario, se realiza la definición de un plan de migración y carga inicial de datos.
 
 Una vez que se tiene el modelo de clases, se comienza el diseño físico en la actividad Diseño Físico de Datos (DSI 6), común con el enfoque estructurado.
 
 Una vez finalizado el diseño de detalle, se realiza su revisión y validación en la actividad Verificación y Aceptación de la Arquitectura del Sistema (DSI 7), con el objeto de analizar la consistencia entre los distintos modelos y conseguir la aceptación del diseño por parte de los responsables de las áreas de Explotación y Sistemas.
 
-    El segundo bloque de actividades complementa el diseño del sistema de información. En él se generan todas las especificaciones necesarias para la construcción del sistema de información:
+- El segundo bloque de actividades complementa el diseño del sistema de información. En él se generan todas las especificaciones necesarias para la construcción del sistema de información:
 
-    Generación de Especificaciones de Construcción (DSI 8), fijando las directrices para la construcción de los componentes del sistema, así como de las estructuras de datos.
-    Diseño de la Migración y Carga Inicial de Datos (DSI 9), en el que se definen los procedimientos de migración y sus componentes asociados, con las especificaciones de construcción oportunas.
-    Especificación Técnica del Plan de Pruebas (DSI 10), que incluye la definición y revisión del plan de pruebas, y el diseño de las verificaciones de los niveles de prueba establecidos. El catálogo de excepciones permite, de una forma muy ágil, establecer un conjunto de verificaciones relacionadas con el propio diseño o con la arquitectura del sistema.
-    Establecimiento de Requisitos de Implantación (DSI 11), que hace posible concretar las exigencias relacionados con la propia implantación del sistema, tales como formación de usuarios finales, infraestructura, etc.
+  - Generación de Especificaciones de Construcción (DSI 8), fijando las directrices para la construcción de los componentes del sistema, así como de las estructuras de datos.
+   - Diseño de la Migración y Carga Inicial de Datos (DSI 9), en el que se definen los procedimientos de migración y sus componentes asociados, con las especificaciones de construcción oportunas.
+   - Especificación Técnica del Plan de Pruebas (DSI 10), que incluye la definición y revisión del plan de pruebas, y el diseño de las verificaciones de los niveles de prueba establecidos. El catálogo de excepciones permite, de una forma muy ágil, establecer un conjunto de verificaciones relacionadas con el propio diseño o con la arquitectura del sistema.
+   - Establecimiento de Requisitos de Implantación (DSI 11), que hace posible concretar las exigencias relacionados con la propia implantación del sistema, tales como formación de usuarios finales, infraestructura, etc.
 
-Finalmente, en la actividad de Presentación y Aprobación del Diseño del Sistema de Información (DSI 12), se realiza una presentación formal y aprobación de los distintos productos del diseño.
+  Finalmente, en la actividad de Presentación y Aprobación del Diseño del Sistema de Información (DSI 12), se realiza una presentación formal y aprobación de los distintos productos del diseño.
 
-En el siguiente gráfico se muestra la relación de actividades del proceso Diseño del Sistema de Información (DSI), tanto para Desarrollos Estructurados como para Desarrollos Orientados a Objetos.
+  En el siguiente gráfico se muestra la relación de actividades del proceso Diseño del Sistema de Información (DSI), tanto para Desarrollos Estructurados como para Desarrollos Orientados a Objetos.
 
-[DISEÑO DEL SISTEMA DE INFORMACIÓN]
+![DISEÑO DEL SISTEMA DE INFORMACIÓN](../images/dsi-actividades.jpg)
 
-![](../images/dsi-actividades.jpg)
+Diseño del sistema información (estructurado)
 
-DISEÑO DEL SISTEMA INFORMACIÓN (ESTRUCTURADO)
+![Diseño del sistema información (estructurado)](../images/dsi-plan-estructurado.jpg)
 
-![](../images/dsi-plan-estructurado.jpg)
+Diseño del Sistema Información (Orientación a objetos)
 
-DISEÑO DEL SISTEMA INFORMACIÓN (ORIENTACIÓN A OBJETOS)
-
-![](../images/dsi-plan-oo.jpg)
+![Diseño del Sistema Información (Orientación a objetos)](../images/dsi-plan-oo.jpg)
 
 ### Actividad DSI 1: Definición de la Arquitectura del Sistema
 
@@ -83,11 +81,11 @@ Se detallan a su vez, de acuerdo a las particularidades de la arquitectura del s
 
 Como resultado de esta actividad, se actualizan los catálogos de requisitos y normas, y se generan los siguientes productos:
 
-    Diseño de la Arquitectura del Sistema, como producto que engloba el particionamiento físico del sistema de información y la descripción de subsistemas de diseño.
-    Entorno Tecnológico del Sistema, que a su vez comprende la especificación del entorno tecnológico, las restricciones técnicas y la planificación de capacidades.
-    Catálogo de Excepciones.
-    Procedimientos de Operación y Administración del Sistema.
-    Procedimientos de Seguridad y Control de Acceso.
+- Diseño de la Arquitectura del Sistema, como producto que engloba el particionamiento físico del sistema de información y la descripción de subsistemas de diseño.
+- Entorno Tecnológico del Sistema, que a su vez comprende la especificación del entorno tecnológico, las restricciones técnicas y la planificación de capacidades.
+- Catálogo de Excepciones.
+- Procedimientos de Operación y Administración del Sistema.
+- Procedimientos de Seguridad y Control de Acceso.
 
 TAREA 	PRODUCTOS 	TÉCNICAS Y PRÁCTICAS 	PARTICIPANTES
 DSI 1.1: Definición de Niveles de Arquitectura 	
@@ -200,12 +198,12 @@ Se entiende por nodo cada partición física o parte significativa del sistema d
 
 Para facilitar la comprensión del sistema, se recomienda identificar como nodos los elementos de infraestructura más significativos de la arquitectura en la que se va a implementar el sistema de información. Los elementos que se aconseja especificar son los siguientes:
 
-    Gestores de datos.
-    Tipos de puesto cliente.
-    Tipos de dispositivos de impresión.
-    Monitores de teleproceso.
-    Servidores.
-    Comunicaciones.
+- Gestores de datos.
+- Tipos de puesto cliente.
+- Tipos de dispositivos de impresión.
+- Monitores de teleproceso.
+- Servidores.
+- Comunicaciones.
 
 La comunicación se expresa por una conexión entre nodos, indicando su carácter bidireccional o unidireccional, con las principales características de los protocolos o tipo de mensajes utilizados.
 
@@ -213,49 +211,52 @@ La especificación de los niveles de la arquitectura se realiza con el detalle s
 
 Los criterios para diseñar la arquitectura se obtienen a partir de directrices tecnológicas o de integración, propias de la instalación, y del catálogo de requisitos del sistema de información. Es necesario tener en cuenta, especialmente, aspectos relacionados con:
 
-    Usuarios: ubicación, movilidad, concurrencia, número, etc.
-    Datos: variabilidad, volúmenes, necesidades de consolidación, seguridad, etc.
-    Procesos: distribución, reutilización, concurrencia, carácter crítico, etc.
+- Usuarios: ubicación, movilidad, concurrencia, número, etc.
+- Datos: variabilidad, volúmenes, necesidades de consolidación, seguridad, etc.
+- Procesos: distribución, reutilización, concurrencia, carácter crítico, etc.
 
-Productos
+##### Productos {.unnumbered .unlisted}
 
-De entrada
+###### De entrada {.unnumbered .unlisted}
 
-    Descripción General del Entorno Tecnológico del Sistema (ASI 1.2)
-    Catálogo de Requisitos (ASI 2.4)
-    Especificación de Interfaz de Usuario (ASI 9.3)
-    En Diseño Estructurado:
-    Matriz de Procesos / Localización Geográfica (ASI 7.1)
-    Descripción de Interfaz con otros Sistemas (ASI 7.2)
-    Modelo de Procesos (ASI 9.3)
-    Modelo Lógico de Datos Normalizado (ASI 9.3)
-    En Diseño Orientado a Objetos:
-    Modelo de Casos de Uso (ASI 9.3)
-    Especificación de Casos de Uso (ASI 9.3)
-    Descripción de Subsistemas de Análisis (ASI 9.3)
-    Descripción Interfaces entre Subsistemas (ASI 9.3)
-    Modelo de Clases de Análisis (ASI 9.3)
-    Análisis de la Realización de los Casos de Uso (ASI 9.3)
+* Descripción General del Entorno Tecnológico del Sistema (ASI 1.2)
+* Catálogo de Requisitos (ASI 2.4)
+* Especificación de Interfaz de Usuario (ASI 9.3)
+  
+  **En Diseño Estructurado:**
 
-De salida
+* Matriz de Procesos / Localización Geográfica (ASI 7.1)
+* Descripción de Interfaz con otros Sistemas (ASI 7.2)
+* Modelo de Procesos (ASI 9.3)
+* Modelo Lógico de Datos Normalizado (ASI 9.3)
 
-    Diseño de la Arquitectura del Sistema
-        Particionamiento Físico del Sistema de Información
+  **En Diseño Orientado a Objetos:**
 
-Técnicas
+* Modelo de Casos de Uso (ASI 9.3)
+* Especificación de Casos de Uso (ASI 9.3)
+* Descripción de Subsistemas de Análisis (ASI 9.3)
+* Descripción Interfaces entre Subsistemas (ASI 9.3)
+* Modelo de Clases de Análisis (ASI 9.3)
+* Análisis de la Realización de los Casos de Uso (ASI 9.3)
 
-    Diagrama de Despliegue
+###### De salida {.unnumbered .unlisted}
 
-Prácticas
+* Diseño de la Arquitectura del Sistema
+  * Particionamiento Físico del Sistema de Información
 
-    Diagrama de Representación
+##### Técnicas {.unnumbered .unlisted}
 
-Participantes
+* Diagrama de Despliegue
 
-    Equipo de Arquitectura
-    Equipo de Soporte Técnico
-    Equipo de Seguridad
+###### Prácticas {.unnumbered .unlisted}
 
+* Diagrama de Representación
+
+##### Participantes {.unnumbered .unlisted}
+
+* Equipo de Arquitectura
+* Equipo de Soporte Técnico
+* Equipo de Seguridad
 
 #### Tarea DSI 1.2: Identificación de Requisitos de Diseño y Construcción
 
@@ -264,26 +265,27 @@ En esta tarea se realiza la especificación de los requisitos que están directa
 Entre estos requisitos pueden estar los relacionados con lenguajes, rendimiento de los distintos elementos de la arquitectura, así como criterios de ubicación de módulos y datos en los distintos nodos.
 
 Por tanto, como resultado de esta tarea se actualiza el catálogo de requisitos elaborado en el proceso Análisis de Sistemas de Información.
-Productos
 
-De entrada
+##### Productos {.unnumbered .unlisted}
 
-    Catálogo de Requisitos (ASI 2.4)
-    Diseño de la Arquitectura del Sistema (DSI 1.1)
+###### De entrada {.unnumbered .unlisted}
 
-De salida
+* Catálogo de Requisitos (ASI 2.4)
+* Diseño de la Arquitectura del Sistema (DSI 1.1)
 
-    Catálogo de Requisitos
+###### De salida {.unnumbered .unlisted}
 
-Prácticas
+* Catálogo de Requisitos
 
-    Sesiones de Trabajo
-    Catalogación
+##### Prácticas {.unnumbered .unlisted}
 
-Participantes
+* Sesiones de Trabajo
+* Catalogación
 
-    Equipo de Arquitectura
-    Equipo de Soporte Técnico
+##### Participantes {.unnumbered .unlisted}
+
+* Equipo de Arquitectura
+* Equipo de Soporte Técnico
 
 
 #### Tarea DSI 1.3: Especificación de Excepciones
@@ -306,9 +308,10 @@ Las excepciones que se proponen como obligatorias son las relacionadas con el fu
     Rangos o valores no válidos en la entrada de datos, como pueden ser atributos obligatorios, con formatos específicos, etc.
 
 Se recomienda, según el nivel de especificación que se establezca en cada caso, catalogar también las excepciones particulares que se identifiquen en las actividades del diseño de detalle.
-Productos
 
-De entrada
+##### Productos {.unnumbered .unlisted}
+
+###### De entrada {.unnumbered .unlisted}
 
     Catálogo de Requisitos (ASI 1.2)
     Diseño de la Arquitectura del Sistema (DSI 1.1)
@@ -316,16 +319,16 @@ De entrada
     Modelo de Casos de Uso (ASI 9.3)
     Especificación de Casos de Uso (ASI 9.3)
 
-De salida
+###### De salida {.unnumbered .unlisted}
 
     Catálogo de Excepciones
 
-Prácticas
+##### Prácticas {.unnumbered .unlisted}
 
     Sesiones de Trabajo
     Catalogación
 
-Participantes
+##### Participantes {.unnumbered .unlisted}
 
     Equipo de Arquitectura
     Equipo de Soporte Técnico
@@ -338,24 +341,25 @@ En esta tarea se definen los estándares técnicos y de nomenclatura, normas y r
 Como resultado de esta tarea, se actualiza el catálogo de normas obtenido en el proceso Análisis del Sistema de Información (ASI).
 
 La información recogida en el catálogo se debe tener en cuenta en la elaboración de los productos resultantes del diseño y construcción del sistema de información. El catálogo de normas es, por tanto, producto de entrada en todas las tareas, aunque por sencillez se omite la referencia al mismo.
-Productos
 
-De entrada
+##### Productos {.unnumbered .unlisted}
+
+###### De entrada {.unnumbered .unlisted}
 
     Estándares y Normativas de la Instalación (externo)
     Catálogo de Normas (ASI 1.3)
     Diseño de la Arquitectura del Sistema (DSI 1.1)
 
-De salida
+###### De salida {.unnumbered .unlisted}
 
     Catálogo de Normas
 
-Prácticas
+##### Prácticas {.unnumbered .unlisted}
 
     Sesiones de Trabajo
     Catalogación
 
-Participantes
+##### Participantes {.unnumbered .unlisted}
 
     Equipo de Arquitectura
     Equipo de Soporte Técnico
@@ -394,9 +398,10 @@ El diseño de detalle de los subsistemas identificados por criterios de optimiza
 En diseño estructurado, la descripción de los subsistemas de diseño que conforman el sistema de información se especifica mediante un diagrama de estructura de alto nivel, que muestra los distintos subsistemas de que consta el sistema, incluidos los subsistemas de soporte, junto con la definición de la interfaz de cada subsistema.
 
 La ubicación de subsistemas en nodos y la dependencia entre subsistemas se especifica por medio de técnicas matriciales, o bien en lenguaje natural o pseudocódigo.
-Productos
 
-De entrada
+##### Productos {.unnumbered .unlisted}
+
+###### De entrada {.unnumbered .unlisted}
 
     Descripción General del Entorno Tecnológico del Sistema (ASI 1.2)
     Diseño de la Arquitectura del Sistema (DSI 1.1)
@@ -409,12 +414,12 @@ De entrada
     Descripción de Subsistemas de Análisis (ASI 9.3)
     Descripción Interfaces entre Subsistemas (ASI 9.3)
 
-De salida
+###### De salida {.unnumbered .unlisted}
 
     Diseño de la Arquitectura del Sistema
         Descripción de Subsistemas de Diseño
 
-Técnicas
+##### Técnicas {.unnumbered .unlisted}
 
     Diagrama de Estructura
     Matricial
@@ -422,7 +427,7 @@ Técnicas
     Diagrama de Paquetes
     Diagrama de Despliegue
 
-Participantes
+##### Participantes {.unnumbered .unlisted}
 
     Equipo de Arquitectura
     Equipo de Soporte Técnico
@@ -448,9 +453,10 @@ Asimismo, se realiza una estimación de la planificación de capacidades (capaci
     Comunicaciones: líneas, caudal, capacidades de elementos de red, etc.
 
 Para poder determinar la planificación de capacidades, es necesario conocer los diseños detallados de los módulos / clases y escenarios, incluida la información de control en las comunicaciones, así como el diseño físico de datos optimizado, productos que se están generando en paralelo a esta actividad. También se tienen en cuenta, cuando proceda, las estimaciones de volúmenes de datos propios de la migración y carga inicial de datos.
-Productos
 
-De entrada
+##### Productos {.unnumbered .unlisted}
+
+###### De entrada {.unnumbered .unlisted}
 
     Descripción General del Entorno Tecnológico del Sistema (ASI 1.2)
     Catálogo de Requisitos (DSI 1.2)
@@ -461,19 +467,19 @@ De entrada
     En Diseño Orientado a Objetos:
     Plan de Migración (DSI 4.7)
 
-De salida
+###### De salida {.unnumbered .unlisted}
 
     Entorno Tecnológico del Sistema:
         Especificación del Entorno Tecnológico
         Restricciones Técnicas
         Estimación de Planificación de Capacidades
 
-Prácticas
+##### Prácticas {.unnumbered .unlisted}
 
     Sesiones de Trabajo
     Diagrama de Representación
 
-Participantes
+##### Participantes {.unnumbered .unlisted}
 
     Equipo de Arquitectura
     Equipo de Soporte Técnico
@@ -499,30 +505,29 @@ Asimismo, se definen los requisitos de operación para los distintos elementos d
     Distribución de información generada por el sistema, tanto trabajos planificados o bajo petición.
     Control y seguimiento del correcto funcionamiento de los procedimientos de backup y recuperación utilizados habitualmente.
 
-Productos
+##### Productos {.unnumbered .unlisted}
 
-De entrada
+###### De entrada {.unnumbered .unlisted}
 
     Catálogo de Requisitos (DSI 1.2)
     Diseño de la Arquitectura del Sistema (DSI 1.5)
     Entorno Tecnológico del Sistema (DSI 1.6)
 
-De salida
+###### De salida {.unnumbered .unlisted}
 
     Procedimientos de Seguridad y Control de Acceso
     Procedimientos de Operación y Administración del Sistema
 
-Prácticas
+##### Prácticas {.unnumbered .unlisted}
 
     Sesiones de Trabajo
     Catalogación
 
-Participantes
+##### Participantes {.unnumbered .unlisted}
 
     Equipo de Seguridad
     Equipo de Arquitectura
     Equipo de Soporte Técnico
-
 
 ### Actividad DSI 2: Diseño de la Arquitectura de Soporte
 
@@ -579,23 +584,24 @@ El diseño sigue las mismas pautas que las establecidas para los subsistemas esp
     La especificación y diseño de cada servicio, módulo o clase, se realiza con las técnicas habituales de especificación y diseño de módulos o clases, o incluso opcionalmente, si la simplicidad de los elementos lo aconseja, otros lenguajes de especificación, pseudocódigo o lenguaje natural.
 
 A medida que se lleva a cabo esta tarea pueden surgir comportamientos de excepción que deberán contemplarse igualmente en el diseño, y que en función del nivel de especificación que se haya establecido, se incorporan al catálogo de excepciones.
-Productos
 
-De entrada
+##### Productos {.unnumbered .unlisted}
+
+###### De entrada {.unnumbered .unlisted}
 
     Diseño de la Arquitectura del Sistema (DSI 1.5)
 
-De salida
+###### De salida {.unnumbered .unlisted}
 
     Diseño Detallado de los Subsistemas de Soporte
 
-Técnicas
+##### Técnicas {.unnumbered .unlisted}
 
     Diagrama de Estructura
     Diagrama de Interacción de Objetos
     Diagrama de Clases
 
-Participantes
+##### Participantes {.unnumbered .unlisted}
 
     Equipo de Arquitectura
 
@@ -604,26 +610,27 @@ Participantes
 El objetivo de esta tarea es identificar y diseñar, en el caso de no existir en la instalación, esqueletos, patrones de diseño o guías de diseño. Estos mecanismos genéricos se definen a partir del estudio de comportamientos comunes relacionados, generalmente, con gestión de transacciones, persistencia de datos, control y recuperación de errores, utilización de recursos comunes, etc.
 
 Los mecanismos genéricos de diseño son de aplicación tanto en la definición de la arquitectura del sistema como en el diseño de detalle de los subsistemas específicos y de soporte.
-Productos
 
-De entrada
+##### Productos {.unnumbered .unlisted}
+
+###### De entrada {.unnumbered .unlisted}
 
     Diseño de la Arquitectura del Sistema (DSI 1.5)
 
-De salida
+###### De salida {.unnumbered .unlisted}
 
     Mecanismos Genéricos de Diseño y Construcción
 
-Técnicas
+##### Técnicas {.unnumbered .unlisted}
 
     Diagrama de Interacción de Objetos
     Diagrama de Clases
 
-Prácticas
+##### Prácticas {.unnumbered .unlisted}
 
     Sesiones de Trabajo
 
-Participantes
+##### Participantes {.unnumbered .unlisted}
 
     Equipo de Arquitectura
 
@@ -639,6 +646,7 @@ Algunos de los escenarios detallados requerirán una nueva interfaz de usuario. 
 Es importante validar que los subsistemas definidos en la tarea Identificación de Subsistemas de Diseño (DSI 1.5) tienen la mínima interfaz con otros subsistemas. Por este motivo, se elaboran los escenarios al nivel de subsistemas y, de esta forma, se delimitan las interfaces necesarias para cada uno de ellos, teniendo en cuenta toda la funcionalidad del sistema que recogen los casos de uso. Además, durante esta actividad pueden surgir requisitos de implementación, que se recogen en el catálogo de requisitos.
 
 Las tareas de esta actividad se realizan en paralelo con las de Diseño de Clases (DSI 4).
+
 TAREA 	PRODUCTOS 	TÉCNICAS Y PRÁCTICAS 	PARTICIPANTES
 DSI 3.1: Identificación de Clases Asociadas a un Caso de Uso 	
 
@@ -708,25 +716,26 @@ DSI 3.4: Revisión de Subsistemas de Diseño e Interfaces
 El objetivo de esta tarea es identificar las clases que intervienen en cada caso de uso, a partir del conjunto de clases definidas en la tarea Identificación de Clases Adicionales (DSI 4.1), ya que, como se ha señalado en la introducción de esta actividad, las actividades DSI 3 y DSI 4 se realizan en paralelo. Dichas clases se identifican a partir de las clases del modelo del análisis y de aquellas clases adicionales necesarias para el escenario que se está diseñando.
 
 A su vez, a medida que se va estudiando la descripción de los casos de uso, pueden aparecer nuevas clases de diseño que no hayan sido identificadas anteriormente y que se incorporan al modelo de clases en la tarea Identificación de Clases Adicionales (DSI 4.1).
-Productos
 
-De entrada
+##### Productos {.unnumbered .unlisted}
+
+###### De entrada {.unnumbered .unlisted}
 
     Modelo de Clases de Diseño (DSI 4.1)
     Modelo de Casos de Uso (ASI 9.3)
     Especificación de Casos de Uso (ASI 9.3)
     Análisis de la Realización de los Casos de Uso (ASI 9.3)
 
-De salida
+###### De salida {.unnumbered .unlisted}
 
     Diseño de la Realización de los Casos de Uso
         Especificación Detallada
 
-Técnicas
+##### Técnicas {.unnumbered .unlisted}
 
     Diagrama de Interacción de Objetos
 
-Participantes
+##### Participantes {.unnumbered .unlisted}
 
     Equipo del Proyecto
 
@@ -739,9 +748,10 @@ Durante el desarrollo de esta tarea, es posible que surjan excepciones que se in
 También se realiza el estudio de los escenarios de los distintos casos de uso, para identificar comportamientos comunes sobre los que se aplican mecanismos genéricos de diseño identificados en la tarea de Identificación de Mecanismos Genéricos de Diseño (DSI 2.2), o se puede decidir diseñar un subsistema de soporte que contenga dicho comportamiento, como un servicio.
 
 El estudio de los comportamientos comunes identificados puede servir de ayuda para detallar o revisar la herencia entre clases en la tarea Diseño de la Jerarquía (DSI 4.5).
-Productos
 
-De entrada
+##### Productos {.unnumbered .unlisted}
+
+###### De entrada {.unnumbered .unlisted}
 
     Modelo de Casos de Uso (ASI 9.3)
     Especificación de Casos de Uso (ASI 9.3)
@@ -749,19 +759,18 @@ De entrada
     Especificación de Interfaz de Usuario (ASI 9.3)
     Diseño de la Realización de los Casos de Uso (DSI 3.1)
 
-De salida
+###### De salida {.unnumbered .unlisted}
 
     Diseño de la Realización de los Casos de Uso
         Especificación Detallada
 
-Técnicas
+##### Técnicas {.unnumbered .unlisted}
 
     Diagrama de Interacción de Objetos (colaboración o secuencia)
 
-Participantes
+##### Participantes {.unnumbered .unlisted}
 
     Equipo del Proyecto
-
 
 #### Tarea DSI 3.3: Revisión de la Interfaz de Usuario
 
@@ -770,14 +779,15 @@ El objetivo de esta tarea es realizar el diseño detallado del comportamiento de
 Además, se revisa: la interfaz de usuario, la navegación entre ventanas, los elementos que forman cada interfaz, sus características (que deben ser consistentes con los atributos con los que están relacionadas), su disposición, y cómo se gestionan los eventos relacionados con los objetos.
 
 En aquellos casos en los que se realizan modificaciones significativas sobre la interfaz de usuario, es conveniente que éste las valide, siendo opcional la realización de un nuevo prototipo.
-Productos
 
-De entrada
+##### Productos {.unnumbered .unlisted}
+
+###### De entrada {.unnumbered .unlisted}
 
     Diseño de la Realización de los Casos de Uso (DSI 3.2)
     Especificación de Interfaz de Usuario (ASI 9.3)
 
-De salida
+###### De salida {.unnumbered .unlisted}
 
     Diseño de Interfaz de Usuario
         Formatos Individuales de Interfaz de Pantalla Gráfica
@@ -786,45 +796,45 @@ De salida
         Formatos de Impresión
         Prototipo de Interfaz de Pantalla Gráfica
 
-Técnicas
+##### Técnicas {.unnumbered .unlisted}
 
     Diagrama de Interacción de Objetos
     Diagrama de Transición de Estados
 
-Prácticas
+##### Prácticas {.unnumbered .unlisted}
 
     Prototipado
     Catalogación
 
-Participantes
+##### Participantes {.unnumbered .unlisted}
 
     Equipo del Proyecto
     Usuarios Expertos
-
 
 #### Tarea DSI 3.4: Revisión de Subsistemas de Diseño e Interfaces
 
 El objetivo de esta tarea es describir cada caso de uso en términos de los subsistemas que participan en el caso de uso y las interfaces que se requieren entre ellos.
 
 Para un caso de uso hay que definir, además de los subsistemas y actores que intervienen en el mismo, los mensajes que intercambian los objetos de un subsistema con otro. Estos mensajes sirven para verificar y detallar las interfaces de cada subsistema, teniendo en cuenta todos los casos de uso en los que interviene, y completar de esta manera la definición de subsistemas establecida en la tarea Identificación de Subsistemas de Diseño (DSI 1.5).
-Productos
 
-De entrada
+##### Productos {.unnumbered .unlisted}
+
+###### De entrada {.unnumbered .unlisted}
 
     Modelo de Casos de Uso (ASI 9.3)
     Especificación de Casos de Uso (ASI 9.3)
     Diseño de la Realización de los Casos de Uso (DSI 3.2)
 
-De salida
+###### De salida {.unnumbered .unlisted}
 
     Diseño de la Realización de los Casos de Uso
         Definición a Nivel de Subsistemas e Interfaz
 
-Técnicas
+##### Técnicas {.unnumbered .unlisted}
 
     Diagrama de Interacción de Objetos
 
-Participantes
+##### Participantes {.unnumbered .unlisted}
 
     Equipo del Proyecto
     Equipo de Arquitectura
@@ -845,22 +855,23 @@ El diseño de las clases de entidad varia según el sistema de gestión de datos
 El diseño de las clases de interfaz de usuario depende de la tecnología especifica que se esté utilizando. Así, por ejemplo, la interfaz puede crearse a partir de los objetos gráficos disponibles en el entorno de desarrollo, sin necesidad de que estos se contemplen en el modelo de clases correspondiente.
 
 Entre las clases identificadas a lo largo de esta tarea se encuentran clases abstractas, que reúnen características comunes a varias clases. Cada subclase aumenta su estructura y comportamiento con la clase abstracta de la que hereda.
-Productos
 
-De entrada
+##### Productos {.unnumbered .unlisted}
+
+###### De entrada {.unnumbered .unlisted}
 
     Modelo de Clases de Análisis (ASI 9.3)
     Especificación de Interfaz de Usuario (ASI 9.3)
 
-De salida
+###### De salida {.unnumbered .unlisted}
 
     Modelo de Clases de Diseño
 
-Técnicas
+##### Técnicas {.unnumbered .unlisted}
 
     Diagrama de Clases
 
-Participantes
+##### Participantes {.unnumbered .unlisted}
 
     Equipo del Proyecto
 
@@ -876,22 +887,23 @@ Para definir las asociaciones, partimos de las que fueron identificadas en la ta
     Se analiza la posibilidad de diseñar como clases algunas de las asociaciones.
 
 Opcionalmente, se especifica la forma en la que se va a implementar cada asociación (punteros, colecciones, etc.).
-Productos
 
-De entrada
+##### Productos {.unnumbered .unlisted}
+
+###### De entrada {.unnumbered .unlisted}
 
     Modelo de Clases de Análisis (ASI 9.3)
     Modelo de Clases de Diseño (DSI 4.1)
 
-De salida
+###### De salida {.unnumbered .unlisted}
 
     Modelo de Clases de Diseño
 
-Técnicas
+##### Técnicas {.unnumbered .unlisted}
 
     Diagrama de Clases
 
-Participantes
+##### Participantes {.unnumbered .unlisted}
 
     Equipo del Proyecto
 
@@ -907,25 +919,24 @@ Asimismo, se analiza la posibilidad de convertir un atributo en clase en aquello
     El atributo se defina en varias clases de diseño.
     La complejidad del atributo aumente la dificultad para comprender la clase a la que pertenece.
 
-Productos
+##### Productos {.unnumbered .unlisted}
 
-De entrada
+###### De entrada {.unnumbered .unlisted}
 
     Modelo de Clases de Análisis (ASI 9.3)
     Modelo de Clases de Diseño (DSI 4.2)
 
-De salida
+###### De salida {.unnumbered .unlisted}
 
     Modelo de Clases de Diseño
 
-Técnicas
+##### Técnicas {.unnumbered .unlisted}
 
     Diagrama de Clases
 
-Participantes
+##### Participantes {.unnumbered .unlisted}
 
     Equipo del Proyecto
-
 
 #### Tarea DSI 4.4: Identificación de Operaciones de las Clases
 
@@ -936,25 +947,26 @@ Las operaciones de las clases de diseño surgen para dar respuesta a las respons
 Según el entorno de desarrollo utilizado, se describe cada operación especificando: su nombre, parámetros y visibilidad (pública, privada, protegida). Si el entorno de desarrollo lo permite, se tiene en cuenta la posibilidad de simplificar el modelo de clases haciendo uso del polimorfismo y la sobrecarga de operaciones.
 
 Para identificar las operaciones de aquellos objetos que presenten distintos estados, por lo que su comportamiento depende del estado en el que se encuentren, es recomendable realizar un diagrama de transición de estados, y traducir cada acción o actividad del mismo en una de estas operaciones.
-Productos
 
-De entrada
+##### Productos {.unnumbered .unlisted}
+
+###### De entrada {.unnumbered .unlisted}
 
     Modelo de Clases de Análisis (ASI 9.3)
     Comportamiento de Clases de Análisis (ASI 9.3)
     Modelo de Clases de Diseño (DSI 4.3)
 
-De salida
+###### De salida {.unnumbered .unlisted}
 
     Comportamiento de Clases de Diseño
     Modelo de Clases de Diseño
 
-Técnicas
+##### Técnicas {.unnumbered .unlisted}
 
     Diagrama de Clases
     Diagrama de Transición de Estados
 
-Participantes
+##### Participantes {.unnumbered .unlisted}
 
     Equipo del Proyecto
 
@@ -964,70 +976,71 @@ Participantes
 El objetivo de esta tarea es revisar la jerarquía de clases que ha surgido en el modelo de clases a lo largo de las tareas anteriores y comprobar que esa jerarquía es viable según los mecanismos disponibles en el entorno de desarrollo utilizado.
 
 Entre las modificaciones realizadas sobre la jerarquía se identifican clases abstractas, que son superclases en las que se agrupan atributos y operaciones que heredan sus subclases.
-Productos
 
-De entrada
+##### Productos {.unnumbered .unlisted}
+
+###### De entrada {.unnumbered .unlisted}
 
     Modelo de Clases de Diseño (DSI 4.4)
 
-De salida
+###### De salida {.unnumbered .unlisted}
 
     Modelo de Clases de Diseño
 
-Técnicas
+##### Técnicas {.unnumbered .unlisted}
 
     Diagrama de Clases
 
-Participantes
+##### Participantes {.unnumbered .unlisted}
 
     Equipo del Proyecto
-
 
 #### Tarea DSI 4.6: Descripción de Métodos de las Operaciones
 
 En esta tarea se describen los métodos que se usan para detallar como se realiza cada una de las operaciones de una clase. Los métodos pueden especificarse mediante un algoritmo, usando pseudocódigo o lenguaje natural. Su implementación se basa en la secuencia de interacciones del diagrama de interacción en los que la clase aparezca o en la secuencia de transiciones del diagrama de transición de estados.
 
 En la mayoría de los casos, esta tarea no se realiza hasta el proceso de construcción, en el que los métodos se describen directamente en el lenguaje de programación que se va a utilizar.
-Productos
 
-De entrada
+##### Productos {.unnumbered .unlisted}
+
+###### De entrada {.unnumbered .unlisted}
 
     Modelo de Clases de Diseño (DSI 4.5)
     Comportamiento de Clases de Diseño (DSI 4.4)
 
-De salida
+###### De salida {.unnumbered .unlisted}
 
     Modelo de Clases de Diseño
 
-Técnicas
+##### Técnicas {.unnumbered .unlisted}
 
     Diagrama de Clases
 
-Participantes
+##### Participantes {.unnumbered .unlisted}
 
     Equipo del Proyecto
-
 
 #### Tarea DSI 4.7: Especificación de Necesidades de Migración y Carga Inicial de Datos
 
 En esta tarea se realiza, en los casos que sea necesario y a partir de los resultados de la tarea ASI 6.4, una primera especificación de las necesidades de migración o carga inicial de los datos requeridos por el sistema, que se completa en la actividad Diseño de la Migración y Carga Inicial de Datos (DSI 9).
-Productos
 
-De entrada
+##### Productos {.unnumbered .unlisted}
+
+###### De entrada {.unnumbered .unlisted}
 
     Estructura de Datos del Sistema Origen (externo)
     Modelo de Clases de Diseño (DSI 4.6)
     Plan de Migración y Carga Inicial de Datos (ASI 6.4)
 
-De salida
+###### De salida {.unnumbered .unlisted}
 
     Plan de Migración y Carga Inicial de Datos
 
-Prácticas
+##### Prácticas {.unnumbered .unlisted}
 
     Sesiones de Trabajo
 
-Participantes
+##### Participantes {.unnumbered .unlisted}
 
     Analistas
     Usuarios Expertos
@@ -1112,9 +1125,10 @@ De acuerdo a la arquitectura propuesta y al resultado del análisis de cada proc
 La estructura modular refleja, en el caso de tratamiento en línea, las sucesivas transacciones y diálogos, y en el caso de implementación en lotes, la secuencia de módulos dentro de cada ejecución.
 
 En sistemas interactivos en los que exista una gran complejidad de gestión de pantalla se propone, complementariamente al diagrama de estructura de cuadros, perfeccionar el diseño de la interfaz de usuario en la tarea Revisión de la Interfaz de Usuario (DSI 5.3), relacionando cada control/evento/acción de los formatos individuales de presentación de pantalla con los respectivos módulos.
-Productos
 
-De entrada
+##### Productos {.unnumbered .unlisted}
+
+###### De entrada {.unnumbered .unlisted}
 
     Modelo de Procesos (ASI 9.3)
     Especificación de Interfaz de Usuario (ASI 9.3)
@@ -1122,15 +1136,15 @@ De entrada
     Matriz de Procesos / Localización (ASI 7.1)
     Diseño de la Arquitectura del Sistema (DSI 1.5)
 
-De salida
+###### De salida {.unnumbered .unlisted}
 
     Diseño de la Arquitectura Modular del Sistema
 
-Técnicas
+##### Técnicas {.unnumbered .unlisted}
 
     Diagrama de Estructura
 
-Participantes
+##### Participantes {.unnumbered .unlisted}
 
     Equipo de Arquitectura
     Equipo del Proyecto
@@ -1151,23 +1165,24 @@ Para el diseño de las interfaces es necesario especificar:
 En el diseño de las interfaces con otros sistemas hay que tener en cuenta, además, la información recogida en la descripción de interfaz con otros sistemas obtenida en el proceso de Análisis del Sistema del Información.
 
 Las interfaces entre módulos permiten evaluar las necesidades de comunicación entre los distintos nodos, de modo que influyen decisivamente en el dimensionamiento del entorno tecnológico.
-Productos
 
-De entrada
+##### Productos {.unnumbered .unlisted}
+
+###### De entrada {.unnumbered .unlisted}
 
     Modelo de Procesos (ASI 9.3)
     Descripción de Interfaz con otros Sistemas (ASI 7.2)
     Diseño de la Arquitectura Modular del Sistema (DSI 5.1)
 
-De salida
+###### De salida {.unnumbered .unlisted}
 
     Diseño de la Arquitectura Modular del Sistema
 
-Técnicas
+##### Técnicas {.unnumbered .unlisted}
 
     Diagrama de Estructura
 
-Participantes
+##### Participantes {.unnumbered .unlisted}
 
     Equipo de Arquitectura
     Equipo del Proyecto
@@ -1188,14 +1203,15 @@ En diálogos complejos, se propone utilizar como base de la especificación el m
 Igualmente, se realiza el diseño de los mensajes de error, mensajes de aviso o advertencia que genera el sistema en función del tipo de acción realizado por el usuario en el contexto del diálogo, así como las facilidades de ayuda que proporciona la interfaz durante la interacción con el sistema.
 
 En el caso de que las modificaciones sean significativas en cuanto al formato o la definición de diálogos, se propone una validación por parte del usuario, con la realización opcional de prototipos para facilitar la revisión y aceptación.
-Productos
 
-De entrada
+##### Productos {.unnumbered .unlisted}
+
+###### De entrada {.unnumbered .unlisted}
 
     Especificación de Interfaz de Usuario (ASI 9.3)
     Diseño de la Arquitectura Modular del Sistema (DSI 5.2)
 
-De salida
+###### De salida {.unnumbered .unlisted}
 
     Diseño de Interfaz de Usuario:
         Descomposición Funcional en Diálogos
@@ -1206,18 +1222,18 @@ De salida
         Prototipo de Interfaz de Pantalla
         Prototipo de Interfaz de Impresión
 
-Técnicas
+##### Técnicas {.unnumbered .unlisted}
 
     Diagrama de Descomposición Funcional
     Diagrama de Transición de Estados
     Matricial
 
-Prácticas
+##### Prácticas {.unnumbered .unlisted}
 
     Catalogación
     Prototipado
 
-Participantes
+##### Participantes {.unnumbered .unlisted}
 
     Equipo del Proyecto
     Usuarios Expertos
@@ -1307,9 +1323,9 @@ También se definen aquellos elementos que, en función del gestor o sistemas de
     Punteros.
     Otros.
 
-Productos
+##### Productos {.unnumbered .unlisted}
 
-De entrada
+###### De entrada {.unnumbered .unlisted}
 
     Características Específicas del SGBD o Sistemas de Ficheros a Utilizar (externo)
     En Análisis Estructurado:
@@ -1319,16 +1335,16 @@ De entrada
     Modelo de Clases de Diseño (DSI 4.6)
     Plan de Migración y Carga Inicial de Datos (DSI 4.7)
 
-De salida
+###### De salida {.unnumbered .unlisted}
 
     Modelo Físico de Datos
 
-Técnicas
+##### Técnicas {.unnumbered .unlisted}
 
     Reglas de Obtención del Modelo Físico a partir del Lógico
     Reglas de Transformación
 
-Participantes
+##### Participantes {.unnumbered .unlisted}
 
     Equipo de Arquitectura
     Equipo del Proyecto
@@ -1349,9 +1365,10 @@ Para el inicio de esta tarea, se toma como referencia el Diseño Detallado de lo
 Para cada módulo/clase se identifican las tablas o ficheros y el tipo de acceso realizado, así como el orden que debe seguirse para la obtención de los datos. Asimismo, se efectúa una estimación del número de accesos que deben realizarse teniendo en cuenta, a su vez, la frecuencia y la prioridad del acceso.
 
 La información obtenida sirve para identificar accesos excesivamente costosos o redundantes que pueden comprometer el rendimiento final del sistema y que, por lo tanto, exigen la optimización del modelo físico de datos, mediante la creación de nuevos accesos, posibles desnormalizaciones o particiones del modelo físico de datos.
-Productos
 
-De entrada
+##### Productos {.unnumbered .unlisted}
+
+###### De entrada {.unnumbered .unlisted}
 
     Modelo Físico de Datos (DSI 6.1)
     Diseño Detallado de Subsistemas de Soporte (DSI 2.1)
@@ -1360,16 +1377,16 @@ De entrada
     En Diseño Orientado a Objetos:
     Modelo de Clases de Diseño (DSI 4.6)
 
-De salida
+###### De salida {.unnumbered .unlisted}
 
     Especificación de los Caminos de Acceso a los Datos
 
-Prácticas
+##### Prácticas {.unnumbered .unlisted}
 
     Cálculo de Accesos Físicos
     Caminos de Acceso
 
-Participantes
+##### Participantes {.unnumbered .unlisted}
 
     Equipo del Proyecto
 
@@ -1395,23 +1412,24 @@ En la revisión de la estructura física de datos se deben tener en cuenta crite
     Requisitos relativos al rendimiento, seguridad, confidencialidad y disponibilidad, entre otros, considerados relevantes.
 
 Es importante que la desnormalización se lleve a cabo de una forma controlada, para evitar anomalías en el tratamiento de los datos.
-Productos
 
-De entrada
+##### Productos {.unnumbered .unlisted}
+
+###### De entrada {.unnumbered .unlisted}
 
     Catálogo de Requisitos (DSI 1.2)
     Modelo Físico de Datos (DSI 6.1)
     Especificación de los Caminos de Acceso a los Datos (DSI 6.2)
 
-De salida
+###### De salida {.unnumbered .unlisted}
 
     Modelo Físico de Datos Optimizado
 
-Técnicas
+##### Técnicas {.unnumbered .unlisted}
 
     Optimización
 
-Participantes
+##### Participantes {.unnumbered .unlisted}
 
     Equipo de Arquitectura
     Equipo del Proyecto
@@ -1423,25 +1441,26 @@ Participantes
 En esta tarea se determina el modelo de distribución de datos, teniendo en cuenta los requisitos de diseño establecidos. Se establece la ubicación de los gestores de bases de datos o sistemas de ficheros, así como de los distintos elementos de la estructura física de datos, en los nodos correspondientes, de acuerdo al particionamiento físico del sistema de información especificado en la actividad Diseño de la Arquitectura del Sistema (DSI 1).
 
 El resultado de esta actividad es la especificación de los modelos físicos particulares de cada nodo, esquemas físicos de datos, así como su asignación a los nodos.
-Productos
 
-De entrada
+##### Productos
+
+###### De entrada {.unnumbered .unlisted}
 
     Diseño de la Arquitectura del Sistema (DSI 1.1):
         Particionamiento Físico del Sistema de Información
     Catálogo de Requisitos (DSI 1.2)
     Modelo Físico de Datos Optimizado (DSI 6.3)
 
-De salida
+###### De salida {.unnumbered .unlisted}
 
     Esquemas Físicos de Datos
     Asignación Esquemas Físicos de Datos a Nodos
 
-Técnicas
+##### Técnicas {.unnumbered .unlisted}
 
     Matricial
 
-Participantes
+##### Participantes {.unnumbered .unlisted}
 
     Equipo de Arquitectura
     Equipo de Soporte Técnico
@@ -1457,6 +1476,7 @@ Para cumplir dicho objetivo, se llevan a cabo las siguientes acciones:
     Aceptación del diseño de la arquitectura por parte de Explotación y Sistemas.
 
 Esta actividad es compleja, por lo que es aconsejable utilizar herramientas de apoyo para la realización de sus tareas.
+
 TAREA 	PRODUCTOS 	TÉCNICAS Y PRÁCTICAS 	PARTICIPANTES
 DSI 7.1: Verificación de las Especificaciones de Diseño 	
 
@@ -1517,9 +1537,10 @@ DSI 7.3: Aceptación de la Arquitectura del Sistema
 #### Tarea DSI 7.1: Verificación de las Especificaciones de Diseño
 
 El objetivo de esta tarea es asegurar la calidad formal de los distintos modelos, conforme a la técnica seguida para la elaboración de cada producto y a las normas y estándares especificados en el catálogo de normas.
-Productos
 
-De entrada
+##### Productos {.unnumbered .unlisted}
+
+###### De entrada {.unnumbered .unlisted}
 
     Catálogo de Requisitos (DSI 1.2)
     Catálogo de Excepciones (DSI 1.3)
@@ -1539,7 +1560,7 @@ De entrada
     Modelo de Clases de Diseño (DSI 4.6)
     Comportamiento de Clases de Diseño (DSI 4.4)
 
-De salida
+###### De salida {.unnumbered .unlisted}
 
     Entorno Tecnológico del Sistema
     Diseño de la Arquitectura del Sistema
@@ -1555,11 +1576,10 @@ De salida
     Modelo de Clases de Diseño
     Comportamiento de Clases de Diseño
 
-Participantes
+##### Participantes {.unnumbered .unlisted}
 
     Equipo de Arquitectura
     Equipo del Proyecto
-
 
 #### Tarea DSI 7.2: Análisis de Consistencia de las Especificaciones de Diseño
 
@@ -1611,9 +1631,9 @@ Los análisis de consistencia específicos para el Diseño Orientado a Objetos s
         Matriz (evento, acción, actividad de clase) / operaciones de clase.
         Matriz clases / elementos del modelo físico de datos.
 
-Productos
+##### Productos {.unnumbered .unlisted}
 
-De entrada
+###### De entrada {.unnumbered .unlisted}
 
     Catálogo de Requisitos (DSI 1.2)
     Catálogo de Excepciones (DSI 1.3)
@@ -1632,7 +1652,7 @@ De entrada
     Modelo de Clases de Diseño (DSI 7.1)
     Comportamiento de Clases de Diseño (DSI 7.1)
 
-De salida
+###### De salida {.unnumbered .unlisted}
 
     Entorno Tecnológico del Sistema
     Diseño de la Arquitectura del Sistema
@@ -1648,11 +1668,11 @@ De salida
     Modelo de Clases de Diseño
     Comportamiento de Clases de Diseño
 
-Técnicas
+##### Técnicas {.unnumbered .unlisted}
 
     Matricial
 
-Participantes
+##### Participantes {.unnumbered .unlisted}
 
     Equipo de Arquitectura
     Equipo del Proyecto
@@ -1660,9 +1680,10 @@ Participantes
 #### Tarea DSI 7.3: Aceptación de la Arquitectura del Sistema
 
 El objetivo de esta tarea es obtener la aceptación, por parte de las áreas de explotación y sistemas, de la arquitectura del sistema de información y de los requisitos de operación y seguridad, con el fin de poder valorar su impacto en la instalación.
-Productos
 
-De entrada
+Productos {.unnumbered .unlisted}
+
+De entrada {.unnumbered .unlisted}
 
     Catálogo de Requisitos (DSI 1.2)
     Catálogo de Excepciones (DSI 1.3)
@@ -1682,16 +1703,15 @@ De entrada
     Modelo de Clases de Diseño (DSI 7.2)
     Comportamiento de Clases de Diseño (DSI 7.2)
 
-De salida
+De salida {.unnumbered .unlisted}
 
     Aceptación Técnica del Diseño
 
-Participantes
+Participantes {.unnumbered .unlisted}
 
     Jefe de Proyecto
     Responsable de Operación
     Responsable de Sistemas
-
 
 ### Actividad DSI 8: Generación de Especificaciones de Construcción
 
@@ -1782,20 +1802,20 @@ Se propone que la especificación del entorno se realice según los siguientes c
     Planificación de capacidades previstas, o la información que estime oportuno el departamento de sistemas para efectuar dicha planificación.
     Requisitos de operación y seguridad del entorno de construcción.
 
-Productos
+##### Productos
 
-De entrada
+###### De entrada
 
     Catálogo de Requisitos (DSI 1.2)
     Diseño de la Arquitectura del Sistema (DSI 7.2)
     Entorno Tecnológico del Sistema (DSI 7.2)
 
-De salida
+###### De salida
 
     Especificaciones de Construcción del Sistema de Información
         Especificación del Entorno de Construcción
 
-Participantes
+##### Participantes
 
     Equipo de Arquitectura
     Equipo del Proyecto
@@ -1822,9 +1842,10 @@ Los subsistemas de construcción y las dependencias entre subsistemas y entre co
 La asignación de subsistemas de construcción a nodos, por continuidad con el diseño, determina la distribución de los componentes que lo integran.
 
 Opcionalmente, se propone la realización de un plan de integración del sistema de información, especificando la secuencia y organización de la construcción y prueba de los subsistemas de construcción y de los componentes, desde un punto de vista técnico.
-Productos
 
-De entrada
+##### Productos {.unnumbered .unlisted}
+
+###### De entrada {.unnumbered .unlisted}
 
     Especificaciones de Construcción del Sistema de Información (DSI 8.1)
     Catálogo de Requisitos (DSI 1.2)
@@ -1840,21 +1861,21 @@ De entrada
     Modelo de Clases de Diseño (DSI 7.2)
     Comportamiento de Clases de Diseño (DSI 7.2)
 
-De salida
+###### De salida {.unnumbered .unlisted}
 
     Especificaciones de Construcción del Sistema de Información:
         Descripción de Subsistemas de Construcción y Dependencias
         Descripción de Componentes
         Plan de Integración del Sistema de Información
 
-Técnicas
+##### Técnicas {.unnumbered .unlisted}
 
     Diagrama de Estructura
     Matricial
     Diagrama de Componentes
     Diagrama de Despliegue
 
-Participantes
+##### Participantes {.unnumbered .unlisted}
 
     Equipo de Arquitectura
     Equipo del Proyecto
@@ -1864,9 +1885,10 @@ Participantes
 Se realiza una especificación detallada de cada componente, en pseudocódigo o lenguaje natural, completando la información que se considere necesaria según el entorno tecnológico.
 
 Asimismo, se determinan y especifican todos los elementos o parámetros complementarios a la propia definición de componentes que, en función del entorno tecnológico, completan las especificaciones de construcción. Como ejemplos, es posible citar las tablas de definición de programas y transacciones en monitores de teleproceso, etc.
-Productos
 
-De entrada
+##### Productos {.unnumbered .unlisted}
+
+###### De entrada {.unnumbered .unlisted}
 
     Especificaciones de Construcción del Sistema de Información (DSI 8.2)
     Catálogo de Requisitos (DSI 1.2)
@@ -1886,25 +1908,26 @@ De entrada
     Modelo de Clases de Diseño (DSI 7.2)
     Comportamiento de Clases de Diseño (DSI 7.2)
 
-De salida
+###### De salida {.unnumbered .unlisted}
 
     Especificaciones de Construcción del Sistema de Información
         Especificación Detallada de Componentes
 
-Técnicas
+##### Técnicas {.unnumbered .unlisted}
 
     Diagrama de Componentes
 
-Participantes
+##### Participantes {.unnumbered .unlisted}
 
     Equipo del Proyecto
 
 #### Tarea DSI 8.4: Elaboración de Especificaciones del Modelo Físico de Datos
 
 En esta tarea se generan las especificaciones necesarias para la definición y creación de los elementos del modelo físico de datos, mediante el lenguaje de definición de datos del correspondiente gestor de base de datos o sistema de ficheros, teniendo en cuenta el entorno tecnológico, las normas y estándares de la organización y características intrínsecas del gestor o sistema de ficheros a utilizar.
-Productos
 
-De entrada
+##### Productos {.unnumbered .unlisted}
+
+###### De entrada {.unnumbered .unlisted}
 
     Características específicas del SGBD o sistemas de ficheros a utilizar (externo)
     Especificaciones de Construcción del Sistema de Información (DSI 8.3)
@@ -1915,12 +1938,12 @@ De entrada
     Esquemas Físicos de Datos (DSI 7.2)
     Asignación de Esquemas Físicos de Datos a Nodos (DSI 7.2)
 
-De salida
+###### De salida {.unnumbered .unlisted}
 
     Especificaciones de Construcción del Sistema de Información
         Especificación de la Estructura Física de Datos
 
-Participantes
+##### Participantes {.unnumbered .unlisted}
 
     Equipo del Proyecto
     Administradores de Bases de Datos
@@ -1944,6 +1967,7 @@ Asimismo, se determinan las necesidades adicionales de infraestructura, tanto pa
     Planificación de la migración y carga inicial.
 
 Es importante considerar que una carga inicial de información no tiene el mismo alcance y complejidad que una migración de datos, de modo que las tareas de esta actividad se deben llevar a cabo en mayor o menor medida en función de las características de los datos a cargar.
+
 TAREA 	PRODUCTOS 	TÉCNICAS Y PRÁCTICAS 	PARTICIPANTES
 DSI 9.1: Especificación del Entorno de Migración 	
 
@@ -1990,9 +2014,10 @@ DSI 9.4: Revisión de la Planificación de la Migración
 El objetivo de esta tarea es definir el entorno tecnológico propio de los procesos de migración y carga inicial, adecuando al mismo las necesidades y requisitos reflejados en el plan de migración y carga inicial de datos. En la descripción del entorno tecnológico, hay que tener en cuenta las herramientas o utilidades software específicas de estos procesos.
 
 Se realiza una estimación de capacidades (capacity planning) para este entorno que permita evaluar las necesidades de infraestructura, principalmente relacionadas con el espacio de almacenamiento y las comunicaciones.
-Productos
 
-De entrada
+##### Productos {.unnumbered .unlisted}
+
+###### De entrada {.unnumbered .unlisted}
 
     Plan de Migración y Carga Inicial de Datos (ASI 6.4) (en orientación a objetos DSI 4.7)
     Diseño de la Arquitectura del Sistema (DSI 7.2)
@@ -2001,12 +2026,12 @@ De entrada
     Esquemas Físicos de Datos (DSI 7.2)
     Asignación de Esquemas Físicos de Datos a Nodos (DSI 7.2)
 
-De salida
+###### De salida {.unnumbered .unlisted}
 
     Plan de Migración y Carga Inicial de Datos
         Especificación del Entorno de Migración y Carga Inicial
 
-Participantes
+##### Participantes {.unnumbered .unlisted}
 
     Equipo de Arquitectura
     Equipo de Soporte Técnico
@@ -2031,9 +2056,9 @@ Los procedimientos asociados a la migración y carga inicial de datos son, princ
         Procesos de carga y prioridades.
     Procedimientos de verificación de los procesos y comprobación de la integridad de la información resultante al finalizar la conversión, conforme a la estructura física de los datos destino.
 
-Productos
+##### Productos {.unnumbered .unlisted}
 
-De entrada
+###### De entrada {.unnumbered .unlisted}
 
     Plan de Migración y Carga Inicial de Datos (DSI 9.1)
     Diseño de la Arquitectura del Sistema (DSI 7.2)
@@ -2042,12 +2067,12 @@ De entrada
     Esquemas Físicos de Datos (DSI 7.2)
     Asignación de Esquemas Físicos de Datos a Nodos (DSI 7.2)
 
-De salida
+###### De salida {.unnumbered .unlisted}
 
     Plan de Migración y Carga Inicial de Datos:
         Definición de Procedimientos de Migración y Carga Inicial
 
-Participantes
+###### Participantes {.unnumbered .unlisted}
 
     Equipo de Arquitectura
     Equipo del Proyecto
@@ -2060,9 +2085,10 @@ El objetivo de esta tarea es el diseño detallado, en sucesivos niveles de detal
 El diseño de los módulos necesarios para la migración y carga inicial no es conceptualmente distinto del diseño de cualquier otro módulo del sistema de información, por lo que se recomienda utilizar pautas similares. Se debe tener en cuenta el modelo físico de datos del sistema de información, así como las estructuras de datos del sistema o sistemas origen recogidas en el plan de migración y carga inicial de datos.
 
 Finalmente, se complementa el plan de migración y carga inicial con la definición de los distintos tipos de prueba a realizar.
-Productos
 
-De entrada
+##### Productos {.unnumbered .unlisted}
+
+###### De entrada {.unnumbered .unlisted}
 
     Plan de Migración y Carga Inicial de Datos (DSI 9.2)
     Diseño de la Arquitectura del Sistema (DSI 7.2)
@@ -2071,31 +2097,32 @@ De entrada
     Esquemas Físicos de Datos (DSI 7.2)
     Asignación de Esquemas Físicos de Datos a Nodos (DSI 7.2)
 
-De salida
+###### De salida {.unnumbered .unlisted}
 
     Plan de Migración y Carga Inicial de Datos:
         Diseño Detallado de Módulos de Migración y Carga Inicial
         Especificación Técnica de las Pruebas de Migración y Carga Inicial
 
-Participantes
+##### Participantes {.unnumbered .unlisted}
 
     Equipo del Proyecto
 
 #### Tarea DSI 9.4: Revisión de la Planificación de la Migración
 
 El objetivo de esta tarea es completar la especificación del plan de migración y carga inicial, concretando el plan de trabajo de acuerdo a los procedimientos y procesos de migración y carga inicial definidos.
-Productos
 
-De entrada
+##### Productos {.unnumbered .unlisted}
+
+###### De entrada {.unnumbered .unlisted}
 
     Plan de Migración y Carga Inicial de Datos (DSI 9.3)
 
-De salida
+###### De salida {.unnumbered .unlisted}
 
     Plan de Migración y Carga Inicial de Datos:
         Planificación de la Migración y Carga Inicial
 
-Participantes
+##### Participantes {.unnumbered .unlisted}
 
     Jefe de Proyecto
 
@@ -2178,9 +2205,9 @@ Se propone considerar los siguientes conceptos en la especificación del entorno
     Procedimientos de promoción de elementos entre entornos (desarrollo, pruebas, explotación, etc.).
     Procedimientos de emergencia y de recuperación, así como de vuelta atrás.
 
-Productos
+##### Productos {.unnumbered .unlisted}
 
-De entrada
+###### De entrada {.unnumbered .unlisted}
 
     Plan de Pruebas (ASI 10.3)
     Catálogo de Requisitos (DSI 1.2)
@@ -2193,12 +2220,12 @@ De entrada
     Asignación de Esquemas Físicos de Datos a Nodos (DSI 7.2)
     Especificaciones de Construcción del Sistema de Información (DSI 8.2)
 
-De salida
+###### De salida {.unnumbered .unlisted}
 
     Plan de Pruebas
         Especificación del Entorno de Pruebas
 
-Participantes
+##### Participantes {.unnumbered .unlisted}
 
     Equipo del Proyecto
     Diseñadores de Arquitectura
@@ -2236,9 +2263,9 @@ Como resultado final, se obtiene la relación de verificaciones que permiten com
     El ajuste del sistema a las necesidades para las que fue creado, de acuerdo a las características del entorno en el que se va a implantar (pruebas de implantación).
     La respuesta satisfactoria del sistema a los requisitos especificados por el usuario (pruebas de aceptación).
 
-Productos
+##### Productos {.unnumbered .unlisted}
 
-De entrada
+###### De entrada {.unnumbered .unlisted}
 
     Plan de Pruebas (DSI 10.1)
     Catálogo de Requisitos (DSI 1.2)
@@ -2259,12 +2286,12 @@ De entrada
     Modelo de Clases de Diseño (DSI 7.2)
     Comportamiento de Clases de Diseño (DSI 7.2)
 
-De salida
+###### De salida {.unnumbered .unlisted}
 
     Plan de Pruebas
         Especificación Técnica de Niveles de Prueba
 
-Participantes
+##### Participantes {.unnumbered .unlisted}
 
     Jefe de Proyecto
     Analistas
@@ -2274,18 +2301,19 @@ Participantes
 #### Tarea DSI 10.3: Revisión de la Planificación de Pruebas
 
 En esta tarea se completa y especifica la planificación de las pruebas, determinando los distintos perfiles implicados en la preparación y ejecución de las pruebas y en la evaluación de los resultados, así como el tiempo estimado para la realización de cada uno de los niveles de prueba, de acuerdo a la estrategia de integración establecida.
-Productos
 
-De entrada
+Productos {.unnumbered .unlisted}
+
+De entrada {.unnumbered .unlisted}
 
     Plan de Pruebas (DSI 10.2)
 
-De salida
+De salida {.unnumbered .unlisted}
 
     Plan de Pruebas
         Planificación de las Pruebas
 
-Participantes
+Participantes {.unnumbered .unlisted}
 
     Jefe de Proyecto
 
@@ -2294,6 +2322,7 @@ Participantes
 En esta actividad se completa el catálogo de requisitos con aquéllos relacionados con la documentación que el usuario requiere para operar con el nuevo sistema, y los relativos a la propia implantación del sistema en el entorno de operación.
 
 La incorporación de estos requisitos permite ir preparando, en los procesos de Construcción del Sistema de Información (CSI) e Implantación y Aceptación del Sistema (IAS), los medios y recursos necesarios para que los usuarios, tanto finales como de operación, sean capaces de utilizar el nueva sistema de forma satisfactoria.
+
 TAREA 	PRODUCTOS 	TÉCNICAS Y PRÁCTICAS 	PARTICIPANTES
 DSI 11.1: Especificación de Requisitos de Documentación de Usuario 	
 
@@ -2340,24 +2369,24 @@ Para ello, es necesario definir, entre otros, los siguientes aspectos:
     Distribución y mantenimiento de la documentación y copias a editar.
     Control de versiones.
 
-Productos
+##### Productos {.unnumbered .unlisted}
 
-De entrada
+###### De entrada {.unnumbered .unlisted}
 
     Catálogo de Requisitos (DSI 1.2)
     Diseño de la Arquitectura del Sistema (DSI 7.2)
     Entorno Tecnológico del Sistema (DSI 7.2)
 
-De salida
+###### De salida {.unnumbered .unlisted}
 
     Catálogo de Requisitos
 
-Prácticas
+###### Prácticas {.unnumbered .unlisted}
 
     Catalogación
     Sesiones de Trabajo
 
-Participantes
+##### Participantes {.unnumbered .unlisted}
 
     Equipo del Proyecto
     Usuarios Expertos
@@ -2371,24 +2400,25 @@ En esta tarea se especifican de forma detallada los requisitos de implantación,
 Teniendo en cuenta las particularidades del sistema de información, se determinan los conocimientos o aptitudes adicionales que requieren los usuarios finales para operar con el nuevo sistema, al margen de la funcionalidad soportada por el mismo. Como consecuencia, se pueden establecer requisitos de formación indispensables, como condición previa, para el desarrollo del plan de formación que se elaborará en el proceso Implantación y Aceptación del Sistema (IAS).
 
 Los requisitos de infraestructura e instalación hacen referencia a las necesidades especiales de equipamiento software, hardware y comunicaciones exigidos por el nuevo sistema, así como a los tipos de elementos implicados en la instalación, que deben tenerse en cuenta al especificar la estrategia de implantación, en el proceso Implantación y Aceptación del Sistema (IAS).
-Productos
 
-De entrada
+##### Productos {.unnumbered .unlisted}
+
+###### De entrada {.unnumbered .unlisted}
 
     Diseño de la Arquitectura del Sistema (DSI 7.2)
     Entorno Tecnológico del Sistema (DSI 7.2)
     Catálogo de Requisitos (DSI 11.1)
 
-De salida
+###### De salida {.unnumbered .unlisted}
 
     Catálogo de Requisitos
 
-Prácticas
+#####  Prácticas {.unnumbered .unlisted}
 
     Catalogación
     Sesiones de Trabajo
 
-Participantes
+##### Participantes {.unnumbered .unlisted}
 
     Jefe de Proyecto
     Directores de Usuarios
@@ -2407,9 +2437,10 @@ Participantes
 #### Tarea DSI 12.1: Presentación y Aprobación del Diseño del Sistema de Información {#sec-12-1}
 
 En esta tarea se realiza la presentación del diseño del sistema de información al Comité de Dirección para la aprobación final del mismo.
-Productos
 
-De entrada
+##### Productos {.unnumbered .unlisted}
+
+##### De entrada {.unnumbered .unlisted}
 
     Catálogo de Requisitos ([DSI 11.2](#sec-11-2))
     Catálogo de Excepciones (DSI 1.3)
@@ -2432,18 +2463,18 @@ De entrada
     Modelo de Clases de Diseño (DSI 7.2)
     Comportamiento de Clases de Diseño (DSI 7.2)
 
-De salida
+###### De salida {.unnumbered .unlisted}
 
     Aprobación del Diseño del Sistema de Información
 
-Prácticas
+##### Prácticas {.unnumbered .unlisted}
 
     Presentación
 
-Participantes
+##### Participantes {.unnumbered .unlisted}
 
-    Comité de Dirección
-    Jefe de Proyecto
+- Comité de Dirección
+- Jefe de Proyecto
 
 ## PARTICIPANTES EN LAS ACTIVIDADES DEL PROCESO DSI
 
@@ -2489,17 +2520,15 @@ Reglas de Transformación 						X
 Sesiones de Trabajo 	X 	X 		X 							X 	
 Actividades
 
-    Actividad DSI 1: Definición de la Arquitectura del Sistema
-    Actividad DSI 2: Diseño de la Arquitectura de Soporte
-    Actividad DSI 3: Diseño de Casos de Uso Reales
-    Actividad DSI 4: Diseño de Clases
-    Actividad DSI 5: Diseño de la Arquitectura de Módulos del Sistema
-    Actividad DSI 6: Diseño Físico de Datos
-    Actividad DSI 7: Verificación y Aceptación de la Arquitectura del Sistema
-    Actividad DSI 8: Generación de Especificaciones de Construcción
-    Actividad DSI 9: Diseño de la Migración y Carga Inicial de Datos
-    Actividad DSI 10: Especificación Técnica del Plan de Pruebas
-    Actividad DSI 11: Establecimiento de Requisitos de Implantación
-    Actividad DSI 12: Aprobación del Diseño del Sistema de Información
-
-
+- Actividad DSI 1: Definición de la Arquitectura del Sistema
+- Actividad DSI 2: Diseño de la Arquitectura de Soporte
+- Actividad DSI 3: Diseño de Casos de Uso Reales
+- Actividad DSI 4: Diseño de Clases
+- Actividad DSI 5: Diseño de la Arquitectura de Módulos del Sistema
+- Actividad DSI 6: Diseño Físico de Datos
+- Actividad DSI 7: Verificación y Aceptación de la Arquitectura del Sistema
+- Actividad DSI 8: Generación de Especificaciones de Construcción
+- Actividad DSI 9: Diseño de la Migración y Carga Inicial de Datos
+- Actividad DSI 10: Especificación Técnica del Plan de Pruebas
+- Actividad DSI 11: Establecimiento de Requisitos de Implantación
+- Actividad DSI 12: Aprobación del Diseño del Sistema de Información
