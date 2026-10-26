@@ -1,1 +1,797 @@
 # Gestión de Proyectos
+
+## Descripción y Objetivos
+
+La Gestión de Proyectos tiene como finalidad principal la planificación, el seguimiento y control de las actividades y de los recursos humanos y materiales que intervienen en el desarrollo de un Sistema de Información. Como consecuencia de este control es posible conocer en todo momento qué problemas se producen y resolverlos o paliarlos de manera inmediata.
+
+La Interfaz de Gestión de Proyectos de MÉTRICA Versión 3 contempla proyectos de desarrollo de Sistemas de Información en sentido amplio. Es decir, acorde con EUROMÉTODO se consideran proyectos de desarrollo de nuevos Sistemas de Información y también los proyectos de ampliación y mejora de los ya existentes; estos últimos, contemplados en MÉTRICA Versión 3 al proceso de Mantenimiento del Sistema de Información (MSI).
+
+Las actividades de la Interfaz de Gestión de Proyectos se presentan en el siguiente esquema, en el que se aprecian las áreas que cubre. Se distinguen tres grupos de actividades:
+
+    Actividades de Inicio del Proyecto (GPI). Al principio del proyecto, al concluir el proceso Estudio de Viabilidad del Sistema (EVS), se realizarán las actividades de Estimación de Esfuerzo y Planificación del proyecto.
+    Actividades de Seguimiento y Control (GPS). Comprenden desde la asignación de las tareas hasta su aceptación interna por parte del equipo de proyecto, incluyendo la gestión de incidencias y cambios en los requisitos que puedan presentarse y afectar a la planificación del proyecto. El Seguimiento y Control del proyecto se realizan durante los procesos de Análisis, Diseño, Construcción, Implantación y Aceptación, y Mantenimiento del Sistema de Información, para vigilar el correcto desarrollo de las actividades y tareas establecidas en la planificación.
+    Actividades de Finalización del Proyecto (GPF). Por último, al concluir el proyecto se realizan las tareas propias de Cierre del Proyecto y Registro de la Documentación de Gestión.
+
+Las técnicas y prácticas utilizadas en la Gestión de Proyectos se describen en la Guía de Técnicas de MÉTRICA Versión 3. En función de las características del proyecto puede ser aconsejable emplear herramientas software de soporte a las técnicas, disponibles en el mercado.
+
+![](../images/gespro-plan.jpg)
+
+## Actividades de Inicio del Proyecto
+
+Las actividades al inicio de un proyecto tienen un doble objetivo: estimar el esfuerzo a realizar para desarrollar el sistema y planificar las actividades de dicho desarrollo. Para ello, tomando como punto de partida la Solución Propuesta en el Estudio de Viabilidad del Sistema (EVS 6), se identifican los elementos a desarrollar, se calcula el esfuerzo a realizar, y se planifican las actividades del proyecto comprendiendo los aspectos de recursos, programación de tareas y establecimiento de un calendario de entregas y recepciones entre el cliente y los proveedores.
+
+Actividades
+
+    Actividad GPI 1: Estimación de Esfuerzo
+    Actividad GPI 2: Planificación
+
+### Actividad GPI 1: Estimación de Esfuerzo {#gpi-1}
+
+El objetivo de esta actividad es conocer el tamaño aproximado del sistema a desarrollar, y establecer el coste, la duración y los recursos necesarios para conseguir desarrollarlo.
+
+Es muy difícil calcular con absoluta precisión el esfuerzo requerido para desarrollar cualquier proyecto informático, debido a la gran cantidad de factores que intervienen en su realización, algunos de ellos inciertos o desconocidos. Sin embargo, las técnicas existentes para realizar los cálculos proporcionan un valor aproximado suficiente para el alcance del desarrollo del proyecto. Será siempre útil la experiencia anterior que hubiese, extraída de la realización de proyectos similares en la organización, así como la existencia de una base de datos con información relativa a métricas, en el sentido del término en ingeniería del software.
+
+Esta actividad se compone de las tareas que aparecen en la siguiente tabla.
+
+```{=html}
+<table class="avia-table avia-data-table">
+<tbody>
+<tr>
+<td style="background-color: #000033; text-align: left; width: 25%;"><strong><span style="color: #ffffff;">TAREA</span></strong></td>
+<td style="background-color: #000033; text-align: left; width: 30%;"><strong><span style="color: #ffffff;">PRODUCTOS</span></strong></td>
+<td style="background-color: #000033; text-align: left; width: 25%;"><strong><span style="color: #ffffff;">TÉCNICAS Y PRÁCTICAS</span></strong></td>
+<td style="background-color: #000033; text-align: left; width: 20%;"><strong><span style="color: #ffffff;">PARTICIPANTES</span></strong></td>
+</tr>
+<tr>
+<td style="text-align: left; vertical-align: top;"><a href="#gpi-1-1"><strong>GPI 1.1</strong>: Identificación de Elementos a Desarrollar</a></td>
+<td style="text-align: left; vertical-align: top;">Definición General del Proyecto:<br/>
+<em><strong>Estructurado</strong></em></p>
+<ul>
+<li>Catálogo de funciones</li>
+<li>Catálogo de entidades</li>
+</ul>
+<p><em><strong>Orientación a Objeto</strong></em></p>
+<ul>
+<li>Catálogo de clases</li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#catalogacion">Catalogación</a></li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto">Jefe de Proyecto</a></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td style="text-align: left; vertical-align: top;"><a href="#gpi-1-2"><strong>GPI 1.2</strong>: Cálculo del Esfuerzo</a></td>
+<td style="text-align: left; vertical-align: top;">Definición General del Proyecto:</p>
+<ul>
+<li>Esfuerzo estimado</li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#tecnicas-de-estimacion">Estimación</a></li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto">Jefe de Proyecto</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-analista">Equipo del Proyecto</a></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+```
+
+#### Tarea GPI 1.1: Identificación de Elementos a Desarrollar {#gpi-1-1}
+
+Esta tarea tiene como finalidad determinar el número y características de los elementos a desarrollar a partir del Modelo de descomposición en subsistemas de la alternativa seleccionada (EVS 6.2), para el posterior cálculo del esfuerzo necesario para ello. En el caso de los desarrollos estructurados habrán de tenerse en cuenta las funciones, entidades, datos de entrada y datos de salida. En el caso de desarrollos orientados a objeto se tendrán en cuenta las clases, propiedades y métodos asociados.
+Productos
+
+De entrada
+
+    Modelo de descomposición en subsistemas (EVS 6.2)
+
+Estructurado
+
+    Modelo abstracto de datos (EVS 6.2)
+    Modelo de procesos (EVS 6.2)
+
+Orientación a Objeto
+
+    Modelo de negocio (EVS 6.2)
+    Modelo de dominio (EVS 6.2)
+
+De salida
+
+    Definición General del proyecto
+
+Estructurado
+
+    Catálogo de funciones
+    Catálogo de entidades
+
+Orientación a Objeto
+
+    Catálogo de clases
+
+Prácticas
+
+    Catalogación
+
+Participantes
+
+    Jefe de Proyecto
+
+#### Tarea GPI 1.2: Cálculo del Esfuerzo {#gpi-1-2}
+
+Una vez identificados los elementos a desarrollar se utilizará la técnica de estimación apropiada para calcular el esfuerzo necesario para su desarrollo. Deben tenerse en cuenta también trabajos que no están encaminados directamente al desarrollo de elementos del proyecto, pero que van a influir en el esfuerzo necesario para su realización. Se obtendrá el esfuerzo estimado en horas distribuidas por procesos.
+
+La técnica que se propone variará según se trate de desarrollos orientados a objetos o estructurados. Si el desarrollo es estructurado se pueden emplear el Método Albrecht o el Método MARK II para el Análisis de los Puntos Función. En el caso de orientación a objetos, se pueden aplicar las métricas de estimación del esfuerzo Staffing Size. En la Guía de Técnicas de MÉTRICA Versión 3 puede consultarse información detallada sobre estas técnicas.
+Productos
+
+De entrada
+
+Estructurado
+
+    Catálogo de funciones (GPI 1.1)
+    Catálogo de entidades (GPI 1.1)
+
+Orientación a Objeto
+
+    Catálogo de clases (GPI 1.1)
+
+De salida
+
+    Definición General del Proyecto
+        Esfuerzo estimado
+
+Técnicas
+
+Estructurado
+
+    Método de Albrecht
+    Método MARK II
+
+Orientación a Objeto
+
+    Staffing Size
+
+Participantes
+
+    Jefe de Proyecto
+    Equipo del Proyecto
+
+### Actividad GPI 2: Planificación {#gpi-2}
+
+El objetivo de esta actividad es definir y preparar las condiciones de trabajo, estableciendo recursos, fechas y costes, para lograr los objetivos que se persiguen con el proyecto.
+
+La planificación de un proyecto establece las fechas previstas para la realización del conjunto de actividades que lo componen, teniendo en cuenta que se deben emplear para ello unos recursos que implican unos costes, estimados inicialmente en EVS 5.1, cuyo conjunto forma el presupuesto base para lograr el resultado comprometido con el Cliente o Usuario. Así mismo deberán reflejarse hitos y calendario de entregas de productos al cliente.
+
+La actividad de Planificación se compone de las tareas que aparecen en la siguiente tabla.
+
+```{=html}
+<table class="avia-table avia-data-table">
+<tbody>
+<tr>
+<td style="background-color: #000033; text-align: left; width: 25%;"><strong><span style="color: #ffffff;">TAREA</span></strong></td>
+<td style="background-color: #000033; text-align: left; width: 30%;"><strong><span style="color: #ffffff;">PRODUCTOS</span></strong></td>
+<td style="background-color: #000033; text-align: left; width: 25%;"><strong><span style="color: #ffffff;">TÉCNICAS Y PRÁCTICAS</span></strong></td>
+<td style="background-color: #000033; text-align: left; width: 20%;"><strong><span style="color: #ffffff;">PARTICIPANTES</span></strong></td>
+</tr>
+<tr>
+<td style="text-align: left; vertical-align: top;"><a href="#gpi-2-1"><strong>GPI 2.1</strong>: Selección de la Estrategia de Desarrollo</a></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li>Planificación General del Proyecto:
+<ul>
+<li>Estrategia de desarrollo</li>
+</ul>
+</li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;"></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto">Jefe de Proyecto</a></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td style="text-align: left; vertical-align: top;"><a href="#gpi-2-2"><strong>GPI 2.2</strong>: Selección de la Estructura de Actividades, Tareas y Productos</a></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li>Planificación General del Proyecto:
+<ul>
+<li>Estructura de actividades</li>
+</ul>
+</li>
+<li>Catálogo de productos a generar</li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#wbs">Estructura de Descomposición de Trabajo</a></li>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#catalogacion">Catalogación</a></li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto">Jefe de Proyecto</a></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td style="text-align: left; vertical-align: top;"><a href="#gpi-2-3"><strong>GPI 2.3</strong>: Establecimiento del Calendario de Hitos y Entregas</a></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li>Planificación General del Proyecto:
+<ul>
+<li>Hitos del proyecto</li>
+<li>Productos a entregar</li>
+</ul>
+</li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#planificacion">Planificación</a></li>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#catalogacion">Catalogación</a></li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto">Jefe de Proyecto</a></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td style="text-align: left; vertical-align: top;"><a href="#gpi-2-4"><strong>GPI 2.4</strong>: Planificación Detallada de Actividades y Recursos Necesarios</a></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li>Planificación General del Proyecto:
+<ul>
+<li>Organización de los recursos</li>
+<li>Planificación detallada del Proyecto</li>
+</ul>
+</li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#planificacion">Planificación</a></li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto">Jefe de Proyecto</a></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td style="text-align: left; vertical-align: top;"><a href="#gpi-2-5"><strong>GPI 2.5</strong>: Presentación y Aceptación de la Planificación General del Proyecto</a></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li>Aceptación de la Planificación General del Proyecto</li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#presentaciones">Presentación</a></li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto">Jefe de Proyecto</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-directivo">Comité de Seguimiento</a></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+```
+
+#### Tarea GPI 2.1: Selección de la Estrategia de Desarrollo {#gpi-2-1}
+
+El objetivo de esta tarea es elegir la estrategia de desarrollo más adecuada al proyecto. Mientras que la metodología especifica procesos, actividades, tareas y productos a obtener en cada una de ellas, la estrategia de desarrollo es el enfoque a utilizar para establecer cómo debe organizarse el proyecto.
+
+MÉTRICA Versión 3 no establece recomendaciones en cuanto a la estrategia a seguir en un proyecto, dejando que sea el Jefe de Proyecto quien determine la estrategia más adecuada en función de las características del proyecto, tales como su criticidad, tamaño y complejidad.
+
+EUROMÉTODO ofrece una buena aproximación a distintas estrategias de desarrollo, que pueden servir a título orientativo:
+
+    Clásica o en cascada. Es la opción estratégica “Construcción de una vez” de EUROMÉTODO. Se considera el proyecto como un todo, dividido en procesos, y cada proceso no comienza hasta que finaliza el anterior. Por ejemplo: el Diseño del Sistema de Información no se realiza hasta la finalización y aceptación del Análisis del Sistema de Información. Éste es el método más empleado en desarrollo estructurado.
+    Por subsistemas. En EUROMÉTODO esta estrategia se conoce como “Construcción incremental”. Se divide el sistema en subsistemas semiindependientes, con estructura, organización y objetivos diferentes. A su vez, el equipo de proyecto se puede dividir en equipos especializados. Cada subsistema, normalmente, se realizará según la estrategia clásica.
+    Por prototipo. También denominado “Construcción evolutiva” en EUROMÉTODO. Esta aproximación genera un prototipo funcional en los primeros procesos del proyecto, generalmente con herramientas de ayuda al desarrollo o generadores de código. El prototipo se va completando en sucesivas evaluaciones y revisiones, añadiendo nuevas funcionalidades y mejoras, hasta cubrir los requisitos completamente. Generalmente, esta estrategia se emplea en los modernos desarrollos orientados a objetos.
+    Híbrida. Contempla un desarrollo por subsistemas, que a su vez se desarrollan bajo una estrategia o enfoque diferente de los demás.
+
+Productos
+
+De entrada
+
+    Planificación General del Proyecto (GPI 1.2)
+
+De salida
+
+    Planificación General del Proyecto:
+        Estrategia de Desarrollo
+
+Participantes
+
+    Jefe de Proyecto
+
+
+#### Tarea GPI 2.2: Selección de la Estructura de Actividades, Tareas y Productos {#gpi-2-2}
+
+La estructura de procesos, actividades y tareas que se presenta en MÉTRICA Versión 3 abarca el desarrollo completo de sistemas de información y será preciso adaptarla a cada proyecto concreto. En esta tarea se selecciona la estructura del proyecto, estableciendo los procesos principales de desarrollo de MÉTRICA Versión 3 que lo integran. Para cada proceso se determinan las actividades y tareas a realizar, así como los productos a generar, en función de las características concretas del proyecto.
+Productos
+
+De entrada
+
+    Planificación General del Proyecto (GPI 2.1)
+
+De salida
+
+    Planificación General del Proyecto:
+        Estructura de actividades
+    Catálogo de productos a generar
+
+Técnicas
+
+    Planificación
+        Estructura de Descomposición de Trabajo (WBS)
+
+Prácticas
+
+    Catalogación
+
+Participantes
+
+    Jefe de Proyecto
+
+
+#### Tarea GPI 2.3: Establecimiento del Calendario de Hitos y Entregas {#gpi-2-3}
+
+Esta tarea tiene como objetivo, en función de las actividades y tareas seleccionados en GPI 2.2, establecer los plazos de realización de las actividades y tareas del proyecto, las fechas en que se producirán las entregas y aquellas en que deben recibirse los productos adquiridos y los trabajos encargados a terceros. Asimismo, se establecen los hitos o puntos de control precisos para la gestión y seguimiento del desarrollo del proyecto. Entre estos deben incluirse, como mínimo, los de fin de proceso ya previstos en MÉTRICA versión 3.
+
+Se detallan los condicionantes y restricciones existentes, por ejemplo en cuanto a compromisos de plazos de entrega y disponibilidad de recursos, que deben obligatoriamente tenerse en consideración a la hora de establecer la planificación del proyecto en la tarea GPI 2.4.
+Productos
+
+De entrada
+
+    Catálogo de productos a generar (GPI 2.2)
+    Planificación General del Proyecto:
+        Estructura de actividades (GPI 2.2)
+
+De salida
+
+    Planificación General del Proyecto:
+        Hitos del Proyecto
+        Productos a entregar
+
+Técnicas
+
+    Método PERT
+    Diagrama de Gantt
+
+Prácticas
+
+    Catalogación
+
+Participantes
+
+    Jefe de Proyecto
+
+
+#### Tarea GPI 2.4: Planificación Detallada de Actividades y Recursos Necesarios {#gpi-2-4}
+
+El objetivo de esta tarea es la programación global del proyecto, planificando en el tiempo las actividades y tareas, y realizando la asignación de recursos necesaria en función de los distintos perfiles implicados. La planificación detallada de actividades y tareas, recursos y plazos, permite concretar con exactitud el plan de costes del proyecto.
+
+Para la programación de tiempos y esfuerzos se utilizan técnicas de planificación basadas en datos de gestión de proyectos similares realizados en la instalación o de referencias  externas.
+
+Los recursos del proyecto se especifican mediante la Estructura de Descomposición de Trabajo y la planificación de actividades y tareas del método PERT y el Diagrama de Gantt, que se complementa con la Asignación de recursos, Histograma de recursos, Patrón de límites o la Planificación de actividades y recursos.
+Productos
+
+De entrada
+
+    Planificación General del Proyecto (GPI 2.3)
+
+De salida
+
+    Planificación General del Proyecto
+        Organización de los recursos
+        Planificación detallada del Proyecto
+
+Técnicas
+
+    Estructura de Descomposición de Trabajo
+    Método PERT
+    Diagrama de Gantt
+    Histograma de recursos
+    Patrón de límites
+
+Participantes
+
+    Jefe de Proyecto
+
+
+#### Tarea GPI 2.5: Presentación y Aceptación de la Planificación General del Proyecto {#gpi-2-5}
+
+El Comité de Dirección había aprobado con anterioridad (EVS 6.3) la Solución Propuesta junto con las normas y criterios que deben regir su desarrollo. El objetivo de esta tarea es la presentación de la Planificación General del Proyecto al Comité de Seguimiento para su aprobación.
+
+Es precisa esta aceptación como paso previo a la puesta en marcha de los procesos de desarrollo contemplados en MÉTRICA Versión 3 y que conforman la estructura del proyecto.
+Productos
+
+De entrada
+
+    Planificación General del Proyecto (GPI 2.4)
+
+De salida
+
+    Planificación General del Proyecto (aceptada)
+
+Prácticas
+
+    Presentación
+
+Participantes
+
+    Comité de Seguimiento
+    Jefe de Proyecto
+
+ACTIVIDADES DE SEGUIMIENTO Y CONTROL
+
+El seguimiento y control del proyecto tiene como objetivo fundamental la vigilancia de todas las actividades de desarrollo del sistema. Es una de las labores más importantes en todo desarrollo de sistemas, ya que un adecuado control hace posible evitar desviaciones en costes y plazos, o al menos detectarlas cuanto antes.
+
+Para poder ejercer un correcto seguimiento y control del proyecto es necesario que el Jefe de Proyecto dedique todo el tiempo que sea preciso a vigilar el estado de cada una de las tareas que se están desarrollando, prestando especial interés a aquellas que están sufriendo algún retraso. En el momento en que se detecta cualquier desviación hay que analizar las causas para poder efectuar las correcciones oportunas y recuperar el tiempo perdido.
+
+Las Actividades de Seguimiento y Control de un proyecto se llevan a cabo desde la asignación de las tareas hasta su aceptación interna por parte del equipo de proyecto, previa a la aceptación del Cliente, ya prevista en MÉTRICA Versión 3. Las tareas propias del Seguimiento y Control del proyecto se realizan a medida que se ejecutan las distintas tareas de los procesos de Análisis, Diseño, Construcción, Implantación y Mantenimiento del Sistema.
+
+El siguiente gráfico muestra la secuencia de actividades de Seguimiento y Control del Proyecto.
+
+![](../images/gespro-segycontrol.jpg)
+
+
+## Actividad GPS 1: Asignación Detallada de Tareas {#gps-1}
+
+El objetivo de esta actividad es la asignación de tareas a los miembros del equipo de proyecto, documentando los datos necesarios para su control posterior.
+
+Esta actividad contempla una única tarea, que habrá que realizar para que todas las tareas que figuran en la Planificación detallada del proyecto (GPI 2), tengan asignado personal del equipo de proyecto para su desarrollo.
+
+### Tarea GPS 1.1: Asignación de Tarea {#gps-1-1}
+
+El Jefe de Proyecto debe velar por el cumplimiento de la planificación establecida y que las tareas se vayan realizando según el calendario previsto, ya que de lo contrario se producirán desviaciones en el desarrollo del proyecto que en último término supondrán un incremento en su coste. Para que una tarea finalice con éxito es importante asignarla a un técnico capaz de desarrollarla, por lo que el Jefe de Proyecto debe estudiar muy bien cada tarea antes de su asignación y ser consciente de los conocimientos y capacidades de los componentes del equipo de proyecto.
+
+El Jefe de Proyecto debe reflejar en la planificación las asignaciones realizadas, indicando el nombre del técnico, nombre y descripción de la tarea, esfuerzo estimado, fecha real de comienzo y fecha prevista de finalización.
+Productos
+
+De entrada
+
+    Información profesional de los técnicos (externo)
+    Planificación General del Proyecto
+        Planificación detallada del proyecto (GPI 2)
+
+De salida
+
+    Ficha de asignación de tarea
+        Identificador de la tarea en la planificación.
+        Nombre de la tarea.
+        Descripción de la tarea.
+        Fecha prevista de comienzo.
+        Esfuerzo estimado.
+        Fecha prevista de terminación.
+
+Técnicas
+
+    Planificación
+        Asignación de recursos
+
+Participantes
+
+    Jefe de Proyecto
+
+## Actividad GPI 2: Comunicación al Equipo del Proyecto {#gps-2}
+
+Una vez que el Jefe de Proyecto dispone de la asignación de tareas, convoca una reunión para informar al equipo de proyecto de las características del mismo y comunicar a cada miembro las tareas específicas que va a desarrollar.
+
+```{=html}
+<table class="avia-table avia-data-table">
+<tbody>
+<tr>
+<td style="background-color: #000033; text-align: left; width: 25%;"><strong><span style="color: #ffffff;">TAREA</span></strong></td>
+<td style="background-color: #000033; text-align: left; width: 30%;"><strong><span style="color: #ffffff;">PRODUCTOS</span></strong></td>
+<td style="background-color: #000033; text-align: left; width: 25%;"><strong><span style="color: #ffffff;">TÉCNICAS Y PRÁCTICAS</span></strong></td>
+<td style="background-color: #000033; text-align: left; width: 20%;"><strong><span style="color: #ffffff;">PARTICIPANTES</span></strong></td>
+</tr>
+<tr>
+<td style="text-align: left; vertical-align: top;"><a href="#gps-2-1"><strong>GPS 2.1</strong>: Informar al Equipo de Proyecto</a></td>
+<td style="text-align: left; vertical-align: top;"></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#sesiones-de-trabajo/reuniones">Reuniones</a></li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto">Jefe de Proyecto</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-analista">Equipo del Proyecto</a></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+```
+
+### Tarea GPS 2.1: Informar al Equipo del Proyecto {#gps-2-1}
+
+El Jefe de Proyecto informa a los integrantes del equipo de las características del proyecto, haciendo especial énfasis en sus características particulares: estándares de desarrollo diferentes de los habituales, y peculiaridades en materia de calidad, seguridad y gestión de la configuración.
+
+Una vez que todos los miembros del equipo conocen el proyecto global, comunica la asignación de trabajos a cada uno de los miembros, quienes se ocupan de su realización de acuerdo con MÉTRICA versión 3.
+
+La estructura del proyecto en procesos, actividades y tareas descritos en MÉTRICA Versión 3, determina los productos a obtener como resultado de la ejecución de cada tarea, y las técnicas a aplicar para conseguirlos.
+Productos
+
+De entrada
+
+    Fichas de asignación de tareas (GPS 1.1)
+
+Prácticas
+
+    Reuniones
+
+Participantes
+
+    Jefe de Proyecto
+    Equipo de proyecto
+
+
+### Actividad GPS 3: Seguimiento de Tareas {#gps-3}
+
+Esta actividad tiene como objetivo el control de todas las tareas que están siendo desarrolladas, revisando con cada uno de los responsables de las tareas cuál es su estado en el momento del seguimiento, su evolución previsible y los problemas que están encontrando para su desarrollo. La utilización de herramientas automatizadas que existen en el mercado puede facilitar el seguimiento de las tareas, contrastando la situación en que se encuentran con la prevista en la planificación del proyecto.
+
+En la tabla siguiente se especifican las tareas que comprende esta actividad.
+
+```{=html}
+<table class="avia-table avia-data-table">
+<tbody>
+<tr>
+<td style="background-color: #000033; text-align: left; width: 25%;"><strong><span style="color: #ffffff;">TAREA</span></strong></td>
+<td style="background-color: #000033; text-align: left; width: 30%;"><strong><span style="color: #ffffff;">PRODUCTOS</span></strong></td>
+<td style="background-color: #000033; text-align: left; width: 25%;"><strong><span style="color: #ffffff;">TÉCNICAS Y PRÁCTICAS</span></strong></td>
+<td style="background-color: #000033; text-align: left; width: 20%;"><strong><span style="color: #ffffff;">PARTICIPANTES</span></strong></td>
+</tr>
+<tr>
+<td style="text-align: left; vertical-align: top;"><a href="#gps-3-1"><strong>GPS 3.1</strong>: Seguimiento de Tareas</a></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li>Fichas de seguimiento de tareas</li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#entrevistas">Entrevistas</a></li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto">Jefe de Proyecto</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-analista">Equipo de Proyecto</a></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+```
+
+#### Tarea GPS 3.1: Seguimiento de Tareas {#gps-3-1}
+
+El seguimiento se lleva a cabo revisando el estado de cada tarea con el miembro del equipo asignado par su realización y verificando su estado con los responsables de dichas unidades de trabajo.
+
+El responsable de cada tarea debe informar de:
+
+    La fecha real de comienzo.
+    El tiempo empleado hasta el momento en su realización.
+    Apreciación del tiempo que queda para terminarla.
+    El tanto por ciento de avance sobre el total.
+    Los problemas o incidencias encontradas.
+
+Para calcular el porcentaje de avance, el responsable de la ejecución de una tarea no debe tener en cuenta el esfuerzo previsto para su realización, sino el tiempo empleado y su apreciación del tiempo que le queda para terminarla. Por ejemplo: una tarea tiene prevista su realización en 64 horas; si se realiza el seguimiento cuando van empleadas 24 horas en su desarrollo y la opinión del técnico es que lleva un 25% de avance, significa que la tarea tendrá una desviación positiva (retraso) de 32 horas, mientras que si su grado de avance es del 75%, tendrá una desviación negativa (adelanto) de 32 horas; en el primer caso, el esfuerzo total final será de 96 horas, mientras que en el segundo será de 32 horas.
+
+A partir de la información obtenida del equipo de desarrollo, el Jefe de Proyecto debe determinar el estado de cada tarea, indicando la previsión de finalización de cada una. Asimismo, debe prestar atención a las incidencias y desviaciones, positivas y negativas, encontradas por el equipo de desarrollo, ya que puede existir una fuente de problemas que precise atención inmediata.
+Productos
+
+De entrada
+
+    Ficha de asignación de tarea (GPS 1.1)
+
+De salida
+
+    Ficha de seguimiento de tarea
+
+Prácticas
+
+    Entrevistas
+
+Participantes
+
+    Jefe de Proyecto
+    Equipo del Proyecto
+
+### Gestión de Incidencias
+
+Dentro de las actividades de Seguimiento y Control se trata de manera especial la Gestión de Incidencias, que puede ser la clave del éxito o fracaso de un proyecto. Incidencias son aquellos hechos inesperados y anómalos que se presentan durante la realización de las actividades y tareas del proyecto, y que producen desviaciones en la planificación. Ejemplos de incidencias que se pueden presentar en un proyecto son los retrasos en la entrega de un software, fallos en la infraestructura de desarrollo, enfermedad de alguien del equipo de proyecto, etc.
+
+Mención especial merecen los cambios de requisitos, ya que son un tipo especial de incidencia que exige un tratamiento especial, motivo por el cual se aborda aparte en este documento.
+
+Las siguientes actividades se realizarán en el caso de que durante el seguimiento de tareas (GPS 3.1) se detecte alguna incidencia, y luego se seguirá con la actividad GPS 10.
+
+#### Actividad GPS 4: Análisis y Registro de la Incidencia {#gps-4}
+
+Con esta actividad se persigue conocer el impacto producido por una incidencia en cuanto a:
+
+    Tareas afectadas por la incidencia.
+    Horas de trabajo perdidas.
+    Retrasos ocasionados.
+
+Para ello es necesario realizar la tarea expresada en la siguiente tabla.
+
+```{=html}
+<table class="avia-table avia-data-table">
+<tbody>
+<tr>
+<td style="background-color: #000033; text-align: left; width: 25%;"><strong><span style="color: #ffffff;">TAREA</span></strong></td>
+<td style="background-color: #000033; text-align: left; width: 30%;"><strong><span style="color: #ffffff;">PRODUCTOS</span></strong></td>
+<td style="background-color: #000033; text-align: left; width: 25%;"><strong><span style="color: #ffffff;">TÉCNICAS Y PRÁCTICAS</span></strong></td>
+<td style="background-color: #000033; text-align: left; width: 20%;"><strong><span style="color: #ffffff;">PARTICIPANTES</span></strong></td>
+</tr>
+<tr>
+<td style="text-align: left; vertical-align: top;"><a href="#gps-4-1"><strong>GPS 4.1</strong>: Analizar Impacto</a></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li>Ficha de Incidencia:
+<ul>
+<li>Impacto sobre tareas</li>
+<li>Impacto en horas</li>
+<li>Impacto en fechas</li>
+</ul>
+</li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;"></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto">Jefe de Proyecto</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-analista">Equipo del Proyecto</a></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td style="text-align: left; vertical-align: top;"><a href="#gps-4-2"><strong>GPS 4.2</strong>: Propuesta de Solución de la Incidencia</a></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li>Ficha de Incidencia:
+<ul>
+<li>Solución propuesta</li>
+</ul>
+</li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;"></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto">Jefe de Proyecto</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-analista">Equipo del Proyecto</a></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td style="text-align: left; vertical-align: top;"><a href="#gps-4-3"><strong>GPS 4.3</strong>: Registrar la Incidencia</a></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li>Registro de incidencias</li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#catalogacion">Catalogación</a></li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto">Jefe de Proyecto</a></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+```
+
+##### Tarea GPS 4.1: Analizar Impacto {#gps-4-1}
+##### Tarea GPS 4.2: Propuesta de Solución de la Incidencia {#gps-4-2}
+##### Tarea GPS 4.3: Registrar la Incidencia {#gps-4-3}
+### Gestión de cambios en los requisitos
+#### Actividad GPS 5: Petición de Cambios de Requisitos {#gps-5}
+
+```{=html}
+
+```
+
+##### Tarea GPS 5.1: Registro de la Petición de Cambio de Requisitos {#gps-5-1}
+#### Actividad GPS 6: ANÁLISIS DE LA PETICIÓN DE CAMBIO DE REQUISITOS {#gps-6}
+
+```{=html}
+
+```
+
+##### Tarea GPS 6.1: Estudio de la Petición de Cambio de Requisitos {#gps-6-1}
+##### Tarea GPS 6.2 Impacto de la Petición de Cambio de Requisitos {#gps-6-2}
+##### Tarea GPS 6.3 Estudio de Alternativas y Propuesta de Solución {#gps-6-3}
+#### Actividad GPS 7: A PROBACIÓN DE LA SOLUCIÓN {#gps-7}
+
+```{=html}
+
+```
+
+##### Tarea GPS 7.1: Aprobación de la Solución {#gps-7-1}
+#### Actividad GPS 8: ESTIMACIÓN DEL ESFUERZO Y PLANIFICACIÓN DE LA SOLUCIÓN {#gps-8}
+
+```{=html}
+
+```
+
+##### Tarea GPS 8.1: Estimación de Esfuerzo para el Cambio {#gps-8-1}
+##### Tarea GPS 8.2: Planificación de los Cambios {#gps-8-2}
+#### Actividad GPS 9: REGISTRO DEL CAMBIO DE REQUISITOS {#gps-9}
+
+```{=html}
+
+```
+
+##### Tarea GPS 9.1: Registro del Cambio de Requisitos {#gps-9-1}
+### Actividad GPS 10: FINALIZACIÓN DE LA TAREA {#gps-10}
+
+```{=html}
+
+```
+
+#### Tarea GPS 10.1: Comprobación de la Tarea {#gps-10-1}
+### Actividad GPS 11: ACTUALIZACIÓN DE LA PLANIFICACIÓN {#gps-11}
+
+```{=html}
+
+```
+
+#### Tarea GPS 11.1: Actualización de Tareas {#gps-11-1}
+#### Tarea GPS 11.2: Obtención de la Extrapolación {#gps-11-2}
+#### Tarea GPS 11.3: Elaboración del Informe de Seguimiento {#gps-11-3}
+
+### Actividad GPS 12: Reuniones de Seguimiento {#gps-12}
+
+```{=html}
+
+```
+
+#### Tarea GPS 12.1: Reunión Interna de Seguimiento {#gps-12-1}
+
+### Actividad GPS 13: ACEPTACIÓN {#gps-13}
+
+```{=html}
+
+```
+
+#### Tarea GPS 13.1: Verificación de Aceptación Interna
+
+## Actividades de Finalización
+### Actividad GPF 1: CIERRE DEL PROYECTO {#gpf-1}
+
+```{=html}
+
+```
+
+#### Tarea GPF 1.1: Inclusión en Histórico de Proyectos {#gpf-1-1}
+#### Tarea GPF 1.2: Archivo de la Documentación de Gestión del Proyecto {#gpf-1-2}
