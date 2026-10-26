@@ -1024,6 +1024,28 @@ Por otro lado, se han incluido atributos que caracterizan la relación *Trabaja
 
 ## Técnicas de gestión de proyectos {#tecnicas-de-gestion-de-proyectos}
 
+La Gestión de Proyectos es un conjunto de actividades específicas que se emplean para la administración del proyecto. Estas actividades comprenden diversos aspectos:
+
+* Estimación del esfuerzo necesario para el desarrollo de un Sistema de Información.
+* Planificación de tareas y recursos.
+* Control de tareas.
+* Seguimiento del proyecto.
+* Control de las incidencias.
+* Control de cambios.
+
+Para el desarrollo de dichas actividades es necesaria la utilización de técnicas específicas para ello. En esta parte del documento de Técnicas y Prácticas se contemplan tales técnicas.
+
+1. [Técnicas de Estimación](#tecnicas-de-estimacion)
+  * [Método Albrecht para el Análisis de los Puntos Función](#metodo-albrecht)
+  * [Método MARK II para el Análisis de los Puntos Función](#metodo-mark-ii)
+2. [Staffing Size (Orientación a Objetos)](#staffing-size)
+3. [Planificación](#planificacion)
+  * [Program Evaluation & Review Technique – PERT](#pert)
+  * [Diagrama de Gantt](#diagrama-de-gantt)
+  * [Estructura de Descomposición de Trabajo (WBS – Work Breakdown Structure)](#estructura-de-descomposicion-de-trabajo)
+  * [Diagrama de Extrapolación](#diagrama-de-extrapolacion)
+
+
 ### Técnicas de Estimación {#tecnicas-de-estimacion}
 
 Las técnicas de estimación tienen como objetivo calcular el coste total del desarrollo de un sistema de información.
