@@ -2400,11 +2400,11 @@ Se completa el plan de pruebas específico establecido en el plan de migración 
 
 Asimismo, se determinan las necesidades adicionales de infraestructura, tanto para la implementación de los procesos como para la realización de las pruebas. Como resultado de esta actividad, se actualiza el plan de migración y carga inicial de datos con la información siguiente:
 
-    Especificación del entorno de migración.
-    Definición de procedimientos de migración.
-    Diseño detallado de módulos.
-    Especificación técnica de las pruebas.
-    Planificación de la migración y carga inicial.
+- Especificación del entorno de migración.
+- Definición de procedimientos de migración.
+- Diseño detallado de módulos.
+- Especificación técnica de las pruebas.
+- Planificación de la migración y carga inicial.
 
 Es importante considerar que una carga inicial de información no tiene el mismo alcance y complejidad que una migración de datos, de modo que las tareas de esta actividad se deben llevar a cabo en mayor o menor medida en función de las características de los datos a cargar.
 
@@ -2416,7 +2416,7 @@ Es importante considerar que una carga inicial de información no tiene el mismo
 <td style="background-color: #000033; text-align: left; width: 30%;"><strong><span style="color: #ffffff;">PRODUCTOS</span></strong></td>
 <td style="background-color: #000033; text-align: left; width: 25%;"><strong><span style="color: #ffffff;">TÉCNICAS Y PRÁCTICAS</span></strong></td>
 <td style="background-color: #000033; text-align: left; width: 20%;"><strong><span style="color: #ffffff;">PARTICIPANTES</span></strong></td>
-</tr>
+</tr>- E
 <tr>
 <td style="text-align: left; vertical-align: top;"><a href="#dsi-9-1"><strong>DSI 9.1</strong>: Especificación del Entorno de Migración</a></td>
 <td style="text-align: left; vertical-align: top;">
@@ -2507,22 +2507,22 @@ Se realiza una estimación de capacidades (capacity planning) para este entorno 
 
 ###### De entrada {.unnumbered .unlisted}
 
-    Plan de Migración y Carga Inicial de Datos (ASI 6.4) (en orientación a objetos DSI 4.7)
-    Diseño de la Arquitectura del Sistema (DSI 7.2)
-    Entorno Tecnológico del Sistema (DSI 7.2)
-    Modelo Físico de Datos Optimizado (DSI 7.2)
-    Esquemas Físicos de Datos (DSI 7.2)
-    Asignación de Esquemas Físicos de Datos a Nodos (DSI 7.2)
+* Plan de Migración y Carga Inicial de Datos (ASI 6.4) (en orientación a objetos DSI 4.7)
+* Diseño de la Arquitectura del Sistema (DSI 7.2)
+* Entorno Tecnológico del Sistema (DSI 7.2)
+* Modelo Físico de Datos Optimizado (DSI 7.2)
+* Esquemas Físicos de Datos (DSI 7.2)
+* Asignación de Esquemas Físicos de Datos a Nodos (DSI 7.2)
 
 ###### De salida {.unnumbered .unlisted}
 
-    Plan de Migración y Carga Inicial de Datos
-        Especificación del Entorno de Migración y Carga Inicial
+* Plan de Migración y Carga Inicial de Datos
+  * Especificación del Entorno de Migración y Carga Inicial
 
 ##### Participantes {.unnumbered .unlisted}
 
-    Equipo de Arquitectura
-    Equipo de Soporte Técnico
+* Equipo de Arquitectura
+* Equipo de Soporte Técnico
 
 #### Tarea DSI 9.2: Diseño de Procedimientos de Migración y Carga Inicial
 
@@ -2532,39 +2532,39 @@ Como punto de partida se tiene en cuenta, junto con los requisitos y especificac
 
 Los procedimientos asociados a la migración y carga inicial de datos son, principalmente, los relacionados con la preparación, la realización y la posterior verificación del proceso. Entre ellos se encuentran los siguientes:
 
-    Procedimientos de seguridad, relativos a:
-        Control de acceso a la información.
-        Copias de seguridad de los procesos.
-        Recuperación de la información.
-        Tratamiento de las posibles contingencias durante la conversión.
-    Procedimientos de carga de datos, relativos a:
-        Depuraciones previas de información.
-        Procesos de validación.
-        Procesos de importación .
-        Procesos de carga y prioridades.
-    Procedimientos de verificación de los procesos y comprobación de la integridad de la información resultante al finalizar la conversión, conforme a la estructura física de los datos destino.
+- Procedimientos de seguridad, relativos a:
+  - Control de acceso a la información.
+  - Copias de seguridad de los procesos.
+  - Recuperación de la información.
+  - Tratamiento de las posibles contingencias durante la conversión.
+- Procedimientos de carga de datos, relativos a:
+  - Depuraciones previas de información.
+  - Procesos de validación.
+  - Procesos de importación .
+  - Procesos de carga y prioridades.
+- Procedimientos de verificación de los procesos y comprobación de la integridad de la información resultante al finalizar la conversión, conforme a la estructura física de los datos destino.
 
 ##### Productos {.unnumbered .unlisted}
 
 ###### De entrada {.unnumbered .unlisted}
 
-    Plan de Migración y Carga Inicial de Datos (DSI 9.1)
-    Diseño de la Arquitectura del Sistema (DSI 7.2)
-    Entorno Tecnológico del Sistema (DSI 7.2)
-    Modelo Físico de Datos Optimizado (DSI 7.2)
-    Esquemas Físicos de Datos (DSI 7.2)
-    Asignación de Esquemas Físicos de Datos a Nodos (DSI 7.2)
+* Plan de Migración y Carga Inicial de Datos (DSI 9.1)
+* Diseño de la Arquitectura del Sistema (DSI 7.2)
+* Entorno Tecnológico del Sistema (DSI 7.2)
+* Modelo Físico de Datos Optimizado (DSI 7.2)
+* Esquemas Físicos de Datos (DSI 7.2)
+* Asignación de Esquemas Físicos de Datos a Nodos (DSI 7.2)
 
 ###### De salida {.unnumbered .unlisted}
 
-    Plan de Migración y Carga Inicial de Datos:
-        Definición de Procedimientos de Migración y Carga Inicial
+* Plan de Migración y Carga Inicial de Datos:
+  * Definición de Procedimientos de Migración y Carga Inicial
 
 ###### Participantes {.unnumbered .unlisted}
 
-    Equipo de Arquitectura
-    Equipo del Proyecto
-    Equipo de Seguridad
+* Equipo de Arquitectura
+* Equipo del Proyecto
+* Equipo de Seguridad
 
 #### Tarea DSI 9.3: Diseño Detallado de Componentes de Migración y Carga Inicial
 
@@ -2578,22 +2578,22 @@ Finalmente, se complementa el plan de migración y carga inicial con la definici
 
 ###### De entrada {.unnumbered .unlisted}
 
-    Plan de Migración y Carga Inicial de Datos (DSI 9.2)
-    Diseño de la Arquitectura del Sistema (DSI 7.2)
-    Entorno Tecnológico del Sistema (DSI 7.2)
-    Modelo Físico de Datos Optimizado (DSI 7.2)
-    Esquemas Físicos de Datos (DSI 7.2)
-    Asignación de Esquemas Físicos de Datos a Nodos (DSI 7.2)
+* Plan de Migración y Carga Inicial de Datos (DSI 9.2)
+* Diseño de la Arquitectura del Sistema (DSI 7.2)
+* Entorno Tecnológico del Sistema (DSI 7.2)
+* Modelo Físico de Datos Optimizado (DSI 7.2)
+* Esquemas Físicos de Datos (DSI 7.2)
+* Asignación de Esquemas Físicos de Datos a Nodos (DSI 7.2)
 
 ###### De salida {.unnumbered .unlisted}
 
-    Plan de Migración y Carga Inicial de Datos:
-        Diseño Detallado de Módulos de Migración y Carga Inicial
-        Especificación Técnica de las Pruebas de Migración y Carga Inicial
+* Plan de Migración y Carga Inicial de Datos:
+  * Diseño Detallado de Módulos de Migración y Carga Inicial
+  * Especificación Técnica de las Pruebas de Migración y Carga Inicial
 
 ##### Participantes {.unnumbered .unlisted}
 
-    Equipo del Proyecto
+* Equipo del Proyecto
 
 #### Tarea DSI 9.4: Revisión de la Planificación de la Migración
 
@@ -2603,16 +2603,16 @@ El objetivo de esta tarea es completar la especificación del plan de migración
 
 ###### De entrada {.unnumbered .unlisted}
 
-    Plan de Migración y Carga Inicial de Datos (DSI 9.3)
+* Plan de Migración y Carga Inicial de Datos (DSI 9.3)
 
 ###### De salida {.unnumbered .unlisted}
 
-    Plan de Migración y Carga Inicial de Datos:
-        Planificación de la Migración y Carga Inicial
+* Plan de Migración y Carga Inicial de Datos:
+  * Planificación de la Migración y Carga Inicial
 
 ##### Participantes {.unnumbered .unlisted}
 
-    Jefe de Proyecto
+* Jefe de Proyecto
 
 ### Actividad DSI 10: Especificación Técnica del Plan de Pruebas
 
