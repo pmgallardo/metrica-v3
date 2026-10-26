@@ -1042,9 +1042,9 @@ Un atributo $Y$ tiene dependencia funcional completa respecto de otro $X$, si de
 
 Un atributo depende transitivamente de otro si, y sólo si, depende de él a través de otro atributo. Así, $Z$ depende transitivamente de $X$, si:
 
-$X \rightarrow Y$
-$Y \not\rightarrow X$
-$Y \rightarrow Z$
+$$X \rightarrow Y$$
+$$Y \not\rightarrow X$$
+$$Y \rightarrow Z$$
 
 Se dice que $X$ implica a $Z$ a través de $Y$.
 
