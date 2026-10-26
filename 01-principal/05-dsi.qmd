@@ -87,7 +87,7 @@ Como resultado de esta actividad, se actualizan los catálogos de requisitos y n
 - Procedimientos de Operación y Administración del Sistema.
 - Procedimientos de Seguridad y Control de Acceso.
 
-```{html}
+```{=html}
 <table class="avia-table avia-data-table">
 <tbody>
 <tr>
@@ -606,7 +606,7 @@ Los productos resultantes de esta actividad son:
     Diseño Detallado de los Subsistemas de Soporte.
     Mecanismos Genéricos de Diseño y Construcción.
 
-```{html}
+```{=html}
 <table class="avia-table avia-data-table">
 <tbody>
 <tr>
@@ -734,7 +734,7 @@ Es importante validar que los subsistemas definidos en la tarea Identificación 
 
 Las tareas de esta actividad se realizan en paralelo con las de Diseño de Clases (DSI 4).
 
-```{html}
+```{=html}
 <table class="avia-table avia-data-table">
 <tbody>
 <tr>
@@ -991,7 +991,7 @@ Además, en los casos en que sea necesaria una migración de datos de otros sist
 
 Como resultado de todo lo anterior se actualiza el modelo de clases del análisis, una vez recogidas las decisiones de diseño.
 
-```{html}
+```{=html}
 <table class="avia-table avia-data-table">
 <tbody>
 <tr>
@@ -1351,7 +1351,7 @@ En esta actividad, se consideran los estándares y normas establecidas para el d
 
 Las tareas de esta actividad no se realizan de forma secuencial, sino en paralelo, con continuas realimentaciones entre ellas y con las realizadas en las actividades Definición de la Arquitectura del Sistema (DSI 1), Diseño de la Arquitectura de Soporte (DSI 2) y Diseño Físico de Datos (DSI 6).
 
-```{html}
+```{=html}
 <table class="avia-table avia-data-table">
 <tbody>
 <tr>
@@ -1576,7 +1576,7 @@ En el caso de diseño orientado a objetos, esta actividad también es necesaria.
 
 Asimismo, en esta actividad hay que considerar los estándares y normas establecidos para el diseño aplicando, cuando proceda, los mecanismos genéricos de diseño identificados en la tarea Identificación de Mecanismos Genéricos de Diseño (DSI 2.2).
 
-```{html}
+```{=html}
 <table class="avia-table avia-data-table">
 <tbody>
 <tr>
@@ -1839,7 +1839,7 @@ Para cumplir dicho objetivo, se llevan a cabo las siguientes acciones:
 
 Esta actividad es compleja, por lo que es aconsejable utilizar herramientas de apoyo para la realización de sus tareas.
 
-```{html}
+```{=html}
 <table class="avia-table avia-data-table">
 <tbody>
 <tr>
@@ -2126,7 +2126,7 @@ El producto resultante de esta actividad es el conjunto de las especificaciones 
     Especificación detallada de componentes.
     Especificación de la estructura física de datos.
 
-```{html}
+```{=html}
 <table class="avia-table avia-data-table">
 <tbody>
 <tr>
@@ -2408,7 +2408,7 @@ Asimismo, se determinan las necesidades adicionales de infraestructura, tanto pa
 
 Es importante considerar que una carga inicial de información no tiene el mismo alcance y complejidad que una migración de datos, de modo que las tareas de esta actividad se deben llevar a cabo en mayor o menor medida en función de las características de los datos a cargar.
 
-```{html}
+```{=html}
 <table class="avia-table avia-data-table">
 <tbody>
 <tr>
@@ -2646,7 +2646,7 @@ Como resultado de esta actividad se actualiza el plan de pruebas con la informac
     Especificación técnica de niveles de prueba.
     Planificación de las pruebas.
 
-```{html}
+```{=html}
 <table class="avia-table avia-data-table">
 <tbody>
 <tr>
@@ -2850,7 +2850,7 @@ En esta actividad se completa el catálogo de requisitos con aquéllos relaciona
 
 La incorporación de estos requisitos permite ir preparando, en los procesos de Construcción del Sistema de Información (CSI) e Implantación y Aceptación del Sistema (IAS), los medios y recursos necesarios para que los usuarios, tanto finales como de operación, sean capaces de utilizar el nueva sistema de forma satisfactoria.
 
-```{html}
+```{=html}
 <table class="avia-table avia-data-table">
 <tbody>
 <tr>
@@ -3029,7 +3029,7 @@ En esta tarea se realiza la presentación del diseño del sistema de informació
 
 ## Participantes en las actividades del proceso DSI
 
-```{html}
+```{=html}
 <table class="avia-table avia-data-table">
 <tbody>
 <tr>
@@ -3251,7 +3251,7 @@ En esta tarea se realiza la presentación del diseño del sistema de informació
 
 ## Técnicas/prácticas utilizadas en las actividades del proceso DSI
 
-```{html}
+```{=html}
 <table class="avia-table avia-data-table">
 <tbody>
 <tr>

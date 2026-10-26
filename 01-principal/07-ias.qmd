@@ -40,7 +40,7 @@ Una vez estudiado el alcance y los condicionantes de la implantación, se decide
 
 Se constituye el equipo de implantación, determinando los recursos humanos necesarios para la propia instalación del sistema, para las pruebas de implantación y aceptación, y para la preparación del mantenimiento. Se identifican, para cada uno de ellos, sus perfiles y niveles de responsabilidad.
 
-```{html}
+```{=html}
 <table class="avia-table avia-data-table">
 <tbody>
 <tr>
@@ -171,7 +171,7 @@ Se determina la formación necesaria para el equipo de implantación, en funció
 
 La formación para que los usuarios finales sean capaces de utilizar el sistema de manera satisfactoria ha sido establecida, previamente, en la actividad Definición de la Formación de Usuarios Finales (CSI 7). En esta actividad, se analizan los esquemas de formación definidos según los diferentes perfiles, y se elabora un plan de formación que esté alineado con el plan de implantación.
 
-```{html}
+```{=html}
 <table class="avia-table avia-data-table">
 <tbody>
 <tr>
@@ -374,7 +374,7 @@ Mientras que las pruebas unitarias, de integración y del sistema se pueden ejec
 
 Por tanto, como paso previo a la realización de dichas pruebas y de acuerdo al plan de implantación establecido, se verifica que los recursos necesarios están disponibles para que se pueda realizar, adecuadamente, la instalación de todos los componentes que integran el sistema, así como la creación y puesta a punto de las bases de datos en el entorno de operación. Asimismo, se establecen los procedimientos de explotación y uso de las bases de datos de acuerdo a la normativa existente en dicho entorno.
 
-```{html}
+```{=html}
 <table class="avia-table avia-data-table">
 <tbody>
 <tr>
@@ -495,7 +495,7 @@ Teniendo en cuenta que los sistemas de información que forman parte del sistema
 
 En cualquier caso, en la actividad Diseño de la Migración y Carga Inicial de Datos (DSI 9) se habrán definido y planificado los procesos y procedimientos necesarios para llevar a cabo la migración, realizándose su codificación en la actividad Construcción de los Componentes y Procedimientos de Migración y Carga Inicial de Datos (CSI 8).
 
-```{html}
+```{=html}
 <table class="avia-table avia-data-table">
 <tbody>
 <tr>
@@ -563,7 +563,7 @@ Para ello, el responsable de implantación revisa el plan de pruebas de implanta
 
 Una vez ejecutadas estas pruebas, el equipo de usuarios técnicos informa de las incidencias detectadas al responsable de implantación, el cual analiza la información y toma las medidas correctoras que considere necesarias para que el sistema dé respuesta a las especificaciones previstas, momento en el que el equipo de operación lo da por probado.
 
-```{html}
+```{=html}
 <table class="avia-table avia-data-table">
 <tbody>
 <tr>
@@ -717,7 +717,7 @@ Las pruebas de aceptación tienen como fin validar que el sistema cumple los req
 
 Los Directores de los Usuarios revisan los criterios de aceptación, especificados previamente en el plan de pruebas del sistema, y dirigen las pruebas de aceptación final que llevan a cabo los usuarios expertos. A su vez, éstos últimos deben elaborar un informe que los Directores de los Usuarios analizan y evalúan para determinar la aceptación o rechazo del sistema.
 
-```{html}
+```{=html}
 <table class="avia-table avia-data-table">
 <tbody>
 <tr>
@@ -860,7 +860,7 @@ Una vez que el responsable de mantenimiento ha recibido la formación necesaria 
 
 Es importante resaltar que la existencia de una configuración del software permite reducir el esfuerzo requerido y mejora la calidad general del software a mantener, aunque no garantiza un mantenimiento libre de problemas. Una pobre configuración del software puede tener un impacto negativo sobre su facilidad de mantenimiento.
 
-```{html}
+```{=html}
 <table class="avia-table avia-data-table">
 <tbody>
 <tr>
@@ -984,7 +984,7 @@ Por último, se establece formalmente el acuerdo de nivel de servicio, considera
 
 Según el ámbito y el alcance de los tipos de servicio que se vayan a prestar, se determinar los productos del ciclo de vida del software necesarios para poder establecer el acuerdo de nivel de servicio.
 
-```{html}
+```{=html}
 <table class="avia-table avia-data-table">
 <tbody>
 <tr>
@@ -1160,7 +1160,7 @@ Se hace una estimación de los recursos humanos y de infraestructura necesaria p
 
 Una vez que se han efectuado las pruebas de implantación y de aceptación, y que se ha fijado el acuerdo de nivel de servicio, el Comité de Dirección debe formalizar la aprobación del sistema. Para esto, se lleva a cabo una presentación general del sistema al Comité de Dirección y se espera la confirmación de su aprobación.
 
-```{html}
+```{=html}
 <table class="avia-table avia-data-table">
 <tbody>
 <tr>
@@ -1278,7 +1278,7 @@ En función del entorno en el que se hayan llevado a cabo las pruebas de implant
 
 Una vez que el sistema ya está en producción, se le notifica al responsable de mantenimiento, al responsable de operación y al Comité de Dirección.
 
-```{html}
+```{=html}
 <table class="avia-table avia-data-table">
 <tbody>
 <tr>
@@ -1370,7 +1370,7 @@ Se arranca el nuevo sistema en producción activando tanto el proceso de Manteni
 
 ## Participantes en las actividades del proceso IAS
 
-```{html}
+```{=html}
 <table class="avia-table avia-data-table">
 <tbody>
 <tr>
@@ -1577,7 +1577,7 @@ Se arranca el nuevo sistema en producción activando tanto el proceso de Manteni
 
 ## Técnicas/prácticas utilizadas en las actividades del proceso IAS
 
-```{html}
+```{=html}
 <table class="avia-table avia-data-table">
 <tbody>
 <tr>

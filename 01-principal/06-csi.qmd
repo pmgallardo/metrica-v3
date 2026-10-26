@@ -40,7 +40,7 @@ El objetivo de esta actividad es asegurar la disponibilidad de todos los medios 
 
 Las características del entorno de construcción y sus requisitos de operación y seguridad, así como las especificaciones de construcción de la estructura física de datos, se establecen en la actividad Generación de Especificaciones de Construcción (DSI 8), y constituyen el punto de partida para la realización de esta actividad.
 
-```{html}
+```{=html}
 <table class="avia-table avia-data-table">
 <tbody>
 <tr>
@@ -142,7 +142,7 @@ El objetivo de esta actividad es la codificación de los componentes del sistema
 
 En paralelo a esta actividad, se desarrollan las actividades relacionadas con las pruebas unitarias y de integración del sistema de información. Esto permite una construcción incremental, en el caso de que así se haya especificado en el plan de pruebas y en el plan de integración del sistema de información.
 
-```{html}
+```{=html}
 <table class="avia-table avia-data-table">
 <tbody>
 <tr>
@@ -255,7 +255,7 @@ En esta actividad se realizan las pruebas unitarias de cada uno de los component
 
 En el plan de pruebas se ha definido el entorno necesario para la realización de cada nivel de prueba, así como las verificaciones asociadas a las pruebas unitarias, la coordinación y secuencia a seguir en la ejecución de las mismas y los criterios de registro y aceptación de los resultados.
 
-```{html}
+```{=html}
 <table class="avia-table avia-data-table">
 <tbody>
 <tr>
@@ -358,7 +358,7 @@ La estrategia a seguir en las pruebas de integración se establece en el plan de
 
 Esta actividad se realiza en paralelo a las actividades Generación del Código de los Componentes y Procedimientos (CSI 2) y Ejecución de las Pruebas Unitarias (CSI 3). Sin embargo, es necesario que los componentes objeto de las pruebas de integración se hayan verificado de manera unitaria.
 
-```{html}
+```{=html}
 <table class="avia-table avia-data-table">
 <tbody>
 <tr>
@@ -498,7 +498,7 @@ El objetivo de las pruebas del sistema es comprobar la integración del sistema 
 
 En la realización de estas pruebas es importante comprobar la cobertura de los requisitos, dado que su incumplimiento puede comprometer la aceptación del sistema por el equipo de operación responsable de realizar las pruebas de implantación del sistema, que se llevarán a cabo en el proceso Implantación y Aceptación del Sistema (IAS).
 
-```{html}
+```{=html}
 <table class="avia-table avia-data-table">
 <tbody>
 <tr>
@@ -636,7 +636,7 @@ El objetivo de esta actividad es analizar los resultados de las pruebas del sist
 
 ### Actividad CSI 6: Elaboración de los Manuales de Usuario
 
-```{html}
+```{=html}
 <table class="avia-table avia-data-table">
 <tbody>
 <tr>
@@ -706,7 +706,7 @@ El producto resultante de esta actividad es la especificación de la formación 
 
 En el proceso Implantación y Aceptación del Sistema (IAS), se unifican las especificaciones de formación de cada sistema de información implicado en la implantación y se elabora un único plan de formación que esté alineado con el plan de implantación del sistema.
 
-```{html}
+```{=html}
 <table class="avia-table avia-data-table">
 <tbody>
 <tr>
@@ -808,7 +808,7 @@ Previamente a la generación del código, se prepara la infraestructura tecnoló
 
 Finalmente, se llevan a cabo las verificaciones establecidas en la especificación técnica del plan de pruebas propio de la migración.
 
-```{html}
+```{=html}
 <table class="avia-table avia-data-table">
 <tbody>
 <tr>
@@ -952,7 +952,7 @@ El objetivo de esta tarea es efectuar las pruebas de los distintos componentes y
 
 ### Actividad CSI 9: Aprobación del Sistema de Información
 
-```{html}
+```{=html}
 <table class="avia-table avia-data-table">
 <tbody>
 <tr>
@@ -1017,7 +1017,7 @@ En esta tarea se recopilan los productos del sistema de información y se presen
 
 ## Participantes en las Actividades del Proceso CSI
 
-```{html}
+```{=html}
 <table class="avia-table avia-data-table">
 <tbody>
 <tr>
@@ -1209,7 +1209,7 @@ En esta tarea se recopilan los productos del sistema de información y se presen
 
 ## Técnicas/prácticas utilizadas en las actividades del proceso CSI
 
-```{html}
+```{=html}
 <table class="avia-table avia-data-table">
 <tbody>
 <tr>

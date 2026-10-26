@@ -43,7 +43,7 @@ Es importante asignar responsabilidades para evitar la realización de cambios q
 
 Una vez que la petición ha sido registrada, que ha determinado el tipo de mantenimiento y los sistemas de información a los que inicialmente puede afectar, se comprueba su viabilidad, de acuerdo a las prestaciones de mantenimiento establecidas para dichos sistemas de información.
 
-```{html}
+```{=html}
 <table class="avia-table avia-data-table">
 <tbody>
 <tr>
@@ -162,7 +162,7 @@ Se analiza el alcance de la petición en lo referente a los sistemas de informac
 
 El enfoque de este estudio varía según el tipo de mantenimiento, teniendo en cuenta que en el caso de un mantenimiento correctivo que implique un error crítico debe abordarse el cambio de forma inmediata sin profundizar en el origen del mismo. No obstante, una vez reanudado el servicio, es imprescindible analizar el problema y determinar cuál es la solución definitiva.
 
-```{html}
+```{=html}
 <table class="avia-table avia-data-table">
 <tbody>
 <tr>
@@ -313,7 +313,7 @@ Con el resultado de este análisis se dispone de los datos cuantitativos sobre l
 
 Una vez aceptado el plan de acción, se activan los correspondientes procesos de desarrollo para llevar a cabo la implementación de la solución. Al mismo tiempo, se especifican las pruebas de regresión con el fin de evitar el efecto onda en el sistema, una vez realizados los cambios.
 
-```{html}
+```{=html}
 <table class="avia-table avia-data-table">
 <tbody>
 <tr>
@@ -494,7 +494,7 @@ La aprobación de la petición se realiza al finalizar las pruebas de regresión
 
 Con el cierre de la petición se podrán incluir enel catálogo, si se considera oportuno, parte de la información obtenida durante el proceso de mantenimiento que pueda facilitar posteriores análisis.
 
-```{html}
+```{=html}
 <table class="avia-table avia-data-table">
 <tbody>
 <tr>
@@ -662,7 +662,7 @@ El registro de este tipo de información proporciona una base cuantitativa sobre
 
 ## Participantes en las actividades del proceso MSI
 
-```{html}
+```{=html}
 <table class="avia-table avia-data-table">
 <tbody>
 <tr>
@@ -709,7 +709,7 @@ El registro de este tipo de información proporciona una base cuantitativa sobre
 
 ## Técnicas/prácticas utilizadas en las actividades del proceso MSI
 
-```{html}
+```{=html}
 <table class="avia-table avia-data-table">
 <tbody>
 <tr>

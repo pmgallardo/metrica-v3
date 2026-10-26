@@ -42,7 +42,7 @@ ANÁLISIS DEL SISTEMAS DE INFORMACIÓN (ORIENTACIÓN A OBJETOS)
 
 Esta actividad tiene como objetivo efectuar una descripción del sistema, delimitando su alcance, estableciendo las interfaces con otros sistemas e identificando a los usuarios representativos. Las tareas de esta actividad se pueden haber desarrollado ya en parte en el proceso de Estudio de Viabilidad del Sistema (EVS), de modo que se parte de los productos obtenidos en dicho proceso para proceder a su adecuación como punto de partida para definir el sistema de información.
 
-```{html}
+```{=html}
 <table class="avia-table avia-data-table">
 <tbody>
 <tr>
@@ -315,7 +315,7 @@ Esta actividad se descompone en un conjunto de tareas que, si bien tienen un ord
 
 Se propone como técnica de obtención de requisitos la especificación de los casos de uso de la orientación a objetos, siendo opcional en el caso estructurado. Dicha técnica ofrece un diagrama simple y una guía de especificación en las sesiones de trabajo con el usuario.
 
-```{html}
+```{=html}
 <table class="avia-table avia-data-table">
 <tbody>
 <tr>
@@ -596,7 +596,7 @@ Prácticas {.unnumbered .unlisted}
 
 El objetivo de esta actividad, común tanto para análisis estructurado como para análisis orientado a objetos, es facilitar el análisis del sistema de información llevando a cabo la descomposición del sistema en subsistemas. Se realiza en paralelo con el resto de las actividades de generación de modelos del análisis. Por tanto, se asume la necesidad de una realimentación y ajuste continuo con respecto a la definición de los subsistemas, sus dependencias y sus interfaces.
 
-```{html}
+```{=html}
 <table class="avia-table avia-data-table">
 <tbody>
 <tr>
@@ -745,7 +745,7 @@ El objetivo de esta actividad, que sólo se realiza en el caso de Análisis Orie
 
 Esta actividad se lleva a cabo para cada uno de los casos de uso contenidos en un subsistema de los definidos en la actividad Identificación de Subsistemas de Análisis (ASI 3). Las tareas de esta actividad no se realizan de forma secuencial sino en paralelo, con continuas realimentaciones entre ellas y con las realizadas en las actividades Establecimiento de Requisitos (ASI 2), Identificación de Subsistemas de Análisis (ASI 3), Análisis de Clases (ASI 5) y Definición de Interfaces de Usuario (ASI 8).
 
-```{html}
+```{=html}
 <div class="avia-data-table-wrap avia_scrollable_table">
 <table class="avia-table avia-data-table">
 <tbody>
@@ -867,7 +867,7 @@ El objetivo de esta actividad que sólo se realiza en el caso de Análisis Orien
 
 Teniendo en cuenta las clases identificadas en la actividad Análisis de los Casos de Uso (ASI 4), se elabora el modelo de clases para cada subsistema. A medida que avanza el análisis, dicho modelo se va completando con las clases que vayan apareciendo, tanto del estudio de los casos de uso, como de la interfaz de usuario necesaria para el sistema de información.
 
-```{html}
+```{=html}
 <table class="avia-table avia-data-table">
 <tbody>
 <tr>
@@ -1043,7 +1043,7 @@ Finalmente, si procede, se describen las necesidades de migración y carga inici
 
 Esta actividad se realiza en paralelo, y con continuas realimentaciones, con otras tareas realizadas en las actividades Establecimiento de Requisitos (ASI 2), Identificación de Subsistemas de Análisis (ASI 3), Elaboración del Modelo de Procesos (ASI 7) y Definición de Interfaces de Usuario (ASI 8).
 
-```{html}
+```{=html}
 <table class="avia-table avia-data-table">
 <tbody>
 <tr>
@@ -1265,7 +1265,7 @@ Con el fin de facilitar el desarrollo posterior, se debe llegar a un nivel de de
 
 Esta actividad se lleva a cabo para cada uno de los subsistemas identificados en la actividad Identificación de Subsistemas de Análisis (ASI 3). Las tareas de esta actividad se realizan en paralelo y con continuas realimentaciones con otras tareas ejecutadas en las actividades Establecimiento de Requisitos (ASI 2), Elaboración del Modelo de Datos (ASI 6) y Definición de Interfaces de Usuario (ASI 8).
 
-```{html}
+```{=html}
 <table class="avia-table avia-data-table">
 <tbody>
 <tr>
@@ -1401,7 +1401,7 @@ Como resultado de esta actividad se genera la especificación de interfaz de usu
     Prototipo de interfaz interactiva.
     Prototipo de interfaz de impresión.
 
-```{html}
+```{=html}
 <table class="avia-table avia-data-table">
 <tbody>
 <tr>
@@ -1758,7 +1758,7 @@ Esta actividad requiere una herramienta de apoyo para realizar el análisis de c
 
 La Especificación de Requisitos Software se convierte en la línea base para los procesos posteriores del desarrollo del software, de modo que cualquier petición de cambio en los requisitos que pueda surgir posteriormente, debe ser evaluada y aprobada.
 
-```{html}
+```{=html}
 <table class="avia-table avia-data-table">
 <tbody>
 <tr>
@@ -2134,7 +2134,7 @@ Se plantean los siguientes niveles de prueba:
 
 En esta actividad también se avanza en la definición de las pruebas de aceptación del sistema. Con la información disponible, es posible establecer los criterios de aceptación de las pruebas incluidas en dicho nivel, al poseer la información sobre los requisitos que debe cumplir el sistema, recogidos en el catálogo de requisitos.
 
-```{html}
+```{=html}
 <table class="avia-table avia-data-table">
 <tbody>
 <tr>
@@ -2350,7 +2350,7 @@ Prácticas {.unnumbered .unlisted}
 
 ### Actividad ASI 11: Aprobación del Análisis del Sistema de Información
 
-```{html}
+```{=html}
 <table class="avia-table avia-data-table">
 <tbody>
 <tr>
@@ -2408,7 +2408,7 @@ En esta tarea se realiza la presentación del análisis del sistema de informaci
 
 ## Participantes en las actividades del proceso ASI
 
-```{html}
+```{=html}
 <table class="avia-table avia-data-table">
 <tbody>
 <tr>
@@ -2532,7 +2532,7 @@ En esta tarea se realiza la presentación del análisis del sistema de informaci
 
 ## Técnicas/prácticas utilizadas en las actividades del proceso ASI
 
-```{html}
+```{=html}
 <table class="avia-table avia-data-table">
 <tbody>
 <tr>
