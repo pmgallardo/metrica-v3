@@ -1016,7 +1016,8 @@ Por otro lado, se han incluido atributos que caracterizan la relación *Trabaja
 
 ### Normalización {#normalizacion}
 ### Optimización {#optimizacion}
-### Reglas de Obtención del Modelo Físico a partir del Lógico {#reglas-de-obtencion-del-modelo-fisico-a-partir-del-logico}
+### Reglas de Obtención del Modelo Físico a partir del Lógico  {#reglas-de-obtencion-del-modelo-fisico-a-partir-del-logico}
+
 ### Reglas de Transformación {#reglas-de-transformacion}
 
 ### Técnicas Matriciales {#tecnicas-matriciales}
@@ -1024,6 +1025,36 @@ Por otro lado, se han incluido atributos que caracterizan la relación *Trabaja
 ## Técnicas de gestión de proyectos {#tecnicas-de-gestion-de-proyectos}
 
 ### Técnicas de Estimación {#tecnicas-de-estimacion}
+
+Las técnicas de estimación tienen como objetivo calcular el coste total del desarrollo de un sistema de información.
+
+#### Descripción {.unnumbered .unlisted}
+
+La estimación del coste de los productos de software es una de las actividades más difíciles y propensas a error de la ingeniería del software. Es difícil hacer una estimación exacta de coste al comienzo de un desarrollo debido al gran número de factores conocidos o esperados que determinan la complejidad y desconocidos o no esperados que van a producirse en cualquier momento, determinando la incertidumbre.
+
+Las técnicas de estimación ayudan en esta tarea y dan como resultado un número de horas de esfuerzo, a partir de las cuales se calculará el coste correspondiente.
+
+La estimación nos aportará un número de horas aproximado que habrá que combinar con los recursos para obtener la planificación de actividades en el tiempo y establecer los hitos del proyecto.
+
+Las técnicas de estimación más fiables se basan en el análisis de Puntos Función. La técnica de Puntos Función permite la evaluación de un sistema de información a partir de un mínimo conocimiento de las funcionalidades y entidades que intervienen.
+
+Las características más destacables de esta técnica son:
+
+* Es una unidad de medida empírica.
+* Contempla el sistema como un todo que se divide en determinadas funciones.
+* Es independiente del entorno tecnológico en que se ha de desarrollar el sistema.
+* Es independiente de la metodología que vaya a ser utilizada.
+* Es independiente de la experiencia y del estilo de programación.
+* Es fácil de entender por el usuario.
+
+El resultado de la aplicación de esta técnica viene dado en **Puntos Función**, que posteriormente habrán de ser pasados a días de esfuerzo, para lo que sí habrán de tenerse en cuenta la experiencia del equipo de desarrollo y el estilo de programación, la aplicación de una u otra metodología y la tecnología.
+
+Este cálculo de días por punto función debe basarse en la experiencia adquirida en la valoración y realización de sistemas anteriores, debiendo actualizarse el valor de conversión con posterioridad a la finalización de cada proyecto.
+
+Entre las técnicas de estimación basadas en el análisis de puntos función, se destacan los siguientes dos métodos:
+
+- [Método Albrecht](#metodo-albrecht)
+- [Método MARK II](#metodo-mark-ii)
 
 #### Método Albrecht para el Análisis de los Puntos Función {#metodo-albrecht}
 
