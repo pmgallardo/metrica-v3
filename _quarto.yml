@@ -3,7 +3,7 @@ project:
   output-dir: _book
 
 lang: es-ES
-date: "01/01/2000"
+date: "31/01/2000"
 date-modified: today
 date-format: "DD/MM/YYYY"
 
