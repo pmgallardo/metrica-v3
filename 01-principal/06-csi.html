@@ -308,9 +308,11 @@ ul.task-list li input[type="checkbox"] {
   </ul></li>
   <li><a href="#actividad-csi-9-aprobación-del-sistema-de-información" id="toc-actividad-csi-9-aprobación-del-sistema-de-información" class="nav-link" data-scroll-target="#actividad-csi-9-aprobación-del-sistema-de-información"><span class="header-section-number">6.1.9</span> Actividad CSI 9: Aprobación del Sistema de Información</a>
   <ul class="collapse">
-  <li><a href="#section" id="toc-section" class="nav-link" data-scroll-target="#section"><span class="header-section-number">6.1.9.1</span> </a></li>
+  <li><a href="#tarea-csi-9.1-presentación-y-aprobación-del-sistema-de-información" id="toc-tarea-csi-9.1-presentación-y-aprobación-del-sistema-de-información" class="nav-link" data-scroll-target="#tarea-csi-9.1-presentación-y-aprobación-del-sistema-de-información"><span class="header-section-number">6.1.9.1</span> Tarea CSI 9.1: Presentación y Aprobación del Sistema de Información</a></li>
   </ul></li>
   </ul></li>
+  <li><a href="#participantes-en-las-actividades-del-proceso-csi" id="toc-participantes-en-las-actividades-del-proceso-csi" class="nav-link" data-scroll-target="#participantes-en-las-actividades-del-proceso-csi"><span class="header-section-number">6.2</span> Participantes en las Actividades del Proceso CSI</a></li>
+  <li><a href="#técnicasprácticas-utilizadas-en-las-actividades-del-proceso-csi" id="toc-técnicasprácticas-utilizadas-en-las-actividades-del-proceso-csi" class="nav-link" data-scroll-target="#técnicasprácticas-utilizadas-en-las-actividades-del-proceso-csi"><span class="header-section-number">6.3</span> Técnicas/prácticas utilizadas en las actividades del proceso CSI</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/pmgallardo/metrica-v3/edit/main/01-principal/06-csi.qmd" class="toc-action"><i class="bi bi-github"></i>Editar esta página</a></li><li><a href="https://github.com/pmgallardo/metrica-v3/issues/new" class="toc-action"><i class="bi empty"></i>Informar sobre problema</a></li><li><a href="https://github.com/pmgallardo/metrica-v3/blob/main/01-principal/06-csi.qmd" class="toc-action"><i class="bi empty"></i>Ver el código</a></li></ul></div></nav>
     </div>
@@ -338,7 +340,6 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="descripción-y-objetivos" class="level2" data-number="6.1">
 <h2 data-number="6.1" class="anchored" data-anchor-id="descripción-y-objetivos"><span class="header-section-number">6.1</span> Descripción y objetivos</h2>
-<p>DESCRIPCIÓN Y OBJETIVOS</p>
 <p>En este proceso se genera el código de los componentes del Sistema de Información, se desarrollan todos los procedimientos de operación y seguridad y se elaboran todos los manuales de usuario final y de explotación con el objetivo de asegurar el correcto funcionamiento del Sistema para su posterior implantación.</p>
 <p>Para conseguir dicho objetivo, en este proceso se realizan las pruebas unitarias, las pruebas de integración de los subsistemas y componentes y las pruebas del sistema, de acuerdo al plan de pruebas establecido.</p>
 <p>Asimismo, se define la formación de usuario final y, si procede, se construyen los procedimientos de migración y carga inicial de datos.</p>
@@ -346,47 +347,29 @@ ul.task-list li input[type="checkbox"] {
 <p>El producto Especificaciones de Construcción del Sistema de Información, obtenido en la actividad de Generación de Especificaciones de Construcción (DSI 8), es la base para la construcción del sistema de información. En dicho producto se recoge la información relativa al entorno de construcción del sistema de información, la especificación detallada de los componentes y la descripción de la estructura física de datos, tanto bases de datos como sistemas de ficheros. Opcionalmente, incluye un plan de integración del sistema de información, en el que se especifica la secuencia y organización de la construcción de los distintos componentes.</p>
 <p>En la actividad Preparación del Entorno de Generación y Construcción (CSI 1), se asegura la disponibilidad de la infraestructura necesaria para la generación del código de los componentes y procedimientos del sistema de información.</p>
 <p>Una vez configurado el entorno de construcción, se realiza la codificación y las pruebas de los distintos componentes que conforman el sistema de información, en las actividades:</p>
-<pre><code>Generación del Código de los Componentes y Procedimientos (CSI 2), que se hace según las especificaciones de construcción del sistema de información, y conforme al plan de integración del sistema de información.
-Ejecución de las Pruebas Unitarias (CSI 3), dónde se llevan a cabo las verificaciones definidas en el plan de pruebas para cada uno de los componentes.
-Ejecución de las Pruebas de Integración (CSI 4), que incluye la ejecución de las verificaciones asociadas a los subsistemas y componentes, a partir de los componentes verificados individualmente, y la evaluación de los resultados.</code></pre>
+<ul>
+<li>Generación del Código de los Componentes y Procedimientos (CSI 2), que se hace según las especificaciones de construcción del sistema de información, y conforme al plan de integración del sistema de información.</li>
+<li>Ejecución de las Pruebas Unitarias (CSI 3), dónde se llevan a cabo las verificaciones definidas en el plan de pruebas para cada uno de los componentes.</li>
+<li>Ejecución de las Pruebas de Integración (CSI 4), que incluye la ejecución de las verificaciones asociadas a los subsistemas y componentes, a partir de los componentes verificados individualmente, y la evaluación de los resultados.</li>
+</ul>
 <p>Una vez construido el sistema de información y realizadas las verificaciones correspondientes, se lleva a cabo la integración final del sistema de información en la actividad Ejecución de las Pruebas del Sistema (CSI 5), comprobando tanto las interfaces entre subsistemas y sistemas externos como los requisitos, de acuerdo a las verificaciones establecidas en el plan de pruebas para el nivel de pruebas del sistema.</p>
 <p>En la actividad Elaboración de los Manuales de Usuario (CSI 6), se genera la documentación de usuario final o explotación, conforme a los requisitos definidos en el proceso Diseño del Sistema de Información (DSI).</p>
 <p>La formación necesaria para que los usuarios finales sean capaces de utilizar el sistema de forma satisfactoria se especifica en la actividad Definición de la Formación de Usuarios Finales (CSI 7).</p>
 <p>Si se ha establecido la necesidad de realizar una migración de datos, la construcción y pruebas de los componentes y procedimientos relativos a dicha migración y a la carga inicial de datos se realiza en la actividad Construcción de los Componentes y Procedimientos de Migración y Carga Inicial de Datos (CSI 8).</p>
 <p><img src="../images/csi-actividades.jpg" class="img-fluid"></p>
 <p>Construcción del sistema de información</p>
-<p><img src="../images/csi-plan.jpg" class="img-fluid"></p>
-<p>PARTICIPANTES EN LAS ACTIVIDADES DEL PROCESO CSI CONSTRUCCIÓN DEL SISTEMA DE INFORMACIÓN ACTIVIDADES CSI 1 CSI 2 CSI 3 CSI 4 CSI 5 CSI 6 CSI 7 CSI 8 CSI 9 Administrador de B/D X X<br>
-Analistas X X X<br>
-Comité de Dirección<br>
-Comité de Seguimiento X Equipo de Arquitectura X X<br>
-Equipo de Formación X<br>
-Equipo de Operación X X<br>
-Equipo de Proyecto X X X X X<br>
-Equipo de Seguridad X<br>
-Jefe de Proyecto X X Responsable de Operación<br>
-Técnico de Comunicaciones X X<br>
-Técnico de Sistemas X X X X X<br>
-Programadores X X X<br>
-TÉCNICAS/PRÁCTICAS UTILIZADAS EN LAS ACTIVIDADES DEL PROCESO CSI CONSTRUCCIÓN DEL SISTEMA DE INFORMACIÓN ACTIVIDADES CSI 1 CSI 2 CSI 3 CSI 4 CSI 5 CSI 6 CSI 7 CSI 8 CSI 9 Pruebas de Integración X X<br>
-Pruebas del Sistema X<br>
-Pruebas Unitarias X X<br>
-Actividades</p>
-<pre><code>Actividad CSI 1: Preparación del Entorno de Generación y Construcción
-Actividad CSI 2: Generación del Código de los Componentes y Procedimientos
-Actividad CSI 3: Ejecución de las Pruebas Unitarias
-Actividad CSI 4: Ejecución de las Pruebas de Integración
-Actividad CSI 5: Ejecución de las Pruebas del Sistema
-Actividad CSI 6: Elaboración de los Manuales de Usuario
-Actividad CSI 7: Definición de la Formación de Usuarios Finales
-Actividad CSI 8: Construcción de los Componentes y Procedimientos de Migración y Carga Inicial de Datos
-Actividad CSI 9: Aprobación del Sistema de Información</code></pre>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../images/csi-plan.jpg" class="img-fluid figure-img"></p>
+<figcaption>Construcción del sistema de información</figcaption>
+</figure>
+</div>
 <section id="actividad-csi-1-preparación-del-entorno-de-generación-y-construcción" class="level3" data-number="6.1.1">
 <h3 data-number="6.1.1" class="anchored" data-anchor-id="actividad-csi-1-preparación-del-entorno-de-generación-y-construcción"><span class="header-section-number">6.1.1</span> Actividad CSI 1: Preparación del Entorno de Generación y Construcción</h3>
 <p>El objetivo de esta actividad es asegurar la disponibilidad de todos los medios y facilidades para que se pueda llevar a cabo la construcción del sistema de información. Entre estos medios, cabe destacar la preparación de los puestos de trabajo, equipos físicos y lógicos, gestores de bases de datos, bibliotecas de programas, herramientas de generación de código, bases de datos o ficheros de prueba, entre otros.</p>
-<p>Las características del entorno de construcción y sus requisitos de operación y seguridad, así como las especificaciones de construcción de la estructura física de datos, se establecen en la actividad Generación de Especificaciones de Construcción (DSI 8), y constituyen el punto de partida para la realización de esta actividad. TAREA PRODUCTOS TÉCNICAS Y PRÁCTICAS PARTICIPANTES CSI 1.1: Implantación de la Base de Datos Física o Ficheros</p>
+<p>Las características del entorno de construcción y sus requisitos de operación y seguridad, así como las especificaciones de construcción de la estructura física de datos, se establecen en la actividad Generación de Especificaciones de Construcción (DSI 8), y constituyen el punto de partida para la realización de esta actividad.</p>
+<p>TAREA PRODUCTOS TÉCNICAS Y PRÁCTICAS PARTICIPANTES CSI 1.1: Implantación de la Base de Datos Física o Ficheros</p>
 <pre><code>Base de Datos Física o Sistema de Ficheros
-
 
 
 Equipo del Proyecto
@@ -403,54 +386,85 @@ Administradores de Bases de Datos</code></pre>
 <section id="tarea-csi-1.1-implantación-de-la-base-de-datos-física-o-ficheros" class="level4" data-number="6.1.1.1">
 <h4 data-number="6.1.1.1" class="anchored" data-anchor-id="tarea-csi-1.1-implantación-de-la-base-de-datos-física-o-ficheros"><span class="header-section-number">6.1.1.1</span> Tarea CSI 1.1: Implantación de la Base de Datos Física o Ficheros</h4>
 <p>En esta tarea hay que:</p>
-<pre><code>Crear los elementos del sistema gestor de base de datos o sistema de ficheros
-Reservar el espacio de almacenamiento, definiendo, entre otros, los dispositivos físicos a emplear, tamaño de los bloques, tipo de registro físico, zona de desbordamiento, opciones de almacenamiento de datos, etc.
-Inicializar la base de datos o ficheros, cargando los datos considerados necesarios en el espacio de almacenamiento previamente definido.</code></pre>
-<p>Productos</p>
-<p>De entrada</p>
-<pre><code>Entorno Tecnológico del Sistema (DSI 7.2)
-Diseño de la Arquitectura del Sistema (DSI 7.2)
-Especificaciones de Construcción del Sistema de Información (DSI 8.4)</code></pre>
-<p>De salida</p>
-<pre><code>Base de Datos Física o Sistema de Ficheros</code></pre>
-<p>Participantes</p>
-<pre><code>Equipo del Proyecto
-Administradores de Bases de Datos</code></pre>
+<ul>
+<li>Crear los elementos del sistema gestor de base de datos o sistema de ficheros</li>
+<li>Reservar el espacio de almacenamiento, definiendo, entre otros, los dispositivos físicos a emplear, tamaño de los bloques, tipo de registro físico, zona de desbordamiento, opciones de almacenamiento de datos, etc.</li>
+<li>Inicializar la base de datos o ficheros, cargando los datos considerados necesarios en el espacio de almacenamiento previamente definido.</li>
+</ul>
+<section id="productos" class="level5 unlisted unnumbered">
+<h5 class="unlisted unnumbered anchored" data-anchor-id="productos">Productos</h5>
+<section id="de-entrada" class="level6 unlisted unnumbered">
+<h6 class="unlisted unnumbered anchored" data-anchor-id="de-entrada">De entrada</h6>
+<ul>
+<li>Entorno Tecnológico del Sistema (DSI 7.2)</li>
+<li>Diseño de la Arquitectura del Sistema (DSI 7.2)</li>
+<li>Especificaciones de Construcción del Sistema de Información (DSI 8.4)</li>
+</ul>
+</section>
+<section id="de-salida" class="level6 unlisted unnumbered">
+<h6 class="unlisted unnumbered anchored" data-anchor-id="de-salida">De salida</h6>
+<ul>
+<li>Base de Datos Física o Sistema de Ficheros</li>
+</ul>
+</section>
+</section>
+<section id="participantes" class="level5 unlisted unnumbered">
+<h5 class="unlisted unnumbered anchored" data-anchor-id="participantes">Participantes</h5>
+<ul>
+<li>Equipo del Proyecto</li>
+<li>Administradores de Bases de Datos</li>
+</ul>
+</section>
 </section>
 <section id="tarea-csi-1.2-preparación-del-entorno-de-construcción" class="level4" data-number="6.1.1.2">
 <h4 data-number="6.1.1.2" class="anchored" data-anchor-id="tarea-csi-1.2-preparación-del-entorno-de-construcción"><span class="header-section-number">6.1.1.2</span> Tarea CSI 1.2: Preparación del Entorno de Construcción</h4>
 <p>En esta tarea se prepara el entorno en el que se construirán los componentes del sistema de información, contemplando aspectos tales como:</p>
-<pre><code>Bibliotecas o librerías a utilizar
-Herramientas: generadores de código, editores, compiladores, verificadores sintácticos, montadores de enlace,
-Puestos de trabajo
-Implementación de los procedimientos de operación y seguridad propios del entorno de construcción, de acuerdo a los requisitos de seguridad y operación establecidos en la tarea Especificación del Entorno de Construcción (DSI 8.1).</code></pre>
-<p>Productos</p>
-<p>De entrada</p>
-<pre><code>Especificaciones de Construcción del Sistema de Información (DSI 8.1)</code></pre>
-<p>De salida</p>
-<pre><code>Entorno de Construcción</code></pre>
-<p>Participantes</p>
-<pre><code>Equipo del Proyecto
-Técnicos de Sistemas
-Equipo de Operación
-Administradores de Bases de Datos</code></pre>
+<ul>
+<li>Bibliotecas o librerías a utilizar</li>
+<li>Herramientas: generadores de código, editores, compiladores, verificadores sintácticos, montadores de enlace,</li>
+<li>Puestos de trabajo</li>
+<li>Implementación de los procedimientos de operación y seguridad propios del entorno de construcción, de acuerdo a los requisitos de seguridad y operación establecidos en la tarea Especificación del Entorno de Construcción (DSI 8.1).</li>
+</ul>
+<section id="productos-1" class="level5 unlisted unnumbered">
+<h5 class="unlisted unnumbered anchored" data-anchor-id="productos-1">Productos</h5>
+<section id="de-entrada-1" class="level6 unlisted unnumbered">
+<h6 class="unlisted unnumbered anchored" data-anchor-id="de-entrada-1">De entrada</h6>
+<ul>
+<li>Especificaciones de Construcción del Sistema de Información (DSI 8.1)</li>
+</ul>
+</section>
+<section id="de-salida-1" class="level6 unlisted unnumbered">
+<h6 class="unlisted unnumbered anchored" data-anchor-id="de-salida-1">De salida</h6>
+<ul>
+<li>Entorno de Construcción</li>
+</ul>
+</section>
+</section>
+<section id="participantes-1" class="level5 unlisted unnumbered">
+<h5 class="unlisted unnumbered anchored" data-anchor-id="participantes-1">Participantes</h5>
+<ul>
+<li>Equipo del Proyecto</li>
+<li>Técnicos de Sistemas</li>
+<li>Equipo de Operación</li>
+<li>Administradores de Bases de Datos</li>
+</ul>
+</section>
 </section>
 </section>
 <section id="actividad-csi-2-generación-del-código-de-los-componentes-y-procedimientos" class="level3" data-number="6.1.2">
 <h3 data-number="6.1.2" class="anchored" data-anchor-id="actividad-csi-2-generación-del-código-de-los-componentes-y-procedimientos"><span class="header-section-number">6.1.2</span> Actividad CSI 2: Generación del Código de los Componentes y Procedimientos</h3>
 <p>El objetivo de esta actividad es la codificación de los componentes del sistema de información, a partir de las especificaciones de construcción obtenidas en el proceso Diseño del Sistema de Información (DSI), así como la construcción de los procedimientos de operación y seguridad establecidos para el mismo.</p>
-<p>En paralelo a esta actividad, se desarrollan las actividades relacionadas con las pruebas unitarias y de integración del sistema de información. Esto permite una construcción incremental, en el caso de que así se haya especificado en el plan de pruebas y en el plan de integración del sistema de información. TAREA PRODUCTOS TÉCNICAS Y PRÁCTICAS PARTICIPANTES CSI 2.1: Generación del Código de Componentes</p>
+<p>En paralelo a esta actividad, se desarrollan las actividades relacionadas con las pruebas unitarias y de integración del sistema de información. Esto permite una construcción incremental, en el caso de que así se haya especificado en el plan de pruebas y en el plan de integración del sistema de información.</p>
+<p>TAREA PRODUCTOS TÉCNICAS Y PRÁCTICAS PARTICIPANTES CSI 2.1: Generación del Código de Componentes</p>
 <pre><code>Producto Software:
     Código Fuente de los Componentes
-
-
+    
 
 Programadores</code></pre>
 <p>CSI 2.2: Generación del Código de los Procedimientos de Operación y Seguridad</p>
 <pre><code>Producto Software:
     Procedimientos de Operación y Administración del Sistema
     Procedimientos de Seguridad y Control de Acceso
-
 
 
 Técnicos de Sistemas
@@ -461,44 +475,78 @@ Programadores</code></pre>
 <h4 data-number="6.1.2.1" class="anchored" data-anchor-id="tarea-csi-2.1-generación-del-código-de-componentes"><span class="header-section-number">6.1.2.1</span> Tarea CSI 2.1: Generación del Código de Componentes</h4>
 <p>En esta tarea se genera el código correspondiente a cada uno de los componentes del sistema de información, identificados en la tarea Definición de Componentes y Subsistemas de Construcción (DSI 8.2).</p>
 <p>Para generar el código fuente se tienen en cuenta los estándares de nomenclatura, codificación y calidad utilizados por la organización y recogidos en el catálogo de normas.</p>
-<p>Con el fin de verificar que el código fuente especifica de forma correcta el componente, se realiza su ensamblaje o compilación, verificando y corrigiendo los errores sintácticos, y el enlace del código objeto obtenido con las correspondientes bibliotecas. Productos</p>
-<p>De entrada</p>
-<pre><code>Catálogo de Normas (DSI 1.4)
-Especificaciones de Construcción del Sistema de Información (DSI 8.2)</code></pre>
-<p>De salida</p>
-<pre><code>Producto Software
-    Código Fuente de los Componentes</code></pre>
-<p>Participantes</p>
-<pre><code>Programadores</code></pre>
+<p>Con el fin de verificar que el código fuente especifica de forma correcta el componente, se realiza su ensamblaje o compilación, verificando y corrigiendo los errores sintácticos, y el enlace del código objeto obtenido con las correspondientes bibliotecas.</p>
+<section id="productos-2" class="level5 unlisted unnumbered">
+<h5 class="unlisted unnumbered anchored" data-anchor-id="productos-2">Productos</h5>
+<section id="de-entrada-2" class="level6 unlisted unnumbered">
+<h6 class="unlisted unnumbered anchored" data-anchor-id="de-entrada-2">De entrada</h6>
+<ul>
+<li>Catálogo de Normas (DSI 1.4)</li>
+<li>Especificaciones de Construcción del Sistema de Información (DSI 8.2)</li>
+</ul>
+</section>
+<section id="de-salida-2" class="level6 unlisted unnumbered">
+<h6 class="unlisted unnumbered anchored" data-anchor-id="de-salida-2">De salida</h6>
+<ul>
+<li>Producto Software
+<ul>
+<li>Código Fuente de los Componentes</li>
+</ul></li>
+</ul>
+</section>
+</section>
+<section id="participantes-2" class="level5 unlisted unnumbered">
+<h5 class="unlisted unnumbered anchored" data-anchor-id="participantes-2">Participantes</h5>
+<ul>
+<li>Programadores</li>
+</ul>
+</section>
 </section>
 <section id="tarea-csi-2.2-generación-del-código-de-los-procedimientos-de-operación-y-seguridad" class="level4" data-number="6.1.2.2">
 <h4 data-number="6.1.2.2" class="anchored" data-anchor-id="tarea-csi-2.2-generación-del-código-de-los-procedimientos-de-operación-y-seguridad"><span class="header-section-number">6.1.2.2</span> Tarea CSI 2.2: Generación del Código de los Procedimientos de Operación y Seguridad</h4>
 <p>El objetivo de esta tarea es generar los procedimientos de operación y administración del sistema de información, así como los procedimientos de seguridad y control de acceso, necesarios para ejecutar el sistema una vez que se haya implantado y esté en producción.</p>
-<p>Para la generación de dichos procedimientos se tienen en cuenta, también, los estándares y normas de la instalación recogidos en el catálogo de normas. Productos</p>
-<p>De entrada</p>
-<pre><code>Catálogo de Normas (DSI 1.4)
-Diseño de la Arquitectura del Sistema (DSI 7.2)
-Entorno Tecnológico del Sistema (DSI 7.2)
-Procedimientos de Operación y Administración del Sistema (DSI 1.7)
-Procedimientos de Seguridad y Control de Acceso (DSI 1.7)
-Producto Software (CSI 2.1)</code></pre>
-<p>De salida</p>
-<pre><code>Producto Software
-    Procedimientos de Operación y Administración del Sistema
-    Procedimientos de seguridad y control de acceso</code></pre>
-<p>Participantes</p>
-<pre><code>Técnicos de Sistemas
-Equipo de Operación
-Administrador de la Base de Datos
-Programadores</code></pre>
+<p>Para la generación de dichos procedimientos se tienen en cuenta, también, los estándares y normas de la instalación recogidos en el catálogo de normas.</p>
+<section id="productos-3" class="level5 unlisted unnumbered">
+<h5 class="unlisted unnumbered anchored" data-anchor-id="productos-3">Productos</h5>
+<section id="de-entrada-3" class="level6 unlisted unnumbered">
+<h6 class="unlisted unnumbered anchored" data-anchor-id="de-entrada-3">De entrada</h6>
+<ul>
+<li>Catálogo de Normas (DSI 1.4)</li>
+<li>Diseño de la Arquitectura del Sistema (DSI 7.2)</li>
+<li>Entorno Tecnológico del Sistema (DSI 7.2)</li>
+<li>Procedimientos de Operación y Administración del Sistema (DSI 1.7)</li>
+<li>Procedimientos de Seguridad y Control de Acceso (DSI 1.7)</li>
+<li>Producto Software (CSI 2.1)</li>
+</ul>
+</section>
+<section id="de-salida-3" class="level6 unlisted unnumbered">
+<h6 class="unlisted unnumbered anchored" data-anchor-id="de-salida-3">De salida</h6>
+<ul>
+<li>Producto Software
+<ul>
+<li>Procedimientos de Operación y Administración del Sistema</li>
+<li>Procedimientos de seguridad y control de acceso</li>
+</ul></li>
+</ul>
+</section>
+</section>
+<section id="participantes-3" class="level5 unlisted unnumbered">
+<h5 class="unlisted unnumbered anchored" data-anchor-id="participantes-3">Participantes</h5>
+<ul>
+<li>Técnicos de Sistemas</li>
+<li>Equipo de Operación</li>
+<li>Administrador de la Base de Datos</li>
+<li>Programadores</li>
+</ul>
+</section>
 </section>
 </section>
 <section id="actividad-csi-3-ejecución-de-las-pruebas-unitarias" class="level3" data-number="6.1.3">
 <h3 data-number="6.1.3" class="anchored" data-anchor-id="actividad-csi-3-ejecución-de-las-pruebas-unitarias"><span class="header-section-number">6.1.3</span> Actividad CSI 3: Ejecución de las Pruebas Unitarias</h3>
 <p>En esta actividad se realizan las pruebas unitarias de cada uno de los componentes del sistema de información, una vez codificados, con el objeto de comprobar que su estructura es correcta y que se ajustan a la funcionalidad establecida.</p>
-<p>En el plan de pruebas se ha definido el entorno necesario para la realización de cada nivel de prueba, así como las verificaciones asociadas a las pruebas unitarias, la coordinación y secuencia a seguir en la ejecución de las mismas y los criterios de registro y aceptación de los resultados. TAREA PRODUCTOS TÉCNICAS Y PRÁCTICAS PARTICIPANTES CSI 3.1: Preparación del Entorno de Pruebas Unitarias</p>
+<p>En el plan de pruebas se ha definido el entorno necesario para la realización de cada nivel de prueba, así como las verificaciones asociadas a las pruebas unitarias, la coordinación y secuencia a seguir en la ejecución de las mismas y los criterios de registro y aceptación de los resultados.</p>
+<p>TAREA PRODUCTOS TÉCNICAS Y PRÁCTICAS PARTICIPANTES CSI 3.1: Preparación del Entorno de Pruebas Unitarias</p>
 <pre><code>Entorno de pruebas unitarias
-
 
 
 Técnicos de Sistemas
@@ -507,46 +555,79 @@ Programadores</code></pre>
 <pre><code>Resultado de las pruebas unitarias
 
 
-
 Pruebas Unitarias
-
 
 
 Programadores</code></pre>
 <section id="tarea-csi-3.1-preparación-del-entorno-de-las-pruebas-unitarias" class="level4" data-number="6.1.3.1">
 <h4 data-number="6.1.3.1" class="anchored" data-anchor-id="tarea-csi-3.1-preparación-del-entorno-de-las-pruebas-unitarias"><span class="header-section-number">6.1.3.1</span> Tarea CSI 3.1: Preparación del Entorno de las Pruebas Unitarias</h4>
 <p>En esta tarea se preparan todos los recursos necesarios para realizar las pruebas unitarias de cada uno de los componentes del sistema de información.</p>
-<p>Para ello, se asegura la disponibilidad del entorno y de los datos necesarios para ejecutar estas pruebas, se preparan las bibliotecas o librerías oportunas para la realización de las mismas, así como los procedimientos manuales o automáticos necesarios, conforme a la especificación del entorno definida en el plan de pruebas. Productos</p>
-<p>De entrada</p>
-<pre><code>Plan de Pruebas (DSI 10.3)</code></pre>
-<p>De salida</p>
-<pre><code>Entorno de Pruebas Unitarias</code></pre>
-<p>Participantes</p>
-<pre><code>Técnicos de Sistemas
-Programadores</code></pre>
+<p>Para ello, se asegura la disponibilidad del entorno y de los datos necesarios para ejecutar estas pruebas, se preparan las bibliotecas o librerías oportunas para la realización de las mismas, así como los procedimientos manuales o automáticos necesarios, conforme a la especificación del entorno definida en el plan de pruebas.</p>
+<section id="productos-4" class="level5 unlisted unnumbered">
+<h5 class="unlisted unnumbered anchored" data-anchor-id="productos-4">Productos</h5>
+<section id="de-entrada-4" class="level6 unlisted unnumbered">
+<h6 class="unlisted unnumbered anchored" data-anchor-id="de-entrada-4">De entrada</h6>
+<ul>
+<li>Plan de Pruebas (DSI 10.3)</li>
+</ul>
+</section>
+<section id="de-salida-4" class="level6 unlisted unnumbered">
+<h6 class="unlisted unnumbered anchored" data-anchor-id="de-salida-4">De salida</h6>
+<ul>
+<li>Entorno de Pruebas Unitarias</li>
+</ul>
+</section>
+</section>
+<section id="participantes-4" class="level5 unlisted unnumbered">
+<h5 class="unlisted unnumbered anchored" data-anchor-id="participantes-4">Participantes</h5>
+<ul>
+<li>Técnicos de Sistemas</li>
+<li>Programadores</li>
+</ul>
+</section>
 </section>
 <section id="tarea-csi-3.2-realización-y-evaluación-de-las-pruebas-unitarias" class="level4" data-number="6.1.3.2">
 <h4 data-number="6.1.3.2" class="anchored" data-anchor-id="tarea-csi-3.2-realización-y-evaluación-de-las-pruebas-unitarias"><span class="header-section-number">6.1.3.2</span> Tarea CSI 3.2: Realización y Evaluación de las Pruebas Unitarias</h4>
 <p>El objetivo de esta tarea es comprobar el correcto funcionamiento de los componentes del sistema de información, codificados en la actividad Generación del Código de los Componentes y Procedimientos (CSI 2), conforme a las verificaciones establecidas en el plan de pruebas para el nivel de pruebas unitarias, en la actividad Especificación Técnica del Plan de Pruebas (DSI 10).</p>
 <p>Para cada verificación establecida, se realizan las pruebas con los casos de pruebas asociados, efectuando el correspondiente análisis y evaluación de los resultados, y generando un registro conforme a los criterios establecidos en el plan de pruebas.</p>
-<p>Seguidamente, se analizan los resultados de las pruebas unitarias, evaluándose las mismas para comprobar que los resultados son los esperados. Si los resultados no son los esperados hay que proceder a realizar las correcciones pertinentes. Productos</p>
-<p>De entrada</p>
-<pre><code>Producto Software (CSI 2.2)
-Entorno de Pruebas Unitarias (CSI 3.1)
-Plan de Pruebas (DSI 10.3)</code></pre>
-<p>De salida</p>
-<pre><code>Resultado y evaluación de las Pruebas Unitarias</code></pre>
-<p>Prácticas</p>
-<pre><code>Pruebas Unitarias</code></pre>
-<p>Participantes</p>
-<pre><code>Programadores</code></pre>
+<p>Seguidamente, se analizan los resultados de las pruebas unitarias, evaluándose las mismas para comprobar que los resultados son los esperados. Si los resultados no son los esperados hay que proceder a realizar las correcciones pertinentes.</p>
+<section id="productos-5" class="level5 unlisted unnumbered">
+<h5 class="unlisted unnumbered anchored" data-anchor-id="productos-5">Productos</h5>
+<section id="de-entrada-5" class="level6 unlisted unnumbered">
+<h6 class="unlisted unnumbered anchored" data-anchor-id="de-entrada-5">De entrada</h6>
+<ul>
+<li>Producto Software (CSI 2.2)</li>
+<li>Entorno de Pruebas Unitarias (CSI 3.1)</li>
+<li>Plan de Pruebas (DSI 10.3)</li>
+</ul>
+</section>
+<section id="de-salida-5" class="level6 unlisted unnumbered">
+<h6 class="unlisted unnumbered anchored" data-anchor-id="de-salida-5">De salida</h6>
+<ul>
+<li>Resultado y evaluación de las Pruebas Unitarias</li>
+</ul>
+</section>
+</section>
+<section id="prácticas" class="level5 unlisted unnumbered">
+<h5 class="unlisted unnumbered anchored" data-anchor-id="prácticas">Prácticas</h5>
+<ul>
+<li>Pruebas Unitarias</li>
+</ul>
+</section>
+<section id="participantes-5" class="level5 unlisted unnumbered">
+<h5 class="unlisted unnumbered anchored" data-anchor-id="participantes-5">Participantes</h5>
+<ul>
+<li>Programadores</li>
+</ul>
+</section>
 </section>
 </section>
 <section id="actividad-csi-4-ejecución-de-las-pruebas-de-integración" class="level3" data-number="6.1.4">
 <h3 data-number="6.1.4" class="anchored" data-anchor-id="actividad-csi-4-ejecución-de-las-pruebas-de-integración"><span class="header-section-number">6.1.4</span> Actividad CSI 4: Ejecución de las Pruebas de Integración</h3>
 <p>El objetivo de las pruebas de integración es verificar si los componentes o subsistemas interactúan correctamente a través de sus interfaces, tanto internas como externas, cubren la funcionalidad establecida, y se ajustan a los requisitos especificados en las verificaciones correspondientes.</p>
 <p>La estrategia a seguir en las pruebas de integración se establece en el plan de pruebas, dónde se habrá tenido en cuenta el plan de integración del sistema de información, siempre y cuando se haya especificado en la tarea Definición de Componentes y Subsistemas de Construcción (DSI 8.2).</p>
-<p>Esta actividad se realiza en paralelo a las actividades Generación del Código de los Componentes y Procedimientos (CSI 2) y Ejecución de las Pruebas Unitarias (CSI 3). Sin embargo, es necesario que los componentes objeto de las pruebas de integración se hayan verificado de manera unitaria. TAREA PRODUCTOS TÉCNICAS Y PRÁCTICAS PARTICIPANTES CSI 4.1: Preparación del Entorno de Pruebas de Integración</p>
+<p>Esta actividad se realiza en paralelo a las actividades Generación del Código de los Componentes y Procedimientos (CSI 2) y Ejecución de las Pruebas Unitarias (CSI 3). Sin embargo, es necesario que los componentes objeto de las pruebas de integración se hayan verificado de manera unitaria.</p>
+<p>TAREA PRODUCTOS TÉCNICAS Y PRÁCTICAS PARTICIPANTES CSI 4.1: Preparación del Entorno de Pruebas de Integración</p>
 <pre><code>Entorno de Pruebas de Integración
 
 
@@ -571,54 +652,98 @@ Analistas</code></pre>
 <section id="tarea-csi-4.1-preparación-del-entorno-de-las-pruebas-de-integración" class="level4" data-number="6.1.4.1">
 <h4 data-number="6.1.4.1" class="anchored" data-anchor-id="tarea-csi-4.1-preparación-del-entorno-de-las-pruebas-de-integración"><span class="header-section-number">6.1.4.1</span> Tarea CSI 4.1: Preparación del Entorno de las Pruebas de Integración</h4>
 <p>En esta tarea se disponen todos los recursos necesarios para realizar las pruebas de integración de los componentes y subsistemas que conforman el sistema de información.</p>
-<p>Para ello, se asegura la disponibilidad del entorno y de los datos necesarios para ejecutar estas pruebas, se preparan las bibliotecas o librerías que se estimen oportunas para la realización de las mismas, así como los procedimientos manuales o automáticos asociados, conforme a la especificación del entorno definida en el plan de pruebas. Productos</p>
-<p>De entrada</p>
-<pre><code>Plan de Pruebas (DSI 10.3)</code></pre>
-<p>De salida</p>
-<pre><code>Entorno de Pruebas de Integración</code></pre>
-<p>Participantes</p>
-<pre><code>Técnicos de Sistemas
-Especialistas en Comunicaciones
-Equipo de Arquitectura
-Equipo del Proyecto</code></pre>
+<p>Para ello, se asegura la disponibilidad del entorno y de los datos necesarios para ejecutar estas pruebas, se preparan las bibliotecas o librerías que se estimen oportunas para la realización de las mismas, así como los procedimientos manuales o automáticos asociados, conforme a la especificación del entorno definida en el plan de pruebas.</p>
+<section id="productos-6" class="level5 unlisted unnumbered">
+<h5 class="unlisted unnumbered anchored" data-anchor-id="productos-6">Productos</h5>
+<section id="de-entrada-6" class="level6 unlisted unnumbered">
+<h6 class="unlisted unnumbered anchored" data-anchor-id="de-entrada-6">De entrada</h6>
+<ul>
+<li>Plan de Pruebas (DSI 10.3)</li>
+</ul>
+</section>
+<section id="de-salida-6" class="level6 unlisted unnumbered">
+<h6 class="unlisted unnumbered anchored" data-anchor-id="de-salida-6">De salida</h6>
+<ul>
+<li>Entorno de Pruebas de Integración</li>
+</ul>
+</section>
+</section>
+<section id="participantes-6" class="level5 unlisted unnumbered">
+<h5 class="unlisted unnumbered anchored" data-anchor-id="participantes-6">Participantes</h5>
+<ul>
+<li>Técnicos de Sistemas</li>
+<li>Especialistas en Comunicaciones</li>
+<li>Equipo de Arquitectura</li>
+<li>Equipo del Proyecto</li>
+</ul>
+</section>
 </section>
 <section id="tarea-csi-4.2-realización-de-las-pruebas-de-integración" class="level4" data-number="6.1.4.2">
 <h4 data-number="6.1.4.2" class="anchored" data-anchor-id="tarea-csi-4.2-realización-de-las-pruebas-de-integración"><span class="header-section-number">6.1.4.2</span> Tarea CSI 4.2: Realización de las Pruebas de Integración</h4>
 <p>El objetivo de esta tarea es verificar el correcto funcionamiento de las interfaces existentes entre los distintos componentes y subsistemas, conforme a las verificaciones establecidas para el nivel de pruebas de integración.</p>
-<p>Para cada verificación establecida, se realizan las pruebas con los casos de pruebas asociados, efectuando el correspondiente análisis e informe de los resultados de cada verificación, y generando un registro conforme a los criterios establecidos en el plan de pruebas. Productos</p>
-<p>De entrada</p>
+<p>Para cada verificación establecida, se realizan las pruebas con los casos de pruebas asociados, efectuando el correspondiente análisis e informe de los resultados de cada verificación, y generando un registro conforme a los criterios establecidos en el plan de pruebas.</p>
+<section id="productos-7" class="level5 unlisted unnumbered">
+<h5 class="unlisted unnumbered anchored" data-anchor-id="productos-7">Productos</h5>
+<section id="de-entrada-7" class="level6 unlisted unnumbered">
+<h6 class="unlisted unnumbered anchored" data-anchor-id="de-entrada-7">De entrada</h6>
 <pre><code>Producto Software (CSI 2.1 y CSI 2.2)
 Entorno de Pruebas de Integración (CSI 4.1)
 Plan de Pruebas (DSI 10.3)</code></pre>
-<p>De salida</p>
+</section>
+<section id="de-salida-7" class="level6 unlisted unnumbered">
+<h6 class="unlisted unnumbered anchored" data-anchor-id="de-salida-7">De salida</h6>
 <pre><code>Resultado de las Pruebas de Integración</code></pre>
-<p>Prácticas</p>
+</section>
+</section>
+<section id="prácticas-1" class="level5 unlisted unnumbered">
+<h5 class="unlisted unnumbered anchored" data-anchor-id="prácticas-1">Prácticas</h5>
 <pre><code>Pruebas de Integración</code></pre>
-<p>Participantes</p>
-<pre><code>Equipo del Proyecto</code></pre>
+</section>
+<section id="participantes-7" class="level5 unlisted unnumbered">
+<h5 class="unlisted unnumbered anchored" data-anchor-id="participantes-7">Participantes</h5>
+<ul>
+<li>Equipo del Proyecto</li>
+</ul>
+</section>
 </section>
 <section id="tarea-csi-4.3-evaluación-del-resultado-de-las-pruebas-de-integración" class="level4" data-number="6.1.4.3">
 <h4 data-number="6.1.4.3" class="anchored" data-anchor-id="tarea-csi-4.3-evaluación-del-resultado-de-las-pruebas-de-integración"><span class="header-section-number">6.1.4.3</span> Tarea CSI 4.3: Evaluación del Resultado de las Pruebas de Integración</h4>
 <p>El objetivo de esta tarea es analizar los resultados de las pruebas de integración y efectuar su evaluación. Dicha evaluación recoge el grado de cumplimiento de las pruebas y consiste en:</p>
-<pre><code>Comparar los resultados obtenidos con los esperados
-Identificar el origen de cada problema detectado para poder remitirlo a quien proceda, determinar la envergadura de las modificaciones y qué acciones deben llevarse a cabo para resolverlo de forma satisfactoria.
-Indicar si el plan de pruebas debe volver a realizarse total o parcialmente, y si será necesario contemplar nuevos casos de prueba no considerados anteriormente.</code></pre>
-<p>Productos</p>
-<p>De entrada</p>
-<pre><code>Resultado de las Pruebas de Integración (CSI 4.2)
-Plan de Pruebas (DSI 10.3)</code></pre>
-<p>De salida</p>
-<pre><code>Evaluación del Resultado de las Pruebas de Integración</code></pre>
-<p>Participantes</p>
-<pre><code>Analistas</code></pre>
+<ul>
+<li>Comparar los resultados obtenidos con los esperados</li>
+<li>Identificar el origen de cada problema detectado para poder remitirlo a quien proceda, determinar la envergadura de las modificaciones y qué acciones deben llevarse a cabo para resolverlo de forma satisfactoria.</li>
+<li>Indicar si el plan de pruebas debe volver a realizarse total o parcialmente, y si será necesario contemplar nuevos casos de prueba no considerados anteriormente.</li>
+</ul>
+<section id="productos-8" class="level5 unlisted unnumbered">
+<h5 class="unlisted unnumbered anchored" data-anchor-id="productos-8">Productos</h5>
+<section id="de-entrada-8" class="level6 unlisted unnumbered">
+<h6 class="unlisted unnumbered anchored" data-anchor-id="de-entrada-8">De entrada</h6>
+<ul>
+<li>Resultado de las Pruebas de Integración (CSI 4.2)</li>
+<li>Plan de Pruebas (DSI 10.3)</li>
+</ul>
+</section>
+<section id="de-salida-8" class="level6 unlisted unnumbered">
+<h6 class="unlisted unnumbered anchored" data-anchor-id="de-salida-8">De salida</h6>
+<ul>
+<li>Evaluación del Resultado de las Pruebas de Integración</li>
+</ul>
+</section>
+</section>
+<section id="participantes-8" class="level5 unlisted unnumbered">
+<h5 class="unlisted unnumbered anchored" data-anchor-id="participantes-8">Participantes</h5>
+<ul>
+<li>Analistas</li>
+</ul>
+</section>
 </section>
 </section>
 <section id="actividad-csi-5-ejecución-de-las-pruebas-del-sistema" class="level3" data-number="6.1.5">
 <h3 data-number="6.1.5" class="anchored" data-anchor-id="actividad-csi-5-ejecución-de-las-pruebas-del-sistema"><span class="header-section-number">6.1.5</span> Actividad CSI 5: Ejecución de las Pruebas del Sistema</h3>
 <p>El objetivo de las pruebas del sistema es comprobar la integración del sistema de información globalmente, verificando el funcionamiento correcto de las interfaces entre los distintos subsistemas que lo componen y con el resto de sistemas de información con los que se comunica.</p>
-<p>En la realización de estas pruebas es importante comprobar la cobertura de los requisitos, dado que su incumplimiento puede comprometer la aceptación del sistema por el equipo de operación responsable de realizar las pruebas de implantación del sistema, que se llevarán a cabo en el proceso Implantación y Aceptación del Sistema (IAS). TAREA PRODUCTOS TÉCNICAS Y PRÁCTICAS PARTICIPANTES CSI 5.1: Preparación del Entorno de Pruebas del Sistema</p>
+<p>En la realización de estas pruebas es importante comprobar la cobertura de los requisitos, dado que su incumplimiento puede comprometer la aceptación del sistema por el equipo de operación responsable de realizar las pruebas de implantación del sistema, que se llevarán a cabo en el proceso Implantación y Aceptación del Sistema (IAS).</p>
+<p>TAREA PRODUCTOS TÉCNICAS Y PRÁCTICAS PARTICIPANTES CSI 5.1: Preparación del Entorno de Pruebas del Sistema</p>
 <pre><code>Entorno de Pruebas del Sistema
-
 
 
 Técnicos de Sistemas
@@ -629,9 +754,7 @@ Equipo del Proyecto</code></pre>
 <pre><code>Resultado de las Pruebas del Sistema
 
 
-
 Pruebas del Sistema
-
 
 
 Equipo del Proyecto</code></pre>
@@ -639,53 +762,96 @@ Equipo del Proyecto</code></pre>
 <pre><code>Evaluación del Resultado de las Pruebas del Sistema
 
 
-
 Analistas
 Jefe de Proyecto</code></pre>
 <section id="tarea-csi-5.1-preparación-del-entorno-de-las-pruebas-del-sistema" class="level4" data-number="6.1.5.1">
 <h4 data-number="6.1.5.1" class="anchored" data-anchor-id="tarea-csi-5.1-preparación-del-entorno-de-las-pruebas-del-sistema"><span class="header-section-number">6.1.5.1</span> Tarea CSI 5.1: Preparación del Entorno de las Pruebas del Sistema</h4>
 <p>En esta tarea se preparan todos los recursos necesarios para realizar las pruebas del sistema, de acuerdo a las características del entorno establecidas en el plan de pruebas.</p>
-<p>Para ello se asegura la disponibilidad del entorno y de los datos necesarios para ejecutar estas pruebas, se preparan las bibliotecas o librerías que se estimen oportunas para la realización de las mismas, así como los procedimientos manuales o automáticos asociados. Productos</p>
-<p>De entrada</p>
-<pre><code>Plan de Pruebas (DSI 10.3)</code></pre>
-<p>De salida</p>
-<pre><code>Entorno de Pruebas del Sistema</code></pre>
-<p>Participantes</p>
-<pre><code>Técnicos de Sistemas
-Especialistas en Comunicaciones
-Equipo de Arquitectura
-Equipo del Proyecto</code></pre>
+<p>Para ello se asegura la disponibilidad del entorno y de los datos necesarios para ejecutar estas pruebas, se preparan las bibliotecas o librerías que se estimen oportunas para la realización de las mismas, así como los procedimientos manuales o automáticos asociados.</p>
+<section id="productos-9" class="level5 unlisted unnumbered">
+<h5 class="unlisted unnumbered anchored" data-anchor-id="productos-9">Productos</h5>
+<section id="de-entrada-9" class="level6 unlisted unnumbered">
+<h6 class="unlisted unnumbered anchored" data-anchor-id="de-entrada-9">De entrada</h6>
+<ul>
+<li>Plan de Pruebas (DSI 10.3)</li>
+</ul>
+</section>
+<section id="de-salida-9" class="level6 unlisted unnumbered">
+<h6 class="unlisted unnumbered anchored" data-anchor-id="de-salida-9">De salida</h6>
+<ul>
+<li>Entorno de Pruebas del Sistema</li>
+</ul>
+</section>
+</section>
+<section id="participantes-9" class="level5 unlisted unnumbered">
+<h5 class="unlisted unnumbered anchored" data-anchor-id="participantes-9">Participantes</h5>
+<ul>
+<li>Técnicos de Sistemas</li>
+<li>Especialistas en Comunicaciones</li>
+<li>Equipo de Arquitectura</li>
+<li>Equipo del Proyecto</li>
+</ul>
+</section>
 </section>
 <section id="tarea-csi-5.2-realización-de-las-pruebas-del-sistema" class="level4" data-number="6.1.5.2">
 <h4 data-number="6.1.5.2" class="anchored" data-anchor-id="tarea-csi-5.2-realización-de-las-pruebas-del-sistema"><span class="header-section-number">6.1.5.2</span> Tarea CSI 5.2: Realización de las Pruebas del Sistema</h4>
 <p>El objetivo de esta tarea es comprobar la integración de todos los subsistemas y componentes del sistema de información, así como la interacción del mismo con otros sistemas de información con los que se relaciona, de acuerdo a las verificaciones establecidas para el nivel de pruebas del sistema.</p>
-<p>Para cada verificación establecida, se realizan las pruebas con los casos de pruebas asociados, efectuando el correspondiente análisis e informe de los resultados y generando un registro conforme a los criterios establecidos en el plan de pruebas. Productos</p>
-<p>De entrada</p>
+<p>Para cada verificación establecida, se realizan las pruebas con los casos de pruebas asociados, efectuando el correspondiente análisis e informe de los resultados y generando un registro conforme a los criterios establecidos en el plan de pruebas.</p>
+<section id="productos-10" class="level5 unlisted unnumbered">
+<h5 class="unlisted unnumbered anchored" data-anchor-id="productos-10">Productos</h5>
+<section id="de-entrada-10" class="level6 unlisted unnumbered">
+<h6 class="unlisted unnumbered anchored" data-anchor-id="de-entrada-10">De entrada</h6>
 <pre><code>Producto Software (CSI 2.1 y CSI 2.2)
 Entorno de Pruebas del Sistema (CSI 5.1)
 Plan de Pruebas (DSI 10.3)</code></pre>
-<p>De salida</p>
+</section>
+<section id="de-salida-10" class="level6 unlisted unnumbered">
+<h6 class="unlisted unnumbered anchored" data-anchor-id="de-salida-10">De salida</h6>
 <pre><code>Resultado de las Pruebas del Sistema</code></pre>
-<p>Prácticas</p>
+</section>
+</section>
+<section id="prácticas-2" class="level5 unlisted unnumbered">
+<h5 class="unlisted unnumbered anchored" data-anchor-id="prácticas-2">Prácticas</h5>
 <pre><code>Pruebas del Sistema</code></pre>
-<p>Participantes</p>
-<pre><code>Equipo del Proyecto</code></pre>
+</section>
+<section id="participantes-10" class="level5 unlisted unnumbered">
+<h5 class="unlisted unnumbered anchored" data-anchor-id="participantes-10">Participantes</h5>
+<ul>
+<li>Equipo del Proyecto</li>
+</ul>
+</section>
 </section>
 <section id="tarea-csi-5.3-evaluación-del-resultado-de-las-pruebas-del-sistema" class="level4" data-number="6.1.5.3">
 <h4 data-number="6.1.5.3" class="anchored" data-anchor-id="tarea-csi-5.3-evaluación-del-resultado-de-las-pruebas-del-sistema"><span class="header-section-number">6.1.5.3</span> Tarea CSI 5.3: Evaluación del Resultado de las Pruebas del Sistema</h4>
 <p>El objetivo de esta actividad es analizar los resultados de las pruebas del sistema de información y efectuar su evaluación. Dicha evaluación recoge el grado de cumplimiento de las mismas, y consiste en:</p>
-<pre><code>Comparar los resultados obtenidos con los esperados
-Identificar el origen de cada problema detectado para poder remitirlo a quien proceda, determinar la envergadura de las modificaciones y qué acciones deben llevarse a cabo para resolverlo de forma satisfactoria.
-Indicar si el plan de pruebas debe volver a realizarse total o parcialmente, y si será necesario contemplar nuevos casos de prueba no considerados anteriormente.</code></pre>
-<p>Productos</p>
-<p>De entrada</p>
-<pre><code>Resultado de las pruebas del Sistema (CSI 5.2)
-Plan de Pruebas (DSI 10.3)</code></pre>
-<p>De salida</p>
-<pre><code>Evaluación del Resultado de las Pruebas del Sistema</code></pre>
-<p>Participantes</p>
-<pre><code>Analistas
-Jefe de Proyecto</code></pre>
+<ul>
+<li>Comparar los resultados obtenidos con los esperados</li>
+<li>Identificar el origen de cada problema detectado para poder remitirlo a quien proceda, determinar la envergadura de las modificaciones y qué acciones deben llevarse a cabo para resolverlo de forma satisfactoria.</li>
+<li>Indicar si el plan de pruebas debe volver a realizarse total o parcialmente, y si será necesario contemplar nuevos casos de prueba no considerados anteriormente.</li>
+</ul>
+</section>
+</section>
+<section id="productos-11" class="level3 unlisted unnumbered">
+<h3 class="unlisted unnumbered anchored" data-anchor-id="productos-11">Productos</h3>
+<section id="de-entrada-11" class="level5 unlisted unnumbered">
+<h5 class="unlisted unnumbered anchored" data-anchor-id="de-entrada-11">De entrada</h5>
+<ul>
+<li>Resultado de las pruebas del Sistema (CSI 5.2)</li>
+<li>Plan de Pruebas (DSI 10.3)</li>
+</ul>
+<section id="de-salida-11" class="level6 unlisted unnumbered">
+<h6 class="unlisted unnumbered anchored" data-anchor-id="de-salida-11">De salida</h6>
+<ul>
+<li>Evaluación del Resultado de las Pruebas del Sistema</li>
+</ul>
+</section>
+</section>
+<section id="participantes-11" class="level5 unlisted unnumbered">
+<h5 class="unlisted unnumbered anchored" data-anchor-id="participantes-11">Participantes</h5>
+<ul>
+<li>Analistas</li>
+<li>Jefe de Proyecto</li>
+</ul>
 </section>
 </section>
 <section id="actividad-csi-6-elaboración-de-los-manuales-de-usuario" class="level3" data-number="6.1.6">
@@ -701,18 +867,36 @@ Equipo del Proyecto</code></pre>
 <h4 data-number="6.1.6.1" class="anchored" data-anchor-id="tarea-csi-6.1-elaboración-de-los-manuales-de-usuario"><span class="header-section-number">6.1.6.1</span> Tarea CSI 6.1: Elaboración de los Manuales de Usuario</h4>
 <p>El objetivo de esta tarea es elaborar la documentación de usuario, tanto usuario final como de explotación, de acuerdo a los requisitos establecidos en la tarea Especificación de Requisitos de Documentación de Usuario (DSI 11.1), y recogidos en el catálogo de requisitos.</p>
 <p>Los requisitos de documentación especifican aspectos relativos a los tipos de documentos a elaborar y estándares a seguir en la generación de los mismos, y para cada uno de ellos:</p>
-<pre><code>Formato y soporte en el que se desarrollarán
-Estructura
-Distribución y mantenimiento de la documentación y número de copias a editar.</code></pre>
-<p>Productos</p>
-<p>De entrada</p>
-<pre><code>Catálogo de Requisitos (DSI 11.1)
-Producto Software (CSI 2.2)</code></pre>
-<p>De salida</p>
-<pre><code>Producto Software:
-    Manuales de Usuario</code></pre>
-<p>Participantes</p>
-<pre><code>Equipo del Proyecto</code></pre>
+<ul>
+<li>Formato y soporte en el que se desarrollarán</li>
+<li>Estructura</li>
+<li>Distribución y mantenimiento de la documentación y número de copias a editar.</li>
+</ul>
+<section id="productos-12" class="level5 unlisted unnumbered">
+<h5 class="unlisted unnumbered anchored" data-anchor-id="productos-12">Productos</h5>
+<section id="de-entrada-12" class="level6 unlisted unnumbered">
+<h6 class="unlisted unnumbered anchored" data-anchor-id="de-entrada-12">De entrada</h6>
+<ul>
+<li>Catálogo de Requisitos (DSI 11.1)</li>
+<li>Producto Software (CSI 2.2)</li>
+</ul>
+</section>
+<section id="de-salida-12" class="level6 unlisted unnumbered">
+<h6 class="unlisted unnumbered anchored" data-anchor-id="de-salida-12">De salida</h6>
+<ul>
+<li>Producto Software:
+<ul>
+<li>Manuales de Usuario</li>
+</ul></li>
+</ul>
+</section>
+</section>
+<section id="participantes-12" class="level5 unlisted unnumbered">
+<h5 class="unlisted unnumbered anchored" data-anchor-id="participantes-12">Participantes</h5>
+<ul>
+<li>Equipo del Proyecto</li>
+</ul>
+</section>
 </section>
 </section>
 <section id="actividad-csi-7-definición-de-la-formación-de-usuarios-finales" class="level3" data-number="6.1.7">
@@ -720,9 +904,12 @@ Producto Software (CSI 2.2)</code></pre>
 <p>En esta actividad se establecen las necesidades de formación del usuario final, con el objetivo de conseguir la explotación eficaz del nuevo sistema.</p>
 <p>Para la definición de la formación hay que tener en cuenta las características funcionales y técnicas propias del sistema de información, así como los requisitos relacionados con la formación del usuario final, establecidos en la tarea Especificación de Requisitos de Implantación (DSI 11.2).</p>
 <p>El producto resultante de esta actividad es la especificación de la formación de usuarios finales, que consta de los siguientes elementos:</p>
-<pre><code>Esquema de formación
-Materiales y entornos de formación.</code></pre>
-<p>En el proceso Implantación y Aceptación del Sistema (IAS), se unifican las especificaciones de formación de cada sistema de información implicado en la implantación y se elabora un único plan de formación que esté alineado con el plan de implantación del sistema. TAREA PRODUCTOS TÉCNICAS Y PRÁCTICAS PARTICIPANTES CSI 7.1: Definición del Esquema de Formación</p>
+<ul>
+<li>Esquema de formación</li>
+<li>Materiales y entornos de formación.</li>
+</ul>
+<p>En el proceso Implantación y Aceptación del Sistema (IAS), se unifican las especificaciones de formación de cada sistema de información implicado en la implantación y se elabora un único plan de formación que esté alineado con el plan de implantación del sistema.</p>
+<p>TAREA PRODUCTOS TÉCNICAS Y PRÁCTICAS PARTICIPANTES CSI 7.1: Definición del Esquema de Formación</p>
 <pre><code>Especificación de la Formación a Usuarios Finales:
     Esquema de Formación
 
@@ -734,41 +921,69 @@ Analistas</code></pre>
     Materiales y Entornos de Formación
 
 
-
 Analistas
 Equipo de Formación</code></pre>
 <section id="tarea-csi-7.1-definición-del-esquema-de-formación" class="level4" data-number="6.1.7.1">
 <h4 data-number="6.1.7.1" class="anchored" data-anchor-id="tarea-csi-7.1-definición-del-esquema-de-formación"><span class="header-section-number">6.1.7.1</span> Tarea CSI 7.1: Definición del Esquema de Formación</h4>
 <p>El objetivo de esta tarea es la definición del contenido de la formación del usuario final del sistema, realizando, a su vez, una estimación de la duración de los distintos apartados o acciones formativas que se contemplen.</p>
-<p>La especificación de los esquemas de formación se puede particularizar para cada perfil de usuario identificado en el proceso Análisis del Sistema de Información (ASI), si se considera necesario. Productos</p>
-<p>De entrada</p>
-<pre><code>Catálogo de Requisitos (DSI 11.2)</code></pre>
-<p>De salida</p>
-<pre><code>Especificación de la Formación a Usuarios Finales
-    Esquema de Formación</code></pre>
-<p>Participantes</p>
-<pre><code>Analistas</code></pre>
+<p>La especificación de los esquemas de formación se puede particularizar para cada perfil de usuario identificado en el proceso Análisis del Sistema de Información (ASI), si se considera necesario.</p>
+<section id="productos-13" class="level5 unlisted unnumbered">
+<h5 class="unlisted unnumbered anchored" data-anchor-id="productos-13">Productos</h5>
+<section id="de-entrada-13" class="level6 unlisted unnumbered">
+<h6 class="unlisted unnumbered anchored" data-anchor-id="de-entrada-13">De entrada</h6>
+<ul>
+<li>Catálogo de Requisitos (DSI 11.2)</li>
+</ul>
+</section>
+<section id="de-salida-13" class="level6 unlisted unnumbered">
+<h6 class="unlisted unnumbered anchored" data-anchor-id="de-salida-13">De salida</h6>
+<ul>
+<li>Especificación de la Formación a Usuarios Finales
+<ul>
+<li>Esquema de Formación</li>
+</ul></li>
+</ul>
+</section>
+</section>
+<section id="participantes-13" class="level5 unlisted unnumbered">
+<h5 class="unlisted unnumbered anchored" data-anchor-id="participantes-13">Participantes</h5>
+<ul>
+<li>Analistas</li>
+</ul>
+</section>
 </section>
 <section id="tarea-csi-7.2-especificación-de-los-recursos-y-entornos-de-formación" class="level4" data-number="6.1.7.2">
 <h4 data-number="6.1.7.2" class="anchored" data-anchor-id="tarea-csi-7.2-especificación-de-los-recursos-y-entornos-de-formación"><span class="header-section-number">6.1.7.2</span> Tarea CSI 7.2: Especificación de los Recursos y Entornos de Formación</h4>
 <p>El objetivo de esta tarea es detallar los recursos necesarios para llevar a cabo la formación, relativos a los materiales de formación, equipos físicos y lógicos, aulas, etc.</p>
-<p>También se determinan las características que debe reunir el entorno para realizar la formación, en cuanto a la necesidad de hacer cargas iniciales o migración de datos, activar los procedimientos de seguridad y control de acceso específicos etc. Productos</p>
-<p>De entrada</p>
+<p>También se determinan las características que debe reunir el entorno para realizar la formación, en cuanto a la necesidad de hacer cargas iniciales o migración de datos, activar los procedimientos de seguridad y control de acceso específicos etc.</p>
+<section id="productos-14" class="level5 unlisted unnumbered">
+<h5 class="unlisted unnumbered anchored" data-anchor-id="productos-14">Productos</h5>
+<section id="de-entrada-14" class="level6 unlisted unnumbered">
+<h6 class="unlisted unnumbered anchored" data-anchor-id="de-entrada-14">De entrada</h6>
 <pre><code>Catálogo de Requisitos (DSI 11.2)
 Especificación de la Formación a Usuarios Finales (CSI 7.1)</code></pre>
-<p>De salida</p>
+</section>
+<section id="de-salida-14" class="level6 unlisted unnumbered">
+<h6 class="unlisted unnumbered anchored" data-anchor-id="de-salida-14">De salida</h6>
 <pre><code>Especificación de la Formación a Usuarios Finales
     Materiales y Entornos de Formación</code></pre>
-<p>Participantes</p>
-<pre><code>Analistas
-Equipo de Formación</code></pre>
+</section>
+</section>
+<section id="participantes-14" class="level5 unlisted unnumbered">
+<h5 class="unlisted unnumbered anchored" data-anchor-id="participantes-14">Participantes</h5>
+<ul>
+<li>Analistas</li>
+<li>Equipo de Formación</li>
+</ul>
+</section>
 </section>
 </section>
 <section id="actividad-csi-8-construcción-de-los-componentes-y-procedimientos-de-migración-y-carga-inicial-de-datos" class="level3" data-number="6.1.8">
 <h3 data-number="6.1.8" class="anchored" data-anchor-id="actividad-csi-8-construcción-de-los-componentes-y-procedimientos-de-migración-y-carga-inicial-de-datos"><span class="header-section-number">6.1.8</span> Actividad CSI 8: Construcción de los Componentes y Procedimientos de Migración y Carga Inicial de Datos</h3>
 <p>El objetivo de esta actividad es la codificación y prueba de los componentes y procedimientos de migración y carga inicial de datos, a partir de las especificaciones recogidas en el plan de migración y carga inicial de datos obtenido en el proceso Diseño del Sistema de Información (DSI).</p>
 <p>Previamente a la generación del código, se prepara la infraestructura tecnológica necesaria para realizar la codificación y las pruebas de los distintos componentes y procedimientos asociados, de acuerdo a las características del entorno de migración especificado en el plan de migración y carga inicial de datos.</p>
-<p>Finalmente, se llevan a cabo las verificaciones establecidas en la especificación técnica del plan de pruebas propio de la migración. TAREA PRODUCTOS TÉCNICAS Y PRÁCTICAS PARTICIPANTES CSI 8.1: Preparación del Entorno de Migración y Carga Inicial de Datos</p>
+<p>Finalmente, se llevan a cabo las verificaciones establecidas en la especificación técnica del plan de pruebas propio de la migración.</p>
+<p>TAREA PRODUCTOS TÉCNICAS Y PRÁCTICAS PARTICIPANTES CSI 8.1: Preparación del Entorno de Migración y Carga Inicial de Datos</p>
 <pre><code>Entorno de Migración
 
 
@@ -800,50 +1015,100 @@ Equipo del Proyecto</code></pre>
 <section id="tarea-csi-8.1-preparación-del-entorno-de-migración-y-carga-inicial-de-datos" class="level4" data-number="6.1.8.1">
 <h4 data-number="6.1.8.1" class="anchored" data-anchor-id="tarea-csi-8.1-preparación-del-entorno-de-migración-y-carga-inicial-de-datos"><span class="header-section-number">6.1.8.1</span> Tarea CSI 8.1: Preparación del Entorno de Migración y Carga Inicial de Datos</h4>
 <p>Se dispone el entorno en el que se van a construir los componentes y procedimientos de migración y carga inicial de datos, considerando las bibliotecas o librerías a utilizar, herramientas o utilidades específicas para la conversión, y compiladores, entre otros, cuya necesidad se habrá establecido en la tarea Especificación del Entorno de Migración (DSI 9.1).</p>
-<p>Asimismo, se determinan los datos necesarios para realizar las pruebas de los componentes y procedimientos asociados y se configura el entorno de acuerdo a dichas necesidades. Productos</p>
-<p>De entrada</p>
-<pre><code>Plan de Migración y Carga Inicial de Datos (DSI 9.4)</code></pre>
-<p>De salida</p>
-<pre><code>Entorno de Migración</code></pre>
-<p>Participantes</p>
-<pre><code>Equipo del Proyecto
-Técnicos de Sistemas
-Equipo de Operación
-Equipo de Seguridad
-Administradores de Bases de Datos</code></pre>
+<p>Asimismo, se determinan los datos necesarios para realizar las pruebas de los componentes y procedimientos asociados y se configura el entorno de acuerdo a dichas necesidades.</p>
+<section id="productos-15" class="level5 unlisted unnumbered">
+<h5 class="unlisted unnumbered anchored" data-anchor-id="productos-15">Productos</h5>
+<section id="de-entrada-15" class="level6 unlisted unnumbered">
+<h6 class="unlisted unnumbered anchored" data-anchor-id="de-entrada-15">De entrada</h6>
+<ul>
+<li>Plan de Migración y Carga Inicial de Datos (DSI 9.4)</li>
+</ul>
+</section>
+<section id="de-salida-15" class="level6 unlisted unnumbered">
+<h6 class="unlisted unnumbered anchored" data-anchor-id="de-salida-15">De salida</h6>
+<ul>
+<li>Entorno de Migración</li>
+</ul>
+</section>
+</section>
+<section id="participantes-15" class="level5 unlisted unnumbered">
+<h5 class="unlisted unnumbered anchored" data-anchor-id="participantes-15">Participantes</h5>
+<ul>
+<li>Equipo del Proyecto</li>
+<li>Técnicos de Sistemas</li>
+<li>Equipo de Operación</li>
+<li>Equipo de Seguridad</li>
+<li>Administradores de Bases de Datos</li>
+</ul>
+</section>
 </section>
 <section id="tarea-csi-8.2-generación-del-código-de-los-componentes-y-procedimientos-de-migración-y-carga-inicial-de-datos" class="level4" data-number="6.1.8.2">
 <h4 data-number="6.1.8.2" class="anchored" data-anchor-id="tarea-csi-8.2-generación-del-código-de-los-componentes-y-procedimientos-de-migración-y-carga-inicial-de-datos"><span class="header-section-number">6.1.8.2</span> Tarea CSI 8.2: Generación del Código de los Componentes y Procedimientos de Migración y Carga Inicial de Datos</h4>
 <p>El objetivo de esta tarea es la generación del código correspondiente a los procedimientos y componentes necesarios para llevar a cabo la migración, definidos en el plan de migración y carga inicial de datos obtenido en las tareas Diseño de Procedimientos de Migración y Carga Inicial (DSI 9.2) y Diseño Detallado de Componentes de Migración y Carga Inicial (DSI 9.3).</p>
-<p>Para generar el código fuente se tienen en cuenta los estándares de nomenclatura y codificación utilizados por la organización y recogidos en el catálogo de normas para este tipo de componentes. Productos</p>
-<p>De entrada</p>
-<pre><code>Catálogo de Normas (DSI 1.4)
-Plan de Migración y Carga Inicial de Datos (DSI 9.4)</code></pre>
-<p>De salida</p>
-<pre><code>Código Fuente de los Componentes de Migración y Carga Inicial de Datos
-Procedimientos de Migración y Carga Inicial de Datos</code></pre>
-<p>Participantes</p>
-<pre><code>Programadores</code></pre>
+<p>Para generar el código fuente se tienen en cuenta los estándares de nomenclatura y codificación utilizados por la organización y recogidos en el catálogo de normas para este tipo de componentes.</p>
+</section>
+<section id="productos-16" class="level4 unlisted unnumbered">
+<h4 class="unlisted unnumbered anchored" data-anchor-id="productos-16">Productos</h4>
+<section id="de-entrada-16" class="level5 unlisted unnumbered">
+<h5 class="unlisted unnumbered anchored" data-anchor-id="de-entrada-16">De entrada</h5>
+<ul>
+<li>Catálogo de Normas (DSI 1.4)</li>
+<li>Plan de Migración y Carga Inicial de Datos (DSI 9.4)</li>
+</ul>
+</section>
+<section id="de-salida-16" class="level5 unlisted unnumbered">
+<h5 class="unlisted unnumbered anchored" data-anchor-id="de-salida-16">De salida</h5>
+<ul>
+<li>Código Fuente de los Componentes de Migración y Carga Inicial de Datos</li>
+<li>Procedimientos de Migración y Carga Inicial de Datos</li>
+</ul>
+</section>
+</section>
+<section id="participantes-16" class="level4 unlisted unnumbered">
+<h4 class="unlisted unnumbered anchored" data-anchor-id="participantes-16">Participantes</h4>
+<ul>
+<li>Programadores</li>
+</ul>
 </section>
 <section id="tarea-csi-8.3-realización-y-evaluación-de-las-pruebas-de-migración-y-carga-inicial-de-datos" class="level4" data-number="6.1.8.3">
 <h4 data-number="6.1.8.3" class="anchored" data-anchor-id="tarea-csi-8.3-realización-y-evaluación-de-las-pruebas-de-migración-y-carga-inicial-de-datos"><span class="header-section-number">6.1.8.3</span> Tarea CSI 8.3: Realización y Evaluación de las Pruebas de Migración y Carga Inicial de Datos</h4>
 <p>El objetivo de esta tarea es efectuar las pruebas de los distintos componentes y procedimientos de migración y evaluar su resultado. Esta evaluación recoge el grado de cumplimiento de las mismas, y consiste en:</p>
-<pre><code>Comparar los resultados obtenidos con los esperados
-Identificar el origen de cada problema detectado para poder remitirlo a quien proceda, determinar la envergadura de las modificaciones y qué acciones deben llevarse a cabo para resolverlo de forma satisfactoria.
-Indicar si el plan de pruebas debe volver a realizarse total o parcialmente, y si será necesario contemplar nuevos casos de prueba no considerados anteriormente.</code></pre>
-<p>Productos</p>
-<p>De entrada</p>
-<pre><code>Plan de Migración y Carga Inicial de Datos (DSI 9.4)
-Código Fuente de los Componentes de Migración y Carga Inicial de Datos (CSI 8.2)
-Procedimientos de Migración y Carga Inicial de Datos (CSI 8.2)</code></pre>
-<p>De salida</p>
-<pre><code>Resultado de las Pruebas de Migración y Carga Inicial de Datos
-Evaluación del Resultado de las Pruebas de Migración y Carga Inicial de Datos</code></pre>
-<p>Prácticas</p>
-<pre><code>Pruebas Unitarias
-Pruebas de Integración</code></pre>
-<p>Participantes</p>
-<pre><code>Equipo del Proyecto</code></pre>
+<ul>
+<li>Comparar los resultados obtenidos con los esperados</li>
+<li>Identificar el origen de cada problema detectado para poder remitirlo a quien proceda, determinar la envergadura de las modificaciones y qué acciones deben llevarse a cabo para resolverlo de forma satisfactoria.</li>
+<li>Indicar si el plan de pruebas debe volver a realizarse total o parcialmente, y si será necesario contemplar nuevos casos de prueba no considerados anteriormente.</li>
+</ul>
+<section id="productos-17" class="level5 unlisted unnumbered">
+<h5 class="unlisted unnumbered anchored" data-anchor-id="productos-17">Productos</h5>
+<section id="de-entrada-17" class="level6 unlisted unnumbered">
+<h6 class="unlisted unnumbered anchored" data-anchor-id="de-entrada-17">De entrada</h6>
+<ul>
+<li>Plan de Migración y Carga Inicial de Datos (DSI 9.4)</li>
+<li>Código Fuente de los Componentes de Migración y Carga Inicial de Datos (CSI 8.2)</li>
+<li>Procedimientos de Migración y Carga Inicial de Datos (CSI 8.2)</li>
+</ul>
+</section>
+<section id="de-salida-17" class="level6 unlisted unnumbered">
+<h6 class="unlisted unnumbered anchored" data-anchor-id="de-salida-17">De salida</h6>
+<ul>
+<li>Resultado de las Pruebas de Migración y Carga Inicial de Datos</li>
+<li>Evaluación del Resultado de las Pruebas de Migración y Carga Inicial de Datos</li>
+</ul>
+</section>
+</section>
+<section id="prácticas-3" class="level5 unlisted unnumbered">
+<h5 class="unlisted unnumbered anchored" data-anchor-id="prácticas-3">Prácticas</h5>
+<ul>
+<li>Pruebas Unitarias</li>
+<li>Pruebas de Integración</li>
+</ul>
+</section>
+<section id="participantes-17" class="level5 unlisted unnumbered">
+<h5 class="unlisted unnumbered anchored" data-anchor-id="participantes-17">Participantes</h5>
+<ul>
+<li>Equipo del Proyecto</li>
+</ul>
+</section>
 </section>
 </section>
 <section id="actividad-csi-9-aprobación-del-sistema-de-información" class="level3" data-number="6.1.9">
@@ -866,29 +1131,85 @@ Pruebas de Integración</code></pre>
 </tr>
 </tbody>
 </table>
-<section id="section" class="level4" data-number="6.1.9.1">
-<h4 data-number="6.1.9.1" class="anchored" data-anchor-id="section"><span class="header-section-number">6.1.9.1</span> </h4>
-<p>En esta tarea se recopilan los productos del sistema de información y se presentan al Comité de Seguimiento para su aprobación. Productos</p>
-<p>De entrada</p>
-<pre><code>Resultado y evaluación de las Pruebas Unitarias (CSI 3.2)
-Evaluación del Resultado de las Pruebas de Integración (CSI 4.3)
-Evaluación del Resultado de las Pruebas del Sistema (CSI 5.3)
-Producto Software (CSI 6.1)
-Especificación de la Formación a Usuarios Finales (CSI 7.2)
-Código Fuente de los Componentes de Migración y Carga Inicial de Datos (CSI 8.2)
-Procedimientos de Migración y Carga Inicial de Datos (CSI 8.2)
-Evaluación del Resultado de las Pruebas de Migración y Carga Inicial de Datos (CSI 8.3)</code></pre>
-<p>De salida</p>
-<pre><code>Sistema de Información:
-    Aprobación del Sistema de Información</code></pre>
-<p>Prácticas</p>
-<pre><code>Presentación</code></pre>
-<p>Participantes</p>
-<pre><code>Comité de Seguimiento
-Jefe de Proyecto</code></pre>
-
-
+<section id="tarea-csi-9.1-presentación-y-aprobación-del-sistema-de-información" class="level4" data-number="6.1.9.1">
+<h4 data-number="6.1.9.1" class="anchored" data-anchor-id="tarea-csi-9.1-presentación-y-aprobación-del-sistema-de-información"><span class="header-section-number">6.1.9.1</span> Tarea CSI 9.1: Presentación y Aprobación del Sistema de Información</h4>
+<p>En esta tarea se recopilan los productos del sistema de información y se presentan al Comité de Seguimiento para su aprobación.</p>
+<section id="productos-18" class="level5 unlisted unnumbered">
+<h5 class="unlisted unnumbered anchored" data-anchor-id="productos-18">Productos</h5>
+<section id="de-entrada-18" class="level6 unlisted unnumbered">
+<h6 class="unlisted unnumbered anchored" data-anchor-id="de-entrada-18">De entrada</h6>
+<ul>
+<li>Resultado y evaluación de las Pruebas Unitarias (CSI 3.2)</li>
+<li>Evaluación del Resultado de las Pruebas de Integración (CSI 4.3)</li>
+<li>Evaluación del Resultado de las Pruebas del Sistema (CSI 5.3)</li>
+<li>Producto Software (CSI 6.1)</li>
+<li>Especificación de la Formación a Usuarios Finales (CSI 7.2)</li>
+<li>Código Fuente de los Componentes de Migración y Carga Inicial de Datos (CSI 8.2)</li>
+<li>Procedimientos de Migración y Carga Inicial de Datos (CSI 8.2)</li>
+<li>Evaluación del Resultado de las Pruebas de Migración y Carga Inicial de Datos (CSI 8.3)</li>
+</ul>
 </section>
+<section id="de-salida-18" class="level6 unlisted unnumbered">
+<h6 class="unlisted unnumbered anchored" data-anchor-id="de-salida-18">De salida</h6>
+<ul>
+<li>Sistema de Información:
+<ul>
+<li>Aprobación del Sistema de Información</li>
+</ul></li>
+</ul>
+</section>
+</section>
+<section id="prácticas-4" class="level5 unlisted unnumbered">
+<h5 class="unlisted unnumbered anchored" data-anchor-id="prácticas-4">Prácticas</h5>
+<ul>
+<li>Presentación</li>
+</ul>
+</section>
+<section id="participantes-18" class="level5 unlisted unnumbered">
+<h5 class="unlisted unnumbered anchored" data-anchor-id="participantes-18">Participantes</h5>
+<ul>
+<li>Comité de Seguimiento</li>
+<li>Jefe de Proyecto</li>
+</ul>
+</section>
+</section>
+</section>
+</section>
+<section id="participantes-en-las-actividades-del-proceso-csi" class="level2 unlisted" data-number="6.2">
+<h2 class="unlisted anchored" data-number="6.2" data-anchor-id="participantes-en-las-actividades-del-proceso-csi"><span class="header-section-number">6.2</span> Participantes en las Actividades del Proceso CSI</h2>
+<p>CONSTRUCCIÓN DEL SISTEMA DE INFORMACIÓN ACTIVIDADES CSI 1 CSI 2 CSI 3 CSI 4 CSI 5 CSI 6 CSI 7 CSI 8 CSI 9 Administrador de B/D X X<br>
+Analistas X X X<br>
+Comité de Dirección<br>
+Comité de Seguimiento X Equipo de Arquitectura X X<br>
+Equipo de Formación X<br>
+Equipo de Operación X X<br>
+Equipo de Proyecto X X X X X<br>
+Equipo de Seguridad X<br>
+Jefe de Proyecto X X Responsable de Operación<br>
+Técnico de Comunicaciones X X<br>
+Técnico de Sistemas X X X X X<br>
+Programadores X X X</p>
+</section>
+<section id="técnicasprácticas-utilizadas-en-las-actividades-del-proceso-csi" class="level2" data-number="6.3">
+<h2 data-number="6.3" class="anchored" data-anchor-id="técnicasprácticas-utilizadas-en-las-actividades-del-proceso-csi"><span class="header-section-number">6.3</span> Técnicas/prácticas utilizadas en las actividades del proceso CSI</h2>
+<p>CONSTRUCCIÓN DEL SISTEMA DE INFORMACIÓN ACTIVIDADES CSI 1 CSI 2 CSI 3 CSI 4 CSI 5 CSI 6 CSI 7 CSI 8 CSI 9 Pruebas de Integración X X<br>
+Pruebas del Sistema X<br>
+Pruebas Unitarias X X</p>
+<section id="actividades" class="level3 unlisted unnumbered">
+<h3 class="unlisted unnumbered anchored" data-anchor-id="actividades">Actividades</h3>
+<ul>
+<li>Actividad CSI 1: Preparación del Entorno de Generación y Construcción</li>
+<li>Actividad CSI 2: Generación del Código de los Componentes y Procedimientos</li>
+<li>Actividad CSI 3: Ejecución de las Pruebas Unitarias</li>
+<li>Actividad CSI 4: Ejecución de las Pruebas de Integración</li>
+<li>Actividad CSI 5: Ejecución de las Pruebas del Sistema</li>
+<li>Actividad CSI 6: Elaboración de los Manuales de Usuario</li>
+<li>Actividad CSI 7: Definición de la Formación de Usuarios Finales</li>
+<li>Actividad CSI 8: Construcción de los Componentes y Procedimientos de Migración y Carga Inicial de Datos</li>
+<li>Actividad CSI 9: Aprobación del Sistema de Información</li>
+</ul>
+
+
 </section>
 </section>
 

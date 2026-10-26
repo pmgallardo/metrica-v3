@@ -1206,24 +1206,351 @@ Casual: un módulo realiza un conjunto de tareas que tienen poca o ninguna rela
 </section>
 <section id="normalizacion" class="level3" data-number="13.2.14">
 <h3 data-number="13.2.14" class="anchored" data-anchor-id="normalizacion"><span class="header-section-number">13.2.14</span> Normalización</h3>
+<p>La teoría de la normalización tiene por objetivo la eliminación de dependencias entre atributos que originen anomalías en la actualización de los datos, y proporcionar una estructura más regular para la representación de las tablas, constituyendo el soporte para el diseño de bases de datos relacionales.</p>
+<p>Como resultado de la aplicación de esta técnica se obtiene un modelo lógico de datos normalizado.</p>
+<section id="descripción-7" class="level4 unnumbered unlisted">
+<h4 class="unnumbered unlisted anchored" data-anchor-id="descripción-7">Descripción</h4>
+<p>La teoría de la normalización, como técnica formal para organizar los datos, ayuda a encontrar fallos y a corregirlos, evitando así introducir anomalías en las operaciones de manipulación de datos.</p>
+<p>Se dice que una relación está en una determinada forma normal si satisface un cierto conjunto de restricciones sobre los atributos. Cuanto más restricciones existan, menor será el número de relaciones que las satisfagan, así, por ejemplo, una relación en tercera forma normal estará también en segunda y en primera forma normal.</p>
+<p>Antes de definir las distintas formas normales se explican, muy brevemente, algunos conceptos necesarios para su comprensión.</p>
+<section id="dependencia-funcional" class="level5 unnumbered unlisted">
+<h5 class="unnumbered unlisted anchored" data-anchor-id="dependencia-funcional">Dependencia funcional</h5>
+<p>Un atributo <span class="math inline">\(Y\)</span> se dice que depende funcionalmente de otro <span class="math inline">\(X\)</span> si, y sólo si, a cada valor de <span class="math inline">\(X\)</span> le corresponde un único valor de <span class="math inline">\(Y\)</span>, lo que se expresa de la siguiente forma: <span class="math inline">\(X \rightarrow Y\)</span> (también se dice que <span class="math inline">\(X\)</span> determina o implica a <span class="math inline">\(Y\)</span>).</p>
+<p><span class="math inline">\(X\)</span> se denomina implicante o determinante e <span class="math inline">\(Y\)</span> es el implicado.</p>
+</section>
+<section id="dependencia-funcional-completa" class="level5 unnumbered unlisted">
+<h5 class="unnumbered unlisted anchored" data-anchor-id="dependencia-funcional-completa">Dependencia funcional completa</h5>
+<p>Un atributo <span class="math inline">\(Y\)</span> tiene dependencia funcional completa respecto de otro <span class="math inline">\(X\)</span>, si depende funcionalmente de él en su totalidad, es decir, no depende de ninguno de los posibles atributos que formen parte de <span class="math inline">\(X\)</span>.</p>
+</section>
+<section id="dependencia-transitiva" class="level5 unnumbered unlisted">
+<h5 class="unnumbered unlisted anchored" data-anchor-id="dependencia-transitiva">Dependencia transitiva</h5>
+<p>Un atributo depende transitivamente de otro si, y sólo si, depende de él a través de otro atributo. Así, <span class="math inline">\(Z\)</span> depende transitivamente de <span class="math inline">\(X\)</span>, si:</p>
+<p><span class="math inline">\(X \rightarrow Y\)</span> <span class="math inline">\(Y \not\rightarrow X\)</span> <span class="math inline">\(Y \rightarrow Z\)</span></p>
+<p>Se dice que <span class="math inline">\(X\)</span> implica a <span class="math inline">\(Z\)</span> a través de <span class="math inline">\(Y\)</span>.</p>
+<p>Una vez definidas las anteriores dependencias, se pueden enunciar las siguientes formas normales:</p>
+</section>
+<section id="primera-forma-normal-1fn" class="level5 unnumbered unlisted">
+<h5 class="unnumbered unlisted anchored" data-anchor-id="primera-forma-normal-1fn">Primera forma normal (1FN)</h5>
+<p>Una entidad está en 1FN si no tiene grupos repetitivos, es decir, un atributo sólo puede tomar un único valor de un dominio simple.</p>
+<p>Una vez identificados los atributos que no dependen funcionalmente de la clave principal, se formará con ellos una nueva entidad y se eliminarán de la antigua. La clave principal de la nueva entidad estará formada por la concatenación de uno o varios de sus atributos más la clave principal de la antigua entidad.</p>
+</section>
+<section id="segunda-forma-normal-2fn" class="level5 unnumbered unlisted">
+<h5 class="unnumbered unlisted anchored" data-anchor-id="segunda-forma-normal-2fn">Segunda forma normal (2FN)</h5>
+<p>Una entidad está en 2FN si está en 1FN y todos los atributos que no forman parte de las claves candidatas (atributos no principales) tienen dependencia funcional completa respecto de éstas, es decir, no hay dependencias funcionales de atributos no principales respecto de una parte de las claves. Cada uno de los atributos de una entidad depende de toda la clave.</p>
+<p>Una vez identificados los atributos que no dependen funcionalmente de toda la clave, sino sólo de parte de la misma, se formará con ellos una nueva entidad y se eliminarán de la antigua. La clave principal de la nueva entidad estará formada por la parte de la antigua de la que dependen funcionalmente.</p>
+</section>
+<section id="tercera-forma-normal-3fn" class="level5 unnumbered unlisted">
+<h5 class="unnumbered unlisted anchored" data-anchor-id="tercera-forma-normal-3fn">Tercera forma normal (3FN)</h5>
+<p>Una entidad está en 3FN si está en 2FN y todos sus atributos no principales dependen directamente de la clave primaria, es decir, no hay dependencias funcionales transitivas de atributos no principales respecto de las claves.</p>
+<p>Una vez identificados los atributos que dependen de otro atributo distinto de la clave, se formará con ellos una nueva entidad y se eliminarán de la antigua. La clave principal de la nueva entidad será el atributo del cual dependen. Este atributo en la entidad antigua, pasará a ser una clave ajena.</p>
+</section>
+</section>
+<section id="notación-8" class="level4 unnumbered unlisted">
+<h4 class="unnumbered unlisted anchored" data-anchor-id="notación-8">Notación</h4>
+<p>Una herramienta muy útil para visualizar las dependencias funcionales es el grafo o diagrama de dependencias funcionales, mediante el cual se representa un conjunto de atributos y las dependencias funcionales existentes entre ellos.</p>
+<p>En el grafo aparecen los nombres de los atributos unidos por flechas, las cuales indican las dependencias funcionales completas que existen entre ellos, partiendo del implicante hacia el implicado. Cuando el implicante de una dependencia no es un único atributo, es decir, se trata de un implicante compuesto, los atributos que lo componen se encierran en un recuadro y la flecha parte de éste, no de cada atributo.</p>
+<p><img src="../images/Notacion-normalizacion.png" class="img-fluid"></p>
+<p>En la figura se presenta un ejemplo de cómo se visualizan las dependencias. Se puede observar que cod_libro determina funcionalmente el título del libro y la editorial, como indica la correspondiente flecha; de forma análoga, num_socio determina el nombre, domicilio y el tel. del socio (suponiendo que sólo se proporciona un teléfono); mientras que ambos atributos en conjunto cod_libro y num_socio (lo que se indica mediante el recuadro que los incluye) determinan fecha_préstamo y fecha_dev.</p>
+</section>
+<section id="ejemplo-7" class="level4 unnumbered unlisted">
+<h4 class="unnumbered unlisted anchored" data-anchor-id="ejemplo-7">Ejemplo</h4>
+<p>Sea una entidad TÉCNICOS de un grupo de empresas, con los siguientes atributos:</p>
+<ul>
+<li>cod_empresa</li>
+<li>cod_técnico</li>
+<li>nombre_técnico</li>
+<li>cod_categoría</li>
+<li>categoría</li>
+<li>nombre_empresa</li>
+<li>fecha_alta</li>
+<li>fecha_baja</li>
+<li>cod_conoc</li>
+<li>título_conoc</li>
+<li>área_conoc</li>
+<li>grado</li>
+<li>cod_proyecto</li>
+<li>nombre_proyecto</li>
+<li>f_inicio</li>
+<li>f_fin</li>
+<li>f_asignación</li>
+<li>f_cese</li>
+<li>cod_cliente</li>
+<li>nombre_cliente</li>
+</ul>
+<p>La entidad TÉCNICOS tiene la clave principal compuesta por cod_empresa y cod_técnico, ya que, al ser varias empresas, el código de técnico no será único, sino que puede coincidir con otros de otras empresas.</p>
+<section id="primera-forma-normal-1fn-1" class="level5 unnumbered unlisted">
+<h5 class="unnumbered unlisted anchored" data-anchor-id="primera-forma-normal-1fn-1">Primera forma normal (1FN)</h5>
+<p>Evidentemente no se cumple la primera forma normal, ya que un técnico tendrá más de un conocimiento (lenguajes, sistemas operativos, bases de datos, etc.), es decir habrá varios valores de cod_conoc, por lo que este atributo y los asociados a conocimientos no dependen funcionalmente de la clave principal.</p>
+<p>Los atributos cod_conoc, título_conoc, área_conoc y grado identificados como no dependientes, formarán la nueva entidad CONOCIMIENTOS y desaparecerán de la entidad TÉCNICOS. La clave de la nueva entidad será cod_conoc concatenada con cod_empresa y cod_técnico.</p>
+<p>Por otro lado, en este sistema un técnico puede trabajar en más de un proyecto a tiempo parcial, por lo que cod_proyecto tampoco depende funcionalmente de la clave principal de TÉCNICOS.</p>
+<p>Se obtiene entonces la entidad PROYECTOS con los atributos de los proyectos, y su clave compuesta de cod_proyecto concatenada con cod_empresa y cod_técnico de la antigua entidad.</p>
+<p>Esta situación se completará con dos tipos de relaciones: Poseen, cuyo tipo de correspondencia es 1:N entre TÉCNICOS y CONOCIMIENTOS y Están asignados, también del tipo M:N entre TÉCNICOS y PROYECTOS, tal y como muestra el diagrama siguiente.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../images/Ejemplo-normalizacion-1.png" class="img-fluid figure-img"></p>
+<figcaption>Ejemplo de Primera Forma Normal</figcaption>
+</figure>
+</div>
+<p>Como se aprecia en la figura, se ha trasladado el atributo grado de la entidad CONOCIMIENTOS a la relación Poseen, pues es un atributo que determina la relación entre las dos entidades. También han sido trasladado los atributos que caracterizan la relación Están asignados, como son f_asignación y f_cese, ya que un técnico no siempre estará trabajando en un proyecto, sino en determinado periodo. Segunda forma normal (2FN)</p>
+<p>En la entidad TÉCNICOS se observa que el atributo nombre_empresa no tiene una dependencia funcional completa de la clave, sino que la tiene sólo de una parte de la misma: cod_empresa.</p>
+<p>El atributo identificado formará parte de una nueva entidad, EMPRESAS, siendo eliminado de la antigua. La clave principal de la nueva entidad será cod_empresa.</p>
+<p>Para representar la segunda forma normal en el modelo de datos, deberá añadirse un tipo de relación, Se componen, y el tipo de correspondencia 1:N.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../images/Ejemplo-normalizacion-2.png" class="img-fluid figure-img"></p>
+<figcaption>Ejemplo de Segunda Formal Normal</figcaption>
+</figure>
+</div>
+</section>
+<section id="tercera-forma-normal-3fn-1" class="level5 unnumbered unlisted">
+<h5 class="unnumbered unlisted anchored" data-anchor-id="tercera-forma-normal-3fn-1">Tercera forma normal (3FN)</h5>
+<p>En la entidad TÉCNICOS de la figura se puede observar que para un cod_técnico hay un único cod_categoría, es decir, el segundo depende funcionalmente del primero; para un cod_categoría hay una única categoría, es decir, que este atributo depende funcionalmente del cod_categoría; y por último, para un cod_categoría hay varios valores de cod_técnico. Así pues, la categoría depende transitivamente del cod_técnico, por lo que la entidad TÉCNICOS no está en 3FN.</p>
+<p>Una vez identificado el atributo categoría que depende de otro atributo distinto de la clave, cod_categoría, se formará con él una nueva entidad y se quitará de la antigua. La clave principal de la nueva entidad será el atributo del cual depende cod_categoría y en la entidad antigua pasará a ser una clave ajena.</p>
+<p>Del mismo modo, puede observarse que la entidad PROYECTOS tampoco está en 3FN, pues el nombre_cliente depende de cod_cliente, que no forma parte de la clave de la entidad.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../images/Ejemplo-normalizacion-3.png" class="img-fluid figure-img"></p>
+<figcaption>Ejemplo de Tercera Forma Normal</figcaption>
+</figure>
+</div>
+<p>Así pues, aparecen dos entidades nuevas en el modelo: CATEGORÍAS y CLIENTES, y sus respectivas relaciones y tipos de correspondencias: Están clasificados 1:N y Tiene contratados 1:N.</p>
+</section>
+</section>
 </section>
 <section id="optimizacion" class="level3" data-number="13.2.15">
 <h3 data-number="13.2.15" class="anchored" data-anchor-id="optimizacion"><span class="header-section-number">13.2.15</span> Optimización</h3>
+<p>El objetivo de esta técnica es reestructurar el modelo físico de datos con el fin de asegurar que satisface los requisitos de rendimiento establecidos y conseguir una adecuada eficiencia del sistema. Descripción</p>
+<p>La optimización consiste en una desnormalización controlada del modelo físico de datos que se aplica para reducir o simplificar el número de accesos a la base de datos.</p>
+<p>Para ello, se seguirán alguna de las recomendaciones que a continuación se indican:</p>
+<ul>
+<li>Introducir elementos redundantes.</li>
+<li>Dividir entidades.</li>
+<li>Combinar entidades si los accesos son frecuentes dentro de la misma transacción.</li>
+<li>Redefinir o añadir relaciones entre entidades para hacer más directo el acceso entre entidades.</li>
+<li>Definir claves secundarias o índices para permitir <a href="#caminos-de-acceso">caminos de acceso</a> alternativos.</li>
+</ul>
+<p>Con el fin de analizar la conveniencia o no de la desnormalización, se han de considerar, otros, los siguientes aspectos:</p>
+<ul>
+<li>Los tiempos de respuesta requeridos.</li>
+<li>La tasa de actualizaciones respecto a la de recuperaciones.</li>
+<li>Las veces que se accede conjuntamente a los atributos.</li>
+<li>La longitud de los mismos.</li>
+<li>El tipo de aplicaciones (en línea / por lotes).</li>
+<li>La frecuencia y tipo de acceso.</li>
+<li>La prioridad de los accesos.</li>
+<li>El tamaño de las tablas.</li>
+<li>Los requisitos de seguridad: accesibilidad, confidencialidad, integridad y disponibilidad que se consideren relevantes.</li>
+</ul>
 </section>
 <section id="reglas-de-obtencion-del-modelo-fisico-a-partir-del-logico" class="level3" data-number="13.2.16">
 <h3 data-number="13.2.16" class="anchored" data-anchor-id="reglas-de-obtencion-del-modelo-fisico-a-partir-del-logico"><span class="header-section-number">13.2.16</span> Reglas de Obtención del Modelo Físico a partir del Lógico</h3>
+<p>El objetivo de esta técnica es obtener un modelo físico de datos a partir del modelo lógico de datos normalizado. Para ello es necesario aplicar un conjunto de reglas que conserven la semántica del modelo lógico.</p>
+<section id="descripción-8" class="level4 unnumbered unlisted">
+<h4 class="unnumbered unlisted anchored" data-anchor-id="descripción-8">Descripción</h4>
+<p>Cada uno de los elementos del modelo lógico se tiene que transformar en un elemento del modelo físico. En algunos casos la transformación es directa porque el concepto se soporta igual en ambos modelos, pero otras veces no existe esta correspondencia, por lo que es necesario buscar una transformación que conserve lo mejor posible la semántica, teniendo en cuenta los aspectos de eficiencia que sean necesarios en cada caso.</p>
+<section id="transformacion-de-entidades" class="level5 unnumbered unlisted">
+<h5 class="unnumbered unlisted anchored" data-anchor-id="transformacion-de-entidades">Transformación de entidades</h5>
+<p>Una entidad se transforma en una tabla.</p>
+</section>
+<section id="transformacion-de-atributos-de-entidades" class="level5 unnumbered unlisted">
+<h5 class="unnumbered unlisted anchored" data-anchor-id="transformacion-de-atributos-de-entidades">Transformación de atributos de entidades</h5>
+<p>Cada atributo se transforma en una columna de la tabla en la que se transformó la entidad a la que pertenece. El identificador único se convierte en clave primaria.</p>
+<p>Si existen restricciones asociadas a los atributos, éstas pueden recogerse con algunas cláusulas del lenguaje lógico, que se convertirán en disparadores cuando éstos sean soportados por el sistema gestor de base de datos.</p>
+</section>
+<section id="transformacion-de-relaciones" class="level5 unnumbered unlisted">
+<h5 class="unnumbered unlisted anchored" data-anchor-id="transformacion-de-relaciones">Transformación de relaciones</h5>
+<p>Según el tipo de correspondencia:</p>
+<ul>
+<li><strong>Relaciones 1:N</strong>, se propaga el identificador de la entidad de cardinalidad máxima 1 a la que es N, teniendo en cuenta que:
+<ul>
+<li>Si la relación es de asociación, la clave propagada es clave ajena en la tabla a la que se ha propagado.</li>
+<li>Si la relación es de dependencia, la clave primaria de la tabla correspondiente a la entidad débil está formada por la concatenación de los identificadores de ambas entidades.</li>
+</ul></li>
+<li><strong>Relaciones 1:1</strong>, es un caso particular de las 1:N y por tanto se propaga la clave en las dos direcciones. Se debe analizar la situación, intentando recoger la mayor semántica posible, y evitar valores nulos.</li>
+</ul>
+<p>Las relaciones de agregación se transforman del mismo modo que las 1:N.</p>
+</section>
+<section id="transformacion-de-relaciones-exclusivas" class="level5 unnumbered unlisted">
+<h5 class="unnumbered unlisted anchored" data-anchor-id="transformacion-de-relaciones-exclusivas">Transformación de relaciones exclusivas</h5>
+<p>Después de haber realizado la transformación según las relaciones 1:N, se debe tener en cuenta que si los identificadores propagados se han convertido en claves ajenas de la tabla originada por la entidad común a las relaciones, hay que comprobar que una y sólo una de esas claves es nula en cada ocurrencia. En otro caso, estas comprobaciones se deben hacer en las tablas resultantes de transformar las relaciones.</p>
+<p>Transformación de la jerarquía {.unnumbered .unlisted}</p>
+<p>Existen varias posibilidades que deben ser evaluadas por el diseñador a fin de elegir la que mejor se ajuste a los requisitos. Las opciones para tratar la transformación de la jerarquía son:</p>
+<ul>
+<li><strong>Opción a</strong>: Consiste en crear una tabla para el supertipo que tenga de clave primaria el identificador y una tabla para cada uno de los subtipos que tengan el identificador del supertipo como clave ajena. Esta solución es apropiada cuando los subtipos tienen muchos atributos distintos y se quieren conservar los atributos comunes en una tabla. También se deben implantar las restricciones y aserciones adecuadas. Es la solución que mejor conserva la semántica.</li>
+<li><strong>Opción b</strong>: Se crea una tabla para cada subtipo, los atributos comunes aparecen en todos los subtipos y la clave primaria para cada tabla es el identificador del supertipo. Esta opción mejora la eficiencia en los accesos a todos los atributos de un subtipo, sean los comunes al supertipo o los específicos.</li>
+<li><strong>Opción c</strong>: Agrupar en una tabla todos los atributos de la entidad supertipo y de los subtipos. La clave primaria de esta tabla es el identificador de la entidad. Se añade un atributo que indique a qué subtipo pertenece cada ocurrencia (el atributo discriminante de la jerarquía). Esta solución puede aplicarse cuando los subtipos se diferencien en pocos atributos y las relaciones entre los subtipos y otras entidades sean las mismas. Para el caso de que la jerarquía sea total, el atributo discriminante no podrá tomar valor nulo (ya que toda ocurrencia pertenece a alguna de las entidades subtipo).</li>
+</ul>
+</section>
+</section>
+<section id="notación-9" class="level4 unnumbered unlisted">
+<h4 class="unnumbered unlisted anchored" data-anchor-id="notación-9">Notación</h4>
+<section id="tabla" class="level5 unnumbered unlisted">
+<h5 class="unnumbered unlisted anchored" data-anchor-id="tabla">Tabla</h5>
+<p>La representación gráfica de una tabla es un rectángulo con una línea horizontal que lo divide en dos. La parte superior, de ancho menor, se etiqueta con el nombre de la tabla.</p>
+<p><img src="../images/ROMF-notacion-1.png" class="img-fluid"></p>
+</section>
+<section id="relacion-3" class="level5 unnumbered unlisted">
+<h5 class="unnumbered unlisted anchored" data-anchor-id="relacion-3">Relación</h5>
+<p>La relación entre tablas se representa gráficamente mediante una línea que las une. En ella pueden aparecer en sus extremos diversos símbolos para indicar la cardinalidad de la relación, como se muestra a continuación:</p>
+<p><img src="../images/ROMF-notacion-2.png" class="img-fluid"></p>
+</section>
+</section>
+<section id="ejemplo-8" class="level4 unnumbered unlisted">
+<h4 class="unnumbered unlisted anchored" data-anchor-id="ejemplo-8">Ejemplo</h4>
+<p>Sea el diagrama entidad-relación del ejemplo realizado para la Normalización sobre conocimientos de técnicos informáticos y su asignación a proyectos.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../images/ROMF-ejemplo.png" class="img-fluid figure-img"></p>
+<figcaption>Ejemplo de Obtención del Modelo Físico a partir del Lógico</figcaption>
+</figure>
+</div>
+<p>El modelo físico de la figura muestra que cada una de las entidades se ha convertido en una tabla, cuyo contenido coincide con los atributos de la entidad. Pero hay dos tablas más: POSEEN, que surge de la relación del mismo nombre y ASIGNACIONES, que se origina a partir de la relación Están asignados.</p>
+<p>La tabla POSEEN está formada por su atributo grado, más cod_empresa, cod_tecnico y cod_conoc. La tabla ASIGNACIONES se forma con los atributos clave cod_empresa, cod_tecnico y cod_proyecto y los propios f_asignación y f_cese.</p>
+<p>La relación entre EMPRESAS y TÉCNICOS era 1:N, y la cardinalidad de la figura así lo muestra, pues la empresa siempre estará compuesta de uno o varios técnicos. Lo mismo sucede entre CLIENTES y PROYECTOS: un cliente siempre tendrá 1 o varios proyectos contratados.</p>
+<p>El caso de CATEGORÍAS y TÉCNICOS es (0,n). Cada técnico es de una categoría y una categoría corresponde, por regla general, a varios técnicos, pero puede existir alguna en la que no encaje ningún técnico (contable, secretaria de dirección, etc.).</p>
+<p>La situación del subconjunto TÉCNICOS-POSEEN-CONOCIMIENTOS tiene algo más de complejidad. Un técnico posee normalmente varios conocimientos, pero debe poseer al menos uno para que tenga sentido su situación.&nbsp;La cardinalidad es pues (1,n) entre TÉCNICOS y POSEEN. En el otro lado, lo natural es que un conocimiento sea poseído por varios técnicos, sin embargo puede existir algún conocimiento que no sea poseído por ningún técnico, por lo que la cardinalidad es (0,n) y dibujada desde la tabla CONOCIMIENTOS a POSEEN.</p>
+<p>Por último, en el subconjunto TÉCNICOS-ASIGNACIONES-PROYECTOS, se dispone de: una cardinalidad (0,n), pues a un proyecto estarán asignados uno o más técnicos, pero puede haber algún técnico que, en un momento dado, no esté asignado aún a ningún proyecto y una cardinalidad (1,n), pues un proyecto siempre tendrá asignado al menos a un técnico, o varios.</p>
+<p>(Nota.- La notación utilizada para el ejemplo es la más habitual, pero MÉTRICA Versión 3 no exige su utilización).</p>
+</section>
 </section>
 <section id="reglas-de-transformacion" class="level3" data-number="13.2.17">
 <h3 data-number="13.2.17" class="anchored" data-anchor-id="reglas-de-transformacion"><span class="header-section-number">13.2.17</span> Reglas de Transformación</h3>
+<p>El objetivo de esta técnica es obtener un modelo físico de datos a partir del modelo de clases. Para ello es necesario aplicar un conjunto de reglas de transformación que conserven la semántica del modelo de clases.</p>
+<section id="descripción-9" class="level4 unnumbered unlisted">
+<h4 class="unnumbered unlisted anchored" data-anchor-id="descripción-9">Descripción</h4>
+<p>Cada uno de los elementos del modelo de clases se tiene que transformar en un elemento del modelo físico. En algunos casos la transformación es directa porque el concepto se soporta igual en ambos modelos, pero otras veces no existe esta correspondencia, por lo que es necesario buscar una transformación que conserve lo mejor posible la semántica, teniendo en cuenta los aspectos de eficiencia que sean necesarios en cada caso.</p>
+<section id="transformacion-de-clases" class="level5 unnumbered unlisted">
+<h5 class="unnumbered unlisted anchored" data-anchor-id="transformacion-de-clases">Transformación de clases</h5>
+<p>Una clase se transforma en una tabla. Lo habitual es que en los modelos con herencia pueden surgir excepciones cuando se apliquen las reglas de transformación propias de la herencia. Además, es posible que dos clases se transformen en una sola tabla cuando el comportamiento de una de ellas sea irrelevante en la base de datos.</p>
+</section>
+<section id="transformacion-de-atributos-de-clases" class="level5 unnumbered unlisted">
+<h5 class="unnumbered unlisted anchored" data-anchor-id="transformacion-de-atributos-de-clases">Transformación de atributos de clases</h5>
+<p>Cada atributo se transforma en una columna de la tabla en la que se transformó la clase a la que pertenece. El identificador único se convierte en clave primaria. Además, se deben tener en cuenta las reglas de transformación que se aplican a la herencia de clases.</p>
+<p>Si existen restricciones asociadas a los atributos, éstas pueden recogerse con algunas cláusulas del lenguaje lógico, que se convertirán en disparadores cuando éstos sean soportados por el sistema gestor de base de datos.</p>
+</section>
+<section id="transformacion-de-relaciones-1" class="level5 unnumbered unlisted">
+<h5 class="unnumbered unlisted anchored" data-anchor-id="transformacion-de-relaciones-1">Transformación de relaciones</h5>
+<p>Según el tipo de correspondencia:</p>
+<ul>
+<li><strong>Relaciones M:N</strong>, se transforman en una tabla, cuya clave primaria es la concatenación de los identificadores de las clases asociadas, siendo cada uno de ellos clave ajena de la propia tabla. Si la relación tiene atributos, éstos se transforman en columnas de la tabla.</li>
+<li><strong>Relaciones 1:N</strong>, existen varias posibilidades:
+<ul>
+<li>Propagar el identificador de la clase de cardinalidad máxima 1 a la que es N, teniendo en cuenta que:
+<ul>
+<li>Si la relación es de asociación, la clave propagada es clave ajena en la tabla a la que se ha propagado.</li>
+<li>Si la relación es de dependencia, la clave primaria de la tabla correspondiente a la clase débil está formada por la concatenación de los identificadores de ambas clases.</li>
+</ul></li>
+<li>La relación se transforma en una tabla de clave primaria sólo el identificador de la clase de cardinalidad máxima N si:
+<ul>
+<li>La relación tiene atributos propios y se desea que aparezcan como tales.</li>
+<li>Se piensa que en un futuro la relación puede convertirse en M:N.</li>
+<li>El número de ocurrencias relacionadas de la clase que propaga su clave es muy pequeño (y por tanto pueden existir muchos valores nulos). Al igual que en el caso de relaciones M:N, las claves propagadas son claves ajenas de la nueva tabla creada.</li>
+</ul></li>
+</ul></li>
+<li><strong>Relaciones 1:1</strong>, es un caso particular de las 1:N y se puede tanto crear una tabla o propagar la clave, si bien, en este último caso, la clave se propaga en las dos direcciones. Para decidir qué solución adoptar, se debe analizar la situación, intentando recoger la mayor semántica posible, y evitar valores nulos. Las relaciones de agregación se transforman del mismo modo que las 1:N.</li>
+</ul>
+</section>
+<section id="transformacion-de-relaciones-exclusivas-1" class="level5 unnumbered unlisted">
+<h5 class="unnumbered unlisted anchored" data-anchor-id="transformacion-de-relaciones-exclusivas-1">Transformación de relaciones exclusivas</h5>
+<p>Después de haber realizado la transformación según las relaciones 1:N, se debe tener en cuenta que si se han propagado los atributos de las clases, convirtiéndose en claves ajenas de la tabla que provenía de la clase común a las relaciones, hay que comprobar que una y sólo una de esas claves es nula en cada ocurrencia. En caso de no propagarse las claves, estas comprobaciones se deben hacer en las tablas resultantes de transformar las relaciones.</p>
+</section>
+<section id="transformacion-de-la-herencia" class="level5 unnumbered unlisted">
+<h5 class="unnumbered unlisted anchored" data-anchor-id="transformacion-de-la-herencia">Transformación de la herencia</h5>
+<p>Existen varias posibilidades que deben ser evaluadas por el diseñador a fin de elegir la que mejor se ajuste a los requisitos. Las opciones para tratar la transformación de la herencia son:</p>
+<ul>
+<li><strong>Opción a</strong>: Consiste en crear una tabla para la superclase que tenga de clave primaria el identificador y una tabla para cada una de las subclases que tengan el identificador de la superclase como clave ajena. Esta solución es apropiada cuando las subclases tienen muchos atributos distintos, y se quieren conservar los atributos comunes en una tabla. También se deben implantar las restricciones y/o aserciones adecuadas. Es la solución que mejor conserva la semántica.</li>
+<li><strong>Opción b</strong>: Se crea una tabla para cada subclase, los atributos comunes aparecen en todas las subclases y la clave primaria para cada tabla es el identificador de la superclase. Esta opción mejora la eficiencia en los accesos a todos los atributos de una subclase (los heredados y los específicos).</li>
+<li><strong>Opción c</strong>: Agrupar en una tabla todos los atributos de la clase y sus subclases. La clave primaria de esta tabla es el identificador de la clase. Se añade un atributo que indique a qué subclase pertenece cada ocurrencia (el atributo discriminante de la jerarquía).</li>
+</ul>
+<p>Esta solución puede aplicarse cuando las subclases se diferencien en pocos atributos y las relaciones que asocian a las subclases con otras clases, sean las mismas. Para el caso de que la jerarquía sea total, el atributo discriminante no podrá tomar valor nulo (ya que toda ocurrencia pertenece a alguna subclase).</p>
+</section>
+</section>
 </section>
 <section id="tecnicas-matriciales" class="level3" data-number="13.2.18">
 <h3 data-number="13.2.18" class="anchored" data-anchor-id="tecnicas-matriciales"><span class="header-section-number">13.2.18</span> Técnicas Matriciales</h3>
+<p>Las técnicas matriciales tienen como objetivo representar las relaciones existentes entre distintos tipos de entidades, objetos o cualquier otro elemento del sistema.</p>
+<p>Se utilizan, principalmente, para analizar la consistencia entre los modelos generados durante el desarrollo, comprobar la trazabilidad con los requisitos especificados por el usuario, etc.</p>
+<section id="descripción-10" class="level4 unnumbered unlisted">
+<h4 class="unnumbered unlisted anchored" data-anchor-id="descripción-10">Descripción</h4>
+<p>Las técnicas matriciales son útiles para representar las relaciones entre elementos comunes de los distintos modelos, tales como entidades/procesos, procesos/diálogos, datos/localización geográfica, y asegurar que los modelos son coherentes entre sí.</p>
+<p>Las siguientes son algunas de las matrices empleadas en MÉTRICA Versión 3:</p>
+<ul>
+<li>Procesos/localización geográfica: permite representar la localización geográfica de los procesos de una organización.</li>
+<li>Almacenes de datos/entidades del modelo lógico de datos normalizado: establece las relaciones existentes entre los almacenes de datos y las entidades, y permite verificar que cada almacén de datos definido en el modelo de procesos se corresponde con una o varias entidades del modelo lógico de datos normalizado.</li>
+<li>Atributos de interfaz/atributos de entidades del modelo lógico de datos normalizado: permite verificar que los atributos que aparecen en cada diálogo de la interfaz de usuario forman parte del modelo lógico de datos normalizado.</li>
+<li>Entidades/procesos: permite representar el tratamiento lógico de los procesos sobre los datos del sistema y verificar que cada entidad del modelo lógico de datos normalizado es accedida por algún proceso primitivo representado en el DFD.</li>
+<li>Diálogos/procesos: permite representar los diálogos asociados a un proceso interactivo y verificar que cada proceso interactivo tiene asociado al menos un diálogo.</li>
+<li>Objetos Diagrama de interacción / clases, atributos al modelo de clases: permite verificar que cada mensaje entre objetos se corresponde con un método de una clase.</li>
+<li>Mensajes Diagrama de interacción / métodos, atributos del modelo de clases: permite verificar que una clase tiene capacidad para proporcionar los datos que se soliciten en los mensajes que recibe.</li>
+<li>Evento, acción, actividad de clases/ métodos de clases: permite verificar que todo evento, actividad o acción de una clase se corresponde con un método de esa clase.</li>
+<li>Clases/elementos del modelo físico de datos: permite verificar que cada elemento del modelo físico de datos se corresponde con un elemento del modelo de clases.</li>
+<li>Dependencias entre subsistemas/subsistemas: permite representar para cada subsistema, los subsistemas que dependen de él.</li>
+<li>Esquemas físicos de datos /nodos: permite representar la localización física de los datos en los nodos de la arquitectura del sistema, así como verificar que cada esquema del modelo físico de datos está asociado con un nodo del particionamiento físico del sistema de información.</li>
+</ul>
+</section>
+<section id="notación-10" class="level4 unnumbered unlisted">
+<h4 class="unnumbered unlisted anchored" data-anchor-id="notación-10">Notación</h4>
+<p>Dados dos tipos de elementos A y B, su representación será una matriz bidimensional NxM, siendo N el número de elementos de A, y M el número de elementos de B.</p>
+<p>En el cruce de una fila y una columna (C), se tendrá el modo en que se relacionan un elemento concreto de A y uno de B.</p>
+<p><img src="../images/tecnicas-matriciales.png" class="img-fluid"></p>
+</section>
 </section>
 </section>
 <section id="tecnicas-de-gestion-de-proyectos" class="level2" data-number="13.3">
 <h2 data-number="13.3" class="anchored" data-anchor-id="tecnicas-de-gestion-de-proyectos"><span class="header-section-number">13.3</span> Técnicas de gestión de proyectos</h2>
+<p>La Gestión de Proyectos es un conjunto de actividades específicas que se emplean para la administración del proyecto. Estas actividades comprenden diversos aspectos:</p>
+<ul>
+<li>Estimación del esfuerzo necesario para el desarrollo de un Sistema de Información.</li>
+<li>Planificación de tareas y recursos.</li>
+<li>Control de tareas.</li>
+<li>Seguimiento del proyecto.</li>
+<li>Control de las incidencias.</li>
+<li>Control de cambios.</li>
+</ul>
+<p>Para el desarrollo de dichas actividades es necesaria la utilización de técnicas específicas para ello. En esta parte del documento de Técnicas y Prácticas se contemplan tales técnicas.</p>
+<ol type="1">
+<li><a href="#tecnicas-de-estimacion">Técnicas de Estimación</a></li>
+</ol>
+<ul>
+<li><a href="#metodo-albrecht">Método Albrecht para el Análisis de los Puntos Función</a></li>
+<li><a href="#metodo-mark-ii">Método MARK II para el Análisis de los Puntos Función</a></li>
+</ul>
+<ol start="2" type="1">
+<li><a href="#staffing-size">Staffing Size (Orientación a Objetos)</a></li>
+<li><a href="#planificacion">Planificación</a></li>
+</ol>
+<ul>
+<li><a href="#pert">Program Evaluation &amp; Review Technique – PERT</a></li>
+<li><a href="#diagrama-de-gantt">Diagrama de Gantt</a></li>
+<li><a href="#estructura-de-descomposicion-de-trabajo">Estructura de Descomposición de Trabajo (WBS – Work Breakdown Structure)</a></li>
+<li><a href="#diagrama-de-extrapolacion">Diagrama de Extrapolación</a></li>
+</ul>
 <section id="tecnicas-de-estimacion" class="level3" data-number="13.3.1">
 <h3 data-number="13.3.1" class="anchored" data-anchor-id="tecnicas-de-estimacion"><span class="header-section-number">13.3.1</span> Técnicas de Estimación</h3>
+<p>Las técnicas de estimación tienen como objetivo calcular el coste total del desarrollo de un sistema de información.</p>
+<section id="descripción-11" class="level4 unnumbered unlisted">
+<h4 class="unnumbered unlisted anchored" data-anchor-id="descripción-11">Descripción</h4>
+<p>La estimación del coste de los productos de software es una de las actividades más difíciles y propensas a error de la ingeniería del software. Es difícil hacer una estimación exacta de coste al comienzo de un desarrollo debido al gran número de factores conocidos o esperados que determinan la complejidad y desconocidos o no esperados que van a producirse en cualquier momento, determinando la incertidumbre.</p>
+<p>Las técnicas de estimación ayudan en esta tarea y dan como resultado un número de horas de esfuerzo, a partir de las cuales se calculará el coste correspondiente.</p>
+<p>La estimación nos aportará un número de horas aproximado que habrá que combinar con los recursos para obtener la planificación de actividades en el tiempo y establecer los hitos del proyecto.</p>
+<p>Las técnicas de estimación más fiables se basan en el análisis de Puntos Función. La técnica de Puntos Función permite la evaluación de un sistema de información a partir de un mínimo conocimiento de las funcionalidades y entidades que intervienen.</p>
+<p>Las características más destacables de esta técnica son:</p>
+<ul>
+<li>Es una unidad de medida empírica.</li>
+<li>Contempla el sistema como un todo que se divide en determinadas funciones.</li>
+<li>Es independiente del entorno tecnológico en que se ha de desarrollar el sistema.</li>
+<li>Es independiente de la metodología que vaya a ser utilizada.</li>
+<li>Es independiente de la experiencia y del estilo de programación.</li>
+<li>Es fácil de entender por el usuario.</li>
+</ul>
+<p>El resultado de la aplicación de esta técnica viene dado en <strong>Puntos Función</strong>, que posteriormente habrán de ser pasados a días de esfuerzo, para lo que sí habrán de tenerse en cuenta la experiencia del equipo de desarrollo y el estilo de programación, la aplicación de una u otra metodología y la tecnología.</p>
+<p>Este cálculo de días por punto función debe basarse en la experiencia adquirida en la valoración y realización de sistemas anteriores, debiendo actualizarse el valor de conversión con posterioridad a la finalización de cada proyecto.</p>
+<p>Entre las técnicas de estimación basadas en el análisis de puntos función, se destacan los siguientes dos métodos:</p>
+<ul>
+<li><a href="#metodo-albrecht">Método Albrecht</a></li>
+<li><a href="#metodo-mark-ii">Método MARK II</a></li>
+</ul>
+</section>
 <section id="metodo-albrecht" class="level4" data-number="13.3.1.1">
 <h4 data-number="13.3.1.1" class="anchored" data-anchor-id="metodo-albrecht"><span class="header-section-number">13.3.1.1</span> Método Albrecht para el Análisis de los Puntos Función</h4>
 <p>Para proceder al cálculo de los puntos función de un sistema han de realizarse tres etapas:</p>
@@ -2095,13 +2422,13 @@ Procesos complejos de manejo de múltiples posibilidades de Entrada / Salida (p
 <section id="pert" class="level4" data-number="13.3.3.1">
 <h4 data-number="13.3.3.1" class="anchored" data-anchor-id="pert"><span class="header-section-number">13.3.3.1</span> Program Evaluation &amp; Review Technique – PERT</h4>
 <p>El objetivo del PERT es establecer las dependencias entre las distintas tareas del proyecto para saber de qué manera han de encadenarse dichas tareas en la planificación.&nbsp;Estas dependencias o prelaciones se establecen a partir de las precedentes.</p>
-<section id="descripción-7" class="level5 unnumbered unlisted">
-<h5 class="unnumbered unlisted anchored" data-anchor-id="descripción-7">Descripción</h5>
+<section id="descripción-12" class="level5 unnumbered unlisted">
+<h5 class="unnumbered unlisted anchored" data-anchor-id="descripción-12">Descripción</h5>
 <p>El método PERT parte de la descomposición del proyecto en una serie de obras parciales o actividades. Entendiendo por actividad la ejecución de una tarea, que exige para su realización la utilización de recursos tales como: mano de obra, maquinaria, materiales,… Así, por ejemplo, la nivelación de terrenos, la excavación de cimientos, etc., son actividades en el proyecto de construcción de un edificio.</p>
 <p>Después del concepto de actividad, el método PERT establece el concepto de suceso. Un suceso es un acontecimiento, un punto en el tiempo, una fecha en el calendario. El suceso no consume recursos, sólo indica el principio o el fin de una actividad o de un conjunto de actividades.</p>
 </section>
-<section id="notación-8" class="level5 unnumbered unlisted">
-<h5 class="unnumbered unlisted anchored" data-anchor-id="notación-8">Notación</h5>
+<section id="notación-11" class="level5 unnumbered unlisted">
+<h5 class="unnumbered unlisted anchored" data-anchor-id="notación-11">Notación</h5>
 <p>Para representar las diferentes actividades en que se descompone un proyecto, así como sus correspondiente sucesos, se utiliza una estructura de grafo. Los arcos del grafo representan las actividades, y los vértices los sucesos.</p>
 <p>Así el vértice 1 del diagrama que aparece a continuación indica el suceso inicio de la actividad A y el vértice 2 el suceso fin de dicha actividad. El arco que une los vértices 1 y 2 representa la propia realización de la actividad.</p>
 <p><img src="../images/PERT-1.png" class="img-fluid"></p>
@@ -2121,8 +2448,8 @@ Procesos complejos de manejo de múltiples posibilidades de Entrada / Salida (p
 <p>Para resolver este problema se puede recurrir a las actividades ficticias, como se muestra en el siguiente diagrama, donde se distinguen perfectamente las actividades B, C y D, ya que las tres actividades, aun naciendo en el mismo vértice, mueren en vértices distintos.</p>
 <p><img src="../images/PERT-8.png" class="img-fluid"></p>
 </section>
-<section id="ejemplo-7" class="level5 unnumbered unlisted">
-<h5 class="unnumbered unlisted anchored" data-anchor-id="ejemplo-7">Ejemplo</h5>
+<section id="ejemplo-9" class="level5 unnumbered unlisted">
+<h5 class="unnumbered unlisted anchored" data-anchor-id="ejemplo-9">Ejemplo</h5>
 <p>Mediante el siguiente ejemplo, se puede realizar la construcción del diagrama PERT de un proyecto completo. Para ello, debe comenzarse por introducir los conceptos de suceso inicio del proyecto y de suceso fin del proyecto. Se entiende por suceso inicio del proyecto aquel que, representando el comienzo de una o varias actividades, no representa, sin embargo, el fin de ninguna. Por el contrario, el suceso fin del proyecto es aquel que, representando el fin de una o más de una actividad, no representa, sin embargo, el comienzo de ninguna otra actividad. A este suceso se le reconoce en el grafo al estar representado por el único vértice al que llegan, pero no salen arcos.</p>
 <p>A continuación se va a construir el grafo PERT de un proyecto cuyas actividades y prelaciones existentes entre las mismas son:</p>
 <ul>
@@ -2155,12 +2482,12 @@ Procesos complejos de manejo de múltiples posibilidades de Entrada / Salida (p
 <section id="diagrama-de-gantt" class="level4" data-number="13.3.3.2">
 <h4 data-number="13.3.3.2" class="anchored" data-anchor-id="diagrama-de-gantt"><span class="header-section-number">13.3.3.2</span> Diagrama de Gantt</h4>
 <p>El diagrama de Gantt o cronograma tiene como objetivo la representación del plan de trabajo, mostrando las tareas a realizar, el momento de su comienzo y su terminación y la forma en que las distintas tareas están encadenadas entre sí.</p>
-<section id="descripción-8" class="level5 unnumbered unlisted">
-<h5 class="unnumbered unlisted anchored" data-anchor-id="descripción-8">Descripción</h5>
+<section id="descripción-13" class="level5 unnumbered unlisted">
+<h5 class="unnumbered unlisted anchored" data-anchor-id="descripción-13">Descripción</h5>
 <p>El gráfico de Gantt es la forma habitual de presentar el plan de ejecución de un proyecto, recogiendo en las filas la relación de actividades a realizar y en las columnas la escala de tiempos que se está manejando, mientras la duración y situación en el tiempo de cada actividad se representa mediante una línea dibujada en el lugar correspondiente.</p>
 </section>
-<section id="notación-9" class="level5 unnumbered unlisted">
-<h5 class="unnumbered unlisted anchored" data-anchor-id="notación-9">Notación</h5>
+<section id="notación-12" class="level5 unnumbered unlisted">
+<h5 class="unnumbered unlisted anchored" data-anchor-id="notación-12">Notación</h5>
 <ul>
 <li>Es un Modelo realizado sobre ejes de coordenadas, donde las tareas se sitúan sobre el eje de ordenadas (y) y los tiempos sobre el de abscisas (x).</li>
 <li>Cada actividad se representa con una barra limitada por las fechas previstas de comienzo y fin.</li>
@@ -2174,8 +2501,8 @@ Procesos complejos de manejo de múltiples posibilidades de Entrada / Salida (p
 </ul></li>
 <li>Pueden realizarse actividades en paralelo siempre que no tengan dependencia funcional u orgánica.</li>
 </ul>
-<section id="ejemplo-8" class="level6 unnumbered unlisted">
-<h6 class="unnumbered unlisted anchored" data-anchor-id="ejemplo-8">Ejemplo</h6>
+<section id="ejemplo-10" class="level6 unnumbered unlisted">
+<h6 class="unnumbered unlisted anchored" data-anchor-id="ejemplo-10">Ejemplo</h6>
 <p>El siguiente diagrama es un ejemplo típico de un diagrama de Gantt, en el que aparecen fases, actividades, tareas e hitos.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -2279,14 +2606,14 @@ Procesos complejos de manejo de múltiples posibilidades de Entrada / Salida (p
 <section id="estructura-de-descomposicion-de-trabajo" class="level4" data-number="13.3.3.3">
 <h4 data-number="13.3.3.3" class="anchored" data-anchor-id="estructura-de-descomposicion-de-trabajo"><span class="header-section-number">13.3.3.3</span> Estructura de Descomposición de Trabajo (WBS – Work Breakdown Structure)</h4>
 <p>En la organización de un proyecto software esta técnica permite estructurar las actividades, sirviendo de “lista de comprobación” y de herramienta de contabilidad analítica del proyecto software.</p>
-<section id="descripción-9" class="level5 unnumbered unlisted">
-<h5 class="unnumbered unlisted anchored" data-anchor-id="descripción-9">Descripción</h5>
+<section id="descripción-14" class="level5 unnumbered unlisted">
+<h5 class="unnumbered unlisted anchored" data-anchor-id="descripción-14">Descripción</h5>
 <p>La WBS presenta una descomposición de las actividades de un proyecto según su naturaleza, las cuales posteriormente se asignarán a «cuentas» (identificativos numéricos de las actividades que pueden ser utilizados para soporte de la contabilidad). Es un árbol que agrupa actividades: desarrollo, calidad, gestión, etc.</p>
 <p>Los diagramas <a href="#pert">PERT</a> y <a href="#diagrama-de-gantt">GANTT</a> que se deduzcan de dicha WBS permitirán la planificación del proyecto.</p>
 <p>En definitiva, los grupos de actividades servirán de soporte para el seguimiento (el presupuesto inicial se distribuye en cuentas sobre las que se realiza un control individual y global o contabilidad analítica del proyecto), y constituye un histórico útil para proyectos futuros.</p>
 </section>
-<section id="notación-10" class="level5 unnumbered unlisted">
-<h5 class="unnumbered unlisted anchored" data-anchor-id="notación-10">Notación</h5>
+<section id="notación-13" class="level5 unnumbered unlisted">
+<h5 class="unnumbered unlisted anchored" data-anchor-id="notación-13">Notación</h5>
 <p>A continuación se representa el formato de un WBS.</p>
 <p>Por ejemplo, un WBS podría dividirse en los siguientes niveles:</p>
 <ul>
@@ -2299,15 +2626,15 @@ Procesos complejos de manejo de múltiples posibilidades de Entrada / Salida (p
 <section id="diagrama-de-extrapolacion" class="level4" data-number="13.3.3.4">
 <h4 data-number="13.3.3.4" class="anchored" data-anchor-id="diagrama-de-extrapolacion"><span class="header-section-number">13.3.3.4</span> Diagrama de Extrapolación</h4>
 <p>Esta técnica se utiliza para realizar un seguimiento de los proyectos software. Con ella se obtienen previsiones de desviaciones en la duración del desarrollo del proyecto.</p>
-<section id="descripción-10" class="level5 unnumbered unlisted">
-<h5 class="unnumbered unlisted anchored" data-anchor-id="descripción-10">Descripción</h5>
+<section id="descripción-15" class="level5 unnumbered unlisted">
+<h5 class="unnumbered unlisted anchored" data-anchor-id="descripción-15">Descripción</h5>
 <p>Los Diagramas de Extrapolación constituyen un modo de representación gráfica de la cronología de las estimaciones del consumo de recursos necesarios para la realización de un hito.</p>
 <p>El eje de abscisas representa los periodos de tiempo de seguimiento. El eje de ordenadas representa las estimaciones de duración (duraciones previstas) para la realización del hito considerado. Dado que los ejes tienen la misma escala, los hitos que procedan normalmente (sin retrasos ni adelantos) deben caer sobre la bisectriz.</p>
 <p>Los diagramas de extrapolación se inicializan para cada hito a evaluar en la fecha prevista de comienzo de los mismos, y se actualizan en cada etapa del seguimiento.</p>
 <p>La interpretación de estos diagramas se basa en la hipótesis de que si existe una desviación, su tendencia es a permanecer o empeorar hasta el final del proyecto, a no ser que se apliquen las medidas necesarias para evitarlo. También puede suceder que las medidas aplicadas (más recursos, nuevas tecnologías, etc.) den lugar a un acortamiento de las fechas previstas inicialmente. Por todo ello, se trata de estimar la nueva fecha de fin de proyecto extrapolando la tendencia constatada en un momento determinado del desarrollo.</p>
 <p>El método de previsión de una nueva fecha de fin de proyecto, consiste en realizar una estimación en un momento determinado del desarrollo, obteniendo un nuevo punto de horas de esfuerzo. A continuación se unirán el punto de ordenadas que indicaba el esfuerzo previsto inicial con el obtenido en la estimación, alargando la línea hasta que se corte con la bisectriz. Por último, se unirá este punto de corte con el eje de abscisas mediante una línea recta, obteniendo así la nueva previsión de tiempo para el fin del desarrollo del proyecto.</p>
-<section id="ejemplo-9" class="level6 unnumbered unlisted">
-<h6 class="unnumbered unlisted anchored" data-anchor-id="ejemplo-9">Ejemplo</h6>
+<section id="ejemplo-11" class="level6 unnumbered unlisted">
+<h6 class="unnumbered unlisted anchored" data-anchor-id="ejemplo-11">Ejemplo</h6>
 <p>Sea un proyecto en que se estima un esfuerzo de 20.000 horas en un tiempo de 10 meses. En el diagrama inicial el Esfuerzo en miles de horas es 20, y el tiempo en meses es 10.</p>
 <p>Se hace una estimación en el mes 5, y se encuentra un punto de esfuerzo equivalente a 22.000 horas (marcado con un triángulo en la figura). Se une el punto de esfuerzo inicial del eje de ordenadas (20) con el punto estimado, y la prolongación efectúa un corte en la bisectriz. Desde el punto de corte una línea vertical indica, en el eje de abscisas, que el tiempo previsto de terminación será ahora de 12,2 meses. Es decir, el proyecto se va a alargar 2,2 meses más de lo previsto inicialmente.</p>
 <p><img src="../images/extrapolacion.png" class="img-fluid"></p>
@@ -2322,8 +2649,8 @@ Procesos complejos de manejo de múltiples posibilidades de Entrada / Salida (p
 <section id="analisis-de-impacto" class="level3" data-number="13.4.1">
 <h3 data-number="13.4.1" class="anchored" data-anchor-id="analisis-de-impacto"><span class="header-section-number">13.4.1</span> Análisis de Impacto</h3>
 <p>El análisis de impacto tiene como objetivo determinar, desde un punto de vista cuantitativo, qué elementos están realmente implicados en las peticiones de cambio solicitadas por los usuarios, una vez que los sistemas de información se encuentran en producción.</p>
-<section id="descripción-11" class="level4 unnumbered unlisted">
-<h4 class="unnumbered unlisted anchored" data-anchor-id="descripción-11">Descripción</h4>
+<section id="descripción-16" class="level4 unnumbered unlisted">
+<h4 class="unnumbered unlisted anchored" data-anchor-id="descripción-16">Descripción</h4>
 <p>Para facilitar la identificación de dichos elementos, es imprescindible que exista en la organización un inventario de todos los componentes y las relaciones existentes entre ellos. Igualmente, es importante evaluar hasta qué punto dichos componentes se han documentado utilizando estándares de nomenclatura, lo que facilitará en mayor o menor medida su localización posterior.</p>
 <p>El tratar de encontrar todos los elementos afectados y controlarlos cuando están poco documentados y no hay estándares, es extremadamente costoso y difícil, además de poco fiable, debido a que un elemento no detectado puede tener serias implicaciones y ser la causa de que el sistema falle. Por tanto, es mucho más útil disponer de un diccionario de recursos de información que permita almacenar toda la información relativa a programas, bases de datos, JCL ́s, pantallas, módulos, clases, objetos y formularios, entre otros, de una forma estructurada con todas sus relaciones y dependencias definidas, asegurando la integridad entre los distintos sistemas de información.&nbsp;De esta manera, se podrán recuperar con mayor exactitud los elementos afectados y en consecuencia evaluar el nivel de implicación existente.</p>
 <p>La forma en que se almacene la información a identificar, constituye el punto de partida para realizar el análisis de impacto. Se comienza definiendo argumentos de búsqueda que utilicen un determinado patrón o estándar de nomenclatura, con el objetivo de localizar de una forma comprensible los elementos afectados y, a su vez, rechazar los que, aun estando afectados, no necesitan modificación.</p>
@@ -2343,8 +2670,8 @@ Procesos complejos de manejo de múltiples posibilidades de Entrada / Salida (p
 <section id="catalogacion" class="level3" data-number="13.4.2">
 <h3 data-number="13.4.2" class="anchored" data-anchor-id="catalogacion"><span class="header-section-number">13.4.2</span> Catalogación</h3>
 <p>La catalogación tiene como objetivo estructurar y almacenar la información de un dominio concreto de forma única, con el fin de poder gestionarla de manera sencilla a medida que se va modificando y facilitar su trazabilidad a lo largo del ciclo de vida.</p>
-<section id="descripción-12" class="level4 unnumbered unlisted">
-<h4 class="unnumbered unlisted anchored" data-anchor-id="descripción-12">Descripción</h4>
+<section id="descripción-17" class="level4 unnumbered unlisted">
+<h4 class="unnumbered unlisted anchored" data-anchor-id="descripción-17">Descripción</h4>
 <p>En primer lugar se establece el ámbito de aplicación relevante, objeto de la catalogación, con vista a su futura utilización.&nbsp;Ejemplo: requisitos, usuarios, objetivos, etc.</p>
 <p>A continuación, se fija la información de interés que está asociada a un ámbito concreto y se estructura del modo más conveniente asociándole un nombre y sus características propias. En algunos casos se recogen aspectos generales que definen la información a tratar y en otros, se registran elementos que pueden ir variando a lo largo del tiempo o que se necesitan para realizar la trazabilidad.</p>
 <p>Si se determina realizar una catalogación en el ámbito de los requisitos, las características asociadas a los mismos podrían ser, por ejemplo, las siguientes:</p>
@@ -2368,14 +2695,14 @@ Procesos complejos de manejo de múltiples posibilidades de Entrada / Salida (p
 <h3 data-number="13.4.3" class="anchored" data-anchor-id="calculo-de-accesos"><span class="header-section-number">13.4.3</span> Cálculo de Accesos</h3>
 <p>El cálculo de accesos permite realizar una estimación del número de accesos aproximado que debe realizarse para obtener la información de cada consulta, tomando como referencia las vistas del modelo de datos obtenidas como consecuencia del análisis de los <a href="#caminos-de-acceso">caminos de acceso</a> a los datos.</p>
 <p>Esta práctica se utiliza en los procesos <strong>Análisis del Sistema de Información</strong> (<a href="../01-principal/04-asi.html">ASI</a>) y <strong>Diseño del Sistema de Información</strong> (<a href="../01-principal/05-dsi.html">DSI</a>) aplicando los mismos criterios, la única diferencia es que mientras en el primero el acceso es lógico y permite determinar la viabilidad de las consultas, en el segundo es físico y permite establecer las pautas para la optimización del modelo físico de datos.</p>
-<section id="descripción-13" class="level4 unnumbered unlisted">
-<h4 class="unnumbered unlisted anchored" data-anchor-id="descripción-13">Descripción</h4>
+<section id="descripción-18" class="level4 unnumbered unlisted">
+<h4 class="unnumbered unlisted anchored" data-anchor-id="descripción-18">Descripción</h4>
 <p>El cálculo de accesos consiste en realizar una estimación del número de ocurrencias o filas de cada entidad o tabla/fichero del modelo de datos que deben ser leídas, teniendo en cuenta los identificadores/claves candidatas o índices asociados a cada entidad o tabla/fichero a leer. La estimación de si una consulta es excesivamente costosa se realiza comparando el número de accesos necesarios para realizar el resto de las consultas.</p>
 <p>Una vez realizada la estimación inicial del número de accesos, se ajustan los valores obtenidos, dividiendo por la prioridad establecida para cada acceso (por ejemplo 1: alta, 2: media, 3: baja) y multiplicando el resultado obtenido por la frecuencia del acceso, es decir el número de veces que se ejecuta la consulta al día.</p>
 <p>Si el resultado final se sale de un intervalo razonable en el que se encuentran el resto de las consultas, se debe analizar si se modifica la consulta, o si por su prioridad y frecuencia es necesaria la modificación del modelo de datos.</p>
 </section>
-<section id="notación-11" class="level4 unnumbered unlisted">
-<h4 class="unnumbered unlisted anchored" data-anchor-id="notación-11">Notación</h4>
+<section id="notación-14" class="level4 unnumbered unlisted">
+<h4 class="unnumbered unlisted anchored" data-anchor-id="notación-14">Notación</h4>
 <p><a href="#tecnicas-matriciales">Matricial</a>.</p>
 </section>
 </section>
@@ -2383,8 +2710,8 @@ Procesos complejos de manejo de múltiples posibilidades de Entrada / Salida (p
 <h3 data-number="13.4.4" class="anchored" data-anchor-id="caminos-de-acceso"><span class="header-section-number">13.4.4</span> Caminos de Acceso</h3>
 <p>El objetivo de esta práctica es analizar la secuencia de acceso a los datos que realizan los módulos a través del modelo de datos. También puede utilizarse para entornos de ficheros.</p>
 <p>Permite verificar en el proceso <strong>Análisis del Sistema de Información</strong> (<a href="../01-principal/04-asi.html">ASI</a>) que el modelo lógico de datos normalizado satisface las principales consultas de información recogidas en el catálogo de requisitos, y en el proceso <strong>Diseño del Sistema de Información</strong> (<a href="../01-principal/05-dsi.html">DSI</a>) que el modelo físico de datos soporta adecuadamente los principales accesos de actualización, cuando proceda, y de consulta.</p>
-<section id="descripción-14" class="level4 unnumbered unlisted">
-<h4 class="unnumbered unlisted anchored" data-anchor-id="descripción-14">Descripción</h4>
+<section id="descripción-19" class="level4 unnumbered unlisted">
+<h4 class="unnumbered unlisted anchored" data-anchor-id="descripción-19">Descripción</h4>
 <p>Los caminos de acceso representan la secuencia y tipo de acceso a los datos persistentes del sistema, que deben realizar los procesos primitivos a partir del modelo lógico de datos normalizado, o los módulos/clases a partir del modelo físico de datos.</p>
 <p>En función del modelo de datos sobre el que se realiza el acceso, se identifican las entidades o tablas/ficheros que deben ser accedidas por cada proceso primitivo o módulo/clase, y se crean vistas del modelo de datos en el que aparecen únicamente dichas entidades (subconjunto del modelo de datos). Es conveniente examinar todas las entidades relacionadas con las identificadas inicialmente, debido a que puede que aparezcan más entidades que no se habían contemplado en un primer momento.</p>
 <p>Para cada entidad identificada se indica el tipo de acceso realizado, es decir, si se trata de una lectura, inserción, modificación o eliminación.</p>
@@ -2404,16 +2731,16 @@ Procesos complejos de manejo de múltiples posibilidades de Entrada / Salida (p
 <section id="diagrama-de-representacion" class="level3" data-number="13.4.5">
 <h3 data-number="13.4.5" class="anchored" data-anchor-id="diagrama-de-representacion"><span class="header-section-number">13.4.5</span> Diagrama de Representación</h3>
 <p>El diagrama de representación tiene como objetivo documentar mediante una imagen una situación específica.</p>
-<section id="descripción-15" class="level4 unnumbered unlisted">
-<h4 class="unnumbered unlisted anchored" data-anchor-id="descripción-15">Descripción</h4>
+<section id="descripción-20" class="level4 unnumbered unlisted">
+<h4 class="unnumbered unlisted anchored" data-anchor-id="descripción-20">Descripción</h4>
 <p>Se trata de un diagrama libre, en el que se utiliza cualquier objeto gráfico, con el fin de reflejar algo de interés para el caso y para el que no existe una técnica o práctica.</p>
 <p>Se describe, de la forma que se estime oportuno, cada uno de los elementos que componen el diagrama y, en el caso de ser necesario, la notación que se haya empleado, con el fin de facilitar la comprensión del mismo.</p>
 </section>
-<section id="notación-12" class="level4 unnumbered unlisted">
-<h4 class="unnumbered unlisted anchored" data-anchor-id="notación-12">Notación</h4>
+<section id="notación-15" class="level4 unnumbered unlisted">
+<h4 class="unnumbered unlisted anchored" data-anchor-id="notación-15">Notación</h4>
 <p>Libre.</p>
-<section id="ejemplo-10" class="level5 unnumbered unlisted">
-<h5 class="unnumbered unlisted anchored" data-anchor-id="ejemplo-10">Ejemplo</h5>
+<section id="ejemplo-12" class="level5 unnumbered unlisted">
+<h5 class="unnumbered unlisted anchored" data-anchor-id="ejemplo-12">Ejemplo</h5>
 <p>En la figura siguiente se presenta un mapa de pantallas en línea de una parte de una aplicación.&nbsp;El diagrama representa la navegación entre las pantallas y las teclas de función para el paso de unas a otras.</p>
 <p><img src="../images/representacion.png" class="img-fluid"></p>
 </section>
@@ -2429,8 +2756,8 @@ Procesos complejos de manejo de múltiples posibilidades de Entrada / Salida (p
 <li>Identificar los factores clave que contribuyen a ese funcionamiento.</li>
 <li>Identificar las relaciones causa-efecto entre objetivos y factores clave.</li>
 </ul>
-<section id="descripción-16" class="level4 unnumbered unlisted">
-<h4 class="unnumbered unlisted anchored" data-anchor-id="descripción-16">Descripción</h4>
+<section id="descripción-21" class="level4 unnumbered unlisted">
+<h4 class="unnumbered unlisted anchored" data-anchor-id="descripción-21">Descripción</h4>
 <p>El análisis de los factores críticos de éxito va dirigido a identificar aquellos factores del entorno cuyo funcionamiento adecuado o evolución favorable permitirán la implantación con éxito de una estrategia determinada. Como consecuencia de la identificación de estos factores externos, se podrá proceder a una aplicación adecuada de los recursos de la organización con el fin de conseguir una eficacia óptima de esta estrategia. En esta identificación se deben tener en cuenta cuestiones como:</p>
 <ul>
 <li>Un proceso de la organización cuyo funcionamiento debe situarse a un nivel competitivo con el entorno.</li>
@@ -2493,8 +2820,8 @@ Si la respuesta a alguna de estas preguntas es «no» se elimina el factor de e�
 </ol>
 <p>Para los factores críticos de éxito controlables por parte de los directivos, se deben asignar los recursos necesarios para garantizar su correcta realización, así como las herramientas e información necesarias para dicha realización.&nbsp;Asimismo, se deben establecer procedimientos que permitan asegurar un seguimiento y realimentación sobre el grado de cumplimiento de dichos factores críticos.</p>
 <p>Para aquellos FCE no controlables, son absolutamente necesarios procedimientos que permitan obtener información puntual sobre los mismos. Estos procedimientos proporcionan señales de aviso de manera que se puedan definir e implantar planes de contingencia.</p>
-<section id="ejemplo-11" class="level5 unnumbered unlisted">
-<h5 class="unnumbered unlisted anchored" data-anchor-id="ejemplo-11">Ejemplo</h5>
+<section id="ejemplo-13" class="level5 unnumbered unlisted">
+<h5 class="unnumbered unlisted anchored" data-anchor-id="ejemplo-13">Ejemplo</h5>
 <ol type="1">
 <li><p>Elaborar una lista de los objetivos de la organización.</p>
 <p>Como ejemplo de una especificación de objetivos de una organización, puede imaginarse una empresa que se plantee:</p>
@@ -2538,8 +2865,8 @@ Si la respuesta a alguna de estas preguntas es «no» se elimina el factor de e�
 <p>El objetivo de la aplicación de esta práctica es analizar, anticipadamente, las consecuencias para una organización de una acción relacionada con un cambio de los Sistemas y Tecnologías de la Información y Comunicaciones (STIC). Este tipo de cambios se puede proponer en distintas actividades de un Plan de Sistemas de Información.</p>
 <p>Esta práctica reúne algunas variables comunes con el <a href="#analisis-coste-beneficio">análisis coste/beneficio</a> y con el análisis de riesgos.</p>
 </section>
-<section id="descripción-17" class="level4 unnumbered unlisted">
-<h4 class="unnumbered unlisted anchored" data-anchor-id="descripción-17">Descripción</h4>
+<section id="descripción-22" class="level4 unnumbered unlisted">
+<h4 class="unnumbered unlisted anchored" data-anchor-id="descripción-22">Descripción</h4>
 <p>Ante cualquier cambio a llevar a cabo en el contexto de una organización, asociado con la propuesta de nuevos sistemas o tecnologías de información, se debe realizar un estudio que refleje las necesidades asociadas al cambio y las posibles consecuencias para la organización, así como reconsiderar la propuesta antes de hacerla definitiva.</p>
 <p>Por ejemplo, la implantación de una nueva tecnología puede suponer un cambio en la forma de trabajar de un número determinado de personas, para lo que va a ser necesario planificar y llevar a cabo una formación en las fechas oportunas. Como consecuencia habría que disponer de un presupuesto para la formación así como realizar una planificación de los cursos necesarios, coordinada con las personas afectadas dentro de la organización.</p>
 <p>Algunos de los aspectos a considerar en el impacto de un cambio en una organización son:</p>
@@ -2558,8 +2885,8 @@ Si la respuesta a alguna de estas preguntas es «no» se elimina el factor de e�
 <section id="presentaciones" class="level3" data-number="13.4.8">
 <h3 data-number="13.4.8" class="anchored" data-anchor-id="presentaciones"><span class="header-section-number">13.4.8</span> Presentaciones</h3>
 <p>El objetivo de las presentaciones es la comunicación de avances, conclusiones y resultados por parte del equipo de trabajo al auditorio que corresponda. Se llevan a cabo con el fin de informar sobre el estado de un proyecto en su totalidad o de alguno de los procesos, o exponer uno o varios productos finales de un proceso para su aprobación.</p>
-<section id="descripción-18" class="level4 unnumbered unlisted">
-<h4 class="unnumbered unlisted anchored" data-anchor-id="descripción-18">Descripción</h4>
+<section id="descripción-23" class="level4 unnumbered unlisted">
+<h4 class="unnumbered unlisted anchored" data-anchor-id="descripción-23">Descripción</h4>
 <p>En primer lugar se establece el alcance de la presentación, determinando cuál es el objetivo principal y qué contenido general se quiere comunicar.</p>
 <p>Una vez que están claros estos puntos, se inicia la preparación de la presentación considerando quién es el ponente, qué tema se va a exponer, cuál va ser la duración estimada y a qué tipo de audiencia o auditorio va dirigida la presentación considerando, a su vez, el nivel de decisión que tengan sus componentes. Todos estos factores van a influir en el tono más o menos formal de la presentación, en el nivel de detalle que requiere la presentación y en los medios a utilizar.</p>
 <p>La eficacia de una presentación está directamente relacionada con el conocimiento que posea el ponente sobre el tema a exponer, así como de la audiencia a quién va dirigido.</p>
@@ -2579,8 +2906,8 @@ Si la respuesta a alguna de estas preguntas es «no» se elimina el factor de e�
 <h3 data-number="13.4.9" class="anchored" data-anchor-id="prototipado"><span class="header-section-number">13.4.9</span> Prototipado</h3>
 <p>El prototipado tiene como objetivo elaborar un modelo o maqueta de las interfaces entre el sistema y el usuario (formatos de pantallas, informes, formularios, etc.), que ayude al usuario a comprender cómo se producirá la interacción con el sistema.</p>
 <p>Es importante que el usuario colabore en su desarrollo sugiriendo los cambios que considere oportunos y evalúe hasta que punto las funciones se implementan de forma apropiada y cubren los requisitos identificados.</p>
-<section id="descripción-19" class="level4 unnumbered unlisted">
-<h4 class="unnumbered unlisted anchored" data-anchor-id="descripción-19">Descripción</h4>
+<section id="descripción-24" class="level4 unnumbered unlisted">
+<h4 class="unnumbered unlisted anchored" data-anchor-id="descripción-24">Descripción</h4>
 <p>El prototipado constituye un medio a través del cual se simula el aspecto visual del sistema mediante la representación de los conceptos, componentes, objetos gráficos, entradas y salidas requeridas para la ejecución de cada función en respuesta a las necesidades planteadas.</p>
 <p>Con objeto de conseguir una interfaz eficiente y compatible con las necesidades de los usuarios evitando así futuras frustraciones, es importante contemplar, previamente, una serie de aspectos que son claves en el diseño de prototipos.</p>
 <p>El principal punto a considerar y que constituirá la base sobre la que se centrará el diseño de prototipos es la identificación de los usuarios a los que va dirigido, teniendo en cuenta que debe responder a diferentes individualidades, con distintos conocimientos y habilidades. Cuando los usuarios se sienten a gusto con la imagen del sistema, lo utilizan más eficazmente y cometen menos errores, mejorando su productividad.</p>
@@ -2637,8 +2964,8 @@ Si la respuesta a alguna de estas preguntas es «no» se elimina el factor de e�
 <h4 data-number="13.4.10.1" class="anchored" data-anchor-id="pruebas-unitarias"><span class="header-section-number">13.4.10.1</span> Pruebas Unitarias</h4>
 <p>Las pruebas unitarias tienen como objetivo verificar la funcionalidad y estructura de cada componente individualmente una vez que ha sido codificado.</p>
 </section>
-<section id="descripción-20" class="level4 unnumbered unlisted">
-<h4 class="unnumbered unlisted anchored" data-anchor-id="descripción-20">Descripción</h4>
+<section id="descripción-25" class="level4 unnumbered unlisted">
+<h4 class="unnumbered unlisted anchored" data-anchor-id="descripción-25">Descripción</h4>
 <p>Las pruebas unitarias constituyen la prueba inicial de un sistema y las demás pruebas deben apoyarse sobre ellas.</p>
 <p>Existen dos enfoques principales para el diseño de casos de prueba:</p>
 <ul>
@@ -2656,8 +2983,8 @@ Si la respuesta a alguna de estas preguntas es «no» se elimina el factor de e�
 <section id="pruebas-de-integracion" class="level4" data-number="13.4.10.2">
 <h4 data-number="13.4.10.2" class="anchored" data-anchor-id="pruebas-de-integracion"><span class="header-section-number">13.4.10.2</span> Pruebas de Integración</h4>
 <p>El objetivo de las pruebas de integración es verificar el correcto ensamblaje entre los distintos componentes una vez que han sido probados unitariamente con el fin de comprobar que interactúan correctamente a través de sus interfaces, tanto internas como externas, cubren la funcionalidad establecida y se ajustan a los requisitos no funcionales especificados en las verificaciones correspondientes.</p>
-<section id="descripción-21" class="level5 unnumbered unlisted">
-<h5 class="unnumbered unlisted anchored" data-anchor-id="descripción-21">Descripción</h5>
+<section id="descripción-26" class="level5 unnumbered unlisted">
+<h5 class="unnumbered unlisted anchored" data-anchor-id="descripción-26">Descripción</h5>
 <p>En las pruebas de integración se examinan las interfaces entre grupos de componentes o subsistemas para asegurar que son llamados cuando es necesario y que los datos o mensajes que se transmiten son los requeridos.</p>
 <p>Debido a que en las pruebas unitarias es necesario crear módulos auxiliares que simulen las acciones de los componentes invocados por el que se está probando y a que se han de crear componentes «conductores» para establecer las precondiciones necesarias, llamar al componente objeto de la prueba y examinar los resultados de la prueba, a menudo se combinan los tipos de prueba unitarias y de integración.</p>
 <p>Los tipos fundamentales de integración son los siguientes:</p>
@@ -2683,8 +3010,8 @@ Si la respuesta a alguna de estas preguntas es «no» se elimina el factor de e�
 <h4 data-number="13.4.10.3" class="anchored" data-anchor-id="pruebas-del-sistema"><span class="header-section-number">13.4.10.3</span> Pruebas del Sistema</h4>
 <p>Las pruebas del sistema tienen como objetivo ejercitar profundamente el sistema comprobando la integración del sistema de información globalmente, verificando el funcionamiento correcto de las interfaces entre los distintos subsistemas que lo componen y con el resto de sistemas de información con los que se comunica.</p>
 <p>Son pruebas de integración del sistema de información completo, y permiten probar el sistema en su conjunto y con otros sistemas con los que se relaciona para verificar que las especificaciones funcionales y técnicas se cumplen. Dan una visión muy similar a su comportamiento en el entorno de producción.</p>
-<section id="descripción-22" class="level5 unnumbered unlisted">
-<h5 class="unnumbered unlisted anchored" data-anchor-id="descripción-22">Descripción</h5>
+<section id="descripción-27" class="level5 unnumbered unlisted">
+<h5 class="unnumbered unlisted anchored" data-anchor-id="descripción-27">Descripción</h5>
 <p>Una vez que se han probado los componentes individuales y se han integrado, se prueba el sistema de forma global. En esta etapa pueden distinguirse los siguientes tipos de pruebas, cada uno con un objetivo claramente diferenciado:</p>
 <ul>
 <li><strong>Pruebas funcionales</strong>. Dirigidas a asegurar que el sistema de información realiza correctamente todas las funciones que se han detallado en las especificaciones dadas por el usuario del sistema.</li>
@@ -2703,8 +3030,8 @@ Si la respuesta a alguna de estas preguntas es «no» se elimina el factor de e�
 <section id="pruebas-de-implantacion" class="level4" data-number="13.4.10.4">
 <h4 data-number="13.4.10.4" class="anchored" data-anchor-id="pruebas-de-implantacion"><span class="header-section-number">13.4.10.4</span> Pruebas de Implantación</h4>
 <p>El objetivo de las pruebas de implantación es comprobar el funcionamiento correcto del sistema integrado de hardware y software en el entorno de operación, y permitir al usuario que, desde el punto de vista de operación, realice la aceptación del sistema una vez instalado en su entorno real y en base al cumplimiento de los requisitos no funcionales especificados.</p>
-<section id="descripción-23" class="level5 unnumbered unlisted">
-<h5 class="unnumbered unlisted anchored" data-anchor-id="descripción-23">Descripción</h5>
+<section id="descripción-28" class="level5 unnumbered unlisted">
+<h5 class="unnumbered unlisted anchored" data-anchor-id="descripción-28">Descripción</h5>
 <p>Una vez que hayan sido realizadas las pruebas del sistema en el entorno de desarrollo, se llevan a cabo las verificaciones necesarias para asegurar que el sistema funcionará correctamente en el entorno de operación.&nbsp;Debe comprobarse que responde satisfactoriamente a los requisitos de rendimiento, seguridad, operación y coexistencia con el resto de los sistemas de la instalación para conseguir la aceptación del usuario de operación.</p>
 <p>Las pruebas de <strong>seguridad</strong> van dirigidas a verificar que los mecanismos de protección incorporados al sistema cumplen su objetivo; las de <strong>rendimiento</strong> a asegurar que el sistema responde satisfactoriamente en los márgenes establecidos en cuanto tiempos de respuesta, de ejecución y de utilización de recursos, así como los volúmenes de espacio en disco y capacidad; por último con las pruebas de <strong>operación</strong> se comprueba que la planificación y control de trabajos del sistema se realiza de acuerdo a los procedimientos establecidos, considerando la gestión y control de las comunicaciones y asegurando la disponibilidad de los distintos recursos.</p>
 <p>Asimismo, también son llevadas a cabo las pruebas de <strong>gestión de copias de seguridad y recuperación</strong>, con el objetivo de verificar que el sistema no ve comprometido su funcionamiento al existir un control y seguimiento de los procedimientos de salvaguarda y de recuperación de la información, en caso de caídas en los servicios o en algunos de sus componentes. Para comprobar estos últimos, se provoca el fallo del sistema, verificando si la recuperación se lleva a cabo de forma apropiada. En el caso de realizarse de forma automática, se evalúa la inicialización, los mecanismos de recuperación del estado del sistema, los datos y todos aquellos recursos que se vean implicados.</p>
@@ -2715,8 +3042,8 @@ Si la respuesta a alguna de estas preguntas es «no» se elimina el factor de e�
 <section id="pruebas-de-aceptacion" class="level4" data-number="13.4.10.5">
 <h4 data-number="13.4.10.5" class="anchored" data-anchor-id="pruebas-de-aceptacion"><span class="header-section-number">13.4.10.5</span> Pruebas de Aceptación</h4>
 <p>El objetivo de las pruebas de aceptación es validar que un sistema cumple con el funcionamiento esperado y permitir al usuario de dicho sistema que determine su aceptación, desde el punto de vista de su funcionalidad y rendimiento.</p>
-<section id="descripción-24" class="level5 unnumbered unlisted">
-<h5 class="unnumbered unlisted anchored" data-anchor-id="descripción-24">Descripción</h5>
+<section id="descripción-29" class="level5 unnumbered unlisted">
+<h5 class="unnumbered unlisted anchored" data-anchor-id="descripción-29">Descripción</h5>
 <p>Las pruebas de aceptación son definidas por el usuario del sistema y preparadas por el equipo de desarrollo, aunque la ejecución y aprobación final corresponden al usuario.</p>
 <p>Estas pruebas van dirigidas a comprobar que el sistema cumple los requisitos de funcionamiento esperado, recogidos en el catálogo de requisitos y en los criterios de aceptación del sistema de información, y conseguir así la aceptación final del sistema por parte del usuario.</p>
 <p>El responsable de usuarios debe revisar los criterios de aceptación que se especificaron previamente en el plan de pruebas del sistema y, posteriormente, dirigir las pruebas de aceptación final.</p>
@@ -2727,8 +3054,8 @@ Si la respuesta a alguna de estas preguntas es «no» se elimina el factor de e�
 <section id="pruebas-de-regresion" class="level4" data-number="13.4.10.6">
 <h4 data-number="13.4.10.6" class="anchored" data-anchor-id="pruebas-de-regresion"><span class="header-section-number">13.4.10.6</span> Pruebas de Regresión</h4>
 <p>El objetivo de las pruebas de regresión es eliminar el efecto onda, es decir, comprobar que los cambios sobre un componente de un sistema de información, no introducen un comportamiento no deseado o errores adicionales en otros componentes no modificados.</p>
-<section id="descripción-25" class="level5 unnumbered unlisted">
-<h5 class="unnumbered unlisted anchored" data-anchor-id="descripción-25">Descripción</h5>
+<section id="descripción-30" class="level5 unnumbered unlisted">
+<h5 class="unnumbered unlisted anchored" data-anchor-id="descripción-30">Descripción</h5>
 <p>Las pruebas de regresión se deben llevar a cabo cada vez que se hace un cambio en el sistema, tanto para corregir un error como para realizar una mejora. No es suficiente probar sólo los componentes modificados o añadidos, o las funciones que en ellos se realizan, sino que también es necesario controlar que las modificaciones no produzcan efectos negativos sobre el mismo u otros componentes.</p>
 <p>Normalmente, este tipo de pruebas implica la repetición de las pruebas que ya se han realizado previamente, con el fin de asegurar que no se introducen errores que puedan comprometer el funcionamiento de otros componentes que no han sido modificados y confirmar que el sistema funciona correctamente una vez realizados los cambios.</p>
 <p>Las pruebas de regresión pueden incluir:</p>
@@ -2744,8 +3071,8 @@ Si la respuesta a alguna de estas preguntas es «no» se elimina el factor de e�
 <section id="revision-formal" class="level3" data-number="13.4.11">
 <h3 data-number="13.4.11" class="anchored" data-anchor-id="revision-formal"><span class="header-section-number">13.4.11</span> Revisión Formal</h3>
 <p>El objetivo de la revisión formal es detectar y registrar los defectos de un producto intermedio verificando que satisface sus especificaciones y que se ajusta a los estándares establecidos, señalando las posibles desviaciones.</p>
-<section id="descripción-26" class="level4 unnumbered unlisted">
-<h4 class="unnumbered unlisted anchored" data-anchor-id="descripción-26">Descripción</h4>
+<section id="descripción-31" class="level4 unnumbered unlisted">
+<h4 class="unnumbered unlisted anchored" data-anchor-id="descripción-31">Descripción</h4>
 <p>Es un proceso de revisión riguroso en el que hay poca flexibilidad a la hora de llevarlo a cabo debido a que su objetivo es llegar a detectar lo antes posible, los posibles defectos o desviaciones en los productos que se van generando a lo lago del desarrollo. Esta característica fuerza a que se adopte esta práctica únicamente para productos que son de especial importancia, porque de otro modo podría frenar la marcha del proyecto.</p>
 <p>En este proceso intervienen varias personas del grupo de aseguramiento de calidad, el equipo de desarrollo y según el tipo de revisión formal puede participar también el usuario.</p>
 <p>El responsable del grupo de aseguramiento de calidad una vez que conoce los productos que se van a revisar formalmente, establece los grupos funcionales que van a llevar a cabo las revisiones, convocando a los participantes por adelantado, e informando del objetivo de la revisión, la agenda y las responsabilidades que tendrán asignadas en la revisión.</p>
@@ -2756,8 +3083,8 @@ Si la respuesta a alguna de estas preguntas es «no» se elimina el factor de e�
 <section id="revision-tecnica" class="level3" data-number="13.4.12">
 <h3 data-number="13.4.12" class="anchored" data-anchor-id="revision-tecnica"><span class="header-section-number">13.4.12</span> Revisión Técnica</h3>
 <p>El objetivo de la revisión técnica es evaluar un producto intermedio del desarrollo para comprobar que se ajusta a sus especificaciones y que se está elaborando de acuerdo a las normas, estándares y guías aplicables al proyecto.</p>
-<section id="descripción-27" class="level4 unnumbered unlisted">
-<h4 class="unnumbered unlisted anchored" data-anchor-id="descripción-27">Descripción</h4>
+<section id="descripción-32" class="level4 unnumbered unlisted">
+<h4 class="unnumbered unlisted anchored" data-anchor-id="descripción-32">Descripción</h4>
 <p>Con el fin de asegurar la calidad en el producto final del desarrollo, se deben llevar a cabo revisiones semiformales sobre los productos intermedios durante todo el ciclo de vida del software. Para ello, se fijan los objetivos de la revisión, la agenda que se podrá ir ajustando a lo largo del proyecto y el tipo de informe que se elaborará después de las revisiones.</p>
 <p>Los participantes en una revisión técnica son el jefe de proyecto y el responsable del grupo de aseguramiento de calidad que, de forma conjunta, revisarán el producto que corresponda en cada momento.</p>
 <p>Una vez fijado sobre qué productos intermedios se llevarán a cabo las revisiones, el responsable de aseguramiento de calidad recoge la información necesaria de cada producto para poder establecer los criterios de revisión y más adelante, evaluar si el producto cumple las especificaciones, es decir, si se ha elaborado de acuerdo a unas características concretas como pueden ser la aplicación de una técnica específica, la inclusión de algún tipo de información, etc. Además, se debe contar con la normativa y estándares aplicables al proyecto de forma que, no sólo se asegure que el producto cumpla sus especificaciones, sino también del modo adecuado.</p>
@@ -2767,8 +3094,8 @@ Si la respuesta a alguna de estas preguntas es «no» se elimina el factor de e�
 <section id="sesiones-de-trabajo" class="level3" data-number="13.4.13">
 <h3 data-number="13.4.13" class="anchored" data-anchor-id="sesiones-de-trabajo"><span class="header-section-number">13.4.13</span> Sesiones de Trabajo</h3>
 <p>Las sesiones de trabajo tienen diversos objetivos. Dependiendo del tipo de sesión que se realice, los objetivos pueden ser: obtener información, comunicar resultados, reducir el tiempo de desarrollo, activar la participación de usuarios y directivos o aumentar la calidad de los productos son objetivos.</p>
-<section id="descripción-28" class="level4 unnumbered unlisted">
-<h4 class="unnumbered unlisted anchored" data-anchor-id="descripción-28">Descripción</h4>
+<section id="descripción-33" class="level4 unnumbered unlisted">
+<h4 class="unnumbered unlisted anchored" data-anchor-id="descripción-33">Descripción</h4>
 <p>Las sesiones de trabajo pueden ser de varios tipos en función de las personas que participen en ellas, el objetivo que se persiga y el modo de llevarlas a cabo.</p>
 <p>Dentro de estas sesiones de trabajo se encuentran algunas técnicas como son el <a href="#jad">JAD</a> (<em>Joint Application Design</em>) y el <a href="#jrp">JRP</a> (<em>Joint Requirements Planning</em>), y otras prácticas como las <a href="#entrevistas">entrevistas</a> y las <a href="#reuniones">reuniones</a>, en las que se pueden dar algunas orientaciones y recomendaciones para su realización.</p>
 <p>A continuación se explica brevemente el objetivo principal de cada una de ellas, antes de describir más en detalle la forma de llevarlas a cabo.</p>
@@ -2779,8 +3106,8 @@ Si la respuesta a alguna de estas preguntas es «no» se elimina el factor de e�
 <section id="entrevistas" class="level4" data-number="13.4.13.1">
 <h4 data-number="13.4.13.1" class="anchored" data-anchor-id="entrevistas"><span class="header-section-number">13.4.13.1</span> Entrevistas</h4>
 <p>Las entrevistas constituyen un medio para obtener la información que se necesita sobre un determinado tema, como puede ser, el establecer el alcance de un problema, identificar los requisitos a cubrir por un sistema de información y analizar el funcionamiento de un sistema actual, entre otros, a partir de las personas que tienen conocimiento sobre el mismo.</p>
-<section id="descripción-29" class="level5 unnumbered unlisted">
-<h5 class="unnumbered unlisted anchored" data-anchor-id="descripción-29">Descripción</h5>
+<section id="descripción-34" class="level5 unnumbered unlisted">
+<h5 class="unnumbered unlisted anchored" data-anchor-id="descripción-34">Descripción</h5>
 <p>Se entiende por entrevista el encuentro que se realiza “cara a cara” entre un usuario y la persona responsable de obtener la información.</p>
 <p>Para realizar la entrevista solo es necesario designar a las personas que deben participar en ella y determinar el lugar en el que poder llevarla a cabo. Es importante identificar a qué tipo de perfil va dirigida la entrevista, a quiénes se va a entrevistar y cuál es el momento más oportuno, con el fin de evitar situaciones embarazosas y conseguir que la entrevista sea eficaz y productiva.</p>
 <p>Como paso previo a la realización de la entrevista se deben tener en cuenta una serie de reglas generales o directrices básicas:</p>
@@ -2802,8 +3129,8 @@ Si la respuesta a alguna de estas preguntas es «no» se elimina el factor de e�
 <section id="reuniones" class="level4" data-number="13.4.13.2">
 <h4 data-number="13.4.13.2" class="anchored" data-anchor-id="reuniones"><span class="header-section-number">13.4.13.2</span> Reuniones</h4>
 <p>Las reuniones tienen como objetivo obtener información que se encuentra repartida entre varias personas, tomar decisiones estratégicas, tácticas u operativas, transmitir ideas sobre un determinado tema, analizar nuevas necesidades de información, así como comunicar los resultados obtenidos como consecuencia de un estudio.</p>
-<section id="descripción-30" class="level5 unnumbered unlisted">
-<h5 class="unnumbered unlisted anchored" data-anchor-id="descripción-30">Descripción</h5>
+<section id="descripción-35" class="level5 unnumbered unlisted">
+<h5 class="unnumbered unlisted anchored" data-anchor-id="descripción-35">Descripción</h5>
 <p>Para realizar una reunión es necesario designar a las personas que deben participar en ella y determinar el lugar en el que poder llevarla a cabo. Las directrices básicas de una reunión son:</p>
 <ul>
 <li>Preparar y convocar la reunión (orden del día).</li>
@@ -2820,8 +3147,8 @@ Si la respuesta a alguna de estas preguntas es «no» se elimina el factor de e�
 <section id="jad" class="level4" data-number="13.4.13.3">
 <h4 data-number="13.4.13.3" class="anchored" data-anchor-id="jad"><span class="header-section-number">13.4.13.3</span> JAD (Joint Application Design)</h4>
 <p>Las sesiones JAD tienen como objetivo reducir el tiempo de desarrollo de un sistema manteniendo la calidad del mismo. Para ello se involucra a los usuarios a lo largo de todo el desarrollo del sistema, es decir, desde la identificación de la necesidad, la propuesta de alternativas de solución y sobre todo en la especificación de los requisitos que debe cubrir el sistema y en la validación de prototipos.</p>
-<section id="descripción-31" class="level5 unnumbered unlisted">
-<h5 class="unnumbered unlisted anchored" data-anchor-id="descripción-31">Descripción</h5>
+<section id="descripción-36" class="level5 unnumbered unlisted">
+<h5 class="unnumbered unlisted anchored" data-anchor-id="descripción-36">Descripción</h5>
 <p>Las características de una sesión de trabajo tipo JAD se pueden resumir en los siguientes puntos:</p>
 <ul>
 <li>Se establece un equipo de trabajo cuyos componentes y responsabilidades están perfectamente identificados y su fin es conseguir el consenso entre las necesidades de los usuarios y los servicios del sistema en producción.</li>
@@ -2855,8 +3182,8 @@ Si la respuesta a alguna de estas preguntas es «no» se elimina el factor de e�
 <section id="jrp" class="level4" data-number="13.4.13.4">
 <h4 data-number="13.4.13.4" class="anchored" data-anchor-id="jrp"><span class="header-section-number">13.4.13.4</span> JRP (Joint Requeriments Planning)</h4>
 <p>Las sesiones JRP tienen como objetivo potenciar la participación activa de la alta dirección como medio para obtener los mejores resultados en el menor tiempo posible y con una mayor calidad de los productos.</p>
-<section id="descripción-32" class="level5 unnumbered unlisted">
-<h5 class="unnumbered unlisted anchored" data-anchor-id="descripción-32">Descripción</h5>
+<section id="descripción-37" class="level5 unnumbered unlisted">
+<h5 class="unnumbered unlisted anchored" data-anchor-id="descripción-37">Descripción</h5>
 <p>Las características de las sesiones JRP y <a href="#jad">JAD</a> son comunes en cuanto a la dinámica del desarrollo de las sesiones y la obtención de los modelos con el soporte de las herramientas adecuadas. La diferencia radica en los productos de salida y en los perfiles de los participantes. En JRP son del nivel más alto en la organización en cuanto a visión global del negocio y capacidad de decisión.</p>
 <p>Los perfiles implicados en una sesión JRP son los siguientes:</p>
 <ul>
