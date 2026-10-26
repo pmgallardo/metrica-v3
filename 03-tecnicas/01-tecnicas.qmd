@@ -1020,6 +1020,55 @@ Por otro lado, se han incluido atributos que caracterizan la relación *Trabaja
 
 ### Reglas de Transformación {#reglas-de-transformacion}
 
+El objetivo de esta técnica es obtener un modelo físico de datos a partir del modelo de clases. Para ello es necesario aplicar un conjunto de reglas de transformación que conserven la semántica del modelo de clases.
+
+#### Descripción {.unnumbered .unlisted}
+
+Cada uno de los elementos del modelo de clases se tiene que transformar en un elemento del modelo físico. En algunos casos la transformación es directa porque el concepto se soporta igual en ambos modelos, pero otras veces no existe esta correspondencia, por lo que es necesario buscar una transformación que conserve lo mejor posible la semántica, teniendo en cuenta los aspectos de eficiencia que sean necesarios en cada caso.
+
+##### Transformación de clases {.unnumbered .unlisted}
+
+Una clase se transforma en una tabla. Lo habitual es que en los modelos con herencia pueden surgir excepciones cuando se apliquen las reglas de transformación propias de la herencia. Además, es posible que dos clases se transformen en una sola tabla cuando el comportamiento de una de ellas sea irrelevante en la base de datos.
+
+##### Transformación de atributos de clases {.unnumbered .unlisted}
+
+Cada atributo se transforma en una columna de la tabla en la que se transformó la clase a la que pertenece. El identificador único se convierte en clave primaria. Además, se deben tener en cuenta las reglas de transformación que se aplican a la herencia de clases.
+
+Si existen restricciones asociadas a los atributos, éstas pueden recogerse con algunas cláusulas del lenguaje lógico, que se convertirán en disparadores cuando éstos sean soportados por el sistema gestor de base de datos.
+
+##### Transformación de relaciones {.unnumbered .unlisted}
+
+Según el tipo de correspondencia:
+
+* **Relaciones M:N**, se transforman en una tabla, cuya clave primaria es la concatenación de los identificadores de las clases asociadas, siendo cada uno de ellos clave ajena de la propia tabla. Si la relación tiene atributos, éstos se transforman en columnas de la tabla.
+* **Relaciones 1:N**, existen varias posibilidades:
+  * Propagar el identificador de la clase de cardinalidad máxima 1 a la que es N, teniendo en cuenta que:
+    * Si la relación es de asociación, la clave propagada es clave ajena en la tabla a la que se ha propagado.
+    * Si la relación es de dependencia, la clave primaria de la tabla correspondiente a la clase débil está formada por la concatenación de los identificadores de ambas clases.
+  * La relación se transforma en una tabla de clave primaria sólo el identificador de la clase de cardinalidad máxima N si:
+    * La relación tiene atributos propios y se desea que aparezcan como tales.
+    * Se piensa que en un futuro la relación puede convertirse en M:N.
+    * El número de ocurrencias relacionadas de la clase que propaga su clave es muy pequeño (y por tanto pueden existir muchos valores nulos).
+    Al igual que en el caso de relaciones M:N, las claves propagadas son claves ajenas de la nueva tabla creada.
+* **Relaciones 1:1**, es un caso particular de las 1:N y se puede tanto crear una tabla o propagar la clave, si bien, en este último caso, la clave se propaga en las dos direcciones. Para decidir qué solución adoptar, se debe analizar la situación, intentando recoger la mayor semántica posible, y evitar valores nulos.
+  Las relaciones de agregación se transforman del mismo modo que las 1:N.
+
+##### Transformación de relaciones exclusivas {.unnumbered .unlisted}
+
+Después de haber realizado la transformación según las relaciones 1:N, se debe tener en cuenta que si se han propagado los atributos de las clases, convirtiéndose en claves ajenas de la tabla que provenía de la clase común a las relaciones, hay que comprobar que una y sólo una de esas claves es nula en cada ocurrencia. En caso de no propagarse las claves, estas comprobaciones se deben hacer en las tablas resultantes de transformar las relaciones.
+
+##### Transformación de la herencia {.unnumbered .unlisted}
+
+Existen varias posibilidades que deben ser evaluadas por el diseñador a fin de elegir la que mejor se ajuste a los requisitos. Las opciones para tratar la transformación de la herencia son:
+
+* **Opción a**: Consiste en crear una tabla para la superclase que tenga de clave primaria el identificador y una tabla para cada una de las subclases que tengan el identificador de la superclase como clave ajena.
+    Esta solución es apropiada cuando las subclases tienen muchos atributos distintos, y se quieren conservar los atributos comunes en una tabla. También se deben implantar las restricciones y/o aserciones adecuadas. Es la solución que mejor conserva la semántica.
+* **Opción b**: Se crea una tabla para cada subclase, los atributos comunes aparecen en todas las subclases y la clave primaria para cada tabla es el identificador de la superclase.
+    Esta opción mejora la eficiencia en los accesos a todos los atributos de una subclase (los heredados y los específicos).
+* **Opción c**: Agrupar en una tabla todos los atributos de la clase y sus subclases. La clave primaria de esta tabla es el identificador de la clase. Se añade un atributo que indique a qué subclase pertenece cada ocurrencia (el atributo discriminante de la jerarquía).
+
+Esta solución puede aplicarse cuando las subclases se diferencien en pocos atributos y las relaciones que asocian a las subclases con otras clases, sean las mismas. Para el caso de que la jerarquía sea total, el atributo discriminante no podrá tomar valor nulo (ya que toda ocurrencia pertenece a alguna subclase).
+
 ### Técnicas Matriciales {#tecnicas-matriciales}
 
 Las técnicas matriciales tienen como objetivo representar las relaciones existentes entre distintos tipos de entidades, objetos o cualquier otro elemento del sistema.
