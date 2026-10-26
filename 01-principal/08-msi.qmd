@@ -225,7 +225,7 @@ El enfoque de este estudio varía según el tipo de mantenimiento, teniendo en c
 </table>
 ```
 
-#### Tarea MSI 2.1: Verificación y Estudio de la Petición {#msi-1-2}
+#### Tarea MSI 2.1: Verificación y Estudio de la Petición {#msi-2-1}
 
 Antes de iniciar el estudio de la petición, se verifica que la información registrada es correcta. Para determinar su validez:
 
