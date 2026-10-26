@@ -54,6 +54,10 @@ format:
     toc: true
     toc-depth: 4
     number-sections: true
+    include-in-header:
+      # Reconocimiento de propiedad para Google Search Console
+      text: |
+        <meta name="google-site-verification" content="IPR74Q6s90zKZxczgop7rsjY6tQAvbAdHctA9P1ieeM" />
   pdf:
     documentclass: scrreprt
     pdf-engine: lualatex
