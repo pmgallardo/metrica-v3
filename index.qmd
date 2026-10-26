@@ -4,7 +4,7 @@ La metodología MÉTRICA Versión 3 ofrece a las Organizaciones un instrumento �
 
 **Metodología de Planificación, Desarrollo y Mantenimiento de sistemas de información**
 
-Se presentan en este medio los documentos que componen la metodología MÉTRICA VERSIÓN 3. Iniciativa promovida por el Consejo Superior de Informática –publicada en 2001 en la [web del CSI](http://www.map.es/csi/metrica3/index.html)–. 
+Se presentan en este medio los documentos que componen la metodología MÉTRICA VERSIÓN 3. Iniciativa promovida por el Consejo Superior de Informática –publicada en 2001 en la [web del CSI](https://web.archive.org/web/20010623220918/http://www.map.es/csi/metrica3/index.html){target="blank"}–. 
 
 MÉTRICA versión 3 puede ser utilizada libremente y en cualquier explotación de la obra se hará constar la autoría original.
 
@@ -18,6 +18,6 @@ Para cuestiones relacionadas con el repositorio de ficheros fuente o sus version
 | Recurso | URL |
 | - | - |
 | Versión web | [pmgallardo.github.io/metrica-v3](https://pmgallardo.github.io/metrica-v3) |
-| Repositorio de ficheros fuente | [github.com/pmgallardo/metrica-v3](https://github.com/pmgallardo/metrica-v3) |
-| Repositorio de documentación original | [administracionelectronica.gob.es/pae_Home/pae_Documentacion/pae_Metodolog/pae_Metrica_v3.html](https://administracionelectronica.gob.es/pae_Home/pae_Documentacion/pae_Metodolog/pae_Metrica_v3.html?idioma=es) |
+| Repositorio de ficheros fuente | [github.com/pmgallardo/metrica-v3](https://github.com/pmgallardo/metrica-v3){target="blank"} |
+| Repositorio de documentación original | [administracionelectronica.gob.es/pae_Home/pae_Documentacion/pae_Metodolog/pae_Metrica_v3.html](https://administracionelectronica.gob.es/pae_Home/pae_Documentacion/pae_Metodolog/pae_Metrica_v3.html?idioma=es){target="blank"} |
 
