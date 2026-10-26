@@ -965,6 +965,54 @@ nombre-evento (parámetros) [condición] /acción
 (Nota.- Esta notación es la más habitual, pero MÉTRICA Versión 3 no exige su utilización).
 
 ### Modelado de Procesos de la Organización {#modelado-de-procesos-de-la-organizacion}
+
+Existen muchas técnicas para el modelado de procesos de la organización, aunque la elección de una de ellas se debe llevar a cabo dentro del contexto de cada organización o incluso del de un determinado proyecto, en función de los objetivos que se persigan.
+
+Al final de esta introducción se describe la técnica [SADT](#sadt) (*Structured Analysis and Design Technique*) que es una de las posibles elecciones para el modelado de procesos de la organización.
+
+#### Conceptos {.unnumbered .unlisted}
+
+Se incluyen unas definiciones de carácter general, relacionadas con los procesos de la organización.
+
+##### Proceso de la organización {.unnumbered .unlisted}
+
+Un proceso de la organización se descompone en una serie de actividades (qué se hace) y éstas en procedimientos (cómo se hace). Además hay que saber quién lo hace.
+
+Se caracteriza porque:
+
+* Tiene un disparador que es un evento externo.
+* Posee unas actividades que proporcionan las salidas adecuadas en respuesta al evento.
+* Transforma entradas de todos los tipos en salidas, siguiendo unas reglas.
+* Utiliza pasos lógicos que afectan a distintas funciones en distintos departamentos.
+* Contiene indicadores de rendimiento para los que se pueden establecer objetivos medibles.
+* Proporciona un producto o servicio a una entidad externa o a otro proceso interno.
+
+##### Modelo de procesos de la organización {.unnumbered .unlisted}
+
+Es el mapa o diagrama del proceso que representa las interacciones entre actividades, objetos y recursos de la organización, con la documentación adicional de sus características y la información que fluye entre ellos.
+
+##### Tipos de procesos {.unnumbered .unlisted}
+
+De acuerdo a sus características se distinguen los procesos:
+
+* Principales: que están en contacto directo con el cliente o que dan respuesta a las demandas del mercado.
+* De soporte: para guiar, controlar, planificar o aportar recursos a los procesos principales o a otros procesos de soporte.
+
+La representación de un proceso se realiza mediante una caja rectangular. Cada caja se etiqueta con un nombre formado por una acción y un objeto (por ejemplo: rellenar formularios, confirmar con cliente, instalar equipos, reservar viaje, etc.)
+
+Entre las propiedades que reúne un buen modelo de procesos se encuentran las siguientes:
+
+* Tiene un objetivo claramente definido.
+* Permite obtener una visión general y de detalle de los procesos.
+* Identifica eventos que disparan actividades del proceso.
+* Identifica conexiones lógicas entre actividades.
+* Establece las relaciones con el cliente final.
+* Actúa como repositorio y organizador del proceso de información.
+* Establece medidas de tiempo de proceso, esfuerzo y coste.
+* Ayuda en la identificación de las áreas con problemas que afectan al nivel de satisfacción del cliente.
+* Contiene gráficos y texto.
+* Crea un vocabulario común.
+
 #### SADT (Structured Analysis and Design Technique) {#sadt}
 
 ### Modelo Entidad/Relación Extendido {#modelo-entidad-relacion-extendido}
