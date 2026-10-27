@@ -136,23 +136,23 @@ Sistemas de Sistemas de Información:</p>
 El Responsable de Seguridad debe estudiar si es necesario supervisar la seguridad (niveles de autenticación, confidencialidad, integridad y disponibilidad) de los productos generados en las actividades del proceso Planificación de Sistemas de Información. Como fruto de dicho estudio se establecerá el control de la seguridad en las actividades tanto a nivel de ejecución como de los productos obtenidos.
 Productos
 
-De entrada
+###### De entrada {.unnumbered .unlisted}
 
     Descripción General del PSI (PSI 1.3)
     Política de Seguridad de la Organización (externo)
     Riesgo Aceptable (Comité de Seguimiento)
 
-De salida
+###### De salida {.unnumbered .unlisted}
 
     Seguridad Requerida en el Proceso Planificación de Sistemas de Información:
         Seguridad para la Ejecución de Actividades
         Seguridad para la Clasificación y Catalogación de los Productos Intermedios
 
-Prácticas
+##### Prácticas {.unnumbered .unlisted}
 
     Sesiones de Trabajo
 
-Participantes
+##### Participantes {.unnumbered .unlisted}
 
     Responsable de Seguridad
 
@@ -161,24 +161,24 @@ Participantes
 El responsable de seguridad determina la organización y planificación necesaria para la seguridad del proceso con objetivos, fases y posibles condicionantes. Deben adaptarse los objetivos globales de seguridad de la organización relacionándolos con los recursos necesarios, y determinando así el equipo de seguridad necesario para el proceso de Planificación de Sistemas de Información.
 Productos
 
-De entrada
+###### De entrada {.unnumbered .unlisted}
 
     Política de Seguridad de la Organización (externo)
     Seguridad Requerida en el Proceso PSI (PSI-SEG 1.1)
 
-De salida
+###### De salida {.unnumbered .unlisted}
 
     Plan de Seguridad de los Sistemas de Información:
         Política de Seguridad de la Organización
         Organización y Planificación Necesaria para la Seguridad
         Análisis y Conclusiones
 
-Prácticas
+##### Prácticas {.unnumbered .unlisted}
 
     Revisión
     Sesiones de Trabajo
 
-Participantes
+##### Participantes {.unnumbered .unlisted}
 
     Responsable de Seguridad
     Comité de Dirección
@@ -254,23 +254,23 @@ El equipo de seguridad estudia las alternativas de arquitectura tecnológica, an
 Para la realización de esta tarea se puede tomar como referencia MAGERIT, Metodología de Análisis y Gestión de Riesgos de los Sistemas de Información.
 Productos
 
-De entrada
+###### De entrada {.unnumbered .unlisted}
 
     Plan de Seguridad de los Sistemas de Información (PSI-SEG 1.2)
     Alternativas de Arquitectura Tecnológica (PSI 7.1)
 
-De salida
+###### De salida {.unnumbered .unlisted}
 
     Seguridad de las Alternativas de Arquitectura Tecnológica:
         Características detalladas de seguridad para cada Alternativa
         Análisis y Gestión del Riesgo de cada Alternativa
 
-Prácticas
+##### Prácticas {.unnumbered .unlisted}
 
     Revisión
     Sesiones de Trabajo
 
-Participantes
+##### Participantes {.unnumbered .unlisted}
 
     Equipo de Seguridad
     Responsable de Seguridad
@@ -280,23 +280,23 @@ Participantes
 Una vez se dispone de la alternativa de la arquitectura tecnológica seleccionada (PSI 7.2) y del estudio de seguridad de las alternativas obtenido en la tarea anterior, el Comité de Seguimiento y el Responsable de Seguridad realizan un examen del mismo para aceptarlo o rechazarlo.
 Productos
 
-De entrada
+###### De entrada {.unnumbered .unlisted}
 
     Arquitectura Tecnológica (PSI 7.2)
     Seguridad de las Alternativas de Arquitectura Tecnológica (PSI-SEG 2.1)
 
-De salida
+###### De salida {.unnumbered .unlisted}
 
     Seguridad de las Alternativas de Arquitectura Tecnológica:
         Análisis y Gestión del Riesgo de la Arquitectura Tecnológica
         Nivel de Riesgo Aceptable
 
-Prácticas
+##### Prácticas {.unnumbered .unlisted}
 
     Revisión
     Sesiones de Trabajo
 
-Participantes
+##### Participantes {.unnumbered .unlisted}
 
     Comité de Seguimiento
     Responsable de Seguridad
@@ -339,21 +339,21 @@ Una vez definida la arquitectura tecnológica en el Plan de Sistemas de Informac
 Se estudia el Plan de Acción establecido en el Plan de Sistemas de Información (PSI 8.1) con el objetivo de programar los recursos lógicos y físicos necesarios para la activación de los servicios y mecanismos de salvaguarda que se determinaron para la arquitectura tecnológica escogida.
 Productos
 
-De entrada
+###### De entrada {.unnumbered .unlisted}
 
     Plan de Seguridad de los Sistemas de Información (PSI-SEG 1.2)
     Plan de Acción (PSI 8.1)
 
-De salida
+###### De salida {.unnumbered .unlisted}
 
     Seguridad para el Plan de Acción
 
-Prácticas
+##### Prácticas {.unnumbered .unlisted}
 
     Revisión
     Sesiones de Trabajo
 
-Participantes
+##### Participantes {.unnumbered .unlisted}
 
     Comité de Seguimiento
     Responsable de Seguridad
@@ -400,11 +400,11 @@ Participantes
 El responsable de seguridad estudia los productos generados durante el proceso de Planificación de Sistemas de Información y determinan el nivel de seguridad de cada uno de ellos con respecto a la autenticación, confidencialidad, integridad y disponibilidad. En función del nivel de seguridad se establece la catalogación y archivo de los productos, teniendo en cuenta a este respecto las particularidades del soporte de almacenamiento elegido y del sistema de gestión de configuración vigente en la organización (Véase la Interfaz de Gestión de Configuración).
 Productos
 
-De entrada
+###### De entrada {.unnumbered .unlisted}
 
     Productos generados durante el proceso Planificación de Sistemas de Información
 
-De salida
+###### De salida {.unnumbered .unlisted}
 
     Catalogación de los Productos Generados en el Proceso Planificación de Sistemas de Información:
         Determinación de Niveles de Seguridad
@@ -412,12 +412,12 @@ De salida
         Niveles de Seguridad de los Productos
         Soporte de Almacenamiento
 
-Prácticas
+##### Prácticas {.unnumbered .unlisted}
 
     Revisión
     Catalogación
 
-Participantes
+##### Participantes {.unnumbered .unlisted}
 
     Responsable de Seguridad
 
@@ -469,23 +469,23 @@ En el siguiente gráfico se muestra la relación entre las actividades del Estud
 El Responsable de Seguridad analiza la necesidad de supervisar la seguridad (niveles de autenticación, confidencialidad, integridad y disponibilidad) de los productos intermedios de alguna de las actividades del proceso Estudio de Viabilidad del Sistema. Para ello se basa en las particularidades del sistema de información y en la manera en que el proceso es llevado a cabo. Como fruto de dicho estudio, y teniendo en cuenta las características del proceso, se establecerá el control de la seguridad en las actividades tanto a nivel de ejecución como de los productos obtenidos.
 Productos
 
-De entrada
+###### De entrada {.unnumbered .unlisted}
 
     Catálogo de objetivos del EVS (EVS 1.1)
     Plan de trabajo (EVS 1.3)
     Seguridad para el Plan de Acción (PSI-SEG 3.1)
 
-De salida
+###### De salida {.unnumbered .unlisted}
 
     Seguridad Requerida en el Proceso Estudio de Viabilidad del Sistema:
         Seguridad para la Ejecución de Actividades
         Seguridad para la Clasificación y Catalogación de los Productos Intermedios
 
-Prácticas
+##### Prácticas {.unnumbered .unlisted}
 
     Sesiones de Trabajo
 
-Participantes
+##### Participantes {.unnumbered .unlisted}
 
     Responsable de Seguridad
     Jefe de Proyecto
@@ -533,22 +533,22 @@ La naturaleza de las funciones a desempeñar y la criticidad y confidencialidad 
 Deben realizarse las sesiones de trabajo necesarias para especificar las labores que deben desempeñar y con qué grado de responsabilidad.
 Productos
 
-De entrada
+###### De entrada {.unnumbered .unlisted}
 
     Plan de Seguridad de los Sistemas de Información (PSI-SEG 1.2)
 
-De salida
+###### De salida {.unnumbered .unlisted}
 
     Equipo de Seguridad:
         Perfil de Selección
         Funciones y Responsabilidades
 
-Prácticas
+##### Prácticas {.unnumbered .unlisted}
 
     Revisión
     Sesiones de Trabajo
 
-Participantes
+##### Participantes {.unnumbered .unlisted}
 
     Comité de Seguimiento
     Responsable de Seguridad
@@ -596,24 +596,24 @@ El Equipo de Seguridad establece las recomendaciones de seguridad del sistema en
 El Equipo de Seguridad estudia la legislación, normas y procedimientos referentes a la seguridad que son aplicables al sistema de información y que completan la política de seguridad de la organización, elaborando las recomendaciones de seguridad para dicho sistema.
 Productos
 
-De entrada
+###### De entrada {.unnumbered .unlisted}
 
     Legislación, Normas y Procedimientos de Seguridad (Externo)
     Catálogo de Normas (EVS 3.1)
     Catálogo de Requisitos (EVS 3.3)
 
-De salida
+###### De salida {.unnumbered .unlisted}
 
     Recomendaciones de Seguridad:
         Normativas y Legislación
         Catálogo de Recomendaciones de Seguridad
 
-Prácticas
+##### Prácticas {.unnumbered .unlisted}
 
     Sesiones de Trabajo
     Catalogación
 
-Participantes
+##### Participantes {.unnumbered .unlisted}
 
     Responsable de Seguridad
     Equipo de Seguridad
@@ -667,25 +667,25 @@ El Equipo de Seguridad estudia la información sobre las alternativas de soluci�
 
 Productos
 
-De entrada
+###### De entrada {.unnumbered .unlisted}
 
     Recomendaciones de Seguridad (EVS-SEG 3.1)
     Alternativas de Solución a Estudiar (EVS 4.2)
     Valoración de Alternativas (EVS 5.2)
     Plan de Trabajo de cada Alternativa (EVS 5.3)
 
-De salida
+###### De salida {.unnumbered .unlisted}
 
     Seguridad de las Alternativas de Solución:
         Características Detalladas para cada Alternativa
         Resultado del Análisis y Gestión del Riesgo
 
-Prácticas
+##### Prácticas {.unnumbered .unlisted}
 
     Revisión
     Sesiones de Trabajo
 
-Participantes
+##### Participantes {.unnumbered .unlisted}
 
     Equipo de Seguridad
     Responsable de Seguridad
@@ -740,22 +740,22 @@ El estudio de la seguridad de la solución propuesta debe llevarse a cabo partie
 Partiendo de una especificación de las principales características de la solución y mediante modelos de inferencia, se detectan las vulnerabilidades, riesgos y las posibilidades de gestión que pueda hacerse de dichos riesgos. Tras esa labor el Equipo de Seguridad realiza una evaluación de la seguridad de la solución propuesta.
 Productos
 
-De entrada
+###### De entrada {.unnumbered .unlisted}
 
     Solución Propuesta (EVS 6.2)
     Seguridad de las Alternativas de Solución (EVS-SEG 4.1)
 
-De salida
+###### De salida {.unnumbered .unlisted}
 
     Seguridad de la Solución Propuesta:
         Características Detalladas de Seguridad de la Solución
         Recomendación Final de Mejoras de Seguridad
 
-Prácticas
+##### Prácticas {.unnumbered .unlisted}
 
     Catalogación
 
-Participantes
+##### Participantes {.unnumbered .unlisted}
 
     Responsable de Seguridad
     Equipo de Seguridad
@@ -804,11 +804,11 @@ Participantes
 El Responsable de Seguridad, el Jefe de Proyecto y el Comité de Seguimiento estudian los productos generados durante el proceso de Estudio de Viabilidad del Sistema y determinan el nivel de seguridad de cada uno de ellos con respecto a la autenticación, confidencialidad, integridad y disponibilidad. En función del nivel de seguridad se establece la catalogación y archivo de los productos, teniendo en cuenta a este respecto las particularidades del soporte de almacenamiento elegido y del sistema de gestión de configuración vigente en la organización.
 Productos
 
-De entrada
+###### De entrada {.unnumbered .unlisted}
 
     Productos generados durante el proceso Estudio de Viabilidad del Sistema.
 
-De salida
+###### De salida {.unnumbered .unlisted}
 
     Catalogación de los Productos Generados en el Proceso Estudio de Viabilidad del Sistema:
         Determinación de Niveles de Seguridad
@@ -816,12 +816,12 @@ De salida
         Niveles de Seguridad de los Productos
         Soporte de Almacenamiento
 
-Prácticas
+##### Prácticas {.unnumbered .unlisted}
 
     Revisión
     Catalogación
 
-Participantes
+##### Participantes {.unnumbered .unlisted}
 
     Responsable de Seguridad
     Jefe de Proyecto
@@ -881,22 +881,22 @@ En el siguiente gráfico se muestra la relación entre las actividades del proce
 El Equipo de Seguridad estudia la necesidad de supervisar la seguridad (niveles de autenticación, confidencialidad, integridad y disponibilidad) de los productos generados en alguna de las actividades del proceso de Análisis del Sistema de Información. Para ello se parte de la planificación del proceso obtenida mediante la interfaz de Gestión de Proyectos (GPI 2) y de las particularidades del sistema de información. Como fruto de dicho estudio, y teniendo en cuenta las características del proceso, se establecerá el control de la seguridad en las actividades tanto a nivel de ejecución como de los productos obtenidos.
 Productos
 
-De entrada
+###### De entrada {.unnumbered .unlisted}
 
     Catálogo de Requisitos (ASI 1.1)
     Planificación detallada (GPI 2)
 
-De salida
+###### De salida {.unnumbered .unlisted}
 
     Seguridad Requerida en el Proceso Análisis del Sistema de Información:
         Seguridad para Ejecución de Actividades
         Seguridad para Clasificación y Catalogación de los Productos Intermedios
 
-Prácticas
+##### Prácticas {.unnumbered .unlisted}
 
     Sesiones de Trabajo
 
-Participantes
+##### Participantes {.unnumbered .unlisted}
 
     Equipo de Seguridad
     Responsable de Seguridad
@@ -952,23 +952,23 @@ Para la determinación de tales funciones pueden utilizarse las técnicas que po
 Las funciones y mecanismos adicionales de seguridad definidos en esta actividad se implementarán en el sistema a través de MÉTRICA Versión 3, al igual que los demás requisitos de seguridad.
 Productos
 
-De entrada
+###### De entrada {.unnumbered .unlisted}
 
     Seguridad de la Solución Propuesta (EVS-SEG 5.1)
     Catálogo de Requisitos (ASI 2.1)
 
-De salida
+###### De salida {.unnumbered .unlisted}
 
     Funciones y Mecanismos de Seguridad:
         Estudio de Riesgos
         Especificación de Funciones de Seguridad
         Mecanismos de Seguridad
 
-Prácticas
+##### Prácticas {.unnumbered .unlisted}
 
     Catalogación
 
-Participantes
+##### Participantes {.unnumbered .unlisted}
 
     Responsable de Seguridad
     Equipo de Seguridad
@@ -1016,22 +1016,22 @@ El Equipo de Seguridad debe determinar los criterios de aceptación de la seguri
 Partiendo del plan de pruebas del Sistema de Información, se incluirán en las pruebas los funciones y mecanismos adicionales de seguridad. El Equipo de Seguridad debe comprobar la eficiencia del sistema de información para la eliminación, control o reducción de las amenazas mediante los mecanismos de seguridad.
 Productos
 
-De entrada
+###### De entrada {.unnumbered .unlisted}
 
     Plan de Pruebas (ASI 10.3)
     Funciones y Mecanismos de Seguridad (ASI-SEG 2.1)
 
-De salida
+###### De salida {.unnumbered .unlisted}
 
     Plan de Pruebas:
         Criterios de Seguridad
 
-Prácticas
+##### Prácticas {.unnumbered .unlisted}
 
     Revisión
     Sesiones de Trabajo
 
-Participantes
+##### Participantes {.unnumbered .unlisted}
 
     Responsable de Seguridad
     Equipo de Seguridad del Proyecto
@@ -1163,21 +1163,21 @@ En el siguiente gráfico se aprecia la relación entre las actividades del proce
 El Responsable de Seguridad y el Equipo de Seguridad estudian, partiendo de las particularidades del sistema de información, si es necesario supervisar la seguridad (niveles de autenticación, confidencialidad, integridad y disponibilidad de los productos intermedios) de alguna de las actividades del proceso Diseño del Sistema de Información previstas en la planificación del proceso obtenida mediante la interfaz de Gestión de Proyectos (GPI 2). Como fruto de dicho estudio, y teniendo en cuenta las características del proceso, se establecerá el control de la seguridad en las actividades tanto a nivel de ejecución como de los productos obtenidos.
 Productos
 
-De entrada
+###### De entrada {.unnumbered .unlisted}
 
     Planificación detallada (GPI 2)
 
-De salida
+###### De salida {.unnumbered .unlisted}
 
     Seguridad Requerida en el Proceso Diseño del Sistema de Información:
         Seguridad para Ejecución de Actividades
         Seguridad para Clasificación y Catalogación de los Productos Intermedios
 
-Prácticas
+##### Prácticas {.unnumbered .unlisted}
 
     Sesiones de Trabajo
 
-Participantes
+##### Participantes {.unnumbered .unlisted}
 
     Equipo de Seguridad
     Responsable de Seguridad
@@ -1216,16 +1216,16 @@ Es una realidad que el entorno tecnológico actúa de manera significativa en la
 El Equipo de Seguridad estudia los riesgos que plantea la conjunción del entorno tecnológico previsto y el sistema de información. Las técnicas para la detección de riesgos sirven de apoyo para la identificación de los mismos en el entorno tecnológico del sistema.
 Productos
 
-De entrada
+###### De entrada {.unnumbered .unlisted}
 
     Diseño de la Arquitectura del Sistema (DSI 1.5)
     Entorno Tecnológico del Sistema (DSI 1.6)
 
-De salida
+###### De salida {.unnumbered .unlisted}
 
     Requisitos de Seguridad del Entorno Tecnológico
 
-Participantes
+##### Participantes {.unnumbered .unlisted}
 
     Equipo de Seguridad
     Responsable de Seguridad
@@ -1266,20 +1266,20 @@ El Equipo de Seguridad establece los requisitos de seguridad que debe cumplir el
 El Equipo de Seguridad estudia las condiciones que debe cumplir el entorno de Construcción del Sistema de Información en materia de seguridad. Para ello se lleva a cabo un análisis de la seguridad del entorno de construcción, determinando los riesgos intrínsecos y los mecanismos de salvaguarda.
 Productos
 
-De entrada
+###### De entrada {.unnumbered .unlisted}
 
     Especificaciones de Construcción del Sistema de Información (DSI 8.4)
     Requisitos de Seguridad del Entorno Tecnológico (DSI-SEG 2.1)
 
-De salida
+###### De salida {.unnumbered .unlisted}
 
     Requisitos de Seguridad del Entorno de Construcción
 
-Prácticas
+##### Prácticas {.unnumbered .unlisted}
 
     Sesiones de Trabajo
 
-Participantes
+##### Participantes {.unnumbered .unlisted}
 
     Equipo de Seguridad
 
@@ -1321,7 +1321,7 @@ A partir del plan de pruebas del sistema y teniendo en cuenta las funciones y me
 El Equipo de Seguridad debe realizar el diseño específico de las pruebas de seguridad del sistema y establecer la manera en que se comprobará la seguridad del mismo.
 Productos
 
-De entrada
+###### De entrada {.unnumbered .unlisted}
 
     Plan de Pruebas (ASI-SEG 4.1)
     Funciones y Mecanismos de Seguridad (ASI-SEG 2.1)
@@ -1329,16 +1329,16 @@ De entrada
     Procedimientos de Seguridad y Control de acceso (DSI 1.7)
     Plan de Pruebas (DSI 10.1)
 
-De salida
+###### De salida {.unnumbered .unlisted}
 
     Diseño de Pruebas de Seguridad del Sistema y Aceptación
 
-Prácticas
+##### Prácticas {.unnumbered .unlisted}
 
     Pruebas del Sistema
     Pruebas de Aceptación
 
-Participantes
+##### Participantes {.unnumbered .unlisted}
 
     Equipo de Seguridad
     Responsable de Seguridad
@@ -1387,11 +1387,11 @@ Participantes
 El Responsable de Seguridad, el Jefe de Proyecto y el Comité de Seguimiento estudian los productos generados durante el proceso de Diseño del Sistema de Información y determinan el nivel de seguridad de cada uno de ellos con respecto a la autenticación, confidencialidad, integridad y disponibilidad (ACID). En función del nivel de seguridad se establece la catalogación y archivo de los productos, teniendo en cuenta a este respecto las particularidades del soporte de almacenamiento elegido y del sistema de gestión de configuración vigente en la organización.
 Productos
 
-De entrada
+###### De entrada {.unnumbered .unlisted}
 
     Productos generados durante el proceso Diseño del Sistema de Información
 
-De salida
+###### De salida {.unnumbered .unlisted}
 
     Catalogación de los Productos Generados en el Proceso Diseño del Sistema de Información:
         Determinación de Niveles de Seguridad
@@ -1399,12 +1399,12 @@ De salida
         Niveles de Seguridad de los Productos
         Soporte de Almacenamiento
 
-Prácticas
+##### Prácticas {.unnumbered .unlisted}
 
     Revisión
     Catalogación
 
-Participantes
+##### Participantes {.unnumbered .unlisted}
 
     Responsable de Seguridad
     Jefe de Proyecto
@@ -1462,21 +1462,21 @@ Sistema de Información:</p>
 El Equipo de Seguridad analiza si es necesario supervisar la seguridad (niveles de autenticación, confidencialidad, integridad y disponibilidad de los productos intermedios) de alguna de las actividades pertenecientes al proceso de Construcción del Sistema de Información previstas en la planificación del proceso obtenida mediante la interfaz de Gestión de Proyectos (GPI 2). Para ello parte de las particularidades del sistema de información. Como producto de este estudio, el Equipo de Seguridad elabora un informe con las principales características del proceso y el control de la seguridad de sus actividades, tanto a nivel de ejecución como de los productos intermedios.
 Productos
 
-De entrada
+###### De entrada {.unnumbered .unlisted}
 
     Planificación detallada (GPI 2)
 
-De salida
+###### De salida {.unnumbered .unlisted}
 
     Seguridad Requerida en el Proceso Construcción del Sistema de Información:
         Seguridad para Ejecución de Actividades
         Seguridad para Clasificación y Catalogación de los Productos Intermedios
 
-Prácticas
+##### Prácticas {.unnumbered .unlisted}
 
     Sesiones de Trabajo
 
-Participantes
+##### Participantes {.unnumbered .unlisted}
 
     Equipo de Seguridad
     Responsable de Seguridad
@@ -1516,22 +1516,22 @@ Participantes
 El Equipo de Seguridad estudia los resultados obtenidos en las pruebas de seguridad unitarias, de integración y del Sistema de Información, y comprueba que no ha habido problemas debidos a las funciones y mecanismos adicionales de seguridad incorporados al sistema.
 Productos
 
-De entrada
+###### De entrada {.unnumbered .unlisted}
 
     Diseño de Pruebas de Seguridad de Sistema y Aceptación (DSI-SEG 4.1)
     Resultado de las Pruebas Unitarias (CSI 3.2)
     Resultado de las Pruebas de Integración (CSI 4.2)
     Resultado de las Pruebas del Sistema (CSI 5.2)
 
-De salida
+###### De salida {.unnumbered .unlisted}
 
     Resultados de las Pruebas de Seguridad de Integración y de Sistema
 
-Prácticas
+##### Prácticas {.unnumbered .unlisted}
 
     Sesiones de trabajo
 
-Participantes
+##### Participantes {.unnumbered .unlisted}
 
     Equipo de Seguridad
 
@@ -1573,13 +1573,13 @@ Para garantizar que los usuarios son conscientes de las amenazas y riesgos en el
 En esta tarea se definen las pautas que deben seguir los grupos de usuarios en materia de seguridad. Para ello el Equipo de Seguridad define planes de formación específicos, contemplando distintos niveles y perfiles, para los grupos de usuarios finales y usuarios de operación del sistema de información. El Responsable de Seguridad establece, también de forma particular, la manera en que debe acometerse la formación de los grupos de usuarios.
 Productos
 
-De entrada
+###### De entrada {.unnumbered .unlisted}
 
     Funciones y Mecanismos de Seguridad (DSI-SEG 3.1)
     Recomendaciones de Seguridad (EVS-SEG 3.1)
     Especificación de la Formación a Usuarios Finales (CSI 7.1)
 
-De salida
+###### De salida {.unnumbered .unlisted}
 
     Plan de Formación de Seguridad
 
@@ -1587,11 +1587,11 @@ Técnicas
 
     Planificación
 
-Prácticas
+##### Prácticas {.unnumbered .unlisted}
 
     Sesiones de Trabajo
 
-Participantes
+##### Participantes {.unnumbered .unlisted}
 
     Equipo de Seguridad
     Responsable de Seguridad
@@ -1640,11 +1640,11 @@ Participantes
 El Responsable de Seguridad, el Jefe de Proyecto y el Comité de Seguimiento estudian los productos generados durante el proceso de Construcción del Sistema de Información y determinan el nivel de seguridad de cada uno de ellos con respecto a la autenticación, confidencialidad, integridad y disponibilidad. En función del nivel de seguridad se establece la catalogación y archivo de los productos, teniendo en cuenta a este respecto las particularidades del soporte de almacenamiento elegido y del sistema de gestión de configuración vigente en la organización.
 Productos
 
-De entrada
+###### De entrada {.unnumbered .unlisted}
 
     Productos generados durante el proceso Construcción del Sistema de Información
 
-De salida
+###### De salida {.unnumbered .unlisted}
 
     Catalogación de los Productos Generados en el Proceso Construcción del Sistema de Información:
         Determinación de Niveles de Seguridad
@@ -1652,12 +1652,12 @@ De salida
         Niveles de Seguridad de los Productos
         Soporte de Almacenamiento
 
-Prácticas
+##### Prácticas {.unnumbered .unlisted}
 
     Revisión
     Catalogación
 
-Participantes
+##### Participantes {.unnumbered .unlisted}
 
     Responsable de Seguridad
     Jefe de Proyecto
@@ -1715,21 +1715,21 @@ Información:</p>
 El Equipo de Seguridad analiza la necesidad de supervisar la seguridad (niveles de autenticación, confidencialidad, integridad y disponibilidad de los productos intermedios) de alguna de las actividades pertenecientes al proceso de Implantación y Aceptación del Sistema. Para ello parte de las particularidades del sistema. Como fruto de dicho estudio, y teniendo en cuenta las características del proceso, se establecerá el control de la seguridad en las actividades tanto a nivel de ejecución como de los productos obtenidos.
 Productos
 
-De entrada
+###### De entrada {.unnumbered .unlisted}
 
     Plan de Implantación (IAS 1.1)
 
-De salida
+###### De salida {.unnumbered .unlisted}
 
     Seguridad Requerida en el Proceso Implantación y Aceptación del Sistema de Información:
         Seguridad para Ejecución de Actividades
         Seguridad para Clasificación y Catalogación de los Productos Intermedios
 
-Prácticas
+##### Prácticas {.unnumbered .unlisted}
 
     Sesiones de Trabajo
 
-Participantes
+##### Participantes {.unnumbered .unlisted}
 
     Equipo de Seguridad
     Responsable de Seguridad
@@ -1770,19 +1770,19 @@ Participantes
 En la preparación de la instalación (IAS 3.1) se comprueba la disponibilidad de la infraestructura necesaria para configurar el entorno. El objetivo de esta tarea es que el Equipo de Seguridad refuerce las acciones que relativas a procedimientos de seguridad y control de accesos se realizan en IAS 3.1, verificando, basándose en las particularidades del sistema, que se cubren las medidas de seguridad necesarias que hacen referencia al entorno de operación sobre el que se implantará el sistema y a la carga inicial de datos.
 Productos
 
-De entrada
+###### De entrada {.unnumbered .unlisted}
 
     Requisitos de Seguridad del Entorno Tecnológico (DSI-SEG 2.1)
 
-De salida
+###### De salida {.unnumbered .unlisted}
 
     Medidas de Seguridad del Entorno de Operación
 
-Prácticas
+##### Prácticas {.unnumbered .unlisted}
 
     Sesiones de Trabajo
 
-Participantes
+##### Participantes {.unnumbered .unlisted}
 
     Equipo de Seguridad
     Responsable de Seguridad
@@ -1821,20 +1821,20 @@ Participantes
 El Equipo de Seguridad estudia los resultados obtenidos en las pruebas de seguridad del sistema, una vez implantado en el entorno de operación, y comprueba que las funciones y mecanismos adicionales incorporados no han originado problemas.
 Productos
 
-De entrada
+###### De entrada {.unnumbered .unlisted}
 
     Resultado de las Pruebas de Implantación (IAS 5.2)
     Diseño de Pruebas de Seguridad del Sistema y Aceptación (DSI-SEG 4.1)
 
-De salida
+###### De salida {.unnumbered .unlisted}
 
     Resultados de las Pruebas de Seguridad de Implantación del Sistema
 
-Prácticas
+##### Prácticas {.unnumbered .unlisted}
 
     Sesiones de trabajo
 
-Participantes
+##### Participantes {.unnumbered .unlisted}
 
     Equipo de Seguridad
 
@@ -1882,11 +1882,11 @@ Participantes
 El Responsable de Seguridad, el Jefe de Proyecto y el Comité de Seguimiento estudian los productos generados durante el proceso de Implantación y Aceptación del Sistema y determinan el nivel de seguridad de cada uno de ellos con respecto a la autenticación, confidencialidad, integridad y disponibilidad. En función del nivel de seguridad se establece la catalogación y archivo de los productos, teniendo en cuenta a este respecto las particularidades del soporte de almacenamiento elegido y del sistema de gestión de configuración vigente en la organización.
 Productos
 
-De entrada
+###### De entrada {.unnumbered .unlisted}
 
     Productos generados durante el proceso Implantación y Aceptación del Sistema
 
-De salida
+###### De salida {.unnumbered .unlisted}
 
     Catalogación de los Productos Generados en el Proceso Implantación y Aceptación del Sistema:
         Determinación de Niveles de Seguridad
@@ -1894,12 +1894,12 @@ De salida
         Niveles de Seguridad de los Productos
         Soporte de Almacenamiento
 
-Prácticas
+##### Prácticas {.unnumbered .unlisted}
 
     Revisión
     Catalogación
 
-Participantes
+##### Participantes {.unnumbered .unlisted}
 
     Responsable de Seguridad
     Jefe de Proyecto
@@ -1942,19 +1942,19 @@ Si el entorno donde se han realizado las pruebas de implantación del sistema no
 Deberá tenerse en cuenta el control y registro de incidentes, tanto provocados como por fallos propios, así como la respuesta dada a los mismos, que a veces puede suponer volver a etapas previas para resolver el problema.
 Productos
 
-De entrada
+###### De entrada {.unnumbered .unlisted}
 
     Requisitos de Seguridad del Entorno Tecnológico Previsto (DSI-SEG 2.1)
 
-De salida
+###### De salida {.unnumbered .unlisted}
 
     Revisión de Medidas de Seguridad del Entorno de Producción
 
-Prácticas
+##### Prácticas {.unnumbered .unlisted}
 
     Sesiones de Trabajo
 
-Participantes
+##### Participantes {.unnumbered .unlisted}
 
     Equipo de Seguridad
     Responsable de Seguridad
@@ -2009,21 +2009,21 @@ El Responsable de Seguridad, junto con el Equipo de Seguridad, debe estudiar si 
 
 Productos
 
-De entrada
+###### De entrada {.unnumbered .unlisted}
 
     Plan de Mantenimiento (IAS 7.2)
 
-De salida
+###### De salida {.unnumbered .unlisted}
 
     Seguridad Requerida en el Proceso Mantenimiento de Sistemas de Información:
         Seguridad para la Ejecución de Actividades
         Seguridad para la Clasificación y Catalogación de los Productos Intermedios
 
-Prácticas
+##### Prácticas {.unnumbered .unlisted}
 
     Sesiones de Trabajo
 
-Participantes
+##### Participantes {.unnumbered .unlisted}
 
     Responsable de Seguridad
     Equipo de Seguridad
@@ -2090,21 +2090,21 @@ Ante una solicitud de cambio, habrá que estudiar si el motivo de la petición e
 Las peticiones de cambio originadas por problemas de seguridad deben tenerse en cuenta en proyectos futuros, que desde un principio se beneficiarán de las experiencias anteriores habidas en la organización.
 Productos
 
-De entrada
+###### De entrada {.unnumbered .unlisted}
 
     Propuesta de Solución (MSI 2.2)
     Catálogo de Peticiones (MSI 2.2)
     Funciones y Mecanismos de Seguridad (ASI-SEG 2.1)
 
-De salida
+###### De salida {.unnumbered .unlisted}
 
     Recomendaciones de Seguridad
 
-Prácticas
+##### Prácticas {.unnumbered .unlisted}
 
     Catalogación
 
-Participantes
+##### Participantes {.unnumbered .unlisted}
 
     Responsable de Seguridad
     Equipo de Seguridad
@@ -2116,25 +2116,25 @@ Se tendrá en cuenta la selección de las funciones de seguridad realizada en el
 Se establecen los mecanismos de seguridad que implementan esas funciones.
 Productos
 
-De entrada
+###### De entrada {.unnumbered .unlisted}
 
     Recomendaciones de Seguridad (MSI-SEG 2.1)
     Propuesta de Solución (MSI 2.2)
     Catálogo de Peticiones (MSI 2.2)
     Funciones y Mecanismos de Seguridad (ASI-SEG 2.1)
 
-De salida
+###### De salida {.unnumbered .unlisted}
 
     Funciones y Mecanismos de Seguridad:
         Estudio de Riesgos
         Especificación de Funciones de Seguridad
         Mecanismos de Seguridad
 
-Prácticas
+##### Prácticas {.unnumbered .unlisted}
 
     Catalogación
 
-Participantes
+##### Participantes {.unnumbered .unlisted}
 
     Responsable de Seguridad
     Equipo de Seguridad
@@ -2183,11 +2183,11 @@ Almacenamiento</li>
 El Responsable de Seguridad y el Jefe de Proyecto estudian los productos generados durante el proceso de Mantenimiento del Sistema de Información y determinan el nivel de seguridad de cada uno de ellos con respecto a la autenticación, confidencialidad, integridad y disponibilidad. En función del nivel de seguridad se establece la catalogación y archivo de los productos, teniendo en cuenta a este respecto las particularidades del soporte de almacenamiento elegido y del sistema de gestión de configuración vigente en la organización.
 Productos
 
-De entrada
+###### De entrada {.unnumbered .unlisted}
 
     Productos generados durante el proceso Mantenimiento de Sistemas de Información
 
-De salida
+###### De salida {.unnumbered .unlisted}
 
     Catalogación de los Productos Generados en el Proceso Mantenimiento de Sistemas de Información:
         Determinación de Niveles de Seguridad
@@ -2195,12 +2195,12 @@ De salida
         Niveles de Seguridad de los Productos
         Soporte de Almacenamiento
 
-Prácticas
+##### Prácticas {.unnumbered .unlisted}
 
     Revisión
     Catalogación
 
-Participantes
+##### Participantes {.unnumbered .unlisted}
 
     Responsable de Seguridad
     Jefe de Proyecto

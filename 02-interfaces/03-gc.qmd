@@ -18,8 +18,8 @@ Los productos registrados en el sistema de gestión de la configuración se encu
 
 La información que puede solicitarse al sistema de gestión de la configuración es variada:
 
-    Información relacionada con Análisis, Diseño, Construcción, Implantación y Aceptación del Sistemas de Información, como productos globales que integran todos los productos que lo componen.
-    Información de un producto en concreto, su versión, estado, traza de su evolución y cualquier dato que el plan de gestión de la configuración determine de interés (por ejemplo, participantes en la elaboración o modificación del producto).
+- Información relacionada con Análisis, Diseño, Construcción, Implantación y Aceptación del Sistemas de Información, como productos globales que integran todos los productos que lo componen.
+- Información de un producto en concreto, su versión, estado, traza de su evolución y cualquier dato que el plan de gestión de la configuración determine de interés (por ejemplo, participantes en la elaboración o modificación del producto).
 
 Actividades
 
@@ -70,22 +70,23 @@ En el siguiente gráfico se muestra la relación entre las actividades del proce
 #### Tarea EVS-GC 1.1: Definición de los Requisitos de Gestión de Configuración {#evs-gc-1.1}
 
 El objetivo de esta tarea es identificar la necesidad de gestionar la configuración de los sistemas de información, definiendo para dichos sistemas los requisitos generales de gestión de configuración y determinando los procesos de control que se van a llevar a cabo para mantener la integridad de los productos que se obtengan a lo largo de los procesos principales de MÉTRICA Versión 3: control de versiones, control de estados, control de los cambios, etc.
-Productos
 
-De entrada
+##### Productos {.unnumbered .unlisted}
 
-    Arquitectura de Información (PSI 9.2)
-    Identificación de Requisitos (EVS 3.2)
+###### De entrada {.unnumbered .unlisted}
 
-De salida
+* Arquitectura de Información (PSI 9.2)
+* Identificación de Requisitos (EVS 3.2)
 
-    Requisitos de gestión de configuración
+###### De salida {.unnumbered .unlisted}
 
-Participantes
+* Requisitos de gestión de configuración
 
-    Responsable de Gestión de Configuración
-    Jefe de Proyecto
-    Equipo de Desarrollo
+##### Participantes {.unnumbered .unlisted}
+
+* Responsable de Gestión de Configuración
+* Jefe de Proyecto
+* Equipo de Desarrollo
 
 ### Actividad EVS-GC 2: Establecimiento del Plan de Gestión de la Configuración {#evs-gc-2}
 
@@ -141,50 +142,51 @@ Si éste no existe, o no cubre todos los requisitos, es necesario establecer cu�
 
 Los aspectos que debe contemplar el plan son:
 
-    Identificación de todos los productos que deben ser controlados, su clasificación y relaciones entre ellos, así como el criterio o norma de identificación.
-    Ubicación y localización de los productos.
-    Definición del ámbito y alcance del control de la configuración, describiendo los procesos incluidos en él.
-    Definición de las reglas de versionado de los productos y los criterios de actuación para cada caso, teniendo en cuenta el motivo por el cual se realiza el cambio de versión.
-    Definición del ciclo de estados para cada tipo de producto y los criterios de trazabilidad entre los mismos.
-    Descripción de funciones y responsabilidades.
-    Identificación de la información necesaria de control para auditoría.
+- Identificación de todos los productos que deben ser controlados, su clasificación y relaciones entre ellos, así como el criterio o norma de identificación.
+- Ubicación y localización de los productos.
+- Definición del ámbito y alcance del control de la configuración, describiendo los procesos incluidos en él.
+- Definición de las reglas de versionado de los productos y los criterios de actuación para cada caso, teniendo en cuenta el motivo por el cual se realiza el cambio de versión.
+- Definición del ciclo de estados para cada tipo de producto y los criterios de trazabilidad entre los mismos.
+- Descripción de funciones y responsabilidades.
+- Identificación de la información necesaria de control para auditoría.
 
-Productos
+##### Productos {.unnumbered .unlisted}
 
-De entrada
+###### De entrada {.unnumbered .unlisted}
 
-    Requisitos generales de gestión de configuración (EVS-GC 1.1)
-    Método o estándar de gestión de la configuración (externo)
-    Solución propuesta (EVS 6.2)
+* Requisitos generales de gestión de configuración (EVS-GC 1.1)
+* Método o estándar de gestión de la configuración (externo)
+* Solución propuesta (EVS 6.2)
 
-De salida
+###### De salida {.unnumbered .unlisted}
 
-    Plan de gestión de la configuración para el sistema de información
+* Plan de gestión de la configuración para el sistema de información
 
-Participantes
+##### Participantes {.unnumbered .unlisted}
 
-    Responsable de Gestión de Configuración
-    Jefe de Proyecto
-    Equipo de Desarrollo
+* Responsable de Gestión de Configuración
+* Jefe de Proyecto
+* Equipo de Desarrollo
 
 #### Tarea EVS-GC 2.2: Especificación del Entorno Tecnológico para la Gestión de Configuración {#evs-gc-2-2}
 
 En esta tarea se define el entorno tecnológico de soporte a la gestión de la configuración del sistema de información y se determinan los componentes hardware y software que van a permitir la mecanización de los procesos y controles que establece el plan. Es importante mencionar que el entorno tecnológico en el que se apoyará el sistema de gestión de la configuración puede ser diferente de aquel en el que se desarrollará el sistema de información.
-Productos
 
-De entrada
+##### Productos {.unnumbered .unlisted}
 
-    Plan de gestión de la configuración para el sistema de información (EVS-GC 2.1)
+###### De entrada {.unnumbered .unlisted}
 
-De salida
+* Plan de gestión de la configuración para el sistema de información (EVS-GC 2.1)
 
-    Plan de gestión de la configuración para el sistema de información
-        Entorno tecnológico
+###### De salida {.unnumbered .unlisted}
 
-Participantes
+* Plan de gestión de la configuración para el sistema de información
+* Entorno tecnológico
 
-    Responsable de Gestión de Configuración
-    Equipo de Desarrollo
+##### Participantes {.unnumbered .unlisted}
+
+* Responsable de Gestión de Configuración
+* Equipo de Desarrollo
 
 ## Análisis, diseño, construcción e implantación y aceptación del Sistema de Información
 
@@ -238,33 +240,34 @@ El siguiente gráfico muestra la relación entre las actividades de la interfaz 
 </table>
 ```
 
-#### Tarea GC 1.1: Identificación y Registro de los Productos de los Procesos en el Sistema de Gestión de la Configuración {#gc-1-1}
+#### Tarea GC 1.1: Identificación y Registro de los ##### Productos {.unnumbered .unlisted} de los Procesos en el Sistema de Gestión de la Configuración {#gc-1-1}
 
 Cada producto, en función de su naturaleza, va pasando por diferentes estados en los debe superar varias revisiones o aprobaciones. El conjunto de estados por los que va pasando un producto se registra en el sistema de gestión de configuración, según vaya evolucionando el mismo, hasta alcanzar el estado de producto final aprobado.
 
 En el momento en que un participante genere un producto, seleccionado como elemento de configuración en el Plan de Gestión de Configuración, deberá identificarlo y registrarlo en el sistema de gestión de la configuración. Del mismo modo, cuando modifique un producto que ya está registrado en el sistema de gestión de configuración, deberá incluirlo en el sistema de gestión de configuración indicando su versión y estado.
-Productos
 
-De entrada
+##### Productos {.unnumbered .unlisted}
 
-    Información sobre el producto (externo).
-    Registro del sistema de gestión de configuración de los productos resultantes de la tarea de MÉTRICA Versión 3 que se esté realizando (externo)
-        Nombre
-        Versión
-        Estado
-        Localización
+###### De entrada {.unnumbered .unlisted}
 
-De salida
+* Información sobre el producto (externo).
+* Registro del sistema de gestión de configuración de los productos resultantes de la tarea de MÉTRICA Versión 3 que se esté realizando (externo)
+  * Nombre
+  * Versión
+  * Estado
+  * Localización
 
-    Registro de los productos creados o modificados:
-        Nombre
-        Versión
-        Estado
-        Localización
+###### De salida {.unnumbered .unlisted}
 
-Participantes
+* Registro de los productos creados o modificados:
+  * Nombre
+  * Versión
+  * Estado
+  * Localización
 
-    Los mismos que en las tareas de MÉTRICA Versión 3
+##### Participantes {.unnumbered .unlisted}
+
+* Los mismos que en las tareas de MÉTRICA Versión 3
 
 ### Actividad GC 2: Identificación y registro del Producto Global {#gc-2}
 
@@ -305,24 +308,25 @@ El objeto de esta tarea es identificar y registrar en el sistema de gestión de 
 Se realiza al finalizar los procesos Análisis del Sistema de Información (ASI), Diseño del Sistema de Información (DSI), Construcción del Sistema de Información (CSI) e Implantación y Aceptación del Sistema (IAS), y en cada momento se registrará el producto correspondiente: Especificación de Requisitos Software, Diseño Detallado del Sistema, Sistema de Información y Sistema de Información Implantado.
 
 Una vez que el sistema de información está implantado y aceptado, antes de su puesta en operación real se registra el paso a producción de la versión de dicho sistema de cara a facilitar su posterior mantenimiento.
-Productos
 
-De entrada
+##### Productos {.unnumbered .unlisted}
 
-    Información sobre el producto, si éste no se encuentra registrado en el sistema de gestión de la configuración (externo).
-    Registro de la versión del producto global, si ya está registrado en el sistema de gestión de la configuración
+###### De entrada {.unnumbered .unlisted}
 
-De salida
+* Información sobre el producto, si éste no se encuentra registrado en el sistema de gestión de la configuración (externo).
+* Registro de la versión del producto global, si ya está registrado en el sistema de gestión de la configuración
 
-    Registro del producto global:
-        Nombre
-        Versión
-        Estado
-        Localización
+###### De salida {.unnumbered .unlisted}
 
-Participantes
+* Registro del producto global:
+  * Nombre
+  * Versión
+  * Estado
+  * Localización
 
-    Jefe de Proyecto
+##### Participantes {.unnumbered .unlisted}
+
+* Jefe de Proyecto
 
 ## Mantenimiento del Sistema de Información
 
@@ -400,50 +404,53 @@ Una vez que el cambio ha sido realizado y aceptado se registra dicha aceptación
 #### Tarea MSI-GC 1.1: Registro del Cambio en el Sistema de Gestión de la Configuración {#msi-gc-1-1}
 
 Una vez aprobada la propuesta de solución se registra el cambio en el sistema de gestión de la configuración. Este registro refleja las peticiones de mantenimiento que van a ser atendidas con la realización del cambio. Debe indicarse cuáles son las versiones de los sistemas de información y de los productos de las que parte el cambio, y siguiendo el criterio de versionado, cuáles son las nuevas versiones de los mismos que se van a generar como consecuencia de la realización del cambio. La información mantenida en este registro permite en todo momento efectuar una traza de la evolución del sistema y los productos que lo integran desde su puesta en producción como consecuencia de la realización de cambios.
-Productos
 
-De entrada
+##### Productos {.unnumbered .unlisted}
 
-    Catálogo de peticiones (MSI 3)
+###### De entrada {.unnumbered .unlisted}
 
-De salida
+* Catálogo de peticiones (MSI 3)
 
-    Registro del cambio
+###### De salida {.unnumbered .unlisted}
 
-Participantes
+* Registro del cambio
 
-    Técnico de Mantenimiento
+##### Participantes {.unnumbered .unlisted}
+
+* Técnico de Mantenimiento
 
 #### Tarea MSI-GC 1.2: Registro de la Nueva Versión de los Productos Afectados por el Cambio en el Sistema de Gestión de la Configuración {#msi-gc-1-2}
 
 Los productos que hayan sido modificados o creados con motivo de la realización del mantenimiento deben registrarse en el sistema de gestión de la configuración en la versión correspondiente. La nueva versión de estos componentes, comienza su ciclo de estados, de manera que deben registrarse en el estado que establezca el plan de gestión de la configuración.
-Productos
 
-De entrada
+##### Productos {.unnumbered .unlisted}
 
-    Registro de la versión correspondiente de los productos que van a ser modificados
+###### De entrada {.unnumbered .unlisted}
 
-De salida
+* Registro de la versión correspondiente de los productos que van a ser modificados
 
-    Registro de la nueva versión de los productos afectados por el cambio
+###### De salida {.unnumbered .unlisted}
 
-Participantes
+* Registro de la nueva versión de los productos afectados por el cambio
 
-    Técnico de Mantenimiento
+##### Participantes {.unnumbered .unlisted}
+
+* Técnico de Mantenimiento
 
 #### Tarea MSI-GC 1.3: Registro de la Nueva Versión de los Sistemas de Información en el Sistema de Gestión de la Configuración {#msi-gc-1-3}
 
 La realización de un cambio, bien por mantenimiento correctivo o evolutivo, provoca la aparición de una nueva versión de cada sistema de información afectado por el cambio, por lo que debe registrarse en el sistema de gestión de la configuración con la versión y estado correspondiente según establezca el plan de gestión de la configuración.
-Productos
 
-De entrada
+##### Productos {.unnumbered .unlisted}
 
-    Registro de la versión de los sistemas de información de la que parte el cambio
+###### De entrada {.unnumbered .unlisted}
 
-De salida
+* Registro de la versión de los sistemas de información de la que parte el cambio
 
-    Registro de la nueva versión de los sistemas de información
+###### De salida {.unnumbered .unlisted}
 
-Participantes
+* Registro de la nueva versión de los sistemas de información
 
-    Técnico de Mantenimiento
+##### Participantes {.unnumbered .unlisted}
+
+* Técnico de Mantenimiento
