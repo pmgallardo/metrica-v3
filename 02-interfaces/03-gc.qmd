@@ -133,7 +133,7 @@ Participantes
 </table>
 ```
 
-#### Tarea EVS-GC 2.1: Definición del Plan de Gestión de la Configuración {#evs-gc-2-2}
+#### Tarea EVS-GC 2.1: Definición del Plan de Gestión de la Configuración {#evs-gc-2-1}
 
 En el caso de que exista un método de gestión de la configuración o un estándar corporativo, debe indicarse si se toma como plan de gestión de la configuración, es decir, si el método cubre todos los requisitos para el sistema de información que se trata.
 

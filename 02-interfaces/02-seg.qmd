@@ -58,7 +58,7 @@ Actividades
   * Actividad MSI-SEG 2: Especificación e Identificación de las Funciones y Mecanismos de Seguridad
   * Actividad MSI-SEG 3: Catalogación de los Productos Generados Durante el Proceso de Mantenimiento de Sistemas de Información
 
-## Planificación de Sistemas de Información {#psi-seg-1}
+## Planificación de Sistemas de Información {#psi-seg}
 
 En la actualidad, la mayoría de las organizaciones suelen disponer, en mayor o menor grado, de una política de seguridad. Esta política constituirá el punto de partida de la interfaz de seguridad, completándola o adaptándola en aquellos aspectos que así lo requieran. Si la organización no dispone de ella será necesario realizar un esfuerzo suplementario dirigido a la identificación de los objetivos de seguridad ya que su determinación no es una tarea trivial.
 

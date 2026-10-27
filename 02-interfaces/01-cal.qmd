@@ -1501,7 +1501,7 @@ El siguiente esquema muestra la correspondencia entre las actividades del proces
 <td style="background-color: #000033; text-align: left; width: 20%;"><strong><span style="color: #ffffff;">PARTICIPANTES</span></strong></td>
 </tr>
 <tr>
-<td style="text-align: left; vertical-align: top;"><a href="#csi-ias-1-1"><strong>IAS-CAL 1.1</strong>: Revisión del Plan de Implantación del Sistema</a></td>
+<td style="text-align: left; vertical-align: top;"><a href="#ias-cal-1-1"><strong>IAS-CAL 1.1</strong>: Revisión del Plan de Implantación del Sistema</a></td>
 <td style="text-align: left; vertical-align: top;">Dossier de aseguramiento de calidad:</p>
 <ul>
 <li>Revisión del plan de implantación</li>
@@ -1893,7 +1893,7 @@ durante el Mantenimiento del Sistema de Información.
 </table>
 ```
 
-#### Tarea MSI-CAL 1.1 {#ias-cal-1-1}
+#### Tarea MSI-CAL 1.1 {#msi-cal-1-1}
 
 Se verifica que las peticiones incluidas en el Catálogo de peticiones se correponden con las previstas en la revisión del plan de mantenimiento del Dossier de aseguramiento de la calidad que se obtiene en la tarea IAS-CAL 4.1.
 
