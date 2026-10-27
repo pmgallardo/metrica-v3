@@ -4,7 +4,7 @@ La metodología MÉTRICA Versión 3 ofrece a las Organizaciones un instrumento �
 
 **Metodología de Planificación, Desarrollo y Mantenimiento de sistemas de información**
 
-Se presentan en este medio los documentos que componen la metodología MÉTRICA VERSIÓN 3. Iniciativa promovida por el Consejo Superior de Informática –publicada originalmente en 2001 en la [web del CSI](https://web.archive.org/web/20010623220918/http://www.map.es/csi/metrica3/index.html){target="_blank"} y actualmente en la [PAe](https://administracionelectronica.gob.es/pae_Home/pae_Documentacion/pae_Metodolog/pae_Metrica_v3.html?idioma=es){target="_blank"}–. 
+Se presentan en este medio los documentos que componen la metodología MÉTRICA VERSIÓN 3. Iniciativa promovida por el Consejo Superior de Informática –publicada originalmente en 2001 en la [web del CSI](https://web.archive.org/web/20010623220918/http://www.map.es/csi/metrica3/index.html){target="_blank"} y actualmente en el [PAe](https://administracionelectronica.gob.es/pae_Home/pae_Documentacion/pae_Metodolog/pae_Metrica_v3.html?idioma=es){target="_blank"}–. 
 
 MÉTRICA versión 3 puede ser utilizada libremente y en cualquier explotación de la obra se hará constar la autoría original.
 
