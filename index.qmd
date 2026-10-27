@@ -4,22 +4,23 @@ La metodología MÉTRICA Versión 3 ofrece a las Organizaciones un instrumento �
 
 **Metodología de Planificación, Desarrollo y Mantenimiento de sistemas de información**
 
-Se presentan en este medio los documentos que componen la metodología MÉTRICA VERSIÓN 3. Iniciativa promovida por el Consejo Superior de Informática –publicada originalmente en 2001 en la [web del CSI](https://web.archive.org/web/20010623220918/http://www.map.es/csi/metrica3/index.html){target="_blank"} y actualmente en el [PAe](https://administracionelectronica.gob.es/pae_Home/pae_Documentacion/pae_Metodolog/pae_Metrica_v3.html?idioma=es){target="_blank"}–. 
+Aquí se presentan los documentos que componen la metodología MÉTRICA VERSIÓN 3, que fue una iniciativa promovida por el Consejo Superior de Informática –publicada originalmente en 2001 en la [web del CSI](https://web.archive.org/web/20010623220918/http://www.map.es/csi/metrica3/index.html){target="_blank"} y actualmente en el [PAe](https://administracionelectronica.gob.es/pae_Home/pae_Documentacion/pae_Metodolog/pae_Metrica_v3.html?idioma=es){target="_blank"}–. 
 
 MÉTRICA versión 3 puede ser utilizada libremente y en cualquier explotación de la obra se hará constar la autoría original.
+
+El presente medio y su repositorio asociado son una iniciativa independiente y no adscrita al sector público español.
 
 \
 Para cualquier sugerencia o información sobre la metodología Métrica v3, contactar con: <metrica@correo.gob.es>
 
-Para cuestiones relacionadas con el repositorio de ficheros de donde derivan las presentes versiones web, PDF y EPUB, abrir un [issue](https://github.com/pmgallardo/metrica-v3/issues).
+Para cuestiones relacionadas con el repositorio de ficheros con el que se generan las versiones web, PDF y EPUB, abrir un [issue](https://github.com/pmgallardo/metrica-v3/issues).
 
 \
 
 | Recurso | URL |
 | - | - |
-| Versión web | [pmgallardo.github.io/metrica-v3](https://pmgallardo.github.io/metrica-v3) |
-| Versión PDF | [pmgallardo.github.io/metrica-v3.pdf](https://pmgallardo.github.io/metrica-v3/metrica-v3.pdf){target="_blank"} |
-| Versión EPUB | [pmgallardo.github.io/metrica-v3.epub](https://pmgallardo.github.io/metrica-v3.epub){target="_blank"} |
+| Sitio web | [pmgallardo.github.io/metrica-v3](https://pmgallardo.github.io/metrica-v3) |
+| Formato PDF | [pmgallardo.github.io/metrica-v3.pdf](https://pmgallardo.github.io/metrica-v3/metrica-v3.pdf){target="_blank"} |
+| Formato EPUB | [pmgallardo.github.io/metrica-v3.epub](https://pmgallardo.github.io/metrica-v3.epub){target="_blank"} |
 | Repositorio de ficheros fuente | [github.com/pmgallardo/metrica-v3](https://github.com/pmgallardo/metrica-v3){target="_blank"} |
 | Documentación original (PDF) | [administracionelectronica.gob.es/pae_Home/pae_Documentacion/pae_Metodolog/pae_Metrica_v3.html](https://administracionelectronica.gob.es/pae_Home/pae_Documentacion/pae_Metodolog/pae_Metrica_v3.html?idioma=es){target="_blank"} |
-
