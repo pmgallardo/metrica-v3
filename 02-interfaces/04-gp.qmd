@@ -8,9 +8,9 @@ La Interfaz de Gestión de Proyectos de MÉTRICA Versión 3 contempla proyectos 
 
 Las actividades de la Interfaz de Gestión de Proyectos se presentan en el siguiente esquema, en el que se aprecian las áreas que cubre. Se distinguen tres grupos de actividades:
 
-    Actividades de Inicio del Proyecto (GPI). Al principio del proyecto, al concluir el proceso Estudio de Viabilidad del Sistema (EVS), se realizarán las actividades de Estimación de Esfuerzo y Planificación del proyecto.
-    Actividades de Seguimiento y Control (GPS). Comprenden desde la asignación de las tareas hasta su aceptación interna por parte del equipo de proyecto, incluyendo la gestión de incidencias y cambios en los requisitos que puedan presentarse y afectar a la planificación del proyecto. El Seguimiento y Control del proyecto se realizan durante los procesos de Análisis, Diseño, Construcción, Implantación y Aceptación, y Mantenimiento del Sistema de Información, para vigilar el correcto desarrollo de las actividades y tareas establecidas en la planificación.
-    Actividades de Finalización del Proyecto (GPF). Por último, al concluir el proyecto se realizan las tareas propias de Cierre del Proyecto y Registro de la Documentación de Gestión.
+- Actividades de Inicio del Proyecto (GPI). Al principio del proyecto, al concluir el proceso Estudio de Viabilidad del Sistema (EVS), se realizarán las actividades de Estimación de Esfuerzo y Planificación del proyecto.
+- Actividades de Seguimiento y Control (GPS). Comprenden desde la asignación de las tareas hasta su aceptación interna por parte del equipo de proyecto, incluyendo la gestión de incidencias y cambios en los requisitos que puedan presentarse y afectar a la planificación del proyecto. El Seguimiento y Control del proyecto se realizan durante los procesos de Análisis, Diseño, Construcción, Implantación y Aceptación, y Mantenimiento del Sistema de Información, para vigilar el correcto desarrollo de las actividades y tareas establecidas en la planificación.
+- Actividades de Finalización del Proyecto (GPF). Por último, al concluir el proyecto se realizan las tareas propias de Cierre del Proyecto y Registro de la Documentación de Gestión.
 
 Las técnicas y prácticas utilizadas en la Gestión de Proyectos se describen en la Guía de Técnicas de MÉTRICA Versión 3. En función de las características del proyecto puede ser aconsejable emplear herramientas software de soporte a las técnicas, disponibles en el mercado.
 
@@ -22,8 +22,8 @@ Las actividades al inicio de un proyecto tienen un doble objetivo: estimar el es
 
 Actividades
 
-    Actividad GPI 1: Estimación de Esfuerzo
-    Actividad GPI 2: Planificación
+- Actividad GPI 1: Estimación de Esfuerzo
+- Actividad GPI 2: Planificación
 
 ### Actividad GPI 1: Estimación de Esfuerzo {#gpi-1}
 
@@ -97,38 +97,38 @@ Esta tarea tiene como finalidad determinar el número y características de los 
 
 ###### De entrada {.unnumbered .unlisted}
 
-    Modelo de descomposición en subsistemas (EVS 6.2)
+* Modelo de descomposición en subsistemas (EVS 6.2)
 
 ***Estructurado***
 
-    Modelo abstracto de datos (EVS 6.2)
-    Modelo de procesos (EVS 6.2)
+* Modelo abstracto de datos (EVS 6.2)
+* Modelo de procesos (EVS 6.2)
 
 ***Orientación a Objeto***
 
-    Modelo de negocio (EVS 6.2)
-    Modelo de dominio (EVS 6.2)
+* Modelo de negocio (EVS 6.2)
+* Modelo de dominio (EVS 6.2)
 
 ###### De salida {.unnumbered .unlisted}
 
-    Definición General del proyecto
+* Definición General del proyecto
 
 ***Estructurado***
 
-    Catálogo de funciones
-    Catálogo de entidades
+* Catálogo de funciones
+* Catálogo de entidades
 
 ***Orientación a Objeto***
 
-    Catálogo de clases
+* Catálogo de clases
 
 ##### Prácticas {.unnumbered .unlisted}
 
-    Catalogación
+* Catalogación
 
 ##### Participantes {.unnumbered .unlisted}
 
-    Jefe de Proyecto
+* Jefe de Proyecto
 
 #### Tarea GPI 1.2: Cálculo del Esfuerzo {#gpi-1-2}
 
@@ -142,33 +142,33 @@ La técnica que se propone variará según se trate de desarrollos orientados a 
 
 ***Estructurado***
 
-    Catálogo de funciones (GPI 1.1)
-    Catálogo de entidades (GPI 1.1)
+* Catálogo de funciones (GPI 1.1)
+* Catálogo de entidades (GPI 1.1)
 
 ***Orientación a Objeto***
 
-    Catálogo de clases (GPI 1.1)
+* Catálogo de clases (GPI 1.1)
 
 ###### De salida {.unnumbered .unlisted}
 
-    Definición General del Proyecto
-        Esfuerzo estimado
+* Definición General del Proyecto
+  * Esfuerzo estimado
 
 ##### Técnicas {.unnumbered .unlisted}
 
 ***Estructurado***
 
-    Método de Albrecht
-    Método MARK II
+* Método de Albrecht
+* Método MARK II
 
 ***Orientación a Objeto***
 
-    Staffing Size
+* Staffing Size
 
 ##### Participantes {.unnumbered .unlisted}
 
-    Jefe de Proyecto
-    Equipo del Proyecto
+* Jefe de Proyecto
+* Equipo del Proyecto
 
 ### Actividad GPI 2: Planificación {#gpi-2}
 
@@ -307,25 +307,25 @@ MÉTRICA Versión 3 no establece recomendaciones en cuanto a la estrategia a seg
 
 EUROMÉTODO ofrece una buena aproximación a distintas estrategias de desarrollo, que pueden servir a título orientativo:
 
-    Clásica o en cascada. Es la opción estratégica “Construcción de una vez” de EUROMÉTODO. Se considera el proyecto como un todo, dividido en procesos, y cada proceso no comienza hasta que finaliza el anterior. Por ejemplo: el Diseño del Sistema de Información no se realiza hasta la finalización y aceptación del Análisis del Sistema de Información. Éste es el método más empleado en desarrollo estructurado.
-    Por subsistemas. En EUROMÉTODO esta estrategia se conoce como “Construcción incremental”. Se divide el sistema en subsistemas semiindependientes, con estructura, organización y objetivos diferentes. A su vez, el equipo de proyecto se puede dividir en equipos especializados. Cada subsistema, normalmente, se realizará según la estrategia clásica.
-    Por prototipo. También denominado “Construcción evolutiva” en EUROMÉTODO. Esta aproximación genera un prototipo funcional en los primeros procesos del proyecto, generalmente con herramientas de ayuda al desarrollo o generadores de código. El prototipo se va completando en sucesivas evaluaciones y revisiones, añadiendo nuevas funcionalidades y mejoras, hasta cubrir los requisitos completamente. Generalmente, esta estrategia se emplea en los modernos desarrollos orientados a objetos.
-    Híbrida. Contempla un desarrollo por subsistemas, que a su vez se desarrollan bajo una estrategia o enfoque diferente de los demás.
+- Clásica o en cascada. Es la opción estratégica “Construcción de una vez” de EUROMÉTODO. Se considera el proyecto como un todo, dividido en procesos, y cada proceso no comienza hasta que finaliza el anterior. Por ejemplo: el Diseño del Sistema de Información no se realiza hasta la finalización y aceptación del Análisis del Sistema de Información. Éste es el método más empleado en desarrollo estructurado.
+- Por subsistemas. En EUROMÉTODO esta estrategia se conoce como “Construcción incremental”. Se divide el sistema en subsistemas semiindependientes, con estructura, organización y objetivos diferentes. A su vez, el equipo de proyecto se puede dividir en equipos especializados. Cada subsistema, normalmente, se realizará según la estrategia clásica.
+- Por prototipo. También denominado “Construcción evolutiva” en EUROMÉTODO. Esta aproximación genera un prototipo funcional en los primeros procesos del proyecto, generalmente con herramientas de ayuda al desarrollo o generadores de código. El prototipo se va completando en sucesivas evaluaciones y revisiones, añadiendo nuevas funcionalidades y mejoras, hasta cubrir los requisitos completamente. Generalmente, esta estrategia se emplea en los modernos desarrollos orientados a objetos.
+- Híbrida. Contempla un desarrollo por subsistemas, que a su vez se desarrollan bajo una estrategia o enfoque diferente de los demás.
 
 ##### Productos {.unnumbered .unlisted}
 
 ###### De entrada {.unnumbered .unlisted}
 
-    Planificación General del Proyecto (GPI 1.2)
+* Planificación General del Proyecto (GPI 1.2)
 
 ###### De salida {.unnumbered .unlisted}
 
-    Planificación General del Proyecto:
-        Estrategia de Desarrollo
+* Planificación General del Proyecto:
+  * Estrategia de Desarrollo
 
 ##### Participantes {.unnumbered .unlisted}
 
-    Jefe de Proyecto
+* Jefe de Proyecto
 
 
 #### Tarea GPI 2.2: Selección de la Estructura de Actividades, Tareas y Productos {#gpi-2-2}
@@ -336,26 +336,26 @@ La estructura de procesos, actividades y tareas que se presenta en MÉTRICA Vers
 
 ###### De entrada {.unnumbered .unlisted}
 
-    Planificación General del Proyecto (GPI 2.1)
+* Planificación General del Proyecto (GPI 2.1)
 
 ###### De salida {.unnumbered .unlisted}
 
-    Planificación General del Proyecto:
-        Estructura de actividades
-    Catálogo de productos a generar
+* Planificación General del Proyecto:
+  * Estructura de actividades
+* Catálogo de productos a generar
 
 ##### Técnicas {.unnumbered .unlisted}
 
-    Planificación
-        Estructura de Descomposición de Trabajo (WBS)
+* Planificación
+  * Estructura de Descomposición de Trabajo (WBS)
 
 ##### Prácticas {.unnumbered .unlisted}
 
-    Catalogación
+* Catalogación
 
 ##### Participantes {.unnumbered .unlisted}
 
-    Jefe de Proyecto
+* Jefe de Proyecto
 
 
 #### Tarea GPI 2.3: Establecimiento del Calendario de Hitos y Entregas {#gpi-2-3}
@@ -368,28 +368,28 @@ Se detallan los condicionantes y restricciones existentes, por ejemplo en cuanto
 
 ###### De entrada {.unnumbered .unlisted}
 
-    Catálogo de productos a generar (GPI 2.2)
-    Planificación General del Proyecto:
-        Estructura de actividades (GPI 2.2)
+* Catálogo de productos a generar (GPI 2.2)
+* Planificación General del Proyecto:
+  * Estructura de actividades (GPI 2.2)
 
 ###### De salida {.unnumbered .unlisted}
 
-    Planificación General del Proyecto:
-        Hitos del Proyecto
-        Productos a entregar
+* Planificación General del Proyecto:
+  * Hitos del Proyecto
+  * Productos a entregar
 
 ##### Técnicas {.unnumbered .unlisted}
 
-    Método PERT
-    Diagrama de Gantt
+* Método PERT
+* Diagrama de Gantt
 
 ##### Prácticas {.unnumbered .unlisted}
 
-    Catalogación
+* Catalogación
 
 ##### Participantes {.unnumbered .unlisted}
 
-    Jefe de Proyecto
+* Jefe de Proyecto
 
 
 #### Tarea GPI 2.4: Planificación Detallada de Actividades y Recursos Necesarios {#gpi-2-4}
@@ -404,25 +404,25 @@ Los recursos del proyecto se especifican mediante la Estructura de Descomposici�
 
 ###### De entrada {.unnumbered .unlisted}
 
-    Planificación General del Proyecto (GPI 2.3)
+* Planificación General del Proyecto (GPI 2.3)
 
 ###### De salida {.unnumbered .unlisted}
 
-    Planificación General del Proyecto
-        Organización de los recursos
-        Planificación detallada del Proyecto
+* Planificación General del Proyecto
+  * Organización de los recursos
+  * Planificación detallada del Proyecto
 
 ##### Técnicas {.unnumbered .unlisted}
 
-    Estructura de Descomposición de Trabajo
-    Método PERT
-    Diagrama de Gantt
-    Histograma de recursos
-    Patrón de límites
+* Estructura de Descomposición de Trabajo
+* Método PERT
+* Diagrama de Gantt
+* Histograma de recursos
+* Patrón de límites
 
 ##### Participantes {.unnumbered .unlisted}
 
-    Jefe de Proyecto
+* Jefe de Proyecto
 
 
 #### Tarea GPI 2.5: Presentación y Aceptación de la Planificación General del Proyecto {#gpi-2-5}
@@ -435,20 +435,20 @@ Es precisa esta aceptación como paso previo a la puesta en marcha de los proces
 
 ###### De entrada {.unnumbered .unlisted}
 
-    Planificación General del Proyecto (GPI 2.4)
+* Planificación General del Proyecto (GPI 2.4)
 
 ###### De salida {.unnumbered .unlisted}
 
-    Planificación General del Proyecto (aceptada)
+* Planificación General del Proyecto (aceptada)
 
 ##### Prácticas {.unnumbered .unlisted}
 
-    Presentación
+* Presentación
 
 ##### Participantes {.unnumbered .unlisted}
 
-    Comité de Seguimiento
-    Jefe de Proyecto
+* Comité de Seguimiento
+* Jefe de Proyecto
 
 ## Actividades de Seguimiento y Control
 
@@ -479,28 +479,28 @@ El Jefe de Proyecto debe reflejar en la planificación las asignaciones realizad
 
 ###### De entrada {.unnumbered .unlisted}
 
-    Información profesional de los técnicos (externo)
-    Planificación General del Proyecto
-        Planificación detallada del proyecto (GPI 2)
+* Información profesional de los técnicos (externo)
+* Planificación General del Proyecto
+  * Planificación detallada del proyecto (GPI 2)
 
 ###### De salida {.unnumbered .unlisted}
 
-    Ficha de asignación de tarea
-        Identificador de la tarea en la planificación.
-        Nombre de la tarea.
-        Descripción de la tarea.
-        Fecha prevista de comienzo.
-        Esfuerzo estimado.
-        Fecha prevista de terminación.
+* Ficha de asignación de tarea
+  * Identificador de la tarea en la planificación.
+  * Nombre de la tarea.
+  * Descripción de la tarea.
+  * Fecha prevista de comienzo.
+  * Esfuerzo estimado.
+  * Fecha prevista de terminación.
 
 ##### Técnicas {.unnumbered .unlisted}
 
-    Planificación
-        Asignación de recursos
+* Planificación
+  * Asignación de recursos
 
 ##### Participantes {.unnumbered .unlisted}
 
-    Jefe de Proyecto
+* Jefe de Proyecto
 
 ### Actividad GPI 2: Comunicación al Equipo del Proyecto {#gps-2}
 
@@ -546,16 +546,16 @@ La estructura del proyecto en procesos, actividades y tareas descritos en MÉTRI
 
 ###### De entrada {.unnumbered .unlisted}
 
-    Fichas de asignación de tareas (GPS 1.1)
+* Fichas de asignación de tareas (GPS 1.1)
 
 ##### Prácticas {.unnumbered .unlisted}
 
-    Reuniones
+* Reuniones
 
 ##### Participantes {.unnumbered .unlisted}
 
-    Jefe de Proyecto
-    Equipo de proyecto
+* Jefe de Proyecto
+* Equipo de proyecto
 
 
 ### Actividad GPS 3: Seguimiento de Tareas {#gps-3}
@@ -602,11 +602,11 @@ El seguimiento se lleva a cabo revisando el estado de cada tarea con el miembro 
 
 El responsable de cada tarea debe informar de:
 
-    La fecha real de comienzo.
-    El tiempo empleado hasta el momento en su realización.
-    Apreciación del tiempo que queda para terminarla.
-    El tanto por ciento de avance sobre el total.
-    Los problemas o incidencias encontradas.
+* La fecha real de comienzo.
+* El tiempo empleado hasta el momento en su realización.
+* Apreciación del tiempo que queda para terminarla.
+* El tanto por ciento de avance sobre el total.
+* Los problemas o incidencias encontradas.
 
 Para calcular el porcentaje de avance, el responsable de la ejecución de una tarea no debe tener en cuenta el esfuerzo previsto para su realización, sino el tiempo empleado y su apreciación del tiempo que le queda para terminarla. Por ejemplo: una tarea tiene prevista su realización en 64 horas; si se realiza el seguimiento cuando van empleadas 24 horas en su desarrollo y la opinión del técnico es que lleva un 25% de avance, significa que la tarea tendrá una desviación positiva (retraso) de 32 horas, mientras que si su grado de avance es del 75%, tendrá una desviación negativa (adelanto) de 32 horas; en el primer caso, el esfuerzo total final será de 96 horas, mientras que en el segundo será de 32 horas.
 
@@ -616,20 +616,20 @@ A partir de la información obtenida del equipo de desarrollo, el Jefe de Proyec
 
 ###### De entrada {.unnumbered .unlisted}
 
-    Ficha de asignación de tarea (GPS 1.1)
+* Ficha de asignación de tarea (GPS 1.1)
 
 ###### De salida {.unnumbered .unlisted}
 
-    Ficha de seguimiento de tarea
+* Ficha de seguimiento de tarea
 
 ##### Prácticas {.unnumbered .unlisted}
 
-    Entrevistas
+* Entrevistas
 
 ##### Participantes {.unnumbered .unlisted}
 
-    Jefe de Proyecto
-    Equipo del Proyecto
+* Jefe de Proyecto
+* Equipo del Proyecto
 
 ### Gestión de Incidencias
 
@@ -643,9 +643,9 @@ Las siguientes actividades se realizarán en el caso de que durante el seguimien
 
 Con esta actividad se persigue conocer el impacto producido por una incidencia en cuanto a:
 
-    Tareas afectadas por la incidencia.
-    Horas de trabajo perdidas.
-    Retrasos ocasionados.
+* Tareas afectadas por la incidencia.
+* Horas de trabajo perdidas.
+* Retrasos ocasionados.
 
 Para ello es necesario realizar la tarea expresada en la siguiente tabla.
 
@@ -726,29 +726,29 @@ Es fundamental conocer que tareas se verán afectadas por una incidencia, en may
 
 Una vez identificadas las tareas a las que afecta la incidencia se evalúa su impacto en términos de:
 
-    Horas necesarias para resolverla.
-    Retrasos previstos.
-    Recursos afectados.
+* Horas necesarias para resolverla.
+* Retrasos previstos.
+* Recursos afectados.
 
 ##### Productos {.unnumbered .unlisted}
 
 ###### De entrada {.unnumbered .unlisted}
 
-    Conocimiento del problema (externo)
-    Planificación General del Proyecto
-        Planificación detallada del proyecto (GPI 2 o GPS 11)
+* Conocimiento del problema (externo)
+* Planificación General del Proyecto
+  * Planificación detallada del proyecto (GPI 2 o GPS 11)
 
 ###### De salida {.unnumbered .unlisted}
 
-    Ficha de Incidencia:
-        Impacto sobre tareas
-        Impacto en horas
-        Impacto en fechas
+* Ficha de Incidencia:
+  * Impacto sobre tareas
+  * Impacto en horas
+  * Impacto en fechas
 
 ##### Participantes {.unnumbered .unlisted}
 
-    Jefe de Proyecto
-    Equipo del Proyecto
+* Jefe de Proyecto
+* Equipo del Proyecto
 
 ##### Tarea GPS 4.2: Propuesta de Solución de la Incidencia {#gps-4-2}
 
@@ -762,20 +762,20 @@ De acuerdo con la solución adoptada habrá que revisar y ajustar la planificaci
 
 ###### De entrada {.unnumbered .unlisted}
 
-    Conocimiento del problema (externo)
-    Planificación General del Proyecto
-        Planificación detallada del proyecto (GPI 2 o GPS 11)
-    Ficha de Incidencia
+* Conocimiento del problema (externo)
+* Planificación General del Proyecto
+  * Planificación detallada del proyecto (GPI 2 o GPS 11)
+* Ficha de Incidencia
 
 ###### De salida {.unnumbered .unlisted}
 
-    Ficha de Incidencia:
-        Solución propuesta
+* Ficha de Incidencia:
+  * Solución propuesta
 
 ##### Participantes {.unnumbered .unlisted}
 
-    Jefe de Proyecto
-    Equipo del Proyecto
+* Jefe de Proyecto
+* Equipo del Proyecto
 
 ##### Tarea GPS 4.3: Registrar la Incidencia {#gps-4-3}
 
@@ -789,20 +789,20 @@ Toda incidencia producida durante el desarrollo del proyecto debe reflejarse en 
 
 ###### De entrada {.unnumbered .unlisted}
 
-    Ficha de Incidencia (GPS 4.1)
+* Ficha de Incidencia (GPS 4.1)
 
 ###### De salida {.unnumbered .unlisted}
 
-    Registro de Incidencias
+* Registro de Incidencias
 
 ##### Prácticas {.unnumbered .unlisted}
 
-    Catalogación
+* Catalogación
 
 ##### Participantes {.unnumbered .unlisted}
 
-    Jefe de Proyecto
-    Equipo del Proyecto
+* Jefe de Proyecto
+* Equipo del Proyecto
 
 ### Gestión de cambios en los requisitos
 
@@ -814,11 +814,11 @@ Uno de los propósitos del establecimiento de procedimientos para la Gestión de
 
 Todos los cambios de requisitos que se produzcan durante el desarrollo de un proyecto se mantendrán debidamente clasificados en un documento específico, el Registro de Cambios, donde se anotarán todas las peticiones de cambio realizadas por los usuarios. Además, para cada cambio, se registrará la siguiente información:
 
-    Formulario de Petición de Cambio.
-    Catálogo de Necesidades.
-    Análisis Funcional del Cambio.
-    Estimación de Esfuerzo.
-    Variaciones en Coste y Plazos.
+* Formulario de Petición de Cambio.
+* Catálogo de Necesidades.
+* Análisis Funcional del Cambio.
+* Estimación de Esfuerzo.
+* Variaciones en Coste y Plazos.
 
 Es importante mencionar que las actividades de control y seguimiento de los cambios de requisitos se diluyen dentro de las actividades normales de seguimiento y control de todo el proyecto.
 
@@ -884,21 +884,21 @@ Cuando el Jefe de Proyecto recibe una Petición de Cambio debe registrarla de in
 
 ###### De entrada {.unnumbered .unlisted}
 
-    Notificación de la necesidad de cambio (externo)
+* Notificación de la necesidad de cambio (externo)
 
 ###### De salida {.unnumbered .unlisted}
 
-    Registro de la Petición de Cambio
-        Formulario de Petición de Cambio
+* Registro de la Petición de Cambio
+  * Formulario de Petición de Cambio
 
 ##### Prácticas {.unnumbered .unlisted}
 
-    Catalogación
+* Catalogación
 
 ##### Participantes {.unnumbered .unlisted}
 
-    Usuario
-    Jefe de Proyecto
+* Usuario
+* Jefe de Proyecto
 
 #### Actividad GPS 6: Análisis de la Petición de Cambio de Requisitos {#gps-6}
 
@@ -995,23 +995,23 @@ El Jefe de Proyecto entrega la petición de cambio al Equipo del Proyecto para s
 
 ###### De entrada {.unnumbered .unlisted}
 
-    Registro de Cambios
-        Formulario de Petición de Cambio (GPS 5.1)
+* Registro de Cambios
+  * Formulario de Petición de Cambio (GPS 5.1)
 
 ###### De salida {.unnumbered .unlisted}
 
-    Registro de Cambios
-        Catálogo de Necesidades
+* Registro de Cambios
+  * Catálogo de Necesidades
 
 ##### Prácticas {.unnumbered .unlisted}
 
-    Entrevistas
-    Catalogación
+* Entrevistas
+* Catalogación
 
 ##### Participantes {.unnumbered .unlisted}
 
-    Equipo del Proyecto
-    Usuario
+* Equipo del Proyecto
+* Usuario
 
 ##### Tarea GPS 6.2 Impacto de la Petición de Cambio de Requisitos {#gps-6-2}
 
@@ -1021,23 +1021,23 @@ Una vez conocidas las nuevas necesidades, el Equipo del Proyecto por medio de su
 
 ###### De entrada {.unnumbered .unlisted}
 
-    Registro de Cambios
-        Catálogo de Necesidades (GPS 6.1)
-        Formulario de Petición de Cambio (GPS 5.1)
+* Registro de Cambios
+  * Catálogo de Necesidades (GPS 6.1)
+  * Formulario de Petición de Cambio (GPS 5.1)
 
 ###### De salida {.unnumbered .unlisted}
 
-    Registro de Cambios:
-        Análisis Funcional del cambio
-        Diseño Técnico
+* Registro de Cambios:
+  * Análisis Funcional del cambio
+  * Diseño Técnico
 
 ##### Técnicas y Prácticas {.unnumbered .unlisted}
 
-    Las propias de Análisis y Diseño
+* Las propias de Análisis y Diseño
 
 ##### Participantes {.unnumbered .unlisted}
 
-    Equipo del Proyecto
+* Equipo del Proyecto
 
 ##### Tarea GPS 6.3 Estudio de Alternativas y Propuesta de Solución {#gps-6-3}
 
@@ -1047,25 +1047,25 @@ A partir del Análisis Funcional y Diseño Técnico obtenido en la tarea anterio
 
 ###### De entrada {.unnumbered .unlisted}
 
-    Registro de Cambios
-        Formulario de Petición de Cambio (GPS 5.1)
-        Catálogo de necesidades (GPS 6.1)
-        Análisis Funcional del cambio (GPS 6.2)
-        Diseño Técnico (GPS 6.2)
+* Registro de Cambios
+  * Formulario de Petición de Cambio (GPS 5.1)
+  * Catálogo de necesidades (GPS 6.1)
+  * Análisis Funcional del cambio (GPS 6.2)
+  * Diseño Técnico (GPS 6.2)
 
 ###### De salida {.unnumbered .unlisted}
 
-    Registro de Cambios
-        Propuesta de Solución
+* Registro de Cambios
+  * Propuesta de Solución
 
 ##### Prácticas {.unnumbered .unlisted}
 
-    Sesiones de Trabajo
+* Sesiones de Trabajo
 
 ##### Participantes {.unnumbered .unlisted}
 
-    Jefe de Proyecto
-    Equipo del Proyecto
+* Jefe de Proyecto
+* Equipo del Proyecto
 
 #### Actividad GPS 7: Aprobación de la Solución {#gps-7}
 
@@ -1111,27 +1111,27 @@ Es necesario que el Comité de Seguimiento esté de acuerdo con los costes que e
 
 Como consecuencia de esta evaluación pueden darse cuatro posibilidades:
 
-    El Comité de Seguimiento rechaza la petición. En este caso la petición se archiva como rechazada indicándose los motivos.
-    El Comité de Seguimiento estima que la petición es necesaria pero que el coste o la dilatación son excesivos. Se pide al Equipo del Proyecto que revise las condiciones.
-    El Comité de Seguimiento aprueba la petición. En este caso se desarrolla como se había previsto.
-    El Comité de Seguimiento aprueba la petición pero decide aplazar su desarrollo hasta otro momento.
+- El Comité de Seguimiento rechaza la petición. En este caso la petición se archiva como rechazada indicándose los motivos.
+- El Comité de Seguimiento estima que la petición es necesaria pero que el coste o la dilatación son excesivos. Se pide al Equipo del Proyecto que revise las condiciones.
+- El Comité de Seguimiento aprueba la petición. En este caso se desarrolla como se había previsto.
+- El Comité de Seguimiento aprueba la petición pero decide aplazar su desarrollo hasta otro momento.
 
 ##### Productos {.unnumbered .unlisted}
 
 ###### De entrada {.unnumbered .unlisted}
 
-    Registro de Cambios:
-        Propuesta de Solución (GPS 6.3)
+* Registro de Cambios:
+  * Propuesta de Solución (GPS 6.3)
 
 ###### De salida {.unnumbered .unlisted}
 
-    Registro de Cambios:
-        Aprobación / Rechazo de la Solución
+* Registro de Cambios:
+  * Aprobación / Rechazo de la Solución
 
 ##### Participantes {.unnumbered .unlisted}
 
-    Comité de Seguimiento
-    Jefe de Proyecto
+* Comité de Seguimiento
+* Jefe de Proyecto
 
 #### Actividad GPS 8: Estimación del Esfuerzo y Planificación de la Solución {#gps-8}
 
@@ -1201,32 +1201,32 @@ En la siguiente tabla aparecen las tareas en que se descompone esta actividad.
 
 A partir de la solución aprobada para la petición de cambio, es necesario hacer una estimación del esfuerzo requerido para llevarla a cabo. Para ello habrá que realizar las mismas operaciones que en la actividad GPI 1, pero con una importante característica que es fundamental tener en cuenta: cuando se pide un cambio, se pueden dar las siguientes circunstancias:
 
-    La parte del sistema que hay que modificar está totalmente desarrollada. En este caso la estimación del esfuerzo para el cambio es neta.
-    La parte del sistema que hay que modificar está parcialmente desarrollada. En este caso hay que descontar el esfuerzo correspondiente a la parte no desarrollada en la estimación original del total del esfuerzo estimado para el cambio.
-    La parte del sistema que hay que modificar está sin desarrollar. En este caso hay que descontar el esfuerzo correspondiente en la estimación original del total del esfuerzo estimado para el cambio.
+- La parte del sistema que hay que modificar está totalmente desarrollada. En este caso la estimación del esfuerzo para el cambio es neta.
+- La parte del sistema que hay que modificar está parcialmente desarrollada. En este caso hay que descontar el esfuerzo correspondiente a la parte no desarrollada en la estimación original del total del esfuerzo estimado para el cambio.
+- La parte del sistema que hay que modificar está sin desarrollar. En este caso hay que descontar el esfuerzo correspondiente en la estimación original del total del esfuerzo estimado para el cambio.
 
 ##### Productos {.unnumbered .unlisted}
 
 ###### De entrada {.unnumbered .unlisted}
 
-    Registro de Cambios:
-        Análisis Funcional del cambio (GPS 6.2)
-        Diseño Técnico (GPS 6.2)
-        Propuesta de Solución (GPS 6.3)
+* Registro de Cambios:
+  * Análisis Funcional del cambio (GPS 6.2)
+  * Diseño Técnico (GPS 6.2)
+  * Propuesta de Solución (GPS 6.3)
 
 ###### De salida {.unnumbered .unlisted}
 
-    Registro de Cambios:
-        Estimación del Esfuerzo
-        Variaciones en Coste y Plazos
+* Registro de Cambios:
+  * Estimación del Esfuerzo
+  * Variaciones en Coste y Plazos
 
 ##### Técnicas {.unnumbered .unlisted}
 
-    Estimación
+* Estimación
 
 ##### Participantes {.unnumbered .unlisted}
 
-    Equipo del Proyecto
+* Equipo del Proyecto
 
 ##### Tarea GPS 8.2: Planificación de los Cambios {#gps-8-2}
 
@@ -1236,21 +1236,21 @@ Una vez hecha la estimación del esfuerzo es necesario planificar las actividade
 
 ###### De entrada {.unnumbered .unlisted}
 
-    Registro de Cambios:
-        Estimación de Esfuerzo (GPS 8.1)
+* Registro de Cambios:
+  * Estimación de Esfuerzo (GPS 8.1)
 
 ###### De salida {.unnumbered .unlisted}
 
-    Planificación General del Proyecto:
-        Planificación de las actividades
+* Planificación General del Proyecto:
+* * Planificación de las actividades
 
 ##### Prácticas {.unnumbered .unlisted}
 
-    Planificación
+* Planificación
 
 ##### Participantes {.unnumbered .unlisted}
 
-    Jefe de Proyecto
+* Jefe de Proyecto
 
 #### Actividad GPS 9: Registro del Cambio de Requisitos {#gps-9}
 
@@ -1301,20 +1301,20 @@ Todo cambio de requisitos producido durante el desarrollo del proyecto debe refl
 
 ###### De entrada {.unnumbered .unlisted}
 
-    Planificación General del Proyecto (GPS 8.2)
+* Planificación General del Proyecto (GPS 8.2)
 
 ###### De salida {.unnumbered .unlisted}
 
-    Registro de Cambios
-        Solución adoptada
+* Registro de Cambios
+  * Solución adoptada
 
 ##### Prácticas {.unnumbered .unlisted}
 
-    Catalogación
+* Catalogación
 
 ##### Participantes {.unnumbered .unlisted}
 
-    Jefe de Proyecto
+* Jefe de Proyecto
 
 ### Actividad GPS 10: Finalización de la Tarea {#gps-10}
 
@@ -1356,16 +1356,16 @@ El Jefe de Proyecto, o el responsable del miembro, deberá comprobar que la tare
 
 ###### De entrada {.unnumbered .unlisted}
 
-    Ficha de asignación de tarea (GPS 1.1)
+* Ficha de asignación de tarea (GPS 1.1)
 
 ###### De salida {.unnumbered .unlisted}
 
-    Ficha de asignación de tarea
+* Ficha de asignación de tarea
 
 ##### Participantes {.unnumbered .unlisted}
 
-    Equipo del Proyecto
-    Jefe de Proyecto
+* Equipo del Proyecto
+* Jefe de Proyecto
 
 ### Actividad GPS 11: ACTUALIZACIÓN DE LA PLANIFICACIÓN {#gps-11}
 
@@ -1464,24 +1464,24 @@ Partirá de la Planificación General del Proyecto aceptada en la actividad GPI 
 
 ###### De entrada {.unnumbered .unlisted}
 
-    Planificación General del Proyecto
-        Planificación detallada del Proyecto (GPI 2 o GPS 11.1)
-    Planificación General del Proyecto
-        Planificación de las actividades (GPS 8.2)
-    Fichas de asignación de tareas (GPS 1.1)
+* Planificación General del Proyecto
+  * Planificación detallada del Proyecto (GPI 2 o GPS 11.1)
+* Planificación General del Proyecto
+  * Planificación de las actividades (GPS 8.2)
+* Fichas de asignación de tareas (GPS 1.1)
 
 ###### De salida {.unnumbered .unlisted}
 
-    Planificación General del Proyecto:
-        Planificación detallada del proyecto
+* Planificación General del Proyecto:
+  * Planificación detallada del proyecto
 
 ##### Técnicas {.unnumbered .unlisted}
 
-    Planificación
+* Planificación
 
 ##### Participantes {.unnumbered .unlisted}
 
-    Jefe de Proyecto
+* Jefe de Proyecto
 
 #### Tarea GPS 11.2: Obtención de la Extrapolación {#gps-11-2}
 
@@ -1491,20 +1491,20 @@ El seguimiento de un proyecto en un punto cualquiera de su desarrollo nos da la 
 
 ###### De entrada {.unnumbered .unlisted}
 
-    Planificación General del Proyecto
-        Planificación detallada del proyecto (GPS 11.1)
+* Planificación General del Proyecto
+  * Planificación detallada del proyecto (GPS 11.1)
 
 ###### De salida {.unnumbered .unlisted}
 
-    Diagrama de extrapolación
+* Diagrama de extrapolación
 
 ##### Técnicas {.unnumbered .unlisted}
 
-    Diagrama de extrapolación
+* Diagrama de extrapolación
 
 ##### Participantes {.unnumbered .unlisted}
 
-    Jefe de Proyecto
+* Jefe de Proyecto
 
 #### Tarea GPS 11.3: Elaboración del Informe de Seguimiento {#gps-11-3}
 
@@ -1514,29 +1514,29 @@ A partir de la información obtenida en las tareas anteriores, el Jefe de Proyec
 
 ###### De entrada {.unnumbered .unlisted}
 
-    Fichas de seguimiento (GPS 3.1)
-    Planificación General del Proyecto
-        Planificación detallada del proyecto (GPS 11.1)
-    Diagrama de extrapolación
+* Fichas de seguimiento (GPS 3.1)
+* Planificación General del Proyecto
+  * Planificación detallada del proyecto (GPS 11.1)
+* Diagrama de extrapolación
 
 ###### De salida {.unnumbered .unlisted}
 
-    Informe de seguimiento en el período
-        Objetivos alcanzados durante el período
-        Incidencias habidas durante el período
-        Análisis de las desviaciones
-        Previsión actual
-        Acciones correctoras
-        Objetivos previstos para el siguiente período
-        Movimiento de recursos: humanos y materiales
+* Informe de seguimiento en el período
+  * Objetivos alcanzados durante el período
+  * Incidencias habidas durante el período
+  * Análisis de las desviaciones
+  * Previsión actual
+  * Acciones correctoras
+  * Objetivos previstos para el siguiente período
+  * Movimiento de recursos: humanos y materiales
 
 ##### Prácticas {.unnumbered .unlisted}
 
-    Catalogación
+* Catalogación
 
 ##### Participantes {.unnumbered .unlisted}
 
-    Jefe de Proyecto
+* Jefe de Proyecto
 
 ### Actividad GPS 12: Reuniones de Seguimiento {#gps-12}
 
@@ -1592,20 +1592,20 @@ Las explicaciones dadas por el Equipo del Proyecto servirán, en gran medida, pa
 
 ###### De entrada {.unnumbered .unlisted}
 
-    Informe de seguimiento en el período (GPS 11.3)
+* Informe de seguimiento en el período (GPS 11.3)
 
 ###### De salida {.unnumbered .unlisted}
 
-    Informe de seguimiento en el período
+* Informe de seguimiento en el período
 
 ##### Prácticas {.unnumbered .unlisted}
 
-    Reunión
+* Reunión
 
 ##### Participantes {.unnumbered .unlisted}
 
-    Jefe de Proyecto
-    Equipo del Proyecto
+* Jefe de Proyecto
+* Equipo del Proyecto
 
 ### Actividad GPS 13: Aceptación {#gps-13}
 
@@ -1613,11 +1613,11 @@ La aceptación interna consiste en la verificación por el Equipo del Proyecto d
 
 En MÉTRICA Versión 3, la aceptación por parte del Cliente se realiza, de acuerdo a la estructura de proyecto definida y los hitos establecidos, al menos en las actividades de:
 
-    Aprobación del Análisis del Sistema de Información (ASI 11).
-    Aprobación del Diseño del Sistema de Información (DSI 12).
-    Aprobación del Sistema de Información (CSI 9).
-    Presentación y Aprobación del Sistema de Información (IAS 9).
-    Mantenimiento del Sistema de Información (MSI 4).
+* Aprobación del Análisis del Sistema de Información (ASI 11).
+* Aprobación del Diseño del Sistema de Información (DSI 12).
+* Aprobación del Sistema de Información (CSI 9).
+* Presentación y Aprobación del Sistema de Información (IAS 9).
+* Mantenimiento del Sistema de Información (MSI 4).
 
 En la tabla siguiente se especifican la tarea que comprende esta actividad.
 
@@ -1661,20 +1661,20 @@ El Jefe de Proyecto debe verificar personalmente que los resultados de las activ
 
 ###### De entrada {.unnumbered .unlisted}
 
-    Ficha de Seguimiento de Tarea (GPS 3.1)
+* Ficha de Seguimiento de Tarea (GPS 3.1)
 
 ###### De salida {.unnumbered .unlisted}
 
-    Acta de Aceptación Interna
+* Acta de Aceptación Interna
 
 ##### Prácticas {.unnumbered .unlisted}
 
-    Revisión
+* Revisión
 
 ##### Participantes {.unnumbered .unlisted}
 
-    Equipo del Proyecto
-    Jefe de Proyecto
+* Equipo del Proyecto
+* Jefe de Proyecto
 
 ## Actividades de Finalización
 
@@ -1753,31 +1753,31 @@ Si los proyectos desarrollados son complejos, puede ser necesario utilizar herra
 
 A modo de ejemplo se propone incluir en el Histórico de Proyectos información sobre:
 
-    Plataforma tecnológica (sistema operativo, base de datos, monitor de teleproceso, sistema de comunicaciones, lenguajes, etc.).
-    Entorno metodológico (metodología de análisis, de diseño, de programación, herramientas CASE, generadores, etc.).
-    Rutinas y módulos generales empleados (accesos a ficheros, conversiones, cálculos, etc.).
-    Aspectos funcionales del sistema.
-    Incidencias dignas de mención.
-    Organización del proyecto (indicando los técnicos que participaron y sus funciones).
+* Plataforma tecnológica (sistema operativo, base de datos, monitor de teleproceso, sistema de comunicaciones, lenguajes, etc.).
+* Entorno metodológico (metodología de análisis, de diseño, de programación, herramientas CASE, generadores, etc.).
+* Rutinas y módulos generales empleados (accesos a ficheros, conversiones, cálculos, etc.).
+* Aspectos funcionales del sistema.
+* Incidencias dignas de mención.
+* Organización del proyecto (indicando los técnicos que participaron y sus funciones).
 
 ##### Productos {.unnumbered .unlisted}
 
 ###### De entrada {.unnumbered .unlisted}
 
-    Planificación General del Proyecto (GPI 2.5, GPS 11.1)
-    Registro de Incidencias (GPS 5.1)
+* Planificación General del Proyecto (GPI 2.5, GPS 11.1)
+* Registro de Incidencias (GPS 5.1)
 
 ###### De salida {.unnumbered .unlisted}
 
-    Archivo Histórico de Proyectos
+* Archivo Histórico de Proyectos
 
 ##### Prácticas {.unnumbered .unlisted}
 
-    Catalogación
+* Catalogación
 
 ##### Participantes {.unnumbered .unlisted}
 
-    Jefe de Proyecto
+* Jefe de Proyecto
 
 #### Tarea GPF 1.2: Archivo de la Documentación de Gestión del Proyecto {#gpf-1-2}
 
@@ -1787,16 +1787,16 @@ Cuando el proyecto esté totalmente terminado y aceptado por el Cliente o Usuari
 
 ###### De entrada {.unnumbered .unlisted}
 
-    Documentación de Gestión
+* Documentación de Gestión
 
 ###### De salida {.unnumbered .unlisted}
 
-    Archivo de la documentación de gestión del proyecto
+* Archivo de la documentación de gestión del proyecto
 
 ##### Prácticas {.unnumbered .unlisted}
 
-    Catalogación
+* Catalogación
 
 ##### Participantes {.unnumbered .unlisted}
 
-    Jefe de Proyecto
+* Jefe de Proyecto

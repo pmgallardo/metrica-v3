@@ -4,65 +4,54 @@
 
 El objetivo de la interfaz de Aseguramiento de la Calidad de MÉTRICA Versión 3 es proporcionar un marco común de referencia para la definición y puesta en marcha de planes específicos de aseguramiento de calidad aplicables a proyectos concretos. Si en la organización ya existe un sistema de calidad, dichos planes deberán ser coherentes con el mismo, completándolo en los aspectos no contemplados relativos a normas particulares del cliente, usuario o sistema concreto.
 
-La calidad se define como “**grado en que un conjunto de características inherentes cumple con unos requisitos**” [ISO 9000:2000]. El Aseguramiento de la Calidad pretende dar confianza en que el producto reune las características necesarias para satisfacer todos los requisitos del Sistema de Información.
+La calidad se define como “***grado en que un conjunto de características inherentes cumple con unos requisitos***” [ISO 9000:2000]. El Aseguramiento de la Calidad pretende dar confianza en que el producto reune las características necesarias para satisfacer todos los requisitos del Sistema de Información.
 
 Por tanto, para asegurar la calidad de los productos resultantes el equipo de calidad deberá realizar un conjunto de actividades que servirán para:
 
-    Reducir, eliminar y lo más importante, prevenir las deficiencias de calidad de los productos a obtener.
-    Alcanzar una razonable confianza en que las prestaciones y servicios esperados por el cliente o el usuario queden satisfechas.
+* Reducir, eliminar y lo más importante, prevenir las deficiencias de calidad de los productos a obtener.
+* Alcanzar una razonable confianza en que las prestaciones y servicios esperados por el cliente o el usuario queden satisfechas.
 
 Para conseguir estos objetivos, es necesario desarrollar un plan de aseguramiento de calidad específico que se aplicará durante la planificación del proyecto de acuerdo a la estrategia de desarrollo adoptada en la gestión del proyecto. En el plan de aseguramiento de calidad se reflejan las actividades de calidad a realizar (normales o extraordinarias), los estándares a aplicar, los productos a revisar, los procedimientos a seguir en la obtención de los distintos productos durante el desarrollo en MÉTRICA Versión 3 y la normativa para informar de los defectos detectados a sus responsables y realizar el seguimiento de los mismos hasta su corrección.
 
 El grupo de aseguramiento de calidad participa en la revisión de los productos seleccionados para determinar si son conformes o no a los procedimientos, normas o criterios especificados, siendo totalmente independiente del equipo de desarrollo. Las actividades a realizar por el grupo de aseguramiento de calidad vienen gobernadas por el plan. Sus funciones están dirigidas a:
 
-    Identificar las posibles desviaciones en los estándares aplicados, así como en los requisitos y procedimientos especificados.
-    Comprobar que se han llevado a cabo las medidas preventivas o correctoras necesarias.
+* Identificar las posibles desviaciones en los estándares aplicados, así como en los requisitos y procedimientos especificados.
+* Comprobar que se han llevado a cabo las medidas preventivas o correctoras necesarias.
 
 Las revisiones son una de las actividades más importantes del aseguramiento de la calidad, debido a que permiten eliminar defectos lo más pronto posible, cuando son menos costosos de corregir. Además existen procedimientos extraordinarios, como las auditorías, aplicables en desarrollos singulares y en el transcurso de las cuales se revisarán tanto las actividades de desarrollo como las propias de aseguramiento de calidad. La detección anticipada de errores evita el que se propaguen a los restantes procesos de desarrollo, reduciendo substancialmente el esfuerzo invertido en los mismos. En este sentido es importante destacar que el establecimiento del plan de aseguramiento de calidad comienza en el Estudio de Viabilidad del Sistema y se aplica a lo largo de todo el desarrollo, en los procesos de Análisis, Diseño, Construcción, Implantación y Aceptación del Sistema y en su posterior Mantenimiento.
 Actividades
 
-ESTUDIO DE VIABILIDAD DEL SISTEMA
-
-    Actividad EVS-CAL 1: Identificación de las Propiedades de Calidad par el Sistema
-    Actividad EVS-CAL 2: Establecimiento del Plan de Aseguramiento de Calidad
-    Actividad EVS-CAL 3: Adecuación del Plan de Aseguramiento de Calidad a la Solución
-
-ANÁLISIS DEL SISTEMA DE INFORMACIÓN
-
-    Actividad ASI-CAL 1: Especificación Inicial del Plan de Aseguramiento de Calidad
-    Actividad ASI-CAL 2: Especificación Detallada del Plan de Aseguramiento de Calidad
-    Actividad ASI-CAL 3: Revisión del Análisis de Consistencia
-    Actividad ASI-CAL 4: Revisión del Plan de Pruebas
-    Actividad ASI-CAL 5: Registro de la Aprobación del Análisis del Sistema
-
-DISEÑO DEL SISTEMA DE INFORMACIÓN
-
-    Actividad DSI-CAL 1: Revisión de la Verificación de la Arquitectura del Sistema
-    Actividad DSI-CAL 2: Revisión de la Especificación Técnica del Plan de Pruebas
-    Actividad DSI-CAL 3: Revisión de los Requisitos de Implantación
-    Actividad DSI-CAL 4: Registro de la Aprobación del Diseño del Sistema de Información
-
-CONSTRUCCIÓN DEL SISTEMA DE INFORMACIÓN
-
-    Actividad CSI-CAL 1: Revisión del Código de Componentes y Procedimientos
-    Actividad CSI-CAL 2: Revisión de las Pruebas Unitarias, de Integración y del Sistema
-    Actividad CSI-CAL 3: Revisión de los Manuales de Usuario
-    Actividad CSI-CAL 4: Revisión de la Formación a Usuarios Finales
-    Actividad CSI-CAL 5: Registro de la Aprobación del Sistema de Información
-
-IMPLANTACIÓN Y ACEPTACIÓN DEL SISTEMA
-
-    Actividad IAS-CAL 1: Revisión del Plan de Implantación del Sistema
-    Actividad IAS-CAL 2: Revisión de las Pruebas de Implantación del Sistema
-    Actividad IAS-CAL 3: Revisión de las Pruebas de Aceptación del Sistema
-    Actividad IAS-CAL 4: Revisión del Plan de Mantenimiento del Sistema
-    Actividad IAS-CAL 5: Registro de la Aprobación de la Implantación del Sistema
-
-MANTENIMIENTO DEL SISTEMA DE INFORMACIÓN
-
-    Actividad MSI-CAL 1: Revisión del Mantenimiento del Sistema de Información
-    Actividad MSI-CAL 2: Revisión del Plan de Pruebas de Regresión
-    Actividad MSI-CAL 3: Revisión de la Realización de las Prueba de Regresión
+* [Estudio de Viabilidad del Sistema](#evs-cal)
+  * [Actividad EVS-CAL 1: Identificación de las Propiedades de Calidad par el Sistema](#evs-cal-1)
+  * [Actividad EVS-CAL 2: Establecimiento del Plan de Aseguramiento de Calidad](#evs-cal-2)
+  * [Actividad EVS-CAL 3: Adecuación del Plan de Aseguramiento de Calidad a la Solución](#evs-cal-3)
+* [Análisis del Sistema de Información](#asi-cal-1)
+  * [Actividad ASI-CAL 1: Especificación Inicial del Plan de Aseguramiento de Calidad](#asi-cal-1)
+  * [Actividad ASI-CAL 2: Especificación Detallada del Plan de Aseguramiento de Calidad](#asi-cal-2)
+  * [Actividad ASI-CAL 3: Revisión del Análisis de Consistencia](#asi-cal-3)
+  * [Actividad ASI-CAL 4: Revisión del Plan de Pruebas](#asi-cal-4)
+  * [Actividad ASI-CAL 5: Registro de la Aprobación del Análisis del Sistema](#asi-cal-5)
+* [Diseño del Sistema de Información](#dsi-cal)
+  * [Actividad DSI-CAL 1: Revisión de la Verificación de la Arquitectura del Sistema](#dsi-cal-1)
+  * [Actividad DSI-CAL 2: Revisión de la Especificación Técnica del Plan de Pruebas](#dsi-cal-2)
+  * [Actividad DSI-CAL 3: Revisión de los Requisitos de Implantación](#dsi-cal-3)
+  * [Actividad DSI-CAL 4: Registro de la Aprobación del Diseño del Sistema de Información](#dsi-cal-4)
+* [Construcción del Sistema de Información](#csi-cal)
+  * [Actividad CSI-CAL 1: Revisión del Código de Componentes y Procedimientos](#csi-cal-1)
+  * [Actividad CSI-CAL 2: Revisión de las Pruebas Unitarias, de Integración y del Sistema](#csi-cal-2)
+  * [Actividad CSI-CAL 3: Revisión de los Manuales de Usuario](#csi-cal-3)
+  * [Actividad CSI-CAL 4: Revisión de la Formación a Usuarios Finales](#csi-cal-4)
+  * [Actividad CSI-CAL 5: Registro de la Aprobación del Sistema de Información](#csi-cal-5)
+* [Implantación y Aceptación del Sistema](#ias-cal)
+  * [Actividad IAS-CAL 1: Revisión del Plan de Implantación del Sistema](#ias-cal-1)
+  * [Actividad IAS-CAL 2: Revisión de las Pruebas de Implantación del Sistema](#ias-cal-2)
+  * [Actividad IAS-CAL 3: Revisión de las Pruebas de Aceptación del Sistema](#ias-cal-3)
+  * [Actividad IAS-CAL 4: Revisión del Plan de Mantenimiento del Sistema](#ias-cal-4)
+  * [Actividad IAS-CAL 5: Registro de la Aprobación de la Implantación del Sistema](#ias-cal-5)
+* [Mantenimiento del Sistema de Información](#msi-cal)
+  * [Actividad MSI-CAL 1: Revisión del Mantenimiento del Sistema de Información](#msi-cal-1)
+  * [Actividad MSI-CAL 2: Revisión del Plan de Pruebas de Regresión](#msi-cal-2)
+  * [Actividad MSI-CAL 3: Revisión de la Realización de las Prueba de Regresión](#msi-cal-3)
 
 ## Estudio de viabilidad del sistema {#evs-cal}
 
@@ -162,57 +151,57 @@ Se constituye el equipo de trabajo inicial necesario para determinar y valorar l
 
 ###### De entrada {.unnumbered .unlisted}
 
-    Recursos disponibles (externo)
+* Recursos disponibles (externo)
 
 ###### De salida {.unnumbered .unlisted}
 
-    Equipo de aseguramiento de calidad
-    Plan de acción
+* Equipo de aseguramiento de calidad
+* Plan de acción
 
 ##### Técnicas {.unnumbered .unlisted}
 
-    Planificación
+* Planificación
 
 ##### Prácticas {.unnumbered .unlisted}
 
-    Sesiones de Trabajo
+* Sesiones de Trabajo
 
 ##### Participantes {.unnumbered .unlisted}
 
-    Grupo de Aseguramiento de la Calidad
-    Jefe de Proyecto
+* Grupo de Aseguramiento de la Calidad
+* Jefe de Proyecto
 
 #### Tarea EVS-CAL 1.2: Determinación de los Sistemas de Información objeto de Aseguramiento de Calidad {#evs-cal-1-2}
 
 Para cada alternativa de solución propuesta se determina qué sistemas de información van a estar afectados por un plan de aseguramiento de calidad. Para ello se pueden considerar varios criterios relativos a las características que reúna el sistema, como pueden ser:
 
-    Un período de vida largo.
-    Sujeto a cambios constantes.
-    Equipo de trabajo heterogéneo en el desarrollo del sistema.
-    Operación continua.
-    Alta disponibilidad.
-    Fuerte interacción con otros sistemas.
-    Portabilidad.
+* Un período de vida largo.
+* Sujeto a cambios constantes.
+* Equipo de trabajo heterogéneo en el desarrollo del sistema.
+* Operación continua.
+* Alta disponibilidad.
+* Fuerte interacción con otros sistemas.
+* Portabilidad.
 
 ##### Productos {.unnumbered .unlisted}
 
 ###### De entrada {.unnumbered .unlisted}
 
-    Equipo de aseguramiento de calidad
-    Alternativas de solución a estudiar (EVS 4.2)
+* Equipo de aseguramiento de calidad
+* Alternativas de solución a estudiar (EVS 4.2)
 
 ###### De salida {.unnumbered .unlisted}
 
-    Sistemas de Información objeto de aseguramiento de calidad
+* Sistemas de Información objeto de aseguramiento de calidad
 
 ##### Prácticas {.unnumbered .unlisted}
 
-    Sesiones de Trabajo
+* Sesiones de Trabajo
 
 ##### Participantes {.unnumbered .unlisted}
 
-    Grupo de Aseguramiento de la Calidad
-    Jefe de Proyecto
+* Grupo de Aseguramiento de la Calidad
+* Jefe de Proyecto
 
 #### Tarea EVS-CAL 1.3: Identificación de las Propiedades de Calidad {#evs-cal-1-3}
 
@@ -222,21 +211,21 @@ Una vez identificados para cada alternativa propuesta los sistemas de informacio
 
 ###### De entrada {.unnumbered .unlisted}
 
-    Sistemas de Información objeto de aseguramiento de calidad (EVS-CAL 1.2)
+* Sistemas de Información objeto de aseguramiento de calidad (EVS-CAL 1.2)
 
 ###### De salida {.unnumbered .unlisted}
 
-    Sistemas de Información objeto de aseguramiento de calidad:
-        Propiedades de calidad
+* Sistemas de Información objeto de aseguramiento de calidad:
+  * Propiedades de calidad
 
 ##### Prácticas {.unnumbered .unlisted}
 
-    Sesiones de Trabajo
+* Sesiones de Trabajo
 
 ##### Participantes {.unnumbered .unlisted}
 
-    Grupo de Aseguramiento de la Calidad
-    Jefe de Proyecto
+* Grupo de Aseguramiento de la Calidad
+* Jefe de Proyecto
 
 ### Actividad EVS-CAL 2: Establecimiento del Plan de Aseguramiento de Calidad {#evs-cal-2}
 
@@ -324,22 +313,22 @@ Se determina la necesidad de incluir un plan de aseguramiento de calidad en las 
 
 ###### De entrada {.unnumbered .unlisted}
 
-    Valoración de alternativas (EVS 5.2)
-    Plan de trabajo de cada alternativa (EVS 5.3)
-    Necesidad de aseguramiento de calidad (EVS-CAL 1.3)
+* Valoración de alternativas (EVS 5.2)
+* Plan de trabajo de cada alternativa (EVS 5.3)
+* Necesidad de aseguramiento de calidad (EVS-CAL 1.3)
 
 ###### De salida {.unnumbered .unlisted}
 
-    Sistemas de Información objeto de aseguramiento de calidad:
-        Necesidad de un plan de aseguramiento de calidad
+* Sistemas de Información objeto de aseguramiento de calidad:
+  * Necesidad de un plan de aseguramiento de calidad
 
 ##### Prácticas {.unnumbered .unlisted}
 
-    Sesiones de Trabajo
+* Sesiones de Trabajo
 
 ##### Participantes {.unnumbered .unlisted}
 
-    Grupo de Aseguramiento de la Calidad
+* Grupo de Aseguramiento de la Calidad
 
 #### Tarea EVS-CAL 2.2: Alcance del Plan de Aseguramiento de Calidad {#evs-cal-2-2}
 
@@ -347,34 +336,34 @@ Si en la organización existe un sistema de calidad, se realiza una valoració
 
 En algunos casos puede ser necesario reflejar en el plan de aseguramiento de calidad ciertas normas que difieran en mayor o menor medida de las establecidas en el sistema de calidad. El contenido del plan de aseguramiento de calidad se fijará de acuerdo a los estándares del sistema de calidad, si existen, y en cualquier caso se incluirán aspectos tales como:
 
-    Propósito y alcance del plan en términos de propiedades de calidad.
-    Objetivos.
-    Actividades y tareas relacionadas con el aseguramiento de calidad a realizar a lo largo del desarrollo del software y responsabilidades.
-    Productos mínimos exigibles de ingeniería del software.
-    Estándares, prácticas y normas aplicables durante el desarrollo del software.
-    Tipos de revisiones, verificaciones y validaciones que se van a llevar a cabo, así como los responsables de su realización.
-    Criterios para la aceptación o rechazo de cada producto resultante de un proceso.
-    Procedimientos para implementar acciones correctoras o preventivas y realizar su seguimiento, identificando responsables.
-    Métodos para la salvaguarda y mantenimiento de la documentación obtenida en las actividades de aseguramiento de calidad..
+- Propósito y alcance del plan en términos de propiedades de calidad.
+- Objetivos.
+- Actividades y tareas relacionadas con el aseguramiento de calidad a realizar a lo largo del desarrollo del software y responsabilidades.
+- Productos mínimos exigibles de ingeniería del software.
+- Estándares, prácticas y normas aplicables durante el desarrollo del software.
+- Tipos de revisiones, verificaciones y validaciones que se van a llevar a cabo, así como los responsables de su realización.
+- Criterios para la aceptación o rechazo de cada producto resultante de un proceso.
+- Procedimientos para implementar acciones correctoras o preventivas y realizar su seguimiento, identificando responsables.
+- Métodos para la salvaguarda y mantenimiento de la documentación obtenida en las actividades de aseguramiento de calidad..
 
 ##### Productos {.unnumbered .unlisted}
 
 ###### De entrada {.unnumbered .unlisted}
 
-    Sistema de calidad existente en la organización (externo)
-    Necesidad de aseguramiento de calidad (EVS-CAL 2.1)
+* Sistema de calidad existente en la organización (externo)
+* Necesidad de aseguramiento de calidad (EVS-CAL 2.1)
 
 ###### De salida {.unnumbered .unlisted}
 
-    Plan de aseguramiento de calidad de cada alternativa
+* Plan de aseguramiento de calidad de cada alternativa
 
 ##### Prácticas {.unnumbered .unlisted}
 
-    Sesiones de Trabajo
+* Sesiones de Trabajo
 
 ##### Participantes {.unnumbered .unlisted}
 
-    Grupo de Aseguramiento de la Calidad
+* Grupo de Aseguramiento de la Calidad
 
 #### Tarea EVS-CAL 2.3: Impacto en el Coste del Sistema {#evs-cal-2-3}
 
@@ -386,22 +375,22 @@ Este coste aporta la información necesaria para poder valorar globalmente cada
 
 ###### De entrada {.unnumbered .unlisted}
 
-    Plan de aseguramiento de calidad (EVS-CAL 2.2)
-    Valoración de alternativas (EVS 5.1)
+* Plan de aseguramiento de calidad (EVS-CAL 2.2)
+* Valoración de alternativas (EVS 5.1)
 
 ###### De salida {.unnumbered .unlisted}
 
-    Valoración de alternativas:
-        Coste del plan de aseguramiento de calidad
+* Valoración de alternativas:
+  * Coste del plan de aseguramiento de calidad
 
 ##### Técnicas {.unnumbered .unlisted}
 
-    Análisis Coste/Beneficio
+ * Análisis Coste/Beneficio
 
 ##### Participantes {.unnumbered .unlisted}
 
-    Grupo de Aseguramiento de la Calidad
-    Jefe de Proyecto
+* Grupo de Aseguramiento de la Calidad
+* Jefe de Proyecto
 
 ### Actividad EVS-CAL 3: Adecuación del Plan de Aseguramiento de Calidad a la Solución {#evs-cal-3}
 
@@ -459,21 +448,21 @@ Una vez ponderadas las dificultades económicas, técnicas, etc. que surjan co
 
 ###### De entrada {.unnumbered .unlisted}
 
-    Plan de Aseguramiento de Calidad (EVS-CAL 2.2)
-    Solución propuesta (EVS 6.2)
+* Plan de Aseguramiento de Calidad (EVS-CAL 2.2)
+* Solución propuesta (EVS 6.2)
 
 ###### De salida {.unnumbered .unlisted}
 
-    Plan de aseguramiento de calidad para la alternativa elegida
+* Plan de aseguramiento de calidad para la alternativa elegida
 
 ##### Prácticas {.unnumbered .unlisted}
 
-    Sesiones de Trabajo
+* Sesiones de Trabajo
 
 ##### Participantes {.unnumbered .unlisted}
 
-    Grupo de Aseguramiento de la Calidad
-    Jefe de Proyecto
+* Grupo de Aseguramiento de la Calidad
+* Jefe de Proyecto
 
 #### Tarea EVS-CAL 3.2 {#evs-cal-3-2}
 
@@ -483,16 +472,16 @@ Se registra la aprobación del plan de aseguramiento de calidad asociado a cada
 
 ###### De entrada {.unnumbered .unlisted}
 
-    Aprobación de la solución (EVS 6.3)
-    Plan de aseguramiento de calidad (EVS-CAL 3.1)
+* Aprobación de la solución (EVS 6.3)
+* Plan de aseguramiento de calidad (EVS-CAL 3.1)
 
 ###### De salida {.unnumbered .unlisted}
 
-    Registro de aprobación/rechazo del Plan de Aseguramiento de Calidad
+* Registro de aprobación/rechazo del Plan de Aseguramiento de Calidad
 
 ##### Participantes {.unnumbered .unlisted}
 
-    Grupo de Aseguramiento de la Calidad
+* Grupo de Aseguramiento de la Calidad
 
 ## Análisis del sistema de información {#asi-cal}
 
@@ -502,9 +491,9 @@ También se detallan los estándares y normas a cumplir, las revisiones a llevar
 
 En el proceso Análisis del Sistema de Información (ASI), el grupo de aseguramiento de calidad se implica directamente en la revisión de los siguientes productos:
 
-    Catálogo de requisitos, comprobando hasta que punto se han definido de una forma que facilite su comprensión y seguimiento.
-    Modelos resultantes del análisis, asegurando que se han verificado y validado y que se ha realizado la trazabilidad de requisitos.
-    Plan de pruebas, comprobando que se han tenido en cuenta en su definición los criterios establecidos en el plan de aseguramiento de calidad, con el fin de facilitar en los procesos Diseño del Sistema de Información (DSI), Construcción del Sistema de Información (CSI) e Implantación y Aceptación del Sistema (IAS) la revisión de los distintos niveles de prueba.
+- Catálogo de requisitos, comprobando hasta que punto se han definido de una forma que facilite su comprensión y seguimiento.
+- Modelos resultantes del análisis, asegurando que se han verificado y validado y que se ha realizado la trazabilidad de requisitos.
+- Plan de pruebas, comprobando que se han tenido en cuenta en su definición los criterios establecidos en el plan de aseguramiento de calidad, con el fin de facilitar en los procesos Diseño del Sistema de Información (DSI), Construcción del Sistema de Información (CSI) e Implantación y Aceptación del Sistema (IAS) la revisión de los distintos niveles de prueba.
 
 ![](../images/cal-asi.jpg)
 
@@ -546,30 +535,30 @@ En el proceso Análisis del Sistema de Información (ASI), el grupo de asegurami
 
 Se especifican de forma clara y detallada:
 
-    Estándares y normas a aplicar durante el proceso de desarrollo.
-    Procedimientos para informar, hacer seguimiento y resolver errores, identificando los responsables de llevarlos a cabo.
-    Mecanismos de modificación de productos estableciendo cómo se van a gestionar dichas modificaciones y el modo de comunicarlo a los implicados.
-    Modo de valorar las propiedades de calidad.
+- Estándares y normas a aplicar durante el proceso de desarrollo.
+- Procedimientos para informar, hacer seguimiento y resolver errores, identificando los responsables de llevarlos a cabo.
+- Mecanismos de modificación de productos estableciendo cómo se van a gestionar dichas modificaciones y el modo de comunicarlo a los implicados.
+- Modo de valorar las propiedades de calidad.
 
 ##### Productos {.unnumbered .unlisted}
 
 ###### De entrada {.unnumbered .unlisted}
 
-    Plan de aseguramiento de calidad (EVS-CAL 3.1)
+* Plan de aseguramiento de calidad (EVS-CAL 3.1)
 
 ###### De salida {.unnumbered .unlisted}
 
-    Plan de aseguramiento de calidad
-        Aspectos generales
+* Plan de aseguramiento de calidad
+  * Aspectos generales
 
 ##### Prácticas {.unnumbered .unlisted}
 
-    Sesiones de Trabajo
+* Sesiones de Trabajo
 
 ##### Participantes {.unnumbered .unlisted}
 
-    Grupo de Aseguramiento de la Calidad
-    Jefe de Proyecto
+* Grupo de Aseguramiento de la Calidad
+* Jefe de Proyecto
 
 ### Actividad ASI-CAL 2: Especificación Detallada del Plan de Aseguramiento de Calidad {#asi-cal-2}
 
@@ -610,10 +599,10 @@ Se especifican de forma clara y detallada:
 
 Una vez conocido el alcance del sistema de información objeto del análisis, se completa el plan de aseguramiento de calidad definido anteriormente, incluyendo:
 
-    Actividades y tareas a realizar en cuanto al aseguramiento de calidad y su emplazamiento a lo largo del proceso de desarrollo. Se valora, incluyéndo en su caso, la realización de auditorías.
-    Descripción de cada uno de los productos obtenidos en el proceso de desarrollo, como por ejemplo planes de pruebas, catálogo de requisitos, etc.
-    Revisiones a realizar, su propósito y criterios que se deben seguir en la revisión.
-    Calendario para la ejecución de estas actividades, incluyendo los recursos humanos y materiales necesarios para llevarlo a cabo.
+- Actividades y tareas a realizar en cuanto al aseguramiento de calidad y su emplazamiento a lo largo del proceso de desarrollo. Se valora, incluyéndo en su caso, la realización de auditorías.
+- Descripción de cada uno de los productos obtenidos en el proceso de desarrollo, como por ejemplo planes de pruebas, catálogo de requisitos, etc.
+- Revisiones a realizar, su propósito y criterios que se deben seguir en la revisión.
+- Calendario para la ejecución de estas actividades, incluyendo los recursos humanos y materiales necesarios para llevarlo a cabo.
 
 Una vez definido el plan de aseguramiento de calidad, toda la información resultante de las actividades llevadas a cabo por el grupo de aseguramiento de calidad se incluirá en el dossier de calidad que formará parte del producto software.
 
@@ -621,23 +610,23 @@ Una vez definido el plan de aseguramiento de calidad, toda la información resu
 
 ###### De entrada {.unnumbered .unlisted}
 
-    Plan de aseguramiento de calidad (ASI-CAL 1.1)
+* Plan de aseguramiento de calidad (ASI-CAL 1.1)
 
 ###### De salida {.unnumbered .unlisted}
 
-    Plan de aseguramiento de calidad
-        Detallado
-    Dossier de aseguramiento de calidad
-        Índice
+* Plan de aseguramiento de calidad
+  * Detallado
+* Dossier de aseguramiento de calidad
+  * Índice
 
 ##### Prácticas {.unnumbered .unlisted}
 
-    Sesiones de Trabajo
+* Sesiones de Trabajo
 
 ##### Participantes {.unnumbered .unlisted}
 
-    Grupo de Aseguramiento de la Calidad
-    Jefe de Proyecto
+* Grupo de Aseguramiento de la Calidad
+* Jefe de Proyecto
 
 ### Actividad ASI-CAL 3: Revisión del Análisis de Consistencia {#asi-cal-3}
 
@@ -702,22 +691,22 @@ En el caso de detectarse alguna deficiencia se remitirán las no conformidades 
 
 ###### De entrada {.unnumbered .unlisted}
 
-    Catálogo de requisitos (ASI 2.4)
-    Plan de aseguramiento de calidad (ASI-CAL 2.1)
-    Dossier de aseguramieto de calidad (ASI-CAL 2.1)
+* Catálogo de requisitos (ASI 2.4)
+* Plan de aseguramiento de calidad (ASI-CAL 2.1)
+* Dossier de aseguramieto de calidad (ASI-CAL 2.1)
 
 ###### De salida {.unnumbered .unlisted}
 
-    Dossier de aseguramiento de calidad:
-        Revisión de requisitos
+* Dossier de aseguramiento de calidad:
+  * Revisión de requisitos
 
 ##### Prácticas {.unnumbered .unlisted}
 
-    Revisión técnica
+* Revisión técnica
 
 ##### Participantes {.unnumbered .unlisted}
 
-    Grupo de Aseguramiento de la Calidad
+* Grupo de Aseguramiento de la Calidad
 
 #### Tarea ASI-CAL 3.2 {#asi-cal-3-2}
 
@@ -729,23 +718,23 @@ Se revisa que se ha realizado la verificación y validación de los productos 
 
 ###### De entrada {.unnumbered .unlisted}
 
-    Catálogo de requisitos (ASI 2.4)
-    Modelos de análisis revisados (ASI 9.3)
-    Plan de aseguramiento de calidad (ASI-CAL 2.1)
-    Dossier de aseguramiento de calidad (ASI-CAL 3.1)
+* Catálogo de requisitos (ASI 2.4)
+* Modelos de análisis revisados (ASI 9.3)
+* Plan de aseguramiento de calidad (ASI-CAL 2.1)
+* Dossier de aseguramiento de calidad (ASI-CAL 3.1)
 
 ###### De salida {.unnumbered .unlisted}
 
-    Dossier de aseguramiento de calidad
-        Revisión de la consistencia entre productos
+* Dossier de aseguramiento de calidad
+  * Revisión de la consistencia entre productos
 
 ##### Prácticas {.unnumbered .unlisted}
 
-    Revisión técnica
+* Revisión técnica
 
 ##### Participantes {.unnumbered .unlisted}
 
-    Grupo de Aseguramiento de la Calidad
+* Grupo de Aseguramiento de la Calidad
 
 ### Actividad ASI-CAL 4: Revisión del Plan de Pruebas {#asi-cal-4}
 
@@ -790,22 +779,22 @@ Se revisa la existencia en el plan de pruebas de una normativa para la gestión
 
 ###### De entrada {.unnumbered .unlisted}
 
-    Plan de pruebas (ASI 10.3)
-    Plan de aseguramiento de calidad (ASI-CAL 2.1)
-    Dossier de aseguramiento de calidad (ASI-CAL 3.2)
+* Plan de pruebas (ASI 10.3)
+* Plan de aseguramiento de calidad (ASI-CAL 2.1)
+* Dossier de aseguramiento de calidad (ASI-CAL 3.2)
 
 ###### De salida {.unnumbered .unlisted}
 
-    Dossier de aseguramiento de calidad:
-        Revisión del plan de pruebas
+* Dossier de aseguramiento de calidad:
+  * Revisión del plan de pruebas
 
 ##### Prácticas {.unnumbered .unlisted}
 
-    Revisión técnica
+* Revisión técnica
 
 ##### Participantes {.unnumbered .unlisted}
 
-    Grupo de Aseguramiento de la Calidad
+* Grupo de Aseguramiento de la Calidad
 
 #### Actividad ASI-CAL 5: Registro de la Aprobación del Análisis del Sistema {#asi-cal-5}
 
@@ -844,17 +833,17 @@ Se registra en el dossier de aseguramiento de calidad, la aprobación o rechazo
 
 ###### De entrada {.unnumbered .unlisted}
 
-    Aprobación del análisis del sistema de información (ASI 11.1)
-    Dossier de aseguramiento de calidad (ASI-CAL 4.1)
+* Aprobación del análisis del sistema de información (ASI 11.1)
+* Dossier de aseguramiento de calidad (ASI-CAL 4.1)
 
 ###### De salida {.unnumbered .unlisted}
 
-    Dossier de aseguramiento de calidad
-        Registro de la aprobación del Análisis del Sistema de Información
+* Dossier de aseguramiento de calidad
+  * Registro de la aprobación del Análisis del Sistema de Información
 
 ##### Participantes {.unnumbered .unlisted}
 
-    Grupo de Aseguramiento de la Calidad
+* Grupo de Aseguramiento de la Calidad
 
 ## Diseño del sistema de información {#dsi-cal}
 
@@ -925,22 +914,22 @@ Se comprueba que el diseño de la arquitectura del sistema responde a los requi
 
 ###### De entrada {.unnumbered .unlisted}
 
-    Modelos del diseño verificados (DSI 7.2)
-    Plan de aseguramiento de calidad (ASI-CAL 2.1)
-    Dossier de aseguramiento de calidad (ASI-CAL 5.1)
+* Modelos del diseño verificados (DSI 7.2)
+* Plan de aseguramiento de calidad (ASI-CAL 2.1)
+* Dossier de aseguramiento de calidad (ASI-CAL 5.1)
 
 ###### De salida {.unnumbered .unlisted}
 
-    Dossier de aseguramiento de calidad:
-        Revisión de la arquitectura del sistema
+* Dossier de aseguramiento de calidad:
+  * Revisión de la arquitectura del sistema
 
 ##### Prácticas {.unnumbered .unlisted}
 
-    Revisión técnica
+* Revisión técnica
 
 ##### Participantes {.unnumbered .unlisted}
 
-    Grupo de Aseguramiento de la Calidad
+* Grupo de Aseguramiento de la Calidad
 
 #### Tarea DSI-CAL 1.2 {#dsi-cal-1-2}
 
@@ -952,17 +941,17 @@ Se registra la aprobación o rechazo de los productos resultantes teniendo en c
 
 ###### De entrada {.unnumbered .unlisted}
 
-    Aceptación técnica del diseño (DSI 7.3)
-    Dossier de aseguramiento de calidad (DSI-CAL 1.1)
+* Aceptación técnica del diseño (DSI 7.3)
+* Dossier de aseguramiento de calidad (DSI-CAL 1.1)
 
 ###### De salida {.unnumbered .unlisted}
 
-    Dossier de aseguramiento de calidad:
-        Registro de la aceptación de la arquitectura del sistema
+* Dossier de aseguramiento de calidad:
+  * Registro de la aceptación de la arquitectura del sistema
 
 ##### Participantes {.unnumbered .unlisted}
 
-    Grupo de Aseguramiento de la Calidad
+* Grupo de Aseguramiento de la Calidad
 
 ### Actividad DSI-CAL 2: Revisión de la Especificación Técnica del Plan de Pruebas {#dsi-cal-2}
 
@@ -1025,22 +1014,22 @@ Asimismo, en función de las características del sistema de información, se
 
 ###### De entrada {.unnumbered .unlisted}
 
-    Plan de pruebas (DSI 10.2)
-    Plan de aseguramiento de calidad (ASI-CAL 2.1)
-    Dossier de aseguramiento de calidad (DSI-CAL 1.2)
+* Plan de pruebas (DSI 10.2)
+* Plan de aseguramiento de calidad (ASI-CAL 2.1)
+* Dossier de aseguramiento de calidad (DSI-CAL 1.2)
 
 ###### De salida {.unnumbered .unlisted}
 
-    Dossier de aseguramiento de calidad:
-        Revisión del diseño de las pruebas
+* Dossier de aseguramiento de calidad:
+* Revisión del diseño de las pruebas
 
 ##### Prácticas {.unnumbered .unlisted}
 
-    Revisión técnica
+* Revisión técnica
 
 ##### Participantes {.unnumbered .unlisted}
 
-    Grupo de Aseguramiento de la Calidad
+* Grupo de Aseguramiento de la Calidad
 
 #### Tarea DSI-CAL 2.2 {#dsi-cal-2-2}
 
@@ -1056,22 +1045,22 @@ Se revisa la planificación de las pruebas con el fin de establecer el propio p
 
 ###### De entrada {.unnumbered .unlisted}
 
-    Plan de pruebas (DSI 10.3)
-    Plan de aseguramiento de calidad (ASI-CAL 2.1)
-    Dossier de aseguramiento de calidad (DSI-CAL 2.1)
+* Plan de pruebas (DSI 10.3)
+* Plan de aseguramiento de calidad (ASI-CAL 2.1)
+* Dossier de aseguramiento de calidad (DSI-CAL 2.1)
 
 ###### De salida {.unnumbered .unlisted}
 
-    Dossier de aseguramiento de calidad
-        Revisión del plan de pruebas
+* Dossier de aseguramiento de calidad
+  * Revisión del plan de pruebas
 
 ##### Prácticas {.unnumbered .unlisted}
 
-    Revisión técnica
+* Revisión técnica
 
 ##### Participantes {.unnumbered .unlisted}
 
-    Grupo de Aseguramiento de la Calidad
+* Grupo de Aseguramiento de la Calidad
 
 ### Actividad DSI-CAL 3: Revisión de los Requisitos de Implantación {#dsi-cal-3}
 
@@ -1132,21 +1121,21 @@ Se comprueba que se han identificado los requisitos necesarios relativos a la do
 
 ###### De entrada {.unnumbered .unlisted}
 
-    Catálogo de requisitos (DSI 11.1)
-    Dossier de aseguramiento de calidad (DSI-CAL 2.2)
+* Catálogo de requisitos (DSI 11.1)
+* Dossier de aseguramiento de calidad (DSI-CAL 2.2)
 
 ###### De salida {.unnumbered .unlisted}
 
-    Dossier de aseguramiento de calidad
-        Revisión de los requisitos de documentación de usuario
+* Dossier de aseguramiento de calidad
+  * Revisión de los requisitos de documentación de usuario
 
 ##### Prácticas {.unnumbered .unlisted}
 
-    Revisión técnica
+* Revisión técnica
 
 ##### Participantes {.unnumbered .unlisted}
 
-    Grupo de Aseguramiento de la Calidad
+* Grupo de Aseguramiento de la Calidad
 
 #### Tarea DSI-CAL 3.2 {#dsi-cal-3-2}
 
@@ -1156,21 +1145,21 @@ Se comprueba que se han identificado y detallado los requisitos necesarios para 
 
 ###### De entrada {.unnumbered .unlisted}
 
-    Catálogo de requisitos (DSI 11.2)
-    Dossier de aseguramiento de calidad (DSI-CAL 3.1)
+* Catálogo de requisitos (DSI 11.2)
+* Dossier de aseguramiento de calidad (DSI-CAL 3.1)
 
 ###### De salida {.unnumbered .unlisted}
 
-    Dossier de aseguramiento de calidad
-        Revisión de los requisitos de implantación
+* Dossier de aseguramiento de calidad
+  * Revisión de los requisitos de implantación
 
 ##### Prácticas {.unnumbered .unlisted}
 
-    Revisión técnica
+* Revisión técnica
 
 ##### Participantes {.unnumbered .unlisted}
 
-    Grupo de Aseguramiento de la Calidad
+* Grupo de Aseguramiento de la Calidad
 
 ### Actividad DSI-CAL 4: Registro de la Aprobación del Diseño del Sistema de Información {#dsi-cal-4}
 
@@ -1209,17 +1198,17 @@ Se registra la aprobación o rechazo de los productos resultantes del Diseño 
 
 ###### De entrada {.unnumbered .unlisted}
 
-    Aprobación del diseño del sistema de información (DSI 12.1)
-    Dossier de aseguramiento de calidad (DSI-CAL 3.2)
+* Aprobación del diseño del sistema de información (DSI 12.1)
+* Dossier de aseguramiento de calidad (DSI-CAL 3.2)
 
 ###### De salida {.unnumbered .unlisted}
 
-    Dossier de aseguramiento de calidad
-        Registro de la aprobación del Diseño del Sistema de Información
+* Dossier de aseguramiento de calidad
+  * Registro de la aprobación del Diseño del Sistema de Información
 
 ##### Participantes {.unnumbered .unlisted}
 
-    Grupo de Aseguramiento de la Calidad
+* Grupo de Aseguramiento de la Calidad
 
 ## Construcción del sistema de información  {#csi-cal}
 
@@ -1268,21 +1257,21 @@ Se comprueba que se ha generado el código de los componentes y de los procedim
 
 ###### De entrada {.unnumbered .unlisted}
 
-    Producto software (CSI 2.2)
-    Dossier de aseguramiento de calidad (DSI-CAL 4.1)
+* Producto software (CSI 2.2)
+* Dossier de aseguramiento de calidad (DSI-CAL 4.1)
 
 ###### De salida {.unnumbered .unlisted}
 
-    Dossier de aseguramiento de calidad:
-        Revisión del código de componentes y procedimientos
+* Dossier de aseguramiento de calidad:
+  * Revisión del código de componentes y procedimientos
 
 ##### Prácticas {.unnumbered .unlisted}
 
-    Revisión técnica
+* Revisión técnica
 
 ##### Participantes {.unnumbered .unlisted}
 
-    Grupo de Aseguramiento de la Calidad
+* Grupo de Aseguramiento de la Calidad
 
 ### Actividad CSI-CAL 2: Revisión de las Pruebas Unitarias, de Integración y del Sistema {#csi-cal-2}
 
@@ -1363,21 +1352,21 @@ Para todo esto, se tendrá en cuenta la normativa establecida para la gestión
 
 ###### De entrada {.unnumbered .unlisted}
 
-    Resultado de las pruebas unitarias (CSI 3.2)
-    Dossier de aseguramiento de calidad (CSI-CAL 1.1)
+* Resultado de las pruebas unitarias (CSI 3.2)
+* Dossier de aseguramiento de calidad (CSI-CAL 1.1)
 
 ###### De salida {.unnumbered .unlisted}
 
-    Dossier de aseguramiento de calidad:
-        Revisión de la realización de las pruebas unitarias
+* Dossier de aseguramiento de calidad:
+  * Revisión de la realización de las pruebas unitarias
 
 ##### Prácticas {.unnumbered .unlisted}
 
-    Revisión formal
+* Revisión formal
 
 ##### Participantes {.unnumbered .unlisted}
 
-    Grupo de Aseguramiento de la Calidad
+* Grupo de Aseguramiento de la Calidad
 
 #### Tarea CSI-CAL 2.2 {#csi-cal-2-2}
 
@@ -1389,21 +1378,21 @@ Para todo esto, se tendrá en cuenta la normativa establecida para la gestión
 
 ###### De entrada {.unnumbered .unlisted}
 
-    Evaluación del resultado de las pruebas de integración (CSI 4.3)
-    Dossier de aseguramiento de calidad (CSI-CAL 2.1)
+* Evaluación del resultado de las pruebas de integración (CSI 4.3)
+* Dossier de aseguramiento de calidad (CSI-CAL 2.1)
 
 ###### De salida {.unnumbered .unlisted}
 
-    Dossier de aseguramiento de calidad:
-        Revisión de la realización de las pruebas de integración
+* Dossier de aseguramiento de calidad:
+  * Revisión de la realización de las pruebas de integración
 
 ##### Prácticas {.unnumbered .unlisted}
 
-    Revisión formal
+* Revisión formal
 
 ##### Participantes {.unnumbered .unlisted}
 
-    Grupo de Aseguramiento de la Calidad
+* Grupo de Aseguramiento de la Calidad
 
 #### Tarea CSI-CAL 2.3 {#csi-cal-2-3}
 
@@ -1419,21 +1408,21 @@ Igualmente se revisarán las incidencias no resueltas con el fin de validar has
 
 ###### De entrada {.unnumbered .unlisted}
 
-    Evaluación del resultado de las pruebas del sistema (CSI 5.3)
-    Dossier de aseguramiento de calidad (CSI-CAL 2.2)
+* Evaluación del resultado de las pruebas del sistema (CSI 5.3)
+* Dossier de aseguramiento de calidad (CSI-CAL 2.2)
 
 ###### De salida {.unnumbered .unlisted}
 
-    Dossier de aseguramiento de calidad:
-        Revisión de la realización de las pruebas del sistema
+* Dossier de aseguramiento de calidad:
+  * Revisión de la realización de las pruebas del sistema
 
 ##### Prácticas {.unnumbered .unlisted}
 
-    Revisión formal
+* Revisión formal
 
 ##### Participantes {.unnumbered .unlisted}
 
-    Grupo de Aseguramiento de la Calidad
+* Grupo de Aseguramiento de la Calidad
 
 ### Actividad CSI-CAL 3: Revisión de los Manuales de Usuario {#csi-cal-3}
 
@@ -1476,21 +1465,21 @@ Se comprueba que los manuales de operación y de usuario se han descrito de for
 
 ###### De entrada {.unnumbered .unlisted}
 
-    Producto software (CSI 6.1)
-    Dossier de aseguramiento de calidad (CSI-CAL 2.3)
+* Producto software (CSI 6.1)
+* Dossier de aseguramiento de calidad (CSI-CAL 2.3)
 
 ###### De salida {.unnumbered .unlisted}
 
-    Dossier de aseguramiento de calidad:
-        Revisión de los manuales de usuario
+* Dossier de aseguramiento de calidad:
+  * Revisión de los manuales de usuario
 
 ##### Prácticas {.unnumbered .unlisted}
 
-    Revisión técnica
+* Revisión técnica
 
 ##### Participantes {.unnumbered .unlisted}
 
-    Grupo de Aseguramiento de la Calidad
+* Grupo de Aseguramiento de la Calidad
 
 ### Actividad CSI-CAL 4: Revisión de la Formación a Usuarios Finales {#csi-cal-4}
 
@@ -1533,21 +1522,21 @@ Se revisa que se han definido los esquemas de formación a los usuarios finales
 
 ###### De entrada {.unnumbered .unlisted}
 
-    Especificación de la formación a usuarios finales (CSI 7.2)
-    Dossier de aseguramiento de calidad (CSI-CAL 3.1)
+* Especificación de la formación a usuarios finales (CSI 7.2)
+* Dossier de aseguramiento de calidad (CSI-CAL 3.1)
 
 ###### De salida {.unnumbered .unlisted}
 
-    Dossier de aseguramiento de calidad:
-        Revisión de la formación a usuarios finales
+* Dossier de aseguramiento de calidad:
+  * Revisión de la formación a usuarios finales
 
 ##### Prácticas {.unnumbered .unlisted}
 
-    Revisión técnica
+* Revisión técnica
 
 ##### Participantes {.unnumbered .unlisted}
 
-    Grupo de Aseguramiento de la Calidad
+* Grupo de Aseguramiento de la Calidad
 
 ### Actividad CSI-CAL 5: Registro de la Aprobación del Sistema de Información {#csi-cal-5}
 
@@ -1586,17 +1575,17 @@ Se registra la aprobación o rechazo del sistema de información construido te
 
 ###### De entrada {.unnumbered .unlisted}
 
-    Aprobación del sistema de información (CSI 9.1)
-    Dossier de aseguramiento de calidad (CSI-CAL 4.1)
+* Aprobación del sistema de información (CSI 9.1)
+* Dossier de aseguramiento de calidad (CSI-CAL 4.1)
 
 ###### De salida {.unnumbered .unlisted}
 
-    Dossier de aseguramiento de calidad:
-        Registro de la aprobación del sistema de información
+* Dossier de aseguramiento de calidad:
+  * Registro de la aprobación del sistema de información
 
 ##### Participantes {.unnumbered .unlisted}
 
-    Grupo de Aseguramiento de la Calidad
+* Grupo de Aseguramiento de la Calidad
 
 ## Implantación y aceptación del sistema {#ias-cal}
 
@@ -1653,22 +1642,22 @@ Asimismo, se comprueba que se ha establecido un plan de trabajo para la implanta
 
 ###### De entrada {.unnumbered .unlisted}
 
-    Plan de implantación (IAS 1.1)
-    Equipo de implantación (IAS 1.2)
-    Dossier de aseguramiento de calidad (CSI-CAL 5.1)
+* Plan de implantación (IAS 1.1)
+* Equipo de implantación (IAS 1.2)
+* Dossier de aseguramiento de calidad (CSI-CAL 5.1)
 
 ###### De salida {.unnumbered .unlisted}
 
-    Dossier de aseguramiento de calidad:
-        Revisión del plan de implantación
+* Dossier de aseguramiento de calidad:
+  * Revisión del plan de implantación
 
 ##### Prácticas {.unnumbered .unlisted}
 
-    Revisión técnica
+* Revisión técnica
 
 ##### Participantes {.unnumbered .unlisted}
 
-    Grupo de Aseguramiento de la Calidad
+* Grupo de Aseguramiento de la Calidad
 
 ### Actividad IAS-CAL 2: Revisión de las Pruebas de Implantación del Sistema {#ias-cal-2}
 
@@ -1731,21 +1720,21 @@ Igualmente se revisarán las incidencias no resueltas con el fin de valorar has
 
 ###### De entrada {.unnumbered .unlisted}
 
-    Evaluación del resultado de las pruebas de implantación (IAS 5.3)
-    Dossier de aseguramiento de calidad (IAS-CAL 1.1)
+* Evaluación del resultado de las pruebas de implantación (IAS 5.3)
+* Dossier de aseguramiento de calidad (IAS-CAL 1.1)
 
 ###### De salida {.unnumbered .unlisted}
 
-    Dossier de aseguramiento de calidad:
-        Revisión de las pruebas de implantación
+* Dossier de aseguramiento de calidad:
+  * Revisión de las pruebas de implantación
 
 ##### Prácticas {.unnumbered .unlisted}
 
-    Revisión formal
+* Revisión formal
 
 ##### Participantes {.unnumbered .unlisted}
 
-    Grupo de Aseguramiento de la Calidad
+* Grupo de Aseguramiento de la Calidad
 
 #### Tarea IAS-CAL 2.2 {#ias-cal-2-2}
 
@@ -1755,16 +1744,16 @@ Se registra la aprobación o rechazo de las pruebas de implantación por parte
 
 ###### De entrada {.unnumbered .unlisted}
 
-    Dossier de aseguramiento de calidad (IAS-CAL 2.1)
+* Dossier de aseguramiento de calidad (IAS-CAL 2.1)
 
 ###### De salida {.unnumbered .unlisted}
 
-    Dossier de aseguramiento de calidad:
-        Registro de la aprobación de las pruebas de implantación por operación
+* Dossier de aseguramiento de calidad:
+  * Registro de la aprobación de las pruebas de implantación por operación
 
 ##### Participantes {.unnumbered .unlisted}
 
-    Grupo de Aseguramiento de la Calidad
+* Grupo de Aseguramiento de la Calidad
 
 ### Actividad IAS-CAL 3: Revisión de las Pruebas de Aceptación del Sistema {#ias-cal-3}
 
@@ -1827,21 +1816,21 @@ Igualmente se revisarán las incidencias no resueltas con el fin de valorar has
 
 ###### De entrada {.unnumbered .unlisted}
 
-    Evaluación del resultado de las pruebas de aceptación (IAS 6.3)
-    Dossier de aseguramiento de calidad (IAS-CAL 2.2)
+* Evaluación del resultado de las pruebas de aceptación (IAS 6.3)
+* Dossier de aseguramiento de calidad (IAS-CAL 2.2)
 
 ###### De salida {.unnumbered .unlisted}
 
-    Dossier de aseguramiento de calidad:
-        Revisión de la realización de las pruebas de aceptación
+* Dossier de aseguramiento de calidad:
+  * Revisión de la realización de las pruebas de aceptación
 
 ##### Prácticas {.unnumbered .unlisted}
 
-    Revisión formal
+* Revisión formal
 
 ##### Participantes {.unnumbered .unlisted}
 
-    Grupo de Aseguramiento de la Calidad
+* Grupo de Aseguramiento de la Calidad
 
 #### Tarea IAS-CAL 3.2 {#ias-cal-3-2}
 
@@ -1851,16 +1840,16 @@ Se registra la aprobación o rechazo de las pruebas de aceptación por parte d
 
 ###### De entrada {.unnumbered .unlisted}
 
-    Dossier de aseguramiento de calidad (IAS-CAL 3.1)
+* Dossier de aseguramiento de calidad (IAS-CAL 3.1)
 
 ###### De salida {.unnumbered .unlisted}
 
-    Dossier de aseguramiento de calidad:
-        Registro de la aprobación de las pruebas de aceptación por el usuario
+* Dossier de aseguramiento de calidad:
+  * Registro de la aprobación de las pruebas de aceptación por el usuario
 
 ##### Participantes {.unnumbered .unlisted}
 
-    Grupo de Aseguramiento de la Calidad
+* Grupo de Aseguramiento de la Calidad
 
 ### Actividad IAS-CAL 4: Revisión del Plan de Mantenimiento del Sistema {#ias-cal-4}
 
@@ -1907,21 +1896,21 @@ Si se considera conveniente, se estudiará la necesidad de llevar a cabo un seg
 
 ###### De entrada {.unnumbered .unlisted}
 
-    Plan de mantenimiento (IAS 7.2)
-    Dossier de aseguramiento de calidad (IAS-CAL 3.2)
+* Plan de mantenimiento (IAS 7.2)
+* Dossier de aseguramiento de calidad (IAS-CAL 3.2)
 
 ###### De salida {.unnumbered .unlisted}
 
-    Dossier de aseguramiento de calidad:
-        Revisión del plan de mantenimiento
+* Dossier de aseguramiento de calidad:
+  * Revisión del plan de mantenimiento
 
 ##### Prácticas {.unnumbered .unlisted}
 
-    Revisión técnica
+* Revisión técnica
 
 ##### Participantes {.unnumbered .unlisted}
 
-    Grupo de Aseguramiento de la Calidad
+* Grupo de Aseguramiento de la Calidad
 
 ### Actividad IAS-CAL 5: Registro de la Aprobación de la Implantación del Sistema {#ias-cal-5}
 
@@ -1960,17 +1949,17 @@ Se registra la aprobación de la implantación del sistema y se comprueba que 
 
 ###### De entrada {.unnumbered .unlisted}
 
-    Aprobación del sistema (IAS 9.2)
-    Dossier de aseguramiento de calidad (IAS-CAL 4.1)
+* Aprobación del sistema (IAS 9.2)
+* Dossier de aseguramiento de calidad (IAS-CAL 4.1)
 
 ###### De salida {.unnumbered .unlisted}
 
-    Dossier de aseguramiento de calidad:
-        Registro de la aprobación de la implantación del sistema
+* Dossier de aseguramiento de calidad:
+  * Registro de la aprobación de la implantación del sistema
 
 ##### Participantes {.unnumbered .unlisted}
 
-    Grupo de Aseguramiento de la Calidad
+* Grupo de Aseguramiento de la Calidad
 
 ## Mantenimineto del sistema de información {#msi-cal}
 
@@ -1980,10 +1969,10 @@ El grupo de aseguramiento de calidad intenvendrá durante el mantenimiento, efec
 
 En algún caso, según las implicaciones del cambio, puede ser necesario revisar puntualmente:
 
-    El contenido del plan de pruebas de regresión.
-    La ejecución de las pruebas de regresión según la normativa acordada en el plan de aseguramiento de calidad.
-    Las verificaciones y casos de prueba que se hayan incluido en el plan de pruebas para los cambios producidos por una petición.
-    Las incidencias detectadas con el fin de determinar si puede verse afectada alguna propiedad de calidad.
+- El contenido del plan de pruebas de regresión.
+- La ejecución de las pruebas de regresión según la normativa acordada en el plan de aseguramiento de calidad.
+- Las verificaciones y casos de prueba que se hayan incluido en el plan de pruebas para los cambios producidos por una petición.
+- Las incidencias detectadas con el fin de determinar si puede verse afectada alguna propiedad de calidad.
 
 En caso de revisar la ejecución de las pruebas de regresión, se registrará la aprobación de las pruebas por el responsable de mantenimiento.
 
@@ -2033,22 +2022,22 @@ Esta tarea de la interfaz de aseguramiento de calidad se aplica a todas las acti
 
 ###### De entrada {.unnumbered .unlisted}
 
-    Dossier de aseguramiento de calidad:
-        Revisión del plan de mantenimiento (IAS-CAL 4.1)
-    Catálogo de peticiones (MSI 1, MSI 2, MSI 3, MSI 4)
-    Plan de Mantenimiento (IAS 7.2)
+* Dossier de aseguramiento de calidad:
+  * Revisión del plan de mantenimiento (IAS-CAL 4.1)
+* Catálogo de peticiones (MSI 1, MSI 2, MSI 3, MSI 4)
+* Plan de Mantenimiento (IAS 7.2)
 
 ###### De salida {.unnumbered .unlisted}
 
-    Informe de seguimiento del mantenimiento
+* Informe de seguimiento del mantenimiento
 
 ##### Prácticas {.unnumbered .unlisted}
 
-    Revisión técnica
+* Revisión técnica
 
 ##### Participantes {.unnumbered .unlisted}
 
-    Grupo de Aseguramiento de la Calidad
+* Grupo de Aseguramiento de la Calidad
 
 ### Actividad MSI-CAL 2: Revisión del Plan de Pruebas de Regresión {#msi-cal-2}
 
@@ -2089,20 +2078,20 @@ Se revisa la existencia de una normativa para la gestión de los resultados de 
 
 ###### De entrada {.unnumbered .unlisted}
 
-    Plan de pruebas de regresión (MSI 3.3)
-    Plan de acción para la modificación (MSI 3.2)
+* Plan de pruebas de regresión (MSI 3.3)
+* Plan de acción para la modificación (MSI 3.2)
 
 ###### De salida {.unnumbered .unlisted}
 
-    Informe de revisión del plan de pruebas de regresión
+* Informe de revisión del plan de pruebas de regresión
 
 ##### Prácticas {.unnumbered .unlisted}
 
-    Revisión técnica
+* Revisión técnica
 
 ##### Participantes {.unnumbered .unlisted}
 
-    Grupo de Aseguramiento de la Calidad
+* Grupo de Aseguramiento de la Calidad
 
 ### Actividad MSI-CAL 3: Revisión de la Realización de las Pruebas de Regresión {#msi-cal-3}
 
@@ -2149,17 +2138,17 @@ Se registra la aprobación por parte del responsable de mantenimiento.
 
 ###### De entrada {.unnumbered .unlisted}
 
-    Informe de revisión del plan de pruebas de regresión (MSI-CAL 2.1)
-    Evaluación del resultado de las pruebas de regresión (MSI 4.2)
+* Informe de revisión del plan de pruebas de regresión (MSI-CAL 2.1)
+* Evaluación del resultado de las pruebas de regresión (MSI 4.2)
 
 ###### De salida {.unnumbered .unlisted}
 
-    Informe de revisión de la realización de las pruebas de regresión
+* Informe de revisión de la realización de las pruebas de regresión
 
 ##### Prácticas {.unnumbered .unlisted}
 
-    Revisión formal
+* Revisión formal
 
 ##### Participantes {.unnumbered .unlisted}
 
-    Grupo de Aseguramiento de la Calidad
+* Grupo de Aseguramiento de la Calidad
