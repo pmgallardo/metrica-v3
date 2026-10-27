@@ -2630,8 +2630,8 @@ A continuación se representa el formato de un WBS.
 
 Por ejemplo, un WBS podría dividirse en los siguientes niveles:
 
-- Nivel 0: [Todo el proyecto](../02-interfaces/04-proyectos.qmd).
-- Nivel 1: [Desarrollo](../01-principal/01-introduccion.qmd#desarrollo-de-sistemas-de-informacion), [Gestión de Calidad](../02-interfaces/01-calidad.qmd), [Gestión de Configuración](../02-interfaces/03-configuracion.qmd), etc.
+- Nivel 0: [Todo el proyecto](../02-interfaces/04-gp.qmd).
+- Nivel 1: [Desarrollo](../01-principal/01-introduccion.qmd#desarrollo-de-sistemas-de-informacion), [Gestión de Calidad](../02-interfaces/01-cal.qmd), [Gestión de Configuración](../02-interfaces/03-gc.qmd), etc.
 - Nivel 2: Dentro de [Desarrollo](../01-principal/01-introduccion.qmd#desarrollo-de-sistemas-de-informacion): Proceso [EVS](../01-principal/03-evs.qmd), Proceso [ASI](../01-principal/04-asi.qmd), Proceso [DSI](../01-principal/05-dsi.qmd), etc.
 
 #### Diagrama de Extrapolación {#diagrama-de-extrapolacion}

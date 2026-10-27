@@ -1585,7 +1585,7 @@ Participantes
     Jefe de Proyecto
     Equipo del Proyecto
 
-### Actividad GPS 13: ACEPTACIÓN {#gps-13}
+### Actividad GPS 13: Aceptación {#gps-13}
 
 La aceptación interna consiste en la verificación por el Equipo del Proyecto del cumplimiento de las especificaciones de un conjunto de tareas. Este es un paso previo a la aceptación por parte del Cliente, interno o externo, que debe irse reiterando a medida que se completan las actividades de un proceso de la metodología susceptible de ser aceptado externamente.
 

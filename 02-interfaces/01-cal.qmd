@@ -407,6 +407,9 @@ En el proceso Análisis del Sistema de Información (ASI), el grupo de asegurami
 ![](../images/cal-asi.jpg)
 
 ### Actividad ASI-CAL 1: Especificación Inicial del Plan de Aseguramiento de Calidad
+
+
+
 #### Tarea ASI-CAL 1.1
 ### Actividad ASI-CAL 2: Especificación Detallada del Plan de Aseguramiento de Calidad
 #### Tarea ASI-CAL 2.1
@@ -470,4 +473,3 @@ En el proceso Análisis del Sistema de Información (ASI), el grupo de asegurami
 #### Tarea MSI-CAL 2.1
 ### Actividad MSI-CAL 3: Revisión de la Realización de las Pruebas de Regresión
 #### Tarea MSI-CAL 3.1
-
