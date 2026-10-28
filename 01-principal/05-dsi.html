@@ -999,8 +999,10 @@ ul.task-list li input[type="checkbox"] {
 <p>El diseño de los subsistemas de soporte, conceptualmente, es similar al diseño de los subsistemas específicos, aunque debe cumplir con unos objetivos claros de reutilización. De esta manera, se consigue simplificar y abstraer el diseño de los subsistemas específicos de la complejidad del entorno tecnológico, dotando al sistema de información de una mayor independencia de la infraestructura que le da soporte. Con este fin, se aconseja la consulta de los datos de otros proyectos existentes, disponible en el Histórico de Proyectos. Si esto no fuera suficiente, se puede contar en esta actividad con la participación de perfiles técnicos, con una visión global de la instalación.</p>
 <p>Esta actividad se realiza en paralelo al diseño detallado, debido a que existe una constante realimentación, tanto en la especificación de los subsistemas con sus interfaces y dependencias, como en la aplicación de esqueletos o patrones en el diseño.</p>
 <p>Los productos resultantes de esta actividad son:</p>
-<pre><code>Diseño Detallado de los Subsistemas de Soporte.
-Mecanismos Genéricos de Diseño y Construcción.</code></pre>
+<ul>
+<li>Diseño Detallado de los Subsistemas de Soporte.</li>
+<li>Mecanismos Genéricos de Diseño y Construcción.</li>
+</ul>
 <table class="avia-table avia-data-table caption-top table">
 <colgroup>
 <col style="width: 25%">
@@ -1050,30 +1052,40 @@ Mecanismos Genéricos de Diseño y Construcción.</code></pre>
 <p>El objetivo de esta tarea es la especificación y diseño de los módulos/clases que forman parte de los subsistemas de soporte, identificados en la tarea Identificación de Subsistemas de Diseño (DSI 1.5). Se lleva a cabo siempre y cuando no se disponga en la instalación de servicios comunes que respondan satisfactoriamente a los requisitos planteados.</p>
 <p>El nivel de reutilización de los subsistemas de soporte y sus servicios es potencialmente alto, de modo que se debe intentar emplear, en la medida de lo posible, los subsistemas que ya existan en la instalación y se consideren viables. La información relativa a dichos subsistemas podrá obtenerse del Histórico de Proyectos. En cualquier caso, cuando proceda realizar el diseño de los subsistemas de soporte, se recomienda hacerlo con ese fin.</p>
 <p>El diseño sigue las mismas pautas que las establecidas para los subsistemas específicos, aunque con las siguientes particularidades:</p>
-<pre><code>Generalmente, será necesaria una descomposición de los subsistemas de soporte en servicios, entendiendo como tales módulos o clases independientes y reutilizables.
-Se recomienda realizar una descripción de la interfaz y del comportamiento de cada servicio, previa a su diseño de detalle, que permita completar el diseño de los subsistemas específicos.
-La especificación y diseño de cada servicio, módulo o clase, se realiza con las técnicas habituales de especificación y diseño de módulos o clases, o incluso opcionalmente, si la simplicidad de los elementos lo aconseja, otros lenguajes de especificación, pseudocódigo o lenguaje natural.</code></pre>
+<ul>
+<li>Generalmente, será necesaria una descomposición de los subsistemas de soporte en servicios, entendiendo como tales módulos o clases independientes y reutilizables.</li>
+<li>Se recomienda realizar una descripción de la interfaz y del comportamiento de cada servicio, previa a su diseño de detalle, que permita completar el diseño de los subsistemas específicos.</li>
+<li>La especificación y diseño de cada servicio, módulo o clase, se realiza con las técnicas habituales de especificación y diseño de módulos o clases, o incluso opcionalmente, si la simplicidad de los elementos lo aconseja, otros lenguajes de especificación, pseudocódigo o lenguaje natural.</li>
+</ul>
 <p>A medida que se lleva a cabo esta tarea pueden surgir comportamientos de excepción que deberán contemplarse igualmente en el diseño, y que en función del nivel de especificación que se haya establecido, se incorporan al catálogo de excepciones.</p>
 <section id="productos-7" class="level5 unnumbered unlisted">
 <h5 class="unnumbered unlisted anchored" data-anchor-id="productos-7">Productos</h5>
 <section id="de-entrada-7" class="level6 unnumbered unlisted">
 <h6 class="unnumbered unlisted anchored" data-anchor-id="de-entrada-7">De entrada</h6>
-<pre><code>Diseño de la Arquitectura del Sistema (DSI 1.5)</code></pre>
+<ul>
+<li>Diseño de la Arquitectura del Sistema (DSI 1.5)</li>
+</ul>
 </section>
 <section id="de-salida-7" class="level6 unnumbered unlisted">
 <h6 class="unnumbered unlisted anchored" data-anchor-id="de-salida-7">De salida</h6>
-<pre><code>Diseño Detallado de los Subsistemas de Soporte</code></pre>
+<ul>
+<li>Diseño Detallado de los Subsistemas de Soporte</li>
+</ul>
 </section>
 </section>
 <section id="técnicas-2" class="level5 unnumbered unlisted">
 <h5 class="unnumbered unlisted anchored" data-anchor-id="técnicas-2">Técnicas</h5>
-<pre><code>Diagrama de Estructura
-Diagrama de Interacción de Objetos
-Diagrama de Clases</code></pre>
+<ul>
+<li>Diagrama de Estructura</li>
+<li>Diagrama de Interacción de Objetos</li>
+<li>Diagrama de Clases</li>
+</ul>
 </section>
 <section id="participantes-7" class="level5 unnumbered unlisted">
 <h5 class="unnumbered unlisted anchored" data-anchor-id="participantes-7">Participantes</h5>
-<pre><code>Equipo de Arquitectura</code></pre>
+<ul>
+<li>Equipo de Arquitectura</li>
+</ul>
 </section>
 </section>
 <section id="tarea-dsi-2.2-identificación-de-mecanismos-genéricos-de-diseño" class="level4" data-number="5.1.2.2">
@@ -1084,25 +1096,35 @@ Diagrama de Clases</code></pre>
 <h5 class="unnumbered unlisted anchored" data-anchor-id="productos-8">Productos</h5>
 <section id="de-entrada-8" class="level6 unnumbered unlisted">
 <h6 class="unnumbered unlisted anchored" data-anchor-id="de-entrada-8">De entrada</h6>
-<pre><code>Diseño de la Arquitectura del Sistema (DSI 1.5)</code></pre>
+<ul>
+<li>Diseño de la Arquitectura del Sistema (DSI 1.5)</li>
+</ul>
 </section>
 <section id="de-salida-8" class="level6 unnumbered unlisted">
 <h6 class="unnumbered unlisted anchored" data-anchor-id="de-salida-8">De salida</h6>
-<pre><code>Mecanismos Genéricos de Diseño y Construcción</code></pre>
+<ul>
+<li>Mecanismos Genéricos de Diseño y Construcción</li>
+</ul>
 </section>
 </section>
 <section id="técnicas-3" class="level5 unnumbered unlisted">
 <h5 class="unnumbered unlisted anchored" data-anchor-id="técnicas-3">Técnicas</h5>
-<pre><code>Diagrama de Interacción de Objetos
-Diagrama de Clases</code></pre>
+<ul>
+<li>Diagrama de Interacción de Objetos</li>
+<li>Diagrama de Clases</li>
+</ul>
 </section>
 <section id="prácticas-6" class="level5 unnumbered unlisted">
 <h5 class="unnumbered unlisted anchored" data-anchor-id="prácticas-6">Prácticas</h5>
-<pre><code>Sesiones de Trabajo</code></pre>
+<ul>
+<li>Sesiones de Trabajo</li>
+</ul>
 </section>
 <section id="participantes-8" class="level5 unnumbered unlisted">
 <h5 class="unnumbered unlisted anchored" data-anchor-id="participantes-8">Participantes</h5>
-<pre><code>Equipo de Arquitectura</code></pre>
+<ul>
+<li>Equipo de Arquitectura</li>
+</ul>
 </section>
 </section>
 </section>
@@ -1206,24 +1228,34 @@ Diagrama de Clases</code></pre>
 <h5 class="unnumbered unlisted anchored" data-anchor-id="productos-9">Productos</h5>
 <section id="de-entrada-9" class="level6 unnumbered unlisted">
 <h6 class="unnumbered unlisted anchored" data-anchor-id="de-entrada-9">De entrada</h6>
-<pre><code>Modelo de Clases de Diseño (DSI 4.1)
-Modelo de Casos de Uso (ASI 9.3)
-Especificación de Casos de Uso (ASI 9.3)
-Análisis de la Realización de los Casos de Uso (ASI 9.3)</code></pre>
+<ul>
+<li>Modelo de Clases de Diseño (DSI 4.1)</li>
+<li>Modelo de Casos de Uso (ASI 9.3)</li>
+<li>Especificación de Casos de Uso (ASI 9.3)</li>
+<li>Análisis de la Realización de los Casos de Uso (ASI 9.3)</li>
+</ul>
 </section>
 <section id="de-salida-9" class="level6 unnumbered unlisted">
 <h6 class="unnumbered unlisted anchored" data-anchor-id="de-salida-9">De salida</h6>
-<pre><code>Diseño de la Realización de los Casos de Uso
-    Especificación Detallada</code></pre>
+<ul>
+<li>Diseño de la Realización de los Casos de Uso
+<ul>
+<li>Especificación Detallada</li>
+</ul></li>
+</ul>
 </section>
 </section>
 <section id="técnicas-4" class="level5 unnumbered unlisted">
 <h5 class="unnumbered unlisted anchored" data-anchor-id="técnicas-4">Técnicas</h5>
-<pre><code>Diagrama de Interacción de Objetos</code></pre>
+<ul>
+<li>Diagrama de Interacción de Objetos</li>
+</ul>
 </section>
 <section id="participantes-9" class="level5 unnumbered unlisted">
 <h5 class="unnumbered unlisted anchored" data-anchor-id="participantes-9">Participantes</h5>
-<pre><code>Equipo del Proyecto</code></pre>
+<ul>
+<li>Equipo del Proyecto</li>
+</ul>
 </section>
 </section>
 <section id="tarea-dsi-3.2-diseño-de-la-realización-de-los-casos-de-uso" class="level4" data-number="5.1.3.2">
@@ -1236,25 +1268,35 @@ Análisis de la Realización de los Casos de Uso (ASI 9.3)</code></pre>
 <h5 class="unnumbered unlisted anchored" data-anchor-id="productos-10">Productos</h5>
 <section id="de-entrada-10" class="level6 unnumbered unlisted">
 <h6 class="unnumbered unlisted anchored" data-anchor-id="de-entrada-10">De entrada</h6>
-<pre><code>Modelo de Casos de Uso (ASI 9.3)
-Especificación de Casos de Uso (ASI 9.3)
-Análisis de la Realización de los Casos de Uso (ASI 9.3)
-Especificación de Interfaz de Usuario (ASI 9.3)
-Diseño de la Realización de los Casos de Uso (DSI 3.1)</code></pre>
+<ul>
+<li>Modelo de Casos de Uso (ASI 9.3)</li>
+<li>Especificación de Casos de Uso (ASI 9.3)</li>
+<li>Análisis de la Realización de los Casos de Uso (ASI 9.3)</li>
+<li>Especificación de Interfaz de Usuario (ASI 9.3)</li>
+<li>Diseño de la Realización de los Casos de Uso (DSI 3.1)</li>
+</ul>
 </section>
 <section id="de-salida-10" class="level6 unnumbered unlisted">
 <h6 class="unnumbered unlisted anchored" data-anchor-id="de-salida-10">De salida</h6>
-<pre><code>Diseño de la Realización de los Casos de Uso
-    Especificación Detallada</code></pre>
+<ul>
+<li>Diseño de la Realización de los Casos de Uso
+<ul>
+<li>Especificación Detallada</li>
+</ul></li>
+</ul>
 </section>
 </section>
 <section id="técnicas-5" class="level5 unnumbered unlisted">
 <h5 class="unnumbered unlisted anchored" data-anchor-id="técnicas-5">Técnicas</h5>
-<pre><code>Diagrama de Interacción de Objetos (colaboración o secuencia)</code></pre>
+<ul>
+<li>Diagrama de Interacción de Objetos (colaboración o secuencia)</li>
+</ul>
 </section>
 <section id="participantes-10" class="level5 unnumbered unlisted">
 <h5 class="unnumbered unlisted anchored" data-anchor-id="participantes-10">Participantes</h5>
-<pre><code>Equipo del Proyecto</code></pre>
+<ul>
+<li>Equipo del Proyecto</li>
+</ul>
 </section>
 </section>
 <section id="tarea-dsi-3.3-revisión-de-la-interfaz-de-usuario" class="level4" data-number="5.1.3.3">
@@ -1266,33 +1308,45 @@ Diseño de la Realización de los Casos de Uso (DSI 3.1)</code></pre>
 <h5 class="unnumbered unlisted anchored" data-anchor-id="productos-11">Productos</h5>
 <section id="de-entrada-11" class="level6 unnumbered unlisted">
 <h6 class="unnumbered unlisted anchored" data-anchor-id="de-entrada-11">De entrada</h6>
-<pre><code>Diseño de la Realización de los Casos de Uso (DSI 3.2)
-Especificación de Interfaz de Usuario (ASI 9.3)</code></pre>
+<ul>
+<li>Diseño de la Realización de los Casos de Uso (DSI 3.2)</li>
+<li>Especificación de Interfaz de Usuario (ASI 9.3)</li>
+</ul>
 </section>
 <section id="de-salida-11" class="level6 unnumbered unlisted">
 <h6 class="unnumbered unlisted anchored" data-anchor-id="de-salida-11">De salida</h6>
-<pre><code>Diseño de Interfaz de Usuario
-    Formatos Individuales de Interfaz de Pantalla Gráfica
-    Catálogo de Controles y Elementos de Diseño de Interfaz de Pantalla Gráfica
-    Modelo de Navegación de Interfaz de Pantalla Gráfica
-    Formatos de Impresión
-    Prototipo de Interfaz de Pantalla Gráfica</code></pre>
+<ul>
+<li>Diseño de Interfaz de Usuario
+<ul>
+<li>Formatos Individuales de Interfaz de Pantalla Gráfica</li>
+<li>Catálogo de Controles y Elementos de Diseño de Interfaz de Pantalla Gráfica</li>
+<li>Modelo de Navegación de Interfaz de Pantalla Gráfica</li>
+<li>Formatos de Impresión</li>
+<li>Prototipo de Interfaz de Pantalla Gráfica</li>
+</ul></li>
+</ul>
 </section>
 </section>
 <section id="técnicas-6" class="level5 unnumbered unlisted">
 <h5 class="unnumbered unlisted anchored" data-anchor-id="técnicas-6">Técnicas</h5>
-<pre><code>Diagrama de Interacción de Objetos
-Diagrama de Transición de Estados</code></pre>
+<ul>
+<li>Diagrama de Interacción de Objetos</li>
+<li>Diagrama de Transición de Estados</li>
+</ul>
 </section>
 <section id="prácticas-7" class="level5 unnumbered unlisted">
 <h5 class="unnumbered unlisted anchored" data-anchor-id="prácticas-7">Prácticas</h5>
-<pre><code>Prototipado
-Catalogación</code></pre>
+<ul>
+<li>Prototipado</li>
+<li>Catalogación</li>
+</ul>
 </section>
 <section id="participantes-11" class="level5 unnumbered unlisted">
 <h5 class="unnumbered unlisted anchored" data-anchor-id="participantes-11">Participantes</h5>
-<pre><code>Equipo del Proyecto
-Usuarios Expertos</code></pre>
+<ul>
+<li>Equipo del Proyecto</li>
+<li>Usuarios Expertos</li>
+</ul>
 </section>
 </section>
 <section id="tarea-dsi-3.4-revisión-de-subsistemas-de-diseño-e-interfaces" class="level4" data-number="5.1.3.4">
@@ -1303,24 +1357,34 @@ Usuarios Expertos</code></pre>
 <h5 class="unnumbered unlisted anchored" data-anchor-id="productos-12">Productos</h5>
 <section id="de-entrada-12" class="level6 unnumbered unlisted">
 <h6 class="unnumbered unlisted anchored" data-anchor-id="de-entrada-12">De entrada</h6>
-<pre><code>Modelo de Casos de Uso (ASI 9.3)
-Especificación de Casos de Uso (ASI 9.3)
-Diseño de la Realización de los Casos de Uso (DSI 3.2)</code></pre>
+<ul>
+<li>Modelo de Casos de Uso (ASI 9.3)</li>
+<li>Especificación de Casos de Uso (ASI 9.3)</li>
+<li>Diseño de la Realización de los Casos de Uso (DSI 3.2)</li>
+</ul>
 </section>
 <section id="de-salida-12" class="level6 unnumbered unlisted">
 <h6 class="unnumbered unlisted anchored" data-anchor-id="de-salida-12">De salida</h6>
-<pre><code>Diseño de la Realización de los Casos de Uso
-    Definición a Nivel de Subsistemas e Interfaz</code></pre>
+<ul>
+<li>Diseño de la Realización de los Casos de Uso
+<ul>
+<li>Definición a Nivel de Subsistemas e Interfaz</li>
+</ul></li>
+</ul>
 </section>
 </section>
 <section id="técnicas-7" class="level5 unnumbered unlisted">
 <h5 class="unnumbered unlisted anchored" data-anchor-id="técnicas-7">Técnicas</h5>
-<pre><code>Diagrama de Interacción de Objetos</code></pre>
+<ul>
+<li>Diagrama de Interacción de Objetos</li>
+</ul>
 </section>
 <section id="participantes-12" class="level5 unnumbered unlisted">
 <h5 class="unnumbered unlisted anchored" data-anchor-id="participantes-12">Participantes</h5>
-<pre><code>Equipo del Proyecto
-Equipo de Arquitectura</code></pre>
+<ul>
+<li>Equipo del Proyecto</li>
+<li>Equipo de Arquitectura</li>
+</ul>
 </section>
 </section>
 </section>
@@ -1440,8 +1504,10 @@ Equipo de Arquitectura</code></pre>
 <section id="tarea-dsi-4.1-identificación-de-clases-adicionales" class="level4" data-number="5.1.4.1">
 <h4 data-number="5.1.4.1" class="anchored" data-anchor-id="tarea-dsi-4.1-identificación-de-clases-adicionales"><span class="header-section-number">5.1.4.1</span> Tarea DSI 4.1: Identificación de Clases Adicionales</h4>
 <p>El objetivo de esta tarea es identificar un conjunto de clases que completen el modelo de clases analizado en la tarea Validación de los Modelos (ASI 9.3) del proceso anterior (clases y/o interfaces) teniendo en cuenta que:</p>
-<pre><code>Cada interfaz identificada en el análisis se corresponde en el diseño con una clase que proporcione esa interfaz.
-El conjunto de clases del análisis puede modificarse en función de las tecnologías de desarrollo utilizadas y de los mecanismos genéricos de diseño especificados.</code></pre>
+<ul>
+<li>Cada interfaz identificada en el análisis se corresponde en el diseño con una clase que proporcione esa interfaz.</li>
+<li>El conjunto de clases del análisis puede modificarse en función de las tecnologías de desarrollo utilizadas y de los mecanismos genéricos de diseño especificados.</li>
+</ul>
 <p>Las clases de control deben contemplar la coordinación y secuencia entre objetos y, en algunos casos, deben contener lógica de negocio. De cualquier manera, se deben considerar cuestiones de distribución, de rendimiento, de transacción y de serialización.</p>
 <p>El diseño de las clases de entidad varia según el sistema de gestión de datos utilizado. Las clases pueden ser construidas por el propio desarrollador, adquiridas en forma de bibliotecas, facilitadas por el entorno de trabajo o por el entorno tecnológico.</p>
 <p>El diseño de las clases de interfaz de usuario depende de la tecnología especifica que se esté utilizando. Así, por ejemplo, la interfaz puede crearse a partir de los objetos gráficos disponibles en el entorno de desarrollo, sin necesidad de que estos se contemplen en el modelo de clases correspondiente.</p>
@@ -1450,51 +1516,69 @@ El conjunto de clases del análisis puede modificarse en función de las tecnolo
 <h5 class="unnumbered unlisted anchored" data-anchor-id="productos-13">Productos</h5>
 <section id="de-entrada-13" class="level6 unnumbered unlisted">
 <h6 class="unnumbered unlisted anchored" data-anchor-id="de-entrada-13">De entrada</h6>
-<pre><code>Modelo de Clases de Análisis (ASI 9.3)
-Especificación de Interfaz de Usuario (ASI 9.3)</code></pre>
+<ul>
+<li>Modelo de Clases de Análisis (ASI 9.3)</li>
+<li>Especificación de Interfaz de Usuario (ASI 9.3)</li>
+</ul>
 </section>
 <section id="de-salida-13" class="level6 unnumbered unlisted">
 <h6 class="unnumbered unlisted anchored" data-anchor-id="de-salida-13">De salida</h6>
-<pre><code>Modelo de Clases de Diseño</code></pre>
+<ul>
+<li>Modelo de Clases de Diseño</li>
+</ul>
 </section>
 </section>
 <section id="técnicas-8" class="level5 unnumbered unlisted">
 <h5 class="unnumbered unlisted anchored" data-anchor-id="técnicas-8">Técnicas</h5>
-<pre><code>Diagrama de Clases</code></pre>
+<ul>
+<li>Diagrama de Clases</li>
+</ul>
 </section>
 <section id="participantes-13" class="level5 unnumbered unlisted">
 <h5 class="unnumbered unlisted anchored" data-anchor-id="participantes-13">Participantes</h5>
-<pre><code>Equipo del Proyecto</code></pre>
+<ul>
+<li>Equipo del Proyecto</li>
+</ul>
 </section>
 </section>
 <section id="tarea-dsi-4.2-diseño-de-asociaciones-y-agregaciones" class="level4" data-number="5.1.4.2">
 <h4 data-number="5.1.4.2" class="anchored" data-anchor-id="tarea-dsi-4.2-diseño-de-asociaciones-y-agregaciones"><span class="header-section-number">5.1.4.2</span> Tarea DSI 4.2: Diseño de Asociaciones y Agregaciones</h4>
 <p>En esta tarea se completan las asociaciones entre las clases del modelo de clases del diseño, estudiando la secuencia de mensajes entre los objetos correspondientes en el diagrama de interacción de los escenarios definidos en la tarea Descripción de la Interacción entre Objetos (ASI 4.2).</p>
 <p>Para definir las asociaciones, partimos de las que fueron identificadas en la tarea Identificación de Asociaciones y Agregaciones (ASI 5.2), teniendo en cuenta que:</p>
-<pre><code>Las características de la asociación (papeles que desempeña, multiplicidad, etc.) se detallan según el entorno de desarrollo utilizado.
-Las relaciones bidireccionales se transforman en unidireccionales, para simplificar la implementación del sistema.
-Se realiza la modelización de las rutas de acceso óptimas entre las asociaciones para evitar problemas de rendimiento.
-Se analiza la posibilidad de diseñar como clases algunas de las asociaciones.</code></pre>
+<ul>
+<li>Las características de la asociación (papeles que desempeña, multiplicidad, etc.) se detallan según el entorno de desarrollo utilizado.</li>
+<li>Las relaciones bidireccionales se transforman en unidireccionales, para simplificar la implementación del sistema.</li>
+<li>Se realiza la modelización de las rutas de acceso óptimas entre las asociaciones para evitar problemas de rendimiento.</li>
+<li>Se analiza la posibilidad de diseñar como clases algunas de las asociaciones.</li>
+</ul>
 <p>Opcionalmente, se especifica la forma en la que se va a implementar cada asociación (punteros, colecciones, etc.).</p>
 <section id="productos-14" class="level5 unnumbered unlisted">
 <h5 class="unnumbered unlisted anchored" data-anchor-id="productos-14">Productos</h5>
 <section id="de-entrada-14" class="level6 unnumbered unlisted">
 <h6 class="unnumbered unlisted anchored" data-anchor-id="de-entrada-14">De entrada</h6>
-<pre><code>Modelo de Clases de Análisis (ASI 9.3)
-Modelo de Clases de Diseño (DSI 4.1)</code></pre>
+<ul>
+<li>Modelo de Clases de Análisis (ASI 9.3)</li>
+<li>Modelo de Clases de Diseño (DSI 4.1)</li>
+</ul>
 </section>
 <section id="de-salida-14" class="level6 unnumbered unlisted">
 <h6 class="unnumbered unlisted anchored" data-anchor-id="de-salida-14">De salida</h6>
-<pre><code>Modelo de Clases de Diseño</code></pre>
+<ul>
+<li>Modelo de Clases de Diseño</li>
+</ul>
 </section>
 </section>
 <section id="técnicas-9" class="level5 unnumbered unlisted">
 <h5 class="unnumbered unlisted anchored" data-anchor-id="técnicas-9">Técnicas</h5>
-<pre><code>Diagrama de Clases</code></pre>
+<ul>
+<li>Diagrama de Clases</li>
+</ul>
 </section>
 <section id="participantes-14" class="level5 unnumbered unlisted">
 <h5 class="unnumbered unlisted anchored" data-anchor-id="participantes-14">Participantes</h5>
-<pre><code>Equipo del Proyecto</code></pre>
+<ul>
+<li>Equipo del Proyecto</li>
+</ul>
 </section>
 </section>
 <section id="tarea-dsi-4.3-identificación-de-atributos-de-las-clases" class="level4" data-number="5.1.4.3">
@@ -1502,27 +1586,37 @@ Modelo de Clases de Diseño (DSI 4.1)</code></pre>
 <p>El objetivo de esta tarea es identificar y describir, una vez que se ha especificado el entorno de desarrollo, los atributos de las clases.</p>
 <p>Para identificar los atributos se revisa el modelo de clases obtenido en el proceso de Análisis del Sistema de Información (ASI 9.3), considerando que, a partir de uno de ellos, puede ser necesario definir atributos adicionales. Para cada atributo identificado se define su tipo, con formatos específicos, y si existieran, las restricciones asociadas a ese atributo.</p>
 <p>Asimismo, se analiza la posibilidad de convertir un atributo en clase en aquellos casos en los que:</p>
-<pre><code>El atributo se defina en varias clases de diseño.
-La complejidad del atributo aumente la dificultad para comprender la clase a la que pertenece.</code></pre>
+<ul>
+<li>El atributo se defina en varias clases de diseño.</li>
+<li>La complejidad del atributo aumente la dificultad para comprender la clase a la que pertenece.</li>
+</ul>
 <section id="productos-15" class="level5 unnumbered unlisted">
 <h5 class="unnumbered unlisted anchored" data-anchor-id="productos-15">Productos</h5>
 <section id="de-entrada-15" class="level6 unnumbered unlisted">
 <h6 class="unnumbered unlisted anchored" data-anchor-id="de-entrada-15">De entrada</h6>
-<pre><code>Modelo de Clases de Análisis (ASI 9.3)
-Modelo de Clases de Diseño (DSI 4.2)</code></pre>
+<ul>
+<li>Modelo de Clases de Análisis (ASI 9.3)</li>
+<li>Modelo de Clases de Diseño (DSI 4.2)</li>
+</ul>
 </section>
 <section id="de-salida-15" class="level6 unnumbered unlisted">
 <h6 class="unnumbered unlisted anchored" data-anchor-id="de-salida-15">De salida</h6>
-<pre><code>Modelo de Clases de Diseño</code></pre>
+<ul>
+<li>Modelo de Clases de Diseño</li>
+</ul>
 </section>
 </section>
 <section id="técnicas-10" class="level5 unnumbered unlisted">
 <h5 class="unnumbered unlisted anchored" data-anchor-id="técnicas-10">Técnicas</h5>
-<pre><code>Diagrama de Clases</code></pre>
+<ul>
+<li>Diagrama de Clases</li>
+</ul>
 </section>
 <section id="participantes-15" class="level5 unnumbered unlisted">
 <h5 class="unnumbered unlisted anchored" data-anchor-id="participantes-15">Participantes</h5>
-<pre><code>Equipo del Proyecto</code></pre>
+<ul>
+<li>Equipo del Proyecto</li>
+</ul>
 </section>
 </section>
 <section id="tarea-dsi-4.4-identificación-de-operaciones-de-las-clases" class="level4" data-number="5.1.4.4">
@@ -1535,24 +1629,32 @@ Modelo de Clases de Diseño (DSI 4.2)</code></pre>
 <h5 class="unnumbered unlisted anchored" data-anchor-id="productos-16">Productos</h5>
 <section id="de-entrada-16" class="level6 unnumbered unlisted">
 <h6 class="unnumbered unlisted anchored" data-anchor-id="de-entrada-16">De entrada</h6>
-<pre><code>Modelo de Clases de Análisis (ASI 9.3)
-Comportamiento de Clases de Análisis (ASI 9.3)
-Modelo de Clases de Diseño (DSI 4.3)</code></pre>
+<ul>
+<li>Modelo de Clases de Análisis (ASI 9.3)</li>
+<li>Comportamiento de Clases de Análisis (ASI 9.3)</li>
+<li>Modelo de Clases de Diseño (DSI 4.3)</li>
+</ul>
 </section>
 <section id="de-salida-16" class="level6 unnumbered unlisted">
 <h6 class="unnumbered unlisted anchored" data-anchor-id="de-salida-16">De salida</h6>
-<pre><code>Comportamiento de Clases de Diseño
-Modelo de Clases de Diseño</code></pre>
+<ul>
+<li>Comportamiento de Clases de Diseño</li>
+<li>Modelo de Clases de Diseño</li>
+</ul>
 </section>
 </section>
 <section id="técnicas-11" class="level5 unnumbered unlisted">
 <h5 class="unnumbered unlisted anchored" data-anchor-id="técnicas-11">Técnicas</h5>
-<pre><code>Diagrama de Clases
-Diagrama de Transición de Estados</code></pre>
+<ul>
+<li>Diagrama de Clases</li>
+<li>Diagrama de Transición de Estados</li>
+</ul>
 </section>
 <section id="participantes-16" class="level5 unnumbered unlisted">
 <h5 class="unnumbered unlisted anchored" data-anchor-id="participantes-16">Participantes</h5>
-<pre><code>Equipo del Proyecto</code></pre>
+<ul>
+<li>Equipo del Proyecto</li>
+</ul>
 </section>
 </section>
 <section id="tarea-dsi-4.5-diseño-de-la-jerarquía" class="level4" data-number="5.1.4.5">
@@ -1563,20 +1665,28 @@ Diagrama de Transición de Estados</code></pre>
 <h5 class="unnumbered unlisted anchored" data-anchor-id="productos-17">Productos</h5>
 <section id="de-entrada-17" class="level6 unnumbered unlisted">
 <h6 class="unnumbered unlisted anchored" data-anchor-id="de-entrada-17">De entrada</h6>
-<pre><code>Modelo de Clases de Diseño (DSI 4.4)</code></pre>
+<ul>
+<li>Modelo de Clases de Diseño (DSI 4.4)</li>
+</ul>
 </section>
 <section id="de-salida-17" class="level6 unnumbered unlisted">
 <h6 class="unnumbered unlisted anchored" data-anchor-id="de-salida-17">De salida</h6>
-<pre><code>Modelo de Clases de Diseño</code></pre>
+<ul>
+<li>Modelo de Clases de Diseño</li>
+</ul>
 </section>
 </section>
 <section id="técnicas-12" class="level5 unnumbered unlisted">
 <h5 class="unnumbered unlisted anchored" data-anchor-id="técnicas-12">Técnicas</h5>
-<pre><code>Diagrama de Clases</code></pre>
+<ul>
+<li>Diagrama de Clases</li>
+</ul>
 </section>
 <section id="participantes-17" class="level5 unnumbered unlisted">
 <h5 class="unnumbered unlisted anchored" data-anchor-id="participantes-17">Participantes</h5>
-<pre><code>Equipo del Proyecto</code></pre>
+<ul>
+<li>Equipo del Proyecto</li>
+</ul>
 </section>
 </section>
 <section id="tarea-dsi-4.6-descripción-de-métodos-de-las-operaciones" class="level4" data-number="5.1.4.6">
@@ -1587,21 +1697,29 @@ Diagrama de Transición de Estados</code></pre>
 <h5 class="unnumbered unlisted anchored" data-anchor-id="productos-18">Productos</h5>
 <section id="de-entrada-18" class="level6 unnumbered unlisted">
 <h6 class="unnumbered unlisted anchored" data-anchor-id="de-entrada-18">De entrada</h6>
-<pre><code>Modelo de Clases de Diseño (DSI 4.5)
-Comportamiento de Clases de Diseño (DSI 4.4)</code></pre>
+<ul>
+<li>Modelo de Clases de Diseño (DSI 4.5)</li>
+<li>Comportamiento de Clases de Diseño (DSI 4.4)</li>
+</ul>
 </section>
 <section id="de-salida-18" class="level6 unnumbered unlisted">
 <h6 class="unnumbered unlisted anchored" data-anchor-id="de-salida-18">De salida</h6>
-<pre><code>Modelo de Clases de Diseño</code></pre>
+<ul>
+<li>Modelo de Clases de Diseño</li>
+</ul>
 </section>
 </section>
 <section id="técnicas-13" class="level5 unnumbered unlisted">
 <h5 class="unnumbered unlisted anchored" data-anchor-id="técnicas-13">Técnicas</h5>
-<pre><code>Diagrama de Clases</code></pre>
+<ul>
+<li>Diagrama de Clases</li>
+</ul>
 </section>
 <section id="participantes-18" class="level5 unnumbered unlisted">
 <h5 class="unnumbered unlisted anchored" data-anchor-id="participantes-18">Participantes</h5>
-<pre><code>Equipo del Proyecto</code></pre>
+<ul>
+<li>Equipo del Proyecto</li>
+</ul>
 </section>
 </section>
 <section id="tarea-dsi-4.7-especificación-de-necesidades-de-migración-y-carga-inicial-de-datos" class="level4" data-number="5.1.4.7">
@@ -1611,23 +1729,31 @@ Comportamiento de Clases de Diseño (DSI 4.4)</code></pre>
 <h5 class="unnumbered unlisted anchored" data-anchor-id="productos-19">Productos</h5>
 <section id="de-entrada-19" class="level6 unnumbered unlisted">
 <h6 class="unnumbered unlisted anchored" data-anchor-id="de-entrada-19">De entrada</h6>
-<pre><code>Estructura de Datos del Sistema Origen (externo)
-Modelo de Clases de Diseño (DSI 4.6)
-Plan de Migración y Carga Inicial de Datos (ASI 6.4)</code></pre>
+<ul>
+<li>Estructura de Datos del Sistema Origen (externo)</li>
+<li>Modelo de Clases de Diseño (DSI 4.6)</li>
+<li>Plan de Migración y Carga Inicial de Datos (ASI 6.4)</li>
+</ul>
 </section>
 <section id="de-salida-19" class="level6 unnumbered unlisted">
 <h6 class="unnumbered unlisted anchored" data-anchor-id="de-salida-19">De salida</h6>
-<pre><code>Plan de Migración y Carga Inicial de Datos</code></pre>
+<ul>
+<li>Plan de Migración y Carga Inicial de Datos</li>
+</ul>
 </section>
 </section>
 <section id="prácticas-8" class="level5 unnumbered unlisted">
 <h5 class="unnumbered unlisted anchored" data-anchor-id="prácticas-8">Prácticas</h5>
-<pre><code>Sesiones de Trabajo</code></pre>
+<ul>
+<li>Sesiones de Trabajo</li>
+</ul>
 </section>
 <section id="participantes-19" class="level5 unnumbered unlisted">
 <h5 class="unnumbered unlisted anchored" data-anchor-id="participantes-19">Participantes</h5>
-<pre><code>Analistas
-Usuarios Expertos</code></pre>
+<ul>
+<li>Analistas</li>
+<li>Usuarios Expertos</li>
+</ul>
 </section>
 </section>
 </section>
@@ -1721,25 +1847,33 @@ Usuarios Expertos</code></pre>
 <h5 class="unnumbered unlisted anchored" data-anchor-id="productos-20">Productos</h5>
 <section id="de-entrada-20" class="level6 unnumbered unlisted">
 <h6 class="unnumbered unlisted anchored" data-anchor-id="de-entrada-20">De entrada</h6>
-<pre><code>Modelo de Procesos (ASI 9.3)
-Especificación de Interfaz de Usuario (ASI 9.3)
-Descripción de Interfaz con otros Sistemas (ASI 7.2)
-Matriz de Procesos / Localización (ASI 7.1)
-Diseño de la Arquitectura del Sistema (DSI 1.5)</code></pre>
+<ul>
+<li>Modelo de Procesos (ASI 9.3)</li>
+<li>Especificación de Interfaz de Usuario (ASI 9.3)</li>
+<li>Descripción de Interfaz con otros Sistemas (ASI 7.2)</li>
+<li>Matriz de Procesos / Localización (ASI 7.1)</li>
+<li>Diseño de la Arquitectura del Sistema (DSI 1.5)</li>
+</ul>
 </section>
 <section id="de-salida-20" class="level6 unnumbered unlisted">
 <h6 class="unnumbered unlisted anchored" data-anchor-id="de-salida-20">De salida</h6>
-<pre><code>Diseño de la Arquitectura Modular del Sistema</code></pre>
+<ul>
+<li>Diseño de la Arquitectura Modular del Sistema</li>
+</ul>
 </section>
 </section>
 <section id="técnicas-14" class="level5 unnumbered unlisted">
 <h5 class="unnumbered unlisted anchored" data-anchor-id="técnicas-14">Técnicas</h5>
-<pre><code>Diagrama de Estructura</code></pre>
+<ul>
+<li>Diagrama de Estructura</li>
+</ul>
 </section>
 <section id="participantes-20" class="level5 unnumbered unlisted">
 <h5 class="unnumbered unlisted anchored" data-anchor-id="participantes-20">Participantes</h5>
-<pre><code>Equipo de Arquitectura
-Equipo del Proyecto</code></pre>
+<ul>
+<li>Equipo de Arquitectura</li>
+<li>Equipo del Proyecto</li>
+</ul>
 </section>
 </section>
 <section id="tarea-dsi-5.2-diseño-de-comunicaciones-entre-módulos" class="level4" data-number="5.1.5.2">
@@ -1747,34 +1881,44 @@ Equipo del Proyecto</code></pre>
 <p>El objetivo de esta tarea es definir las interfaces entre los módulos de cada subsistema, entre subsistemas y con el resto de los sistemas, incluyendo tanto la comunicación de control como los datos propios del sistema, de acuerdo a la arquitectura propuesta y a las características del entorno tecnológico. Hay que definir interfaces sencillas, que permitan reducir la complejidad de comunicación entre los distintos módulos, especialmente los relacionados con las comunicaciones entre subsistemas.</p>
 <p>Por tanto, la especificación de la estructura modular obtenida en la tarea anterior se completa con la descripción de las comunicaciones existentes entre los distintos módulos, considerando los requisitos establecidos inicialmente para el sistema. Para garantizar el cumplimiento de dichos requisitos y especialmente los relacionados con el rendimiento, disponibilidad y seguridad, puede ser necesaria la incorporación de nuevos módulos o rediseñar la lógica asociada.</p>
 <p>Para el diseño de las interfaces es necesario especificar:</p>
-<pre><code>Los datos o mensajes involucrados y formato de los mismos en el intercambio.
-Los valores o rangos de los datos intercambiados.
-El origen y destino de los datos.
-La información de control y valores posibles.</code></pre>
+<ul>
+<li>Los datos o mensajes involucrados y formato de los mismos en el intercambio.</li>
+<li>Los valores o rangos de los datos intercambiados.</li>
+<li>El origen y destino de los datos.</li>
+<li>La información de control y valores posibles.</li>
+</ul>
 <p>En el diseño de las interfaces con otros sistemas hay que tener en cuenta, además, la información recogida en la descripción de interfaz con otros sistemas obtenida en el proceso de Análisis del Sistema del Información.</p>
 <p>Las interfaces entre módulos permiten evaluar las necesidades de comunicación entre los distintos nodos, de modo que influyen decisivamente en el dimensionamiento del entorno tecnológico.</p>
 <section id="productos-21" class="level5 unnumbered unlisted">
 <h5 class="unnumbered unlisted anchored" data-anchor-id="productos-21">Productos</h5>
 <section id="de-entrada-21" class="level6 unnumbered unlisted">
 <h6 class="unnumbered unlisted anchored" data-anchor-id="de-entrada-21">De entrada</h6>
-<pre><code>Modelo de Procesos (ASI 9.3)
-Descripción de Interfaz con otros Sistemas (ASI 7.2)
-Diseño de la Arquitectura Modular del Sistema (DSI 5.1)</code></pre>
+<ul>
+<li>Modelo de Procesos (ASI 9.3)</li>
+<li>Descripción de Interfaz con otros Sistemas (ASI 7.2)</li>
+<li>Diseño de la Arquitectura Modular del Sistema (DSI 5.1)</li>
+</ul>
 </section>
 <section id="de-salida-21" class="level6 unnumbered unlisted">
 <h6 class="unnumbered unlisted anchored" data-anchor-id="de-salida-21">De salida</h6>
-<pre><code>Diseño de la Arquitectura Modular del Sistema</code></pre>
+<ul>
+<li>Diseño de la Arquitectura Modular del Sistema</li>
+</ul>
 </section>
 </section>
 <section id="técnicas-15" class="level5 unnumbered unlisted">
 <h5 class="unnumbered unlisted anchored" data-anchor-id="técnicas-15">Técnicas</h5>
-<pre><code>Diagrama de Estructura</code></pre>
+<ul>
+<li>Diagrama de Estructura</li>
+</ul>
 </section>
 <section id="participantes-21" class="level5 unnumbered unlisted">
 <h5 class="unnumbered unlisted anchored" data-anchor-id="participantes-21">Participantes</h5>
-<pre><code>Equipo de Arquitectura
-Equipo del Proyecto
-Equipo de Seguridad</code></pre>
+<ul>
+<li>Equipo de Arquitectura</li>
+<li>Equipo del Proyecto</li>
+<li>Equipo de Seguridad</li>
+</ul>
 </section>
 </section>
 <section id="tarea-dsi-5.3-revisión-de-la-interfaz-de-usuario" class="level4" data-number="5.1.5.3">
@@ -1790,36 +1934,48 @@ Equipo de Seguridad</code></pre>
 <h5 class="unnumbered unlisted anchored" data-anchor-id="productos-22">Productos</h5>
 <section id="de-entrada-22" class="level6 unnumbered unlisted">
 <h6 class="unnumbered unlisted anchored" data-anchor-id="de-entrada-22">De entrada</h6>
-<pre><code>Especificación de Interfaz de Usuario (ASI 9.3)
-Diseño de la Arquitectura Modular del Sistema (DSI 5.2)</code></pre>
+<ul>
+<li>Especificación de Interfaz de Usuario (ASI 9.3)</li>
+<li>Diseño de la Arquitectura Modular del Sistema (DSI 5.2)</li>
+</ul>
 </section>
 <section id="de-salida-22" class="level6 unnumbered unlisted">
 <h6 class="unnumbered unlisted anchored" data-anchor-id="de-salida-22">De salida</h6>
-<pre><code>Diseño de Interfaz de Usuario:
-    Descomposición Funcional en Diálogos
-    Formatos Individuales de Interfaz de pantalla
-    Catálogo de Controles y Elementos de Diseño de Interfaz de Pantalla
-    Modelo de Navegación de Interfaz de Pantalla
-    Formatos de Impresión
-    Prototipo de Interfaz de Pantalla
-    Prototipo de Interfaz de Impresión</code></pre>
+<ul>
+<li>Diseño de Interfaz de Usuario:
+<ul>
+<li>Descomposición Funcional en Diálogos</li>
+<li>Formatos Individuales de Interfaz de pantalla</li>
+<li>Catálogo de Controles y Elementos de Diseño de Interfaz de Pantalla</li>
+<li>Modelo de Navegación de Interfaz de Pantalla</li>
+<li>Formatos de Impresión</li>
+<li>Prototipo de Interfaz de Pantalla</li>
+<li>Prototipo de Interfaz de Impresión</li>
+</ul></li>
+</ul>
 </section>
 </section>
 <section id="técnicas-16" class="level5 unnumbered unlisted">
 <h5 class="unnumbered unlisted anchored" data-anchor-id="técnicas-16">Técnicas</h5>
-<pre><code>Diagrama de Descomposición Funcional
-Diagrama de Transición de Estados
-Matricial</code></pre>
+<ul>
+<li>Diagrama de Descomposición Funcional</li>
+<li>Diagrama de Transición de Estados</li>
+<li>Matricial</li>
+</ul>
 </section>
 <section id="prácticas-9" class="level5 unnumbered unlisted">
 <h5 class="unnumbered unlisted anchored" data-anchor-id="prácticas-9">Prácticas</h5>
-<pre><code>Catalogación
-Prototipado</code></pre>
+<ul>
+<li>Catalogación</li>
+<li>Prototipado</li>
+</ul>
 </section>
 <section id="participantes-22" class="level5 unnumbered unlisted">
 <h5 class="unnumbered unlisted anchored" data-anchor-id="participantes-22">Participantes</h5>
-<pre><code>Equipo del Proyecto
-Usuarios Expertos</code></pre>
+<ul>
+<li>Equipo del Proyecto</li>
+<li>Usuarios Expertos</li>
+</ul>
 </section>
 </section>
 </section>
@@ -1909,46 +2065,58 @@ Usuarios Expertos</code></pre>
 <p>Como paso previo al diseño de la estructura física de datos, se analizan las peculiaridades técnicas del gestor de bases de datos o sistema de ficheros a utilizar, y las estimaciones sobre la utilización y volumen de las ocurrencias de cada entidad / clase del modelo lógico de datos normalizado o modelo de clases. Además, si se ha establecido la necesidad de llevar a cabo una migración de datos, se deben tener en cuenta también los volúmenes de las estructuras de datos implicadas en la conversión. Esta información sirve para decidir la mejor implementación del modelo lógico de datos/modelo de clases, así como para hacer una estimación el espacio de almacenamiento.</p>
 <p>De acuerdo al análisis anterior, se determina cómo se van a convertir las entidades/clases en tablas, considerando las relaciones existentes entre ellas y los identificadores, definiendo sus claves primarias, ajenas, alternativas u otros medios de acceso en general.</p>
 <p>También se definen aquellos elementos que, en función del gestor o sistemas de ficheros a utilizar, se considere necesario implementar. Entre estos elementos podemos citar los siguientes:</p>
-<pre><code>Bloqueo y comprensión de datos.
-Agrupamientos (cluster).
-Punteros.
-Otros.</code></pre>
+<ul>
+<li>Bloqueo y comprensión de datos.</li>
+<li>Agrupamientos (cluster).</li>
+<li>Punteros.</li>
+<li>Otros.</li>
+</ul>
 <section id="productos-23" class="level5 unnumbered unlisted">
 <h5 class="unnumbered unlisted anchored" data-anchor-id="productos-23">Productos</h5>
 <section id="de-entrada-23" class="level6 unnumbered unlisted">
 <h6 class="unnumbered unlisted anchored" data-anchor-id="de-entrada-23">De entrada</h6>
-<pre><code>Características Específicas del SGBD o Sistemas de Ficheros a Utilizar (externo)
-En Análisis Estructurado:
-Modelo Lógico de Datos Normalizado (ASI 9.3)
-Plan de Migración y Carga Inicial de Datos (ASI 6.4)
-En Análisis Orientado a Objetos:
-Modelo de Clases de Diseño (DSI 4.6)
-Plan de Migración y Carga Inicial de Datos (DSI 4.7)</code></pre>
+<ul>
+<li>Características Específicas del SGBD o Sistemas de Ficheros a Utilizar (externo)</li>
+<li>En Análisis Estructurado:</li>
+<li>Modelo Lógico de Datos Normalizado (ASI 9.3)</li>
+<li>Plan de Migración y Carga Inicial de Datos (ASI 6.4)</li>
+<li>En Análisis Orientado a Objetos:</li>
+<li>Modelo de Clases de Diseño (DSI 4.6)</li>
+<li>Plan de Migración y Carga Inicial de Datos (DSI 4.7)</li>
+</ul>
 </section>
 <section id="de-salida-23" class="level6 unnumbered unlisted">
 <h6 class="unnumbered unlisted anchored" data-anchor-id="de-salida-23">De salida</h6>
-<pre><code>Modelo Físico de Datos</code></pre>
+<ul>
+<li>Modelo Físico de Datos</li>
+</ul>
 </section>
 </section>
 <section id="técnicas-17" class="level5 unnumbered unlisted">
 <h5 class="unnumbered unlisted anchored" data-anchor-id="técnicas-17">Técnicas</h5>
-<pre><code>Reglas de Obtención del Modelo Físico a partir del Lógico
-Reglas de Transformación</code></pre>
+<ul>
+<li>Reglas de Obtención del Modelo Físico a partir del Lógico</li>
+<li>Reglas de Transformación</li>
+</ul>
 </section>
 <section id="participantes-23" class="level5 unnumbered unlisted">
 <h5 class="unnumbered unlisted anchored" data-anchor-id="participantes-23">Participantes</h5>
-<pre><code>Equipo de Arquitectura
-Equipo del Proyecto
-Administradores de Bases de Datos</code></pre>
+<ul>
+<li>Equipo de Arquitectura</li>
+<li>Equipo del Proyecto</li>
+<li>Administradores de Bases de Datos</li>
+</ul>
 </section>
 </section>
 <section id="tarea-dsi-6.2-especificación-de-los-caminos-de-acceso-a-los-datos" class="level4" data-number="5.1.6.2">
 <h4 data-number="5.1.6.2" class="anchored" data-anchor-id="tarea-dsi-6.2-especificación-de-los-caminos-de-acceso-a-los-datos"><span class="header-section-number">5.1.6.2</span> Tarea DSI 6.2: Especificación de los Caminos de Acceso a los Datos</h4>
 <p>El objetivo de esta tarea es determinar los caminos de acceso a los datos persistentes del sistema, utilizados por los principales módulos/clases de acuerdo al modelo físico de datos, con el fin de optimizar el rendimiento de los gestores de datos o sistemas de ficheros y el consumo de recursos, así como disminuir los tiempos de respuesta.</p>
 <p>Se recomienda realizar esta tarea para aquellos módulos/clases que reúnan, entre otras, alguna de las siguientes características:</p>
-<pre><code>Tratamiento crítico.
-Concurrencia.
-Accesos complejos a datos.</code></pre>
+<ul>
+<li>Tratamiento crítico.</li>
+<li>Concurrencia.</li>
+<li>Accesos complejos a datos.</li>
+</ul>
 <p>Para el inicio de esta tarea, se toma como referencia el Diseño Detallado de los Subsistemas de Soporte (DSI 2.1) y el Diseño de la Arquitectura Modular (DSI 5) o Diseño de Clases (DSI 4) de los subsistemas específicos, productos que se están generando en paralelo a esta actividad.</p>
 <p>Para cada módulo/clase se identifican las tablas o ficheros y el tipo de acceso realizado, así como el orden que debe seguirse para la obtención de los datos. Asimismo, se efectúa una estimación del número de accesos que deben realizarse teniendo en cuenta, a su vez, la frecuencia y la prioridad del acceso.</p>
 <p>La información obtenida sirve para identificar accesos excesivamente costosos o redundantes que pueden comprometer el rendimiento final del sistema y que, por lo tanto, exigen la optimización del modelo físico de datos, mediante la creación de nuevos accesos, posibles desnormalizaciones o particiones del modelo físico de datos.</p>
@@ -1956,26 +2124,34 @@ Accesos complejos a datos.</code></pre>
 <h5 class="unnumbered unlisted anchored" data-anchor-id="productos-24">Productos</h5>
 <section id="de-entrada-24" class="level6 unnumbered unlisted">
 <h6 class="unnumbered unlisted anchored" data-anchor-id="de-entrada-24">De entrada</h6>
-<pre><code>Modelo Físico de Datos (DSI 6.1)
-Diseño Detallado de Subsistemas de Soporte (DSI 2.1)
-En Diseño Estructurado:
-Diseño de la Arquitectura Modular del Sistema (DSI 5.2)
-En Diseño Orientado a Objetos:
-Modelo de Clases de Diseño (DSI 4.6)</code></pre>
+<ul>
+<li>Modelo Físico de Datos (DSI 6.1)</li>
+<li>Diseño Detallado de Subsistemas de Soporte (DSI 2.1)</li>
+<li>En Diseño Estructurado:</li>
+<li>Diseño de la Arquitectura Modular del Sistema (DSI 5.2)</li>
+<li>En Diseño Orientado a Objetos:</li>
+<li>Modelo de Clases de Diseño (DSI 4.6)</li>
+</ul>
 </section>
 <section id="de-salida-24" class="level6 unnumbered unlisted">
 <h6 class="unnumbered unlisted anchored" data-anchor-id="de-salida-24">De salida</h6>
-<pre><code>Especificación de los Caminos de Acceso a los Datos</code></pre>
+<ul>
+<li>Especificación de los Caminos de Acceso a los Datos</li>
+</ul>
 </section>
 </section>
 <section id="prácticas-10" class="level5 unnumbered unlisted">
 <h5 class="unnumbered unlisted anchored" data-anchor-id="prácticas-10">Prácticas</h5>
-<pre><code>Cálculo de Accesos Físicos
-Caminos de Acceso</code></pre>
+<ul>
+<li>Cálculo de Accesos Físicos</li>
+<li>Caminos de Acceso</li>
+</ul>
 </section>
 <section id="participantes-24" class="level5 unnumbered unlisted">
 <h5 class="unnumbered unlisted anchored" data-anchor-id="participantes-24">Participantes</h5>
-<pre><code>Equipo del Proyecto</code></pre>
+<ul>
+<li>Equipo del Proyecto</li>
+</ul>
 </section>
 </section>
 <section id="tarea-dsi-6.3-optimización-del-modelo-físico-de-datos" class="level4" data-number="5.1.6.3">
@@ -1983,40 +2159,52 @@ Caminos de Acceso</code></pre>
 <p>En esta tarea se optimiza el diseño físico de datos, con el objetivo de mejorar el tiempo de respuesta en el acceso a datos persistentes, hacer una adecuada utilización de los recursos del sistema y, en consecuencia, garantizar que el diseño satisface las necesidades de tratamiento establecidas para el sistema de información en cuanto a que se ajusta a los requisitos de rendimiento exigidos.</p>
 <p>A partir de la especificación de la secuencia de accesos de aquellos módulos/clases identificados como críticos, obtenida en la tarea anterior, se detectan las posibles mejoras con el fin de conseguir los niveles de rendimiento establecidos y, por lo tanto, una mayor eficiencia del sistema. Como resultado, puede ser necesaria una desnormalización controlada que se aplica para reducir o simplificar el número de accesos a los sistemas de almacenamiento de datos.</p>
 <p>La desnormalización puede obligar a:</p>
-<pre><code>Introducir elementos redundantes (campos, campos derivados, etc.).
-Definir nuevos caminos de acceso.
-Redefinir relaciones.
-Dividir o unir tablas.</code></pre>
+<ul>
+<li>Introducir elementos redundantes (campos, campos derivados, etc.).</li>
+<li>Definir nuevos caminos de acceso.</li>
+<li>Redefinir relaciones.</li>
+<li>Dividir o unir tablas.</li>
+</ul>
 <p>En la revisión de la estructura física de datos se deben tener en cuenta criterios relacionados con:</p>
-<pre><code>Módulos / clases identificados como críticos.
-Estimación de volúmenes.
-Frecuencia y tipo de acceso.
-Estimaciones de crecimiento por periodo.
-Requisitos relativos al rendimiento, seguridad, confidencialidad y disponibilidad, entre otros, considerados relevantes.</code></pre>
+<ul>
+<li>Módulos / clases identificados como críticos.</li>
+<li>Estimación de volúmenes.</li>
+<li>Frecuencia y tipo de acceso.</li>
+<li>Estimaciones de crecimiento por periodo.</li>
+<li>Requisitos relativos al rendimiento, seguridad, confidencialidad y disponibilidad, entre otros, considerados relevantes.</li>
+</ul>
 <p>Es importante que la desnormalización se lleve a cabo de una forma controlada, para evitar anomalías en el tratamiento de los datos.</p>
 <section id="productos-25" class="level5 unnumbered unlisted">
 <h5 class="unnumbered unlisted anchored" data-anchor-id="productos-25">Productos</h5>
 <section id="de-entrada-25" class="level6 unnumbered unlisted">
 <h6 class="unnumbered unlisted anchored" data-anchor-id="de-entrada-25">De entrada</h6>
-<pre><code>Catálogo de Requisitos (DSI 1.2)
-Modelo Físico de Datos (DSI 6.1)
-Especificación de los Caminos de Acceso a los Datos (DSI 6.2)</code></pre>
+<ul>
+<li>Catálogo de Requisitos (DSI 1.2)</li>
+<li>Modelo Físico de Datos (DSI 6.1)</li>
+<li>Especificación de los Caminos de Acceso a los Datos (DSI 6.2)</li>
+</ul>
 </section>
 <section id="de-salida-25" class="level6 unnumbered unlisted">
 <h6 class="unnumbered unlisted anchored" data-anchor-id="de-salida-25">De salida</h6>
-<pre><code>Modelo Físico de Datos Optimizado</code></pre>
+<ul>
+<li>Modelo Físico de Datos Optimizado</li>
+</ul>
 </section>
 </section>
 <section id="técnicas-18" class="level5 unnumbered unlisted">
 <h5 class="unnumbered unlisted anchored" data-anchor-id="técnicas-18">Técnicas</h5>
-<pre><code>Optimización</code></pre>
+<ul>
+<li>Optimización</li>
+</ul>
 </section>
 <section id="participantes-25" class="level5 unnumbered unlisted">
 <h5 class="unnumbered unlisted anchored" data-anchor-id="participantes-25">Participantes</h5>
-<pre><code>Equipo de Arquitectura
-Equipo del Proyecto
-Administradores de Bases de Datos
-Equipo de Seguridad</code></pre>
+<ul>
+<li>Equipo de Arquitectura</li>
+<li>Equipo del Proyecto</li>
+<li>Administradores de Bases de Datos</li>
+<li>Equipo de Seguridad</li>
+</ul>
 </section>
 </section>
 <section id="tarea-dsi-6.4-especificación-de-la-distribución-de-datos" class="level4" data-number="5.1.6.4">
@@ -2027,25 +2215,35 @@ Equipo de Seguridad</code></pre>
 <h5 data-number="5.1.6.4.1" class="anchored" data-anchor-id="productos-26"><span class="header-section-number">5.1.6.4.1</span> Productos</h5>
 <section id="de-entrada-26" class="level6 unnumbered unlisted">
 <h6 class="unnumbered unlisted anchored" data-anchor-id="de-entrada-26">De entrada</h6>
-<pre><code>Diseño de la Arquitectura del Sistema (DSI 1.1):
-    Particionamiento Físico del Sistema de Información
-Catálogo de Requisitos (DSI 1.2)
-Modelo Físico de Datos Optimizado (DSI 6.3)</code></pre>
+<ul>
+<li>Diseño de la Arquitectura del Sistema (DSI 1.1):
+<ul>
+<li>Particionamiento Físico del Sistema de Información</li>
+</ul></li>
+<li>Catálogo de Requisitos (DSI 1.2)</li>
+<li>Modelo Físico de Datos Optimizado (DSI 6.3)</li>
+</ul>
 </section>
 <section id="de-salida-26" class="level6 unnumbered unlisted">
 <h6 class="unnumbered unlisted anchored" data-anchor-id="de-salida-26">De salida</h6>
-<pre><code>Esquemas Físicos de Datos
-Asignación Esquemas Físicos de Datos a Nodos</code></pre>
+<ul>
+<li>Esquemas Físicos de Datos</li>
+<li>Asignación Esquemas Físicos de Datos a Nodos</li>
+</ul>
 </section>
 </section>
 <section id="técnicas-19" class="level5 unnumbered unlisted">
 <h5 class="unnumbered unlisted anchored" data-anchor-id="técnicas-19">Técnicas</h5>
-<pre><code>Matricial</code></pre>
+<ul>
+<li>Matricial</li>
+</ul>
 </section>
 <section id="participantes-26" class="level5 unnumbered unlisted">
 <h5 class="unnumbered unlisted anchored" data-anchor-id="participantes-26">Participantes</h5>
-<pre><code>Equipo de Arquitectura
-Equipo de Soporte Técnico</code></pre>
+<ul>
+<li>Equipo de Arquitectura</li>
+<li>Equipo de Soporte Técnico</li>
+</ul>
 </section>
 </section>
 </section>
