@@ -602,8 +602,8 @@ Esta actividad se realiza en paralelo al diseño detallado, debido a que existe 
 
 Los productos resultantes de esta actividad son:
 
-    Diseño Detallado de los Subsistemas de Soporte.
-    Mecanismos Genéricos de Diseño y Construcción.
+- Diseño Detallado de los Subsistemas de Soporte.
+- Mecanismos Genéricos de Diseño y Construcción.
 
 ```{=html}
 <table class="avia-table avia-data-table">
@@ -666,9 +666,9 @@ El nivel de reutilización de los subsistemas de soporte y sus servicios es pote
 
 El diseño sigue las mismas pautas que las establecidas para los subsistemas específicos, aunque con las siguientes particularidades:
 
-    Generalmente, será necesaria una descomposición de los subsistemas de soporte en servicios, entendiendo como tales módulos o clases independientes y reutilizables.
-    Se recomienda realizar una descripción de la interfaz y del comportamiento de cada servicio, previa a su diseño de detalle, que permita completar el diseño de los subsistemas específicos.
-    La especificación y diseño de cada servicio, módulo o clase, se realiza con las técnicas habituales de especificación y diseño de módulos o clases, o incluso opcionalmente, si la simplicidad de los elementos lo aconseja, otros lenguajes de especificación, pseudocódigo o lenguaje natural.
+- Generalmente, será necesaria una descomposición de los subsistemas de soporte en servicios, entendiendo como tales módulos o clases independientes y reutilizables.
+- Se recomienda realizar una descripción de la interfaz y del comportamiento de cada servicio, previa a su diseño de detalle, que permita completar el diseño de los subsistemas específicos.
+- La especificación y diseño de cada servicio, módulo o clase, se realiza con las técnicas habituales de especificación y diseño de módulos o clases, o incluso opcionalmente, si la simplicidad de los elementos lo aconseja, otros lenguajes de especificación, pseudocódigo o lenguaje natural.
 
 A medida que se lleva a cabo esta tarea pueden surgir comportamientos de excepción que deberán contemplarse igualmente en el diseño, y que en función del nivel de especificación que se haya establecido, se incorporan al catálogo de excepciones.
 
@@ -676,21 +676,21 @@ A medida que se lleva a cabo esta tarea pueden surgir comportamientos de excepci
 
 ###### De entrada {.unnumbered .unlisted}
 
-    Diseño de la Arquitectura del Sistema (DSI 1.5)
+* Diseño de la Arquitectura del Sistema (DSI 1.5)
 
 ###### De salida {.unnumbered .unlisted}
 
-    Diseño Detallado de los Subsistemas de Soporte
+* Diseño Detallado de los Subsistemas de Soporte
 
 ##### Técnicas {.unnumbered .unlisted}
 
-    Diagrama de Estructura
-    Diagrama de Interacción de Objetos
-    Diagrama de Clases
+* Diagrama de Estructura
+* Diagrama de Interacción de Objetos
+* Diagrama de Clases
 
 ##### Participantes {.unnumbered .unlisted}
 
-    Equipo de Arquitectura
+* Equipo de Arquitectura
 
 #### Tarea DSI 2.2: Identificación de Mecanismos Genéricos de Diseño
 
@@ -702,24 +702,24 @@ Los mecanismos genéricos de diseño son de aplicación tanto en la definición 
 
 ###### De entrada {.unnumbered .unlisted}
 
-    Diseño de la Arquitectura del Sistema (DSI 1.5)
+* Diseño de la Arquitectura del Sistema (DSI 1.5)
 
 ###### De salida {.unnumbered .unlisted}
 
-    Mecanismos Genéricos de Diseño y Construcción
+* Mecanismos Genéricos de Diseño y Construcción
 
 ##### Técnicas {.unnumbered .unlisted}
 
-    Diagrama de Interacción de Objetos
-    Diagrama de Clases
+* Diagrama de Interacción de Objetos
+* Diagrama de Clases
 
 ##### Prácticas {.unnumbered .unlisted}
 
-    Sesiones de Trabajo
+* Sesiones de Trabajo
 
 ##### Participantes {.unnumbered .unlisted}
 
-    Equipo de Arquitectura
+* Equipo de Arquitectura
 
 ### Actividad DSI 3: Diseño de Casos de Uso Reales
 
@@ -853,23 +853,23 @@ A su vez, a medida que se va estudiando la descripción de los casos de uso, pue
 
 ###### De entrada {.unnumbered .unlisted}
 
-    Modelo de Clases de Diseño (DSI 4.1)
-    Modelo de Casos de Uso (ASI 9.3)
-    Especificación de Casos de Uso (ASI 9.3)
-    Análisis de la Realización de los Casos de Uso (ASI 9.3)
+* Modelo de Clases de Diseño (DSI 4.1)
+* Modelo de Casos de Uso (ASI 9.3)
+* Especificación de Casos de Uso (ASI 9.3)
+* Análisis de la Realización de los Casos de Uso (ASI 9.3)
 
 ###### De salida {.unnumbered .unlisted}
 
-    Diseño de la Realización de los Casos de Uso
-        Especificación Detallada
+* Diseño de la Realización de los Casos de Uso
+  * Especificación Detallada
 
 ##### Técnicas {.unnumbered .unlisted}
 
-    Diagrama de Interacción de Objetos
+* Diagrama de Interacción de Objetos
 
 ##### Participantes {.unnumbered .unlisted}
 
-    Equipo del Proyecto
+* Equipo del Proyecto
 
 #### Tarea DSI 3.2: Diseño de la Realización de los Casos de Uso
 
@@ -885,24 +885,24 @@ El estudio de los comportamientos comunes identificados puede servir de ayuda pa
 
 ###### De entrada {.unnumbered .unlisted}
 
-    Modelo de Casos de Uso (ASI 9.3)
-    Especificación de Casos de Uso (ASI 9.3)
-    Análisis de la Realización de los Casos de Uso (ASI 9.3)
-    Especificación de Interfaz de Usuario (ASI 9.3)
-    Diseño de la Realización de los Casos de Uso (DSI 3.1)
+* Modelo de Casos de Uso (ASI 9.3)
+* Especificación de Casos de Uso (ASI 9.3)
+* Análisis de la Realización de los Casos de Uso (ASI 9.3)
+* Especificación de Interfaz de Usuario (ASI 9.3)
+* Diseño de la Realización de los Casos de Uso (DSI 3.1)
 
 ###### De salida {.unnumbered .unlisted}
 
-    Diseño de la Realización de los Casos de Uso
-        Especificación Detallada
+* Diseño de la Realización de los Casos de Uso
+  * Especificación Detallada
 
 ##### Técnicas {.unnumbered .unlisted}
 
-    Diagrama de Interacción de Objetos (colaboración o secuencia)
+* Diagrama de Interacción de Objetos (colaboración o secuencia)
 
 ##### Participantes {.unnumbered .unlisted}
 
-    Equipo del Proyecto
+* Equipo del Proyecto
 
 #### Tarea DSI 3.3: Revisión de la Interfaz de Usuario
 
@@ -916,32 +916,32 @@ En aquellos casos en los que se realizan modificaciones significativas sobre la 
 
 ###### De entrada {.unnumbered .unlisted}
 
-    Diseño de la Realización de los Casos de Uso (DSI 3.2)
-    Especificación de Interfaz de Usuario (ASI 9.3)
+* Diseño de la Realización de los Casos de Uso (DSI 3.2)
+* Especificación de Interfaz de Usuario (ASI 9.3)
 
 ###### De salida {.unnumbered .unlisted}
 
-    Diseño de Interfaz de Usuario
-        Formatos Individuales de Interfaz de Pantalla Gráfica
-        Catálogo de Controles y Elementos de Diseño de Interfaz de Pantalla Gráfica
-        Modelo de Navegación de Interfaz de Pantalla Gráfica
-        Formatos de Impresión
-        Prototipo de Interfaz de Pantalla Gráfica
+* Diseño de Interfaz de Usuario
+  * Formatos Individuales de Interfaz de Pantalla Gráfica
+  * Catálogo de Controles y Elementos de Diseño de Interfaz de Pantalla Gráfica
+  * Modelo de Navegación de Interfaz de Pantalla Gráfica
+  * Formatos de Impresión
+  * Prototipo de Interfaz de Pantalla Gráfica
 
 ##### Técnicas {.unnumbered .unlisted}
 
-    Diagrama de Interacción de Objetos
-    Diagrama de Transición de Estados
+* Diagrama de Interacción de Objetos
+* Diagrama de Transición de Estados
 
 ##### Prácticas {.unnumbered .unlisted}
 
-    Prototipado
-    Catalogación
+* Prototipado
+* Catalogación
 
 ##### Participantes {.unnumbered .unlisted}
 
-    Equipo del Proyecto
-    Usuarios Expertos
+* Equipo del Proyecto
+* Usuarios Expertos
 
 #### Tarea DSI 3.4: Revisión de Subsistemas de Diseño e Interfaces
 
@@ -953,23 +953,23 @@ Para un caso de uso hay que definir, además de los subsistemas y actores que in
 
 ###### De entrada {.unnumbered .unlisted}
 
-    Modelo de Casos de Uso (ASI 9.3)
-    Especificación de Casos de Uso (ASI 9.3)
-    Diseño de la Realización de los Casos de Uso (DSI 3.2)
+* Modelo de Casos de Uso (ASI 9.3)
+* Especificación de Casos de Uso (ASI 9.3)
+* Diseño de la Realización de los Casos de Uso (DSI 3.2)
 
 ###### De salida {.unnumbered .unlisted}
 
-    Diseño de la Realización de los Casos de Uso
-        Definición a Nivel de Subsistemas e Interfaz
+* Diseño de la Realización de los Casos de Uso
+  * Definición a Nivel de Subsistemas e Interfaz
 
 ##### Técnicas {.unnumbered .unlisted}
 
-    Diagrama de Interacción de Objetos
+* Diagrama de Interacción de Objetos
 
 ##### Participantes {.unnumbered .unlisted}
 
-    Equipo del Proyecto
-    Equipo de Arquitectura
+* Equipo del Proyecto
+* Equipo de Arquitectura
 
 ### Actividad DSI 4: Diseño de Clases {#dsi-4}
 
@@ -1136,8 +1136,8 @@ Como resultado de todo lo anterior se actualiza el modelo de clases del análisi
 
 El objetivo de esta tarea es identificar un conjunto de clases que completen el modelo de clases analizado en la tarea Validación de los Modelos (ASI 9.3) del proceso anterior (clases y/o interfaces) teniendo en cuenta que:
 
-    Cada interfaz identificada en el análisis se corresponde en el diseño con una clase que proporcione esa interfaz.
-    El conjunto de clases del análisis puede modificarse en función de las tecnologías de desarrollo utilizadas y de los mecanismos genéricos de diseño especificados.
+- Cada interfaz identificada en el análisis se corresponde en el diseño con una clase que proporcione esa interfaz.
+- El conjunto de clases del análisis puede modificarse en función de las tecnologías de desarrollo utilizadas y de los mecanismos genéricos de diseño especificados.
 
 Las clases de control deben contemplar la coordinación y secuencia entre objetos y, en algunos casos, deben contener lógica de negocio. De cualquier manera, se deben considerar cuestiones de distribución, de rendimiento, de transacción y de serialización.
 
@@ -1151,20 +1151,20 @@ Entre las clases identificadas a lo largo de esta tarea se encuentran clases abs
 
 ###### De entrada {.unnumbered .unlisted}
 
-    Modelo de Clases de Análisis (ASI 9.3)
-    Especificación de Interfaz de Usuario (ASI 9.3)
+* Modelo de Clases de Análisis (ASI 9.3)
+* Especificación de Interfaz de Usuario (ASI 9.3)
 
 ###### De salida {.unnumbered .unlisted}
 
-    Modelo de Clases de Diseño
+* Modelo de Clases de Diseño
 
 ##### Técnicas {.unnumbered .unlisted}
 
-    Diagrama de Clases
+* Diagrama de Clases
 
 ##### Participantes {.unnumbered .unlisted}
 
-    Equipo del Proyecto
+* Equipo del Proyecto
 
 #### Tarea DSI 4.2: Diseño de Asociaciones y Agregaciones
 
@@ -1172,10 +1172,10 @@ En esta tarea se completan las asociaciones entre las clases del modelo de clase
 
 Para definir las asociaciones, partimos de las que fueron identificadas en la tarea Identificación de Asociaciones y Agregaciones (ASI 5.2), teniendo en cuenta que:
 
-    Las características de la asociación (papeles que desempeña, multiplicidad, etc.) se detallan según el entorno de desarrollo utilizado.
-    Las relaciones bidireccionales se transforman en unidireccionales, para simplificar la implementación del sistema.
-    Se realiza la modelización de las rutas de acceso óptimas entre las asociaciones para evitar problemas de rendimiento.
-    Se analiza la posibilidad de diseñar como clases algunas de las asociaciones.
+- Las características de la asociación (papeles que desempeña, multiplicidad, etc.) se detallan según el entorno de desarrollo utilizado.
+- Las relaciones bidireccionales se transforman en unidireccionales, para simplificar la implementación del sistema.
+- Se realiza la modelización de las rutas de acceso óptimas entre las asociaciones para evitar problemas de rendimiento.
+- Se analiza la posibilidad de diseñar como clases algunas de las asociaciones.
 
 Opcionalmente, se especifica la forma en la que se va a implementar cada asociación (punteros, colecciones, etc.).
 
@@ -1183,20 +1183,20 @@ Opcionalmente, se especifica la forma en la que se va a implementar cada asociac
 
 ###### De entrada {.unnumbered .unlisted}
 
-    Modelo de Clases de Análisis (ASI 9.3)
-    Modelo de Clases de Diseño (DSI 4.1)
+* Modelo de Clases de Análisis (ASI 9.3)
+* Modelo de Clases de Diseño (DSI 4.1)
 
 ###### De salida {.unnumbered .unlisted}
 
-    Modelo de Clases de Diseño
+* Modelo de Clases de Diseño
 
 ##### Técnicas {.unnumbered .unlisted}
 
-    Diagrama de Clases
+* Diagrama de Clases
 
 ##### Participantes {.unnumbered .unlisted}
 
-    Equipo del Proyecto
+* Equipo del Proyecto
 
 
 #### Tarea DSI 4.3: Identificación de Atributos de las Clases
@@ -1207,27 +1207,27 @@ Para identificar los atributos se revisa el modelo de clases obtenido en el proc
 
 Asimismo, se analiza la posibilidad de convertir un atributo en clase en aquellos casos en los que:
 
-    El atributo se defina en varias clases de diseño.
-    La complejidad del atributo aumente la dificultad para comprender la clase a la que pertenece.
+- El atributo se defina en varias clases de diseño.
+- La complejidad del atributo aumente la dificultad para comprender la clase a la que pertenece.
 
 ##### Productos {.unnumbered .unlisted}
 
 ###### De entrada {.unnumbered .unlisted}
 
-    Modelo de Clases de Análisis (ASI 9.3)
-    Modelo de Clases de Diseño (DSI 4.2)
+* Modelo de Clases de Análisis (ASI 9.3)
+* Modelo de Clases de Diseño (DSI 4.2)
 
 ###### De salida {.unnumbered .unlisted}
 
-    Modelo de Clases de Diseño
+* Modelo de Clases de Diseño
 
 ##### Técnicas {.unnumbered .unlisted}
 
-    Diagrama de Clases
+* Diagrama de Clases
 
 ##### Participantes {.unnumbered .unlisted}
 
-    Equipo del Proyecto
+* Equipo del Proyecto
 
 #### Tarea DSI 4.4: Identificación de Operaciones de las Clases
 
@@ -1243,23 +1243,23 @@ Para identificar las operaciones de aquellos objetos que presenten distintos est
 
 ###### De entrada {.unnumbered .unlisted}
 
-    Modelo de Clases de Análisis (ASI 9.3)
-    Comportamiento de Clases de Análisis (ASI 9.3)
-    Modelo de Clases de Diseño (DSI 4.3)
+* Modelo de Clases de Análisis (ASI 9.3)
+* Comportamiento de Clases de Análisis (ASI 9.3)
+* Modelo de Clases de Diseño (DSI 4.3)
 
 ###### De salida {.unnumbered .unlisted}
 
-    Comportamiento de Clases de Diseño
-    Modelo de Clases de Diseño
+* Comportamiento de Clases de Diseño
+* Modelo de Clases de Diseño
 
 ##### Técnicas {.unnumbered .unlisted}
 
-    Diagrama de Clases
-    Diagrama de Transición de Estados
+* Diagrama de Clases
+* Diagrama de Transición de Estados
 
 ##### Participantes {.unnumbered .unlisted}
 
-    Equipo del Proyecto
+* Equipo del Proyecto
 
 
 #### Tarea DSI 4.5: Diseño de la Jerarquía
@@ -1272,19 +1272,19 @@ Entre las modificaciones realizadas sobre la jerarquía se identifican clases ab
 
 ###### De entrada {.unnumbered .unlisted}
 
-    Modelo de Clases de Diseño (DSI 4.4)
+* Modelo de Clases de Diseño (DSI 4.4)
 
 ###### De salida {.unnumbered .unlisted}
 
-    Modelo de Clases de Diseño
+* Modelo de Clases de Diseño
 
 ##### Técnicas {.unnumbered .unlisted}
 
-    Diagrama de Clases
+* Diagrama de Clases
 
 ##### Participantes {.unnumbered .unlisted}
 
-    Equipo del Proyecto
+* Equipo del Proyecto
 
 #### Tarea DSI 4.6: Descripción de Métodos de las Operaciones
 
@@ -1296,20 +1296,20 @@ En la mayoría de los casos, esta tarea no se realiza hasta el proceso de constr
 
 ###### De entrada {.unnumbered .unlisted}
 
-    Modelo de Clases de Diseño (DSI 4.5)
-    Comportamiento de Clases de Diseño (DSI 4.4)
+* Modelo de Clases de Diseño (DSI 4.5)
+* Comportamiento de Clases de Diseño (DSI 4.4)
 
 ###### De salida {.unnumbered .unlisted}
 
-    Modelo de Clases de Diseño
+* Modelo de Clases de Diseño
 
 ##### Técnicas {.unnumbered .unlisted}
 
-    Diagrama de Clases
+* Diagrama de Clases
 
 ##### Participantes {.unnumbered .unlisted}
 
-    Equipo del Proyecto
+* Equipo del Proyecto
 
 #### Tarea DSI 4.7: Especificación de Necesidades de Migración y Carga Inicial de Datos
 
@@ -1319,22 +1319,22 @@ En esta tarea se realiza, en los casos que sea necesario y a partir de los resul
 
 ###### De entrada {.unnumbered .unlisted}
 
-    Estructura de Datos del Sistema Origen (externo)
-    Modelo de Clases de Diseño (DSI 4.6)
-    Plan de Migración y Carga Inicial de Datos (ASI 6.4)
+* Estructura de Datos del Sistema Origen (externo)
+* Modelo de Clases de Diseño (DSI 4.6)
+* Plan de Migración y Carga Inicial de Datos (ASI 6.4)
 
 ###### De salida {.unnumbered .unlisted}
 
-    Plan de Migración y Carga Inicial de Datos
+* Plan de Migración y Carga Inicial de Datos
 
 ##### Prácticas {.unnumbered .unlisted}
 
-    Sesiones de Trabajo
+* Sesiones de Trabajo
 
 ##### Participantes {.unnumbered .unlisted}
 
-    Analistas
-    Usuarios Expertos
+* Analistas
+* Usuarios Expertos
 
 ### Actividad DSI 5: Diseño de la Arquitectura de Módulos del Sistema
 
@@ -1455,24 +1455,24 @@ En sistemas interactivos en los que exista una gran complejidad de gestión de p
 
 ###### De entrada {.unnumbered .unlisted}
 
-    Modelo de Procesos (ASI 9.3)
-    Especificación de Interfaz de Usuario (ASI 9.3)
-    Descripción de Interfaz con otros Sistemas (ASI 7.2)
-    Matriz de Procesos / Localización (ASI 7.1)
-    Diseño de la Arquitectura del Sistema (DSI 1.5)
+* Modelo de Procesos (ASI 9.3)
+* Especificación de Interfaz de Usuario (ASI 9.3)
+* Descripción de Interfaz con otros Sistemas (ASI 7.2)
+* Matriz de Procesos / Localización (ASI 7.1)
+* Diseño de la Arquitectura del Sistema (DSI 1.5)
 
 ###### De salida {.unnumbered .unlisted}
 
-    Diseño de la Arquitectura Modular del Sistema
+* Diseño de la Arquitectura Modular del Sistema
 
 ##### Técnicas {.unnumbered .unlisted}
 
-    Diagrama de Estructura
+* Diagrama de Estructura
 
 ##### Participantes {.unnumbered .unlisted}
 
-    Equipo de Arquitectura
-    Equipo del Proyecto
+* Equipo de Arquitectura
+* Equipo del Proyecto
 
 #### Tarea DSI 5.2: Diseño de Comunicaciones entre Módulos
 
@@ -1482,10 +1482,10 @@ Por tanto, la especificación de la estructura modular obtenida en la tarea ante
 
 Para el diseño de las interfaces es necesario especificar:
 
-    Los datos o mensajes involucrados y formato de los mismos en el intercambio.
-    Los valores o rangos de los datos intercambiados.
-    El origen y destino de los datos.
-    La información de control y valores posibles.
+- Los datos o mensajes involucrados y formato de los mismos en el intercambio.
+- Los valores o rangos de los datos intercambiados.
+- El origen y destino de los datos.
+- La información de control y valores posibles.
 
 En el diseño de las interfaces con otros sistemas hay que tener en cuenta, además, la información recogida en la descripción de interfaz con otros sistemas obtenida en el proceso de Análisis del Sistema del Información.
 
@@ -1495,23 +1495,23 @@ Las interfaces entre módulos permiten evaluar las necesidades de comunicación 
 
 ###### De entrada {.unnumbered .unlisted}
 
-    Modelo de Procesos (ASI 9.3)
-    Descripción de Interfaz con otros Sistemas (ASI 7.2)
-    Diseño de la Arquitectura Modular del Sistema (DSI 5.1)
+* Modelo de Procesos (ASI 9.3)
+* Descripción de Interfaz con otros Sistemas (ASI 7.2)
+* Diseño de la Arquitectura Modular del Sistema (DSI 5.1)
 
 ###### De salida {.unnumbered .unlisted}
 
-    Diseño de la Arquitectura Modular del Sistema
+* Diseño de la Arquitectura Modular del Sistema
 
 ##### Técnicas {.unnumbered .unlisted}
 
-    Diagrama de Estructura
+* Diagrama de Estructura
 
 ##### Participantes {.unnumbered .unlisted}
 
-    Equipo de Arquitectura
-    Equipo del Proyecto
-    Equipo de Seguridad
+* Equipo de Arquitectura
+* Equipo del Proyecto
+* Equipo de Seguridad
 
 #### Tarea DSI 5.3: Revisión de la Interfaz de Usuario
 
@@ -1533,35 +1533,35 @@ En el caso de que las modificaciones sean significativas en cuanto al formato o 
 
 ###### De entrada {.unnumbered .unlisted}
 
-    Especificación de Interfaz de Usuario (ASI 9.3)
-    Diseño de la Arquitectura Modular del Sistema (DSI 5.2)
+* Especificación de Interfaz de Usuario (ASI 9.3)
+* Diseño de la Arquitectura Modular del Sistema (DSI 5.2)
 
 ###### De salida {.unnumbered .unlisted}
 
-    Diseño de Interfaz de Usuario:
-        Descomposición Funcional en Diálogos
-        Formatos Individuales de Interfaz de pantalla
-        Catálogo de Controles y Elementos de Diseño de Interfaz de Pantalla
-        Modelo de Navegación de Interfaz de Pantalla
-        Formatos de Impresión
-        Prototipo de Interfaz de Pantalla
-        Prototipo de Interfaz de Impresión
+* Diseño de Interfaz de Usuario:
+  * Descomposición Funcional en Diálogos
+  * Formatos Individuales de Interfaz de pantalla
+  * Catálogo de Controles y Elementos de Diseño de Interfaz de Pantalla
+  * Modelo de Navegación de Interfaz de Pantalla
+  * Formatos de Impresión
+  * Prototipo de Interfaz de Pantalla
+  * Prototipo de Interfaz de Impresión
 
 ##### Técnicas {.unnumbered .unlisted}
 
-    Diagrama de Descomposición Funcional
-    Diagrama de Transición de Estados
-    Matricial
+* Diagrama de Descomposición Funcional
+* Diagrama de Transición de Estados
+* Matricial
 
 ##### Prácticas {.unnumbered .unlisted}
 
-    Catalogación
-    Prototipado
+* Catalogación
+* Prototipado
 
 ##### Participantes {.unnumbered .unlisted}
 
-    Equipo del Proyecto
-    Usuarios Expertos
+* Equipo del Proyecto
+* Usuarios Expertos
 
 ### Actividad DSI 6: Diseño Físico de Datos
 
@@ -1679,37 +1679,37 @@ De acuerdo al análisis anterior, se determina cómo se van a convertir las enti
 
 También se definen aquellos elementos que, en función del gestor o sistemas de ficheros a utilizar, se considere necesario implementar. Entre estos elementos podemos citar los siguientes:
 
-    Bloqueo y comprensión de datos.
-    Agrupamientos (cluster).
-    Punteros.
-    Otros.
+- Bloqueo y comprensión de datos.
+- Agrupamientos (cluster).
+- Punteros.
+- Otros.
 
 ##### Productos {.unnumbered .unlisted}
 
 ###### De entrada {.unnumbered .unlisted}
 
-    Características Específicas del SGBD o Sistemas de Ficheros a Utilizar (externo)
-    En Análisis Estructurado:
-    Modelo Lógico de Datos Normalizado (ASI 9.3)
-    Plan de Migración y Carga Inicial de Datos (ASI 6.4)
-    En Análisis Orientado a Objetos:
-    Modelo de Clases de Diseño (DSI 4.6)
-    Plan de Migración y Carga Inicial de Datos (DSI 4.7)
+* Características Específicas del SGBD o Sistemas de Ficheros a Utilizar (externo)
+* En Análisis Estructurado:
+* Modelo Lógico de Datos Normalizado (ASI 9.3)
+* Plan de Migración y Carga Inicial de Datos (ASI 6.4)
+* En Análisis Orientado a Objetos:
+* Modelo de Clases de Diseño (DSI 4.6)
+* Plan de Migración y Carga Inicial de Datos (DSI 4.7)
 
 ###### De salida {.unnumbered .unlisted}
 
-    Modelo Físico de Datos
+* Modelo Físico de Datos
 
 ##### Técnicas {.unnumbered .unlisted}
 
-    Reglas de Obtención del Modelo Físico a partir del Lógico
-    Reglas de Transformación
+* Reglas de Obtención del Modelo Físico a partir del Lógico
+* Reglas de Transformación
 
 ##### Participantes {.unnumbered .unlisted}
 
-    Equipo de Arquitectura
-    Equipo del Proyecto
-    Administradores de Bases de Datos
+* Equipo de Arquitectura
+* Equipo del Proyecto
+* Administradores de Bases de Datos
 
 #### Tarea DSI 6.2: Especificación de los Caminos de Acceso a los Datos
 
@@ -1717,9 +1717,9 @@ El objetivo de esta tarea es determinar los caminos de acceso a los datos persis
 
 Se recomienda realizar esta tarea para aquellos módulos/clases que reúnan, entre otras, alguna de las siguientes características:
 
-    Tratamiento crítico.
-    Concurrencia.
-    Accesos complejos a datos.
+- Tratamiento crítico.
+- Concurrencia.
+- Accesos complejos a datos.
 
 Para el inicio de esta tarea, se toma como referencia el Diseño Detallado de los Subsistemas de Soporte (DSI 2.1) y el Diseño de la Arquitectura Modular (DSI 5) o Diseño de Clases (DSI 4) de los subsistemas específicos, productos que se están generando en paralelo a esta actividad.
 
@@ -1731,25 +1731,25 @@ La información obtenida sirve para identificar accesos excesivamente costosos o
 
 ###### De entrada {.unnumbered .unlisted}
 
-    Modelo Físico de Datos (DSI 6.1)
-    Diseño Detallado de Subsistemas de Soporte (DSI 2.1)
-    En Diseño Estructurado:
-    Diseño de la Arquitectura Modular del Sistema (DSI 5.2)
-    En Diseño Orientado a Objetos:
-    Modelo de Clases de Diseño (DSI 4.6)
+* Modelo Físico de Datos (DSI 6.1)
+* Diseño Detallado de Subsistemas de Soporte (DSI 2.1)
+* En Diseño Estructurado:
+* Diseño de la Arquitectura Modular del Sistema (DSI 5.2)
+* En Diseño Orientado a Objetos:
+* Modelo de Clases de Diseño (DSI 4.6)
 
 ###### De salida {.unnumbered .unlisted}
 
-    Especificación de los Caminos de Acceso a los Datos
+* Especificación de los Caminos de Acceso a los Datos
 
 ##### Prácticas {.unnumbered .unlisted}
 
-    Cálculo de Accesos Físicos
-    Caminos de Acceso
+* Cálculo de Accesos Físicos
+* Caminos de Acceso
 
 ##### Participantes {.unnumbered .unlisted}
 
-    Equipo del Proyecto
+* Equipo del Proyecto
 
 #### Tarea DSI 6.3: Optimización del Modelo Físico de Datos
 
@@ -1759,18 +1759,18 @@ A partir de la especificación de la secuencia de accesos de aquellos módulos/c
 
 La desnormalización puede obligar a:
 
-    Introducir elementos redundantes (campos, campos derivados, etc.).
-    Definir nuevos caminos de acceso.
-    Redefinir relaciones.
-    Dividir o unir tablas.
+- Introducir elementos redundantes (campos, campos derivados, etc.).
+- Definir nuevos caminos de acceso.
+- Redefinir relaciones.
+- Dividir o unir tablas.
 
 En la revisión de la estructura física de datos se deben tener en cuenta criterios relacionados con:
 
-    Módulos / clases identificados como críticos.
-    Estimación de volúmenes.
-    Frecuencia y tipo de acceso.
-    Estimaciones de crecimiento por periodo.
-    Requisitos relativos al rendimiento, seguridad, confidencialidad y disponibilidad, entre otros, considerados relevantes.
+- Módulos / clases identificados como críticos.
+- Estimación de volúmenes.
+- Frecuencia y tipo de acceso.
+- Estimaciones de crecimiento por periodo.
+- Requisitos relativos al rendimiento, seguridad, confidencialidad y disponibilidad, entre otros, considerados relevantes.
 
 Es importante que la desnormalización se lleve a cabo de una forma controlada, para evitar anomalías en el tratamiento de los datos.
 
@@ -1778,24 +1778,24 @@ Es importante que la desnormalización se lleve a cabo de una forma controlada, 
 
 ###### De entrada {.unnumbered .unlisted}
 
-    Catálogo de Requisitos (DSI 1.2)
-    Modelo Físico de Datos (DSI 6.1)
-    Especificación de los Caminos de Acceso a los Datos (DSI 6.2)
+* Catálogo de Requisitos (DSI 1.2)
+* Modelo Físico de Datos (DSI 6.1)
+* Especificación de los Caminos de Acceso a los Datos (DSI 6.2)
 
 ###### De salida {.unnumbered .unlisted}
 
-    Modelo Físico de Datos Optimizado
+* Modelo Físico de Datos Optimizado
 
 ##### Técnicas {.unnumbered .unlisted}
 
-    Optimización
+* Optimización
 
 ##### Participantes {.unnumbered .unlisted}
 
-    Equipo de Arquitectura
-    Equipo del Proyecto
-    Administradores de Bases de Datos
-    Equipo de Seguridad
+* Equipo de Arquitectura
+* Equipo del Proyecto
+* Administradores de Bases de Datos
+* Equipo de Seguridad
 
 #### Tarea DSI 6.4: Especificación de la Distribución de Datos
 
@@ -1807,24 +1807,24 @@ El resultado de esta actividad es la especificación de los modelos físicos par
 
 ###### De entrada {.unnumbered .unlisted}
 
-    Diseño de la Arquitectura del Sistema (DSI 1.1):
-        Particionamiento Físico del Sistema de Información
-    Catálogo de Requisitos (DSI 1.2)
-    Modelo Físico de Datos Optimizado (DSI 6.3)
+* Diseño de la Arquitectura del Sistema (DSI 1.1):
+  * Particionamiento Físico del Sistema de Información
+* Catálogo de Requisitos (DSI 1.2)
+* Modelo Físico de Datos Optimizado (DSI 6.3)
 
 ###### De salida {.unnumbered .unlisted}
 
-    Esquemas Físicos de Datos
-    Asignación Esquemas Físicos de Datos a Nodos
+* Esquemas Físicos de Datos
+* Asignación Esquemas Físicos de Datos a Nodos
 
 ##### Técnicas {.unnumbered .unlisted}
 
-    Matricial
+* Matricial
 
 ##### Participantes {.unnumbered .unlisted}
 
-    Equipo de Arquitectura
-    Equipo de Soporte Técnico
+* Equipo de Arquitectura
+* Equipo de Soporte Técnico
 
 ### Actividad DSI 7: Verificación y Aceptación de la Arquitectura del Sistema
 
