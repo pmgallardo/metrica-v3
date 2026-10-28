@@ -625,50 +625,135 @@ Del mismo modo, se identifican los requisitos de información, y se elabora un m
 
 Por último, se clasifican los requisitos identificados según su prioridad, con el objetivo de incorporarlos al catálogo de requisitos del Plan de Sistemas de Información.
 
-TAREA 	PRODUCTOS 	TÉCNICAS Y PRÁCTICAS 	PARTICIPANTES
-PSI 4.1: Estudio de los Procesos del PSI 	
-
-    Modelo de procesos de la organización
-
-	
-
-    Modelo de Procesos de la Organización
-    Sesiones de trabajo
-
-	
-
-    Consultores
-    Usuarios Expertos
-
-PSI 4.2: Análisis de las Necesidades de Información 	
-
-    Necesidades de información
-    Modelo de información
-
-	
-
-    Modelo Entidad/Relación Extendido
-    Diagrama de clases
-    Sesiones de trabajo
-
-	
-
-    Consultores
-    Usuarios Expertos
-
-PSI 4.3: Catalogación de Requisitos 	
-
-    Catálogo de requisitos
-        Requisitos de los procesos afectados por el PSI
-
-	
-
-    Catalogación
-
-	
-
-    Consultores
-    Usuarios Expertos
+```{=html}
+<table class="avia-table avia-data-table">
+<tbody>
+<tr>
+<td style="text-align: left; vertical-align: middle; width: 30%;" rowspan="2"><strong>PLANIFICACIÓN DE SISTEMAS DE INFORMACIÓN</strong></td>
+<td style="text-align: center; width: 70%;" colspan="9"><strong>ACTIVIDADES</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;"><a href="#psi-1"><strong>PSI 1</strong></a></td>
+<td style="text-align: center;"><a href="#psi-2"><strong>PSI 2</strong></a></td>
+<td style="text-align: center;"><a href="#psi-3"><strong>PSI 3</strong></a></td>
+<td style="text-align: center;"><a href="#psi-4"><strong>PSI 4</strong></a></td>
+<td style="text-align: center;"><a href="#psi-5"><strong>PSI 5</strong></a></td>
+<td style="text-align: center;"><a href="#psi-6"><strong>PSI 6</strong></a></td>
+<td style="text-align: center;"><a href="#psi-7"><strong>PSI 7</strong></a></td>
+<td style="text-align: center;"><a href="#psi-8"><strong>PSI 8</strong></a></td>
+<td style="text-align: center;"><a href="#psi-9"><strong>PSI 9</strong></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../04-participantes/01-participantes.qmd#perfil-directivo">Comité de Dirección</a></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../04-participantes/01-participantes.qmd#perfil-consultor">Consultores</a></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../04-participantes/01-participantes.qmd#perfil-consultor">Consultores Informáticos</a></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../04-participantes/01-participantes.qmd#perfil-directivo">Directores Usuarios</a></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../04-participantes/01-participantes.qmd#perfil-analista">Equipo de Soporte Técnico</a></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../04-participantes/01-participantes.qmd#perfil-analista">Equipo del Proyecto</a></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto">Jefe de Proyecto</a></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto">Responsable Mantenimiento</a></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../04-participantes/01-participantes.qmd#perfil-directivo">Usuarios Expertos</a></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+</tr>
+</tbody>
+</table>
+```
 
 #### Tarea PSI 4.1: Estudio de los Procesos del PSI {#psi-4-1}
 
@@ -680,27 +765,27 @@ Para obtener esta información es necesario llevar a cabo sesiones de trabajo co
 
 ###### De entrada {.unnumbered .unlisted}
 
-    Descripción general de procesos de la organización afectados (PSI 2.1)
-    Catálogo de objetivos de PSI (PSI 2.1)
-    Catálogo de usuarios (PSI 2.2)
-    Equipos de trabajo (PSI 2.2)
+* Descripción general de procesos de la organización afectados (PSI 2.1)
+* Catálogo de objetivos de PSI (PSI 2.1)
+* Catálogo de usuarios (PSI 2.2)
+* Equipos de trabajo (PSI 2.2)
 
 ###### De salida {.unnumbered .unlisted}
 
-    Modelo de procesos de la organización
+* Modelo de procesos de la organización
 
 ##### Técnicas {.unnumbered .unlisted}
 
-    Modelado de procesos de la organización
+* Modelado de procesos de la organización
 
 ##### Prácticas {.unnumbered .unlisted}
 
-    Sesiones de trabajo
+* Sesiones de trabajo
 
 ##### Participantes {.unnumbered .unlisted}
 
-    Consultores
-    Usuarios Expertos
+* Consultores
+* Usuarios Expertos
 
 #### Tarea PSI 4.2: Análisis de las Necesidades de Información {#psi-4-2}
 
@@ -712,26 +797,26 @@ Los resultados del análisis realizado en esta tarea son la base para la identif
 
 ###### De entrada {.unnumbered .unlisted}
 
-    Modelo de procesos de la organización (PSI 4.1)
+* Modelo de procesos de la organización (PSI 4.1)
 
 ###### De salida {.unnumbered .unlisted}
 
-    Necesidades de información
-    Modelo de información
+* Necesidades de información
+* Modelo de información
 
 ##### Técnicas {.unnumbered .unlisted}
 
-    Modelo Entidad/Relación extendido
-    Diagrama de clases
+* Modelo Entidad/Relación extendido
+* Diagrama de clases
 
 ##### Prácticas {.unnumbered .unlisted}
 
-    Sesiones de trabajo
+* Sesiones de trabajo
 
 ##### Participantes {.unnumbered .unlisted}
 
-    Consultores
-    Usuarios Expertos
+* Consultores
+* Usuarios Expertos
 
 #### Tarea PSI 4.3: Catalogación de Requisitos {#psi-4-3}
 
@@ -743,25 +828,25 @@ Los criterios para asignar dichas prioridades deben ser definidos al comienzo de
 
 ###### De entrada {.unnumbered .unlisted}
 
-    Catálogo de objetivos de PSI (PSI 2.1)
-    Catálogo de requisitos (PSI 3.2)
-    Modelo de procesos de la organización (PSI 4.1)
-    Modelo de información (PSI 4.2)
-    Necesidades de información (PSI 4.2)
+* Catálogo de objetivos de PSI (PSI 2.1)
+* Catálogo de requisitos (PSI 3.2)
+* Modelo de procesos de la organización (PSI 4.1)
+* Modelo de información (PSI 4.2)
+* Necesidades de información (PSI 4.2)
 
 ###### De salida {.unnumbered .unlisted}
 
-    Catálogo de requisitos:
-        Requisitos de los procesos afectados por el PSI
+* Catálogo de requisitos:
+  * Requisitos de los procesos afectados por el PSI
 
 ##### Prácticas {.unnumbered .unlisted}
 
-    Catalogación
+* Catalogación
 
 ##### Participantes {.unnumbered .unlisted}
 
-    Consultores
-    Usuarios Expertos
+* Consultores
+* Usuarios Expertos
 
 ### Actividad PSI 5: Estudio de los Sistemas de Información Actuales {#psi-5}
 
@@ -769,54 +854,85 @@ El objetivo de esta actividad es obtener una valoración de la situación actual
 
 Se seleccionan los sistemas de información actuales que son objeto del análisis y se lleva a cabo el estudio de los mismos con la profundidad y el detalle que se determine conveniente en función de los objetivos definidos para el Plan de Sistemas de Información. Este estudio permite, para cada sistema, determinar sus carencias y valorarlos. Esta valoración se utilizará en la actividad Diseño del Modelo de Sistemas de Información (PSI 6), donde se analizará la cobertura de los sistemas de información actuales con respecto a los requisitos.
 
-TAREA 	PRODUCTOS 	TÉCNICAS Y PRÁCTICAS 	PARTICIPANTES
-PSI 5.1: Alcance y Objetivos del Estudio de los Sistemas de Información Actuales 	
-
-    Catálogo de objetivos del PSI
-        Objetivos del estudio de los Sistemas de Información actuales
-    Identificación de los Sistemas de Información actuales
-
-	
-
-    Catalogación
-    Sesiones de trabajo
-
-	
-
-    Consultores
-    Consultores Informáticos
-    Usuarios Expertos
-
-PSI 5.2: Análisis de los Sistemas de Información Actuales 	
-
-    Descripción general de los Sistemas de Información actuales
-
-	
-
-    Sesiones de trabajo
-    Diagrama de representación
-
-	
-
-    Consultores
-    Consultores Informáticos
-    Usuarios Expertos
-    Equipo de Proyecto
-    Equipo de Soporte Técnico
-    Responsable de Mantenimiento
-
-PSI 5.3: Valoración de los Sistemas de Información Actuales 	
-
-    Valoración de la situación actual
-
-	
-
-    Sesiones de trabajo
-
-	
-
-    Consultores
-    Consultores Informáticos
+<table class="avia-table avia-data-table">
+<tbody>
+<tr>
+<td style="background-color: #000033; text-align: left; width: 25%;"><strong><span style="color: #ffffff;">TAREA</span></strong></td>
+<td style="background-color: #000033; text-align: left; width: 30%;"><strong><span style="color: #ffffff;">PRODUCTOS</span></strong></td>
+<td style="background-color: #000033; text-align: left; width: 25%;"><strong><span style="color: #ffffff;">TÉCNICAS Y PRÁCTICAS</span></strong></td>
+<td style="background-color: #000033; text-align: left; width: 20%;"><strong><span style="color: #ffffff;">PARTICIPANTES</span></strong></td>
+</tr>
+<tr>
+<td style="text-align: left; vertical-align: top;"><a href="#psi-5-1"><strong>PSI 5.1</strong>: Alcance y Objetivos del Estudio de los Sistemas de Información Actuales</a></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li>Catálogo de objetivos del PSI
+<ul>
+<li>Objetivos del estudio de los Sistemas de Información actuales</li>
+</ul>
+</li>
+<li>Identificación de los Sistemas de Información actuales</li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#catalogacion">Catalogación</a></li>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#sesiones-de-trabajo">Sesiones de trabajo</a></li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-consultor">Consultores</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-consultor">Consultores Informáticos</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-directivo">Usuarios Expertos</a></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td style="text-align: left; vertical-align: top;"><a href="#psi-5-2"><strong>PSI 5.2</strong>: Análisis de los Sistemas de Información Actuales</a></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li>Descripción general de los Sistemas de Información actuales</li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#sesiones-de-trabajo">Sesiones de trabajo</a></li>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#diagrama-de-representacion">Diagrama de representación</a></li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-consultor">Consultores</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-consultor">Consultores Informáticos</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-directivo">Usuarios Expertos</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-analista">Equipo de Proyecto</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-analista">Equipo de Soporte Técnico</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto">Responsable de Mantenimiento</a></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td style="text-align: left; vertical-align: top;"><a href="#psi-5-3"><strong>PSI 5.3</strong>: Valoración de los Sistemas de Información Actuales</a></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li>Valoración de la situación actual</li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#sesiones-de-trabajo">Sesiones de trabajo</a></li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-consultor">Consultores</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-consultor">Consultores Informáticos</a></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
 
 #### Tarea PSI 5.1: Alcance y Objetivos del Estudio de los Sistemas de Información Actuales {#psi-5-1}
 
@@ -830,27 +946,27 @@ La información relativa a los sistemas de información que dan actualmente sopo
 
 ###### De entrada {.unnumbered .unlisted}
 
-    Catálogo de objetivos de PSI (PSI 2.1)
-    Descripción general de procesos de la organización afectados (PSI 2.1)
-    Catálogo de usuarios (PSI 2.2)
-    Equipos de trabajo (PSI 2.2)
+* Catálogo de objetivos de PSI (PSI 2.1)
+* Descripción general de procesos de la organización afectados (PSI 2.1)
+* Catálogo de usuarios (PSI 2.2)
+* Equipos de trabajo (PSI 2.2)
 
 ###### De salida {.unnumbered .unlisted}
 
-    Catálogo de objetivos de PSI:
-        Objetivos del estudio de los sistemas de información actuales
-    Identificación de sistemas de información actuales afectados por el PSI
+* Catálogo de objetivos de PSI:
+  * Objetivos del estudio de los sistemas de información actuales
+* Identificación de sistemas de información actuales afectados por el PSI
 
 ##### Prácticas {.unnumbered .unlisted}
 
-    Catalogación
-    Sesiones de trabajo
+* Catalogación
+* Sesiones de trabajo
 
 ##### Participantes {.unnumbered .unlisted}
 
-    Consultores
-    Consultores Informáticos
-    Usuarios Expertos
+* Consultores
+* Consultores Informáticos
+* Usuarios Expertos
 
 #### Tarea PSI 5.2: Análisis de los Sistemas de Información Actuales {#psi-5-2}
 
@@ -862,27 +978,27 @@ En función del tipo de sistema de información y de los objetivos de su estudio
 
 ###### De entrada {.unnumbered .unlisted}
 
-    Descripción general de procesos de la organización afectados (PSI 2.1)
-    Catálogo de objetivos de PSI (PSI 5.1)
-    Identificación de sistemas de información actuales afectados por el PSI (PSI 5.1)
+* Descripción general de procesos de la organización afectados (PSI 2.1)
+* Catálogo de objetivos de PSI (PSI 5.1)
+* Identificación de sistemas de información actuales afectados por el PSI (PSI 5.1)
 
 ###### De salida {.unnumbered .unlisted}
 
-    Descripción general de sistemas de información actuales
+* Descripción general de sistemas de información actuales
 
 ##### Prácticas {.unnumbered .unlisted}
 
-    Sesiones de trabajo
-    Diagrama de Representación
+* Sesiones de trabajo
+* Diagrama de Representación
 
 ##### Participantes {.unnumbered .unlisted}
 
-    Consultores
-    Consultores Informáticos
-    Usuarios Expertos
-    Equipo del Proyecto
-    Equipo de Soporte Técnico
-    Responsable de Mantenimiento
+* Consultores
+* Consultores Informáticos
+* Usuarios Expertos
+* Equipo del Proyecto
+* Equipo de Soporte Técnico
+* Responsable de Mantenimiento
 
 #### Tarea PSI 5.3: Valoración de los Sistemas de Información Actuales {#psi-5-3}
 
@@ -894,22 +1010,22 @@ Conviene señalar que esta valoración no se realiza en cuanto a cobertura de re
 
 ###### De entrada {.unnumbered .unlisted}
 
-    Catálogo de objetivos de PSI (PSI 5.1)
-    Descripción general de sistemas de información actuales (PSI 5.2)
+* Catálogo de objetivos de PSI (PSI 5.1)
+* Descripción general de sistemas de información actuales (PSI 5.2)
 
 ###### De salida {.unnumbered .unlisted}
 
-    Valoración de la situación actual
+* Valoración de la situación actual
 
 ##### Prácticas {.unnumbered .unlisted}
 
-    Sesiones de trabajo
-    Impacto en la Organización
+* Sesiones de trabajo
+* Impacto en la Organización
 
 ##### Participantes {.unnumbered .unlisted}
 
-    Consultores
-    Consultores Informáticos
+* Consultores
+* Consultores Informáticos
 
 ### Actividad PSI 6: Diseño del Modelo de Sistemas de Información {#psi-6}
 
@@ -919,35 +1035,62 @@ Por último, se definen los nuevos sistemas de información necesarios para cubr
 
 Teniendo en cuenta los resultados anteriores, se elabora el modelo de sistemas de información válido para dar soporte a los procesos de la organización incluidos en el ámbito del Plan de Sistemas de Información.
 
-TAREA 	PRODUCTOS 	TÉCNICAS Y PRÁCTICAS 	PARTICIPANTES
-PSI 6.1: Diagnóstico de la Situación Actual 	
-
-    Diagnóstico de la situación actual
-        Relación de sistemas de información que se conservan y mejoras necesarias
-
-	
-
-    Matricial
-
-	
-
-    Consultores
-
-PSI 6.2: Definición del Modelo de Sistemas de Información 	
-
-    Modelo de sistemas de información
-
-	
-
-    Matricial
-    Diagrama de representación
-    Sesiones de trabajo
-
-	
-
-    Consultores
-    Consultores Informáticos
-    Usuarios Expertos
+```{=html}
+<table class="avia-table avia-data-table">
+<tbody>
+<tr>
+<td style="background-color: #000033; text-align: left; width: 25%;"><strong><span style="color: #ffffff;">TAREA</span></strong></td>
+<td style="background-color: #000033; text-align: left; width: 30%;"><strong><span style="color: #ffffff;">PRODUCTOS</span></strong></td>
+<td style="background-color: #000033; text-align: left; width: 25%;"><strong><span style="color: #ffffff;">TÉCNICAS Y PRÁCTICAS</span></strong></td>
+<td style="background-color: #000033; text-align: left; width: 20%;"><strong><span style="color: #ffffff;">PARTICIPANTES</span></strong></td>
+</tr>
+<tr>
+<td style="text-align: left; vertical-align: top;"><a href="#psi-6-1"><strong>PSI 6.1</strong>: Diagnóstico de la Situación Actual</a></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li>Diagnóstico de la situación actual
+<ul>
+<li>Relación de sistemas de información que se conservan y mejoras necesarias</li>
+</ul>
+</li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#tecnicas-matriciales">Matricial</a></li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-consultor">Consultores</a></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td style="text-align: left; vertical-align: top;"><a href="#psi-6-2"><strong>PSI 6.2</strong>: Definición del Modelo de Sistemas de Información</a></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li>Modelo de sistemas de información</li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#tecnicas-matriciales">Matricial</a></li>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#diagrama-de-representacion">Diagrama de representación</a></li>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#sesiones-de-trabajo">Sesiones de trabajo</a></li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-consultor">Consultores</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-consultor">Consultores Informáticos</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-directivo">Usuarios Expertos</a></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+```
 
 #### Tarea PSI 6.1: Diagnóstico de la Situación Actual {#psi-6-1}
 
@@ -961,22 +1104,22 @@ Como resultado del análisis anterior, se seleccionan los sistemas de informaci�
 
 ###### De entrada {.unnumbered .unlisted}
 
-    Modelo de información (PSI 4.2)
-    Catálogo de requisitos (PSI 4.3)
-    Valoración de la situación actual (PSI 5.3)
+* Modelo de información (PSI 4.2)
+* Catálogo de requisitos (PSI 4.3)
+* Valoración de la situación actual (PSI 5.3)
 
 ###### De salida {.unnumbered .unlisted}
 
-    Diagnóstico de la situación actual:
-        Relación de sistemas de información que se conservan y mejoras necesarias
+* Diagnóstico de la situación actual:
+  * Relación de sistemas de información que se conservan y mejoras necesarias
 
 ##### Técnicas {.unnumbered .unlisted}
 
-    Matricial
+* Matricial
 
 ##### Participantes {.unnumbered .unlisted}
 
-    Consultores
+* Consultores
 
 #### Tarea PSI 6.2: Definición del Modelo de Sistemas de Información {#psi-6-2}
 
@@ -984,11 +1127,11 @@ Esta tarea tiene como objetivo representar el conjunto de sistemas de informaci�
 
 Para identificar cada sistema de información nuevo se analizan:
 
-    Los sistemas de información actuales que se conservan.
-    Los requisitos no cubiertos por los sistemas de información actuales. Se realiza una identificación inicial de sistemas de información, agrupando actividades homogéneas de los procesos de la organización afectados que actúan sobre información común.
-    Diferentes tipos de sistemas de información (de gestión, de soporte a la toma de decisiones, especiales, etc.).
-    Interfaces entre sistemas de información, con el objetivo de minimizarlas.
-    Tecnología especial requerida, si procede.
+- Los sistemas de información actuales que se conservan.
+- Los requisitos no cubiertos por los sistemas de información actuales. Se realiza una identificación inicial de sistemas de información, agrupando actividades homogéneas de los procesos de la organización afectados que actúan sobre información común.
+- Diferentes tipos de sistemas de información (de gestión, de soporte a la toma de decisiones, especiales, etc.).
+- Interfaces entre sistemas de información, con el objetivo de minimizarlas.
+- Tecnología especial requerida, si procede.
 
 Las conclusiones obtenidas de dicho análisis sirven para identificar cada sistema de información nuevo y elaborar el modelo de sistemas de información.
 
@@ -998,65 +1141,89 @@ Por último y contando con la experiencia de los participantes en esta tarea, se
 
 ###### De entrada {.unnumbered .unlisted}
 
-    Diagnóstico situación actual (PSI 6.1)
-    Modelo de procesos de la organización (PSI 4.1)
-    Modelo de información (PSI 4.2)
-    Catálogo de requisitos (PSI 4.3)
+* Diagnóstico situación actual (PSI 6.1)
+* Modelo de procesos de la organización (PSI 4.1)
+* Modelo de información (PSI 4.2)
+* Catálogo de requisitos (PSI 4.3)
 
 ###### De salida {.unnumbered .unlisted}
 
-    Modelo de sistemas de información
+* Modelo de sistemas de información
 
 ##### Técnicas {.unnumbered .unlisted}
 
-    Matricial
+* Matricial
 
 ##### Prácticas {.unnumbered .unlisted}
 
-    Diagrama de Representación
-    Sesiones de trabajo
+* Diagrama de Representación
+* Sesiones de trabajo
 
 ##### Participantes {.unnumbered .unlisted}
 
-    Consultores
-    Consultores Informáticos
-    Usuarios Expertos
+* Consultores
+* Consultores Informáticos
+* Usuarios Expertos
 
 ### Actividad PSI 7: Definición de la Arquitectura Tecnológica {#psi-7}
 
 En esta actividad se propone una arquitectura tecnológica que de soporte al modelo de información y de sistemas de información incluyendo, si es necesario, opciones. Para esta actividad se tienen en cuenta especialmente los requisitos de carácter tecnológico, aunque es necesario considerar el catálogo completo de requisitos para entender las necesidades de los procesos y proponer los entornos tecnológicos que mejor se adapten a las mismas.
 
-TAREA 	PRODUCTOS 	TÉCNICAS Y PRÁCTICAS 	PARTICIPANTES
-PSI 7.1: Identificación de las Necesidades de Infraestructura Tecnológica 	
-
-    Alternativas de arquitectura tecnológica
-
-	
-
-    Diagrama de representación
-    Sesiones de trabajo
-
-	
-
-    Consultores Informáticos
-    Equipo de Soporte Técnico
-
-PSI 7.2: Selección de la Arquitectura Tecnológica 	
-
-    Arquitectura tecnológica
-
-	
-
-    Análisis Coste/Beneficio
-    Diagrama de representación
-    Impacto en la organización
-
-	
-
-    Consultores
-    Consultores Informáticos
-    Usuarios expertos
-    Equipo de Soporte Técnico
+```{=html}
+<table class="avia-table avia-data-table">
+<tbody>
+<tr>
+<td style="background-color: #000033; text-align: left; width: 25%;"><strong><span style="color: #ffffff;">TAREA</span></strong></td>
+<td style="background-color: #000033; text-align: left; width: 30%;"><strong><span style="color: #ffffff;">PRODUCTOS</span></strong></td>
+<td style="background-color: #000033; text-align: left; width: 25%;"><strong><span style="color: #ffffff;">TÉCNICAS Y PRÁCTICAS</span></strong></td>
+<td style="background-color: #000033; text-align: left; width: 20%;"><strong><span style="color: #ffffff;">PARTICIPANTES</span></strong></td>
+</tr>
+<tr>
+<td style="text-align: left; vertical-align: top;"><a href="#psi-7-1"><strong>PSI 7.1</strong>: Identificación de las Necesidades de Infraestructura Tecnológica</a></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li>Alternativas de arquitectura tecnológica</li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#diagrama-de-representacion">Diagrama de representación</a></li>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#sesiones-de-trabajo">Sesiones de trabajo</a></li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-consultor">Consultores Informáticos</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-analista">Equipo de Soporte Técnico</a></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td style="text-align: left; vertical-align: top;"><a href="#psi-7-2"><strong>PSI 7.2</strong>: Selección de la Arquitectura Tecnológica</a></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li>Arquitectura tecnológica</li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#analisis-coste-beneficio">Análisis Coste/Beneficio</a></li>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#diagrama-de-representacion">Diagrama de representación</a></li>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#impacto-en-la-organizacion">Impacto en la organización</a></li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-consultor">Consultores</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-consultor">Consultores Informáticos</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-directivo">Usuarios expertos</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-analista">Equipo de Soporte Técnico</a></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+```
 
 #### Tarea PSI 7.1: Identificación de las Necesidades de Infraestructura Tecnológica
 
@@ -1070,26 +1237,26 @@ A continuación se determinan las posibles alternativas de infraestructura tecno
 
 ###### De entrada {.unnumbered .unlisted}
 
-    Entorno tecnológico actual y estándares (externo)
-    Modelo de sistemas de información (PSI 6.2)
-    Modelo de información (PSI 4.2)
-    Catálogo de requisitos (PSI 4.3)
-    Descripción general de sistemas de información actuales (PSI 5.2)
-    Valoración de la situación actual (PSI 5.3)
+* Entorno tecnológico actual y estándares (externo)
+* Modelo de sistemas de información (PSI 6.2)
+* Modelo de información (PSI 4.2)
+* Catálogo de requisitos (PSI 4.3)
+* Descripción general de sistemas de información actuales (PSI 5.2)
+* Valoración de la situación actual (PSI 5.3)
 
 ###### De salida {.unnumbered .unlisted}
 
-    Alternativas de arquitectura tecnológica
+* Alternativas de arquitectura tecnológica
 
 ##### Prácticas {.unnumbered .unlisted}
 
-    Diagrama de Representación
-    Sesiones de trabajo
+* Diagrama de Representación
+* Sesiones de trabajo
 
 ##### Participantes {.unnumbered .unlisted}
 
-    Consultores Informáticos
-    Equipo de Soporte Técnico
+* Consultores Informáticos
+* Equipo de Soporte Técnico
 
 #### Tarea PSI 7.2: Selección de la Arquitectura Tecnológica
 
@@ -1105,28 +1272,28 @@ Por último, una estimación económica global puede ayudar a elegir la alternat
 
 ###### De entrada {.unnumbered .unlisted}
 
-    Entorno tecnológico actual y estándares (externo)
-    Alternativas de arquitectura tecnológica (PSI 7.1)
+* Entorno tecnológico actual y estándares (externo)
+* Alternativas de arquitectura tecnológica (PSI 7.1)
 
 ###### De salida {.unnumbered .unlisted}
 
-    Arquitectura tecnológica
+* Arquitectura tecnológica
 
 ##### Técnicas {.unnumbered .unlisted}
 
-    Análisis Coste/Beneficio
+* Análisis Coste/Beneficio
 
 ##### Prácticas {.unnumbered .unlisted}
 
-    Diagrama de Representación
-    Impacto en la organización
+* Diagrama de Representación
+* Impacto en la organización
 
 ##### Participantes {.unnumbered .unlisted}
 
-    Consultores
-    Consultores Informáticos
-    Usuarios Expertos
-    Equipo de Soporte Técnico
+* Consultores
+* Consultores Informáticos
+* Usuarios Expertos
+* Equipo de Soporte Técnico
 
 ### Actividad PSI 8: Definición del Plan de Acción {#psi-8}
 
@@ -1136,34 +1303,61 @@ Dentro del Plan de Acción se incluye un calendario de proyectos, con posibles a
 
 Por último, se propone un plan de mantenimiento para el control y seguimiento de la ejecución de los proyectos, así como para la actualización de los productos finales del Plan de Sistemas de Información.
 
-TAREA 	PRODUCTOS 	TÉCNICAS Y PRÁCTICAS 	PARTICIPANTES
-PSI 8.1: Definición de Proyectos a Realizar 	
-
-    Plan de proyectos
-        Definición de proyectos
-        Prioridad de proyectos
-        Calendario de proyectos y acciones
-
-	
-
-    Análisis Coste/Beneficio
-    Impacto en la Organización
-    Sesiones de trabajo
-
-	
-
-    Consultores
-    Consultores Informáticos
-    Usuarios expertos
-
-PSI 8.2: Elaboración del Plan de Mantenimiento del PSI 	
-
-    Plan de mantenimiento del PSI
-
-		
-
-    Consultores
-    Consultores Informáticos
+```{=html}
+<table class="avia-table avia-data-table">
+<tbody>
+<tr>
+<td style="background-color: #000033; text-align: left; width: 25%;"><strong><span style="color: #ffffff;">TAREA</span></strong></td>
+<td style="background-color: #000033; text-align: left; width: 30%;"><strong><span style="color: #ffffff;">PRODUCTOS</span></strong></td>
+<td style="background-color: #000033; text-align: left; width: 25%;"><strong><span style="color: #ffffff;">TÉCNICAS Y PRÁCTICAS</span></strong></td>
+<td style="background-color: #000033; text-align: left; width: 20%;"><strong><span style="color: #ffffff;">PARTICIPANTES</span></strong></td>
+</tr>
+<tr>
+<td style="text-align: left; vertical-align: top;"><a href="#psi-8-1"><strong>PSI 8.1</strong>: Definición de Proyectos a Realizar</a></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li>Plan de proyectos
+<ul>
+<li>Definición de proyectos</li>
+<li>Prioridad de proyectos</li>
+<li>Calendario de proyectos y acciones</li>
+</ul>
+</li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#analisis-coste-beneficio">Análisis Coste/Beneficio</a></li>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#impacto-en-la-organizacion">Impacto en la Organización</a></li>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#sesiones-de-trabajo">Sesiones de trabajo</a></li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-consultor">Consultores</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-consultor">Consultores Informáticos</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-directivo">Usuarios expertos</a></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td style="text-align: left; vertical-align: top;"><a href="#psi-8-1"><strong>PSI 8.2</strong>: Elaboración del Plan de Mantenimiento del PSI</a></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li>Plan de mantenimiento del PSI</li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;"></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-consultor">Consultores</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-consultor">Consultores Informáticos</a></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+```
 
 #### Tarea PSI 8.1: Definición de Proyectos a Realizar {#psi-8-1}
 
@@ -1171,14 +1365,14 @@ Se determinan los proyectos y acciones necesarios para implantar la arquitectura
 
 A continuación, se asignan prioridades tratando de combinar diferentes criterios como:
 
-    Relación con los objetivos considerados en el Plan de Sistemas de Información.
-    Condicionantes técnicos que impliquen dependencias entre proyectos.
-    Tiempo de implantación.
-    Beneficios para la organización (tangibles e intangibles).
-    Limitaciones y consideraciones relativas a la organización (impacto, necesidades de formación, etc.).
-    Recursos disponibles a corto y medio plazo, tanto de las áreas de Sistemas de Información y Tecnologías de la Información como de los usuarios.
-    Situación de riesgo de algunos de los sistemas actuales a sustituir o mejorar.
-    Otros.
+- Relación con los objetivos considerados en el Plan de Sistemas de Información.
+- Condicionantes técnicos que impliquen dependencias entre proyectos.
+- Tiempo de implantación.
+- Beneficios para la organización (tangibles e intangibles).
+- Limitaciones y consideraciones relativas a la organización (impacto, necesidades de formación, etc.).
+- Recursos disponibles a corto y medio plazo, tanto de las áreas de Sistemas de Información y Tecnologías de la Información como de los usuarios.
+- Situación de riesgo de algunos de los sistemas actuales a sustituir o mejorar.
+- Otros.
 
 Después del estudio de todos los elementos anteriores, se propone el calendario de proyectos que mejor conjugue todas las restricciones analizadas previamente, estimando fechas de principio y fin de cada uno de ellos, así como los recursos necesarios para los más inmediatos. Se hará énfasis en los objetivos estratégicos soportados por el Plan de Sistemas de Información.
 
@@ -1190,34 +1384,34 @@ Las conclusiones obtenidas deben ser contrastadas y modificadas, si se estima co
 
 ##### De entrada {.unnumbered .unlisted}
 
-    Descripción general del PSI (PSI 1.2)
-    Catálogo de objetivos del PSI (PSI 5.1)
-    Arquitectura de información:
-        Modelo de información (PSI 4.2)
-        Modelo de sistemas de información (PSI 6.2)
-        Arquitectura tecnológica (PSI 7.2)
+* Descripción general del PSI (PSI 1.2)
+* Catálogo de objetivos del PSI (PSI 5.1)
+* Arquitectura de información:
+  * Modelo de información (PSI 4.2)
+  * Modelo de sistemas de información (PSI 6.2)
+  * Arquitectura tecnológica (PSI 7.2)
 
 ##### De salida {.unnumbered .unlisted}
 
-    Plan de proyectos:
-        Definición de proyectos
-        Prioridad de proyectos
-        Calendario de proyectos y acciones
+* Plan de proyectos:
+  * Definición de proyectos
+  * Prioridad de proyectos
+  * Calendario de proyectos y acciones
 
 ###### Técnicas {.unnumbered .unlisted}
 
-    Análisis Coste/Beneficio
+* Análisis Coste/Beneficio
 
 ###### Prácticas {.unnumbered .unlisted}
 
-    Impacto en la organización
-    Sesiones de trabajo
+* Impacto en la organización
+* Sesiones de trabajo
 
 ###### Participantes {.unnumbered .unlisted}
 
-    Consultores
-    Consultores Informáticos
-    Usuarios Expertos
+* Consultores
+* Consultores Informáticos
+* Usuarios Expertos
 
 #### Tarea PSI 8.2: Elaboración del Plan de Mantenimiento del PSI {#psi-8-2}
 
@@ -1231,75 +1425,111 @@ También se determina a quiénes se informará, y con qué periodicidad, del gra
 
 ###### De entrada {.unnumbered .unlisted}
 
-    Plan de proyectos (PSI 8.1)
+* Plan de proyectos (PSI 8.1)
 
 ###### De salida {.unnumbered .unlisted}
 
-    Plan de mantenimiento del PSI
+* Plan de mantenimiento del PSI
 
 ##### Participantes {.unnumbered .unlisted}
 
-    Consultores
-    Consultores Informáticos
+* Consultores
+* Consultores Informáticos
 
 ### Actividad PSI 9: Revisión y Aprobación del PSI {#psi-9}
 
 Esta actividad tiene como objetivo contrastar con los responsables de la dirección del Plan de Sistemas de Información la arquitectura de información y el plan de acción elaborados anteriormente, para mejorar la propuesta si se considera necesario y por último, obtener su aprobación final.
 
-TAREA 	PRODUCTOS 	TÉCNICAS Y PRÁCTICAS 	PARTICIPANTES
-PSI 9.1: Convocatoria de la Presentación 	
-
-    Plan de presentación
-
-	
-
-    Presentación
-
-	
-
-    Jefe de Proyecto del PSI
-    Consultores
-    Consultores Informáticos
-
-PSI 9.2: Evaluación y Mejora de la Propuesta 	
-
-    Resultado de las sesiones de trabajo
-    Presentación
-    Catálogo de requisitos del PSI
-    Arquitectura de información
-        Modelo de información
-        Modelo de sistemas de información
-        Arquitectura tecnológica
-    Plan de acción
-        Plan de proyectos
-        Plan de mantenimiento del PSI
-
-	
-
-    Sesiones de trabajo
-    Presentación
-
-	
-
-    Comité de Dirección
-    Jefe de Proyecto del PSI
-    Consultores
-    Consultores Informáticos
-    Usuarios expertos
-
-PSI 9.3: Aprobación del PSI 	
-
-    Aprobación formal del PSI
-    Plan de comunicación del PSI
-
-	
-
-    Sesiones de trabajo
-
-	
-
-    Comité de Dirección
-    Jefe de Proyecto del PSI
+```{=html}
+<table class="avia-table avia-data-table">
+<tbody>
+<tr>
+<td style="background-color: #000033; text-align: left; width: 25%;"><strong><span style="color: #ffffff;">TAREA</span></strong></td>
+<td style="background-color: #000033; text-align: left; width: 30%;"><strong><span style="color: #ffffff;">PRODUCTOS</span></strong></td>
+<td style="background-color: #000033; text-align: left; width: 25%;"><strong><span style="color: #ffffff;">TÉCNICAS Y PRÁCTICAS</span></strong></td>
+<td style="background-color: #000033; text-align: left; width: 20%;"><strong><span style="color: #ffffff;">PARTICIPANTES</span></strong></td>
+</tr>
+<tr>
+<td style="text-align: left; vertical-align: top;"><a href="#psi-9-1"><strong>PSI 9.1</strong>: Convocatoria de la Presentación</a></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li>Plan de presentación</li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#presentaciones">Presentación</a></li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto">Jefe de Proyecto del PSI</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-consultor">Consultores</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-consultor">Consultores Informáticos</a></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td style="text-align: left; vertical-align: top;"><a href="#psi-9-2"><strong>PSI 9.2</strong>: Evaluación y Mejora de la Propuesta</a></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li>Resultado de las sesiones de trabajo</li>
+<li>Presentación</li>
+<li>Catálogo de requisitos del PSI</li>
+<li>Arquitectura de información
+<ul>
+<li>Modelo de información</li>
+<li>Modelo de sistemas de información</li>
+<li>Arquitectura tecnológica</li>
+</ul>
+</li>
+<li>Plan de acción
+<ul>
+<li>Plan de proyectos</li>
+<li>Plan de mantenimiento del PSI</li>
+</ul>
+</li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#sesiones-de-trabajo">Sesiones de trabajo</a></li>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#presentaciones">Presentación</a></li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-directivo">Comité de Dirección</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto">Jefe de Proyecto del PSI</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-consultor">Consultores</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-consultor">Consultores Informáticos</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-directivo">Usuarios expertos</a></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td style="text-align: left; vertical-align: top;"><a href="#psi-9-3"><strong>PSI 9.3</strong>: Aprobación del PSI</a></td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li>Aprobación formal del PSI</li>
+<li>Plan de comunicación del PSI</li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#sesiones-de-trabajo">Sesiones de trabajo</a></li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-directivo">Comité de Dirección</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto">Jefe de Proyecto del PSI</a></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+```
 
 #### Tarea PSI 9.1: Convocatoria de la Presentación {#psi-9-1}
 
@@ -1309,29 +1539,29 @@ Se elabora un resumen que recoja los resultados finales de las actividades Ident
 
 ###### De entrada {.unnumbered .unlisted}
 
-    Catálogo de requisitos (PSI 4.3)
-    Catálogo de objetivos (PSI 5.1)
-    Arquitectura de información:
-        Modelo de información (PSI 4.2)
-        Modelo de sistemas de información (PSI 6.2)
-        Arquitectura tecnológica (PSI 7.2)
-    Plan de acción:
-        Plan de proyectos (PSI 8.1)
-        Plan de mantenimiento del PSI (PSI 8.2)
+* Catálogo de requisitos (PSI 4.3)
+* Catálogo de objetivos (PSI 5.1)
+* Arquitectura de información:
+  * Modelo de información (PSI 4.2)
+  * Modelo de sistemas de información (PSI 6.2)
+  * Arquitectura tecnológica (PSI 7.2)
+* Plan de acción:
+  * Plan de proyectos (PSI 8.1)
+  * Plan de mantenimiento del PSI (PSI 8.2)
 
 ###### De salida {.unnumbered .unlisted}
 
-    Plan de presentación
+* Plan de presentación
 
 ##### Prácticas {.unnumbered .unlisted}
 
-    Presentación
+* Presentación
 
 ##### Participantes {.unnumbered .unlisted}
 
-    Jefe de Proyecto del PSI
-    Consultores
-    Consultores Informáticos
+* Jefe de Proyecto del PSI
+* Consultores
+* Consultores Informáticos
 
 #### Tarea PSI 9.2: Evaluación y Mejora de la Propuesta {#psi-9-2}
 
@@ -1341,42 +1571,42 @@ Se realiza la presentación de los resultados, manteniéndose a continuación se
 
 ###### De entrada {.unnumbered .unlisted}
 
-    Plan de Presentación (PSI 9.1)
-    Catálogo de requisitos (PSI 4.3)
-    Catálogo de objetivos (PSI 5.1)
-    Arquitectura de información:
-        Modelo de información (PSI 4.2)
-        Modelo de sistemas de información (PSI 6.2)
-        Arquitectura tecnológica (PSI 7.2)
-    Plan de acción:
-        Plan de proyectos (PSI 8.1)
-        Plan de mantenimiento del PSI (PSI 8.2)
+* Plan de Presentación (PSI 9.1)
+* Catálogo de requisitos (PSI 4.3)
+* Catálogo de objetivos (PSI 5.1)
+* Arquitectura de información:
+  * Modelo de información (PSI 4.2)
+  * Modelo de sistemas de información (PSI 6.2)
+  * Arquitectura tecnológica (PSI 7.2)
+* Plan de acción:
+  * Plan de proyectos (PSI 8.1)
+  * Plan de mantenimiento del PSI (PSI 8.2)
 
 ###### De salida {.unnumbered .unlisted}
 
-    Presentación
-    Catálogo de requisitos del PSI
-    Resultado de las sesiones de trabajo (mejora de la propuesta), que afectan a:
-        Arquitectura de información:
-            Modelo de información
-            Modelo de sistemas de información
-            Arquitectura tecnológica
-         Plan de acción:
-            Plan de proyectos
-            Plan de mantenimiento del PSI
+* Presentación
+* Catálogo de requisitos del PSI
+* Resultado de las sesiones de trabajo (mejora de la propuesta), que afectan a:
+  * Arquitectura de información:
+    * Modelo de información
+    * Modelo de sistemas de información
+    * Arquitectura tecnológica
+  * Plan de acción:
+    * Plan de proyectos
+    * Plan de mantenimiento del PSI
 
 ##### Prácticas {.unnumbered .unlisted}
 
-    Sesiones de trabajo
-    Presentación
+* Sesiones de trabajo
+* Presentación
 
 ##### Participantes {.unnumbered .unlisted}
 
-    Comité de Dirección
-    Jefe de Proyecto del PSI
-    Consultores
-    Consultores Informáticos
-    Usuarios Expertos
+* Comité de Dirección
+* Jefe de Proyecto del PSI
+* Consultores
+* Consultores Informáticos
+* Usuarios Expertos
 
 #### Tarea PSI 9.3: Aprobación del PSI {#psi-9-3}
 
@@ -1386,29 +1616,29 @@ Se entrega la propuesta final, y se solicita formalmente al Comité de Direcció
 
 ###### De entrada {.unnumbered .unlisted}
 
-    Resultado de las sesiones de trabajo (PSI 9.2)
-    Catálogo de requisitos del PSI (PSI 9.2)
-    Arquitectura de información:
-        Modelo de información (PSI 9.2)
-        Modelo de sistemas de información (PSI 9.2)
-        Arquitectura tecnológica (PSI 9.2)
-    Plan de acción:
-        Plan de proyectos (PSI 9.2)
-        Plan de mantenimiento del PSI (PSI 9.2)
+* Resultado de las sesiones de trabajo (PSI 9.2)
+* Catálogo de requisitos del PSI (PSI 9.2)
+* Arquitectura de información:
+  * Modelo de información (PSI 9.2)
+  * Modelo de sistemas de información (PSI 9.2)
+  * Arquitectura tecnológica (PSI 9.2)
+* Plan de acción:
+  * Plan de proyectos (PSI 9.2)
+  * Plan de mantenimiento del PSI (PSI 9.2)
 
 ###### De salida {.unnumbered .unlisted}
 
-    Aprobación formal del PSI
-    Plan de comunicación del PSI
+* Aprobación formal del PSI
+* Plan de comunicación del PSI
 
 ##### Prácticas {.unnumbered .unlisted}
 
-    Sesiones de trabajo
+* Sesiones de trabajo
 
 ##### Participantes {.unnumbered .unlisted}
 
-    Comité de Dirección
-    Jefe de Proyecto del PSI
+* Comité de Dirección
+* Jefe de Proyecto del PSI
 
 ## Participantes en las Actividades del Proceso PSI {#participantes-psi}
 
@@ -1947,4 +2177,3 @@ Se entrega la propuesta final, y se solicita formalmente al Comité de Direcció
 7. [Actividad PSI 7: Definición de la Arquitectura Tecnológica](#psi-7)
 8. [Actividad PSI 8: Definición del Plan de Acción](#psi-8)
 9. [Actividad PSI 9: Revisión y Aprobación del PSI](#psi-9)
-

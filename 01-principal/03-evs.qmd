@@ -120,30 +120,31 @@ Se detalla la composición del equipo de trabajo necesario para este proceso y s
 Se realiza una descripción general de la necesidad planteada por el usuario, y se estudian las posibles restricciones de carácter económico, técnico, operativo y legal que puedan afectar al sistema. Antes de iniciar el estudio de los requisitos del sistema se establecen los objetivos generales del Estudio de Viabilidad, teniendo en cuenta las restricciones identificadas anteriormente.
 
 Si el sistema objeto de estudio se encuentra en el ámbito de un Plan de Sistemas de Información vigente, se debe de tomar como referencia el catálogo de requisitos y la arquitectura de información resultante del mismo, como información adicional para la descripción general del sistema y determinación de los requisitos iniciales.
-Productos
 
-De entrada
+##### Productos {.unnumbered .unlisted}
 
-    Catálogo de Requisitos del PSI (PSI 9.2)
-    Arquitectura de Información (PSI 9.2)
-    Solicitud (externo)
+###### De entrada {.unnumbered .unlisted}
 
-De salida
+* Catálogo de Requisitos del PSI (PSI 9.2)
+* Arquitectura de Información (PSI 9.2)
+* Solicitud (externo)
 
-    Descripción General del Sistema
-    Catálogo de Objetivos del EVS
-    Catálogo de Requisitos
+###### De salida {.unnumbered .unlisted}
 
-Prácticas
+* Descripción General del Sistema
+* Catálogo de Objetivos del EVS
+* Catálogo de Requisitos
 
-    Catalogación
-    Sesiones de trabajo
+##### Prácticas {.unnumbered .unlisted}
 
-Participantes
+* Catalogación
+* Sesiones de trabajo
 
-    Comité de Dirección
-    Jefe de Proyecto
-    Analistas
+##### Participantes {.unnumbered .unlisted}
+
+* Comité de Dirección
+* Jefe de Proyecto
+* Analistas
 
 #### Tarea EVS 1.2: Identificación del Alcance del Sistema
 
@@ -157,36 +158,36 @@ Una vez establecido el alcance, se identifican las unidades organizativas afecta
 
 ###### De entrada {.unnumbered .unlisted}
 
-    Plan de Proyectos (PSI 9.2)
-    Arquitectura de Información (PSI 9.2)
-    Descripción General del Sistema (EVS 1.1)
-    Catálogo de Objetivos del EVS (EVS 1.1)
-    Catálogo de Requisitos (EVS 1.1)
+* Plan de Proyectos (PSI 9.2)
+* Arquitectura de Información (PSI 9.2)
+* Descripción General del Sistema (EVS 1.1)
+* Catálogo de Objetivos del EVS (EVS 1.1)
+* Catálogo de Requisitos (EVS 1.1)
 
 ###### De salida {.unnumbered .unlisted}
 
-    Descripción General del Sistema:
-        Contexto del Sistema
-        Estructura Organizativa
-    Catálogo de Requisitos:
-        Requisitos Relativos a Restricciones o Dependencias con Otros Proyectos
-    Catálogo de Usuarios
+* Descripción General del Sistema:
+  * Contexto del Sistema
+  * Estructura Organizativa
+* Catálogo de Requisitos:
+  * Requisitos Relativos a Restricciones o Dependencias con Otros Proyectos
+* Catálogo de Usuarios
 
 ##### Técnicas {.unnumbered .unlisted}
 
-    Diagrama de Flujo de Datos
-    Diagrama de Descomposición Funcional
+* Diagrama de Flujo de Datos
+* Diagrama de Descomposición Funcional
 
 ##### Prácticas {.unnumbered .unlisted}
 
-    Catalogación
-    Sesiones de trabajo
+* Catalogación
+* Sesiones de trabajo
 
 ##### Participantes {.unnumbered .unlisted}
 
-    Comité de Dirección
-    Jefe de Proyecto
-    Analistas
+* Comité de Dirección
+* Jefe de Proyecto
+* Analistas
 
 #### Tarea EVS 1.3: Especificación del Alcance del EVS
 
@@ -200,28 +201,28 @@ Debe comunicarse el plan de trabajo a los usuarios identificados como implicados
 
 ###### De entrada {.unnumbered .unlisted}
 
-    Arquitectura de Información (PSI 9.2)
-    Catálogo de Objetivos del EVS (EVS 1.1)
-    Descripción General del Sistema (EVS 1.2)
-    Catálogo de Usuarios (EVS 1.2)
+* Arquitectura de Información (PSI 9.2)
+* Catálogo de Objetivos del EVS (EVS 1.1)
+* Descripción General del Sistema (EVS 1.2)
+* Catálogo de Usuarios (EVS 1.2)
 
 ###### De salida {.unnumbered .unlisted}
 
-    Catálogo de Objetivos del EVS:
-        Objetivos del Estudio de la Situación Actual
-    Catálogo de Usuarios
-    Plan de Trabajo
+* Catálogo de Objetivos del EVS:
+  * Objetivos del Estudio de la Situación Actual
+* Catálogo de Usuarios
+* Plan de Trabajo
 
 ##### Prácticas {.unnumbered .unlisted}
 
-    Catalogación
-    Sesiones de trabajo
+* Catalogación
+* Sesiones de trabajo
 
 ##### Participantes {.unnumbered .unlisted}
 
-    Comité de Dirección
-    Jefe de Proyecto
-    Analistas
+* Comité de Dirección
+* Jefe de Proyecto
+* Analistas
 
 ### Actividad EVS 2: Estudio de la Situación Actual
 
@@ -350,8 +351,8 @@ En función de los objetivos establecidos para el estudio de la situación actua
 
 Para poder abordar el estudio, se realiza previamente una valoración de la información existente acerca de los sistemas de información afectados por el EVS. Se debe decidir si se realizan o no los modelos lógicos del sistema actual o si se describe el modelo físico, en función de los siguientes criterios:
 
-    Si existen los modelos lógicos, y son fiables, se utilizan en la tarea Descripción de los Sistemas de Información Existentes (EVS 2.3)
-    Si no existen dichos modelos, o no son fiables, se considera el tiempo de vida estimado para el sistema de información en función de la antigüedad, la obsolescencia de la tecnología o la falta de adecuación funcional para determinar sí se obtienen los modelos lógicos y físicos del sistema actual o por el contrario no se elabora ningún modelo.
+- Si existen los modelos lógicos, y son fiables, se utilizan en la tarea Descripción de los Sistemas de Información Existentes (EVS 2.3)
+- Si no existen dichos modelos, o no son fiables, se considera el tiempo de vida estimado para el sistema de información en función de la antigüedad, la obsolescencia de la tecnología o la falta de adecuación funcional para determinar sí se obtienen los modelos lógicos y físicos del sistema actual o por el contrario no se elabora ningún modelo.
 
 La información relativa a los sistemas de información que se decida analizar, se obtiene mediante sesiones de trabajo con los Directores de Usuarios y el apoyo de los profesionales de Sistemas y Tecnologías de la Información y Comunicaciones (STIC) que se considere necesario.
 
@@ -359,31 +360,31 @@ La información relativa a los sistemas de información que se decida analizar, 
 
 ###### De entrada {.unnumbered .unlisted}
 
-    Información Existente del Sistema Actual (externo)
-    Arquitectura de Información (PSI 9.2)
-    Catálogo de Objetivos del EVS (EVS 1.3)
-    Descripción General del Sistema (EVS 1.2)
+* Información Existente del Sistema Actual (externo)
+* Arquitectura de Información (PSI 9.2)
+* Catálogo de Objetivos del EVS (EVS 1.3)
+* Descripción General del Sistema (EVS 1.2)
 
 ###### De salida {.unnumbered .unlisted}
 
-    Descripción de la Situación Actual:
-        Contexto del Sistema Actual
-        Descripción de los Sistemas de Información Actuales
+* Descripción de la Situación Actual:
+  * Contexto del Sistema Actual
+  * Descripción de los Sistemas de Información Actuales
 
 ##### Técnicas {.unnumbered .unlisted}
 
-    Diagrama de Flujo de Datos
+* Diagrama de Flujo de Datos
 
 ##### Prácticas {.unnumbered .unlisted}
 
-    Diagrama de Representación
-    Sesiones de Trabajo
+* Diagrama de Representación
+* Sesiones de Trabajo
 
 ##### Participantes {.unnumbered .unlisted}
 
-    Jefe de Proyecto
-    Analistas
-    Directores de Usuarios
+* Jefe de Proyecto
+* Analistas
+* Directores de Usuarios
 
 #### Tarea EVS 2.2: Identificación de los Usuarios Participantes en el Estudio de la Situación Actual
 
@@ -393,23 +394,23 @@ En función del nivel de detalle establecido para el estudio de la situación ac
 
 ###### De entrada {.unnumbered .unlisted}
 
-    Descripción General del Sistema (EVS 1.2)
-    Catálogo de Usuarios (EVS 1.2)
-    Descripción de la Situación Actual (EVS 1.2)
+* Descripción General del Sistema (EVS 1.2)
+* Catálogo de Usuarios (EVS 1.2)
+* Descripción de la Situación Actual (EVS 1.2)
 
 ###### De salida {.unnumbered .unlisted}
 
-    Catálogo de Usuarios
+* Catálogo de Usuarios
 
 ##### Prácticas {.unnumbered .unlisted}
 
-    Catalogación
-    Sesiones de Trabajo
+* Catalogación
+* Sesiones de Trabajo
 
 ##### Participantes {.unnumbered .unlisted}
 
-    Jefe de Proyecto
-    Directores de Usuarios
+* Jefe de Proyecto
+* Directores de Usuarios
 
 #### Tarea EVS 2.3: Descripción de los Sistemas de Información Existentes
 
@@ -425,34 +426,34 @@ Es conveniente indicar la localización geográfica y física actual de los mód
 
 ###### De entrada {.unnumbered .unlisted}
 
-    Descripción de la Situación Actual (EVS 2.1)
-    Catálogo de Usuarios (EVS 2.2)
+* Descripción de la Situación Actual (EVS 2.1)
+* Catálogo de Usuarios (EVS 2.2)
 
 ###### De salida {.unnumbered .unlisted}
 
-    Descripción de la Situación Actual:
-        Descripción Lógica del Sistema Actual
-        Modelo Físico del Sistema Actual (opcional)
-        Matriz de Localización Geográfica y Física de Módulos y Datos, incluidas las redundancias
+* Descripción de la Situación Actual:
+  * Descripción Lógica del Sistema Actual
+  * Modelo Físico del Sistema Actual (opcional)
+  * Matriz de Localización Geográfica y Física de Módulos y Datos, incluidas las redundancias
 
 ##### Técnicas {.unnumbered .unlisted}
 
-    Diagrama de Flujo de Datos
-    Modelo Entidad/Relación extendido
-    Diagrama de Clases
-    Diagrama de Interacción de Objetos
-    Matricial
+* Diagrama de Flujo de Datos
+* Modelo Entidad/Relación extendido
+* Diagrama de Clases
+* Diagrama de Interacción de Objetos
+* Matricial
 
 ##### Prácticas {.unnumbered .unlisted}
 
-    Diagrama de Representación
-    Sesiones de Trabajo
+* Diagrama de Representación
+* Sesiones de Trabajo
 
 ##### Participantes {.unnumbered .unlisted}
 
-    Analistas
-    Usuarios Expertos
-    Equipo de Soporte Técnico
+* Analistas
+* Usuarios Expertos
+* Equipo de Soporte Técnico
 
 #### Tarea EVS 2.4: Realización del Diagnóstico de la Situación Actual
 
@@ -466,19 +467,19 @@ Si se ha tomado la decisión de no describir la situación actual, se realiza un
 
 ###### De entrada {.unnumbered .unlisted}
 
-    Descripción de la Situación Actual (EVS 2.3)
-    Catálogo de Objetivos del EVS (EVS 1.3)
-    Valoración de la Situación actual (PSI 5.3)
+* Descripción de la Situación Actual (EVS 2.3)
+* Catálogo de Objetivos del EVS (EVS 1.3)
+* Valoración de la Situación actual (PSI 5.3)
 
 ###### De salida {.unnumbered .unlisted}
 
-    Descripción de la Situación Actual:
-        Diagnóstico de Situación Actual
+* Descripción de la Situación Actual:
+  * Diagnóstico de Situación Actual
 
 ##### Participantes {.unnumbered .unlisted}
 
-    Analistas
-    Responsable de Mantenimiento
+* Analistas
+* Responsable de Mantenimiento
 
 ### Actividad EVS 3: Definición de Requisitos del Sistema
 
@@ -563,35 +564,35 @@ La realización de esta tarea permite considerar los términos de referencia par
 
 Con este fin, se recoge información sobre los estándares y procedimientos que deben considerarse al proponer una solución, relativos a:
 
-    Políticas técnicas:
-        Gestión de Proyectos (seguimiento, revisión y aprobación final).
-        Desarrollo de Sistemas (existencia de normativas, metodologías y técnicas de programación).
-        Arquitectura de Sistemas (centralizada, distribuida).
-    Política de Seguridad (control de accesos, integridad de datos, disponibilidad de aplicaciones).
-    Directrices de Planificación.
-    Directrices de Gestión de Cambios.
-    Directrices de Gestión de Calidad.
+- Políticas técnicas:
+  - Gestión de Proyectos (seguimiento, revisión y aprobación final).
+  - Desarrollo de Sistemas (existencia de normativas, metodologías y técnicas de programación).
+  - Arquitectura de Sistemas (centralizada, distribuida).
+- Política de Seguridad (control de accesos, integridad de datos, disponibilidad de aplicaciones).
+- Directrices de Planificación.
+- Directrices de Gestión de Cambios.
+- Directrices de Gestión de Calidad.
 
 ##### Productos {.unnumbered .unlisted}
 
 ###### De entrada {.unnumbered .unlisted}
 
-    Catálogo de Normas del PSI (PSI 3.2)
-    Recopilación de Directrices Técnicas y de Gestión (externo)
+* Catálogo de Normas del PSI (PSI 3.2)
+* Recopilación de Directrices Técnicas y de Gestión (externo)
 
 ###### De salida {.unnumbered .unlisted}
 
-    Catálogo de Normas
+* Catálogo de Normas
 
 ##### Prácticas {.unnumbered .unlisted}
 
-    Catalogación
+* Catalogación
 
 ##### Participantes {.unnumbered .unlisted}
 
-    Jefe de Proyecto
-    Analistas
-    Usuarios Expertos
+* Jefe de Proyecto
+* Analistas
+* Usuarios Expertos
 
 #### Tarea EVS 3.2: Identificación de Requisitos
 
@@ -605,25 +606,25 @@ Una vez establecidos los puntos anteriores, se planifican las sesiones de trabaj
 
 ###### De entrada {.unnumbered .unlisted}
 
-    Descripción General del Sistema (EVS 1.2)
-    Catálogo de Requisitos (EVS 1.2)
-    Equipo de Trabajo del EVS (EVS 1.3)
-    Catálogo de Usuarios (EVS 2.2/1.3)
-    Descripción de la Situación Actual (EVS 2.4)
+* Descripción General del Sistema (EVS 1.2)
+* Catálogo de Requisitos (EVS 1.2)
+* Equipo de Trabajo del EVS (EVS 1.3)
+* Catálogo de Usuarios (EVS 2.2/1.3)
+* Descripción de la Situación Actual (EVS 2.4)
 
 ###### De salida {.unnumbered .unlisted}
 
-    Identificación de Requisitos
+* Identificación de Requisitos
 
 ##### Prácticas {.unnumbered .unlisted}
 
-    Sesiones de Trabajo
+* Sesiones de Trabajo
 
 ##### Participantes {.unnumbered .unlisted}
 
-    Jefe de Proyecto
-    Analistas
-    Usuarios Expertos
+* Jefe de Proyecto
+* Analistas
+* Usuarios Expertos
 
 #### Tarea EVS 3.3: Catalogación de Requisitos
 
@@ -635,22 +636,22 @@ Se incluirán también requisitos relativos a distribución geográfica y entorn
 
 ###### De entrada {.unnumbered .unlisted}
 
-    Identificación de Requisitos (EVS 3.2)
-    Catálogo de Requisitos (EVS 1.2)
+* Identificación de Requisitos (EVS 3.2)
+* Catálogo de Requisitos (EVS 1.2)
 
 ###### De salida {.unnumbered .unlisted}
 
-    Catálogo de Requisitos
+* Catálogo de Requisitos
 
 ##### Prácticas {.unnumbered .unlisted}
 
-    Catalogación
+* Catalogación
 
 ##### Participantes {.unnumbered .unlisted}
 
-    Jefe de Proyecto
-    Analistas
-    Usuarios Expertos
+* Jefe de Proyecto
+* Analistas
+* Usuarios Expertos
 
 ### Actividad EVS 4: Estudio de Alternativas de Solución
 
@@ -756,25 +757,25 @@ Dependiendo del alcance del sistema y las posibles opciones, puede ser convenien
 
 ###### De entrada {.unnumbered .unlisted}
 
-    Información de Productos Software del Mercado (externo)
-    Descripción General del Sistema (EVS 1.2)
-    Descripción de la Situación Actual (EVS 2.4)
-    Catálogo de Requisitos (EVS 3.3)
+* Información de Productos Software del Mercado (externo)
+* Descripción General del Sistema (EVS 1.2)
+* Descripción de la Situación Actual (EVS 2.4)
+* Catálogo de Requisitos (EVS 3.3)
 
 ###### De salida {.unnumbered .unlisted}
 
-    Descomposición Inicial del Sistema en Subsistemas (opcional)
-    Alternativas de Solución a Estudiar
+* Descomposición Inicial del Sistema en Subsistemas (opcional)
+* Alternativas de Solución a Estudiar
 
 ##### Prácticas {.unnumbered .unlisted}
 
-    Diagrama de Representación
+* Diagrama de Representación
 
 ##### Participantes {.unnumbered .unlisted}
 
-    Jefe de Proyecto
-    Analistas
-    Técnicos de Sistema
+* Jefe de Proyecto
+* Analistas
+* Técnicos de Sistema
 
 #### Tarea EVS 4.2: Descripción de las Alternativas de Solución
 
@@ -792,54 +793,54 @@ Si la alternativa incluye una solución basada en producto se analiza su evoluci
 
 ###### De entrada {.unnumbered .unlisted}
 
-    Descripción General del Sistema (EVS 1.2)
-    Descripción de la Situación Actual (EVS 2.4)
-    Catálogo de Requisitos (EVS 3.3)
-    Descomposición Inicial del Sistema en Subsistemas (EVS 4.1) (opcional)
-    Alternativas de Solución a Estudiar (EVS 4.1)
+* Descripción General del Sistema (EVS 1.2)
+* Descripción de la Situación Actual (EVS 2.4)
+* Catálogo de Requisitos (EVS 3.3)
+* Descomposición Inicial del Sistema en Subsistemas (EVS 4.1) (opcional)
+* Alternativas de Solución a Estudiar (EVS 4.1)
 
 ###### De salida {.unnumbered .unlisted}
 
-    Catálogo de Requisitos (actualizado)
-    Alternativas de Solución a Estudiar:
-        Catálogo de Requisitos (cobertura)
-        Modelo de Descomposición en Subsistemas
-        Matriz Procesos / Localización Geográfica
-        Matriz Datos / Localización Geográfica
-        Entorno Tecnológico y Comunicaciones
-        Estrategia de Implantación Global del Sistema
-        Descripción de Procesos Manuales
-        Si la alternativa incluye desarrollo:
-        Modelo Abstracto de Datos / Modelo de Procesos
-        Modelo de Negocio / Modelo de Dominio (en caso de Orientación a Objetos)
-        Si la alternativa incluye un producto software estándar de mercado:
-        Descripción del Producto
-        Evolución del Producto
-        Costes Ocasionados por Producto
-        Estándares del Producto
-        Descripción de Adaptación (si es necesaria)
+* Catálogo de Requisitos (actualizado)
+* Alternativas de Solución a Estudiar:
+  * Catálogo de Requisitos (cobertura)
+  * Modelo de Descomposición en Subsistemas
+  * Matriz Procesos / Localización Geográfica
+  * Matriz Datos / Localización Geográfica
+  * Entorno Tecnológico y Comunicaciones
+  * Estrategia de Implantación Global del Sistema
+  * Descripción de Procesos Manuales
+  Si la alternativa incluye desarrollo:
+  * Modelo Abstracto de Datos / Modelo de Procesos
+  * Modelo de Negocio / Modelo de Dominio (en caso de Orientación a Objetos)
+  Si la alternativa incluye un producto software estándar de mercado:
+  * Descripción del Producto
+  * Evolución del Producto
+  * Costes Ocasionados por Producto
+  * Estándares del Producto
+  * Descripción de Adaptación (si es necesaria)
 
 ##### Técnicas {.unnumbered .unlisted}
 
-    Matricial
-    Diagrama de Flujo de Datos
-    Modelo Entidad/ Relación extendido
-    Diagrama de Clases
-    Casos de Uso
+* Matricial
+* Diagrama de Flujo de Datos
+* Modelo Entidad/ Relación extendido
+* Diagrama de Clases
+* Casos de Uso
 
 ##### Prácticas {.unnumbered .unlisted}
 
-    Catalogación
-    Diagrama de Representación
+* Catalogación
+* Diagrama de Representación
 
 ##### Participantes {.unnumbered .unlisted}
 
-    Jefe de Proyecto
-    Analistas
-    Usuarios Expertos
-    Técnicos de Sistemas
-    Responsable de Seguridad
-    Especialistas en Comunicaciones
+* Jefe de Proyecto
+* Analistas
+* Usuarios Expertos
+* Técnicos de Sistemas
+* Responsable de Seguridad
+* Especialistas en Comunicaciones
 
 ### Actividad EVS 5: Valoración de las Alternativas
 
@@ -937,22 +938,22 @@ Para cada alternativa de solución propuesta, se valora el impacto en la organiz
 
 ###### De entrada {.unnumbered .unlisted}
 
-    Alternativas de Solución a Estudiar (EVS 4.2)
+* Alternativas de Solución a Estudiar (EVS 4.2)
 
 ###### De salida {.unnumbered .unlisted}
 
-    Valoración de Alternativas:
-        Impacto en la Organización de Alternativas
-        Coste / beneficio de Alternativas
+* Valoración de Alternativas:
+  * Impacto en la Organización de Alternativas
+  * Coste / beneficio de Alternativas
 
 ##### Técnicas {.unnumbered .unlisted}
 
-    Análisis Coste/Beneficio
+* Análisis Coste/Beneficio
 
 ##### Participantes {.unnumbered .unlisted}
 
-    Jefe de Proyecto
-    Analistas
+* Jefe de Proyecto
+* Analistas
 
 #### Tarea EVS 5.2: Estudio de los Riesgos
 
@@ -962,29 +963,29 @@ Para cada alternativa se seleccionan los factores de situación que habrá que c
 
 ###### De entrada {.unnumbered .unlisted}
 
-    Alternativas de Solución a Estudiar (EVS 4.2)
-    Valoración de Alternativas (EVS 5.1)
+* Alternativas de Solución a Estudiar (EVS 4.2)
+* Valoración de Alternativas (EVS 5.1)
 
 ###### De salida {.unnumbered .unlisted}
 
-    Valoración de Alternativas:
-        Valoración de Riesgos
+* Valoración de Alternativas:
+  * Valoración de Riesgos
 
 ##### Prácticas {.unnumbered .unlisted}
 
-    Impacto en la Organización
+* Impacto en la Organización
 
 ##### Participantes {.unnumbered .unlisted}
 
-    Jefe de Proyecto
-    Analistas
+* Jefe de Proyecto
+* Analistas
 
 #### Tarea EVS 5.3: Planificación de Alternativas
 
 En función del análisis de riesgos realizado en la tarea anterior, y para cada una de las alternativas existentes:
 
-    Se determina el enfoque más adecuado para llevar a buen fin la solución propuesta en cada alternativa.
-    Se realiza una planificación, teniendo en cuenta los puntos de sincronismo con otros proyectos en desarrollo o que esté previsto desarrollar, según se ha recogido en el catálogo de requisitos.
+- Se determina el enfoque más adecuado para llevar a buen fin la solución propuesta en cada alternativa.
+- Se realiza una planificación, teniendo en cuenta los puntos de sincronismo con otros proyectos en desarrollo o que esté previsto desarrollar, según se ha recogido en el catálogo de requisitos.
 
 De esta manera se garantiza el cumplimiento del plan de trabajo en los restantes procesos del ciclo de vida.
 
@@ -992,24 +993,24 @@ De esta manera se garantiza el cumplimiento del plan de trabajo en los restantes
 
 ###### De entrada {.unnumbered .unlisted}
 
-    Catálogo de Requisitos (EVS 4.2)
-    Alternativas de Solución a Estudiar (EVS 4.2)
-    Valoración de Alternativas (EVS 5.2)
+* Catálogo de Requisitos (EVS 4.2)
+* Alternativas de Solución a Estudiar (EVS 4.2)
+* Valoración de Alternativas (EVS 5.2)
 
 ###### De salida {.unnumbered .unlisted}
 
-    Plan de Trabajo de Cada Alternativa:
-        Enfoque del Plan de Trabajo de Cada Alternativa
-        Planificación de Cada Alternativa
+* Plan de Trabajo de Cada Alternativa:
+  * Enfoque del Plan de Trabajo de Cada Alternativa
+  * Planificación de Cada Alternativa
 
 ##### Técnicas {.unnumbered .unlisted}
 
-    Planificación
+* Planificación
 
 ##### Participantes {.unnumbered .unlisted}
 
-    Jefe de Proyecto
-    Analistas
+* Jefe de Proyecto
+* Analistas
 
 ### Actividad EVS 6: Selección de la Solución
 
@@ -1102,22 +1103,22 @@ Se efectúa la convocatoria de la presentación de las distintas alternativas pr
 
 ###### De entrada {.unnumbered .unlisted}
 
-    Catálogo de Usuarios (EVS 2.2/1.3)
-    Alternativas de Solución a Estudiar (EVS 4.2)
-    Valoración de Alternativas (EVS 5.2)
-    Plan de Trabajo de Cada Alternativa (EVS 5.3)
+* Catálogo de Usuarios (EVS 2.2/1.3)
+* Alternativas de Solución a Estudiar (EVS 4.2)
+* Valoración de Alternativas (EVS 5.2)
+* Plan de Trabajo de Cada Alternativa (EVS 5.3)
 
 ###### De salida {.unnumbered .unlisted}
 
-    Plan de Presentación de Alternativas
+* Plan de Presentación de Alternativas
 
 ##### Prácticas {.unnumbered .unlisted}
 
-    Presentación
+* Presentación
 
 ##### Participantes {.unnumbered .unlisted}
 
-    Jefe de Proyecto
+* Jefe de Proyecto
 
 #### Tarea EVS 6.2: Evaluación de las Alternativas y Selección
 
@@ -1127,51 +1128,51 @@ Una vez recibida la confirmación de qué alternativas van a ser presentadas par
 
 ###### De entrada {.unnumbered .unlisted}
 
-    Descripción General del Sistema (Contexto del Sistema) (EVS 1.2)
-    Catálogo de Requisitos (EVS 4.2)
-    Alternativas de Solución a Estudiar (EVS 4.2)
-    Valoración de Alternativas (EVS 5.2)
-    Plan de Trabajo de Cada Alternativa (EVS 5.3)
-    Plan de Presentación de Alternativas (EVS 6.1)
+* Descripción General del Sistema (Contexto del Sistema) (EVS 1.2)
+* Catálogo de Requisitos (EVS 4.2)
+* Alternativas de Solución a Estudiar (EVS 4.2)
+* Valoración de Alternativas (EVS 5.2)
+* Plan de Trabajo de Cada Alternativa (EVS 5.3)
+* Plan de Presentación de Alternativas (EVS 6.1)
 
 ###### De salida {.unnumbered .unlisted}
 
-    Plan de Presentación de Alternativas
-    Catálogo de Requisitos (Actualizado en Función de la Cobertura de la Solución)
-    Solución Propuesta:
-        Descripción de la Solución
-            Modelo de Descomposición en Subsistemas
-            Matriz Procesos / Localización Geográfica
-            Matriz Datos / Localización Geográfica
-            Entorno Tecnológico y Comunicaciones
-            Estrategia de Implantación Global del Sistema
-            Descripción de Procesos Manuales
-            Si la alternativa incluye desarrollo:
-            Modelo Abstracto de Datos / Modelo de Procesos
-            Modelo de Negocio / Modelo de Dominio
-            Si la alternativa incluye un producto software estándar de mercado:
-            Descripción del Producto
-            Evolución del Producto
-            Costes Ocasionados por Producto
-            Estándares del Producto
-            Descripción de Adaptación (si es necesaria)
-        Contexto del Sistema (con la Definición de las Interfaces en Función de la Solución)
-        Impacto en la Organización de la Solución
-        Coste / Beneficio de la Solución
-        Valoración de Riesgos de la Solución
-        Enfoque del Plan de Trabajo de la Solución
-        Planificación de la Solución
+* Plan de Presentación de Alternativas
+* Catálogo de Requisitos (Actualizado en Función de la Cobertura de la Solución)
+* Solución Propuesta:
+  * Descripción de la Solución
+    * Modelo de Descomposición en Subsistemas
+    * Matriz Procesos / Localización Geográfica
+    * Matriz Datos / Localización Geográfica
+    * Entorno Tecnológico y Comunicaciones
+    * Estrategia de Implantación Global del Sistema
+    * Descripción de Procesos Manuales
+    * Si la alternativa incluye desarrollo:
+    * Modelo Abstracto de Datos / Modelo de Procesos
+    * Modelo de Negocio / Modelo de Dominio
+    * Si la alternativa incluye un producto software estándar de mercado:
+    * Descripción del Producto
+    * Evolución del Producto
+    * Costes Ocasionados por Producto
+    * Estándares del Producto
+    * Descripción de Adaptación (si es necesaria)
+  * Contexto del Sistema (con la Definición de las Interfaces en Función de la Solución)
+  * Impacto en la Organización de la Solución
+  * Coste / Beneficio de la Solución
+  * Valoración de Riesgos de la Solución
+  * Enfoque del Plan de Trabajo de la Solución
+  * Planificación de la Solución
 
 ##### Prácticas {.unnumbered .unlisted}
 
-    Presentación
-    Sesiones de Trabajo
+* Presentación
+* Sesiones de Trabajo
 
 ##### Participantes {.unnumbered .unlisted}
 
-    Comité de Dirección
-    Jefe de Proyecto
-    Analistas
+* Comité de Dirección
+* Jefe de Proyecto
+* Analistas
 
 #### Tarea EVS 6.3: Aprobación de la Solución
 
@@ -1181,17 +1182,17 @@ El Comité de Dirección da su aprobación formal o determina la inviabilidad de
 
 ###### De entrada {.unnumbered .unlisted}
 
-    Catálogo de Requisitos (EVS 6.2)
-    Solución Propuesta (EVS 6.2)
+* Catálogo de Requisitos (EVS 6.2)
+* Solución Propuesta (EVS 6.2)
 
 ###### De salida {.unnumbered .unlisted}
 
-    Aprobación de la Solución
+* Aprobación de la Solución
 
 ##### Participantes {.unnumbered .unlisted}
 
-    Comité de Dirección
-    Jefe de Proyecto
+* Comité de Dirección
+* Jefe de Proyecto
 
 ## Participantes en las actividades del proceso EVS {.unnumbered .unlisted}
 
