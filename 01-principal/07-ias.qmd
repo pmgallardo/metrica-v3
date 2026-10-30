@@ -127,15 +127,15 @@ Una vez analizada la información anterior, se define un plan de implantación q
 
 ##### Prácticas {.unnumbered .unlisted}
 
-* Sesiones de trabajo
+* [Sesiones de trabajo](../03-tecnicas/01-tecnicas.qmd#sesiones-de-trabajo)
 
 ##### Participantes {.unnumbered .unlisted}
 
-* Jefe de Proyecto
+* [Jefe de Proyecto](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
 * Responsable de Implantación
 * Responsable de Operación
 * Responsable de Sistemas
-* Directores de los Usuarios
+* [Directores de los usuarios](../04-participantes/01-participantes.qmd#perfil-directivo)
 
 #### Tarea IAS 1.2: Especificación del Equipo de Implantación
 
@@ -157,11 +157,11 @@ Para ello se identifican, en función del nivel de esfuerzo requerido, los disti
 
 ##### Participantes {.unnumbered .unlisted}
 
-* Jefe de Proyecto
+* [Jefe de Proyecto](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
 * Responsable de Implantación
 * Responsable de Operación
 * Responsable de Sistemas
-* Directores de los Usuarios
+* [Directores de los usuarios](../04-participantes/01-participantes.qmd#perfil-directivo)
 
 ### Actividad IAS 2: Formación Necesaria para la Implantación
 
@@ -293,9 +293,9 @@ Por último, se convoca a las personas que deben asistir a los cursos de formaci
 
 ##### Participantes {.unnumbered .unlisted}
 
-* Jefe de Proyecto
+* [Jefe de Proyecto](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
 * Responsable de Implantación
-* Directores de los Usuarios
+* [Directores de los usuarios](../04-participantes/01-participantes.qmd#perfil-directivo)
 * Equipo de Formación
 
 #### Tarea IAS 2.2: Formación del Equipo de Implantación
@@ -343,8 +343,8 @@ Se establece el plan de formación del sistema a implantar en su totalidad, con 
 ##### Participantes {.unnumbered .unlisted}
 
 * Equipo de Formación
-* Jefe de Proyecto
-* Directores de los Usuarios
+* [Jefe de Proyecto](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
+* [Directores de los usuarios](../04-participantes/01-participantes.qmd#perfil-directivo)
 
 #### Tarea IAS 2.4: Seguimiento de la Formación a Usuarios Finales
 
@@ -363,8 +363,8 @@ La impartición de la formación a los usuarios finales queda fuera del ámbito 
 
 ##### Participantes {.unnumbered .unlisted}
 
-* Jefe de Proyecto
-* Directores de los Usuarios
+* [Jefe de Proyecto](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
+* [Directores de los usuarios](../04-participantes/01-participantes.qmd#perfil-directivo)
 
 ### Actividad IAS 3: Incorporación del Sistema al Entorno de Operación
 
@@ -448,7 +448,7 @@ También se debe asegurar que el equipo responsable de la realización de las pr
 
 ##### Participantes {.unnumbered .unlisted}
 
-* Jefe de Proyecto
+* [Jefe de Proyecto](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
 * Responsable de Implantación
 * Equipo de Implantación
 
@@ -486,7 +486,7 @@ Asimismo, si es necesaria una migración de datos se activarán también los pro
 
 ##### Participantes {.unnumbered .unlisted}
 
-* Jefe de Proyecto
+* [Jefe de Proyecto](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
 * Equipo de Implantación
 
 ### Actividad IAS 4: Carga de Datos al Entorno de Operación
@@ -646,7 +646,7 @@ Se comunica el plan de pruebas de implantación al equipo responsable de llevarl
 
 ##### Participantes {.unnumbered .unlisted}
 
-* Jefe de Proyecto
+* [Jefe de Proyecto](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
 * Responsable de Implantación
 
 #### Tarea IAS 5.2: Realización de las Pruebas de implantación
@@ -708,7 +708,7 @@ Una vez realizadas las medidas correctoras consideradas necesarias y comprobado 
 
 ##### Participantes {.unnumbered .unlisted}
 
-* Jefe de Proyecto
+* [Jefe de Proyecto](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
 * Responsable de Implantación
     
 ### Actividad IAS 6: Pruebas de Aceptación del Sistema
@@ -798,8 +798,8 @@ Productos
 
 ##### Participantes {.unnumbered .unlisted}
 
-* Jefe de Proyecto
-* Directores de los Usuarios
+* [Jefe de Proyecto](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
+* [Directores de los usuarios](../04-participantes/01-participantes.qmd#perfil-directivo)
 
 #### Tarea IAS 6.2: Realización de las Pruebas de Aceptación
 
@@ -849,8 +849,8 @@ Una vez realizadas las medidas correctoras necesarias, y comprobado que su compo
 
 ###### Participantes {.unnumbered .unlisted}
 
-* Jefe de Proyecto
-* Directores de los Usuarios
+* [Jefe de Proyecto](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
+* [Directores de los usuarios](../04-participantes/01-participantes.qmd#perfil-directivo)
 
 ### Actividad IAS 7: Preparación del Mantenimiento del Sistema
 
@@ -938,11 +938,11 @@ Finalmente, se recoge en el plan de mantenimiento toda la infraestructura necesa
 ##### Prácticas {.unnumbered .unlisted}
 
 * Diagrama de Representación
-* Sesiones de trabajo
+* [Sesiones de trabajo](../03-tecnicas/01-tecnicas.qmd#sesiones-de-trabajo)
 
 ##### Participantes {.unnumbered .unlisted}
 
-* Jefe de Proyecto
+* [Jefe de Proyecto](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
 * Responsable de Mantenimiento
 * Equipo de Soporte Técnico
 
@@ -964,12 +964,12 @@ Se estiman los recursos humanos necesarios para el servicio de mantenimiento est
 
 ##### Prácticas {.unnumbered .unlisted}
 
-* Sesiones de trabajo
+* [Sesiones de trabajo](../03-tecnicas/01-tecnicas.qmd#sesiones-de-trabajo)
 
 ##### Participantes {.unnumbered .unlisted}
 
 * Responsable de Mantenimiento
-* Directores de los Usuarios
+* [Directores de los usuarios](../04-participantes/01-participantes.qmd#perfil-directivo)
 
 ### Actividad IAS 8: Establecimiento del Acuerdo de Nivel de Servicio
 
@@ -1090,12 +1090,12 @@ Se consideran los servicios comunes de los sistemas de información implicados e
 
 ###### Prácticas {.unnumbered .unlisted}
 
-* Sesiones de trabajo
+* [Sesiones de trabajo](../03-tecnicas/01-tecnicas.qmd#sesiones-de-trabajo)
 
 ##### Participantes {.unnumbered .unlisted}
 
-* Jefe de Proyecto
-* Directores de los Usuarios
+* [Jefe de Proyecto](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
+* [Directores de los usuarios](../04-participantes/01-participantes.qmd#perfil-directivo)
 * Comité de Dirección
 
 #### Tarea IAS 8.2: Descripción de las Propiedades de cada Servicio
@@ -1120,12 +1120,12 @@ Asimismo, se especifican las propiedades de calidad que constituyen el nivel de 
 
 ##### Prácticas {.unnumbered .unlisted}
 
-* Sesiones de trabajo
+* [Sesiones de trabajo](../03-tecnicas/01-tecnicas.qmd#sesiones-de-trabajo)
 
 ##### Participantes {.unnumbered .unlisted}
 
-* Jefe de Proyecto
-* Directores de los Usuarios
+* [Jefe de Proyecto](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
+* [Directores de los usuarios](../04-participantes/01-participantes.qmd#perfil-directivo)
 * Comité de Dirección
 * Comité de Seguimiento
 
@@ -1149,12 +1149,12 @@ Se hace una estimación de los recursos humanos y de infraestructura necesaria p
 
 ##### Prácticas
 
-* Sesiones de trabajo
+* [Sesiones de trabajo](../03-tecnicas/01-tecnicas.qmd#sesiones-de-trabajo)
 
 ##### Participantes
 
 * Comité de Dirección
-* Jefe de Proyecto
+* [Jefe de Proyecto](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
 * Responsable de Implantación
 
 ### Actividad IAS 9: Presentación y Aprobación del Sistema
@@ -1240,9 +1240,9 @@ Se recibe la confirmación por parte del Comité de Dirección y se prepara la p
 
 ##### Participantes {.unnumbered .unlisted}
 
-* Jefe de Proyecto
+* [Jefe de Proyecto](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
 * Responsable de Implantación
-* Directores de los Usuarios
+* [Directores de los usuarios](../04-participantes/01-participantes.qmd#perfil-directivo)
 
 ##### Tarea IAS 9.2: Aprobación del Sistema
 
@@ -1265,8 +1265,8 @@ Se presenta el sistema al Comité de Dirección según el plan previsto y se apr
 ##### Participantes {.unnumbered .unlisted}
 
 * Comité de Dirección
-* Jefe de proyecto
-* Directores de los Usuarios
+* [Jefe de Proyecto](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
+* [Directores de los usuarios](../04-participantes/01-participantes.qmd#perfil-directivo)
 * Responsable de Implantación
 
 ### Actividad IAS 10: Paso a Producción
@@ -1349,7 +1349,7 @@ Se comprueba que la instalación del sistema es correcta. Por último, se determ
 
 ##### Participantes {.unnumbered .unlisted}
 
-* Jefe de Proyecto
+* [Jefe de Proyecto](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
 * Responsable de Implantación
 * Equipo de Implantación
 * Equipo de Soporte Técnico

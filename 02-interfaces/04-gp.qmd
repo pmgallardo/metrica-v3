@@ -124,11 +124,11 @@ Esta tarea tiene como finalidad determinar el número y características de los 
 
 ##### Prácticas {.unnumbered .unlisted}
 
-* Catalogación
+* [Catalogación](../03-tecnicas/01-tecnicas.qmd#catalogacion)
 
 ##### Participantes {.unnumbered .unlisted}
 
-* Jefe de Proyecto
+* [Jefe de Proyecto](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
 
 #### Tarea GPI 1.2: Cálculo del Esfuerzo {#gpi-1-2}
 
@@ -167,7 +167,7 @@ La técnica que se propone variará según se trate de desarrollos orientados a 
 
 ##### Participantes {.unnumbered .unlisted}
 
-* Jefe de Proyecto
+* [Jefe de Proyecto](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
 * Equipo del Proyecto
 
 ### Actividad GPI 2: Planificación {#gpi-2}
@@ -325,7 +325,7 @@ EUROMÉTODO ofrece una buena aproximación a distintas estrategias de desarrollo
 
 ##### Participantes {.unnumbered .unlisted}
 
-* Jefe de Proyecto
+* [Jefe de Proyecto](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
 
 
 #### Tarea GPI 2.2: Selección de la Estructura de Actividades, Tareas y Productos {#gpi-2-2}
@@ -346,16 +346,16 @@ La estructura de procesos, actividades y tareas que se presenta en MÉTRICA Vers
 
 ##### Técnicas {.unnumbered .unlisted}
 
-* Planificación
+* [Planificación](../03-tecnicas/01-tecnicas.qmd#planificacion)
   * Estructura de Descomposición de Trabajo (WBS)
 
 ##### Prácticas {.unnumbered .unlisted}
 
-* Catalogación
+* [Catalogación](../03-tecnicas/01-tecnicas.qmd#catalogacion)
 
 ##### Participantes {.unnumbered .unlisted}
 
-* Jefe de Proyecto
+* [Jefe de Proyecto](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
 
 
 #### Tarea GPI 2.3: Establecimiento del Calendario de Hitos y Entregas {#gpi-2-3}
@@ -385,11 +385,11 @@ Se detallan los condicionantes y restricciones existentes, por ejemplo en cuanto
 
 ##### Prácticas {.unnumbered .unlisted}
 
-* Catalogación
+* [Catalogación](../03-tecnicas/01-tecnicas.qmd#catalogacion)
 
 ##### Participantes {.unnumbered .unlisted}
 
-* Jefe de Proyecto
+* [Jefe de Proyecto](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
 
 
 #### Tarea GPI 2.4: Planificación Detallada de Actividades y Recursos Necesarios {#gpi-2-4}
@@ -422,7 +422,7 @@ Los recursos del proyecto se especifican mediante la Estructura de Descomposici�
 
 ##### Participantes {.unnumbered .unlisted}
 
-* Jefe de Proyecto
+* [Jefe de Proyecto](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
 
 
 #### Tarea GPI 2.5: Presentación y Aceptación de la Planificación General del Proyecto {#gpi-2-5}
@@ -448,7 +448,7 @@ Es precisa esta aceptación como paso previo a la puesta en marcha de los proces
 ##### Participantes {.unnumbered .unlisted}
 
 * Comité de Seguimiento
-* Jefe de Proyecto
+* [Jefe de Proyecto](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
 
 ## Actividades de Seguimiento y Control
 
@@ -495,12 +495,12 @@ El Jefe de Proyecto debe reflejar en la planificación las asignaciones realizad
 
 ##### Técnicas {.unnumbered .unlisted}
 
-* Planificación
+* [Planificación](../03-tecnicas/01-tecnicas.qmd#planificacion)
   * Asignación de recursos
 
 ##### Participantes {.unnumbered .unlisted}
 
-* Jefe de Proyecto
+* [Jefe de Proyecto](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
 
 ### Actividad GPI 2: Comunicación al Equipo del Proyecto {#gps-2}
 
@@ -554,7 +554,7 @@ La estructura del proyecto en procesos, actividades y tareas descritos en MÉTRI
 
 ##### Participantes {.unnumbered .unlisted}
 
-* Jefe de Proyecto
+* [Jefe de Proyecto](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
 * Equipo de proyecto
 
 
@@ -628,7 +628,7 @@ A partir de la información obtenida del equipo de desarrollo, el Jefe de Proyec
 
 ##### Participantes {.unnumbered .unlisted}
 
-* Jefe de Proyecto
+* [Jefe de Proyecto](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
 * Equipo del Proyecto
 
 ### Gestión de Incidencias
@@ -747,7 +747,7 @@ Una vez identificadas las tareas a las que afecta la incidencia se evalúa su im
 
 ##### Participantes {.unnumbered .unlisted}
 
-* Jefe de Proyecto
+* [Jefe de Proyecto](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
 * Equipo del Proyecto
 
 ##### Tarea GPS 4.2: Propuesta de Solución de la Incidencia {#gps-4-2}
@@ -774,7 +774,7 @@ De acuerdo con la solución adoptada habrá que revisar y ajustar la planificaci
 
 ##### Participantes {.unnumbered .unlisted}
 
-* Jefe de Proyecto
+* [Jefe de Proyecto](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
 * Equipo del Proyecto
 
 ##### Tarea GPS 4.3: Registrar la Incidencia {#gps-4-3}
@@ -797,11 +797,11 @@ Toda incidencia producida durante el desarrollo del proyecto debe reflejarse en 
 
 ##### Prácticas {.unnumbered .unlisted}
 
-* Catalogación
+* [Catalogación](../03-tecnicas/01-tecnicas.qmd#catalogacion)
 
 ##### Participantes {.unnumbered .unlisted}
 
-* Jefe de Proyecto
+* [Jefe de Proyecto](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
 * Equipo del Proyecto
 
 ### Gestión de cambios en los requisitos
@@ -893,12 +893,12 @@ Cuando el Jefe de Proyecto recibe una Petición de Cambio debe registrarla de in
 
 ##### Prácticas {.unnumbered .unlisted}
 
-* Catalogación
+* [Catalogación](../03-tecnicas/01-tecnicas.qmd#catalogacion)
 
 ##### Participantes {.unnumbered .unlisted}
 
 * Usuario
-* Jefe de Proyecto
+* [Jefe de Proyecto](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
 
 #### Actividad GPS 6: Análisis de la Petición de Cambio de Requisitos {#gps-6}
 
@@ -1006,7 +1006,7 @@ El Jefe de Proyecto entrega la petición de cambio al Equipo del Proyecto para s
 ##### Prácticas {.unnumbered .unlisted}
 
 * Entrevistas
-* Catalogación
+* [Catalogación](../03-tecnicas/01-tecnicas.qmd#catalogacion)
 
 ##### Participantes {.unnumbered .unlisted}
 
@@ -1060,11 +1060,11 @@ A partir del Análisis Funcional y Diseño Técnico obtenido en la tarea anterio
 
 ##### Prácticas {.unnumbered .unlisted}
 
-* Sesiones de Trabajo
+* [Sesiones de Trabajo](../03-tecnicas/01-tecnicas.qmd#sesiones-de-trabajo)
 
 ##### Participantes {.unnumbered .unlisted}
 
-* Jefe de Proyecto
+* [Jefe de Proyecto](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
 * Equipo del Proyecto
 
 #### Actividad GPS 7: Aprobación de la Solución {#gps-7}
@@ -1131,7 +1131,7 @@ Como consecuencia de esta evaluación pueden darse cuatro posibilidades:
 ##### Participantes {.unnumbered .unlisted}
 
 * Comité de Seguimiento
-* Jefe de Proyecto
+* [Jefe de Proyecto](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
 
 #### Actividad GPS 8: Estimación del Esfuerzo y Planificación de la Solución {#gps-8}
 
@@ -1242,15 +1242,15 @@ Una vez hecha la estimación del esfuerzo es necesario planificar las actividade
 ###### De salida {.unnumbered .unlisted}
 
 * Planificación General del Proyecto:
-* * Planificación de las actividades
+  * Planificación de las actividades
 
 ##### Prácticas {.unnumbered .unlisted}
 
-* Planificación
+* [Planificación](../03-tecnicas/01-tecnicas.qmd#planificacion)
 
 ##### Participantes {.unnumbered .unlisted}
 
-* Jefe de Proyecto
+* [Jefe de Proyecto](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
 
 #### Actividad GPS 9: Registro del Cambio de Requisitos {#gps-9}
 
@@ -1310,11 +1310,11 @@ Todo cambio de requisitos producido durante el desarrollo del proyecto debe refl
 
 ##### Prácticas {.unnumbered .unlisted}
 
-* Catalogación
+* [Catalogación](../03-tecnicas/01-tecnicas.qmd#catalogacion)
 
 ##### Participantes {.unnumbered .unlisted}
 
-* Jefe de Proyecto
+* [Jefe de Proyecto](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
 
 ### Actividad GPS 10: Finalización de la Tarea {#gps-10}
 
@@ -1365,7 +1365,7 @@ El Jefe de Proyecto, o el responsable del miembro, deberá comprobar que la tare
 ##### Participantes {.unnumbered .unlisted}
 
 * Equipo del Proyecto
-* Jefe de Proyecto
+* [Jefe de Proyecto](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
 
 ### Actividad GPS 11: ACTUALIZACIÓN DE LA PLANIFICACIÓN {#gps-11}
 
@@ -1477,11 +1477,11 @@ Partirá de la Planificación General del Proyecto aceptada en la actividad GPI 
 
 ##### Técnicas {.unnumbered .unlisted}
 
-* Planificación
+* [Planificación](../03-tecnicas/01-tecnicas.qmd#planificacion)
 
 ##### Participantes {.unnumbered .unlisted}
 
-* Jefe de Proyecto
+* [Jefe de Proyecto](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
 
 #### Tarea GPS 11.2: Obtención de la Extrapolación {#gps-11-2}
 
@@ -1504,7 +1504,7 @@ El seguimiento de un proyecto en un punto cualquiera de su desarrollo nos da la 
 
 ##### Participantes {.unnumbered .unlisted}
 
-* Jefe de Proyecto
+* [Jefe de Proyecto](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
 
 #### Tarea GPS 11.3: Elaboración del Informe de Seguimiento {#gps-11-3}
 
@@ -1532,11 +1532,11 @@ A partir de la información obtenida en las tareas anteriores, el Jefe de Proyec
 
 ##### Prácticas {.unnumbered .unlisted}
 
-* Catalogación
+* [Catalogación](../03-tecnicas/01-tecnicas.qmd#catalogacion)
 
 ##### Participantes {.unnumbered .unlisted}
 
-* Jefe de Proyecto
+* [Jefe de Proyecto](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
 
 ### Actividad GPS 12: Reuniones de Seguimiento {#gps-12}
 
@@ -1604,7 +1604,7 @@ Las explicaciones dadas por el Equipo del Proyecto servirán, en gran medida, pa
 
 ##### Participantes {.unnumbered .unlisted}
 
-* Jefe de Proyecto
+* [Jefe de Proyecto](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
 * Equipo del Proyecto
 
 ### Actividad GPS 13: Aceptación {#gps-13}
@@ -1674,7 +1674,7 @@ El Jefe de Proyecto debe verificar personalmente que los resultados de las activ
 ##### Participantes {.unnumbered .unlisted}
 
 * Equipo del Proyecto
-* Jefe de Proyecto
+* [Jefe de Proyecto](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
 
 ## Actividades de Finalización
 
@@ -1773,11 +1773,11 @@ A modo de ejemplo se propone incluir en el Histórico de Proyectos información 
 
 ##### Prácticas {.unnumbered .unlisted}
 
-* Catalogación
+* [Catalogación](../03-tecnicas/01-tecnicas.qmd#catalogacion)
 
 ##### Participantes {.unnumbered .unlisted}
 
-* Jefe de Proyecto
+* [Jefe de Proyecto](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
 
 #### Tarea GPF 1.2: Archivo de la Documentación de Gestión del Proyecto {#gpf-1-2}
 
@@ -1795,8 +1795,8 @@ Cuando el proyecto esté totalmente terminado y aceptado por el Cliente o Usuari
 
 ##### Prácticas {.unnumbered .unlisted}
 
-* Catalogación
+* [Catalogación](../03-tecnicas/01-tecnicas.qmd#catalogacion)
 
 ##### Participantes {.unnumbered .unlisted}
 
-* Jefe de Proyecto
+* [Jefe de Proyecto](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)

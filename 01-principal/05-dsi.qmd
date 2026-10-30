@@ -345,8 +345,8 @@ Por tanto, como resultado de esta tarea se actualiza el catálogo de requisitos 
 
 ##### Prácticas {.unnumbered .unlisted}
 
-* Sesiones de Trabajo
-* Catalogación
+* [Sesiones de Trabajo](../03-tecnicas/01-tecnicas.qmd#sesiones-de-trabajo)
+* [Catalogación](../03-tecnicas/01-tecnicas.qmd#catalogacion)
 
 ##### Participantes {.unnumbered .unlisted}
 
@@ -390,8 +390,8 @@ Se recomienda, según el nivel de especificación que se establezca en cada caso
 
 ##### Prácticas {.unnumbered .unlisted}
 
-* Sesiones de Trabajo
-* Catalogación
+* [Sesiones de Trabajo](../03-tecnicas/01-tecnicas.qmd#sesiones-de-trabajo)
+* [Catalogación](../03-tecnicas/01-tecnicas.qmd#catalogacion)
 
 ##### Participantes {.unnumbered .unlisted}
 
@@ -420,8 +420,8 @@ La información recogida en el catálogo se debe tener en cuenta en la elaboraci
 
 ##### Prácticas {.unnumbered .unlisted}
 
-* Sesiones de Trabajo
-* Catalogación
+* [Sesiones de Trabajo](../03-tecnicas/01-tecnicas.qmd#sesiones-de-trabajo)
+* [Catalogación](../03-tecnicas/01-tecnicas.qmd#catalogacion)
 
 ##### Participantes {.unnumbered .unlisted}
 
@@ -539,7 +539,7 @@ Para poder determinar la planificación de capacidades, es necesario conocer los
 
 ##### Prácticas {.unnumbered .unlisted}
 
-* Sesiones de Trabajo
+* [Sesiones de Trabajo](../03-tecnicas/01-tecnicas.qmd#sesiones-de-trabajo)
 * Diagrama de Representación
 
 ##### Participantes {.unnumbered .unlisted}
@@ -583,8 +583,8 @@ Asimismo, se definen los requisitos de operación para los distintos elementos d
 
 ##### Prácticas {.unnumbered .unlisted}
 
-* Sesiones de Trabajo
-* Catalogación
+* [Sesiones de Trabajo](../03-tecnicas/01-tecnicas.qmd#sesiones-de-trabajo)
+* [Catalogación](../03-tecnicas/01-tecnicas.qmd#catalogacion)
 
 ##### Participantes {.unnumbered .unlisted}
 
@@ -715,7 +715,7 @@ Los mecanismos genéricos de diseño son de aplicación tanto en la definición 
 
 ##### Prácticas {.unnumbered .unlisted}
 
-* Sesiones de Trabajo
+* [Sesiones de Trabajo](../03-tecnicas/01-tecnicas.qmd#sesiones-de-trabajo)
 
 ##### Participantes {.unnumbered .unlisted}
 
@@ -936,7 +936,7 @@ En aquellos casos en los que se realizan modificaciones significativas sobre la 
 ##### Prácticas {.unnumbered .unlisted}
 
 * Prototipado
-* Catalogación
+* [Catalogación](../03-tecnicas/01-tecnicas.qmd#catalogacion)
 
 ##### Participantes {.unnumbered .unlisted}
 
@@ -1329,7 +1329,7 @@ En esta tarea se realiza, en los casos que sea necesario y a partir de los resul
 
 ##### Prácticas {.unnumbered .unlisted}
 
-* Sesiones de Trabajo
+* [Sesiones de Trabajo](../03-tecnicas/01-tecnicas.qmd#sesiones-de-trabajo)
 
 ##### Participantes {.unnumbered .unlisted}
 
@@ -1555,7 +1555,7 @@ En el caso de que las modificaciones sean significativas en cuanto al formato o 
 
 ##### Prácticas {.unnumbered .unlisted}
 
-* Catalogación
+* [Catalogación](../03-tecnicas/01-tecnicas.qmd#catalogacion)
 * Prototipado
 
 ##### Participantes {.unnumbered .unlisted}
@@ -2101,7 +2101,7 @@ El objetivo de esta tarea es obtener la aceptación, por parte de las áreas de 
 
 ##### Participantes {.unnumbered .unlisted}
 
-* Jefe de Proyecto
+* [Jefe de Proyecto](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
 * Responsable de Operación
 * Responsable de Sistemas
 
@@ -2611,7 +2611,7 @@ El objetivo de esta tarea es completar la especificación del plan de migración
 
 ##### Participantes {.unnumbered .unlisted}
 
-* Jefe de Proyecto
+* [Jefe de Proyecto](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
 
 ### Actividad DSI 10: Especificación Técnica del Plan de Pruebas
 
@@ -2816,7 +2816,7 @@ Las verificaciones a realizar se especifican detallando:
 
 ##### Participantes {.unnumbered .unlisted}
 
-* Jefe de Proyecto
+* [Jefe de Proyecto](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
 * Analistas
 * Usuarios Expertos
 
@@ -2837,7 +2837,7 @@ En esta tarea se completa y especifica la planificación de las pruebas, determi
 
 ###### Participantes {.unnumbered .unlisted}
 
-* Jefe de Proyecto
+* [Jefe de Proyecto](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
 
 ### Actividad DSI 11: Establecimiento de Requisitos de Implantación
 
@@ -2929,8 +2929,8 @@ Para ello, es necesario definir, entre otros, los siguientes aspectos:
 
 ###### Prácticas {.unnumbered .unlisted}
 
-* Catalogación
-* Sesiones de Trabajo
+* [Catalogación](../03-tecnicas/01-tecnicas.qmd#catalogacion)
+* [Sesiones de Trabajo](../03-tecnicas/01-tecnicas.qmd#sesiones-de-trabajo)
 
 ##### Participantes {.unnumbered .unlisted}
 
@@ -2961,12 +2961,12 @@ Los requisitos de infraestructura e instalación hacen referencia a las necesida
 
 #####  Prácticas {.unnumbered .unlisted}
 
-* Catalogación
-* Sesiones de Trabajo
+* [Catalogación](../03-tecnicas/01-tecnicas.qmd#catalogacion)
+* [Sesiones de Trabajo](../03-tecnicas/01-tecnicas.qmd#sesiones-de-trabajo)
 
 ##### Participantes {.unnumbered .unlisted}
 
-* Jefe de Proyecto
+* [Jefe de Proyecto](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
 * Directores de Usuarios
 * Equipo de Soporte Técnico
 
@@ -3048,7 +3048,7 @@ En esta tarea se realiza la presentación del diseño del sistema de informació
 ##### Participantes {.unnumbered .unlisted}
 
 * Comité de Dirección
-* Jefe de Proyecto
+* [Jefe de Proyecto](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
 
 ## Participantes en las actividades del proceso DSI
 

@@ -780,7 +780,7 @@ Para obtener esta información es necesario llevar a cabo sesiones de trabajo co
 
 ##### Prácticas {.unnumbered .unlisted}
 
-* Sesiones de trabajo
+* [Sesiones de trabajo](../03-tecnicas/01-tecnicas.qmd#sesiones-de-trabajo)
 
 ##### Participantes {.unnumbered .unlisted}
 
@@ -811,7 +811,7 @@ Los resultados del análisis realizado en esta tarea son la base para la identif
 
 ##### Prácticas {.unnumbered .unlisted}
 
-* Sesiones de trabajo
+* [Sesiones de trabajo](../03-tecnicas/01-tecnicas.qmd#sesiones-de-trabajo)
 
 ##### Participantes {.unnumbered .unlisted}
 
@@ -841,7 +841,7 @@ Los criterios para asignar dichas prioridades deben ser definidos al comienzo de
 
 ##### Prácticas {.unnumbered .unlisted}
 
-* Catalogación
+* [Catalogación](../03-tecnicas/01-tecnicas.qmd#catalogacion)
 
 ##### Participantes {.unnumbered .unlisted}
 
@@ -959,8 +959,8 @@ La información relativa a los sistemas de información que dan actualmente sopo
 
 ##### Prácticas {.unnumbered .unlisted}
 
-* Catalogación
-* Sesiones de trabajo
+* [Catalogación](../03-tecnicas/01-tecnicas.qmd#catalogacion)
+* [Sesiones de trabajo](../03-tecnicas/01-tecnicas.qmd#sesiones-de-trabajo)
 
 ##### Participantes {.unnumbered .unlisted}
 
@@ -988,7 +988,7 @@ En función del tipo de sistema de información y de los objetivos de su estudio
 
 ##### Prácticas {.unnumbered .unlisted}
 
-* Sesiones de trabajo
+* [Sesiones de trabajo](../03-tecnicas/01-tecnicas.qmd#sesiones-de-trabajo)
 * Diagrama de Representación
 
 ##### Participantes {.unnumbered .unlisted}
@@ -1019,7 +1019,7 @@ Conviene señalar que esta valoración no se realiza en cuanto a cobertura de re
 
 ##### Prácticas {.unnumbered .unlisted}
 
-* Sesiones de trabajo
+* [Sesiones de trabajo](../03-tecnicas/01-tecnicas.qmd#sesiones-de-trabajo)
 * Impacto en la Organización
 
 ##### Participantes {.unnumbered .unlisted}
@@ -1157,7 +1157,7 @@ Por último y contando con la experiencia de los participantes en esta tarea, se
 ##### Prácticas {.unnumbered .unlisted}
 
 * Diagrama de Representación
-* Sesiones de trabajo
+* [Sesiones de trabajo](../03-tecnicas/01-tecnicas.qmd#sesiones-de-trabajo)
 
 ##### Participantes {.unnumbered .unlisted}
 
@@ -1251,7 +1251,7 @@ A continuación se determinan las posibles alternativas de infraestructura tecno
 ##### Prácticas {.unnumbered .unlisted}
 
 * Diagrama de Representación
-* Sesiones de trabajo
+* [Sesiones de trabajo](../03-tecnicas/01-tecnicas.qmd#sesiones-de-trabajo)
 
 ##### Participantes {.unnumbered .unlisted}
 
@@ -1405,7 +1405,7 @@ Las conclusiones obtenidas deben ser contrastadas y modificadas, si se estima co
 ###### Prácticas {.unnumbered .unlisted}
 
 * Impacto en la organización
-* Sesiones de trabajo
+* [Sesiones de trabajo](../03-tecnicas/01-tecnicas.qmd#sesiones-de-trabajo)
 
 ###### Participantes {.unnumbered .unlisted}
 
@@ -1597,7 +1597,7 @@ Se realiza la presentación de los resultados, manteniéndose a continuación se
 
 ##### Prácticas {.unnumbered .unlisted}
 
-* Sesiones de trabajo
+* [Sesiones de trabajo](../03-tecnicas/01-tecnicas.qmd#sesiones-de-trabajo)
 * Presentación
 
 ##### Participantes {.unnumbered .unlisted}
@@ -1633,7 +1633,7 @@ Se entrega la propuesta final, y se solicita formalmente al Comité de Direcció
 
 ##### Prácticas {.unnumbered .unlisted}
 
-* Sesiones de trabajo
+* [Sesiones de trabajo](../03-tecnicas/01-tecnicas.qmd#sesiones-de-trabajo)
 
 ##### Participantes {.unnumbered .unlisted}
 

@@ -85,7 +85,7 @@ El objetivo de esta tarea es identificar la necesidad de gestionar la configurac
 ##### Participantes {.unnumbered .unlisted}
 
 * Responsable de Gestión de Configuración
-* Jefe de Proyecto
+* [Jefe de Proyecto](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
 * Equipo de Desarrollo
 
 ### Actividad EVS-GC 2: Establecimiento del Plan de Gestión de la Configuración {#evs-gc-2}
@@ -165,7 +165,7 @@ Los aspectos que debe contemplar el plan son:
 ##### Participantes {.unnumbered .unlisted}
 
 * Responsable de Gestión de Configuración
-* Jefe de Proyecto
+* [Jefe de Proyecto](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
 * Equipo de Desarrollo
 
 #### Tarea EVS-GC 2.2: Especificación del Entorno Tecnológico para la Gestión de Configuración {#evs-gc-2-2}
@@ -326,7 +326,7 @@ Una vez que el sistema de información está implantado y aceptado, antes de su 
 
 ##### Participantes {.unnumbered .unlisted}
 
-* Jefe de Proyecto
+* [Jefe de Proyecto](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
 
 ## Mantenimiento del Sistema de Información
 

@@ -137,13 +137,13 @@ Si el sistema objeto de estudio se encuentra en el ámbito de un Plan de Sistema
 
 ##### Prácticas {.unnumbered .unlisted}
 
-* Catalogación
-* Sesiones de trabajo
+* [Catalogación](../03-tecnicas/01-tecnicas.qmd#catalogacion)
+* [Sesiones de trabajo](../03-tecnicas/01-tecnicas.qmd#sesiones-de-trabajo)
 
 ##### Participantes {.unnumbered .unlisted}
 
 * Comité de Dirección
-* Jefe de Proyecto
+* [Jefe de Proyecto](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
 * Analistas
 
 #### Tarea EVS 1.2: Identificación del Alcance del Sistema
@@ -180,13 +180,13 @@ Una vez establecido el alcance, se identifican las unidades organizativas afecta
 
 ##### Prácticas {.unnumbered .unlisted}
 
-* Catalogación
-* Sesiones de trabajo
+* [Catalogación](../03-tecnicas/01-tecnicas.qmd#catalogacion)
+* [Sesiones de trabajo](../03-tecnicas/01-tecnicas.qmd#sesiones-de-trabajo)
 
 ##### Participantes {.unnumbered .unlisted}
 
 * Comité de Dirección
-* Jefe de Proyecto
+* [Jefe de Proyecto](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
 * Analistas
 
 #### Tarea EVS 1.3: Especificación del Alcance del EVS
@@ -215,13 +215,13 @@ Debe comunicarse el plan de trabajo a los usuarios identificados como implicados
 
 ##### Prácticas {.unnumbered .unlisted}
 
-* Catalogación
-* Sesiones de trabajo
+* [Catalogación](../03-tecnicas/01-tecnicas.qmd#catalogacion)
+* [Sesiones de trabajo](../03-tecnicas/01-tecnicas.qmd#sesiones-de-trabajo)
 
 ##### Participantes {.unnumbered .unlisted}
 
 * Comité de Dirección
-* Jefe de Proyecto
+* [Jefe de Proyecto](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
 * Analistas
 
 ### Actividad EVS 2: Estudio de la Situación Actual
@@ -382,7 +382,7 @@ La información relativa a los sistemas de información que se decida analizar, 
 
 ##### Participantes {.unnumbered .unlisted}
 
-* Jefe de Proyecto
+* [Jefe de Proyecto](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
 * Analistas
 * Directores de Usuarios
 
@@ -404,12 +404,12 @@ En función del nivel de detalle establecido para el estudio de la situación ac
 
 ##### Prácticas {.unnumbered .unlisted}
 
-* Catalogación
+* [Catalogación](../03-tecnicas/01-tecnicas.qmd#catalogacion)
 * Sesiones de Trabajo
 
 ##### Participantes {.unnumbered .unlisted}
 
-* Jefe de Proyecto
+* [Jefe de Proyecto](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
 * Directores de Usuarios
 
 #### Tarea EVS 2.3: Descripción de los Sistemas de Información Existentes
@@ -586,11 +586,11 @@ Con este fin, se recoge información sobre los estándares y procedimientos que 
 
 ##### Prácticas {.unnumbered .unlisted}
 
-* Catalogación
+* [Catalogación](../03-tecnicas/01-tecnicas.qmd#catalogacion)
 
 ##### Participantes {.unnumbered .unlisted}
 
-* Jefe de Proyecto
+* [Jefe de Proyecto](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
 * Analistas
 * Usuarios Expertos
 
@@ -622,7 +622,7 @@ Una vez establecidos los puntos anteriores, se planifican las sesiones de trabaj
 
 ##### Participantes {.unnumbered .unlisted}
 
-* Jefe de Proyecto
+* [Jefe de Proyecto](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
 * Analistas
 * Usuarios Expertos
 
@@ -645,11 +645,11 @@ Se incluirán también requisitos relativos a distribución geográfica y entorn
 
 ##### Prácticas {.unnumbered .unlisted}
 
-* Catalogación
+* [Catalogación](../03-tecnicas/01-tecnicas.qmd#catalogacion)
 
 ##### Participantes {.unnumbered .unlisted}
 
-* Jefe de Proyecto
+* [Jefe de Proyecto](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
 * Analistas
 * Usuarios Expertos
 
@@ -773,7 +773,7 @@ Dependiendo del alcance del sistema y las posibles opciones, puede ser convenien
 
 ##### Participantes {.unnumbered .unlisted}
 
-* Jefe de Proyecto
+* [Jefe de Proyecto](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
 * Analistas
 * Técnicos de Sistema
 
@@ -830,12 +830,12 @@ Si la alternativa incluye una solución basada en producto se analiza su evoluci
 
 ##### Prácticas {.unnumbered .unlisted}
 
-* Catalogación
+* [Catalogación](../03-tecnicas/01-tecnicas.qmd#catalogacion)
 * Diagrama de Representación
 
 ##### Participantes {.unnumbered .unlisted}
 
-* Jefe de Proyecto
+* [Jefe de Proyecto](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
 * Analistas
 * Usuarios Expertos
 * Técnicos de Sistemas
@@ -952,7 +952,7 @@ Para cada alternativa de solución propuesta, se valora el impacto en la organiz
 
 ##### Participantes {.unnumbered .unlisted}
 
-* Jefe de Proyecto
+* [Jefe de Proyecto](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
 * Analistas
 
 #### Tarea EVS 5.2: Estudio de los Riesgos
@@ -977,7 +977,7 @@ Para cada alternativa se seleccionan los factores de situación que habrá que c
 
 ##### Participantes {.unnumbered .unlisted}
 
-* Jefe de Proyecto
+* [Jefe de Proyecto](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
 * Analistas
 
 #### Tarea EVS 5.3: Planificación de Alternativas
@@ -1005,11 +1005,11 @@ De esta manera se garantiza el cumplimiento del plan de trabajo en los restantes
 
 ##### Técnicas {.unnumbered .unlisted}
 
-* Planificación
+* [Planificación](../03-tecnicas/01-tecnicas.qmd#planificacion)
 
 ##### Participantes {.unnumbered .unlisted}
 
-* Jefe de Proyecto
+* [Jefe de Proyecto](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
 * Analistas
 
 ### Actividad EVS 6: Selección de la Solución
@@ -1118,7 +1118,7 @@ Se efectúa la convocatoria de la presentación de las distintas alternativas pr
 
 ##### Participantes {.unnumbered .unlisted}
 
-* Jefe de Proyecto
+* [Jefe de Proyecto](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
 
 #### Tarea EVS 6.2: Evaluación de las Alternativas y Selección
 
@@ -1171,7 +1171,7 @@ Una vez recibida la confirmación de qué alternativas van a ser presentadas par
 ##### Participantes {.unnumbered .unlisted}
 
 * Comité de Dirección
-* Jefe de Proyecto
+* [Jefe de Proyecto](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
 * Analistas
 
 #### Tarea EVS 6.3: Aprobación de la Solución
@@ -1192,7 +1192,7 @@ El Comité de Dirección da su aprobación formal o determina la inviabilidad de
 ##### Participantes {.unnumbered .unlisted}
 
 * Comité de Dirección
-* Jefe de Proyecto
+* [Jefe de Proyecto](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
 
 ## Participantes en las actividades del proceso EVS {.unnumbered .unlisted}
 

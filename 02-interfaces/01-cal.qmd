@@ -160,16 +160,16 @@ Se constituye el equipo de trabajo inicial necesario para determinar y valorar l
 
 ##### Técnicas {.unnumbered .unlisted}
 
-* Planificación
+* [Planificación](../03-tecnicas/01-tecnicas.qmd#planificacion)
 
 ##### Prácticas {.unnumbered .unlisted}
 
-* Sesiones de Trabajo
+* [Sesiones de Trabajo](../03-tecnicas/01-tecnicas.qmd#sesiones-de-trabajo)
 
 ##### Participantes {.unnumbered .unlisted}
 
 * Grupo de Aseguramiento de la Calidad
-* Jefe de Proyecto
+* [Jefe de Proyecto](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
 
 #### Tarea EVS-CAL 1.2: Determinación de los Sistemas de Información objeto de Aseguramiento de Calidad {#evs-cal-1-2}
 
@@ -196,12 +196,12 @@ Para cada alternativa de solución propuesta se determina qué sistemas de inf
 
 ##### Prácticas {.unnumbered .unlisted}
 
-* Sesiones de Trabajo
+* [Sesiones de Trabajo](../03-tecnicas/01-tecnicas.qmd#sesiones-de-trabajo)
 
 ##### Participantes {.unnumbered .unlisted}
 
 * Grupo de Aseguramiento de la Calidad
-* Jefe de Proyecto
+* [Jefe de Proyecto](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
 
 #### Tarea EVS-CAL 1.3: Identificación de las Propiedades de Calidad {#evs-cal-1-3}
 
@@ -220,12 +220,12 @@ Una vez identificados para cada alternativa propuesta los sistemas de informacio
 
 ##### Prácticas {.unnumbered .unlisted}
 
-* Sesiones de Trabajo
+* [Sesiones de Trabajo](../03-tecnicas/01-tecnicas.qmd#sesiones-de-trabajo)
 
 ##### Participantes {.unnumbered .unlisted}
 
 * Grupo de Aseguramiento de la Calidad
-* Jefe de Proyecto
+* [Jefe de Proyecto](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
 
 ### Actividad EVS-CAL 2: Establecimiento del Plan de Aseguramiento de Calidad {#evs-cal-2}
 
@@ -324,7 +324,7 @@ Se determina la necesidad de incluir un plan de aseguramiento de calidad en las 
 
 ##### Prácticas {.unnumbered .unlisted}
 
-* Sesiones de Trabajo
+* [Sesiones de Trabajo](../03-tecnicas/01-tecnicas.qmd#sesiones-de-trabajo)
 
 ##### Participantes {.unnumbered .unlisted}
 
@@ -359,7 +359,7 @@ En algunos casos puede ser necesario reflejar en el plan de aseguramiento de cal
 
 ##### Prácticas {.unnumbered .unlisted}
 
-* Sesiones de Trabajo
+* [Sesiones de Trabajo](../03-tecnicas/01-tecnicas.qmd#sesiones-de-trabajo)
 
 ##### Participantes {.unnumbered .unlisted}
 
@@ -390,7 +390,7 @@ Este coste aporta la información necesaria para poder valorar globalmente cada
 ##### Participantes {.unnumbered .unlisted}
 
 * Grupo de Aseguramiento de la Calidad
-* Jefe de Proyecto
+* [Jefe de Proyecto](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
 
 ### Actividad EVS-CAL 3: Adecuación del Plan de Aseguramiento de Calidad a la Solución {#evs-cal-3}
 
@@ -457,12 +457,12 @@ Una vez ponderadas las dificultades económicas, técnicas, etc. que surjan co
 
 ##### Prácticas {.unnumbered .unlisted}
 
-* Sesiones de Trabajo
+* [Sesiones de Trabajo](../03-tecnicas/01-tecnicas.qmd#sesiones-de-trabajo)
 
 ##### Participantes {.unnumbered .unlisted}
 
 * Grupo de Aseguramiento de la Calidad
-* Jefe de Proyecto
+* [Jefe de Proyecto](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
 
 #### Tarea EVS-CAL 3.2 {#evs-cal-3-2}
 
@@ -553,12 +553,12 @@ Se especifican de forma clara y detallada:
 
 ##### Prácticas {.unnumbered .unlisted}
 
-* Sesiones de Trabajo
+* [Sesiones de Trabajo](../03-tecnicas/01-tecnicas.qmd#sesiones-de-trabajo)
 
 ##### Participantes {.unnumbered .unlisted}
 
 * Grupo de Aseguramiento de la Calidad
-* Jefe de Proyecto
+* [Jefe de Proyecto](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
 
 ### Actividad ASI-CAL 2: Especificación Detallada del Plan de Aseguramiento de Calidad {#asi-cal-2}
 
@@ -621,12 +621,12 @@ Una vez definido el plan de aseguramiento de calidad, toda la información resu
 
 ##### Prácticas {.unnumbered .unlisted}
 
-* Sesiones de Trabajo
+* [Sesiones de Trabajo](../03-tecnicas/01-tecnicas.qmd#sesiones-de-trabajo)
 
 ##### Participantes {.unnumbered .unlisted}
 
 * Grupo de Aseguramiento de la Calidad
-* Jefe de Proyecto
+* [Jefe de Proyecto](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
 
 ### Actividad ASI-CAL 3: Revisión del Análisis de Consistencia {#asi-cal-3}
 

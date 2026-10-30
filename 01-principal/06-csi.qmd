@@ -632,7 +632,7 @@ El objetivo de esta actividad es analizar los resultados de las pruebas del sist
 ##### Participantes {.unlisted .unnumbered}
 
 * Analistas
-* Jefe de Proyecto
+* [Jefe de Proyecto](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
 
 ### Actividad CSI 6: Elaboración de los Manuales de Usuario
 
@@ -1013,7 +1013,7 @@ En esta tarea se recopilan los productos del sistema de información y se presen
 ##### Participantes {.unlisted .unnumbered}
 
 * Comité de Seguimiento
-* Jefe de Proyecto
+* [Jefe de Proyecto](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
 
 ## Participantes en las Actividades del Proceso CSI
 

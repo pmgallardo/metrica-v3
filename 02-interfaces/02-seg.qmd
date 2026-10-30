@@ -151,7 +151,7 @@ El Responsable de Seguridad debe estudiar si es necesario supervisar la segurida
 
 ##### Prácticas {.unnumbered .unlisted}
 
-* Sesiones de Trabajo
+* [Sesiones de Trabajo](../03-tecnicas/01-tecnicas.qmd#sesiones-de-trabajo)
 
 ##### Participantes {.unnumbered .unlisted}
 
@@ -178,7 +178,7 @@ El responsable de seguridad determina la organización y planificación necesari
 ##### Prácticas {.unnumbered .unlisted}
 
 * Revisión
-* Sesiones de Trabajo
+* [Sesiones de Trabajo](../03-tecnicas/01-tecnicas.qmd#sesiones-de-trabajo)
 
 ##### Participantes {.unnumbered .unlisted}
 
@@ -271,7 +271,7 @@ Para la realización de esta tarea se puede tomar como referencia MAGERIT, Metod
 ##### Prácticas {.unnumbered .unlisted}
 
 * Revisión
-* Sesiones de Trabajo
+* [Sesiones de Trabajo](../03-tecnicas/01-tecnicas.qmd#sesiones-de-trabajo)
 
 ##### Participantes {.unnumbered .unlisted}
 
@@ -298,7 +298,7 @@ Una vez se dispone de la alternativa de la arquitectura tecnológica seleccionad
 ##### Prácticas {.unnumbered .unlisted}
 
 * Revisión
-* Sesiones de Trabajo
+* [Sesiones de Trabajo](../03-tecnicas/01-tecnicas.qmd#sesiones-de-trabajo)
 
 ##### Participantes {.unnumbered .unlisted}
 
@@ -356,7 +356,7 @@ Se estudia el Plan de Acción establecido en el Plan de Sistemas de Información
 ##### Prácticas {.unnumbered .unlisted}
 
 * Revisión
-* Sesiones de Trabajo
+* [Sesiones de Trabajo](../03-tecnicas/01-tecnicas.qmd#sesiones-de-trabajo)
 
 ##### Participantes {.unnumbered .unlisted}
 
@@ -421,7 +421,7 @@ El responsable de seguridad estudia los productos generados durante el proceso d
 ##### Prácticas {.unnumbered .unlisted}
 
 * Revisión
-* Catalogación
+* [Catalogación](../03-tecnicas/01-tecnicas.qmd#catalogacion)
 
 ##### Participantes {.unnumbered .unlisted}
 
@@ -490,12 +490,12 @@ El Responsable de Seguridad analiza la necesidad de supervisar la seguridad (niv
 
 ##### Prácticas {.unnumbered .unlisted}
 
-* Sesiones de Trabajo
+* [Sesiones de Trabajo](../03-tecnicas/01-tecnicas.qmd#sesiones-de-trabajo)
 
 ##### Participantes {.unnumbered .unlisted}
 
 * Responsable de Seguridad
-* Jefe de Proyecto
+* [Jefe de Proyecto](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
 
 ### Actividad EVS-SEG 2: Selección del Equipo de Seguridad {#evs-seg-2}
 
@@ -554,7 +554,7 @@ Deben realizarse las sesiones de trabajo necesarias para especificar las labores
 ##### Prácticas {.unnumbered .unlisted}
 
 * Revisión
-* Sesiones de Trabajo
+* [Sesiones de Trabajo](../03-tecnicas/01-tecnicas.qmd#sesiones-de-trabajo)
 
 ##### Participantes {.unnumbered .unlisted}
 
@@ -619,8 +619,8 @@ El Equipo de Seguridad estudia la legislación, normas y procedimientos referent
 
 ##### Prácticas {.unnumbered .unlisted}
 
-* Sesiones de Trabajo
-* Catalogación
+* [Sesiones de Trabajo](../03-tecnicas/01-tecnicas.qmd#sesiones-de-trabajo)
+* [Catalogación](../03-tecnicas/01-tecnicas.qmd#catalogacion)
 
 ##### Participantes {.unnumbered .unlisted}
 
@@ -692,7 +692,7 @@ El Equipo de Seguridad estudia la información sobre las alternativas de soluci�
 ##### Prácticas {.unnumbered .unlisted}
 
 * Revisión
-* Sesiones de Trabajo
+* [Sesiones de Trabajo](../03-tecnicas/01-tecnicas.qmd#sesiones-de-trabajo)
 
 ##### Participantes {.unnumbered .unlisted}
 
@@ -763,7 +763,7 @@ Partiendo de una especificación de las principales características de la soluc
 
 ##### Prácticas {.unnumbered .unlisted}
 
-* Catalogación
+* [Catalogación](../03-tecnicas/01-tecnicas.qmd#catalogacion)
 
 ##### Participantes {.unnumbered .unlisted}
 
@@ -830,12 +830,12 @@ El Responsable de Seguridad, el Jefe de Proyecto y el Comité de Seguimiento est
 ##### Prácticas {.unnumbered .unlisted}
 
 * Revisión
-* Catalogación
+* [Catalogación](../03-tecnicas/01-tecnicas.qmd#catalogacion)
 
 ##### Participantes {.unnumbered .unlisted}
 
 * Responsable de Seguridad
-* Jefe de Proyecto
+* [Jefe de Proyecto](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
 * Comité de Seguimiento
 
 ## Análisis del Sistema de Información {#asi-seg}
@@ -906,13 +906,13 @@ El Equipo de Seguridad estudia la necesidad de supervisar la seguridad (niveles 
 
 ##### Prácticas {.unnumbered .unlisted}
 
-* Sesiones de Trabajo
+* [Sesiones de Trabajo](../03-tecnicas/01-tecnicas.qmd#sesiones-de-trabajo)
 
 ##### Participantes {.unnumbered .unlisted}
 
 * Equipo de Seguridad
 * Responsable de Seguridad
-* Jefe de Proyecto
+* [Jefe de Proyecto](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
 
 ### Actividad ASI-SEG 2: Descripción de las Funciones y Mecanismos de Seguridad {#asi-seg-2}
 
@@ -979,7 +979,7 @@ Las funciones y mecanismos adicionales de seguridad definidos en esta actividad 
 
 ##### Prácticas {.unnumbered .unlisted}
 
-* Catalogación
+* [Catalogación](../03-tecnicas/01-tecnicas.qmd#catalogacion)
 
 ##### Participantes {.unnumbered .unlisted}
 
@@ -1043,13 +1043,13 @@ Partiendo del plan de pruebas del Sistema de Información, se incluirán en las 
 ##### Prácticas {.unnumbered .unlisted}
 
 * Revisión
-* Sesiones de Trabajo
+* [Sesiones de Trabajo](../03-tecnicas/01-tecnicas.qmd#sesiones-de-trabajo)
 
 ##### Participantes {.unnumbered .unlisted}
 
 * Responsable de Seguridad
 * Equipo de Seguridad del Proyecto
-* Jefe de Proyecto
+* [Jefe de Proyecto](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
 
 
 ### Actividad ASI-SEG 4: Catalogación de los Productos Generados Durante el Proceso de Análisis del Sistema de Información {#asi-seg-4}
@@ -1190,13 +1190,13 @@ El Responsable de Seguridad y el Equipo de Seguridad estudian, partiendo de las 
 
 ##### Prácticas {.unnumbered .unlisted}
 
-* Sesiones de Trabajo
+* [Sesiones de Trabajo](../03-tecnicas/01-tecnicas.qmd#sesiones-de-trabajo)
 
 ##### Participantes {.unnumbered .unlisted}
 
 * Equipo de Seguridad
 * Responsable de Seguridad
-* Jefe de Proyecto
+* [Jefe de Proyecto](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
 
 ### Actividad DSI-SEG 2: Especificación de Requisitos de Seguridad del Entorno Tecnológico {#dsi-seg-2}
 
@@ -1294,7 +1294,7 @@ El Equipo de Seguridad estudia las condiciones que debe cumplir el entorno de Co
 
 ##### Prácticas {.unnumbered .unlisted}
 
-* Sesiones de Trabajo
+* [Sesiones de Trabajo](../03-tecnicas/01-tecnicas.qmd#sesiones-de-trabajo)
 
 ##### Participantes {.unnumbered .unlisted}
 
@@ -1421,12 +1421,12 @@ El Responsable de Seguridad, el Jefe de Proyecto y el Comité de Seguimiento est
 ##### Prácticas {.unnumbered .unlisted}
 
 * Revisión
-* Catalogación
+* [Catalogación](../03-tecnicas/01-tecnicas.qmd#catalogacion)
 
 ##### Participantes {.unnumbered .unlisted}
 
 * Responsable de Seguridad
-* Jefe de Proyecto
+* [Jefe de Proyecto](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
 * Comité de Seguimiento
 
 ## Construccion del Sistema de Información {#csi-seg}
@@ -1494,13 +1494,13 @@ El Equipo de Seguridad analiza si es necesario supervisar la seguridad (niveles 
 
 ##### Prácticas {.unnumbered .unlisted}
 
-* Sesiones de Trabajo
+* [Sesiones de Trabajo](../03-tecnicas/01-tecnicas.qmd#sesiones-de-trabajo)
 
 ##### Participantes {.unnumbered .unlisted}
 
 * Equipo de Seguridad
 * Responsable de Seguridad
-* Jefe de Proyecto
+* [Jefe de Proyecto](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
 
 ### Actividad CSI-SEG 2: Evaluación de los Resultados de Pruebas de Seguridad {#csi-seg-2}
 
@@ -1550,7 +1550,7 @@ El Equipo de Seguridad estudia los resultados obtenidos en las pruebas de seguri
 
 ##### Prácticas {.unnumbered .unlisted}
 
-* Sesiones de trabajo
+* [Sesiones de trabajo](../03-tecnicas/01-tecnicas.qmd#sesiones-de-trabajo)
 
 ##### Participantes {.unnumbered .unlisted}
 
@@ -1605,13 +1605,13 @@ En esta tarea se definen las pautas que deben seguir los grupos de usuarios en m
 
 * Plan de Formación de Seguridad
 
-Técnicas
+##### Técnicas {.unnumbered .unlisted}
 
-* Planificación
+* [Planificación](../03-tecnicas/01-tecnicas.qmd#planificacion)
 
 ##### Prácticas {.unnumbered .unlisted}
 
-* Sesiones de Trabajo
+* [Sesiones de Trabajo](../03-tecnicas/01-tecnicas.qmd#sesiones-de-trabajo)
 
 ##### Participantes {.unnumbered .unlisted}
 
@@ -1678,12 +1678,12 @@ El Responsable de Seguridad, el Jefe de Proyecto y el Comité de Seguimiento est
 ##### Prácticas {.unnumbered .unlisted}
 
 * Revisión
-* Catalogación
+* [Catalogación](../03-tecnicas/01-tecnicas.qmd#catalogacion)
 
 ##### Participantes {.unnumbered .unlisted}
 
 * Responsable de Seguridad
-* Jefe de Proyecto
+* [Jefe de Proyecto](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
 * Comité de Seguimiento
 
 ## Implantación y Aceptación del Sistema {#ias-seg}
@@ -1751,13 +1751,13 @@ El Equipo de Seguridad analiza la necesidad de supervisar la seguridad (niveles 
 
 ##### Prácticas {.unnumbered .unlisted}
 
-* Sesiones de Trabajo
+* [Sesiones de Trabajo](../03-tecnicas/01-tecnicas.qmd#sesiones-de-trabajo)
 
 ##### Participantes {.unnumbered .unlisted}
 
 * Equipo de Seguridad
 * Responsable de Seguridad
-* Jefe de Proyecto
+* [Jefe de Proyecto](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
 
 ### Actividad IAS-SEG 2: Revisión de Medidas de Seguridad del Entorno de Operación {#ias-seg-2}
 
@@ -1805,7 +1805,7 @@ En la preparación de la instalación (IAS 3.1) se comprueba la disponibilidad d
 
 ##### Prácticas {.unnumbered .unlisted}
 
-* Sesiones de Trabajo
+* [Sesiones de Trabajo](../03-tecnicas/01-tecnicas.qmd#sesiones-de-trabajo)
 
 ##### Participantes {.unnumbered .unlisted}
 
@@ -1858,7 +1858,7 @@ El Equipo de Seguridad estudia los resultados obtenidos en las pruebas de seguri
 
 ##### Prácticas {.unnumbered .unlisted}
 
-* Sesiones de trabajo
+* [Sesiones de trabajo](../03-tecnicas/01-tecnicas.qmd#sesiones-de-trabajo)
 
 ##### Participantes {.unnumbered .unlisted}
 
@@ -1924,12 +1924,12 @@ El Responsable de Seguridad, el Jefe de Proyecto y el Comité de Seguimiento est
 ##### Prácticas {.unnumbered .unlisted}
 
 * Revisión
-* Catalogación
+* [Catalogación](../03-tecnicas/01-tecnicas.qmd#catalogacion)
 
 ##### Participantes {.unnumbered .unlisted}
 
 * Responsable de Seguridad
-* Jefe de Proyecto
+* [Jefe de Proyecto](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
 * Comité de Seguimiento
 
 ### Actividad IAS-SEG 5: Revisión de Medidas de Seguridad en el Entorno de Producción {#ias-seg-5}
@@ -1980,7 +1980,7 @@ Deberá tenerse en cuenta el control y registro de incidentes, tanto provocados 
 
 ##### Prácticas {.unnumbered .unlisted}
 
-* Sesiones de Trabajo
+* [Sesiones de Trabajo](../03-tecnicas/01-tecnicas.qmd#sesiones-de-trabajo)
 
 ##### Participantes {.unnumbered .unlisted}
 
@@ -2049,7 +2049,7 @@ El Responsable de Seguridad, junto con el Equipo de Seguridad, debe estudiar si 
 
 ##### Prácticas {.unnumbered .unlisted}
 
-* Sesiones de Trabajo
+* [Sesiones de Trabajo](../03-tecnicas/01-tecnicas.qmd#sesiones-de-trabajo)
 
 ##### Participantes {.unnumbered .unlisted}
 
@@ -2131,7 +2131,7 @@ Las peticiones de cambio originadas por problemas de seguridad deben tenerse en 
 
 ##### Prácticas {.unnumbered .unlisted}
 
-* Catalogación
+* [Catalogación](../03-tecnicas/01-tecnicas.qmd#catalogacion)
 
 ##### Participantes {.unnumbered .unlisted}
 
@@ -2162,7 +2162,7 @@ Se establecen los mecanismos de seguridad que implementan esas funciones.
 
 ##### Prácticas {.unnumbered .unlisted}
 
-* Catalogación
+* [Catalogación](../03-tecnicas/01-tecnicas.qmd#catalogacion)
 
 ##### Participantes {.unnumbered .unlisted}
 
@@ -2229,9 +2229,9 @@ El Responsable de Seguridad y el Jefe de Proyecto estudian los productos generad
 ##### Prácticas {.unnumbered .unlisted}
 
 * Revisión
-* Catalogación
+* [Catalogación](../03-tecnicas/01-tecnicas.qmd#catalogacion)
 
 ##### Participantes {.unnumbered .unlisted}
 
 * Responsable de Seguridad
-* Jefe de Proyecto
+* [Jefe de Proyecto](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
