@@ -7,10 +7,14 @@ date: "2000-01-31"
 date-modified: today
 date-format: "DD/MM/YYYY"
 
+execute:
+  # Regenera fichero solo si ha habido cambios
+  freeze: auto
+
 book:
   title: "Métrica v.3"
   author: "Ministerio de Administraciones Públicas"
-  favicon: images/favicon32.png
+  favicon: images/favicon192.png
     
   site-url: https://pmgallardo.github.io/metrica-v3/
   repo-url: https://github.com/pmgallardo/metrica-v3
