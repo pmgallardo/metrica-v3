@@ -998,7 +998,7 @@ En función del tipo de sistema de información y de los objetivos de su estudio
 * Usuarios Expertos
 * Equipo del Proyecto
 * Equipo de Soporte Técnico
-* Responsable de Mantenimiento
+* [Responsable de Mantenimiento](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
 
 #### Tarea PSI 5.3: Valoración de los Sistemas de Información Actuales {#psi-5-3}
 
