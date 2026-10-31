@@ -402,9 +402,11 @@ ul.task-list li input[type="checkbox"] {
 <p>En la actividad Identificación de Subsistemas de Análisis (ASI 3), se estructura el sistema de información en subsistemas de análisis, para facilitar la especificación de los distintos modelos y la traza de requisitos.</p>
 <p>En paralelo, se generan los distintos modelos que sirven de base para el diseño. En el caso de análisis estructurado, se procede a la elaboración y descripción detallada del modelo de datos y de procesos, y en el caso de un análisis orientado a objetos, se elaboran el modelo de clases y el de interacción de objetos, mediante el análisis de los casos de uso. Se especifican, asimismo, todas las interfaces entre el sistema y el usuario, tales como formatos de pantallas, diálogos, formatos de informes y formularios de entrada.</p>
 <p>En la actividad Análisis de Consistencia y Especificación de Requisitos (ASI 9), se realiza la verificación y validación de los modelos, con el fin de asegurar que son:</p>
-<pre><code>Completos, puesto que cada modelo obtenido contiene toda la información necesaria recogida en el catálogo de requisitos.
-Consistentes, ya que cada modelo es coherente con el resto de los modelos.
-Correctos, dado que cada modelo sigue unos criterios de calidad predeterminados en relación a la técnica utilizada, calidad de diagramas, elección de nombres, normas de calidad, etc.).</code></pre>
+<ul>
+<li>Completos, puesto que cada modelo obtenido contiene toda la información necesaria recogida en el catálogo de requisitos.</li>
+<li>Consistentes, ya que cada modelo es coherente con el resto de los modelos.</li>
+<li>Correctos, dado que cada modelo sigue unos criterios de calidad predeterminados en relación a la técnica utilizada, calidad de diagramas, elección de nombres, normas de calidad, etc.).</li>
+</ul>
 <p>En la actividad Especificación del Plan de Pruebas (ASI 10), se establece el marco general del plan de pruebas, iniciándose su especificación, que se completará en el proceso Diseño del Sistema de Información (DSI).</p>
 <p>La participación activa de los usuarios es una condición imprescindible para el análisis del sistema de información, ya que dicha participación constituye una garantía de que los requisitos identificados son comprendidos e incorporados al sistema y, por tanto, de que éste será aceptado. Para facilitar la colaboración de los usuarios, se pueden utilizar técnicas interactivas, como diseño de diálogos y prototipos, que permiten al usuario familiarizarse con el nuevo sistema y colaborar en la construcción y perfeccionamiento del mismo.</p>
 <p>En el siguiente gráfico se muestra la relación de actividades del proceso Análisis del Sistema de Información, tanto para desarrollos estructurados como para desarrollos orientados a objetos, distinguiendo las que se pueden realizar en paralelo de aquellas que han de realizarse secuencialmente.</p>
@@ -516,78 +518,98 @@ Correctos, dado que cada modelo sigue unos criterios de calidad predeterminados 
 <p>A medida que se van generando los productos anteriores, se recomienda la definición de un glosario de términos del ámbito de negocio, con el fin de conseguir una mayor precisión en la especificación del sistema de información. El glosario es un catálogo de términos general y común a todos los procesos, y susceptible de ser entrada o salida en cualquier tarea, de modo que por sencillez en las restantes tareas se omite la referencia al mismo.</p>
 <p>Para obtener esta información es necesario llevar a cabo sesiones de trabajo con los usuarios responsables del sistema de información que se está analizando. Productos</p>
 <p>De entrada</p>
-<pre><code>Descripción de la Solución (EVS 6.2)
-Catálogo de requisitos (EVS 6.2)</code></pre>
+<ul>
+<li>Descripción de la Solución (EVS 6.2)</li>
+<li>Catálogo de requisitos (EVS 6.2)</li>
+</ul>
 <p>De salida</p>
-<pre><code>Catálogo de Requisitos
-Glosario
-En Análisis Estructurado:
-Contexto del Sistema
-Modelo Conceptual de Datos
-En Análisis Orientado a Objetos:
-Modelo de Negocio
-Modelo de Dominio</code></pre>
+<ul>
+<li>Catálogo de Requisitos</li>
+<li>Glosario En Análisis Estructurado:</li>
+<li>Contexto del Sistema</li>
+<li>Modelo Conceptual de Datos En Análisis Orientado a Objetos:</li>
+<li>Modelo de Negocio</li>
+<li>Modelo de Dominio</li>
+</ul>
 <p>Técnicas</p>
-<pre><code>Diagrama de Flujo de Datos
-Modelo Entidad / Relación extendido
-Diagrama de Clases
-Casos de Uso</code></pre>
+<ul>
+<li>Diagrama de Flujo de Datos</li>
+<li>Modelo Entidad / Relación extendido</li>
+<li>Diagrama de Clases</li>
+<li>Casos de Uso</li>
+</ul>
 <p>Prácticas</p>
-<pre><code>Sesiones de Trabajo
-Catalogación</code></pre>
+<ul>
+<li>Sesiones de Trabajo</li>
+<li>Catalogación</li>
+</ul>
 <p>Participantes</p>
-<pre><code>Jefe de Proyecto
-Analistas
-Directores de los Usuarios</code></pre>
+<ul>
+<li>Jefe de Proyecto</li>
+<li>Analistas</li>
+<li>Directores de los Usuarios</li>
+</ul>
 </section>
 <section id="tarea-asi-1.2-identificación-del-entorno-tecnológico" class="level4" data-number="4.1.1.2">
 <h4 data-number="4.1.1.2" class="anchored" data-anchor-id="tarea-asi-1.2-identificación-del-entorno-tecnológico"><span class="header-section-number">4.1.1.2</span> Tarea ASI 1.2: Identificación del Entorno Tecnológico</h4>
 <p>El objetivo de esta tarea es definir, a alto nivel, el entorno tecnológico que se requiere para dar respuesta a las necesidades de información, especificando sus posibles condicionantes y restricciones. Para ello se tiene en cuenta el entorno tecnológico propuesto en la descripción de la solución, que se obtuvo en el proceso Estudio de Viabilidad del Sistema (EVS).</p>
 <p>Esta información se obtiene mediante sesiones de trabajo con los usuarios y el apoyo de los responsables de Tecnologías de Información y Comunicaciones que se considere necesario. Productos</p>
 <p>De entrada</p>
-<pre><code>Catálogo de Requisitos (ASI 1.1)
-Descripción de la Solución (EVS 6.2)
-En Análisis Estructurado:
-Contexto del Sistema (ASI 1.1)
-En Análisis Orientado a Objetos:
-Modelo de Negocio (ASI 1.1)
-Modelo de Dominio (ASI 1.1)</code></pre>
+<ul>
+<li>Catálogo de Requisitos (ASI 1.1)</li>
+<li>Descripción de la Solución (EVS 6.2) En Análisis Estructurado:</li>
+<li>Contexto del Sistema (ASI 1.1) En Análisis Orientado a Objetos:</li>
+<li>Modelo de Negocio (ASI 1.1)</li>
+<li>Modelo de Dominio (ASI 1.1)</li>
+</ul>
 <p>De salida</p>
-<pre><code>Catálogo de Requisitos
-Descripción General del Entorno Tecnológico del Sistema</code></pre>
+<ul>
+<li>Catálogo de Requisitos</li>
+<li>Descripción General del Entorno Tecnológico del Sistema</li>
+</ul>
 <p>Prácticas</p>
-<pre><code>Sesiones de Trabajo
-Catalogación
-Diagrama de Representación</code></pre>
+<ul>
+<li>Sesiones de Trabajo</li>
+<li>Catalogación</li>
+<li>Diagrama de Representación</li>
+</ul>
 <p>Participantes</p>
-<pre><code>Jefe de Proyecto
-Analistas
-Directores de los Usuarios
-Equipo de Soporte Técnico</code></pre>
+<ul>
+<li>Jefe de Proyecto</li>
+<li>Analistas</li>
+<li>Directores de los Usuarios</li>
+<li>Equipo de Soporte Técnico</li>
+</ul>
 </section>
 <section id="tarea-asi-1.3-especificación-de-estándares-y-normas" class="level4" data-number="4.1.1.3">
 <h4 data-number="4.1.1.3" class="anchored" data-anchor-id="tarea-asi-1.3-especificación-de-estándares-y-normas"><span class="header-section-number">4.1.1.3</span> Tarea ASI 1.3: Especificación de Estándares y Normas</h4>
 <p>La realización de esta tarea permite considerar las referencias para el sistema de información en estudio, desde el punto de vista de estándares, normativas, leyes o recomendaciones, que deben tenerse en cuenta a lo largo de todo el proceso de desarrollo.</p>
 <p>El producto resultante se obtiene actualizando el catálogo de normas elaborado en el proceso Estudio de Viabilidad del Sistema (EVS), incorporando toda la información que, desde el punto de vista de la instalación, se considere necesario contemplar para la elaboración de los distintos productos del ciclo de vida. Productos</p>
 <p>De entrada</p>
-<pre><code>Catálogo de Normas (EVS 3.1)
-Descripción General del Entorno Tecnológico del Sistema (ASI 1.2)
-Estándares y Normativas de la Instalación (externo)
-En Análisis Estructurado:
-Contexto del Sistema (ASI 1.1)
-En Análisis Orientado a Objetos:
-Modelo de Negocio (ASI 1.1)
-Modelo de Dominio (ASI 1.1)</code></pre>
+<ul>
+<li>Catálogo de Normas (EVS 3.1)</li>
+<li>Descripción General del Entorno Tecnológico del Sistema (ASI 1.2)</li>
+<li>Estándares y Normativas de la Instalación (externo) En Análisis Estructurado:</li>
+<li>Contexto del Sistema (ASI 1.1) En Análisis Orientado a Objetos:</li>
+<li>Modelo de Negocio (ASI 1.1)</li>
+<li>Modelo de Dominio (ASI 1.1)</li>
+</ul>
 <p>De salida</p>
-<pre><code>Catálogo de Normas</code></pre>
+<ul>
+<li>Catálogo de Normas</li>
+</ul>
 <p>Prácticas</p>
-<pre><code>Sesiones de Trabajo
-Catalogación</code></pre>
+<ul>
+<li>Sesiones de Trabajo</li>
+<li>Catalogación</li>
+</ul>
 <p>Participantes</p>
-<pre><code>Jefe de Proyecto
-Analistas
-Directores de los Usuarios
-Equipo de Soporte Técnico</code></pre>
+<ul>
+<li>Jefe de Proyecto</li>
+<li>Analistas</li>
+<li>Directores de los Usuarios</li>
+<li>Equipo de Soporte Técnico</li>
+</ul>
 </section>
 <section id="tarea-asi-1.4-identificación-de-los-usuarios-participantes-y-finales" class="level4" data-number="4.1.1.4">
 <h4 data-number="4.1.1.4" class="anchored" data-anchor-id="tarea-asi-1.4-identificación-de-los-usuarios-participantes-y-finales"><span class="header-section-number">4.1.1.4</span> Tarea ASI 1.4: Identificación de los Usuarios Participantes y Finales</h4>
@@ -595,23 +617,29 @@ Equipo de Soporte Técnico</code></pre>
 <p>Dada la importancia que la colaboración de los usuarios tiene en el proceso de obtención de los requisitos, es conveniente determinar quiénes van a participar en las sesiones de trabajo, especificando sus funciones y asignando responsabilidades. Así mismo, se informa del plan de trabajo a los usuarios identificados.</p>
 <p>El alcance de este plan de trabajo se limita al proceso de análisis. Productos</p>
 <p>De entrada</p>
-<pre><code>Catálogo de Usuarios (EVS 1.3 y EVS 2.2)
-Catálogo de Requisitos (ASI 1.2)
-En Análisis Estructurado:
-Contexto del Sistema (ASI 1.1)
-En Análisis Orientado a Objetos:
-Modelo de Negocio (ASI 1.1)
-Modelo de Dominio (ASI 1.1)</code></pre>
+<ul>
+<li>Catálogo de Usuarios (EVS 1.3 y EVS 2.2)</li>
+<li>Catálogo de Requisitos (ASI 1.2) En Análisis Estructurado:</li>
+<li>Contexto del Sistema (ASI 1.1) En Análisis Orientado a Objetos:</li>
+<li>Modelo de Negocio (ASI 1.1)</li>
+<li>Modelo de Dominio (ASI 1.1)</li>
+</ul>
 <p>De salida</p>
-<pre><code>Catálogo de Usuarios
-Plan de Trabajo</code></pre>
+<ul>
+<li>Catálogo de Usuarios</li>
+<li>Plan de Trabajo</li>
+</ul>
 <p>Prácticas</p>
-<pre><code>Catalogación
-Sesiones de Trabajo</code></pre>
+<ul>
+<li>Catalogación</li>
+<li>Sesiones de Trabajo</li>
+</ul>
 <p>Participantes</p>
-<pre><code>Jefe de Proyecto
-Analistas
-Directores de los Usuarios</code></pre>
+<ul>
+<li>Jefe de Proyecto</li>
+<li>Analistas</li>
+<li>Directores de los Usuarios</li>
+</ul>
 </section>
 </section>
 <section id="actividad-asi-2-establecimiento-de-requisitos" class="level3" data-number="4.1.2">
@@ -708,48 +736,60 @@ Directores de los Usuarios</code></pre>
 <p>Se recoge información de los requisitos que debe cumplir el software. En la definición de los requisitos, que sirven de base para establecer los niveles de servicios del sistema, hay que tener en cuenta, si existen, las posibles restricciones del entorno, tanto hardware como software, que puedan afectar al sistema de información.</p>
 <p>También se definen las prioridades que hay que asignar a los requisitos, considerando los criterios de los usuarios acerca de las funcionalidades a cubrir.</p>
 <p>Los principales tipos de requisitos que se deben especificar son, por ejemplo:</p>
-<pre><code>Funcionales.
-Rendimiento.
-Seguridad.
-Implantación.
-Disponibilidad del sistema.</code></pre>
+<ul>
+<li>Funcionales.</li>
+<li>Rendimiento.</li>
+<li>Seguridad.</li>
+<li>Implantación.</li>
+<li>Disponibilidad del sistema.</li>
+</ul>
 <p>En el caso de orientación a objetos se especifican, además, los casos de uso asociados a los requisitos funcionales.</p>
 <p>Los casos de uso son una técnica de especificación de requisitos válida tanto en desarrollos estructurados como en orientación a objetos, aunque en este último caso se propone como técnica obligatoria al ser necesaria como referencia a lo largo de todo el ciclo de vida. En esta tarea se elabora el modelo de casos de uso, según las normas y estándares de la organización, identificando:</p>
-<pre><code>Actores.
-Casos de uso.
-Breve descripción de cada caso de uso.</code></pre>
+<ul>
+<li>Actores.</li>
+<li>Casos de uso.</li>
+<li>Breve descripción de cada caso de uso.</li>
+</ul>
 <p>Los productos obtenidos en la tarea Determinación del Alcance del Sistema (ASI 1.1), son tomados como referencia durante la obtención de requisitos, de forma que todos los requisitos especificados se encuentren dentro del ámbito del sistema de información.</p>
 <section id="productos" class="level5 unnumbered unlisted">
 <h5 class="unnumbered unlisted anchored" data-anchor-id="productos">Productos</h5>
 <section id="de-entrada" class="level6 unnumbered unlisted">
 <h6 class="unnumbered unlisted anchored" data-anchor-id="de-entrada">De entrada</h6>
-<pre><code>Catálogo de Requisitos (ASI 1.4)
-Descripción General del Entorno Tecnológico del Sistema (ASI 1.4)
-Catálogo de Usuarios (ASI 1.4)
-Plan de Trabajo (ASI 1.4)
-En Análisis Estructurado:
-Contexto del Sistema (ASI 1.1)
-En Análisis Orientado a Objetos:
-Modelo de Negocio (ASI 1.1)
-Modelo de Dominio (ASI 1.1)</code></pre>
+<ul>
+<li>Catálogo de Requisitos (ASI 1.4)</li>
+<li>Descripción General del Entorno Tecnológico del Sistema (ASI 1.4)</li>
+<li>Catálogo de Usuarios (ASI 1.4)</li>
+<li>Plan de Trabajo (ASI 1.4) En Análisis Estructurado:</li>
+<li>Contexto del Sistema (ASI 1.1) En Análisis Orientado a Objetos:</li>
+<li>Modelo de Negocio (ASI 1.1)</li>
+<li>Modelo de Dominio (ASI 1.1)</li>
+</ul>
 </section>
 <section id="de-salida" class="level6 unnumbered unlisted">
 <h6 class="unnumbered unlisted anchored" data-anchor-id="de-salida">De salida</h6>
-<pre><code>Catálogo de Requisitos
-Modelo de Casos de Uso</code></pre>
+<ul>
+<li>Catálogo de Requisitos</li>
+<li>Modelo de Casos de Uso</li>
+</ul>
 </section>
 </section>
 <section id="técnicas" class="level5 unnumbered unlisted">
 <h5 class="unnumbered unlisted anchored" data-anchor-id="técnicas">Técnicas</h5>
-<pre><code>Casos de Uso</code></pre>
+<ul>
+<li>Casos de Uso</li>
+</ul>
 <p>Prácticas {.unnumbered .unlisted}</p>
-<pre><code>Sesiones de Trabajo
-Catalogación</code></pre>
+<ul>
+<li>Sesiones de Trabajo</li>
+<li>Catalogación</li>
+</ul>
 </section>
 <section id="participantes" class="level5 unnumbered unlisted">
 <h5 class="unnumbered unlisted anchored" data-anchor-id="participantes">Participantes</h5>
-<pre><code>Usuarios Expertos
-Analistas</code></pre>
+<ul>
+<li>Usuarios Expertos</li>
+<li>Analistas</li>
+</ul>
 </section>
 </section>
 <section id="tarea-asi-2.2-especificación-de-casos-de-uso" class="level4" data-number="4.1.2.2">
@@ -757,37 +797,49 @@ Analistas</code></pre>
 <p>Esta tarea es obligatoria en el caso de orientación a objetos, y opcional en el caso de análisis estructurado, como apoyo a la obtención de requisitos.</p>
 <p>El objetivo de esta tarea es especificar cada caso de uso identificado en la tarea anterior, desarrollando el escenario.</p>
 <p>Para completar los casos de uso, es preciso especificar información relativa a:</p>
-<pre><code>Descripción del escenario, es decir, cómo un actor interactúa con el sistema, y cual es la respuesta obtenida.
-Precondiciones y poscondiciones.
-Identificación de interfaces de usuario.
-Condiciones de fallo que afectan al escenario, así como la respuesta del sistema (escenarios secundarios).</code></pre>
+<ul>
+<li>Descripción del escenario, es decir, cómo un actor interactúa con el sistema, y cual es la respuesta obtenida.</li>
+<li>Precondiciones y poscondiciones.</li>
+<li>Identificación de interfaces de usuario.</li>
+<li>Condiciones de fallo que afectan al escenario, así como la respuesta del sistema (escenarios secundarios).</li>
+</ul>
 <p>En escenarios complejos, es posible utilizar como técnica de especificación los diagramas de transición de estados, así como la división en casos de uso más simples, actualizando el modelo de casos de uso.</p>
 <p>Para la obtención de esta información es imprescindible la participación activa de los usuarios.</p>
 <section id="productos-1" class="level5 unnumbered unlisted">
 <h5 class="unnumbered unlisted anchored" data-anchor-id="productos-1">Productos</h5>
 <section id="de-entrada-1" class="level6 unnumbered unlisted">
 <h6 class="unnumbered unlisted anchored" data-anchor-id="de-entrada-1">De entrada</h6>
-<pre><code>Catálogo de Requisitos (ASI 2.1)
-Modelo de Casos de Uso (ASI 2.1)</code></pre>
+<ul>
+<li>Catálogo de Requisitos (ASI 2.1)</li>
+<li>Modelo de Casos de Uso (ASI 2.1)</li>
+</ul>
 </section>
 <section id="de-salida-1" class="level6 unnumbered unlisted">
 <h6 class="unnumbered unlisted anchored" data-anchor-id="de-salida-1">De salida</h6>
-<pre><code>Catálogo de Requisitos
-Modelo de Casos de Uso
-Especificación de Casos de Uso</code></pre>
+<ul>
+<li>Catálogo de Requisitos</li>
+<li>Modelo de Casos de Uso</li>
+<li>Especificación de Casos de Uso</li>
+</ul>
 </section>
 </section>
 <section id="técnicas-1" class="level5 unnumbered unlisted">
 <h5 class="unnumbered unlisted anchored" data-anchor-id="técnicas-1">Técnicas</h5>
-<pre><code>Casos de Uso</code></pre>
+<ul>
+<li>Casos de Uso</li>
+</ul>
 <p>Prácticas {.unnumbered .unlisted}</p>
-<pre><code>Sesiones de Trabajo
-Catalogación</code></pre>
+<ul>
+<li>Sesiones de Trabajo</li>
+<li>Catalogación</li>
+</ul>
 </section>
 <section id="participantes-1" class="level5 unnumbered unlisted">
 <h5 class="unnumbered unlisted anchored" data-anchor-id="participantes-1">Participantes</h5>
-<pre><code>Usuarios Expertos
-Analistas</code></pre>
+<ul>
+<li>Usuarios Expertos</li>
+<li>Analistas</li>
+</ul>
 </section>
 </section>
 <section id="tarea-asi-2.3-análisis-de-requisitos" class="level4" data-number="4.1.2.3">
@@ -800,28 +852,38 @@ Analistas</code></pre>
 <h5 class="unnumbered unlisted anchored" data-anchor-id="productos-2">Productos</h5>
 <section id="de-entrada-2" class="level6 unnumbered unlisted">
 <h6 class="unnumbered unlisted anchored" data-anchor-id="de-entrada-2">De entrada</h6>
-<pre><code>Catálogo de Requisitos (ASI 2.2)
-Modelo de Casos de Uso (ASI 2.2)
-Especificación de Casos de Uso (ASI 2.2)</code></pre>
+<ul>
+<li>Catálogo de Requisitos (ASI 2.2)</li>
+<li>Modelo de Casos de Uso (ASI 2.2)</li>
+<li>Especificación de Casos de Uso (ASI 2.2)</li>
+</ul>
 </section>
 <section id="de-salida-2" class="level6 unnumbered unlisted">
 <h6 class="unnumbered unlisted anchored" data-anchor-id="de-salida-2">De salida</h6>
-<pre><code>Catálogo de Requisitos
-Modelo de Casos de Uso
-Especificación de Casos de Uso</code></pre>
+<ul>
+<li>Catálogo de Requisitos</li>
+<li>Modelo de Casos de Uso</li>
+<li>Especificación de Casos de Uso</li>
+</ul>
 </section>
 </section>
 <section id="técnicas-2" class="level5 unnumbered unlisted">
 <h5 class="unnumbered unlisted anchored" data-anchor-id="técnicas-2">Técnicas</h5>
-<pre><code>Casos de Uso</code></pre>
+<ul>
+<li>Casos de Uso</li>
+</ul>
 <p>Prácticas {.unnumbered .unlisted}</p>
-<pre><code>Sesiones de Trabajo
-Catalogación</code></pre>
+<ul>
+<li>Sesiones de Trabajo</li>
+<li>Catalogación</li>
+</ul>
 </section>
 <section id="participantes-2" class="level5 unnumbered unlisted">
 <h5 class="unnumbered unlisted anchored" data-anchor-id="participantes-2">Participantes</h5>
-<pre><code>Usuarios Expertos
-Analistas</code></pre>
+<ul>
+<li>Usuarios Expertos</li>
+<li>Analistas</li>
+</ul>
 </section>
 </section>
 <section id="tarea-asi-2.4-validación-de-requisitos" class="level4" data-number="4.1.2.4">
@@ -831,28 +893,38 @@ Analistas</code></pre>
 <h5 class="unnumbered unlisted anchored" data-anchor-id="productos-3">Productos</h5>
 <section id="de-entrada-3" class="level6 unnumbered unlisted">
 <h6 class="unnumbered unlisted anchored" data-anchor-id="de-entrada-3">De entrada</h6>
-<pre><code>Catálogo de Requisitos (ASI 2.3)
-Modelo de Casos de Uso (ASI 2.3)
-Especificación de Casos de Uso (ASI 2.3)</code></pre>
+<ul>
+<li>Catálogo de Requisitos (ASI 2.3)</li>
+<li>Modelo de Casos de Uso (ASI 2.3)</li>
+<li>Especificación de Casos de Uso (ASI 2.3)</li>
+</ul>
 </section>
 <section id="de-salida-3" class="level6 unnumbered unlisted">
 <h6 class="unnumbered unlisted anchored" data-anchor-id="de-salida-3">De salida</h6>
-<pre><code>Catálogo de Requisitos
-Modelo de Casos de Uso
-Especificación de Casos de Uso</code></pre>
+<ul>
+<li>Catálogo de Requisitos</li>
+<li>Modelo de Casos de Uso</li>
+<li>Especificación de Casos de Uso</li>
+</ul>
 </section>
 </section>
 <section id="técnicas-3" class="level5 unnumbered unlisted">
 <h5 class="unnumbered unlisted anchored" data-anchor-id="técnicas-3">Técnicas</h5>
-<pre><code>Casos de Uso</code></pre>
+<ul>
+<li>Casos de Uso</li>
+</ul>
 <p>Prácticas {.unnumbered .unlisted}</p>
-<pre><code>Sesiones de Trabajo
-Catalogación</code></pre>
+<ul>
+<li>Sesiones de Trabajo</li>
+<li>Catalogación</li>
+</ul>
 </section>
 <section id="participantes-3" class="level5 unnumbered unlisted">
 <h5 class="unnumbered unlisted anchored" data-anchor-id="participantes-3">Participantes</h5>
-<pre><code>Usuarios Expertos
-Analistas</code></pre>
+<ul>
+<li>Usuarios Expertos</li>
+<li>Analistas</li>
+</ul>
 </section>
 </section>
 </section>
@@ -915,11 +987,13 @@ Analistas</code></pre>
 <section id="tarea-asi-3.1-determinación-de-subsistemas-de-análisis" class="level4" data-number="4.1.3.1">
 <h4 data-number="4.1.3.1" class="anchored" data-anchor-id="tarea-asi-3.1-determinación-de-subsistemas-de-análisis"><span class="header-section-number">4.1.3.1</span> Tarea ASI 3.1: Determinación de Subsistemas de Análisis</h4>
 <p>La descomposición del sistema en subsistemas debe estar, principalmente, orientada a los procesos de negocio, aunque también es posible adoptar otros criterios lógicos. Entre los criterios que pueden ayudar a su identificación, se encuentran los siguientes:</p>
-<pre><code>Homogeneidad de procesos.
-Servicios comunes.
-Prioridad.
-Afinidad de requisitos.
-Localización geográfica.</code></pre>
+<ul>
+<li>Homogeneidad de procesos.</li>
+<li>Servicios comunes.</li>
+<li>Prioridad.</li>
+<li>Afinidad de requisitos.</li>
+<li>Localización geográfica.</li>
+</ul>
 <p>En análisis estructurado, los subsistemas coinciden habitualmente con el primer nivel de descomposición del Diagrama de Flujo de Datos (diagrama 0), de modo que llevan implícita la definición de dependencia y de interfaz.</p>
 <p>En análisis orientado a objetos, se identifican y definen las dependencias entre subsistemas analizando los elementos compartidos entre ellos o las interfaces entre subsistemas. En el caso de que se decida abstraer un subsistema para su análisis como una unidad con una funcionalidad concreta, se puede, opcionalmente, definir la interfaz de dicho subsistema para poder delimitar su comportamiento y utilización en el modelo general del sistema. Por tanto, se establece como obligatoria la asociación entre subsistemas indicando sólo la dependencia. Además, opcionalmente, se propone la especificación de la interfaz de subsistemas de análisis, y la definición del comportamiento del sistema.</p>
 <p>En ambos casos, se asignan los requisitos y casos de uso a cada uno de los subsistemas identificados, actualizando el catálogo de requisitos.</p>
@@ -927,32 +1001,33 @@ Localización geográfica.</code></pre>
 <h5 class="unnumbered unlisted anchored" data-anchor-id="productos-4">Productos</h5>
 <section id="de-entrada-4" class="level6 unnumbered unlisted">
 <h6 class="unnumbered unlisted anchored" data-anchor-id="de-entrada-4">De entrada</h6>
-<pre><code>En Análisis Estructurado:
-Contexto del sistema (ASI 1.1)
-En Análisis Orientado a Objetos:
-Modelo de negocio (ASI 1.1)
-Modelo de dominio (ASI 1.1)
-Modelo de casos de uso (ASI 2.4)
-Especificación de casos de uso (ASI 2.4)</code></pre>
+<ul>
+<li>En Análisis Estructurado:</li>
+<li>Contexto del sistema (ASI 1.1) En Análisis Orientado a Objetos:</li>
+<li>Modelo de negocio (ASI 1.1)</li>
+<li>Modelo de dominio (ASI 1.1)</li>
+<li>Modelo de casos de uso (ASI 2.4)</li>
+<li>Especificación de casos de uso (ASI 2.4)</li>
+</ul>
 </section>
 <section id="de-salida-4" class="level6 unnumbered unlisted">
 <h6 class="unnumbered unlisted anchored" data-anchor-id="de-salida-4">De salida</h6>
-<pre><code>En Análisis Estructurado:
-Modelo de procesos
-En Análisis Orientado a Objetos:
-Descripción de subsistemas de análisis
-Descripción de interfaces entre subsistemas</code></pre>
+<p>En Análisis Estructurado: * Modelo de procesos En Análisis Orientado a Objetos: * Descripción de subsistemas de análisis * Descripción de interfaces entre subsistemas</p>
 </section>
 </section>
 <section id="técnicas-4" class="level5 unnumbered unlisted">
 <h5 class="unnumbered unlisted anchored" data-anchor-id="técnicas-4">Técnicas</h5>
-<pre><code>Diagrama de Flujo de Datos
-Diagrama de Paquetes (Subsistemas)</code></pre>
+<ul>
+<li>Diagrama de Flujo de Datos</li>
+<li>Diagrama de Paquetes (Subsistemas)</li>
+</ul>
 </section>
 <section id="participantes-4" class="level5 unnumbered unlisted">
 <h5 class="unnumbered unlisted anchored" data-anchor-id="participantes-4">Participantes</h5>
-<pre><code>Jefe de Proyecto
-Analistas</code></pre>
+<ul>
+<li>Jefe de Proyecto</li>
+<li>Analistas</li>
+</ul>
 </section>
 </section>
 <section id="tarea-asi-3.2-integración-de-subsistemas-de-análisis" class="level4" data-number="4.1.3.2">
@@ -963,30 +1038,26 @@ Analistas</code></pre>
 <h5 class="unnumbered unlisted anchored" data-anchor-id="productos-5">Productos</h5>
 <section id="de-entrada-5" class="level6 unnumbered unlisted">
 <h6 class="unnumbered unlisted anchored" data-anchor-id="de-entrada-5">De entrada</h6>
-<pre><code>En Análisis Estructurado:
-Modelo de procesos (ASI 3.1)
-En Análisis Orientado a Objetos:
-Descripción de subsistemas de análisis (ASI 3.1)
-Descripción de interfaces entre subsistemas (ASI 3.1)</code></pre>
+<p>En Análisis Estructurado: * Modelo de procesos (ASI 3.1) En Análisis Orientado a Objetos: * Descripción de subsistemas de análisis (ASI 3.1) * Descripción de interfaces entre subsistemas (ASI 3.1)</p>
 </section>
 <section id="de-salida-5" class="level6 unnumbered unlisted">
 <h6 class="unnumbered unlisted anchored" data-anchor-id="de-salida-5">De salida</h6>
-<pre><code>En Análisis Estructurado:
-Modelo de Procesos
-En Análisis Orientado a Objetos:
-Descripción de Subsistemas de Análisis
-Descripción de Interfaces entre Subsistemas</code></pre>
+<p>En Análisis Estructurado: * Modelo de Procesos En Análisis Orientado a Objetos: * Descripción de Subsistemas de Análisis * Descripción de Interfaces entre Subsistemas</p>
 </section>
 </section>
 <section id="técnicas-5" class="level5 unnumbered unlisted">
 <h5 class="unnumbered unlisted anchored" data-anchor-id="técnicas-5">Técnicas</h5>
-<pre><code>Diagrama de Flujo de Datos
-Diagrama de Paquetes (Subsistemas)</code></pre>
+<ul>
+<li>Diagrama de Flujo de Datos</li>
+<li>Diagrama de Paquetes (Subsistemas)</li>
+</ul>
 </section>
 <section id="participantes-5" class="level5 unnumbered unlisted">
 <h5 class="unnumbered unlisted anchored" data-anchor-id="participantes-5">Participantes</h5>
-<pre><code>Jefe de Proyecto
-Analistas</code></pre>
+<ul>
+<li>Jefe de Proyecto</li>
+<li>Analistas</li>
+</ul>
 </section>
 </section>
 </section>
@@ -1042,28 +1113,38 @@ Analistas</code></pre>
 <p>A partir del estudio del caso de uso, se extrae una lista de objetos candidatos a ser clases. Es posible que, inicialmente, no se disponga de la información necesaria para identificar todas, por lo que se hace una primera aproximación que se va refinando posteriormente, durante esta actividad y en el proceso de diseño. Además, algunos de los objetos representan mejor la información del sistema si se les identifica como atributos en vez de como clases. Para poder diferenciarlas, es necesario estudiar el comportamiento de esos objetos en el diagrama de interacción y además se debe tener en cuenta una serie de reglas, como puede ser el suprimir palabras no pertinentes, con significados vagos o sinónimos.</p>
 <p>Una vez definidas cada una de las clases, se incorporan al modelo de clases de la actividad Análisis de Clases (ASI 5), donde se identifican sus atributos, responsabilidades y relaciones.</p>
 <p>Las clases que se identifican en esta tarea pueden ser:</p>
-<pre><code>Clases de Entidad (representan la información manipulada en el caso de uso).
-Clases de Interfaz de Usuario (se utilizan para describir la interacción entre el sistema y sus actores. Suelen representar abstracciones de ventanas, interfaces de comunicación, formularios, etc.).
-Clases de Control (son responsables de la coordinación, secuencia de transacciones y control de los objetos relacionados con un caso de uso).</code></pre>
+<ul>
+<li>Clases de Entidad (representan la información manipulada en el caso de uso).</li>
+<li>Clases de Interfaz de Usuario (se utilizan para describir la interacción entre el sistema y sus actores. Suelen representar abstracciones de ventanas, interfaces de comunicación, formularios, etc.).</li>
+<li>Clases de Control (son responsables de la coordinación, secuencia de transacciones y control de los objetos relacionados con un caso de uso).</li>
+</ul>
 <section id="productos-6" class="level5 unnumbered unlisted">
 <h5 class="unnumbered unlisted anchored" data-anchor-id="productos-6">Productos</h5>
 <section id="de-entrada-6" class="level6 unnumbered unlisted">
 <h6 class="unnumbered unlisted anchored" data-anchor-id="de-entrada-6">De entrada</h6>
-<pre><code>Modelo de Casos de Uso (ASI 2.4)
-Especificación de Casos de Uso (ASI 2.4)</code></pre>
+<ul>
+<li>Modelo de Casos de Uso (ASI 2.4)</li>
+<li>Especificación de Casos de Uso (ASI 2.4)</li>
+</ul>
 </section>
 <section id="de-salida-6" class="level6 unnumbered unlisted">
 <h6 class="unnumbered unlisted anchored" data-anchor-id="de-salida-6">De salida</h6>
-<pre><code>Modelo de Clases de Análisis</code></pre>
+<ul>
+<li>Modelo de Clases de Análisis</li>
+</ul>
 </section>
 </section>
 <section id="técnicas-6" class="level5 unnumbered unlisted">
 <h5 class="unnumbered unlisted anchored" data-anchor-id="técnicas-6">Técnicas</h5>
-<pre><code>Diagrama de Clases</code></pre>
+<ul>
+<li>Diagrama de Clases</li>
+</ul>
 </section>
 <section id="participantes-6" class="level5 unnumbered unlisted">
 <h5 class="unnumbered unlisted anchored" data-anchor-id="participantes-6">Participantes</h5>
-<pre><code>Analistas</code></pre>
+<ul>
+<li>Analistas</li>
+</ul>
 </section>
 </section>
 <section id="tarea-asi-4.1-identificación-de-clases-asociadas-a-un-caso-de-uso-1" class="level4" data-number="4.1.4.2">
@@ -1072,28 +1153,38 @@ Especificación de Casos de Uso (ASI 2.4)</code></pre>
 <p>A partir del estudio del caso de uso, se extrae una lista de objetos candidatos a ser clases. Es posible que, inicialmente, no se disponga de la información necesaria para identificar todas, por lo que se hace una primera aproximación que se va refinando posteriormente, durante esta actividad y en el proceso de diseño. Además, algunos de los objetos representan mejor la información del sistema si se les identifica como atributos en vez de como clases. Para poder diferenciarlas, es necesario estudiar el comportamiento de esos objetos en el diagrama de interacción y además se debe tener en cuenta una serie de reglas, como puede ser el suprimir palabras no pertinentes, con significados vagos o sinónimos.</p>
 <p>Una vez definidas cada una de las clases, se incorporan al modelo de clases de la actividad Análisis de Clases (ASI 5), donde se identifican sus atributos, responsabilidades y relaciones.</p>
 <p>Las clases que se identifican en esta tarea pueden ser:</p>
-<pre><code>Clases de Entidad (representan la información manipulada en el caso de uso).
-Clases de Interfaz de Usuario (se utilizan para describir la interacción entre el sistema y sus actores. Suelen representar abstracciones de ventanas, interfaces de comunicación, formularios, etc.).
-Clases de Control (son responsables de la coordinación, secuencia de transacciones y control de los objetos relacionados con un caso de uso).</code></pre>
+<ul>
+<li>Clases de Entidad (representan la información manipulada en el caso de uso).</li>
+<li>Clases de Interfaz de Usuario (se utilizan para describir la interacción entre el sistema y sus actores. Suelen representar abstracciones de ventanas, interfaces de comunicación, formularios, etc.).</li>
+<li>Clases de Control (son responsables de la coordinación, secuencia de transacciones y control de los objetos relacionados con un caso de uso).</li>
+</ul>
 <section id="productos-7" class="level5 unnumbered unlisted">
 <h5 class="unnumbered unlisted anchored" data-anchor-id="productos-7">Productos</h5>
 <section id="de-entrada-7" class="level6 unnumbered unlisted">
 <h6 class="unnumbered unlisted anchored" data-anchor-id="de-entrada-7">De entrada</h6>
-<pre><code>Modelo de Casos de Uso (ASI 2.4)
-Especificación de Casos de Uso (ASI 2.4)</code></pre>
+<ul>
+<li>Modelo de Casos de Uso (ASI 2.4)</li>
+<li>Especificación de Casos de Uso (ASI 2.4)</li>
+</ul>
 </section>
 <section id="de-salida-7" class="level6 unnumbered unlisted">
 <h6 class="unnumbered unlisted anchored" data-anchor-id="de-salida-7">De salida</h6>
-<pre><code>Modelo de Clases de Análisis</code></pre>
+<ul>
+<li>Modelo de Clases de Análisis</li>
+</ul>
 </section>
 </section>
 <section id="técnicas-7" class="level5 unnumbered unlisted">
 <h5 class="unnumbered unlisted anchored" data-anchor-id="técnicas-7">Técnicas</h5>
-<pre><code>Diagrama de Clases</code></pre>
+<ul>
+<li>Diagrama de Clases</li>
+</ul>
 </section>
 <section id="participantes-7" class="level5 unnumbered unlisted">
 <h5 class="unnumbered unlisted anchored" data-anchor-id="participantes-7">Participantes</h5>
-<pre><code>Analistas</code></pre>
+<ul>
+<li>Analistas</li>
+</ul>
 </section>
 </section>
 </div></section>
@@ -1166,56 +1257,74 @@ Especificación de Casos de Uso (ASI 2.4)</code></pre>
 <h5 class="unnumbered unlisted anchored" data-anchor-id="productos-8">Productos</h5>
 <section id="de-entrada-8" class="level6 unnumbered unlisted">
 <h6 class="unnumbered unlisted anchored" data-anchor-id="de-entrada-8">De entrada</h6>
-<pre><code>Especificación de Casos de Uso (ASI 2.4)
-Modelo de Casos de Uso (ASI 2.4)
-Modelo de Clases de Análisis (ASI 4.1)</code></pre>
+<ul>
+<li>Especificación de Casos de Uso (ASI 2.4)</li>
+<li>Modelo de Casos de Uso (ASI 2.4)</li>
+<li>Modelo de Clases de Análisis (ASI 4.1)</li>
+</ul>
 </section>
 <section id="de-salida-8" class="level6 unnumbered unlisted">
 <h6 class="unnumbered unlisted anchored" data-anchor-id="de-salida-8">De salida</h6>
-<pre><code>Modelo de Clases de Análisis
-Comportamiento de Clases de Análisis</code></pre>
+<ul>
+<li>Modelo de Clases de Análisis</li>
+<li>Comportamiento de Clases de Análisis</li>
+</ul>
 </section>
 </section>
 <section id="técnicas-8" class="level5 unnumbered unlisted">
 <h5 class="unnumbered unlisted anchored" data-anchor-id="técnicas-8">Técnicas</h5>
-<pre><code>Diagrama de Clases
-Diagrama de Transición de Estados</code></pre>
+<ul>
+<li>Diagrama de Clases</li>
+<li>Diagrama de Transición de Estados</li>
+</ul>
 </section>
 <section id="participantes-8" class="level5 unnumbered unlisted">
 <h5 class="unnumbered unlisted anchored" data-anchor-id="participantes-8">Participantes</h5>
-<pre><code>Analistas</code></pre>
+<ul>
+<li>Analistas</li>
+</ul>
 </section>
 </section>
 <section id="tarea-asi-5.2-identificación-de-asociaciones-y-agregaciones" class="level4" data-number="4.1.5.2">
 <h4 data-number="4.1.5.2" class="anchored" data-anchor-id="tarea-asi-5.2-identificación-de-asociaciones-y-agregaciones"><span class="header-section-number">4.1.5.2</span> Tarea ASI 5.2: Identificación de Asociaciones y Agregaciones</h4>
 <p>En esta tarea se estudian los mensajes establecidos entre los objetos del diagrama de interacción para determinar qué asociaciones existen entre las clases correspondientes. Estas asociaciones suelen corresponderse con expresiones verbales incluidas en las especificaciones.</p>
 <p>Las relaciones surgen como respuesta a las demandas en los distintos casos de uso, y para ello puede existir la necesidad de definir agregaciones y herencia entre objetos. Una asociación esta caracterizada por:</p>
-<pre><code>Los papeles que desempeña.
-Su direccionalidad, que representa el sentido en el que se debe interpretar.
-Su cardinalidad, que representa el número de instancias implicadas en la asociación.</code></pre>
+<ul>
+<li>Los papeles que desempeña.</li>
+<li>Su direccionalidad, que representa el sentido en el que se debe interpretar.</li>
+<li>Su cardinalidad, que representa el número de instancias implicadas en la asociación.</li>
+</ul>
 <p>Dichas características pueden obtenerse a partir de la especificación de los casos de uso.</p>
 <p>A medida que se establecen las relaciones entre las clases, se revisa la especificación de subsistemas de análisis en la actividad Identificación de Subsistemas de Análisis (ASI 3), para conseguir optimizar los subsistemas.</p>
 <section id="productos-9" class="level5 unnumbered unlisted">
 <h5 class="unnumbered unlisted anchored" data-anchor-id="productos-9">Productos</h5>
 <section id="de-entrada-9" class="level6 unnumbered unlisted">
 <h6 class="unnumbered unlisted anchored" data-anchor-id="de-entrada-9">De entrada</h6>
-<pre><code>Especificación de Casos de Uso (ASI 2.4)
-Modelo de Casos de Uso (ASI 2.4)
-Análisis de la Realización de los Casos de Uso (ASI 4.2)
-Modelo de Clases de Análisis (ASI 5.1)</code></pre>
+<ul>
+<li>Especificación de Casos de Uso (ASI 2.4)</li>
+<li>Modelo de Casos de Uso (ASI 2.4)</li>
+<li>Análisis de la Realización de los Casos de Uso (ASI 4.2)</li>
+<li>Modelo de Clases de Análisis (ASI 5.1)</li>
+</ul>
 </section>
 <section id="de-salida-9" class="level6 unnumbered unlisted">
 <h6 class="unnumbered unlisted anchored" data-anchor-id="de-salida-9">De salida</h6>
-<pre><code>Modelo de Clases de Análisis</code></pre>
+<ul>
+<li>Modelo de Clases de Análisis</li>
+</ul>
 </section>
 </section>
 <section id="técnicas-9" class="level5 unnumbered unlisted">
 <h5 class="unnumbered unlisted anchored" data-anchor-id="técnicas-9">Técnicas</h5>
-<pre><code>Diagrama de Clases</code></pre>
+<ul>
+<li>Diagrama de Clases</li>
+</ul>
 </section>
 <section id="participantes-9" class="level5 unnumbered unlisted">
 <h5 class="unnumbered unlisted anchored" data-anchor-id="participantes-9">Participantes</h5>
-<pre><code>Analistas</code></pre>
+<ul>
+<li>Analistas</li>
+</ul>
 </section>
 </section>
 <section id="tarea-asi-5.3-identificación-de-generalizaciones" class="level4" data-number="4.1.5.3">
@@ -1225,7 +1334,9 @@ Modelo de Clases de Análisis (ASI 5.1)</code></pre>
 <h5 class="unnumbered unlisted anchored" data-anchor-id="productos-10">Productos</h5>
 <section id="de-entrada-10" class="level6 unnumbered unlisted">
 <h6 class="unnumbered unlisted anchored" data-anchor-id="de-entrada-10">De entrada</h6>
-<pre><code>Modelo de Clases de Análisis (ASI 5.2)</code></pre>
+<ul>
+<li>Modelo de Clases de Análisis (ASI 5.2)</li>
+</ul>
 </section>
 <section id="de-salida-10" class="level6 unnumbered unlisted">
 <h6 class="unnumbered unlisted anchored" data-anchor-id="de-salida-10">De salida</h6>
@@ -1333,51 +1444,69 @@ Modelo de Clases de Análisis (ASI 5.1)</code></pre>
 <h5 class="unnumbered unlisted anchored" data-anchor-id="productos-11">Productos</h5>
 <section id="de-entrada-11" class="level6 unnumbered unlisted">
 <h6 class="unnumbered unlisted anchored" data-anchor-id="de-entrada-11">De entrada</h6>
-<pre><code>Contexto del Sistema (ASI 1.1)
-Modelo Conceptual de Datos (ASI 1.1)</code></pre>
+<ul>
+<li>Contexto del Sistema (ASI 1.1)</li>
+<li>Modelo Conceptual de Datos (ASI 1.1)</li>
+</ul>
 </section>
 <section id="de-salida-11" class="level6 unnumbered unlisted">
 <h6 class="unnumbered unlisted anchored" data-anchor-id="de-salida-11">De salida</h6>
-<pre><code>Modelo Conceptual de Datos</code></pre>
+<ul>
+<li>Modelo Conceptual de Datos</li>
+</ul>
 </section>
 </section>
 <section id="técnicas-11" class="level5 unnumbered unlisted">
 <h5 class="unnumbered unlisted anchored" data-anchor-id="técnicas-11">Técnicas</h5>
-<pre><code>Modelo Entidad / Relación Extendido</code></pre>
+<ul>
+<li>Modelo Entidad / Relación Extendido</li>
+</ul>
 </section>
 <section id="participantes-11" class="level5 unnumbered unlisted">
 <h5 class="unnumbered unlisted anchored" data-anchor-id="participantes-11">Participantes</h5>
-<pre><code>Analistas</code></pre>
+<ul>
+<li>Analistas</li>
+</ul>
 </section>
 </section>
 <section id="tarea-asi-6.2-elaboración-del-modelo-lógico-de-datos" class="level4" data-number="4.1.6.2">
 <h4 data-number="4.1.6.2" class="anchored" data-anchor-id="tarea-asi-6.2-elaboración-del-modelo-lógico-de-datos"><span class="header-section-number">4.1.6.2</span> Tarea ASI 6.2: Elaboración del Modelo Lógico de Datos</h4>
 <p>En esta tarea se obtiene el modelo lógico de datos a partir del modelo conceptual para lo cual se realizarán las acciones siguientes:</p>
-<pre><code>Resolver las relaciones complejas que pudieran existir entre las distintas entidades.
-Eliminar las relaciones redundantes que puedan surgir como consecuencia de la resolución de las relaciones complejas.
-Eliminar cualquier ambigüedad sobre el significado de los atributos.
-Identificar las relaciones de dependencia entre entidades .
-Completar la información de las entidades y los atributos, una vez resueltas las relaciones complejas.
-Revisar y completar los identificadores de cada entidad.</code></pre>
+<ul>
+<li>Resolver las relaciones complejas que pudieran existir entre las distintas entidades.</li>
+<li>Eliminar las relaciones redundantes que puedan surgir como consecuencia de la resolución de las relaciones complejas.</li>
+<li>Eliminar cualquier ambigüedad sobre el significado de los atributos.</li>
+<li>Identificar las relaciones de dependencia entre entidades .</li>
+<li>Completar la información de las entidades y los atributos, una vez resueltas las relaciones complejas.</li>
+<li>Revisar y completar los identificadores de cada entidad.</li>
+</ul>
 <p>También se debe especificar para cada entidad el número máximo y medio de ocurrencias, estimaciones de crecimiento por periodo, tipo y frecuencia de acceso, así como aquellas características relativas a la seguridad, confidencialidad, disponibilidad, etc. consideradas relevantes.</p>
 <section id="productos-12" class="level5 unnumbered unlisted">
 <h5 class="unnumbered unlisted anchored" data-anchor-id="productos-12">Productos</h5>
 <section id="de-entrada-12" class="level6 unnumbered unlisted">
 <h6 class="unnumbered unlisted anchored" data-anchor-id="de-entrada-12">De entrada</h6>
-<pre><code>Modelo Conceptual de Datos (ASI 6.1)</code></pre>
+<ul>
+<li>Modelo Conceptual de Datos (ASI 6.1)</li>
+</ul>
 </section>
 <section id="de-salida-12" class="level6 unnumbered unlisted">
 <h6 class="unnumbered unlisted anchored" data-anchor-id="de-salida-12">De salida</h6>
-<pre><code>Modelo Lógico de Datos</code></pre>
+<ul>
+<li>Modelo Lógico de Datos</li>
+</ul>
 </section>
 </section>
 <section id="técnicas-12" class="level5 unnumbered unlisted">
 <h5 class="unnumbered unlisted anchored" data-anchor-id="técnicas-12">Técnicas</h5>
-<pre><code>Modelo Entidad / Relación Extendido</code></pre>
+<ul>
+<li>Modelo Entidad / Relación Extendido</li>
+</ul>
 </section>
 <section id="participantes-12" class="level5 unnumbered unlisted">
 <h5 class="unnumbered unlisted anchored" data-anchor-id="participantes-12">Participantes</h5>
-<pre><code>Analistas</code></pre>
+<ul>
+<li>Analistas</li>
+</ul>
 </section>
 </section>
 <section id="tarea-asi-6.3-normalización-del-modelo-lógico-de-datos" class="level4" data-number="4.1.6.3">
@@ -1390,20 +1519,28 @@ Revisar y completar los identificadores de cada entidad.</code></pre>
 <h5 class="unnumbered unlisted anchored" data-anchor-id="productos-13">Productos</h5>
 <section id="de-entrada-13" class="level6 unnumbered unlisted">
 <h6 class="unnumbered unlisted anchored" data-anchor-id="de-entrada-13">De entrada</h6>
-<pre><code>Modelo Lógico de Datos (ASI 6.2)</code></pre>
+<ul>
+<li>Modelo Lógico de Datos (ASI 6.2)</li>
+</ul>
 </section>
 <section id="de-salida-13" class="level6 unnumbered unlisted">
 <h6 class="unnumbered unlisted anchored" data-anchor-id="de-salida-13">De salida</h6>
-<pre><code>Modelo Lógico de Datos Normalizado</code></pre>
+<ul>
+<li>Modelo Lógico de Datos Normalizado</li>
+</ul>
 </section>
 </section>
 <section id="técnicas-13" class="level5 unnumbered unlisted">
 <h5 class="unnumbered unlisted anchored" data-anchor-id="técnicas-13">Técnicas</h5>
-<pre><code>Normalización</code></pre>
+<ul>
+<li>Normalización</li>
+</ul>
 </section>
 <section id="participantes-13" class="level5 unnumbered unlisted">
 <h5 class="unnumbered unlisted anchored" data-anchor-id="participantes-13">Participantes</h5>
-<pre><code>Analistas</code></pre>
+<ul>
+<li>Analistas</li>
+</ul>
 </section>
 </section>
 <section id="tarea-asi-6.4-especificación-de-necesidades-de-migración-de-datos-y-carga-inicial" class="level4" data-number="4.1.6.4">
@@ -1411,32 +1548,40 @@ Revisar y completar los identificadores de cada entidad.</code></pre>
 <p>Está tarea se realiza si es necesaria una migración de datos de otros sistemas, o una carga inicial de información.</p>
 <p>Se especifican las necesidades de migración o carga inicial de los datos requeridos por el sistema. Como punto de partida, se toma el modelo lógico de datos normalizado, junto con las estructuras de datos del sistema o sistemas origen.</p>
 <p>Es preciso tener en cuenta aspectos tales como:</p>
-<pre><code>Planificación de la migración y carga inicial.
-Prioridad en las cargas.
-Requisitos de conversión de información: necesidades de depuración de información, importación de información complementaria, validaciones y controles, etc.
-Plan de pruebas específico.
-Necesidades especiales de equipamiento hardware y estimaciones de capacidad, en función de los volúmenes de las estructuras de datos origen.
-Necesidades especiales de utilidades software.
-Posibles modificaciones del sistema origen, que faciliten la ejecución o verificación de la migración o carga inicial.</code></pre>
+<ul>
+<li>Planificación de la migración y carga inicial.</li>
+<li>Prioridad en las cargas.</li>
+<li>Requisitos de conversión de información: necesidades de depuración de información, importación de información complementaria, validaciones y controles, etc.</li>
+<li>Plan de pruebas específico.</li>
+<li>Necesidades especiales de equipamiento hardware y estimaciones de capacidad, en función de los volúmenes de las estructuras de datos origen.</li>
+<li>Necesidades especiales de utilidades software.</li>
+<li>Posibles modificaciones del sistema origen, que faciliten la ejecución o verificación de la migración o carga inicial.</li>
+</ul>
 <p>Como resultado de esta tarea se obtiene una primera especificación del plan de migración de datos y carga inicial del sistema, que se completará en el proceso Diseño del Sistema de Información (DSI).</p>
 <section id="productos-14" class="level5 unnumbered unlisted">
 <h5 class="unnumbered unlisted anchored" data-anchor-id="productos-14">Productos</h5>
 <section id="de-entrada-14" class="level6 unnumbered unlisted">
 <h6 class="unnumbered unlisted anchored" data-anchor-id="de-entrada-14">De entrada</h6>
-<pre><code>Modelo Lógico de Datos Normalizado (ASI 6.3)
-Estructuras de Datos del Sistema Origen (externo)</code></pre>
+<ul>
+<li>Modelo Lógico de Datos Normalizado (ASI 6.3)</li>
+<li>Estructuras de Datos del Sistema Origen (externo)</li>
+</ul>
 </section>
 <section id="de-salida-14" class="level6 unnumbered unlisted">
 <h6 class="unnumbered unlisted anchored" data-anchor-id="de-salida-14">De salida</h6>
-<pre><code>Plan de Migración y Carga Inicial de Datos</code></pre>
+<ul>
+<li>Plan de Migración y Carga Inicial de Datos</li>
+</ul>
 <p>Prácticas {.unnumbered .unlisted}</p>
-<pre><code>Sesiones de Trabajo</code></pre>
+<ul>
+<li>Sesiones de Trabajo</li>
+</ul>
 </section>
 </section>
 <section id="participantes-14" class="level5 unnumbered unlisted">
 <h5 class="unnumbered unlisted anchored" data-anchor-id="participantes-14">Participantes</h5>
-<pre><code>Usuarios Expertos</code></pre>
 <ul>
+<li>Usuarios Expertos</li>
 <li>Analistas</li>
 <li>Equipo de Soporte Técnico</li>
 </ul>
@@ -1498,51 +1643,67 @@ Estructuras de Datos del Sistema Origen (externo)</code></pre>
 <h5 class="unnumbered unlisted anchored" data-anchor-id="productos-15">Productos</h5>
 <section id="de-entrada-15" class="level6 unnumbered unlisted">
 <h6 class="unnumbered unlisted anchored" data-anchor-id="de-entrada-15">De entrada</h6>
-<pre><code>Modelo de procesos (ASI 3.2)</code></pre>
+<ul>
+<li>Modelo de procesos (ASI 3.2)</li>
+</ul>
 </section>
 <section id="de-salida-15" class="level6 unnumbered unlisted">
 <h6 class="unnumbered unlisted anchored" data-anchor-id="de-salida-15">De salida</h6>
-<pre><code>Modelo de Procesos
-Matriz de Procesos / Localización Geográfica (ampliada)</code></pre>
+<ul>
+<li>Modelo de Procesos</li>
+<li>Matriz de Procesos / Localización Geográfica (ampliada)</li>
+</ul>
 </section>
 </section>
 <section id="técnicas-14" class="level5 unnumbered unlisted">
 <h5 class="unnumbered unlisted anchored" data-anchor-id="técnicas-14">Técnicas</h5>
-<pre><code>Diagrama de Flujo de Datos
-Matricial</code></pre>
+<ul>
+<li>Diagrama de Flujo de Datos</li>
+<li>Matricial</li>
+</ul>
 </section>
 <section id="participantes-15" class="level5 unnumbered unlisted">
 <h5 class="unnumbered unlisted anchored" data-anchor-id="participantes-15">Participantes</h5>
-<pre><code>Analistas</code></pre>
+<ul>
+<li>Analistas</li>
+</ul>
 </section>
 </section>
 <section id="tarea-asi-7.2-especificación-de-interfaces-con-otros-sistemas" class="level4" data-number="4.1.7.2">
 <h4 data-number="4.1.7.2" class="anchored" data-anchor-id="tarea-asi-7.2-especificación-de-interfaces-con-otros-sistemas"><span class="header-section-number">4.1.7.2</span> Tarea ASI 7.2: Especificación de Interfaces con otros Sistemas</h4>
 <p>En esta tarea se describen, con detalle, las interfaces con otros sistemas de información, con el fin de definir y delimitar el modo en que el sistema va a relacionarse con el exterior.</p>
 <p>Para cada interfaz identificada, se especifica:</p>
-<pre><code>Procesos del sistema de información asociados.
-Especificaciones funcionales de los sistemas origen o destino.
-Formatos de los datos intercambiados.
-Aspectos operativos de la interfaz: en lotes o en línea y medio físico utilizado.
-Frecuencia o periodicidad del intercambio.
-Evento que desencadena la interfaz.
-Validaciones, requisitos especiales de seguridad, etc.
-Modificaciones o adaptaciones necesarias en los sistemas origen o destino.</code></pre>
+<ul>
+<li>Procesos del sistema de información asociados.</li>
+<li>Especificaciones funcionales de los sistemas origen o destino.</li>
+<li>Formatos de los datos intercambiados.</li>
+<li>Aspectos operativos de la interfaz: en lotes o en línea y medio físico utilizado.</li>
+<li>Frecuencia o periodicidad del intercambio.</li>
+<li>Evento que desencadena la interfaz.</li>
+<li>Validaciones, requisitos especiales de seguridad, etc.</li>
+<li>Modificaciones o adaptaciones necesarias en los sistemas origen o destino.</li>
+</ul>
 <p>Las interfaces con otros sistemas forman parte del modelo de procesos, pero se recomienda que su especificación se realice como anexo al diagrama de flujo de datos en aquellos casos en que la naturaleza de la interfaz, por sus características especiales (complejidad, uso temporal, etc.), lo aconseje.</p>
 <section id="productos-16" class="level5 unnumbered unlisted">
 <h5 class="unnumbered unlisted anchored" data-anchor-id="productos-16">Productos</h5>
 <section id="de-entrada-16" class="level6 unnumbered unlisted">
 <h6 class="unnumbered unlisted anchored" data-anchor-id="de-entrada-16">De entrada</h6>
-<pre><code>Modelo de Procesos (ASI 7.1)</code></pre>
+<ul>
+<li>Modelo de Procesos (ASI 7.1)</li>
+</ul>
 </section>
 <section id="de-salida-16" class="level6 unnumbered unlisted">
 <h6 class="unnumbered unlisted anchored" data-anchor-id="de-salida-16">De salida</h6>
-<pre><code>Descripción de Interfaz con otros Sistemas</code></pre>
+<ul>
+<li>Descripción de Interfaz con otros Sistemas</li>
+</ul>
 </section>
 </section>
 <section id="participantes-16" class="level5 unnumbered unlisted">
 <h5 class="unnumbered unlisted anchored" data-anchor-id="participantes-16">Participantes</h5>
-<pre><code>Analistas</code></pre>
+<ul>
+<li>Analistas</li>
+</ul>
 </section>
 </section>
 </section>
@@ -1555,15 +1716,17 @@ Modificaciones o adaptaciones necesarias en los sistemas origen o destino.</code
 <p>Finalmente, se define el formato y contenido de cada una de las interfaces de pantalla especificando su comportamiento dinámico.</p>
 <p>Se propone un flujo de trabajo muy similar para desarrollos estructurados y orientados a objetos, coincidiendo en la mayoría de las tareas, si bien es cierto que en orientación a objetos, al identificar y describir cada escenario en la especificación de los casos de uso, se hace un avance muy significativo en la toma de datos para la posterior definición de la interfaz de usuario.</p>
 <p>Como resultado de esta actividad se genera la especificación de interfaz de usuario, como producto que engloba los siguientes elementos:</p>
-<pre><code>Principios generales de la interfaz.
-Catálogo de perfiles de usuario.
-Descomposición funcional en diálogos.
-Catálogo de controles y elementos de diseño de interfaz de pantalla.
-Formatos individuales de interfaz de pantalla.
-Modelo de navegación de interfaz de pantalla.
-Formatos de impresión.
-Prototipo de interfaz interactiva.
-Prototipo de interfaz de impresión.</code></pre>
+<ul>
+<li>Principios generales de la interfaz.</li>
+<li>Catálogo de perfiles de usuario.</li>
+<li>Descomposición funcional en diálogos.</li>
+<li>Catálogo de controles y elementos de diseño de interfaz de pantalla.</li>
+<li>Formatos individuales de interfaz de pantalla.</li>
+<li>Modelo de navegación de interfaz de pantalla.</li>
+<li>Formatos de impresión.</li>
+<li>Prototipo de interfaz interactiva.</li>
+<li>Prototipo de interfaz de impresión.</li>
+</ul>
 <table class="avia-table avia-data-table caption-top table">
 <colgroup>
 <col style="width: 25%">
@@ -1679,33 +1842,47 @@ Prototipo de interfaz de impresión.</code></pre>
 <h4 data-number="4.1.8.1" class="anchored" data-anchor-id="tarea-asi-8.1-especificación-de-principios-generales-de-la-interfaz"><span class="header-section-number">4.1.8.1</span> Tarea ASI 8.1: Especificación de Principios Generales de la Interfaz</h4>
 <p>El objetivo de esta tarea es especificar los estándares, directrices y elementos generales a tener en cuenta en la definición de la interfaz de usuario, tanto para la interfaz interactiva (gráfica o carácter), como para los informes y formularios impresos.</p>
 <p>En primer lugar, se selecciona el entorno de la interfaz interactiva (gráfico, carácter, etc.), siguiendo estándares internacionales y de la instalación, y se determinan los principios de diseño de la interfaz de usuario, contemplando:</p>
-<pre><code>Directrices generales en cuanto a la interfaz y aspectos generales de interacción.
-Principios de composición de pantallas y criterios de ubicación de los distintos elementos dentro de cada formato.
-Normas para los mensajes de error y aviso, codificación, presentación y comportamientos.
-Normas para la presentación de ayudas.</code></pre>
+<ul>
+<li>Directrices generales en cuanto a la interfaz y aspectos generales de interacción.</li>
+<li>Principios de composición de pantallas y criterios de ubicación de los distintos elementos dentro de cada formato.</li>
+<li>Normas para los mensajes de error y aviso, codificación, presentación y comportamientos.</li>
+<li>Normas para la presentación de ayudas.</li>
+</ul>
 <p>Hay que establecer criterios similares para la interfaz impresa:</p>
-<pre><code>Directrices generales.
-Principios de composición de informes y formularios.
-Normas de elaboración, distribución y salvaguarda de la información.</code></pre>
+<ul>
+<li>Directrices generales.</li>
+<li>Principios de composición de informes y formularios.</li>
+<li>Normas de elaboración, distribución y salvaguarda de la información.</li>
+</ul>
 <section id="productos-17" class="level5 unnumbered unlisted">
 <h5 class="unnumbered unlisted anchored" data-anchor-id="productos-17">Productos</h5>
 <section id="de-entrada-17" class="level6 unnumbered unlisted">
 <h6 class="unnumbered unlisted anchored" data-anchor-id="de-entrada-17">De entrada</h6>
-<pre><code>Descripción General del Entorno Tecnológico (ASI 1.2)
-Catálogo de Normas (ASI 1.3)</code></pre>
+<ul>
+<li>Descripción General del Entorno Tecnológico (ASI 1.2)</li>
+<li>Catálogo de Normas (ASI 1.3)</li>
+</ul>
 </section>
 <section id="de-salida-17" class="level6 unnumbered unlisted">
 <h6 class="unnumbered unlisted anchored" data-anchor-id="de-salida-17">De salida</h6>
-<pre><code>Especificación de Interfaz de Usuario:
-    Principios Generales de la Interfaz</code></pre>
+<ul>
+<li>Especificación de Interfaz de Usuario:
+<ul>
+<li>Principios Generales de la Interfaz</li>
+</ul></li>
+</ul>
 <p>Prácticas {.unnumbered .unlisted}</p>
-<pre><code>Sesiones de Trabajo</code></pre>
+<ul>
+<li>Sesiones de Trabajo</li>
+</ul>
 </section>
 </section>
 <section id="participantes-17" class="level5 unnumbered unlisted">
 <h5 class="unnumbered unlisted anchored" data-anchor-id="participantes-17">Participantes</h5>
-<pre><code>Usuarios Expertos
-Analistas</code></pre>
+<ul>
+<li>Usuarios Expertos</li>
+<li>Analistas</li>
+</ul>
 </section>
 </section>
 <section id="tarea-asi-8.2-identificación-de-perfiles-y-diálogos" class="level4" data-number="4.1.8.2">
@@ -1719,28 +1896,40 @@ Analistas</code></pre>
 <h5 class="unnumbered unlisted anchored" data-anchor-id="productos-18">Productos</h5>
 <section id="de-entrada-18" class="level6 unnumbered unlisted">
 <h6 class="unnumbered unlisted anchored" data-anchor-id="de-entrada-18">De entrada</h6>
-<pre><code>Especificación de Interfaz de Usuario (ASI 8.1)
-Modelo de Procesos (ASI 7.1)</code></pre>
+<ul>
+<li>Especificación de Interfaz de Usuario (ASI 8.1)</li>
+<li>Modelo de Procesos (ASI 7.1)</li>
+</ul>
 </section>
 <section id="de-salida-18" class="level6 unnumbered unlisted">
 <h6 class="unnumbered unlisted anchored" data-anchor-id="de-salida-18">De salida</h6>
-<pre><code>Especificación de Interfaz de Usuario:
-    Descomposición Funcional en Diálogos
-    Catálogo de Perfiles de Usuario</code></pre>
+<ul>
+<li>Especificación de Interfaz de Usuario:
+<ul>
+<li>Descomposición Funcional en Diálogos</li>
+<li>Catálogo de Perfiles de Usuario</li>
+</ul></li>
+</ul>
 </section>
 </section>
 <section id="técnicas-15" class="level5 unnumbered unlisted">
 <h5 class="unnumbered unlisted anchored" data-anchor-id="técnicas-15">Técnicas</h5>
-<pre><code>Diagrama de Descomposición Funcional</code></pre>
+<ul>
+<li>Diagrama de Descomposición Funcional</li>
+</ul>
 <p>Prácticas {.unnumbered .unlisted}</p>
-<pre><code>Diagrama de Representación
-Catalogación
-Sesiones de Trabajo</code></pre>
+<ul>
+<li>Diagrama de Representación</li>
+<li>Catalogación</li>
+<li>Sesiones de Trabajo</li>
+</ul>
 </section>
 <section id="participantes-18" class="level5 unnumbered unlisted">
 <h5 class="unnumbered unlisted anchored" data-anchor-id="participantes-18">Participantes</h5>
-<pre><code>Usuarios Expertos
-Analistas</code></pre>
+<ul>
+<li>Usuarios Expertos</li>
+<li>Analistas</li>
+</ul>
 </section>
 </section>
 <section id="tarea-asi-8.3-especificación-de-formatos-individuales-de-la-interfaz-de-pantalla" class="level4" data-number="4.1.8.3">
@@ -1750,38 +1939,52 @@ Analistas</code></pre>
 <p>En un análisis estructurado se tiene en cuenta, para la realización de esta tarea, el modelo de datos y el modelo de procesos generados en paralelo en las actividades Elaboración del Modelo de Datos (ASI 6) y Elaboración del Modelo de Procesos (ASI 7).</p>
 <p>También se considera el catálogo de requisitos, para especificar las interfaces relacionadas con las consultas.</p>
 <p>En la definición de cada interfaz de pantalla se deben definir aquellos aspectos considerados de interés para su posterior diseño y construcción:</p>
-<pre><code>Posibilidad de cambio de tamaño, ubicación, modalidad (modal del sistema, modal de aplicación), etc.
-Dispositivos de entrada necesarios para su ejecución.
-Conjunto y formato de datos asociados, identificando qué datos se usan y cuáles se generan como consecuencia de su ejecución.
-Controles y elementos de diseño asociados, indicando cuáles aparecen inicialmente activos e inactivos al visualizar la interfaz de pantalla.</code></pre>
+<ul>
+<li>Posibilidad de cambio de tamaño, ubicación, modalidad (modal del sistema, modal de aplicación), etc.</li>
+<li>Dispositivos de entrada necesarios para su ejecución.</li>
+<li>Conjunto y formato de datos asociados, identificando qué datos se usan y cuáles se generan como consecuencia de su ejecución.</li>
+<li>Controles y elementos de diseño asociados, indicando cuáles aparecen inicialmente activos e inactivos al visualizar la interfaz de pantalla.</li>
+</ul>
 <section id="productos-19" class="level5 unnumbered unlisted">
 <h5 class="unnumbered unlisted anchored" data-anchor-id="productos-19">Productos</h5>
 <section id="de-entrada-19" class="level6 unnumbered unlisted">
 <h6 class="unnumbered unlisted anchored" data-anchor-id="de-entrada-19">De entrada</h6>
-<pre><code>Especificación de Interfaz de Usuario (ASI 8.2)
-En Análisis Orientado a Objetos:
-Especificación de Casos de Uso (ASI 2.4)
-Modelo de Casos de Uso (ASI 2.4)</code></pre>
+<ul>
+<li>Especificación de Interfaz de Usuario (ASI 8.2)</li>
+<li>En Análisis Orientado a Objetos:</li>
+<li>Especificación de Casos de Uso (ASI 2.4)</li>
+<li>Modelo de Casos de Uso (ASI 2.4)</li>
+</ul>
 </section>
 <section id="de-salida-19" class="level6 unnumbered unlisted">
 <h6 class="unnumbered unlisted anchored" data-anchor-id="de-salida-19">De salida</h6>
-<pre><code>Especificación de Interfaz de Usuario:
-    Formatos Individuales de Interfaz de Pantalla
-    Catálogo de Controles y Elementos de Diseño de Interfaz de Pantalla</code></pre>
+<ul>
+<li>Especificación de Interfaz de Usuario:
+<ul>
+<li>Formatos Individuales de Interfaz de Pantalla</li>
+<li>Catálogo de Controles y Elementos de Diseño de Interfaz de Pantalla</li>
+</ul></li>
+</ul>
 </section>
 </section>
 <section id="técnicas-16" class="level5 unnumbered unlisted">
 <h5 class="unnumbered unlisted anchored" data-anchor-id="técnicas-16">Técnicas</h5>
-<pre><code>Casos de Uso</code></pre>
+<ul>
+<li>Casos de Uso</li>
+</ul>
 <p>Prácticas {.unnumbered .unlisted}</p>
-<pre><code>Prototipado
-Catalogación
-Sesiones de Trabajo</code></pre>
+<ul>
+<li>Prototipado</li>
+<li>Catalogación</li>
+<li>Sesiones de Trabajo</li>
+</ul>
 </section>
 <section id="participantes-19" class="level5 unnumbered unlisted">
 <h5 class="unnumbered unlisted anchored" data-anchor-id="participantes-19">Participantes</h5>
-<pre><code>Usuarios Expertos
-Analistas</code></pre>
+<ul>
+<li>Usuarios Expertos</li>
+<li>Analistas</li>
+</ul>
 </section>
 </section>
 <section id="tarea-asi-8.4-especificación-del-comportamiento-dinámico-de-la-interfaz" class="level4" data-number="4.1.8.4">
@@ -1796,31 +1999,43 @@ Analistas</code></pre>
 <h5 class="unnumbered unlisted anchored" data-anchor-id="productos-20">Productos</h5>
 <section id="de-entrada-20" class="level6 unnumbered unlisted">
 <h6 class="unnumbered unlisted anchored" data-anchor-id="de-entrada-20">De entrada</h6>
-<pre><code>Especificación de Interfaz de Usuario (ASI 8.3)
-En Análisis Orientado a Objetos:
-Especificación de Casos de Uso (ASI 2.4)
-Modelo de Casos de Uso (ASI 2.4)</code></pre>
+<ul>
+<li>Especificación de Interfaz de Usuario (ASI 8.3)</li>
+<li>En Análisis Orientado a Objetos:</li>
+<li>Especificación de Casos de Uso (ASI 2.4)</li>
+<li>Modelo de Casos de Uso (ASI 2.4)</li>
+</ul>
 </section>
 <section id="de-salida-20" class="level6 unnumbered unlisted">
 <h6 class="unnumbered unlisted anchored" data-anchor-id="de-salida-20">De salida</h6>
-<pre><code>Especificación de Interfaz de Usuario:
-    Modelo de Navegación de Interfaz de Pantalla
-    Prototipo de Interfaz Interactiva</code></pre>
+<ul>
+<li>Especificación de Interfaz de Usuario:
+<ul>
+<li>Modelo de Navegación de Interfaz de Pantalla</li>
+<li>Prototipo de Interfaz Interactiva</li>
+</ul></li>
+</ul>
 </section>
 </section>
 <section id="técnicas-17" class="level5 unnumbered unlisted">
 <h5 class="unnumbered unlisted anchored" data-anchor-id="técnicas-17">Técnicas</h5>
-<pre><code>Diagrama de Transición de Estados
-Matricial
-Diagrama de Interacción de Objetos</code></pre>
+<ul>
+<li>Diagrama de Transición de Estados</li>
+<li>Matricial</li>
+<li>Diagrama de Interacción de Objetos</li>
+</ul>
 <p>Prácticas {.unnumbered .unlisted}</p>
-<pre><code>Prototipado
-Sesiones de Trabajo</code></pre>
+<ul>
+<li>Prototipado</li>
+<li>Sesiones de Trabajo</li>
+</ul>
 </section>
 <section id="participantes-20" class="level5 unnumbered unlisted">
 <h5 class="unnumbered unlisted anchored" data-anchor-id="participantes-20">Participantes</h5>
-<pre><code>Usuarios Expertos
-Analistas</code></pre>
+<ul>
+<li>Usuarios Expertos</li>
+<li>Analistas</li>
+</ul>
 </section>
 </section>
 <section id="tarea-asi-8.5-especificación-de-formatos-de-impresión" class="level4" data-number="4.1.8.5">
@@ -1832,31 +2047,43 @@ Analistas</code></pre>
 <h5 class="unnumbered unlisted anchored" data-anchor-id="productos-21">Productos</h5>
 <section id="de-entrada-21" class="level6 unnumbered unlisted">
 <h6 class="unnumbered unlisted anchored" data-anchor-id="de-entrada-21">De entrada</h6>
-<pre><code>Especificación de Interfaz de Usuario (ASI 8.4)</code></pre>
+<ul>
+<li>Especificación de Interfaz de Usuario (ASI 8.4)</li>
+</ul>
 </section>
 <section id="de-salida-21" class="level6 unnumbered unlisted">
 <h6 class="unnumbered unlisted anchored" data-anchor-id="de-salida-21">De salida</h6>
-<pre><code>Especificación de Interfaz de Usuario:
-    Formatos de Impresión
-    Prototipo de Interfaz de Impresión</code></pre>
+<ul>
+<li>Especificación de Interfaz de Usuario:
+<ul>
+<li>Formatos de Impresión</li>
+<li>Prototipo de Interfaz de Impresión</li>
+</ul></li>
+</ul>
 <p>Prácticas {.unnumbered .unlisted}</p>
-<pre><code>Prototipado
-Sesiones de Trabajo</code></pre>
+<ul>
+<li>Prototipado</li>
+<li>Sesiones de Trabajo</li>
+</ul>
 </section>
 </section>
 <section id="participantes-21" class="level5 unnumbered unlisted">
 <h5 class="unnumbered unlisted anchored" data-anchor-id="participantes-21">Participantes</h5>
-<pre><code>Usuarios Expertos
-Analistas</code></pre>
+<ul>
+<li>Usuarios Expertos</li>
+<li>Analistas</li>
+</ul>
 </section>
 </section>
 </section>
 <section id="actividad-asi-9-análisis-de-consistencia-y-especificación-de-requisitos" class="level3" data-number="4.1.9">
 <h3 data-number="4.1.9" class="anchored" data-anchor-id="actividad-asi-9-análisis-de-consistencia-y-especificación-de-requisitos"><span class="header-section-number">4.1.9</span> Actividad ASI 9: Análisis de Consistencia y Especificación de Requisitos</h3>
 <p>El objetivo de esta actividad es garantizar la calidad de los distintos modelos generados en el proceso de Análisis del Sistema de Información, y asegurar que los usuarios y los Analistas tienen el mismo concepto del sistema. Para cumplir dicho objetivo, se llevan a cabo las siguientes acciones:</p>
-<pre><code>Verificación de la calidad técnica de cada modelo.
-Aseguramiento de la coherencia entre los distintos modelos.
-Validación del cumplimiento de los requisitos.</code></pre>
+<ul>
+<li>Verificación de la calidad técnica de cada modelo.</li>
+<li>Aseguramiento de la coherencia entre los distintos modelos.</li>
+<li>Validación del cumplimiento de los requisitos.</li>
+</ul>
 <p>Esta actividad requiere una herramienta de apoyo para realizar el análisis de consistencia. También se elabora en esta actividad la Especificación de Requisitos Software (ERS), como producto para la aprobación formal, por parte del usuario, de las especificaciones del sistema.</p>
 <p>La Especificación de Requisitos Software se convierte en la línea base para los procesos posteriores del desarrollo del software, de modo que cualquier petición de cambio en los requisitos que pueda surgir posteriormente, debe ser evaluada y aprobada.</p>
 <table class="avia-table avia-data-table caption-top table">
@@ -1965,38 +2192,44 @@ Validación del cumplimiento de los requisitos.</code></pre>
 <h5 class="unnumbered unlisted anchored" data-anchor-id="productos-22">Productos</h5>
 <section id="de-entrada-22" class="level6 unnumbered unlisted">
 <h6 class="unnumbered unlisted anchored" data-anchor-id="de-entrada-22">De entrada</h6>
-<pre><code>Catálogo de Normas (ASI 1.3)
-Especificación de Interfaz de Usuario (ASI 8.5)
-En Análisis Estructurado:
-Modelo Lógico de Datos Normalizado (ASI 6.3)
-Modelo de Procesos (ASI 7.1)
-En Análisis Orientado a Objetos:
-Modelo de Casos de Uso (ASI 2.4)
-Especificación de Casos de Uso (ASI 2.4)
-Modelo de Clases de Análisis (ASI 5.3)
-Comportamiento de Clases de Análisis (ASI 5.1)
-Análisis de la Realización de los Casos de Uso (ASI 4.2)
-Descripción de Subsistemas de Análisis (ASI 3.2)
-Descripción Interfaces entre Subsistemas (ASI 3.2)</code></pre>
+<ul>
+<li>Catálogo de Normas (ASI 1.3)</li>
+<li>Especificación de Interfaz de Usuario (ASI 8.5)</li>
+<li>En Análisis Estructurado:</li>
+<li>Modelo Lógico de Datos Normalizado (ASI 6.3)</li>
+<li>Modelo de Procesos (ASI 7.1)</li>
+<li>En Análisis Orientado a Objetos:</li>
+<li>Modelo de Casos de Uso (ASI 2.4)</li>
+<li>Especificación de Casos de Uso (ASI 2.4)</li>
+<li>Modelo de Clases de Análisis (ASI 5.3)</li>
+<li>Comportamiento de Clases de Análisis (ASI 5.1)</li>
+<li>Análisis de la Realización de los Casos de Uso (ASI 4.2)</li>
+<li>Descripción de Subsistemas de Análisis (ASI 3.2)</li>
+<li>Descripción Interfaces entre Subsistemas (ASI 3.2)</li>
+</ul>
 </section>
 <section id="de-salida-22" class="level6 unnumbered unlisted">
 <h6 class="unnumbered unlisted anchored" data-anchor-id="de-salida-22">De salida</h6>
-<pre><code>Especificación de Interfaz de Usuario
-Modelo Lógico de Datos Normalizado
-Modelo de Procesos
-Modelo de Casos de Uso
-Especificación de Casos de Uso
-Modelo de Clases de Análisis
-Comportamiento de Clases de Análisis
-Análisis de la Realización de los Casos de Uso
-Descripción de Subsistemas de Análisis
-Descripción Interfaces entre Subsistemas</code></pre>
+<ul>
+<li>Especificación de Interfaz de Usuario</li>
+<li>Modelo Lógico de Datos Normalizado</li>
+<li>Modelo de Procesos</li>
+<li>Modelo de Casos de Uso</li>
+<li>Especificación de Casos de Uso</li>
+<li>Modelo de Clases de Análisis</li>
+<li>Comportamiento de Clases de Análisis</li>
+<li>Análisis de la Realización de los Casos de Uso</li>
+<li>Descripción de Subsistemas de Análisis</li>
+<li>Descripción Interfaces entre Subsistemas</li>
+</ul>
 </section>
 </section>
 <section id="participantes-22" class="level5 unnumbered unlisted">
 <h5 class="unnumbered unlisted anchored" data-anchor-id="participantes-22">Participantes</h5>
-<pre><code>Analistas
-Equipo de Arquitectura</code></pre>
+<ul>
+<li>Analistas</li>
+<li>Equipo de Arquitectura</li>
+</ul>
 </section>
 </section>
 <section id="tarea-asi-9.2-análisis-de-consistencia-entre-modelos" class="level4" data-number="4.1.9.2">
@@ -2004,91 +2237,123 @@ Equipo de Arquitectura</code></pre>
 <p>El objetivo de esta tarea es asegurar que los modelos son coherentes entre sí, comprobando la falta de ambigüedades o duplicación de información.</p>
 <p>Las diferentes comprobaciones varían en función del tipo de desarrollo, aunque, en general, son matrices entre los elementos comunes de los distintos modelos. Estas comprobaciones forman parte del producto Resultado de Análisis de Consistencia.</p>
 <p>Los análisis de consistencia propuestos en Desarrollo Estructurado son:</p>
-<pre><code>Modelo Lógico de Datos Normalizado / Modelo de Procesos:
-Se verifica que:
-    Cada uno de los almacenes definidos en el modelo de procesos se corresponde con una parte del modelo lógico de datos normalizado. Es decir, un almacén se puede corresponder con una entidad, atributos de una entidad o con varias entidades relacionadas.
-    Los atributos del modelo lógico de datos normalizado y del modelo de procesos se ajustan a una misma especificación.
-    El modelo lógico de datos normalizado satisface las principales consultas de información. Para comprobar que el modelo lógico de datos normalizado puede soportar dichas consultas, se proponen, como técnicas opcionales, la determinación de caminos de acceso lógico en consultas y el cálculo de accesos lógicos.
-    Todas y cada una de las entidades del modelo lógico normalizado son accedidas por algún proceso primitivo. Para dicha comprobación, se propone una matriz de entidades/procesos, donde se especifique que tipo de acceso se realiza (alta, baja, modificación o consulta).
-Modelo Lógico de Datos Normalizado / Interfaz de Usuario:
-    En este análisis se comprueba que los atributos relevantes que aparecen en cada diálogo de la interfaz de usuario forman parte del modelo lógico de datos normalizado o, en su caso, atributos derivados de los mismos.
-Modelo de Procesos / Interfaz de Usuario:
-    Se comprueba que todo proceso en línea tiene asociado al menos un diálogo.</code></pre>
+<ul>
+<li>Modelo Lógico de Datos Normalizado / Modelo de Procesos:</li>
+<li>Se verifica que:
+<ul>
+<li>Cada uno de los almacenes definidos en el modelo de procesos se corresponde con una parte del modelo lógico de datos normalizado. Es decir, un almacén se puede corresponder con una entidad, atributos de una entidad o con varias entidades relacionadas.</li>
+<li>Los atributos del modelo lógico de datos normalizado y del modelo de procesos se ajustan a una misma especificación.</li>
+<li>El modelo lógico de datos normalizado satisface las principales consultas de información. Para comprobar que el modelo lógico de datos normalizado puede soportar dichas consultas, se proponen, como técnicas opcionales, la determinación de caminos de acceso lógico en consultas y el cálculo de accesos lógicos.</li>
+<li>Todas y cada una de las entidades del modelo lógico normalizado son accedidas por algún proceso primitivo. Para dicha comprobación, se propone una matriz de entidades/procesos, donde se especifique que tipo de acceso se realiza (alta, baja, modificación o consulta).</li>
+</ul></li>
+<li>Modelo Lógico de Datos Normalizado / Interfaz de Usuario:
+<ul>
+<li>En este análisis se comprueba que los atributos relevantes que aparecen en cada diálogo de la interfaz de usuario forman parte del modelo lógico de datos normalizado o, en su caso, atributos derivados de los mismos.</li>
+</ul></li>
+<li>Modelo de Procesos / Interfaz de Usuario:
+<ul>
+<li>Se comprueba que todo proceso en línea tiene asociado al menos un diálogo.</li>
+</ul></li>
+</ul>
 <p>El resultado del análisis de consistencia en un análisis estructurado es un producto que engloba los siguientes elementos:</p>
-<pre><code>Matriz de almacenes de datos / entidades del modelo lógico de datos normalizado.
-Matriz de atributos de interfaz / atributos de entidades del modelo lógico de datos normalizado.
-Caminos de acceso lógico en consultas.
-Cálculo de accesos lógicos.
-Matriz de entidades / procesos.
-Matriz de diálogos / procesos.</code></pre>
+<ul>
+<li>Matriz de almacenes de datos / entidades del modelo lógico de datos normalizado.</li>
+<li>Matriz de atributos de interfaz / atributos de entidades del modelo lógico de datos normalizado.</li>
+<li>Caminos de acceso lógico en consultas.</li>
+<li>Cálculo de accesos lógicos.</li>
+<li>Matriz de entidades / procesos.</li>
+<li>Matriz de diálogos / procesos.</li>
+</ul>
 <p>Los análisis de consistencia propuestos en Desarrollo Orientado a Objetos son los siguientes:</p>
 <p>Considerando que la interfaz de usuario incluye diagramas dinámicos y forma parte del modelo de clases, los análisis de consistencia con la interfaz pueden solaparse con los del resto de los modelos. Los análisis de consistencia propuestos son:</p>
-<pre><code>Modelo de Clases / Diagramas Dinámicos:
-Se comprueba que:
-    Cada mensaje entre objetos se corresponde con una operación de una clase y que todos los mensajes se envían a las clases correctas.
-    La clase que recibe un mensaje con petición de datos tiene capacidad para proporcionar esos datos.
-    Cada objeto del diagrama de interacción de objetos tiene una correspondencia en el modelo de clases.
-En el caso de haber elaborado diagramas de transición de estados para clases significativas:
-    Se verifica que, para cada uno de ellos, todo evento se corresponde con una operación de la clase. También se tiene que establecer si las acciones y actividades de los diagramas de transición de estado se corresponden con operaciones de la clase.
-Modelo de clases / Interfaz de usuario:
-    Cada clase que requiera una clase de interfaz de usuario, debe tener asociación con ella en el modelo de clases.
-    Todas las clases, atributos y operaciones identificados en la interfaz de usuario, deben tener su correspondencia con algún atributo, operación o clase en el modelo de clases.
-Análisis de la Realización de los Casos de Uso / Interfaz de Usuario:
-    Cada elemento que active la navegación entre pantallas, debe estar asociado con un mensaje del diagrama de interacción de objetos.</code></pre>
+<ul>
+<li>Modelo de Clases / Diagramas Dinámicos:</li>
+<li>Se comprueba que:
+<ul>
+<li>Cada mensaje entre objetos se corresponde con una operación de una clase y que todos los mensajes se envían a las clases correctas.</li>
+<li>La clase que recibe un mensaje con petición de datos tiene capacidad para proporcionar esos datos.</li>
+<li>Cada objeto del diagrama de interacción de objetos tiene una correspondencia en el modelo de clases.</li>
+</ul></li>
+<li>En el caso de haber elaborado diagramas de transición de estados para clases significativas:
+<ul>
+<li>Se verifica que, para cada uno de ellos, todo evento se corresponde con una operación de la clase. También se tiene que establecer si las acciones y actividades de los diagramas de transición de estado se corresponden con operaciones de la clase.</li>
+</ul></li>
+<li>Modelo de clases / Interfaz de usuario:
+<ul>
+<li>Cada clase que requiera una clase de interfaz de usuario, debe tener asociación con ella en el modelo de clases.</li>
+<li>Todas las clases, atributos y operaciones identificados en la interfaz de usuario, deben tener su correspondencia con algún atributo, operación o clase en el modelo de clases.</li>
+</ul></li>
+<li>Análisis de la Realización de los Casos de Uso / Interfaz de Usuario:
+<ul>
+<li>Cada elemento que active la navegación entre pantallas, debe estar asociado con un mensaje del diagrama de interacción de objetos.</li>
+</ul></li>
+</ul>
 <p>Además, se revisa que los subsistemas satisfagan la realización de todos los casos de uso, e incluyan las clases identificadas hasta el momento.</p>
 <p>El resultado del análisis de consistencia en un análisis orientado a objetos es un producto que engloba los siguientes elementos:</p>
-<pre><code>Matriz de mensajes del diagrama de interacción de objetos / operaciones del modelo de clases.
-Matriz de mensajes del diagrama de interacción de objetos / operaciones y atributos del modelo de clases.
-Matriz de objetos del diagrama de interacción de objetos / clases, atributos del modelo de clases.
-Matriz (evento, acción, actividad de clase) / operaciones de clase.
-Correspondencia elementos de negocio de interfaz de usuario / modelo de clases.
-Correspondencia entre elementos de navegación de interfaz de usuario / mensajes del diagrama de interacción de objetos.</code></pre>
+<ul>
+<li>Matriz de mensajes del diagrama de interacción de objetos / operaciones del modelo de clases.</li>
+<li>Matriz de mensajes del diagrama de interacción de objetos / operaciones y atributos del modelo de clases.</li>
+<li>Matriz de objetos del diagrama de interacción de objetos / clases, atributos del modelo de clases.</li>
+<li>Matriz (evento, acción, actividad de clase) / operaciones de clase.</li>
+<li>Correspondencia elementos de negocio de interfaz de usuario / modelo de clases.</li>
+<li>Correspondencia entre elementos de navegación de interfaz de usuario / mensajes del diagrama de interacción de objetos.</li>
+</ul>
 <section id="productos-23" class="level5 unnumbered unlisted">
 <h5 class="unnumbered unlisted anchored" data-anchor-id="productos-23">Productos</h5>
 <section id="de-entrada-23" class="level6 unnumbered unlisted">
 <h6 class="unnumbered unlisted anchored" data-anchor-id="de-entrada-23">De entrada</h6>
-<pre><code>Catálogo de Requisitos (ASI 2.4)
-Especificación de Interfaz de Usuario (ASI 9.1)
-En Análisis Estructurado:
-Modelo Lógico de Datos Normalizado (ASI 9.1)
-Modelo de Procesos (ASI 9.1)
-En Análisis Orientado a Objetos:
-Modelo de Casos de Uso (ASI 9.1)
-Especificación de Casos de Uso (ASI 9.1)
-Modelo de Clases de Análisis (ASI 9.1)
-Comportamiento de Clases de Análisis (ASI 9.1)
-Análisis de la Realización de los Casos de Uso (ASI 9.1)
-Descripción de Subsistemas de Análisis (ASI 9.1)
-Descripción Interfaces entre Subsistemas (ASI 9.1)</code></pre>
+<ul>
+<li>Catálogo de Requisitos (ASI 2.4)</li>
+<li>Especificación de Interfaz de Usuario (ASI 9.1)</li>
+<li>En Análisis Estructurado:</li>
+<li>Modelo Lógico de Datos Normalizado (ASI 9.1)</li>
+<li>Modelo de Procesos (ASI 9.1)</li>
+<li>En Análisis Orientado a Objetos:</li>
+<li>Modelo de Casos de Uso (ASI 9.1)</li>
+<li>Especificación de Casos de Uso (ASI 9.1)</li>
+<li>Modelo de Clases de Análisis (ASI 9.1)</li>
+<li>Comportamiento de Clases de Análisis (ASI 9.1)</li>
+<li>Análisis de la Realización de los Casos de Uso (ASI 9.1)</li>
+<li>Descripción de Subsistemas de Análisis (ASI 9.1)</li>
+<li>Descripción Interfaces entre Subsistemas (ASI 9.1)</li>
+</ul>
 </section>
 <section id="de-salida-23" class="level6 unnumbered unlisted">
 <h6 class="unnumbered unlisted anchored" data-anchor-id="de-salida-23">De salida</h6>
-<pre><code>Resultado de Análisis de Consistencia
-Especificación de Interfaz de Usuario
-En Análisis Estructurado:
-Modelo Lógico de Datos Normalizado
-Modelo de Procesos
-En Análisis Orientado a Objetos:
-Modelo de Casos de Uso
-Especificación de Casos de Uso
-Modelo de Clases de Análisis
-Comportamiento de Clases de Análisis
-Análisis de la Realización de los Casos de Uso
-Descripción de Subsistemas de Análisis
-Descripción Interfaces entre Subsistemas</code></pre>
+<ul>
+<li>Resultado de Análisis de Consistencia</li>
+<li>Especificación de Interfaz de Usuario</li>
+<li>En Análisis Estructurado:</li>
+<li>Modelo Lógico de Datos Normalizado</li>
+<li>Modelo de Procesos</li>
+<li>En Análisis Orientado a Objetos:</li>
+<li>Modelo de Casos de Uso</li>
+<li>Especificación de Casos de Uso</li>
+<li>Modelo de Clases de Análisis</li>
+<li>Comportamiento de Clases de Análisis</li>
+<li>Análisis de la Realización de los Casos de Uso</li>
+<li>Descripción de Subsistemas de Análisis</li>
+<li>Descripción Interfaces entre Subsistemas</li>
+</ul>
 </section>
 </section>
 <section id="técnicas-18" class="level5 unnumbered unlisted">
 <h5 class="unnumbered unlisted anchored" data-anchor-id="técnicas-18">Técnicas</h5>
-<pre><code>Matricial</code></pre>
+<ul>
+<li>Matricial</li>
+</ul>
 <p>Prácticas {.unnumbered .unlisted}</p>
-<pre><code>Cálculo de Accesos Lógicos (CAL)
-Caminos de Accesos Lógicos en Consultas (CALC)</code></pre>
+<ul>
+<li>Cálculo de Accesos Lógicos (CAL)</li>
+<li>Caminos de Accesos Lógicos en Consultas (CALC)</li>
+</ul>
 </section>
 <section id="participantes-23" class="level5 unnumbered unlisted">
 <h5 class="unnumbered unlisted anchored" data-anchor-id="participantes-23">Participantes</h5>
-<pre><code>Analistas
-Equipo de Arquitectura</code></pre>
+<ul>
+<li>Analistas</li>
+<li>Equipo de Arquitectura</li>
+</ul>
 </section>
 </section>
 <section id="tarea-asi-9.3-validación-de-los-modelos" class="level4" data-number="4.1.9.3">
@@ -2099,89 +2364,99 @@ Equipo de Arquitectura</code></pre>
 <h5 class="unnumbered unlisted anchored" data-anchor-id="productos-24">Productos</h5>
 <section id="de-entrada-24" class="level6 unnumbered unlisted">
 <h6 class="unnumbered unlisted anchored" data-anchor-id="de-entrada-24">De entrada</h6>
-<pre><code>Catálogo de Requisitos (ASI 2.4)
-Especificación de Interfaz de Usuario (ASI 9.2)
-En Análisis Estructurado:
-Modelo Lógico de Datos Normalizado (ASI 9.2)
-Modelo de Procesos (ASI 9.2)
-En Análisis Orientado a Objetos:
-Modelo de Casos de Uso (ASI 9.2)
-Especificación de Casos de Uso (ASI 9.2)
-Modelo de Clases de Análisis (ASI 9.2)
-Comportamiento de Clases de Análisis (ASI 9.2)
-Análisis de la Realización de los Casos de Uso (ASI 9.2)
-Descripción de Subsistemas de Análisis (ASI 9.2)
-Descripción de Interfaces entre Subsistemas (ASI 9.2)</code></pre>
+<ul>
+<li>Catálogo de Requisitos (ASI 2.4)</li>
+<li>Especificación de Interfaz de Usuario (ASI 9.2) En Análisis Estructurado:</li>
+<li>Modelo Lógico de Datos Normalizado (ASI 9.2)</li>
+<li>Modelo de Procesos (ASI 9.2) En Análisis Orientado a Objetos:</li>
+<li>Modelo de Casos de Uso (ASI 9.2)</li>
+<li>Especificación de Casos de Uso (ASI 9.2)</li>
+<li>Modelo de Clases de Análisis (ASI 9.2)</li>
+<li>Comportamiento de Clases de Análisis (ASI 9.2)</li>
+<li>Análisis de la Realización de los Casos de Uso (ASI 9.2)</li>
+<li>Descripción de Subsistemas de Análisis (ASI 9.2)</li>
+<li>Descripción de Interfaces entre Subsistemas (ASI 9.2)</li>
+</ul>
 </section>
 <section id="de-salida-24" class="level6 unnumbered unlisted">
 <h6 class="unnumbered unlisted anchored" data-anchor-id="de-salida-24">De salida</h6>
-<pre><code>Especificación de Interfaz de Usuario
-En Análisis Estructurado:
-Modelo Lógico de Datos Normalizado
-Modelo de Procesos
-En Análisis Orientado a Objetos:
-Modelo de Casos de Uso
-Especificación de Casos de Uso
-Modelo de Clases de Análisis
-Comportamiento de Clases de Análisis
-Análisis de la Realización de los Casos de Uso
-Descripción de Subsistemas de Análisis
-Descripción de Interfaces entre Subsistemas</code></pre>
+<ul>
+<li>Especificación de Interfaz de Usuario En Análisis Estructurado:</li>
+<li>Modelo Lógico de Datos Normalizado</li>
+<li>Modelo de Procesos En Análisis Orientado a Objetos:</li>
+<li>Modelo de Casos de Uso</li>
+<li>Especificación de Casos de Uso</li>
+<li>Modelo de Clases de Análisis</li>
+<li>Comportamiento de Clases de Análisis</li>
+<li>Análisis de la Realización de los Casos de Uso</li>
+<li>Descripción de Subsistemas de Análisis</li>
+<li>Descripción de Interfaces entre Subsistemas</li>
+</ul>
 <p>Prácticas {.unnumbered .unlisted}</p>
-<pre><code>Prototipado</code></pre>
+<ul>
+<li>Prototipado</li>
+</ul>
 </section>
 </section>
 <section id="participantes-24" class="level5 unnumbered unlisted">
 <h5 class="unnumbered unlisted anchored" data-anchor-id="participantes-24">Participantes</h5>
-<pre><code>Analistas
-Usuarios Expertos</code></pre>
+<ul>
+<li>Analistas</li>
+<li>Usuarios Expertos</li>
+</ul>
 </section>
 </section>
 <section id="tarea-asi-9.4-elaboración-de-la-especificación-de-requisitos-software-ers" class="level4" data-number="4.1.9.4">
 <h4 data-number="4.1.9.4" class="anchored" data-anchor-id="tarea-asi-9.4-elaboración-de-la-especificación-de-requisitos-software-ers"><span class="header-section-number">4.1.9.4</span> Tarea ASI 9.4: Elaboración de la Especificación de Requisitos Software (ERS)</h4>
 <p>En esta tarea se aborda la elaboración de la Especificación de Requisitos Software (ERS), una vez validados los modelos en la tarea anterior.</p>
 <p>Este producto incorporará la información necesaria para la aprobación final del Análisis del Sistema de Información, según el siguiente índice:</p>
-<pre><code>Introducción.
-Ámbito y alcance.
-Participantes.
-Requisitos del sistema de información.
-Visión general del sistema de información.
-Referencia de los productos a entregar.
-Plan de acción.</code></pre>
+<ul>
+<li>Introducción.</li>
+<li>Ámbito y alcance.</li>
+<li>Participantes.</li>
+<li>Requisitos del sistema de información.</li>
+<li>Visión general del sistema de información.</li>
+<li>Referencia de los productos a entregar.</li>
+<li>Plan de acción.</li>
+</ul>
 <section id="productos-25" class="level5 unnumbered unlisted">
 <h5 class="unnumbered unlisted anchored" data-anchor-id="productos-25">Productos</h5>
 <section id="de-entrada-25" class="level6 unnumbered unlisted">
 <h6 class="unnumbered unlisted anchored" data-anchor-id="de-entrada-25">De entrada</h6>
-<pre><code>Descripción general del entorno tecnológico (ASI 1.2)
-Glosario (ASI 1.1)
-Catálogo de normas (ASI 1.3)
-Catálogo de requisitos (ASI 2.4)
-Especificación de interfaz de usuario (ASI 9.3)
-En análisis estructurado:
-Plan de migración y carga inicial de datos (ASI 6.4)
-Contexto del sistema (ASI 1.1)
-Matriz de procesos / localización geográfica (ASI 7.1)
-Descripción de interfaz con otros sistemas (ASI 7.2)
-Modelo de procesos (ASI 9.3)
-Modelo lógico de datos normalizado (ASI 9.3)
-En análisis orientado a objetos:
-Modelo de negocio / modelo de dominio (ASI 1.1)
-Modelo de casos de uso (ASI 9.3)
-Especificación de casos de uso (ASI 9.3)
-Descripción de subsistemas de análisis (ASI 9.3)
-Descripción de interfaces entre subsistemas (ASI 9.3)
-Modelo de clases de análisis (ASI 9.3)
-Comportamiento de clases de análisis (ASI 9.3)
-Análisis de la realización de los casos de uso (ASI 9.3)</code></pre>
+<ul>
+<li>Descripción general del entorno tecnológico (ASI 1.2)</li>
+<li>Glosario (ASI 1.1)</li>
+<li>Catálogo de normas (ASI 1.3)</li>
+<li>Catálogo de requisitos (ASI 2.4)</li>
+<li>Especificación de interfaz de usuario (ASI 9.3) En análisis estructurado:</li>
+<li>Plan de migración y carga inicial de datos (ASI 6.4)</li>
+<li>Contexto del sistema (ASI 1.1)</li>
+<li>Matriz de procesos / localización geográfica (ASI 7.1)</li>
+<li>Descripción de interfaz con otros sistemas (ASI 7.2)</li>
+<li>Modelo de procesos (ASI 9.3)</li>
+<li>Modelo lógico de datos normalizado (ASI 9.3) En análisis orientado a objetos:</li>
+<li>Modelo de negocio / modelo de dominio (ASI 1.1)</li>
+<li>Modelo de casos de uso (ASI 9.3)</li>
+<li>Especificación de casos de uso (ASI 9.3)</li>
+<li>Descripción de subsistemas de análisis (ASI 9.3)</li>
+<li>Descripción de interfaces entre subsistemas (ASI 9.3)</li>
+<li>Modelo de clases de análisis (ASI 9.3)</li>
+<li>Comportamiento de clases de análisis (ASI 9.3)</li>
+<li>Análisis de la realización de los casos de uso (ASI 9.3)</li>
+</ul>
 </section>
 <section id="de-salida-25" class="level6 unnumbered unlisted">
 <h6 class="unnumbered unlisted anchored" data-anchor-id="de-salida-25">De salida</h6>
-<pre><code>Especificación de Requisitos Software (ERS)</code></pre>
+<ul>
+<li>Especificación de Requisitos Software (ERS)</li>
+</ul>
 </section>
 </section>
 <section id="participantes-25" class="level5 unnumbered unlisted">
 <h5 class="unnumbered unlisted anchored" data-anchor-id="participantes-25">Participantes</h5>
-<pre><code>Analistas</code></pre>
+<ul>
+<li>Analistas</li>
+</ul>
 </section>
 </section>
 </section>
@@ -2191,11 +2466,13 @@ Análisis de la realización de los casos de uso (ASI 9.3)</code></pre>
 <p>El plan de pruebas es un producto formal que define los objetivos de la prueba de un sistema, establece y coordina una estrategia de trabajo, y provee del marco adecuado para elaborar una planificación paso a paso de las actividades de prueba. El plan se inicia en el proceso Análisis del Sistema de Información (ASI), definiendo el marco general, y estableciendo los requisitos de prueba de aceptación, relacionados directamente con la especificación de requisitos.</p>
 <p>Dicho plan se va completando y detallando a medida que se avanza en los restantes procesos del ciclo de vida del software, Diseño del Sistema de Información (DSI), Construcción del Sistema de Información (CSI) e Implantación y Aceptación del Sistema (IAS).</p>
 <p>Se plantean los siguientes niveles de prueba:</p>
-<pre><code>Pruebas unitarias.
-Pruebas de integración.
-Pruebas del sistema.
-Pruebas de implantación.
-Pruebas de aceptación.</code></pre>
+<ul>
+<li>Pruebas unitarias.</li>
+<li>Pruebas de integración.</li>
+<li>Pruebas del sistema.</li>
+<li>Pruebas de implantación.</li>
+<li>Pruebas de aceptación.</li>
+</ul>
 <p>En esta actividad también se avanza en la definición de las pruebas de aceptación del sistema. Con la información disponible, es posible establecer los criterios de aceptación de las pruebas incluidas en dicho nivel, al poseer la información sobre los requisitos que debe cumplir el sistema, recogidos en el catálogo de requisitos.</p>
 <table class="avia-table avia-data-table caption-top table">
 <colgroup>
@@ -2262,47 +2539,57 @@ Pruebas de aceptación.</code></pre>
 <h4 data-number="4.1.10.1" class="anchored" data-anchor-id="tarea-asi-10.1-definición-del-alcance-de-las-pruebas"><span class="header-section-number">4.1.10.1</span> Tarea ASI 10.1: Definición del Alcance de las Pruebas</h4>
 <p>En función de la solución adoptada en el desarrollo de un sistema de información, es posible que determinados niveles de pruebas sean especialmente críticos y otros no sean necesarios. Por ejemplo, puede haber grandes diferencias en función de una solución de desarrollo completo o un producto de mercado cerrado integrado con otros sistemas.</p>
 <p>En esta tarea se especifican y justifican de los niveles de pruebas a realizar, así como el marco general de planificación de cada nivel de prueba, según el siguiente esquema:</p>
-<pre><code>Definición de los perfiles implicados en los distintos niveles de prueba.
-Planificación temporal.
-Criterios de verificación y aceptación de cada nivel de prueba.
-Definición, generación y mantenimiento de verificaciones y casos de prueba.
-Análisis y evaluación de los resultados de cada nivel de prueba.
-Productos a entregar como resultado de la ejecución de las pruebas.</code></pre>
+<ul>
+<li>Definición de los perfiles implicados en los distintos niveles de prueba.</li>
+<li>Planificación temporal.</li>
+<li>Criterios de verificación y aceptación de cada nivel de prueba.</li>
+<li>Definición, generación y mantenimiento de verificaciones y casos de prueba.</li>
+<li>Análisis y evaluación de los resultados de cada nivel de prueba.</li>
+<li>Productos a entregar como resultado de la ejecución de las pruebas.</li>
+</ul>
 <section id="productos-26" class="level5 unnumbered unlisted">
 <h5 class="unnumbered unlisted anchored" data-anchor-id="productos-26">Productos</h5>
 <section id="de-entrada-26" class="level6 unnumbered unlisted">
 <h6 class="unnumbered unlisted anchored" data-anchor-id="de-entrada-26">De entrada</h6>
-<pre><code>Catálogo de Requisitos ([ASI 1.2](04-asi.qmd#asi-1-2](04-asi.qmd#asi-1-2)))
-Catálogo de Normas ([ASI 1.3](04-asi.qmd#asi-9-3](04-asi.qmd#asi-9-3)))
-Descripción General del Entorno Tecnológico ([ASI 2.4](04-asi.qmd#asi-2-4))
-Especificación de Interfaz de Usuario ([ASI 9.3](04-asi.qmd#asi-9-3))
-En Análisis Estructurado:
-Contexto del Sistema ([ASI 1.1](04-asi.qmd#asi-1-1))
-Modelo de Procesos ([ASI 9.3](04-asi.qmd#asi-9-3))
-Modelo Lógico de Datos Normalizado ([ASI 9.3](04-asi.qmd#asi-9-3))
-En Análisis Orientado a Objeto:
-Modelo de Casos de Uso ([ASI 9.3](04-asi.qmd#asi-9-3))
-Especificación de Casos de Uso ([ASI 9.3](04-asi.qmd#asi-9-3))
-Descripción de Subsistemas de Análisis ([ASI 9.3](04-asi.qmd#asi-9-3))
-Descripción de Interfaces entre Subsistemas ([ASI 9.3](04-asi.qmd#asi-9-3))
-Modelo de Clases ([ASI 9.3](04-asi.qmd#asi-9-3))
-Comportamiento de Clases ([ASI 9.3](04-asi.qmd#asi-9-3))
-Análisis de la Realización de los Casos de Uso ([ASI 9.3](04-asi.qmd#asi-9-3))</code></pre>
+<ul>
+<li>Catálogo de Requisitos (<a href="../01-principal/04-asi.html#asi-1-2](04-asi.qmd#asi-1-2)">ASI 1.2</a>)</li>
+<li>Catálogo de Normas (<a href="../01-principal/04-asi.html#asi-9-3](04-asi.qmd#asi-9-3)">ASI 1.3</a>)</li>
+<li>Descripción General del Entorno Tecnológico (<a href="../01-principal/04-asi.html#asi-2-4">ASI 2.4</a>)</li>
+<li>Especificación de Interfaz de Usuario (<a href="../01-principal/04-asi.html#asi-9-3">ASI 9.3</a>) En Análisis Estructurado:</li>
+<li>Contexto del Sistema (<a href="../01-principal/04-asi.html#asi-1-1">ASI 1.1</a>)</li>
+<li>Modelo de Procesos (<a href="../01-principal/04-asi.html#asi-9-3">ASI 9.3</a>)</li>
+<li>Modelo Lógico de Datos Normalizado (<a href="../01-principal/04-asi.html#asi-9-3">ASI 9.3</a>) En Análisis Orientado a Objeto:</li>
+<li>Modelo de Casos de Uso (<a href="../01-principal/04-asi.html#asi-9-3">ASI 9.3</a>)</li>
+<li>Especificación de Casos de Uso (<a href="../01-principal/04-asi.html#asi-9-3">ASI 9.3</a>)</li>
+<li>Descripción de Subsistemas de Análisis (<a href="../01-principal/04-asi.html#asi-9-3">ASI 9.3</a>)</li>
+<li>Descripción de Interfaces entre Subsistemas (<a href="../01-principal/04-asi.html#asi-9-3">ASI 9.3</a>)</li>
+<li>Modelo de Clases (<a href="../01-principal/04-asi.html#asi-9-3">ASI 9.3</a>)</li>
+<li>Comportamiento de Clases (<a href="../01-principal/04-asi.html#asi-9-3">ASI 9.3</a>)</li>
+<li>Análisis de la Realización de los Casos de Uso (<a href="../01-principal/04-asi.html#asi-9-3">ASI 9.3</a>)</li>
+</ul>
 </section>
 <section id="de-salida-26" class="level6 unnumbered unlisted">
 <h6 class="unnumbered unlisted anchored" data-anchor-id="de-salida-26">De salida</h6>
-<pre><code>Plan de Pruebas:
-    Especificación de los Niveles de Pruebas</code></pre>
+<ul>
+<li>Plan de Pruebas:
+<ul>
+<li>Especificación de los Niveles de Pruebas</li>
+</ul></li>
+</ul>
 <p>Prácticas {.unnumbered .unlisted}</p>
-<pre><code>Sesiones de Trabajo</code></pre>
+<ul>
+<li>Sesiones de Trabajo</li>
+</ul>
 </section>
 </section>
 <section id="participantes-26" class="level5 unnumbered unlisted">
 <h5 class="unnumbered unlisted anchored" data-anchor-id="participantes-26">Participantes</h5>
-<pre><code>Jefe de proyecto
-Analistas
-Equipo de Soporte Técnico
-Usuarios Expertos</code></pre>
+<ul>
+<li>Jefe de proyecto</li>
+<li>Analistas</li>
+<li>Equipo de Soporte Técnico</li>
+<li>Usuarios Expertos</li>
+</ul>
 </section>
 </section>
 <section id="tarea-asi-10.2-definición-de-requisitos-del-entorno-de-pruebas" class="level4" data-number="4.1.10.2">
@@ -2311,34 +2598,46 @@ Usuarios Expertos</code></pre>
 <p>La realización de las pruebas aconseja disponer de un entorno de pruebas separado del entorno de desarrollo y del entorno de operación, garantizando cierta independencia y estabilidad en los datos y elementos a probar, de modo que los resultados obtenidos sean objetivamente representativos, punto especialmente crítico en pruebas de rendimiento.</p>
 <p>No es objeto de MÉTRICA Versión 3 en general, ni de esta tarea en particular, la especificación formal de entornos y procedimientos de pruebas en el ámbito de una instalación.</p>
 <p>Independientemente de la existencia o no de dichos entornos, en esta tarea se inicia la definición de las especificaciones necesarias para la correcta ejecución de las distintas pruebas del sistema de información. Entre ellas podemos citar las siguientes:</p>
-<pre><code>Requisitos básicos de hardware y software base: sistemas operativos, gestores de bases de datos, monitores de teleproceso, etc.
-Requisitos de configuración de entorno: librerías, bases de datos, ficheros, procesos, comunicaciones, necesidades de almacenamiento, configuración de accesos, etc.
-Herramientas auxiliares. Por ejemplo, de extracción de juegos de ensayo, análisis de rendimiento y calidad, etc.
-Procedimientos para la realización de pruebas y migración de elementos entre entornos.</code></pre>
+<ul>
+<li>Requisitos básicos de hardware y software base: sistemas operativos, gestores de bases de datos, monitores de teleproceso, etc.</li>
+<li>Requisitos de configuración de entorno: librerías, bases de datos, ficheros, procesos, comunicaciones, necesidades de almacenamiento, configuración de accesos, etc.</li>
+<li>Herramientas auxiliares. Por ejemplo, de extracción de juegos de ensayo, análisis de rendimiento y calidad, etc.</li>
+<li>Procedimientos para la realización de pruebas y migración de elementos entre entornos.</li>
+</ul>
 <section id="productos-27" class="level5 unnumbered unlisted">
 <h5 class="unnumbered unlisted anchored" data-anchor-id="productos-27">Productos</h5>
 <section id="de-entrada-27" class="level6 unnumbered unlisted">
 <h6 class="unnumbered unlisted anchored" data-anchor-id="de-entrada-27">De entrada</h6>
-<pre><code>Catálogo de Requisitos ([ASI 2.4](04-asi.qmd#asi-2-4))
-Descripción General del Entorno Tecnológico ([ASI 1.2](04-asi.qmd#asi-1-2))
-Plan de pruebas ([ASI 10.1]](04-asi.qmd#asi-10-1))</code></pre>
+<ul>
+<li>Catálogo de Requisitos (<a href="../01-principal/04-asi.html#asi-2-4">ASI 2.4</a>)</li>
+<li>Descripción General del Entorno Tecnológico (<a href="../01-principal/04-asi.html#asi-1-2">ASI 1.2</a>)</li>
+<li>Plan de pruebas ([ASI 10.1]](04-asi.qmd#asi-10-1))</li>
+</ul>
 </section>
 <section id="de-salida-27" class="level6 unnumbered unlisted">
 <h6 class="unnumbered unlisted anchored" data-anchor-id="de-salida-27">De salida</h6>
-<pre><code>Plan de pruebas:
-    Definición de Requisitos del Entorno de Pruebas</code></pre>
+<ul>
+<li>Plan de pruebas:
+<ul>
+<li>Definición de Requisitos del Entorno de Pruebas</li>
+</ul></li>
+</ul>
 </section>
 </section>
 <section id="prácticas" class="level5 unnumbered unlisted">
 <h5 class="unnumbered unlisted anchored" data-anchor-id="prácticas">Prácticas</h5>
-<pre><code>Sesiones de Trabajo</code></pre>
+<ul>
+<li>Sesiones de Trabajo</li>
+</ul>
 </section>
 <section id="participantes-27" class="level5 unnumbered unlisted">
 <h5 class="unnumbered unlisted anchored" data-anchor-id="participantes-27">Participantes</h5>
-<pre><code>Jefe de proyecto
-Analistas
-Equipo de Soporte Técnico
-Usuarios Expertos</code></pre>
+<ul>
+<li>Jefe de proyecto</li>
+<li>Analistas</li>
+<li>Equipo de Soporte Técnico</li>
+<li>Usuarios Expertos</li>
+</ul>
 </section>
 </section>
 <section id="tarea-asi-10.3-definición-de-las-pruebas-de-aceptación-del-sistema" class="level4" data-number="4.1.10.3">
@@ -2346,44 +2645,52 @@ Usuarios Expertos</code></pre>
 <p>En esta tarea se realiza la especificación de las pruebas de aceptación del sistema, labor fundamental para que el usuario valide el sistema, como último paso, previo a la puesta en explotación.</p>
 <p>Se debe insistir, principalmente, en los criterios de aceptación del sistema que sirven de base para asegurar que satisface los requisitos exigidos.</p>
 <p>Los criterios de aceptación deben ser definidos de forma clara, prestando especial atención a aspectos como:</p>
-<pre><code>Procesos críticos del sistema.
-Rendimiento del sistema.
-Seguridad.
-Disponibilidad.</code></pre>
+<ul>
+<li>Procesos críticos del sistema.</li>
+<li>Rendimiento del sistema.</li>
+<li>Seguridad.</li>
+<li>Disponibilidad.</li>
+</ul>
 <section id="productos-28" class="level5 unnumbered unlisted">
 <h5 class="unnumbered unlisted anchored" data-anchor-id="productos-28">Productos</h5>
 <section id="de-entrada-28" class="level6 unnumbered unlisted">
 <h6 class="unnumbered unlisted anchored" data-anchor-id="de-entrada-28">De entrada</h6>
-<pre><code>Catálogo de requisitos ([ASI 2.4](04-asi.qmd#asi-2-4))
-Especificación de Interfaz de Usuario ([ASI 9.3](04-asi.qmd#asi-9-3))
-Plan de Pruebas ([ASI 10.2](04-asi.qmd#asi-10-2))
-En Análisis Estructurado:
-Contexto del Sistema ([ASI 1.1](04-asi.qmd#asi-1-1))
-Descripción de Interfaz con otros Sistemas ([ASI 7.2](04-asi.qmd#asi-7-2))
-Modelo de Procesos ([ASI 9.3](04-asi.qmd#asi-9-3))
-Modelo Lógico de Datos Normalizado ([ASI 9.3](04-asi.qmd#asi-9-3))
-En Análisis Orientado a Objetos:
-Modelo de Casos de Uso ([ASI 9.3](04-asi.qmd#asi-9-3))
-Especificación de Casos de Uso ([ASI 9.3](04-asi.qmd#asi-9-3))
-Descripción de Subsistemas de Análisis ([ASI 9.3](04-asi.qmd#asi-9-3))
-Descripción de Interfaces entre Subsistemas ([ASI 9.3)
-Modelo de Clases ([ASI 9.3](04-asi.qmd#asi-9-3))
-Comportamiento de Clases ([ASI 9.3](04-asi.qmd#asi-9-3))
-Análisis de la Realización de los Casos de Uso ([ASI 9.3](04-asi.qmd#asi-9-3))</code></pre>
+<ul>
+<li>Catálogo de requisitos (<a href="../01-principal/04-asi.html#asi-2-4">ASI 2.4</a>)</li>
+<li>Especificación de Interfaz de Usuario (<a href="../01-principal/04-asi.html#asi-9-3">ASI 9.3</a>)</li>
+<li>Plan de Pruebas (<a href="../01-principal/04-asi.html#asi-10-2">ASI 10.2</a>) En Análisis Estructurado:</li>
+<li>Contexto del Sistema (<a href="../01-principal/04-asi.html#asi-1-1">ASI 1.1</a>)</li>
+<li>Descripción de Interfaz con otros Sistemas (<a href="../01-principal/04-asi.html#asi-7-2">ASI 7.2</a>)</li>
+<li>Modelo de Procesos (<a href="../01-principal/04-asi.html#asi-9-3">ASI 9.3</a>)</li>
+<li>Modelo Lógico de Datos Normalizado (<a href="../01-principal/04-asi.html#asi-9-3">ASI 9.3</a>) En Análisis Orientado a Objetos:</li>
+<li>Modelo de Casos de Uso (<a href="../01-principal/04-asi.html#asi-9-3">ASI 9.3</a>)</li>
+<li>Especificación de Casos de Uso (<a href="../01-principal/04-asi.html#asi-9-3">ASI 9.3</a>)</li>
+<li>Descripción de Subsistemas de Análisis (<a href="../01-principal/04-asi.html#asi-9-3">ASI 9.3</a>)</li>
+<li>Descripción de Interfaces entre Subsistemas ([ASI 9.3)</li>
+<li>Modelo de Clases (<a href="../01-principal/04-asi.html#asi-9-3">ASI 9.3</a>)</li>
+<li>Comportamiento de Clases (<a href="../01-principal/04-asi.html#asi-9-3">ASI 9.3</a>)</li>
+<li>Análisis de la Realización de los Casos de Uso (<a href="../01-principal/04-asi.html#asi-9-3">ASI 9.3</a>)</li>
+</ul>
 </section>
 <section id="de-salida-28" class="level6 unnumbered unlisted">
 <h6 class="unnumbered unlisted anchored" data-anchor-id="de-salida-28">De salida</h6>
-<pre><code>Plan de Pruebas</code></pre>
+<ul>
+<li>Plan de Pruebas</li>
+</ul>
 <p>Prácticas {.unnumbered .unlisted}</p>
-<pre><code>Sesiones de Trabajo</code></pre>
+<ul>
+<li>Sesiones de Trabajo</li>
+</ul>
 </section>
 </section>
 <section id="participantes-28" class="level5 unnumbered unlisted">
 <h5 class="unnumbered unlisted anchored" data-anchor-id="participantes-28">Participantes</h5>
-<pre><code>Jefe de Proyecto
-Analistas
-Equipo de Soporte Técnico
-Usuarios Expertos</code></pre>
+<ul>
+<li>Jefe de Proyecto</li>
+<li>Analistas</li>
+<li>Equipo de Soporte Técnico</li>
+<li>Usuarios Expertos</li>
+</ul>
 </section>
 </section>
 </section>
@@ -2425,22 +2732,30 @@ Usuarios Expertos</code></pre>
 <h5 class="unnumbered unlisted anchored" data-anchor-id="productos-29">Productos</h5>
 <section id="de-entrada-29" class="level6 unnumbered unlisted">
 <h6 class="unnumbered unlisted anchored" data-anchor-id="de-entrada-29">De entrada</h6>
-<pre><code>Especificación de Requisitos Software (ERS) ([ASI 9.4](04-asi.qmd#asi-9-4))
-Plan de pruebas ([ASI 10.3](04-asi.qmd#asi-10-3))</code></pre>
+<ul>
+<li>Especificación de Requisitos Software (ERS) (<a href="../01-principal/04-asi.html#asi-9-4">ASI 9.4</a>)</li>
+<li>Plan de pruebas (<a href="../01-principal/04-asi.html#asi-10-3">ASI 10.3</a>)</li>
+</ul>
 </section>
 <section id="de-salida-29" class="level6 unnumbered unlisted">
 <h6 class="unnumbered unlisted anchored" data-anchor-id="de-salida-29">De salida</h6>
-<pre><code>Aprobación del Análisis del Sistema de Información</code></pre>
+<ul>
+<li>Aprobación del Análisis del Sistema de Información</li>
+</ul>
 </section>
 </section>
 <section id="técnicas-19" class="level5 unnumbered unlisted">
 <h5 class="unnumbered unlisted anchored" data-anchor-id="técnicas-19">Técnicas</h5>
-<pre><code>Presentación</code></pre>
+<ul>
+<li>Presentación</li>
+</ul>
 </section>
 <section id="participantes-29" class="level5 unnumbered unlisted">
 <h5 class="unnumbered unlisted anchored" data-anchor-id="participantes-29">Participantes</h5>
-<pre><code>Comité de Seguimiento
-Jefe de Proyecto</code></pre>
+<ul>
+<li>Comité de Seguimiento</li>
+<li>Jefe de Proyecto</li>
+</ul>
 </section>
 </section>
 </section>
