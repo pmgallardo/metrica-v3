@@ -649,14 +649,14 @@ El siguiente ejemplo muestra un proceso de emisión de cheques para el pago de 
 
 ![Ejemplo de Diagrama de Estructura](../images/ejemplo-diagrama-de-estructura.png) 
 
-### Diagrama de Flujo de Datos {#diagrama-de-flujo-de-datos}
+### Diagrama de Flujo de Datos (DFD) {#diagrama-de-flujo-de-datos}
 
 El objetivo del diagrama de flujo de datos es la obtención de un modelo lógico de procesos que represente el sistema, con independencia de las restricciones físicas del entorno. Así se facilita su comprensión por los usuarios y los miembros del equipo de desarrollo.
 
 El sistema se divide en distintos niveles de detalle, con el objetivo de:
 
-* Simplificar la complejidad del sistema, representando los diferentes procesos de que consta.
-* Facilitar el mantenimiento del sistema.
+- Simplificar la complejidad del sistema, representando los diferentes procesos de que consta.
+- Facilitar el mantenimiento del sistema.
 
 #### Descripción {.unnumbered .unlisted}
 
@@ -666,23 +666,23 @@ Esta técnica consiste en la descomposición sucesiva de los procesos, desde u
 
 El diagrama de flujo de datos se compone de los siguientes elementos:
 
-* **Entidad externa**: representa un ente ajeno al sistema que proporciona o recibe información del mismo. Puede hacer referencia a departamentos, personas, máquinas, recursos u otros sistemas. El estudio de las relaciones entre entidades externas no forma parte del modelo.
+- **Entidad externa**: representa un ente ajeno al sistema que proporciona o recibe información del mismo. Puede hacer referencia a departamentos, personas, máquinas, recursos u otros sistemas. El estudio de las relaciones entre entidades externas no forma parte del modelo.
   Puede aparecer varias veces en un mismo diagrama, así como en los distintos niveles del DFD para mejorar la claridad del diagrama.
-* **Proceso**: representa una funcionalidad que tiene que llevar a cabo el sistema para transformar o manipular datos. El proceso debe ser capaz de generar los flujos de datos de salida a partir de los de entrada, más una información constante o variable al proceso.
+- **Proceso**: representa una funcionalidad que tiene que llevar a cabo el sistema para transformar o manipular datos. El proceso debe ser capaz de generar los flujos de datos de salida a partir de los de entrada, más una información constante o variable al proceso.
   El proceso nunca es el origen ni el final de los datos, puede transformar un flujo de datos de entrada en varios de salida y siempre es necesario como intermediario entre una entidad externa y un almacén de datos.
-* **Almacén de datos**: representa la información en reposo utilizada por el sistema independientemente del sistema de gestión de datos (por ejemplo un. fichero, base de datos, archivador, etc.). Contiene la información necesaria para la ejecución del proceso.
+- **Almacén de datos**: representa la información en reposo utilizada por el sistema independientemente del sistema de gestión de datos (por ejemplo un. fichero, base de datos, archivador, etc.). Contiene la información necesaria para la ejecución del proceso.
   El almacén no puede crear, transformar o destruir datos, no puede estar comunicado con otro almacén o entidad externa y aparecerá por primera vez en aquel nivel en que dos o más procesos accedan a él.
-* **Flujo de datos:** representa el movimiento de los datos, y establece la comunicación entre los procesos y los almacenes de datos o las entidades externas.
-* Un flujo de datos entre dos procesos sólo es posible cuando la información es síncrona, es decir, el proceso destino comienza cuando el proceso origen finaliza su función.
-* Los flujos de datos que comunican procesos con almacenes pueden ser de los siguientes tipos:
-  * *De consulta*: representan la utilización de los valores de uno o más campos de un almacén o la comprobación de que los valores de los campos seleccionados cumplen unos criterios determinados.
-  * *De actualización*: representan la alteración de los datos de un almacén como consecuencia de la creación de un nuevo elemento, por eliminación o modificación de otros ya existentes.
-  * *De diálogo:* es un flujo entre un proceso y un almacén que representa una consulta y una actualización.
+- **Flujo de datos:** representa el movimiento de los datos, y establece la comunicación entre los procesos y los almacenes de datos o las entidades externas.
+- Un flujo de datos entre dos procesos sólo es posible cuando la información es síncrona, es decir, el proceso destino comienza cuando el proceso origen finaliza su función.
+- Los flujos de datos que comunican procesos con almacenes pueden ser de los siguientes tipos:
+  - *De consulta*: representan la utilización de los valores de uno o más campos de un almacén o la comprobación de que los valores de los campos seleccionados cumplen unos criterios determinados.
+  - *De actualización*: representan la alteración de los datos de un almacén como consecuencia de la creación de un nuevo elemento, por eliminación o modificación de otros ya existentes.
+  - *De diálogo:* es un flujo entre un proceso y un almacén que representa una consulta y una actualización.
 
 Existen sistemas que precisan de información orientada al control de datos y requieren flujos y procesos de control, así como los mecanismos que desencadenan su ejecución. Para que resulte adecuado el análisis de estos sistemas, se ha ampliado la notación de los diagramas de flujo de datos incorporando los siguientes elementos:
 
-* **Proceso de control**: representa procesos que coordinan y sincronizan las actividades de otros procesos del diagrama de flujo de datos.
-* **Flujo de control**: representa el flujo entre un proceso de control y otro proceso. El flujo de control que sale de un proceso de control activa al proceso que lo recibe y el que entra le informa de la situación de un proceso. A diferencia de los flujos tradicionales, que pueden considerarse como procesadores de datos porque reflejan el movimiento y transformación de los mismos, los flujos de control no representan datos con valores, sino que en cierto modo, se trata de eventos que activan los procesos (señales o interrupciones).
+- **Proceso de control**: representa procesos que coordinan y sincronizan las actividades de otros procesos del diagrama de flujo de datos.
+- **Flujo de control**: representa el flujo entre un proceso de control y otro proceso. El flujo de control que sale de un proceso de control activa al proceso que lo recibe y el que entra le informa de la situación de un proceso. A diferencia de los flujos tradicionales, que pueden considerarse como procesadores de datos porque reflejan el movimiento y transformación de los mismos, los flujos de control no representan datos con valores, sino que en cierto modo, se trata de eventos que activan los procesos (señales o interrupciones).
 
 ##### Descomposición o explosión por niveles {.unnumbered .unlisted}
 
@@ -696,11 +696,11 @@ En cualquiera de las explosiones puede aparecer un proceso que no necesite desco
 
 El modelo de procesos deberá contener:
 
-* Un diagrama de contexto (Nivel 0).
-* Un diagrama 0 (Nivel 1).
-* Tantos diagramas 1, 2, 3, … n como funciones haya en el diagrama 0 (Nivel 2).
-* Tantos niveles intermedios como sea necesario.
-* Varios DFD en el último nivel de detalle.
+- Un diagrama de contexto (Nivel 0).
+- Un diagrama 0 (Nivel 1).
+- Tantos diagramas 1, 2, 3, … n como funciones haya en el diagrama 0 (Nivel 2).
+- Tantos niveles intermedios como sea necesario.
+- Varios DFD en el último nivel de detalle.
 
 El diagrama de contexto tiene como objetivo delimitar el ámbito del sistema con el mundo exterior definiendo sus interfaces. En este diagrama se representa un único proceso que corresponde al sistema en estudio, un conjunto de entidades externas que representan la procedencia y destino de la información y un conjunto de flujos de datos que representan los caminos por los que fluye dicha información.
 
@@ -744,9 +744,9 @@ El nombre del proceso debe ser lo más representativo posible. Normalmente esta
 
 El número identificativo se representa en la parte superior izquierda e indica el nivel del DFD en que se está. Hay que resaltar que el número no indica orden de ejecución alguno entre los procesos ya que en un DFD no se representa una secuencia en el tratamiento de los datos. El número que identifica el proceso es único en el sistema y debe seguir el siguiente estándar de notación:
 
-* El proceso del diagrama de contexto se numera como cero.
-* Los procesos del siguiente nivel se enumeran desde 1 y de forma creciente hasta completar el número de procesos del diagrama.
-* En los niveles inferiores se forma con el número del proceso en el que está incluido seguido de un número que lo identifica en ese contexto.
+- El proceso del diagrama de contexto se numera como cero.
+- Los procesos del siguiente nivel se enumeran desde 1 y de forma creciente hasta completar el número de procesos del diagrama.
+- En los niveles inferiores se forma con el número del proceso en el que está incluido seguido de un número que lo identifica en ese contexto.
 
 La localización expresa el nombre del proceso origen de la descomposición que se esté tratando.
 
@@ -788,7 +788,95 @@ La figura es un diagrama de flujos de un Sistema Gestor de Pedidos. En él esta
 
 ![Ejemplo de Diagrama de Flujo de Datos](../images/dfd-ejemplo.png)
 
-### Diagrama de Interacción
+#### Consistencia de los diagramas de flujos de datos {.unnumbered .unlisted}
+
+Una vez construidos los diagramas de flujo de datos que componen el modelo de procesos del sistema de información, es necesario comprobar y asegurar su validez. Para ello, se debe estudiar cada diagrama comprobando que es legible, de poca complejidad y si los nombres asignados a sus elementos ayudan a su comprensión sin ambigüedades.
+
+Además, los diagramas deben ser consistentes. En los diagramas hay que comprobar que en un DFD resultado de una explosión:
+
+    No falten flujos de datos de entrada o salida que acompañaban al proceso del nivel superior.
+    No aparezca algún flujo que no estuviese ya asociado al proceso de nivel superior.
+    Todos los elementos del DFD resultante deben estar conectados directa o indirectamente con los flujos del proceso origen.
+
+A continuación se incluyen ejemplos de la consistencia o inconsistencia de los diagramas de flujo de datos.
+
+Sea el diagrama de contexto de la figura. Los flujos A, C y D, entran al sistema, y el flujo B sale de él.
+
+![](../images/dfd-contexto.png)
+
+##### Ejemplo de consistencia de diagramas de flujo de datos {.unnumbered .unlisted}
+
+En la explosión del sistema en el diagrama de nivel 1, aparecen todos los flujos, y en su sentido correcto: A y C entran al subsistema o proceso 1, B sale del proceso 2, y D entra en el proceso 3. Se observa que el proceso 3, origina dos flujos de salida: E que va a al proceso 1, y F al proceso 2.
+
+![](../images/dfd-nivel1.png)
+
+La descomposición del proceso 1, muestra los flujos A, C y E correctamente, como entradas a las funciones del diagrama.
+
+![](../images/dfd-proceso1.png)
+
+Los demás flujos están enlazados con los almacenes A1 y A2 del mismo modo que en el diagrama anterior.
+
+##### Ejemplo de inconsistencia de diagramas de flujo de datos {.unnumbered .unlisted}
+
+Partiendo del mismo diagrama de contexto utilizado en el anterior ejemplo, los flujos A, C y D, que entran al sistema, y el flujo B, que sale de él, deben aparecer en la primera descomposición, el diagrama de nivel 1. En la figura se aprecia que falta el flujo D, y hay un flujo G que o bien falta en el nivel anterior, sobra en este.
+
+Por otro lado, en el proceso 3 no entra ningún flujo, no es posible por tanto que transforme datos saliendo los flujos E y F y además está desconectado del nivel anterior.
+
+![](../images/dfd-nivel1-2.png)
+
+En el siguiente paso, la inconsistencia más clara es la falta del flujo C, que entra al proceso 1, y sin embargo no aparece en su explosión.
+
+![](../images/dfd-proceso1-2.png)
+
+Además, hay otra inconsistencia respecto al almacén A1: en el diagrama del nivel anterior, el proceso 1 se conectaba con un flujo de entrada-salida este almacén, cosa que no se refleja en el diagrama de este proceso, en el que sólo aparece uno de entrada.
+
+Ejemplo de construcción.
+
+El caso en estudio es un modelo de procesos de un sistema de información de Conocimientos de técnicos. Según estos conocimientos, los técnicos podrán ser asignados a determinados proyectos de la organización.
+
+El sistema recogerá la información referente a los técnicos, procedente de la Dirección técnica de la organización y de los proyectos, procedente de cualquier sección o Unidad de Negocio en las que está dividida dicha organización.
+
+Las entidades externas son pues Dirección Técnica y Unidad de Negocio, que introducen los datos al sistema y hacen peticiones de consultas e informes sobre los técnicos y sus conocimientos. El diagrama de contexto será el siguiente:
+
+![](../images/dfd-contexto-1.png)
+
+Los flujos de entrada son: Datos Técnicos, con datos de los técnicos introducidos por la Dirección Técnica, así como posibles peticiones de información sobre ellos; y Datos Unidad, que proviene de la Unidad de Negocio, conteniendo datos referentes a la unidad, de proyectos y clientes, así como posibles peticiones de consultas sobre los mismos.
+
+Los flujos de salida son: Información Técnicos, que contendrá datos de técnicos, de consulta o informes, para uso de la Dirección Técnica y Consultas Unidad, con datos requeridos por la Unidad de Negocio.
+
+El sistema de Conocimientos se descompone en el diagrama de nivel 1, conteniendo dos subsistemas. El subsistema 1 recogerá las funciones a realizar con los datos de los técnicos de la organización (actualizaciones, consultas, informes, etc.), por lo que se denomina Tratar Técnicos. El subsistema 2 contendrá las funciones asociadas al procesamiento de datos de proyectos, por lo que se le da el nombre Tratar Proyectos.
+
+![Ejemplo de diagrama de flujo de datos](../images/dfd-subsistema.png)
+
+En el diagrama se encuentran cuatro almacenes, tres de los cuales son accedidos por funciones de los dos subsistemas: A1 Conocimientos, A2 Proyectos y A3 Técnicos. El cuarto, A4 Clientes, sólo es accedido por el subsistema Tratar Proyectos.
+
+Los flujos sin nombre indican que hay entrada y/o salida de todos los datos del almacén. En este diagrama siguen apareciendo las entidades externas para la mayor comprensión del mismo.
+
+A partir de ahora, se centrará el ejemplo en la descomposición del subsistema 1 Tratar Técnicos, hasta llegar a su nivel más detallado.
+
+En el diagrama resultado de la explosión de Tratar Técnicos, se incluyen cuatro procesos o funciones para el tratamiento completo de éstos.
+
+El flujo de entrada Datos Técnicos se compone tanto de los datos profesionales de los técnicos, como de datos de peticiones de información sobre los mismos, por lo cual se ha dividido en dos: Datos Profesionales, que es entrada del proceso 1.1 Validar datos Técnicos y Peticiones Información Técnicos, que entra en la función 1.4 Informar.
+
+![](../images/dfd-subsistema-2.png)
+
+Para la validación, el proceso 1.1 Validar Datos Técnicos obtiene información del almacén A3 Técnicos y genera una salida, el flujo Datos Técnicos Correctos, que lleva los datos válidos a la función 1.2 Actualizar Almacenes Técnicos. Esta función se encarga de actualizar los almacenes A3 Técnicos y A1 Conocimientos, pero también emite un flujo al proceso 1.3 Asignar a Proyectos. Éste se encarga de hacer asignaciones de técnicos en el almacén A2 Proyectos.
+
+La función 1.4 Informar, recibe las peticiones de información sobre técnicos, las procesa utilizando los almacenes necesarios y genera el flujo Información Técnicos que irá a la entidad Dirección Técnica, según muestran los primeros diagramas.
+
+Obsérvese que para mayor claridad no se ha incluido ya ninguna entidad externa, y además, se ha repetido el almacén A3 Técnicos, evitando que el cruce de flujos oscurezca la lectura del diagrama.
+
+En este momento, todos los procesos se consideran primitivos, excepto el proceso 1.4 Informar, del que se obtiene su descomposición. Sus funciones han de obtener Informes Técnicos y Consultas Técnicos, flujos que componen Información Técnicos que aparecía en el nivel anterior.
+
+![](../images/dfd-subsistema-3.png)
+
+Por otro lado, también aparece dividido el flujo de entrada Peticiones Información Técnicos, diferenciando la entrada al proceso de consultas o al de emisión de informes.
+
+Por último, se puede apreciar que los almacenes son los mismos que se conectaban con el proceso en el nivel anterior y los flujos son de entrada a las funciones.
+
+(Nota.- Esta notación es la más habitual, pero MÉTRICA Versión 3 no exige su utilización).
+
+### Diagrama de Interacción {#diagrama-de-interaccion}
 
 El objetivo de esta técnica es describir el comportamiento dinámico del sistema de información mediante el paso de mensajes entre los objetos del mismo. Además representa un medio para verificar la coherencia del sistema mediante la validación con el modelo de clases.
 Descripción
