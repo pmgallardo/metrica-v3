@@ -4,14 +4,14 @@
 
 Este proceso tiene como objetivo principal la entrega y aceptación del sistema en su totalidad, y la realización de todas las actividades necesarias para el paso a producción del mismo.
 
-En primer lugar, se revisa la estrategia de implantación que ya se determinó en el proceso Estudio de Viabilidad del Sistema (EVS). Se estudia su alcance y, en función de sus características, se define un plan de implantación y se especifica el equipo que lo va a llevar a cabo. Conviene señalar la participación del usuario de operación en las pruebas de implantación, del usuario final en las pruebas de aceptación, y del responsable de mantenimiento.
+En primer lugar, se revisa la estrategia de implantación que ya se determinó en el proceso **Estudio de Viabilidad del Sistema** ([EVS](03-evs.qmd)). Se estudia su alcance y, en función de sus características, se define un plan de implantación y se especifica el equipo que lo va a llevar a cabo. Conviene señalar la participación del usuario de operación en las pruebas de implantación, del usuario final en las pruebas de aceptación, y del responsable de mantenimiento.
 
-Las actividades previas al inicio de la producción incluyen la preparación de la infraestructura necesaria para configurar el entorno, la instalación de los componentes, la activación de los procedimientos manuales y automáticos asociados y, cuando proceda, la migración o carga inicial de datos. Para ello se toman como punto de partida los productos software probados, obtenidos en el proceso Construcción del Sistema de Información (CSI) y su documentación asociada.
+Las actividades previas al inicio de la producción incluyen la preparación de la infraestructura necesaria para configurar el entorno, la instalación de los componentes, la activación de los procedimientos manuales y automáticos asociados y, cuando proceda, la migración o carga inicial de datos. Para ello se toman como punto de partida los productos software probados, obtenidos en el proceso **Construcción del Sistema de Información** ([CSI](06-csi.qmd)) y su documentación asociada.
 
 Se realizan las pruebas de implantación y de aceptación del sistema en su totalidad. Responden a los siguientes propósitos:
 
-- Las pruebas de implantación cubren un rango muy amplio, que va desde la comprobación de cualquier detalle de diseño interno hasta aspectos tales como las comunicaciones. Se debe comprobar que el sistema puede gestionar los volúmenes de información requeridos, se ajusta a los tiempos de respuesta deseados y que los procedimientos de respaldo, seguridad e interfaces con otros sistemas funcionan correctamente. Se debe verificar también el comportamiento del sistema bajo las condiciones más extremas.
-- Las pruebas de aceptación se realizan por y para los usuarios. Tienen como objetivo validar formalmente que el sistema se ajusta a sus necesidades.
+* Las pruebas de implantación cubren un rango muy amplio, que va desde la comprobación de cualquier detalle de diseño interno hasta aspectos tales como las comunicaciones. Se debe comprobar que el sistema puede gestionar los volúmenes de información requeridos, se ajusta a los tiempos de respuesta deseados y que los procedimientos de respaldo, seguridad e interfaces con otros sistemas funcionan correctamente. Se debe verificar también el comportamiento del sistema bajo las condiciones más extremas.
+* Las pruebas de aceptación se realizan por y para los usuarios. Tienen como objetivo validar formalmente que el sistema se ajusta a sus necesidades.
 
 Asimismo, se llevan a cabo las tareas necesarias para la preparación del mantenimiento, siempre y cuando se haya decidido que éste va a efectuarse. En cualquier caso, es necesario que la persona que vaya a asumir el mantenimiento conozca el sistema, antes de su incorporación al entorno de producción.
 
@@ -19,8 +19,8 @@ Además hay que determinar los servicios (y niveles para cada uno) que requiere 
 
 Conviene señalar que la implantación puede ser un proceso iterativo que se realiza de acuerdo al plan establecido para el comienzo de la producción del sistema en su entorno de operación. Para establecer este plan se tiene en cuenta:
 
- - El cumplimiento de los requisitos de implantación definidos en la actividad Establecimiento de Requisitos (ASI 2) y especificados en la actividad Establecimiento de Requisitos de Implantación (DSI 11).
-- La estrategia de transición del sistema antiguo al nuevo.
+* El cumplimiento de los requisitos de implantación definidos en la actividad **Establecimiento de Requisitos** ([ASI 2](04-asi.qmd#asi-2)) y especificados en la actividad **Establecimiento de Requisitos de Implantación** ([DSI 11](05-dsi.qmd#dsi-11)).
+* La estrategia de transición del sistema antiguo al nuevo.
 
 Finalmente, se realizan las acciones necesarias para el inicio de la producción.
 
@@ -32,7 +32,7 @@ Implantación y aceptación del sistema
 
 ![Implantación y aceptación del sistema](../images/ias-plan.jpg)
 
-### Actividad IAS 1: Establecimiento del Plan de Implantación
+### Actividad IAS 1: Establecimiento del Plan de Implantación {#ias-1}
 
 En esta actividad se revisa la estrategia de implantación para el sistema, establecida inicialmente en el proceso Estudio de Viabilidad del Sistema (EVS). Se identifican los distintos sistemas de información que forman parte del sistema objeto de la implantación. Para cada sistema se analizan las posibles dependencias con otros proyectos, que puedan condicionar el plan de implantación.
 
@@ -93,33 +93,33 @@ Se constituye el equipo de implantación, determinando los recursos humanos nece
 </table>
 ```
 
-#### Tarea IAS 1.1: Definición del Plan de Implantación
+#### Tarea IAS 1.1: Definición del Plan de Implantación {#ias-1-1}
 
-La estrategia de implantación del sistema se habrá determinado en la tarea Evaluación de las Alternativas y Selección (EVS 6.2) del proceso Estudio de Viabilidad del Sistema (EVS), en función de la envergadura del sistema, es decir el número de sistemas de información implicados en la implantación y la cobertura geográfica, cuyo alcance depende de las características y complejidad de los sistemas de información que conforman el sistema objeto de la implantación.
+La estrategia de implantación del sistema se habrá determinado en la tarea **Evaluación de las Alternativas y Selección** ([EVS 6.2](03-evs.qmd#evs-6-2)) del proceso **Estudio de Viabilidad del Sistema** ([EVS](03-evs.qmd)), en función de la envergadura del sistema, es decir el número de sistemas de información implicados en la implantación y la cobertura geográfica, cuyo alcance depende de las características y complejidad de los sistemas de información que conforman el sistema objeto de la implantación.
 
-Se revisan los requisitos de implantación (instalación, infraestructura, formación) establecidos en la tarea Especificación de Requisitos de Implantación (DSI 11.2) y los procedimientos implicados en la implantación, establecidos para cada uno de los sistemas de información en la tarea Especificación de Requisitos de Operación y Seguridad (DSI 1.7), con el fin de asegurar su adecuación a la estrategia global de implantación.
+Se revisan los requisitos de implantación (instalación, infraestructura, formación) establecidos en la tarea **Especificación de Requisitos de Implantación** ([DSI 11.2](05-dsi.qmd#dsi-11-2)) y los procedimientos implicados en la implantación, establecidos para cada uno de los sistemas de información en la tarea **Especificación de Requisitos de Operación y Seguridad** ([DSI 1.7](05-dsi.qmd#dsi-1-7)), con el fin de asegurar su adecuación a la estrategia global de implantación.
 
 Una vez analizada la información anterior, se define un plan de implantación que permita calc ular adecuadamente el esfuerzo y los recursos necesarios para llevar a cabo con éxito la implantación. Dicho plan debe contemplar todas las tareas relacionadas con:
 
-- La formación necesaria para la implantación, tanto a usuarios finales como al equipo que se encarga de realizar las pruebas de implantación y aceptación del sistema.
-- La preparación de la infraestructura necesaria para la incorporación del sistema al entorno de operación.
-- La instalación de todos los componentes y procedimientos manuales y automáticos asociados a cada sistema de información implicado en la implantación.
-- La ejecución de los procedimientos de carga inicial y migración de datos, si se determinó su necesidad.
-- La realización de las pruebas de implantación y aceptación del sistema.
-- La formalización del plan de mantenimiento.
+* La formación necesaria para la implantación, tanto a usuarios finales como al equipo que se encarga de realizar las pruebas de implantación y aceptación del sistema.
+* La preparación de la infraestructura necesaria para la incorporación del sistema al entorno de operación.
+* La instalación de todos los componentes y procedimientos manuales y automáticos asociados a cada sistema de información implicado en la implantación.
+* La ejecución de los procedimientos de carga inicial y migración de datos, si se determinó su necesidad.
+* La realización de las pruebas de implantación y aceptación del sistema.
+* La formalización del plan de mantenimiento.
 
 ##### Productos {.unnumbered .unlisted}
 
 ###### De entrada {.unnumbered .unlisted}
 
-- Solución Propuesta (EVS 6.2)
-- Diseño de la Arquitectura del Sistema (DSI 7.2)
-- Entorno Tecnológico del Sistema (DSI 7.2)
-- Procedimientos de Operación y Administración del Sistema (DSI 1.7)
-- Procedimientos de Seguridad y Control de Acceso (DSI 1.7)
-- Plan de Migración y Carga Inicial de Datos (DSI 9.4)
-- Plan de Pruebas (DSI 10.3)
-- Catálogo de Requisitos (DSI 11.2)
+* Solución Propuesta ([EVS 6.2](03-evs.qmd#evs-6-2))
+* Diseño de la Arquitectura del Sistema ([DSI 7.2](05-dsi.qmd#dsi-7-2))
+* Entorno Tecnológico del Sistema ([DSI 7.2](05-dsi.qmd#dsi-7-2))
+* Procedimientos de Operación y Administración del Sistema ([DSI 1.7](05-dsi.qmd#dsi-1-7))
+* Procedimientos de Seguridad y Control de Acceso ([DSI 1.7](05-dsi.qmd#dsi-1-7))
+* Plan de Migración y Carga Inicial de Datos ([DSI 9.4](05-dsi.qmd#dsi-9-4))
+* Plan de Pruebas ([DSI 10.3](05-dsi.qmd#dsi-10-3))
+* Catálogo de Requisitos ([DSI 11.2](05-dsi.qmd#dsi-11-2))
 
 ###### De salida {.unnumbered .unlisted}
 
@@ -132,12 +132,12 @@ Una vez analizada la información anterior, se define un plan de implantación q
 ##### Participantes {.unnumbered .unlisted}
 
 * [Jefe de Proyecto](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
-* Responsable de Implantación
-* Responsable de Operación
-* Responsable de Sistemas
+* [Responsable de Implantación](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
+* [Responsable de Operación](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
+* [Responsable de Sistemas](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
 * [Directores de los usuarios](../04-participantes/01-participantes.qmd#perfil-directivo)
 
-#### Tarea IAS 1.2: Especificación del Equipo de Implantación
+#### Tarea IAS 1.2: Especificación del Equipo de Implantación {#ias-1-2}
 
 Se constituye el equipo de trabajo necesario para llevar a cabo la implantación y aceptación del sistema, según el plan de implantación establecido en la tarea anterior.
 
@@ -148,8 +148,8 @@ Para ello se identifican, en función del nivel de esfuerzo requerido, los disti
 ###### De entrada {.unnumbered .unlisted}
 
 * Recursos Humanos y Técnicos Disponibles (externo)
-* Catálogo de Usuarios (ASI 1.4)
-* Plan de Implantación (IAS 1.1)
+* Catálogo de Usuarios ([ASI 1.4](04-asi.qmd#asi-1-4))
+* Plan de Implantación ([IAS 1.1]())
 
 ###### De salida {.unnumbered .unlisted}
 
@@ -158,12 +158,12 @@ Para ello se identifican, en función del nivel de esfuerzo requerido, los disti
 ##### Participantes {.unnumbered .unlisted}
 
 * [Jefe de Proyecto](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
-* Responsable de Implantación
-* Responsable de Operación
-* Responsable de Sistemas
+* [Responsable de Implantación](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
+* [Responsable de Operación](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
+* [Responsable de Sistemas](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
 * [Directores de los usuarios](../04-participantes/01-participantes.qmd#perfil-directivo)
 
-### Actividad IAS 2: Formación Necesaria para la Implantación
+### Actividad IAS 2: Formación Necesaria para la Implantación {#ias-2}
 
 En esta actividad se prepara y se imparte la formación al equipo que participará en la implantación y aceptación del sistema. Se realiza también el seguimiento de la formación de los usuarios finales, cuya impartición queda fuera del ámbito de MÉTRICA Versión 3. De esta forma, se asegura que la implantación se va a llevar a cabo correctamente.
 
@@ -268,7 +268,7 @@ La formación para que los usuarios finales sean capaces de utilizar el sistema 
 </table>
 ```
 
-#### Tarea IAS 2.1: Preparación de la Formación del Equipo de Implantación
+#### Tarea IAS 2.1: Preparación de la Formación del Equipo de Implantación {#ias-2-1}
 
 Se define la formación necesaria para el equipo de trabajo responsable de la implantación y aceptación del sistema, estableciendo el esquema de formación para cada tipo de perfil dentro del equipo y la duración estimada de los cursos.
 
@@ -294,11 +294,11 @@ Por último, se convoca a las personas que deben asistir a los cursos de formaci
 ##### Participantes {.unnumbered .unlisted}
 
 * [Jefe de Proyecto](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
-* Responsable de Implantación
+* [Responsable de Implantación](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
 * [Directores de los usuarios](../04-participantes/01-participantes.qmd#perfil-directivo)
 * Equipo de Formación
 
-#### Tarea IAS 2.2: Formación del Equipo de Implantación
+#### Tarea IAS 2.2: Formación del Equipo de Implantación {#ias-2-2}
 
 En esta tarea se lleva a cabo la formación del equipo que va a ser responsable de la implantación y aceptación del sistema, según el plan de formación que se haya establecido en la tarea anterior, asegurando la asistencia de todos sus integrantes.
 
@@ -319,7 +319,7 @@ En esta tarea se lleva a cabo la formación del equipo que va a ser responsable 
 * Equipo de Formación
 * Equipo de Implantación
 
-#### Tarea IAS 2.3: Preparación de la Formación a Usuarios finales
+#### Tarea IAS 2.3: Preparación de la Formación a Usuarios finales {#ias-2-3}
 
 En función del plan de implantación establecido, se revisa el esquema de formación a los usuarios finales, elaborado en la actividad Definición de la Formación de Usuarios Finales (CSI 7). Se asegura que se cuenta con los recursos humanos, técnicos y materiales necesarios para realizar la formación correspondiente.
 
@@ -330,7 +330,7 @@ Se establece el plan de formación del sistema a implantar en su totalidad, con 
 ###### De entrada {.unnumbered .unlisted}
 
 * Plan de Implantación (IAS 1.1)
-* Catálogo de Usuarios (ASI 1.4)
+* Catálogo de Usuarios ([ASI 1.4](04-asi.qmd#asi-1-4))
 * Especificación de la Formación a Usuarios Finales (CSI 7.2)
 
 ###### De salida {.unnumbered .unlisted}
@@ -366,7 +366,7 @@ La impartición de la formación a los usuarios finales queda fuera del ámbito 
 * [Jefe de Proyecto](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
 * [Directores de los usuarios](../04-participantes/01-participantes.qmd#perfil-directivo)
 
-### Actividad IAS 3: Incorporación del Sistema al Entorno de Operación
+### Actividad IAS 3: Incorporación del Sistema al Entorno de Operación {#ias-3}
 
 En esta actividad se realizan todas las tareas necesarias para la incorporación del sistema al entorno de operación en el que se van a llevar a cabo las pruebas de implantación y aceptación del sistema.
 
@@ -420,7 +420,7 @@ Por tanto, como paso previo a la realización de dichas pruebas y de acuerdo al 
 </table>
 ```
 
-#### Tarea IAS 3.1: Preparación de la Instalación
+#### Tarea IAS 3.1: Preparación de la Instalación {#ias-3-1}
 
 En esta tarea se verifica que está disponible la infraestructura necesaria para configurar el entorno. Dicha infraestructura debe cumplir los requisitos de implantación (instalación e infraestructura) y tener en cuenta los procedimientos de seguridad y control de acceso (mantenimiento de la integridad y confidencialidad de los datos, control de accesos al sistema, copias de seguridad y recuperación de datos, etc.), y operación y administración del sistema (estándares, recuperación y reanudación de trabajos, planificación de trabajos, etc.).
 
@@ -449,10 +449,10 @@ También se debe asegurar que el equipo responsable de la realización de las pr
 ##### Participantes {.unnumbered .unlisted}
 
 * [Jefe de Proyecto](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
-* Responsable de Implantación
+* [Responsable de Implantación](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
 * Equipo de Implantación
 
-#### Tarea IAS 3.2: Realización de la Instalación
+#### Tarea IAS 3.2: Realización de la Instalación {#ias-3-2}
 
 Se realiza la instalación de todos los componentes del nuevo sistema, incluidos los procedimientos manuales y automáticos, de acuerdo al plan de implantación y a su ubicación física, establecida en el proceso Diseño del Sistema de Información (DSI). Se deben tener en cuenta los estándares y normativas por los que se rige la organización en los entornos de operación.
 
@@ -489,7 +489,7 @@ Asimismo, si es necesaria una migración de datos se activarán también los pro
 * [Jefe de Proyecto](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
 * Equipo de Implantación
 
-### Actividad IAS 4: Carga de Datos al Entorno de Operación
+### Actividad IAS 4: Carga de Datos al Entorno de Operación {#ias-4}
 
 Teniendo en cuenta que los sistemas de información que forman parte del sistema a implantar pueden mejorar, ampliar o sustituir a otros ya existentes en la organización, puede ser necesaria una carga inicial y/o una migración de datos cuyo alcance dependerá de las características y cobertura de cada sistema de información implicado. Por tanto, la necesidad de una migración de datos puede venir determinada desde el proceso Estudio de Viabilidad del Sistema (EVS), en la actividad Selección de la Solución (EVS 6). Allí se habrá establecido la estrategia a seguir en la sustitución, evaluando las opciones del enfoque de desarrollo e instalación más apropiados para llevarlo a cabo.
 
@@ -525,7 +525,7 @@ En cualquier caso, en la actividad Diseño de la Migración y Carga Inicial de D
 </table>
 ```
 
-#### Tarea IAS 4.1: Migración y Carga inicial de Datos
+#### Tarea IAS 4.1: Migración y Carga inicial de Datos {#ias-4-1}
 
 Se realiza la carga inicial de datos del nuevo sistema, y se comprueba que ha finalizado correctamente.
 
@@ -552,7 +552,7 @@ A continuación, si procede, se hace la migración de datos, activando los proce
 * Administradores de Bases de Datos
 * Usuarios Expertos
 
-### Actividad IAS 5: Pruebas de Implantación del Sistema
+### Actividad IAS 5: Pruebas de Implantación del Sistema {#ias-5}
 
 La finalidad de las pruebas de implantación es doble:
 
@@ -624,7 +624,7 @@ Una vez ejecutadas estas pruebas, el equipo de usuarios técnicos informa de las
 </table>
 ```
 
-#### Tarea IAS 5.1: Preparación de las Pruebas de Implantación
+#### Tarea IAS 5.1: Preparación de las Pruebas de Implantación {#ias-5-1}
 
 Se comprueba la disponibilidad de los recursos humanos y técnicos necesarios para realizar las pruebas de implantación. Se revisan las verificaciones establecidas en el plan de pruebas.
 
@@ -647,9 +647,9 @@ Se comunica el plan de pruebas de implantación al equipo responsable de llevarl
 ##### Participantes {.unnumbered .unlisted}
 
 * [Jefe de Proyecto](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
-* Responsable de Implantación
+* [Responsable de Implantación](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
 
-#### Tarea IAS 5.2: Realización de las Pruebas de implantación
+#### Tarea IAS 5.2: Realización de las Pruebas de implantación {#ias-5-2}
 
 Se realizan las pruebas de implantación, de acuerdo a las verificaciones establecidas en el plan de pruebas definido en la actividad Especificación Técnica del Plan de Pruebas (DSI 10). Es necesario tener en cuenta las posibles pruebas adicionales incorporadas a dicho plan en la tarea anterior.
 
@@ -685,7 +685,7 @@ Se registra la realización de las pruebas incluyendo un informe que recoja la d
 
 * Equipo de Implantación
 
-#### Tarea IAS 5.3: Evaluación del Resultado de las Pruebas de Implantación
+#### Tarea IAS 5.3: Evaluación del Resultado de las Pruebas de Implantación {#ias-5-3}
 
 Se evalúan los resultados de las pruebas analizando las incidencias recibidas y comprobando que se han llevado a cabo todos los casos de pruebas establecidos en el plan de pruebas. Dicha evaluación consiste en:
 
@@ -709,9 +709,9 @@ Una vez realizadas las medidas correctoras consideradas necesarias y comprobado 
 ##### Participantes {.unnumbered .unlisted}
 
 * [Jefe de Proyecto](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
-* Responsable de Implantación
+* [Responsable de Implantación](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
     
-### Actividad IAS 6: Pruebas de Aceptación del Sistema
+### Actividad IAS 6: Pruebas de Aceptación del Sistema {#ias-6}
 
 Las pruebas de aceptación tienen como fin validar que el sistema cumple los requisitos básicos de funcionamiento esperado y permitir que el usuario determine la aceptación del sistema. Por este motivo, estas pruebas son realizadas por el usuario final que, durante este periodo de tiempo, debe plantear todas las deficiencias o errores que encuentre antes de dar por aprobado el sistema definitivamente.
 
@@ -778,7 +778,7 @@ Los Directores de los Usuarios revisan los criterios de aceptación, especificad
 </table>
 ```
 
-#### Tarea IAS 6.1: Preparación de las Pruebas de Aceptación
+#### Tarea IAS 6.1: Preparación de las Pruebas de Aceptación {#ias-6-1}
 
 Se analizan los criterios de aceptación establecidos por el usuario y recogidos en las verificaciones del plan de pruebas, por si fuera necesario incorporar algún caso de prueba adicional.
 
@@ -826,7 +826,7 @@ Productos
 
 * Usuarios Expertos
 
-#### Tarea IAS 6.3: Evaluación del Resultado de las Pruebas de Aceptación
+#### Tarea IAS 6.3: Evaluación del Resultado de las Pruebas de Aceptación {#ias-6-3}
 
 Se evalúan los resultados de las pruebas, analizando las incidencias recibidas y comprobando que se han llevado a cabo todos los casos de pruebas establecidos en el plan de pruebas. Dicha evaluación consiste en:
 
@@ -852,7 +852,7 @@ Una vez realizadas las medidas correctoras necesarias, y comprobado que su compo
 * [Jefe de Proyecto](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
 * [Directores de los usuarios](../04-participantes/01-participantes.qmd#perfil-directivo)
 
-### Actividad IAS 7: Preparación del Mantenimiento del Sistema
+### Actividad IAS 7: Preparación del Mantenimiento del Sistema {#ias-7}
 
 El objetivo de esta actividad es permitir que el equipo que va a asumir el mantenimiento del sistema esté familiarizado con él antes de que el sistema pase a producción. Para conseguir este objetivo, se ha considerado al responsable de mantenimiento como parte integrante del equipo de implantación. Por lo tanto, se habrá tenido en cuenta su perfil al elaborar el esquema de formación correspondiente.
 
@@ -913,7 +913,7 @@ Es importante resaltar que la existencia de una configuración del software perm
 </table>
 ```
 
-#### Tarea IAS 7.1: Establecimiento de la Infraestructura para el Mantenimiento
+#### Tarea IAS 7.1: Establecimiento de la Infraestructura para el Mantenimiento {#ias-7-1}
 
 En esta tarea se recopilan los productos de cada uno de los sistemas de información implicados en la implantación que van a ser objeto de mantenimiento. Se entregan a su responsable con el fin de implicarle más activamente en el dominio del sistema, para que una vez aceptado e implantado responda de forma satisfactoria a las peticiones de mantenimiento. El conjunto de productos a entregar dependerá del alcance y nivel de soporte que se haya establecido previamente para el mantenimiento del sistema.
 
@@ -943,10 +943,10 @@ Finalmente, se recoge en el plan de mantenimiento toda la infraestructura necesa
 ##### Participantes {.unnumbered .unlisted}
 
 * [Jefe de Proyecto](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
-* Responsable de Mantenimiento
+* [Responsable de Mantenimiento](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
 * Equipo de Soporte Técnico
 
-#### Tarea IAS 7.2: Formalización del Plan de Mantenimiento
+#### Tarea IAS 7.2: Formalización del Plan de Mantenimiento {#ias-7-2}
 
 Se establece formalmente el plan de mantenimiento para el sistema, una vez que haya sido aceptado y se incorpore al entorno de producción. Se fija el tipo de mantenimiento que se va a asumir para cada sistema de información, determinando los criterios de regulación necesarios para cada tipo de mantenimiento contemplado y reflejando los requisitos de formación esenciales, de manera que se pueda responder satisfactoriamente a las peticiones de mantenimiento.
 
@@ -968,10 +968,10 @@ Se estiman los recursos humanos necesarios para el servicio de mantenimiento est
 
 ##### Participantes {.unnumbered .unlisted}
 
-* Responsable de Mantenimiento
+* [Responsable de Mantenimiento](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
 * [Directores de los usuarios](../04-participantes/01-participantes.qmd#perfil-directivo)
 
-### Actividad IAS 8: Establecimiento del Acuerdo de Nivel de Servicio
+### Actividad IAS 8: Establecimiento del Acuerdo de Nivel de Servicio {#ias-8}
 
 Antes de la aprobación definitiva del sistema por parte del Comité de Dirección es conveniente:
 
@@ -1063,7 +1063,7 @@ Según el ámbito y el alcance de los tipos de servicio que se vayan a prestar, 
 </table>
 ```
 
-#### Tarea IAS 8.1: Identificación de los Servicios
+#### Tarea IAS 8.1: Identificación de los Servicios {#ias-8-1}
 
 Se identifican los tipos de servicio requeridos por el sistema objeto de la implantación, en función de los sistemas de información que componen el sistema, sus requisitos y su localización geográfica.
 
@@ -1098,7 +1098,7 @@ Se consideran los servicios comunes de los sistemas de información implicados e
 * [Directores de los usuarios](../04-participantes/01-participantes.qmd#perfil-directivo)
 * Comité de Dirección
 
-#### Tarea IAS 8.2: Descripción de las Propiedades de cada Servicio
+#### Tarea IAS 8.2: Descripción de las Propiedades de cada Servicio {#ias-8-2}
 
 Para cada tipo de servicio identificado anteriormente se detallan sus propiedades funcionales, estableciendo las características que permiten especificar el funcionamiento del servicio (agentes que intervienen, acciones que se llevan a cabo, condiciones de activación, etc.).
 
@@ -1129,7 +1129,7 @@ Asimismo, se especifican las propiedades de calidad que constituyen el nivel de 
 * Comité de Dirección
 * Comité de Seguimiento
 
-#### Tarea IAS 8.3: Determinación del Acuerdo de Nivel de Servicio
+#### Tarea IAS 8.3: Determinación del Acuerdo de Nivel de Servicio {#ias-8-3}
 
 Una vez que el sistema se encuentra en su entorno de operación y ha sido aceptado se establecen formalmente los tipos de servicios a los que se debe dar respuesta, tanto por operación como por el usuario, mediante la especificación del acuerdo de servicio. En esta especificación se recoge el compromiso adquirido para cada tipo de servicio en términos de cumplimiento de los objetivos de nivel de servicio, considerando los recursos, plazos, coste, etc.
 
@@ -1155,7 +1155,7 @@ Se hace una estimación de los recursos humanos y de infraestructura necesaria p
 
 * Comité de Dirección
 * [Jefe de Proyecto](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
-* Responsable de Implantación
+* [Responsable de Implantación](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
 
 ### Actividad IAS 9: Presentación y Aprobación del Sistema
 
@@ -1215,7 +1215,7 @@ Una vez que se han efectuado las pruebas de implantación y de aceptación, y qu
 </table>
 ```
 
-##### Tarea IAS 9.1: Convocatoria de la Presentación del Sistema
+##### Tarea IAS 9.1: Convocatoria de la Presentación del Sistema {#ias-9-1}
 
 Se recopila la información del sistema que se debe entregar al Comité de Dirección (evaluación de las pruebas, acuerdo de nivel de servicio y plan de mantenimiento) y se realiza la convocatoria para la presentación del sistema.
 
@@ -1241,10 +1241,10 @@ Se recibe la confirmación por parte del Comité de Dirección y se prepara la p
 ##### Participantes {.unnumbered .unlisted}
 
 * [Jefe de Proyecto](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
-* Responsable de Implantación
+* [Responsable de Implantación](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
 * [Directores de los usuarios](../04-participantes/01-participantes.qmd#perfil-directivo)
 
-##### Tarea IAS 9.2: Aprobación del Sistema
+##### Tarea IAS 9.2: Aprobación del Sistema {#ias-9-2}
 
 Se presenta el sistema al Comité de Dirección según el plan previsto y se aprueba formalmente el sistema.
 
@@ -1267,9 +1267,9 @@ Se presenta el sistema al Comité de Dirección según el plan previsto y se apr
 * Comité de Dirección
 * [Jefe de Proyecto](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
 * [Directores de los usuarios](../04-participantes/01-participantes.qmd#perfil-directivo)
-* Responsable de Implantación
+* [Responsable de Implantación](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
 
-### Actividad IAS 10: Paso a Producción
+### Actividad IAS 10: Paso a Producción {#ias-10}
 
 Esta actividad tiene como objetivo establecer el punto de inicio en que el sistema pasa a producción, se traspasa la responsabilidad al equipo de mantenimiento y se empiezan a dar los servicios establecidos en el acuerdo de nivel de servicio, una vez que el Comité de Dirección ha aprobado el sistema.
 
@@ -1324,7 +1324,7 @@ Una vez que el sistema ya está en producción, se le notifica al responsable de
 </table>
 ```
 
-#### Tarea IAS 10.1: Preparación del Entorno de Producción
+#### Tarea IAS 10.1: Preparación del Entorno de Producción {#ias-10-2}
 
 Se analiza qué componentes es necesario incorporar al entorno de producción, de acuerdo a las características y condiciones del entorno en que se hayan llevado a cabo las pruebas y se realiza la instalación de los componentes necesarios. Se va lora también, en cuanto a los datos, la necesidad de realizar una nueva carga, una inicialización o una restauración.
 
@@ -1350,11 +1350,11 @@ Se comprueba que la instalación del sistema es correcta. Por último, se determ
 ##### Participantes {.unnumbered .unlisted}
 
 * [Jefe de Proyecto](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
-* Responsable de Implantación
+* [Responsable de Implantación](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
 * Equipo de Implantación
 * Equipo de Soporte Técnico
 
-#### Tarea IAS 10.2: Activación del Sistema en Producción
+#### Tarea IAS 10.2: Activación del Sistema en Producción {#ias-10-2}
 
 Se arranca el nuevo sistema en producción activando tanto el proceso de Mantenimiento, si se ha determinado en el sistema, como los servicios que se van a prestar.
 
@@ -1367,7 +1367,7 @@ Se arranca el nuevo sistema en producción activando tanto el proceso de Manteni
 ##### Participantes {.unnumbered .unlisted}
 
 * Comité de Dirección
-* Responsable de Implantación
+* [Responsable de Implantación](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
 
 ## Participantes en las actividades del proceso IAS
 
@@ -1668,13 +1668,13 @@ Se arranca el nuevo sistema en producción activando tanto el proceso de Manteni
 
 ### Actividades {.unnumbered .unlisted}
 
-- Actividad IAS 1: Establecimiento del Plan de Implantación
-- Actividad IAS 2: Formación Necesaria para la Implantación
-- Actividad IAS 3: Incorporación del Sistema al Entorno de Operación
-- Actividad IAS 4: Carga de Datos al Entorno de Operación
-- Actividad IAS 5: Pruebas de Implantación del Sistema
-- Actividad IAS 6: Pruebas de Aceptación del Sistema
-- Actividad IAS 7: Preparación del Mantenimiento del Sistema
-- Actividad IAS 8: Establecimiento del Acuerdo de Nivel de Servicio
-- Actividad IAS 9: Presentación y Aprobación del Sistema
-- Actividad IAS 10: Paso a Producción 
+- [Actividad IAS 1: Establecimiento del Plan de Implantación](#ias-1)
+- [Actividad IAS 2: Formación Necesaria para la Implantación](#ias-2)
+- [Actividad IAS 3: Incorporación del Sistema al Entorno de Operación](#ias-3)
+- [Actividad IAS 4: Carga de Datos al Entorno de Operación](#ias-4)
+- [Actividad IAS 5: Pruebas de Implantación del Sistema](#ias-5)
+- [Actividad IAS 6: Pruebas de Aceptación del Sistema](#ias-6)
+- [Actividad IAS 7: Preparación del Mantenimiento del Sistema](#ias-7)
+- [Actividad IAS 8: Establecimiento del Acuerdo de Nivel de Servicio](#ias-8)
+- [Actividad IAS 9: Presentación y Aprobación del Sistema](#ias-9)
+- [Actividad IAS 10: Paso a Producción](#ias-10)

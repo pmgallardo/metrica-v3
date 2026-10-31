@@ -760,7 +760,7 @@ En el proceso Implantación y Aceptación del Sistema (IAS), se unifican las esp
 
 El objetivo de esta tarea es la definición del contenido de la formación del usuario final del sistema, realizando, a su vez, una estimación de la duración de los distintos apartados o acciones formativas que se contemplen.
 
-La especificación de los esquemas de formación se puede particularizar para cada perfil de usuario identificado en el proceso Análisis del Sistema de Información (ASI), si se considera necesario.
+La especificación de los esquemas de formación se puede particularizar para cada perfil de usuario identificado en el proceso Análisis del Sistema de Información ([ASI](](04-asi.qmd))), si se considera necesario.
 
 ##### Productos {.unlisted .unnumbered}
 

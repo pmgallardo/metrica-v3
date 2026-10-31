@@ -479,7 +479,7 @@ Si se ha tomado la decisión de no describir la situación actual, se realiza un
 ##### Participantes {.unnumbered .unlisted}
 
 * Analistas
-* Responsable de Mantenimiento
+* [Responsable de Mantenimiento](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
 
 ### Actividad EVS 3: Definición de Requisitos del Sistema
 
@@ -839,7 +839,7 @@ Si la alternativa incluye una solución basada en producto se analiza su evoluci
 * Analistas
 * Usuarios Expertos
 * Técnicos de Sistemas
-* Responsable de Seguridad
+* [Responsable de Seguridad](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
 * Especialistas en Comunicaciones
 
 ### Actividad EVS 5: Valoración de las Alternativas
