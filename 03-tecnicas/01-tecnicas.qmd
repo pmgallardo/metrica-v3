@@ -2,9 +2,9 @@
 
 ## Introducción {#introduccion}
 
-El objetivo de este documento es describir las técnicas utilizadas en los procesos principales y en el proceso de Gestión de Proyectos.
+El objetivo de este documento es describir las técnicas utilizadas en los [procesos principales](../01-principal/01-introduccion.qmd) y en el proceso de [Gestión de Proyectos](../02-interfaces/04-gp.qmd).
 
-En el proceso de Desarrollo de Sistemas de Información se incluyen tanto las técnicas propias de un desarrollo orientado a objetos como estructurado, ya que las actividades de ambas aproximaciones están integradas en una estructura común.
+En el proceso de [Desarrollo de Sistemas de Información](../01-principal/05-dsi.qmd) se incluyen tanto las técnicas propias de un desarrollo orientado a objetos como estructurado, ya que las actividades de ambas aproximaciones están integradas en una estructura común.
 
 La metodología MÉTRICA Versión 3 proporciona un conjunto de métodos y técnicas que guía a los distintos profesionales de Sistemas y Tecnologías de la Información y Comunicaciones (STIC) en la obtención de los diversos productos de los procesos del ciclo de vida de un proyecto informático. Con el fin de mejorar la productividad de los distintos participantes y asegurar la calidad de los productos resultantes, la mayoría de las técnicas propuestas están soportadas por herramientas disponibles en el mercado que automatizan en mayor o menor grado su utilización. En cualquier caso, no todos los productos resultantes de cada tarea son susceptibles de obtenerse de forma automatizada.
 
@@ -20,27 +20,27 @@ Es importante resaltar que la notación que se propone en la aplicación de la
 
 Las técnicas de desarrollo son un conjunto de procedimientos que se basan en reglas y notaciones específicas en términos de sintaxis, semántica y gráficos, orientadas a la obtención de productos en el desarrollo de un sistema de información. En desarrollos del tipo estructurado o de orientación a objetos merecen especial atención las técnicas gráficas, que proponen símbolos y notaciones estándares para una mejor comprensión de los sistemas o sus componentes. De todos modos, y debido a la diversidad existente, las notaciones aquí propuestas no se consideran obligatorias en la metodología MÉTRICA Versión 3, pero sí que se deben aplicar rigurosamente sus reglas y validaciones para conseguir el objetivo propuesto con la mayor eficacia.
 
-* [Análisis Coste/Beneficio](analisis-coste-beneficio)
-* Casos de Uso
-* Diagrama de Clases
-* Diagrama de Componentes
-* Diagrama de Descomposición
-* Diagrama de Despliegue
-* Diagrama de Estructura
-* Diagrama de Flujo de Datos
-* Diagrama de Interacción
-  * Diagrama de Secuencia
-  * Diagrama de Colaboración
-* Diagrama de Paquetes
-* Diagrama de Transición de Estados
-* Modelado de Procesos de la Organización
+* [Análisis Coste/Beneficio](#analisis-coste-beneficio)
+* [Casos de Uso](#casos-de-uso)
+* [Diagrama de Clases](#diagrama-de-clases)
+* [Diagrama de Componentes](#diagrama-de-componentes)
+* [Diagrama de Descomposición](#diagrama-de-descomposicion)
+* [Diagrama de Despliegue](#diagrama-de-despliegue)
+* [Diagrama de Estructura](#diagrama-de-estructura)
+* [Diagrama de Flujo de Datos](#diagrama-de-flujo-de-datos)
+* [Diagrama de Interacción](#diagrama-de-interaccion)
+  * [Diagrama de Secuencia](#diagrama-de-secuencia)
+  * [Diagrama de Colaboración](#diagrama-de-colaboracion)
+* [Diagrama de Paquetes](#diagrama-de-paquetes)
+* [Diagrama de Transición de Estados](#diagrama-de-transicion-de-estados)
+* [Modelado de Procesos de la Organización](#modelado-de-procesos-de-la-organizacion)
   * [SADT (Structured Analysis and Design Technique)](#sadt)
-* Modelo Entidad/Relación Extendido
-* Normalización
-* Optimización
-* Reglas de Obtención del Modelo Físico a partir del Lógico
-* Reglas de Transformación
-* Técnicas Matriciales
+* [Modelo Entidad/Relación Extendido](#modelo-entidad-relación-extendido)
+* [Normalización](#normalizacion)
+* [Optimización](#optimizacion)
+* [Reglas de Obtención del Modelo Físico a partir del Lógico](#reglas-de-obtencion-del-modelo-fisico-a-partir-del-lógico)
+* [Reglas de Transformación](#reglas-de-transformacion)
+* [Técnicas Matriciales](#tecnicas-matriciales)
 
 ### Análisis Coste/Beneficio {#analisis-coste-beneficio}
 
@@ -177,8 +177,8 @@ El proyecto será viable si $\sum \text{VA}_i > C_0$ a lo largo del periodo fij
 
 Los objetivos de los casos de uso son los siguientes:
 
-* Capturar los requisitos funcionales del sistema y expresarlos desde el punto de vista del usuario.
-* Guiar todo el proceso de desarrollo del sistema de información.
+- Capturar los requisitos funcionales del sistema y expresarlos desde el punto de vista del usuario.
+- Guiar todo el proceso de desarrollo del sistema de información.
 
 Los casos de uso proporcionan, por tanto, un modo claro y preciso de comunicación entre cliente y desarrollador. Desde el punto de vista del cliente proporcionan una visión de "caja negra" del sistema, esto es, cómo aparece el sistema desde el exterior sin necesidad de entrar en los detalles de su construcción. Para los desarrolladores, suponen el punto de partida y el eje sobre el que se apoya todo el desarrollo del sistema en sus procesos de análisis y diseño.
 
@@ -202,8 +202,8 @@ También se pueden enumerar los diferentes escenarios del caso de uso si los tu
 
 Estos diagramas presentan dos tipos de elementos fundamentales:
 
-* *Actores*. Un actor es algo o alguien que se encuentra fuera del sistema y que interactúa con él. En general, los actores serán los usuarios del sistema y los sistemas externos al que se esté desarrollando. Si se habla de usuarios, un actor es el papel que puede llevar a cabo en cuanto a su forma de interactuar con el sistema, es decir, un único actor puede representar a muchos usuarios diferentes y de la misma forma, un usuario puede actuar como actores diferentes.
-* *Casos de uso*. Un caso de uso representa el comportamiento que ofrece el sistema de información desde el punto de vista del usuario. Típicamente será un conjunto de transacciones ejecutadas entre el sistema y los actores. Para facilitar la comprensión de los casos de uso del sistema de información en el análisis, es posible agruparlos en paquetes según funcionalidades semejantes o relacionadas.
+- *Actores*. Un actor es algo o alguien que se encuentra fuera del sistema y que interactúa con él. En general, los actores serán los usuarios del sistema y los sistemas externos al que se esté desarrollando. Si se habla de usuarios, un actor es el papel que puede llevar a cabo en cuanto a su forma de interactuar con el sistema, es decir, un único actor puede representar a muchos usuarios diferentes y de la misma forma, un usuario puede actuar como actores diferentes.
+- *Casos de uso*. Un caso de uso representa el comportamiento que ofrece el sistema de información desde el punto de vista del usuario. Típicamente será un conjunto de transacciones ejecutadas entre el sistema y los actores. Para facilitar la comprensión de los casos de uso del sistema de información en el análisis, es posible agruparlos en paquetes según funcionalidades semejantes o relacionadas.
 
 Además de estos elementos, un diagrama de casos de uso presenta relaciones. Las relaciones pueden tener lugar entre actores y casos de uso o entre casos de uso.
 
@@ -211,11 +211,11 @@ La relación entre un actor y un caso de uso es una relación de comunicació
 
 La relación entre casos de uso es una relación unidireccional. Esta relación puede presentar uno de los dos siguientes tipos: "usa" y "extiende".
 
-* La relación "usa" se utiliza cuando se quiere reflejar un comportamiento común en varios casos de uso. Es decir, si los casos de uso A y B presentan una parte común, ésta se puede sacar a un tercer caso de uso C. Entonces, habrá una relación "usa" del caso de uso A al C y otra del B al C.
+- La relación "usa" se utiliza cuando se quiere reflejar un comportamiento común en varios casos de uso. Es decir, si los casos de uso A y B presentan una parte común, ésta se puede sacar a un tercer caso de uso C. Entonces, habrá una relación "usa" del caso de uso A al C y otra del B al C.
 
   ![](../images/relacion-usa.png)
 
-* La relación "extiende" se utiliza cuando se quiere reflejar un comportamiento opcional de un caso de uso. Por ejemplo, se tiene el caso de uso A que representa un comportamiento habitual del sistema. Sin embargo, dependiendo de algún factor, este caso de uso puede presentar un comportamiento adicional o ligeramente diferente, que se podría reflejar en un caso de uso B. En este caso, habrá una relación "extiende" del caso de uso B al A.
+- La relación "extiende" se utiliza cuando se quiere reflejar un comportamiento opcional de un caso de uso. Por ejemplo, se tiene el caso de uso A que representa un comportamiento habitual del sistema. Sin embargo, dependiendo de algún factor, este caso de uso puede presentar un comportamiento adicional o ligeramente diferente, que se podría reflejar en un caso de uso B. En este caso, habrá una relación "extiende" del caso de uso B al A.
 
   ![](../images/relacion-extiende.png)
 
@@ -279,16 +279,16 @@ No existe un procedimiento inmediato que permita localizar las clases del diagra
 
 Dentro de la estructura de una clase se definen los atributos y las operaciones o métodos:
 
-* Los atributos de una clase representan los datos asociados a los objetos instanciados por esa clase.
-* Las operaciones o métodos representan las funciones o procesos propios de los objetos de una clase, caracterizando a dichos objetos.
+- Los atributos de una clase representan los datos asociados a los objetos instanciados por esa clase.
+- Las operaciones o métodos representan las funciones o procesos propios de los objetos de una clase, caracterizando a dichos objetos.
 
 El diagrama de clases permite representar clases abstractas. Una Clase abstracta es una clase que no puede existir en la realidad, pero que es útil conceptualmente para el diseño del modelo orientado a objetos. Las clases abstractas no son instanciables directamente sino en sus descendientes. Una clase abstracta suele ser situada en la jerarquía de clases en una posición que le permita ser un depósito de métodos y atributos para ser compartidos o heredados por las subclases de nivel inferior.
 
 Las clases y en general todos los elementos de los diagramas, pueden estar clasificados de acuerdo a varios criterios, como por ejemplo su objetivo dentro de un programa. Esta clasificación adicional se expresa mediante un Estereotipo. Algunos de los autores de métodos OO, establecen una clasificación de todos los objetos que pueden aparecer en un modelo. Los tipos son:
 
-* Objetos Entidad.
-* Objetos límite o interfaz.
-* Objetos de control.
+- Objetos Entidad.
+- Objetos límite o interfaz.
+- Objetos de control.
 
 Éstos son estereotipos de clases. Un estereotipo representa una la meta-clasificación de un elemento.
 
@@ -298,15 +298,15 @@ Dependiendo de la herramienta utilizada, también se puede añadir informacio�
 
 Los tipos más importantes de relaciones estáticas entre clases son los siguientes:
 
-* **Asociación**. Las relaciones de asociación representan un conjunto de enlaces entre objetos o instancias de clases. Es el tipo de relación más general, y denota básicamente una dependencia semántica. Por ejemplo, una Persona *trabaja* para una Empresa.
+- **Asociación**. Las relaciones de asociación representan un conjunto de enlaces entre objetos o instancias de clases. Es el tipo de relación más general, y denota básicamente una dependencia semántica. Por ejemplo, una Persona *trabaja* para una Empresa.
   Cada asociación puede presentar elementos adicionales que doten de mayor detalle al tipo de relación:
-  * *Rol*, o nombre de la asociación, que describe la semántica de la relación en el sentido indicado. Por ejemplo, la asociación entre Persona y Empresa recibe el nombre de trabaja para, como rol en ese sentido.
-  * *Multiplicidad*, que describe la cardinalidad de la relación, es decir, especifica cuántas instancias de una clase están asociadas a una instancia de la otra clase. Los tipos de multiplicidad son: Uno a uno, uno a muchos y muchos a muchos.
- * **Herencia**. Las jerarquías de generalización/especialización se conocen como herencia. Herencia es el mecanismo que permite a una clase de objetos incorporar atributos y métodos de otra clase, añadiéndolos a los que ya posee. Con la herencia se refleja una relación "es_un" entre clases. La clase de la cual se hereda se denomina superclase, y la que hereda subclase.
+  - *Rol*, o nombre de la asociación, que describe la semántica de la relación en el sentido indicado. Por ejemplo, la asociación entre Persona y Empresa recibe el nombre de trabaja para, como rol en ese sentido.
+  - *Multiplicidad*, que describe la cardinalidad de la relación, es decir, especifica cuántas instancias de una clase están asociadas a una instancia de la otra clase. Los tipos de multiplicidad son: Uno a uno, uno a muchos y muchos a muchos.
+ - **Herencia**. Las jerarquías de generalización/especialización se conocen como herencia. Herencia es el mecanismo que permite a una clase de objetos incorporar atributos y métodos de otra clase, añadiéndolos a los que ya posee. Con la herencia se refleja una relación "es_un" entre clases. La clase de la cual se hereda se denomina superclase, y la que hereda subclase.
     La generalización define una superclase a partir de otras. Por ejemplo, de las clases profesor y estudiante se obtiene la superclase *persona*. La especialización o especificación es la operación inversa, y en ella una clase se descompone en una o varias subclases. Por ejemplo, de la clase empleado se pueden obtener las subclases *secretaria*, *técnico* e *ingeniero*.
- * **Agregación**. La agregación es un tipo de relación jerárquica entre un objeto que representa la totalidad de ese objeto y las partes que lo componen. Permite el agrupamiento físico de estructuras relacionadas lógicamente. Los objetos "son-parte-de" otro objeto completo. Por ejemplo, *motor*, *ruedas*, *carrocería* son parte de *automóvil*.
-* **Composición**. La composición es una forma de agregación donde la relación de propiedad es más fuerte, e incluso coinciden los tiempos de vida del objeto completo y las partes que lo componen. Por ejemplo, en un sistema de Máquina de café, las relaciones entre la clase *máquina* y *producto*, o entre *máquina* y *depósito de monedas*, son de composición.
-* **Dependencia**. Una relación de dependencia se utiliza entre dos clases o entre una clase y una interfaz, e indica que una clase requiere de otra para proporcionar alguno de sus servicios.
+ - **Agregación**. La agregación es un tipo de relación jerárquica entre un objeto que representa la totalidad de ese objeto y las partes que lo componen. Permite el agrupamiento físico de estructuras relacionadas lógicamente. Los objetos "son-parte-de" otro objeto completo. Por ejemplo, *motor*, *ruedas*, *carrocería* son parte de *automóvil*.
+- **Composición**. La composición es una forma de agregación donde la relación de propiedad es más fuerte, e incluso coinciden los tiempos de vida del objeto completo y las partes que lo componen. Por ejemplo, en un sistema de Máquina de café, las relaciones entre la clase *máquina* y *producto*, o entre *máquina* y *depósito de monedas*, son de composición.
+- **Dependencia**. Una relación de dependencia se utiliza entre dos clases o entre una clase y una interfaz, e indica que una clase requiere de otra para proporcionar alguno de sus servicios.
 
 ##### Interfaces {.unnumbered .unlisted}
 
@@ -350,19 +350,19 @@ La relación puede tener un nombre y un estereotipo, que se colocan junto a la 
 
 Las diferentes propiedades de la relación se pueden representar con la siguiente notación:
 
-* *Multiplicidad*: La multiplicidad puede ser un número concreto, un rango o una colección de números. La letra ‘`n`’ y el símbolo ‘`*`’ representan cualquier número.
-* *Orden*: Se puede especificar si las instancias guardan un orden con la palabra clave ‘`{ordered}`’. Si el modelo es suficientemente detallado, se puede incluir una restricción que indique el criterio de ordenación.
-* *Navegabilidad*: La navegación desde una clase a la otra se representa poniendo una flecha sin relleno en el extremo de la línea, indicando el sentido de la navegación.
-* *Rol* o *nombre de la asociación*: Este nombre se coloca junto al extremo de la línea que esta unida a una clase, para expresar cómo esa clase hace uso de la otra clase con la que mantiene la asociación.
+- *Multiplicidad*: La multiplicidad puede ser un número concreto, un rango o una colección de números. La letra ‘`n`’ y el símbolo ‘`*`’ representan cualquier número.
+- *Orden*: Se puede especificar si las instancias guardan un orden con la palabra clave ‘`{ordered}`’. Si el modelo es suficientemente detallado, se puede incluir una restricción que indique el criterio de ordenación.
+- *Navegabilidad*: La navegación desde una clase a la otra se representa poniendo una flecha sin relleno en el extremo de la línea, indicando el sentido de la navegación.
+- *Rol* o *nombre de la asociación*: Este nombre se coloca junto al extremo de la línea que esta unida a una clase, para expresar cómo esa clase hace uso de la otra clase con la que mantiene la asociación.
 
 ![](../images/asociacion.png)
 
 Además, existen notaciones específicas para los otros tipos de relación, como son:
 
-* *Agregación*: Se representa con un rombo hueco en la clase cuya instancia es una agregación de las instancias de la otra.
-* *Composición*: Se representa con un rombo lleno en la clase cuya instancia contiene las instancias de la otra clase.
-* *Dependencia*: Una línea discontinua con una flecha apuntando a la clase cliente. La relación puede tener un estereotipo que se coloca junto a la línea, y entre el símbolo: `<< ... >>`.
-* *Herencia*: Esta relación se representa como una línea continua con una flecha hueca en el extremo que apunta a la superclase.
+- *Agregación*: Se representa con un rombo hueco en la clase cuya instancia es una agregación de las instancias de la otra.
+- *Composición*: Se representa con un rombo lleno en la clase cuya instancia contiene las instancias de la otra clase.
+- *Dependencia*: Una línea discontinua con una flecha apuntando a la clase cliente. La relación puede tener un estereotipo que se coloca junto a la línea, y entre el símbolo: `<< ... >>`.
+- *Herencia*: Esta relación se representa como una línea continua con una flecha hueca en el extremo que apunta a la superclase.
 
 ![](../images/tipos-asociacion.png)
 
@@ -487,129 +487,131 @@ El diagrama representa una arquitectura compuesta por un servidor central de lo�
 El objetivo de este diagrama es representar la estructura modular del sistema o de un componente del mismo y definir los parámetros de entrada y salida de cada uno de los módulos.
 
 Para su realización se partirá del modelo de procesos obtenido como resultado de la aplicación de la técnica de diagrama de flujo de datos (DFD).
-Descripción
+
+#### Descripción {.unnumbered .unlisted}
 
 Un diagrama de estructura se representa en forma de árbol con los siguientes elementos:
 
-    Módulo: división del software clara y manejable con interfaces modulares perfectamente definidas. Un módulo puede representar un programa, subprograma o rutina dependiendo del lenguaje a utilizar. Admite parámetros de llamada y retorno. En el diseño de alto nivel hay que ver un módulo como una caja negra, donde se contemplan exclusivamente sus entradas y sus salidas y no los detalles de la lógica interna del módulo.
-    Para que se reduzca la complejidad del cambio ante una determinada modificación, es necesario que los módulos cumplan las siguientes condiciones:
-        Que sean de pequeño tamaño.
-        Que sean independientes entre sí.
-        Que realicen una función clara y sencilla.
-    Conexión: representa una llamada de un módulo a otro.
-    Parámetro: información que se intercambia entre los módulos. Pueden ser de dos tipos en función de la clase de información a procesar:
-        Control: son valores de condición que afectan a la lógica de los módulos llamados. Sincronizan la operativa de los módulos.
-        Datos: información compartida entre módulos y que es procesada en los módulos llamados.
+- **Módulo**: división del software clara y manejable con interfaces modulares perfectamente definidas. Un módulo puede representar un programa, subprograma o rutina dependiendo del lenguaje a utilizar. Admite parámetros de llamada y retorno. En el diseño de alto nivel hay que ver un módulo como una caja negra, donde se contemplan exclusivamente sus entradas y sus salidas y no los detalles de la lógica interna del módulo.
+  Para que se reduzca la complejidad del cambio ante una determinada modificación, es necesario que los módulos cumplan las siguientes condiciones:
+  - Que sean de pequeño tamaño.
+  - Que sean independientes entre sí.
+  - Que realicen una función clara y sencilla.
+  - **Conexión**: representa una llamada de un módulo a otro.
+  - **Parámetro**: información que se intercambia entre los módulos. Pueden ser de dos tipos en función de la clase de información a procesar:
+  - Control: son valores de condición que afectan a la lógica de los módulos llamados. Sincronizan la operativa de los módulos.
+  - Datos: información compartida entre módulos y que es procesada en los módulos llamados.
 
 Otros componentes que se pueden representar en el diagrama de estructura son:
 
-    Módulo predefinido: es aquel módulo que está disponible en la biblioteca del sistema o de la propia aplicación, y por tanto no es necesario codificarlo.
-    Almacén de datos: es la representación física del lugar donde están almacenados los datos del sistema.
-    Dispositivo físico: es cualquier dispositivo por el cual se puede recibir o enviar información que necesite el sistema.
+- **Módulo predefinido**: es aquel módulo que está disponible en la biblioteca del sistema o de la propia aplicación, y por tanto no es necesario codificarlo.
+- **Almacén de datos**: es la representación física del lugar donde están almacenados los datos del sistema.
+- **Dispositivo físico**: es cualquier dispositivo por el cual se puede recibir o enviar información que necesite el sistema.
 
-Estructuras del diagrama
+##### Estructuras del diagrama {.unnumbered .unlisted}
 
 Existen ciertas representaciones gráficas que permiten mostrar la secuencia de las llamadas entre módulos. Las posibles estructuras son:
 
-- Secuencial: un módulo llama a otros módulos una sola vez y, se ejecutan de izquierda a derecha y de arriba abajo.
+- **Secuencial**: un módulo llama a otros módulos una sola vez y, se ejecutan de izquierda a derecha y de arriba abajo.
   ![](../images/secuencial.png)
-- Repetitiva: cada uno de los módulos inferiores se ejecuta varias veces mientras se cumpla una condición.
+- **Repetitiva**: cada uno de los módulos inferiores se ejecuta varias veces mientras se cumpla una condición.
   ![](../images/repetitiva.png)
-- Alternativa: cuando el módulo superior, en función de una decisión, llama a un módulo u otro de los de nivel inferior.
+- **Alternativa**: cuando el módulo superior, en función de una decisión, llama a un módulo u otro de los de nivel inferior.
   ![](../images/alternativa.png)
 
-Principios del diseño estructurado
+##### Principios del diseño estructurado {.unnumbered .unlisted}
 
 El diagrama de estructura se basa en tres principios fundamentales:
 
-    La descomposición de los módulos, de manera que los módulos que realizan múltiples funciones se descompongan en otros que sólo realicen una. Los objetivos que se persiguen con la descomposición son:
-        Reducir el tamaño del módulo.
-        Hacer el sistema más fácil de entender y modificar y por lo tanto facilitar el mantenimiento del mismo.
-        Minimizar la duplicidad de código.
-        Crear módulos útiles.
-    La jerarquía entre los módulos, de forma que los módulos de niveles superiores coordinen a los de niveles inferiores. Al dividir los módulos jerárquicamente, es posible controlar el número de módulos que interactúan con cualquiera de los otros.
-    La independencia de los módulos, de manera que cada módulo se ve como una caja negra, y únicamente es importante su función y su apariencia externa, y no los detalles de su construcción.
+- La descomposición de los módulos, de manera que los módulos que realizan múltiples funciones se descompongan en otros que sólo realicen una. Los objetivos que se persiguen con la descomposición son:
+  - Reducir el tamaño del módulo.
+  - Hacer el sistema más fácil de entender y modificar y por lo tanto facilitar el mantenimiento del mismo.
+  - Minimizar la duplicidad de código.
+  - Crear módulos útiles.
+- La jerarquía entre los módulos, de forma que los módulos de niveles superiores coordinen a los de niveles inferiores. Al dividir los módulos jerárquicamente, es posible controlar el número de módulos que interactúan con cualquiera de los otros.
+- La independencia de los módulos, de manera que cada módulo se ve como una caja negra, y únicamente es importante su función y su apariencia externa, y no los detalles de su construcción.
 
-Estrategias de diseño
+##### Estrategias de diseño {.unnumbered .unlisted}
 
 Dependiendo de la estructura inicial del diagrama de flujo de datos sobre el que se va a realizar el diseño, existen dos estrategias para obtener el diagrama de estructura. El uso de una de las dos estrategias no implica que la otra no se utilice, eso dependerá de las características de los procesos representados en el DFD. Estas estrategias son:
 
-    Análisis de transformación.
-    Análisis de transacción.
+- Análisis de transformación.
+- Análisis de transacción.
 
-1.- Análisis de Transformación
+##### 1.- Análisis de Transformación {.unnumbered .unlisted}
 
 El análisis de transformación es un conjunto de pasos que permiten obtener, a partir de un DFD con características de transformación, la estructura del diseño de alto nivel del sistema. Un DFD con características de transformación es aquél en el que se pueden distinguir:
 
-    Flujo de llegada o entrada.
-    Flujo de transformación o centro de transformación que contiene los procesos esenciales del sistema y es independiente de las características particulares de la entrada y la salida.
-    Flujo de salida.
+- Flujo de llegada o entrada.
+- Flujo de transformación o centro de transformación que contiene los procesos esenciales del sistema y es independiente de las características particulares de la entrada y la salida.
+- Flujo de salida.
 
 Los datos que necesita el sistema se recogen por los módulos que se encuentren en las ramas de la izquierda, de modo que los datos que se intercambian en esa rama serán ascendentes. En las ramas centrales habrá movimiento de información compartida, tanto ascendente como descendente. En las ramas de la derecha, la información será de salida y, por lo tanto, descendente.
 
 Los pasos a realizar en el análisis de transformación son:
 
-    Identificar el centro de transformación. Para ello será necesario delimitar los flujos de llegada y salida de la parte del DFD que contiene las funciones esenciales del sistema.
-    Realizar el "primer nivel de factorización" o descomposición del diagrama de estructura. Habrá que identificar tres módulos subordinados a un módulo de control del sistema:
-        Módulo controlador del proceso de información de entrada.
-        Módulo controlador del centro de transformación.
-        Módulo controlador del proceso de la información de salida.
-    Elaborar el "segundo nivel de factorización". Se transforma cada proceso del DFD en un módulo del diagrama de estructura.
-    Revisar la estructura del sistema utilizando medidas y guías de diseño.
+1. Identificar el centro de transformación. Para ello será necesario delimitar los flujos de llegada y salida de la parte del DFD que contiene las funciones esenciales del sistema.
+2. Realizar el "primer nivel de factorización" o descomposición del diagrama de estructura. Habrá que identificar tres módulos subordinados a un módulo de control del sistema:
+  - Módulo controlador del proceso de información de entrada.
+  - Módulo controlador del centro de transformación.
+  - Módulo controlador del proceso de la información de salida.
+3. Elaborar el "segundo nivel de factorización". Se transforma cada proceso del DFD en un módulo del diagrama de estructura.
+4. Revisar la estructura del sistema utilizando medidas y guías de diseño.
 
 A continuación se muestra un gráfico explicativo de dicha estrategia de diseño:
 
 ![Estrategia de Diseño usando Análisis de Transformación](../images/estrategia-disenio.png)
 
-2.- Análisis de Transacción
+##### 2.- Análisis de Transacción {.unnumbered .unlisted}
 
 El análisis de transacción se aplica cuando en un DFD existe un proceso que en función del flujo de llegada, determina la elección de uno o más flujos de información.
 
 Se denomina centro de transacción al proceso desde el que parten los posibles caminos de información. Los pasos a realizar en el análisis de transacción son:
 
-    Identificar el centro de transacción. Se delimita la parte del DFD en la que a partir de un camino de llegada se establecen varios caminos de acción.
-    Transformar el DFD en la estructura adecuada al proceso de transacciones. El flujo de transacciones se convierte en una estructura de programa con una bifurcación de entrada y una de salida.
-    Factorizar la estructura de cada camino de acción. Cada camino se convierte en una estructura que se corresponde con las características específicas del flujo (de transacción o de transformación).
-    Refinar la estructura del sistema utilizando medidas y guías de diseño.
+1. Identificar el centro de transacción. Se delimita la parte del DFD en la que a partir de un camino de llegada se establecen varios caminos de acción.
+2. Transformar el DFD en la estructura adecuada al proceso de transacciones. El flujo de transacciones se convierte en una estructura de programa con una bifurcación de entrada y una de salida.
+3. Factorizar la estructura de cada camino de acción. Cada camino se convierte en una estructura que se corresponde con las características específicas del flujo (de transacción o de transformación).
+4. Refinar la estructura del sistema utilizando medidas y guías de diseño.
 
 A continuación se muestra un gráfico explicativo de dicha estrategia de diseño:
 
 ![Estrategia de Diseño usando Análisis de Transacción][../images/estrategia-disenio-2.png]
 
-Evaluación del diseño
+##### Evaluación del diseño {.unnumbered .unlisted}
 
 Una vez que hayan sido elaborados los diagramas de estructura, habrá que evaluar el diseño estudiando distintos criterios y medidas. Se utilizan dos métricas que miden la calidad estructural de un diseño:
 
-    Acoplamiento.
-    Cohesión.
+- Acoplamiento.
+- Cohesión.
 
 El acoplamiento se puede definir como el grado de interdependencia existente entre los módulos, por tanto, depende del número de parámetros que se intercambian. El objetivo es que el acoplamiento sea el mínimo posible, es decir, conseguir que los módulos sean lo más independientes entre sí.
 
 Es deseable un bajo acoplamiento, debido a que cuantas menos conexiones existan entre dos módulos, menor será la posibilidad de que aparezcan efectos colaterales al modificar uno de ellos. Además, se mejora el mantenimiento, porque al cambiar un módulo por otro, hay menos riesgo de actualizar la lógica interna de los módulos asociados. Los diferentes grados de acoplamiento son:
 
-    De datos: los módulos se comunican mediante parámetros que constituyen elementos de datos simples.
-    De marca: es un caso particular del acoplamiento de datos, dónde la comunicación entre módulos es través de estructuras de datos.
-    De control: aparece cuando uno o varios de los parámetros de comunicación son de control, es decir variables que controlan las decisiones de los módulos subordinados o superiores.
-    Externo: los módulos están ligados a componentes externos (dispositivos E/S, protocolos de comunicaciones, etc.).
-    Común: varios módulos hacen referencia a un área común de datos. Los módulos asociados al área común de datos pueden modificar los valores de los elementos de datos o estructuras de datos que se incluyen en dicha área.
-    De contenido: ocurre cuando un módulo cualquiera accede o hace uso de los datos de una parte de otro módulo.
+- *De datos*: los módulos se comunican mediante parámetros que constituyen elementos de datos simples.
+- *De marca*: es un caso particular del acoplamiento de datos, dónde la comunicación entre módulos es través de estructuras de datos.
+- *De control*: aparece cuando uno o varios de los parámetros de comunicación son de control, es decir variables que controlan las decisiones de los módulos subordinados o superiores.
+- *Externo*: los módulos están ligados a componentes externos (dispositivos E/S, protocolos de comunicaciones, etc.).
+- *Común*: varios módulos hacen referencia a un área común de datos. Los módulos asociados al área común de datos pueden modificar los valores de los elementos de datos o estructuras de datos que se incluyen en dicha área.
+- *De contenido*: ocurre cuando un módulo cualquiera accede o hace uso de los datos de una parte de otro módulo.
 
-La cohesión es una medida de la relación funcional de los elementos de un módulo, es decir, la sentencia o grupo de sentencias que lo componen, las llamadas a otros módulos o las definiciones de los datos. Un módulo con alta cohesión realiza una tarea concreta y sencilla.
+La *cohesión* es una medida de la relación funcional de los elementos de un módulo, es decir, la sentencia o grupo de sentencias que lo componen, las llamadas a otros módulos o las definiciones de los datos. Un módulo con alta cohesión realiza una tarea concreta y sencilla.
 
 El objetivo es intentar obtener módulos con una cohesión alta o media. Los distintos niveles de cohesión, de mayor a menor, son:
 
-    Funcional: todos los elementos que componen el módulo están relacionados en el desarrollo de una única función.
-    Secuencial: un módulo empaqueta en secuencia varios módulos con cohesión funcional.
-    De comunicación: todos los elementos de procesamiento utilizan los mismos datos de entrada y de salida.
-    Procedimental: todos los elementos de procesamiento de un módulo están relacionados y deben ejecutarse en un orden determinado. En este tipo existe paso de controles.
-    Temporal: un módulo contiene tareas relacionadas por el hecho de que todas deben realizarse en el mismo intervalo de tiempo.
-    Lógica: un módulo realiza tareas relacionadas de forma lógica (por ejemplo un módulo que produce todas las salidas independientemente del tipo).
-    Casual: un módulo realiza un conjunto de tareas que tienen poca o ninguna relación entre sí.
+- *Funcional*: todos los elementos que componen el módulo están relacionados en el desarrollo de una única función.
+- *Secuencial*: un módulo empaqueta en secuencia varios módulos con cohesión funcional.
+- *De comunicación*: todos los elementos de procesamiento utilizan los mismos datos de entrada y de salida.
+- *Procedimental*: todos los elementos de procesamiento de un módulo están relacionados y deben ejecutarse en un orden determinado. En este tipo existe paso de controles.
+- *Temporal*: un módulo contiene tareas relacionadas por el hecho de que todas deben realizarse en el mismo intervalo de tiempo.
+- *Lógica*: un módulo realiza tareas relacionadas de forma lógica (por ejemplo un módulo que produce todas las salidas independientemente del tipo).
+- *Casual*: un módulo realiza un conjunto de tareas que tienen poca o ninguna relación entre sí.
 
 Un buen diseño debe ir orientado a conseguir que los módulos realicen una función sencilla e independiente de las demás (máxima cohesión), y que la dependencia con otros módulos sea mínima (acoplamiento mínimo), lo cual facilita el mantenimiento del diseño.
-Notación
 
-Módulo
+#### Notación {.unnumbered .unlisted}
+
+##### Módulo {.unnumbered .unlisted}
 
 Se representa mediante un rectángulo con su nombre en el interior.
 
@@ -619,28 +621,29 @@ Un módulo predefinido se representa añadiendo dos líneas verticales y para
 
 ![](../images/modulo-predefinido.png)
 
-Conexión
+##### Conexión {.unnumbered .unlisted}
 
 Se representa mediante una línea terminada en punta de flecha cuya dirección indica el módulo llamado. Para llamadas a módulos estáticos se utiliza trazo continuo y para llamadas a módulos dinámicos trazo discontinuo.
 
 ![](../images/conexion.png)
 
-Parámetros
+##### Parámetros {.unnumbered .unlisted}
 
-La representación varía según su tipo: control (flags) o datos.
+La representación varía según su tipo: control (*flags*) o datos.
 
 ![](../images/parametros.png)
 
-Almacén de datos
+##### Almacén de datos {.unnumbered .unlisted}
 
 ![](../images/almacen.png)
 
-Dispositivo físico
+##### Dispositivo físico {.unnumbered .unlisted}
 
 ![](../images/dispositivo.png)
 
 (Nota.- Esta notación es la más habitual, pero MÉTRICA Versión 3 no exige su utilización).
-Ejemplo
+
+Ejemplo.
 
 El siguiente ejemplo muestra un proceso de emisión de cheques para el pago de nóminas de los empleados de una empresa. En él se diferencian los cálculos relativos a los trabajadores empleados por horas y los que poseen contrato. La lectura del fichero de empleados y la impresión de los cheques son módulos ya disponibles en las librerías del sistema, es decir, módulos predefinidos.
 
