@@ -18,9 +18,9 @@ En paralelo, se generan los distintos modelos que sirven de base para el diseño
 
 En la actividad Análisis de Consistencia y Especificación de Requisitos (ASI 9), se realiza la verificación y validación de los modelos, con el fin de asegurar que son:
 
-    Completos, puesto que cada modelo obtenido contiene toda la información necesaria recogida en el catálogo de requisitos.
-    Consistentes, ya que cada modelo es coherente con el resto de los modelos.
-    Correctos, dado que cada modelo sigue unos criterios de calidad predeterminados en relación a la técnica utilizada, calidad de diagramas, elección de nombres, normas de calidad, etc.).
+* Completos, puesto que cada modelo obtenido contiene toda la información necesaria recogida en el catálogo de requisitos.
+* Consistentes, ya que cada modelo es coherente con el resto de los modelos.
+* Correctos, dado que cada modelo sigue unos criterios de calidad predeterminados en relación a la técnica utilizada, calidad de diagramas, elección de nombres, normas de calidad, etc.).
 
 En la actividad Especificación del Plan de Pruebas (ASI 10), se establece el marco general del plan de pruebas, iniciándose su especificación, que se completará en el proceso Diseño del Sistema de Información (DSI).
 
@@ -170,37 +170,37 @@ Productos
 
 De entrada
 
-    Descripción de la Solución (EVS 6.2)
-    Catálogo de requisitos (EVS 6.2)
+* Descripción de la Solución (EVS 6.2)
+* Catálogo de requisitos (EVS 6.2)
 
 De salida
 
-    Catálogo de Requisitos
-    Glosario
-    En Análisis Estructurado:
-    Contexto del Sistema
-    Modelo Conceptual de Datos
-    En Análisis Orientado a Objetos:
-    Modelo de Negocio
-    Modelo de Dominio
+* Catálogo de Requisitos
+* Glosario
+  En Análisis Estructurado:
+* Contexto del Sistema
+* Modelo Conceptual de Datos
+  En Análisis Orientado a Objetos:
+* Modelo de Negocio
+* Modelo de Dominio
 
 Técnicas
 
-    Diagrama de Flujo de Datos
-    Modelo Entidad / Relación extendido
-    Diagrama de Clases
-    Casos de Uso
+* Diagrama de Flujo de Datos
+* Modelo Entidad / Relación extendido
+* Diagrama de Clases
+* Casos de Uso
 
 Prácticas
 
-    Sesiones de Trabajo
-    Catalogación
+* Sesiones de Trabajo
+* Catalogación
 
 Participantes
 
-    Jefe de Proyecto
-    Analistas
-    Directores de los Usuarios
+* Jefe de Proyecto
+* Analistas
+* Directores de los Usuarios
 
 
 #### Tarea ASI 1.2: Identificación del Entorno Tecnológico
@@ -212,31 +212,31 @@ Productos
 
 De entrada
 
-    Catálogo de Requisitos (ASI 1.1)
-    Descripción de la Solución (EVS 6.2)
-    En Análisis Estructurado:
-    Contexto del Sistema (ASI 1.1)
-    En Análisis Orientado a Objetos:
-    Modelo de Negocio (ASI 1.1)
-    Modelo de Dominio (ASI 1.1)
+* Catálogo de Requisitos (ASI 1.1)
+* Descripción de la Solución (EVS 6.2)
+  En Análisis Estructurado:
+* Contexto del Sistema (ASI 1.1)
+  En Análisis Orientado a Objetos:
+* Modelo de Negocio (ASI 1.1)
+* Modelo de Dominio (ASI 1.1)
 
 De salida
 
-    Catálogo de Requisitos
-    Descripción General del Entorno Tecnológico del Sistema
+* Catálogo de Requisitos
+* Descripción General del Entorno Tecnológico del Sistema
 
 Prácticas
 
-    Sesiones de Trabajo
-    Catalogación
-    Diagrama de Representación
+* Sesiones de Trabajo
+* Catalogación
+* Diagrama de Representación
 
 Participantes
 
-    Jefe de Proyecto
-    Analistas
-    Directores de los Usuarios
-    Equipo de Soporte Técnico
+* Jefe de Proyecto
+* Analistas
+* Directores de los Usuarios
+* Equipo de Soporte Técnico
 
 #### Tarea ASI 1.3: Especificación de Estándares y Normas
 
@@ -247,30 +247,30 @@ Productos
 
 De entrada
 
-    Catálogo de Normas (EVS 3.1)
-    Descripción General del Entorno Tecnológico del Sistema (ASI 1.2)
-    Estándares y Normativas de la Instalación (externo)
-    En Análisis Estructurado:
-    Contexto del Sistema (ASI 1.1)
-    En Análisis Orientado a Objetos:
-    Modelo de Negocio (ASI 1.1)
-    Modelo de Dominio (ASI 1.1)
+* Catálogo de Normas (EVS 3.1)
+* Descripción General del Entorno Tecnológico del Sistema (ASI 1.2)
+* Estándares y Normativas de la Instalación (externo)
+  En Análisis Estructurado:
+* Contexto del Sistema (ASI 1.1)
+  En Análisis Orientado a Objetos:
+* Modelo de Negocio (ASI 1.1)
+* Modelo de Dominio (ASI 1.1)
 
 De salida
 
-    Catálogo de Normas
+* Catálogo de Normas
 
 Prácticas
 
-    Sesiones de Trabajo
-    Catalogación
+* Sesiones de Trabajo
+* Catalogación
 
 Participantes
 
-    Jefe de Proyecto
-    Analistas
-    Directores de los Usuarios
-    Equipo de Soporte Técnico
+* Jefe de Proyecto
+* Analistas
+* Directores de los Usuarios
+* Equipo de Soporte Técnico
 
 #### Tarea ASI 1.4: Identificación de los Usuarios Participantes y Finales
 
@@ -283,29 +283,29 @@ Productos
 
 De entrada
 
-    Catálogo de Usuarios (EVS 1.3 y EVS 2.2)
-    Catálogo de Requisitos (ASI 1.2)
-    En Análisis Estructurado:
-    Contexto del Sistema (ASI 1.1)
-    En Análisis Orientado a Objetos:
-    Modelo de Negocio (ASI 1.1)
-    Modelo de Dominio (ASI 1.1)
+* Catálogo de Usuarios (EVS 1.3 y EVS 2.2)
+* Catálogo de Requisitos (ASI 1.2)
+  En Análisis Estructurado:
+* Contexto del Sistema (ASI 1.1)
+  En Análisis Orientado a Objetos:
+* Modelo de Negocio (ASI 1.1)
+* Modelo de Dominio (ASI 1.1)
 
 De salida
 
-    Catálogo de Usuarios
-    Plan de Trabajo
+* Catálogo de Usuarios
+* Plan de Trabajo
 
 Prácticas
 
-    Catalogación
-    Sesiones de Trabajo
+* Catalogación
+* Sesiones de Trabajo
 
 Participantes
 
-    Jefe de Proyecto
-    Analistas
-    Directores de los Usuarios
+* Jefe de Proyecto
+* Analistas
+* Directores de los Usuarios
 
 ### Actividad ASI 2: Establecimiento de Requisitos
 
@@ -429,19 +429,19 @@ También se definen las prioridades que hay que asignar a los requisitos, consid
 
 Los principales tipos de requisitos que se deben especificar son, por ejemplo:
 
-    Funcionales.
-    Rendimiento.
-    Seguridad.
-    Implantación.
-    Disponibilidad del sistema.
+* Funcionales.
+* Rendimiento.
+* Seguridad.
+* Implantación.
+* Disponibilidad del sistema.
 
 En el caso de orientación a objetos se especifican, además, los casos de uso asociados a los requisitos funcionales.
 
 Los casos de uso son una técnica de especificación de requisitos válida tanto en desarrollos estructurados como en orientación a objetos, aunque en este último caso se propone como técnica obligatoria al ser necesaria como referencia a lo largo de todo el ciclo de vida. En esta tarea se elabora el modelo de casos de uso, según las normas y estándares de la organización, identificando:
 
-    Actores.
-    Casos de uso.
-    Breve descripción de cada caso de uso.
+* Actores.
+* Casos de uso.
+* Breve descripción de cada caso de uso.
 
 Los productos obtenidos en la tarea Determinación del Alcance del Sistema (ASI 1.1), son tomados como referencia durante la obtención de requisitos, de forma que todos los requisitos especificados se encuentren dentro del ámbito del sistema de información.
 
@@ -449,34 +449,34 @@ Los productos obtenidos en la tarea Determinación del Alcance del Sistema (ASI 
 
 ###### De entrada {.unnumbered .unlisted}
 
-    Catálogo de Requisitos (ASI 1.4)
-    Descripción General del Entorno Tecnológico del Sistema (ASI 1.4)
-    Catálogo de Usuarios (ASI 1.4)
-    Plan de Trabajo (ASI 1.4)
-    En Análisis Estructurado:
-    Contexto del Sistema (ASI 1.1)
-    En Análisis Orientado a Objetos:
-    Modelo de Negocio (ASI 1.1)
-    Modelo de Dominio (ASI 1.1)
+* Catálogo de Requisitos (ASI 1.4)
+* Descripción General del Entorno Tecnológico del Sistema (ASI 1.4)
+* Catálogo de Usuarios (ASI 1.4)
+* Plan de Trabajo (ASI 1.4)
+  En Análisis Estructurado:
+* Contexto del Sistema (ASI 1.1)
+  En Análisis Orientado a Objetos:
+* Modelo de Negocio (ASI 1.1)
+* Modelo de Dominio (ASI 1.1)
 
 ###### De salida {.unnumbered .unlisted}
 
-    Catálogo de Requisitos
-    Modelo de Casos de Uso
+* Catálogo de Requisitos
+* Modelo de Casos de Uso
 
 ##### Técnicas {.unnumbered .unlisted}
 
-    Casos de Uso
+* Casos de Uso
 
 Prácticas {.unnumbered .unlisted}
 
-    Sesiones de Trabajo
-    Catalogación
+* Sesiones de Trabajo
+* Catalogación
 
 ##### Participantes {.unnumbered .unlisted}
 
-    Usuarios Expertos
-    Analistas
+* Usuarios Expertos
+* Analistas
 
 #### Tarea ASI 2.2: Especificación de Casos de Uso
 
@@ -486,10 +486,10 @@ El objetivo de esta tarea es especificar cada caso de uso identificado en la tar
 
 Para completar los casos de uso, es preciso especificar información relativa a:
 
-    Descripción del escenario, es decir, cómo un actor interactúa con el sistema, y cual es la respuesta obtenida.
-    Precondiciones y poscondiciones.
-    Identificación de interfaces de usuario.
-    Condiciones de fallo que afectan al escenario, así como la respuesta del sistema (escenarios secundarios).
+* Descripción del escenario, es decir, cómo un actor interactúa con el sistema, y cual es la respuesta obtenida.
+* Precondiciones y poscondiciones.
+* Identificación de interfaces de usuario.
+* Condiciones de fallo que afectan al escenario, así como la respuesta del sistema (escenarios secundarios).
 
 En escenarios complejos, es posible utilizar como técnica de especificación los diagramas de transición de estados, así como la división en casos de uso más simples, actualizando el modelo de casos de uso.
 
@@ -499,28 +499,28 @@ Para la obtención de esta información es imprescindible la participación acti
 
 ###### De entrada {.unnumbered .unlisted}
 
-    Catálogo de Requisitos (ASI 2.1)
-    Modelo de Casos de Uso (ASI 2.1)
+* Catálogo de Requisitos (ASI 2.1)
+* Modelo de Casos de Uso (ASI 2.1)
 
 ###### De salida {.unnumbered .unlisted}
 
-    Catálogo de Requisitos
-    Modelo de Casos de Uso
-    Especificación de Casos de Uso
+* Catálogo de Requisitos
+* Modelo de Casos de Uso
+* Especificación de Casos de Uso
 
 ##### Técnicas {.unnumbered .unlisted}
 
-    Casos de Uso
+* Casos de Uso
 
 Prácticas {.unnumbered .unlisted}
 
-    Sesiones de Trabajo
-    Catalogación
+* Sesiones de Trabajo
+* Catalogación
 
 ##### Participantes {.unnumbered .unlisted}
 
-    Usuarios Expertos
-    Analistas
+* Usuarios Expertos
+* Analistas
 
 #### Tarea ASI 2.3: Análisis de Requisitos
 
@@ -536,29 +536,29 @@ Mediante sesiones de trabajo con los usuarios, se contrastan las conclusiones de
 
 ###### De entrada {.unnumbered .unlisted}
 
-    Catálogo de Requisitos (ASI 2.2)
-    Modelo de Casos de Uso (ASI 2.2)
-    Especificación de Casos de Uso (ASI 2.2)
+* Catálogo de Requisitos (ASI 2.2)
+* Modelo de Casos de Uso (ASI 2.2)
+* Especificación de Casos de Uso (ASI 2.2)
 
 ###### De salida {.unnumbered .unlisted}
 
-    Catálogo de Requisitos
-    Modelo de Casos de Uso
-    Especificación de Casos de Uso
+* Catálogo de Requisitos
+* Modelo de Casos de Uso
+* Especificación de Casos de Uso
 
 ##### Técnicas {.unnumbered .unlisted}
 
-    Casos de Uso
+* Casos de Uso
 
 Prácticas {.unnumbered .unlisted}
 
-    Sesiones de Trabajo
-    Catalogación
+* Sesiones de Trabajo
+* Catalogación
 
 ##### Participantes {.unnumbered .unlisted}
 
-    Usuarios Expertos
-    Analistas
+* Usuarios Expertos
+* Analistas
 
 #### Tarea ASI 2.4: Validación de Requisitos
 
@@ -568,29 +568,29 @@ Mediante esta tarea, los usuarios confirman que los requisitos especificados en 
 
 ###### De entrada {.unnumbered .unlisted}
 
-    Catálogo de Requisitos (ASI 2.3)
-    Modelo de Casos de Uso (ASI 2.3)
-    Especificación de Casos de Uso (ASI 2.3)
+* Catálogo de Requisitos (ASI 2.3)
+* Modelo de Casos de Uso (ASI 2.3)
+* Especificación de Casos de Uso (ASI 2.3)
 
 ###### De salida {.unnumbered .unlisted}
 
-    Catálogo de Requisitos
-    Modelo de Casos de Uso
-    Especificación de Casos de Uso
+* Catálogo de Requisitos
+* Modelo de Casos de Uso
+* Especificación de Casos de Uso
 
 ##### Técnicas {.unnumbered .unlisted}
 
-    Casos de Uso
+* Casos de Uso
 
 Prácticas {.unnumbered .unlisted}
 
-    Sesiones de Trabajo
-    Catalogación
+* Sesiones de Trabajo
+* Catalogación
 
 ##### Participantes {.unnumbered .unlisted}
 
-    Usuarios Expertos
-    Analistas
+* Usuarios Expertos
+* Analistas
 
 ### Actividad ASI 3: Identificación de Subsistemas de Análisis
 
@@ -662,11 +662,11 @@ El objetivo de esta actividad, común tanto para análisis estructurado como par
 
 La descomposición del sistema en subsistemas debe estar, principalmente, orientada a los procesos de negocio, aunque también es posible adoptar otros criterios lógicos. Entre los criterios que pueden ayudar a su identificación, se encuentran los siguientes:
 
-    Homogeneidad de procesos.
-    Servicios comunes.
-    Prioridad.
-    Afinidad de requisitos.
-    Localización geográfica.
+* Homogeneidad de procesos.
+* Servicios comunes.
+* Prioridad.
+* Afinidad de requisitos.
+* Localización geográfica.
 
 En análisis estructurado, los subsistemas coinciden habitualmente con el primer nivel de descomposición del Diagrama de Flujo de Datos (diagrama 0), de modo que llevan implícita la definición de dependencia y de interfaz.
 
@@ -678,31 +678,31 @@ En ambos casos, se asignan los requisitos y casos de uso a cada uno de los subsi
 
 ###### De entrada {.unnumbered .unlisted}
 
-    En Análisis Estructurado:
-    Contexto del sistema (ASI 1.1)
-    En Análisis Orientado a Objetos:
-    Modelo de negocio (ASI 1.1)
-    Modelo de dominio (ASI 1.1)
-    Modelo de casos de uso (ASI 2.4)
-    Especificación de casos de uso (ASI 2.4)
+* En Análisis Estructurado:
+* Contexto del sistema (ASI 1.1)
+  En Análisis Orientado a Objetos:
+* Modelo de negocio (ASI 1.1)
+* Modelo de dominio (ASI 1.1)
+* Modelo de casos de uso (ASI 2.4)
+* Especificación de casos de uso (ASI 2.4)
 
 ###### De salida {.unnumbered .unlisted}
 
-    En Análisis Estructurado:
-    Modelo de procesos
-    En Análisis Orientado a Objetos:
-    Descripción de subsistemas de análisis
-    Descripción de interfaces entre subsistemas
+  En Análisis Estructurado:
+* Modelo de procesos
+  En Análisis Orientado a Objetos:
+* Descripción de subsistemas de análisis
+* Descripción de interfaces entre subsistemas
 
 ##### Técnicas {.unnumbered .unlisted}
 
-    Diagrama de Flujo de Datos
-    Diagrama de Paquetes (Subsistemas)
+* Diagrama de Flujo de Datos
+* Diagrama de Paquetes (Subsistemas)
 
 ##### Participantes {.unnumbered .unlisted}
 
-    Jefe de Proyecto
-    Analistas
+* Jefe de Proyecto
+* Analistas
 
 #### Tarea ASI 3.2: Integración de Subsistemas de Análisis
 
@@ -714,29 +714,29 @@ Como consecuencia de la coordinación de modelos, se pueden identificar elemento
 
 ###### De entrada {.unnumbered .unlisted}
 
-    En Análisis Estructurado:
-    Modelo de procesos (ASI 3.1)
-    En Análisis Orientado a Objetos:
-    Descripción de subsistemas de análisis (ASI 3.1)
-    Descripción de interfaces entre subsistemas (ASI 3.1)
+  En Análisis Estructurado:
+* Modelo de procesos (ASI 3.1)
+  En Análisis Orientado a Objetos:
+* Descripción de subsistemas de análisis (ASI 3.1)
+* Descripción de interfaces entre subsistemas (ASI 3.1)
 
 ###### De salida {.unnumbered .unlisted}
 
-    En Análisis Estructurado:
-    Modelo de Procesos
-    En Análisis Orientado a Objetos:
-    Descripción de Subsistemas de Análisis
-    Descripción de Interfaces entre Subsistemas
+  En Análisis Estructurado:
+* Modelo de Procesos
+  En Análisis Orientado a Objetos:
+* Descripción de Subsistemas de Análisis
+* Descripción de Interfaces entre Subsistemas
 
 ##### Técnicas {.unnumbered .unlisted}
 
-    Diagrama de Flujo de Datos
-    Diagrama de Paquetes (Subsistemas)
+* Diagrama de Flujo de Datos
+* Diagrama de Paquetes (Subsistemas)
 
 ##### Participantes {.unnumbered .unlisted}
 
-    Jefe de Proyecto
-    Analistas
+* Jefe de Proyecto
+* Analistas
 
 
 ### Actividad ASI 4: Análisis de los Casos de Uso
@@ -805,28 +805,28 @@ Una vez definidas cada una de las clases, se incorporan al modelo de clases de l
 
 Las clases que se identifican en esta tarea pueden ser:
 
-    Clases de Entidad (representan la información manipulada en el caso de uso).
-    Clases de Interfaz de Usuario (se utilizan para describir la interacción entre el sistema y sus actores. Suelen representar abstracciones de ventanas, interfaces de comunicación, formularios, etc.).
-    Clases de Control (son responsables de la coordinación, secuencia de transacciones y control de los objetos relacionados con un caso de uso).
+* Clases de Entidad (representan la información manipulada en el caso de uso).
+* Clases de Interfaz de Usuario (se utilizan para describir la interacción entre el sistema y sus actores. Suelen representar abstracciones de ventanas, interfaces de comunicación, formularios, etc.).
+* Clases de Control (son responsables de la coordinación, secuencia de transacciones y control de los objetos relacionados con un caso de uso).
 
 ##### Productos {.unnumbered .unlisted}
 
 ###### De entrada {.unnumbered .unlisted}
 
-    Modelo de Casos de Uso (ASI 2.4)
-    Especificación de Casos de Uso (ASI 2.4)
+* Modelo de Casos de Uso (ASI 2.4)
+* Especificación de Casos de Uso (ASI 2.4)
 
 ###### De salida {.unnumbered .unlisted}
 
-    Modelo de Clases de Análisis
+* Modelo de Clases de Análisis
 
 ##### Técnicas {.unnumbered .unlisted}
 
-    Diagrama de Clases
+* Diagrama de Clases
 
 ##### Participantes {.unnumbered .unlisted}
 
-    Analistas
+* Analistas
 
 #### Tarea ASI 4.1: Identificación de Clases Asociadas a un Caso de Uso
 
@@ -838,28 +838,28 @@ Una vez definidas cada una de las clases, se incorporan al modelo de clases de l
 
 Las clases que se identifican en esta tarea pueden ser:
 
-    Clases de Entidad (representan la información manipulada en el caso de uso).
-    Clases de Interfaz de Usuario (se utilizan para describir la interacción entre el sistema y sus actores. Suelen representar abstracciones de ventanas, interfaces de comunicación, formularios, etc.).
-    Clases de Control (son responsables de la coordinación, secuencia de transacciones y control de los objetos relacionados con un caso de uso).
+* Clases de Entidad (representan la información manipulada en el caso de uso).
+* Clases de Interfaz de Usuario (se utilizan para describir la interacción entre el sistema y sus actores. Suelen representar abstracciones de ventanas, interfaces de comunicación, formularios, etc.).
+* Clases de Control (son responsables de la coordinación, secuencia de transacciones y control de los objetos relacionados con un caso de uso).
 
 ##### Productos {.unnumbered .unlisted}
 
 ###### De entrada {.unnumbered .unlisted}
 
-    Modelo de Casos de Uso (ASI 2.4)
-    Especificación de Casos de Uso (ASI 2.4)
+* Modelo de Casos de Uso (ASI 2.4)
+* Especificación de Casos de Uso (ASI 2.4)
 
 ###### De salida {.unnumbered .unlisted}
 
-    Modelo de Clases de Análisis
+* Modelo de Clases de Análisis
 
 ##### Técnicas {.unnumbered .unlisted}
 
-    Diagrama de Clases
+* Diagrama de Clases
 
 ##### Participantes {.unnumbered .unlisted}
 
-    Analistas
+* Analistas
 
 ### Actividad ASI 5: Análisis de Clases
 
@@ -952,23 +952,23 @@ Para aquellas clases cuyo comportamiento dependa del estado en el que se encuent
 
 ###### De entrada {.unnumbered .unlisted}
 
-    Especificación de Casos de Uso (ASI 2.4)
-    Modelo de Casos de Uso (ASI 2.4)
-    Modelo de Clases de Análisis (ASI 4.1)
+* Especificación de Casos de Uso (ASI 2.4)
+* Modelo de Casos de Uso (ASI 2.4)
+* Modelo de Clases de Análisis (ASI 4.1)
 
 ###### De salida {.unnumbered .unlisted}
 
-    Modelo de Clases de Análisis
-    Comportamiento de Clases de Análisis
+* Modelo de Clases de Análisis
+* Comportamiento de Clases de Análisis
 
 ##### Técnicas {.unnumbered .unlisted}
 
-    Diagrama de Clases
-    Diagrama de Transición de Estados
+* Diagrama de Clases
+* Diagrama de Transición de Estados
 
 ##### Participantes {.unnumbered .unlisted}
 
-    Analistas
+* Analistas
 
 #### Tarea ASI 5.2: Identificación de Asociaciones y Agregaciones
 
@@ -976,9 +976,9 @@ En esta tarea se estudian los mensajes establecidos entre los objetos del diagra
 
 Las relaciones surgen como respuesta a las demandas en los distintos casos de uso, y para ello puede existir la necesidad de definir agregaciones y herencia entre objetos. Una asociación esta caracterizada por:
 
-    Los papeles que desempeña.
-    Su direccionalidad, que representa el sentido en el que se debe interpretar.
-    Su cardinalidad, que representa el número de instancias implicadas en la asociación.
+* Los papeles que desempeña.
+* Su direccionalidad, que representa el sentido en el que se debe interpretar.
+* Su cardinalidad, que representa el número de instancias implicadas en la asociación.
 
 Dichas características pueden obtenerse a partir de la especificación de los casos de uso.
 
@@ -988,22 +988,22 @@ A medida que se establecen las relaciones entre las clases, se revisa la especif
 
 ###### De entrada {.unnumbered .unlisted}
 
-    Especificación de Casos de Uso (ASI 2.4)
-    Modelo de Casos de Uso (ASI 2.4)
-    Análisis de la Realización de los Casos de Uso (ASI 4.2)
-    Modelo de Clases de Análisis (ASI 5.1)
+* Especificación de Casos de Uso (ASI 2.4)
+* Modelo de Casos de Uso (ASI 2.4)
+* Análisis de la Realización de los Casos de Uso (ASI 4.2)
+* Modelo de Clases de Análisis (ASI 5.1)
 
 ###### De salida {.unnumbered .unlisted}
 
-    Modelo de Clases de Análisis
+* Modelo de Clases de Análisis
 
 ##### Técnicas {.unnumbered .unlisted}
 
-    Diagrama de Clases
+* Diagrama de Clases
 
 ##### Participantes {.unnumbered .unlisted}
 
-    Analistas
+* Analistas
 
 #### Tarea ASI 5.3: Identificación de Generalizaciones
 
@@ -1013,7 +1013,7 @@ El objetivo de esta tarea es representar una organización de las clases que per
 
 ###### De entrada {.unnumbered .unlisted}
 
-    Modelo de Clases de Análisis (ASI 5.2)
+* Modelo de Clases de Análisis (ASI 5.2)
 
 ###### De salida {.unnumbered .unlisted}
 
@@ -1144,31 +1144,31 @@ Asimismo, se pueden describir las reglas de negocio, también llamadas restricci
 
 ###### De entrada {.unnumbered .unlisted}
 
-    Contexto del Sistema (ASI 1.1)
-    Modelo Conceptual de Datos (ASI 1.1)
+* Contexto del Sistema (ASI 1.1)
+* Modelo Conceptual de Datos (ASI 1.1)
 
 ###### De salida {.unnumbered .unlisted}
 
-    Modelo Conceptual de Datos
+* Modelo Conceptual de Datos
 
 ##### Técnicas {.unnumbered .unlisted}
 
-    Modelo Entidad / Relación Extendido
+* Modelo Entidad / Relación Extendido
 
 ##### Participantes {.unnumbered .unlisted}
 
-    Analistas
+* Analistas
 
 #### Tarea ASI 6.2: Elaboración del Modelo Lógico de Datos
 
 En esta tarea se obtiene el modelo lógico de datos a partir del modelo conceptual para lo cual se realizarán las acciones siguientes:
 
-    Resolver las relaciones complejas que pudieran existir entre las distintas entidades.
-    Eliminar las relaciones redundantes que puedan surgir como consecuencia de la resolución de las relaciones complejas.
-    Eliminar cualquier ambigüedad sobre el significado de los atributos.
-    Identificar las relaciones de dependencia entre entidades .
-    Completar la información de las entidades y los atributos, una vez resueltas las relaciones complejas.
-    Revisar y completar los identificadores de cada entidad.
+* Resolver las relaciones complejas que pudieran existir entre las distintas entidades.
+* Eliminar las relaciones redundantes que puedan surgir como consecuencia de la resolución de las relaciones complejas.
+* Eliminar cualquier ambigüedad sobre el significado de los atributos.
+* Identificar las relaciones de dependencia entre entidades .
+* Completar la información de las entidades y los atributos, una vez resueltas las relaciones complejas.
+* Revisar y completar los identificadores de cada entidad.
 
 También se debe especificar para cada entidad el número máximo y medio de ocurrencias, estimaciones de crecimiento por periodo, tipo y frecuencia de acceso, así como aquellas características relativas a la seguridad, confidencialidad, disponibilidad, etc. consideradas relevantes.
 
@@ -1176,19 +1176,19 @@ También se debe especificar para cada entidad el número máximo y medio de ocu
 
 ###### De entrada {.unnumbered .unlisted}
 
-    Modelo Conceptual de Datos (ASI 6.1)
+* Modelo Conceptual de Datos (ASI 6.1)
 
 ###### De salida {.unnumbered .unlisted}
 
-    Modelo Lógico de Datos
+* Modelo Lógico de Datos
 
 ##### Técnicas {.unnumbered .unlisted}
 
-    Modelo Entidad / Relación Extendido
+* Modelo Entidad / Relación Extendido
 
 ##### Participantes {.unnumbered .unlisted}
 
-    Analistas
+* Analistas
 
 #### Tarea ASI 6.3: Normalización del Modelo Lógico de Datos
 
@@ -1204,19 +1204,19 @@ La técnica de normalización puede exigir la modificación de entidades, la cre
 
 ###### De entrada {.unnumbered .unlisted}
 
-    Modelo Lógico de Datos (ASI 6.2)
+* Modelo Lógico de Datos (ASI 6.2)
 
 ###### De salida {.unnumbered .unlisted}
 
-    Modelo Lógico de Datos Normalizado
+* Modelo Lógico de Datos Normalizado
 
 ##### Técnicas {.unnumbered .unlisted}
 
-    Normalización
+* Normalización
 
 ##### Participantes {.unnumbered .unlisted}
 
-    Analistas
+* Analistas
 
 #### Tarea ASI 6.4: Especificación de Necesidades de Migración de Datos y Carga Inicial
 
@@ -1226,13 +1226,13 @@ Se especifican las necesidades de migración o carga inicial de los datos requer
 
 Es preciso tener en cuenta aspectos tales como:
 
-    Planificación de la migración y carga inicial.
-    Prioridad en las cargas.
-    Requisitos de conversión de información: necesidades de depuración de información, importación de información complementaria, validaciones y controles, etc.
-    Plan de pruebas específico.
-    Necesidades especiales de equipamiento hardware y estimaciones de capacidad, en función de los volúmenes de las estructuras de datos origen.
-    Necesidades especiales de utilidades software.
-    Posibles modificaciones del sistema origen, que faciliten la ejecución o verificación de la migración o carga inicial.
+* Planificación de la migración y carga inicial.
+* Prioridad en las cargas.
+* Requisitos de conversión de información: necesidades de depuración de información, importación de información complementaria, validaciones y controles, etc.
+* Plan de pruebas específico.
+* Necesidades especiales de equipamiento hardware y estimaciones de capacidad, en función de los volúmenes de las estructuras de datos origen.
+* Necesidades especiales de utilidades software.
+* Posibles modificaciones del sistema origen, que faciliten la ejecución o verificación de la migración o carga inicial.
 
 Como resultado de esta tarea se obtiene una primera especificación del plan de migración de datos y carga inicial del sistema, que se completará en el proceso Diseño del Sistema de Información (DSI).
 
@@ -1240,20 +1240,20 @@ Como resultado de esta tarea se obtiene una primera especificación del plan de 
 
 ###### De entrada {.unnumbered .unlisted}
 
-    Modelo Lógico de Datos Normalizado (ASI 6.3)
-    Estructuras de Datos del Sistema Origen (externo)
+* Modelo Lógico de Datos Normalizado (ASI 6.3)
+* Estructuras de Datos del Sistema Origen (externo)
 
 ###### De salida {.unnumbered .unlisted}
 
-    Plan de Migración y Carga Inicial de Datos
+* Plan de Migración y Carga Inicial de Datos
 
 Prácticas {.unnumbered .unlisted}
 
-    Sesiones de Trabajo
+* Sesiones de Trabajo
 
 ##### Participantes {.unnumbered .unlisted}
 
-    Usuarios Expertos
+* Usuarios Expertos
 - Analistas
 - Equipo de Soporte Técnico
 
@@ -1326,21 +1326,21 @@ Para cada proceso primitivo, también se debe especificar qué procesos van a es
 
 ###### De entrada {.unnumbered .unlisted}
 
-    Modelo de procesos (ASI 3.2)
+* Modelo de procesos (ASI 3.2)
 
 ###### De salida {.unnumbered .unlisted}
 
-    Modelo de Procesos
-    Matriz de Procesos / Localización Geográfica (ampliada)
+* Modelo de Procesos
+* Matriz de Procesos / Localización Geográfica (ampliada)
 
 ##### Técnicas {.unnumbered .unlisted}
 
-    Diagrama de Flujo de Datos
-    Matricial
+* Diagrama de Flujo de Datos
+* Matricial
 
 ##### Participantes {.unnumbered .unlisted}
 
-    Analistas
+* Analistas
 
 
 #### Tarea ASI 7.2: Especificación de Interfaces con otros Sistemas
@@ -1349,14 +1349,14 @@ En esta tarea se describen, con detalle, las interfaces con otros sistemas de in
 
 Para cada interfaz identificada, se especifica:
 
-    Procesos del sistema de información asociados.
-    Especificaciones funcionales de los sistemas origen o destino.
-    Formatos de los datos intercambiados.
-    Aspectos operativos de la interfaz: en lotes o en línea y medio físico utilizado.
-    Frecuencia o periodicidad del intercambio.
-    Evento que desencadena la interfaz.
-    Validaciones, requisitos especiales de seguridad, etc.
-    Modificaciones o adaptaciones necesarias en los sistemas origen o destino.
+* Procesos del sistema de información asociados.
+* Especificaciones funcionales de los sistemas origen o destino.
+* Formatos de los datos intercambiados.
+* Aspectos operativos de la interfaz: en lotes o en línea y medio físico utilizado.
+* Frecuencia o periodicidad del intercambio.
+* Evento que desencadena la interfaz.
+* Validaciones, requisitos especiales de seguridad, etc.
+* Modificaciones o adaptaciones necesarias en los sistemas origen o destino.
 
 Las interfaces con otros sistemas forman parte del modelo de procesos, pero se recomienda que su especificación se realice como anexo al diagrama de flujo de datos en aquellos casos en que la naturaleza de la interfaz, por sus características especiales (complejidad, uso temporal, etc.), lo aconseje.
 
@@ -1364,15 +1364,15 @@ Las interfaces con otros sistemas forman parte del modelo de procesos, pero se r
 
 ###### De entrada {.unnumbered .unlisted}
 
-    Modelo de Procesos (ASI 7.1)
+* Modelo de Procesos (ASI 7.1)
 
 ###### De salida {.unnumbered .unlisted}
 
-    Descripción de Interfaz con otros Sistemas
+* Descripción de Interfaz con otros Sistemas
 
 ##### Participantes {.unnumbered .unlisted}
 
-    Analistas
+* Analistas
 
 
 ### Actividad ASI 8: Definición de Interfaces de Usuario
@@ -1391,15 +1391,15 @@ Se propone un flujo de trabajo muy similar para desarrollos estructurados y orie
 
 Como resultado de esta actividad se genera la especificación de interfaz de usuario, como producto que engloba los siguientes elementos:
 
-    Principios generales de la interfaz.
-    Catálogo de perfiles de usuario.
-    Descomposición funcional en diálogos.
-    Catálogo de controles y elementos de diseño de interfaz de pantalla.
-    Formatos individuales de interfaz de pantalla.
-    Modelo de navegación de interfaz de pantalla.
-    Formatos de impresión.
-    Prototipo de interfaz interactiva.
-    Prototipo de interfaz de impresión.
+* Principios generales de la interfaz.
+* Catálogo de perfiles de usuario.
+* Descomposición funcional en diálogos.
+* Catálogo de controles y elementos de diseño de interfaz de pantalla.
+* Formatos individuales de interfaz de pantalla.
+* Modelo de navegación de interfaz de pantalla.
+* Formatos de impresión.
+* Prototipo de interfaz interactiva.
+* Prototipo de interfaz de impresión.
 
 ```{=html}
 <table class="avia-table avia-data-table">
@@ -1550,37 +1550,37 @@ El objetivo de esta tarea es especificar los estándares, directrices y elemento
 
 En primer lugar, se selecciona el entorno de la interfaz interactiva (gráfico, carácter, etc.), siguiendo estándares internacionales y de la instalación, y se determinan los principios de diseño de la interfaz de usuario, contemplando:
 
-    Directrices generales en cuanto a la interfaz y aspectos generales de interacción.
-    Principios de composición de pantallas y criterios de ubicación de los distintos elementos dentro de cada formato.
-    Normas para los mensajes de error y aviso, codificación, presentación y comportamientos.
-    Normas para la presentación de ayudas.
+* Directrices generales en cuanto a la interfaz y aspectos generales de interacción.
+* Principios de composición de pantallas y criterios de ubicación de los distintos elementos dentro de cada formato.
+* Normas para los mensajes de error y aviso, codificación, presentación y comportamientos.
+* Normas para la presentación de ayudas.
 
 Hay que establecer criterios similares para la interfaz impresa:
 
-    Directrices generales.
-    Principios de composición de informes y formularios.
-    Normas de elaboración, distribución y salvaguarda de la información.
+* Directrices generales.
+* Principios de composición de informes y formularios.
+* Normas de elaboración, distribución y salvaguarda de la información.
 
 ##### Productos {.unnumbered .unlisted}
 
 ###### De entrada {.unnumbered .unlisted}
 
-    Descripción General del Entorno Tecnológico (ASI 1.2)
-    Catálogo de Normas (ASI 1.3)
+* Descripción General del Entorno Tecnológico (ASI 1.2)
+* Catálogo de Normas (ASI 1.3)
 
 ###### De salida {.unnumbered .unlisted}
 
-    Especificación de Interfaz de Usuario:
-        Principios Generales de la Interfaz
+* Especificación de Interfaz de Usuario:
+  * Principios Generales de la Interfaz
 
 Prácticas {.unnumbered .unlisted}
 
-    Sesiones de Trabajo
+* Sesiones de Trabajo
 
 ##### Participantes {.unnumbered .unlisted}
 
-    Usuarios Expertos
-    Analistas
+* Usuarios Expertos
+* Analistas
 
 
 #### Tarea ASI 8.2: Identificación de Perfiles y Diálogos
@@ -1599,29 +1599,29 @@ En un análisis orientado a objetos, esta tarea no se realiza, puesto que se ha 
 
 ###### De entrada {.unnumbered .unlisted}
 
-    Especificación de Interfaz de Usuario (ASI 8.1)
-    Modelo de Procesos (ASI 7.1)
+* Especificación de Interfaz de Usuario (ASI 8.1)
+* Modelo de Procesos (ASI 7.1)
 
 ###### De salida {.unnumbered .unlisted}
 
-    Especificación de Interfaz de Usuario:
-        Descomposición Funcional en Diálogos
-        Catálogo de Perfiles de Usuario
+* Especificación de Interfaz de Usuario:
+  * Descomposición Funcional en Diálogos
+  * Catálogo de Perfiles de Usuario
 
 ##### Técnicas {.unnumbered .unlisted}
 
-    Diagrama de Descomposición Funcional
+* Diagrama de Descomposición Funcional
 
 Prácticas {.unnumbered .unlisted}
 
-    Diagrama de Representación
-    Catalogación
-    Sesiones de Trabajo
+* Diagrama de Representación
+* Catalogación
+* Sesiones de Trabajo
 
 ##### Participantes {.unnumbered .unlisted}
 
-    Usuarios Expertos
-    Analistas
+* Usuarios Expertos
+* Analistas
 
 #### Tarea ASI 8.3: Especificación de Formatos Individuales de la Interfaz de Pantalla
 
@@ -1635,40 +1635,40 @@ También se considera el catálogo de requisitos, para especificar las interface
 
 En la definición de cada interfaz de pantalla se deben definir aquellos aspectos considerados de interés para su posterior diseño y construcción:
 
-    Posibilidad de cambio de tamaño, ubicación, modalidad (modal del sistema, modal de aplicación), etc.
-    Dispositivos de entrada necesarios para su ejecución.
-    Conjunto y formato de datos asociados, identificando qué datos se usan y cuáles se generan como consecuencia de su ejecución.
-    Controles y elementos de diseño asociados, indicando cuáles aparecen inicialmente activos e inactivos al visualizar la interfaz de pantalla.
+* Posibilidad de cambio de tamaño, ubicación, modalidad (modal del sistema, modal de aplicación), etc.
+* Dispositivos de entrada necesarios para su ejecución.
+* Conjunto y formato de datos asociados, identificando qué datos se usan y cuáles se generan como consecuencia de su ejecución.
+* Controles y elementos de diseño asociados, indicando cuáles aparecen inicialmente activos e inactivos al visualizar la interfaz de pantalla.
 
 ##### Productos {.unnumbered .unlisted}
 
 ###### De entrada {.unnumbered .unlisted}
 
-    Especificación de Interfaz de Usuario (ASI 8.2)
-    En Análisis Orientado a Objetos:
-    Especificación de Casos de Uso (ASI 2.4)
-    Modelo de Casos de Uso (ASI 2.4)
+* Especificación de Interfaz de Usuario (ASI 8.2)
+* En Análisis Orientado a Objetos:
+* Especificación de Casos de Uso (ASI 2.4)
+* Modelo de Casos de Uso (ASI 2.4)
 
 ###### De salida {.unnumbered .unlisted}
 
-    Especificación de Interfaz de Usuario:
-        Formatos Individuales de Interfaz de Pantalla
-        Catálogo de Controles y Elementos de Diseño de Interfaz de Pantalla
+* Especificación de Interfaz de Usuario:
+  * Formatos Individuales de Interfaz de Pantalla
+  * Catálogo de Controles y Elementos de Diseño de Interfaz de Pantalla
 
 ##### Técnicas {.unnumbered .unlisted}
 
-    Casos de Uso
+* Casos de Uso
 
 Prácticas {.unnumbered .unlisted}
 
-    Prototipado
-    Catalogación
-    Sesiones de Trabajo
+* Prototipado
+* Catalogación
+* Sesiones de Trabajo
 
 ##### Participantes {.unnumbered .unlisted}
 
-    Usuarios Expertos
-    Analistas
+* Usuarios Expertos
+* Analistas
 
 #### Tarea ASI 8.4: Especificación del Comportamiento Dinámico de la Interfaz
 
@@ -1688,32 +1688,32 @@ Se propone, opcionalmente, la realización de prototipos como técnica de ayuda 
 
 ###### De entrada {.unnumbered .unlisted}
 
-    Especificación de Interfaz de Usuario (ASI 8.3)
-    En Análisis Orientado a Objetos:
-    Especificación de Casos de Uso (ASI 2.4)
-    Modelo de Casos de Uso (ASI 2.4)
+* Especificación de Interfaz de Usuario (ASI 8.3)
+* En Análisis Orientado a Objetos:
+* Especificación de Casos de Uso (ASI 2.4)
+* Modelo de Casos de Uso (ASI 2.4)
 
 ###### De salida {.unnumbered .unlisted}
 
-    Especificación de Interfaz de Usuario:
-        Modelo de Navegación de Interfaz de Pantalla
-        Prototipo de Interfaz Interactiva
+* Especificación de Interfaz de Usuario:
+  * Modelo de Navegación de Interfaz de Pantalla
+  * Prototipo de Interfaz Interactiva
 
 ##### Técnicas {.unnumbered .unlisted}
 
-    Diagrama de Transición de Estados
-    Matricial
-    Diagrama de Interacción de Objetos
+* Diagrama de Transición de Estados
+* Matricial
+* Diagrama de Interacción de Objetos
 
 Prácticas {.unnumbered .unlisted}
 
-    Prototipado
-    Sesiones de Trabajo
+* Prototipado
+* Sesiones de Trabajo
 
 ##### Participantes {.unnumbered .unlisted}
 
-    Usuarios Expertos
-    Analistas
+* Usuarios Expertos
+* Analistas
 
 
 #### Tarea ASI 8.5: Especificación de Formatos de Impresión
@@ -1728,31 +1728,31 @@ Opcionalmente, se recomienda la utilización de prototipos.
 
 ###### De entrada {.unnumbered .unlisted}
 
-    Especificación de Interfaz de Usuario (ASI 8.4)
+* Especificación de Interfaz de Usuario (ASI 8.4)
 
 ###### De salida {.unnumbered .unlisted}
 
-    Especificación de Interfaz de Usuario:
-        Formatos de Impresión
-        Prototipo de Interfaz de Impresión
+* Especificación de Interfaz de Usuario:
+  * Formatos de Impresión
+  * Prototipo de Interfaz de Impresión
 
 Prácticas {.unnumbered .unlisted}
 
-    Prototipado
-    Sesiones de Trabajo
+* Prototipado
+* Sesiones de Trabajo
 
 ##### Participantes {.unnumbered .unlisted}
 
-    Usuarios Expertos
-    Analistas
+* Usuarios Expertos
+* Analistas
 
 ### Actividad ASI 9: Análisis de Consistencia y Especificación de Requisitos
 
 El objetivo de esta actividad es garantizar la calidad de los distintos modelos generados en el proceso de Análisis del Sistema de Información, y asegurar que los usuarios y los Analistas tienen el mismo concepto del sistema. Para cumplir dicho objetivo, se llevan a cabo las siguientes acciones:
 
-    Verificación de la calidad técnica de cada modelo.
-    Aseguramiento de la coherencia entre los distintos modelos.
-    Validación del cumplimiento de los requisitos.
+* Verificación de la calidad técnica de cada modelo.
+* Aseguramiento de la coherencia entre los distintos modelos.
+* Validación del cumplimiento de los requisitos.
 
 Esta actividad requiere una herramienta de apoyo para realizar el análisis de consistencia. También se elabora en esta actividad la Especificación de Requisitos Software (ERS), como producto para la aprobación formal, por parte del usuario, de las especificaciones del sistema.
 
@@ -1882,37 +1882,37 @@ El objetivo de esta tarea es asegurar la calidad formal de los distintos modelos
 
 ###### De entrada {.unnumbered .unlisted}
 
-    Catálogo de Normas (ASI 1.3)
-    Especificación de Interfaz de Usuario (ASI 8.5)
-    En Análisis Estructurado:
-    Modelo Lógico de Datos Normalizado (ASI 6.3)
-    Modelo de Procesos (ASI 7.1)
-    En Análisis Orientado a Objetos:
-    Modelo de Casos de Uso (ASI 2.4)
-    Especificación de Casos de Uso (ASI 2.4)
-    Modelo de Clases de Análisis (ASI 5.3)
-    Comportamiento de Clases de Análisis (ASI 5.1)
-    Análisis de la Realización de los Casos de Uso (ASI 4.2)
-    Descripción de Subsistemas de Análisis (ASI 3.2)
-    Descripción Interfaces entre Subsistemas (ASI 3.2)
+* Catálogo de Normas (ASI 1.3)
+* Especificación de Interfaz de Usuario (ASI 8.5)
+* En Análisis Estructurado:
+* Modelo Lógico de Datos Normalizado (ASI 6.3)
+* Modelo de Procesos (ASI 7.1)
+* En Análisis Orientado a Objetos:
+* Modelo de Casos de Uso (ASI 2.4)
+* Especificación de Casos de Uso (ASI 2.4)
+* Modelo de Clases de Análisis (ASI 5.3)
+* Comportamiento de Clases de Análisis (ASI 5.1)
+* Análisis de la Realización de los Casos de Uso (ASI 4.2)
+* Descripción de Subsistemas de Análisis (ASI 3.2)
+* Descripción Interfaces entre Subsistemas (ASI 3.2)
 
 ###### De salida {.unnumbered .unlisted}
 
-    Especificación de Interfaz de Usuario
-    Modelo Lógico de Datos Normalizado
-    Modelo de Procesos
-    Modelo de Casos de Uso
-    Especificación de Casos de Uso
-    Modelo de Clases de Análisis
-    Comportamiento de Clases de Análisis
-    Análisis de la Realización de los Casos de Uso
-    Descripción de Subsistemas de Análisis
-    Descripción Interfaces entre Subsistemas
+* Especificación de Interfaz de Usuario
+* Modelo Lógico de Datos Normalizado
+* Modelo de Procesos
+* Modelo de Casos de Uso
+* Especificación de Casos de Uso
+* Modelo de Clases de Análisis
+* Comportamiento de Clases de Análisis
+* Análisis de la Realización de los Casos de Uso
+* Descripción de Subsistemas de Análisis
+* Descripción Interfaces entre Subsistemas
 
 ##### Participantes {.unnumbered .unlisted}
 
-    Analistas
-    Equipo de Arquitectura
+* Analistas
+* Equipo de Arquitectura
 
 #### Tarea ASI 9.2: Análisis de Consistencia entre Modelos
 
@@ -1922,101 +1922,101 @@ Las diferentes comprobaciones varían en función del tipo de desarrollo, aunque
 
 Los análisis de consistencia propuestos en Desarrollo Estructurado son:
 
-    Modelo Lógico de Datos Normalizado / Modelo de Procesos:
-    Se verifica que:
-        Cada uno de los almacenes definidos en el modelo de procesos se corresponde con una parte del modelo lógico de datos normalizado. Es decir, un almacén se puede corresponder con una entidad, atributos de una entidad o con varias entidades relacionadas.
-        Los atributos del modelo lógico de datos normalizado y del modelo de procesos se ajustan a una misma especificación.
-        El modelo lógico de datos normalizado satisface las principales consultas de información. Para comprobar que el modelo lógico de datos normalizado puede soportar dichas consultas, se proponen, como técnicas opcionales, la determinación de caminos de acceso lógico en consultas y el cálculo de accesos lógicos.
-        Todas y cada una de las entidades del modelo lógico normalizado son accedidas por algún proceso primitivo. Para dicha comprobación, se propone una matriz de entidades/procesos, donde se especifique que tipo de acceso se realiza (alta, baja, modificación o consulta).
-    Modelo Lógico de Datos Normalizado / Interfaz de Usuario:
-        En este análisis se comprueba que los atributos relevantes que aparecen en cada diálogo de la interfaz de usuario forman parte del modelo lógico de datos normalizado o, en su caso, atributos derivados de los mismos.
-    Modelo de Procesos / Interfaz de Usuario:
-        Se comprueba que todo proceso en línea tiene asociado al menos un diálogo.
+* Modelo Lógico de Datos Normalizado / Modelo de Procesos:
+* Se verifica que:
+  * Cada uno de los almacenes definidos en el modelo de procesos se corresponde con una parte del modelo lógico de datos normalizado. Es decir, un almacén se puede corresponder con una entidad, atributos de una entidad o con varias entidades relacionadas.
+  * Los atributos del modelo lógico de datos normalizado y del modelo de procesos se ajustan a una misma especificación.
+  * El modelo lógico de datos normalizado satisface las principales consultas de información. Para comprobar que el modelo lógico de datos normalizado puede soportar dichas consultas, se proponen, como técnicas opcionales, la determinación de caminos de acceso lógico en consultas y el cálculo de accesos lógicos.
+  * Todas y cada una de las entidades del modelo lógico normalizado son accedidas por algún proceso primitivo. Para dicha comprobación, se propone una matriz de entidades/procesos, donde se especifique que tipo de acceso se realiza (alta, baja, modificación o consulta).
+* Modelo Lógico de Datos Normalizado / Interfaz de Usuario:
+  * En este análisis se comprueba que los atributos relevantes que aparecen en cada diálogo de la interfaz de usuario forman parte del modelo lógico de datos normalizado o, en su caso, atributos derivados de los mismos.
+* Modelo de Procesos / Interfaz de Usuario:
+  * Se comprueba que todo proceso en línea tiene asociado al menos un diálogo.
 
 El resultado del análisis de consistencia en un análisis estructurado es un producto que engloba los siguientes elementos:
 
-    Matriz de almacenes de datos / entidades del modelo lógico de datos normalizado.
-    Matriz de atributos de interfaz / atributos de entidades del modelo lógico de datos normalizado.
-    Caminos de acceso lógico en consultas.
-    Cálculo de accesos lógicos.
-    Matriz de entidades / procesos.
-    Matriz de diálogos / procesos.
+* Matriz de almacenes de datos / entidades del modelo lógico de datos normalizado.
+* Matriz de atributos de interfaz / atributos de entidades del modelo lógico de datos normalizado.
+* Caminos de acceso lógico en consultas.
+* Cálculo de accesos lógicos.
+* Matriz de entidades / procesos.
+* Matriz de diálogos / procesos.
 
 Los análisis de consistencia propuestos en Desarrollo Orientado a Objetos son los siguientes:
 
 Considerando que la interfaz de usuario incluye diagramas dinámicos y forma parte del modelo de clases, los análisis de consistencia con la interfaz pueden solaparse con los del resto de los modelos. Los análisis de consistencia propuestos son:
 
-    Modelo de Clases / Diagramas Dinámicos:
-    Se comprueba que:
-        Cada mensaje entre objetos se corresponde con una operación de una clase y que todos los mensajes se envían a las clases correctas.
-        La clase que recibe un mensaje con petición de datos tiene capacidad para proporcionar esos datos.
-        Cada objeto del diagrama de interacción de objetos tiene una correspondencia en el modelo de clases.
-    En el caso de haber elaborado diagramas de transición de estados para clases significativas:
-        Se verifica que, para cada uno de ellos, todo evento se corresponde con una operación de la clase. También se tiene que establecer si las acciones y actividades de los diagramas de transición de estado se corresponden con operaciones de la clase.
-    Modelo de clases / Interfaz de usuario:
-        Cada clase que requiera una clase de interfaz de usuario, debe tener asociación con ella en el modelo de clases.
-        Todas las clases, atributos y operaciones identificados en la interfaz de usuario, deben tener su correspondencia con algún atributo, operación o clase en el modelo de clases.
-    Análisis de la Realización de los Casos de Uso / Interfaz de Usuario:
-        Cada elemento que active la navegación entre pantallas, debe estar asociado con un mensaje del diagrama de interacción de objetos.
+* Modelo de Clases / Diagramas Dinámicos:
+* Se comprueba que:
+  * Cada mensaje entre objetos se corresponde con una operación de una clase y que todos los mensajes se envían a las clases correctas.
+  * La clase que recibe un mensaje con petición de datos tiene capacidad para proporcionar esos datos.
+  * Cada objeto del diagrama de interacción de objetos tiene una correspondencia en el modelo de clases.
+* En el caso de haber elaborado diagramas de transición de estados para clases significativas:
+  * Se verifica que, para cada uno de ellos, todo evento se corresponde con una operación de la clase. También se tiene que establecer si las acciones y actividades de los diagramas de transición de estado se corresponden con operaciones de la clase.
+* Modelo de clases / Interfaz de usuario:
+  * Cada clase que requiera una clase de interfaz de usuario, debe tener asociación con ella en el modelo de clases.
+  * Todas las clases, atributos y operaciones identificados en la interfaz de usuario, deben tener su correspondencia con algún atributo, operación o clase en el modelo de clases.
+* Análisis de la Realización de los Casos de Uso / Interfaz de Usuario:
+  * Cada elemento que active la navegación entre pantallas, debe estar asociado con un mensaje del diagrama de interacción de objetos.
 
 Además, se revisa que los subsistemas satisfagan la realización de todos los casos de uso, e incluyan las clases identificadas hasta el momento.
 
 El resultado del análisis de consistencia en un análisis orientado a objetos es un producto que engloba los siguientes elementos:
 
-    Matriz de mensajes del diagrama de interacción de objetos / operaciones del modelo de clases.
-    Matriz de mensajes del diagrama de interacción de objetos / operaciones y atributos del modelo de clases.
-    Matriz de objetos del diagrama de interacción de objetos / clases, atributos del modelo de clases.
-    Matriz (evento, acción, actividad de clase) / operaciones de clase.
-    Correspondencia elementos de negocio de interfaz de usuario / modelo de clases.
-    Correspondencia entre elementos de navegación de interfaz de usuario / mensajes del diagrama de interacción de objetos.
+* Matriz de mensajes del diagrama de interacción de objetos / operaciones del modelo de clases.
+* Matriz de mensajes del diagrama de interacción de objetos / operaciones y atributos del modelo de clases.
+* Matriz de objetos del diagrama de interacción de objetos / clases, atributos del modelo de clases.
+* Matriz (evento, acción, actividad de clase) / operaciones de clase.
+* Correspondencia elementos de negocio de interfaz de usuario / modelo de clases.
+* Correspondencia entre elementos de navegación de interfaz de usuario / mensajes del diagrama de interacción de objetos.
 
 ##### Productos {.unnumbered .unlisted}
 
 ###### De entrada {.unnumbered .unlisted}
 
-    Catálogo de Requisitos (ASI 2.4)
-    Especificación de Interfaz de Usuario (ASI 9.1)
-    En Análisis Estructurado:
-    Modelo Lógico de Datos Normalizado (ASI 9.1)
-    Modelo de Procesos (ASI 9.1)
-    En Análisis Orientado a Objetos:
-    Modelo de Casos de Uso (ASI 9.1)
-    Especificación de Casos de Uso (ASI 9.1)
-    Modelo de Clases de Análisis (ASI 9.1)
-    Comportamiento de Clases de Análisis (ASI 9.1)
-    Análisis de la Realización de los Casos de Uso (ASI 9.1)
-    Descripción de Subsistemas de Análisis (ASI 9.1)
-    Descripción Interfaces entre Subsistemas (ASI 9.1)
+* Catálogo de Requisitos (ASI 2.4)
+* Especificación de Interfaz de Usuario (ASI 9.1)
+* En Análisis Estructurado:
+* Modelo Lógico de Datos Normalizado (ASI 9.1)
+* Modelo de Procesos (ASI 9.1)
+* En Análisis Orientado a Objetos:
+* Modelo de Casos de Uso (ASI 9.1)
+* Especificación de Casos de Uso (ASI 9.1)
+* Modelo de Clases de Análisis (ASI 9.1)
+* Comportamiento de Clases de Análisis (ASI 9.1)
+* Análisis de la Realización de los Casos de Uso (ASI 9.1)
+* Descripción de Subsistemas de Análisis (ASI 9.1)
+* Descripción Interfaces entre Subsistemas (ASI 9.1)
 
 ###### De salida {.unnumbered .unlisted}
 
-    Resultado de Análisis de Consistencia
-    Especificación de Interfaz de Usuario
-    En Análisis Estructurado:
-    Modelo Lógico de Datos Normalizado
-    Modelo de Procesos
-    En Análisis Orientado a Objetos:
-    Modelo de Casos de Uso
-    Especificación de Casos de Uso
-    Modelo de Clases de Análisis
-    Comportamiento de Clases de Análisis
-    Análisis de la Realización de los Casos de Uso
-    Descripción de Subsistemas de Análisis
-    Descripción Interfaces entre Subsistemas
+* Resultado de Análisis de Consistencia
+* Especificación de Interfaz de Usuario
+* En Análisis Estructurado:
+* Modelo Lógico de Datos Normalizado
+* Modelo de Procesos
+* En Análisis Orientado a Objetos:
+* Modelo de Casos de Uso
+* Especificación de Casos de Uso
+* Modelo de Clases de Análisis
+* Comportamiento de Clases de Análisis
+* Análisis de la Realización de los Casos de Uso
+* Descripción de Subsistemas de Análisis
+* Descripción Interfaces entre Subsistemas
 
 ##### Técnicas {.unnumbered .unlisted}
 
-    Matricial
+* Matricial
 
 Prácticas {.unnumbered .unlisted}
 
-    Cálculo de Accesos Lógicos (CAL)
-    Caminos de Accesos Lógicos en Consultas (CALC)
+* Cálculo de Accesos Lógicos (CAL)
+* Caminos de Accesos Lógicos en Consultas (CALC)
 
 ##### Participantes {.unnumbered .unlisted}
 
-    Analistas
-    Equipo de Arquitectura
+* Analistas
+* Equipo de Arquitectura
 
 
 #### Tarea ASI 9.3: Validación de los Modelos
@@ -2029,43 +2029,43 @@ Para la validación de la interfaz de usuario se recomienda un prototipo, ya sea
 
 ###### De entrada {.unnumbered .unlisted}
 
-    Catálogo de Requisitos (ASI 2.4)
-    Especificación de Interfaz de Usuario (ASI 9.2)
-    En Análisis Estructurado:
-    Modelo Lógico de Datos Normalizado (ASI 9.2)
-    Modelo de Procesos (ASI 9.2)
-    En Análisis Orientado a Objetos:
-    Modelo de Casos de Uso (ASI 9.2)
-    Especificación de Casos de Uso (ASI 9.2)
-    Modelo de Clases de Análisis (ASI 9.2)
-    Comportamiento de Clases de Análisis (ASI 9.2)
-    Análisis de la Realización de los Casos de Uso (ASI 9.2)
-    Descripción de Subsistemas de Análisis (ASI 9.2)
-    Descripción de Interfaces entre Subsistemas (ASI 9.2)
+* Catálogo de Requisitos (ASI 2.4)
+* Especificación de Interfaz de Usuario (ASI 9.2)
+  En Análisis Estructurado:
+* Modelo Lógico de Datos Normalizado (ASI 9.2)
+* Modelo de Procesos (ASI 9.2)
+  En Análisis Orientado a Objetos:
+* Modelo de Casos de Uso (ASI 9.2)
+* Especificación de Casos de Uso (ASI 9.2)
+* Modelo de Clases de Análisis (ASI 9.2)
+* Comportamiento de Clases de Análisis (ASI 9.2)
+* Análisis de la Realización de los Casos de Uso (ASI 9.2)
+* Descripción de Subsistemas de Análisis (ASI 9.2)
+* Descripción de Interfaces entre Subsistemas (ASI 9.2)
 
 ###### De salida {.unnumbered .unlisted}
 
-    Especificación de Interfaz de Usuario
-    En Análisis Estructurado:
-    Modelo Lógico de Datos Normalizado
-    Modelo de Procesos
-    En Análisis Orientado a Objetos:
-    Modelo de Casos de Uso
-    Especificación de Casos de Uso
-    Modelo de Clases de Análisis
-    Comportamiento de Clases de Análisis
-    Análisis de la Realización de los Casos de Uso
-    Descripción de Subsistemas de Análisis
-    Descripción de Interfaces entre Subsistemas
+* Especificación de Interfaz de Usuario
+  En Análisis Estructurado:
+* Modelo Lógico de Datos Normalizado
+* Modelo de Procesos
+  En Análisis Orientado a Objetos:
+* Modelo de Casos de Uso
+* Especificación de Casos de Uso
+* Modelo de Clases de Análisis
+* Comportamiento de Clases de Análisis
+* Análisis de la Realización de los Casos de Uso
+* Descripción de Subsistemas de Análisis
+* Descripción de Interfaces entre Subsistemas
 
 Prácticas {.unnumbered .unlisted}
 
-    Prototipado
+* Prototipado
 
 ##### Participantes {.unnumbered .unlisted}
 
-    Analistas
-    Usuarios Expertos
+* Analistas
+* Usuarios Expertos
 
 
 #### Tarea ASI 9.4: Elaboración de la Especificación de Requisitos Software (ERS)
@@ -2074,47 +2074,47 @@ En esta tarea se aborda la elaboración de la Especificación de Requisitos Soft
 
 Este producto incorporará la información necesaria para la aprobación final del Análisis del Sistema de Información, según el siguiente índice:
 
-    Introducción.
-    Ámbito y alcance.
-    Participantes.
-    Requisitos del sistema de información.
-    Visión general del sistema de información.
-    Referencia de los productos a entregar.
-    Plan de acción.
+* Introducción.
+* Ámbito y alcance.
+* Participantes.
+* Requisitos del sistema de información.
+* Visión general del sistema de información.
+* Referencia de los productos a entregar.
+* Plan de acción.
 
 ##### Productos {.unnumbered .unlisted}
 
 ###### De entrada {.unnumbered .unlisted}
 
-    Descripción general del entorno tecnológico (ASI 1.2)
-    Glosario (ASI 1.1)
-    Catálogo de normas (ASI 1.3)
-    Catálogo de requisitos (ASI 2.4)
-    Especificación de interfaz de usuario (ASI 9.3)
-    En análisis estructurado:
-    Plan de migración y carga inicial de datos (ASI 6.4)
-    Contexto del sistema (ASI 1.1)
-    Matriz de procesos / localización geográfica (ASI 7.1)
-    Descripción de interfaz con otros sistemas (ASI 7.2)
-    Modelo de procesos (ASI 9.3)
-    Modelo lógico de datos normalizado (ASI 9.3)
-    En análisis orientado a objetos:
-    Modelo de negocio / modelo de dominio (ASI 1.1)
-    Modelo de casos de uso (ASI 9.3)
-    Especificación de casos de uso (ASI 9.3)
-    Descripción de subsistemas de análisis (ASI 9.3)
-    Descripción de interfaces entre subsistemas (ASI 9.3)
-    Modelo de clases de análisis (ASI 9.3)
-    Comportamiento de clases de análisis (ASI 9.3)
-    Análisis de la realización de los casos de uso (ASI 9.3)
+* Descripción general del entorno tecnológico (ASI 1.2)
+* Glosario (ASI 1.1)
+* Catálogo de normas (ASI 1.3)
+* Catálogo de requisitos (ASI 2.4)
+* Especificación de interfaz de usuario (ASI 9.3)
+  En análisis estructurado:
+* Plan de migración y carga inicial de datos (ASI 6.4)
+* Contexto del sistema (ASI 1.1)
+* Matriz de procesos / localización geográfica (ASI 7.1)
+* Descripción de interfaz con otros sistemas (ASI 7.2)
+* Modelo de procesos (ASI 9.3)
+* Modelo lógico de datos normalizado (ASI 9.3)
+  En análisis orientado a objetos:
+* Modelo de negocio / modelo de dominio (ASI 1.1)
+* Modelo de casos de uso (ASI 9.3)
+* Especificación de casos de uso (ASI 9.3)
+* Descripción de subsistemas de análisis (ASI 9.3)
+* Descripción de interfaces entre subsistemas (ASI 9.3)
+* Modelo de clases de análisis (ASI 9.3)
+* Comportamiento de clases de análisis (ASI 9.3)
+* Análisis de la realización de los casos de uso (ASI 9.3)
 
 ###### De salida {.unnumbered .unlisted}
 
-    Especificación de Requisitos Software (ERS)
+* Especificación de Requisitos Software (ERS)
 
 ##### Participantes {.unnumbered .unlisted}
 
-    Analistas
+* Analistas
 
 ### Actividad ASI 10: Especificación del Plan de Pruebas
 
@@ -2126,11 +2126,11 @@ Dicho plan se va completando y detallando a medida que se avanza en los restante
 
 Se plantean los siguientes niveles de prueba:
 
-    Pruebas unitarias.
-    Pruebas de integración.
-    Pruebas del sistema.
-    Pruebas de implantación.
-    Pruebas de aceptación.
+* Pruebas unitarias.
+* Pruebas de integración.
+* Pruebas del sistema.
+* Pruebas de implantación.
+* Pruebas de aceptación.
 
 En esta actividad también se avanza en la definición de las pruebas de aceptación del sistema. Con la información disponible, es posible establecer los criterios de aceptación de las pruebas incluidas en dicho nivel, al poseer la información sobre los requisitos que debe cumplir el sistema, recogidos en el catálogo de requisitos.
 
@@ -2216,49 +2216,49 @@ En función de la solución adoptada en el desarrollo de un sistema de informaci
 
 En esta tarea se especifican y justifican de los niveles de pruebas a realizar, así como el marco general de planificación de cada nivel de prueba, según el siguiente esquema:
 
-    Definición de los perfiles implicados en los distintos niveles de prueba.
-    Planificación temporal.
-    Criterios de verificación y aceptación de cada nivel de prueba.
-    Definición, generación y mantenimiento de verificaciones y casos de prueba.
-    Análisis y evaluación de los resultados de cada nivel de prueba.
-    Productos a entregar como resultado de la ejecución de las pruebas.
+* Definición de los perfiles implicados en los distintos niveles de prueba.
+* Planificación temporal.
+* Criterios de verificación y aceptación de cada nivel de prueba.
+* Definición, generación y mantenimiento de verificaciones y casos de prueba.
+* Análisis y evaluación de los resultados de cada nivel de prueba.
+* Productos a entregar como resultado de la ejecución de las pruebas.
 
 ##### Productos {.unnumbered .unlisted}
 
 ###### De entrada {.unnumbered .unlisted}
 
-    Catálogo de Requisitos ([ASI 1.2](04-asi.qmd#asi-1-2](04-asi.qmd#asi-1-2)))
-    Catálogo de Normas ([ASI 1.3](04-asi.qmd#asi-9-3](04-asi.qmd#asi-9-3)))
-    Descripción General del Entorno Tecnológico ([ASI 2.4](04-asi.qmd#asi-2-4))
-    Especificación de Interfaz de Usuario ([ASI 9.3](04-asi.qmd#asi-9-3))
-    En Análisis Estructurado:
-    Contexto del Sistema ([ASI 1.1](04-asi.qmd#asi-1-1))
-    Modelo de Procesos ([ASI 9.3](04-asi.qmd#asi-9-3))
-    Modelo Lógico de Datos Normalizado ([ASI 9.3](04-asi.qmd#asi-9-3))
-    En Análisis Orientado a Objeto:
-    Modelo de Casos de Uso ([ASI 9.3](04-asi.qmd#asi-9-3))
-    Especificación de Casos de Uso ([ASI 9.3](04-asi.qmd#asi-9-3))
-    Descripción de Subsistemas de Análisis ([ASI 9.3](04-asi.qmd#asi-9-3))
-    Descripción de Interfaces entre Subsistemas ([ASI 9.3](04-asi.qmd#asi-9-3))
-    Modelo de Clases ([ASI 9.3](04-asi.qmd#asi-9-3))
-    Comportamiento de Clases ([ASI 9.3](04-asi.qmd#asi-9-3))
-    Análisis de la Realización de los Casos de Uso ([ASI 9.3](04-asi.qmd#asi-9-3))
+* Catálogo de Requisitos ([ASI 1.2](04-asi.qmd#asi-1-2](04-asi.qmd#asi-1-2)))
+* Catálogo de Normas ([ASI 1.3](04-asi.qmd#asi-9-3](04-asi.qmd#asi-9-3)))
+* Descripción General del Entorno Tecnológico ([ASI 2.4](04-asi.qmd#asi-2-4))
+* Especificación de Interfaz de Usuario ([ASI 9.3](04-asi.qmd#asi-9-3))
+  En Análisis Estructurado:
+* Contexto del Sistema ([ASI 1.1](04-asi.qmd#asi-1-1))
+* Modelo de Procesos ([ASI 9.3](04-asi.qmd#asi-9-3))
+* Modelo Lógico de Datos Normalizado ([ASI 9.3](04-asi.qmd#asi-9-3))
+  En Análisis Orientado a Objeto:
+* Modelo de Casos de Uso ([ASI 9.3](04-asi.qmd#asi-9-3))
+* Especificación de Casos de Uso ([ASI 9.3](04-asi.qmd#asi-9-3))
+* Descripción de Subsistemas de Análisis ([ASI 9.3](04-asi.qmd#asi-9-3))
+* Descripción de Interfaces entre Subsistemas ([ASI 9.3](04-asi.qmd#asi-9-3))
+* Modelo de Clases ([ASI 9.3](04-asi.qmd#asi-9-3))
+* Comportamiento de Clases ([ASI 9.3](04-asi.qmd#asi-9-3))
+* Análisis de la Realización de los Casos de Uso ([ASI 9.3](04-asi.qmd#asi-9-3))
 
 ###### De salida {.unnumbered .unlisted}
 
-    Plan de Pruebas:
-        Especificación de los Niveles de Pruebas
+* Plan de Pruebas:
+  * Especificación de los Niveles de Pruebas
 
 Prácticas {.unnumbered .unlisted}
 
-    Sesiones de Trabajo
+* Sesiones de Trabajo
 
 ##### Participantes {.unnumbered .unlisted}
 
-    Jefe de proyecto
-    Analistas
-    Equipo de Soporte Técnico
-    Usuarios Expertos
+* Jefe de proyecto
+* Analistas
+* Equipo de Soporte Técnico
+* Usuarios Expertos
 
 #### Tarea ASI 10.2: Definición de Requisitos del Entorno de Pruebas
 
@@ -2270,34 +2270,34 @@ No es objeto de MÉTRICA Versión 3 en general, ni de esta tarea en particular, 
 
 Independientemente de la existencia o no de dichos entornos, en esta tarea se inicia la definición de las especificaciones necesarias para la correcta ejecución de las distintas pruebas del sistema de información. Entre ellas podemos citar las siguientes:
 
-    Requisitos básicos de hardware y software base: sistemas operativos, gestores de bases de datos, monitores de teleproceso, etc.
-    Requisitos de configuración de entorno: librerías, bases de datos, ficheros, procesos, comunicaciones, necesidades de almacenamiento, configuración de accesos, etc.
-    Herramientas auxiliares. Por ejemplo, de extracción de juegos de ensayo, análisis de rendimiento y calidad, etc.
-    Procedimientos para la realización de pruebas y migración de elementos entre entornos.
+* Requisitos básicos de hardware y software base: sistemas operativos, gestores de bases de datos, monitores de teleproceso, etc.
+* Requisitos de configuración de entorno: librerías, bases de datos, ficheros, procesos, comunicaciones, necesidades de almacenamiento, configuración de accesos, etc.
+* Herramientas auxiliares. Por ejemplo, de extracción de juegos de ensayo, análisis de rendimiento y calidad, etc.
+* Procedimientos para la realización de pruebas y migración de elementos entre entornos.
 
 ##### Productos {.unnumbered .unlisted}
 
 ###### De entrada {.unnumbered .unlisted}
 
-    Catálogo de Requisitos ([ASI 2.4](04-asi.qmd#asi-2-4))
-    Descripción General del Entorno Tecnológico ([ASI 1.2](04-asi.qmd#asi-1-2))
-    Plan de pruebas ([ASI 10.1]](04-asi.qmd#asi-10-1))
+* Catálogo de Requisitos ([ASI 2.4](04-asi.qmd#asi-2-4))
+* Descripción General del Entorno Tecnológico ([ASI 1.2](04-asi.qmd#asi-1-2))
+* Plan de pruebas ([ASI 10.1]](04-asi.qmd#asi-10-1))
 
 ###### De salida {.unnumbered .unlisted}
 
-    Plan de pruebas:
-        Definición de Requisitos del Entorno de Pruebas
+* Plan de pruebas:
+  * Definición de Requisitos del Entorno de Pruebas
 
 ##### Prácticas {.unnumbered .unlisted}
 
-    Sesiones de Trabajo
+* Sesiones de Trabajo
 
 ##### Participantes {.unnumbered .unlisted}
 
-    Jefe de proyecto
-    Analistas
-    Equipo de Soporte Técnico
-    Usuarios Expertos
+* Jefe de proyecto
+* Analistas
+* Equipo de Soporte Técnico
+* Usuarios Expertos
 
 #### Tarea ASI 10.3: Definición de las Pruebas de Aceptación del Sistema
 
@@ -2307,46 +2307,46 @@ Se debe insistir, principalmente, en los criterios de aceptación del sistema qu
 
 Los criterios de aceptación deben ser definidos de forma clara, prestando especial atención a aspectos como:
 
-    Procesos críticos del sistema.
-    Rendimiento del sistema.
-    Seguridad.
-    Disponibilidad.
+* Procesos críticos del sistema.
+* Rendimiento del sistema.
+* Seguridad.
+* Disponibilidad.
 
 ##### Productos {.unnumbered .unlisted}
 
 ###### De entrada {.unnumbered .unlisted}
 
-    Catálogo de requisitos ([ASI 2.4](04-asi.qmd#asi-2-4))
-    Especificación de Interfaz de Usuario ([ASI 9.3](04-asi.qmd#asi-9-3))
-    Plan de Pruebas ([ASI 10.2](04-asi.qmd#asi-10-2))
-    En Análisis Estructurado:
-    Contexto del Sistema ([ASI 1.1](04-asi.qmd#asi-1-1))
-    Descripción de Interfaz con otros Sistemas ([ASI 7.2](04-asi.qmd#asi-7-2))
-    Modelo de Procesos ([ASI 9.3](04-asi.qmd#asi-9-3))
-    Modelo Lógico de Datos Normalizado ([ASI 9.3](04-asi.qmd#asi-9-3))
-    En Análisis Orientado a Objetos:
-    Modelo de Casos de Uso ([ASI 9.3](04-asi.qmd#asi-9-3))
-    Especificación de Casos de Uso ([ASI 9.3](04-asi.qmd#asi-9-3))
-    Descripción de Subsistemas de Análisis ([ASI 9.3](04-asi.qmd#asi-9-3))
-    Descripción de Interfaces entre Subsistemas ([ASI 9.3)
-    Modelo de Clases ([ASI 9.3](04-asi.qmd#asi-9-3))
-    Comportamiento de Clases ([ASI 9.3](04-asi.qmd#asi-9-3))
-    Análisis de la Realización de los Casos de Uso ([ASI 9.3](04-asi.qmd#asi-9-3))
+* Catálogo de requisitos ([ASI 2.4](04-asi.qmd#asi-2-4))
+* Especificación de Interfaz de Usuario ([ASI 9.3](04-asi.qmd#asi-9-3))
+* Plan de Pruebas ([ASI 10.2](04-asi.qmd#asi-10-2))
+  En Análisis Estructurado:
+* Contexto del Sistema ([ASI 1.1](04-asi.qmd#asi-1-1))
+* Descripción de Interfaz con otros Sistemas ([ASI 7.2](04-asi.qmd#asi-7-2))
+* Modelo de Procesos ([ASI 9.3](04-asi.qmd#asi-9-3))
+* Modelo Lógico de Datos Normalizado ([ASI 9.3](04-asi.qmd#asi-9-3))
+  En Análisis Orientado a Objetos:
+* Modelo de Casos de Uso ([ASI 9.3](04-asi.qmd#asi-9-3))
+* Especificación de Casos de Uso ([ASI 9.3](04-asi.qmd#asi-9-3))
+* Descripción de Subsistemas de Análisis ([ASI 9.3](04-asi.qmd#asi-9-3))
+* Descripción de Interfaces entre Subsistemas ([ASI 9.3)
+* Modelo de Clases ([ASI 9.3](04-asi.qmd#asi-9-3))
+* Comportamiento de Clases ([ASI 9.3](04-asi.qmd#asi-9-3))
+* Análisis de la Realización de los Casos de Uso ([ASI 9.3](04-asi.qmd#asi-9-3))
 
 ###### De salida {.unnumbered .unlisted}
 
-    Plan de Pruebas
+* Plan de Pruebas
 
 Prácticas {.unnumbered .unlisted}
 
-    Sesiones de Trabajo
+* Sesiones de Trabajo
 
 ##### Participantes {.unnumbered .unlisted}
 
-    Jefe de Proyecto
-    Analistas
-    Equipo de Soporte Técnico
-    Usuarios Expertos
+* Jefe de Proyecto
+* Analistas
+* Equipo de Soporte Técnico
+* Usuarios Expertos
 
 ### Actividad ASI 11: Aprobación del Análisis del Sistema de Información
 
@@ -2390,21 +2390,21 @@ En esta tarea se realiza la presentación del análisis del sistema de informaci
 
 ###### De entrada {.unnumbered .unlisted}
 
-    Especificación de Requisitos Software (ERS) ([ASI 9.4](04-asi.qmd#asi-9-4))
-    Plan de pruebas ([ASI 10.3](04-asi.qmd#asi-10-3))
+* Especificación de Requisitos Software (ERS) ([ASI 9.4](04-asi.qmd#asi-9-4))
+* Plan de pruebas ([ASI 10.3](04-asi.qmd#asi-10-3))
 
 ###### De salida {.unnumbered .unlisted}
 
-    Aprobación del Análisis del Sistema de Información
+* Aprobación del Análisis del Sistema de Información
 
 ##### Técnicas {.unnumbered .unlisted}
 
-    Presentación
+* Presentación
 
 ##### Participantes {.unnumbered .unlisted}
 
-    Comité de Seguimiento
-    Jefe de Proyecto
+* Comité de Seguimiento
+* Jefe de Proyecto
 
 ## Participantes en las actividades del proceso ASI
 
