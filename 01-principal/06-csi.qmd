@@ -453,17 +453,17 @@ Para cada verificación establecida, se realizan las pruebas con los casos de pr
 
 ###### De entrada {.unlisted .unnumbered}
 
-    Producto Software (CSI 2.1 y CSI 2.2)
-    Entorno de Pruebas de Integración (CSI 4.1)
-    Plan de Pruebas (DSI 10.3)
+* Producto Software (CSI 2.1 y CSI 2.2)
+* Entorno de Pruebas de Integración (CSI 4.1)
+* Plan de Pruebas (DSI 10.3)
 
 ###### De salida {.unlisted .unnumbered}
 
-    Resultado de las Pruebas de Integración
+* Resultado de las Pruebas de Integración
 
 ##### Prácticas {.unlisted .unnumbered}
 
-    Pruebas de Integración
+* Pruebas de Integración
 
 ##### Participantes {.unlisted .unnumbered}
 
@@ -594,17 +594,17 @@ Para cada verificación establecida, se realizan las pruebas con los casos de pr
 
 ###### De entrada {.unlisted .unnumbered}
 
-    Producto Software (CSI 2.1 y CSI 2.2)
-    Entorno de Pruebas del Sistema (CSI 5.1)
-    Plan de Pruebas (DSI 10.3)
+* Producto Software (CSI 2.1 y CSI 2.2)
+* Entorno de Pruebas del Sistema (CSI 5.1)
+* Plan de Pruebas (DSI 10.3)
 
 ###### De salida {.unlisted .unnumbered}
 
-    Resultado de las Pruebas del Sistema
+* Resultado de las Pruebas del Sistema
 
 ##### Prácticas {.unlisted .unnumbered}
 
-    Pruebas del Sistema
+* Pruebas del Sistema
 
 ##### Participantes {.unlisted .unnumbered}
 
@@ -787,13 +787,13 @@ También se determinan las características que debe reunir el entorno para real
 
 ###### De entrada {.unlisted .unnumbered}
 
-    Catálogo de Requisitos (DSI 11.2)
-    Especificación de la Formación a Usuarios Finales (CSI 7.1)
+* Catálogo de Requisitos (DSI 11.2)
+* Especificación de la Formación a Usuarios Finales (CSI 7.1)
 
 ###### De salida {.unlisted .unnumbered}
 
-    Especificación de la Formación a Usuarios Finales
-        Materiales y Entornos de Formación
+* Especificación de la Formación a Usuarios Finales
+  * Materiales y Entornos de Formación
 
 ##### Participantes {.unlisted .unnumbered}
 
@@ -1269,12 +1269,12 @@ En esta tarea se recopilan los productos del sistema de información y se presen
 
 ### Actividades {.unlisted .unnumbered}
 
-- Actividad CSI 1: Preparación del Entorno de Generación y Construcción
-- Actividad CSI 2: Generación del Código de los Componentes y Procedimientos
-- Actividad CSI 3: Ejecución de las Pruebas Unitarias
-- Actividad CSI 4: Ejecución de las Pruebas de Integración
-- Actividad CSI 5: Ejecución de las Pruebas del Sistema
-- Actividad CSI 6: Elaboración de los Manuales de Usuario
-- Actividad CSI 7: Definición de la Formación de Usuarios Finales
-- Actividad CSI 8: Construcción de los Componentes y Procedimientos de Migración y Carga Inicial de Datos
-- Actividad CSI 9: Aprobación del Sistema de Información
+- [Actividad CSI 1: Preparación del Entorno de Generación y Construcción](#csi-1)
+- [Actividad CSI 2: Generación del Código de los Componentes y Procedimientos](#csi-2)
+- [Actividad CSI 3: Ejecución de las Pruebas Unitarias](#csi-3)
+- [Actividad CSI 4: Ejecución de las Pruebas de Integración](#csi-4)
+- [Actividad CSI 5: Ejecución de las Pruebas del Sistema](#csi-5)
+- [Actividad CSI 6: Elaboración de los Manuales de Usuario](#csi-6)
+- [Actividad CSI 7: Definición de la Formación de Usuarios Finales](#csi-7)
+- [Actividad CSI 8: Construcción de los Componentes y Procedimientos de Migración y Carga Inicial de Datos](#csi-8)
+- [Actividad CSI 9: Aprobación del Sistema de Información](#csi-9)
