@@ -8,7 +8,7 @@ Aquí se presentan los documentos que componen la metodología MÉTRICA VERSIÓN
 
 MÉTRICA versión 3 puede ser utilizada libremente y en cualquier explotación de la obra se hará constar la autoría original.
 
-El presente medio y su repositorio asociado son una iniciativa independiente y no adscrita al sector público español.
+El presente medio y su repositorio asociado son una iniciativa independiente y no vinculada al sector público español.
 
 \
 Para cualquier sugerencia o información sobre la metodología Métrica v3, contactar con: <metrica@correo.gob.es>
