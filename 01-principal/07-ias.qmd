@@ -1324,7 +1324,7 @@ Una vez que el sistema ya está en producción, se le notifica al responsable de
 </table>
 ```
 
-#### Tarea IAS 10.1: Preparación del Entorno de Producción {#ias-10-2}
+#### Tarea IAS 10.1: Preparación del Entorno de Producción {#ias-10-1}
 
 Se analiza qué componentes es necesario incorporar al entorno de producción, de acuerdo a las características y condiciones del entorno en que se hayan llevado a cabo las pruebas y se realiza la instalación de los componentes necesarios. Se va lora también, en cuanto a los datos, la necesidad de realizar una nueva carga, una inicialización o una restauración.
 
