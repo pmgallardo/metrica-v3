@@ -1157,7 +1157,7 @@ Se hace una estimación de los recursos humanos y de infraestructura necesaria p
 * [Jefe de Proyecto](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
 * [Responsable de Implantación](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
 
-### Actividad IAS 9: Presentación y Aprobación del Sistema
+### Actividad IAS 9: Presentación y Aprobación del Sistema {#ias-9}
 
 Una vez que se han efectuado las pruebas de implantación y de aceptación, y que se ha fijado el acuerdo de nivel de servicio, el Comité de Dirección debe formalizar la aprobación del sistema. Para esto, se lleva a cabo una presentación general del sistema al Comité de Dirección y se espera la confirmación de su aprobación.
 

@@ -37,10 +37,10 @@ Las técnicas de desarrollo son un conjunto de procedimientos que se basan en r
 * [Diagrama de Transición de Estados](#diagrama-de-transicion-de-estados)
 * [Modelado de Procesos de la Organización](#modelado-de-procesos-de-la-organizacion)
   * [SADT (Structured Analysis and Design Technique)](#sadt)
-* [Modelo Entidad/Relación Extendido](#modelo-entidad-relación-extendido)
+* [Modelo Entidad/Relación Extendido](#modelo-entidad-relacion-extendido)
 * [Normalización](#normalizacion)
 * [Optimización](#optimizacion)
-* [Reglas de Obtención del Modelo Físico a partir del Lógico](#reglas-de-obtencion-del-modelo-fisico-a-partir-del-lógico)
+* [Reglas de Obtención del Modelo Físico a partir del Lógico](#reglas-de-obtencion-del-modelo-fisico-a-partir-del-logico)
 * [Reglas de Transformación](#reglas-de-transformacion)
 * [Técnicas Matriciales](#tecnicas-matriciales)
 
@@ -433,7 +433,7 @@ Sistema encargado de la gestión de los préstamos y reservas de libros y revi
 
 (Nota.- Esta notación es la más habitual, pero MÉTRICA Versión 3 no exige su utilización).
 
-### Diagrama de Descomposición
+### Diagrama de Descomposición {#diagrama-de-descomposicion}
 
 El objetivo del diagrama de descomposición es representar la estructura jerárquica de un dominio concreto.
 Descripción
@@ -1691,11 +1691,11 @@ Entre las técnicas de estimación basadas en el análisis de puntos función, s
 
 Para proceder al cálculo de los puntos función de un sistema han de realizarse tres etapas:
 
-- Identificación de los componentes necesarios para el cálculo.
-- Cálculo de los Puntos Función no ajustados.
-- Ajuste de los Puntos Función.
+- [Identificación de los componentes necesarios para el cálculo](#identificacion-de-los-componentes)
+- [Cálculo de los Puntos Función no ajustados](#calculo-de-los-puntos-funcion-no-ajustados)
+- [Ajuste de los Puntos Función](#ajuste-de-los-puntos-funcion)
 
-##### Identificación de los componentes {.unnumbered .unlisted}
+##### Identificación de los componentes {.unnumbered .unlisted #identificacion-de-los-componentes}
 
 En esta etapa se identifican los elementos a tener en cuenta para el cálculo de los puntos función. Primeramente se enumeran todos los componentes de cada tipo (entradas externas, salidas externas, grupos lógicos de datos internos, grupos lógicos de datos de interfaz y consultas externas); seguidamente, se evalúa individualmente la complejidad de cada uno de ellos, utilizando unas tablas ya establecidas que proporcionan el factor de complejidad de cada componente individual, siendo estos factores: COMPLEJO, MEDIO o SENCILLO.
 
@@ -1789,7 +1789,7 @@ Los tipos de consultas aplicables son los siguientes:
 - Pantalla o mensaje de ayuda.
 - Menú de selección.
 
-##### Cálculo de los Puntos Función no ajustados {.unnumbered .unlisted}
+##### Cálculo de los Puntos Función no ajustados {.unnumbered .unlisted #calculo-de-los-puntos-funcion-no-ajustados}
 
 Una vez concluida la etapa anterior se pasan los resultados a la tabla de conversión, que aparece a continuación, dando un peso para cada tipo de componente por su complejidad.
 
@@ -1822,7 +1822,7 @@ El método para el cálculo es el siguiente:
 
 La suma representa la complejidad del proyecto en **PUNTOS FUNCIÓN NO AJUSTADOS**.
 
-##### Ajuste de los Puntos Función {.unnumbered .unlisted}
+##### Ajuste de los Puntos Función {.unnumbered .unlisted #ajuste-de-los-puntos-funcion}
 
 Esta etapa tiene como objetivo la adaptación de la estimación a las condiciones de trabajo bajo las que el sistema ha de ser desarrollado. De esta adaptación se obtiene el valor definitivo en Puntos Función del Sistema que se está evaluando, aplicándole correcciones dependiendo de las características de la aplicación que afecten a la complejidad de la misma.
 
@@ -2257,18 +2257,18 @@ Los 19 atributos que se contemplan en esta técnica y sus significados aparecen
       
 Los tipos de documentos son los siguientes:
 
-    - Documento de Diseño Funcional.
-    - Documento de Diseño Técnico General.
-    - Documento de Diseño Técnico Detallado.
-    - Diccionario de datos.
-    - Referencias cruzadas de datos / Registros / Programas.
-    - Manual de Usuario.
-    - Manual de Operación.
-    - Presentación del Sistema.
-    - Dossier de Pruebas.
-    - Material de Formación.
-    - Documentos de seguimiento de Costes.
-    - Dossier de Cambios.
+- Documento de Diseño Funcional.
+- Documento de Diseño Técnico General.
+- Documento de Diseño Técnico Detallado.
+- Diccionario de datos.
+- Referencias cruzadas de datos / Registros / Programas.
+- Manual de Usuario.
+- Manual de Operación.
+- Presentación del Sistema.
+- Dossier de Pruebas.
+- Material de Formación.
+- Documentos de seguimiento de Costes.
+- Dossier de Cambios.
 
 Todos los atributos anteriores, con sus valores correspondientes, se contemplan en la siguiente tabla:
 
@@ -2278,20 +2278,20 @@ Todos los atributos anteriores, con sus valores correspondientes, se contemplan 
 
 Una vez obtenido el valor de los atributos y sumados se obtiene una cifra comprendida entre 0 y 95, a partir de la cual se obtendrá el factor de ajuste, según la fórmula:
 
-$$\text{ACT} = 0.65 + 0.005 * \text{TGI}$$
+$$\text{ACT} = 0.65 + 0.005 \cdot \text{TGI}$$
 
 Siendo:
 
-- $\text{ACT}: Ajuste por Complejidad Técnica$
-- $\text{TGI}: Total Grados de Influencia (equivalente a la suma de los valores de los atributos en el método Albrecht)$
+- $\text{ACT}$: Ajuste por Complejidad Técnica
+- $\text{TGI}$: Total Grados de Influencia (equivalente a la suma de los valores de los atributos en el método Albrecht)
 
 ##### Obtención del tamaño de las partes en línea y por lotes {.unnumbered .unlisted}
 
 A continuación hay que ajustar los puntos función para cada una de las partes, por lotes y en línea, mediante la aplicación de las siguientes fórmulas:
 
-$$\text{PFA}_b = \text{PFNA}_b * \text{ACT}$$
+$$\text{PFA}_b = \text{PFNA}_b \cdot \text{ACT}$$
 
-$$\text{PFA}_o = \text{PFNA}_o * \text{ACT}$$
+$$\text{PFA}_o = \text{PFNA}_o \cdot \text{ACT}$$
 
 Siendo:
 
@@ -2577,8 +2577,8 @@ A continuación se va a construir el grafo PERT de un proyecto cuyas actividade
 - **D** precede a **F**, **G**
 - **E** precede a **J**
 - **F** precede a **I**
-- **G** precede a H**
-- **H**, **I**, **J** preceden a L**
+- **G** precede a **H**
+- **H**, **I**, **J** preceden a **L**
 - **K** precede a **M**
 - **L** precede a **P**
 - **M** precede a **N**
@@ -2835,7 +2835,7 @@ Si el resultado final se sale de un intervalo razonable en el que se encuentran 
 
 El objetivo de esta práctica es analizar la secuencia de acceso a los datos que realizan los módulos a través del modelo de datos. También puede utilizarse para entornos de ficheros.
 
-Permite verificar en el proceso **Análisis del Sistema de Información** ([ASI](../01-principal/04-asi.qmd)) que el modelo lógico de datos normalizado satisface las principales consultas de información recogidas en el catálogo de requisitos, y en el proceso **Diseño del Sistema de Información** ([DSI](../01-principal/05-dsi.qmd)) que el modelo físico de datos soporta adecuadamente los principales accesos de actualización, cuando proceda, y de consulta.
+Permite verificar en el proceso Análisis del Sistema de Información ([ASI](../01-principal/04-asi.qmd)) que el modelo lógico de datos normalizado satisface las principales consultas de información recogidas en el catálogo de requisitos, y en el proceso Diseño del Sistema de Información ([DSI](../01-principal/05-dsi.qmd)) que el modelo físico de datos soporta adecuadamente los principales accesos de actualización, cuando proceda, y de consulta.
 
 #### Descripción {.unnumbered .unlisted}
 
@@ -3516,4 +3516,3 @@ Nota.- El Nivel de Soporte en blanco significa que o bien no se conocen herramie
 - VAN VILET, HANS, "Software Engineerig Principles and Practice", John Wiley and Sons, 1993
 - YOURDON, E. (1993) «Análisis Estructurado Moderno». Prentice Hall Hispanoamericana S.A., 1993.
 - YOURDON, E. AND CONSTANTINE, L. (1979) "Structured Design: Fundamentals of a Discipline of Computer Program and System Design" Prentice-Hall, ISBN 0-13-854471-9
-

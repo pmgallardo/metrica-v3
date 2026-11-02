@@ -1093,6 +1093,7 @@ Partiendo del plan de pruebas del Sistema de Información, se incluirán en las 
 
 #### Tarea ASI-SEG 4.1: Clasificación y Catalogación de los Productos Generados Durante el Proceso de Análisis del Sistema de Información {#asi-seg-4-1}
 
+```{=html}
 <table class="avia-table avia-data-table">
 <tbody>
 <tr>
@@ -1127,6 +1128,7 @@ Partiendo del plan de pruebas del Sistema de Información, se incluirán en las 
 </tr>
 </tbody>
 </table>
+```
 
 ## Diseño del Sistema de Información {#dsi-seg}
 

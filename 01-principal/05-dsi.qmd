@@ -2338,10 +2338,10 @@ Asimismo, se determinan y especifican todos los elementos o parámetros compleme
 * Modelo Físico de Datos Optimizado (DSI 7.2)
 * Esquemas Físicos de Datos (DSI 7.2)
 * Asignación de Esquemas Físicos de Datos a Nodos (DSI 7.2)
-* Diseño de Interfaz de Usuario (DSI 7.2)
-  ***En Diseño Estructurado***:
-* Diseño de la Arquitectura Modular (DSI 7.2)
-  ***En Diseño Orientado a Objetos***:
+* Diseño de Interfaz de Usuario (DSI 7.2)  
+  ***En Diseño Estructurado***:  
+* Diseño de la Arquitectura Modular (DSI 7.2)  
+  ***En Diseño Orientado a Objetos***:  
 * Diseño de la Realización de los Casos de Uso (DSI 7.2)
 * Modelo de Clases de Diseño (DSI 7.2)
 * Comportamiento de Clases de Diseño (DSI 7.2)

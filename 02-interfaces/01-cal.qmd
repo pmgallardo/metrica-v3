@@ -1275,7 +1275,7 @@ Se comprueba que se ha generado el código de los componentes y de los procedim
 
 ### Actividad CSI-CAL 2: Revisión de las Pruebas Unitarias, de Integración y del Sistema {#csi-cal-2}
 
-```html
+```{=html}
 <table class="avia-table avia-data-table">
 <tbody>
 <tr>

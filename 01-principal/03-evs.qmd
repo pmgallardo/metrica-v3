@@ -1320,7 +1320,7 @@ El Comité de Dirección da su aprobación formal o determina la inviabilidad de
 <td style="text-align: center;"><a href="#evs-3"><strong>EVS 3</strong></a></td>
 <td style="text-align: center;"><a href="#evs-4"><strong>EVS 4</strong></a></td>
 <td style="text-align: center;"><a href="#evs-5"><strong>EVS 5</strong></a></td>
-<td style="text-align: center;"><a href="#evs-6"><strong>EVS</strong></a><a href="02-psi.qmd/psi-9"><strong> 6</strong></a></td>
+<td style="text-align: center;"><a href="#evs-6"><strong>EVS 6</strong></a></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../03-tecnicas/01-tecnicas.qmd#analisis-coste-beneficio">Análisis Coste/Beneficio</a></td>
@@ -1454,9 +1454,9 @@ El Comité de Dirección da su aprobación formal o determina la inviabilidad de
 
 ### Actividades {.unnumbered .unlisted}
 
-- Actividad EVS 1: Establecimiento del Alcance del Sistema
-- Actividad EVS 2: Estudio de la Situación Actual
-- Actividad EVS 3: Definición de Requisitos del Sistema
-- Actividad EVS 4: Estudio de Alternativas de Solución
-- Actividad EVS 5: Valoración de las Alternativas
-- Actividad EVS 6: Selección de la Solución
+- [Actividad EVS 1: Establecimiento del Alcance del Sistema](#evs-1)
+- [Actividad EVS 2: Estudio de la Situación Actual](#evs-2)
+- [Actividad EVS 3: Definición de Requisitos del Sistema](#evs-3)
+- [Actividad EVS 4: Estudio de Alternativas de Solución](#evs-4)
+- [Actividad EVS 5: Valoración de las Alternativas](#evs-5)
+- [Actividad EVS 6: Selección de la Solución](#evs-6)

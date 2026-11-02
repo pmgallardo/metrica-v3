@@ -21,18 +21,18 @@ La información que puede solicitarse al sistema de gestión de la configuració
 - Información relacionada con Análisis, Diseño, Construcción, Implantación y Aceptación del Sistemas de Información, como productos globales que integran todos los productos que lo componen.
 - Información de un producto en concreto, su versión, estado, traza de su evolución y cualquier dato que el plan de gestión de la configuración determine de interés (por ejemplo, participantes en la elaboración o modificación del producto).
 
-Actividades
+### Actividades {.unnumbered .unlisted}
 
-1. Estudio de Viabilidad del Sistema
-   1. Actividad EVS-GC 1: Definición de los Requisitos de Gestión de Configuración
-   2. Actividad EVS-GC 2: Establecimiento del Plan de Gestión de la Configuración
-2. ANÁLISIS, DISEÑO, CONSTRUCCIÓN E IMPLANTACION Y ACEPTACIÓN DEL SISTEMA DE INFORMACIÓN
-   1. Actividad GC 1: Identificación y Registro de Productos
-   2. Actividad GC 2: Idetificación y Registro del Producto Global
-3. MANTENIMIENTO DEL SISTEMA DE INFORMACIÓN
-   1. Actividad MSI-GC 1: Registro del Cambio en el Sistema de Gestión de la Configuración
+1. [Estudio de Viabilidad del Sistema](#evs)
+   1. [Actividad EVS-GC 1](#evs-gc-1): Definición de los Requisitos de Gestión de Configuración
+   2. [Actividad EVS-GC 2](#evs-gc-2): Establecimiento del Plan de Gestión de la Configuración
+2. [Análisis, Diseño, Construcción e Implantación y Aceptación del Sistema de Información](#asi-dsi-csi-ias)
+   1. [Actividad GC 1](#gc-1): Identificación y Registro de Productos
+   2. [Actividad GC 2](#gc-2): Idetificación y Registro del Producto Global
+3. [Mantenimiento del Sistema de Información](#msi)
+   1. [Actividad MSI-GC 1](#msi-gc-1): Registro del Cambio en el Sistema de Gestión de la Configuración
 
-## Estudio de Viabilidad del Sistema
+## Estudio de Viabilidad del Sistema {#evs}
 
 Durante el Estudio de Viabilidad del Sistema (EVS) se realizan las actividades de la interfaz de Gestión de Configuración que permiten obtener el Plan de Gestión de Configuración para el sistema de información. Con este objetivo se definen en primer término los requisitos de gestión de configuración del sistema de información, los cuales deberán tenerse en cuenta a la hora de establecer el plan de Gestión de Configuración para la Solución propuesta (EVS 6.2).
 
@@ -188,7 +188,7 @@ En esta tarea se define el entorno tecnológico de soporte a la gestión de la c
 * Responsable de Gestión de Configuración
 * Equipo de Desarrollo
 
-## Análisis, diseño, construcción e implantación y aceptación del Sistema de Información
+## Análisis, diseño, construcción e implantación y aceptación del Sistema de Información {#asi-dsi-csi-ias}
 
 Durante los procesos de Análisis, Diseño, Construcción e Implantación del Sistema de Información se realizan las actividades de identificación y registro previstas en el Plan de Gestión de Configuración, consiguiendo así mantener la consistencia entre las distintas versiones de los productos de desarrollo.
 
@@ -240,7 +240,7 @@ El siguiente gráfico muestra la relación entre las actividades de la interfaz 
 </table>
 ```
 
-#### Tarea GC 1.1: Identificación y Registro de los ##### Productos {.unnumbered .unlisted} de los Procesos en el Sistema de Gestión de la Configuración {#gc-1-1}
+#### Tarea GC 1.1: Identificación y Registro de los Productos de los Procesos en el Sistema de Gestión de la Configuración {#gc-1-1}
 
 Cada producto, en función de su naturaleza, va pasando por diferentes estados en los debe superar varias revisiones o aprobaciones. El conjunto de estados por los que va pasando un producto se registra en el sistema de gestión de configuración, según vaya evolucionando el mismo, hasta alcanzar el estado de producto final aprobado.
 
@@ -328,7 +328,7 @@ Una vez que el sistema de información está implantado y aceptado, antes de su 
 
 * [Jefe de Proyecto](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
 
-## Mantenimiento del Sistema de Información
+## Mantenimiento del Sistema de Información {.msi}
 
 El objetivo de la interfaz de gestión de configuración con el proceso de Mantenimiento del Sistema de Información, es conservar la integridad del sistema de información cuando se producen cambios en el mismo, ya sea por la realización de mantenimiento correctivo o evolutivo. En el caso del mantenimiento adaptativo y perfectivo el objetivo es el mismo, aunque estos tipos de mantenimiento quedan fuera del ámbito de MÉTRICA Versión 3, por lo que no van a ser tratados en este documento.
 
