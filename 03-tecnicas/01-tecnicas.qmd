@@ -16,6 +16,8 @@ Por continuidad con MÉTRICA Versión 2.1 la notación empleada es la misma p
 
 Es importante resaltar que la notación que se propone en la aplicación de la técnica en ningún caso se considerará obligatoria. Cada organización podrá utilizar la notación que desee, la que suele utilizar o la que ofrecen sus herramientas de desarrollo, respetando las reglas y restricciones específicas de las distintas técnicas.
 
+{{< pagebreak >}}
+
 ## Técnicas de desarrollo {#tecnicas-de-desarrollo}
 
 Las técnicas de desarrollo son un conjunto de procedimientos que se basan en reglas y notaciones específicas en términos de sintaxis, semántica y gráficos, orientadas a la obtención de productos en el desarrollo de un sistema de información. En desarrollos del tipo estructurado o de orientación a objetos merecen especial atención las técnicas gráficas, que proponen símbolos y notaciones estándares para una mejor comprensión de los sistemas o sus componentes. De todos modos, y debido a la diversidad existente, las notaciones aquí propuestas no se consideran obligatorias en la metodología MÉTRICA Versión 3, pero sí que se deben aplicar rigurosamente sus reglas y validaciones para conseguir el objetivo propuesto con la mayor eficacia.
@@ -1568,17 +1570,17 @@ Si existen restricciones asociadas a los atributos, éstas pueden recogerse con
 
 Según el tipo de correspondencia:
 
-* **Relaciones M:N**, se transforman en una tabla, cuya clave primaria es la concatenación de los identificadores de las clases asociadas, siendo cada uno de ellos clave ajena de la propia tabla. Si la relación tiene atributos, éstos se transforman en columnas de la tabla.
-* **Relaciones 1:N**, existen varias posibilidades:
-  * Propagar el identificador de la clase de cardinalidad máxima 1 a la que es N, teniendo en cuenta que:
-    * Si la relación es de asociación, la clave propagada es clave ajena en la tabla a la que se ha propagado.
-    * Si la relación es de dependencia, la clave primaria de la tabla correspondiente a la clase débil está formada por la concatenación de los identificadores de ambas clases.
-  * La relación se transforma en una tabla de clave primaria sólo el identificador de la clase de cardinalidad máxima N si:
-    * La relación tiene atributos propios y se desea que aparezcan como tales.
-    * Se piensa que en un futuro la relación puede convertirse en M:N.
-    * El número de ocurrencias relacionadas de la clase que propaga su clave es muy pequeño (y por tanto pueden existir muchos valores nulos).
+- **Relaciones M:N**, se transforman en una tabla, cuya clave primaria es la concatenación de los identificadores de las clases asociadas, siendo cada uno de ellos clave ajena de la propia tabla. Si la relación tiene atributos, éstos se transforman en columnas de la tabla.
+- **Relaciones 1:N**, existen varias posibilidades:
+  - Propagar el identificador de la clase de cardinalidad máxima 1 a la que es N, teniendo en cuenta que:
+    - Si la relación es de asociación, la clave propagada es clave ajena en la tabla a la que se ha propagado.
+    - Si la relación es de dependencia, la clave primaria de la tabla correspondiente a la clase débil está formada por la concatenación de los identificadores de ambas clases.
+  - La relación se transforma en una tabla de clave primaria sólo el identificador de la clase de cardinalidad máxima N si:
+    - La relación tiene atributos propios y se desea que aparezcan como tales.
+    - Se piensa que en un futuro la relación puede convertirse en M:N.
+    - El número de ocurrencias relacionadas de la clase que propaga su clave es muy pequeño (y por tanto pueden existir muchos valores nulos).
     Al igual que en el caso de relaciones M:N, las claves propagadas son claves ajenas de la nueva tabla creada.
-* **Relaciones 1:1**, es un caso particular de las 1:N y se puede tanto crear una tabla o propagar la clave, si bien, en este último caso, la clave se propaga en las dos direcciones. Para decidir qué solución adoptar, se debe analizar la situación, intentando recoger la mayor semántica posible, y evitar valores nulos.
+- **Relaciones 1:1**, es un caso particular de las 1:N y se puede tanto crear una tabla o propagar la clave, si bien, en este último caso, la clave se propaga en las dos direcciones. Para decidir qué solución adoptar, se debe analizar la situación, intentando recoger la mayor semántica posible, y evitar valores nulos.
   Las relaciones de agregación se transforman del mismo modo que las 1:N.
 
 ##### Transformación de relaciones exclusivas {.unnumbered .unlisted}
@@ -1589,13 +1591,12 @@ Después de haber realizado la transformación según las relaciones 1:N, se 
 
 Existen varias posibilidades que deben ser evaluadas por el diseñador a fin de elegir la que mejor se ajuste a los requisitos. Las opciones para tratar la transformación de la herencia son:
 
-* **Opción a**: Consiste en crear una tabla para la superclase que tenga de clave primaria el identificador y una tabla para cada una de las subclases que tengan el identificador de la superclase como clave ajena.
-    Esta solución es apropiada cuando las subclases tienen muchos atributos distintos, y se quieren conservar los atributos comunes en una tabla. También se deben implantar las restricciones y/o aserciones adecuadas. Es la solución que mejor conserva la semántica.
-* **Opción b**: Se crea una tabla para cada subclase, los atributos comunes aparecen en todas las subclases y la clave primaria para cada tabla es el identificador de la superclase.
-    Esta opción mejora la eficiencia en los accesos a todos los atributos de una subclase (los heredados y los específicos).
-* **Opción c**: Agrupar en una tabla todos los atributos de la clase y sus subclases. La clave primaria de esta tabla es el identificador de la clase. Se añade un atributo que indique a qué subclase pertenece cada ocurrencia (el atributo discriminante de la jerarquía).
-
-Esta solución puede aplicarse cuando las subclases se diferencien en pocos atributos y las relaciones que asocian a las subclases con otras clases, sean las mismas. Para el caso de que la jerarquía sea total, el atributo discriminante no podrá tomar valor nulo (ya que toda ocurrencia pertenece a alguna subclase).
+- **Opción a**: Consiste en crear una tabla para la superclase que tenga de clave primaria el identificador y una tabla para cada una de las subclases que tengan el identificador de la superclase como clave ajena.
+  Esta solución es apropiada cuando las subclases tienen muchos atributos distintos, y se quieren conservar los atributos comunes en una tabla. También se deben implantar las restricciones y/o aserciones adecuadas. Es la solución que mejor conserva la semántica.
+- **Opción b**: Se crea una tabla para cada subclase, los atributos comunes aparecen en todas las subclases y la clave primaria para cada tabla es el identificador de la superclase.
+  Esta opción mejora la eficiencia en los accesos a todos los atributos de una subclase (los heredados y los específicos).
+- **Opción c**: Agrupar en una tabla todos los atributos de la clase y sus subclases. La clave primaria de esta tabla es el identificador de la clase. Se añade un atributo que indique a qué subclase pertenece cada ocurrencia (el atributo discriminante de la jerarquía).
+  Esta solución puede aplicarse cuando las subclases se diferencien en pocos atributos y las relaciones que asocian a las subclases con otras clases, sean las mismas. Para el caso de que la jerarquía sea total, el atributo discriminante no podrá tomar valor nulo (ya que toda ocurrencia pertenece a alguna subclase).
 
 ### Técnicas Matriciales {#tecnicas-matriciales}
 
@@ -1609,17 +1610,17 @@ Las técnicas matriciales son útiles para representar las relaciones entre el
 
 Las siguientes son algunas de las matrices empleadas en MÉTRICA Versión 3:
 
-* Procesos/localización geográfica: permite representar la localización geográfica de los procesos de una organización.
-* Almacenes de datos/entidades del modelo lógico de datos normalizado: establece las relaciones existentes entre los almacenes de datos y las entidades, y permite verificar que cada almacén de datos definido en el modelo de procesos se corresponde con una o varias entidades del modelo lógico de datos normalizado.
-* Atributos de interfaz/atributos de entidades del modelo lógico de datos normalizado: permite verificar que los atributos que aparecen en cada diálogo de la interfaz de usuario forman parte del modelo lógico de datos normalizado.
-* Entidades/procesos: permite representar el tratamiento lógico de los procesos sobre los datos del sistema y verificar que cada entidad del modelo lógico de datos normalizado es accedida por algún proceso primitivo representado en el DFD.
-* Diálogos/procesos: permite representar los diálogos asociados a un proceso interactivo y verificar que cada proceso interactivo tiene asociado al menos un diálogo.
-* Objetos Diagrama de interacción / clases, atributos al modelo de clases: permite verificar que cada mensaje entre objetos se corresponde con un método de una clase.
-* Mensajes Diagrama de interacción / métodos, atributos del modelo de clases: permite verificar que una clase tiene capacidad para proporcionar los datos que se soliciten en los mensajes que recibe.
-* Evento, acción, actividad de clases/ métodos de clases: permite verificar que todo evento, actividad o acción de una clase se corresponde con un método de esa clase.
-* Clases/elementos del modelo físico de datos: permite verificar que cada elemento del modelo físico de datos se corresponde con un elemento del modelo de clases.
-* Dependencias entre subsistemas/subsistemas: permite representar para cada subsistema, los subsistemas que dependen de él.
-* Esquemas físicos de datos /nodos: permite representar la localización física de los datos en los nodos de la arquitectura del sistema, así como verificar que cada esquema del modelo físico de datos está asociado con un nodo del particionamiento físico del sistema de información.
+- Procesos/localización geográfica: permite representar la localización geográfica de los procesos de una organización.
+- Almacenes de datos/entidades del modelo lógico de datos normalizado: establece las relaciones existentes entre los almacenes de datos y las entidades, y permite verificar que cada almacén de datos definido en el modelo de procesos se corresponde con una o varias entidades del modelo lógico de datos normalizado.
+- Atributos de interfaz/atributos de entidades del modelo lógico de datos normalizado: permite verificar que los atributos que aparecen en cada diálogo de la interfaz de usuario forman parte del modelo lógico de datos normalizado.
+- Entidades/procesos: permite representar el tratamiento lógico de los procesos sobre los datos del sistema y verificar que cada entidad del modelo lógico de datos normalizado es accedida por algún proceso primitivo representado en el DFD.
+- Diálogos/procesos: permite representar los diálogos asociados a un proceso interactivo y verificar que cada proceso interactivo tiene asociado al menos un diálogo.
+- Objetos Diagrama de interacción / clases, atributos al modelo de clases: permite verificar que cada mensaje entre objetos se corresponde con un método de una clase.
+- Mensajes Diagrama de interacción / métodos, atributos del modelo de clases: permite verificar que una clase tiene capacidad para proporcionar los datos que se soliciten en los mensajes que recibe.
+- Evento, acción, actividad de clases/ métodos de clases: permite verificar que todo evento, actividad o acción de una clase se corresponde con un método de esa clase.
+- Clases/elementos del modelo físico de datos: permite verificar que cada elemento del modelo físico de datos se corresponde con un elemento del modelo de clases.
+- Dependencias entre subsistemas/subsistemas: permite representar para cada subsistema, los subsistemas que dependen de él.
+- Esquemas físicos de datos /nodos: permite representar la localización física de los datos en los nodos de la arquitectura del sistema, así como verificar que cada esquema del modelo físico de datos está asociado con un nodo del particionamiento físico del sistema de información.
 
 #### Notación {.unnumbered .unlisted}
 
@@ -1629,16 +1630,18 @@ En el cruce de una fila y una columna (C), se tendrá el modo en que se relacio
 
 ![](../images/tecnicas-matriciales.png)
 
+{{< pagebreak >}}
+
 ## Técnicas de gestión de proyectos {#tecnicas-de-gestion-de-proyectos}
 
 La Gestión de Proyectos es un conjunto de actividades específicas que se emplean para la administración del proyecto. Estas actividades comprenden diversos aspectos:
 
-* Estimación del esfuerzo necesario para el desarrollo de un Sistema de Información.
-* Planificación de tareas y recursos.
-* Control de tareas.
-* Seguimiento del proyecto.
-* Control de las incidencias.
-* Control de cambios.
+- Estimación del esfuerzo necesario para el desarrollo de un Sistema de Información.
+- Planificación de tareas y recursos.
+- Control de tareas.
+- Seguimiento del proyecto.
+- Control de las incidencias.
+- Control de cambios.
 
 Para el desarrollo de dichas actividades es necesaria la utilización de técnicas específicas para ello. En esta parte del documento de Técnicas y Prácticas se contemplan tales técnicas.
 
@@ -1651,7 +1654,6 @@ Para el desarrollo de dichas actividades es necesaria la utilización de técn
   * [Diagrama de Gantt](#diagrama-de-gantt)
   * [Estructura de Descomposición de Trabajo (WBS – Work Breakdown Structure)](#estructura-de-descomposicion-de-trabajo)
   * [Diagrama de Extrapolación](#diagrama-de-extrapolacion)
-
 
 ### Técnicas de Estimación {#tecnicas-de-estimacion}
 
@@ -1669,12 +1671,12 @@ Las técnicas de estimación más fiables se basan en el análisis de Puntos Fun
 
 Las características más destacables de esta técnica son:
 
-* Es una unidad de medida empírica.
-* Contempla el sistema como un todo que se divide en determinadas funciones.
-* Es independiente del entorno tecnológico en que se ha de desarrollar el sistema.
-* Es independiente de la metodología que vaya a ser utilizada.
-* Es independiente de la experiencia y del estilo de programación.
-* Es fácil de entender por el usuario.
+- Es una unidad de medida empírica.
+- Contempla el sistema como un todo que se divide en determinadas funciones.
+- Es independiente del entorno tecnológico en que se ha de desarrollar el sistema.
+- Es independiente de la metodología que vaya a ser utilizada.
+- Es independiente de la experiencia y del estilo de programación.
+- Es fácil de entender por el usuario.
 
 El resultado de la aplicación de esta técnica viene dado en **Puntos Función**, que posteriormente habrán de ser pasados a días de esfuerzo, para lo que sí habrán de tenerse en cuenta la experiencia del equipo de desarrollo y el estilo de programación, la aplicación de una u otra metodología y la tecnología.
 
@@ -1807,18 +1809,18 @@ Una vez concluida la etapa anterior se pasan los resultados a la tabla de conver
 | TOTAL PUNTOS FUNCIÓN NO AJUSTADOS (PFNA)                                       |            |
 +--------------------------------------------------------------------------------+------------+
 
-Una vez calculado el número de funciones y determinada su complejidad, no hay más que llevar los valores obtenidos a la tabla. La suma de los resultados parciales da el valor en PUNTOS FUNCIÓN NO AJUSTADOS (PFNA).
+Una vez calculado el número de funciones y determinada su complejidad, no hay más que llevar los valores obtenidos a la tabla. La suma de los resultados parciales da el valor en **PUNTOS FUNCIÓN NO AJUSTADOS (PFNA)**.
 
 Los distintos factores fueron obtenidos de la investigación llevada a cabo por Allan J. Albrecht. Según sus propias palabras, a base de ensayos y negociaciones. No obstante, alguno de los pesos podrían variarse para reflejar mejor las características peculiares de otra organización u otro tipo especial de desarrollo.
 
 El método para el cálculo es el siguiente:
 
-    Identificar las funciones que intervienen. Estas funciones deben ser las que aparecen en el diagrama 0.
-    Clasificar cada función.
-    Incorporar cada función a la tabla.
-    Sumar los valores obtenidos.
+- Identificar las funciones que intervienen. Estas funciones deben ser las que aparecen en el diagrama 0.
+- Clasificar cada función.
+- Incorporar cada función a la tabla.
+- Sumar los valores obtenidos.
 
-La suma representa la complejidad del proyecto en PUNTOS FUNCIÓN NO AJUSTADOS.
+La suma representa la complejidad del proyecto en **PUNTOS FUNCIÓN NO AJUSTADOS**.
 
 ##### Ajuste de los Puntos Función {.unnumbered .unlisted}
 
@@ -1828,130 +1830,129 @@ Existen 14 atributos de ajuste que impactan en el desarrollo y que deben ser eva
 
 A cada atributo se le asignará un valor entre 0 y 5, dependiendo del grado de influencia de éstos. Los posibles valores son:
 
-    Sin influencia (0). El sistema no contempla este atributo.
-    Influencia mínima (1). La influencia de este atributo es muy poco significativa.
-    Influencia moderada (2). El sistema contempla este atributo y su influencia, aunque pequeña, ha de ser considerada.
-    Influencia apreciable (3). La importancia de este atributo debe ser tenida en cuenta, aunque no es fundamental.
-    Influencia significativa (4). Este atributo tiene una gran importancia para el Sistema.
-    Influencia muy fuerte (5). Este atributo es esencial para el Sistema y ha de ser tenido en cuenta a la hora del diseño.
+* **Sin influencia (0)**. El sistema no contempla este atributo.
+* **Influencia mínima (1)**. La influencia de este atributo es muy poco significativa.
+* **Influencia moderada (2)**. El sistema contempla este atributo y su influencia, aunque pequeña, ha de ser considerada.
+* **Influencia apreciable (3)**. La importancia de este atributo debe ser tenida en cuenta, aunque no es fundamental.
+* **Influencia significativa (4)**. Este atributo tiene una gran importancia para el Sistema.
+* **Influencia muy fuerte (5)**. Este atributo es esencial para el Sistema y ha de ser tenido en cuenta a la hora del diseño.
 
 Los 14 atributos que se contemplan en esta técnica y sus significados aparecen a continuación.
 
-    Comunicación de datos: Los datos usados en la aplicación se envían o reciben por teleproceso. Los posibles valores para este atributo son:
-        0 – La aplicación es un proceso por lotes puro.
-        1 – Proceso por lotes con impresión remota o entrada remota de datos.
-        2 – Proceso por lotes con impresión remota y entrada remota de datos .
-        3 – El TP es la interfaz para un proceso por lotes.
-        4 – La aplicación está basada en un TP interactivo, pero con un solo protocolo de comunicaciones.
-        5 – La aplicación está basada en un TP interactivo, pero con más de un protocolo de comunicaciones.
-    Funciones distribuidas: Funciones de datos o procesos distribuidas. Los posibles valores para este atributo son:
-        0 – La aplicación no tiene el objetivo de transferir datos o funciones procesadas entre dos sistemas.
-        1 – Datos preparados de la aplicación para su procesamiento por el usuario final sobre otro componente del sistema.
-        2 – La aplicación prepara los datos para procesarlos sobre otra máquina diferente (no usuario final).
-        3 – Proceso distribuido, en línea, con transferencia de datos en una única dirección.
-        4 – Como el anterior, pero con transferencia de datos en ambas direcciones.
-        5 – Las funciones de proceso se realizan dinámicamente sobre el componente del sistema más apropiado.
-    Prestaciones: Consideración en el diseño, instalación y mantenimiento de factores de rendimiento como el tiempo de respuesta, la capacidad de proceso, etc. Los posibles valores para este atributo son:
-        0 – No hay requerimientos especiales.
-        1 – Se establecen requerimientos para las prestaciones, pero sin tratamiento específico.
-        2 – Respuesta crítica del proceso en línea durante las horas punta. No hay especificaciones para la utilización de CPU.
-        3 – Respuesta crítica del proceso en línea durante los días laborables. No hay especificaciones para la utilización de CPU. Proceso afectado por aplicaciones de interfaz.
-        4 – Las tareas de análisis de las prestaciones se incluyen en la fase de diseño para establecer los requerimientos de usuario.
-        5 – Además, se emplearán herramientas específicas para el diseño que contemplen estás características.
-    Gran uso de la configuración: Cuando además de los objetivos de rendimiento se considera una gran utilización. El usuario ha de utilizar la aplicación en un entorno bastante cargado. Los posibles valores para este atributo son:
-        0-3 – Típica aplicación sobre máquina de producción, sin restricciones de operación declaradas.
-        4 – Las restricciones de operación declaradas requieren imperativos especiales sobre la aplicación en el procesador central.
-        5 – Además, existen imperativos especiales sobre la aplicación en componentes distribuidos del sistema.
-    Velocidad de las transacciones: Número alto de transacciones por unidad de tiempo que influyen en el diseño, instalación y posterior mantenimiento. Los posibles valores para este atributo son:
-        0 – Las transacciones no están afectadas por picos de tráfico.
-        1 – 10% de transacciones afectadas por los picos de tráfico.
-        2 – 50% de transacciones afectadas por los picos de tráfico.
-        3 – 100% de transacciones afectadas por los picos de tráfico.
-        4 – Se incluyen tareas de análisis para las funciones en la fase de diseño para lograr los altos índices de función declarados por el usuario en los requerimientos de la aplicación o acuerdos de nivel de servicio (SLA).
-        5 – Además, se utilizan herramientas de análisis para las prestaciones en las fases de diseño, desarrollo y / o instalación para lograr los altos índices de función declarados por el usuario en los requerimientos de la aplicación o acuerdos de nivel de servicio (SLA).
-    Entrada de datos en línea: La toma de datos de la aplicación se realiza en línea. Los posibles valores para este atributo son:
-        0 – Todas las transacciones son tratadas por lotes.
-        1 – Entre el 1 y el 7% de las funciones son entradas interactivas de datos.
-        2 – Entre el 8 y el 15% de las funciones son entradas interactivas de datos.
-        3 – Entre el 16 y el 23% de las funciones son entradas interactivas de datos.
-        4 – Entre el 24 y el 30% de las funciones son entradas interactivas de datos.
-        5 – Más del 30% de las funciones son entradas interactivas de datos.
-    Diseño para la eficiencia del usuario final: Se incluyen tareas de diseño para consideraciones especiales del usuario en la Fase de Diseño para atender los requerimientos del usuario, por ejemplo:
-        Ayuda de navegación.
-        Menús.
-        Ayuda en línea.
-        Movimiento automático del cursor.
-        Scrolling.
-        Impresión remota.
-        Teclas de función preestablecidas.
-        Procesos por lotes lanzados desde transacciones en línea.
-        Selección de datos con el cursor.
-        Gran uso de facilidades en el monitor (colores, textos resaltados, etc.).
-        Copia impresa de las transacciones en línea.
-        Ratón.
-        Windows.
-        Pantallas reducidas.
-        Bilingüismo.
-        Multilingüismo.
-        Los posibles valores para este atributo son:
-        0 – No se han declarado ninguno de los anteriores requerimientos especiales de usuario.
-        1 – De 1 a 3 de los requerimientos de la lista.
-        2 – 4 ó 5 requerimientos de la lista.
-        3 – Más de 6 requerimientos de la lista.
-        4 – Se incluyen en la fase de diseño tareas de diseño para consideraciones de factores humanos para lograr los requerimientos de usuario declarados.
-        5 – Además, se usan herramientas especiales o prototipos para suscitar la eficiencia del usuario final.
-    Actualización de datos en línea: Los datos internos se actualizan mediante transacciones en línea. Los posibles valores para este atributo son:
-        0 – Ninguna.
-        1-2 – Actualización en línea de ficheros de control.
-        3 – Actualización en línea de ficheros importantes internos.
-        4 – También, se considera esencial la protección contra pérdida de información.
-        5 – Además, grandes volúmenes implican consideraciones de coste en el proceso de recuperación.
-    Complejidad del proceso lógico interno de la aplicación: Se considera complejo cuando hay muchas interacciones, puntos de decisión o gran número de ecuaciones lógicas o matemáticas. ¿Cuál de las siguientes características tienen aplicación para la aplicación?
-        Extensiones de proceso lógicas.
-        Extensiones de proceso matemáticas.
-        Muchos procesos de excepción, muchas funciones incompletas y muchas iteraciones
-        de funciones.
-        Procesos sensibles de control y / o seguridad.
-        Procesos complejos de manejo de múltiples posibilidades de Entrada / Salida (por ejemplo: multimedia, independencia de dispositivos,…).
-        Los posibles valores para este atributo son:
-        0 – Ninguno de los anteriores es aplicable.
-        1 – Es aplicable uno de los anteriores.
-        2 – Son aplicables dos de los anteriores.
-        3 – Son aplicables 3 de los anteriores.
-        4 – Son aplicables 4 de los anteriores.
-        5 – Todos ellos son aplicables.
-    Reusabilidad del código por otras aplicaciones. Los posibles valores para este atributo son:
-        0 – No hay que reutilizar el código.
-        1 – Se emplea código reusable dentro de la aplicación.
-        2 – Menos del 10% de la aplicación se considera reusable.
-        3 – El 10% o más de la aplicación se considera reusable.
-        4 – La aplicación está específicamente preparada y documentada para facilitar la reutilización y se adapta sobre código fuente.
-        5 – La aplicación está específicamente preparada y documentada para facilitar la reutilización y, además, se adapta sobre parámetros.
-    Facilidad de instalación: Durante el desarrollo se consideran factores que facilitan la ulterior conversión e instalación. Los posibles valores para este atributo son:
-        0 – El usuario no ha declarado consideraciones especiales para instalación y conversión.
-        1 – El usuario no ha declarado consideraciones especiales para instalación y conversión, pero se requiere un set especial para la instalación.
-        2 – El usuario ha declarado consideraciones especiales para la conversión e instalación y se requieren guías probadas de conversión e instalación.
-        3 – El usuario ha declarado consideraciones especiales para la conversión e instalación y se requieren guías probadas de conversión e instalación y se considera importante el impacto.
-        4 – El usuario ha declarado consideraciones especiales para la conversión e instalación y se requieren guías probadas de conversión e instalación y, además, se facilitan herramientas probadas para la conversión e instalación.
-        5 – El usuario ha declarado consideraciones especiales para la conversión e instalación y se requieren guías probadas de conversión e instalación, considerándose importante el impacto. Además, se facilitan herramientas probadas para la conversión e instalación.
-    Facilidad de operación: Se han tenido en cuenta factores de operatividad. Se han considerado procedimientos de arranque, de copia de respaldo y de recuperación. Los posibles valores para este atributo son:
+1. Comunicación de datos: Los datos usados en la aplicación se envían o reciben por teleproceso. Los posibles valores para este atributo son:
+   - 0 – La aplicación es un proceso por lotes puro.
+   - 1 – Proceso por lotes con impresión remota o entrada remota de datos.
+   - 2 – Proceso por lotes con impresión remota y entrada remota de datos .
+   - 3 – El TP es la interfaz para un proceso por lotes.
+   - 4 – La aplicación está basada en un TP interactivo, pero con un solo protocolo de comunicaciones.
+   - 5 – La aplicación está basada en un TP interactivo, pero con más de un protocolo de comunicaciones.
+2. Funciones distribuidas: Funciones de datos o procesos distribuidas. Los posibles valores para este atributo son:
+   - 0 – La aplicación no tiene el objetivo de transferir datos o funciones procesadas entre dos sistemas.
+   - 1 – Datos preparados de la aplicación para su procesamiento por el usuario final sobre otro componente del sistema.
+   - 2 – La aplicación prepara los datos para procesarlos sobre otra máquina diferente (no usuario final).
+   - 3 – Proceso distribuido, en línea, con transferencia de datos en una única dirección.
+   - 4 – Como el anterior, pero con transferencia de datos en ambas direcciones.
+   - 5 – Las funciones de proceso se realizan dinámicamente sobre el componente del sistema más apropiado.
+3. Prestaciones: Consideración en el diseño, instalación y mantenimiento de factores de rendimiento como el tiempo de respuesta, la capacidad de proceso, etc. Los posibles valores para este atributo son:
+   - 0 – No hay requerimientos especiales.
+   - 1 – Se establecen requerimientos para las prestaciones, pero sin tratamiento específico.
+   - 2 – Respuesta crítica del proceso en línea durante las horas punta. No hay especificaciones para la utilización de CPU.
+   - 3 – Respuesta crítica del proceso en línea durante los días laborables. No hay especificaciones para la utilización de CPU. Proceso afectado por aplicaciones de interfaz.
+   - 4 – Las tareas de análisis de las prestaciones se incluyen en la fase de diseño para establecer los requerimientos de usuario.
+   - 5 – Además, se emplearán herramientas específicas para el diseño que contemplen estás características.
+4. Gran uso de la configuración: Cuando además de los objetivos de rendimiento se considera una gran utilización. El usuario ha de utilizar la aplicación en un entorno bastante cargado. Los posibles valores para este atributo son:
+   - 0-3 – Típica aplicación sobre máquina de producción, sin restricciones de operación declaradas.
+   - 4 – Las restricciones de operación declaradas requieren imperativos especiales sobre la aplicación en el procesador central.
+   - 5 – Además, existen imperativos especiales sobre la aplicación en componentes distribuidos del sistema.
+5. Velocidad de las transacciones: Número alto de transacciones por unidad de tiempo que influyen en el diseño, instalación y posterior mantenimiento. Los posibles valores para este atributo son:
+   - 0 – Las transacciones no están afectadas por picos de tráfico.
+   - 1 – 10% de transacciones afectadas por los picos de tráfico.
+   - 2 – 50% de transacciones afectadas por los picos de tráfico.
+   - 3 – 100% de transacciones afectadas por los picos de tráfico.
+   - 4 – Se incluyen tareas de análisis para las funciones en la fase de diseño para lograr los altos índices de función declarados por el usuario en los requerimientos de la aplicación o acuerdos de nivel de servicio (SLA).
+   - 5 – Además, se utilizan herramientas de análisis para las prestaciones en las fases de diseño, desarrollo y / o instalación para lograr los altos índices de función declarados por el usuario en los requerimientos de la aplicación o acuerdos de nivel de servicio (SLA).
+6. Entrada de datos en línea: La toma de datos de la aplicación se realiza en línea. Los posibles valores para este atributo son:
+   - 0 – Todas las transacciones son tratadas por lotes.
+   - 1 – Entre el 1 y el 7% de las funciones son entradas interactivas de datos.
+   - 2 – Entre el 8 y el 15% de las funciones son entradas interactivas de datos.
+   - 3 – Entre el 16 y el 23% de las funciones son entradas interactivas de datos.
+   - 4 – Entre el 24 y el 30% de las funciones son entradas interactivas de datos.
+   - 5 – Más del 30% de las funciones son entradas interactivas de datos.
+7. Diseño para la eficiencia del usuario final: Se incluyen tareas de diseño para consideraciones especiales del usuario en la Fase de Diseño para atender los requerimientos del usuario, por ejemplo:
+   - Ayuda de navegación.
+   - Menús.
+   - Ayuda en línea.
+   - Movimiento automático del cursor.
+   - Scrolling.
+   - Impresión remota.
+   - Teclas de función preestablecidas.
+   - Procesos por lotes lanzados desde transacciones en línea.
+   - Selección de datos con el cursor.
+   - Gran uso de facilidades en el monitor (colores, textos resaltados, etc.).
+   - Copia impresa de las transacciones en línea.
+   - Ratón.
+   - Windows.
+   - Pantallas reducidas.
+   - Bilingüismo.
+   - Multilingüismo.
+   Los posibles valores para este atributo son:
+   - 0 – No se han declarado ninguno de los anteriores requerimientos especiales de usuario.
+   - 1 – De 1 a 3 de los requerimientos de la lista.
+   - 2 – 4 ó 5 requerimientos de la lista.
+   - 3 – Más de 6 requerimientos de la lista.
+   - 4 – Se incluyen en la fase de diseño tareas de diseño para consideraciones de factores humanos para lograr los requerimientos de usuario declarados.
+   - 5 – Además, se usan herramientas especiales o prototipos para suscitar la eficiencia del usuario final.
+8. Actualización de datos en línea: Los datos internos se actualizan mediante transacciones en línea. Los posibles valores para este atributo son:
+   - 0 – Ninguna.
+   - 1-2 – Actualización en línea de ficheros de control.
+   - 3 – Actualización en línea de ficheros importantes internos.
+   - 4 – También, se considera esencial la protección contra pérdida de información.
+   - 5 – Además, grandes volúmenes implican consideraciones de coste en el proceso de recuperación.
+9. Complejidad del proceso lógico interno de la aplicación: Se considera complejo cuando hay muchas interacciones, puntos de decisión o gran número de ecuaciones lógicas o matemáticas. ¿Cuál de las siguientes características tienen aplicación para la aplicación?
+   - Extensiones de proceso lógicas.
+   - Extensiones de proceso matemáticas.
+   - Muchos procesos de excepción, muchas funciones incompletas y muchas iteraciones de funciones.
+   - Procesos sensibles de control y / o seguridad.
+   - Procesos complejos de manejo de múltiples posibilidades de Entrada / Salida (por ejemplo: multimedia, independencia de dispositivos,…).
+   Los posibles valores para este atributo son:
+   - 0 – Ninguno de los anteriores es aplicable.
+   - 1 – Es aplicable uno de los anteriores.
+   - 2 – Son aplicables dos de los anteriores.
+   - 3 – Son aplicables 3 de los anteriores.
+   - 4 – Son aplicables 4 de los anteriores.
+   - 5 – Todos ellos son aplicables.
+10. Reusabilidad del código por otras aplicaciones. Los posibles valores para este atributo son:
+    - 0 – No hay que reutilizar el código.
+    - 1 – Se emplea código reusable dentro de la aplicación.
+    - 2 – Menos del 10% de la aplicación se considera reusable.
+    - 3 – El 10% o más de la aplicación se considera reusable.
+    - 4 – La aplicación está específicamente preparada y documentada para facilitar la reutilización y se adapta sobre código fuente.
+    - 5 – La aplicación está específicamente preparada y documentada para facilitar la reutilización y, además, se adapta sobre parámetros.
+11. Facilidad de instalación: Durante el desarrollo se consideran factores que facilitan la ulterior conversión e instalación. Los posibles valores para este atributo son:
+    - 0 – El usuario no ha declarado consideraciones especiales para instalación y conversión.
+    - 1 – El usuario no ha declarado consideraciones especiales para instalación y conversión, pero se requiere un set especial para la instalación.
+    - 2 – El usuario ha declarado consideraciones especiales para la conversión e instalación y se requieren guías probadas de conversión e instalación.
+    - 3 – El usuario ha declarado consideraciones especiales para la conversión e instalación y se requieren guías probadas de conversión e instalación y se considera importante el impacto.
+    - 4 – El usuario ha declarado consideraciones especiales para la conversión e instalación y se requieren guías probadas de conversión e instalación y, además, se facilitan herramientas probadas para la conversión e instalación.
+    - 5 – El usuario ha declarado consideraciones especiales para la conversión e instalación y se requieren guías probadas de conversión e instalación, considerándose importante el impacto. Además, se facilitan herramientas probadas para la conversión e instalación.
+12. Facilidad de operación: Se han tenido en cuenta factores de operatividad. Se han considerado procedimientos de arranque, de copia de respaldo y de recuperación. Los posibles valores para este atributo son:
         0 – No hay consideraciones especiales de operación.
         1-2 – Se requieren procesos específicos de arranque, back-up y recuperación debidamente probados.
         3-4 – Además, la aplicación debe minimizar las necesidades de operaciones manuales, como manejo de papeles o montaje de cintas.
         5 – La aplicación debe diseñarse para una operación totalmente automática.
-    Localizaciones múltiples: La aplicación se diseña para ser utilizada en diversas instalaciones y por organizaciones. El valor para este atributo será la suma de los aplicables:
-        0 – No hay requerimientos de usuario para más de un lugar.
-        1 – Se consideran múltiples instalaciones pero con idéntica configuración (tanto hardware como software).
-        2 – Se consideran múltiples instalaciones pero con similar configuración (tanto hardware como software).
-        3 – Se consideran múltiples instalaciones pero con diferente configuración (tanto hardware como software).
-        Se añadirá 1 punto por cada una de las siguientes consideraciones:
-        Se proporcionará documentación y plan de soporte debidamente probados para soportar la aplicación en múltiples sitios.
-        Los lugares están en diferentes países.
-    Facilidad de cambios: Se han tenido en cuenta criterios que facilitarán el posterior mantenimiento. El valor para este atributo será la suma de los aplicables:
-        0 – No hay requerimientos especiales de diseño para minimizar o facilitar los cambios.
-        1 – Se preverá una flexible capacidad de peticiones para modificaciones sencillas.
-        2 – Se preverá una flexible capacidad de peticiones para modificaciones medias.
-        3 – Se preverá una flexible capacidad de peticiones para modificaciones complejas.
+13. Localizaciones múltiples: La aplicación se diseña para ser utilizada en diversas instalaciones y por organizaciones. El valor para este atributo será la suma de los aplicables:
+    - 0 – No hay requerimientos de usuario para más de un lugar.
+    - 1 – Se consideran múltiples instalaciones pero con idéntica configuración (tanto hardware como software).
+    - 2 – Se consideran múltiples instalaciones pero con similar configuración (tanto hardware como software).
+    - 3 – Se consideran múltiples instalaciones pero con diferente configuración (tanto hardware como software).
+    - Se añadirá 1 punto por cada una de las siguientes consideraciones:
+    - Se proporcionará documentación y plan de soporte debidamente probados para soportar la aplicación en múltiples sitios.
+    - Los lugares están en diferentes países.
+14. Facilidad de cambios: Se han tenido en cuenta criterios que facilitarán el posterior mantenimiento. El valor para este atributo será la suma de los aplicables:
+    - 0 – No hay requerimientos especiales de diseño para minimizar o facilitar los cambios.
+    - 1 – Se preverá una flexible capacidad de peticiones para modificaciones sencillas.
+    - 2 – Se preverá una flexible capacidad de peticiones para modificaciones medias.
+    - 3 – Se preverá una flexible capacidad de peticiones para modificaciones complejas.
 
 Se añadirán 1 ó 2 puntos dependiendo de que los datos de control significativos se guarden en tablas mantenidas por el usuario mediante procesos interactivos en línea:
 
@@ -1995,9 +1996,9 @@ $$\text{PFA} = \text{PFNA} \times \text{FA}$$
 
 Siendo:
 
-- PFA: Puntos Función ajustados
-- PFNA: Puntos Función no ajustados
-- FA: Factor de ajuste (calculado anteriormente).
+- $\text{PFA}$: Puntos Función ajustados
+- $\text{PFNA}$: Puntos Función no ajustados
+- $\text{FA}$: Factor de ajuste (calculado anteriormente).
 
 ##### Cálculo del tiempo en días de esfuerzo {.unnumbered .unlisted}
 
@@ -2751,6 +2752,8 @@ Se hace una estimación en el mes 5, y se encuentra un punto de esfuerzo equiva
 
 ![](../images/extrapolacion.png)
 
+{{< pagebreak >}}
+
 ## Prácticas {#practicas}
 
 Las prácticas representan un medio para la consecución de unos objetivos específicos de manera rápida, segura y precisa, sin necesidad de cumplir unos criterios rígidos preestablecidos, aunque se aconsejan determinadas pautas a seguir para la consecución de los objetivos propuestos.
@@ -3439,6 +3442,8 @@ La información de salida que se obtiene al finalizar una sesión JRP, depende
 - Modelo de información.
 - Modelo de sistemas de información, etc.
 
+{{< pagebreak >}}
+
 ## Soporte por herramientas {#soporte-por-herramientas}
 
 A continuación se presentan diversos cuadros para indicar el nivel de soporte por herramientas de las técnicas y prácticas descritas.
@@ -3463,6 +3468,8 @@ A continuación se presentan diversos cuadros para indicar el nivel de soporte p
 | JRP (Joint Requirements Planning) | Alto |
 
 Nota.- El Nivel de Soporte en blanco significa que o bien no se conocen herramientas que soporten esa técnica o práctica, o bien no son necesarias
+
+{{< pagebreak >}}
 
 ## Bibliografía {#bibliografia}
 
