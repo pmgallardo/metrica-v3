@@ -27,7 +27,7 @@ Las técnicas de desarrollo son un conjunto de procedimientos que se basan en r
 * [Diagrama de Descomposición](#diagrama-de-descomposicion)
 * [Diagrama de Despliegue](#diagrama-de-despliegue)
 * [Diagrama de Estructura](#diagrama-de-estructura)
-* [Diagrama de Flujo de Datos](#diagrama-de-flujo-de-datos)
+* [Diagrama de Flujo de Datos (DFD)](#diagrama-de-flujo-de-datos)
 * [Diagrama de Interacción](#diagrama-de-interaccion)
   * [Diagrama de Secuencia](#diagrama-de-secuencia)
   * [Diagrama de Colaboración](#diagrama-de-colaboracion)
@@ -881,12 +881,14 @@ Por último, se puede apreciar que los almacenes son los mismos que se conectab
 El objetivo de esta técnica es describir el comportamiento dinámico del sistema de información mediante el paso de mensajes entre los objetos del mismo. Además representa un medio para verificar la coherencia del sistema mediante la validación con el modelo de clases.
 Descripción
 
+#### Descripción {.unnumbered .unlisted}
+
 Un diagrama de interacción describe en detalle un determinado escenario de un caso de uso. En él se muestra la interacción entre el conjunto de objetos que cooperan en la realización de dicho escenario. Suele ser conveniente especificar en la parte izquierda del diagrama el caso de uso que se está representando para que resulte más sencilla su validación.
 
 Los elementos que componen los diagramas de interacción son los objetos y los mensajes:
 
-* Un *objeto* es una entidad que tiene un estado, un comportamiento e identidad. La estructura y el comportamiento común de diferentes objetos se recoge en una clase. En un diagrama de interacción, los objetos serán al final instancias de una determinada clase o de un actor.
-* Un *mensaje* es una comunicación entre dos objetos. El envío de un mensaje por parte de un objeto (emisor) a otro (receptor), puede provocar que se ejecute una operación, se produzca un evento o se cree o destruya un objeto.
+- Un *objeto* es una entidad que tiene un estado, un comportamiento e identidad. La estructura y el comportamiento común de diferentes objetos se recoge en una clase. En un diagrama de interacción, los objetos serán al final instancias de una determinada clase o de un actor.
+- Un *mensaje* es una comunicación entre dos objetos. El envío de un mensaje por parte de un objeto (emisor) a otro (receptor), puede provocar que se ejecute una operación, se produzca un evento o se cree o destruya un objeto.
 
 Hay dos tipos de diagramas de interacción: [diagramas de secuencia](#diagrama-de-secuencia) y [diagramas de colaboración](#diagrama-de-colaboracion). Ambos tipos de diagramas tratan la misma información pero cada uno hace énfasis en un aspecto particular en cuanto a la forma de mostrarla.
 
@@ -938,12 +940,12 @@ Diagrama de secuencia para el caso de uso: Prestar un ejemplar de una aplicacio�
 
 ![Ejemplo de Diagrama de secuencia](../images/secuencia-ejemplo.png)
 
-#### Diagrama de Colaboración {#diagrama-de-colaboracion}
+#### Diagrama de colaboración {#diagrama-de-colaboracion}
 
 El diagrama de colaboración es un tipo de diagrama de interacción cuyo objetivo es describir el comportamiento dinámico del sistema de información mostrando cómo interactúan los objetos entre sí, es decir, con qué otros objetos tiene vínculos o intercambia mensajes un determinado objeto.
 Descripción
 
-Un diagrama de colaboración muestra la misma información que un diagrama de secuencia pero de forma diferente. En los diagramas de colaboración no existe una secuencia temporal en el eje vertical; es decir, la colocación de los mensajes en el diagrama no indica cuál es el orden en el que se suceden. Además, la colocación de los objetos es más flexible y permite mostrar de forma más clara cuáles son las colaboraciones entre ellos. En estos diagramas la comunicación entre objetos se denomina vínculo o enlace (link) y estará particularizada mediante los mensajes que intercambian.
+Un diagrama de colaboración muestra la misma información que un diagrama de secuencia pero de forma diferente. En los diagramas de colaboración no existe una secuencia temporal en el eje vertical; es decir, la colocación de los mensajes en el diagrama no indica cuál es el orden en el que se suceden. Además, la colocación de los objetos es más flexible y permite mostrar de forma más clara cuáles son las colaboraciones entre ellos. En estos diagramas la comunicación entre objetos se denomina vínculo o enlace (*link*) y estará particularizada mediante los mensajes que intercambian.
 
 ##### Notación {.unnumbered .unlisted}
 
@@ -981,8 +983,8 @@ Estrictamente hablando, los paquetes y sus dependencias son elementos de los dia
 
 Estos diagramas contienen dos tipos de elementos:
 
-* *Paquetes*: Un paquete es una agrupación de elementos, bien sea casos de uso, clases o componentes. Los paquetes pueden contener a su vez otros paquetes anidados que en última instancia contendrán alguno de los elementos anteriores.
-* *Dependencias entre paquetes*: Existe una dependencia cuando un elemento de un paquete requiere de otro que pertenece a un paquete distinto. Es importante resaltar que las dependencias no son transitivas.
+- *Paquetes*: Un paquete es una agrupación de elementos, bien sea casos de uso, clases o componentes. Los paquetes pueden contener a su vez otros paquetes anidados que en última instancia contendrán alguno de los elementos anteriores.
+- *Dependencias entre paquetes*: Existe una dependencia cuando un elemento de un paquete requiere de otro que pertenece a un paquete distinto. Es importante resaltar que las dependencias no son transitivas.
 
 Se pueden optimizar estos diagramas teniendo en cuenta cuestiones como: la generalización de paquetes, el evitar ciclos en la estructura del diagrama, la minimización de las dependencias entre paquetes, etc.
 
