@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="es-ES" xml:lang="es-ES"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.10.20">
+<meta name="generator" content="quarto-1.11.9">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -41,14 +41,15 @@ ul.task-list li input[type="checkbox"] {
 <link href="../images/favicon192.png" rel="icon" type="image/png">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/scrollable-regions/scrollable-regions.js" type="module"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-17888a1159294d3eb470f19f6f52f5a5.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-63b5708e65d6cd79cd7618c58d0c21e7.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-c3d6b4cc3d1d7292e738c566fe3316b1.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-505348d11ccbb78df698faebd78c998e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -82,17 +83,17 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="../styles.css">
 </head>
 
-<body class="nav-sidebar docked quarto-light">
+<body class="nav-sidebar docked quarto-light"><a id="quarto-skip-link" class="visually-hidden-focusable" href="#quarto-document-content">Saltar al contenido principal</a>
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
-  <nav class="quarto-secondary-nav">
+  <nav class="quarto-secondary-nav" aria-label="Barra de herramientas">
     <div class="container-fluid d-flex">
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../02-interfaces/01-cal.html">Interfaces</a></li><li class="breadcrumb-item"><a href="../02-interfaces/03-gc.html"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Gestión de Configuración</span></a></li></ol></nav>
-        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        <nav class="quarto-page-breadcrumbs" aria-label="Hilo de Ariadna"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../02-interfaces/01-cal.html">Interfaces</a></li><li class="breadcrumb-item"><a href="../02-interfaces/03-gc.html"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Gestión de Configuración</span></a></li></ol></nav>
+        <a class="flex-grow-1" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Buscar" onclick="window.quartoOpenSearch();">
         <i class="bi bi-search"></i>
@@ -103,7 +104,7 @@ ul.task-list li input[type="checkbox"] {
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto" aria-label="Sitio web">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
       <a href="../">Métrica v.3</a> 
@@ -144,13 +145,10 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
- <span class="menu-text">Estructura principal</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Alternar sección">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-controls="quarto-sidebar-section-1" aria-expanded="true">
+ <span class="menu-text" id="quarto-sidebar-section-1-label">Estructura principal</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
       </div>
-      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-1" aria-labelledby="quarto-sidebar-section-1-label" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../01-principal/01-introduccion.html" class="sidebar-item-text sidebar-link">
@@ -203,13 +201,10 @@ ul.task-list li input[type="checkbox"] {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
- <span class="menu-text">Interfaces</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Alternar sección">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-controls="quarto-sidebar-section-2" aria-expanded="true">
+ <span class="menu-text" id="quarto-sidebar-section-2-label">Interfaces</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
       </div>
-      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-2" aria-labelledby="quarto-sidebar-section-2-label" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../02-interfaces/01-cal.html" class="sidebar-item-text sidebar-link">
@@ -238,13 +233,10 @@ ul.task-list li input[type="checkbox"] {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
- <span class="menu-text">Técnicas</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Alternar sección">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-controls="quarto-sidebar-section-3" aria-expanded="true">
+ <span class="menu-text" id="quarto-sidebar-section-3-label">Técnicas</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
       </div>
-      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-3" aria-labelledby="quarto-sidebar-section-3-label" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../03-tecnicas/01-tecnicas.html" class="sidebar-item-text sidebar-link">
@@ -255,13 +247,10 @@ ul.task-list li input[type="checkbox"] {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
- <span class="menu-text">Participantes</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Alternar sección">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-controls="quarto-sidebar-section-4" aria-expanded="true">
+ <span class="menu-text" id="quarto-sidebar-section-4-label">Participantes</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
       </div>
-      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-4" aria-labelledby="quarto-sidebar-section-4-label" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../04-participantes/01-participantes.html" class="sidebar-item-text sidebar-link">
@@ -276,12 +265,12 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
+        <nav id="TOC" role="doc-toc" aria-labelledby="toc-title" class="toc-active">
     <h2 id="toc-title">Tabla de contenidos</h2>
    
   <ul>
   <li><a href="#descripción-y-objetivos" id="toc-descripción-y-objetivos" class="nav-link active" data-scroll-target="#descripción-y-objetivos"><span class="header-section-number">11.1</span> Descripción y Objetivos</a></li>
-  <li><a href="#estudio-de-viabilidad-del-sistema" id="toc-estudio-de-viabilidad-del-sistema" class="nav-link" data-scroll-target="#estudio-de-viabilidad-del-sistema"><span class="header-section-number">11.2</span> Estudio de Viabilidad del Sistema</a>
+  <li><a href="#evs" id="toc-evs" class="nav-link" data-scroll-target="#evs"><span class="header-section-number">11.2</span> Estudio de Viabilidad del Sistema</a>
   <ul>
   <li><a href="#evs-gc-1" id="toc-evs-gc-1" class="nav-link" data-scroll-target="#evs-gc-1"><span class="header-section-number">11.2.1</span> Actividad EVS-GC 1: Definición de los Requisitos de Gestión de Configuración</a>
   <ul class="collapse">
@@ -293,11 +282,11 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#evs-gc-2-2" id="toc-evs-gc-2-2" class="nav-link" data-scroll-target="#evs-gc-2-2"><span class="header-section-number">11.2.2.2</span> Tarea EVS-GC 2.2: Especificación del Entorno Tecnológico para la Gestión de Configuración</a></li>
   </ul></li>
   </ul></li>
-  <li><a href="#análisis-diseño-construcción-e-implantación-y-aceptación-del-sistema-de-información" id="toc-análisis-diseño-construcción-e-implantación-y-aceptación-del-sistema-de-información" class="nav-link" data-scroll-target="#análisis-diseño-construcción-e-implantación-y-aceptación-del-sistema-de-información"><span class="header-section-number">11.3</span> Análisis, diseño, construcción e implantación y aceptación del Sistema de Información</a>
+  <li><a href="#asi-dsi-csi-ias" id="toc-asi-dsi-csi-ias" class="nav-link" data-scroll-target="#asi-dsi-csi-ias"><span class="header-section-number">11.3</span> Análisis, diseño, construcción e implantación y aceptación del Sistema de Información</a>
   <ul>
   <li><a href="#gc-1" id="toc-gc-1" class="nav-link" data-scroll-target="#gc-1"><span class="header-section-number">11.3.1</span> Actividad GC 1: Identificación y registro de Productos</a>
   <ul class="collapse">
-  <li><a href="#gc-1-1" id="toc-gc-1-1" class="nav-link" data-scroll-target="#gc-1-1"><span class="header-section-number">11.3.1.1</span> Tarea GC 1.1: Identificación y Registro de los ##### Productos {.unnumbered .unlisted} de los Procesos en el Sistema de Gestión de la Configuración</a></li>
+  <li><a href="#gc-1-1" id="toc-gc-1-1" class="nav-link" data-scroll-target="#gc-1-1"><span class="header-section-number">11.3.1.1</span> Tarea GC 1.1: Identificación y Registro de los Productos de los Procesos en el Sistema de Gestión de la Configuración</a></li>
   </ul></li>
   <li><a href="#gc-2" id="toc-gc-2" class="nav-link" data-scroll-target="#gc-2"><span class="header-section-number">11.3.2</span> Actividad GC 2: Identificación y registro del Producto Global</a></li>
   <li><a href="#gc-2-1" id="toc-gc-2-1" class="nav-link" data-scroll-target="#gc-2-1"><span class="header-section-number">11.3.3</span> Tarea GC 2.1: Registro en el Sistema de Gestión de la Configuración del Producto Global de Proceso</a></li>
@@ -315,9 +304,9 @@ ul.task-list li input[type="checkbox"] {
 <div class="toc-actions"><ul><li><a href="https://github.com/pmgallardo/metrica-v3/edit/main/02-interfaces/03-gc.qmd" class="toc-action"><i class="bi bi-github"></i>Editar esta página</a></li><li><a href="https://github.com/pmgallardo/metrica-v3/issues/new" class="toc-action"><i class="bi empty"></i>Informar sobre problema</a></li><li><a href="https://github.com/pmgallardo/metrica-v3/blob/main/02-interfaces/03-gc.qmd" class="toc-action"><i class="bi empty"></i>Ver el código</a></li></ul></div></nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content" id="quarto-document-content" tabindex="-1">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../02-interfaces/01-cal.html">Interfaces</a></li><li class="breadcrumb-item"><a href="../02-interfaces/03-gc.html"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Gestión de Configuración</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="Hilo de Ariadna"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../02-interfaces/01-cal.html">Interfaces</a></li><li class="breadcrumb-item"><a href="../02-interfaces/03-gc.html"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Gestión de Configuración</span></a></li></ol></nav>
 <div class="quarto-title">
 <h1 class="title"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Gestión de Configuración</span></h1>
 </div>
@@ -337,7 +326,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Fecha de última modificación</div>
     <div class="quarto-title-meta-contents">
-      <p class="date-modified">31/10/2026</p>
+      <p class="date-modified">02/11/2026</p>
     </div>
   </div>
     
@@ -362,26 +351,28 @@ ul.task-list li input[type="checkbox"] {
 <li>Información relacionada con Análisis, Diseño, Construcción, Implantación y Aceptación del Sistemas de Información, como productos globales que integran todos los productos que lo componen.</li>
 <li>Información de un producto en concreto, su versión, estado, traza de su evolución y cualquier dato que el plan de gestión de la configuración determine de interés (por ejemplo, participantes en la elaboración o modificación del producto).</li>
 </ul>
-<p>Actividades</p>
+<section id="actividades" class="level3 unnumbered unlisted">
+<h3 class="unnumbered unlisted anchored" data-anchor-id="actividades">Actividades</h3>
 <ol type="1">
-<li>Estudio de Viabilidad del Sistema
+<li><a href="#evs">Estudio de Viabilidad del Sistema</a>
 <ol type="1">
-<li>Actividad EVS-GC 1: Definición de los Requisitos de Gestión de Configuración</li>
-<li>Actividad EVS-GC 2: Establecimiento del Plan de Gestión de la Configuración</li>
+<li><a href="#evs-gc-1">Actividad EVS-GC 1</a>: Definición de los Requisitos de Gestión de Configuración</li>
+<li><a href="#evs-gc-2">Actividad EVS-GC 2</a>: Establecimiento del Plan de Gestión de la Configuración</li>
 </ol></li>
-<li>ANÁLISIS, DISEÑO, CONSTRUCCIÓN E IMPLANTACION Y ACEPTACIÓN DEL SISTEMA DE INFORMACIÓN
+<li><a href="#asi-dsi-csi-ias">Análisis, Diseño, Construcción e Implantación y Aceptación del Sistema de Información</a>
 <ol type="1">
-<li>Actividad GC 1: Identificación y Registro de Productos</li>
-<li>Actividad GC 2: Idetificación y Registro del Producto Global</li>
+<li><a href="#gc-1">Actividad GC 1</a>: Identificación y Registro de Productos</li>
+<li><a href="#gc-2">Actividad GC 2</a>: Idetificación y Registro del Producto Global</li>
 </ol></li>
-<li>MANTENIMIENTO DEL SISTEMA DE INFORMACIÓN
+<li><a href="../01-principal/01-introduccion.html#msi">Mantenimiento del Sistema de Información</a>
 <ol type="1">
-<li>Actividad MSI-GC 1: Registro del Cambio en el Sistema de Gestión de la Configuración</li>
+<li><a href="#msi-gc-1">Actividad MSI-GC 1</a>: Registro del Cambio en el Sistema de Gestión de la Configuración</li>
 </ol></li>
 </ol>
 </section>
-<section id="estudio-de-viabilidad-del-sistema" class="level2" data-number="11.2">
-<h2 data-number="11.2" class="anchored" data-anchor-id="estudio-de-viabilidad-del-sistema"><span class="header-section-number">11.2</span> Estudio de Viabilidad del Sistema</h2>
+</section>
+<section id="evs" class="level2" data-number="11.2">
+<h2 data-number="11.2" class="anchored" data-anchor-id="evs"><span class="header-section-number">11.2</span> Estudio de Viabilidad del Sistema</h2>
 <p>Durante el Estudio de Viabilidad del Sistema (EVS) se realizan las actividades de la interfaz de Gestión de Configuración que permiten obtener el Plan de Gestión de Configuración para el sistema de información. Con este objetivo se definen en primer término los requisitos de gestión de configuración del sistema de información, los cuales deberán tenerse en cuenta a la hora de establecer el plan de Gestión de Configuración para la Solución propuesta (EVS 6.2).</p>
 <p>En el siguiente gráfico se muestra la relación entre las actividades del proceso Estudio de Viabilidad del Sistema (EVS) y las de la Gestión de la Configuración.</p>
 <p><img src="../images/gescon-evs.jpg" class="img-fluid"></p>
@@ -552,8 +543,8 @@ ul.task-list li input[type="checkbox"] {
 </section>
 </section>
 </section>
-<section id="análisis-diseño-construcción-e-implantación-y-aceptación-del-sistema-de-información" class="level2" data-number="11.3">
-<h2 data-number="11.3" class="anchored" data-anchor-id="análisis-diseño-construcción-e-implantación-y-aceptación-del-sistema-de-información"><span class="header-section-number">11.3</span> Análisis, diseño, construcción e implantación y aceptación del Sistema de Información</h2>
+<section id="asi-dsi-csi-ias" class="level2" data-number="11.3">
+<h2 data-number="11.3" class="anchored" data-anchor-id="asi-dsi-csi-ias"><span class="header-section-number">11.3</span> Análisis, diseño, construcción e implantación y aceptación del Sistema de Información</h2>
 <p>Durante los procesos de Análisis, Diseño, Construcción e Implantación del Sistema de Información se realizan las actividades de identificación y registro previstas en el Plan de Gestión de Configuración, consiguiendo así mantener la consistencia entre las distintas versiones de los productos de desarrollo.</p>
 <p>Las actividades de identificación y registro interactúan continuamente con las propias actividades de MÉTRICA Versión 3, controlando y gestionando sus productos y estableciendo versiones de los mismos hasta que el producto se encuentra correctamente finalizado y aceptado. Según se van generando los productos a lo largo de las actividades de un proceso, se registran en el sistema de gestión de la configuración con el estado correspondiente.</p>
 <p>En el Plan de Gestión de Configuración se han establecido, para cada uno de los procesos de desarrollo, los productos sobre los que se va a aplicar la gestión de configuración. Además, también se considera producto a mantener en el sistema de gestión de configuración el producto global resultante en cada proceso.</p>
@@ -597,7 +588,7 @@ ul.task-list li input[type="checkbox"] {
 </tbody>
 </table>
 <section id="gc-1-1" class="level4" data-number="11.3.1.1">
-<h4 data-number="11.3.1.1" class="anchored" data-anchor-id="gc-1-1"><span class="header-section-number">11.3.1.1</span> Tarea GC 1.1: Identificación y Registro de los ##### Productos {.unnumbered .unlisted} de los Procesos en el Sistema de Gestión de la Configuración</h4>
+<h4 data-number="11.3.1.1" class="anchored" data-anchor-id="gc-1-1"><span class="header-section-number">11.3.1.1</span> Tarea GC 1.1: Identificación y Registro de los Productos de los Procesos en el Sistema de Gestión de la Configuración</h4>
 <p>Cada producto, en función de su naturaleza, va pasando por diferentes estados en los debe superar varias revisiones o aprobaciones. El conjunto de estados por los que va pasando un producto se registra en el sistema de gestión de configuración, según vaya evolucionando el mismo, hasta alcanzar el estado de producto final aprobado.</p>
 <p>En el momento en que un participante genere un producto, seleccionado como elemento de configuración en el Plan de Gestión de Configuración, deberá identificarlo y registrarlo en el sistema de gestión de la configuración. Del mismo modo, cuando modifique un producto que ya está registrado en el sistema de gestión de configuración, deberá incluirlo en el sistema de gestión de configuración indicando su versión y estado.</p>
 <section id="productos-3" class="level5 unnumbered unlisted">
@@ -705,8 +696,8 @@ ul.task-list li input[type="checkbox"] {
 </section>
 </section>
 </section>
-<section id="mantenimiento-del-sistema-de-información" class="level2" data-number="11.4">
-<h2 data-number="11.4" class="anchored" data-anchor-id="mantenimiento-del-sistema-de-información"><span class="header-section-number">11.4</span> Mantenimiento del Sistema de Información</h2>
+<section id="mantenimiento-del-sistema-de-información" class="level2 msi" data-number="11.4">
+<h2 class="msi anchored" data-number="11.4" data-anchor-id="mantenimiento-del-sistema-de-información"><span class="header-section-number">11.4</span> Mantenimiento del Sistema de Información</h2>
 <p>El objetivo de la interfaz de gestión de configuración con el proceso de Mantenimiento del Sistema de Información, es conservar la integridad del sistema de información cuando se producen cambios en el mismo, ya sea por la realización de mantenimiento correctivo o evolutivo. En el caso del mantenimiento adaptativo y perfectivo el objetivo es el mismo, aunque estos tipos de mantenimiento quedan fuera del ámbito de MÉTRICA Versión 3, por lo que no van a ser tratados en este documento.</p>
 <p>El beneficio de una buena gestión de configuración en el proceso de mantenimiento es muy elevado, teniendo en cuenta la reducción del tiempo de localización de los problemas, la reproducción de errores y el control y seguimiento de los estados por los que va pasando la petición de mantenimiento. De esta manera se puede conocer en cada momento la situación en la que se encuentra cada cambio en particular y el sistema de información en general.</p>
 <p>La interfaz de gestión de configuración en el proceso de mantenimiento es fundamental, al realizarse el control del cambio desde que se produce la notificación del mismo o de la incidencia, momento en el que se registra la solicitud de mantenimiento en el sistema de gestión de la configuración, hasta que la solución es aceptada por el usuario.</p>
@@ -921,7 +912,8 @@ ul.task-list li input[type="checkbox"] {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
       // Inspect non-navigation links and adorn them if external
-     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      window.quartoDecorateExternalLinks = function (root) {
+     var links = (root || window.document).querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
       for (var i=0; i<links.length; i++) {
         const link = links[i];
         if (!isInternal(link.href)) {
@@ -930,8 +922,69 @@ ul.task-list li input[type="checkbox"] {
           if (link.dataset.originalHref !== undefined) {
             link.href = link.dataset.originalHref;
           }
+          if (!link.classList.contains('no-external-icon')) {
+          }
         }
       }
+      };
+      window.quartoDecorateExternalLinks(window.document);
+    // Esc closes the popup (WCAG 1.4.13) and focus leaving both trigger and
+    // popup closes it (WCAG 2.4.11); tippy handles neither for interactive popups.
+    const hideOnEscAndFocusOut = {
+      name: 'hideOnEscAndFocusOut',
+      defaultValue: true,
+      fn(instance) {
+        const dismiss = () => {
+          // A show scheduled by the trigger delay would otherwise reopen it
+          instance.clearDelayTimeouts();
+          instance.hide();
+        };
+        const onKeyDown = (event) => {
+          if (event.key !== 'Escape') {
+            return;
+          }
+          // Keep Esc from also reaching page handlers (e.g. reveal.js overview),
+          // except an open reveal.js slide menu, which Esc should close too.
+          // The menu handles keys only when its keyboard option is on.
+          const menuHandlesEsc = window.Reveal?.getPlugin?.('menu')?.isOpen() &&
+            window.Reveal.getConfig().menu?.keyboard !== false;
+          if (!menuHandlesEsc) {
+            event.stopPropagation();
+          }
+          if (instance.popper.contains(window.document.activeElement)) {
+            // Disabled while refocusing so the focus trigger does not reopen it
+            instance.disable();
+            instance.reference.focus();
+            instance.enable();
+          }
+          dismiss();
+        };
+        const onFocusOut = (event) => {
+          const target = event.relatedTarget;
+          if (target && !instance.reference.contains(target) &&
+              !instance.popper.contains(target)) {
+            dismiss();
+          }
+        };
+        // On the trigger too: a click trigger (code-annotations: select) has no
+        // blur handling. Attached for the instance's lifetime so leaving the
+        // trigger also cancels a show still pending on the trigger delay.
+        instance.reference.addEventListener('focusout', onFocusOut);
+        return {
+          onShow() {
+            window.document.addEventListener('keydown', onKeyDown, true);
+            instance.popper.addEventListener('focusout', onFocusOut);
+          },
+          onHide() {
+            window.document.removeEventListener('keydown', onKeyDown, true);
+            instance.popper.removeEventListener('focusout', onFocusOut);
+          },
+          onDestroy() {
+            instance.reference.removeEventListener('focusout', onFocusOut);
+          },
+        };
+      },
+    };
     function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
       const config = {
         allowHTML: true,
@@ -945,6 +998,7 @@ ul.task-list li input[type="checkbox"] {
         interactiveBorder: 10,
         theme: 'quarto',
         placement: 'bottom-start',
+        plugins: [hideOnEscAndFocusOut],
       };
       if (contentFn) {
         config.content = contentFn;
@@ -1107,44 +1161,54 @@ ul.task-list li input[type="checkbox"] {
           const lineIds = lines.map((line) => {
             return targetCell + "-" + line;
           })
-          let top = null;
-          let height = null;
-          let parent = null;
+          // Each band is positioned against its own containing block, which is
+          // not the offsetParent of the lines, so place it from client rects.
+          const placeBand = (band, firstEl, lastEl, codeBlock) => {
+            const container = band.offsetParent;
+            if (container === null) {
+              return;
+            }
+            const containerRect = container.getBoundingClientRect();
+            // Reveal.js scales slides with a transform, so convert client
+            // pixels back to the CSS pixels of the container.
+            const scale = containerRect.height / container.offsetHeight || 1;
+            const firstRect = firstEl.getBoundingClientRect();
+            const lastRect = lastEl.getBoundingClientRect();
+            const top = (firstRect.top - containerRect.top) / scale - container.clientTop + container.scrollTop;
+            const height = (lastRect.bottom - firstRect.top) / scale;
+            band.style.top = top - 2 + "px";
+            band.style.height = height + 4 + "px";
+            if (codeBlock) {
+              // Without the copy button wrapper, the containing block is wider
+              // than the code block, so span the code block explicitly.
+              const blockRect = codeBlock.getBoundingClientRect();
+              band.style.left = (blockRect.left - containerRect.left) / scale - container.clientLeft + container.scrollLeft + "px";
+              band.style.width = blockRect.width / scale + "px";
+            }
+          };
           if (lineIds.length > 0) {
-              //compute the position of the single el (top and bottom and make a div)
-              const el = window.document.getElementById(lineIds[0]);
-              top = el.offsetTop;
-              height = el.offsetHeight;
-              parent = el.parentElement.parentElement;
-            if (lineIds.length > 1) {
-              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
-              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
-              height = bottom - top;
+            const el = window.document.getElementById(lineIds[0]);
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const parent = el.parentElement.parentElement;
+            // cook up a div (if necessary) and position it
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
             }
-            if (top !== null && height !== null && parent !== null) {
-              // cook up a div (if necessary) and position it 
-              let div = window.document.getElementById("code-annotation-line-highlight");
-              if (div === null) {
-                div = window.document.createElement("div");
-                div.setAttribute("id", "code-annotation-line-highlight");
-                div.style.position = 'absolute';
-                parent.appendChild(div);
-              }
-              div.style.top = top - 2 + "px";
-              div.style.height = height + 4 + "px";
-              div.style.left = 0;
-              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
-              if (gutterDiv === null) {
-                gutterDiv = window.document.createElement("div");
-                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
-                gutterDiv.style.position = 'absolute';
-                const codeCell = window.document.getElementById(targetCell);
-                const gutter = codeCell.querySelector('.code-annotation-gutter');
-                gutter.appendChild(gutterDiv);
-              }
-              gutterDiv.style.top = top - 2 + "px";
-              gutterDiv.style.height = height + 4 + "px";
+            placeBand(div, el, lastEl, parent.closest("div.sourceCode") || parent);
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
             }
+            placeBand(gutterDiv, el, lastEl);
             selectedAnnoteEl = annoteEl;
           }
         };
@@ -1243,7 +1307,10 @@ ul.task-list li input[type="checkbox"] {
     }
   });
   </script>
-<nav class="page-navigation">
+  <script type="application/javascript">
+  window.quartoScrollableRegionsLabels = {"code":"Código desplazable","output":"Salida desplazable"};
+  </script>
+<nav class="page-navigation" aria-label="Página">
   <div class="nav-page nav-page-previous">
       <a href="../02-interfaces/02-seg.html" class="pagination-link" aria-label="Seguridad">
         <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Seguridad</span></span>
