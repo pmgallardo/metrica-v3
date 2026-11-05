@@ -4,7 +4,7 @@
 
 El objetivo de la interfaz de seguridad de MÉTRICA Versión 3 es incorporar en los sistemas de información mecanismos de seguridad adicionales a los que se proponen en la propia metodología, asegurando el desarrollo de cualquier tipo de sistema a lo largo de los procesos que se realicen para su obtención.
 
-La seguridad del sistema de información ya se considera en MÉTRICA Versión 3 como requisito funcional (ASI 2.1), es decir previamente al desarrollo del mismo. La interfaz de Seguridad hace posible incorporar durante la fase de desarrollo las funciones y mecanismos que refuerzan la seguridad del nuevo sistema y del propio proceso de desarrollo, asegurando su consistencia y seguridad.
+La seguridad del sistema de información ya se considera en MÉTRICA Versión 3 como requisito funcional ([ASI 2.1](../01-principal/04-asi.qmd#2-1)), es decir previamente al desarrollo del mismo. La interfaz de Seguridad hace posible incorporar durante la fase de desarrollo las funciones y mecanismos que refuerzan la seguridad del nuevo sistema y del propio proceso de desarrollo, asegurando su consistencia y seguridad.
 
 El análisis de los riesgos constituye una pieza fundamental en el diseño y desarrollo de sistemas de información seguros. Si bien los riesgos que afectan a un sistema de información son de distinta índole: naturales (inundaciones, incendios, etc.) o lógicos (fallos propios, ataques externos, virus, etc.) son estos últimos los contemplados en la interfaz de Seguridad de MÉTRICA Versión 3.
 
@@ -478,7 +478,7 @@ El Responsable de Seguridad analiza la necesidad de supervisar la seguridad (niv
 
 ###### De entrada {.unnumbered .unlisted}
 
-* Catálogo de objetivos del EVS (EVS 1.1)
+* Catálogo de objetivos del EVS ([EVS 1.1](../01-principal/03-evs.qmd#1-1))
 * Plan de trabajo (EVS 1.3)
 * Seguridad para el Plan de Acción (PSI-SEG 3.1)
 
@@ -895,7 +895,7 @@ El Equipo de Seguridad estudia la necesidad de supervisar la seguridad (niveles 
 
 ###### De entrada {.unnumbered .unlisted}
 
-* Catálogo de Requisitos (ASI 1.1)
+* Catálogo de Requisitos ([ASI 1.1](../01-principal/04-asi.qmd#1-1))
 * Planificación detallada (GPI 2)
 
 ###### De salida {.unnumbered .unlisted}
@@ -968,7 +968,7 @@ Las funciones y mecanismos adicionales de seguridad definidos en esta actividad 
 ###### De entrada {.unnumbered .unlisted}
 
 * Seguridad de la Solución Propuesta (EVS-SEG 5.1)
-* Catálogo de Requisitos (ASI 2.1)
+* Catálogo de Requisitos ([ASI 2.1](../01-principal/04-asi.qmd#2-1))
 
 ###### De salida {.unnumbered .unlisted}
 
@@ -1032,7 +1032,7 @@ Partiendo del plan de pruebas del Sistema de Información, se incluirán en las 
 
 ###### De entrada {.unnumbered .unlisted}
 
-* Plan de Pruebas (ASI 10.3)
+* Plan de Pruebas ([ASI 10.3](../01-principal/04-asi.qmd#10-3))
 * Funciones y Mecanismos de Seguridad (ASI-SEG 2.1)
 
 ###### De salida {.unnumbered .unlisted}
@@ -1134,7 +1134,7 @@ Partiendo del plan de pruebas del Sistema de Información, se incluirán en las 
 
 Durante este proceso cobran especial relevancia las actividades que tienden a velar por la seguridad del sistema de información, diseñándose las funciones de seguridad que controlarán, minimizarán o eliminarán los riesgos intrínsecos al sistema de información. Es también importante para la seguridad la determinación del entorno tecnológico, ya que sobre él se deberán incorporar las funciones y mecanismos de seguridad.
 
-En el siguiente gráfico se aprecia la relación entre las actividades del proceso Diseño del Sistema de Información (DSI) y las de la interfaz de Seguridad.
+En el siguiente gráfico se aprecia la relación entre las actividades del proceso [Diseño del Sistema de Información (DSI)](../01-principal/05-dsi.qmd) y las de la interfaz de Seguridad.
 
 ![](../images/seg-dsi.jpg)
 
@@ -1236,8 +1236,8 @@ El Equipo de Seguridad estudia los riesgos que plantea la conjunción del entorn
 
 ###### De entrada {.unnumbered .unlisted}
 
-* Diseño de la Arquitectura del Sistema (DSI 1.5)
-* Entorno Tecnológico del Sistema (DSI 1.6)
+* Diseño de la Arquitectura del Sistema ([DSI 1.5](../01-principal/05-dsi.qmd#1-5))
+* Entorno Tecnológico del Sistema ([DSI 1.6](../01-principal/05-dsi.qmd#1-6))
 
 ###### De salida {.unnumbered .unlisted}
 
@@ -1287,7 +1287,7 @@ El Equipo de Seguridad estudia las condiciones que debe cumplir el entorno de Co
 
 ###### De entrada {.unnumbered .unlisted}
 
-* Especificaciones de Construcción del Sistema de Información (DSI 8.4)
+* Especificaciones de Construcción del Sistema de Información ([DSI 8.4](../01-principal/05-dsi.qmd#8-4))
 * Requisitos de Seguridad del Entorno Tecnológico (DSI-SEG 2.1)
 
 ###### De salida {.unnumbered .unlisted}
@@ -1346,8 +1346,8 @@ El Equipo de Seguridad debe realizar el diseño específico de las pruebas de se
 * Plan de Pruebas (ASI-SEG 4.1)
 * Funciones y Mecanismos de Seguridad (ASI-SEG 2.1)
 * Requisitos de Seguridad del Entorno Tecnológico (DSI-SEG 2.1)
-* Procedimientos de Seguridad y Control de acceso (DSI 1.7)
-* Plan de Pruebas (DSI 10.1)
+* Procedimientos de Seguridad y Control de acceso ([DSI 1.7](../01-principal/05-dsi.qmd#1-7))
+* Plan de Pruebas ([DSI 10.1](../01-principal/05-dsi.qmd#10-1))
 
 ###### De salida {.unnumbered .unlisted}
 

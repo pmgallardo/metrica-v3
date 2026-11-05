@@ -23,16 +23,16 @@ La información que puede solicitarse al sistema de gestión de la configuració
 
 ### Actividades {.unnumbered .unlisted}
 
-1. [Estudio de Viabilidad del Sistema](#evs)
+1. [Estudio de Viabilidad del Sistema](#evs-gc)
    1. [Actividad EVS-GC 1](#evs-gc-1): Definición de los Requisitos de Gestión de Configuración
    2. [Actividad EVS-GC 2](#evs-gc-2): Establecimiento del Plan de Gestión de la Configuración
-2. [Análisis, Diseño, Construcción e Implantación y Aceptación del Sistema de Información](#asi-dsi-csi-ias)
+2. [Análisis, Diseño, Construcción e Implantación y Aceptación del Sistema de Información](#gc)
    1. [Actividad GC 1](#gc-1): Identificación y Registro de Productos
    2. [Actividad GC 2](#gc-2): Idetificación y Registro del Producto Global
-3. [Mantenimiento del Sistema de Información](#msi)
+3. [Mantenimiento del Sistema de Información](#msi-gc)
    1. [Actividad MSI-GC 1](#msi-gc-1): Registro del Cambio en el Sistema de Gestión de la Configuración
 
-## Estudio de Viabilidad del Sistema {#evs}
+## Estudio de Viabilidad del Sistema {#evs-gc}
 
 Durante el Estudio de Viabilidad del Sistema (EVS) se realizan las actividades de la interfaz de Gestión de Configuración que permiten obtener el Plan de Gestión de Configuración para el sistema de información. Con este objetivo se definen en primer término los requisitos de gestión de configuración del sistema de información, los cuales deberán tenerse en cuenta a la hora de establecer el plan de Gestión de Configuración para la Solución propuesta (EVS 6.2).
 
@@ -188,7 +188,7 @@ En esta tarea se define el entorno tecnológico de soporte a la gestión de la c
 * Responsable de Gestión de Configuración
 * Equipo de Desarrollo
 
-## Análisis, diseño, construcción e implantación y aceptación del Sistema de Información {#asi-dsi-csi-ias}
+## Análisis, diseño, construcción e implantación y aceptación del Sistema de Información {#gc}
 
 Durante los procesos de Análisis, Diseño, Construcción e Implantación del Sistema de Información se realizan las actividades de identificación y registro previstas en el Plan de Gestión de Configuración, consiguiendo así mantener la consistencia entre las distintas versiones de los productos de desarrollo.
 
@@ -305,7 +305,7 @@ En el momento en que un participante genere un producto, seleccionado como eleme
 
 El objeto de esta tarea es identificar y registrar en el sistema de gestión de la configuración los productos globales que se obtienen a lo largo del desarrollo de los procesos principales.
 
-Se realiza al finalizar los procesos Análisis del Sistema de Información (ASI), Diseño del Sistema de Información (DSI), Construcción del Sistema de Información (CSI) e Implantación y Aceptación del Sistema (IAS), y en cada momento se registrará el producto correspondiente: Especificación de Requisitos Software, Diseño Detallado del Sistema, Sistema de Información y Sistema de Información Implantado.
+Se realiza al finalizar los procesos [Análisis del Sistema de Información (ASI)](../01-principal/04-asi.qmd), [Diseño del Sistema de Información (DSI)](../01-principal/05-dsi.qmd), [Construcción del Sistema de Información (CSI)](../01-principal/06-csi.qmd) e [Implantación y Aceptación del Sistema (IAS)](../01-principal/07-ias.qmd), y en cada momento se registrará el producto correspondiente: Especificación de Requisitos Software, Diseño Detallado del Sistema, Sistema de Información y Sistema de Información Implantado.
 
 Una vez que el sistema de información está implantado y aceptado, antes de su puesta en operación real se registra el paso a producción de la versión de dicho sistema de cara a facilitar su posterior mantenimiento.
 
@@ -340,7 +340,7 @@ Para realizar el análisis de la petición en MSI 2 es conveniente solicitar inf
 
 Una vez que ha sido aceptada la propuesta de solución se realiza un registro del cambio en el sistema de gestión de configuración con la información obtenida del mismo relativa a las versiones de los sistemas de información y productos afectados por el cambio. Este registro constituye el nexo de unión entre la petición o peticiones de mantenimiento y los cambios que se van a realizar sobre los sistemas de información afectados. Recoge datos referentes a las versiones de los sistemas de información de los que se parte y cuáles van a ser las nuevas versiones generadas, así como las versiones de los productos concretos afectados por el cambio y cuál será la nueva versión de dichos productos. También debe registrarse en el sistema de gestión de la configuración la nueva versión de los sistemas de información y de los productos según el criterio de versionado establecido en el plan de gestión de la configuración.
 
-A partir de este momento, se realizan las actividades de los procesos Análisis del Sistema de Información (ASI), Diseño del Sistema de Información (DSI), Construcción del Sistema de Información (CSI) e Implantación y Aceptación del Sistema (IAS) que se determinen en la actividad Registro del Cambio en el Sistema de Gestión de la Configuración (MSI-GC 1), así como las actividades de interfaz de la gestión de configuración definidas en los procesos de desarrollo.
+A partir de este momento, se realizan las actividades de los procesos [Análisis del Sistema de Información (ASI)](../01-principal/04-asi.qmd), [Diseño del Sistema de Información (DSI)](../01-principal/05-dsi.qmd), [Construcción del Sistema de Información (CSI)](../01-principal/06-csi.qmd) e [Implantación y Aceptación del Sistema (IAS)](../01-principal/07-ias.qmd) que se determinen en la actividad Registro del Cambio en el Sistema de Gestión de la Configuración (MSI-GC 1), así como las actividades de interfaz de la gestión de configuración definidas en los procesos de desarrollo.
 
 Una vez que el cambio ha sido realizado y aceptado se registra dicha aceptación en el sistema de gestión de la configuración.
 

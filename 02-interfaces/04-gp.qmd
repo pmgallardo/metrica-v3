@@ -806,9 +806,9 @@ Toda incidencia producida durante el desarrollo del proyecto debe reflejarse en 
 
 ### Gestión de cambios en los requisitos
 
-Los cambios de requisitos constituyen el último recurso al que acudir para resolver un problema, y no deberían presentarse ya que en MÉTRICA Versión 3 los usuarios intervienen desde el principio del proyecto, y dan su aprobación a la especificación de requisitos establecida en el Análisis del Sistema de Información (ASI 9). No obstante, si durante el desarrollo se solicitan cambios de requisitos deben plantearse al Comité de Seguimiento. La inclusión de las modificaciones pertinentes se someterá a la aprobación del Comité de Seguimiento, previo análisis del impacto en la planificación y el coste asociado. Los acuerdos alcanzados se registrarán mediante actas.
+Los cambios de requisitos constituyen el último recurso al que acudir para resolver un problema, y no deberían presentarse ya que en MÉTRICA Versión 3 los usuarios intervienen desde el principio del proyecto, y dan su aprobación a la especificación de requisitos establecida en el Análisis del Sistema de Información ([ASI 9](../01-principal/04-asi.qmd#9)). No obstante, si durante el desarrollo se solicitan cambios de requisitos deben plantearse al Comité de Seguimiento. La inclusión de las modificaciones pertinentes se someterá a la aprobación del Comité de Seguimiento, previo análisis del impacto en la planificación y el coste asociado. Los acuerdos alcanzados se registrarán mediante actas.
 
-La Gestión del Proyecto de desarrollo precisa de un mecanismo formal que analice el tratamiento que se aplicará en el caso de que surjan variaciones en los requisitos o nuevos requerimientos durante el desarrollo del sistema, con posterioridad al proceso de Análisis del Sistema de Información (ASI).
+La Gestión del Proyecto de desarrollo precisa de un mecanismo formal que analice el tratamiento que se aplicará en el caso de que surjan variaciones en los requisitos o nuevos requerimientos durante el desarrollo del sistema, con posterioridad al proceso de [Análisis del Sistema de Información (ASI)](../01-principal/04-asi.qmd).
 
 Uno de los propósitos del establecimiento de procedimientos para la Gestión de Cambios en los Requisitos es el de asegurar que, cuando existan cambios en los requerimientos, su impacto en el proyecto pueda cuantificarse y acordarse con el Cliente o Usuario en cuanto a plazo, esfuerzo y compensación económica si corresponde.
 
@@ -1613,8 +1613,8 @@ La aceptación interna consiste en la verificación por el Equipo del Proyecto d
 
 En MÉTRICA Versión 3, la aceptación por parte del Cliente se realiza, de acuerdo a la estructura de proyecto definida y los hitos establecidos, al menos en las actividades de:
 
-* Aprobación del Análisis del Sistema de Información (ASI 11).
-* Aprobación del Diseño del Sistema de Información (DSI 12).
+* Aprobación del Análisis del Sistema de Información ([ASI 11](../01-principal/04-asi.qmd#11)).
+* Aprobación del Diseño del Sistema de Información ([DSI 12](../01-principal/05-dsi.qmd#12)).
 * Aprobación del Sistema de Información (CSI 9).
 * Presentación y Aprobación del Sistema de Información (IAS 9).
 * Mantenimiento del Sistema de Información (MSI 4).

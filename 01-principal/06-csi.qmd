@@ -10,23 +10,23 @@ Asimismo, se define la formación de usuario final y, si procede, se construyen 
 
 Al ser MÉTRICA Versión 3 una metodología que cubre tanto desarrollos estructurados como orientados a objetos, las actividades de ambas aproximaciones están integradas en una estructura común.
 
-El producto Especificaciones de Construcción del Sistema de Información, obtenido en la actividad de Generación de Especificaciones de Construcción (DSI 8), es la base para la construcción del sistema de información. En dicho producto se recoge la información relativa al entorno de construcción del sistema de información, la especificación detallada de los componentes y la descripción de la estructura física de datos, tanto bases de datos como sistemas de ficheros. Opcionalmente, incluye un plan de integración del sistema de información, en el que se especifica la secuencia y organización de la construcción de los distintos componentes.
+El producto Especificaciones de Construcción del Sistema de Información, obtenido en la actividad de Generación de Especificaciones de Construcción ([DSI 8](05-dsi.qmd#8)), es la base para la construcción del sistema de información. En dicho producto se recoge la información relativa al entorno de construcción del sistema de información, la especificación detallada de los componentes y la descripción de la estructura física de datos, tanto bases de datos como sistemas de ficheros. Opcionalmente, incluye un plan de integración del sistema de información, en el que se especifica la secuencia y organización de la construcción de los distintos componentes.
 
-En la actividad Preparación del Entorno de Generación y Construcción (CSI 1), se asegura la disponibilidad de la infraestructura necesaria para la generación del código de los componentes y procedimientos del sistema de información.
+En la actividad Preparación del Entorno de Generación y Construcción ([CSI 1](#csi-1)), se asegura la disponibilidad de la infraestructura necesaria para la generación del código de los componentes y procedimientos del sistema de información.
 
 Una vez configurado el entorno de construcción, se realiza la codificación y las pruebas de los distintos componentes que conforman el sistema de información, en las actividades:
 
-- Generación del Código de los Componentes y Procedimientos (CSI 2), que se hace según las especificaciones de construcción del sistema de información, y conforme al plan de integración del sistema de información.
-- Ejecución de las Pruebas Unitarias (CSI 3), dónde se llevan a cabo las verificaciones definidas en el plan de pruebas para cada uno de los componentes.
-- Ejecución de las Pruebas de Integración (CSI 4), que incluye la ejecución de las verificaciones asociadas a los subsistemas y componentes, a partir de los componentes verificados individualmente, y la evaluación de los resultados.
+- Generación del Código de los Componentes y Procedimientos ([CSI 2](#csi-2)), que se hace según las especificaciones de construcción del sistema de información, y conforme al plan de integración del sistema de información.
+- Ejecución de las Pruebas Unitarias ([CSI 3](#csi-3)), dónde se llevan a cabo las verificaciones definidas en el plan de pruebas para cada uno de los componentes.
+- Ejecución de las Pruebas de Integración ([CSI 4](#csi-4)), que incluye la ejecución de las verificaciones asociadas a los subsistemas y componentes, a partir de los componentes verificados individualmente, y la evaluación de los resultados.
 
-Una vez construido el sistema de información y realizadas las verificaciones correspondientes, se lleva a cabo la integración final del sistema de información en la actividad Ejecución de las Pruebas del Sistema (CSI 5), comprobando tanto las interfaces entre subsistemas y sistemas externos como los requisitos, de acuerdo a las verificaciones establecidas en el plan de pruebas para el nivel de pruebas del sistema.
+Una vez construido el sistema de información y realizadas las verificaciones correspondientes, se lleva a cabo la integración final del sistema de información en la actividad Ejecución de las Pruebas del Sistema ([CSI 5](#csi-5)), comprobando tanto las interfaces entre subsistemas y sistemas externos como los requisitos, de acuerdo a las verificaciones establecidas en el plan de pruebas para el nivel de pruebas del sistema.
 
-En la actividad Elaboración de los Manuales de Usuario (CSI 6), se genera la documentación de usuario final o explotación, conforme a los requisitos definidos en el proceso Diseño del Sistema de Información (DSI).
+En la actividad Elaboración de los Manuales de Usuario ([CSI 6](#csi-6)), se genera la documentación de usuario final o explotación, conforme a los requisitos definidos en el proceso [Diseño del Sistema de Información (DSI)](05-dsi.qmd).
 
-La formación necesaria para que los usuarios finales sean capaces de utilizar el sistema de forma satisfactoria se especifica en la actividad Definición de la Formación de Usuarios Finales (CSI 7).
+La formación necesaria para que los usuarios finales sean capaces de utilizar el sistema de forma satisfactoria se especifica en la actividad Definición de la Formación de Usuarios Finales ([CSI 7](#csi-7)).
 
-Si se ha establecido la necesidad de realizar una migración de datos, la construcción y pruebas de los componentes y procedimientos relativos a dicha migración y a la carga inicial de datos se realiza en la actividad Construcción de los Componentes y Procedimientos de Migración y Carga Inicial de Datos (CSI 8).
+Si se ha establecido la necesidad de realizar una migración de datos, la construcción y pruebas de los componentes y procedimientos relativos a dicha migración y a la carga inicial de datos se realiza en la actividad Construcción de los Componentes y Procedimientos de Migración y Carga Inicial de Datos ([CSI 8](#csi-8)).
 
 ![](../images/csi-actividades.jpg)
 
@@ -34,11 +34,11 @@ Construcción del sistema de información
 
 ![Construcción del sistema de información](../images/csi-plan.jpg)
 
-### Actividad CSI 1: Preparación del Entorno de Generación y Construcción
+### Actividad CSI 1: Preparación del Entorno de Generación y Construcción {#csi-1}
 
 El objetivo de esta actividad es asegurar la disponibilidad de todos los medios y facilidades para que se pueda llevar a cabo la construcción del sistema de información. Entre estos medios, cabe destacar la preparación de los puestos de trabajo, equipos físicos y lógicos, gestores de bases de datos, bibliotecas de programas, herramientas de generación de código, bases de datos o ficheros de prueba, entre otros.
 
-Las características del entorno de construcción y sus requisitos de operación y seguridad, así como las especificaciones de construcción de la estructura física de datos, se establecen en la actividad Generación de Especificaciones de Construcción (DSI 8), y constituyen el punto de partida para la realización de esta actividad.
+Las características del entorno de construcción y sus requisitos de operación y seguridad, así como las especificaciones de construcción de la estructura física de datos, se establecen en la actividad Generación de Especificaciones de Construcción ([DSI 8](05-dsi.qmd#8)), y constituyen el punto de partida para la realización de esta actividad.
 
 ```{=html}
 <table class="avia-table avia-data-table">
@@ -50,7 +50,7 @@ Las características del entorno de construcción y sus requisitos de operación
 <td style="background-color: #000033; text-align: left; width: 20%;"><strong><span style="color: #ffffff;">PARTICIPANTES</span></strong></td>
 </tr>
 <tr>
-<td style="text-align: left; vertical-align: top;"><a href="#csi-1-1"><strong>CSI 1.1</strong>: Implantación de la Base de Datos Física o Ficheros</a></td>
+<td style="text-align: left; vertical-align: top;"><a href="#1-1"><strong>CSI 1.1</strong>: Implantación de la Base de Datos Física o Ficheros</a></td>
 <td style="text-align: left; vertical-align: top;">
 <ul>
 <li>Base de Datos Física o Sistema de Ficheros</li>
@@ -65,7 +65,7 @@ Las características del entorno de construcción y sus requisitos de operación
 </td>
 </tr>
 <tr>
-<td style="text-align: left; vertical-align: top;"><a href="#csi-1-2"><strong>CSI 1.2</strong>: Preparación del Entorno de Construcción</a></td>
+<td style="text-align: left; vertical-align: top;"><a href="#1-2"><strong>CSI 1.2</strong>: Preparación del Entorno de Construcción</a></td>
 <td style="text-align: left; vertical-align: top;">
 <ul>
 <li>Entorno de Construcción</li>
@@ -85,7 +85,7 @@ Las características del entorno de construcción y sus requisitos de operación
 </table>
 ```
 
-#### Tarea CSI 1.1: Implantación de la Base de Datos Física o Ficheros
+#### Tarea CSI 1.1: Implantación de la Base de Datos Física o Ficheros {#csi-1-1}
 
 En esta tarea hay que:
 
@@ -97,9 +97,9 @@ En esta tarea hay que:
 
 ###### De entrada {.unlisted .unnumbered}
 
-* Entorno Tecnológico del Sistema (DSI 7.2)
-* Diseño de la Arquitectura del Sistema (DSI 7.2)
-* Especificaciones de Construcción del Sistema de Información (DSI 8.4)
+* Entorno Tecnológico del Sistema ([DSI 7.2](05-dsi#7-2.qmd))
+* Diseño de la Arquitectura del Sistema ([DSI 7.2](05-dsi.qmd#7-2))
+* Especificaciones de Construcción del Sistema de Información ([DSI 8.4](05-dsi.qmd#8-4))
 
 ###### De salida {.unlisted .unnumbered}
 
@@ -110,20 +110,20 @@ En esta tarea hay que:
 * Equipo del Proyecto
 * Administradores de Bases de Datos
 
-#### Tarea CSI 1.2: Preparación del Entorno de Construcción
+#### Tarea CSI 1.2: Preparación del Entorno de Construcción {#csi-1-2}
 
 En esta tarea se prepara el entorno en el que se construirán los componentes del sistema de información, contemplando aspectos tales como:
 
 - Bibliotecas o librerías a utilizar
 - Herramientas: generadores de código, editores, compiladores, verificadores sintácticos, montadores de enlace,
 - Puestos de trabajo
-- Implementación de los procedimientos de operación y seguridad propios del entorno de construcción, de acuerdo a los requisitos de seguridad y operación establecidos en la tarea Especificación del Entorno de Construcción (DSI 8.1).
+- Implementación de los procedimientos de operación y seguridad propios del entorno de construcción, de acuerdo a los requisitos de seguridad y operación establecidos en la tarea Especificación del Entorno de Construcción ([DSI 8.1](05-dsi.qmd#8-1)).
 
 ##### Productos {.unlisted .unnumbered}
 
 ###### De entrada {.unlisted .unnumbered}
 
-* Especificaciones de Construcción del Sistema de Información (DSI 8.1)
+* Especificaciones de Construcción del Sistema de Información ([DSI 8.1](05-dsi.qmd#8-1))
 
 ###### De salida {.unlisted .unnumbered}
 
@@ -136,9 +136,9 @@ En esta tarea se prepara el entorno en el que se construirán los componentes de
 * Equipo de Operación
 * Administradores de Bases de Datos
 
-### Actividad CSI 2: Generación del Código de los Componentes y Procedimientos
+### Actividad CSI 2: Generación del Código de los Componentes y Procedimientos {#csi-2}
 
-El objetivo de esta actividad es la codificación de los componentes del sistema de información, a partir de las especificaciones de construcción obtenidas en el proceso Diseño del Sistema de Información (DSI), así como la construcción de los procedimientos de operación y seguridad establecidos para el mismo.
+El objetivo de esta actividad es la codificación de los componentes del sistema de información, a partir de las especificaciones de construcción obtenidas en el proceso [Diseño del Sistema de Información (DSI)](05-dsi.qmd#5), así como la construcción de los procedimientos de operación y seguridad establecidos para el mismo.
 
 En paralelo a esta actividad, se desarrollan las actividades relacionadas con las pruebas unitarias y de integración del sistema de información. Esto permite una construcción incremental, en el caso de que así se haya especificado en el plan de pruebas y en el plan de integración del sistema de información.
 
@@ -152,7 +152,7 @@ En paralelo a esta actividad, se desarrollan las actividades relacionadas con la
 <td style="background-color: #000033; text-align: left; width: 20%;"><strong><span style="color: #ffffff;">PARTICIPANTES</span></strong></td>
 </tr>
 <tr>
-<td style="text-align: left; vertical-align: top;"><a href="#csi-2-1"><strong>CSI 2.1</strong>: Generación del Código de Componentes</a></td>
+<td style="text-align: left; vertical-align: top;"><a href="#2-1"><strong>CSI 2.1</strong>: Generación del Código de Componentes</a></td>
 <td style="text-align: left; vertical-align: top;">
 <ul>
 <li>Producto Software:
@@ -170,7 +170,7 @@ En paralelo a esta actividad, se desarrollan las actividades relacionadas con la
 </td>
 </tr>
 <tr>
-<td style="text-align: left; vertical-align: top;"><a href="#csi-2-2"><strong>CSI 2.2</strong>: Generación del Código de los Procedimientos de Operación y Seguridad</a></td>
+<td style="text-align: left; vertical-align: top;"><a href="#2-2"><strong>CSI 2.2</strong>: Generación del Código de los Procedimientos de Operación y Seguridad</a></td>
 <td style="text-align: left; vertical-align: top;">
 <ul>
 <li>Producto Software:
@@ -195,9 +195,9 @@ En paralelo a esta actividad, se desarrollan las actividades relacionadas con la
 </table>
 ```
 
-#### Tarea CSI 2.1: Generación del Código de Componentes
+#### Tarea CSI 2.1: Generación del Código de Componentes {#csi-2-1}
 
-En esta tarea se genera el código correspondiente a cada uno de los componentes del sistema de información, identificados en la tarea Definición de Componentes y Subsistemas de Construcción (DSI 8.2).
+En esta tarea se genera el código correspondiente a cada uno de los componentes del sistema de información, identificados en la tarea Definición de Componentes y Subsistemas de Construcción ([DSI 8.2](05-dsi.qmd#8-2)).
 
 Para generar el código fuente se tienen en cuenta los estándares de nomenclatura, codificación y calidad utilizados por la organización y recogidos en el catálogo de normas.
 
@@ -207,8 +207,8 @@ Con el fin de verificar que el código fuente especifica de forma correcta el co
 
 ###### De entrada {.unlisted .unnumbered}
 
-* Catálogo de Normas (DSI 1.4)
-* Especificaciones de Construcción del Sistema de Información (DSI 8.2)
+* Catálogo de Normas ([DSI 1.4](05-dsi.qmd#1-4))
+* Especificaciones de Construcción del Sistema de Información ([DSI 8.2](05-dsi.qmd#8-2))
 
 ###### De salida {.unlisted .unnumbered}
 
@@ -219,7 +219,7 @@ Con el fin de verificar que el código fuente especifica de forma correcta el co
 
 * Programadores
 
-#### Tarea CSI 2.2: Generación del Código de los Procedimientos de Operación y Seguridad
+#### Tarea CSI 2.2: Generación del Código de los Procedimientos de Operación y Seguridad {#csi-2-2}
 
 El objetivo de esta tarea es generar los procedimientos de operación y administración del sistema de información, así como los procedimientos de seguridad y control de acceso, necesarios para ejecutar el sistema una vez que se haya implantado y esté en producción.
 
@@ -229,12 +229,12 @@ Para la generación de dichos procedimientos se tienen en cuenta, también, los 
 
 ###### De entrada {.unlisted .unnumbered}
 
-* Catálogo de Normas (DSI 1.4)
-* Diseño de la Arquitectura del Sistema (DSI 7.2)
-* Entorno Tecnológico del Sistema (DSI 7.2)
-* Procedimientos de Operación y Administración del Sistema (DSI 1.7)
-* Procedimientos de Seguridad y Control de Acceso (DSI 1.7)
-* Producto Software (CSI 2.1)
+* Catálogo de Normas ([DSI 1.4](05-dsi.qmd#1-4))
+* Diseño de la Arquitectura del Sistema ([DSI 7.2](05-dsi.qmd#7.2))
+* Entorno Tecnológico del Sistema ([DSI 7.2](05-dsi.qmd#7.2))
+* Procedimientos de Operación y Administración del Sistema ([DSI 1.7](05-dsi.qmd#1-7))
+* Procedimientos de Seguridad y Control de Acceso ([DSI 1.7](05-dsi.qmd#1-7))
+* Producto Software ([CSI 2.1](#csi-2-1))
 
 ###### De salida {.unlisted .unnumbered}
 
@@ -249,7 +249,7 @@ Para la generación de dichos procedimientos se tienen en cuenta, también, los 
 * Administrador de la Base de Datos
 * Programadores
 
-### Actividad CSI 3: Ejecución de las Pruebas Unitarias
+### Actividad CSI 3: Ejecución de las Pruebas Unitarias {#csi-3}
 
 En esta actividad se realizan las pruebas unitarias de cada uno de los componentes del sistema de información, una vez codificados, con el objeto de comprobar que su estructura es correcta y que se ajustan a la funcionalidad establecida.
 
@@ -265,7 +265,7 @@ En el plan de pruebas se ha definido el entorno necesario para la realización d
 <td style="background-color: #000033; text-align: left; width: 20%;"><strong><span style="color: #ffffff;">PARTICIPANTES</span></strong></td>
 </tr>
 <tr>
-<td style="text-align: left; vertical-align: top;"><a href="#csi-3-1"><strong>CSI 3.1</strong>: Preparación del Entorno de Pruebas Unitarias</a></td>
+<td style="text-align: left; vertical-align: top;"><a href="#3-1"><strong>CSI 3.1</strong>: Preparación del Entorno de Pruebas Unitarias</a></td>
 <td style="text-align: left; vertical-align: top;">
 <ul>
 <li>Entorno de pruebas unitarias</li>
@@ -280,7 +280,7 @@ En el plan de pruebas se ha definido el entorno necesario para la realización d
 </td>
 </tr>
 <tr>
-<td style="text-align: left; vertical-align: top;"><a href="#csi-3-2"><strong>CSI 3.2</strong>: Realización y Evaluación de las Pruebas Unitarias</a></td>
+<td style="text-align: left; vertical-align: top;"><a href="#3-2"><strong>CSI 3.2</strong>: Realización y Evaluación de las Pruebas Unitarias</a></td>
 <td style="text-align: left; vertical-align: top;">
 <ul>
 <li>Resultado de las pruebas unitarias</li>
@@ -301,7 +301,7 @@ En el plan de pruebas se ha definido el entorno necesario para la realización d
 </table>
 ```
 
-#### Tarea CSI 3.1: Preparación del Entorno de las Pruebas Unitarias
+#### Tarea CSI 3.1: Preparación del Entorno de las Pruebas Unitarias {#csi-3-1}
 
 En esta tarea se preparan todos los recursos necesarios para realizar las pruebas unitarias de cada uno de los componentes del sistema de información.
 
@@ -311,7 +311,7 @@ Para ello, se asegura la disponibilidad del entorno y de los datos necesarios pa
 
 ###### De entrada {.unlisted .unnumbered}
 
-* Plan de Pruebas (DSI 10.3)
+* Plan de Pruebas ([DSI 10.3](05-dsi.qmd#10.3))
 
 ###### De salida {.unlisted .unnumbered}
 
@@ -322,9 +322,9 @@ Para ello, se asegura la disponibilidad del entorno y de los datos necesarios pa
 * Técnicos de Sistemas
 * Programadores
 
-#### Tarea CSI 3.2: Realización y Evaluación de las Pruebas Unitarias
+#### Tarea CSI 3.2: Realización y Evaluación de las Pruebas Unitarias {#csi-3-2}
 
-El objetivo de esta tarea es comprobar el correcto funcionamiento de los componentes del sistema de información, codificados en la actividad Generación del Código de los Componentes y Procedimientos (CSI 2), conforme a las verificaciones establecidas en el plan de pruebas para el nivel de pruebas unitarias, en la actividad Especificación Técnica del Plan de Pruebas (DSI 10).
+El objetivo de esta tarea es comprobar el correcto funcionamiento de los componentes del sistema de información, codificados en la actividad Generación del Código de los Componentes y Procedimientos ([CSI 2](#csi-2)), conforme a las verificaciones establecidas en el plan de pruebas para el nivel de pruebas unitarias, en la actividad Especificación Técnica del Plan de Pruebas ([DSI 10](05-dsi.qmd#10)).
 
 Para cada verificación establecida, se realizan las pruebas con los casos de pruebas asociados, efectuando el correspondiente análisis y evaluación de los resultados, y generando un registro conforme a los criterios establecidos en el plan de pruebas.
 
@@ -334,9 +334,9 @@ Seguidamente, se analizan los resultados de las pruebas unitarias, evaluándose 
 
 ###### De entrada {.unlisted .unnumbered}
 
-* Producto Software (CSI 2.2)
-* Entorno de Pruebas Unitarias (CSI 3.1)
-* Plan de Pruebas (DSI 10.3)
+* Producto Software ([CSI 2.2](#csi-2-2))
+* Entorno de Pruebas Unitarias ([CSI 3.1](#csi-3-1))
+* Plan de Pruebas ([DSI 10.3](05-dsi.qmd#10.3))
 
 ###### De salida {.unlisted .unnumbered}
 
@@ -350,13 +350,13 @@ Seguidamente, se analizan los resultados de las pruebas unitarias, evaluándose 
 
 * Programadores
 
-### Actividad CSI 4: Ejecución de las Pruebas de Integración
+### Actividad CSI 4: Ejecución de las Pruebas de Integración {#csi-4}
 
 El objetivo de las pruebas de integración es verificar si los componentes o subsistemas interactúan correctamente a través de sus interfaces, tanto internas como externas, cubren la funcionalidad establecida, y se ajustan a los requisitos especificados en las verificaciones correspondientes.
 
-La estrategia a seguir en las pruebas de integración se establece en el plan de pruebas, dónde se habrá tenido en cuenta el plan de integración del sistema de información, siempre y cuando se haya especificado en la tarea Definición de  Componentes y Subsistemas de Construcción (DSI 8.2).
+La estrategia a seguir en las pruebas de integración se establece en el plan de pruebas, dónde se habrá tenido en cuenta el plan de integración del sistema de información, siempre y cuando se haya especificado en la tarea Definición de  Componentes y Subsistemas de Construcción ([DSI 8.2](05-dsi.qmd#8-2)).
 
-Esta actividad se realiza en paralelo a las actividades Generación del Código de los Componentes y Procedimientos (CSI 2) y Ejecución de las Pruebas Unitarias (CSI 3). Sin embargo, es necesario que los componentes objeto de las pruebas de integración se hayan verificado de manera unitaria.
+Esta actividad se realiza en paralelo a las actividades Generación del Código de los Componentes y Procedimientos ([CSI 2](#csi-2)) y Ejecución de las Pruebas Unitarias ([CSI 3](#csi-3)). Sin embargo, es necesario que los componentes objeto de las pruebas de integración se hayan verificado de manera unitaria.
 
 ```{=html}
 <table class="avia-table avia-data-table">
@@ -368,7 +368,7 @@ Esta actividad se realiza en paralelo a las actividades Generación del Código 
 <td style="background-color: #000033; text-align: left; width: 20%;"><strong><span style="color: #ffffff;">PARTICIPANTES</span></strong></td>
 </tr>
 <tr>
-<td style="text-align: left; vertical-align: top;"><a href="#csi-4-1"><strong>CSI 4.1</strong>: Preparación del Entorno de Pruebas de Integración</a></td>
+<td style="text-align: left; vertical-align: top;"><a href="#4-1"><strong>CSI 4.1</strong>: Preparación del Entorno de Pruebas de Integración</a></td>
 <td style="text-align: left; vertical-align: top;">
 <ul>
 <li>Entorno de Pruebas de Integración</li>
@@ -385,7 +385,7 @@ Esta actividad se realiza en paralelo a las actividades Generación del Código 
 </td>
 </tr>
 <tr>
-<td style="text-align: left; vertical-align: top;"><a href="#csi-4-2"><strong>CSI 4.2</strong>: Realización de las Pruebas de Integración</a></td>
+<td style="text-align: left; vertical-align: top;"><a href="#4-2"><strong>CSI 4.2</strong>: Realización de las Pruebas de Integración</a></td>
 <td style="text-align: left; vertical-align: top;">
 <ul>
 <li>Resultado de las Pruebas de Integración</li>
@@ -403,7 +403,7 @@ Esta actividad se realiza en paralelo a las actividades Generación del Código 
 </td>
 </tr>
 <tr>
-<td style="text-align: left; vertical-align: top;"><a href="#csi-4-3"><strong>CSI 4.3</strong>: Evaluación del Resultado de las Pruebas de Integración</a></td>
+<td style="text-align: left; vertical-align: top;"><a href="#4-3"><strong>CSI 4.3</strong>: Evaluación del Resultado de las Pruebas de Integración</a></td>
 <td style="text-align: left; vertical-align: top;">
 <ul>
 <li>Evaluación del Resultado de las Pruebas de Integración</li>
@@ -420,7 +420,7 @@ Esta actividad se realiza en paralelo a las actividades Generación del Código 
 </table>
 ```
 
-#### Tarea CSI 4.1: Preparación del Entorno de las Pruebas de Integración
+#### Tarea CSI 4.1: Preparación del Entorno de las Pruebas de Integración {#csi-4-1}
 
 En esta tarea se disponen todos los recursos necesarios para realizar las pruebas de integración de los componentes y subsistemas que conforman el sistema de información.
 
@@ -430,7 +430,7 @@ Para ello, se asegura la disponibilidad del entorno y de los datos necesarios pa
 
 ###### De entrada {.unlisted .unnumbered}
 
-* Plan de Pruebas (DSI 10.3)
+* Plan de Pruebas ([DSI 10.3](05-dsi.qmd#10.3))
 
 ###### De salida {.unlisted .unnumbered}
 
@@ -443,7 +443,7 @@ Para ello, se asegura la disponibilidad del entorno y de los datos necesarios pa
 * Equipo de Arquitectura
 * Equipo del Proyecto
 
-#### Tarea CSI 4.2: Realización de las Pruebas de Integración
+#### Tarea CSI 4.2: Realización de las Pruebas de Integración {#csi-4-2}
 
 El objetivo de esta tarea es verificar el correcto funcionamiento de las interfaces existentes entre los distintos componentes y subsistemas, conforme a las verificaciones establecidas para el nivel de pruebas de integración.
 
@@ -454,8 +454,8 @@ Para cada verificación establecida, se realizan las pruebas con los casos de pr
 ###### De entrada {.unlisted .unnumbered}
 
 * Producto Software (CSI 2.1 y CSI 2.2)
-* Entorno de Pruebas de Integración (CSI 4.1)
-* Plan de Pruebas (DSI 10.3)
+* Entorno de Pruebas de Integración ([CSI 4.1](#csi-4-1))
+* Plan de Pruebas ([DSI 10.3](05-dsi.qmd#10.3))
 
 ###### De salida {.unlisted .unnumbered}
 
@@ -469,7 +469,7 @@ Para cada verificación establecida, se realizan las pruebas con los casos de pr
 
 * Equipo del Proyecto
 
-#### Tarea CSI 4.3: Evaluación del Resultado de las Pruebas de Integración
+#### Tarea CSI 4.3: Evaluación del Resultado de las Pruebas de Integración {#csi-4-3}
 
 El objetivo de esta tarea es analizar los resultados de las pruebas de integración y efectuar su evaluación. Dicha evaluación recoge el grado de cumplimiento de las pruebas y consiste en:
 
@@ -481,8 +481,8 @@ El objetivo de esta tarea es analizar los resultados de las pruebas de integraci
 
 ###### De entrada {.unlisted .unnumbered}
 
-* Resultado de las Pruebas de Integración (CSI 4.2)
-* Plan de Pruebas (DSI 10.3)
+* Resultado de las Pruebas de Integración ([CSI 4.2](#csi-4-2))
+* Plan de Pruebas ([DSI 10.3](05-dsi.qmd#10.3))
 
 ###### De salida {.unlisted .unnumbered}
 
@@ -508,7 +508,7 @@ En la realización de estas pruebas es importante comprobar la cobertura de los 
 <td style="background-color: #000033; text-align: left; width: 20%;"><strong><span style="color: #ffffff;">PARTICIPANTES</span></strong></td>
 </tr>
 <tr>
-<td style="text-align: left; vertical-align: top;"><a href="#csi-5-1"><strong>CSI 5.1</strong>: Preparación del Entorno de Pruebas del Sistema</a></td>
+<td style="text-align: left; vertical-align: top;"><a href="#5-1"><strong>CSI 5.1</strong>: Preparación del Entorno de Pruebas del Sistema</a></td>
 <td style="text-align: left; vertical-align: top;">
 <ul>
 <li>Entorno de Pruebas del Sistema</li>
@@ -525,7 +525,7 @@ En la realización de estas pruebas es importante comprobar la cobertura de los 
 </td>
 </tr>
 <tr>
-<td style="text-align: left; vertical-align: top;"><a href="#csi-5-2"><strong>CSI 5.2</strong>: Realización de las Pruebas del Sistema</a></td>
+<td style="text-align: left; vertical-align: top;"><a href="#5-2"><strong>CSI 5.2</strong>: Realización de las Pruebas del Sistema</a></td>
 <td style="text-align: left; vertical-align: top;">
 <ul>
 <li>Resultado de las Pruebas del Sistema</li>
@@ -543,7 +543,7 @@ En la realización de estas pruebas es importante comprobar la cobertura de los 
 </td>
 </tr>
 <tr>
-<td style="text-align: left; vertical-align: top;"><a href="#csi-5-3"><strong>CSI 5.3</strong>: Evaluación del Resultado de las Pruebas del Sistema</a></td>
+<td style="text-align: left; vertical-align: top;"><a href="#5-3"><strong>CSI 5.3</strong>: Evaluación del Resultado de las Pruebas del Sistema</a></td>
 <td style="text-align: left; vertical-align: top;">
 <ul>
 <li>Evaluación del Resultado de las Pruebas del Sistema</li>
@@ -561,7 +561,7 @@ En la realización de estas pruebas es importante comprobar la cobertura de los 
 </table>
 ```
 
-#### Tarea CSI 5.1: Preparación del Entorno de las Pruebas del Sistema
+#### Tarea CSI 5.1: Preparación del Entorno de las Pruebas del Sistema {#csi-5-1}
 
 En esta tarea se preparan todos los recursos necesarios para realizar las pruebas del sistema, de acuerdo a las características del entorno establecidas en el plan de pruebas.
 
@@ -571,7 +571,7 @@ Para ello se asegura la disponibilidad del entorno y de los datos necesarios par
 
 ###### De entrada {.unlisted .unnumbered}
 
-* Plan de Pruebas (DSI 10.3)
+* Plan de Pruebas ([DSI 10.3](05-dsi.qmd#10.3))
 
 ###### De salida {.unlisted .unnumbered}
 
@@ -584,7 +584,7 @@ Para ello se asegura la disponibilidad del entorno y de los datos necesarios par
 * Equipo de Arquitectura
 * Equipo del Proyecto
 
-#### Tarea CSI 5.2: Realización de las Pruebas del Sistema
+#### Tarea CSI 5.2: Realización de las Pruebas del Sistema {#csi-5-2}
 
 El objetivo de esta tarea es comprobar la integración de todos los subsistemas y componentes del sistema de información, así como la interacción del mismo con otros sistemas de información con los que se relaciona, de acuerdo a las verificaciones establecidas para el nivel de pruebas del sistema.
 
@@ -595,8 +595,8 @@ Para cada verificación establecida, se realizan las pruebas con los casos de pr
 ###### De entrada {.unlisted .unnumbered}
 
 * Producto Software (CSI 2.1 y CSI 2.2)
-* Entorno de Pruebas del Sistema (CSI 5.1)
-* Plan de Pruebas (DSI 10.3)
+* Entorno de Pruebas del Sistema ([CSI 5.1](#csi-5-1))
+* Plan de Pruebas ([DSI 10.3](05-dsi.qmd#10.3))
 
 ###### De salida {.unlisted .unnumbered}
 
@@ -610,7 +610,7 @@ Para cada verificación establecida, se realizan las pruebas con los casos de pr
 
 * Equipo del Proyecto
 
-#### Tarea CSI 5.3: Evaluación del Resultado de las Pruebas del Sistema
+#### Tarea CSI 5.3: Evaluación del Resultado de las Pruebas del Sistema {#csi-5-3}
 
 El objetivo de esta actividad es analizar los resultados de las pruebas del sistema de información y efectuar su evaluación. Dicha evaluación recoge el grado de cumplimiento de las mismas, y consiste en:
 
@@ -622,8 +622,8 @@ El objetivo de esta actividad es analizar los resultados de las pruebas del sist
 
 ##### De entrada {.unlisted .unnumbered}
 
-* Resultado de las pruebas del Sistema (CSI 5.2)
-* Plan de Pruebas (DSI 10.3)
+* Resultado de las pruebas del Sistema ([CSI 5.2](#csi-5-2))
+* Plan de Pruebas ([DSI 10.3](05-dsi.qmd#10.3))
 
 ###### De salida {.unlisted .unnumbered}
 
@@ -634,7 +634,7 @@ El objetivo de esta actividad es analizar los resultados de las pruebas del sist
 * Analistas
 * [Jefe de Proyecto](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
 
-### Actividad CSI 6: Elaboración de los Manuales de Usuario
+### Actividad CSI 6: Elaboración de los Manuales de Usuario {#csi-6}
 
 ```{=html}
 <table class="avia-table avia-data-table">
@@ -646,7 +646,7 @@ El objetivo de esta actividad es analizar los resultados de las pruebas del sist
 <td style="background-color: #000033; text-align: left; width: 20%;"><strong><span style="color: #ffffff;">PARTICIPANTES</span></strong></td>
 </tr>
 <tr>
-<td style="text-align: left; vertical-align: top;"><a href="#csi-6-1"><strong>CSI 6.1</strong>: Elaboración de los Manuales de Usuario</a></td>
+<td style="text-align: left; vertical-align: top;"><a href="#6-1"><strong>CSI 6.1</strong>: Elaboración de los Manuales de Usuario</a></td>
 <td style="text-align: left; vertical-align: top;">
 <ul>
 <li>Producto Software:
@@ -667,9 +667,9 @@ El objetivo de esta actividad es analizar los resultados de las pruebas del sist
 </table>
 ```
 
-#### Tarea CSI 6.1: Elaboración de los Manuales de Usuario
+#### Tarea CSI 6.1: Elaboración de los Manuales de Usuario {#csi-6-1}
 
-El objetivo de esta tarea es elaborar la documentación de usuario, tanto usuario final como de explotación, de acuerdo a los requisitos establecidos en la tarea Especificación de Requisitos de Documentación de Usuario (DSI 11.1), y recogidos en el catálogo de requisitos.
+El objetivo de esta tarea es elaborar la documentación de usuario, tanto usuario final como de explotación, de acuerdo a los requisitos establecidos en la tarea Especificación de Requisitos de Documentación de Usuario ([DSI 11.1](05-dsi.qmd#11.1)), y recogidos en el catálogo de requisitos.
 
 Los requisitos de documentación especifican aspectos relativos a los tipos de documentos a elaborar y estándares a seguir en la generación de los mismos, y para cada uno de ellos:
 
@@ -681,8 +681,8 @@ Los requisitos de documentación especifican aspectos relativos a los tipos de d
 
 ###### De entrada {.unlisted .unnumbered}
 
-* Catálogo de Requisitos (DSI 11.1)
-* Producto Software (CSI 2.2)
+* Catálogo de Requisitos ([DSI 11.1](05-dsi.qmd#11.1))
+* Producto Software ([CSI 2.2](#csi-2-2))
 
 ###### De salida {.unlisted .unnumbered}
 
@@ -693,11 +693,11 @@ Los requisitos de documentación especifican aspectos relativos a los tipos de d
 
 * Equipo del Proyecto
 
-### Actividad CSI 7: Definición de la Formación de Usuarios Finales
+### Actividad CSI 7: Definición de la Formación de Usuarios Finales {#csi-7}
 
 En esta actividad se establecen las necesidades de formación del usuario final, con el objetivo de conseguir la explotación eficaz del nuevo sistema.
 
-Para la definición de la formación hay que tener en cuenta las características funcionales y técnicas propias del sistema de información, así como los requisitos relacionados con la formación del usuario final, establecidos en la tarea Especificación de Requisitos de Implantación (DSI 11.2).
+Para la definición de la formación hay que tener en cuenta las características funcionales y técnicas propias del sistema de información, así como los requisitos relacionados con la formación del usuario final, establecidos en la tarea Especificación de Requisitos de Implantación ([DSI 11.2](05-dsi.qmd#11.2)).
 
 El producto resultante de esta actividad es la especificación de la formación de usuarios finales, que consta de los siguientes elementos:
 
@@ -716,7 +716,7 @@ En el proceso Implantación y Aceptación del Sistema (IAS), se unifican las esp
 <td style="background-color: #000033; text-align: left; width: 20%;"><strong><span style="color: #ffffff;">PARTICIPANTES</span></strong></td>
 </tr>
 <tr>
-<td style="text-align: left; vertical-align: top;"><a href="#csi-7-1"><strong>CSI 7.1</strong>: Definición del Esquema de Formación</a></td>
+<td style="text-align: left; vertical-align: top;"><a href="#7-1"><strong>CSI 7.1</strong>: Definición del Esquema de Formación</a></td>
 <td style="text-align: left; vertical-align: top;">
 <ul>
 <li>Especificación de la Formación a Usuarios Finales:
@@ -734,7 +734,7 @@ En el proceso Implantación y Aceptación del Sistema (IAS), se unifican las esp
 </td>
 </tr>
 <tr>
-<td style="text-align: left; vertical-align: top;"><a href="#csi-7-2"><strong>CSI 7.2</strong>: Especificación de los Recursos y Entornos de Formación</a></td>
+<td style="text-align: left; vertical-align: top;"><a href="#7-2"><strong>CSI 7.2</strong>: Especificación de los Recursos y Entornos de Formación</a></td>
 <td style="text-align: left; vertical-align: top;">
 <ul>
 <li>Especificación de la Formación a Usuarios Finales:
@@ -756,7 +756,7 @@ En el proceso Implantación y Aceptación del Sistema (IAS), se unifican las esp
 </table>
 ```
 
-#### Tarea CSI 7.1: Definición del Esquema de Formación
+#### Tarea CSI 7.1: Definición del Esquema de Formación {#csi-7-1}
 
 El objetivo de esta tarea es la definición del contenido de la formación del usuario final del sistema, realizando, a su vez, una estimación de la duración de los distintos apartados o acciones formativas que se contemplen.
 
@@ -766,7 +766,7 @@ La especificación de los esquemas de formación se puede particularizar para ca
 
 ###### De entrada {.unlisted .unnumbered}
 
-* Catálogo de Requisitos (DSI 11.2)
+* Catálogo de Requisitos ([DSI 11.2](05-dsi.qmd#11.2))
 
 ###### De salida {.unlisted .unnumbered}
 
@@ -777,7 +777,7 @@ La especificación de los esquemas de formación se puede particularizar para ca
 
 * Analistas
 
-#### Tarea CSI 7.2: Especificación de los Recursos y Entornos de Formación
+#### Tarea CSI 7.2: Especificación de los Recursos y Entornos de Formación {#csi-7-2}
 
 El objetivo de esta tarea es detallar los recursos necesarios para llevar a cabo la formación, relativos a los materiales de formación, equipos físicos y lógicos, aulas, etc.
 
@@ -787,8 +787,8 @@ También se determinan las características que debe reunir el entorno para real
 
 ###### De entrada {.unlisted .unnumbered}
 
-* Catálogo de Requisitos (DSI 11.2)
-* Especificación de la Formación a Usuarios Finales (CSI 7.1)
+* Catálogo de Requisitos ([DSI 11.2](05-dsi.qmd#11.2))
+* Especificación de la Formación a Usuarios Finales ([CSI 7.1](#csi-7-1))
 
 ###### De salida {.unlisted .unnumbered}
 
@@ -800,9 +800,9 @@ También se determinan las características que debe reunir el entorno para real
 * Analistas
 * Equipo de Formación
 
-### Actividad CSI 8: Construcción de los Componentes y Procedimientos de Migración y Carga Inicial de Datos
+### Actividad CSI 8: Construcción de los Componentes y Procedimientos de Migración y Carga Inicial de Datos {#csi-8}
 
-El objetivo de esta actividad es la codificación y prueba de los componentes y procedimientos de migración y carga inicial de datos, a partir de las especificaciones recogidas en el plan de migración y carga inicial de datos obtenido en el proceso Diseño del Sistema de Información (DSI).
+El objetivo de esta actividad es la codificación y prueba de los componentes y procedimientos de migración y carga inicial de datos, a partir de las especificaciones recogidas en el plan de migración y carga inicial de datos obtenido en el proceso [Diseño del Sistema de Información (DSI)](05-dsi.qmd).
 
 Previamente a la generación del código, se prepara la infraestructura tecnológica necesaria para realizar la codificación y las pruebas de los distintos componentes y procedimientos asociados, de acuerdo a las características del entorno de migración especificado en el plan de migración y carga inicial de datos.
 
@@ -818,7 +818,7 @@ Finalmente, se llevan a cabo las verificaciones establecidas en la especificaci�
 <td style="background-color: #000033; text-align: left; width: 20%;"><strong><span style="color: #ffffff;">PARTICIPANTES</span></strong></td>
 </tr>
 <tr>
-<td style="text-align: left; vertical-align: top;"><a href="#csi-8-1"><strong>CSI 8.1</strong>: Preparación del Entorno de Migración y Carga Inicial de Datos</a></td>
+<td style="text-align: left; vertical-align: top;"><a href="#8-1"><strong>CSI 8.1</strong>: Preparación del Entorno de Migración y Carga Inicial de Datos</a></td>
 <td style="text-align: left; vertical-align: top;">
 <ul>
 <li>Entorno de Migración</li>
@@ -836,7 +836,7 @@ Finalmente, se llevan a cabo las verificaciones establecidas en la especificaci�
 </td>
 </tr>
 <tr>
-<td style="text-align: left; vertical-align: top;"><a href="#csi-8-2"><strong>CSI 8.2</strong>: Generación del Código de los Componentes y Procedimientos de Migración y Carga Inicial de Datos</a></td>
+<td style="text-align: left; vertical-align: top;"><a href="#8-2"><strong>CSI 8.2</strong>: Generación del Código de los Componentes y Procedimientos de Migración y Carga Inicial de Datos</a></td>
 <td style="text-align: left; vertical-align: top;">
 <ul>
 <li>Código Fuente de los Componentes de Migración y Carga Inicial de Datos</li>
@@ -851,7 +851,7 @@ Finalmente, se llevan a cabo las verificaciones establecidas en la especificaci�
 </td>
 </tr>
 <tr>
-<td style="text-align: left; vertical-align: top;"><a href="#csi-8-3"><strong>CSI 8.3</strong>: Realización y Evaluación de las Pruebas de Migración y Carga Inicial de Datos</a></td>
+<td style="text-align: left; vertical-align: top;"><a href="#8-3"><strong>CSI 8.3</strong>: Realización y Evaluación de las Pruebas de Migración y Carga Inicial de Datos</a></td>
 <td style="text-align: left; vertical-align: top;">
 <ul>
 <li>Resultado de las Pruebas de Migración y Carga Inicial de Datos</li>
@@ -874,9 +874,9 @@ Finalmente, se llevan a cabo las verificaciones establecidas en la especificaci�
 </table>
 ```
 
-#### Tarea CSI 8.1: Preparación del Entorno de Migración y Carga Inicial de Datos
+#### Tarea CSI 8.1: Preparación del Entorno de Migración y Carga Inicial de Datos {#csi-8-1}
 
-Se dispone el entorno en el que se van a construir los componentes y procedimientos de migración y carga inicial de datos, considerando las bibliotecas o librerías a utilizar, herramientas o utilidades específicas para la conversión, y compiladores, entre otros, cuya necesidad se habrá establecido en la tarea Especificación del Entorno de Migración (DSI 9.1).
+Se dispone el entorno en el que se van a construir los componentes y procedimientos de migración y carga inicial de datos, considerando las bibliotecas o librerías a utilizar, herramientas o utilidades específicas para la conversión, y compiladores, entre otros, cuya necesidad se habrá establecido en la tarea Especificación del Entorno de Migración ([DSI 9.1](05-dsi.qmd#9.1)).
 
 Asimismo, se determinan los datos necesarios para realizar las pruebas de los componentes y procedimientos asociados y se configura el entorno de acuerdo a dichas necesidades.
 
@@ -884,7 +884,7 @@ Asimismo, se determinan los datos necesarios para realizar las pruebas de los co
 
 ###### De entrada {.unlisted .unnumbered}
 
-* Plan de Migración y Carga Inicial de Datos (DSI 9.4)
+* Plan de Migración y Carga Inicial de Datos ([DSI 9.4](05-dsi.qmd#9.4))
 
 ###### De salida {.unlisted .unnumbered}
 
@@ -898,9 +898,9 @@ Asimismo, se determinan los datos necesarios para realizar las pruebas de los co
 * Equipo de Seguridad
 * Administradores de Bases de Datos
 
-#### Tarea CSI 8.2: Generación del Código de los Componentes y Procedimientos de Migración y Carga Inicial de Datos
+#### Tarea CSI 8.2: Generación del Código de los Componentes y Procedimientos de Migración y Carga Inicial de Datos {#csi-8-2}
 
-El objetivo de esta tarea es la generación del código correspondiente a los procedimientos y componentes necesarios para llevar a cabo la migración, definidos en el plan de migración y carga inicial de datos obtenido en las tareas Diseño de Procedimientos de Migración y Carga Inicial (DSI 9.2) y Diseño Detallado de Componentes de Migración y Carga Inicial (DSI 9.3).
+El objetivo de esta tarea es la generación del código correspondiente a los procedimientos y componentes necesarios para llevar a cabo la migración, definidos en el plan de migración y carga inicial de datos obtenido en las tareas Diseño de Procedimientos de Migración y Carga Inicial (([DSI 9.2](05-dsi.qmd#9.2)) y Diseño Detallado de Componentes de Migración y Carga Inicial (([DSI 9.3](05-dsi.qmd#9.3)).
 
 Para generar el código fuente se tienen en cuenta los estándares de nomenclatura y codificación utilizados por la organización y recogidos en el catálogo de normas para este tipo de componentes.
 
@@ -908,8 +908,8 @@ Para generar el código fuente se tienen en cuenta los estándares de nomenclatu
 
 ##### De entrada {.unlisted .unnumbered}
 
-* Catálogo de Normas (DSI 1.4)
-* Plan de Migración y Carga Inicial de Datos (DSI 9.4)
+* Catálogo de Normas ([DSI 1.4](05-dsi.qmd#1-4))
+* Plan de Migración y Carga Inicial de Datos ([DSI 9.4](05-dsi.qmd#9.4))
 
 ##### De salida {.unlisted .unnumbered}
 
@@ -920,7 +920,7 @@ Para generar el código fuente se tienen en cuenta los estándares de nomenclatu
 
 * Programadores
 
-#### Tarea CSI 8.3: Realización y Evaluación de las Pruebas de Migración y Carga Inicial de Datos
+#### Tarea CSI 8.3: Realización y Evaluación de las Pruebas de Migración y Carga Inicial de Datos {#csi-8-3}
 
 El objetivo de esta tarea es efectuar las pruebas de los distintos componentes y procedimientos de migración y evaluar su resultado. Esta evaluación recoge el grado de cumplimiento de las mismas, y consiste en:
 
@@ -932,9 +932,9 @@ El objetivo de esta tarea es efectuar las pruebas de los distintos componentes y
 
 ###### De entrada {.unlisted .unnumbered}
 
-* Plan de Migración y Carga Inicial de Datos (DSI 9.4)
-* Código Fuente de los Componentes de Migración y Carga Inicial de Datos (CSI 8.2)
-* Procedimientos de Migración y Carga Inicial de Datos (CSI 8.2)
+* Plan de Migración y Carga Inicial de Datos ([DSI 9.4](05-dsi.qmd#9.4))
+* Código Fuente de los Componentes de Migración y Carga Inicial de Datos ([CSI 8.2](#csi-8-2))
+* Procedimientos de Migración y Carga Inicial de Datos ([CSI 8.2](#csi-8-2))
 
 ###### De salida {.unlisted .unnumbered}
 
@@ -950,7 +950,7 @@ El objetivo de esta tarea es efectuar las pruebas de los distintos componentes y
 
 * Equipo del Proyecto
 
-### Actividad CSI 9: Aprobación del Sistema de Información
+### Actividad CSI 9: Aprobación del Sistema de Información {#csi-9}
 
 ```{=html}
 <table class="avia-table avia-data-table">
@@ -962,7 +962,7 @@ El objetivo de esta tarea es efectuar las pruebas de los distintos componentes y
 <td style="background-color: #000033; text-align: left; width: 20%;"><strong><span style="color: #ffffff;">PARTICIPANTES</span></strong></td>
 </tr>
 <tr>
-<td style="text-align: left; vertical-align: top;"><a href="#csi-9-1"><strong>CSI 9.1</strong>: Presentación y Aprobación del Sistema de Información</a></td>
+<td style="text-align: left; vertical-align: top;"><a href="#9-1"><strong>CSI 9.1</strong>: Presentación y Aprobación del Sistema de Información</a></td>
 <td style="text-align: left; vertical-align: top;">
 <ul>
 <li>Sistema de Información:
@@ -984,7 +984,7 @@ El objetivo de esta tarea es efectuar las pruebas de los distintos componentes y
 </table>
 ```
 
-#### Tarea CSI 9.1: Presentación y Aprobación del Sistema de Información
+#### Tarea CSI 9.1: Presentación y Aprobación del Sistema de Información {#csi-9-1}
 
 En esta tarea se recopilan los productos del sistema de información y se presentan al Comité de Seguimiento para su aprobación.
 
@@ -992,14 +992,14 @@ En esta tarea se recopilan los productos del sistema de información y se presen
 
 ###### De entrada {.unlisted .unnumbered}
 
-- Resultado y evaluación de las Pruebas Unitarias (CSI 3.2)
-- Evaluación del Resultado de las Pruebas de Integración (CSI 4.3)
-- Evaluación del Resultado de las Pruebas del Sistema (CSI 5.3)
-- Producto Software (CSI 6.1)
-- Especificación de la Formación a Usuarios Finales (CSI 7.2)
-- Código Fuente de los Componentes de Migración y Carga Inicial de Datos (CSI 8.2)
-- Procedimientos de Migración y Carga Inicial de Datos (CSI 8.2)
-- Evaluación del Resultado de las Pruebas de Migración y Carga Inicial de Datos (CSI 8.3)
+- Resultado y evaluación de las Pruebas Unitarias ([CSI 3.2](#csi-3-2))
+- Evaluación del Resultado de las Pruebas de Integración ([CSI 4.3](#csi-4-3))
+- Evaluación del Resultado de las Pruebas del Sistema ([CSI 5.3](#csi-5-3))
+- Producto Software ([CSI 6.1](#csi-6-1))
+- Especificación de la Formación a Usuarios Finales ([CSI 7.2](#csi-7.2))
+- Código Fuente de los Componentes de Migración y Carga Inicial de Datos ([CSI 8.2](#csi-8-2))
+- Procedimientos de Migración y Carga Inicial de Datos ([CSI 8.2](#csi-8-2))
+- Evaluación del Resultado de las Pruebas de Migración y Carga Inicial de Datos ([CSI 8.3](#csi-8-3))
 
 ###### De salida {.unlisted .unnumbered}
 
@@ -1025,15 +1025,15 @@ En esta tarea se recopilan los productos del sistema de información y se presen
 <td style="text-align: center; width: 70%;" colspan="9"><strong>ACTIVIDADES</strong></td>
 </tr>
 <tr>
-<td style="text-align: center;"><a href="#csi-1"><strong>CSI 1</strong></a></td>
-<td style="text-align: center;"><a href="#csi-2"><strong>CSI 2</strong></a></td>
-<td style="text-align: center;"><a href="#csi-3"><strong>CSI 3</strong></a></td>
-<td style="text-align: center;"><a href="#csi-4"><strong>CSI 4</strong></a></td>
-<td style="text-align: center;"><a href="#csi-5"><strong>CSI 5</strong></a></td>
-<td style="text-align: center;"><a href="#csi-6"><strong>CSI 6</strong></a></td>
-<td style="text-align: center;"><a href="#csi-7"><strong>CSI 7</strong></a></td>
-<td style="text-align: center;"><a href="#csi-8"><strong>CSI 8</strong></a></td>
-<td style="text-align: center;"><a href="#csi-9"><strong>CSI 9</strong></a></td>
+<td style="text-align: center;"><a href="#1"><strong>CSI 1</strong></a></td>
+<td style="text-align: center;"><a href="#2"><strong>CSI 2</strong></a></td>
+<td style="text-align: center;"><a href="#3"><strong>CSI 3</strong></a></td>
+<td style="text-align: center;"><a href="#4"><strong>CSI 4</strong></a></td>
+<td style="text-align: center;"><a href="#5"><strong>CSI 5</strong></a></td>
+<td style="text-align: center;"><a href="#6"><strong>CSI 6</strong></a></td>
+<td style="text-align: center;"><a href="#7"><strong>CSI 7</strong></a></td>
+<td style="text-align: center;"><a href="#8"><strong>CSI 8</strong></a></td>
+<td style="text-align: center;"><a href="#9"><strong>CSI 9</strong></a></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../04-participantes/01-participantes.qmd#perfil-analista">Administrador de B/D</a></td>
@@ -1217,15 +1217,15 @@ En esta tarea se recopilan los productos del sistema de información y se presen
 <td style="text-align: center; width: 70%;" colspan="9"><strong>ACTIVIDADES</strong></td>
 </tr>
 <tr>
-<td style="text-align: center;"><a href="#csi-1"><strong>CSI 1</strong></a></td>
-<td style="text-align: center;"><a href="#csi-2"><strong>CSI 2</strong></a></td>
-<td style="text-align: center;"><a href="#csi-3"><strong>CSI 3</strong></a></td>
-<td style="text-align: center;"><a href="#csi-4"><strong>CSI 4</strong></a></td>
-<td style="text-align: center;"><a href="#csi-5"><strong>CSI 5</strong></a></td>
-<td style="text-align: center;"><a href="#csi-6"><strong>CSI 6</strong></a></td>
-<td style="text-align: center;"><a href="#csi-7"><strong>CSI 7</strong></a></td>
-<td style="text-align: center;"><a href="#csi-8"><strong>CSI 8</strong></a></td>
-<td style="text-align: center;"><a href="#csi-9"><strong>CSI 9</strong></a></td>
+<td style="text-align: center;"><a href="#1"><strong>CSI 1</strong></a></td>
+<td style="text-align: center;"><a href="#2"><strong>CSI 2</strong></a></td>
+<td style="text-align: center;"><a href="#3"><strong>CSI 3</strong></a></td>
+<td style="text-align: center;"><a href="#4"><strong>CSI 4</strong></a></td>
+<td style="text-align: center;"><a href="#5"><strong>CSI 5</strong></a></td>
+<td style="text-align: center;"><a href="#6"><strong>CSI 6</strong></a></td>
+<td style="text-align: center;"><a href="#7"><strong>CSI 7</strong></a></td>
+<td style="text-align: center;"><a href="#8"><strong>CSI 8</strong></a></td>
+<td style="text-align: center;"><a href="#9"><strong>CSI 9</strong></a></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../03-tecnicas/01-tecnicas.qmd#pruebas-integracion">Pruebas de Integración</a></td>

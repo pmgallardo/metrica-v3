@@ -50,7 +50,7 @@ Se constituye el equipo de implantación, determinando los recursos humanos nece
 <td style="background-color: #000033; text-align: left; width: 20%;"><strong><span style="color: #ffffff;">PARTICIPANTES</span></strong></td>
 </tr>
 <tr>
-<td style="text-align: left; vertical-align: top;"><a href="#ias-1-1"><strong>IAS 1.1</strong>: Definición del Plan de Implantación</a></td>
+<td style="text-align: left; vertical-align: top;"><a href="#1-1"><strong>IAS 1.1</strong>: Definición del Plan de Implantación</a></td>
 <td style="text-align: left; vertical-align: top;">
 <ul>
 <li>Plan de implantación</li>
@@ -72,7 +72,7 @@ Se constituye el equipo de implantación, determinando los recursos humanos nece
 </td>
 </tr>
 <tr>
-<td style="text-align: left; vertical-align: top;"><a href="#ias-1-2"><strong>IAS 1.2</strong>: Especificación del Equipo de Implantación</a></td>
+<td style="text-align: left; vertical-align: top;"><a href="#1-2"><strong>IAS 1.2</strong>: Especificación del Equipo de Implantación</a></td>
 <td style="text-align: left; vertical-align: top;">
 <ul>
 <li>Equipo de implantación</li>
@@ -181,7 +181,7 @@ La formación para que los usuarios finales sean capaces de utilizar el sistema 
 <td style="background-color: #000033; text-align: left; width: 20%;"><strong><span style="color: #ffffff;">PARTICIPANTES</span></strong></td>
 </tr>
 <tr>
-<td style="text-align: left; vertical-align: top;"><a href="#ias-2-1"><strong>IAS 2.1</strong>: Preparación de la Formación del Equipo de Implantación</a></td>
+<td style="text-align: left; vertical-align: top;"><a href="#2-1"><strong>IAS 2.1</strong>: Preparación de la Formación del Equipo de Implantación</a></td>
 <td style="text-align: left; vertical-align: top;">
 <ul>
 <li>Plan de Formación del Equipo de Implantación
@@ -205,7 +205,7 @@ La formación para que los usuarios finales sean capaces de utilizar el sistema 
 </td>
 </tr>
 <tr>
-<td style="text-align: left; vertical-align: top;"><a href="#ias-2-2"><strong>IAS 2.2</strong>: Formación del Equipo de Implantación</a></td>
+<td style="text-align: left; vertical-align: top;"><a href="#2-2"><strong>IAS 2.2</strong>: Formación del Equipo de Implantación</a></td>
 <td style="text-align: left; vertical-align: top;">
 <ul>
 <li>Plan de Formación del Equipo de Implantación
@@ -224,7 +224,7 @@ La formación para que los usuarios finales sean capaces de utilizar el sistema 
 </td>
 </tr>
 <tr>
-<td style="text-align: left; vertical-align: top;"><a href="#ias-2-3"><strong>IAS 2.3</strong>: Preparación de la Formación a Usuarios Finales</a></td>
+<td style="text-align: left; vertical-align: top;"><a href="#2-3"><strong>IAS 2.3</strong>: Preparación de la Formación a Usuarios Finales</a></td>
 <td style="text-align: left; vertical-align: top;">
 <ul>
 <li>Plan de Formación a Usuarios Finales
@@ -246,7 +246,7 @@ La formación para que los usuarios finales sean capaces de utilizar el sistema 
 </td>
 </tr>
 <tr>
-<td style="text-align: left; vertical-align: top;"><a href="#ias-2-4"><strong>IAS 2.4</strong>: Seguimiento de la Formación a Usuarios Finales</a></td>
+<td style="text-align: left; vertical-align: top;"><a href="#2-4"><strong>IAS 2.4</strong>: Seguimiento de la Formación a Usuarios Finales</a></td>
 <td style="text-align: left; vertical-align: top;">
 <ul>
 <li>Plan de Formación a Usuarios Finales
@@ -280,8 +280,8 @@ Por último, se convoca a las personas que deben asistir a los cursos de formaci
 
 ###### De entrada {.unnumbered .unlisted}
 
-* Plan de Implantación (IAS 1.1)
-* Equipo de Implantación (IAS 1.2)
+* Plan de Implantación ([IAS 1.1](#ias-1-1))
+* Equipo de Implantación ([IAS 1.2](#ias-1-2))
 
 ###### De salida {.unnumbered .unlisted}
 
@@ -306,8 +306,8 @@ En esta tarea se lleva a cabo la formación del equipo que va a ser responsable 
 
 ###### De entrada {.unnumbered .unlisted}
 
-* Equipo de Implantación (IAS 1.2)
-* Plan de Formación del Equipo de Implantación (IAS 2.1)
+* Equipo de Implantación ([IAS 1.2](#ias-1-2))
+* Plan de Formación del Equipo de Implantación ([IAS 2.1](#ias-2-1))
 
 ###### De salida {.unnumbered .unlisted}
 
@@ -329,7 +329,7 @@ Se establece el plan de formación del sistema a implantar en su totalidad, con 
 
 ###### De entrada {.unnumbered .unlisted}
 
-* Plan de Implantación (IAS 1.1)
+* Plan de Implantación ([IAS 1.1](#ias-1-1))
 * Catálogo de Usuarios ([ASI 1.4](04-asi.qmd#asi-1-4))
 * Especificación de la Formación a Usuarios Finales (CSI 7.2)
 
@@ -354,7 +354,7 @@ La impartición de la formación a los usuarios finales queda fuera del ámbito 
 
 ###### De entrada {.unnumbered .unlisted}
 
-* Plan de Formación a Usuarios Finales (IAS 2.3)
+* Plan de Formación a Usuarios Finales ([IAS 2.3](#ias-2-3))
 
 ###### De salida {.unnumbered .unlisted}
 
@@ -384,7 +384,7 @@ Por tanto, como paso previo a la realización de dichas pruebas y de acuerdo al 
 <td style="background-color: #000033; text-align: left; width: 20%;"><strong><span style="color: #ffffff;">PARTICIPANTES</span></strong></td>
 </tr>
 <tr>
-<td style="text-align: left; vertical-align: top;"><a href="#ias-3-1"><strong>IAS 3.1</strong>: Preparación de la Instalación</a></td>
+<td style="text-align: left; vertical-align: top;"><a href="#3-1"><strong>IAS 3.1</strong>: Preparación de la Instalación</a></td>
 <td style="text-align: left; vertical-align: top;">
 <ul>
 <li>Incidencias de Preparación de Instalación</li>
@@ -400,7 +400,7 @@ Por tanto, como paso previo a la realización de dichas pruebas y de acuerdo al 
 </td>
 </tr>
 <tr>
-<td style="text-align: left; vertical-align: top;"><a href="#ias-3-2"><strong>IAS 3.2</strong>: Realización de la Instalación</a></td>
+<td style="text-align: left; vertical-align: top;"><a href="#3-2"><strong>IAS 3.2</strong>: Realización de la Instalación</a></td>
 <td style="text-align: left; vertical-align: top;">
 <ul>
 <li>Producto Software (instalado)</li>
@@ -424,7 +424,7 @@ Por tanto, como paso previo a la realización de dichas pruebas y de acuerdo al 
 
 En esta tarea se verifica que está disponible la infraestructura necesaria para configurar el entorno. Dicha infraestructura debe cumplir los requisitos de implantación (instalación e infraestructura) y tener en cuenta los procedimientos de seguridad y control de acceso (mantenimiento de la integridad y confidencialidad de los datos, control de accesos al sistema, copias de seguridad y recuperación de datos, etc.), y operación y administración del sistema (estándares, recuperación y reanudación de trabajos, planificación de trabajos, etc.).
 
-Además, si alguno de los sistemas de información implicados en la implantación lleva implícita una migración de datos habrá que tener en cuenta, también, las características del entorno y los procedimientos propios de la migración establecidos en el plan de migración y carga inicial de datos, obtenido en la actividad Diseño de la Migración y Carga Inicial de Datos (DSI 9).
+Además, si alguno de los sistemas de información implicados en la implantación lleva implícita una migración de datos habrá que tener en cuenta, también, las características del entorno y los procedimientos propios de la migración establecidos en el plan de migración y carga inicial de datos, obtenido en la actividad Diseño de la Migración y Carga Inicial de Datos ([DSI 9](05-dsi.qmd#9)).
 
 Una vez comprobada la idoneidad de los distintos elementos relacionados con la infraestructura, se realiza la instalación del software de base necesario para la incorporación posterior de los componentes asociados a los sistemas de información implicados en la implantación.
 
@@ -434,13 +434,13 @@ También se debe asegurar que el equipo responsable de la realización de las pr
 
 ###### De entrada {.unnumbered .unlisted}
 
-* Plan de Implantación (IAS 1.1)
-* Plan de Formación del Equipo de Implantación (IAS 2.2)
-* Catálogo de Requisitos (DSI 11.2)
-* Diseño de la Arquitectura del Sistema (DSI 7.2)
-* Entorno Tecnológico del Sistema (DSI 7.2)
-* Especificaciones de Construcción del Sistema de Información (DSI 8.4)
-* Plan de Migración y Carga Inicial de Datos (DSI 9.4)
+* Plan de Implantación ([IAS 1.1](#ias-1-1))
+* Plan de Formación del Equipo de Implantación ([IAS 2.2](#ias-2-2))
+* Catálogo de Requisitos ([DSI 11.2](05-dsi.qmd#11.2))
+* Diseño de la Arquitectura del Sistema ([DSI 7.2](05-dsi.qmd#7.2))
+* Entorno Tecnológico del Sistema ([DSI 7.2](05-dsi.qmd#7.2))
+* Especificaciones de Construcción del Sistema de Información ([DSI 8.4](05-dsi.qmd#8.4))
+* Plan de Migración y Carga Inicial de Datos ([DSI 9.4](05-dsi.qmd#9.4))
 
 ###### De salida {.unnumbered .unlisted}
 
@@ -454,7 +454,7 @@ También se debe asegurar que el equipo responsable de la realización de las pr
 
 #### Tarea IAS 3.2: Realización de la Instalación {#ias-3-2}
 
-Se realiza la instalación de todos los componentes del nuevo sistema, incluidos los procedimientos manuales y automáticos, de acuerdo al plan de implantación y a su ubicación física, establecida en el proceso Diseño del Sistema de Información (DSI). Se deben tener en cuenta los estándares y normativas por los que se rige la organización en los entornos de operación.
+Se realiza la instalación de todos los componentes del nuevo sistema, incluidos los procedimientos manuales y automáticos, de acuerdo al plan de implantación y a su ubicación física, establecida en el proceso [Diseño del Sistema de Información (DSI)](05-dsi.qmd). Se deben tener en cuenta los estándares y normativas por los que se rige la organización en los entornos de operación.
 
 Asimismo, se prepara el entorno de datos identificando los sistemas de información que forman parte del sistema objeto de la implantación. Para cada uno de ellos:
 
@@ -471,9 +471,9 @@ Asimismo, si es necesaria una migración de datos se activarán también los pro
 
 ###### De entrada {.unnumbered .unlisted}
 
-* Plan de Implantación (IAS 1.1)
-* Equipo de Implantación (IAS 1.2)
-* Especificaciones de Construcción del Sistema de Información (DSI 8.4)
+* Plan de Implantación ([IAS 1.1](#ias-1-1))
+* Equipo de Implantación ([IAS 1.2](#ias-1-2))
+* Especificaciones de Construcción del Sistema de Información ([DSI 8.4](05-dsi.qmd#8.4))
 * Producto Software (CSI 6.1)
 * Código Fuente de los Componentes de Migración y Carga Inicial de Datos (CSI 8.2)
 * Procedimientos de Migración y Carga Inicial de Datos (CSI 8.2)
@@ -493,7 +493,7 @@ Asimismo, si es necesaria una migración de datos se activarán también los pro
 
 Teniendo en cuenta que los sistemas de información que forman parte del sistema a implantar pueden mejorar, ampliar o sustituir a otros ya existentes en la organización, puede ser necesaria una carga inicial y/o una migración de datos cuyo alcance dependerá de las características y cobertura de cada sistema de información implicado. Por tanto, la necesidad de una migración de datos puede venir determinada desde el proceso Estudio de Viabilidad del Sistema (EVS), en la actividad Selección de la Solución (EVS 6). Allí se habrá establecido la estrategia a seguir en la sustitución, evaluando las opciones del enfoque de desarrollo e instalación más apropiados para llevarlo a cabo.
 
-En cualquier caso, en la actividad Diseño de la Migración y Carga Inicial de Datos (DSI 9) se habrán definido y planificado los procesos y procedimientos necesarios para llevar a cabo la migración, realizándose su codificación en la actividad Construcción de los Componentes y Procedimientos de Migración y Carga Inicial de Datos (CSI 8).
+En cualquier caso, en la actividad Diseño de la Migración y Carga Inicial de Datos ([DSI 9](05-dsi.qmd#9)) se habrán definido y planificado los procesos y procedimientos necesarios para llevar a cabo la migración, realizándose su codificación en la actividad Construcción de los Componentes y Procedimientos de Migración y Carga Inicial de Datos (CSI 8).
 
 ```{=html}
 <table class="avia-table avia-data-table">
@@ -505,7 +505,7 @@ En cualquier caso, en la actividad Diseño de la Migración y Carga Inicial de D
 <td style="background-color: #000033; text-align: left; width: 20%;"><strong><span style="color: #ffffff;">PARTICIPANTES</span></strong></td>
 </tr>
 <tr>
-<td style="text-align: left; vertical-align: top;"><a href="#ias-4-1"><strong>IAS 4.1</strong>: Migración y Carga Inicial de Datos</a></td>
+<td style="text-align: left; vertical-align: top;"><a href="#4-1"><strong>IAS 4.1</strong>: Migración y Carga Inicial de Datos</a></td>
 <td style="text-align: left; vertical-align: top;">
 <ul>
 <li>Bases de datos / ficheros cargados</li>
@@ -535,11 +535,11 @@ A continuación, si procede, se hace la migración de datos, activando los proce
 
 ###### De entrada {.unnumbered .unlisted}
 
-* Plan de implantación (IAS 1.1)
-* Equipo de implantación (IAS 1.2)
-* Plan de migración y carga inicial de datos (DSI 9.4)
-* Código Fuente de los Componentes de Migración y Carga Inicial de Datos (instalado) (IAS 3.2)
-* Procedimientos de Migración y Carga Inicial de Datos (instalados) (IAS 3.2)
+* Plan de implantación ([IAS 1.1](#ias-1-1))
+* Equipo de implantación ([IAS 1.2](#ias-1-2))
+* Plan de migración y carga inicial de datos ([DSI 9.4](05-dsi.qmd#9.4))
+* Código Fuente de los Componentes de Migración y Carga Inicial de Datos (instalado) ([IAS 3.2](#ias-3-2))
+* Procedimientos de Migración y Carga Inicial de Datos (instalados) ([IAS 3.2](#ias-3-2))
 
 ###### De salida {.unnumbered .unlisted}
 
@@ -573,7 +573,7 @@ Una vez ejecutadas estas pruebas, el equipo de usuarios técnicos informa de las
 <td style="background-color: #000033; text-align: left; width: 20%;"><strong><span style="color: #ffffff;">PARTICIPANTES</span></strong></td>
 </tr>
 <tr>
-<td style="text-align: left; vertical-align: top;"><a href="#ias-5-1"><strong>IAS 5.1</strong>: Preparación de las Pruebas de Implantación</a></td>
+<td style="text-align: left; vertical-align: top;"><a href="#5-1"><strong>IAS 5.1</strong>: Preparación de las Pruebas de Implantación</a></td>
 <td style="text-align: left; vertical-align: top;">
 <ul>
 <li>Plan de pruebas</li>
@@ -588,7 +588,7 @@ Una vez ejecutadas estas pruebas, el equipo de usuarios técnicos informa de las
 </td>
 </tr>
 <tr>
-<td style="text-align: left; vertical-align: top;"><a href="#ias-5-2"><strong>IAS 5.2</strong>: Realización de las Pruebas de Implantación</a></td>
+<td style="text-align: left; vertical-align: top;"><a href="#5-2"><strong>IAS 5.2</strong>: Realización de las Pruebas de Implantación</a></td>
 <td style="text-align: left; vertical-align: top;">
 <ul>
 <li>Resultado de las pruebas de implantación</li>
@@ -606,7 +606,7 @@ Una vez ejecutadas estas pruebas, el equipo de usuarios técnicos informa de las
 </td>
 </tr>
 <tr>
-<td style="text-align: left; vertical-align: top;"><a href="#ias-5-3"><strong>IAS 5.3</strong>: Evaluación del Resultado de las Pruebas de Implantación</a></td>
+<td style="text-align: left; vertical-align: top;"><a href="#5-3"><strong>IAS 5.3</strong>: Evaluación del Resultado de las Pruebas de Implantación</a></td>
 <td style="text-align: left; vertical-align: top;">
 <ul>
 <li>Evaluación del resultado de las pruebas de implantación</li>
@@ -636,9 +636,9 @@ Se comunica el plan de pruebas de implantación al equipo responsable de llevarl
 
 ###### De entrada {.unnumbered .unlisted}
 
-* Plan de Implantación (IAS 1.1)
-* Equipo de Implantación (IAS 1.2)
-* Plan de Pruebas (DSI 10.3)
+* Plan de Implantación ([IAS 1.1](#ias-1-1))
+* Equipo de Implantación ([IAS 1.2](#ias-1-2))
+* Plan de Pruebas ([DSI 10.3](05-dsi.qmd#10.3))
 
 ###### De salida {.unnumbered .unlisted}
 
@@ -651,7 +651,7 @@ Se comunica el plan de pruebas de implantación al equipo responsable de llevarl
 
 #### Tarea IAS 5.2: Realización de las Pruebas de implantación {#ias-5-2}
 
-Se realizan las pruebas de implantación, de acuerdo a las verificaciones establecidas en el plan de pruebas definido en la actividad Especificación Técnica del Plan de Pruebas (DSI 10). Es necesario tener en cuenta las posibles pruebas adicionales incorporadas a dicho plan en la tarea anterior.
+Se realizan las pruebas de implantación, de acuerdo a las verificaciones establecidas en el plan de pruebas definido en la actividad Especificación Técnica del Plan de Pruebas ([DSI 10](05-dsi.qmd#10)). Es necesario tener en cuenta las posibles pruebas adicionales incorporadas a dicho plan en la tarea anterior.
 
 El objetivo de estas pruebas es asegurar que el sistema se comporta de la forma prevista en el entorno de operación, y que responde a todas las especificaciones dadas en cuanto a:
 
@@ -669,9 +669,9 @@ Se registra la realización de las pruebas incluyendo un informe que recoja la d
 
 ###### De entrada {.unnumbered .unlisted}
 
-* Producto Software (IAS 3.2)
-* Bases de Datos / Ficheros Cargados (IAS 4.1)
-* Plan de Pruebas (IAS 5.1)
+* Producto Software ([IAS 3.2](#ias-3-2))
+* Bases de Datos / Ficheros Cargados ([IAS 4.1](#ias-4-1))
+* Plan de Pruebas ([IAS 5.1](#ias-5-1))
 
 ###### De salida {.unnumbered .unlisted}
 
@@ -699,8 +699,8 @@ Una vez realizadas las medidas correctoras consideradas necesarias y comprobado 
 
 ###### De entrada {.unnumbered .unlisted}
 
-* Plan de Pruebas (IAS 5.1)
-* Resultado de las Pruebas de Implantación (IAS 5.2)
+* Plan de Pruebas ([IAS 5.1](#ias-5-1))
+* Resultado de las Pruebas de Implantación ([IAS 5.2](#ias-5-2))
 
 ###### De salida {.unnumbered .unlisted}
 
@@ -727,7 +727,7 @@ Los Directores de los Usuarios revisan los criterios de aceptación, especificad
 <td style="background-color: #000033; text-align: left; width: 20%;"><strong><span style="color: #ffffff;">PARTICIPANTES</span></strong></td>
 </tr>
 <tr>
-<td style="text-align: left; vertical-align: top;"><a href="#ias-6-1"><strong>IAS 6.1</strong>: Preparación de las Pruebas de Aceptación</a></td>
+<td style="text-align: left; vertical-align: top;"><a href="#6-1"><strong>IAS 6.1</strong>: Preparación de las Pruebas de Aceptación</a></td>
 <td style="text-align: left; vertical-align: top;">
 <ul>
 <li>Plan de Pruebas</li>
@@ -742,7 +742,7 @@ Los Directores de los Usuarios revisan los criterios de aceptación, especificad
 </td>
 </tr>
 <tr>
-<td style="text-align: left; vertical-align: top;"><a href="#ias-6-2"><strong>IAS 6.2</strong>: Realización de las Pruebas de Aceptación</a></td>
+<td style="text-align: left; vertical-align: top;"><a href="#6-2"><strong>IAS 6.2</strong>: Realización de las Pruebas de Aceptación</a></td>
 <td style="text-align: left; vertical-align: top;">
 <ul>
 <li>Resultado de las Pruebas de Aceptación</li>
@@ -760,7 +760,7 @@ Los Directores de los Usuarios revisan los criterios de aceptación, especificad
 </td>
 </tr>
 <tr>
-<td style="text-align: left; vertical-align: top;"><a href="#ias-6-3"><strong>IAS 6.3</strong>: Evaluación del Resultado de las Pruebas de Aceptación</a></td>
+<td style="text-align: left; vertical-align: top;"><a href="#6-3"><strong>IAS 6.3</strong>: Evaluación del Resultado de las Pruebas de Aceptación</a></td>
 <td style="text-align: left; vertical-align: top;">
 <ul>
 <li>Evaluación del Resultado de las Pruebas de Aceptación</li>
@@ -782,15 +782,15 @@ Los Directores de los Usuarios revisan los criterios de aceptación, especificad
 
 Se analizan los criterios de aceptación establecidos por el usuario y recogidos en las verificaciones del plan de pruebas, por si fuera necesario incorporar algún caso de prueba adicional.
 
-Se comunica el plan de pruebas de aceptación una vez actualizado, a los usuarios implicados según los distintos perfiles identificados en la tarea Especificación del equipo de implantación (IAS 1.2).
+Se comunica el plan de pruebas de aceptación una vez actualizado, a los usuarios implicados según los distintos perfiles identificados en la tarea Especificación del equipo de implantación ([IAS 1.2](#ias-1-2)).
 Productos
 
 ###### De entrada {.unnumbered .unlisted}
 
-* Plan de Pruebas (DSI 10.3)
-* Plan de implantación (IAS 1.1)
-* Equipo de implantación (IAS 1.2)
-* Plan de pruebas (IAS 5.1)
+* Plan de Pruebas ([DSI 10.3](05-dsi.qmd#10.3))
+* Plan de implantación ([IAS 1.1](#ias-1-1))
+* Equipo de implantación ([IAS 1.2](#ias-1-2))
+* Plan de pruebas ([IAS 5.1](#ias-5-1))
 
 ###### De salida {.unnumbered .unlisted}
 
@@ -810,9 +810,9 @@ Productos
 
 ##### De entrada {.unnumbered .unlisted}
 
-* Producto Software (IAS 3.2)
-* Bases de Datos / Ficheros Cargados (IAS 4.1)
-* Plan de Pruebas (IAS 6.1)
+* Producto Software ([IAS 3.2](#ias-3-2))
+* Bases de Datos / Ficheros Cargados ([IAS 4.1](#ias-4-1))
+* Plan de Pruebas ([IAS 6.1](#ias-6-1))
 
 ##### De salida {.unnumbered .unlisted}
 
@@ -840,8 +840,8 @@ Una vez realizadas las medidas correctoras necesarias, y comprobado que su compo
 
 ###### De entrada {.unnumbered .unlisted}
 
-* Plan de Pruebas (IAS 6.1)
-- Resultado de las Pruebas de Aceptación (IAS 6.2)
+* Plan de Pruebas ([IAS 6.1](#ias-6-1))
+- Resultado de las Pruebas de Aceptación ([IAS 6.2](#ias-6.2))
 
 ###### De salida {.unnumbered .unlisted}
 
@@ -870,7 +870,7 @@ Es importante resaltar que la existencia de una configuración del software perm
 <td style="background-color: #000033; text-align: left; width: 20%;"><strong><span style="color: #ffffff;">PARTICIPANTES</span></strong></td>
 </tr>
 <tr>
-<td style="text-align: left; vertical-align: top;"><a href="#ias-7-1"><strong>IAS 7.1</strong>: Establecimiento de la Infraestructura para el Mantenimiento</a></td>
+<td style="text-align: left; vertical-align: top;"><a href="#7-1"><strong>IAS 7.1</strong>: Establecimiento de la Infraestructura para el Mantenimiento</a></td>
 <td style="text-align: left; vertical-align: top;">
 <ul>
 <li>Plan de Mantenimiento</li>
@@ -891,7 +891,7 @@ Es importante resaltar que la existencia de una configuración del software perm
 </td>
 </tr>
 <tr>
-<td style="text-align: left; vertical-align: top;"><a href="#ias-7-2"><strong>IAS 7.2</strong>: Formalización del Plan de Mantenimiento</a></td>
+<td style="text-align: left; vertical-align: top;"><a href="#7-2"><strong>IAS 7.2</strong>: Formalización del Plan de Mantenimiento</a></td>
 <td style="text-align: left; vertical-align: top;">
 <ul>
 <li>Plan de Mantenimiento</li>
@@ -929,7 +929,7 @@ Finalmente, se recoge en el plan de mantenimiento toda la infraestructura necesa
 
 ###### De entrada {.unnumbered .unlisted}
 
-* Catálogo de Requisitos (DSI 11.2)
+* Catálogo de Requisitos ([DSI 11.2](05-dsi.qmd#11.2))
 
 ###### De salida {.unnumbered .unlisted}
 
@@ -956,7 +956,7 @@ Se estiman los recursos humanos necesarios para el servicio de mantenimiento est
 
 ###### De entrada {.unnumbered .unlisted}
 
-* Plan de Mantenimiento (IAS 7.1)
+* Plan de Mantenimiento ([IAS 7.1](#ias-7-1))
 
 ###### De salida {.unnumbered .unlisted}
 
@@ -995,7 +995,7 @@ Según el ámbito y el alcance de los tipos de servicio que se vayan a prestar, 
 <td style="background-color: #000033; text-align: left; width: 20%;"><strong><span style="color: #ffffff;">PARTICIPANTES</span></strong></td>
 </tr>
 <tr>
-<td style="text-align: left; vertical-align: top;"><a href="#ias-8-1"><strong>IAS 8.1</strong>: Identificación de los Servicios</a></td>
+<td style="text-align: left; vertical-align: top;"><a href="#8-1"><strong>IAS 8.1</strong>: Identificación de los Servicios</a></td>
 <td style="text-align: left; vertical-align: top;">
 <ul>
 <li>Especificación de Tipos de Servicio</li>
@@ -1015,7 +1015,7 @@ Según el ámbito y el alcance de los tipos de servicio que se vayan a prestar, 
 </td>
 </tr>
 <tr>
-<td style="text-align: left; vertical-align: top;"><a href="#ias-8-2"><strong>IAS 8.2</strong>: Descripción de las Propiedades de cada Servicio</a></td>
+<td style="text-align: left; vertical-align: top;"><a href="#8-2"><strong>IAS 8.2</strong>: Descripción de las Propiedades de cada Servicio</a></td>
 <td style="text-align: left; vertical-align: top;">
 <ul>
 <li>Especificación de Tipos de Servicio:
@@ -1040,7 +1040,7 @@ Según el ámbito y el alcance de los tipos de servicio que se vayan a prestar, 
 </td>
 </tr>
 <tr>
-<td style="text-align: left; vertical-align: top;"><a href="#ias-8-3"><strong>IAS 8.3</strong>: Determinación del Acuerdo de Nivel de Servicio</a></td>
+<td style="text-align: left; vertical-align: top;"><a href="#8-3"><strong>IAS 8.3</strong>: Determinación del Acuerdo de Nivel de Servicio</a></td>
 <td style="text-align: left; vertical-align: top;">
 <ul>
 <li>Acuerdo de Niveles de Servicio</li>
@@ -1081,8 +1081,8 @@ Se consideran los servicios comunes de los sistemas de información implicados e
 
 ###### De entrada {.unnumbered .unlisted}
 
-* Catálogo de Requisitos (DSI 11.2)
-* Plan de Implantación (IAS 1.1)
+* Catálogo de Requisitos ([DSI 11.2](05-dsi.qmd#11.2))
+* Plan de Implantación ([IAS 1.1](#ias-1-1))
 
 ###### De salida {.unnumbered .unlisted}
 
@@ -1111,7 +1111,7 @@ Asimismo, se especifican las propiedades de calidad que constituyen el nivel de 
 
 ###### De entrada {.unnumbered .unlisted}
 
-* Especificación de Tipos de Servicio (IAS 8.1)
+* Especificación de Tipos de Servicio ([IAS 8.1](#ias-8.1))
 
 ###### De salida {.unnumbered .unlisted}
 
@@ -1141,7 +1141,7 @@ Se hace una estimación de los recursos humanos y de infraestructura necesaria p
 
 ###### De entrada
 
-* Especificación de Tipos de Servicio (IAS 8.2)
+* Especificación de Tipos de Servicio ([IAS 8.2](#ias-8.2))
 
 ###### De salida
 
@@ -1171,7 +1171,7 @@ Una vez que se han efectuado las pruebas de implantación y de aceptación, y qu
 <td style="background-color: #000033; text-align: left; width: 20%;"><strong><span style="color: #ffffff;">PARTICIPANTES</span></strong></td>
 </tr>
 <tr>
-<td style="text-align: left; vertical-align: top;"><a href="#ias-9-1"><strong>IAS 9.1</strong>: Convocatoria de la Presentación del Sistema</a></td>
+<td style="text-align: left; vertical-align: top;"><a href="#9-1"><strong>IAS 9.1</strong>: Convocatoria de la Presentación del Sistema</a></td>
 <td style="text-align: left; vertical-align: top;">
 <ul>
 <li>Plan de presentación del sistema</li>
@@ -1191,7 +1191,7 @@ Una vez que se han efectuado las pruebas de implantación y de aceptación, y qu
 </td>
 </tr>
 <tr>
-<td style="text-align: left; vertical-align: top;"><a href="#ias-9-2"><strong>IAS 9.2</strong>: Aprobación del Sistema</a></td>
+<td style="text-align: left; vertical-align: top;"><a href="#9-2"><strong>IAS 9.2</strong>: Aprobación del Sistema</a></td>
 <td style="text-align: left; vertical-align: top;">
 <ul>
 <li>Aprobación del sistema</li>
@@ -1225,10 +1225,10 @@ Se recibe la confirmación por parte del Comité de Dirección y se prepara la p
 
 ###### De entrada {.unnumbered .unlisted}
 
-* Evaluación del Resultado de las Pruebas de Implantación (IAS 5.3)
-* Evaluación del Resultado de las Pruebas de Aceptación (IAS 6.3)
-* Plan de Mantenimiento (IAS 7.2)
-* Acuerdo de Nivel de Servicio (IAS 8.3)
+* Evaluación del Resultado de las Pruebas de Implantación ([IAS 5.3](#ias-5-3))
+* Evaluación del Resultado de las Pruebas de Aceptación ([IAS 6.3](#ias-6.3))
+* Plan de Mantenimiento ([IAS 7.2](#ias-7.2))
+* Acuerdo de Nivel de Servicio ([IAS 8.3](#ias-8.3))
 
 ###### De salida {.unnumbered .unlisted}
 
@@ -1252,7 +1252,7 @@ Se presenta el sistema al Comité de Dirección según el plan previsto y se apr
 
 ###### De entrada {.unnumbered .unlisted}
 
-* Plan de Presentación (IAS 9.1)
+* Plan de Presentación ([IAS 9.1](#ias-9.1))
 
 ###### De salida {.unnumbered .unlisted}
 
@@ -1289,7 +1289,7 @@ Una vez que el sistema ya está en producción, se le notifica al responsable de
 <td style="background-color: #000033; text-align: left; width: 20%;"><strong><span style="color: #ffffff;">PARTICIPANTES</span></strong></td>
 </tr>
 <tr>
-<td style="text-align: left; vertical-align: top;"><a href="#ias-10-1"><strong>IAS 10.1</strong>: Preparación del Entorno de Producción</a></td>
+<td style="text-align: left; vertical-align: top;"><a href="#10-1"><strong>IAS 10.1</strong>: Preparación del Entorno de Producción</a></td>
 <td style="text-align: left; vertical-align: top;">
 <ul>
 <li>Incidencias del Paso a Producción</li>
@@ -1306,7 +1306,7 @@ Una vez que el sistema ya está en producción, se le notifica al responsable de
 </td>
 </tr>
 <tr>
-<td style="text-align: left; vertical-align: top;"><a href="#ias-10-2"><strong>IAS 10.2</strong>: Activación del Sistema de Producción</a></td>
+<td style="text-align: left; vertical-align: top;"><a href="#10-2"><strong>IAS 10.2</strong>: Activación del Sistema de Producción</a></td>
 <td style="text-align: left; vertical-align: top;">
 <ul>
 <li>Sistema en Producción</li>
@@ -1334,14 +1334,14 @@ Se comprueba que la instalación del sistema es correcta. Por último, se determ
 
 ###### De entrada {.unnumbered .unlisted}
 
-* Plan de Implantación (IAS 1.1)
-* Equipo de Implantación (IAS 1.2)
-* Catálogo de Requisitos (DSI 11.2)
-* Especificaciones de Construcción del Sistema de Información (DSI 8.4)
+* Plan de Implantación ([IAS 1.1](#ias-1-1))
+* Equipo de Implantación ([IAS 1.2](#ias-1-2))
+* Catálogo de Requisitos ([DSI 11.2](05-dsi.qmd#11.2))
+* Especificaciones de Construcción del Sistema de Información ([DSI 8.4](05-dsi.qmd#8.4))
 * Producto Software (CSI 6.1)
 * Código Fuente de los Componentes de Migración y Carga Inicial de Datos (CSI 8.2)
 * Procedimientos de Migración y Carga Inicial de Datos (CSI 8.2)
-* Aprobación del Sistema (IAS 9.2)
+* Aprobación del Sistema ([IAS 9.2](#ias-9.2))
 
 ###### De salida {.unnumbered .unlisted}
 
@@ -1379,16 +1379,16 @@ Se arranca el nuevo sistema en producción activando tanto el proceso de Manteni
 <td style="text-align: center; width: 70%;" colspan="10"><strong>ACTIVIDADES</strong></td>
 </tr>
 <tr>
-<td style="text-align: center;"><a href="#ias-1"><strong>IAS 1</strong></a></td>
-<td style="text-align: center;"><a href="#ias-2"><strong>IAS 2</strong></a></td>
-<td style="text-align: center;"><a href="#ias-3"><strong>IAS 3</strong></a></td>
-<td style="text-align: center;"><a href="#ias-4"><strong>IAS 4</strong></a></td>
-<td style="text-align: center;"><a href="#ias-5"><strong>IAS 5</strong></a></td>
-<td style="text-align: center;"><a href="#ias-6"><strong>IAS 6</strong></a></td>
-<td style="text-align: center;"><a href="#ias-7"><strong>IAS 7</strong></a></td>
-<td style="text-align: center;"><a href="#ias-8"><strong>IAS 8</strong></a></td>
-<td style="text-align: center;"><a href="#ias-9"><strong>IAS 9</strong></a></td>
-<td style="text-align: center;"><a href="#ias-10"><strong>IAS 10</strong></a></td>
+<td style="text-align: center;"><a href="#1"><strong>IAS 1</strong></a></td>
+<td style="text-align: center;"><a href="#2"><strong>IAS 2</strong></a></td>
+<td style="text-align: center;"><a href="#3"><strong>IAS 3</strong></a></td>
+<td style="text-align: center;"><a href="#4"><strong>IAS 4</strong></a></td>
+<td style="text-align: center;"><a href="#5"><strong>IAS 5</strong></a></td>
+<td style="text-align: center;"><a href="#6"><strong>IAS 6</strong></a></td>
+<td style="text-align: center;"><a href="#7"><strong>IAS 7</strong></a></td>
+<td style="text-align: center;"><a href="#8"><strong>IAS 8</strong></a></td>
+<td style="text-align: center;"><a href="#9"><strong>IAS 9</strong></a></td>
+<td style="text-align: center;"><a href="#10"><strong>IAS 10</strong></a></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../04-participantes/01-participantes.qmd#perfil-analista">Administrador de B/D</a></td>
@@ -1586,16 +1586,16 @@ Se arranca el nuevo sistema en producción activando tanto el proceso de Manteni
 <td style="text-align: center; width: 70%;" colspan="10"><strong>ACTIVIDADES</strong></td>
 </tr>
 <tr>
-<td style="text-align: center;"><a href="#ias-1"><strong>IAS 1</strong></a></td>
-<td style="text-align: center;"><a href="#ias-2"><strong>IAS 2</strong></a></td>
-<td style="text-align: center;"><a href="#ias-3"><strong>IAS 3</strong></a></td>
-<td style="text-align: center;"><a href="#ias-4"><strong>IAS 4</strong></a></td>
-<td style="text-align: center;"><a href="#ias-5"><strong>IAS 5</strong></a></td>
-<td style="text-align: center;"><a href="#ias-6"><strong>IAS 6</strong></a></td>
-<td style="text-align: center;"><a href="#ias-7"><strong>IAS 7</strong></a></td>
-<td style="text-align: center;"><a href="#ias-8"><strong>IAS 8</strong></a></td>
-<td style="text-align: center;"><a href="#ias-9"><strong>IAS 9</strong></a></td>
-<td style="text-align: center;"><a href="#ias-10"><strong>IAS 10</strong></a></td>
+<td style="text-align: center;"><a href="#1"><strong>IAS 1</strong></a></td>
+<td style="text-align: center;"><a href="#2"><strong>IAS 2</strong></a></td>
+<td style="text-align: center;"><a href="#3"><strong>IAS 3</strong></a></td>
+<td style="text-align: center;"><a href="#4"><strong>IAS 4</strong></a></td>
+<td style="text-align: center;"><a href="#5"><strong>IAS 5</strong></a></td>
+<td style="text-align: center;"><a href="#6"><strong>IAS 6</strong></a></td>
+<td style="text-align: center;"><a href="#7"><strong>IAS 7</strong></a></td>
+<td style="text-align: center;"><a href="#8"><strong>IAS 8</strong></a></td>
+<td style="text-align: center;"><a href="#9"><strong>IAS 9</strong></a></td>
+<td style="text-align: center;"><a href="#10"><strong>IAS 10</strong></a></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../03-tecnicas/01-tecnicas.qmd#diagrama-de-representacion">Diagrama de Representación</a></td>

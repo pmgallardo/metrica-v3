@@ -21,7 +21,7 @@ El grupo de aseguramiento de calidad participa en la revisión de los productos 
 Las revisiones son una de las actividades más importantes del aseguramiento de la calidad, debido a que permiten eliminar defectos lo más pronto posible, cuando son menos costosos de corregir. Además existen procedimientos extraordinarios, como las auditorías, aplicables en desarrollos singulares y en el transcurso de las cuales se revisarán tanto las actividades de desarrollo como las propias de aseguramiento de calidad. La detección anticipada de errores evita el que se propaguen a los restantes procesos de desarrollo, reduciendo substancialmente el esfuerzo invertido en los mismos. En este sentido es importante destacar que el establecimiento del plan de aseguramiento de calidad comienza en el Estudio de Viabilidad del Sistema y se aplica a lo largo de todo el desarrollo, en los procesos de Análisis, Diseño, Construcción, Implantación y Aceptación del Sistema y en su posterior Mantenimiento.
 Actividades
 
-* [Estudio de Viabilidad del Sistema](#evs-cal)
+* [Estudio de Viabilidad del Sistema](#evs)
   * [Actividad EVS-CAL 1: Identificación de las Propiedades de Calidad par el Sistema](#evs-cal-1)
   * [Actividad EVS-CAL 2: Establecimiento del Plan de Aseguramiento de Calidad](#evs-cal-2)
   * [Actividad EVS-CAL 3: Adecuación del Plan de Aseguramiento de Calidad a la Solución](#evs-cal-3)
@@ -31,24 +31,24 @@ Actividades
   * [Actividad ASI-CAL 3: Revisión del Análisis de Consistencia](#asi-cal-3)
   * [Actividad ASI-CAL 4: Revisión del Plan de Pruebas](#asi-cal-4)
   * [Actividad ASI-CAL 5: Registro de la Aprobación del Análisis del Sistema](#asi-cal-5)
-* [Diseño del Sistema de Información](#dsi-cal)
+* [Diseño del Sistema de Información](#dsi)
   * [Actividad DSI-CAL 1: Revisión de la Verificación de la Arquitectura del Sistema](#dsi-cal-1)
   * [Actividad DSI-CAL 2: Revisión de la Especificación Técnica del Plan de Pruebas](#dsi-cal-2)
   * [Actividad DSI-CAL 3: Revisión de los Requisitos de Implantación](#dsi-cal-3)
   * [Actividad DSI-CAL 4: Registro de la Aprobación del Diseño del Sistema de Información](#dsi-cal-4)
-* [Construcción del Sistema de Información](#csi-cal)
+* [Construcción del Sistema de Información](#csi)
   * [Actividad CSI-CAL 1: Revisión del Código de Componentes y Procedimientos](#csi-cal-1)
   * [Actividad CSI-CAL 2: Revisión de las Pruebas Unitarias, de Integración y del Sistema](#csi-cal-2)
   * [Actividad CSI-CAL 3: Revisión de los Manuales de Usuario](#csi-cal-3)
   * [Actividad CSI-CAL 4: Revisión de la Formación a Usuarios Finales](#csi-cal-4)
   * [Actividad CSI-CAL 5: Registro de la Aprobación del Sistema de Información](#csi-cal-5)
-* [Implantación y Aceptación del Sistema](#ias-cal)
+* [Implantación y Aceptación del Sistema](#ias)
   * [Actividad IAS-CAL 1: Revisión del Plan de Implantación del Sistema](#ias-cal-1)
   * [Actividad IAS-CAL 2: Revisión de las Pruebas de Implantación del Sistema](#ias-cal-2)
   * [Actividad IAS-CAL 3: Revisión de las Pruebas de Aceptación del Sistema](#ias-cal-3)
   * [Actividad IAS-CAL 4: Revisión del Plan de Mantenimiento del Sistema](#ias-cal-4)
   * [Actividad IAS-CAL 5: Registro de la Aprobación de la Implantación del Sistema](#ias-cal-5)
-* [Mantenimiento del Sistema de Información](#msi-cal)
+* [Mantenimiento del Sistema de Información](#msi)
   * [Actividad MSI-CAL 1: Revisión del Mantenimiento del Sistema de Información](#msi-cal-1)
   * [Actividad MSI-CAL 2: Revisión del Plan de Pruebas de Regresión](#msi-cal-2)
   * [Actividad MSI-CAL 3: Revisión de la Realización de las Prueba de Regresión](#msi-cal-3)
@@ -493,7 +493,7 @@ En el proceso Análisis del Sistema de Información (ASI), el grupo de asegurami
 
 - Catálogo de requisitos, comprobando hasta que punto se han definido de una forma que facilite su comprensión y seguimiento.
 - Modelos resultantes del análisis, asegurando que se han verificado y validado y que se ha realizado la trazabilidad de requisitos.
-- Plan de pruebas, comprobando que se han tenido en cuenta en su definición los criterios establecidos en el plan de aseguramiento de calidad, con el fin de facilitar en los procesos Diseño del Sistema de Información (DSI), Construcción del Sistema de Información (CSI) e Implantación y Aceptación del Sistema (IAS) la revisión de los distintos niveles de prueba.
+- Plan de pruebas, comprobando que se han tenido en cuenta en su definición los criterios establecidos en el plan de aseguramiento de calidad, con el fin de facilitar en los procesos [Diseño del Sistema de Información (DSI)](../01-principal/05-dsi.qmd), Construcción del Sistema de Información (CSI) e Implantación y Aceptación del Sistema (IAS) la revisión de los distintos niveles de prueba.
 
 ![](../images/cal-asi.jpg)
 
@@ -509,7 +509,7 @@ En el proceso Análisis del Sistema de Información (ASI), el grupo de asegurami
 <td style="background-color: #000033; text-align: left; width: 20%;"><strong><span style="color: #ffffff;">PARTICIPANTES</span></strong></td>
 </tr>
 <tr>
-<td style="text-align: left; vertical-align: top;"><a href="#asi-cal-1-1"><strong>ASI-CAL 1.1</strong>: Definición del Plan de Aseguramiento de Calidad para el Sstema de Información</a></td>
+<td style="text-align: left; vertical-align: top;"><a href="#asi-1-1"><strong>ASI-CAL 1.1</strong>: Definición del Plan de Aseguramiento de Calidad para el Sstema de Información</a></td>
 <td style="text-align: left; vertical-align: top;">Plan de aseguramiento de calidad</p>
 <ul>
 <li>Aspetos generales</li>
@@ -572,7 +572,7 @@ Se especifican de forma clara y detallada:
 <td style="background-color: #000033; text-align: left; width: 20%;"><strong><span style="color: #ffffff;">PARTICIPANTES</span></strong></td>
 </tr>
 <tr>
-<td style="text-align: left; vertical-align: top;"><a href="#asi-cal-2-1"><strong>ASI-CAL 2.1</strong>: Contenido del Plan de Aseguramiento de Calidad para el Sistema de Información</a></td>
+<td style="text-align: left; vertical-align: top;"><a href="#asi-2-1"><strong>ASI-CAL 2.1</strong>: Contenido del Plan de Aseguramiento de Calidad para el Sistema de Información</a></td>
 <td style="text-align: left; vertical-align: top;">
 <ul>
 <li>Plan de aseguramiento de calidad (detallado)</li>
@@ -640,7 +640,7 @@ Una vez definido el plan de aseguramiento de calidad, toda la información resu
 <td style="background-color: #000033; text-align: left; width: 20%;"><strong><span style="color: #ffffff;">PARTICIPANTES</span></strong></td>
 </tr>
 <tr>
-<td style="text-align: left; vertical-align: top;"><a href="#asi-cal-3-1"><strong>ASI-CAL 3.1</strong>: Revisión del Catálogo de Requisitos</a></td>
+<td style="text-align: left; vertical-align: top;"><a href="#asi-3-1"><strong>ASI-CAL 3.1</strong>: Revisión del Catálogo de Requisitos</a></td>
 <td style="text-align: left; vertical-align: top;">Dossier de aseguramiento de calidad</p>
 <ul>
 <li>Revisión de requisitos</li>
@@ -658,7 +658,7 @@ Una vez definido el plan de aseguramiento de calidad, toda la información resu
 </td>
 </tr>
 <tr>
-<td style="text-align: left; vertical-align: top;"><a href="#asi-cal-3-2"><strong>ASI-CAL 3.2</strong>: Revisión de la Consistencia entre Productos</a></td>
+<td style="text-align: left; vertical-align: top;"><a href="#asi-3-2"><strong>ASI-CAL 3.2</strong>: Revisión de la Consistencia entre Productos</a></td>
 <td style="text-align: left; vertical-align: top;">Dossier de aseguramiento de calidad</p>
 <ul>
 <li>Revisión de consistencia</li>
@@ -691,7 +691,7 @@ En el caso de detectarse alguna deficiencia se remitirán las no conformidades 
 
 ###### De entrada {.unnumbered .unlisted}
 
-* Catálogo de requisitos (ASI 2.4)
+* Catálogo de requisitos ([ASI 2.4](../01-principal/04-asi.qmd#2-4))
 * Plan de aseguramiento de calidad (ASI-CAL 2.1)
 * Dossier de aseguramieto de calidad (ASI-CAL 2.1)
 
@@ -718,8 +718,8 @@ Se revisa que se ha realizado la verificación y validación de los productos 
 
 ###### De entrada {.unnumbered .unlisted}
 
-* Catálogo de requisitos (ASI 2.4)
-* Modelos de análisis revisados (ASI 9.3)
+* Catálogo de requisitos ([ASI 2.4](../01-principal/04-asi.qmd#2-4))
+* Modelos de análisis revisados ([ASI 9.3](../01-principal/04-asi.qmd#9-3))
 * Plan de aseguramiento de calidad (ASI-CAL 2.1)
 * Dossier de aseguramiento de calidad (ASI-CAL 3.1)
 
@@ -748,7 +748,7 @@ Se revisa que se ha realizado la verificación y validación de los productos 
 <td style="background-color: #000033; text-align: left; width: 20%;"><strong><span style="color: #ffffff;">PARTICIPANTES</span></strong></td>
 </tr>
 <tr>
-<td style="text-align: left; vertical-align: top;"><a href="#asi-cal-4-1"><strong>ASI-CAL 4.1</strong>: Revisión del Plan de Pruebas</a></td>
+<td style="text-align: left; vertical-align: top;"><a href="#asi-4-1"><strong>ASI-CAL 4.1</strong>: Revisión del Plan de Pruebas</a></td>
 <td style="text-align: left; vertical-align: top;">Dossier de aseguramiento de calidad</p>
 <ul>
 <li>Revisión del plan de pruebas</li>
@@ -779,7 +779,7 @@ Se revisa la existencia en el plan de pruebas de una normativa para la gestión
 
 ###### De entrada {.unnumbered .unlisted}
 
-* Plan de pruebas (ASI 10.3)
+* Plan de pruebas ([ASI 10.3](../01-principal/04-asi.qmd#10-3))
 * Plan de aseguramiento de calidad (ASI-CAL 2.1)
 * Dossier de aseguramiento de calidad (ASI-CAL 3.2)
 
@@ -808,7 +808,7 @@ Se revisa la existencia en el plan de pruebas de una normativa para la gestión
 <td style="background-color: #000033; text-align: left; width: 20%;"><strong><span style="color: #ffffff;">PARTICIPANTES</span></strong></td>
 </tr>
 <tr>
-<td style="text-align: left; vertical-align: top;"><a href="#asi-cal-5-1"><strong>ASI-CAL 5.1</strong>: Registro de la Aprobación del Análisis del Sistema de Información</a></td>
+<td style="text-align: left; vertical-align: top;"><a href="#asi-5-1"><strong>ASI-CAL 5.1</strong>: Registro de la Aprobación del Análisis del Sistema de Información</a></td>
 <td style="text-align: left; vertical-align: top;">Dossier de aseguramiento de calidad</p>
 <ul>
 <li>Registro de la aprobación del Análisis del Sistema de Información</li>
@@ -833,7 +833,7 @@ Se registra en el dossier de aseguramiento de calidad, la aprobación o rechazo
 
 ###### De entrada {.unnumbered .unlisted}
 
-* Aprobación del análisis del sistema de información (ASI 11.1)
+* Aprobación del análisis del sistema de información ([ASI 11.1](../01-principal/04-asi.qmd#11-1))
 * Dossier de aseguramiento de calidad (ASI-CAL 4.1)
 
 ###### De salida {.unnumbered .unlisted}
@@ -869,7 +869,7 @@ El siguiente esquema muestra la correspondencia entre las actividades del proces
 <td style="background-color: #000033; text-align: left; width: 20%;"><strong><span style="color: #ffffff;">PARTICIPANTES</span></strong></td>
 </tr>
 <tr>
-<td style="text-align: left; vertical-align: top;"><a href="#dsi-cal-1-1"><strong>DSI-CAL 1.1</strong>: Revisión de la Consistencia entre Productos del Diseño</a></td>
+<td style="text-align: left; vertical-align: top;"><a href="#dsi-1-1"><strong>DSI-CAL 1.1</strong>: Revisión de la Consistencia entre Productos del Diseño</a></td>
 <td style="text-align: left; vertical-align: top;">Dossier de aseguramiento de calidad:</p>
 <ul>
 <li>Revisión de la arquitectura del sistema</li>
@@ -887,7 +887,7 @@ El siguiente esquema muestra la correspondencia entre las actividades del proces
 </td>
 </tr>
 <tr>
-<td style="text-align: left; vertical-align: top;"><a href="#dsi-cal-1-2"><strong>DSI-CAL 1.2</strong>: Registro de la Aceptación de la Arquitectura del Sistema</a></td>
+<td style="text-align: left; vertical-align: top;"><a href="#dsi-1-2"><strong>DSI-CAL 1.2</strong>: Registro de la Aceptación de la Arquitectura del Sistema</a></td>
 <td style="text-align: left; vertical-align: top;">Dossier de aseguramiento de calidad:</p>
 <ul>
 <li>Registro de la aceptación de la arquitectura del sistema</li>
@@ -914,7 +914,7 @@ Se comprueba que el diseño de la arquitectura del sistema responde a los requi
 
 ###### De entrada {.unnumbered .unlisted}
 
-* Modelos del diseño verificados (DSI 7.2)
+* Modelos del diseño verificados ([DSI 7.2](../01-principal/05-dsi.qmd#7-2))
 * Plan de aseguramiento de calidad (ASI-CAL 2.1)
 * Dossier de aseguramiento de calidad (ASI-CAL 5.1)
 
@@ -941,7 +941,7 @@ Se registra la aprobación o rechazo de los productos resultantes teniendo en c
 
 ###### De entrada {.unnumbered .unlisted}
 
-* Aceptación técnica del diseño (DSI 7.3)
+* Aceptación técnica del diseño ([DSI 7.3](../01-principal/05-dsi.qmd#7-3))
 * Dossier de aseguramiento de calidad (DSI-CAL 1.1)
 
 ###### De salida {.unnumbered .unlisted}
@@ -965,7 +965,7 @@ Se registra la aprobación o rechazo de los productos resultantes teniendo en c
 <td style="background-color: #000033; text-align: left; width: 20%;"><strong><span style="color: #ffffff;">PARTICIPANTES</span></strong></td>
 </tr>
 <tr>
-<td style="text-align: left; vertical-align: top;"><a href="#dsi-cal-2-1"><strong>DSI-CAL 2.1</strong>: Revisión del Diseño de las Pruebas Unitarias, de Integración y del Sistema</a></td>
+<td style="text-align: left; vertical-align: top;"><a href="#dsi-2-1"><strong>DSI-CAL 2.1</strong>: Revisión del Diseño de las Pruebas Unitarias, de Integración y del Sistema</a></td>
 <td style="text-align: left; vertical-align: top;">Dossier de aseguramiento de calidad:</p>
 <ul>
 <li>Revisión del diseño de las pruebas</li>
@@ -983,7 +983,7 @@ Se registra la aprobación o rechazo de los productos resultantes teniendo en c
 </td>
 </tr>
 <tr>
-<td style="text-align: left; vertical-align: top;"><a href="#dsi-cal-2-2"><strong>DSI-CAL 2.2</strong>: Revisión del Plan de Pruebas</a></td>
+<td style="text-align: left; vertical-align: top;"><a href="#dsi-2-2"><strong>DSI-CAL 2.2</strong>: Revisión del Plan de Pruebas</a></td>
 <td style="text-align: left; vertical-align: top;">Dossier de aseguramiento de calidad:</p>
 <ul>
 <li>Revisión del plan de pruebas</li>
@@ -1014,7 +1014,7 @@ Asimismo, en función de las características del sistema de información, se
 
 ###### De entrada {.unnumbered .unlisted}
 
-* Plan de pruebas (DSI 10.2)
+* Plan de pruebas ([DSI 10.2](../01-principal/05-dsi.qmd#10-2))
 * Plan de aseguramiento de calidad (ASI-CAL 2.1)
 * Dossier de aseguramiento de calidad (DSI-CAL 1.2)
 
@@ -1045,7 +1045,7 @@ Se revisa la planificación de las pruebas con el fin de establecer el propio p
 
 ###### De entrada {.unnumbered .unlisted}
 
-* Plan de pruebas (DSI 10.3)
+* Plan de pruebas ([DSI 10.3](../01-principal/05-dsi.qmd#10-3))
 * Plan de aseguramiento de calidad (ASI-CAL 2.1)
 * Dossier de aseguramiento de calidad (DSI-CAL 2.1)
 
@@ -1074,7 +1074,7 @@ Se revisa la planificación de las pruebas con el fin de establecer el propio p
 <td style="background-color: #000033; text-align: left; width: 20%;"><strong><span style="color: #ffffff;">PARTICIPANTES</span></strong></td>
 </tr>
 <tr>
-<td style="text-align: left; vertical-align: top;"><a href="#dsi-cal-3-1"><strong>DSI-CAL 3.1</strong>: Revisión de los Requisitos de Documentación de Usuario</a></td>
+<td style="text-align: left; vertical-align: top;"><a href="#dsi-3-1"><strong>DSI-CAL 3.1</strong>: Revisión de los Requisitos de Documentación de Usuario</a></td>
 <td style="text-align: left; vertical-align: top;">Dossier de aseguramiento de calidad:</p>
 <ul>
 <li>Revisión de los requisitos de documentación de usuario</li>
@@ -1092,7 +1092,7 @@ Se revisa la planificación de las pruebas con el fin de establecer el propio p
 </td>
 </tr>
 <tr>
-<td style="text-align: left; vertical-align: top;"><a href="#dsi-cal-3-2"><strong>DSI-CAL 3.2</strong>: Revisión de los Requisitos de Implantación</a></td>
+<td style="text-align: left; vertical-align: top;"><a href="#dsi-3-2"><strong>DSI-CAL 3.2</strong>: Revisión de los Requisitos de Implantación</a></td>
 <td style="text-align: left; vertical-align: top;">Dossier de aseguramiento de calidad:</p>
 <ul>
 <li>Revisión de los requisitos de implantación</li>
@@ -1121,7 +1121,7 @@ Se comprueba que se han identificado los requisitos necesarios relativos a la do
 
 ###### De entrada {.unnumbered .unlisted}
 
-* Catálogo de requisitos (DSI 11.1)
+* Catálogo de requisitos ([DSI 11.1](../01-principal/05-dsi.qmd#11-1))
 * Dossier de aseguramiento de calidad (DSI-CAL 2.2)
 
 ###### De salida {.unnumbered .unlisted}
@@ -1145,7 +1145,7 @@ Se comprueba que se han identificado y detallado los requisitos necesarios para 
 
 ###### De entrada {.unnumbered .unlisted}
 
-* Catálogo de requisitos (DSI 11.2)
+* Catálogo de requisitos ([DSI 11.2](../01-principal/05-dsi.qmd#11-2))
 * Dossier de aseguramiento de calidad (DSI-CAL 3.1)
 
 ###### De salida {.unnumbered .unlisted}
@@ -1173,7 +1173,7 @@ Se comprueba que se han identificado y detallado los requisitos necesarios para 
 <td style="background-color: #000033; text-align: left; width: 20%;"><strong><span style="color: #ffffff;">PARTICIPANTES</span></strong></td>
 </tr>
 <tr>
-<td style="text-align: left; vertical-align: top;"><a href="#dsi-cal-4-1"><strong>DSI-CAL 4.1</strong>: Registro de la Aprobación del Diseño del Sistema de Información</a></td>
+<td style="text-align: left; vertical-align: top;"><a href="#dsi-4-1"><strong>DSI-CAL 4.1</strong>: Registro de la Aprobación del Diseño del Sistema de Información</a></td>
 <td style="text-align: left; vertical-align: top;">Dossier de aseguramiento de calidad:</p>
 <ul>
 <li>Registro de la aprobación del Diseño del Sistema de Información</li>
@@ -1192,13 +1192,13 @@ Se comprueba que se han identificado y detallado los requisitos necesarios para 
 
 #### Tarea DSI-CAL 4.1 {#dsi-cal-4-1}
 
-Se registra la aprobación o rechazo de los productos resultantes del Diseño del Sistema de Información (DSI), teniendo en cuenta los criterios establecidos en el plan de aseguramiento de calidad en cuanto al tipo de productos a entregar, contenido y normativa aplicada. En caso de rechazo se registrarán las no conformidades.
+Se registra la aprobación o rechazo de los productos resultantes del [Diseño del Sistema de Información (DSI)](../01-principal/05-dsi.qmd), teniendo en cuenta los criterios establecidos en el plan de aseguramiento de calidad en cuanto al tipo de productos a entregar, contenido y normativa aplicada. En caso de rechazo se registrarán las no conformidades.
 
 ##### Productos {.unnumbered .unlisted}
 
 ###### De entrada {.unnumbered .unlisted}
 
-* Aprobación del diseño del sistema de información (DSI 12.1)
+* Aprobación del diseño del sistema de información ([DSI 12.1](../01-principal/05-dsi.qmd#12-1))
 * Dossier de aseguramiento de calidad (DSI-CAL 3.2)
 
 ###### De salida {.unnumbered .unlisted}
@@ -1232,7 +1232,7 @@ El siguiente esquema muestra la correspondencia entre las actividades del proces
 <td style="background-color: #000033; text-align: left; width: 20%;"><strong><span style="color: #ffffff;">PARTICIPANTES</span></strong></td>
 </tr>
 <tr>
-<td style="text-align: left; vertical-align: top;"><a href="#csi-cal-1-1"><strong>CSI-CAL 1.1</strong>: Revisión de Estándares</a></td>
+<td style="text-align: left; vertical-align: top;"><a href="#csi-1-1"><strong>CSI-CAL 1.1</strong>: Revisión de Estándares</a></td>
 <td style="text-align: left; vertical-align: top;">Dossier de aseguramiento de calidad (actualizado con la revisión del código de componentes y procedimientos)</td>
 <td style="text-align: left; vertical-align: top;">
 <ul>
@@ -1257,7 +1257,7 @@ Se comprueba que se ha generado el código de los componentes y de los procedim
 
 ###### De entrada {.unnumbered .unlisted}
 
-* Producto software (CSI 2.2)
+* Producto software ([CSI 2.2](../01-principal/06-csi.qmd#2-2))
 * Dossier de aseguramiento de calidad (DSI-CAL 4.1)
 
 ###### De salida {.unnumbered .unlisted}
@@ -1285,7 +1285,7 @@ Se comprueba que se ha generado el código de los componentes y de los procedim
 <td style="background-color: #000033; text-align: left; width: 20%;"><strong><span style="color: #ffffff;">PARTICIPANTES</span></strong></td>
 </tr>
 <tr>
-<td style="text-align: left; vertical-align: top;"><a href="#csi-cal-2-1"><strong>CSI-CAL 2.1</strong>: Revisión de la Realización de las Pruebas Unitarias</a></td>
+<td style="text-align: left; vertical-align: top;"><a href="#csi-2-1"><strong>CSI-CAL 2.1</strong>: Revisión de la Realización de las Pruebas Unitarias</a></td>
 <td style="text-align: left; vertical-align: top;">Dossier de aseguramiento de calidad:</p>
 <ul>
 <li>Revisión de la realización de las pruebas unitarias</li>
@@ -1303,7 +1303,7 @@ Se comprueba que se ha generado el código de los componentes y de los procedim
 </td>
 </tr>
 <tr>
-<td style="text-align: left; vertical-align: top;"><a href="#csi-cal-2-2"><strong>CSI-CAL 2.2</strong>: Revisión de la Realización de las Pruebas de Integración</a></td>
+<td style="text-align: left; vertical-align: top;"><a href="#csi-2-2"><strong>CSI-CAL 2.2</strong>: Revisión de la Realización de las Pruebas de Integración</a></td>
 <td style="text-align: left; vertical-align: top;">Dossier de aseguramiento de calidad:</p>
 <ul>
 <li>Revisión de la realización de las pruebas de integración</li>
@@ -1321,7 +1321,7 @@ Se comprueba que se ha generado el código de los componentes y de los procedim
 </td>
 </tr>
 <tr>
-<td style="text-align: left; vertical-align: top;"><a href="#csi-cal-2-3"><strong>CSI-CAL 2.3</strong>: Revisión de la Realización de las Pruebas del Sistema</a></td>
+<td style="text-align: left; vertical-align: top;"><a href="#csi-2-3"><strong>CSI-CAL 2.3</strong>: Revisión de la Realización de las Pruebas del Sistema</a></td>
 <td style="text-align: left; vertical-align: top;">Dossier de aseguramiento de calidad:</p>
 <ul>
 <li>Revisión de la realización de las pruebas del sistema</li>
@@ -1352,7 +1352,7 @@ Para todo esto, se tendrá en cuenta la normativa establecida para la gestión
 
 ###### De entrada {.unnumbered .unlisted}
 
-* Resultado de las pruebas unitarias (CSI 3.2)
+* Resultado de las pruebas unitarias ([CSI 3.2](../01-principal/06-csi.qmd#3-2))
 * Dossier de aseguramiento de calidad (CSI-CAL 1.1)
 
 ###### De salida {.unnumbered .unlisted}
@@ -1436,7 +1436,7 @@ Igualmente se revisarán las incidencias no resueltas con el fin de validar has
 <td style="background-color: #000033; text-align: left; width: 20%;"><strong><span style="color: #ffffff;">PARTICIPANTES</span></strong></td>
 </tr>
 <tr>
-<td style="text-align: left; vertical-align: top;"><a href="#csi-cal-3-1"><strong>CSI-CAL 3.1</strong>: Revisión de los Manuales de Usuario</a></td>
+<td style="text-align: left; vertical-align: top;"><a href="#csi-3-1"><strong>CSI-CAL 3.1</strong>: Revisión de los Manuales de Usuario</a></td>
 <td style="text-align: left; vertical-align: top;">Dossier de aseguramiento de calidad:</p>
 <ul>
 <li>Revisión de los manuales de usuario</li>
@@ -1493,7 +1493,7 @@ Se comprueba que los manuales de operación y de usuario se han descrito de for
 <td style="background-color: #000033; text-align: left; width: 20%;"><strong><span style="color: #ffffff;">PARTICIPANTES</span></strong></td>
 </tr>
 <tr>
-<td style="text-align: left; vertical-align: top;"><a href="#csi-cal-4-1"><strong>CSI-CAL 4.1</strong>: Revisión de la Formación a Usuarios Finales</a></td>
+<td style="text-align: left; vertical-align: top;"><a href="#csi-4-1"><strong>CSI-CAL 4.1</strong>: Revisión de la Formación a Usuarios Finales</a></td>
 <td style="text-align: left; vertical-align: top;">Dossier de aseguramiento de calidad:</p>
 <ul>
 <li>Revisión de la formación a usuarios finales</li>
@@ -1550,7 +1550,7 @@ Se revisa que se han definido los esquemas de formación a los usuarios finales
 <td style="background-color: #000033; text-align: left; width: 20%;"><strong><span style="color: #ffffff;">PARTICIPANTES</span></strong></td>
 </tr>
 <tr>
-<td style="text-align: left; vertical-align: top;"><a href="#csi-cal-5-1"><strong>CSI-CAL 5.1</strong>: Registro de la Aprobación del Sistema de Información</a></td>
+<td style="text-align: left; vertical-align: top;"><a href="#csi-5-1"><strong>CSI-CAL 5.1</strong>: Registro de la Aprobación del Sistema de Información</a></td>
 <td style="text-align: left; vertical-align: top;">Dossier de aseguramiento de calidad:</p>
 <ul>
 <li>Registro de la aprobación del sistema de información</li>
@@ -1587,9 +1587,9 @@ Se registra la aprobación o rechazo del sistema de información construido te
 
 * Grupo de Aseguramiento de la Calidad
 
-## Implantación y aceptación del sistema {#ias-cal}
+## Implantación y aceptación del sistema {#ias}
 
-El grupo de aseguramiento de calidad en este proceso es responsable de revisar la existencia de un plan de implantación que se habrá elaborado conforme a la estrategia de implantación determinada en el proceso Estudio de Viabilidad del Sistema (EVS) y teniendo en cuenta los requisitos de implantación establecidos en el proceso Diseño del Sistema de Información (DSI).
+El grupo de aseguramiento de calidad en este proceso es responsable de revisar la existencia de un plan de implantación que se habrá elaborado conforme a la estrategia de implantación determinada en el proceso Estudio de Viabilidad del Sistema (EVS) y teniendo en cuenta los requisitos de implantación establecidos en el proceso [Diseño del Sistema de Información (DSI)](../01-principal/05-dsi.qmd).
 
 También deben comprobar que se han realizado las pruebas de implantación y de aceptación según el plan de pruebas establecido en MÉTRICA Versión 3 y la normativa acordada en el plan de aseguramiento de calidad. Revisan la totalidad de las verificaciones y casos de prueba de implantación y aceptación que se hayan especificado para el sistema y las incidencias producidas, con el fin de determinar si puede verse afectada alguna propiedad de calidad. En cualquier caso, se registra la aprobación de las pruebas de implantación y de aceptación por parte de operación y del usuario respectivamente.
 
@@ -1611,7 +1611,7 @@ El siguiente esquema muestra la correspondencia entre las actividades del proces
 <td style="background-color: #000033; text-align: left; width: 20%;"><strong><span style="color: #ffffff;">PARTICIPANTES</span></strong></td>
 </tr>
 <tr>
-<td style="text-align: left; vertical-align: top;"><a href="#ias-cal-1-1"><strong>IAS-CAL 1.1</strong>: Revisión del Plan de Implantación del Sistema</a></td>
+<td style="text-align: left; vertical-align: top;"><a href="#ias-1-1"><strong>IAS-CAL 1.1</strong>: Revisión del Plan de Implantación del Sistema</a></td>
 <td style="text-align: left; vertical-align: top;">Dossier de aseguramiento de calidad:</p>
 <ul>
 <li>Revisión del plan de implantación</li>
@@ -1671,7 +1671,7 @@ Asimismo, se comprueba que se ha establecido un plan de trabajo para la implanta
 <td style="background-color: #000033; text-align: left; width: 20%;"><strong><span style="color: #ffffff;">PARTICIPANTES</span></strong></td>
 </tr>
 <tr>
-<td style="text-align: left; vertical-align: top;"><a href="#ias-cal-2-1"><strong>IAS-CAL 2.1</strong>: Revisión de la Realización de las Pruebas de Implantación del Sistema</a></td>
+<td style="text-align: left; vertical-align: top;"><a href="#ias-2-1"><strong>IAS-CAL 2.1</strong>: Revisión de la Realización de las Pruebas de Implantación del Sistema</a></td>
 <td style="text-align: left; vertical-align: top;">Dossier de aseguramiento de calidad:</p>
 <ul>
 <li>Revisión de las pruebas de implantación</li>
@@ -1689,7 +1689,7 @@ Asimismo, se comprueba que se ha establecido un plan de trabajo para la implanta
 </td>
 </tr>
 <tr>
-<td style="text-align: left; vertical-align: top;"><a href="#ias-cal-2-2"><strong>IAS-CAL 2.2</strong>: Registro de la Aprobación de las Pruebas de Implantación del Sistema</a></td>
+<td style="text-align: left; vertical-align: top;"><a href="#ias-2-2"><strong>IAS-CAL 2.2</strong>: Registro de la Aprobación de las Pruebas de Implantación del Sistema</a></td>
 <td style="text-align: left; vertical-align: top;">Dossier de aseguramiento de calidad:</p>
 <ul>
 <li>Registro de la aprobación de las pruebas de implantación por operación</li>
@@ -1767,7 +1767,7 @@ Se registra la aprobación o rechazo de las pruebas de implantación por parte
 <td style="background-color: #000033; text-align: left; width: 20%;"><strong><span style="color: #ffffff;">PARTICIPANTES</span></strong></td>
 </tr>
 <tr>
-<td style="text-align: left; vertical-align: top;"><a href="#ias-cal-3-1"><strong>IAS-CAL 3.1</strong>: Revisión de la Realización de las Pruebas de Aceptación del Sistema</a></td>
+<td style="text-align: left; vertical-align: top;"><a href="#ias-3-1"><strong>IAS-CAL 3.1</strong>: Revisión de la Realización de las Pruebas de Aceptación del Sistema</a></td>
 <td style="text-align: left; vertical-align: top;">Dossier de aseguramiento de calidad:</p>
 <ul>
 <li>Revisión de la realización de las pruebas de aceptación</li>
@@ -1785,7 +1785,7 @@ Se registra la aprobación o rechazo de las pruebas de implantación por parte
 </td>
 </tr>
 <tr>
-<td style="text-align: left; vertical-align: top;"><a href="#ias-cal-3-2"><strong>IAS-CAL 3.2</strong>: Registro de la Aprobación de las Pruebas de Aceptación del Sistema</a></td>
+<td style="text-align: left; vertical-align: top;"><a href="#ias-3-2"><strong>IAS-CAL 3.2</strong>: Registro de la Aprobación de las Pruebas de Aceptación del Sistema</a></td>
 <td style="text-align: left; vertical-align: top;">Dossier de aseguramiento de calidad:</p>
 <ul>
 <li>Registro de la aprobación de las pruebas de aceptación por el usuario</li>
@@ -1863,7 +1863,7 @@ Se registra la aprobación o rechazo de las pruebas de aceptación por parte d
 <td style="background-color: #000033; text-align: left; width: 20%;"><strong><span style="color: #ffffff;">PARTICIPANTES</span></strong></td>
 </tr>
 <tr>
-<td style="text-align: left; vertical-align: top;"><a href="#ias-cal-4-1"><strong>IAS-CAL 4.1</strong>: Revisión del Plan de Mantenimiento del Sistema</a></td>
+<td style="text-align: left; vertical-align: top;"><a href="#ias-4-1"><strong>IAS-CAL 4.1</strong>: Revisión del Plan de Mantenimiento del Sistema</a></td>
 <td style="text-align: left; vertical-align: top;">Dossier de aseguramiento de calidad:</p>
 <ul>
 <li>Revisión del plan de mantenimiento</li>
@@ -1896,8 +1896,8 @@ Si se considera conveniente, se estudiará la necesidad de llevar a cabo un seg
 
 ###### De entrada {.unnumbered .unlisted}
 
-* Plan de mantenimiento (IAS 7.2)
-* Dossier de aseguramiento de calidad (IAS-CAL 3.2)
+* Plan de mantenimiento ([IAS 7.2](../01-principal/07-ias.qmd#7-2))
+* Dossier de aseguramiento de calidad ([IAS-CAL 3.2](#ias-cal-3-2))
 
 ###### De salida {.unnumbered .unlisted}
 
@@ -1924,7 +1924,7 @@ Si se considera conveniente, se estudiará la necesidad de llevar a cabo un seg
 <td style="background-color: #000033; text-align: left; width: 20%;"><strong><span style="color: #ffffff;">PARTICIPANTES</span></strong></td>
 </tr>
 <tr>
-<td style="text-align: left; vertical-align: top;"><a href="#ias-cal-5-1"><strong>IAS-CAL 5.1</strong>: Registro de la Aprobación de la Implantación del Sistema</a></td>
+<td style="text-align: left; vertical-align: top;"><a href="#ias-5-1"><strong>IAS-CAL 5.1</strong>: Registro de la Aprobación de la Implantación del Sistema</a></td>
 <td style="text-align: left; vertical-align: top;">Dossier de aseguramiento de calidad:</p>
 <ul>
 <li>Registro de la aprobación de la implantación del sistema</li>
@@ -1949,8 +1949,8 @@ Se registra la aprobación de la implantación del sistema y se comprueba que 
 
 ###### De entrada {.unnumbered .unlisted}
 
-* Aprobación del sistema (IAS 9.2)
-* Dossier de aseguramiento de calidad (IAS-CAL 4.1)
+* Aprobación del sistema ([IAS 9.2](../01-principal/07-ias.qmd#9-2))
+* Dossier de aseguramiento de calidad ([IAS-CAL 4.1](#ias-cal-4-1))
 
 ###### De salida {.unnumbered .unlisted}
 
@@ -1993,7 +1993,7 @@ durante el Mantenimiento del Sistema de Información.
 <td style="background-color: #000033; text-align: left; width: 20%;"><strong><span style="color: #ffffff;">PARTICIPANTES</span></strong></td>
 </tr>
 <tr>
-<td style="text-align: left; vertical-align: top;"><a href="#msi-cal-1-1"><strong>MSI-CAL 1.1</strong>: Revisión del Mantenimiento</a></td>
+<td style="text-align: left; vertical-align: top;"><a href="#msi-1-1"><strong>MSI-CAL 1.1</strong>: Revisión del Mantenimiento</a></td>
 <td style="text-align: left; vertical-align: top;">Informe de seguimiento del mantenimiento</td>
 <td style="text-align: left; vertical-align: top;">
 <ul>
@@ -2024,8 +2024,8 @@ Esta tarea de la interfaz de aseguramiento de calidad se aplica a todas las acti
 
 * Dossier de aseguramiento de calidad:
   * Revisión del plan de mantenimiento (IAS-CAL 4.1)
-* Catálogo de peticiones (MSI 1, MSI 2, MSI 3, MSI 4)
-* Plan de Mantenimiento (IAS 7.2)
+* Catálogo de peticiones ([MSI 1]](../01-principal/08-msi.qmd#msi-1), [MSI 2]](../01-principal/08-msi.qmd#msi-2), [MSI 3]](../01-principal/08-msi.qmd#msi-3), [MSI 4]](../01-principal/08-msi.qmd#msi-4))
+* Plan de Mantenimiento ([IAS 7.2]](../01-principal/07-ias.qmd#7-2))
 
 ###### De salida {.unnumbered .unlisted}
 
@@ -2051,7 +2051,7 @@ Esta tarea de la interfaz de aseguramiento de calidad se aplica a todas las acti
 <td style="background-color: #000033; text-align: left; width: 20%;"><strong><span style="color: #ffffff;">PARTICIPANTES</span></strong></td>
 </tr>
 <tr>
-<td style="text-align: left; vertical-align: top;"><a href="#msi-cal-2-1"><strong>MSI-CAL 2.1</strong>: Comprobación de la Existencia del Plan de Pruebas de Regresión</a></td>
+<td style="text-align: left; vertical-align: top;"><a href="#msi-2-1"><strong>MSI-CAL 2.1</strong>: Comprobación de la Existencia del Plan de Pruebas de Regresión</a></td>
 <td style="text-align: left; vertical-align: top;">Informe de revisión del plan de pruebas de regresión</td>
 <td style="text-align: left; vertical-align: top;">
 <ul>
@@ -2105,7 +2105,7 @@ Se revisa la existencia de una normativa para la gestión de los resultados de 
 <td style="background-color: #000033; text-align: left; width: 20%;"><strong><span style="color: #ffffff;">PARTICIPANTES</span></strong></td>
 </tr>
 <tr>
-<td style="text-align: left; vertical-align: top;"><a href="#msi-cal-3-1"><strong>MSI-CAL 3.1</strong>: Revisión de la Realización de las Pruebas de Regresión</a></td>
+<td style="text-align: left; vertical-align: top;"><a href="#msi-3-1"><strong>MSI-CAL 3.1</strong>: Revisión de la Realización de las Pruebas de Regresión</a></td>
 <td style="text-align: left; vertical-align: top;">Informe de revisión de la realización de las pruebas de regresión</td>
 <td style="text-align: left; vertical-align: top;">
 <ul>
@@ -2138,8 +2138,8 @@ Se registra la aprobación por parte del responsable de mantenimiento.
 
 ###### De entrada {.unnumbered .unlisted}
 
-* Informe de revisión del plan de pruebas de regresión (MSI-CAL 2.1)
-* Evaluación del resultado de las pruebas de regresión (MSI 4.2)
+* Informe de revisión del plan de pruebas de regresión ([MSI-CAL 2.1](#msi-cal-2-1))
+* Evaluación del resultado de las pruebas de regresión ([MSI 4.2](../01-principal/08-msi.qmd#msi-4-2))
 
 ###### De salida {.unnumbered .unlisted}
 
