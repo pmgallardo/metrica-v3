@@ -1,4 +1,4 @@
-# Planificación de Sistemas de Información
+  # Planificación de Sistemas de Información
 
 ## Descripción y objetivos
 
@@ -776,7 +776,7 @@ Para obtener esta información es necesario llevar a cabo sesiones de trabajo co
 
 ##### Técnicas {.unnumbered .unlisted}
 
-* Modelado de procesos de la organización
+* [Modelado de procesos de la organización](../03-tecnicas/01-tecnicas.qmd#modelado-de-procesos-de-la-organizacion)
 
 ##### Prácticas {.unnumbered .unlisted}
 
@@ -784,8 +784,8 @@ Para obtener esta información es necesario llevar a cabo sesiones de trabajo co
 
 ##### Participantes {.unnumbered .unlisted}
 
-* Consultores
-* Usuarios Expertos
+* [Consultores](../04-participantes/01-participantes.qmd#perfil-consultor)
+* [Usuarios Expertos](../04-participantes/01-participantes.qmd#perfil-directivo)
 
 #### Tarea PSI 4.2: Análisis de las Necesidades de Información {#psi-4-2}
 
@@ -797,7 +797,7 @@ Los resultados del análisis realizado en esta tarea son la base para la identif
 
 ###### De entrada {.unnumbered .unlisted}
 
-* Modelo de procesos de la organización ([PSI 3.2](#psi-3-2))
+* Modelo de procesos de la organización ([PSI 4.1](#psi-4-1))
 
 ###### De salida {.unnumbered .unlisted}
 
@@ -806,8 +806,8 @@ Los resultados del análisis realizado en esta tarea son la base para la identif
 
 ##### Técnicas {.unnumbered .unlisted}
 
-* Modelo Entidad/Relación extendido
-* Diagrama de clases
+* [Modelo Entidad/Relación extendido](../03-tecnicas/01-tecnicas.qmd#modelo-entidad-relacion-extendido)
+* [Diagrama de clases](../03-tecnicas/01-tecnicas.qmd#diagrama-de-clases)
 
 ##### Prácticas {.unnumbered .unlisted}
 
@@ -815,8 +815,8 @@ Los resultados del análisis realizado en esta tarea son la base para la identif
 
 ##### Participantes {.unnumbered .unlisted}
 
-* Consultores
-* Usuarios Expertos
+* [Consultores](../04-participantes/01-participantes.qmd#perfil-consultor)
+* [Usuarios Expertos](../04-participantes/01-participantes.qmd#perfil-directivo)
 
 #### Tarea PSI 4.3: Catalogación de Requisitos {#psi-4-3}
 
@@ -830,7 +830,7 @@ Los criterios para asignar dichas prioridades deben ser definidos al comienzo de
 
 * Catálogo de objetivos de PSI ([PSI 2.1](#psi-2-1))
 * Catálogo de requisitos ([PSI 3.2](#psi-3-2))
-* Modelo de procesos de la organización ([PSI 3.2](#psi-3-2))
+* Modelo de procesos de la organización ([PSI 4.1](#psi-4-1))
 * Modelo de información ([PSI 4.2](#psi-4-2))
 * Necesidades de información ([PSI 4.2](#psi-4-2))
 
@@ -845,8 +845,8 @@ Los criterios para asignar dichas prioridades deben ser definidos al comienzo de
 
 ##### Participantes {.unnumbered .unlisted}
 
-* Consultores
-* Usuarios Expertos
+* [Consultores](../04-participantes/01-participantes.qmd#perfil-consultor)
+* [Usuarios Expertos](../04-participantes/01-participantes.qmd#perfil-directivo)
 
 ### Actividad PSI 5: Estudio de los Sistemas de Información Actuales {#psi-5}
 
@@ -964,9 +964,9 @@ La información relativa a los sistemas de información que dan actualmente sopo
 
 ##### Participantes {.unnumbered .unlisted}
 
-* Consultores
-* Consultores Informáticos
-* Usuarios Expertos
+* [Consultores](../04-participantes/01-participantes.qmd#perfil-consultor)
+* [Consultores Informáticos](../04-participantes/01-participantes.qmd#perfil-consultor)
+* [Usuarios Expertos](../04-participantes/01-participantes.qmd#perfil-directivo)
 
 #### Tarea PSI 5.2: Análisis de los Sistemas de Información Actuales {#psi-5-2}
 
@@ -989,15 +989,15 @@ En función del tipo de sistema de información y de los objetivos de su estudio
 ##### Prácticas {.unnumbered .unlisted}
 
 * [Sesiones de trabajo](../03-tecnicas/01-tecnicas.qmd#sesiones-de-trabajo)
-* Diagrama de Representación
+* [Diagrama de Representación](../03-tecnicas/01-tecnicas.qmd#diagrama-de-representacion)
 
 ##### Participantes {.unnumbered .unlisted}
 
-* Consultores
-* Consultores Informáticos
-* Usuarios Expertos
-* Equipo del Proyecto
-* Equipo de Soporte Técnico
+* [Consultores](../04-participantes/01-participantes.qmd#perfil-consultor)
+* [Consultores Informáticos](../04-participantes/01-participantes.qmd#perfil-consultor)
+* [Usuarios Expertos](../04-participantes/01-participantes.qmd#perfil-directivo)
+* [Equipo del Proyecto](../04-participantes/01-participantes.qmd#perfil-analista)
+* [Equipo de Soporte Técnico](../04-participantes/01-participantes.qmd#perfil-analista)
 * [Responsable de Mantenimiento](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
 
 #### Tarea PSI 5.3: Valoración de los Sistemas de Información Actuales {#psi-5-3}
@@ -1020,12 +1020,12 @@ Conviene señalar que esta valoración no se realiza en cuanto a cobertura de re
 ##### Prácticas {.unnumbered .unlisted}
 
 * [Sesiones de trabajo](../03-tecnicas/01-tecnicas.qmd#sesiones-de-trabajo)
-* Impacto en la Organización
+* [Impacto en la Organización](../03-tecnicas/01-tecnicas.qmd#impacto-en-la-organizacion)
 
 ##### Participantes {.unnumbered .unlisted}
 
-* Consultores
-* Consultores Informáticos
+* [Consultores](../04-participantes/01-participantes.qmd#perfil-consultor)
+* [Consultores Informáticos](../04-participantes/01-participantes.qmd#perfil-consultor)
 
 ### Actividad PSI 6: Diseño del Modelo de Sistemas de Información {#psi-6}
 
@@ -1115,11 +1115,11 @@ Como resultado del análisis anterior, se seleccionan los sistemas de informaci�
 
 ##### Técnicas {.unnumbered .unlisted}
 
-* Matricial
+* [Matricial](../03-tecnicas/01-tecnicas.qmd#tecnicas-matriciales)
 
 ##### Participantes {.unnumbered .unlisted}
 
-* Consultores
+* [Consultores](../04-participantes/01-participantes.qmd#perfil-consultor)
 
 #### Tarea PSI 6.2: Definición del Modelo de Sistemas de Información {#psi-6-2}
 
@@ -1142,7 +1142,7 @@ Por último y contando con la experiencia de los participantes en esta tarea, se
 ###### De entrada {.unnumbered .unlisted}
 
 * Diagnóstico situación actual ([PSI 6.1](#psi-6-1))
-* Modelo de procesos de la organización ([PSI 3.2](#psi-3-2))
+* Modelo de procesos de la organización ([PSI 4.1](#psi-4-1))
 * Modelo de información ([PSI 4.2](#psi-4-2))
 * Catálogo de requisitos ([PSI 4.3](#psi-4-3))
 
@@ -1152,18 +1152,18 @@ Por último y contando con la experiencia de los participantes en esta tarea, se
 
 ##### Técnicas {.unnumbered .unlisted}
 
-* Matricial
+* [Matricial](../03-tecnicas/01-tecnicas.qmd#tecnicas-matriciales)
 
 ##### Prácticas {.unnumbered .unlisted}
 
-* Diagrama de Representación
+* [Diagrama de Representación](../03-tecnicas/01-tecnicas.qmd#diagrama-de-representacion)
 * [Sesiones de trabajo](../03-tecnicas/01-tecnicas.qmd#sesiones-de-trabajo)
 
 ##### Participantes {.unnumbered .unlisted}
 
-* Consultores
-* Consultores Informáticos
-* Usuarios Expertos
+* [Consultores](../04-participantes/01-participantes.qmd#perfil-consultor)
+* [Consultores Informáticos](../04-participantes/01-participantes.qmd#perfil-consultor)
+* [Usuarios Expertos](../04-participantes/01-participantes.qmd#perfil-directivo)
 
 ### Actividad PSI 7: Definición de la Arquitectura Tecnológica {#psi-7}
 
@@ -1250,13 +1250,13 @@ A continuación se determinan las posibles alternativas de infraestructura tecno
 
 ##### Prácticas {.unnumbered .unlisted}
 
-* Diagrama de Representación
+* [Diagrama de Representación](../03-tecnicas/01-tecnicas.qmd#diagrama-de-representacion)
 * [Sesiones de trabajo](../03-tecnicas/01-tecnicas.qmd#sesiones-de-trabajo)
 
 ##### Participantes {.unnumbered .unlisted}
 
-* Consultores Informáticos
-* Equipo de Soporte Técnico
+* [Consultores Informáticos](../04-participantes/01-participantes.qmd#perfil-consultor)
+* [Equipo de Soporte Técnico](../04-participantes/01-participantes.qmd#perfil-analista)
 
 #### Tarea PSI 7.2: Selección de la Arquitectura Tecnológica
 
@@ -1281,19 +1281,19 @@ Por último, una estimación económica global puede ayudar a elegir la alternat
 
 ##### Técnicas {.unnumbered .unlisted}
 
-* Análisis Coste/Beneficio
+* [Análisis Coste/Beneficio](../03-tecnicas/01-tecnicas.qmd#analisis-coste-beneficio)
 
 ##### Prácticas {.unnumbered .unlisted}
 
-* Diagrama de Representación
-* Impacto en la organización
+* [Diagrama de Representación](../03-tecnicas/01-tecnicas.qmd#diagrama-de-representacion)
+* [Impacto en la Organización](../03-tecnicas/01-tecnicas.qmd#impacto-en-la-organizacion)
 
 ##### Participantes {.unnumbered .unlisted}
 
-* Consultores
-* Consultores Informáticos
-* Usuarios Expertos
-* Equipo de Soporte Técnico
+* [Consultores](../04-participantes/01-participantes.qmd#perfil-consultor)
+* [Consultores Informáticos](../04-participantes/01-participantes.qmd#perfil-consultor)
+* [Usuarios Expertos](../04-participantes/01-participantes.qmd#perfil-directivo)
+* [Equipo de Soporte Técnico](../04-participantes/01-participantes.qmd#perfil-analista)
 
 ### Actividad PSI 8: Definición del Plan de Acción {#psi-8}
 
@@ -1400,18 +1400,18 @@ Las conclusiones obtenidas deben ser contrastadas y modificadas, si se estima co
 
 ###### Técnicas {.unnumbered .unlisted}
 
-* Análisis Coste/Beneficio
+* [Análisis Coste/Beneficio](../03-tecnicas/01-tecnicas.qmd#analisis-coste-beneficio)
 
 ###### Prácticas {.unnumbered .unlisted}
 
-* Impacto en la organización
+* [Impacto en la Organización](../03-tecnicas/01-tecnicas.qmd#impacto-en-la-organizacion)
 * [Sesiones de trabajo](../03-tecnicas/01-tecnicas.qmd#sesiones-de-trabajo)
 
 ###### Participantes {.unnumbered .unlisted}
 
-* Consultores
-* Consultores Informáticos
-* Usuarios Expertos
+* [Consultores](../04-participantes/01-participantes.qmd#perfil-consultor)
+* [Consultores Informáticos](../04-participantes/01-participantes.qmd#perfil-consultor)
+* [Usuarios Expertos](../04-participantes/01-participantes.qmd#perfil-directivo)
 
 #### Tarea PSI 8.2: Elaboración del Plan de Mantenimiento del PSI {#psi-8-2}
 
@@ -1433,8 +1433,8 @@ También se determina a quiénes se informará, y con qué periodicidad, del gra
 
 ##### Participantes {.unnumbered .unlisted}
 
-* Consultores
-* Consultores Informáticos
+* [Consultores](../04-participantes/01-participantes.qmd#perfil-consultor)
+* [Consultores Informáticos](../04-participantes/01-participantes.qmd#perfil-consultor)
 
 ### Actividad PSI 9: Revisión y Aprobación del PSI {#psi-9}
 
@@ -1555,13 +1555,13 @@ Se elabora un resumen que recoja los resultados finales de las actividades Ident
 
 ##### Prácticas {.unnumbered .unlisted}
 
-* Presentación
+* [Presentación](../03-tecnicas/01-tecnicas.qmd#presentaciones)
 
 ##### Participantes {.unnumbered .unlisted}
 
-* Jefe de Proyecto del PSI
-* Consultores
-* Consultores Informáticos
+* [Jefe de Proyecto del PSI](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
+* [Consultores](../04-participantes/01-participantes.qmd#perfil-consultor)
+* [Consultores Informáticos](../04-participantes/01-participantes.qmd#perfil-consultor)
 
 #### Tarea PSI 9.2: Evaluación y Mejora de la Propuesta {#psi-9-2}
 
@@ -1598,15 +1598,15 @@ Se realiza la presentación de los resultados, manteniéndose a continuación se
 ##### Prácticas {.unnumbered .unlisted}
 
 * [Sesiones de trabajo](../03-tecnicas/01-tecnicas.qmd#sesiones-de-trabajo)
-* Presentación
+* [Presentación](../03-tecnicas/01-tecnicas.qmd#presentaciones)
 
 ##### Participantes {.unnumbered .unlisted}
 
-* Comité de Dirección
-* Jefe de Proyecto del PSI
-* Consultores
-* Consultores Informáticos
-* Usuarios Expertos
+* [Comité de Dirección](../04-participantes/01-participantes.qmd#perfil-directivo)
+* [Jefe de Proyecto del PSI](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
+* [Consultores](../04-participantes/01-participantes.qmd#perfil-consultor)
+* [Consultores Informáticos](../04-participantes/01-participantes.qmd#perfil-consultor)
+* [Usuarios Expertos](../04-participantes/01-participantes.qmd#perfil-directivo)
 
 #### Tarea PSI 9.3: Aprobación del PSI {#psi-9-3}
 
@@ -1637,8 +1637,8 @@ Se entrega la propuesta final, y se solicita formalmente al Comité de Direcció
 
 ##### Participantes {.unnumbered .unlisted}
 
-* Comité de Dirección
-* Jefe de Proyecto del PSI
+* [Comité de Dirección](../04-participantes/01-participantes.qmd#perfil-directivo)
+* [Jefe de Proyecto del PSI](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
 
 ## Participantes en las Actividades del Proceso PSI {#participantes-psi}
 
