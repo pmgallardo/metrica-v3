@@ -158,7 +158,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../01-principal/02-psi.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Descripción y objetivos</span></span></a>
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Planificación de Sistemas de Información</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -328,7 +328,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="Hilo de Ariadna"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../01-principal/01-introduccion.html">Estructura principal</a></li><li class="breadcrumb-item"><a href="../01-principal/06-csi.html"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Construcción del Sistema de Información</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Construcción del Sistema de Información</span></h1>
+<h1 class="title"><span id="csi" class="quarto-section-identifier"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Construcción del Sistema de Información</span></span></h1>
 </div>
 
 
@@ -356,7 +356,63 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-
+<nav id="TOC-body" role="doc-toc" aria-labelledby="toc-title-body">
+    <h2 id="toc-title-body">Tabla de contenidos</h2>
+   
+  <ul>
+  <li><a href="#descripción-y-objetivos" id="toc-descripción-y-objetivos-body"><span class="header-section-number">6.1</span> Descripción y objetivos</a>
+  <ul>
+  <li><a href="#csi-1" id="toc-csi-1-body"><span class="header-section-number">6.1.1</span> Actividad CSI 1: Preparación del Entorno de Generación y Construcción</a>
+  <ul>
+  <li><a href="#csi-1-1" id="toc-csi-1-1-body"><span class="header-section-number">6.1.1.1</span> Tarea CSI 1.1: Implantación de la Base de Datos Física o Ficheros</a></li>
+  <li><a href="#csi-1-2" id="toc-csi-1-2-body"><span class="header-section-number">6.1.1.2</span> Tarea CSI 1.2: Preparación del Entorno de Construcción</a></li>
+  </ul></li>
+  <li><a href="#csi-2" id="toc-csi-2-body"><span class="header-section-number">6.1.2</span> Actividad CSI 2: Generación del Código de los Componentes y Procedimientos</a>
+  <ul>
+  <li><a href="#csi-2-1" id="toc-csi-2-1-body"><span class="header-section-number">6.1.2.1</span> Tarea CSI 2.1: Generación del Código de Componentes</a></li>
+  <li><a href="#csi-2-2" id="toc-csi-2-2-body"><span class="header-section-number">6.1.2.2</span> Tarea CSI 2.2: Generación del Código de los Procedimientos de Operación y Seguridad</a></li>
+  </ul></li>
+  <li><a href="#csi-3" id="toc-csi-3-body"><span class="header-section-number">6.1.3</span> Actividad CSI 3: Ejecución de las Pruebas Unitarias</a>
+  <ul>
+  <li><a href="#csi-3-1" id="toc-csi-3-1-body"><span class="header-section-number">6.1.3.1</span> Tarea CSI 3.1: Preparación del Entorno de las Pruebas Unitarias</a></li>
+  <li><a href="#csi-3-2" id="toc-csi-3-2-body"><span class="header-section-number">6.1.3.2</span> Tarea CSI 3.2: Realización y Evaluación de las Pruebas Unitarias</a></li>
+  </ul></li>
+  <li><a href="#csi-4" id="toc-csi-4-body"><span class="header-section-number">6.1.4</span> Actividad CSI 4: Ejecución de las Pruebas de Integración</a>
+  <ul>
+  <li><a href="#csi-4-1" id="toc-csi-4-1-body"><span class="header-section-number">6.1.4.1</span> Tarea CSI 4.1: Preparación del Entorno de las Pruebas de Integración</a></li>
+  <li><a href="#csi-4-2" id="toc-csi-4-2-body"><span class="header-section-number">6.1.4.2</span> Tarea CSI 4.2: Realización de las Pruebas de Integración</a></li>
+  <li><a href="#csi-4-3" id="toc-csi-4-3-body"><span class="header-section-number">6.1.4.3</span> Tarea CSI 4.3: Evaluación del Resultado de las Pruebas de Integración</a></li>
+  </ul></li>
+  <li><a href="#actividad-csi-5-ejecución-de-las-pruebas-del-sistema" id="toc-actividad-csi-5-ejecución-de-las-pruebas-del-sistema-body"><span class="header-section-number">6.1.5</span> Actividad CSI 5: Ejecución de las Pruebas del Sistema</a>
+  <ul>
+  <li><a href="#csi-5-1" id="toc-csi-5-1-body"><span class="header-section-number">6.1.5.1</span> Tarea CSI 5.1: Preparación del Entorno de las Pruebas del Sistema</a></li>
+  <li><a href="#csi-5-2" id="toc-csi-5-2-body"><span class="header-section-number">6.1.5.2</span> Tarea CSI 5.2: Realización de las Pruebas del Sistema</a></li>
+  <li><a href="#csi-5-3" id="toc-csi-5-3-body"><span class="header-section-number">6.1.5.3</span> Tarea CSI 5.3: Evaluación del Resultado de las Pruebas del Sistema</a></li>
+  </ul></li>
+  <li><a href="#csi-6" id="toc-csi-6-body"><span class="header-section-number">6.1.6</span> Actividad CSI 6: Elaboración de los Manuales de Usuario</a>
+  <ul>
+  <li><a href="#csi-6-1" id="toc-csi-6-1-body"><span class="header-section-number">6.1.6.1</span> Tarea CSI 6.1: Elaboración de los Manuales de Usuario</a></li>
+  </ul></li>
+  <li><a href="#csi-7" id="toc-csi-7-body"><span class="header-section-number">6.1.7</span> Actividad CSI 7: Definición de la Formación de Usuarios Finales</a>
+  <ul>
+  <li><a href="#csi-7-1" id="toc-csi-7-1-body"><span class="header-section-number">6.1.7.1</span> Tarea CSI 7.1: Definición del Esquema de Formación</a></li>
+  <li><a href="#csi-7-2" id="toc-csi-7-2-body"><span class="header-section-number">6.1.7.2</span> Tarea CSI 7.2: Especificación de los Recursos y Entornos de Formación</a></li>
+  </ul></li>
+  <li><a href="#csi-8" id="toc-csi-8-body"><span class="header-section-number">6.1.8</span> Actividad CSI 8: Construcción de los Componentes y Procedimientos de Migración y Carga Inicial de Datos</a>
+  <ul>
+  <li><a href="#csi-8-1" id="toc-csi-8-1-body"><span class="header-section-number">6.1.8.1</span> Tarea CSI 8.1: Preparación del Entorno de Migración y Carga Inicial de Datos</a></li>
+  <li><a href="#csi-8-2" id="toc-csi-8-2-body"><span class="header-section-number">6.1.8.2</span> Tarea CSI 8.2: Generación del Código de los Componentes y Procedimientos de Migración y Carga Inicial de Datos</a></li>
+  <li><a href="#csi-8-3" id="toc-csi-8-3-body"><span class="header-section-number">6.1.8.3</span> Tarea CSI 8.3: Realización y Evaluación de las Pruebas de Migración y Carga Inicial de Datos</a></li>
+  </ul></li>
+  <li><a href="#csi-9" id="toc-csi-9-body"><span class="header-section-number">6.1.9</span> Actividad CSI 9: Aprobación del Sistema de Información</a>
+  <ul>
+  <li><a href="#csi-9-1" id="toc-csi-9-1-body"><span class="header-section-number">6.1.9.1</span> Tarea CSI 9.1: Presentación y Aprobación del Sistema de Información</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#participantes-en-las-actividades-del-proceso-csi" id="toc-participantes-en-las-actividades-del-proceso-csi-body"><span class="header-section-number">6.2</span> Participantes en las Actividades del Proceso CSI</a></li>
+  <li><a href="#técnicasprácticas-utilizadas-en-las-actividades-del-proceso-csi" id="toc-técnicasprácticas-utilizadas-en-las-actividades-del-proceso-csi-body"><span class="header-section-number">6.3</span> Técnicas/prácticas utilizadas en las actividades del proceso CSI</a></li>
+  </ul>
+</nav>
 <section id="descripción-y-objetivos" class="level2" data-number="6.1">
 <h2 data-number="6.1" class="anchored" data-anchor-id="descripción-y-objetivos"><span class="header-section-number">6.1</span> Descripción y objetivos</h2>
 <p>En este proceso se genera el código de los componentes del Sistema de Información, se desarrollan todos los procedimientos de operación y seguridad y se elaboran todos los manuales de usuario final y de explotación con el objetivo de asegurar el correcto funcionamiento del Sistema para su posterior implantación.</p>
@@ -488,7 +544,7 @@ ul.task-list li input[type="checkbox"] {
 <h5 class="unlisted unnumbered anchored" data-anchor-id="participantes-1">Participantes</h5>
 <ul>
 <li>Equipo del Proyecto</li>
-<li>Técnicos de Sistemas</li>
+<li><a href="../04-participantes/01-participantes.html#perfil-consultor">Técnicos de Sistema</a></li>
 <li>Equipo de Operación</li>
 <li>Administradores de Bases de Datos</li>
 </ul>
@@ -607,7 +663,7 @@ ul.task-list li input[type="checkbox"] {
 <section id="participantes-3" class="level5 unlisted unnumbered">
 <h5 class="unlisted unnumbered anchored" data-anchor-id="participantes-3">Participantes</h5>
 <ul>
-<li>Técnicos de Sistemas</li>
+<li><a href="../04-participantes/01-participantes.html#perfil-consultor">Técnicos de Sistema</a></li>
 <li>Equipo de Operación</li>
 <li>Administrador de la Base de Datos</li>
 <li>Programadores</li>
@@ -680,7 +736,7 @@ ul.task-list li input[type="checkbox"] {
 <section id="participantes-4" class="level5 unlisted unnumbered">
 <h5 class="unlisted unnumbered anchored" data-anchor-id="participantes-4">Participantes</h5>
 <ul>
-<li>Técnicos de Sistemas</li>
+<li><a href="../04-participantes/01-participantes.html#perfil-consultor">Técnicos de Sistema</a></li>
 <li>Programadores</li>
 </ul>
 </section>
@@ -799,8 +855,8 @@ ul.task-list li input[type="checkbox"] {
 <section id="participantes-6" class="level5 unlisted unnumbered">
 <h5 class="unlisted unnumbered anchored" data-anchor-id="participantes-6">Participantes</h5>
 <ul>
-<li>Técnicos de Sistemas</li>
-<li>Especialistas en Comunicaciones</li>
+<li><a href="../04-participantes/01-participantes.html#perfil-consultor">Técnicos de Sistema</a></li>
+<li><a href="../04-participantes/01-participantes.html#perfil-consultor">Especialistas en Comunicaciones</a></li>
 <li>Equipo de Arquitectura</li>
 <li>Equipo del Proyecto</li>
 </ul>
@@ -867,7 +923,7 @@ ul.task-list li input[type="checkbox"] {
 <section id="participantes-8" class="level5 unlisted unnumbered">
 <h5 class="unlisted unnumbered anchored" data-anchor-id="participantes-8">Participantes</h5>
 <ul>
-<li>Analistas</li>
+<li><a href="../04-participantes/01-participantes.html#perfil-analista">Analistas</a></li>
 </ul>
 </section>
 </section>
@@ -950,8 +1006,8 @@ ul.task-list li input[type="checkbox"] {
 <section id="participantes-9" class="level5 unlisted unnumbered">
 <h5 class="unlisted unnumbered anchored" data-anchor-id="participantes-9">Participantes</h5>
 <ul>
-<li>Técnicos de Sistemas</li>
-<li>Especialistas en Comunicaciones</li>
+<li><a href="../04-participantes/01-participantes.html#perfil-consultor">Técnicos de Sistema</a></li>
+<li><a href="../04-participantes/01-participantes.html#perfil-consultor">Especialistas en Comunicaciones</a></li>
 <li>Equipo de Arquitectura</li>
 <li>Equipo del Proyecto</li>
 </ul>
@@ -1019,7 +1075,7 @@ ul.task-list li input[type="checkbox"] {
 <section id="participantes-11" class="level5 unlisted unnumbered">
 <h5 class="unlisted unnumbered anchored" data-anchor-id="participantes-11">Participantes</h5>
 <ul>
-<li>Analistas</li>
+<li><a href="../04-participantes/01-participantes.html#perfil-analista">Analistas</a></li>
 <li><a href="../04-participantes/01-participantes.html#perfil-jefe-de-proyecto">Jefe de Proyecto</a></li>
 </ul>
 </section>
@@ -1169,7 +1225,7 @@ ul.task-list li input[type="checkbox"] {
 <section id="participantes-13" class="level5 unlisted unnumbered">
 <h5 class="unlisted unnumbered anchored" data-anchor-id="participantes-13">Participantes</h5>
 <ul>
-<li>Analistas</li>
+<li><a href="../04-participantes/01-participantes.html#perfil-analista">Analistas</a></li>
 </ul>
 </section>
 </section>
@@ -1199,7 +1255,7 @@ ul.task-list li input[type="checkbox"] {
 <section id="participantes-14" class="level5 unlisted unnumbered">
 <h5 class="unlisted unnumbered anchored" data-anchor-id="participantes-14">Participantes</h5>
 <ul>
-<li>Analistas</li>
+<li><a href="../04-participantes/01-participantes.html#perfil-analista">Analistas</a></li>
 <li>Equipo de Formación</li>
 </ul>
 </section>
@@ -1288,7 +1344,7 @@ ul.task-list li input[type="checkbox"] {
 <h5 class="unlisted unnumbered anchored" data-anchor-id="participantes-15">Participantes</h5>
 <ul>
 <li>Equipo del Proyecto</li>
-<li>Técnicos de Sistemas</li>
+<li><a href="../04-participantes/01-participantes.html#perfil-consultor">Técnicos de Sistema</a></li>
 <li>Equipo de Operación</li>
 <li>Equipo de Seguridad</li>
 <li>Administradores de Bases de Datos</li>

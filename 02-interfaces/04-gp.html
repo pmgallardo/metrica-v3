@@ -158,7 +158,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../01-principal/02-psi.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Descripción y objetivos</span></span></a>
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Planificación de Sistemas de Información</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -347,7 +347,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="Hilo de Ariadna"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../02-interfaces/01-cal.html">Interfaces</a></li><li class="breadcrumb-item"><a href="../02-interfaces/04-gp.html"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Gestión de Proyectos</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Gestión de Proyectos</span></h1>
+<h1 class="title"><span id="gp" class="quarto-section-identifier"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Gestión de Proyectos</span></span></h1>
 </div>
 
 
@@ -375,7 +375,82 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-
+<nav id="TOC-body" role="doc-toc" aria-labelledby="toc-title-body">
+    <h2 id="toc-title-body">Tabla de contenidos</h2>
+   
+  <ul>
+  <li><a href="#descripción-y-objetivos" id="toc-descripción-y-objetivos-body"><span class="header-section-number">12.1</span> Descripción y Objetivos</a></li>
+  <li><a href="#actividades-de-inicio-del-proyecto" id="toc-actividades-de-inicio-del-proyecto-body"><span class="header-section-number">12.2</span> Actividades de Inicio del Proyecto</a>
+  <ul>
+  <li><a href="#gpi-1" id="toc-gpi-1-body"><span class="header-section-number">12.2.1</span> Actividad GPI 1: Estimación de Esfuerzo</a>
+  <ul>
+  <li><a href="#gpi-1-1" id="toc-gpi-1-1-body"><span class="header-section-number">12.2.1.1</span> Tarea GPI 1.1: Identificación de Elementos a Desarrollar</a></li>
+  <li><a href="#gpi-1-2" id="toc-gpi-1-2-body"><span class="header-section-number">12.2.1.2</span> Tarea GPI 1.2: Cálculo del Esfuerzo</a></li>
+  </ul></li>
+  <li><a href="#gpi-2" id="toc-gpi-2-body"><span class="header-section-number">12.2.2</span> Actividad GPI 2: Planificación</a>
+  <ul>
+  <li><a href="#gpi-2-1" id="toc-gpi-2-1-body"><span class="header-section-number">12.2.2.1</span> Tarea GPI 2.1: Selección de la Estrategia de Desarrollo</a></li>
+  <li><a href="#gpi-2-2" id="toc-gpi-2-2-body"><span class="header-section-number">12.2.2.2</span> Tarea GPI 2.2: Selección de la Estructura de Actividades, Tareas y Productos</a></li>
+  <li><a href="#gpi-2-3" id="toc-gpi-2-3-body"><span class="header-section-number">12.2.2.3</span> Tarea GPI 2.3: Establecimiento del Calendario de Hitos y Entregas</a></li>
+  <li><a href="#gpi-2-4" id="toc-gpi-2-4-body"><span class="header-section-number">12.2.2.4</span> Tarea GPI 2.4: Planificación Detallada de Actividades y Recursos Necesarios</a></li>
+  <li><a href="#gpi-2-5" id="toc-gpi-2-5-body"><span class="header-section-number">12.2.2.5</span> Tarea GPI 2.5: Presentación y Aceptación de la Planificación General del Proyecto</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#actividades-de-seguimiento-y-control" id="toc-actividades-de-seguimiento-y-control-body"><span class="header-section-number">12.3</span> Actividades de Seguimiento y Control</a>
+  <ul>
+  <li><a href="#gps-1" id="toc-gps-1-body"><span class="header-section-number">12.3.1</span> Actividad GPS 1: Asignación Detallada de Tareas</a>
+  <ul>
+  <li><a href="#gps-1-1" id="toc-gps-1-1-body"><span class="header-section-number">12.3.1.1</span> Tarea GPS 1.1: Asignación de Tarea</a></li>
+  </ul></li>
+  <li><a href="#gps-2" id="toc-gps-2-body"><span class="header-section-number">12.3.2</span> Actividad GPI 2: Comunicación al Equipo del Proyecto</a>
+  <ul>
+  <li><a href="#gps-2-1" id="toc-gps-2-1-body"><span class="header-section-number">12.3.2.1</span> Tarea GPS 2.1: Informar al Equipo del Proyecto</a></li>
+  </ul></li>
+  <li><a href="#gps-3" id="toc-gps-3-body"><span class="header-section-number">12.3.3</span> Actividad GPS 3: Seguimiento de Tareas</a>
+  <ul>
+  <li><a href="#gps-3-1" id="toc-gps-3-1-body"><span class="header-section-number">12.3.3.1</span> Tarea GPS 3.1: Seguimiento de Tareas</a></li>
+  </ul></li>
+  <li><a href="#gestión-de-incidencias" id="toc-gestión-de-incidencias-body"><span class="header-section-number">12.3.4</span> Gestión de Incidencias</a>
+  <ul>
+  <li><a href="#gps-4" id="toc-gps-4-body"><span class="header-section-number">12.3.4.1</span> Actividad GPS 4: Análisis y Registro de la Incidencia</a></li>
+  </ul></li>
+  <li><a href="#gestión-de-cambios-en-los-requisitos" id="toc-gestión-de-cambios-en-los-requisitos-body"><span class="header-section-number">12.3.5</span> Gestión de cambios en los requisitos</a>
+  <ul>
+  <li><a href="#gps-5" id="toc-gps-5-body"><span class="header-section-number">12.3.5.1</span> Actividad GPS 5: Petición de Cambios de Requisitos</a></li>
+  <li><a href="#gps-6" id="toc-gps-6-body"><span class="header-section-number">12.3.5.2</span> Actividad GPS 6: Análisis de la Petición de Cambio de Requisitos</a></li>
+  <li><a href="#gps-7" id="toc-gps-7-body"><span class="header-section-number">12.3.5.3</span> Actividad GPS 7: Aprobación de la Solución</a></li>
+  <li><a href="#gps-8" id="toc-gps-8-body"><span class="header-section-number">12.3.5.4</span> Actividad GPS 8: Estimación del Esfuerzo y Planificación de la Solución</a></li>
+  <li><a href="#gps-9" id="toc-gps-9-body"><span class="header-section-number">12.3.5.5</span> Actividad GPS 9: Registro del Cambio de Requisitos</a></li>
+  </ul></li>
+  <li><a href="#gps-10" id="toc-gps-10-body"><span class="header-section-number">12.3.6</span> Actividad GPS 10: Finalización de la Tarea</a>
+  <ul>
+  <li><a href="#gps-10-1" id="toc-gps-10-1-body"><span class="header-section-number">12.3.6.1</span> Tarea GPS 10.1: Comprobación de la Tarea</a></li>
+  </ul></li>
+  <li><a href="#gps-11" id="toc-gps-11-body"><span class="header-section-number">12.3.7</span> Actividad GPS 11: ACTUALIZACIÓN DE LA PLANIFICACIÓN</a>
+  <ul>
+  <li><a href="#gps-11-1" id="toc-gps-11-1-body"><span class="header-section-number">12.3.7.1</span> Tarea GPS 11.1: Actualización de Tareas</a></li>
+  <li><a href="#gps-11-2" id="toc-gps-11-2-body"><span class="header-section-number">12.3.7.2</span> Tarea GPS 11.2: Obtención de la Extrapolación</a></li>
+  <li><a href="#gps-11-3" id="toc-gps-11-3-body"><span class="header-section-number">12.3.7.3</span> Tarea GPS 11.3: Elaboración del Informe de Seguimiento</a></li>
+  </ul></li>
+  <li><a href="#gps-12" id="toc-gps-12-body"><span class="header-section-number">12.3.8</span> Actividad GPS 12: Reuniones de Seguimiento</a>
+  <ul>
+  <li><a href="#gps-12-1" id="toc-gps-12-1-body"><span class="header-section-number">12.3.8.1</span> Tarea GPS 12.1: Reunión Interna de Seguimiento</a></li>
+  </ul></li>
+  <li><a href="#gps-13" id="toc-gps-13-body"><span class="header-section-number">12.3.9</span> Actividad GPS 13: Aceptación</a>
+  <ul>
+  <li><a href="#tarea-gps-13.1-verificación-de-aceptación-interna" id="toc-tarea-gps-13.1-verificación-de-aceptación-interna-body"><span class="header-section-number">12.3.9.1</span> Tarea GPS 13.1: Verificación de Aceptación Interna</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#actividades-de-finalización" id="toc-actividades-de-finalización-body"><span class="header-section-number">12.4</span> Actividades de Finalización</a>
+  <ul>
+  <li><a href="#gpf-1" id="toc-gpf-1-body"><span class="header-section-number">12.4.1</span> Actividad GPF 1: CIERRE DEL PROYECTO</a>
+  <ul>
+  <li><a href="#gpf-1-1" id="toc-gpf-1-1-body"><span class="header-section-number">12.4.1.1</span> Tarea GPF 1.1: Inclusión en Histórico de Proyectos</a></li>
+  <li><a href="#gpf-1-2" id="toc-gpf-1-2-body"><span class="header-section-number">12.4.1.2</span> Tarea GPF 1.2: Archivo de la Documentación de Gestión del Proyecto</a></li>
+  </ul></li>
+  </ul></li>
+  </ul>
+</nav>
 <section id="descripción-y-objetivos" class="level2" data-number="12.1">
 <h2 data-number="12.1" class="anchored" data-anchor-id="descripción-y-objetivos"><span class="header-section-number">12.1</span> Descripción y Objetivos</h2>
 <p>La Gestión de Proyectos tiene como finalidad principal la planificación, el seguimiento y control de las actividades y de los recursos humanos y materiales que intervienen en el desarrollo de un Sistema de Información. Como consecuencia de este control es posible conocer en todo momento qué problemas se producen y resolverlos o paliarlos de manera inmediata.</p>

@@ -158,7 +158,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../01-principal/02-psi.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Descripción y objetivos</span></span></a>
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Planificación de Sistemas de Información</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -426,7 +426,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="Hilo de Ariadna"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../02-interfaces/01-cal.html">Interfaces</a></li><li class="breadcrumb-item"><a href="../02-interfaces/02-seg.html"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Seguridad</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Seguridad</span></h1>
+<h1 class="title"><span id="seg" class="quarto-section-identifier"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Seguridad</span></span></h1>
 </div>
 
 
@@ -454,7 +454,161 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-
+<nav id="TOC-body" role="doc-toc" aria-labelledby="toc-title-body">
+    <h2 id="toc-title-body">Tabla de contenidos</h2>
+   
+  <ul>
+  <li><a href="#descripción-y-objetivos" id="toc-descripción-y-objetivos-body"><span class="header-section-number">10.1</span> Descripción y objetivos</a></li>
+  <li><a href="#psi-seg" id="toc-psi-seg-body"><span class="header-section-number">10.2</span> Planificación de Sistemas de Información</a>
+  <ul>
+  <li><a href="#psi-seg-1" id="toc-psi-seg-1-body"><span class="header-section-number">10.2.1</span> Actividad PSI-SEG 1: Planificación de la Seguridad Requerida en el Proceso Planificación de Sistemas de Información</a>
+  <ul>
+  <li><a href="#tarea-psi-seg-1.1-estudio-de-la-seguridad-requerida-en-el-proceso-planificación-de-sistemas-de-información" id="toc-tarea-psi-seg-1.1-estudio-de-la-seguridad-requerida-en-el-proceso-planificación-de-sistemas-de-información-body"><span class="header-section-number">10.2.1.1</span> Tarea PSI-SEG 1.1: Estudio de la Seguridad Requerida en el Proceso Planificación de Sistemas de Información</a></li>
+  <li><a href="#tarea-psi-seg-1.2-organización-y-planificación" id="toc-tarea-psi-seg-1.2-organización-y-planificación-body"><span class="header-section-number">10.2.1.2</span> Tarea PSI-SEG 1.2: Organización y Planificación</a></li>
+  </ul></li>
+  <li><a href="#psi-seg-2" id="toc-psi-seg-2-body"><span class="header-section-number">10.2.2</span> Actividad PSI-SEG 2: Evaluación del Riesgo para la Arquitectura Tecnológica</a>
+  <ul>
+  <li><a href="#psi-seg-2-1" id="toc-psi-seg-2-1-body"><span class="header-section-number">10.2.2.1</span> Tarea PSI-SEG 2.1: Estudio y Evaluación del Riesgo de las Alternativas de Arquitectura Tecnológica</a></li>
+  <li><a href="#psi-seg-2-2" id="toc-psi-seg-2-2-body"><span class="header-section-number">10.2.2.2</span> Tarea PSI-SEG 2.2: Revisión de la Evaluación del Riesgo de las Alternativas de Arquitectura Tecnológica</a></li>
+  </ul></li>
+  <li><a href="#psi-seg-3" id="toc-psi-seg-3-body"><span class="header-section-number">10.2.3</span> Actividad PSI-SEG 3: Determinación de la Seguridad en el Plan de Acción</a>
+  <ul>
+  <li><a href="#psi-seg-3-1" id="toc-psi-seg-3-1-body"><span class="header-section-number">10.2.3.1</span> Tarea PSI-SEG 3.1: Determinación de la Seguridad en el Plan de Acción</a></li>
+  </ul></li>
+  <li><a href="#psi-seg-4" id="toc-psi-seg-4-body"><span class="header-section-number">10.2.4</span> Actividad PSI-SEG 4: Catalogación de los Productos Generados Durante el Proceso de Planificación de Sistemas de Información</a>
+  <ul>
+  <li><a href="#psi-seg-4-1" id="toc-psi-seg-4-1-body"><span class="header-section-number">10.2.4.1</span> Tarea PSI-SEG 4.1: Clasificación y Catalogación de los Productos Generados durante el Proceso de Planificación de Sistemas de Información</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#evs-seg" id="toc-evs-seg-body"><span class="header-section-number">10.3</span> Estudio de Viabilidad del Sistema</a>
+  <ul>
+  <li><a href="#evs-seg-1" id="toc-evs-seg-1-body"><span class="header-section-number">10.3.1</span> Actividad EVS-SEG 1: Estudio de la Seguridad Requerida en el Proceso Estudio de Viabilidad del Sistema</a>
+  <ul>
+  <li><a href="#evs-seg-1-1" id="toc-evs-seg-1-1-body"><span class="header-section-number">10.3.1.1</span> Tarea EVS-SEG 1.1: Estudio de la Seguridad Requerida en el Proceso Estudio de Viabilidad del Sistema</a></li>
+  </ul></li>
+  <li><a href="#evs-seg-2" id="toc-evs-seg-2-body"><span class="header-section-number">10.3.2</span> Actividad EVS-SEG 2: Selección del Equipo de Seguridad</a>
+  <ul>
+  <li><a href="#evs-seg-2-1" id="toc-evs-seg-2-1-body"><span class="header-section-number">10.3.2.1</span> Tarea EVS-SEG 2.1: Selección del Equipo de Seguridad</a></li>
+  </ul></li>
+  <li><a href="#evs-seg-3" id="toc-evs-seg-3-body"><span class="header-section-number">10.3.3</span> Actividad EVS-SEG 3: Recomendaciones Adicionales de Seguridad para el Sistema de Información</a>
+  <ul>
+  <li><a href="#evs-seg-3-1" id="toc-evs-seg-3-1-body"><span class="header-section-number">10.3.3.1</span> Tarea EVS-SEG 3.1: Elaboración de Recomendaciones de Seguridad</a></li>
+  </ul></li>
+  <li><a href="#evs-seg-4" id="toc-evs-seg-4-body"><span class="header-section-number">10.3.4</span> Actividad EVS-SEG 4: Evaluación de la Seguridad de las Alternativas de Solución</a>
+  <ul>
+  <li><a href="#tarea-evs-seg-4.1-valoración-y-evaluación-de-la-seguridad-de-las-alternativas-de-solución" id="toc-tarea-evs-seg-4.1-valoración-y-evaluación-de-la-seguridad-de-las-alternativas-de-solución-body"><span class="header-section-number">10.3.4.1</span> Tarea EVS-SEG 4.1: Valoración y Evaluación de la Seguridad de las Alternativas de Solución</a></li>
+  </ul></li>
+  <li><a href="#evs-seg-5" id="toc-evs-seg-5-body"><span class="header-section-number">10.3.5</span> Actividad EVS-SEG 5: Evaluación Detallada de la Seguridad de la Solución Propuesta</a>
+  <ul>
+  <li><a href="#tarea-evs-seg-5.1-descripción-detallada-de-la-seguridad-de-la-solución-propuesta" id="toc-tarea-evs-seg-5.1-descripción-detallada-de-la-seguridad-de-la-solución-propuesta-body"><span class="header-section-number">10.3.5.1</span> Tarea EVS-SEG 5.1: Descripción Detallada de la Seguridad de la Solución Propuesta</a></li>
+  </ul></li>
+  <li><a href="#evs-seg-6" id="toc-evs-seg-6-body"><span class="header-section-number">10.3.6</span> Actividad EVS-SEG 6: Catalogación de los Productos Generados Durante el Proceso de Estudio de Viabilidad del Sistema</a>
+  <ul>
+  <li><a href="#evs-seg-6-1" id="toc-evs-seg-6-1-body"><span class="header-section-number">10.3.6.1</span> Tarea EVS-SEG 6.1: Clasificación y Catalogación de los Productos Generados durante el Proceso de Estudio de Viabilidad del Sistema</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#asi-seg" id="toc-asi-seg-body"><span class="header-section-number">10.4</span> Análisis del Sistema de Información</a>
+  <ul>
+  <li><a href="#asi-seg-1" id="toc-asi-seg-1-body"><span class="header-section-number">10.4.1</span> Actividad ASI-SEG 1: Estudio de la Seguridad Requerida en el Proceso de Análisis del Sistema de Información</a>
+  <ul>
+  <li><a href="#asi-seg-1-1" id="toc-asi-seg-1-1-body"><span class="header-section-number">10.4.1.1</span> Tarea ASI-SEG 1.1: Estudio de la Seguridad Requerida en el Proceso de Análisis del Sistema de Información</a></li>
+  </ul></li>
+  <li><a href="#asi-seg-2" id="toc-asi-seg-2-body"><span class="header-section-number">10.4.2</span> Actividad ASI-SEG 2: Descripción de las Funciones y Mecanismos de Seguridad</a>
+  <ul>
+  <li><a href="#asi-seg-2-1" id="toc-asi-seg-2-1-body"><span class="header-section-number">10.4.2.1</span> Tarea ASI-SEG 2.1: Estudio de las Funciones y Mecanismos de Seguridad a Implantar</a></li>
+  </ul></li>
+  <li><a href="#asi-seg-3" id="toc-asi-seg-3-body"><span class="header-section-number">10.4.3</span> Actividad ASI-SEG 3: Definición de los Criterios de Aceptación de la Seguridad</a>
+  <ul>
+  <li><a href="#asi-seg-3-1" id="toc-asi-seg-3-1-body"><span class="header-section-number">10.4.3.1</span> Tarea ASI-SEG 3.1: Actualización del Plan de Pruebas</a></li>
+  </ul></li>
+  <li><a href="#asi-seg-4" id="toc-asi-seg-4-body"><span class="header-section-number">10.4.4</span> Actividad ASI-SEG 4: Catalogación de los Productos Generados Durante el Proceso de Análisis del Sistema de Información</a>
+  <ul>
+  <li><a href="#asi-seg-4-1" id="toc-asi-seg-4-1-body"><span class="header-section-number">10.4.4.1</span> Tarea ASI-SEG 4.1: Clasificación y Catalogación de los Productos Generados Durante el Proceso de Análisis del Sistema de Información</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#dsi-seg" id="toc-dsi-seg-body"><span class="header-section-number">10.5</span> Diseño del Sistema de Información</a>
+  <ul>
+  <li><a href="#dsi-seg-1" id="toc-dsi-seg-1-body"><span class="header-section-number">10.5.1</span> Actividad DSI-SEG 1: Estudio de la Seguridad Requerida en el Proceso de Diseño del Sistema de Información</a>
+  <ul>
+  <li><a href="#dsi-seg-1-1" id="toc-dsi-seg-1-1-body"><span class="header-section-number">10.5.1.1</span> Tarea DSI-SEG 1.1: Estudio de la Seguridad Requerida en el Proceso de Diseño del Sistema de Información</a></li>
+  </ul></li>
+  <li><a href="#dsi-seg-2" id="toc-dsi-seg-2-body"><span class="header-section-number">10.5.2</span> Actividad DSI-SEG 2: Especificación de Requisitos de Seguridad del Entorno Tecnológico</a>
+  <ul>
+  <li><a href="#dsi-seg-2-1" id="toc-dsi-seg-2-1-body"><span class="header-section-number">10.5.2.1</span> Tarea DSI-SEG 2.1: Análisis de los Riesgos del Entorno Tecnológico</a></li>
+  </ul></li>
+  <li><a href="#dsi-seg-3" id="toc-dsi-seg-3-body"><span class="header-section-number">10.5.3</span> Actividad DSI-SEG 3: Requisitos de Seguridad del Entorno de Construcción</a>
+  <ul>
+  <li><a href="#dsi-seg-3-1" id="toc-dsi-seg-3-1-body"><span class="header-section-number">10.5.3.1</span> Tarea DSI-SEG 3.1: Identificación de los Requisitos de Seguridad del Entorno de Construcción</a></li>
+  </ul></li>
+  <li><a href="#dsi-seg-4" id="toc-dsi-seg-4-body"><span class="header-section-number">10.5.4</span> Actividad DSI-SEG 4: Diseño de Pruebas de Seguridad</a>
+  <ul>
+  <li><a href="#dsi-seg-4-1" id="toc-dsi-seg-4-1-body"><span class="header-section-number">10.5.4.1</span> Tarea DSI-SEG 4.1: Diseño de las Pruebas de Seguridad</a></li>
+  </ul></li>
+  <li><a href="#dsi-seg-5" id="toc-dsi-seg-5-body"><span class="header-section-number">10.5.5</span> Actividad DSI-SEG 5: Catalogación de los Productos Generados Durante el Proceso de Diseño del Sistema de Información</a>
+  <ul>
+  <li><a href="#dsi-seg-5-1" id="toc-dsi-seg-5-1-body"><span class="header-section-number">10.5.5.1</span> Tarea DSI-SEG 5.1: Clasificación y Catalogación de los Productos Generados durante el Proceso de Diseño del Sistema de Información</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#csi-seg" id="toc-csi-seg-body"><span class="header-section-number">10.6</span> Construccion del Sistema de Información</a>
+  <ul>
+  <li><a href="#csi-seg-1" id="toc-csi-seg-1-body"><span class="header-section-number">10.6.1</span> Actividad CSI-SEG 1: Estudio de la Seguridad Requerida en el Proceso de Construcción del Sistema de Información</a>
+  <ul>
+  <li><a href="#csi-seg-1-1" id="toc-csi-seg-1-1-body"><span class="header-section-number">10.6.1.1</span> Tarea CSI-SEG 1.1: Estudio de la Seguridad Requerida en el Proceso de Construcción del Sistema de Información</a></li>
+  </ul></li>
+  <li><a href="#csi-seg-2" id="toc-csi-seg-2-body"><span class="header-section-number">10.6.2</span> Actividad CSI-SEG 2: Evaluación de los Resultados de Pruebas de Seguridad</a>
+  <ul>
+  <li><a href="#csi-seg-2-1" id="toc-csi-seg-2-1-body"><span class="header-section-number">10.6.2.1</span> Tarea CSI-SEG 2.1: Estudio de los Resultados de Pruebas de Seguridad</a></li>
+  </ul></li>
+  <li><a href="#csi-seg-3" id="toc-csi-seg-3-body"><span class="header-section-number">10.6.3</span> Actividad CSI-SEG 3: Elaboración del Plan de Formación de Seguridad</a>
+  <ul>
+  <li><a href="#csi-seg-3-1" id="toc-csi-seg-3-1-body"><span class="header-section-number">10.6.3.1</span> Tarea CSI-SEG 3.1: Elaboración del Plan de Formación de Seguridad</a></li>
+  </ul></li>
+  <li><a href="#csi-seg-4" id="toc-csi-seg-4-body"><span class="header-section-number">10.6.4</span> Actividad CSI-SEG 4: Catalogación de los Productos Generados Durante el Proceso de Construcción del Sistema de Información</a>
+  <ul>
+  <li><a href="#csi-seg-4-1" id="toc-csi-seg-4-1-body"><span class="header-section-number">10.6.4.1</span> Tarea CSI-SEG 4.1: Clasificación y Catalogación de los Productos Generados durante el Proceso de Construcción del Sistema de Información</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#ias-seg" id="toc-ias-seg-body"><span class="header-section-number">10.7</span> Implantación y Aceptación del Sistema</a>
+  <ul>
+  <li><a href="#ias-seg-1" id="toc-ias-seg-1-body"><span class="header-section-number">10.7.1</span> Actividad IAS-SEG 1: Estudio de la Seguridad Requerida en el Proceso de Implantación y Aceptación del Sistema</a>
+  <ul>
+  <li><a href="#ias-seg-1-1" id="toc-ias-seg-1-1-body"><span class="header-section-number">10.7.1.1</span> Tarea IAS-SEG 1.1: Estudio de la Seguridad Requerida en el Proceso de Implantación y Aceptación del Sistema</a></li>
+  </ul></li>
+  <li><a href="#ias-seg-2" id="toc-ias-seg-2-body"><span class="header-section-number">10.7.2</span> Actividad IAS-SEG 2: Revisión de Medidas de Seguridad del Entorno de Operación</a>
+  <ul>
+  <li><a href="#ias-seg-2-1" id="toc-ias-seg-2-1-body"><span class="header-section-number">10.7.2.1</span> Tarea IAS-SEG 2.1: Revisión de Medidas de Seguridad del Entorno de Operación</a></li>
+  </ul></li>
+  <li><a href="#ias-seg-3" id="toc-ias-seg-3-body"><span class="header-section-number">10.7.3</span> Actividad IAS-SEG 3: Evaluación de Resultados de Pruebas de Seguridad de Implantación del Sistema</a>
+  <ul>
+  <li><a href="#ias-seg-3-1" id="toc-ias-seg-3-1-body"><span class="header-section-number">10.7.3.1</span> Tarea IAS-SEG 3.1: Estudio de los Resultados de Pruebas de Seguridad de Implantación del Sistema</a></li>
+  </ul></li>
+  <li><a href="#ias-seg-4" id="toc-ias-seg-4-body"><span class="header-section-number">10.7.4</span> Actividad IAS-SEG 4: Catalogación de los Productos Generados Durante el Proceso de Implantación y Aceptación del Sistema</a>
+  <ul>
+  <li><a href="#ias-seg-4-1" id="toc-ias-seg-4-1-body"><span class="header-section-number">10.7.4.1</span> Tarea IAS-SEG 4.1: Clasificación y Catalogación de los Productos Generados durante el Proceso Implantación y Aceptación del Sistema</a></li>
+  </ul></li>
+  <li><a href="#ias-seg-5" id="toc-ias-seg-5-body"><span class="header-section-number">10.7.5</span> Actividad IAS-SEG 5: Revisión de Medidas de Seguridad en el Entorno de Producción</a>
+  <ul>
+  <li><a href="#ias-seg-5-1" id="toc-ias-seg-5-1-body"><span class="header-section-number">10.7.5.1</span> Tarea IAS-SEG 5.1: Revisión de Medidas de Seguridad en el Entorno de Producción</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#msi-seg" id="toc-msi-seg-body"><span class="header-section-number">10.8</span> Mantenimiento de Sistemas de Información</a>
+  <ul>
+  <li><a href="#msi-seg-1" id="toc-msi-seg-1-body"><span class="header-section-number">10.8.1</span> Actividad MSI-SEG 1: Estudio de la Seguridad Requerida en el Proceso Mantenimiento de Sistemas de Información</a>
+  <ul>
+  <li><a href="#msi-seg-1-1" id="toc-msi-seg-1-1-body"><span class="header-section-number">10.8.1.1</span> Tarea MSI-SEG 1.1: Estudio de la Seguridad Requerida en el Proceso Mantenimiento de Sistemas de Información</a></li>
+  </ul></li>
+  <li><a href="#msi-seg-2" id="toc-msi-seg-2-body"><span class="header-section-number">10.8.2</span> Actividad MSI-SEG 2: Especificación e Identificación de las Funciones y Mecanismos de Seguridad</a>
+  <ul>
+  <li><a href="#msi-seg-2-1" id="toc-msi-seg-2-1-body"><span class="header-section-number">10.8.2.1</span> Tarea MSI-SEG 2.1: Estudio de la Petición</a></li>
+  <li><a href="#msi-seg-2-2" id="toc-msi-seg-2-2-body"><span class="header-section-number">10.8.2.2</span> Tarea MSI-SEG 2.2: Análisis de las Funciones y Mecanismos de Seguridad Afectados o Nuevos</a></li>
+  </ul></li>
+  <li><a href="#msi-seg-3" id="toc-msi-seg-3-body"><span class="header-section-number">10.8.3</span> Actividad MSI-SEG 3: Catalogación de los Productos Generados Durante el Proceso de Mantenimiento de Sistemas de Información</a>
+  <ul>
+  <li><a href="#msi-seg-3-1" id="toc-msi-seg-3-1-body"><span class="header-section-number">10.8.3.1</span> Tarea MSI-SEG 3.1: Clasificación y Catalogación de los Productos Generados durante el Proceso de Mantenimiento de Sistemas de Información</a></li>
+  </ul></li>
+  </ul></li>
+  </ul>
+</nav>
 <section id="descripción-y-objetivos" class="level2" data-number="10.1">
 <h2 data-number="10.1" class="anchored" data-anchor-id="descripción-y-objetivos"><span class="header-section-number">10.1</span> Descripción y objetivos</h2>
 <p>El objetivo de la interfaz de seguridad de MÉTRICA Versión 3 es incorporar en los sistemas de información mecanismos de seguridad adicionales a los que se proponen en la propia metodología, asegurando el desarrollo de cualquier tipo de sistema a lo largo de los procesos que se realicen para su obtención.</p>
@@ -467,61 +621,48 @@ ul.task-list li input[type="checkbox"] {
 </ul>
 <p>Si en la organización ya existe un plan de seguridad o una metodología de análisis y gestión de riesgos como por ejemplo <a href="https://administracionelectronica.gob.es/ctt/magerit" target="_blank">MAGERIT</a>, para cada sistema de información deberán analizarse las necesidades de seguridad del sistema respecto al método vigente, y determinar las diferencias si las hubiera, así como aquellas necesidades concretas que no se encuentren recogidas, estableciendo así el plan de seguridad del sistema de información. Si no existe un plan de seguridad en la organización habrá que desarrollarlo desde el principio. El plan recogerá además las medidas de seguridad activas o preventivas y reactivas, en respuesta a situaciones en que se produce un fallo reduciendo su efecto, relacionadas con la seguridad del sistema de información y del proceso de desarrollo.</p>
 <p>Las valoraciones sobre la seguridad deben ser realizadas en función de las características del sistema: complejidad, tamaño, incertidumbre, participantes, etc. por los responsables de la seguridad del sistema de información, quienes se apoyarán para sus decisiones en su conocimiento y experiencia en la materia sin perder de vista además que, al ser finitos los recursos, no pueden asegurarse todos los aspectos del desarrollo de los sistemas de información, por lo que habrá que aceptar un determinado nivel de riesgo concentrándose en los aspectos más comprometidos o amenazados, que serán diferentes según las circunstancias.</p>
-<p>Actividades</p>
-<ul>
-<li>Planificación de Sistemas de Información
-<ul>
-<li>Actividad PSI-SEG 1: Planificación de la Seguridad Requerida en el Proceso Planificación de Sistemas de Información</li>
-<li>Actividad PSI-SEG 2: Evaluación del Riesgo para la Arquitectura Tecnológica</li>
-<li>Actividad PSI-SEG 3: Determinación de la Seguridad en el Plan de Acción</li>
-<li>Actividad PSI-SEG 4: Catalogación de los Productos Generados Durante el Proceso de Planificación de Sistemas de Información</li>
-</ul></li>
-<li>Estudio de Viabilidad del Sistema
-<ul>
-<li>Actividad EVS-SEG 1: Estudio de la Seguridad Requerida en el Proceso Estudio de Viabilidad del Sistema</li>
-<li>Actividad EVS-SEG 2: Selección del Equipo de Seguridad</li>
-<li>Actividad EVS-SEG 3: Recomendaciones Adicionales de Seguridad para el Sistema de Información</li>
-<li>Actividad EVS-SEG 4: Evaluación de la Seguridad de las Alternativas de Solución</li>
-<li>Actividad EVS-SEG 5: Evaluación Detallada de la Seguridad de la Solución Propuesta</li>
-<li>Actividad EVS-SEG 6: Catalogación de los Productos Generados Durante el Proceso de Estudio de Viabilidad del Sistema</li>
-</ul></li>
-<li>Análisis del Sistema de Información
-<ul>
-<li>Actividad ASI-SEG 1: Estudio de la Seguridad Requerida en el Proceso de Análisis del Sistema de Información</li>
-<li>Actividad ASI-SEG 2: Descripción de las Funciones y Mecanismos de Seguridad</li>
-<li>Actividad ASI-SEG 3: Definición de los Criterios de Aceptación de la Seguridad</li>
-<li>Actividad ASI-SEG 4: Catalogación de los Productos Generados Durante el Proceso de Análisis del Sistema de Información</li>
-</ul></li>
-<li>Diseño del Sistema de Información
-<ul>
-<li>Actividad DSI-SEG 1: Estudio de la Seguridad Requerida en el Proceso de Diseño del Sistema de Información</li>
-<li>Actividad DSI-SEG 2: Especificación de Requisitos de Seguridad del Entorno Tecnológico</li>
-<li>Actividad DSI-SEG 3: Requisitos de Seguridad del Entorno de Construcción</li>
-<li>Actividad DSI-SEG 4: Diseño de Pruebas de Seguridad</li>
-<li>Actividad DSI-SEG 5: Catalogación de los Productos Generados Durante el Proceso de Diseño del Sistema de Información</li>
-</ul></li>
-<li>Construcción del Sistema de Información
-<ul>
-<li>Actividad CSI-SEG 1: Estudio de la Seguridad Requerida en el Proceso de Construcción del Sistema de Información</li>
-<li>Actividad CSI-SEG 2: Evaluación de los Resultados de Pruebas de Seguridad</li>
-<li>Actividad CSI-SEG 3: Elaboración del Plan de Formación de Seguridad</li>
-<li>Actividad CSI-SEG 4: Catalogación de los Productos Generados Durante el Proceso de Construcción del Sistema de Información</li>
-</ul></li>
-<li>Implantación y Aceptación del Sistema
-<ul>
-<li>Actividad IAS-SEG 1: Estudio de la Seguridad Requerida en el Proceso de Implantación y Aceptación del Sistema</li>
-<li>Actividad IAS-SEG 2: Revisión de Medidas de Seguridad del Entorno de Operación</li>
-<li>Actividad IAS-SEG 3: Evaluación de Resultados de Pruebas de Seguridad de Implantación del Sistema</li>
-<li>Actividad IAS-SEG 4: Catalogación de los Productos Generados Durante el Proceso de Implantación y Aceptación del Sistema</li>
-<li>Actividad IAS-SEG 5: Revisión de Medidas de Seguridad en el Entorno de Producción</li>
-</ul></li>
-<li>Mantenimiento de Sistemas de Información
-<ul>
-<li>Actividad MSI-SEG 1: Estudio de la Seguridad Requerida en el Proceso Mantenimiento de Sistemas de Información</li>
-<li>Actividad MSI-SEG 2: Especificación e Identificación de las Funciones y Mecanismos de Seguridad</li>
-<li>Actividad MSI-SEG 3: Catalogación de los Productos Generados Durante el Proceso de Mantenimiento de Sistemas de Información</li>
-</ul></li>
-</ul>
+<!--
+Actividades
+
+* Planificación de Sistemas de Información
+  * Actividad PSI-SEG 1: Planificación de la Seguridad Requerida en el Proceso Planificación de Sistemas de Información
+  * Actividad PSI-SEG 2: Evaluación del Riesgo para la Arquitectura Tecnológica
+  * Actividad PSI-SEG 3: Determinación de la Seguridad en el Plan de Acción
+  * Actividad PSI-SEG 4: Catalogación de los Productos Generados Durante el Proceso de Planificación de Sistemas de Información
+* Estudio de Viabilidad del Sistema
+  * Actividad EVS-SEG 1: Estudio de la Seguridad Requerida en el Proceso Estudio de Viabilidad del Sistema
+  * Actividad EVS-SEG 2: Selección del Equipo de Seguridad
+  * Actividad EVS-SEG 3: Recomendaciones Adicionales de Seguridad para el Sistema de Información
+  * Actividad EVS-SEG 4: Evaluación de la Seguridad de las Alternativas de Solución
+  * Actividad EVS-SEG 5: Evaluación Detallada de la Seguridad de la Solución Propuesta
+  * Actividad EVS-SEG 6: Catalogación de los Productos Generados Durante el Proceso de Estudio de Viabilidad del Sistema
+* Análisis del Sistema de Información
+  * Actividad ASI-SEG 1: Estudio de la Seguridad Requerida en el Proceso de Análisis del Sistema de Información
+  * Actividad ASI-SEG 2: Descripción de las Funciones y Mecanismos de Seguridad
+  * Actividad ASI-SEG 3: Definición de los Criterios de Aceptación de la Seguridad
+  * Actividad ASI-SEG 4: Catalogación de los Productos Generados Durante el Proceso de Análisis del Sistema de Información
+* Diseño del Sistema de Información
+  * Actividad DSI-SEG 1: Estudio de la Seguridad Requerida en el Proceso de Diseño del Sistema de Información
+  * Actividad DSI-SEG 2: Especificación de Requisitos de Seguridad del Entorno Tecnológico
+  * Actividad DSI-SEG 3: Requisitos de Seguridad del Entorno de Construcción
+  * Actividad DSI-SEG 4: Diseño de Pruebas de Seguridad
+  * Actividad DSI-SEG 5: Catalogación de los Productos Generados Durante el Proceso de Diseño del Sistema de Información
+* Construcción del Sistema de Información
+  * Actividad CSI-SEG 1: Estudio de la Seguridad Requerida en el Proceso de Construcción del Sistema de Información
+  * Actividad CSI-SEG 2: Evaluación de los Resultados de Pruebas de Seguridad
+  * Actividad CSI-SEG 3: Elaboración del Plan de Formación de Seguridad
+  * Actividad CSI-SEG 4: Catalogación de los Productos Generados Durante el Proceso de Construcción del Sistema de Información
+* Implantación y Aceptación del Sistema
+  * Actividad IAS-SEG 1: Estudio de la Seguridad Requerida en el Proceso de Implantación y Aceptación del Sistema
+  * Actividad IAS-SEG 2: Revisión de Medidas de Seguridad del Entorno de Operación
+  * Actividad IAS-SEG 3: Evaluación de Resultados de Pruebas de Seguridad de Implantación del Sistema
+  * Actividad IAS-SEG 4: Catalogación de los Productos Generados Durante el Proceso de Implantación y Aceptación del Sistema
+  * Actividad IAS-SEG 5: Revisión de Medidas de Seguridad en el Entorno de Producción
+* Mantenimiento de Sistemas de Información
+  * Actividad MSI-SEG 1: Estudio de la Seguridad Requerida en el Proceso Mantenimiento de Sistemas de Información
+  * Actividad MSI-SEG 2: Especificación e Identificación de las Funciones y Mecanismos de Seguridad
+  * Actividad MSI-SEG 3: Catalogación de los Productos Generados Durante el Proceso de Mantenimiento de Sistemas de Información
+-->
 </section>
 <section id="psi-seg" class="level2" data-number="10.2">
 <h2 data-number="10.2" class="anchored" data-anchor-id="psi-seg"><span class="header-section-number">10.2</span> Planificación de Sistemas de Información</h2>

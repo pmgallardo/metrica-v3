@@ -158,7 +158,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../01-principal/02-psi.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Descripción y objetivos</span></span></a>
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Planificación de Sistemas de Información</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -407,7 +407,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="Hilo de Ariadna"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../02-interfaces/01-cal.html">Interfaces</a></li><li class="breadcrumb-item"><a href="../02-interfaces/01-cal.html"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Aseguramiento de la Calidad</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Aseguramiento de la Calidad</span></h1>
+<h1 class="title"><span id="cal" class="quarto-section-identifier"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Aseguramiento de la Calidad</span></span></h1>
 </div>
 
 
@@ -435,7 +435,142 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-
+<nav id="TOC-body" role="doc-toc" aria-labelledby="toc-title-body">
+    <h2 id="toc-title-body">Tabla de contenidos</h2>
+   
+  <ul>
+  <li><a href="#descripción-y-objetivos" id="toc-descripción-y-objetivos-body"><span class="header-section-number">9.1</span> Descripción y objetivos</a></li>
+  <li><a href="#evs-cal" id="toc-evs-cal-body"><span class="header-section-number">9.2</span> Estudio de viabilidad del sistema</a>
+  <ul>
+  <li><a href="#evs-cal-1" id="toc-evs-cal-1-body"><span class="header-section-number">9.2.1</span> Actividad EVS-CAL 1: Identificación de las Propiedades de Calidad para el Sistema</a>
+  <ul>
+  <li><a href="#evs-cal-1-1" id="toc-evs-cal-1-1-body"><span class="header-section-number">9.2.1.1</span> Tarea EVS-CAL 1.1: Constitución del Equipo de Aseguramiento de Calidad</a></li>
+  <li><a href="#evs-cal-1-2" id="toc-evs-cal-1-2-body"><span class="header-section-number">9.2.1.2</span> Tarea EVS-CAL 1.2: Determinación de los Sistemas de Información objeto de Aseguramiento de Calidad</a></li>
+  <li><a href="#evs-cal-1-3" id="toc-evs-cal-1-3-body"><span class="header-section-number">9.2.1.3</span> Tarea EVS-CAL 1.3: Identificación de las Propiedades de Calidad</a></li>
+  </ul></li>
+  <li><a href="#evs-cal-2" id="toc-evs-cal-2-body"><span class="header-section-number">9.2.2</span> Actividad EVS-CAL 2: Establecimiento del Plan de Aseguramiento de Calidad</a>
+  <ul>
+  <li><a href="#evs-cal-2-1" id="toc-evs-cal-2-1-body"><span class="header-section-number">9.2.2.1</span> Tarea EVS-CAL 2.1: Necesidad del Plan de Aseguramiento de Calidad para las Alternativas Propuestas</a></li>
+  <li><a href="#evs-cal-2-2" id="toc-evs-cal-2-2-body"><span class="header-section-number">9.2.2.2</span> Tarea EVS-CAL 2.2: Alcance del Plan de Aseguramiento de Calidad</a></li>
+  <li><a href="#evs-cal-2-3" id="toc-evs-cal-2-3-body"><span class="header-section-number">9.2.2.3</span> Tarea EVS-CAL 2.3: Impacto en el Coste del Sistema</a></li>
+  </ul></li>
+  <li><a href="#evs-cal-3" id="toc-evs-cal-3-body"><span class="header-section-number">9.2.3</span> Actividad EVS-CAL 3: Adecuación del Plan de Aseguramiento de Calidad a la Solución</a>
+  <ul>
+  <li><a href="#evs-cal-3-1" id="toc-evs-cal-3-1-body"><span class="header-section-number">9.2.3.1</span> Tarea EVS-CAL 3.1</a></li>
+  <li><a href="#evs-cal-3-2" id="toc-evs-cal-3-2-body"><span class="header-section-number">9.2.3.2</span> Tarea EVS-CAL 3.2</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#asi-cal" id="toc-asi-cal-body"><span class="header-section-number">9.3</span> Análisis del sistema de información</a>
+  <ul>
+  <li><a href="#asi-cal-1" id="toc-asi-cal-1-body"><span class="header-section-number">9.3.1</span> Actividad ASI-CAL 1: Especificación Inicial del Plan de Aseguramiento de Calidad</a>
+  <ul>
+  <li><a href="#asi-cal-1-1" id="toc-asi-cal-1-1-body"><span class="header-section-number">9.3.1.1</span> Tarea ASI-CAL 1.1</a></li>
+  </ul></li>
+  <li><a href="#asi-cal-2" id="toc-asi-cal-2-body"><span class="header-section-number">9.3.2</span> Actividad ASI-CAL 2: Especificación Detallada del Plan de Aseguramiento de Calidad</a>
+  <ul>
+  <li><a href="#asi-cal-2-1" id="toc-asi-cal-2-1-body"><span class="header-section-number">9.3.2.1</span> Tarea ASI-CAL 2.1</a></li>
+  </ul></li>
+  <li><a href="#asi-cal-3" id="toc-asi-cal-3-body"><span class="header-section-number">9.3.3</span> Actividad ASI-CAL 3: Revisión del Análisis de Consistencia</a>
+  <ul>
+  <li><a href="#asi-cal-3-1" id="toc-asi-cal-3-1-body"><span class="header-section-number">9.3.3.1</span> Tarea ASI-CAL 3.1</a></li>
+  <li><a href="#asi-cal-3-2" id="toc-asi-cal-3-2-body"><span class="header-section-number">9.3.3.2</span> Tarea ASI-CAL 3.2</a></li>
+  </ul></li>
+  <li><a href="#asi-cal-4" id="toc-asi-cal-4-body"><span class="header-section-number">9.3.4</span> Actividad ASI-CAL 4: Revisión del Plan de Pruebas</a>
+  <ul>
+  <li><a href="#asi-cal-4-1" id="toc-asi-cal-4-1-body"><span class="header-section-number">9.3.4.1</span> Tarea ASI-CAL 4.1</a></li>
+  <li><a href="#asi-cal-5" id="toc-asi-cal-5-body"><span class="header-section-number">9.3.4.2</span> Actividad ASI-CAL 5: Registro de la Aprobación del Análisis del Sistema</a></li>
+  <li><a href="#asi-cal-5-1" id="toc-asi-cal-5-1-body"><span class="header-section-number">9.3.4.3</span> Tarea ASI-CAL 5.1</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#dsi-cal" id="toc-dsi-cal-body"><span class="header-section-number">9.4</span> Diseño del sistema de información</a>
+  <ul>
+  <li><a href="#dsi-cal-1" id="toc-dsi-cal-1-body"><span class="header-section-number">9.4.1</span> Actividad DSI-CAL 1: Revisión de la Verificación de la Arquitectura del Sistema</a>
+  <ul>
+  <li><a href="#dsi-cal-1-1" id="toc-dsi-cal-1-1-body"><span class="header-section-number">9.4.1.1</span> Tarea DSI-CAL 1.1</a></li>
+  <li><a href="#dsi-cal-1-2" id="toc-dsi-cal-1-2-body"><span class="header-section-number">9.4.1.2</span> Tarea DSI-CAL 1.2</a></li>
+  </ul></li>
+  <li><a href="#dsi-cal-2" id="toc-dsi-cal-2-body"><span class="header-section-number">9.4.2</span> Actividad DSI-CAL 2: Revisión de la Especificación Técnica del Plan de Pruebas</a>
+  <ul>
+  <li><a href="#dsi-cal-2-1" id="toc-dsi-cal-2-1-body"><span class="header-section-number">9.4.2.1</span> Tarea DSI-CAL 2.1</a></li>
+  <li><a href="#dsi-cal-2-2" id="toc-dsi-cal-2-2-body"><span class="header-section-number">9.4.2.2</span> Tarea DSI-CAL 2.2</a></li>
+  </ul></li>
+  <li><a href="#dsi-cal-3" id="toc-dsi-cal-3-body"><span class="header-section-number">9.4.3</span> Actividad DSI-CAL 3: Revisión de los Requisitos de Implantación</a>
+  <ul>
+  <li><a href="#dsi-cal-3-1" id="toc-dsi-cal-3-1-body"><span class="header-section-number">9.4.3.1</span> Tarea DSI-CAL 3.1</a></li>
+  <li><a href="#dsi-cal-3-2" id="toc-dsi-cal-3-2-body"><span class="header-section-number">9.4.3.2</span> Tarea DSI-CAL 3.2</a></li>
+  </ul></li>
+  <li><a href="#dsi-cal-4" id="toc-dsi-cal-4-body"><span class="header-section-number">9.4.4</span> Actividad DSI-CAL 4: Registro de la Aprobación del Diseño del Sistema de Información</a>
+  <ul>
+  <li><a href="#dsi-cal-4-1" id="toc-dsi-cal-4-1-body"><span class="header-section-number">9.4.4.1</span> Tarea DSI-CAL 4.1</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#csi-cal" id="toc-csi-cal-body"><span class="header-section-number">9.5</span> Construcción del sistema de información</a>
+  <ul>
+  <li><a href="#csi-cal-1" id="toc-csi-cal-1-body"><span class="header-section-number">9.5.1</span> Actividad CSI-CAL 1: Revisión del Código de Componentes y Procedimientos</a>
+  <ul>
+  <li><a href="#csi-cal-1-1" id="toc-csi-cal-1-1-body"><span class="header-section-number">9.5.1.1</span> Tarea CSI-CAL 1.1</a></li>
+  </ul></li>
+  <li><a href="#csi-cal-2" id="toc-csi-cal-2-body"><span class="header-section-number">9.5.2</span> Actividad CSI-CAL 2: Revisión de las Pruebas Unitarias, de Integración y del Sistema</a>
+  <ul>
+  <li><a href="#csi-cal-2-1" id="toc-csi-cal-2-1-body"><span class="header-section-number">9.5.2.1</span> Tarea CSI-CAL 2.1</a></li>
+  <li><a href="#csi-cal-2-2" id="toc-csi-cal-2-2-body"><span class="header-section-number">9.5.2.2</span> Tarea CSI-CAL 2.2</a></li>
+  <li><a href="#csi-cal-2-3" id="toc-csi-cal-2-3-body"><span class="header-section-number">9.5.2.3</span> Tarea CSI-CAL 2.3</a></li>
+  </ul></li>
+  <li><a href="#csi-cal-3" id="toc-csi-cal-3-body"><span class="header-section-number">9.5.3</span> Actividad CSI-CAL 3: Revisión de los Manuales de Usuario</a>
+  <ul>
+  <li><a href="#csi-cal-3-1" id="toc-csi-cal-3-1-body"><span class="header-section-number">9.5.3.1</span> Tarea CSI-CAL 3.1</a></li>
+  </ul></li>
+  <li><a href="#csi-cal-4" id="toc-csi-cal-4-body"><span class="header-section-number">9.5.4</span> Actividad CSI-CAL 4: Revisión de la Formación a Usuarios Finales</a>
+  <ul>
+  <li><a href="#csi-cal-4-1" id="toc-csi-cal-4-1-body"><span class="header-section-number">9.5.4.1</span> Tarea CSI-CAL 4.1</a></li>
+  </ul></li>
+  <li><a href="#csi-cal-5" id="toc-csi-cal-5-body"><span class="header-section-number">9.5.5</span> Actividad CSI-CAL 5: Registro de la Aprobación del Sistema de Información</a>
+  <ul>
+  <li><a href="#csi-cal-5-1" id="toc-csi-cal-5-1-body"><span class="header-section-number">9.5.5.1</span> Tarea CSI-CAL 5.1</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#ias" id="toc-ias-body"><span class="header-section-number">9.6</span> Implantación y aceptación del sistema</a>
+  <ul>
+  <li><a href="#ias-cal-1" id="toc-ias-cal-1-body"><span class="header-section-number">9.6.1</span> Actividad IAS-CAL 1: Revisión del Plan de Implantación del Sistema</a>
+  <ul>
+  <li><a href="#ias-cal-1-1" id="toc-ias-cal-1-1-body"><span class="header-section-number">9.6.1.1</span> Tarea IAS-CAL 1.1</a></li>
+  </ul></li>
+  <li><a href="#ias-cal-2" id="toc-ias-cal-2-body"><span class="header-section-number">9.6.2</span> Actividad IAS-CAL 2: Revisión de las Pruebas de Implantación del Sistema</a>
+  <ul>
+  <li><a href="#ias-cal-2-1" id="toc-ias-cal-2-1-body"><span class="header-section-number">9.6.2.1</span> Tarea IAS-CAL 2.1</a></li>
+  <li><a href="#ias-cal-2-2" id="toc-ias-cal-2-2-body"><span class="header-section-number">9.6.2.2</span> Tarea IAS-CAL 2.2</a></li>
+  </ul></li>
+  <li><a href="#ias-cal-3" id="toc-ias-cal-3-body"><span class="header-section-number">9.6.3</span> Actividad IAS-CAL 3: Revisión de las Pruebas de Aceptación del Sistema</a>
+  <ul>
+  <li><a href="#ias-cal-3-1" id="toc-ias-cal-3-1-body"><span class="header-section-number">9.6.3.1</span> Tarea IAS-CAL 3.1</a></li>
+  <li><a href="#ias-cal-3-2" id="toc-ias-cal-3-2-body"><span class="header-section-number">9.6.3.2</span> Tarea IAS-CAL 3.2</a></li>
+  </ul></li>
+  <li><a href="#ias-cal-4" id="toc-ias-cal-4-body"><span class="header-section-number">9.6.4</span> Actividad IAS-CAL 4: Revisión del Plan de Mantenimiento del Sistema</a>
+  <ul>
+  <li><a href="#ias-cal-4-1" id="toc-ias-cal-4-1-body"><span class="header-section-number">9.6.4.1</span> Tarea IAS-CAL 4.1</a></li>
+  </ul></li>
+  <li><a href="#ias-cal-5" id="toc-ias-cal-5-body"><span class="header-section-number">9.6.5</span> Actividad IAS-CAL 5: Registro de la Aprobación de la Implantación del Sistema</a>
+  <ul>
+  <li><a href="#ias-cal-5-1" id="toc-ias-cal-5-1-body"><span class="header-section-number">9.6.5.1</span> Tarea IAS-CAL 5.1</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#msi-cal" id="toc-msi-cal-body"><span class="header-section-number">9.7</span> Mantenimineto del sistema de información</a>
+  <ul>
+  <li><a href="#msi-cal-1" id="toc-msi-cal-1-body"><span class="header-section-number">9.7.1</span> Actividad MSI-CAL 1: Revisión del Mantenimiento del Sistema de Información</a>
+  <ul>
+  <li><a href="#msi-cal-1-1" id="toc-msi-cal-1-1-body"><span class="header-section-number">9.7.1.1</span> Tarea MSI-CAL 1.1</a></li>
+  </ul></li>
+  <li><a href="#msi-cal-2" id="toc-msi-cal-2-body"><span class="header-section-number">9.7.2</span> Actividad MSI-CAL 2: Revisión del Plan de Pruebas de Regresión</a>
+  <ul>
+  <li><a href="#msi-cal-2-1" id="toc-msi-cal-2-1-body"><span class="header-section-number">9.7.2.1</span> Tarea MSI-CAL 2.1</a></li>
+  </ul></li>
+  <li><a href="#msi-cal-3" id="toc-msi-cal-3-body"><span class="header-section-number">9.7.3</span> Actividad MSI-CAL 3: Revisión de la Realización de las Pruebas de Regresión</a>
+  <ul>
+  <li><a href="#msi-cal-3-1" id="toc-msi-cal-3-1-body"><span class="header-section-number">9.7.3.1</span> Tarea MSI-CAL 3.1</a></li>
+  </ul></li>
+  </ul></li>
+  </ul>
+</nav>
 <section id="descripción-y-objetivos" class="level2" data-number="9.1">
 <h2 data-number="9.1" class="anchored" data-anchor-id="descripción-y-objetivos"><span class="header-section-number">9.1</span> Descripción y objetivos</h2>
 <p>El objetivo de la interfaz de Aseguramiento de la Calidad de MÉTRICA Versión 3 es proporcionar un marco común de referencia para la definición y puesta en marcha de planes específicos de aseguramiento de calidad aplicables a proyectos concretos. Si en la organización ya existe un sistema de calidad, dichos planes deberán ser coherentes con el mismo, completándolo en los aspectos no contemplados relativos a normas particulares del cliente, usuario o sistema concreto.</p>
@@ -452,51 +587,39 @@ ul.task-list li input[type="checkbox"] {
 <li>Comprobar que se han llevado a cabo las medidas preventivas o correctoras necesarias.</li>
 </ul>
 <p>Las revisiones son una de las actividades más importantes del aseguramiento de la calidad, debido a que permiten eliminar defectos lo más pronto posible, cuando son menos costosos de corregir. Además existen procedimientos extraordinarios, como las auditorías, aplicables en desarrollos singulares y en el transcurso de las cuales se revisarán tanto las actividades de desarrollo como las propias de aseguramiento de calidad. La detección anticipada de errores evita el que se propaguen a los restantes procesos de desarrollo, reduciendo substancialmente el esfuerzo invertido en los mismos. En este sentido es importante destacar que el establecimiento del plan de aseguramiento de calidad comienza en el Estudio de Viabilidad del Sistema y se aplica a lo largo de todo el desarrollo, en los procesos de Análisis, Diseño, Construcción, Implantación y Aceptación del Sistema y en su posterior Mantenimiento. Actividades</p>
-<ul>
-<li><a href="#evs">Estudio de Viabilidad del Sistema</a>
-<ul>
-<li><a href="#evs-cal-1">Actividad EVS-CAL 1: Identificación de las Propiedades de Calidad par el Sistema</a></li>
-<li><a href="#evs-cal-2">Actividad EVS-CAL 2: Establecimiento del Plan de Aseguramiento de Calidad</a></li>
-<li><a href="#evs-cal-3">Actividad EVS-CAL 3: Adecuación del Plan de Aseguramiento de Calidad a la Solución</a></li>
-</ul></li>
-<li><a href="#asi-cal-1">Análisis del Sistema de Información</a>
-<ul>
-<li><a href="#asi-cal-1">Actividad ASI-CAL 1: Especificación Inicial del Plan de Aseguramiento de Calidad</a></li>
-<li><a href="#asi-cal-2">Actividad ASI-CAL 2: Especificación Detallada del Plan de Aseguramiento de Calidad</a></li>
-<li><a href="#asi-cal-3">Actividad ASI-CAL 3: Revisión del Análisis de Consistencia</a></li>
-<li><a href="#asi-cal-4">Actividad ASI-CAL 4: Revisión del Plan de Pruebas</a></li>
-<li><a href="#asi-cal-5">Actividad ASI-CAL 5: Registro de la Aprobación del Análisis del Sistema</a></li>
-</ul></li>
-<li><a href="#dsi">Diseño del Sistema de Información</a>
-<ul>
-<li><a href="#dsi-cal-1">Actividad DSI-CAL 1: Revisión de la Verificación de la Arquitectura del Sistema</a></li>
-<li><a href="#dsi-cal-2">Actividad DSI-CAL 2: Revisión de la Especificación Técnica del Plan de Pruebas</a></li>
-<li><a href="#dsi-cal-3">Actividad DSI-CAL 3: Revisión de los Requisitos de Implantación</a></li>
-<li><a href="#dsi-cal-4">Actividad DSI-CAL 4: Registro de la Aprobación del Diseño del Sistema de Información</a></li>
-</ul></li>
-<li><a href="#csi">Construcción del Sistema de Información</a>
-<ul>
-<li><a href="#csi-cal-1">Actividad CSI-CAL 1: Revisión del Código de Componentes y Procedimientos</a></li>
-<li><a href="#csi-cal-2">Actividad CSI-CAL 2: Revisión de las Pruebas Unitarias, de Integración y del Sistema</a></li>
-<li><a href="#csi-cal-3">Actividad CSI-CAL 3: Revisión de los Manuales de Usuario</a></li>
-<li><a href="#csi-cal-4">Actividad CSI-CAL 4: Revisión de la Formación a Usuarios Finales</a></li>
-<li><a href="#csi-cal-5">Actividad CSI-CAL 5: Registro de la Aprobación del Sistema de Información</a></li>
-</ul></li>
-<li><a href="#ias">Implantación y Aceptación del Sistema</a>
-<ul>
-<li><a href="#ias-cal-1">Actividad IAS-CAL 1: Revisión del Plan de Implantación del Sistema</a></li>
-<li><a href="#ias-cal-2">Actividad IAS-CAL 2: Revisión de las Pruebas de Implantación del Sistema</a></li>
-<li><a href="#ias-cal-3">Actividad IAS-CAL 3: Revisión de las Pruebas de Aceptación del Sistema</a></li>
-<li><a href="#ias-cal-4">Actividad IAS-CAL 4: Revisión del Plan de Mantenimiento del Sistema</a></li>
-<li><a href="#ias-cal-5">Actividad IAS-CAL 5: Registro de la Aprobación de la Implantación del Sistema</a></li>
-</ul></li>
-<li><a href="#msi">Mantenimiento del Sistema de Información</a>
-<ul>
-<li><a href="#msi-cal-1">Actividad MSI-CAL 1: Revisión del Mantenimiento del Sistema de Información</a></li>
-<li><a href="#msi-cal-2">Actividad MSI-CAL 2: Revisión del Plan de Pruebas de Regresión</a></li>
-<li><a href="#msi-cal-3">Actividad MSI-CAL 3: Revisión de la Realización de las Prueba de Regresión</a></li>
-</ul></li>
-</ul>
+<!--
+* [Estudio de Viabilidad del Sistema](#evs)
+  * [Actividad EVS-CAL 1: Identificación de las Propiedades de Calidad par el Sistema](#evs-cal-1)
+  * [Actividad EVS-CAL 2: Establecimiento del Plan de Aseguramiento de Calidad](#evs-cal-2)
+  * [Actividad EVS-CAL 3: Adecuación del Plan de Aseguramiento de Calidad a la Solución](#evs-cal-3)
+* [Análisis del Sistema de Información](#asi-cal-1)
+  * [Actividad ASI-CAL 1: Especificación Inicial del Plan de Aseguramiento de Calidad](#asi-cal-1)
+  * [Actividad ASI-CAL 2: Especificación Detallada del Plan de Aseguramiento de Calidad](#asi-cal-2)
+  * [Actividad ASI-CAL 3: Revisión del Análisis de Consistencia](#asi-cal-3)
+  * [Actividad ASI-CAL 4: Revisión del Plan de Pruebas](#asi-cal-4)
+  * [Actividad ASI-CAL 5: Registro de la Aprobación del Análisis del Sistema](#asi-cal-5)
+* [Diseño del Sistema de Información](#dsi)
+  * [Actividad DSI-CAL 1: Revisión de la Verificación de la Arquitectura del Sistema](#dsi-cal-1)
+  * [Actividad DSI-CAL 2: Revisión de la Especificación Técnica del Plan de Pruebas](#dsi-cal-2)
+  * [Actividad DSI-CAL 3: Revisión de los Requisitos de Implantación](#dsi-cal-3)
+  * [Actividad DSI-CAL 4: Registro de la Aprobación del Diseño del Sistema de Información](#dsi-cal-4)
+* [Construcción del Sistema de Información](#csi)
+  * [Actividad CSI-CAL 1: Revisión del Código de Componentes y Procedimientos](#csi-cal-1)
+  * [Actividad CSI-CAL 2: Revisión de las Pruebas Unitarias, de Integración y del Sistema](#csi-cal-2)
+  * [Actividad CSI-CAL 3: Revisión de los Manuales de Usuario](#csi-cal-3)
+  * [Actividad CSI-CAL 4: Revisión de la Formación a Usuarios Finales](#csi-cal-4)
+  * [Actividad CSI-CAL 5: Registro de la Aprobación del Sistema de Información](#csi-cal-5)
+* [Implantación y Aceptación del Sistema](#ias)
+  * [Actividad IAS-CAL 1: Revisión del Plan de Implantación del Sistema](#ias-cal-1)
+  * [Actividad IAS-CAL 2: Revisión de las Pruebas de Implantación del Sistema](#ias-cal-2)
+  * [Actividad IAS-CAL 3: Revisión de las Pruebas de Aceptación del Sistema](#ias-cal-3)
+  * [Actividad IAS-CAL 4: Revisión del Plan de Mantenimiento del Sistema](#ias-cal-4)
+  * [Actividad IAS-CAL 5: Registro de la Aprobación de la Implantación del Sistema](#ias-cal-5)
+* [Mantenimiento del Sistema de Información](#msi)
+  * [Actividad MSI-CAL 1: Revisión del Mantenimiento del Sistema de Información](#msi-cal-1)
+  * [Actividad MSI-CAL 2: Revisión del Plan de Pruebas de Regresión](#msi-cal-2)
+  * [Actividad MSI-CAL 3: Revisión de la Realización de las Prueba de Regresión](#msi-cal-3)
+-->
 </section>
 <section id="evs-cal" class="level2" data-number="9.2">
 <h2 data-number="9.2" class="anchored" data-anchor-id="evs-cal"><span class="header-section-number">9.2</span> Estudio de viabilidad del sistema</h2>
