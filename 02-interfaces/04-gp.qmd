@@ -168,7 +168,7 @@ La técnica que se propone variará según se trate de desarrollos orientados a 
 ##### Participantes {.unnumbered .unlisted}
 
 * [Jefe de Proyecto](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
-* Equipo del Proyecto
+* [Equipo del Proyecto](../04-participantes/01-participantes.qmd#perfil-analista)
 
 ### Actividad GPI 2: Planificación {#gpi-2}
 
@@ -629,7 +629,7 @@ A partir de la información obtenida del equipo de desarrollo, el Jefe de Proyec
 ##### Participantes {.unnumbered .unlisted}
 
 * [Jefe de Proyecto](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
-* Equipo del Proyecto
+* [Equipo del Proyecto](../04-participantes/01-participantes.qmd#perfil-analista)
 
 ### Gestión de Incidencias
 
@@ -748,7 +748,7 @@ Una vez identificadas las tareas a las que afecta la incidencia se evalúa su im
 ##### Participantes {.unnumbered .unlisted}
 
 * [Jefe de Proyecto](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
-* Equipo del Proyecto
+* [Equipo del Proyecto](../04-participantes/01-participantes.qmd#perfil-analista)
 
 ##### Tarea GPS 4.2: Propuesta de Solución de la Incidencia {#gps-4-2}
 
@@ -775,7 +775,7 @@ De acuerdo con la solución adoptada habrá que revisar y ajustar la planificaci
 ##### Participantes {.unnumbered .unlisted}
 
 * [Jefe de Proyecto](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
-* Equipo del Proyecto
+* [Equipo del Proyecto](../04-participantes/01-participantes.qmd#perfil-analista)
 
 ##### Tarea GPS 4.3: Registrar la Incidencia {#gps-4-3}
 
@@ -802,7 +802,7 @@ Toda incidencia producida durante el desarrollo del proyecto debe reflejarse en 
 ##### Participantes {.unnumbered .unlisted}
 
 * [Jefe de Proyecto](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
-* Equipo del Proyecto
+* [Equipo del Proyecto](../04-participantes/01-participantes.qmd#perfil-analista)
 
 ### Gestión de cambios en los requisitos
 
@@ -1010,7 +1010,7 @@ El Jefe de Proyecto entrega la petición de cambio al Equipo del Proyecto para s
 
 ##### Participantes {.unnumbered .unlisted}
 
-* Equipo del Proyecto
+* [Equipo del Proyecto](../04-participantes/01-participantes.qmd#perfil-analista)
 * Usuario
 
 ##### Tarea GPS 6.2 Impacto de la Petición de Cambio de Requisitos {#gps-6-2}
@@ -1037,7 +1037,7 @@ Una vez conocidas las nuevas necesidades, el Equipo del Proyecto por medio de su
 
 ##### Participantes {.unnumbered .unlisted}
 
-* Equipo del Proyecto
+* [Equipo del Proyecto](../04-participantes/01-participantes.qmd#perfil-analista)
 
 ##### Tarea GPS 6.3 Estudio de Alternativas y Propuesta de Solución {#gps-6-3}
 
@@ -1065,7 +1065,7 @@ A partir del Análisis Funcional y Diseño Técnico obtenido en la tarea anterio
 ##### Participantes {.unnumbered .unlisted}
 
 * [Jefe de Proyecto](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
-* Equipo del Proyecto
+* [Equipo del Proyecto](../04-participantes/01-participantes.qmd#perfil-analista)
 
 #### Actividad GPS 7: Aprobación de la Solución {#gps-7}
 
@@ -1226,7 +1226,7 @@ A partir de la solución aprobada para la petición de cambio, es necesario hace
 
 ##### Participantes {.unnumbered .unlisted}
 
-* Equipo del Proyecto
+* [Equipo del Proyecto](../04-participantes/01-participantes.qmd#perfil-analista)
 
 ##### Tarea GPS 8.2: Planificación de los Cambios {#gps-8-2}
 
@@ -1364,7 +1364,7 @@ El Jefe de Proyecto, o el responsable del miembro, deberá comprobar que la tare
 
 ##### Participantes {.unnumbered .unlisted}
 
-* Equipo del Proyecto
+* [Equipo del Proyecto](../04-participantes/01-participantes.qmd#perfil-analista)
 * [Jefe de Proyecto](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
 
 ### Actividad GPS 11: ACTUALIZACIÓN DE LA PLANIFICACIÓN {#gps-11}
@@ -1605,7 +1605,7 @@ Las explicaciones dadas por el Equipo del Proyecto servirán, en gran medida, pa
 ##### Participantes {.unnumbered .unlisted}
 
 * [Jefe de Proyecto](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
-* Equipo del Proyecto
+* [Equipo del Proyecto](../04-participantes/01-participantes.qmd#perfil-analista)
 
 ### Actividad GPS 13: Aceptación {#gps-13}
 
@@ -1673,7 +1673,7 @@ El Jefe de Proyecto debe verificar personalmente que los resultados de las activ
 
 ##### Participantes {.unnumbered .unlisted}
 
-* Equipo del Proyecto
+* [Equipo del Proyecto](../04-participantes/01-participantes.qmd#perfil-analista)
 * [Jefe de Proyecto](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
 
 ## Actividades de Finalización

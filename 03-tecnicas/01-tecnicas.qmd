@@ -41,7 +41,7 @@ Las técnicas de desarrollo son un conjunto de procedimientos que se basan en r
 * [Modelo Entidad/Relación Extendido](#modelo-entidad-relacion-extendido)
 * [Normalización](#normalizacion)
 * [Optimización](#optimizacion)
-* [Reglas de Obtención del Modelo Físico a partir del Lógico](#reglas-de-obtencion-del-modelo-fisico-a-partir-del-logico)
+* [Reglas de Obtención del Modelo Físico a partir del Lógico](#obtencion-del-modelo-fisico-a-partir-del-logico)
 * [Reglas de Transformación](#reglas-de-transformacion)
 * [Técnicas Matriciales](#tecnicas-matriciales)
 -->
@@ -486,7 +486,7 @@ El diagrama representa una arquitectura compuesta por un servidor central de lo�
 
 (Nota.- Esta notación es la más habitual, pero MÉTRICA Versión 3 no exige su utilización).
 
-### Diagrama de Estructura
+### Diagrama de Estructura {#diagrama-de-estructura}
 
 El objetivo de este diagrama es representar la estructura modular del sistema o de un componente del mismo y definir los parámetros de entrada y salida de cada uno de los módulos.
 
@@ -1473,7 +1473,7 @@ Con el fin de analizar la conveniencia o no de la desnormalización, se han de 
 - El tamaño de las tablas.
 - Los requisitos de seguridad: accesibilidad, confidencialidad, integridad y disponibilidad que se consideren relevantes.
 
-### Reglas de Obtención del Modelo Físico a partir del Lógico  {#reglas-de-obtencion-del-modelo-fisico-a-partir-del-logico}
+### Reglas de Obtención del Modelo Físico a partir del Lógico {#obtencion-del-modelo-fisico-desde-el-logico}
 
 El objetivo de esta técnica es obtener un modelo físico de datos a partir del modelo lógico de datos normalizado. Para ello es necesario aplicar un conjunto de reglas que conserven la semántica del modelo lógico.
 

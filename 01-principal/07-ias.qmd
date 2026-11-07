@@ -549,7 +549,7 @@ A continuación, si procede, se hace la migración de datos, activando los proce
 
 * Equipo de Implantación
 * Equipo de Operación
-* Administradores de Bases de Datos
+* [Administradores de Bases de Datos](../04-participantes/01-participantes.qmd#perfil-analista)
 * [Usuarios Expertos](../04-participantes/01-participantes.qmd#perfil-directivo)
 
 ### Actividad IAS 5: Pruebas de Implantación del Sistema {#ias-5}
@@ -1127,7 +1127,7 @@ Asimismo, se especifican las propiedades de calidad que constituyen el nivel de 
 * [Jefe de Proyecto](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
 * [Directores de los usuarios](../04-participantes/01-participantes.qmd#perfil-directivo)
 * [Comité de Dirección](../04-participantes/01-participantes.qmd#perfil-directivo)
-* Comité de Seguimiento
+* [Comité de Seguimiento](../04-participantes/01-participantes.qmd#perfil-directivo)
 
 #### Tarea IAS 8.3: Determinación del Acuerdo de Nivel de Servicio {#ias-8-3}
 
