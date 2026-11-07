@@ -107,8 +107,8 @@ En esta tarea hay que:
 
 ##### Participantes {.unlisted .unnumbered}
 
-* Equipo del Proyecto
-* Administradores de Bases de Datos
+* [Equipo del Proyecto](../04-participantes/01-participantes.qmd#perfil-analista)
+* [Administradores de Bases de Datos](../04-participantes/01-participantes.qmd#perfil-analista)
 
 #### Tarea CSI 1.2: Preparación del Entorno de Construcción {#csi-1-2}
 
@@ -131,10 +131,10 @@ En esta tarea se prepara el entorno en el que se construirán los componentes de
 
 ##### Participantes {.unlisted .unnumbered}
 
-* Equipo del Proyecto
+* [Equipo del Proyecto](../04-participantes/01-participantes.qmd#perfil-analista)
 * [Técnicos de Sistema](../04-participantes/01-participantes.qmd#perfil-consultor)
 * Equipo de Operación
-* Administradores de Bases de Datos
+* [Administradores de Bases de Datos](../04-participantes/01-participantes.qmd#perfil-analista)
 
 ### Actividad CSI 2: Generación del Código de los Componentes y Procedimientos {#csi-2}
 
@@ -441,7 +441,7 @@ Para ello, se asegura la disponibilidad del entorno y de los datos necesarios pa
 * [Técnicos de Sistema](../04-participantes/01-participantes.qmd#perfil-consultor)
 * [Especialistas en Comunicaciones](../04-participantes/01-participantes.qmd#perfil-consultor)
 * [Equipo de Arquitectura](../04-participantes/01-participantes.qmd#perfil-analista)
-* Equipo del Proyecto
+* [Equipo del Proyecto](../04-participantes/01-participantes.qmd#perfil-analista)
 
 #### Tarea CSI 4.2: Realización de las Pruebas de Integración {#csi-4-2}
 
@@ -467,7 +467,7 @@ Para cada verificación establecida, se realizan las pruebas con los casos de pr
 
 ##### Participantes {.unlisted .unnumbered}
 
-* Equipo del Proyecto
+* [Equipo del Proyecto](../04-participantes/01-participantes.qmd#perfil-analista)
 
 #### Tarea CSI 4.3: Evaluación del Resultado de las Pruebas de Integración {#csi-4-3}
 
@@ -582,7 +582,7 @@ Para ello se asegura la disponibilidad del entorno y de los datos necesarios par
 * [Técnicos de Sistema](../04-participantes/01-participantes.qmd#perfil-consultor)
 * [Especialistas en Comunicaciones](../04-participantes/01-participantes.qmd#perfil-consultor)
 * [Equipo de Arquitectura](../04-participantes/01-participantes.qmd#perfil-analista)
-* Equipo del Proyecto
+* [Equipo del Proyecto](../04-participantes/01-participantes.qmd#perfil-analista)
 
 #### Tarea CSI 5.2: Realización de las Pruebas del Sistema {#csi-5-2}
 
@@ -608,7 +608,7 @@ Para cada verificación establecida, se realizan las pruebas con los casos de pr
 
 ##### Participantes {.unlisted .unnumbered}
 
-* Equipo del Proyecto
+* [Equipo del Proyecto](../04-participantes/01-participantes.qmd#perfil-analista)
 
 #### Tarea CSI 5.3: Evaluación del Resultado de las Pruebas del Sistema {#csi-5-3}
 
@@ -691,7 +691,7 @@ Los requisitos de documentación especifican aspectos relativos a los tipos de d
 
 ##### Participantes  {.unlisted .unnumbered}
 
-* Equipo del Proyecto
+* [Equipo del Proyecto](../04-participantes/01-participantes.qmd#perfil-analista)
 
 ### Actividad CSI 7: Definición de la Formación de Usuarios Finales {#csi-7}
 
@@ -892,11 +892,11 @@ Asimismo, se determinan los datos necesarios para realizar las pruebas de los co
 
 ##### Participantes {.unlisted .unnumbered}
 
-* Equipo del Proyecto
+* [Equipo del Proyecto](../04-participantes/01-participantes.qmd#perfil-analista)
 * [Técnicos de Sistema](../04-participantes/01-participantes.qmd#perfil-consultor)
 * Equipo de Operación
-* Equipo de Seguridad
-* Administradores de Bases de Datos
+* [Equipo de Seguridad](../04-participantes/01-participantes.qmd#perfil-analista)
+* [Administradores de Bases de Datos](../04-participantes/01-participantes.qmd#perfil-analista)
 
 #### Tarea CSI 8.2: Generación del Código de los Componentes y Procedimientos de Migración y Carga Inicial de Datos {#csi-8-2}
 
@@ -948,7 +948,7 @@ El objetivo de esta tarea es efectuar las pruebas de los distintos componentes y
 
 ##### Participantes {.unlisted .unnumbered}
 
-* Equipo del Proyecto
+* [Equipo del Proyecto](../04-participantes/01-participantes.qmd#perfil-analista)
 
 ### Actividad CSI 9: Aprobación del Sistema de Información {#csi-9}
 
