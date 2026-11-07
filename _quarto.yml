@@ -57,6 +57,7 @@ format:
     css: styles.css
     toc: true
     toc-depth: 4
+    toc-location: right-body
     number-sections: true
     include-in-header:
       # Reconocimiento de propiedad para Google Search Console
