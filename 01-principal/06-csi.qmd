@@ -1,4 +1,4 @@
-#  Construcción del Sistema de Información
+# Construcción del Sistema de Información {#csi}
 
 ## Descripción y objetivos
 
@@ -132,7 +132,7 @@ En esta tarea se prepara el entorno en el que se construirán los componentes de
 ##### Participantes {.unlisted .unnumbered}
 
 * Equipo del Proyecto
-* Técnicos de Sistemas
+* [Técnicos de Sistema](../04-participantes/01-participantes.qmd#perfil-consultor)
 * Equipo de Operación
 * Administradores de Bases de Datos
 
@@ -244,7 +244,7 @@ Para la generación de dichos procedimientos se tienen en cuenta, también, los 
 
 ##### Participantes {.unlisted .unnumbered}
 
-* Técnicos de Sistemas
+* [Técnicos de Sistema](../04-participantes/01-participantes.qmd#perfil-consultor)
 * Equipo de Operación
 * Administrador de la Base de Datos
 * Programadores
@@ -319,7 +319,7 @@ Para ello, se asegura la disponibilidad del entorno y de los datos necesarios pa
 
 ##### Participantes {.unlisted .unnumbered}
 
-* Técnicos de Sistemas
+* [Técnicos de Sistema](../04-participantes/01-participantes.qmd#perfil-consultor)
 * Programadores
 
 #### Tarea CSI 3.2: Realización y Evaluación de las Pruebas Unitarias {#csi-3-2}
@@ -438,8 +438,8 @@ Para ello, se asegura la disponibilidad del entorno y de los datos necesarios pa
 
 ##### Participantes {.unlisted .unnumbered}
 
-* Técnicos de Sistemas
-* Especialistas en Comunicaciones
+* [Técnicos de Sistema](../04-participantes/01-participantes.qmd#perfil-consultor)
+* [Especialistas en Comunicaciones](../04-participantes/01-participantes.qmd#perfil-consultor)
 * Equipo de Arquitectura
 * Equipo del Proyecto
 
@@ -490,7 +490,7 @@ El objetivo de esta tarea es analizar los resultados de las pruebas de integraci
 
 ##### Participantes {.unlisted .unnumbered}
 
-* Analistas
+* [Analistas](../04-participantes/01-participantes.qmd#perfil-analista)
 
 ### Actividad CSI 5: Ejecución de las Pruebas del Sistema
 
@@ -579,8 +579,8 @@ Para ello se asegura la disponibilidad del entorno y de los datos necesarios par
 
 ##### Participantes {.unlisted .unnumbered}
 
-* Técnicos de Sistemas
-* Especialistas en Comunicaciones
+* [Técnicos de Sistema](../04-participantes/01-participantes.qmd#perfil-consultor)
+* [Especialistas en Comunicaciones](../04-participantes/01-participantes.qmd#perfil-consultor)
 * Equipo de Arquitectura
 * Equipo del Proyecto
 
@@ -631,7 +631,7 @@ El objetivo de esta actividad es analizar los resultados de las pruebas del sist
 
 ##### Participantes {.unlisted .unnumbered}
 
-* Analistas
+* [Analistas](../04-participantes/01-participantes.qmd#perfil-analista)
 * [Jefe de Proyecto](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
 
 ### Actividad CSI 6: Elaboración de los Manuales de Usuario {#csi-6}
@@ -775,7 +775,7 @@ La especificación de los esquemas de formación se puede particularizar para ca
 
 ##### Participantes {.unlisted .unnumbered}
 
-* Analistas
+* [Analistas](../04-participantes/01-participantes.qmd#perfil-analista)
 
 #### Tarea CSI 7.2: Especificación de los Recursos y Entornos de Formación {#csi-7-2}
 
@@ -797,7 +797,7 @@ También se determinan las características que debe reunir el entorno para real
 
 ##### Participantes {.unlisted .unnumbered}
 
-* Analistas
+* [Analistas](../04-participantes/01-participantes.qmd#perfil-analista)
 * Equipo de Formación
 
 ### Actividad CSI 8: Construcción de los Componentes y Procedimientos de Migración y Carga Inicial de Datos {#csi-8}
@@ -893,7 +893,7 @@ Asimismo, se determinan los datos necesarios para realizar las pruebas de los co
 ##### Participantes {.unlisted .unnumbered}
 
 * Equipo del Proyecto
-* Técnicos de Sistemas
+* [Técnicos de Sistema](../04-participantes/01-participantes.qmd#perfil-consultor)
 * Equipo de Operación
 * Equipo de Seguridad
 * Administradores de Bases de Datos

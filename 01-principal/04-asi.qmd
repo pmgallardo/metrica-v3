@@ -1,4 +1,4 @@
-#  Análisis del Sistema de Información
+#  Análisis del Sistema de Información {#asi}
 
 ## Descripción y objetivos
 
@@ -187,20 +187,20 @@ Para obtener esta información es necesario llevar a cabo sesiones de trabajo co
 
 Técnicas
 
-* Diagrama de Flujo de Datos
+* [Diagrama de Flujo de Datos](../03-tecnicas/01-tecnicas.qmd#diagrama-de-flujo-de-datos)
 * Modelo Entidad / Relación extendido
 * [Diagrama de clases](../03-tecnicas/01-tecnicas.qmd#diagrama-de-clases)
-* Casos de Uso
+* [Casos de Uso](../03-tecnicas/01-tecnicas.qmd#casos-de-uso)
 
 ##### Prácticas {.unnumbered .unlisted}
 
-* Sesiones de Trabajo
+* [Sesiones de Trabajo](../03-tecnicas/01-tecnicas.qmd#sesiones-de-trabajo)
 * Catalogación
 
 ##### Participantes {.unnumbered .unlisted}
 
 * Jefe de Proyecto
-* Analistas
+* [Analistas](../04-participantes/01-participantes.qmd#perfil-analista)
 * Directores de los Usuarios
 
 
@@ -229,14 +229,14 @@ Esta información se obtiene mediante sesiones de trabajo con los usuarios y el 
 
 ##### Prácticas {.unnumbered .unlisted}
 
-* Sesiones de Trabajo
+* [Sesiones de Trabajo](../03-tecnicas/01-tecnicas.qmd#sesiones-de-trabajo)
 * Catalogación
 * [Diagrama de Representación](../03-tecnicas/01-tecnicas.qmd#diagrama-de-representacion)
 
 ##### Participantes {.unnumbered .unlisted}
 
 * Jefe de Proyecto
-* Analistas
+* [Analistas](../04-participantes/01-participantes.qmd#perfil-analista)
 * Directores de los Usuarios
 * [Equipo de Soporte Técnico](../04-participantes/01-participantes.qmd#perfil-analista)
 
@@ -265,13 +265,13 @@ El producto resultante se obtiene actualizando el catálogo de normas elaborado 
 
 ##### Prácticas {.unnumbered .unlisted}
 
-* Sesiones de Trabajo
+* [Sesiones de Trabajo](../03-tecnicas/01-tecnicas.qmd#sesiones-de-trabajo)
 * Catalogación
 
 ##### Participantes {.unnumbered .unlisted}
 
 * Jefe de Proyecto
-* Analistas
+* [Analistas](../04-participantes/01-participantes.qmd#perfil-analista)
 * Directores de los Usuarios
 * [Equipo de Soporte Técnico](../04-participantes/01-participantes.qmd#perfil-analista)
 
@@ -303,12 +303,12 @@ El alcance de este plan de trabajo se limita al proceso de análisis.
 ##### Prácticas {.unnumbered .unlisted}
 
 * Catalogación
-* Sesiones de Trabajo
+* [Sesiones de Trabajo](../03-tecnicas/01-tecnicas.qmd#sesiones-de-trabajo)
 
 ##### Participantes {.unnumbered .unlisted}
 
 * Jefe de Proyecto
-* Analistas
+* [Analistas](../04-participantes/01-participantes.qmd#perfil-analista)
 * Directores de los Usuarios
 
 ### Actividad ASI 2: Establecimiento de Requisitos {#asi-2}
@@ -470,17 +470,17 @@ Los productos obtenidos en la tarea Determinación del Alcance del Sistema ([ASI
 
 ##### Técnicas {.unnumbered .unlisted}
 
-* Casos de Uso
+* [Casos de Uso](../03-tecnicas/01-tecnicas.qmd#casos-de-uso)
 
 ##### Prácticas {.unnumbered .unlisted}
 
-* Sesiones de Trabajo
+* [Sesiones de Trabajo](../03-tecnicas/01-tecnicas.qmd#sesiones-de-trabajo)
 * Catalogación
 
 ##### Participantes {.unnumbered .unlisted}
 
 * [Usuarios Expertos](../04-participantes/01-participantes.qmd#perfil-directivo)
-* Analistas
+* [Analistas](../04-participantes/01-participantes.qmd#perfil-analista)
 
 #### Tarea ASI 2.2: Especificación de Casos de Uso {#asi-2-2}
 
@@ -514,17 +514,17 @@ Para la obtención de esta información es imprescindible la participación acti
 
 ##### Técnicas {.unnumbered .unlisted}
 
-* Casos de Uso
+* [Casos de Uso](../03-tecnicas/01-tecnicas.qmd#casos-de-uso)
 
 ##### Prácticas {.unnumbered .unlisted}
 
-* Sesiones de Trabajo
+* [Sesiones de Trabajo](../03-tecnicas/01-tecnicas.qmd#sesiones-de-trabajo)
 * Catalogación
 
 ##### Participantes {.unnumbered .unlisted}
 
 * [Usuarios Expertos](../04-participantes/01-participantes.qmd#perfil-directivo)
-* Analistas
+* [Analistas](../04-participantes/01-participantes.qmd#perfil-analista)
 
 #### Tarea ASI 2.3: Análisis de Requisitos
 
@@ -552,17 +552,17 @@ Mediante sesiones de trabajo con los usuarios, se contrastan las conclusiones de
 
 ##### Técnicas {.unnumbered .unlisted}
 
-* Casos de Uso
+* [Casos de Uso](../03-tecnicas/01-tecnicas.qmd#casos-de-uso)
 
 ##### Prácticas {.unnumbered .unlisted}
 
-* Sesiones de Trabajo
+* [Sesiones de Trabajo](../03-tecnicas/01-tecnicas.qmd#sesiones-de-trabajo)
 * Catalogación
 
 ##### Participantes {.unnumbered .unlisted}
 
 * [Usuarios Expertos](../04-participantes/01-participantes.qmd#perfil-directivo)
-* Analistas
+* [Analistas](../04-participantes/01-participantes.qmd#perfil-analista)
 
 #### Tarea ASI 2.4: Validación de Requisitos {#asi-2-4}
 
@@ -584,17 +584,17 @@ Mediante esta tarea, los usuarios confirman que los requisitos especificados en 
 
 ##### Técnicas {.unnumbered .unlisted}
 
-* Casos de Uso
+* [Casos de Uso](../03-tecnicas/01-tecnicas.qmd#casos-de-uso)
 
 ##### Prácticas {.unnumbered .unlisted}
 
-* Sesiones de Trabajo
+* [Sesiones de Trabajo](../03-tecnicas/01-tecnicas.qmd#sesiones-de-trabajo)
 * Catalogación
 
 ##### Participantes {.unnumbered .unlisted}
 
 * [Usuarios Expertos](../04-participantes/01-participantes.qmd#perfil-directivo)
-* Analistas
+* [Analistas](../04-participantes/01-participantes.qmd#perfil-analista)
 
 ### Actividad ASI 3: Identificación de Subsistemas de Análisis
 
@@ -703,13 +703,13 @@ En Análisis Orientado a Objetos:
 
 ##### Técnicas {.unnumbered .unlisted}
 
-* Diagrama de Flujo de Datos
+* [Diagrama de Flujo de Datos](../03-tecnicas/01-tecnicas.qmd#diagrama-de-flujo-de-datos)
 * Diagrama de Paquetes (Subsistemas)
 
 ##### Participantes {.unnumbered .unlisted}
 
 * Jefe de Proyecto
-* Analistas
+* [Analistas](../04-participantes/01-participantes.qmd#perfil-analista)
 
 #### Tarea ASI 3.2: Integración de Subsistemas de Análisis {#asi-3-2}
 
@@ -743,13 +743,13 @@ En Análisis Orientado a Objetos:
 
 ##### Técnicas {.unnumbered .unlisted}
 
-* Diagrama de Flujo de Datos
+* [Diagrama de Flujo de Datos](../03-tecnicas/01-tecnicas.qmd#diagrama-de-flujo-de-datos)
 * Diagrama de Paquetes (Subsistemas)
 
 ##### Participantes {.unnumbered .unlisted}
 
 * Jefe de Proyecto
-* Analistas
+* [Analistas](../04-participantes/01-participantes.qmd#perfil-analista)
 
 ### Actividad ASI 4: Análisis de los Casos de Uso {#asi-4}
 
@@ -838,7 +838,7 @@ Las clases que se identifican en esta tarea pueden ser:
 
 ##### Participantes {.unnumbered .unlisted}
 
-* Analistas
+* [Analistas](../04-participantes/01-participantes.qmd#perfil-analista)
 
 #### Tarea ASI 4.2: Descripción de la Interacción de Objetos {#asi-4-2}
 
@@ -861,11 +861,11 @@ En aquellos casos en los que se especifique más de un escenario para un caso de
 
 ##### Técnicas {.unnumbered .unlisted}
 
-* Diagrama de Interacción de Objetos (de secuencia o de colaboración)
+* [Diagrama de Interacción de Objetos](../03-tecnicas/01-tecnicas.qmd#diagrama-de-interaccion-de-objetos) (de secuencia o de colaboración)
 
 ##### Participantes {.unnumbered .unlisted}
 
-* Analistas
+* [Analistas](../04-participantes/01-participantes.qmd#perfil-analista)
 
 ### Actividad ASI 5: Análisis de Clases {#asi-5}
 
@@ -974,7 +974,7 @@ Para aquellas clases cuyo comportamiento dependa del estado en el que se encuent
 
 ##### Participantes {.unnumbered .unlisted}
 
-* Analistas
+* [Analistas](../04-participantes/01-participantes.qmd#perfil-analista)
 
 #### Tarea ASI 5.2: Identificación de Asociaciones y Agregaciones {#asi-5-2}
 
@@ -1009,7 +1009,7 @@ A medida que se establecen las relaciones entre las clases, se revisa la especif
 
 ##### Participantes {.unnumbered .unlisted}
 
-* Analistas
+* [Analistas](../04-participantes/01-participantes.qmd#perfil-analista)
 
 #### Tarea ASI 5.3: Identificación de Generalizaciones {#asi-5-3}
 
@@ -1031,7 +1031,7 @@ El objetivo de esta tarea es representar una organización de las clases que per
 
 ##### Participantes {.unnumbered .unlisted}
 
-* Analistas
+* [Analistas](../04-participantes/01-participantes.qmd#perfil-analista)
 
 ### Actividad ASI 6: Elaboración del Modelo de Datos {#asi-6}
 
@@ -1163,7 +1163,7 @@ Asimismo, se pueden describir las reglas de negocio, también llamadas restricci
 
 ##### Participantes {.unnumbered .unlisted}
 
-* Analistas
+* [Analistas](../04-participantes/01-participantes.qmd#perfil-analista)
 
 #### Tarea ASI 6.2: Elaboración del Modelo Lógico de Datos {#asi-6-2}
 
@@ -1194,7 +1194,7 @@ También se debe especificar para cada entidad el número máximo y medio de ocu
 
 ##### Participantes {.unnumbered .unlisted}
 
-* Analistas
+* [Analistas](../04-participantes/01-participantes.qmd#perfil-analista)
 
 #### Tarea ASI 6.3: Normalización del Modelo Lógico de Datos {#asi-6-3}
 
@@ -1222,7 +1222,7 @@ La técnica de normalización puede exigir la modificación de entidades, la cre
 
 ##### Participantes {.unnumbered .unlisted}
 
-* Analistas
+* [Analistas](../04-participantes/01-participantes.qmd#perfil-analista)
 
 #### Tarea ASI 6.4: Especificación de Necesidades de Migración de Datos y Carga Inicial {#asi-6-4}
 
@@ -1255,12 +1255,12 @@ Como resultado de esta tarea se obtiene una primera especificación del plan de 
 
 ##### Prácticas {.unnumbered .unlisted}
 
-* Sesiones de Trabajo
+* [Sesiones de Trabajo](../03-tecnicas/01-tecnicas.qmd#sesiones-de-trabajo)
 
 ##### Participantes {.unnumbered .unlisted}
 
 * [Usuarios Expertos](../04-participantes/01-participantes.qmd#perfil-directivo)
-* Analistas
+* [Analistas](../04-participantes/01-participantes.qmd#perfil-analista)
 * [Equipo de Soporte Técnico](../04-participantes/01-participantes.qmd#perfil-analista)
 
 ### Actividad ASI 7: Elaboración del Modelo de Procesos {#asi-7}
@@ -1341,12 +1341,12 @@ Para cada proceso primitivo, también se debe especificar qué procesos van a es
 
 ##### Técnicas {.unnumbered .unlisted}
 
-* Diagrama de Flujo de Datos
+* [Diagrama de Flujo de Datos](../03-tecnicas/01-tecnicas.qmd#diagrama-de-flujo-de-datos)
 * [Matricial](../03-tecnicas/01-tecnicas.qmd#tecnicas-matriciales)
 
 ##### Participantes {.unnumbered .unlisted}
 
-* Analistas
+* [Analistas](../04-participantes/01-participantes.qmd#perfil-analista)
 
 #### Tarea ASI 7.2: Especificación de Interfaces con otros Sistemas {#asi-7-2}
 
@@ -1377,7 +1377,7 @@ Las interfaces con otros sistemas forman parte del modelo de procesos, pero se r
 
 ##### Participantes {.unnumbered .unlisted}
 
-* Analistas
+* [Analistas](../04-participantes/01-participantes.qmd#perfil-analista)
 
 ### Actividad ASI 8: Definición de Interfaces de Usuario {#asi-8}
 
@@ -1579,12 +1579,12 @@ Hay que establecer criterios similares para la interfaz impresa:
 
 ##### Prácticas {.unnumbered .unlisted}
 
-* Sesiones de Trabajo
+* [Sesiones de Trabajo](../03-tecnicas/01-tecnicas.qmd#sesiones-de-trabajo)
 
 ##### Participantes {.unnumbered .unlisted}
 
 * [Usuarios Expertos](../04-participantes/01-participantes.qmd#perfil-directivo)
-* Analistas
+* [Analistas](../04-participantes/01-participantes.qmd#perfil-analista)
 
 #### Tarea ASI 8.2: Identificación de Perfiles y Diálogos {#asi-8-2}
 
@@ -1619,12 +1619,12 @@ En un análisis orientado a objetos, esta tarea no se realiza, puesto que se ha 
 
 * [Diagrama de Representación](../03-tecnicas/01-tecnicas.qmd#diagrama-de-representacion)
 * Catalogación
-* Sesiones de Trabajo
+* [Sesiones de Trabajo](../03-tecnicas/01-tecnicas.qmd#sesiones-de-trabajo)
 
 ##### Participantes {.unnumbered .unlisted}
 
 * [Usuarios Expertos](../04-participantes/01-participantes.qmd#perfil-directivo)
-* Analistas
+* [Analistas](../04-participantes/01-participantes.qmd#perfil-analista)
 
 #### Tarea ASI 8.3: Especificación de Formatos Individuales de la Interfaz de Pantalla {#asi-8-3}
 
@@ -1660,18 +1660,18 @@ En la definición de cada interfaz de pantalla se deben definir aquellos aspecto
 
 ##### Técnicas {.unnumbered .unlisted}
 
-* Casos de Uso
+* [Casos de Uso](../03-tecnicas/01-tecnicas.qmd#casos-de-uso)
 
 ##### Prácticas {.unnumbered .unlisted}
 
 * Prototipado
 * Catalogación
-* Sesiones de Trabajo
+* [Sesiones de Trabajo](../03-tecnicas/01-tecnicas.qmd#sesiones-de-trabajo)
 
 ##### Participantes {.unnumbered .unlisted}
 
 * [Usuarios Expertos](../04-participantes/01-participantes.qmd#perfil-directivo)
-* Analistas
+* [Analistas](../04-participantes/01-participantes.qmd#perfil-analista)
 
 #### Tarea ASI 8.4: Especificación del Comportamiento Dinámico de la Interfaz {#asi-8-4}
 
@@ -1706,17 +1706,17 @@ Se propone, opcionalmente, la realización de prototipos como técnica de ayuda 
 
 * Diagrama de Transición de Estados
 * [Matricial](../03-tecnicas/01-tecnicas.qmd#tecnicas-matriciales)
-* Diagrama de Interacción de Objetos
+* [Diagrama de Interacción de Objetos](../03-tecnicas/01-tecnicas.qmd#diagrama-de-interaccion-de-objetos)
 
 ##### Prácticas {.unnumbered .unlisted}
 
 * Prototipado
-* Sesiones de Trabajo
+* [Sesiones de Trabajo](../03-tecnicas/01-tecnicas.qmd#sesiones-de-trabajo)
 
 ##### Participantes {.unnumbered .unlisted}
 
 * [Usuarios Expertos](../04-participantes/01-participantes.qmd#perfil-directivo)
-* Analistas
+* [Analistas](../04-participantes/01-participantes.qmd#perfil-analista)
 
 
 #### Tarea ASI 8.5: Especificación de Formatos de Impresión {#asi-8-5}
@@ -1742,12 +1742,12 @@ Opcionalmente, se recomienda la utilización de prototipos.
 ##### Prácticas {.unnumbered .unlisted}
 
 * Prototipado
-* Sesiones de Trabajo
+* [Sesiones de Trabajo](../03-tecnicas/01-tecnicas.qmd#sesiones-de-trabajo)
 
 ##### Participantes {.unnumbered .unlisted}
 
 * [Usuarios Expertos](../04-participantes/01-participantes.qmd#perfil-directivo)
-* Analistas
+* [Analistas](../04-participantes/01-participantes.qmd#perfil-analista)
 
 ### Actividad ASI 9: Análisis de Consistencia y Especificación de Requisitos {#asi-9}
 
@@ -1914,7 +1914,7 @@ El objetivo de esta tarea es asegurar la calidad formal de los distintos modelos
 
 ##### Participantes {.unnumbered .unlisted}
 
-* Analistas
+* [Analistas](../04-participantes/01-participantes.qmd#perfil-analista)
 * Equipo de Arquitectura
 
 #### Tarea ASI 9.2: Análisis de Consistencia entre Modelos {#asi-9-2}
@@ -2018,7 +2018,7 @@ El resultado del análisis de consistencia en un análisis orientado a objetos e
 
 ##### Participantes {.unnumbered .unlisted}
 
-* Analistas
+* [Analistas](../04-participantes/01-participantes.qmd#perfil-analista)
 * Equipo de Arquitectura
 
 
@@ -2067,7 +2067,7 @@ Para la validación de la interfaz de usuario se recomienda un prototipo, ya sea
 
 ##### Participantes {.unnumbered .unlisted}
 
-* Analistas
+* [Analistas](../04-participantes/01-participantes.qmd#perfil-analista)
 * [Usuarios Expertos](../04-participantes/01-participantes.qmd#perfil-directivo)
 
 #### Tarea ASI 9.4: Elaboración de la Especificación de Requisitos Software (ERS) {#asi-9-4}
@@ -2116,7 +2116,7 @@ Este producto incorporará la información necesaria para la aprobación final d
 
 ##### Participantes {.unnumbered .unlisted}
 
-* Analistas
+* [Analistas](../04-participantes/01-participantes.qmd#perfil-analista)
 
 ### Actividad ASI 10: Especificación del Plan de Pruebas {#asi-10}
 
@@ -2253,12 +2253,12 @@ En esta tarea se especifican y justifican de los niveles de pruebas a realizar, 
 
 ##### Prácticas {.unnumbered .unlisted}
 
-* Sesiones de Trabajo
+* [Sesiones de Trabajo](../03-tecnicas/01-tecnicas.qmd#sesiones-de-trabajo)
 
 ##### Participantes {.unnumbered .unlisted}
 
 * Jefe de proyecto
-* Analistas
+* [Analistas](../04-participantes/01-participantes.qmd#perfil-analista)
 * [Equipo de Soporte Técnico](../04-participantes/01-participantes.qmd#perfil-analista)
 * [Usuarios Expertos](../04-participantes/01-participantes.qmd#perfil-directivo)
 
@@ -2292,12 +2292,12 @@ Independientemente de la existencia o no de dichos entornos, en esta tarea se in
 
 ##### Prácticas {.unnumbered .unlisted}
 
-* Sesiones de Trabajo
+* [Sesiones de Trabajo](../03-tecnicas/01-tecnicas.qmd#sesiones-de-trabajo)
 
 ##### Participantes {.unnumbered .unlisted}
 
 * Jefe de proyecto
-* Analistas
+* [Analistas](../04-participantes/01-participantes.qmd#perfil-analista)
 * [Equipo de Soporte Técnico](../04-participantes/01-participantes.qmd#perfil-analista)
 * [Usuarios Expertos](../04-participantes/01-participantes.qmd#perfil-directivo)
 
@@ -2341,12 +2341,12 @@ Los criterios de aceptación deben ser definidos de forma clara, prestando espec
 
 ##### Prácticas {.unnumbered .unlisted}
 
-* Sesiones de Trabajo
+* [Sesiones de Trabajo](../03-tecnicas/01-tecnicas.qmd#sesiones-de-trabajo)
 
 ##### Participantes {.unnumbered .unlisted}
 
 * Jefe de Proyecto
-* Analistas
+* [Analistas](../04-participantes/01-participantes.qmd#perfil-analista)
 * [Equipo de Soporte Técnico](../04-participantes/01-participantes.qmd#perfil-analista)
 * [Usuarios Expertos](../04-participantes/01-participantes.qmd#perfil-directivo)
 

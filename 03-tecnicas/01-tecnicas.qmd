@@ -1,6 +1,6 @@
-# Técnicas
+# Técnicas {#tecnicas}
 
-## Introducción {#introduccion}
+## Introducción {#tecnicas-introduccion}
 
 El objetivo de este documento es describir las técnicas utilizadas en los [procesos principales](../01-principal/01-introduccion.qmd) y en el proceso de [Gestión de Proyectos](../02-interfaces/04-gp.qmd).
 
@@ -22,6 +22,7 @@ Es importante resaltar que la notación que se propone en la aplicación de la
 
 Las técnicas de desarrollo son un conjunto de procedimientos que se basan en reglas y notaciones específicas en términos de sintaxis, semántica y gráficos, orientadas a la obtención de productos en el desarrollo de un sistema de información. En desarrollos del tipo estructurado o de orientación a objetos merecen especial atención las técnicas gráficas, que proponen símbolos y notaciones estándares para una mejor comprensión de los sistemas o sus componentes. De todos modos, y debido a la diversidad existente, las notaciones aquí propuestas no se consideran obligatorias en la metodología MÉTRICA Versión 3, pero sí que se deben aplicar rigurosamente sus reglas y validaciones para conseguir el objetivo propuesto con la mayor eficacia.
 
+<!--
 * [Análisis Coste/Beneficio](#analisis-coste-beneficio)
 * [Casos de Uso](#casos-de-uso)
 * [Diagrama de Clases](#diagrama-de-clases)
@@ -43,6 +44,7 @@ Las técnicas de desarrollo son un conjunto de procedimientos que se basan en r
 * [Reglas de Obtención del Modelo Físico a partir del Lógico](#reglas-de-obtencion-del-modelo-fisico-a-partir-del-logico)
 * [Reglas de Transformación](#reglas-de-transformacion)
 * [Técnicas Matriciales](#tecnicas-matriciales)
+-->
 
 ### Análisis Coste/Beneficio {#analisis-coste-beneficio}
 

@@ -1,6 +1,6 @@
-# Introducción
+# Introducción {#intro}
 
-## Introducción
+## Introducción {#intro-introduccion}
 
 La metodología MÉTRICA Versión 3 ofrece a las Organizaciones un instrumento útil para la sistematización de las actividades que dan soporte al ciclo de vida del software dentro del marco que permite alcanzar los siguientes objetivos:
 
@@ -20,7 +20,7 @@ En una única estructura la metodología MÉTRICA Versión 3 cubre distintos tip
 
 La automatización de las actividades propuestas en la estructura de MÉTRICA Versión 3 es posible ya que sus técnicas están soportadas por una amplia variedad de herramientas de ayuda al desarrollo.
 
-## Aportaciones de MÉTRICA Versión 3
+## Aportaciones de MÉTRICA Versión 3 {#intro-aportaciones}
 
 En lo que se refiere a estándares se ha tenido en cuenta como referencia el Modelo de Ciclo de Vida de Desarrollo propuesto en la norma ISO 12.207 "*Information technology – Software life cycle processes*". Siguiendo este modelo se ha elaborado la estructura de MÉTRICA Versión 3 en la que se distinguen [procesos principales](#intro-procesos-principales) ([Planificación](#intro-psi), [Desarrollo](#desarrollo-de-sistemas-de-informacion) y [Mantenimiento](#intro-msi)) e [interfaces](#intro-interfaces) ([Gestión de Proyectos](#intro-gp), [Aseguramiento de la Calidad](#intro-cal), [Seguridad](#intro-seg) y [Gestión de la Configuración](#intro-gc)) cuyo objetivo es dar soporte al proyecto en los aspectos organizativos. Además de la norma ISO 12.207, entre los estándares de referencia hay que destacar las normas ISO/IEC TR 15.504/SPICE "*Software Process Improvement and Assurance Standards Capability Determination*", *UNE-EN-ISO 9001:2000 Sistemas de Gestión de la Calidad. Requisitos*, *UNE-EN-ISO 9000:2000 Sistemas de Gestión de la Calidad. Fundamentos y Vocabulario y el estándar IEEE 610.12-1.990 "Standard Glossary of Software Engineering Terminology"*. Igualmente se han tenido en cuenta otras metodologías como SSADM, Merise, Information Engineering, [MAGERIT](https://administracionelectronica.gob.es/ctt/magerit){target="_blank"}. Metodología de Análisis y Gestión de Riesgos de los Sistemas de Información promovida por el Consejo Superior de Informática y EUROMÉTODO. Referencias a estas últimas metodologías pueden localizarse en las páginas del CSI: [http://www.map.es/csi](https://web.archive.org/web/20010623220918/http://www.map.es/csi/metrica3/index.html).
 

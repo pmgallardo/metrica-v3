@@ -1,4 +1,4 @@
-# Gestión de Configuración
+# Gestión de Configuración {#gc}
 
 ## Descripción y Objetivos
 

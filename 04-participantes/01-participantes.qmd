@@ -1,4 +1,4 @@
-# Participantes
+# Participantes {#participantes}
 
 MÉTRICA Versión 3 ha sido concebida para abarcar el desarrollo completo de Sistemas de Información sea cual sea su complejidad y magnitud, por lo cual su estructura y los perfiles de los participantes que intervienen deberán adaptarse y dimensionarse en cada momento de acuerdo a las características particulares de cada proyecto.
 
@@ -105,4 +105,3 @@ El Grupo de Aseguramiento de la Calidad, dirigido por el Responsable de Calidad,
 Dado que la participación y funciones de los programadores son concretas y limitadas a los procesos de Construcción y Mantenimiento de Sistemas de Información, el perfil de Programador hace referencia únicamente al participante Programador descrito en MÉTRICA Versión 3.
 
 La función del programador, miembro del equipo de proyecto, es construir el código que dará lugar al producto resultante en base al diseño técnico realizado por el analista o analista programador, generando también el código asociado a los procedimientos de migración y carga inicial de datos. Igualmente se encarga de la realización de las pruebas unitarias y participa en las pruebas de conjunto de la aplicación.
-

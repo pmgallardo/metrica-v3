@@ -1,4 +1,4 @@
-# Diseño del Sistema de Información
+# Diseño del Sistema de Información {#dsi}
 
 ## Descripción y objetivos
 
@@ -487,7 +487,7 @@ La ubicación de subsistemas en nodos y la dependencia entre subsistemas se espe
 
 * Diagrama de Estructura
 * [Matricial](../03-tecnicas/01-tecnicas.qmd#tecnicas-matriciales)
-* Diagrama de Interacción de Objetos
+* [Diagrama de Interacción de Objetos](../03-tecnicas/01-tecnicas.qmd#diagrama-de-interaccion-de-objetos)
 * Diagrama de Paquetes
 * Diagrama de Despliegue
 
@@ -685,7 +685,7 @@ A medida que se lleva a cabo esta tarea pueden surgir comportamientos de excepci
 ##### Técnicas {.unnumbered .unlisted}
 
 * Diagrama de Estructura
-* Diagrama de Interacción de Objetos
+* [Diagrama de Interacción de Objetos](../03-tecnicas/01-tecnicas.qmd#diagrama-de-interaccion-de-objetos)
 * [Diagrama de clases](../03-tecnicas/01-tecnicas.qmd#diagrama-de-clases)
 
 ##### Participantes {.unnumbered .unlisted}
@@ -710,7 +710,7 @@ Los mecanismos genéricos de diseño son de aplicación tanto en la definición 
 
 ##### Técnicas {.unnumbered .unlisted}
 
-* Diagrama de Interacción de Objetos
+* [Diagrama de Interacción de Objetos](../03-tecnicas/01-tecnicas.qmd#diagrama-de-interaccion-de-objetos)
 * [Diagrama de clases](../03-tecnicas/01-tecnicas.qmd#diagrama-de-clases)
 
 ##### Prácticas {.unnumbered .unlisted}
@@ -865,7 +865,7 @@ A su vez, a medida que se va estudiando la descripción de los casos de uso, pue
 
 ##### Técnicas {.unnumbered .unlisted}
 
-* Diagrama de Interacción de Objetos
+* [Diagrama de Interacción de Objetos](../03-tecnicas/01-tecnicas.qmd#diagrama-de-interaccion-de-objetos)
 
 ##### Participantes {.unnumbered .unlisted}
 
@@ -898,7 +898,7 @@ El estudio de los comportamientos comunes identificados puede servir de ayuda pa
 
 ##### Técnicas {.unnumbered .unlisted}
 
-* Diagrama de Interacción de Objetos (colaboración o secuencia)
+* [Diagrama de Interacción de Objetos](../03-tecnicas/01-tecnicas.qmd#diagrama-de-interaccion-de-objetos) (colaboración o secuencia)
 
 ##### Participantes {.unnumbered .unlisted}
 
@@ -930,7 +930,7 @@ En aquellos casos en los que se realizan modificaciones significativas sobre la 
 
 ##### Técnicas {.unnumbered .unlisted}
 
-* Diagrama de Interacción de Objetos
+* [Diagrama de Interacción de Objetos](../03-tecnicas/01-tecnicas.qmd#diagrama-de-interaccion-de-objetos)
 * Diagrama de Transición de Estados
 
 ##### Prácticas {.unnumbered .unlisted}
@@ -964,7 +964,7 @@ Para un caso de uso hay que definir, además de los subsistemas y actores que in
 
 ##### Técnicas {.unnumbered .unlisted}
 
-* Diagrama de Interacción de Objetos
+* [Diagrama de Interacción de Objetos](../03-tecnicas/01-tecnicas.qmd#diagrama-de-interaccion-de-objetos)
 
 ##### Participantes {.unnumbered .unlisted}
 
@@ -1331,7 +1331,7 @@ En esta tarea se realiza, en los casos que sea necesario y a partir de los resul
 
 ##### Participantes {.unnumbered .unlisted}
 
-* Analistas
+* [Analistas](../04-participantes/01-participantes.qmd#perfil-analista)
 * [Usuarios Expertos](../04-participantes/01-participantes.qmd#perfil-directivo)
 
 ### Actividad DSI 5: Diseño de la Arquitectura de Módulos del Sistema {#dsi-5}
@@ -2815,7 +2815,7 @@ Las verificaciones a realizar se especifican detallando:
 ##### Participantes {.unnumbered .unlisted}
 
 * [Jefe de Proyecto](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
-* Analistas
+* [Analistas](../04-participantes/01-participantes.qmd#perfil-analista)
 * [Usuarios Expertos](../04-participantes/01-participantes.qmd#perfil-directivo)
 
 #### Tarea DSI 10.3: Revisión de la Planificación de Pruebas {#dsi-10-3}
@@ -2965,7 +2965,7 @@ Los requisitos de infraestructura e instalación hacen referencia a las necesida
 ##### Participantes {.unnumbered .unlisted}
 
 * [Jefe de Proyecto](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
-* Directores de Usuarios
+* [Directores de Usuarios](../04-participantes/01-participantes.qmd#perfil-directivo)
 * [Equipo de Soporte Técnico](../04-participantes/01-participantes.qmd#perfil-analista)
 
 ### Actividad DSI 12: Aprobación del Diseño del Sistema de Información {#dsi-12}

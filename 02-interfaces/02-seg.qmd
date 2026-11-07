@@ -1,4 +1,4 @@
-# Seguridad
+# Seguridad {#seg}
 
 ## Descripción y objetivos
 
@@ -17,6 +17,7 @@ Si en la organización ya existe un plan de seguridad o una metodología de aná
 
 Las valoraciones sobre la seguridad deben ser realizadas en función de las características del sistema: complejidad, tamaño, incertidumbre, participantes, etc. por los responsables de la seguridad del sistema de información, quienes se apoyarán para sus decisiones en su conocimiento y experiencia en la materia sin perder de vista además que, al ser finitos los recursos, no pueden asegurarse todos los aspectos del desarrollo de los sistemas de información, por lo que habrá que aceptar un determinado nivel de riesgo concentrándose en los aspectos más comprometidos o amenazados, que serán diferentes según las circunstancias.
 
+<!--
 Actividades
 
 * Planificación de Sistemas de Información
@@ -57,6 +58,7 @@ Actividades
   * Actividad MSI-SEG 1: Estudio de la Seguridad Requerida en el Proceso Mantenimiento de Sistemas de Información
   * Actividad MSI-SEG 2: Especificación e Identificación de las Funciones y Mecanismos de Seguridad
   * Actividad MSI-SEG 3: Catalogación de los Productos Generados Durante el Proceso de Mantenimiento de Sistemas de Información
+-->
 
 ## Planificación de Sistemas de Información {#psi-seg}
 

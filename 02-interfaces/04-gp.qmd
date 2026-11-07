@@ -1,4 +1,4 @@
-# Gestión de Proyectos
+# Gestión de Proyectos {#gp}
 
 ## Descripción y Objetivos
 

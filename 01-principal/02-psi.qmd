@@ -1,4 +1,4 @@
-  # Planificación de Sistemas de Información
+# Planificación de Sistemas de Información {#psi}
 
 ## Descripción y objetivos
 

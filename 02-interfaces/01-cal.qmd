@@ -1,4 +1,4 @@
-# Aseguramiento de la Calidad
+# Aseguramiento de la Calidad {#cal}
 
 ## Descripción y objetivos
 
@@ -21,6 +21,7 @@ El grupo de aseguramiento de calidad participa en la revisión de los productos 
 Las revisiones son una de las actividades más importantes del aseguramiento de la calidad, debido a que permiten eliminar defectos lo más pronto posible, cuando son menos costosos de corregir. Además existen procedimientos extraordinarios, como las auditorías, aplicables en desarrollos singulares y en el transcurso de las cuales se revisarán tanto las actividades de desarrollo como las propias de aseguramiento de calidad. La detección anticipada de errores evita el que se propaguen a los restantes procesos de desarrollo, reduciendo substancialmente el esfuerzo invertido en los mismos. En este sentido es importante destacar que el establecimiento del plan de aseguramiento de calidad comienza en el Estudio de Viabilidad del Sistema y se aplica a lo largo de todo el desarrollo, en los procesos de Análisis, Diseño, Construcción, Implantación y Aceptación del Sistema y en su posterior Mantenimiento.
 Actividades
 
+<!--
 * [Estudio de Viabilidad del Sistema](#evs)
   * [Actividad EVS-CAL 1: Identificación de las Propiedades de Calidad par el Sistema](#evs-cal-1)
   * [Actividad EVS-CAL 2: Establecimiento del Plan de Aseguramiento de Calidad](#evs-cal-2)
@@ -52,6 +53,7 @@ Actividades
   * [Actividad MSI-CAL 1: Revisión del Mantenimiento del Sistema de Información](#msi-cal-1)
   * [Actividad MSI-CAL 2: Revisión del Plan de Pruebas de Regresión](#msi-cal-2)
   * [Actividad MSI-CAL 3: Revisión de la Realización de las Prueba de Regresión](#msi-cal-3)
+-->
 
 ## Estudio de viabilidad del sistema {#evs-cal}
 
