@@ -138,7 +138,7 @@ Si la petición es aceptada, se determina de quién es la responsabilidad de ate
 ###### De entrada {.unlisted .unnumbered}
 
 * Plan de Mantenimiento ([IAS 7.2](07-ias.qmd#ias-7-2))
-* Catálogo de Peticiones [MSI 1.1](#msi-1-1)
+* Catálogo de Peticiones ([MSI 1.1](#msi-1-1))
 
 ###### De salida {.unlisted .unnumbered}
 
@@ -158,7 +158,7 @@ Si la petición es aceptada, se determina de quién es la responsabilidad de ate
 
 En esta actividad se lleva a cabo el diagnóstico y análisis del cambio para dar respuesta a las peticiones de mantenimiento que han sido aceptadas en la actividad anterior.
 
-Se analiza el alcance de la petición en lo referente a los sistemas de información afectados, valorando hasta que punto pueden ser modificados en función del ciclo de vida estimado para los mismos y determinando la necesidad de desviar la petición hacia el proceso Estudio de Viabilidad del Sistema ([EVS](03-evs.qmd)) o Análisis del Sistema de Información ([ASI](04-asi.qmd)), en función del impacto sobre los sistemas de información afectados.
+Se analiza el alcance de la petición en lo referente a los sistemas de información afectados, valorando hasta que punto pueden ser modificados en función del ciclo de vida estimado para los mismos y determinando la necesidad de desviar la petición hacia el proceso **Estudio de Viabilidad del Sistema** ([EVS](03-evs.qmd)) o **Análisis del Sistema de Información** ([ASI](04-asi.qmd)), en función del impacto sobre los sistemas de información afectados.
 
 El enfoque de este estudio varía según el tipo de mantenimiento, teniendo en cuenta que en el caso de un mantenimiento correctivo que implique un error crítico debe abordarse el cambio de forma inmediata sin profundizar en el origen del mismo. No obstante, una vez reanudado el servicio, es imprescindible analizar el problema y determinar cuál es la solución definitiva.
 
