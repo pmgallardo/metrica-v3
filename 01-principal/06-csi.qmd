@@ -440,7 +440,7 @@ Para ello, se asegura la disponibilidad del entorno y de los datos necesarios pa
 
 * [Técnicos de Sistema](../04-participantes/01-participantes.qmd#perfil-consultor)
 * [Especialistas en Comunicaciones](../04-participantes/01-participantes.qmd#perfil-consultor)
-* Equipo de Arquitectura
+* [Equipo de Arquitectura](../04-participantes/01-participantes.qmd#perfil-analista)
 * Equipo del Proyecto
 
 #### Tarea CSI 4.2: Realización de las Pruebas de Integración {#csi-4-2}
@@ -581,7 +581,7 @@ Para ello se asegura la disponibilidad del entorno y de los datos necesarios par
 
 * [Técnicos de Sistema](../04-participantes/01-participantes.qmd#perfil-consultor)
 * [Especialistas en Comunicaciones](../04-participantes/01-participantes.qmd#perfil-consultor)
-* Equipo de Arquitectura
+* [Equipo de Arquitectura](../04-participantes/01-participantes.qmd#perfil-analista)
 * Equipo del Proyecto
 
 #### Tarea CSI 5.2: Realización de las Pruebas del Sistema {#csi-5-2}
@@ -1012,7 +1012,7 @@ En esta tarea se recopilan los productos del sistema de información y se presen
 
 ##### Participantes {.unlisted .unnumbered}
 
-* Comité de Seguimiento
+* [Comité de Seguimiento](../04-participantes/01-participantes.qmd#perfil-directivo)
 * [Jefe de Proyecto](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
 
 ## Participantes en las Actividades del Proceso CSI

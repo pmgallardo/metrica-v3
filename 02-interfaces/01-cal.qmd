@@ -1589,7 +1589,7 @@ Se registra la aprobación o rechazo del sistema de información construido te
 
 * Grupo de Aseguramiento de la Calidad
 
-## Implantación y aceptación del sistema {#ias}
+## Implantación y aceptación del sistema {#ias-cal}
 
 El grupo de aseguramiento de calidad en este proceso es responsable de revisar la existencia de un plan de implantación que se habrá elaborado conforme a la estrategia de implantación determinada en el proceso [Estudio de Viabilidad del Sistema (EVS)](../01-principal/03-evs.qmd) y teniendo en cuenta los requisitos de implantación establecidos en el proceso [Diseño del Sistema de Información (DSI)](../01-principal/05-dsi.qmd).
 

@@ -26,9 +26,9 @@ La información que puede solicitarse al sistema de gestión de la configuració
 1. [Estudio de Viabilidad del Sistema](#evs-gc)
    1. [Actividad EVS-GC 1](#evs-gc-1): Definición de los Requisitos de Gestión de Configuración
    2. [Actividad EVS-GC 2](#evs-gc-2): Establecimiento del Plan de Gestión de la Configuración
-2. [Análisis, Diseño, Construcción e Implantación y Aceptación del Sistema de Información](#gc)
-   1. [Actividad GC 1](#gc-1): Identificación y Registro de Productos
-   2. [Actividad GC 2](#gc-2): Idetificación y Registro del Producto Global
+2. [Análisis, Diseño, Construcción e Implantación y Aceptación del Sistema de Información](#gc-gc)
+   1. [Actividad GC 1](#gc-gc-1): Identificación y Registro de Productos
+   2. [Actividad GC 2](#gc-gc-2): Idetificación y Registro del Producto Global
 3. [Mantenimiento del Sistema de Información](#msi-gc)
    1. [Actividad MSI-GC 1](#msi-gc-1): Registro del Cambio en el Sistema de Gestión de la Configuración
 
@@ -188,7 +188,7 @@ En esta tarea se define el entorno tecnológico de soporte a la gestión de la c
 * Responsable de Gestión de Configuración
 * Equipo de Desarrollo
 
-## Análisis, diseño, construcción e implantación y aceptación del Sistema de Información {#gc}
+## Análisis, diseño, construcción e implantación y aceptación del Sistema de Información {#gc-gc}
 
 Durante los procesos de Análisis, Diseño, Construcción e Implantación del Sistema de Información se realizan las actividades de identificación y registro previstas en el Plan de Gestión de Configuración, consiguiendo así mantener la consistencia entre las distintas versiones de los productos de desarrollo.
 
@@ -208,7 +208,7 @@ El siguiente gráfico muestra la relación entre las actividades de la interfaz 
 
 ![](../images/gescon-asi-dsi-csi-ias.jpg)
 
-### Actividad GC 1: Identificación y registro de Productos {#gc-1}
+### Actividad GC 1: Identificación y registro de Productos {#gc-gc-1}
 
 ```{=html}
 <table class="avia-table avia-data-table">
@@ -220,7 +220,7 @@ El siguiente gráfico muestra la relación entre las actividades de la interfaz 
 <td style="background-color: #000033; text-align: left; width: 20%;"><strong><span style="color: #ffffff;">PARTICIPANTES</span></strong></td>
 </tr>
 <tr>
-<td style="text-align: left; vertical-align: top;"><a href="#gc-1-1"><strong>GC 1.1</strong>: Identificación y Registro de los Productos de los Procesos en el Sistema de Gestión de la Configuración</a></td>
+<td style="text-align: left; vertical-align: top;"><a href="#gc-gc-1-1"><strong>GC 1.1</strong>: Identificación y Registro de los Productos de los Procesos en el Sistema de Gestión de la Configuración</a></td>
 <td style="text-align: left; vertical-align: top;">Registro de los productos creados o modificados:</p>
 <ul>
 <li>Nombre</li>
@@ -240,7 +240,7 @@ El siguiente gráfico muestra la relación entre las actividades de la interfaz 
 </table>
 ```
 
-#### Tarea GC 1.1: Identificación y Registro de los Productos de los Procesos en el Sistema de Gestión de la Configuración {#gc-1-1}
+#### Tarea GC 1.1: Identificación y Registro de los Productos de los Procesos en el Sistema de Gestión de la Configuración {#gc-gc-1-1}
 
 Cada producto, en función de su naturaleza, va pasando por diferentes estados en los debe superar varias revisiones o aprobaciones. El conjunto de estados por los que va pasando un producto se registra en el sistema de gestión de configuración, según vaya evolucionando el mismo, hasta alcanzar el estado de producto final aprobado.
 
@@ -269,7 +269,7 @@ En el momento en que un participante genere un producto, seleccionado como eleme
 
 * Los mismos que en las tareas de MÉTRICA Versión 3
 
-### Actividad GC 2: Identificación y registro del Producto Global {#gc-2}
+### Actividad GC 2: Identificación y registro del Producto Global {#gc-gc-2}
 
 ```{=html}
 <table class="avia-table avia-data-table">
@@ -281,7 +281,7 @@ En el momento en que un participante genere un producto, seleccionado como eleme
 <td style="background-color: #000033; text-align: left; width: 20%;"><strong><span style="color: #ffffff;">PARTICIPANTES</span></strong></td>
 </tr>
 <tr>
-<td style="text-align: left; vertical-align: top;"><a href="#gc-2-1"><strong>GC 2.1</strong>: Registro en el Sistema de Gestión de la Configuración del Producto Global de Proceso</a></td>
+<td style="text-align: left; vertical-align: top;"><a href="#gc-gc-2-1"><strong>GC 2.1</strong>: Registro en el Sistema de Gestión de la Configuración del Producto Global de Proceso</a></td>
 <td style="text-align: left; vertical-align: top;">Registro del producto global:</p>
 <ul>
 <li>Nombre</li>
@@ -301,7 +301,7 @@ En el momento en que un participante genere un producto, seleccionado como eleme
 </table>
 ```
 
-### Tarea GC 2.1: Registro en el Sistema de Gestión de la Configuración del Producto Global de Proceso {#gc-2-1}
+### Tarea GC 2.1: Registro en el Sistema de Gestión de la Configuración del Producto Global de Proceso {#gc-gc-2-1}
 
 El objeto de esta tarea es identificar y registrar en el sistema de gestión de la configuración los productos globales que se obtienen a lo largo del desarrollo de los procesos principales.
 

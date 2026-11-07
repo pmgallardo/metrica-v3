@@ -806,7 +806,7 @@ Los resultados del análisis realizado en esta tarea son la base para la identif
 
 ##### Técnicas {.unnumbered .unlisted}
 
-* [Modelo Entidad/Relación extendido](../03-tecnicas/01-tecnicas.qmd#modelo-entidad-relacion-extendido)
+* [Modelo Entidad/Relación Extendido](../03-tecnicas/01-tecnicas.qmd#modelo-entidad-relacion-extendido)
 * [Diagrama de clases](../03-tecnicas/01-tecnicas.qmd#diagrama-de-clases)
 
 ##### Prácticas {.unnumbered .unlisted}

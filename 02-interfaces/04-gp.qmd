@@ -447,7 +447,7 @@ Es precisa esta aceptación como paso previo a la puesta en marcha de los proces
 
 ##### Participantes {.unnumbered .unlisted}
 
-* Comité de Seguimiento
+* [Comité de Seguimiento](../04-participantes/01-participantes.qmd#perfil-directivo)
 * [Jefe de Proyecto](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
 
 ## Actividades de Seguimiento y Control
@@ -1130,7 +1130,7 @@ Como consecuencia de esta evaluación pueden darse cuatro posibilidades:
 
 ##### Participantes {.unnumbered .unlisted}
 
-* Comité de Seguimiento
+* [Comité de Seguimiento](../04-participantes/01-participantes.qmd#perfil-directivo)
 * [Jefe de Proyecto](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
 
 #### Actividad GPS 8: Estimación del Esfuerzo y Planificación de la Solución {#gps-8}

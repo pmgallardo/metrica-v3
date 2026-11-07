@@ -176,7 +176,7 @@ Una vez establecido el alcance, se identifican las unidades organizativas afecta
 ##### Técnicas {.unnumbered .unlisted}
 
 * [Diagrama de Flujo de Datos](../03-tecnicas/01-tecnicas.qmd#diagrama-de-flujo-de-datos)
-* Diagrama de Descomposición Funcional
+* [Diagrama de Descomposición Funcional](../03-tecnicas/01-tecnicas.qmd#diagrama-de-descomposicion)
 
 ##### Prácticas {.unnumbered .unlisted}
 
@@ -439,7 +439,7 @@ Es conveniente indicar la localización geográfica y física actual de los mód
 ##### Técnicas {.unnumbered .unlisted}
 
 * [Diagrama de Flujo de Datos](../03-tecnicas/01-tecnicas.qmd#diagrama-de-flujo-de-datos)
-* [Modelo Entidad/Relación extendido](../03-tecnicas/01-tecnicas.qmd#modelo-entidad-relacion-extendido)
+* [Modelo Entidad/Relación Extendido](../03-tecnicas/01-tecnicas.qmd#modelo-entidad-relacion-extendido)
 * [Diagrama de clases](../03-tecnicas/01-tecnicas.qmd#diagrama-de-clases)
 * [Diagrama de Interacción de Objetos](../03-tecnicas/01-tecnicas.qmd#diagrama-de-interaccion-de-objetos)
 * [Matricial](../03-tecnicas/01-tecnicas.qmd#tecnicas-matriciales)
@@ -824,7 +824,7 @@ Si la alternativa incluye una solución basada en producto se analiza su evoluci
 
 * [Matricial](../03-tecnicas/01-tecnicas.qmd#tecnicas-matriciales)
 * [Diagrama de Flujo de Datos](../03-tecnicas/01-tecnicas.qmd#diagrama-de-flujo-de-datos)
-* [Modelo Entidad/Relación extendido](../03-tecnicas/01-tecnicas.qmd#modelo-entidad-relacion-extendido)
+* [Modelo Entidad/Relación Extendido](../03-tecnicas/01-tecnicas.qmd#modelo-entidad-relacion-extendido)
 * [Diagrama de clases](../03-tecnicas/01-tecnicas.qmd#diagrama-de-clases)
 * [Casos de Uso](../03-tecnicas/01-tecnicas.qmd#casos-de-uso)
 

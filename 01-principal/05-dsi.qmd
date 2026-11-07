@@ -320,7 +320,7 @@ Los criterios para diseñar la arquitectura se obtienen a partir de directrices 
 
 ##### Participantes {.unnumbered .unlisted}
 
-* Equipo de Arquitectura
+* [Equipo de Arquitectura](../04-participantes/01-participantes.qmd#perfil-analista)
 * [Equipo de Soporte Técnico](../04-participantes/01-participantes.qmd#perfil-analista)
 * Equipo de Seguridad
 
@@ -350,7 +350,7 @@ Por tanto, como resultado de esta tarea se actualiza el catálogo de requisitos 
 
 ##### Participantes {.unnumbered .unlisted}
 
-* Equipo de Arquitectura
+* [Equipo de Arquitectura](../04-participantes/01-participantes.qmd#perfil-analista)
 * [Equipo de Soporte Técnico](../04-participantes/01-participantes.qmd#perfil-analista)
 
 #### Tarea DSI 1.3: Especificación de Excepciones {#dsi-1-3}
@@ -395,7 +395,7 @@ Se recomienda, según el nivel de especificación que se establezca en cada caso
 
 ##### Participantes {.unnumbered .unlisted}
 
-* Equipo de Arquitectura
+* [Equipo de Arquitectura](../04-participantes/01-participantes.qmd#perfil-analista)
 * [Equipo de Soporte Técnico](../04-participantes/01-participantes.qmd#perfil-analista)
 
 #### Tarea DSI 1.4: Especificación de Estándares y Normas de Diseño y Construcción {#dsi-1-4}
@@ -425,7 +425,7 @@ La información recogida en el catálogo se debe tener en cuenta en la elaboraci
 
 ##### Participantes {.unnumbered .unlisted}
 
-* Equipo de Arquitectura
+* [Equipo de Arquitectura](../04-participantes/01-participantes.qmd#perfil-analista)
 * [Equipo de Soporte Técnico](../04-participantes/01-participantes.qmd#perfil-analista)
 
 #### Tarea DSI 1.5: Identificación de Subsistemas de Diseño {#dsi-1-5}
@@ -488,12 +488,12 @@ La ubicación de subsistemas en nodos y la dependencia entre subsistemas se espe
 * Diagrama de Estructura
 * [Matricial](../03-tecnicas/01-tecnicas.qmd#tecnicas-matriciales)
 * [Diagrama de Interacción de Objetos](../03-tecnicas/01-tecnicas.qmd#diagrama-de-interaccion-de-objetos)
-* Diagrama de Paquetes
+* [Diagrama de Paquetes](../03-tecnicas/01-tecnicas.qmd#diagrama-de-paquetes)
 * Diagrama de Despliegue
 
 ##### Participantes {.unnumbered .unlisted}
 
-* Equipo de Arquitectura
+* [Equipo de Arquitectura](../04-participantes/01-participantes.qmd#perfil-analista)
 * [Equipo de Soporte Técnico](../04-participantes/01-participantes.qmd#perfil-analista)
 * Equipo de Seguridad
 
@@ -544,7 +544,7 @@ Para poder determinar la planificación de capacidades, es necesario conocer los
 
 ##### Participantes {.unnumbered .unlisted}
 
-* Equipo de Arquitectura
+* [Equipo de Arquitectura](../04-participantes/01-participantes.qmd#perfil-analista)
 * [Equipo de Soporte Técnico](../04-participantes/01-participantes.qmd#perfil-analista)
 
 #### Tarea DSI 1.7: Especificación de Requisitos de Operación y Seguridad {#dsi-1-7}
@@ -589,7 +589,7 @@ Asimismo, se definen los requisitos de operación para los distintos elementos d
 ##### Participantes {.unnumbered .unlisted}
 
 * Equipo de Seguridad
-* Equipo de Arquitectura
+* [Equipo de Arquitectura](../04-participantes/01-participantes.qmd#perfil-analista)
 * [Equipo de Soporte Técnico](../04-participantes/01-participantes.qmd#perfil-analista)
 
 ### Actividad DSI 2: Diseño de la Arquitectura de Soporte {#dsi-2}
@@ -690,7 +690,7 @@ A medida que se lleva a cabo esta tarea pueden surgir comportamientos de excepci
 
 ##### Participantes {.unnumbered .unlisted}
 
-* Equipo de Arquitectura
+* [Equipo de Arquitectura](../04-participantes/01-participantes.qmd#perfil-analista)
 
 #### Tarea DSI 2.2: Identificación de Mecanismos Genéricos de Diseño {#dsi-2-2}
 
@@ -719,7 +719,7 @@ Los mecanismos genéricos de diseño son de aplicación tanto en la definición 
 
 ##### Participantes {.unnumbered .unlisted}
 
-* Equipo de Arquitectura
+* [Equipo de Arquitectura](../04-participantes/01-participantes.qmd#perfil-analista)
 
 ### Actividad DSI 3: Diseño de Casos de Uso Reales {#dsi-3}
 
@@ -931,11 +931,11 @@ En aquellos casos en los que se realizan modificaciones significativas sobre la 
 ##### Técnicas {.unnumbered .unlisted}
 
 * [Diagrama de Interacción de Objetos](../03-tecnicas/01-tecnicas.qmd#diagrama-de-interaccion-de-objetos)
-* Diagrama de Transición de Estados
+* [Diagrama de Transición de Estados](../03-tecnicas/01-tecnicas.qmd#diagrama-de-transicion-de-estados)
 
 ##### Prácticas {.unnumbered .unlisted}
 
-* Prototipado
+* [Prototipado](../03-tecnicas/01-tecnicas.qmd#prototipado)
 * [Catalogación](../03-tecnicas/01-tecnicas.qmd#catalogacion)
 
 ##### Participantes {.unnumbered .unlisted}
@@ -969,7 +969,7 @@ Para un caso de uso hay que definir, además de los subsistemas y actores que in
 ##### Participantes {.unnumbered .unlisted}
 
 * Equipo del Proyecto
-* Equipo de Arquitectura
+* [Equipo de Arquitectura](../04-participantes/01-participantes.qmd#perfil-analista)
 
 ### Actividad DSI 4: Diseño de Clases {#dsi-4}
 
@@ -1254,7 +1254,7 @@ Para identificar las operaciones de aquellos objetos que presenten distintos est
 ##### Técnicas {.unnumbered .unlisted}
 
 * [Diagrama de clases](../03-tecnicas/01-tecnicas.qmd#diagrama-de-clases)
-* Diagrama de Transición de Estados
+* [Diagrama de Transición de Estados](../03-tecnicas/01-tecnicas.qmd#diagrama-de-transicion-de-estados)
 
 ##### Participantes {.unnumbered .unlisted}
 
@@ -1469,7 +1469,7 @@ En sistemas interactivos en los que exista una gran complejidad de gestión de p
 
 ##### Participantes {.unnumbered .unlisted}
 
-* Equipo de Arquitectura
+* [Equipo de Arquitectura](../04-participantes/01-participantes.qmd#perfil-analista)
 * Equipo del Proyecto
 
 #### Tarea DSI 5.2: Diseño de Comunicaciones entre Módulos {#dsi-5-2}
@@ -1507,7 +1507,7 @@ Las interfaces entre módulos permiten evaluar las necesidades de comunicación 
 
 ##### Participantes {.unnumbered .unlisted}
 
-* Equipo de Arquitectura
+* [Equipo de Arquitectura](../04-participantes/01-participantes.qmd#perfil-analista)
 * Equipo del Proyecto
 * Equipo de Seguridad
 
@@ -1547,14 +1547,14 @@ En el caso de que las modificaciones sean significativas en cuanto al formato o 
 
 ##### Técnicas {.unnumbered .unlisted}
 
-* Diagrama de Descomposición Funcional
-* Diagrama de Transición de Estados
+* [Diagrama de Descomposición Funcional](../03-tecnicas/01-tecnicas.qmd#diagrama-de-descomposicion)
+* [Diagrama de Transición de Estados](../03-tecnicas/01-tecnicas.qmd#diagrama-de-transicion-de-estados)
 * [Matricial](../03-tecnicas/01-tecnicas.qmd#tecnicas-matriciales)
 
 ##### Prácticas {.unnumbered .unlisted}
 
 * [Catalogación](../03-tecnicas/01-tecnicas.qmd#catalogacion)
-* Prototipado
+* [Prototipado](../03-tecnicas/01-tecnicas.qmd#prototipado)
 
 ##### Participantes {.unnumbered .unlisted}
 
@@ -1705,7 +1705,7 @@ También se definen aquellos elementos que, en función del gestor o sistemas de
 
 ##### Participantes {.unnumbered .unlisted}
 
-* Equipo de Arquitectura
+* [Equipo de Arquitectura](../04-participantes/01-participantes.qmd#perfil-analista)
 * Equipo del Proyecto
 * Administradores de Bases de Datos
 
@@ -1790,7 +1790,7 @@ Es importante que la desnormalización se lleve a cabo de una forma controlada, 
 
 ##### Participantes {.unnumbered .unlisted}
 
-* Equipo de Arquitectura
+* [Equipo de Arquitectura](../04-participantes/01-participantes.qmd#perfil-analista)
 * Equipo del Proyecto
 * Administradores de Bases de Datos
 * Equipo de Seguridad
@@ -1821,7 +1821,7 @@ El resultado de esta actividad es la especificación de los modelos físicos par
 
 ##### Participantes {.unnumbered .unlisted}
 
-* Equipo de Arquitectura
+* [Equipo de Arquitectura](../04-participantes/01-participantes.qmd#perfil-analista)
 * [Equipo de Soporte Técnico](../04-participantes/01-participantes.qmd#perfil-analista)
 
 ### Actividad DSI 7: Verificación y Aceptación de la Arquitectura del Sistema {#dsi-7}
@@ -1967,7 +1967,7 @@ El objetivo de esta tarea es asegurar la calidad formal de los distintos modelos
 
 ##### Participantes {.unnumbered .unlisted}
 
-* Equipo de Arquitectura
+* [Equipo de Arquitectura](../04-participantes/01-participantes.qmd#perfil-analista)
 * Equipo del Proyecto
 
 #### Tarea DSI 7.2: Análisis de Consistencia de las Especificaciones de Diseño {#dsi-7-2}
@@ -2064,7 +2064,7 @@ Los análisis de consistencia específicos para el ***Diseño Orientado a Objeto
 
 ##### Participantes {.unnumbered .unlisted}
 
-* Equipo de Arquitectura
+* [Equipo de Arquitectura](../04-participantes/01-participantes.qmd#perfil-analista)
 * Equipo del Proyecto
 
 #### Tarea DSI 7.3: Aceptación de la Arquitectura del Sistema {#dsi-7-3}
@@ -2255,7 +2255,7 @@ Se propone que la especificación del entorno se realice según los siguientes c
 
 ##### Participantes
 
-* Equipo de Arquitectura
+* [Equipo de Arquitectura](../04-participantes/01-participantes.qmd#perfil-analista)
 * Equipo del Proyecto
 * [Equipo de Soporte Técnico](../04-participantes/01-participantes.qmd#perfil-analista)
 * Equipo de Sistemas
@@ -2314,7 +2314,7 @@ Opcionalmente, se propone la realización de un plan de integración del sistema
 
 ##### Participantes {.unnumbered .unlisted}
 
-* Equipo de Arquitectura
+* [Equipo de Arquitectura](../04-participantes/01-participantes.qmd#perfil-analista)
 * Equipo del Proyecto
 
 #### Tarea DSI 8.3: Elaboración de Especificaciones de Construcción {#dsi-8-3}
@@ -2518,7 +2518,7 @@ Se realiza una estimación de capacidades (capacity planning) para este entorno 
 
 ##### Participantes {.unnumbered .unlisted}
 
-* Equipo de Arquitectura
+* [Equipo de Arquitectura](../04-participantes/01-participantes.qmd#perfil-analista)
 * [Equipo de Soporte Técnico](../04-participantes/01-participantes.qmd#perfil-analista)
 
 #### Tarea DSI 9.2: Diseño de Procedimientos de Migración y Carga Inicial {#dsi-9-2}
@@ -2559,7 +2559,7 @@ Los procedimientos asociados a la migración y carga inicial de datos son, princ
 
 ###### Participantes {.unnumbered .unlisted}
 
-* Equipo de Arquitectura
+* [Equipo de Arquitectura](../04-participantes/01-participantes.qmd#perfil-analista)
 * Equipo del Proyecto
 * Equipo de Seguridad
 
