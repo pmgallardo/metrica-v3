@@ -2,7 +2,7 @@
 
 Métrica versión 3 es una metodología de Planificación, Desarrollo y Mantenimiento de sistemas de información que se ofrece a las organizaciones como un instrumento para la sistematización de las actividades que dan soporte al ciclo de vida del software.
 
-Este repositorio alberga su documentación en el lenguaje de marcado Markdown Quarto, exportable a HTML, PDF y EPUB. Estos formatos son accesibles desde la [web del repositorio](https://pmgallardo.github.io/metrica-v3).
+Este repositorio alberga su documentación en el lenguaje de marcado Pandoc Markdown, exportable a HTML, PDF y EPUB a través del sistema de publicación Quarto. Estos formatos son accesibles desde la [web del repositorio](https://pmgallardo.github.io/metrica-v3).
 
 ## Autoría
 
