@@ -1,8 +1,8 @@
-#  Estudio de Viabilidad del Sistema
+# Estudio de Viabilidad del Sistema {#evs}
 
 ## Descripción y objetivos
 
-Mientras que el Plan de Sistemas de Información tiene como objetivo proporcionar un marco estratégico que sirva de referencia para los Sistemas de Información de un ámbito concreto de una organización, el objetivo del Estudio de Viabilidad del Sistema es el análisis de un conjunto concreto de necesidades para proponer una solución a corto plazo, que tenga en cuenta restricciones económicas, técnicas, legales y operativas. La solución obtenida como resultado del estudio puede ser la definición de uno o varios proyectos que afecten a uno o varios sistemas de información ya existentes o nuevos. Para ello, se identifican los requisitos que se ha de satisfacer y se estudia, si procede, la situación actual.
+Mientras que el [Plan de Sistemas de Información](02-psi.qmd) tiene como objetivo proporcionar un marco estratégico que sirva de referencia para los Sistemas de Información de un ámbito concreto de una organización, el objetivo del **Estudio de Viabilidad del Sistema** es el análisis de un conjunto concreto de necesidades para proponer una solución a corto plazo, que tenga en cuenta restricciones económicas, técnicas, legales y operativas. La solución obtenida como resultado del estudio puede ser la definición de uno o varios proyectos que afecten a uno o varios sistemas de información ya existentes o nuevos. Para ello, se identifican los requisitos que se ha de satisfacer y se estudia, si procede, la situación actual.
 
 A partir del estado inicial, la situación actual y los requisitos planteados, se estudian las alternativas de solución. Dichas alternativas pueden incluir soluciones que impliquen desarrollos a medida, soluciones basadas en la adquisición de productos software del mercado o soluciones mixtas. Se describe cada una de las alternativas, indicando los requisitos que cubre.
 
@@ -125,8 +125,8 @@ Si el sistema objeto de estudio se encuentra en el ámbito de un Plan de Sistema
 
 ###### De entrada {.unnumbered .unlisted}
 
-* Catálogo de Requisitos del PSI (PSI 9.2)
-* Arquitectura de Información (PSI 9.2)
+* Catálogo de Requisitos del PSI ([PSI 9.2](02-psi.qmd#9-2))
+* Arquitectura de Información ([PSI 9.2](02-psi.qmd#9-2))
 * Solicitud (externo)
 
 ###### De salida {.unnumbered .unlisted}
@@ -144,7 +144,7 @@ Si el sistema objeto de estudio se encuentra en el ámbito de un Plan de Sistema
 
 * [Comité de Dirección](../04-participantes/01-participantes.qmd#perfil-directivo)
 * [Jefe de Proyecto](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
-* Analistas
+* [Analistas](../04-participantes/01-participantes.qmd#perfil-analista)
 
 #### Tarea EVS 1.2: Identificación del Alcance del Sistema {#evs-1-2}
 
@@ -158,8 +158,8 @@ Una vez establecido el alcance, se identifican las unidades organizativas afecta
 
 ###### De entrada {.unnumbered .unlisted}
 
-* Plan de Proyectos (PSI 9.2)
-* Arquitectura de Información (PSI 9.2)
+* Plan de Proyectos ([PSI 9.2](02-psi.qmd#9-2))
+* Arquitectura de Información ([PSI 9.2](02-psi.qmd#9-2))
 * Descripción General del Sistema ([[EVS 1.1](#evs-1-1)](#evs-1-1))
 * Catálogo de Objetivos del EVS ([EVS 1.1](#evs-1-1))
 * Catálogo de Requisitos ([EVS 1.1](#evs-1-1))
@@ -175,7 +175,7 @@ Una vez establecido el alcance, se identifican las unidades organizativas afecta
 
 ##### Técnicas {.unnumbered .unlisted}
 
-* Diagrama de Flujo de Datos
+* [Diagrama de Flujo de Datos](../03-tecnicas/01-tecnicas.qmd#diagrama-de-flujo-de-datos)
 * Diagrama de Descomposición Funcional
 
 ##### Prácticas {.unnumbered .unlisted}
@@ -187,7 +187,7 @@ Una vez establecido el alcance, se identifican las unidades organizativas afecta
 
 * [Comité de Dirección](../04-participantes/01-participantes.qmd#perfil-directivo)
 * [Jefe de Proyecto](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
-* Analistas
+* [Analistas](../04-participantes/01-participantes.qmd#perfil-analista)
 
 #### Tarea EVS 1.3: Especificación del Alcance del EVS {#evs-1-3}
 
@@ -201,7 +201,7 @@ Debe comunicarse el plan de trabajo a los usuarios identificados como implicados
 
 ###### De entrada {.unnumbered .unlisted}
 
-* Arquitectura de Información (PSI 9.2)
+* Arquitectura de Información ([PSI 9.2](02-psi.qmd#9-2))
 * Catálogo de Objetivos del EVS ([EVS 1.1](#evs-1-1))
 * Descripción General del Sistema ([EVS 1.2](#evs-1-2))
 * Catálogo de Usuarios ([EVS 1.2](#evs-1-2))
@@ -222,7 +222,7 @@ Debe comunicarse el plan de trabajo a los usuarios identificados como implicados
 
 * [Comité de Dirección](../04-participantes/01-participantes.qmd#perfil-directivo)
 * [Jefe de Proyecto](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
-* Analistas
+* [Analistas](../04-participantes/01-participantes.qmd#perfil-analista)
 
 ### Actividad EVS 2: Estudio de la Situación Actual {#evs-2}
 
@@ -361,7 +361,7 @@ La información relativa a los sistemas de información que se decida analizar, 
 ###### De entrada {.unnumbered .unlisted}
 
 * Información Existente del Sistema Actual (externo)
-* Arquitectura de Información (PSI 9.2)
+* Arquitectura de Información ([PSI 9.2](02-psi.qmd#9-2))
 * Catálogo de Objetivos del EVS ([EVS 1.3](#evs-1-3))
 * Descripción General del Sistema ([EVS 1.2](#evs-1-2))
 
@@ -373,18 +373,18 @@ La información relativa a los sistemas de información que se decida analizar, 
 
 ##### Técnicas {.unnumbered .unlisted}
 
-* Diagrama de Flujo de Datos
+* [Diagrama de Flujo de Datos](../03-tecnicas/01-tecnicas.qmd#diagrama-de-flujo-de-datos)
 
 ##### Prácticas {.unnumbered .unlisted}
 
 * [Diagrama de Representación](../03-tecnicas/01-tecnicas.qmd#diagrama-de-representacion)
-* Sesiones de Trabajo
+* [Sesiones de Trabajo](../03-tecnicas/01-tecnicas.qmd#sesiones-de-trabajo)
 
 ##### Participantes {.unnumbered .unlisted}
 
 * [Jefe de Proyecto](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
-* Analistas
-* Directores de Usuarios
+* [Analistas](../04-participantes/01-participantes.qmd#perfil-analista)
+* [Directores de Usuarios](../04-participantes/01-participantes.qmd#perfil-directivo)
 
 #### Tarea EVS 2.2: Identificación de los Usuarios Participantes en el Estudio de la Situación Actual {#evs-2-2}
 
@@ -405,12 +405,12 @@ En función del nivel de detalle establecido para el estudio de la situación ac
 ##### Prácticas {.unnumbered .unlisted}
 
 * [Catalogación](../03-tecnicas/01-tecnicas.qmd#catalogacion)
-* Sesiones de Trabajo
+* [Sesiones de Trabajo](../03-tecnicas/01-tecnicas.qmd#sesiones-de-trabajo)
 
 ##### Participantes {.unnumbered .unlisted}
 
 * [Jefe de Proyecto](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
-* Directores de Usuarios
+* [Directores de Usuarios](../04-participantes/01-participantes.qmd#perfil-directivo)
 
 #### Tarea EVS 2.3: Descripción de los Sistemas de Información Existentes {#evs-2-3}
 
@@ -438,20 +438,20 @@ Es conveniente indicar la localización geográfica y física actual de los mód
 
 ##### Técnicas {.unnumbered .unlisted}
 
-* Diagrama de Flujo de Datos
+* [Diagrama de Flujo de Datos](../03-tecnicas/01-tecnicas.qmd#diagrama-de-flujo-de-datos)
 * [Modelo Entidad/Relación extendido](../03-tecnicas/01-tecnicas.qmd#modelo-entidad-relacion-extendido)
 * [Diagrama de clases](../03-tecnicas/01-tecnicas.qmd#diagrama-de-clases)
-* Diagrama de Interacción de Objetos
+* [Diagrama de Interacción de Objetos](../03-tecnicas/01-tecnicas.qmd#diagrama-de-interaccion-de-objetos)
 * [Matricial](../03-tecnicas/01-tecnicas.qmd#tecnicas-matriciales)
 
 ##### Prácticas {.unnumbered .unlisted}
 
 * [Diagrama de Representación](../03-tecnicas/01-tecnicas.qmd#diagrama-de-representacion)
-* Sesiones de Trabajo
+* [Sesiones de Trabajo](../03-tecnicas/01-tecnicas.qmd#sesiones-de-trabajo)
 
 ##### Participantes {.unnumbered .unlisted}
 
-* Analistas
+* [Analistas](../04-participantes/01-participantes.qmd#perfil-analista)
 * [Usuarios Expertos](../04-participantes/01-participantes.qmd#perfil-directivo)
 * [Equipo de Soporte Técnico](../04-participantes/01-participantes.qmd#perfil-analista)
 
@@ -469,7 +469,7 @@ Si se ha tomado la decisión de no describir la situación actual, se realiza un
 
 * Descripción de la Situación Actual ([EVS 2.3](#evs-2-3))
 * Catálogo de Objetivos del EVS ([EVS 1.3](#evs-1-3))
-* Valoración de la Situación actual (PSI 5.3)
+* Valoración de la Situación actual ([PSI 5.3](02-psi.qmd#5-3))
 
 ###### De salida {.unnumbered .unlisted}
 
@@ -478,7 +478,7 @@ Si se ha tomado la decisión de no describir la situación actual, se realiza un
 
 ##### Participantes {.unnumbered .unlisted}
 
-* Analistas
+* [Analistas](../04-participantes/01-participantes.qmd#perfil-analista)
 * [Responsable de Mantenimiento](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
 
 ### Actividad EVS 3: Definición de Requisitos del Sistema {#evs-3}
@@ -577,7 +577,7 @@ Con este fin, se recoge información sobre los estándares y procedimientos que 
 
 ###### De entrada {.unnumbered .unlisted}
 
-* Catálogo de Normas del PSI (PSI 3.2)
+* Catálogo de Normas del PSI ([PSI 3.2](02-psi.qmd#3-2))
 * Recopilación de Directrices Técnicas y de Gestión (externo)
 
 ###### De salida {.unnumbered .unlisted}
@@ -591,16 +591,16 @@ Con este fin, se recoge información sobre los estándares y procedimientos que 
 ##### Participantes {.unnumbered .unlisted}
 
 * [Jefe de Proyecto](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
-* Analistas
+* [Analistas](../04-participantes/01-participantes.qmd#perfil-analista)
 * [Usuarios Expertos](../04-participantes/01-participantes.qmd#perfil-directivo)
 
 #### Tarea EVS 3.2: Identificación de Requisitos {#evs-3-2}
 
 Para la obtención de las necesidades que ha de cubrir el sistema en estudio, se debe decidir qué tipo de sesiones de trabajo se realizarán y con qué frecuencia tendrán lugar, en función de la disponibilidad de los usuarios participantes.
 
-Si se ha realizado el Estudio de la Situación Actual ([EVS 2](#evs-2)), puede ser conveniente seleccionar la información de los sistemas de información existentes que resulte de interés para el desarrollo de dichas sesiones de trabajo.
+Si se ha realizado el **Estudio de la Situación Actual** ([EVS 2](#evs-2)), puede ser conveniente seleccionar la información de los sistemas de información existentes que resulte de interés para el desarrollo de dichas sesiones de trabajo.
 
-Una vez establecidos los puntos anteriores, se planifican las sesiones de trabajo con los usuarios participantes identificados al estudiar el alcance del Estudio de Viabilidad del Sistema ([EVS 1.3](#evs-1-3)), y se realizan de acuerdo al plan previsto. La información obtenida depende del tipo de sesión de trabajo seleccionado.
+Una vez establecidos los puntos anteriores, se planifican las sesiones de trabajo con los usuarios participantes identificados al estudiar el alcance del **Estudio de Viabilidad del Sistema** ([EVS 1.3](#evs-1-3)), y se realizan de acuerdo al plan previsto. La información obtenida depende del tipo de sesión de trabajo seleccionado.
 
 ##### Productos {.unnumbered .unlisted}
 
@@ -618,12 +618,12 @@ Una vez establecidos los puntos anteriores, se planifican las sesiones de trabaj
 
 ##### Prácticas {.unnumbered .unlisted}
 
-* Sesiones de Trabajo
+* [Sesiones de Trabajo](../03-tecnicas/01-tecnicas.qmd#sesiones-de-trabajo)
 
 ##### Participantes {.unnumbered .unlisted}
 
 * [Jefe de Proyecto](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
-* Analistas
+* [Analistas](../04-participantes/01-participantes.qmd#perfil-analista)
 * [Usuarios Expertos](../04-participantes/01-participantes.qmd#perfil-directivo)
 
 #### Tarea EVS 3.3: Catalogación de Requisitos {#evs-3-3}
@@ -650,12 +650,12 @@ Se incluirán también requisitos relativos a distribución geográfica y entorn
 ##### Participantes {.unnumbered .unlisted}
 
 * [Jefe de Proyecto](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
-* Analistas
+* [Analistas](../04-participantes/01-participantes.qmd#perfil-analista)
 * [Usuarios Expertos](../04-participantes/01-participantes.qmd#perfil-directivo)
 
 ### Actividad EVS 4: Estudio de Alternativas de Solución {#evs-4}
 
-Este estudio se centra en proponer diversas alternativas que respondan satisfactoriamente a los requisitos planteados, considerando también los resultados obtenidos en el Estudio de la Situación Actual ([EVS 2](#evs-2)), en el caso de que se haya realizado.
+Este estudio se centra en proponer diversas alternativas que respondan satisfactoriamente a los requisitos planteados, considerando también los resultados obtenidos en el **Estudio de la Situación Actual** ([EVS 2](#evs-2)), en el caso de que se haya realizado.
 
 Teniendo en cuenta el ámbito y funcionalidad que debe cubrir el sistema, puede ser conveniente realizar, previamente a la definición de cada alternativa, una descomposición del sistema en subsistemas.
 
@@ -774,8 +774,8 @@ Dependiendo del alcance del sistema y las posibles opciones, puede ser convenien
 ##### Participantes {.unnumbered .unlisted}
 
 * [Jefe de Proyecto](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
-* Analistas
-* Técnicos de Sistema
+* [Analistas](../04-participantes/01-participantes.qmd#perfil-analista)
+* [Técnicos de Sistema](../04-participantes/01-participantes.qmd#perfil-consultor)
 
 #### Tarea EVS 4.2: Descripción de las Alternativas de Solución {#evs-4-2}
 
@@ -823,10 +823,10 @@ Si la alternativa incluye una solución basada en producto se analiza su evoluci
 ##### Técnicas {.unnumbered .unlisted}
 
 * [Matricial](../03-tecnicas/01-tecnicas.qmd#tecnicas-matriciales)
-* Diagrama de Flujo de Datos
-* Modelo Entidad/ Relación extendido
+* [Diagrama de Flujo de Datos](../03-tecnicas/01-tecnicas.qmd#diagrama-de-flujo-de-datos)
+* [Modelo Entidad/Relación extendido](../03-tecnicas/01-tecnicas.qmd#modelo-entidad-relacion-extendido)
 * [Diagrama de clases](../03-tecnicas/01-tecnicas.qmd#diagrama-de-clases)
-* Casos de Uso
+* [Casos de Uso](../03-tecnicas/01-tecnicas.qmd#casos-de-uso)
 
 ##### Prácticas {.unnumbered .unlisted}
 
@@ -836,11 +836,11 @@ Si la alternativa incluye una solución basada en producto se analiza su evoluci
 ##### Participantes {.unnumbered .unlisted}
 
 * [Jefe de Proyecto](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
-* Analistas
+* [Analistas](../04-participantes/01-participantes.qmd#perfil-analista)
 * [Usuarios Expertos](../04-participantes/01-participantes.qmd#perfil-directivo)
-* Técnicos de Sistemas
+* [Técnicos de Sistema](../04-participantes/01-participantes.qmd#perfil-consultor)
 * [Responsable de Seguridad](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
-* Especialistas en Comunicaciones
+* [Especialistas en Comunicaciones](../04-participantes/01-participantes.qmd#perfil-consultor)
 
 ### Actividad EVS 5: Valoración de las Alternativas {#evs-5}
 
@@ -953,7 +953,7 @@ Para cada alternativa de solución propuesta, se valora el impacto en la organiz
 ##### Participantes {.unnumbered .unlisted}
 
 * [Jefe de Proyecto](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
-* Analistas
+* [Analistas](../04-participantes/01-participantes.qmd#perfil-analista)
 
 #### Tarea EVS 5.2: Estudio de los Riesgos {#evs-5-2}
 
@@ -978,7 +978,7 @@ Para cada alternativa se seleccionan los factores de situación que habrá que c
 ##### Participantes {.unnumbered .unlisted}
 
 * [Jefe de Proyecto](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
-* Analistas
+* [Analistas](../04-participantes/01-participantes.qmd#perfil-analista)
 
 #### Tarea EVS 5.3: Planificación de Alternativas
 
@@ -1010,7 +1010,7 @@ De esta manera se garantiza el cumplimiento del plan de trabajo en los restantes
 ##### Participantes {.unnumbered .unlisted}
 
 * [Jefe de Proyecto](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
-* Analistas
+* [Analistas](../04-participantes/01-participantes.qmd#perfil-analista)
 
 ### Actividad EVS 6: Selección de la Solución {#evs-6}
 
@@ -1103,7 +1103,7 @@ Se efectúa la convocatoria de la presentación de las distintas alternativas pr
 
 ###### De entrada {.unnumbered .unlisted}
 
-* Catálogo de Usuarios (EVS [2.2](#evs-2-2)/[1.3](#evs-1-3))
+* Catálogo de Usuarios ([EVS 2.2](#evs-2-2)/[1.3](#evs-1-3))
 * Alternativas de Solución a Estudiar ([EVS 4.2](#evs-4-2))
 * Valoración de Alternativas ([EVS 5.2](#evs-5-2))
 * Plan de Trabajo de Cada Alternativa ([EVS 5.3](#evs-5-3))
@@ -1166,13 +1166,13 @@ Una vez recibida la confirmación de qué alternativas van a ser presentadas par
 ##### Prácticas {.unnumbered .unlisted}
 
 * [Presentación](../03-tecnicas/01-tecnicas.qmd#presentaciones)
-* Sesiones de Trabajo
+* [Sesiones de Trabajo](../03-tecnicas/01-tecnicas.qmd#sesiones-de-trabajo)
 
 ##### Participantes {.unnumbered .unlisted}
 
 * [Comité de Dirección](../04-participantes/01-participantes.qmd#perfil-directivo)
 * [Jefe de Proyecto](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
-* Analistas
+* [Analistas](../04-participantes/01-participantes.qmd#perfil-analista)
 
 #### Tarea EVS 6.3: Aprobación de la Solución {#evs-6-3}
 
