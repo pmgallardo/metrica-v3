@@ -34,9 +34,9 @@ La información que puede solicitarse al sistema de gestión de la configuració
 
 ## Estudio de Viabilidad del Sistema {#evs-gc}
 
-Durante el Estudio de Viabilidad del Sistema (EVS) se realizan las actividades de la interfaz de Gestión de Configuración que permiten obtener el Plan de Gestión de Configuración para el sistema de información. Con este objetivo se definen en primer término los requisitos de gestión de configuración del sistema de información, los cuales deberán tenerse en cuenta a la hora de establecer el plan de Gestión de Configuración para la Solución propuesta (EVS 6.2).
+Durante el [Estudio de Viabilidad del Sistema (EVS)](../01-principal/03-evs.qmd) se realizan las actividades de la interfaz de Gestión de Configuración que permiten obtener el Plan de Gestión de Configuración para el sistema de información. Con este objetivo se definen en primer término los requisitos de gestión de configuración del sistema de información, los cuales deberán tenerse en cuenta a la hora de establecer el plan de Gestión de Configuración para la Solución propuesta ([EVS 6.2](../01-principal/03-evs.qmd#6-2)).
 
-En el siguiente gráfico se muestra la relación entre las actividades del proceso Estudio de Viabilidad del Sistema (EVS) y las de la Gestión de la Configuración.
+En el siguiente gráfico se muestra la relación entre las actividades del proceso [Estudio de Viabilidad del Sistema (EVS)](../01-principal/03-evs.qmd) y las de la Gestión de la Configuración.
 
 ![](../images/gescon-evs.jpg)
 
@@ -75,8 +75,8 @@ El objetivo de esta tarea es identificar la necesidad de gestionar la configurac
 
 ###### De entrada {.unnumbered .unlisted}
 
-* Arquitectura de Información (PSI 9.2)
-* Identificación de Requisitos (EVS 3.2)
+* Arquitectura de Información ([PSI 9.2](../01-principal/02-psi.qmd#9-2))
+* Identificación de Requisitos ([EVS 3.2](../01-principal/03-evs.qmd#3-2))
 
 ###### De salida {.unnumbered .unlisted}
 
@@ -154,9 +154,9 @@ Los aspectos que debe contemplar el plan son:
 
 ###### De entrada {.unnumbered .unlisted}
 
-* Requisitos generales de gestión de configuración (EVS-GC 1.1)
+* Requisitos generales de gestión de configuración ([EVS-GC 1.1](#evs-gc-1-1))
 * Método o estándar de gestión de la configuración (externo)
-* Solución propuesta (EVS 6.2)
+* Solución propuesta ([EVS 6.2](../01-principal/03-evs.qmd#6-2))
 
 ###### De salida {.unnumbered .unlisted}
 
@@ -176,7 +176,7 @@ En esta tarea se define el entorno tecnológico de soporte a la gestión de la c
 
 ###### De entrada {.unnumbered .unlisted}
 
-* Plan de gestión de la configuración para el sistema de información (EVS-GC 2.1)
+* Plan de gestión de la configuración para el sistema de información ([EVS-GC 2.1](#evs-gc-2-1))
 
 ###### De salida {.unnumbered .unlisted}
 
@@ -340,7 +340,7 @@ Para realizar el análisis de la petición en MSI 2 es conveniente solicitar inf
 
 Una vez que ha sido aceptada la propuesta de solución se realiza un registro del cambio en el sistema de gestión de configuración con la información obtenida del mismo relativa a las versiones de los sistemas de información y productos afectados por el cambio. Este registro constituye el nexo de unión entre la petición o peticiones de mantenimiento y los cambios que se van a realizar sobre los sistemas de información afectados. Recoge datos referentes a las versiones de los sistemas de información de los que se parte y cuáles van a ser las nuevas versiones generadas, así como las versiones de los productos concretos afectados por el cambio y cuál será la nueva versión de dichos productos. También debe registrarse en el sistema de gestión de la configuración la nueva versión de los sistemas de información y de los productos según el criterio de versionado establecido en el plan de gestión de la configuración.
 
-A partir de este momento, se realizan las actividades de los procesos [Análisis del Sistema de Información (ASI)](../01-principal/04-asi.qmd), [Diseño del Sistema de Información (DSI)](../01-principal/05-dsi.qmd), [Construcción del Sistema de Información (CSI)](../01-principal/06-csi.qmd) e [Implantación y Aceptación del Sistema (IAS)](../01-principal/07-ias.qmd) que se determinen en la actividad Registro del Cambio en el Sistema de Gestión de la Configuración (MSI-GC 1), así como las actividades de interfaz de la gestión de configuración definidas en los procesos de desarrollo.
+A partir de este momento, se realizan las actividades de los procesos [Análisis del Sistema de Información (ASI)](../01-principal/04-asi.qmd), [Diseño del Sistema de Información (DSI)](../01-principal/05-dsi.qmd), [Construcción del Sistema de Información (CSI)](../01-principal/06-csi.qmd) e [Implantación y Aceptación del Sistema (IAS)](../01-principal/07-ias.qmd) que se determinen en la actividad Registro del Cambio en el Sistema de Gestión de la Configuración ([MSI-GC 1](#msi-gc-1)), así como las actividades de interfaz de la gestión de configuración definidas en los procesos de desarrollo.
 
 Una vez que el cambio ha sido realizado y aceptado se registra dicha aceptación en el sistema de gestión de la configuración.
 
@@ -409,7 +409,7 @@ Una vez aprobada la propuesta de solución se registra el cambio en el sistema d
 
 ###### De entrada {.unnumbered .unlisted}
 
-* Catálogo de peticiones (MSI 3)
+* Catálogo de peticiones ([MSI 3](../01-principal/08-msi.qmd#3))
 
 ###### De salida {.unnumbered .unlisted}
 

@@ -13,7 +13,7 @@ De lo anterior se desprende que existen dentro de la interfaz dos tipos de activ
 - Actividades relacionadas con la seguridad intrínseca del sistema de información (representadas en la parte inferior del gráfico).
 - Actividades que velan por la seguridad del propio proceso de desarrollo del sistema de información (representadas en la parte superior del gráfico).
 
-Si en la organización ya existe un plan de seguridad o una metodología de análisis y gestión de riesgos como por ejemplo MAGERIT, para cada sistema de información deberán analizarse las necesidades de seguridad del sistema respecto al método vigente, y determinar las diferencias si las hubiera, así como aquellas necesidades concretas que no se encuentren recogidas, estableciendo así el plan de seguridad del sistema de información. Si no existe un plan de seguridad en la organización habrá que desarrollarlo desde el principio. El plan recogerá además las medidas de seguridad activas o preventivas y reactivas, en respuesta a situaciones en que se produce un fallo reduciendo su efecto, relacionadas con la seguridad del sistema de información y del proceso de desarrollo.
+Si en la organización ya existe un plan de seguridad o una metodología de análisis y gestión de riesgos como por ejemplo [MAGERIT](https://administracionelectronica.gob.es/ctt/magerit){target="_blank"}, para cada sistema de información deberán analizarse las necesidades de seguridad del sistema respecto al método vigente, y determinar las diferencias si las hubiera, así como aquellas necesidades concretas que no se encuentren recogidas, estableciendo así el plan de seguridad del sistema de información. Si no existe un plan de seguridad en la organización habrá que desarrollarlo desde el principio. El plan recogerá además las medidas de seguridad activas o preventivas y reactivas, en respuesta a situaciones en que se produce un fallo reduciendo su efecto, relacionadas con la seguridad del sistema de información y del proceso de desarrollo.
 
 Las valoraciones sobre la seguridad deben ser realizadas en función de las características del sistema: complejidad, tamaño, incertidumbre, participantes, etc. por los responsables de la seguridad del sistema de información, quienes se apoyarán para sus decisiones en su conocimiento y experiencia en la materia sin perder de vista además que, al ser finitos los recursos, no pueden asegurarse todos los aspectos del desarrollo de los sistemas de información, por lo que habrá que aceptar un determinado nivel de riesgo concentrándose en los aspectos más comprometidos o amenazados, que serán diferentes según las circunstancias.
 
@@ -64,7 +64,7 @@ En la actualidad, la mayoría de las organizaciones suelen disponer, en mayor o 
 
 La seguridad influirá en las decisiones adoptadas en el proceso de Planificación de Sistemas de Información al igual que otros aspectos tales como la calidad, ya que debe ser un parámetro más a contemplar en el análisis y evaluación de soluciones.
 
-En la siguiente figura aparecen las actividades de la interfaz de seguridad a lo largo del proceso Planificación de Sistemas de Información (PSI).
+En la siguiente figura aparecen las actividades de la interfaz de seguridad a lo largo del proceso [Planificación de Sistemas de Información (PSI)](../01-principal/02-psi.qmd).
 
 ![](../images/seg-psi.jpg)
 
@@ -139,7 +139,7 @@ El Responsable de Seguridad debe estudiar si es necesario supervisar la segurida
 
 ###### De entrada {.unnumbered .unlisted}
 
-* Descripción General del PSI (PSI 1.3)
+* Descripción General del PSI ([PSI 1.3](../01-principal/02-psi.qmd#1-3))
 * Política de Seguridad de la Organización (externo)
 * Riesgo Aceptable (Comité de Seguimiento)
 
@@ -166,7 +166,7 @@ El responsable de seguridad determina la organización y planificación necesari
 ###### De entrada {.unnumbered .unlisted}
 
 * Política de Seguridad de la Organización (externo)
-* Seguridad Requerida en el Proceso PSI (PSI-SEG 1.1)
+* Seguridad Requerida en el Proceso PSI ([PSI-SEG 1.1](#psi-seg-1-1))
 
 ###### De salida {.unnumbered .unlisted}
 
@@ -183,7 +183,7 @@ El responsable de seguridad determina la organización y planificación necesari
 ##### Participantes {.unnumbered .unlisted}
 
 * [Responsable de Seguridad](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
-* Comité de Dirección
+* [Comité de Dirección](../04-participantes/01-participantes.qmd#perfil-directivo)
 
 ### Actividad PSI-SEG 2: Evaluación del Riesgo para la Arquitectura Tecnológica {#psi-seg-2}
 
@@ -253,14 +253,14 @@ El equipo de seguridad estudia las alternativas de arquitectura tecnológica, an
 * Determinación del riesgo efectivo e intrínseco de cada alternativa.
 * Selección de los mecanismos de salvaguarda oportunos que minimicen los riesgos.
 
-Para la realización de esta tarea se puede tomar como referencia MAGERIT, Metodología de Análisis y Gestión de Riesgos de los Sistemas de Información.
+Para la realización de esta tarea se puede tomar como referencia [MAGERIT](https://administracionelectronica.gob.es/ctt/magerit){target="_blank"}, Metodología de Análisis y Gestión de Riesgos de los Sistemas de Información.
 
 ##### Productos {.unnumbered .unlisted}
 
 ###### De entrada {.unnumbered .unlisted}
 
-* Plan de Seguridad de los Sistemas de Información (PSI-SEG 1.2)
-* Alternativas de Arquitectura Tecnológica (PSI 7.1)
+* Plan de Seguridad de los Sistemas de Información ([PSI-SEG 1.2](#psi-seg-1-2))
+* Alternativas de Arquitectura Tecnológica ([PSI 7.1](../01-principal/02-psi.qmd#7-1))
 
 ###### De salida {.unnumbered .unlisted}
 
@@ -280,14 +280,14 @@ Para la realización de esta tarea se puede tomar como referencia MAGERIT, Metod
 
 #### Tarea PSI-SEG 2.2: Revisión de la Evaluación del Riesgo de las Alternativas de Arquitectura Tecnológica {#psi-seg-2-2}
 
-Una vez se dispone de la alternativa de la arquitectura tecnológica seleccionada (PSI 7.2) y del estudio de seguridad de las alternativas obtenido en la tarea anterior, el Comité de Seguimiento y el Responsable de Seguridad realizan un examen del mismo para aceptarlo o rechazarlo.
+Una vez se dispone de la alternativa de la arquitectura tecnológica seleccionada ([PSI 7.2](../01-principal/02-psi.qmd#7-2)) y del estudio de seguridad de las alternativas obtenido en la tarea anterior, el Comité de Seguimiento y el Responsable de Seguridad realizan un examen del mismo para aceptarlo o rechazarlo.
 
 ##### Productos {.unnumbered .unlisted}
 
 ###### De entrada {.unnumbered .unlisted}
 
-* Arquitectura Tecnológica (PSI 7.2)
-* Seguridad de las Alternativas de Arquitectura Tecnológica (PSI-SEG 2.1)
+* Arquitectura Tecnológica ([PSI 7.2](../01-principal/02-psi.qmd#7-2))
+* Seguridad de las Alternativas de Arquitectura Tecnológica ([PSI-SEG 2.1](#psi-seg-2-1))
 
 ###### De salida {.unnumbered .unlisted}
 
@@ -340,14 +340,14 @@ Una vez definida la arquitectura tecnológica en el Plan de Sistemas de Informac
 
 #### Tarea PSI-SEG 3.1: Determinación de la Seguridad en el Plan de Acción {#psi-seg-3-1}
 
-Se estudia el Plan de Acción establecido en el Plan de Sistemas de Información (PSI 8.1) con el objetivo de programar los recursos lógicos y físicos necesarios para la activación de los servicios y mecanismos de salvaguarda que se determinaron para la arquitectura tecnológica escogida.
+Se estudia el Plan de Acción establecido en el Plan de Sistemas de Información ([PSI 8.1](../01-principal/02-psi.qmd#8-1)) con el objetivo de programar los recursos lógicos y físicos necesarios para la activación de los servicios y mecanismos de salvaguarda que se determinaron para la arquitectura tecnológica escogida.
 
 ##### Productos {.unnumbered .unlisted}
 
 ###### De entrada {.unnumbered .unlisted}
 
-* Plan de Seguridad de los Sistemas de Información (PSI-SEG 1.2)
-* Plan de Acción (PSI 8.1)
+* Plan de Seguridad de los Sistemas de Información ([PSI-SEG 1.2](#psi-seg-1-2))
+* Plan de Acción ([PSI 8.1](../01-principal/02-psi.qmd#8-1))
 
 ###### De salida {.unnumbered .unlisted}
 
@@ -429,9 +429,9 @@ El responsable de seguridad estudia los productos generados durante el proceso d
 
 ## Estudio de Viabilidad del Sistema {#evs-seg}
 
-La primera actividad de la interfaz de Seguridad que debe abordarse en el proceso de Estudio de Viabilidad del Sistema es el estudio de la seguridad requerida en este proceso, seleccionando a continuación a los miembros del Equipo de Seguridad para los procesos de Estudio de Viabilidad, Análisis, Diseño, Construcción e Implantación del Sistema de Información. Se trata de una tarea de vital importancia para las siguientes actividades de seguridad, tanto las relativas a la Seguridad del Sistema de Información, como para las concernientes a la Seguridad del Proceso de Desarrollo. Es importante que tanto el Responsable de Seguridad como el Equipo de Seguridad se basen en la política de seguridad de la organización y en la Seguridad para el Plan de Acción (PSI-SEG 3.1). Si no se ha realizado el proceso Planificación de Sistemas de Información y las actividades de la interfaz de seguridad correspondientes al mismo, se partirá de la política de seguridad de la organización y del nivel de riesgo aceptable.
+La primera actividad de la interfaz de Seguridad que debe abordarse en el proceso de Estudio de Viabilidad del Sistema es el estudio de la seguridad requerida en este proceso, seleccionando a continuación a los miembros del Equipo de Seguridad para los procesos de Estudio de Viabilidad, Análisis, Diseño, Construcción e Implantación del Sistema de Información. Se trata de una tarea de vital importancia para las siguientes actividades de seguridad, tanto las relativas a la Seguridad del Sistema de Información, como para las concernientes a la Seguridad del Proceso de Desarrollo. Es importante que tanto el Responsable de Seguridad como el Equipo de Seguridad se basen en la política de seguridad de la organización y en la Seguridad para el Plan de Acción ([PSI-SEG 3.1](#psi-seg-3-1)). Si no se ha realizado el proceso Planificación de Sistemas de Información y las actividades de la interfaz de seguridad correspondientes al mismo, se partirá de la política de seguridad de la organización y del nivel de riesgo aceptable.
 
-En el siguiente gráfico se muestra la relación entre las actividades del Estudio de Viabilidad del Sistema (EVS) y las de la interfaz de Seguridad.
+En el siguiente gráfico se muestra la relación entre las actividades del [Estudio de Viabilidad del Sistema (EVS)](../01-principal/03-evs.qmd) y las de la [interfaz de Seguridad](02-seg.qmd).
 
 ![](../images/seg-evs.jpg)
 
@@ -479,8 +479,8 @@ El Responsable de Seguridad analiza la necesidad de supervisar la seguridad (niv
 ###### De entrada {.unnumbered .unlisted}
 
 * Catálogo de objetivos del EVS ([EVS 1.1](../01-principal/03-evs.qmd#1-1))
-* Plan de trabajo (EVS 1.3)
-* Seguridad para el Plan de Acción (PSI-SEG 3.1)
+* Plan de trabajo ([EVS 1.3](../01-principal/03-evs.qmd#1-3)
+* Seguridad para el Plan de Acción ([PSI-SEG 3.1](#psi-seg-3-1))
 
 ###### De salida {.unnumbered .unlisted}
 
@@ -543,7 +543,7 @@ Deben realizarse las sesiones de trabajo necesarias para especificar las labores
 
 ###### De entrada {.unnumbered .unlisted}
 
-* Plan de Seguridad de los Sistemas de Información (PSI-SEG 1.2)
+* Plan de Seguridad de los Sistemas de Información ([PSI-SEG 1.2](#psi-seg-1-2))
 
 ###### De salida {.unnumbered .unlisted}
 
@@ -563,7 +563,7 @@ Deben realizarse las sesiones de trabajo necesarias para especificar las labores
 
 ### Actividad EVS-SEG 3: Recomendaciones Adicionales de Seguridad para el Sistema de Información {#evs-seg-3}
 
-El Equipo de Seguridad establece las recomendaciones de seguridad del sistema en función del umbral del riesgo aceptado o asumible. Para ello, se estudian las amenazas y vulnerabilidades que en función del Catálogo de Requisitos del Sistema (EVS 3.3) se prevean, así como el impacto previsible de su materialización.
+El Equipo de Seguridad establece las recomendaciones de seguridad del sistema en función del umbral del riesgo aceptado o asumible. Para ello, se estudian las amenazas y vulnerabilidades que en función del Catálogo de Requisitos del Sistema ([EVS 3.3](../01-principal/03-evs.qmd#3-3) se prevean, así como el impacto previsible de su materialización.
 
 ```{=html}
 <table class="avia-table avia-data-table">
@@ -608,8 +608,8 @@ El Equipo de Seguridad estudia la legislación, normas y procedimientos referent
 ###### De entrada {.unnumbered .unlisted}
 
 * Legislación, Normas y Procedimientos de Seguridad (Externo)
-* Catálogo de Normas (EVS 3.1)
-* Catálogo de Requisitos (EVS 3.3)
+* Catálogo de Normas ([EVS 3.1](../01-principal/03-evs.qmd#3-1)
+* Catálogo de Requisitos ([EVS 3.3](../01-principal/03-evs.qmd#3-3)
 
 ###### De salida {.unnumbered .unlisted}
 
@@ -678,10 +678,10 @@ El Equipo de Seguridad estudia la información sobre las alternativas de soluci�
 
 ###### De entrada {.unnumbered .unlisted}
 
-* Recomendaciones de Seguridad (EVS-SEG 3.1)
-* Alternativas de Solución a Estudiar (EVS 4.2)
-* Valoración de Alternativas (EVS 5.2)
-* Plan de Trabajo de cada Alternativa (EVS 5.3)
+* Recomendaciones de Seguridad ([EVS-SEG 3.1](#evs-seg-3-1))
+* Alternativas de Solución a Estudiar ([EVS 4.2](../01-principal/03-evs.qmd#4-2)
+* Valoración de Alternativas ([EVS 5.2](../01-principal/03-evs.qmd#5-2)
+* Plan de Trabajo de cada Alternativa ([EVS 5.3](../01-principal/03-evs.qmd#5-3)
 
 ###### De salida {.unnumbered .unlisted}
 
@@ -752,8 +752,8 @@ Partiendo de una especificación de las principales características de la soluc
 
 ###### De entrada {.unnumbered .unlisted}
 
-* Solución Propuesta (EVS 6.2)
-* Seguridad de las Alternativas de Solución (EVS-SEG 4.1)
+* Solución Propuesta ([EVS 6.2](../01-principal/03-evs.qmd#6-2)
+* Seguridad de las Alternativas de Solución ([EVS-SEG 4.1](#evs-seg-4-1))
 
 ###### De salida {.unnumbered .unlisted}
 
@@ -847,7 +847,7 @@ En las actividades de la interfaz de seguridad que se realizan durante el proces
 
 Las funciones y mecanismos adicionales de seguridad definidos en las actividades de interfaz se implementarán en el sistema a través de MÉTRICA Versión 3, al igual que los demás requisitos de seguridad.
 
-En el siguiente gráfico se muestra la relación entre las actividades del proceso de Análisis del Sistema de Información (ASI) y las de la interfaz de Seguridad.
+En el siguiente gráfico se muestra la relación entre las actividades del proceso de [Análisis del Sistema de Información (ASI)](../01-principal/04-asi.qmd) y las de la interfaz de Seguridad.
 
 ![](../images/seg-asi.jpg)
 
@@ -959,7 +959,7 @@ Se estudian los aspectos complementarios a los contemplados en MÉTRICA Versión
 
 La selección de las funciones de seguridad a implementar se hace en función de la gestión de los riesgos escogida, de forma que los riesgos se minimicen, eliminen o controlen. El Equipo de Seguridad ha de determinar el tipo de funciones de seguridad a implantar (de prevención, de detección o de corrección) y la naturaleza de las mismas (técnica, física, organizativa, etc.). Se presta especial atención a los aspectos de seguridad organizativa, ya que son tanto o más importantes que los relativos a la seguridad física y técnica.
 
-Para la determinación de tales funciones pueden utilizarse las técnicas que posea al efecto la metodología de análisis y gestión de riesgos seleccionada, por ejemplo MAGERIT. Así mismo se establecen los mecanismos de seguridad que implementan esas funciones.
+Para la determinación de tales funciones pueden utilizarse las técnicas que posea al efecto la metodología de análisis y gestión de riesgos seleccionada, por ejemplo [MAGERIT](https://administracionelectronica.gob.es/ctt/magerit){target="_blank"}. Así mismo se establecen los mecanismos de seguridad que implementan esas funciones.
 
 Las funciones y mecanismos adicionales de seguridad definidos en esta actividad se implementarán en el sistema a través de MÉTRICA Versión 3, al igual que los demás requisitos de seguridad.
 
@@ -967,7 +967,7 @@ Las funciones y mecanismos adicionales de seguridad definidos en esta actividad 
 
 ###### De entrada {.unnumbered .unlisted}
 
-* Seguridad de la Solución Propuesta (EVS-SEG 5.1)
+* Seguridad de la Solución Propuesta ([EVS-SEG 5.1](#evs-seg-5-1))
 * Catálogo de Requisitos ([ASI 2.1](../01-principal/04-asi.qmd#2-1))
 
 ###### De salida {.unnumbered .unlisted}
@@ -1033,7 +1033,7 @@ Partiendo del plan de pruebas del Sistema de Información, se incluirán en las 
 ###### De entrada {.unnumbered .unlisted}
 
 * Plan de Pruebas ([ASI 10.3](../01-principal/04-asi.qmd#10-3))
-* Funciones y Mecanismos de Seguridad (ASI-SEG 2.1)
+* Funciones y Mecanismos de Seguridad ([ASI-SEG 2.1](#asi-seg-2-1))
 
 ###### De salida {.unnumbered .unlisted}
 
@@ -1288,7 +1288,7 @@ El Equipo de Seguridad estudia las condiciones que debe cumplir el entorno de Co
 ###### De entrada {.unnumbered .unlisted}
 
 * Especificaciones de Construcción del Sistema de Información ([DSI 8.4](../01-principal/05-dsi.qmd#8-4))
-* Requisitos de Seguridad del Entorno Tecnológico (DSI-SEG 2.1)
+* Requisitos de Seguridad del Entorno Tecnológico ([DSI-SEG 2.1](#dsi-seg-2-1))
 
 ###### De salida {.unnumbered .unlisted}
 
@@ -1343,9 +1343,9 @@ El Equipo de Seguridad debe realizar el diseño específico de las pruebas de se
 
 ###### De entrada {.unnumbered .unlisted}
 
-* Plan de Pruebas (ASI-SEG 4.1)
-* Funciones y Mecanismos de Seguridad (ASI-SEG 2.1)
-* Requisitos de Seguridad del Entorno Tecnológico (DSI-SEG 2.1)
+* Plan de Pruebas ([ASI-SEG 4.1](#asi-seg-4-1))
+* Funciones y Mecanismos de Seguridad ([ASI-SEG 2.1](#asi-seg-2-1))
+* Requisitos de Seguridad del Entorno Tecnológico ([DSI-SEG 2.1](#dsi-seg-2-1))
 * Procedimientos de Seguridad y Control de acceso ([DSI 1.7](../01-principal/05-dsi.qmd#1-7))
 * Plan de Pruebas ([DSI 10.1](../01-principal/05-dsi.qmd#10-1))
 
@@ -1435,9 +1435,9 @@ El Responsable de Seguridad, el Jefe de Proyecto y el Comité de Seguimiento est
 
 Dada la gran cantidad de productos generados en este proceso y según las características del proyecto, el entorno de construcción debe ser sometido a controles de seguridad que eviten filtraciones indeseables de datos relativos al sistema de información. Además se verifica el resultado de las pruebas de las funciones y mecanismos adicionales de seguridad.
 
-Se completa la Definición de la Formación a Usuarios Finales (CSI 7) con un plan de formación específico en seguridad dirigido a los distintos usuarios del sistema y en el que se contemplan diferentes niveles y perfiles.
+Se completa la Definición de la Formación a Usuarios Finales ([CSI 7](../01-principal/06-csi.qmd#7)) con un plan de formación específico en seguridad dirigido a los distintos usuarios del sistema y en el que se contemplan diferentes niveles y perfiles.
 
-En el siguiente gráfico se aprecia la relación entre las actividades del proceso Construcción del Sistema de Información (CSI) y las de la interfaz de Seguridad.
+En el siguiente gráfico se aprecia la relación entre las actividades del proceso [Construcción del Sistema de Información (CSI)](../01-principal/06-csi.qmd) y las de la interfaz de Seguridad.
 
 ![](../images/seg-csi.jpg)
 
@@ -1541,10 +1541,10 @@ El Equipo de Seguridad estudia los resultados obtenidos en las pruebas de seguri
 
 ###### De entrada {.unnumbered .unlisted}
 
-* Diseño de Pruebas de Seguridad de Sistema y Aceptación (DSI-SEG 4.1)
-* Resultado de las Pruebas Unitarias (CSI 3.2)
-* Resultado de las Pruebas de Integración (CSI 4.2)
-* Resultado de las Pruebas del Sistema (CSI 5.2)
+* Diseño de Pruebas de Seguridad de Sistema y Aceptación ([DSI-SEG 4.1](#dsi-seg-4-1))
+* Resultado de las Pruebas Unitarias ([CSI 3.2](../01-principal/06-csi.qmd#3-2))
+* Resultado de las Pruebas de Integración ([CSI 4.2](../01-principal/06-csi.qmd#4-2))
+* Resultado de las Pruebas del Sistema ([CSI 5.2](../01-principal/06-csi.qmd#5-2))
 
 ###### De salida {.unnumbered .unlisted}
 
@@ -1599,9 +1599,9 @@ En esta tarea se definen las pautas que deben seguir los grupos de usuarios en m
 
 ###### De entrada {.unnumbered .unlisted}
 
-* Funciones y Mecanismos de Seguridad (DSI-SEG 3.1)
-* Recomendaciones de Seguridad (EVS-SEG 3.1)
-* Especificación de la Formación a Usuarios Finales (CSI 7.1)
+* Funciones y Mecanismos de Seguridad ([DSI-SEG 3.1](#dsi-seg-3-1))
+* Recomendaciones de Seguridad ([EVS-SEG 3.1](#evs-seg-3-1))
+* Especificación de la Formación a Usuarios Finales ([CSI 7.1](../01-principal/06-csi.qmd#7-1))
 
 ###### De salida {.unnumbered .unlisted}
 
@@ -1690,11 +1690,11 @@ El Responsable de Seguridad, el Jefe de Proyecto y el Comité de Seguimiento est
 
 ## Implantación y Aceptación del Sistema {#ias-seg}
 
-En este proceso se define de forma detallada la seguridad para la implantación del sistema una vez construido, especificando tanto las actividades relacionadas con la seguridad intrínseca del propio sistema, como las que velan por la seguridad del proceso. El equipo de seguridad tiene como objetivo reforzar los procedimientos de seguridad y control de accesos previstos en MÉTRICA Versión 3 en el proceso de Implantación y Aceptación del Sistema (IAS 3).
+En este proceso se define de forma detallada la seguridad para la implantación del sistema una vez construido, especificando tanto las actividades relacionadas con la seguridad intrínseca del propio sistema, como las que velan por la seguridad del proceso. El equipo de seguridad tiene como objetivo reforzar los procedimientos de seguridad y control de accesos previstos en MÉTRICA Versión 3 en el proceso de Implantación y Aceptación del Sistema ([IAS 3](../01-principal/07-ias.qmd#3)).
 
 Tiene especial importancia el asegurar que se cubren los requisitos de seguridad, a través de las pruebas de implantación, comprobando las funciones y mecanismos adicionales. Dichos requisitos se deberán tener en cuenta al establecer el acuerdo de nivel de servicio para el sistema antes de su puesta en producción.
 
-En el siguiente gráfico se aprecia la relación entre las actividades del proceso Implantación y Aceptación del Sistema (IAS) y las de la interfaz de seguridad.
+En el siguiente gráfico se aprecia la relación entre las actividades del proceso [Implantación y Aceptación del Sistema (IAS)](../01-principal/07-ias.qmd) y las de la interfaz de seguridad.
 
 ![](../images/seg-ias.jpg)
 
@@ -1743,7 +1743,7 @@ El Equipo de Seguridad analiza la necesidad de supervisar la seguridad (niveles 
 
 ###### De entrada {.unnumbered .unlisted}
 
-* Plan de Implantación (IAS 1.1)
+* Plan de Implantación ([IAS 1.1](../01-principal/07-ias.qmd#1-1))
 
 ###### De salida {.unnumbered .unlisted}
 
@@ -1793,13 +1793,13 @@ El Equipo de Seguridad analiza la necesidad de supervisar la seguridad (niveles 
 
 #### Tarea IAS-SEG 2.1: Revisión de Medidas de Seguridad del Entorno de Operación {#ias-seg-2-1}
 
-En la preparación de la instalación (IAS 3.1) se comprueba la disponibilidad de la infraestructura necesaria para configurar el entorno. El objetivo de esta tarea es que el Equipo de Seguridad refuerce las acciones que relativas a procedimientos de seguridad y control de accesos se realizan en IAS 3.1, verificando, basándose en las particularidades del sistema, que se cubren las medidas de seguridad necesarias que hacen referencia al entorno de operación sobre el que se implantará el sistema y a la carga inicial de datos.
+En la preparación de la instalación ([IAS 3.1](../01-principal/07-ias.qmd#3-1)) se comprueba la disponibilidad de la infraestructura necesaria para configurar el entorno. El objetivo de esta tarea es que el Equipo de Seguridad refuerce las acciones que relativas a procedimientos de seguridad y control de accesos se realizan en IAS 3.1, verificando, basándose en las particularidades del sistema, que se cubren las medidas de seguridad necesarias que hacen referencia al entorno de operación sobre el que se implantará el sistema y a la carga inicial de datos.
 
 ##### Productos {.unnumbered .unlisted}
 
 ###### De entrada {.unnumbered .unlisted}
 
-* Requisitos de Seguridad del Entorno Tecnológico (DSI-SEG 2.1)
+* Requisitos de Seguridad del Entorno Tecnológico ([DSI-SEG 2.1](#dsi-seg-2-1))
 
 ###### De salida {.unnumbered .unlisted}
 
@@ -1851,8 +1851,8 @@ El Equipo de Seguridad estudia los resultados obtenidos en las pruebas de seguri
 
 ###### De entrada {.unnumbered .unlisted}
 
-* Resultado de las Pruebas de Implantación (IAS 5.2)
-* Diseño de Pruebas de Seguridad del Sistema y Aceptación (DSI-SEG 4.1)
+* Resultado de las Pruebas de Implantación ([IAS 5.2](../01-principal/07-ias.qmd#5-2))
+* Diseño de Pruebas de Seguridad del Sistema y Aceptación ([DSI-SEG 4.1](#dsi-seg-4-1))
 
 ###### De salida {.unnumbered .unlisted}
 
@@ -1974,7 +1974,7 @@ Deberá tenerse en cuenta el control y registro de incidentes, tanto provocados 
 
 ###### De entrada {.unnumbered .unlisted}
 
-* Requisitos de Seguridad del Entorno Tecnológico Previsto (DSI-SEG 2.1)
+* Requisitos de Seguridad del Entorno Tecnológico Previsto ([DSI-SEG 2.1](#dsi-seg-2-1))
 
 ###### De salida {.unnumbered .unlisted}
 
@@ -2041,7 +2041,7 @@ El Responsable de Seguridad, junto con el Equipo de Seguridad, debe estudiar si 
 
 ###### De entrada {.unnumbered .unlisted}
 
-* Plan de Mantenimiento (IAS 7.2)
+* Plan de Mantenimiento ([IAS 7.2](../01-principal/07-ias.qmd#7-2))
 
 ###### De salida {.unnumbered .unlisted}
 
@@ -2123,9 +2123,9 @@ Las peticiones de cambio originadas por problemas de seguridad deben tenerse en 
 
 ###### De entrada {.unnumbered .unlisted}
 
-* Propuesta de Solución (MSI 2.2)
-* Catálogo de Peticiones (MSI 2.2)
-* Funciones y Mecanismos de Seguridad (ASI-SEG 2.1)
+* Propuesta de Solución ([MSI 2.2](../01-principal/08-msi.qmd#2-2))
+* Catálogo de Peticiones ([MSI 2.2](../01-principal/08-msi.qmd#2-2))
+* Funciones y Mecanismos de Seguridad ([ASI-SEG 2.1](#asi-seg-2-1))
 
 ###### De salida {.unnumbered .unlisted}
 
@@ -2150,10 +2150,10 @@ Se establecen los mecanismos de seguridad que implementan esas funciones.
 
 ###### De entrada {.unnumbered .unlisted}
 
-* Recomendaciones de Seguridad (MSI-SEG 2.1)
-* Propuesta de Solución (MSI 2.2)
-* Catálogo de Peticiones (MSI 2.2)
-* Funciones y Mecanismos de Seguridad (ASI-SEG 2.1)
+* Recomendaciones de Seguridad ([MSI-SEG 2.1](#msi-seg-2-1))
+* Propuesta de Solución ([MSI 2.2](../01-principal/08-msi.qmd#2-2))
+* Catálogo de Peticiones ([MSI 2.2](../01-principal/08-msi.qmd#2-2))
+* Funciones y Mecanismos de Seguridad ([ASI-SEG 2.1](#asi-seg-2-1))
 
 ###### De salida {.unnumbered .unlisted}
 

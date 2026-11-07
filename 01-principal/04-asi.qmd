@@ -6,7 +6,7 @@ El objetivo de este proceso es la obtención de una especificación detallada de
 
 Al ser MÉTRICA Versión 3 una metodología que cubre tanto desarrollos estructurados como orientados a objetos, las actividades de ambas aproximaciones están integradas en una estructura común.
 
-En la primera actividad, Definición del Sistema ([ASI 1](04-asi.qmd#1)), se lleva a cabo la descripción inicial del sistema de información, a partir de los productos generados en el proceso Estudio de Viabilidad del Sistema (EVS). Se delimita el alcance del sistema, se genera un catálogo de requisitos generales y se describe el sistema mediante unos modelos iniciales de alto nivel. También se identifican los usuarios que participan en el proceso de análisis, determinando sus perfiles, responsabilidades y dedicaciones necesarias. Así mismo se elabora el plan de trabajo a seguir.
+En la primera actividad, Definición del Sistema ([ASI 1](04-asi.qmd#1)), se lleva a cabo la descripción inicial del sistema de información, a partir de los productos generados en el proceso [Estudio de Viabilidad del Sistema (EVS)](03-evs.qmd). Se delimita el alcance del sistema, se genera un catálogo de requisitos generales y se describe el sistema mediante unos modelos iniciales de alto nivel. También se identifican los usuarios que participan en el proceso de análisis, determinando sus perfiles, responsabilidades y dedicaciones necesarias. Así mismo se elabora el plan de trabajo a seguir.
 
 La definición de requisitos del nuevo sistema se realiza principalmente en la actividad Establecimiento de Requisitos ([ASI 2](04-asi.qmd#2)). El objetivo de esta actividad es elaborar un catálogo de requisitos detallado, que permita describir con precisión el sistema de información, y que además sirva de base para comprobar que es completa la especificación de los modelos obtenidos en las actividades Identificación de Subsistemas de Análisis ([ASI 3](04-asi.qmd#3)), Análisis de Casos de Uso ([ASI 4](04-asi.qmd#4)), Análisis de Clases ([ASI 5](04-asi.qmd#5)), Elaboración del Modelo de Datos ([ASI 6](04-asi.qmd#6)), Elaboración del Modelo de Procesos ([ASI 7](04-asi.qmd#7)) y Definición de Interfaces de Usuario ([ASI 8](04-asi.qmd#8)). Hay que hacer constar que estas actividades pueden provocar la actualización del catálogo, aunque no se refleja como producto de salida en las tareas de dichas actividades, ya que el objetivo de las mismas no es crear el catálogo sino definir modelos que soporten los requisitos.
 
@@ -40,7 +40,7 @@ ANÁLISIS DEL SISTEMAS DE INFORMACIÓN (ORIENTACIÓN A OBJETOS)
 
 ### Actividad ASI 1: Definición del Sistema {#asi-1}
 
-Esta actividad tiene como objetivo efectuar una descripción del sistema, delimitando su alcance, estableciendo las interfaces con otros sistemas e identificando a los usuarios representativos. Las tareas de esta actividad se pueden haber desarrollado ya en parte en el proceso de Estudio de Viabilidad del Sistema (EVS), de modo que se parte de los productos obtenidos en dicho proceso para proceder a su adecuación como punto de partida para definir el sistema de información.
+Esta actividad tiene como objetivo efectuar una descripción del sistema, delimitando su alcance, estableciendo las interfaces con otros sistemas e identificando a los usuarios representativos. Las tareas de esta actividad se pueden haber desarrollado ya en parte en el proceso de [Estudio de Viabilidad del Sistema (EVS)](03-evs.qmd), de modo que se parte de los productos obtenidos en dicho proceso para proceder a su adecuación como punto de partida para definir el sistema de información.
 
 ```{=html}
 <table class="avia-table avia-data-table">
@@ -157,9 +157,9 @@ Esta actividad tiene como objetivo efectuar una descripción del sistema, delimi
 
 #### Tarea ASI 1.1: Determinación del Alcance del Sistema {#asi-1-1}
 
-En esta tarea se delimita el sistema de información, utilizando como punto de partida el modelo de procesos especificado en la descripción de la solución del proceso Estudio de Viabilidad del Sistema (EVS). Se indica qué procesos pertenecen al ámbito del Sistema de Información y se identifican las entidades externas al sistema que aportan o reciben información. Asimismo, se obtiene un modelo conceptual de datos identificando las entidades y relaciones que forman parte del sistema de información objeto de este análisis a partir del modelo abstracto de datos generado en la tarea Evaluación de Alternativas y Selección (EVS 6.2).
+En esta tarea se delimita el sistema de información, utilizando como punto de partida el modelo de procesos especificado en la descripción de la solución del proceso [Estudio de Viabilidad del Sistema (EVS)](03-evs.qmd). Se indica qué procesos pertenecen al ámbito del Sistema de Información y se identifican las entidades externas al sistema que aportan o reciben información. Asimismo, se obtiene un modelo conceptual de datos identificando las entidades y relaciones que forman parte del sistema de información objeto de este análisis a partir del modelo abstracto de datos generado en la tarea Evaluación de Alternativas y Selección ([EVS 6.2](03-evs.qmd#6-2)).
 
-En el caso de análisis orientado a objetos, antes de la captura de requisitos empleando los casos de uso, puede ser conveniente establecer el contexto del sistema a partir del modelo de negocio obtenido en el proceso Estudio de Viabilidad del Sistema (EVS), y además, opcionalmente, del modelo de dominio. El modelo de negocio especifica los procesos a los que se quiere dar respuesta en el sistema de información, en forma de casos de uso de alto nivel, y el subconjunto de objetos del dominio requerido para ello.
+En el caso de análisis orientado a objetos, antes de la captura de requisitos empleando los casos de uso, puede ser conveniente establecer el contexto del sistema a partir del modelo de negocio obtenido en el proceso [Estudio de Viabilidad del Sistema (EVS)](03-evs.qmd#6-2), y además, opcionalmente, del modelo de dominio. El modelo de negocio especifica los procesos a los que se quiere dar respuesta en el sistema de información, en forma de casos de uso de alto nivel, y el subconjunto de objetos del dominio requerido para ello.
 
 En esta actividad se realiza, también, la definición del catálogo de requisitos del sistema a partir del catálogo de requisitos generado en el proceso [Estudio de Viabilidad del Sistema (EVS)](03-evs.qmd).
 
@@ -171,8 +171,8 @@ Para obtener esta información es necesario llevar a cabo sesiones de trabajo co
 
 ###### De entrada {.unnumbered .unlisted}
 
-* Descripción de la Solución (EVS 6.2)
-* Catálogo de requisitos (EVS 6.2)
+* Descripción de la Solución ([EVS 6.2](03-evs.qmd#6-2))
+* Catálogo de requisitos ([EVS 6.2](03-evs.qmd#6-2)])
 
 ###### De salida {.unnumbered .unlisted}
 
@@ -189,7 +189,7 @@ Técnicas
 
 * Diagrama de Flujo de Datos
 * Modelo Entidad / Relación extendido
-* Diagrama de Clases
+* [Diagrama de clases](../03-tecnicas/01-tecnicas.qmd#diagrama-de-clases)
 * Casos de Uso
 
 ##### Prácticas {.unnumbered .unlisted}
@@ -206,7 +206,7 @@ Técnicas
 
 #### Tarea ASI 1.2: Identificación del Entorno Tecnológico {#asi-1-2}
 
-El objetivo de esta tarea es definir, a alto nivel, el entorno tecnológico que se requiere para dar respuesta a las necesidades de información, especificando sus posibles condicionantes y restricciones. Para ello se tiene en cuenta el entorno tecnológico propuesto en la descripción de la solución, que se obtuvo en el proceso Estudio de Viabilidad del Sistema (EVS).
+El objetivo de esta tarea es definir, a alto nivel, el entorno tecnológico que se requiere para dar respuesta a las necesidades de información, especificando sus posibles condicionantes y restricciones. Para ello se tiene en cuenta el entorno tecnológico propuesto en la descripción de la solución, que se obtuvo en el proceso [Estudio de Viabilidad del Sistema (EVS)](03-evs.qmd).
 
 Esta información se obtiene mediante sesiones de trabajo con los usuarios y el apoyo de los responsables de Tecnologías de Información y Comunicaciones que se considere necesario.
 
@@ -215,7 +215,7 @@ Esta información se obtiene mediante sesiones de trabajo con los usuarios y el 
 ###### De entrada {.unnumbered .unlisted}
 
 * Catálogo de Requisitos ([ASI 1.1](04-asi.qmd#1-1))
-* Descripción de la Solución (EVS 6.2)
+* Descripción de la Solución ([EVS 6.2](03-evs.qmd#6-2))
   En Análisis Estructurado:
 * Contexto del Sistema ([ASI 1.1](04-asi.qmd#1-1))
   En Análisis Orientado a Objetos:
@@ -231,26 +231,26 @@ Esta información se obtiene mediante sesiones de trabajo con los usuarios y el 
 
 * Sesiones de Trabajo
 * Catalogación
-* Diagrama de Representación
+* [Diagrama de Representación](../03-tecnicas/01-tecnicas.qmd#diagrama-de-representacion)
 
 ##### Participantes {.unnumbered .unlisted}
 
 * Jefe de Proyecto
 * Analistas
 * Directores de los Usuarios
-* Equipo de Soporte Técnico
+* [Equipo de Soporte Técnico](../04-participantes/01-participantes.qmd#perfil-analista)
 
 #### Tarea ASI 1.3: Especificación de Estándares y Normas {#asi-1-3}
 
 La realización de esta tarea permite considerar las referencias para el sistema de información en estudio, desde el punto de vista de estándares, normativas, leyes o recomendaciones, que deben tenerse en cuenta a lo largo de todo el proceso de desarrollo.
 
-El producto resultante se obtiene actualizando el catálogo de normas elaborado en el proceso Estudio de Viabilidad del Sistema (EVS), incorporando toda la información que, desde el punto de vista de la instalación, se considere necesario contemplar para la elaboración de los distintos productos del ciclo de vida.
+El producto resultante se obtiene actualizando el catálogo de normas elaborado en el proceso [Estudio de Viabilidad del Sistema (EVS)](03-evs.qmd#6-2), incorporando toda la información que, desde el punto de vista de la instalación, se considere necesario contemplar para la elaboración de los distintos productos del ciclo de vida.
 
 ##### Productos {.unnumbered .unlisted}
 
 ###### De entrada {.unnumbered .unlisted}
 
-* Catálogo de Normas (EVS 3.1)
+* Catálogo de Normas ([EVS 3.1](03-evs.qmd#3-1)
 * Descripción General del Entorno Tecnológico del Sistema ([ASI 1.2](04-asi.qmd#1-2))
 * Estándares y Normativas de la Instalación (externo)
   En Análisis Estructurado:
@@ -273,11 +273,11 @@ El producto resultante se obtiene actualizando el catálogo de normas elaborado 
 * Jefe de Proyecto
 * Analistas
 * Directores de los Usuarios
-* Equipo de Soporte Técnico
+* [Equipo de Soporte Técnico](../04-participantes/01-participantes.qmd#perfil-analista)
 
 #### Tarea ASI 1.4: Identificación de los Usuarios Participantes y Finales {#asi-1-4}
 
-En esta tarea se identifican los usuarios participantes y finales, interlocutores tanto en la obtención de requisitos como en la validación de los distintos productos y la aceptación final del sistema. Para ello, se actualiza el catálogo de usuarios generado previamente en el Estudio de Viabilidad del Sistema (EVS).
+En esta tarea se identifican los usuarios participantes y finales, interlocutores tanto en la obtención de requisitos como en la validación de los distintos productos y la aceptación final del sistema. Para ello, se actualiza el catálogo de usuarios generado previamente en el [Estudio de Viabilidad del Sistema (EVS)](03-evs.qmd).
 
 Dada la importancia que la colaboración de los usuarios tiene en el proceso de obtención de los requisitos, es conveniente determinar quiénes van a participar en las sesiones de trabajo, especificando sus funciones y asignando responsabilidades. Así mismo, se informa del plan de trabajo a los usuarios identificados.
 
@@ -287,7 +287,7 @@ El alcance de este plan de trabajo se limita al proceso de análisis.
 
 ###### De entrada {.unnumbered .unlisted}
 
-* Catálogo de Usuarios (EVS 1.3 y EVS 2.2)
+* Catálogo de Usuarios ([EVS 1.3](03-evs.qmd#1-3) y [EVS 2.2](03-evs.qmd#2-2))
 * Catálogo de Requisitos ([ASI 1.2](04-asi.qmd#1-2))
   En Análisis Estructurado:
 * Contexto del Sistema ([ASI 1.1](04-asi.qmd#1-1))
@@ -479,7 +479,7 @@ Los productos obtenidos en la tarea Determinación del Alcance del Sistema ([ASI
 
 ##### Participantes {.unnumbered .unlisted}
 
-* Usuarios Expertos
+* [Usuarios Expertos](../04-participantes/01-participantes.qmd#perfil-directivo)
 * Analistas
 
 #### Tarea ASI 2.2: Especificación de Casos de Uso {#asi-2-2}
@@ -523,7 +523,7 @@ Para la obtención de esta información es imprescindible la participación acti
 
 ##### Participantes {.unnumbered .unlisted}
 
-* Usuarios Expertos
+* [Usuarios Expertos](../04-participantes/01-participantes.qmd#perfil-directivo)
 * Analistas
 
 #### Tarea ASI 2.3: Análisis de Requisitos
@@ -561,7 +561,7 @@ Mediante sesiones de trabajo con los usuarios, se contrastan las conclusiones de
 
 ##### Participantes {.unnumbered .unlisted}
 
-* Usuarios Expertos
+* [Usuarios Expertos](../04-participantes/01-participantes.qmd#perfil-directivo)
 * Analistas
 
 #### Tarea ASI 2.4: Validación de Requisitos {#asi-2-4}
@@ -593,7 +593,7 @@ Mediante esta tarea, los usuarios confirman que los requisitos especificados en 
 
 ##### Participantes {.unnumbered .unlisted}
 
-* Usuarios Expertos
+* [Usuarios Expertos](../04-participantes/01-participantes.qmd#perfil-directivo)
 * Analistas
 
 ### Actividad ASI 3: Identificación de Subsistemas de Análisis
@@ -834,7 +834,7 @@ Las clases que se identifican en esta tarea pueden ser:
 
 ##### Técnicas {.unnumbered .unlisted}
 
-* Diagrama de Clases
+* [Diagrama de clases](../03-tecnicas/01-tecnicas.qmd#diagrama-de-clases)
 
 ##### Participantes {.unnumbered .unlisted}
 
@@ -969,7 +969,7 @@ Para aquellas clases cuyo comportamiento dependa del estado en el que se encuent
 
 ##### Técnicas {.unnumbered .unlisted}
 
-* Diagrama de Clases
+* [Diagrama de clases](../03-tecnicas/01-tecnicas.qmd#diagrama-de-clases)
 * Diagrama de Transición de Estados
 
 ##### Participantes {.unnumbered .unlisted}
@@ -1005,7 +1005,7 @@ A medida que se establecen las relaciones entre las clases, se revisa la especif
 
 ##### Técnicas {.unnumbered .unlisted}
 
-* Diagrama de Clases
+* [Diagrama de clases](../03-tecnicas/01-tecnicas.qmd#diagrama-de-clases)
 
 ##### Participantes {.unnumbered .unlisted}
 
@@ -1027,7 +1027,7 @@ El objetivo de esta tarea es representar una organización de las clases que per
 
 ##### Técnicas {.unnumbered .unlisted}
 
-* Diagrama de Clases
+* [Diagrama de clases](../03-tecnicas/01-tecnicas.qmd#diagrama-de-clases)
 
 ##### Participantes {.unnumbered .unlisted}
 
@@ -1259,9 +1259,9 @@ Como resultado de esta tarea se obtiene una primera especificación del plan de 
 
 ##### Participantes {.unnumbered .unlisted}
 
-* Usuarios Expertos
+* [Usuarios Expertos](../04-participantes/01-participantes.qmd#perfil-directivo)
 * Analistas
-* Equipo de Soporte Técnico
+* [Equipo de Soporte Técnico](../04-participantes/01-participantes.qmd#perfil-analista)
 
 ### Actividad ASI 7: Elaboración del Modelo de Procesos {#asi-7}
 
@@ -1342,7 +1342,7 @@ Para cada proceso primitivo, también se debe especificar qué procesos van a es
 ##### Técnicas {.unnumbered .unlisted}
 
 * Diagrama de Flujo de Datos
-* Matricial
+* [Matricial](../03-tecnicas/01-tecnicas.qmd#tecnicas-matriciales)
 
 ##### Participantes {.unnumbered .unlisted}
 
@@ -1583,7 +1583,7 @@ Hay que establecer criterios similares para la interfaz impresa:
 
 ##### Participantes {.unnumbered .unlisted}
 
-* Usuarios Expertos
+* [Usuarios Expertos](../04-participantes/01-participantes.qmd#perfil-directivo)
 * Analistas
 
 #### Tarea ASI 8.2: Identificación de Perfiles y Diálogos {#asi-8-2}
@@ -1617,13 +1617,13 @@ En un análisis orientado a objetos, esta tarea no se realiza, puesto que se ha 
 
 ##### Prácticas {.unnumbered .unlisted}
 
-* Diagrama de Representación
+* [Diagrama de Representación](../03-tecnicas/01-tecnicas.qmd#diagrama-de-representacion)
 * Catalogación
 * Sesiones de Trabajo
 
 ##### Participantes {.unnumbered .unlisted}
 
-* Usuarios Expertos
+* [Usuarios Expertos](../04-participantes/01-participantes.qmd#perfil-directivo)
 * Analistas
 
 #### Tarea ASI 8.3: Especificación de Formatos Individuales de la Interfaz de Pantalla {#asi-8-3}
@@ -1670,7 +1670,7 @@ En la definición de cada interfaz de pantalla se deben definir aquellos aspecto
 
 ##### Participantes {.unnumbered .unlisted}
 
-* Usuarios Expertos
+* [Usuarios Expertos](../04-participantes/01-participantes.qmd#perfil-directivo)
 * Analistas
 
 #### Tarea ASI 8.4: Especificación del Comportamiento Dinámico de la Interfaz {#asi-8-4}
@@ -1705,7 +1705,7 @@ Se propone, opcionalmente, la realización de prototipos como técnica de ayuda 
 ##### Técnicas {.unnumbered .unlisted}
 
 * Diagrama de Transición de Estados
-* Matricial
+* [Matricial](../03-tecnicas/01-tecnicas.qmd#tecnicas-matriciales)
 * Diagrama de Interacción de Objetos
 
 ##### Prácticas {.unnumbered .unlisted}
@@ -1715,7 +1715,7 @@ Se propone, opcionalmente, la realización de prototipos como técnica de ayuda 
 
 ##### Participantes {.unnumbered .unlisted}
 
-* Usuarios Expertos
+* [Usuarios Expertos](../04-participantes/01-participantes.qmd#perfil-directivo)
 * Analistas
 
 
@@ -1746,7 +1746,7 @@ Opcionalmente, se recomienda la utilización de prototipos.
 
 ##### Participantes {.unnumbered .unlisted}
 
-* Usuarios Expertos
+* [Usuarios Expertos](../04-participantes/01-participantes.qmd#perfil-directivo)
 * Analistas
 
 ### Actividad ASI 9: Análisis de Consistencia y Especificación de Requisitos {#asi-9}
@@ -2009,7 +2009,7 @@ El resultado del análisis de consistencia en un análisis orientado a objetos e
 
 ##### Técnicas {.unnumbered .unlisted}
 
-* Matricial
+* [Matricial](../03-tecnicas/01-tecnicas.qmd#tecnicas-matriciales)
 
 ##### Prácticas {.unnumbered .unlisted}
 
@@ -2068,7 +2068,7 @@ Para la validación de la interfaz de usuario se recomienda un prototipo, ya sea
 ##### Participantes {.unnumbered .unlisted}
 
 * Analistas
-* Usuarios Expertos
+* [Usuarios Expertos](../04-participantes/01-participantes.qmd#perfil-directivo)
 
 #### Tarea ASI 9.4: Elaboración de la Especificación de Requisitos Software (ERS) {#asi-9-4}
 
@@ -2259,8 +2259,8 @@ En esta tarea se especifican y justifican de los niveles de pruebas a realizar, 
 
 * Jefe de proyecto
 * Analistas
-* Equipo de Soporte Técnico
-* Usuarios Expertos
+* [Equipo de Soporte Técnico](../04-participantes/01-participantes.qmd#perfil-analista)
+* [Usuarios Expertos](../04-participantes/01-participantes.qmd#perfil-directivo)
 
 #### Tarea ASI 10.2: Definición de Requisitos del Entorno de Pruebas {#asi-10-2}
 
@@ -2298,8 +2298,8 @@ Independientemente de la existencia o no de dichos entornos, en esta tarea se in
 
 * Jefe de proyecto
 * Analistas
-* Equipo de Soporte Técnico
-* Usuarios Expertos
+* [Equipo de Soporte Técnico](../04-participantes/01-participantes.qmd#perfil-analista)
+* [Usuarios Expertos](../04-participantes/01-participantes.qmd#perfil-directivo)
 
 #### Tarea ASI 10.3: Definición de las Pruebas de Aceptación del Sistema {#asi-10-3}
 
@@ -2347,8 +2347,8 @@ Los criterios de aceptación deben ser definidos de forma clara, prestando espec
 
 * Jefe de Proyecto
 * Analistas
-* Equipo de Soporte Técnico
-* Usuarios Expertos
+* [Equipo de Soporte Técnico](../04-participantes/01-participantes.qmd#perfil-analista)
+* [Usuarios Expertos](../04-participantes/01-participantes.qmd#perfil-directivo)
 
 ### Actividad ASI 11: Aprobación del Análisis del Sistema de Información {#asi-11}
 
@@ -2401,7 +2401,7 @@ En esta tarea se realiza la presentación del análisis del sistema de informaci
 
 ##### Técnicas {.unnumbered .unlisted}
 
-* Presentación
+* [Presentación](../03-tecnicas/01-tecnicas.qmd#presentaciones)
 
 ##### Participantes {.unnumbered .unlisted}
 

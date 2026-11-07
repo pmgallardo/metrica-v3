@@ -4,13 +4,13 @@
 
 La Gestión de Proyectos tiene como finalidad principal la planificación, el seguimiento y control de las actividades y de los recursos humanos y materiales que intervienen en el desarrollo de un Sistema de Información. Como consecuencia de este control es posible conocer en todo momento qué problemas se producen y resolverlos o paliarlos de manera inmediata.
 
-La Interfaz de Gestión de Proyectos de MÉTRICA Versión 3 contempla proyectos de desarrollo de Sistemas de Información en sentido amplio. Es decir, acorde con EUROMÉTODO se consideran proyectos de desarrollo de nuevos Sistemas de Información y también los proyectos de ampliación y mejora de los ya existentes; estos últimos, contemplados en MÉTRICA Versión 3 al proceso de Mantenimiento del Sistema de Información (MSI).
+La Interfaz de Gestión de Proyectos de MÉTRICA Versión 3 contempla proyectos de desarrollo de Sistemas de Información en sentido amplio. Es decir, acorde con EUROMÉTODO se consideran proyectos de desarrollo de nuevos Sistemas de Información y también los proyectos de ampliación y mejora de los ya existentes; estos últimos, contemplados en MÉTRICA Versión 3 al proceso de [Mantenimiento del Sistema de Información (MSI)](../01-principal/08-msi.qmd).
 
 Las actividades de la Interfaz de Gestión de Proyectos se presentan en el siguiente esquema, en el que se aprecian las áreas que cubre. Se distinguen tres grupos de actividades:
 
-- Actividades de Inicio del Proyecto (GPI). Al principio del proyecto, al concluir el proceso Estudio de Viabilidad del Sistema (EVS), se realizarán las actividades de Estimación de Esfuerzo y Planificación del proyecto.
-- Actividades de Seguimiento y Control (GPS). Comprenden desde la asignación de las tareas hasta su aceptación interna por parte del equipo de proyecto, incluyendo la gestión de incidencias y cambios en los requisitos que puedan presentarse y afectar a la planificación del proyecto. El Seguimiento y Control del proyecto se realizan durante los procesos de Análisis, Diseño, Construcción, Implantación y Aceptación, y Mantenimiento del Sistema de Información, para vigilar el correcto desarrollo de las actividades y tareas establecidas en la planificación.
-- Actividades de Finalización del Proyecto (GPF). Por último, al concluir el proyecto se realizan las tareas propias de Cierre del Proyecto y Registro de la Documentación de Gestión.
+- [Actividades de Inicio del Proyecto (GPI)](04-gp.qmd#gpi). Al principio del proyecto, al concluir el proceso [Estudio de Viabilidad del Sistema (EVS)](../01-principal/03-evs.qmd), se realizarán las actividades de Estimación de Esfuerzo y Planificación del proyecto.
+- [Actividades de Seguimiento y Control (GPS)](04-gp.qmd#gps). Comprenden desde la asignación de las tareas hasta su aceptación interna por parte del equipo de proyecto, incluyendo la gestión de incidencias y cambios en los requisitos que puedan presentarse y afectar a la planificación del proyecto. El Seguimiento y Control del proyecto se realizan durante los procesos de Análisis, Diseño, Construcción, Implantación y Aceptación, y Mantenimiento del Sistema de Información, para vigilar el correcto desarrollo de las actividades y tareas establecidas en la planificación.
+- [Actividades de Finalización del Proyecto (GPF)](04-gp.qmd#gpf). Por último, al concluir el proyecto se realizan las tareas propias de Cierre del Proyecto y Registro de la Documentación de Gestión.
 
 Las técnicas y prácticas utilizadas en la Gestión de Proyectos se describen en la Guía de Técnicas de MÉTRICA Versión 3. En función de las características del proyecto puede ser aconsejable emplear herramientas software de soporte a las técnicas, disponibles en el mercado.
 
@@ -18,12 +18,12 @@ Las técnicas y prácticas utilizadas en la Gestión de Proyectos se describen e
 
 ## Actividades de Inicio del Proyecto
 
-Las actividades al inicio de un proyecto tienen un doble objetivo: estimar el esfuerzo a realizar para desarrollar el sistema y planificar las actividades de dicho desarrollo. Para ello, tomando como punto de partida la Solución Propuesta en el Estudio de Viabilidad del Sistema (EVS 6), se identifican los elementos a desarrollar, se calcula el esfuerzo a realizar, y se planifican las actividades del proyecto comprendiendo los aspectos de recursos, programación de tareas y establecimiento de un calendario de entregas y recepciones entre el cliente y los proveedores.
+Las actividades al inicio de un proyecto tienen un doble objetivo: estimar el esfuerzo a realizar para desarrollar el sistema y planificar las actividades de dicho desarrollo. Para ello, tomando como punto de partida la Solución Propuesta en el Estudio de Viabilidad del Sistema ([EVS 6](../01-principal/03-evs.qmd#evs-6)), se identifican los elementos a desarrollar, se calcula el esfuerzo a realizar, y se planifican las actividades del proyecto comprendiendo los aspectos de recursos, programación de tareas y establecimiento de un calendario de entregas y recepciones entre el cliente y los proveedores.
 
 Actividades
 
-- Actividad GPI 1: Estimación de Esfuerzo
-- Actividad GPI 2: Planificación
+- [Actividad GPI 1: Estimación de Esfuerzo](#gpi-1)
+- [Actividad GPI 2: Planificación](#gpi-2)
 
 ### Actividad GPI 1: Estimación de Esfuerzo {#gpi-1}
 
@@ -91,23 +91,23 @@ Esta actividad se compone de las tareas que aparecen en la siguiente tabla.
 
 #### Tarea GPI 1.1: Identificación de Elementos a Desarrollar {#gpi-1-1}
 
-Esta tarea tiene como finalidad determinar el número y características de los elementos a desarrollar a partir del Modelo de descomposición en subsistemas de la alternativa seleccionada (EVS 6.2), para el posterior cálculo del esfuerzo necesario para ello. En el caso de los desarrollos estructurados habrán de tenerse en cuenta las funciones, entidades, datos de entrada y datos de salida. En el caso de desarrollos orientados a objeto se tendrán en cuenta las clases, propiedades y métodos asociados.
+Esta tarea tiene como finalidad determinar el número y características de los elementos a desarrollar a partir del Modelo de descomposición en subsistemas de la alternativa seleccionada ([EVS 6.2](../01-principal/03-evs.qmd#6-2)), para el posterior cálculo del esfuerzo necesario para ello. En el caso de los desarrollos estructurados habrán de tenerse en cuenta las funciones, entidades, datos de entrada y datos de salida. En el caso de desarrollos orientados a objeto se tendrán en cuenta las clases, propiedades y métodos asociados.
 
 ##### Productos {.unnumbered .unlisted}
 
 ###### De entrada {.unnumbered .unlisted}
 
-* Modelo de descomposición en subsistemas (EVS 6.2)
+* Modelo de descomposición en subsistemas ([EVS 6.2](../01-principal/03-evs.qmd#6-2))
 
 ***Estructurado***
 
-* Modelo abstracto de datos (EVS 6.2)
-* Modelo de procesos (EVS 6.2)
+* Modelo abstracto de datos ([EVS 6.2](../01-principal/03-evs.qmd#6-2))
+* Modelo de procesos ([EVS 6.2](../01-principal/03-evs.qmd#6-2))
 
 ***Orientación a Objeto***
 
-* Modelo de negocio (EVS 6.2)
-* Modelo de dominio (EVS 6.2)
+* Modelo de negocio ([EVS 6.2](../01-principal/03-evs.qmd#6-2))
+* Modelo de dominio ([EVS 6.2](../01-principal/03-evs.qmd#6-2))
 
 ###### De salida {.unnumbered .unlisted}
 
@@ -142,12 +142,12 @@ La técnica que se propone variará según se trate de desarrollos orientados a 
 
 ***Estructurado***
 
-* Catálogo de funciones (GPI 1.1)
-* Catálogo de entidades (GPI 1.1)
+* Catálogo de funciones ([GPI 1.1](#gpi-1-1))
+* Catálogo de entidades ([GPI 1.1](#gpi-1-1))
 
 ***Orientación a Objeto***
 
-* Catálogo de clases (GPI 1.1)
+* Catálogo de clases ([GPI 1.1](#gpi-1-1))
 
 ###### De salida {.unnumbered .unlisted}
 
@@ -174,7 +174,7 @@ La técnica que se propone variará según se trate de desarrollos orientados a 
 
 El objetivo de esta actividad es definir y preparar las condiciones de trabajo, estableciendo recursos, fechas y costes, para lograr los objetivos que se persiguen con el proyecto.
 
-La planificación de un proyecto establece las fechas previstas para la realización del conjunto de actividades que lo componen, teniendo en cuenta que se deben emplear para ello unos recursos que implican unos costes, estimados inicialmente en EVS 5.1, cuyo conjunto forma el presupuesto base para lograr el resultado comprometido con el Cliente o Usuario. Así mismo deberán reflejarse hitos y calendario de entregas de productos al cliente.
+La planificación de un proyecto establece las fechas previstas para la realización del conjunto de actividades que lo componen, teniendo en cuenta que se deben emplear para ello unos recursos que implican unos costes, estimados inicialmente en [EVS 5.1](../01-principal/03-evs.qmd#5-1), cuyo conjunto forma el presupuesto base para lograr el resultado comprometido con el Cliente o Usuario. Así mismo deberán reflejarse hitos y calendario de entregas de productos al cliente.
 
 La actividad de Planificación se compone de las tareas que aparecen en la siguiente tabla.
 
@@ -316,7 +316,7 @@ EUROMÉTODO ofrece una buena aproximación a distintas estrategias de desarrollo
 
 ###### De entrada {.unnumbered .unlisted}
 
-* Planificación General del Proyecto (GPI 1.2)
+* Planificación General del Proyecto ([GPI 1.2](#gpi-1-2))
 
 ###### De salida {.unnumbered .unlisted}
 
@@ -336,7 +336,7 @@ La estructura de procesos, actividades y tareas que se presenta en MÉTRICA Vers
 
 ###### De entrada {.unnumbered .unlisted}
 
-* Planificación General del Proyecto (GPI 2.1)
+* Planificación General del Proyecto ([GPI 2.1](#gpi-2-1))
 
 ###### De salida {.unnumbered .unlisted}
 
@@ -368,9 +368,9 @@ Se detallan los condicionantes y restricciones existentes, por ejemplo en cuanto
 
 ###### De entrada {.unnumbered .unlisted}
 
-* Catálogo de productos a generar (GPI 2.2)
+* Catálogo de productos a generar ([GPI 2.2](#gpi-2-2))
 * Planificación General del Proyecto:
-  * Estructura de actividades (GPI 2.2)
+  * Estructura de actividades ([GPI 2.2](#gpi-2-2))
 
 ###### De salida {.unnumbered .unlisted}
 
@@ -404,7 +404,7 @@ Los recursos del proyecto se especifican mediante la Estructura de Descomposici�
 
 ###### De entrada {.unnumbered .unlisted}
 
-* Planificación General del Proyecto (GPI 2.3)
+* Planificación General del Proyecto ([GPI 2.3](#gpi-2-3))
 
 ###### De salida {.unnumbered .unlisted}
 
@@ -427,7 +427,7 @@ Los recursos del proyecto se especifican mediante la Estructura de Descomposici�
 
 #### Tarea GPI 2.5: Presentación y Aceptación de la Planificación General del Proyecto {#gpi-2-5}
 
-El Comité de Dirección había aprobado con anterioridad (EVS 6.3) la Solución Propuesta junto con las normas y criterios que deben regir su desarrollo. El objetivo de esta tarea es la presentación de la Planificación General del Proyecto al Comité de Seguimiento para su aprobación.
+El Comité de Dirección había aprobado con anterioridad ([EVS 6.3](../01-principal/03-evs.qmd#6-3)) la Solución Propuesta junto con las normas y criterios que deben regir su desarrollo. El objetivo de esta tarea es la presentación de la Planificación General del Proyecto al Comité de Seguimiento para su aprobación.
 
 Es precisa esta aceptación como paso previo a la puesta en marcha de los procesos de desarrollo contemplados en MÉTRICA Versión 3 y que conforman la estructura del proyecto.
 
@@ -435,7 +435,7 @@ Es precisa esta aceptación como paso previo a la puesta en marcha de los proces
 
 ###### De entrada {.unnumbered .unlisted}
 
-* Planificación General del Proyecto (GPI 2.4)
+* Planificación General del Proyecto ([GPI 2.4](#gpi-2-4))
 
 ###### De salida {.unnumbered .unlisted}
 
@@ -443,7 +443,7 @@ Es precisa esta aceptación como paso previo a la puesta en marcha de los proces
 
 ##### Prácticas {.unnumbered .unlisted}
 
-* Presentación
+* [Presentación](../03-tecnicas/01-tecnicas.qmd#presentaciones)
 
 ##### Participantes {.unnumbered .unlisted}
 
@@ -467,7 +467,7 @@ El siguiente gráfico muestra la secuencia de actividades de Seguimiento y Contr
 
 El objetivo de esta actividad es la asignación de tareas a los miembros del equipo de proyecto, documentando los datos necesarios para su control posterior.
 
-Esta actividad contempla una única tarea, que habrá que realizar para que todas las tareas que figuran en la Planificación detallada del proyecto (GPI 2), tengan asignado personal del equipo de proyecto para su desarrollo.
+Esta actividad contempla una única tarea, que habrá que realizar para que todas las tareas que figuran en la Planificación detallada del proyecto ([GPI 2](#gpi-2)), tengan asignado personal del equipo de proyecto para su desarrollo.
 
 #### Tarea GPS 1.1: Asignación de Tarea {#gps-1-1}
 
@@ -481,7 +481,7 @@ El Jefe de Proyecto debe reflejar en la planificación las asignaciones realizad
 
 * Información profesional de los técnicos (externo)
 * Planificación General del Proyecto
-  * Planificación detallada del proyecto (GPI 2)
+  * Planificación detallada del proyecto ([GPI 2](#gpi-2))
 
 ###### De salida {.unnumbered .unlisted}
 
@@ -546,7 +546,7 @@ La estructura del proyecto en procesos, actividades y tareas descritos en MÉTRI
 
 ###### De entrada {.unnumbered .unlisted}
 
-* Fichas de asignación de tareas (GPS 1.1)
+* Fichas de asignación de tareas ([GPS 1.1](#gps-1-1))
 
 ##### Prácticas {.unnumbered .unlisted}
 
@@ -555,7 +555,7 @@ La estructura del proyecto en procesos, actividades y tareas descritos en MÉTRI
 ##### Participantes {.unnumbered .unlisted}
 
 * [Jefe de Proyecto](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
-* Equipo de proyecto
+* [Equipo del Proyecto](../04-participantes/01-participantes.qmd#perfil-analista)
 
 
 ### Actividad GPS 3: Seguimiento de Tareas {#gps-3}
@@ -616,7 +616,7 @@ A partir de la información obtenida del equipo de desarrollo, el Jefe de Proyec
 
 ###### De entrada {.unnumbered .unlisted}
 
-* Ficha de asignación de tarea (GPS 1.1)
+* Ficha de asignación de tarea ([GPS 1.1](#gps-1-1))
 
 ###### De salida {.unnumbered .unlisted}
 
@@ -637,7 +637,7 @@ Dentro de las actividades de Seguimiento y Control se trata de manera especial l
 
 Mención especial merecen los cambios de requisitos, ya que son un tipo especial de incidencia que exige un tratamiento especial, motivo por el cual se aborda aparte en este documento.
 
-Las siguientes actividades se realizarán en el caso de que durante el seguimiento de tareas (GPS 3.1) se detecte alguna incidencia, y luego se seguirá con la actividad GPS 10.
+Las siguientes actividades se realizarán en el caso de que durante el seguimiento de tareas ([GPS 3.1](#gps-3-1)) se detecte alguna incidencia, y luego se seguirá con la actividad GPS 10.
 
 #### Actividad GPS 4: Análisis y Registro de la Incidencia {#gps-4}
 
@@ -736,7 +736,7 @@ Una vez identificadas las tareas a las que afecta la incidencia se evalúa su im
 
 * Conocimiento del problema (externo)
 * Planificación General del Proyecto
-  * Planificación detallada del proyecto (GPI 2 o GPS 11)
+  * Planificación detallada del proyecto ([GPI 2](#gpi-2) o [GPS 11](#gps-11))
 
 ###### De salida {.unnumbered .unlisted}
 
@@ -756,7 +756,7 @@ Dependiendo del tipo de incidencia se plantean posibles alternativas de solució
 
 El Jefe de Proyecto elegirá entre las alternativas propuestas la forma de solucionar la incidencia, designando en su caso al miembro o miembros del equipo de proyecto encargados de realizar los trabajos que conlleve su resolución y que se realizarán en MÉTRICA Versión 3.
 
-De acuerdo con la solución adoptada habrá que revisar y ajustar la planificación del proyecto en la actividad Actualización de la Planificación (GPS 10).
+De acuerdo con la solución adoptada habrá que revisar y ajustar la planificación del proyecto en la actividad Actualización de la Planificación ([GPS 10](#gps-10)).
 
 ##### Productos {.unnumbered .unlisted}
 
@@ -764,7 +764,7 @@ De acuerdo con la solución adoptada habrá que revisar y ajustar la planificaci
 
 * Conocimiento del problema (externo)
 * Planificación General del Proyecto
-  * Planificación detallada del proyecto (GPI 2 o GPS 11)
+  * Planificación detallada del proyecto ([GPI 2](#gpi-2) o [GPS 11](#gpi-11))
 * Ficha de Incidencia
 
 ###### De salida {.unnumbered .unlisted}
@@ -789,7 +789,7 @@ Toda incidencia producida durante el desarrollo del proyecto debe reflejarse en 
 
 ###### De entrada {.unnumbered .unlisted}
 
-* Ficha de Incidencia (GPS 4.1)
+* Ficha de Incidencia ([GPS 4.1](#gps-4-1))
 
 ###### De salida {.unnumbered .unlisted}
 
@@ -822,7 +822,7 @@ Todos los cambios de requisitos que se produzcan durante el desarrollo de un pro
 
 Es importante mencionar que las actividades de control y seguimiento de los cambios de requisitos se diluyen dentro de las actividades normales de seguimiento y control de todo el proyecto.
 
-Todos los cambios de requisitos posteriores a la entrega del sistema y su paso a producción (IAS 10) se tratan en el proceso de Mantenimiento de Sistemas de Información (MSI) de MÉTRICA Versión 3.
+Todos los cambios de requisitos posteriores a la entrega del sistema y su paso a producción ([IAS 10](../01-principal/07-ias.qmd#10)) se tratan en el proceso de Mantenimiento de Sistemas de Información (MSI) de MÉTRICA Versión 3.
 
 Actividades
 
@@ -996,7 +996,7 @@ El Jefe de Proyecto entrega la petición de cambio al Equipo del Proyecto para s
 ###### De entrada {.unnumbered .unlisted}
 
 * Registro de Cambios
-  * Formulario de Petición de Cambio (GPS 5.1)
+  * Formulario de Petición de Cambio ([GPS 5.1](#gps-5-1))
 
 ###### De salida {.unnumbered .unlisted}
 
@@ -1022,8 +1022,8 @@ Una vez conocidas las nuevas necesidades, el Equipo del Proyecto por medio de su
 ###### De entrada {.unnumbered .unlisted}
 
 * Registro de Cambios
-  * Catálogo de Necesidades (GPS 6.1)
-  * Formulario de Petición de Cambio (GPS 5.1)
+  * Catálogo de Necesidades ([GPS 6.1](#gps-6-1))
+  * Formulario de Petición de Cambio ([GPS 5.1](#gps-5-1))
 
 ###### De salida {.unnumbered .unlisted}
 
@@ -1048,10 +1048,10 @@ A partir del Análisis Funcional y Diseño Técnico obtenido en la tarea anterio
 ###### De entrada {.unnumbered .unlisted}
 
 * Registro de Cambios
-  * Formulario de Petición de Cambio (GPS 5.1)
-  * Catálogo de necesidades (GPS 6.1)
-  * Análisis Funcional del cambio (GPS 6.2)
-  * Diseño Técnico (GPS 6.2)
+  * Formulario de Petición de Cambio ([GPS 5.1](#gps-5-1))
+  * Catálogo de necesidades ([GPS 6.1](#gps-6-1))
+  * Análisis Funcional del cambio ([GPS 6.2](#gps-6-2))
+  * Diseño Técnico ([GPS 6.2](#gps-6-2))
 
 ###### De salida {.unnumbered .unlisted}
 
@@ -1121,7 +1121,7 @@ Como consecuencia de esta evaluación pueden darse cuatro posibilidades:
 ###### De entrada {.unnumbered .unlisted}
 
 * Registro de Cambios:
-  * Propuesta de Solución (GPS 6.3)
+  * Propuesta de Solución ([GPS 6.3](#gps-6-3))
 
 ###### De salida {.unnumbered .unlisted}
 
@@ -1210,9 +1210,9 @@ A partir de la solución aprobada para la petición de cambio, es necesario hace
 ###### De entrada {.unnumbered .unlisted}
 
 * Registro de Cambios:
-  * Análisis Funcional del cambio (GPS 6.2)
-  * Diseño Técnico (GPS 6.2)
-  * Propuesta de Solución (GPS 6.3)
+  * Análisis Funcional del cambio ([GPS 6.2](#gps-6-2))
+  * Diseño Técnico ([GPS 6.2](#gps-6-2))
+  * Propuesta de Solución ([GPS 6.3](#gps-6-3))
 
 ###### De salida {.unnumbered .unlisted}
 
@@ -1237,7 +1237,7 @@ Una vez hecha la estimación del esfuerzo es necesario planificar las actividade
 ###### De entrada {.unnumbered .unlisted}
 
 * Registro de Cambios:
-  * Estimación de Esfuerzo (GPS 8.1)
+  * Estimación de Esfuerzo ([GPS 8.1](#gps-8-1))
 
 ###### De salida {.unnumbered .unlisted}
 
@@ -1301,7 +1301,7 @@ Todo cambio de requisitos producido durante el desarrollo del proyecto debe refl
 
 ###### De entrada {.unnumbered .unlisted}
 
-* Planificación General del Proyecto (GPS 8.2)
+* Planificación General del Proyecto ([GPS 8.2](#gps-8-2))
 
 ###### De salida {.unnumbered .unlisted}
 
@@ -1356,7 +1356,7 @@ El Jefe de Proyecto, o el responsable del miembro, deberá comprobar que la tare
 
 ###### De entrada {.unnumbered .unlisted}
 
-* Ficha de asignación de tarea (GPS 1.1)
+* Ficha de asignación de tarea ([GPS 1.1](#gps-1-1))
 
 ###### De salida {.unnumbered .unlisted}
 
@@ -1456,7 +1456,7 @@ En la tabla siguiente se especifican las tareas que comprende esta actividad.
 
 #### Tarea GPS 11.1: Actualización de Tareas {#gps-11-1}
 
-Con los datos obtenidos en el Seguimiento de Tareas (GPS 3.1), Gestión de Incidencias (GPS 4.2) y Cambios de Requisitos (GPS 8.2), el Jefe de Proyecto debe actualizar la Planificación detallada del Proyecto para adecuar el estado de cada tarea a la situación real. De esta forma se tendrá una visión de conjunto que será la que habrá que tener en cuenta a la hora de evaluar la marcha del proyecto.
+Con los datos obtenidos en el Seguimiento de Tareas ([GPS 3.1](#gps-3-1)), Gestión de Incidencias ([GPS 4.2](#gps-4-2)) y Cambios de Requisitos ([GPS 8.2](#gps-8-2)), el Jefe de Proyecto debe actualizar la Planificación detallada del Proyecto para adecuar el estado de cada tarea a la situación real. De esta forma se tendrá una visión de conjunto que será la que habrá que tener en cuenta a la hora de evaluar la marcha del proyecto.
 
 Partirá de la Planificación General del Proyecto aceptada en la actividad GPI 2, de la realizada en GPS 8.2 como consecuencia de cambios en los requisitos, o bien de la que haya resultado de esta misma tarea si es que ya ha habido otras actualizaciones anteriores.
 
@@ -1465,10 +1465,10 @@ Partirá de la Planificación General del Proyecto aceptada en la actividad GPI 
 ###### De entrada {.unnumbered .unlisted}
 
 * Planificación General del Proyecto
-  * Planificación detallada del Proyecto (GPI 2 o GPS 11.1)
+  * Planificación detallada del Proyecto ([GPI 2](#gpi-2) o [GPS 11.1](#gps-11-1))
 * Planificación General del Proyecto
-  * Planificación de las actividades (GPS 8.2)
-* Fichas de asignación de tareas (GPS 1.1)
+  * Planificación de las actividades ([GPS 8.2](#gps-8-2))
+* Fichas de asignación de tareas ([GPS 1.1](#gps-1-1))
 
 ###### De salida {.unnumbered .unlisted}
 
@@ -1492,7 +1492,7 @@ El seguimiento de un proyecto en un punto cualquiera de su desarrollo nos da la 
 ###### De entrada {.unnumbered .unlisted}
 
 * Planificación General del Proyecto
-  * Planificación detallada del proyecto (GPS 11.1)
+  * Planificación detallada del proyecto ([GPS 11.1](#gps-11-1))
 
 ###### De salida {.unnumbered .unlisted}
 
@@ -1514,9 +1514,9 @@ A partir de la información obtenida en las tareas anteriores, el Jefe de Proyec
 
 ###### De entrada {.unnumbered .unlisted}
 
-* Fichas de seguimiento (GPS 3.1)
+* Fichas de seguimiento ([GPS 3.1](#gps-3-1))
 * Planificación General del Proyecto
-  * Planificación detallada del proyecto (GPS 11.1)
+  * Planificación detallada del proyecto ([GPS 11.1](#gps-11-1))
 * Diagrama de extrapolación
 
 ###### De salida {.unnumbered .unlisted}
@@ -1582,7 +1582,7 @@ La tabla siguiente refleja la tarea que comprende esta actividad.
 
 #### Tarea GPS 12.1: Reunión Interna de Seguimiento {#gps-12-1}
 
-Cuando el Jefe de Proyecto tiene toda la información sobre la marcha del proyecto y el seguimiento de tareas (GPS 3.1), debe reunirse con todo el equipo del proyecto para terminar de analizar las desviaciones.
+Cuando el Jefe de Proyecto tiene toda la información sobre la marcha del proyecto y el seguimiento de tareas ([GPS 3.1](#gps-3-1)), debe reunirse con todo el equipo del proyecto para terminar de analizar las desviaciones.
 
 Es importante que el Jefe de Proyecto escuche y entienda las explicaciones dadas por el Equipo del Proyecto, ya que muchas de las desviaciones podrán resolverse realizando algún ajuste.
 
@@ -1592,7 +1592,7 @@ Las explicaciones dadas por el Equipo del Proyecto servirán, en gran medida, pa
 
 ###### De entrada {.unnumbered .unlisted}
 
-* Informe de seguimiento en el período (GPS 11.3)
+* Informe de seguimiento en el período ([GPS 11.3](#gps-11-3))
 
 ###### De salida {.unnumbered .unlisted}
 
@@ -1615,9 +1615,9 @@ En MÉTRICA Versión 3, la aceptación por parte del Cliente se realiza, de acue
 
 * Aprobación del Análisis del Sistema de Información ([ASI 11](../01-principal/04-asi.qmd#11)).
 * Aprobación del Diseño del Sistema de Información ([DSI 12](../01-principal/05-dsi.qmd#12)).
-* Aprobación del Sistema de Información (CSI 9).
-* Presentación y Aprobación del Sistema de Información (IAS 9).
-* Mantenimiento del Sistema de Información (MSI 4).
+* Aprobación del Sistema de Información ([CSI 9](../01-principal/06-csi.qmd#9)).
+* Presentación y Aprobación del Sistema de Información ([IAS 9](../01-principal/07-ias.qmd#9)).
+* Mantenimiento del Sistema de Información ([MSI 4](../01-principal/08-msi.qmd#4)).
 
 En la tabla siguiente se especifican la tarea que comprende esta actividad.
 
@@ -1661,7 +1661,7 @@ El Jefe de Proyecto debe verificar personalmente que los resultados de las activ
 
 ###### De entrada {.unnumbered .unlisted}
 
-* Ficha de Seguimiento de Tarea (GPS 3.1)
+* Ficha de Seguimiento de Tarea ([GPS 3.1](#gps-3-1))
 
 ###### De salida {.unnumbered .unlisted}
 
@@ -1764,8 +1764,8 @@ A modo de ejemplo se propone incluir en el Histórico de Proyectos información 
 
 ###### De entrada {.unnumbered .unlisted}
 
-* Planificación General del Proyecto (GPI 2.5, GPS 11.1)
-* Registro de Incidencias (GPS 5.1)
+* Planificación General del Proyecto ([GPI 2.5](#gpi-2-5), [GPS 11.1](#gps-11-1))
+* Registro de Incidencias ([GPS 5.1](#gps-5-1))
 
 ###### De salida {.unnumbered .unlisted}
 

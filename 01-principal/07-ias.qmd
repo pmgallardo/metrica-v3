@@ -34,7 +34,7 @@ Implantación y aceptación del sistema
 
 ### Actividad IAS 1: Establecimiento del Plan de Implantación {#ias-1}
 
-En esta actividad se revisa la estrategia de implantación para el sistema, establecida inicialmente en el proceso Estudio de Viabilidad del Sistema (EVS). Se identifican los distintos sistemas de información que forman parte del sistema objeto de la implantación. Para cada sistema se analizan las posibles dependencias con otros proyectos, que puedan condicionar el plan de implantación.
+En esta actividad se revisa la estrategia de implantación para el sistema, establecida inicialmente en el proceso [Estudio de Viabilidad del Sistema (EVS)](03-evs.qmd). Se identifican los distintos sistemas de información que forman parte del sistema objeto de la implantación. Para cada sistema se analizan las posibles dependencias con otros proyectos, que puedan condicionar el plan de implantación.
 
 Una vez estudiado el alcance y los condicionantes de la implantación, se decide si ésta se puede llevar a cabo. Será preciso establecer, en su caso, la estrategia que se concretará de forma definitiva en el plan de implantación.
 
@@ -491,9 +491,9 @@ Asimismo, si es necesaria una migración de datos se activarán también los pro
 
 ### Actividad IAS 4: Carga de Datos al Entorno de Operación {#ias-4}
 
-Teniendo en cuenta que los sistemas de información que forman parte del sistema a implantar pueden mejorar, ampliar o sustituir a otros ya existentes en la organización, puede ser necesaria una carga inicial y/o una migración de datos cuyo alcance dependerá de las características y cobertura de cada sistema de información implicado. Por tanto, la necesidad de una migración de datos puede venir determinada desde el proceso Estudio de Viabilidad del Sistema (EVS), en la actividad Selección de la Solución (EVS 6). Allí se habrá establecido la estrategia a seguir en la sustitución, evaluando las opciones del enfoque de desarrollo e instalación más apropiados para llevarlo a cabo.
+Teniendo en cuenta que los sistemas de información que forman parte del sistema a implantar pueden mejorar, ampliar o sustituir a otros ya existentes en la organización, puede ser necesaria una carga inicial y/o una migración de datos cuyo alcance dependerá de las características y cobertura de cada sistema de información implicado. Por tanto, la necesidad de una migración de datos puede venir determinada desde el proceso [Estudio de Viabilidad del Sistema (EVS)](03-evs.qmd), en la actividad Selección de la Solución ([EVS 6](03-evs.qmd#6)). Allí se habrá establecido la estrategia a seguir en la sustitución, evaluando las opciones del enfoque de desarrollo e instalación más apropiados para llevarlo a cabo.
 
-En cualquier caso, en la actividad Diseño de la Migración y Carga Inicial de Datos ([DSI 9](05-dsi.qmd#9)) se habrán definido y planificado los procesos y procedimientos necesarios para llevar a cabo la migración, realizándose su codificación en la actividad Construcción de los Componentes y Procedimientos de Migración y Carga Inicial de Datos (CSI 8).
+En cualquier caso, en la actividad Diseño de la Migración y Carga Inicial de Datos ([DSI 9](05-dsi.qmd#9)) se habrán definido y planificado los procesos y procedimientos necesarios para llevar a cabo la migración, realizándose su codificación en la actividad Construcción de los Componentes y Procedimientos de Migración y Carga Inicial de Datos ([CSI 8](06-csi.qmd#8)).
 
 ```{=html}
 <table class="avia-table avia-data-table">
@@ -550,7 +550,7 @@ A continuación, si procede, se hace la migración de datos, activando los proce
 * Equipo de Implantación
 * Equipo de Operación
 * Administradores de Bases de Datos
-* Usuarios Expertos
+* [Usuarios Expertos](../04-participantes/01-participantes.qmd#perfil-directivo)
 
 ### Actividad IAS 5: Pruebas de Implantación del Sistema {#ias-5}
 
@@ -824,7 +824,7 @@ Productos
 
 ##### Participantes {.unnumbered .unlisted}
 
-* Usuarios Expertos
+* [Usuarios Expertos](../04-participantes/01-participantes.qmd#perfil-directivo)
 
 #### Tarea IAS 6.3: Evaluación del Resultado de las Pruebas de Aceptación {#ias-6-3}
 
@@ -937,14 +937,14 @@ Finalmente, se recoge en el plan de mantenimiento toda la infraestructura necesa
 
 ##### Prácticas {.unnumbered .unlisted}
 
-* Diagrama de Representación
+* [Diagrama de Representación](../03-tecnicas/01-tecnicas.qmd#diagrama-de-representacion)
 * [Sesiones de trabajo](../03-tecnicas/01-tecnicas.qmd#sesiones-de-trabajo)
 
 ##### Participantes {.unnumbered .unlisted}
 
 * [Jefe de Proyecto](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
 * [Responsable de Mantenimiento](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
-* Equipo de Soporte Técnico
+* [Equipo de Soporte Técnico](../04-participantes/01-participantes.qmd#perfil-analista)
 
 #### Tarea IAS 7.2: Formalización del Plan de Mantenimiento {#ias-7-2}
 
@@ -1096,7 +1096,7 @@ Se consideran los servicios comunes de los sistemas de información implicados e
 
 * [Jefe de Proyecto](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
 * [Directores de los usuarios](../04-participantes/01-participantes.qmd#perfil-directivo)
-* Comité de Dirección
+* [Comité de Dirección](../04-participantes/01-participantes.qmd#perfil-directivo)
 
 #### Tarea IAS 8.2: Descripción de las Propiedades de cada Servicio {#ias-8-2}
 
@@ -1126,7 +1126,7 @@ Asimismo, se especifican las propiedades de calidad que constituyen el nivel de 
 
 * [Jefe de Proyecto](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
 * [Directores de los usuarios](../04-participantes/01-participantes.qmd#perfil-directivo)
-* Comité de Dirección
+* [Comité de Dirección](../04-participantes/01-participantes.qmd#perfil-directivo)
 * Comité de Seguimiento
 
 #### Tarea IAS 8.3: Determinación del Acuerdo de Nivel de Servicio {#ias-8-3}
@@ -1153,7 +1153,7 @@ Se hace una estimación de los recursos humanos y de infraestructura necesaria p
 
 ##### Participantes
 
-* Comité de Dirección
+* [Comité de Dirección](../04-participantes/01-participantes.qmd#perfil-directivo)
 * [Jefe de Proyecto](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
 * [Responsable de Implantación](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
 
@@ -1236,7 +1236,7 @@ Se recibe la confirmación por parte del Comité de Dirección y se prepara la p
 
 ##### Prácticas {.unnumbered .unlisted}
 
-* Presentación
+* [Presentación](../03-tecnicas/01-tecnicas.qmd#presentaciones)
 
 ##### Participantes {.unnumbered .unlisted}
 
@@ -1260,11 +1260,11 @@ Se presenta el sistema al Comité de Dirección según el plan previsto y se apr
 
 ##### Prácticas {.unnumbered .unlisted}
 
-* Presentación
+* [Presentación](../03-tecnicas/01-tecnicas.qmd#presentaciones)
 
 ##### Participantes {.unnumbered .unlisted}
 
-* Comité de Dirección
+* [Comité de Dirección](../04-participantes/01-participantes.qmd#perfil-directivo)
 * [Jefe de Proyecto](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
 * [Directores de los usuarios](../04-participantes/01-participantes.qmd#perfil-directivo)
 * [Responsable de Implantación](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
@@ -1352,7 +1352,7 @@ Se comprueba que la instalación del sistema es correcta. Por último, se determ
 * [Jefe de Proyecto](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
 * [Responsable de Implantación](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
 * Equipo de Implantación
-* Equipo de Soporte Técnico
+* [Equipo de Soporte Técnico](../04-participantes/01-participantes.qmd#perfil-analista)
 
 #### Tarea IAS 10.2: Activación del Sistema en Producción {#ias-10-2}
 
@@ -1366,7 +1366,7 @@ Se arranca el nuevo sistema en producción activando tanto el proceso de Manteni
 
 ##### Participantes {.unnumbered .unlisted}
 
-* Comité de Dirección
+* [Comité de Dirección](../04-participantes/01-participantes.qmd#perfil-directivo)
 * [Responsable de Implantación](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
 
 ## Participantes en las actividades del proceso IAS

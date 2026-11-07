@@ -142,7 +142,7 @@ Si el sistema objeto de estudio se encuentra en el ámbito de un Plan de Sistema
 
 ##### Participantes {.unnumbered .unlisted}
 
-* Comité de Dirección
+* [Comité de Dirección](../04-participantes/01-participantes.qmd#perfil-directivo)
 * [Jefe de Proyecto](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
 * Analistas
 
@@ -185,7 +185,7 @@ Una vez establecido el alcance, se identifican las unidades organizativas afecta
 
 ##### Participantes {.unnumbered .unlisted}
 
-* Comité de Dirección
+* [Comité de Dirección](../04-participantes/01-participantes.qmd#perfil-directivo)
 * [Jefe de Proyecto](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
 * Analistas
 
@@ -220,7 +220,7 @@ Debe comunicarse el plan de trabajo a los usuarios identificados como implicados
 
 ##### Participantes {.unnumbered .unlisted}
 
-* Comité de Dirección
+* [Comité de Dirección](../04-participantes/01-participantes.qmd#perfil-directivo)
 * [Jefe de Proyecto](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
 * Analistas
 
@@ -377,7 +377,7 @@ La información relativa a los sistemas de información que se decida analizar, 
 
 ##### Prácticas {.unnumbered .unlisted}
 
-* Diagrama de Representación
+* [Diagrama de Representación](../03-tecnicas/01-tecnicas.qmd#diagrama-de-representacion)
 * Sesiones de Trabajo
 
 ##### Participantes {.unnumbered .unlisted}
@@ -439,21 +439,21 @@ Es conveniente indicar la localización geográfica y física actual de los mód
 ##### Técnicas {.unnumbered .unlisted}
 
 * Diagrama de Flujo de Datos
-* Modelo Entidad/Relación extendido
-* Diagrama de Clases
+* [Modelo Entidad/Relación extendido](../03-tecnicas/01-tecnicas.qmd#modelo-entidad-relacion-extendido)
+* [Diagrama de clases](../03-tecnicas/01-tecnicas.qmd#diagrama-de-clases)
 * Diagrama de Interacción de Objetos
-* Matricial
+* [Matricial](../03-tecnicas/01-tecnicas.qmd#tecnicas-matriciales)
 
 ##### Prácticas {.unnumbered .unlisted}
 
-* Diagrama de Representación
+* [Diagrama de Representación](../03-tecnicas/01-tecnicas.qmd#diagrama-de-representacion)
 * Sesiones de Trabajo
 
 ##### Participantes {.unnumbered .unlisted}
 
 * Analistas
-* Usuarios Expertos
-* Equipo de Soporte Técnico
+* [Usuarios Expertos](../04-participantes/01-participantes.qmd#perfil-directivo)
+* [Equipo de Soporte Técnico](../04-participantes/01-participantes.qmd#perfil-analista)
 
 #### Tarea EVS 2.4: Realización del Diagnóstico de la Situación Actual {#evs-2-4}
 
@@ -592,7 +592,7 @@ Con este fin, se recoge información sobre los estándares y procedimientos que 
 
 * [Jefe de Proyecto](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
 * Analistas
-* Usuarios Expertos
+* [Usuarios Expertos](../04-participantes/01-participantes.qmd#perfil-directivo)
 
 #### Tarea EVS 3.2: Identificación de Requisitos {#evs-3-2}
 
@@ -609,7 +609,7 @@ Una vez establecidos los puntos anteriores, se planifican las sesiones de trabaj
 * Descripción General del Sistema ([EVS 1.2](#evs-1-2))
 * Catálogo de Requisitos ([EVS 1.2](#evs-1-2))
 * Equipo de Trabajo del EVS ([EVS 1.3](#evs-1-3))
-* Catálogo de Usuarios (EVS 2.2/1.3)
+* Catálogo de Usuarios (EVS [2.2](#evs-2-2)/[1.3](#evs-1-3))
 * Descripción de la Situación Actual ([EVS 2.4](#evs-2-4))
 
 ###### De salida {.unnumbered .unlisted}
@@ -624,7 +624,7 @@ Una vez establecidos los puntos anteriores, se planifican las sesiones de trabaj
 
 * [Jefe de Proyecto](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
 * Analistas
-* Usuarios Expertos
+* [Usuarios Expertos](../04-participantes/01-participantes.qmd#perfil-directivo)
 
 #### Tarea EVS 3.3: Catalogación de Requisitos {#evs-3-3}
 
@@ -651,7 +651,7 @@ Se incluirán también requisitos relativos a distribución geográfica y entorn
 
 * [Jefe de Proyecto](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
 * Analistas
-* Usuarios Expertos
+* [Usuarios Expertos](../04-participantes/01-participantes.qmd#perfil-directivo)
 
 ### Actividad EVS 4: Estudio de Alternativas de Solución {#evs-4}
 
@@ -769,7 +769,7 @@ Dependiendo del alcance del sistema y las posibles opciones, puede ser convenien
 
 ##### Prácticas {.unnumbered .unlisted}
 
-* Diagrama de Representación
+* [Diagrama de Representación](../03-tecnicas/01-tecnicas.qmd#diagrama-de-representacion)
 
 ##### Participantes {.unnumbered .unlisted}
 
@@ -822,22 +822,22 @@ Si la alternativa incluye una solución basada en producto se analiza su evoluci
 
 ##### Técnicas {.unnumbered .unlisted}
 
-* Matricial
+* [Matricial](../03-tecnicas/01-tecnicas.qmd#tecnicas-matriciales)
 * Diagrama de Flujo de Datos
 * Modelo Entidad/ Relación extendido
-* Diagrama de Clases
+* [Diagrama de clases](../03-tecnicas/01-tecnicas.qmd#diagrama-de-clases)
 * Casos de Uso
 
 ##### Prácticas {.unnumbered .unlisted}
 
 * [Catalogación](../03-tecnicas/01-tecnicas.qmd#catalogacion)
-* Diagrama de Representación
+* [Diagrama de Representación](../03-tecnicas/01-tecnicas.qmd#diagrama-de-representacion)
 
 ##### Participantes {.unnumbered .unlisted}
 
 * [Jefe de Proyecto](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
 * Analistas
-* Usuarios Expertos
+* [Usuarios Expertos](../04-participantes/01-participantes.qmd#perfil-directivo)
 * Técnicos de Sistemas
 * [Responsable de Seguridad](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
 * Especialistas en Comunicaciones
@@ -948,7 +948,7 @@ Para cada alternativa de solución propuesta, se valora el impacto en la organiz
 
 ##### Técnicas {.unnumbered .unlisted}
 
-* Análisis Coste/Beneficio
+* [Análisis Coste/Beneficio](../03-tecnicas/01-tecnicas.qmd#analisis-coste-beneficio)
 
 ##### Participantes {.unnumbered .unlisted}
 
@@ -973,7 +973,7 @@ Para cada alternativa se seleccionan los factores de situación que habrá que c
 
 ##### Prácticas {.unnumbered .unlisted}
 
-* Impacto en la Organización
+* [Impacto en la Organización](../03-tecnicas/01-tecnicas.qmd#impacto-en-la-organizacion)
 
 ##### Participantes {.unnumbered .unlisted}
 
@@ -1103,7 +1103,7 @@ Se efectúa la convocatoria de la presentación de las distintas alternativas pr
 
 ###### De entrada {.unnumbered .unlisted}
 
-* Catálogo de Usuarios (EVS 2.2/1.3)
+* Catálogo de Usuarios (EVS [2.2](#evs-2-2)/[1.3](#evs-1-3))
 * Alternativas de Solución a Estudiar ([EVS 4.2](#evs-4-2))
 * Valoración de Alternativas ([EVS 5.2](#evs-5-2))
 * Plan de Trabajo de Cada Alternativa ([EVS 5.3](#evs-5-3))
@@ -1114,7 +1114,7 @@ Se efectúa la convocatoria de la presentación de las distintas alternativas pr
 
 ##### Prácticas {.unnumbered .unlisted}
 
-* Presentación
+* [Presentación](../03-tecnicas/01-tecnicas.qmd#presentaciones)
 
 ##### Participantes {.unnumbered .unlisted}
 
@@ -1165,12 +1165,12 @@ Una vez recibida la confirmación de qué alternativas van a ser presentadas par
 
 ##### Prácticas {.unnumbered .unlisted}
 
-* Presentación
+* [Presentación](../03-tecnicas/01-tecnicas.qmd#presentaciones)
 * Sesiones de Trabajo
 
 ##### Participantes {.unnumbered .unlisted}
 
-* Comité de Dirección
+* [Comité de Dirección](../04-participantes/01-participantes.qmd#perfil-directivo)
 * [Jefe de Proyecto](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
 * Analistas
 
@@ -1191,7 +1191,7 @@ El Comité de Dirección da su aprobación formal o determina la inviabilidad de
 
 ##### Participantes {.unnumbered .unlisted}
 
-* Comité de Dirección
+* [Comité de Dirección](../04-participantes/01-participantes.qmd#perfil-directivo)
 * [Jefe de Proyecto](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
 
 ## Participantes en las actividades del proceso EVS {.unnumbered .unlisted}

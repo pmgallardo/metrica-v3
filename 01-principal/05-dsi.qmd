@@ -316,12 +316,12 @@ Los criterios para diseñar la arquitectura se obtienen a partir de directrices 
 
 ###### Prácticas {.unnumbered .unlisted}
 
-* Diagrama de Representación
+* [Diagrama de Representación](../03-tecnicas/01-tecnicas.qmd#diagrama-de-representacion)
 
 ##### Participantes {.unnumbered .unlisted}
 
 * Equipo de Arquitectura
-* Equipo de Soporte Técnico
+* [Equipo de Soporte Técnico](../04-participantes/01-participantes.qmd#perfil-analista)
 * Equipo de Seguridad
 
 #### Tarea DSI 1.2: Identificación de Requisitos de Diseño y Construcción {#dsi-1-2}
@@ -351,7 +351,7 @@ Por tanto, como resultado de esta tarea se actualiza el catálogo de requisitos 
 ##### Participantes {.unnumbered .unlisted}
 
 * Equipo de Arquitectura
-* Equipo de Soporte Técnico
+* [Equipo de Soporte Técnico](../04-participantes/01-participantes.qmd#perfil-analista)
 
 #### Tarea DSI 1.3: Especificación de Excepciones {#dsi-1-3}
 
@@ -396,7 +396,7 @@ Se recomienda, según el nivel de especificación que se establezca en cada caso
 ##### Participantes {.unnumbered .unlisted}
 
 * Equipo de Arquitectura
-* Equipo de Soporte Técnico
+* [Equipo de Soporte Técnico](../04-participantes/01-participantes.qmd#perfil-analista)
 
 #### Tarea DSI 1.4: Especificación de Estándares y Normas de Diseño y Construcción {#dsi-1-4}
 
@@ -426,7 +426,7 @@ La información recogida en el catálogo se debe tener en cuenta en la elaboraci
 ##### Participantes {.unnumbered .unlisted}
 
 * Equipo de Arquitectura
-* Equipo de Soporte Técnico
+* [Equipo de Soporte Técnico](../04-participantes/01-participantes.qmd#perfil-analista)
 
 #### Tarea DSI 1.5: Identificación de Subsistemas de Diseño {#dsi-1-5}
 
@@ -486,7 +486,7 @@ La ubicación de subsistemas en nodos y la dependencia entre subsistemas se espe
 ##### Técnicas {.unnumbered .unlisted}
 
 * Diagrama de Estructura
-* Matricial
+* [Matricial](../03-tecnicas/01-tecnicas.qmd#tecnicas-matriciales)
 * Diagrama de Interacción de Objetos
 * Diagrama de Paquetes
 * Diagrama de Despliegue
@@ -494,7 +494,7 @@ La ubicación de subsistemas en nodos y la dependencia entre subsistemas se espe
 ##### Participantes {.unnumbered .unlisted}
 
 * Equipo de Arquitectura
-* Equipo de Soporte Técnico
+* [Equipo de Soporte Técnico](../04-participantes/01-participantes.qmd#perfil-analista)
 * Equipo de Seguridad
 
 #### Tarea DSI 1.6: Especificación del Entorno Tecnológico {#dsi-1-6}
@@ -540,12 +540,12 @@ Para poder determinar la planificación de capacidades, es necesario conocer los
 ##### Prácticas {.unnumbered .unlisted}
 
 * [Sesiones de Trabajo](../03-tecnicas/01-tecnicas.qmd#sesiones-de-trabajo)
-* Diagrama de Representación
+* [Diagrama de Representación](../03-tecnicas/01-tecnicas.qmd#diagrama-de-representacion)
 
 ##### Participantes {.unnumbered .unlisted}
 
 * Equipo de Arquitectura
-* Equipo de Soporte Técnico
+* [Equipo de Soporte Técnico](../04-participantes/01-participantes.qmd#perfil-analista)
 
 #### Tarea DSI 1.7: Especificación de Requisitos de Operación y Seguridad {#dsi-1-7}
 
@@ -590,7 +590,7 @@ Asimismo, se definen los requisitos de operación para los distintos elementos d
 
 * Equipo de Seguridad
 * Equipo de Arquitectura
-* Equipo de Soporte Técnico
+* [Equipo de Soporte Técnico](../04-participantes/01-participantes.qmd#perfil-analista)
 
 ### Actividad DSI 2: Diseño de la Arquitectura de Soporte {#dsi-2}
 
@@ -686,7 +686,7 @@ A medida que se lleva a cabo esta tarea pueden surgir comportamientos de excepci
 
 * Diagrama de Estructura
 * Diagrama de Interacción de Objetos
-* Diagrama de Clases
+* [Diagrama de clases](../03-tecnicas/01-tecnicas.qmd#diagrama-de-clases)
 
 ##### Participantes {.unnumbered .unlisted}
 
@@ -711,7 +711,7 @@ Los mecanismos genéricos de diseño son de aplicación tanto en la definición 
 ##### Técnicas {.unnumbered .unlisted}
 
 * Diagrama de Interacción de Objetos
-* Diagrama de Clases
+* [Diagrama de clases](../03-tecnicas/01-tecnicas.qmd#diagrama-de-clases)
 
 ##### Prácticas {.unnumbered .unlisted}
 
@@ -941,7 +941,7 @@ En aquellos casos en los que se realizan modificaciones significativas sobre la 
 ##### Participantes {.unnumbered .unlisted}
 
 * Equipo del Proyecto
-* Usuarios Expertos
+* [Usuarios Expertos](../04-participantes/01-participantes.qmd#perfil-directivo)
 
 #### Tarea DSI 3.4: Revisión de Subsistemas de Diseño e Interfaces {#dsi-3-4}
 
@@ -1160,7 +1160,7 @@ Entre las clases identificadas a lo largo de esta tarea se encuentran clases abs
 
 ##### Técnicas {.unnumbered .unlisted}
 
-* Diagrama de Clases
+* [Diagrama de clases](../03-tecnicas/01-tecnicas.qmd#diagrama-de-clases)
 
 ##### Participantes {.unnumbered .unlisted}
 
@@ -1192,7 +1192,7 @@ Opcionalmente, se especifica la forma en la que se va a implementar cada asociac
 
 ##### Técnicas {.unnumbered .unlisted}
 
-* Diagrama de Clases
+* [Diagrama de clases](../03-tecnicas/01-tecnicas.qmd#diagrama-de-clases)
 
 ##### Participantes {.unnumbered .unlisted}
 
@@ -1222,7 +1222,7 @@ Asimismo, se analiza la posibilidad de convertir un atributo en clase en aquello
 
 ##### Técnicas {.unnumbered .unlisted}
 
-* Diagrama de Clases
+* [Diagrama de clases](../03-tecnicas/01-tecnicas.qmd#diagrama-de-clases)
 
 ##### Participantes {.unnumbered .unlisted}
 
@@ -1253,7 +1253,7 @@ Para identificar las operaciones de aquellos objetos que presenten distintos est
 
 ##### Técnicas {.unnumbered .unlisted}
 
-* Diagrama de Clases
+* [Diagrama de clases](../03-tecnicas/01-tecnicas.qmd#diagrama-de-clases)
 * Diagrama de Transición de Estados
 
 ##### Participantes {.unnumbered .unlisted}
@@ -1278,7 +1278,7 @@ Entre las modificaciones realizadas sobre la jerarquía se identifican clases ab
 
 ##### Técnicas {.unnumbered .unlisted}
 
-* Diagrama de Clases
+* [Diagrama de clases](../03-tecnicas/01-tecnicas.qmd#diagrama-de-clases)
 
 ##### Participantes {.unnumbered .unlisted}
 
@@ -1303,7 +1303,7 @@ En la mayoría de los casos, esta tarea no se realiza hasta el proceso de constr
 
 ##### Técnicas {.unnumbered .unlisted}
 
-* Diagrama de Clases
+* [Diagrama de clases](../03-tecnicas/01-tecnicas.qmd#diagrama-de-clases)
 
 ##### Participantes {.unnumbered .unlisted}
 
@@ -1332,7 +1332,7 @@ En esta tarea se realiza, en los casos que sea necesario y a partir de los resul
 ##### Participantes {.unnumbered .unlisted}
 
 * Analistas
-* Usuarios Expertos
+* [Usuarios Expertos](../04-participantes/01-participantes.qmd#perfil-directivo)
 
 ### Actividad DSI 5: Diseño de la Arquitectura de Módulos del Sistema {#dsi-5}
 
@@ -1549,7 +1549,7 @@ En el caso de que las modificaciones sean significativas en cuanto al formato o 
 
 * Diagrama de Descomposición Funcional
 * Diagrama de Transición de Estados
-* Matricial
+* [Matricial](../03-tecnicas/01-tecnicas.qmd#tecnicas-matriciales)
 
 ##### Prácticas {.unnumbered .unlisted}
 
@@ -1559,7 +1559,7 @@ En el caso de que las modificaciones sean significativas en cuanto al formato o 
 ##### Participantes {.unnumbered .unlisted}
 
 * Equipo del Proyecto
-* Usuarios Expertos
+* [Usuarios Expertos](../04-participantes/01-participantes.qmd#perfil-directivo)
 
 ### Actividad DSI 6: Diseño Físico de Datos {#dsi-6}
 
@@ -1817,12 +1817,12 @@ El resultado de esta actividad es la especificación de los modelos físicos par
 
 ##### Técnicas {.unnumbered .unlisted}
 
-* Matricial
+* [Matricial](../03-tecnicas/01-tecnicas.qmd#tecnicas-matriciales)
 
 ##### Participantes {.unnumbered .unlisted}
 
 * Equipo de Arquitectura
-* Equipo de Soporte Técnico
+* [Equipo de Soporte Técnico](../04-participantes/01-participantes.qmd#perfil-analista)
 
 ### Actividad DSI 7: Verificación y Aceptación de la Arquitectura del Sistema {#dsi-7}
 
@@ -2060,7 +2060,7 @@ Los análisis de consistencia específicos para el ***Diseño Orientado a Objeto
 
 ##### Técnicas {.unnumbered .unlisted}
 
-* Matricial
+* [Matricial](../03-tecnicas/01-tecnicas.qmd#tecnicas-matriciales)
 
 ##### Participantes {.unnumbered .unlisted}
 
@@ -2257,7 +2257,7 @@ Se propone que la especificación del entorno se realice según los siguientes c
 
 * Equipo de Arquitectura
 * Equipo del Proyecto
-* Equipo de Soporte Técnico
+* [Equipo de Soporte Técnico](../04-participantes/01-participantes.qmd#perfil-analista)
 * Equipo de Sistemas
 * Equipo de Seguridad
 
@@ -2308,7 +2308,7 @@ Opcionalmente, se propone la realización de un plan de integración del sistema
 ##### Técnicas {.unnumbered .unlisted}
 
 * Diagrama de Estructura
-* Matricial
+* [Matricial](../03-tecnicas/01-tecnicas.qmd#tecnicas-matriciales)
 * Diagrama de Componentes
 * Diagrama de Despliegue
 
@@ -2519,7 +2519,7 @@ Se realiza una estimación de capacidades (capacity planning) para este entorno 
 ##### Participantes {.unnumbered .unlisted}
 
 * Equipo de Arquitectura
-* Equipo de Soporte Técnico
+* [Equipo de Soporte Técnico](../04-participantes/01-participantes.qmd#perfil-analista)
 
 #### Tarea DSI 9.2: Diseño de Procedimientos de Migración y Carga Inicial {#dsi-9-2}
 
@@ -2753,7 +2753,7 @@ Se propone considerar los siguientes conceptos en la especificación del entorno
 
 * Equipo del Proyecto
 * Diseñadores de Arquitectura
-* Equipo de Soporte Técnico
+* [Equipo de Soporte Técnico](../04-participantes/01-participantes.qmd#perfil-analista)
 * Equipo de Seguridad
 
 #### Tarea DSI 10.2: Especificación Técnica de Niveles de Prueba {#dsi-10-2}
@@ -2816,7 +2816,7 @@ Las verificaciones a realizar se especifican detallando:
 
 * [Jefe de Proyecto](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
 * Analistas
-* Usuarios Expertos
+* [Usuarios Expertos](../04-participantes/01-participantes.qmd#perfil-directivo)
 
 #### Tarea DSI 10.3: Revisión de la Planificación de Pruebas {#dsi-10-3}
 
@@ -2933,7 +2933,7 @@ Para ello, es necesario definir, entre otros, los siguientes aspectos:
 ##### Participantes {.unnumbered .unlisted}
 
 * Equipo del Proyecto
-* Usuarios Expertos
+* [Usuarios Expertos](../04-participantes/01-participantes.qmd#perfil-directivo)
 * [Responsable de Operación](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
 * [Responsable de Sistemas](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
 
@@ -2966,7 +2966,7 @@ Los requisitos de infraestructura e instalación hacen referencia a las necesida
 
 * [Jefe de Proyecto](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
 * Directores de Usuarios
-* Equipo de Soporte Técnico
+* [Equipo de Soporte Técnico](../04-participantes/01-participantes.qmd#perfil-analista)
 
 ### Actividad DSI 12: Aprobación del Diseño del Sistema de Información {#dsi-12}
 
@@ -3041,11 +3041,11 @@ En esta tarea se realiza la presentación del diseño del sistema de informació
 
 ##### Prácticas {.unnumbered .unlisted}
 
-* Presentación
+* [Presentación](../03-tecnicas/01-tecnicas.qmd#presentaciones)
 
 ##### Participantes {.unnumbered .unlisted}
 
-* Comité de Dirección
+* [Comité de Dirección](../04-participantes/01-participantes.qmd#perfil-directivo)
 * [Jefe de Proyecto](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
 
 ## Participantes en las actividades del proceso DSI
