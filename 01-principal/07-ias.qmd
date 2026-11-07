@@ -149,7 +149,7 @@ Para ello se identifican, en función del nivel de esfuerzo requerido, los disti
 
 * Recursos Humanos y Técnicos Disponibles (externo)
 * Catálogo de Usuarios ([ASI 1.4](04-asi.qmd#asi-1-4))
-* Plan de Implantación ([IAS 1.1]())
+* Plan de Implantación ([IAS 1.1](#ias-1-1))
 
 ###### De salida {.unnumbered .unlisted}
 
@@ -169,7 +169,7 @@ En esta actividad se prepara y se imparte la formación al equipo que participar
 
 Se determina la formación necesaria para el equipo de implantación, en función de los distintos perfiles y niveles de responsabilidad identificados en la actividad anterior. Para ello, se establece un plan de formación que incluye los esquemas de formación correspondientes, los recursos humanos y de infraestructura requeridos para llevarlo a cabo, así como una planificación que queda reflejada en el plan de formación.
 
-La formación para que los usuarios finales sean capaces de utilizar el sistema de manera satisfactoria ha sido establecida, previamente, en la actividad Definición de la Formación de Usuarios Finales (CSI 7). En esta actividad, se analizan los esquemas de formación definidos según los diferentes perfiles, y se elabora un plan de formación que esté alineado con el plan de implantación.
+La formación para que los usuarios finales sean capaces de utilizar el sistema de manera satisfactoria ha sido establecida, previamente, en la actividad **Definición de la Formación de Usuarios Finales** ([CSI 7](06-csi.qmd#csi-7)). En esta actividad, se analizan los esquemas de formación definidos según los diferentes perfiles, y se elabora un plan de formación que esté alineado con el plan de implantación.
 
 ```{=html}
 <table class="avia-table avia-data-table">
@@ -296,7 +296,7 @@ Por último, se convoca a las personas que deben asistir a los cursos de formaci
 * [Jefe de Proyecto](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
 * [Responsable de Implantación](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
 * [Directores de los usuarios](../04-participantes/01-participantes.qmd#perfil-directivo)
-* Equipo de Formación
+* [Equipo de Formación](../04-participantes/01-participantes.qmd#perfil-analista)
 
 #### Tarea IAS 2.2: Formación del Equipo de Implantación {#ias-2-2}
 
@@ -316,12 +316,12 @@ En esta tarea se lleva a cabo la formación del equipo que va a ser responsable 
 
 ##### Participantes {.unnumbered .unlisted}
 
-* Equipo de Formación
-* Equipo de Implantación
+* [Equipo de Formación](../04-participantes/01-participantes.qmd#perfil-analista)
+* [Equipo de Implantación](../04-participantes/01-participantes.qmd#perfil-analista)
 
 #### Tarea IAS 2.3: Preparación de la Formación a Usuarios finales {#ias-2-3}
 
-En función del plan de implantación establecido, se revisa el esquema de formación a los usuarios finales, elaborado en la actividad Definición de la Formación de Usuarios Finales (CSI 7). Se asegura que se cuenta con los recursos humanos, técnicos y materiales necesarios para realizar la formación correspondiente.
+En función del plan de implantación establecido, se revisa el esquema de formación a los usuarios finales, elaborado en la actividad **Definición de la Formación de Usuarios Finales** ([CSI 7](#csi-7)). Se asegura que se cuenta con los recursos humanos, técnicos y materiales necesarios para realizar la formación correspondiente.
 
 Se establece el plan de formación del sistema a implantar en su totalidad, con el fin de garantizar el éxito de la implantación. Se determina, en función de los esquemas de formación asociados a los distintos perfiles, los contenidos definitivos que tienen los cursos, cuándo deben impartirse, quiénes han de recibirlos y con qué prioridad.
 
@@ -331,7 +331,7 @@ Se establece el plan de formación del sistema a implantar en su totalidad, con 
 
 * Plan de Implantación ([IAS 1.1](#ias-1-1))
 * Catálogo de Usuarios ([ASI 1.4](04-asi.qmd#asi-1-4))
-* Especificación de la Formación a Usuarios Finales (CSI 7.2)
+* Especificación de la Formación a Usuarios Finales ([CSI 7.2](#csi-7-2))
 
 ###### De salida {.unnumbered .unlisted}
 
@@ -342,7 +342,7 @@ Se establece el plan de formación del sistema a implantar en su totalidad, con 
 
 ##### Participantes {.unnumbered .unlisted}
 
-* Equipo de Formación
+* [Equipo de Formación](../04-participantes/01-participantes.qmd#perfil-analista)
 * [Jefe de Proyecto](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
 * [Directores de los usuarios](../04-participantes/01-participantes.qmd#perfil-directivo)
 
@@ -424,7 +424,7 @@ Por tanto, como paso previo a la realización de dichas pruebas y de acuerdo al 
 
 En esta tarea se verifica que está disponible la infraestructura necesaria para configurar el entorno. Dicha infraestructura debe cumplir los requisitos de implantación (instalación e infraestructura) y tener en cuenta los procedimientos de seguridad y control de acceso (mantenimiento de la integridad y confidencialidad de los datos, control de accesos al sistema, copias de seguridad y recuperación de datos, etc.), y operación y administración del sistema (estándares, recuperación y reanudación de trabajos, planificación de trabajos, etc.).
 
-Además, si alguno de los sistemas de información implicados en la implantación lleva implícita una migración de datos habrá que tener en cuenta, también, las características del entorno y los procedimientos propios de la migración establecidos en el plan de migración y carga inicial de datos, obtenido en la actividad Diseño de la Migración y Carga Inicial de Datos ([DSI 9](05-dsi.qmd#9)).
+Además, si alguno de los sistemas de información implicados en la implantación lleva implícita una migración de datos habrá que tener en cuenta, también, las características del entorno y los procedimientos propios de la migración establecidos en el plan de migración y carga inicial de datos, obtenido en la actividad **Diseño de la Migración y Carga Inicial de Datos** ([DSI 9](05-dsi.qmd#dsi-9)).
 
 Una vez comprobada la idoneidad de los distintos elementos relacionados con la infraestructura, se realiza la instalación del software de base necesario para la incorporación posterior de los componentes asociados a los sistemas de información implicados en la implantación.
 
@@ -436,11 +436,11 @@ También se debe asegurar que el equipo responsable de la realización de las pr
 
 * Plan de Implantación ([IAS 1.1](#ias-1-1))
 * Plan de Formación del Equipo de Implantación ([IAS 2.2](#ias-2-2))
-* Catálogo de Requisitos ([DSI 11.2](05-dsi.qmd#11.2))
-* Diseño de la Arquitectura del Sistema ([DSI 7.2](05-dsi.qmd#7.2))
-* Entorno Tecnológico del Sistema ([DSI 7.2](05-dsi.qmd#7.2))
-* Especificaciones de Construcción del Sistema de Información ([DSI 8.4](05-dsi.qmd#8.4))
-* Plan de Migración y Carga Inicial de Datos ([DSI 9.4](05-dsi.qmd#9.4))
+* Catálogo de Requisitos ([DSI 11.2](05-dsi.qmd#dsi-11-2))
+* Diseño de la Arquitectura del Sistema ([DSI 7.2](05-dsi.qmd#7-2))
+* Entorno Tecnológico del Sistema ([DSI 7.2](05-dsi.qmd#7-2))
+* Especificaciones de Construcción del Sistema de Información ([DSI 8.4](05-dsi.qmd#8-4))
+* Plan de Migración y Carga Inicial de Datos ([DSI 9.4](05-dsi.qmd#9-4))
 
 ###### De salida {.unnumbered .unlisted}
 
@@ -450,7 +450,7 @@ También se debe asegurar que el equipo responsable de la realización de las pr
 
 * [Jefe de Proyecto](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
 * [Responsable de Implantación](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
-* Equipo de Implantación
+* [Equipo de Implantación](../04-participantes/01-participantes.qmd#perfil-analista)
 
 #### Tarea IAS 3.2: Realización de la Instalación {#ias-3-2}
 
@@ -473,10 +473,10 @@ Asimismo, si es necesaria una migración de datos se activarán también los pro
 
 * Plan de Implantación ([IAS 1.1](#ias-1-1))
 * Equipo de Implantación ([IAS 1.2](#ias-1-2))
-* Especificaciones de Construcción del Sistema de Información ([DSI 8.4](05-dsi.qmd#8.4))
-* Producto Software (CSI 6.1)
-* Código Fuente de los Componentes de Migración y Carga Inicial de Datos (CSI 8.2)
-* Procedimientos de Migración y Carga Inicial de Datos (CSI 8.2)
+* Especificaciones de Construcción del Sistema de Información ([DSI 8.4](05-dsi.qmd#dsi-8-4))
+* Producto Software ([CSI 6.1](#csi-6-1))
+* Código Fuente de los Componentes de Migración y Carga Inicial de Datos ([CSI 8.2](#csi-8-2))
+* Procedimientos de Migración y Carga Inicial de Datos ([CSI 8.2](#csi-8-2))
 
 ###### De salida {.unnumbered .unlisted}
 
@@ -487,13 +487,13 @@ Asimismo, si es necesaria una migración de datos se activarán también los pro
 ##### Participantes {.unnumbered .unlisted}
 
 * [Jefe de Proyecto](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
-* Equipo de Implantación
+* [Equipo de Implantación](../04-participantes/01-participantes.qmd#perfil-analista)
 
 ### Actividad IAS 4: Carga de Datos al Entorno de Operación {#ias-4}
 
 Teniendo en cuenta que los sistemas de información que forman parte del sistema a implantar pueden mejorar, ampliar o sustituir a otros ya existentes en la organización, puede ser necesaria una carga inicial y/o una migración de datos cuyo alcance dependerá de las características y cobertura de cada sistema de información implicado. Por tanto, la necesidad de una migración de datos puede venir determinada desde el proceso [Estudio de Viabilidad del Sistema (EVS)](03-evs.qmd), en la actividad Selección de la Solución ([EVS 6](03-evs.qmd#6)). Allí se habrá establecido la estrategia a seguir en la sustitución, evaluando las opciones del enfoque de desarrollo e instalación más apropiados para llevarlo a cabo.
 
-En cualquier caso, en la actividad Diseño de la Migración y Carga Inicial de Datos ([DSI 9](05-dsi.qmd#9)) se habrán definido y planificado los procesos y procedimientos necesarios para llevar a cabo la migración, realizándose su codificación en la actividad Construcción de los Componentes y Procedimientos de Migración y Carga Inicial de Datos ([CSI 8](06-csi.qmd#8)).
+En cualquier caso, en la actividad Diseño de la Migración y Carga Inicial de Datos ([DSI 9](05-dsi.qmd#dsi-9)) se habrán definido y planificado los procesos y procedimientos necesarios para llevar a cabo la migración, realizándose su codificación en la actividad Construcción de los Componentes y Procedimientos de Migración y Carga Inicial de Datos ([CSI 8](06-csi.qmd#8)).
 
 ```{=html}
 <table class="avia-table avia-data-table">
@@ -537,7 +537,7 @@ A continuación, si procede, se hace la migración de datos, activando los proce
 
 * Plan de implantación ([IAS 1.1](#ias-1-1))
 * Equipo de implantación ([IAS 1.2](#ias-1-2))
-* Plan de migración y carga inicial de datos ([DSI 9.4](05-dsi.qmd#9.4))
+* Plan de migración y carga inicial de datos ([DSI 9.4](05-dsi.qmd#dsi-9-4))
 * Código Fuente de los Componentes de Migración y Carga Inicial de Datos (instalado) ([IAS 3.2](#ias-3-2))
 * Procedimientos de Migración y Carga Inicial de Datos (instalados) ([IAS 3.2](#ias-3-2))
 
@@ -547,8 +547,8 @@ A continuación, si procede, se hace la migración de datos, activando los proce
 
 ###### Participantes {.unnumbered .unlisted}
 
-* Equipo de Implantación
-* Equipo de Operación
+* [Equipo de Implantación](../04-participantes/01-participantes.qmd#perfil-analista)
+* [Equipo de Operación](../04-participantes/01-participantes.qmd#perfil-analista)
 * [Administradores de Bases de Datos](../04-participantes/01-participantes.qmd#perfil-analista)
 * [Usuarios Expertos](../04-participantes/01-participantes.qmd#perfil-directivo)
 
@@ -638,7 +638,7 @@ Se comunica el plan de pruebas de implantación al equipo responsable de llevarl
 
 * Plan de Implantación ([IAS 1.1](#ias-1-1))
 * Equipo de Implantación ([IAS 1.2](#ias-1-2))
-* Plan de Pruebas ([DSI 10.3](05-dsi.qmd#10.3))
+* Plan de Pruebas ([DSI 10.3](05-dsi.qmd#dsi-10.3))
 
 ###### De salida {.unnumbered .unlisted}
 
@@ -651,14 +651,11 @@ Se comunica el plan de pruebas de implantación al equipo responsable de llevarl
 
 #### Tarea IAS 5.2: Realización de las Pruebas de implantación {#ias-5-2}
 
-Se realizan las pruebas de implantación, de acuerdo a las verificaciones establecidas en el plan de pruebas definido en la actividad Especificación Técnica del Plan de Pruebas ([DSI 10](05-dsi.qmd#10)). Es necesario tener en cuenta las posibles pruebas adicionales incorporadas a dicho plan en la tarea anterior.
+Se realizan las pruebas de implantación, de acuerdo a las verificaciones establecidas en el plan de pruebas definido en la actividad **Especificación Técnica del Plan de Pruebas** ([DSI 10](05-dsi.qmd#dsi-10)). Es necesario tener en cuenta las posibles pruebas adicionales incorporadas a dicho plan en la tarea anterior.
 
 El objetivo de estas pruebas es asegurar que el sistema se comporta de la forma prevista en el entorno de operación, y que responde a todas las especificaciones dadas en cuanto a:
 
-- Recuperación, forzando el fallo del sistema y verificando si la recuperación se lleva a cabo de forma apropiada.
-
-En caso de que sea de forma automática, se evalúa la inicialización, los mecanismos de recuperación del estado del sistema, datos, etc.
-
+- Recuperación, forzando el fallo del sistema y verificando si la recuperación se lleva a cabo de forma apropiada. En caso de que sea de forma automática, se evalúa la inicialización, los mecanismos de recuperación del estado del sistema, datos, etc.
 - Seguridad, verificando que los mecanismos de protección incorporados al sistema cumplen su objetivo.
 - Rendimiento, probando el sistema en cuanto al tiempo de respuesta de ejecución y al tiempo de utilización de recursos.
 - Comunicaciones, etc.
@@ -679,11 +676,11 @@ Se registra la realización de las pruebas incluyendo un informe que recoja la d
 
 ##### Prácticas {.unnumbered .unlisted}
 
-* Pruebas de Implantación
+* [Pruebas de Implantación](../03-tecnicas/01-tecnicas.qmd#pruebas-de-implantacion)
 
 ##### Participantes {.unnumbered .unlisted}
 
-* Equipo de Implantación
+* [Equipo de Implantación](../04-participantes/01-participantes.qmd#perfil-analista)
 
 #### Tarea IAS 5.3: Evaluación del Resultado de las Pruebas de Implantación {#ias-5-3}
 
@@ -782,12 +779,12 @@ Los Directores de los Usuarios revisan los criterios de aceptación, especificad
 
 Se analizan los criterios de aceptación establecidos por el usuario y recogidos en las verificaciones del plan de pruebas, por si fuera necesario incorporar algún caso de prueba adicional.
 
-Se comunica el plan de pruebas de aceptación una vez actualizado, a los usuarios implicados según los distintos perfiles identificados en la tarea Especificación del equipo de implantación ([IAS 1.2](#ias-1-2)).
+Se comunica el plan de pruebas de aceptación una vez actualizado, a los usuarios implicados según los distintos perfiles identificados en la tarea **Especificación del equipo de implantación** ([IAS 1.2](#ias-1-2)).
 Productos
 
 ###### De entrada {.unnumbered .unlisted}
 
-* Plan de Pruebas ([DSI 10.3](05-dsi.qmd#10.3))
+* Plan de Pruebas ([DSI 10.3](05-dsi.qmd#dsi-10-3))
 * Plan de implantación ([IAS 1.1](#ias-1-1))
 * Equipo de implantación ([IAS 1.2](#ias-1-2))
 * Plan de pruebas ([IAS 5.1](#ias-5-1))
@@ -820,7 +817,7 @@ Productos
 
 ##### Técnicas {.unnumbered .unlisted}
 
-* Pruebas de Aceptación
+* [Pruebas de Aceptación](../03-tecnicas/01-tecnicas.qmd#pruebas-de-aceptacion)
 
 ##### Participantes {.unnumbered .unlisted}
 
@@ -929,7 +926,7 @@ Finalmente, se recoge en el plan de mantenimiento toda la infraestructura necesa
 
 ###### De entrada {.unnumbered .unlisted}
 
-* Catálogo de Requisitos ([DSI 11.2](05-dsi.qmd#11.2))
+* Catálogo de Requisitos ([DSI 11.2](05-dsi.qmd#dsi-11-2))
 
 ###### De salida {.unnumbered .unlisted}
 
@@ -1081,7 +1078,7 @@ Se consideran los servicios comunes de los sistemas de información implicados e
 
 ###### De entrada {.unnumbered .unlisted}
 
-* Catálogo de Requisitos ([DSI 11.2](05-dsi.qmd#11.2))
+* Catálogo de Requisitos ([DSI 11.2](05-dsi.qmd#dsi-11-2))
 * Plan de Implantación ([IAS 1.1](#ias-1-1))
 
 ###### De salida {.unnumbered .unlisted}
@@ -1226,9 +1223,9 @@ Se recibe la confirmación por parte del Comité de Dirección y se prepara la p
 ###### De entrada {.unnumbered .unlisted}
 
 * Evaluación del Resultado de las Pruebas de Implantación ([IAS 5.3](#ias-5-3))
-* Evaluación del Resultado de las Pruebas de Aceptación ([IAS 6.3](#ias-6.3))
-* Plan de Mantenimiento ([IAS 7.2](#ias-7.2))
-* Acuerdo de Nivel de Servicio ([IAS 8.3](#ias-8.3))
+* Evaluación del Resultado de las Pruebas de Aceptación ([IAS 6.3](#ias-6-3))
+* Plan de Mantenimiento ([IAS 7.2](#ias-7-2))
+* Acuerdo de Nivel de Servicio ([IAS 8.3](#ias-8-3))
 
 ###### De salida {.unnumbered .unlisted}
 
@@ -1252,7 +1249,7 @@ Se presenta el sistema al Comité de Dirección según el plan previsto y se apr
 
 ###### De entrada {.unnumbered .unlisted}
 
-* Plan de Presentación ([IAS 9.1](#ias-9.1))
+* Plan de Presentación ([IAS 9.1](#ias-9-1))
 
 ###### De salida {.unnumbered .unlisted}
 
@@ -1336,11 +1333,11 @@ Se comprueba que la instalación del sistema es correcta. Por último, se determ
 
 * Plan de Implantación ([IAS 1.1](#ias-1-1))
 * Equipo de Implantación ([IAS 1.2](#ias-1-2))
-* Catálogo de Requisitos ([DSI 11.2](05-dsi.qmd#11.2))
-* Especificaciones de Construcción del Sistema de Información ([DSI 8.4](05-dsi.qmd#8.4))
-* Producto Software (CSI 6.1)
-* Código Fuente de los Componentes de Migración y Carga Inicial de Datos (CSI 8.2)
-* Procedimientos de Migración y Carga Inicial de Datos (CSI 8.2)
+* Catálogo de Requisitos ([DSI 11.2](05-dsi.qmd#dsi-11-2))
+* Especificaciones de Construcción del Sistema de Información ([DSI 8.4](05-dsi.qmd#dsi-8-4))
+* Producto Software ([CSI 6.1](#csi-6-1))
+* Código Fuente de los Componentes de Migración y Carga Inicial de Datos ([CSI 8.2](#csi-8-2))
+* Procedimientos de Migración y Carga Inicial de Datos ([CSI 8.2](#csi-8-2))
 * Aprobación del Sistema ([IAS 9.2](#ias-9.2))
 
 ###### De salida {.unnumbered .unlisted}
@@ -1351,7 +1348,7 @@ Se comprueba que la instalación del sistema es correcta. Por último, se determ
 
 * [Jefe de Proyecto](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
 * [Responsable de Implantación](../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto)
-* Equipo de Implantación
+* [Equipo de Implantación](../04-participantes/01-participantes.qmd#perfil-analista)
 * [Equipo de Soporte Técnico](../04-participantes/01-participantes.qmd#perfil-analista)
 
 #### Tarea IAS 10.2: Activación del Sistema en Producción {#ias-10-2}
