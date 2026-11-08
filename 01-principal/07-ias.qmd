@@ -26,11 +26,11 @@ Finalmente, se realizan las acciones necesarias para el inicio de la producción
 
 En el siguiente gráfico se muestra la relación de actividades de este proceso.
 
-![](../images/ias-actividades.jpg)
+![Relación de actividades del proces Implantación y Aceptación del Sistema](../images/ias-actividades.jpg)
 
-Implantación y aceptación del sistema
+<!-- Implantación y Aceptación del Sistema -->
 
-![Implantación y aceptación del sistema](../images/ias-plan.jpg)
+![Relación de entradas, actividades y salidas del proceso Implantación y Aceptación del Sistema](../images/ias-plan.jpg)
 
 ### Actividad IAS 1: Establecimiento del Plan de Implantación {#ias-1}
 

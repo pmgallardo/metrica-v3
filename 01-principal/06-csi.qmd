@@ -28,11 +28,11 @@ La formación necesaria para que los usuarios finales sean capaces de utilizar e
 
 Si se ha establecido la necesidad de realizar una migración de datos, la construcción y pruebas de los componentes y procedimientos relativos a dicha migración y a la carga inicial de datos se realiza en la actividad Construcción de los Componentes y Procedimientos de Migración y Carga Inicial de Datos ([CSI 8](#csi-8)).
 
-![](../images/csi-actividades.jpg)
+![Relación de actividades del proceso Construcción del Sistema de Información](../images/csi-actividades.jpg)
 
-Construcción del sistema de información
+<!-- Construcción del Sistema de Información -->
 
-![Construcción del sistema de información](../images/csi-plan.jpg)
+![Relación de entradas, actividades y salidas del proceso Construcción del Sistema de Información](../images/csi-plan.jpg)
 
 ### Actividad CSI 1: Preparación del Entorno de Generación y Construcción {#csi-1}
 

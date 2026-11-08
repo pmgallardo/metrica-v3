@@ -29,11 +29,11 @@ La mejor forma de mantener el coste de mantenimiento bajo control es una gestió
 
 La estructura propuesta para el Proceso de Mantenimiento de MÉTRICA Versión 3 comprende las siguientes actividades:
 
-![](../images/msi-actividades.jpg)
+![Relación de actividades del proceso Mantenimiento de Sistemas de Información](../images/msi-actividades.jpg)
 
-Mantenimiento de sistemas de información
+<!-- Mantenimiento de Sistemas de Información -->
 
-![Mantenimiento de sistemas de información](../images/msi-plan.jpg)
+![Relación de entradas, actividades y salidas del proceso Mantenimiento de sistemas de información](../images/msi-plan.jpg)
 
 ### Actividad MSI 1: Registro de la Petición {#msi-1}
 

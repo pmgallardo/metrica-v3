@@ -217,11 +217,11 @@ La relación entre casos de uso es una relación unidireccional. Esta relacio�
 
 - La relación "usa" se utiliza cuando se quiere reflejar un comportamiento común en varios casos de uso. Es decir, si los casos de uso A y B presentan una parte común, ésta se puede sacar a un tercer caso de uso C. Entonces, habrá una relación "usa" del caso de uso A al C y otra del B al C.
 
-  ![](../images/relacion-usa.png)
+  ![Representación de la relación "usa" del diagrama de casos de uso](../images/relacion-usa.png)
 
 - La relación "extiende" se utiliza cuando se quiere reflejar un comportamiento opcional de un caso de uso. Por ejemplo, se tiene el caso de uso A que representa un comportamiento habitual del sistema. Sin embargo, dependiendo de algún factor, este caso de uso puede presentar un comportamiento adicional o ligeramente diferente, que se podría reflejar en un caso de uso B. En este caso, habrá una relación "extiende" del caso de uso B al A.
 
-  ![](../images/relacion-extiende.png)
+  ![Representación de la relación "extiende" del diagrama de casos de uso](../images/relacion-extiende.png)
 
 #### Notación {.unnumbered .unlisted}
 
@@ -233,25 +233,25 @@ Opcionalmente, los casos de uso se pueden enmarcar en un cuadrado que representa
 
 Un caso de uso se representa mediante una elipse con el nombre del caso de uso dentro o debajo.
 
-![](../images/caso-de-uso.png)
+![Representación del caso de uso en el diagrama de casos de uso](../images/caso-de-uso.png)
 
 ##### Actor {.unnumbered .unlisted}
 
 Un actor se representa con una figura de ‘hombre de palo’ con el nombre del actor debajo de la figura.
 
-![](../images/actor.png)
+![Representación del actor en el diagrama de casos de uso](../images/actor.png)
 
 ##### Relación {.unnumbered .unlisted}
 
 Dependiendo del tipo de relación, la representación en los diagramas será distinta. Así pues, las relaciones entre un actor y un caso de uso se representan mediante una línea continua entre ellos. Las relaciones entre casos de uso se representan con una flecha discontinua con el nombre del tipo de relación como etiqueta. En las relaciones "extensión" la flecha parte del caso de uso con el comportamiento adicional hacia aquel que recoge el comportamiento básico y en las relaciones "usa" desde el caso de uso básico hacia el que representa el comportamiento común.
 
-![](../images/relacion.png)
+![Representación de la relación en el diagrama de casos de uso](../images/relacion.png)
 
 ##### Paquete {.unnumbered .unlisted}
 
 Un paquete se representa con un icono con forma de carpeta y con el nombre colocado en la ‘pestaña’. Los paquetes también pueden formar diagramas que complementen al diagrama de casos de uso (ver [Diagrama de paquetes](#diagrama-de-paquetes)).
 
-![](../images/paquete.png)
+![Representación del paquete en el diagrama de casos de uso](../images/paquete.png)
 
 (Nota.- Esta notación es la más habitual, pero MÉTRICA Versión 3 no exige su utilización).
 
@@ -259,7 +259,7 @@ Un paquete se representa con un icono con forma de carpeta y con el nombre coloc
 
 Estudio de una aplicación que se encarga de la gestión de los préstamos y reservas de libros y revistas en una biblioteca.
 
-![](../images/ejemplo-casos-de-uso.png)
+![Ejemplo de diagrama de casos de uso](../images/ejemplo-casos-de-uso.png)
 
 ### Diagrama de Clases {#diagrama-de-clases}
 
@@ -342,7 +342,7 @@ La visibilidad será en general publica (+), privada (-) o protegida (#), aunqu
 
 `nombre : tipo = valor-por-defecto`
 
-![](../images/clase.png)
+![Representación de la clase en el diagrama de clases](../images/clase.png)
 
 La notación especificada se puede simplificar según el nivel de detalle con el que se quiera trabajar en un momento dado.
 
@@ -359,7 +359,7 @@ Las diferentes propiedades de la relación se pueden representar con la siguien
 - *Navegabilidad*: La navegación desde una clase a la otra se representa poniendo una flecha sin relleno en el extremo de la línea, indicando el sentido de la navegación.
 - *Rol* o *nombre de la asociación*: Este nombre se coloca junto al extremo de la línea que esta unida a una clase, para expresar cómo esa clase hace uso de la otra clase con la que mantiene la asociación.
 
-![](../images/asociacion.png)
+![Representación de la asociación en el diagrama de clases](../images/asociacion.png)
 
 Además, existen notaciones específicas para los otros tipos de relación, como son:
 
@@ -368,7 +368,7 @@ Además, existen notaciones específicas para los otros tipos de relación, c
 - *Dependencia*: Una línea discontinua con una flecha apuntando a la clase cliente. La relación puede tener un estereotipo que se coloca junto a la línea, y entre el símbolo: `<< ... >>`.
 - *Herencia*: Esta relación se representa como una línea continua con una flecha hueca en el extremo que apunta a la superclase.
 
-![](../images/tipos-asociacion.png)
+![Representación de otros tipos de relación en el diagrama de clases](../images/tipos-asociacion.png)
 
 ##### Interfaces {.unnumbered .unlisted}
 
@@ -378,16 +378,17 @@ Existe una representación más simple para la interfaz: un círculo pequeñ
 
 Entre una clase que implementa las operaciones que una interfaz ofrece y esa interfaz se establece una relación de realización que, dependiendo de la notación elegida, se representará con una línea continua entre ellas cuando la interfaz se representa como un círculo y con una flecha hueca discontinua apuntando a la interfaz cuando se represente como una clase.
 
-![](../images/clase-interfaz.png)
+![Representación de interfaces en diagrama de clases](../images/clase-interfaz.png)
 
 ##### Paquetes {.unnumbered .unlisted}
 
 Los paquetes se representan mediante un icono con forma de carpeta y las dependencias con flechas discontinuas entre los paquetes dependientes (ver Diagrama de paquetes).
-Ejemplo
+
+#### Ejemplo {.unnumbered .unlisted}
 
 Estudio del sistema encargado de la gestión de préstamos y reservas de libros y revistas de una biblioteca. Dependiendo del momento del desarrollo el diagrama estará más o menos detallado. Así, el diagrama tendría la siguiente estructura en el proceso de análisis:
 
-![](../images/ejemplo-diagrama-de-clases.png)
+![Representación de paquetes en el diagrama de clases](../images/ejemplo-diagrama-de-clases.png)
 
 (Nota.- Esta notación es la más habitual, pero MÉTRICA Versión 3 no exige su utilización).
 
@@ -409,7 +410,7 @@ Estos diagramas pueden incluir paquetes que permiten organizar la construcción
 
 Un componente se representa como un rectángulo, con dos pequeños rectángulos superpuestos perpendicularmente en el lado izquierdo.
 
-![](../images/componente.png)
+![Representación del componente en el diagrama de componentes](../images/componente.png)
 
 Para distinguir distintos tipos de componentes se les puede asignar un estereotipo, cuyo nombre estará dentro del símbolo: << ... >>
 
@@ -417,7 +418,7 @@ Para distinguir distintos tipos de componentes se les puede asignar un estereoti
 
 Se representa como un pequeño círculo situado junto al componente que lo implementa y unido a él por una línea continua. La interfaz puede tener un nombre que se escribe junto al círculo. Un componente puede proporcionar más de una interfaz.
 
-![](../images/interfaz.png)
+![Representación de la interfaz en diagrama de componentes](../images/interfaz.png)
 
 ##### Paquete {.unnumbered .unlisted}
 
@@ -446,7 +447,8 @@ El diagrama de descomposición, también conocido como diagrama jerárquico, 
 Notación
 
 Los elementos del dominio que se esté tratando se representan mediante un rectángulo, que contiene un nombre que lo identifica. Las relaciones de unos elementos con otros se representan mediante líneas que los conectan.
-Ejemplo
+
+#### Ejemplo {.unnumbered .unlisted}
 
 Diagrama de Descomposición Organizativo:
 
@@ -517,11 +519,11 @@ Otros componentes que se pueden representar en el diagrama de estructura son:
 Existen ciertas representaciones gráficas que permiten mostrar la secuencia de las llamadas entre módulos. Las posibles estructuras son:
 
 - **Secuencial**: un módulo llama a otros módulos una sola vez y, se ejecutan de izquierda a derecha y de arriba abajo.
-  ![](../images/secuencial.png)
+  ![Representación de la estructura secuencial en el diagrama de estructura](../images/secuencial.png)
 - **Repetitiva**: cada uno de los módulos inferiores se ejecuta varias veces mientras se cumpla una condición.
-  ![](../images/repetitiva.png)
+  ![Representación de la estructura repetitiva en el diagrama de estructura](../images/repetitiva.png)
 - **Alternativa**: cuando el módulo superior, en función de una decisión, llama a un módulo u otro de los de nivel inferior.
-  ![](../images/alternativa.png)
+  ![Representación de la estructura alternativa en el diagrama de estructura](../images/alternativa.png)
 
 ##### Principios del diseño estructurado {.unnumbered .unlisted}
 
@@ -564,7 +566,7 @@ Los pasos a realizar en el análisis de transformación son:
 
 A continuación se muestra un gráfico explicativo de dicha estrategia de diseño:
 
-![Estrategia de Diseño usando Análisis de Transformación](../images/estrategia-disenio.png)
+![Gráfico explicativo de la estrategia de diseño usando Análisis de Transformación](../images/estrategia-disenio.png)
 
 ##### 2.- Análisis de Transacción {.unnumbered .unlisted}
 
@@ -619,35 +621,35 @@ Un buen diseño debe ir orientado a conseguir que los módulos realicen una fu
 
 Se representa mediante un rectángulo con su nombre en el interior.
 
-![](../images/modulo.png)
+![Representación del módulo en el diagrama de estructura](../images/modulo.png)
 
 Un módulo predefinido se representa añadiendo dos líneas verticales y paralelas en el interior del rectángulo.
 
-![](../images/modulo-predefinido.png)
+![Representación del módulo predefinido en el diagrama de estructura](../images/modulo-predefinido.png)
 
 ##### Conexión {.unnumbered .unlisted}
 
 Se representa mediante una línea terminada en punta de flecha cuya dirección indica el módulo llamado. Para llamadas a módulos estáticos se utiliza trazo continuo y para llamadas a módulos dinámicos trazo discontinuo.
 
-![](../images/conexion.png)
+![Representación de conexión en el diagrama de estructura](../images/conexion.png)
 
 ##### Parámetros {.unnumbered .unlisted}
 
 La representación varía según su tipo: control (*flags*) o datos.
 
-![](../images/parametros.png)
+![Representación de parámetros en el diagrama de estructura](../images/parametros.png)
 
 ##### Almacén de datos {.unnumbered .unlisted}
 
-![](../images/almacen.png)
+![Representación del almacén de datos en el diagrama de estructura](../images/almacen.png)
 
 ##### Dispositivo físico {.unnumbered .unlisted}
 
-![](../images/dispositivo.png)
+![Representación del dispositivo físico en el diagrama de estructura](../images/dispositivo.png)
 
 (Nota.- Esta notación es la más habitual, pero MÉTRICA Versión 3 no exige su utilización).
 
-Ejemplo.
+#### Ejemplo {.unnumbered .unlisted}
 
 El siguiente ejemplo muestra un proceso de emisión de cheques para el pago de nóminas de los empleados de una empresa. En él se diferencian los cálculos relativos a los trabajadores empleados por horas y los que poseen contrato. La lectura del fichero de empleados y la impresión de los cheques son módulos ya disponibles en las librerías del sistema, es decir, módulos predefinidos.
 
@@ -728,21 +730,21 @@ A continuación se muestra un ejemplo gráfico que representa la de descomposi
 
 Se representa mediante una elipse con un identificador y un nombre significativo en su interior.
 
-![](../images/dfd-entidad.png)
+![Representación de la entidad externa en el diagrama de flujo de datos](../images/dfd-entidad.png)
 
 Si la entidad externa aparece varias veces en un mismo diagrama, se representa con una línea inclinada en el ángulo superior izquierdo.
 
-![](../images/dfd-entidad-2.png)
+![Representación de la entidad externa repetida en el diagrama de flujo de datos](../images/dfd-entidad-2.png)
 
 ##### Proceso {.unnumbered .unlisted}
 
 Se representa por un rectángulo subdividido en tres casillas donde se indica el nombre del proceso, un número identificativo y la localización.
 
-![](../images/dfd-proceso.png)
+![Representación del proceso en el diagrama de flujo de datos](../images/dfd-proceso.png)
 
 Si el proceso es de último nivel, se representa con un asterisco en el ángulo inferior derecho separado con una línea inclinada.
 
-![](../images/dfd-proceso-2.png)
+![Representación del proceso final en el diagrama de flujo de datos](../images/dfd-proceso-2.png)
 
 El nombre del proceso debe ser lo más representativo posible. Normalmente estará constituido por un verbo más un sustantivo.
 
@@ -758,39 +760,39 @@ La localización expresa el nombre del proceso origen de la descomposición qu
 
 Se representa por dos líneas paralelas cerradas en un extremo y una línea vertical que las une. En la parte derecha se indica el nombre del almacén de datos y en la parte izquierda el identificador de dicho almacén en el DFD.
 
-![](../images/dfd-almacen.png)
+![Representación del almacén de datos en el diagrama de flujo de datos](../images/dfd-almacen.png)
 
 Si un almacén aparece repetido dentro un DFD se puede representar de la siguiente forma:
 
-![](../images/dfd-almacen-2.png)
+![Representación del almacén repetido en el diagrama de flujo de datos](../images/dfd-almacen-2.png)
 
 ##### Flujo de datos {.unnumbered .unlisted}
 
 Se representa por una flecha que indica la dirección de los datos, y que se etiqueta con un nombre representativo.
 
-![](../images/dfd-flujo.png)
+![Representación del flujo de datos en el diagrama de flujo de datos](../images/dfd-flujo.png)
 
 La representación de los flujos de datos entre procesos y almacenes es la siguiente:
 
-![](../images/dfd-flujo-2.png)
+![Representación del flujo de datos entre procesos y almacenes en el diagrama de flujo de datos](../images/dfd-flujo-2.png)
 
 ##### Proceso de control {.unnumbered .unlisted}
 
 Se representa por un rectángulo, con trazo discontinuo, subdividido en tres casillas donde se indica el nombre del proceso, un número identificativo y la localización.
 
-![](../images/dfd-control.png)
+![Representación del proceso de control en el diagrama de flujo de datos](../images/dfd-control.png)
 
 ##### Flujo de control {.unnumbered .unlisted}
 
 Se representa por una flecha con trazo discontinuo que indica la dirección de flujo y que se etiqueta con un nombre representativo.
 
-![](../images/dfd-control-2.png)
+![Representación del flujo de control en el diagrama de flujo de datos](../images/dfd-control-2.png)
 
 #### Ejemplo {.unnumbered .unlisted}
 
 La figura es un diagrama de flujos de un Sistema Gestor de Pedidos. En él están representados todos los elementos que pueden intervenir en una Diagrama de Flujo de Datos.
 
-![Ejemplo de Diagrama de Flujo de Datos](../images/dfd-ejemplo.png)
+![Ejemplo de diagrama de flujo de datos](../images/dfd-ejemplo.png)
 
 #### Consistencia de los diagramas de flujos de datos {.unnumbered .unlisted}
 
@@ -798,25 +800,25 @@ Una vez construidos los diagramas de flujo de datos que componen el modelo de pr
 
 Además, los diagramas deben ser consistentes. En los diagramas hay que comprobar que en un DFD resultado de una explosión:
 
-    No falten flujos de datos de entrada o salida que acompañaban al proceso del nivel superior.
-    No aparezca algún flujo que no estuviese ya asociado al proceso de nivel superior.
-    Todos los elementos del DFD resultante deben estar conectados directa o indirectamente con los flujos del proceso origen.
+- No falten flujos de datos de entrada o salida que acompañaban al proceso del nivel superior.
+- No aparezca algún flujo que no estuviese ya asociado al proceso de nivel superior.
+- Todos los elementos del DFD resultante deben estar conectados directa o indirectamente con los flujos del proceso origen.
 
 A continuación se incluyen ejemplos de la consistencia o inconsistencia de los diagramas de flujo de datos.
 
 Sea el diagrama de contexto de la figura. Los flujos A, C y D, entran al sistema, y el flujo B sale de él.
 
-![](../images/dfd-contexto.png)
+![Diagrama de contexto para los ejemplos de consistencia e inconsistencia de los diagramas de flujos de datos](../images/dfd-contexto.png)
 
 ##### Ejemplo de consistencia de diagramas de flujo de datos {.unnumbered .unlisted}
 
 En la explosión del sistema en el diagrama de nivel 1, aparecen todos los flujos, y en su sentido correcto: A y C entran al subsistema o proceso 1, B sale del proceso 2, y D entra en el proceso 3. Se observa que el proceso 3, origina dos flujos de salida: E que va a al proceso 1, y F al proceso 2.
 
-![](../images/dfd-nivel1.png)
+![Diagrama de nivel 1 del ejemplo de consistencia de diagramas de flujos de datos](../images/dfd-nivel1.png)
 
 La descomposición del proceso 1, muestra los flujos A, C y E correctamente, como entradas a las funciones del diagrama.
 
-![](../images/dfd-proceso1.png)
+![Diagrama del proceso 1 del ejemplo de consistencia de diagramas de flujos de datos](../images/dfd-proceso1.png)
 
 Los demás flujos están enlazados con los almacenes A1 y A2 del mismo modo que en el diagrama anterior.
 
@@ -826,15 +828,15 @@ Partiendo del mismo diagrama de contexto utilizado en el anterior ejemplo, los f
 
 Por otro lado, en el proceso 3 no entra ningún flujo, no es posible por tanto que transforme datos saliendo los flujos E y F y además está desconectado del nivel anterior.
 
-![](../images/dfd-nivel1-2.png)
+![Diagrama de nivel 1 del ejemplo de inconsistencia de diagramas de flujos de datos](../images/dfd-nivel1-2.png)
 
 En el siguiente paso, la inconsistencia más clara es la falta del flujo C, que entra al proceso 1, y sin embargo no aparece en su explosión.
 
-![](../images/dfd-proceso1-2.png)
+![Diagrama del proceso 1 del ejemplo de inconsistencia de diagramas de flujos de datos](../images/dfd-proceso1-2.png)
 
 Además, hay otra inconsistencia respecto al almacén A1: en el diagrama del nivel anterior, el proceso 1 se conectaba con un flujo de entrada-salida este almacén, cosa que no se refleja en el diagrama de este proceso, en el que sólo aparece uno de entrada.
 
-Ejemplo de construcción.
+#### Ejemplo de construcción {.unnumbered .unlisted}
 
 El caso en estudio es un modelo de procesos de un sistema de información de Conocimientos de técnicos. Según estos conocimientos, los técnicos podrán ser asignados a determinados proyectos de la organización.
 
@@ -842,7 +844,7 @@ El sistema recogerá la información referente a los técnicos, procedente de
 
 Las entidades externas son pues Dirección Técnica y Unidad de Negocio, que introducen los datos al sistema y hacen peticiones de consultas e informes sobre los técnicos y sus conocimientos. El diagrama de contexto será el siguiente:
 
-![](../images/dfd-contexto-1.png)
+![Diagrama de contexto del ejemplo de construcción](../images/dfd-contexto-1.png)
 
 Los flujos de entrada son: Datos Técnicos, con datos de los técnicos introducidos por la Dirección Técnica, así como posibles peticiones de información sobre ellos; y Datos Unidad, que proviene de la Unidad de Negocio, conteniendo datos referentes a la unidad, de proyectos y clientes, así como posibles peticiones de consultas sobre los mismos.
 
@@ -850,7 +852,7 @@ Los flujos de salida son: Información Técnicos, que contendrá datos de te�
 
 El sistema de Conocimientos se descompone en el diagrama de nivel 1, conteniendo dos subsistemas. El subsistema 1 recogerá las funciones a realizar con los datos de los técnicos de la organización (actualizaciones, consultas, informes, etc.), por lo que se denomina Tratar Técnicos. El subsistema 2 contendrá las funciones asociadas al procesamiento de datos de proyectos, por lo que se le da el nombre Tratar Proyectos.
 
-![Ejemplo de diagrama de flujo de datos](../images/dfd-subsistema.png)
+![Diagrama de flujo de datos de nivel 1 del ejemplo de construcción](../images/dfd-subsistema.png)
 
 En el diagrama se encuentran cuatro almacenes, tres de los cuales son accedidos por funciones de los dos subsistemas: A1 Conocimientos, A2 Proyectos y A3 Técnicos. El cuarto, A4 Clientes, sólo es accedido por el subsistema Tratar Proyectos.
 
@@ -862,7 +864,7 @@ En el diagrama resultado de la explosión de Tratar Técnicos, se incluyen cua
 
 El flujo de entrada Datos Técnicos se compone tanto de los datos profesionales de los técnicos, como de datos de peticiones de información sobre los mismos, por lo cual se ha dividido en dos: Datos Profesionales, que es entrada del proceso 1.1 Validar datos Técnicos y Peticiones Información Técnicos, que entra en la función 1.4 Informar.
 
-![](../images/dfd-subsistema-2.png)
+![Diagrama de flujo de datos del subsistema 1 Tratar Técnicos del ejemplo de construcción](../images/dfd-subsistema-2.png)
 
 Para la validación, el proceso 1.1 Validar Datos Técnicos obtiene información del almacén A3 Técnicos y genera una salida, el flujo Datos Técnicos Correctos, que lleva los datos válidos a la función 1.2 Actualizar Almacenes Técnicos. Esta función se encarga de actualizar los almacenes A3 Técnicos y A1 Conocimientos, pero también emite un flujo al proceso 1.3 Asignar a Proyectos. Éste se encarga de hacer asignaciones de técnicos en el almacén A2 Proyectos.
 
@@ -872,7 +874,7 @@ Obsérvese que para mayor claridad no se ha incluido ya ninguna entidad externa
 
 En este momento, todos los procesos se consideran primitivos, excepto el proceso 1.4 Informar, del que se obtiene su descomposición. Sus funciones han de obtener Informes Técnicos y Consultas Técnicos, flujos que componen Información Técnicos que aparecía en el nivel anterior.
 
-![](../images/dfd-subsistema-3.png)
+![Diagrama de flujo de datos de la función 1.4 Informar del ejemplo de construcción](../images/dfd-subsistema-3.png)
 
 Por otro lado, también aparece dividido el flujo de entrada Peticiones Información Técnicos, diferenciando la entrada al proceso de consultas o al de emisión de informes.
 
@@ -932,7 +934,7 @@ Un mensaje se representa como una flecha horizontal entre las líneas de vida d
 
 La flecha tiene asociada una etiqueta con el nombre del mensaje y los argumentos. También pueden ser etiquetados los mensajes con un número de secuencia, sin embargo, este número no es necesario porque la localización física de las flechas que representan a los mensajes ya indica el orden de los mismos.
 
-![](../images/secuencia.png)
+![Representación del mensaje en el diagrama de secuencia](../images/secuencia.png)
 
 Los mensajes pueden presentar también condiciones e iteraciones. Una condición se representa mediante una expresión booleana encerrada entre corchetes junto a un mensaje, e indica que ese mensaje sólo es enviado en caso de ser cierta la condición. Una iteración se representa con un asterisco y una expresión entre corchetes, que indica el número de veces que se produce.
 
@@ -942,7 +944,7 @@ Los mensajes pueden presentar también condiciones e iteraciones. Una condicio�
 
 Diagrama de secuencia para el caso de uso: Prestar un ejemplar de una aplicación encargada de los préstamos y reservas de una biblioteca:
 
-![Ejemplo de Diagrama de secuencia](../images/secuencia-ejemplo.png)
+![Ejemplo de diagrama de secuencia](../images/secuencia-ejemplo.png)
 
 #### Diagrama de colaboración {#diagrama-de-colaboracion}
 
@@ -973,7 +975,7 @@ Además, los mensajes pueden tener asociadas condiciones e iteraciones que se r
 
 Diagrama de colaboración para el caso de uso: Prestar un ejemplar de una aplicación encargada de los préstamos y reservas de una biblioteca.
 
-![Ejemplo de Diagrama de colaboración](../images/colaboracion-ejemplo.png)
+![Ejemplo de diagrama de colaboración](../images/colaboracion-ejemplo.png)
 
 (Nota.- Esta notación es la más habitual, pero MÉTRICA Versión 3 no exige su utilización).
 
@@ -1010,7 +1012,7 @@ Las dependencias se representan con una flecha discontinua con inicio en el paqu
 
 Sistema encargado de la gestión de los préstamos y reservas de libros y revistas en una biblioteca.
 
-![Ejemplo de Diagrama de Paquetes](../images/paquetes.png)
+![Ejemplo de diagrama de paquetes](../images/paquetes.png)
 
 (Nota.- Esta notación es la más habitual, pero MÉTRICA Versión 3 no exige su utilización).
 
@@ -1048,7 +1050,7 @@ nombre-evento (parámetros) [condición] /acción
 
 El estado inicial se representa con un pequeño circulo relleno, y el estado final como un pequeño circulo relleno con una circunferencia que lo rodea.
 
-![](../images/estados.png)
+![Representación del estado en el diagrama de transición de estados](../images/estados.png)
 
 ##### Transición {.unnumbered .unlisted}
 
@@ -1060,7 +1062,7 @@ nombre-evento (parámetros) [condición] /acción
 
 #### Ejemplo {.unnumbered .unlisted}
 
-![Ejemplo de Diagrama de Transición de Estados](../images/estados-ejemplo.png)
+![Ejemplo de diagrama de transición de estados](../images/estados-ejemplo.png)
 
 (Nota.- Esta notación es la más habitual, pero MÉTRICA Versión 3 no exige su utilización).
 
@@ -1161,7 +1163,7 @@ Esta notación responde a los siguientes principios: las entradas son transform
 
 Cada flujo (flecha) representa planes, datos, máquinas e información, etc., y debe nombrarse con un sustantivo.
 
-![](../images/sadt-notacion.png)
+![Representación de SADT](../images/sadt-notacion.png)
 
 Las actividades en los diagramas SADT no se ubican de forma aleatoria, sino por la influencia que una actividad tiene sobre otras. La más dominante, es decir, la que más influye en las restantes, debe ser normalmente la primera en la secuencia de actividades y se sitúa en la esquina superior izquierda del diagrama. Por ejemplo, si se trata de realizar un proceso de selección de personal, la actividad más dominante será la de revisar las referencias de los candidatos. La menos dominante, por el contrario, se sitúa en la esquina inferior derecha, por ejemplo, en el caso anterior, sería la de contratar o rechazar a un candidato a empleo. Cada actividad se numera siguiendo una secuencia que empieza en la que se corresponde con la actividad más dominante y así sucesivamente.
 
@@ -1183,7 +1185,7 @@ La conexión por control o entrada se da cuando una salida de una actividad se 
 
 A continuación se muestra un ejemplo del proceso de selección de personal de una empresa mediante la técnica SADT. (MÉTRICA Versión 3 no exige la notación aquí utilizada).
 
-![](../images/sadt.png)
+![Ejemplo de SADT](../images/sadt.png)
 
 ### Modelo Entidad/Relación Extendido {#modelo-entidad-relacion-extendido}
 
@@ -1312,7 +1314,7 @@ Modelo entidad-relación extendido para un sistema de gestión de técnicos y
 
 Como se aprecia en el diagrama, TÉCNICO es un subtipo de EMPLEADO, generado por especialización, pues era necesario para establecer la relación Trabaja en con PROYECTO, ya que no todos los empleados de la empresa, como los administrativos, son susceptibles de trabajar en un proyecto. La entidad TÉCNICO tendrá los atributos de EMPLEADO más el atributo nivel.
 
-![Ejemplo de Modelo Entidad/Relación Extendido](../images/MERE_Ejemplo.png)
+![Ejemplo de modelo entidad/relación extendido](../images/MERE_Ejemplo.png)
 
 Los tipos de correspondencia son `1:N` entre DEPARTAMENTO y EMPLEADO, pues un departamento tiene 1 o varios empleados. Entre TÉCNICO y PROYECTO es `M:N`, pues un técnico puede trabajar en 1 o varios proyectos, y en un proyecto trabajan 1 o varios técnicos.
 
@@ -1378,7 +1380,7 @@ Una herramienta muy útil para visualizar las dependencias funcionales es el gr
 
 En el grafo aparecen los nombres de los atributos unidos por flechas, las cuales indican las dependencias funcionales completas que existen entre ellos, partiendo del implicante hacia el implicado. Cuando el implicante de una dependencia no es un único atributo, es decir, se trata de un implicante compuesto, los atributos que lo componen se encierran en un recuadro y la flecha parte de éste, no de cada atributo.
 
-![](../images/Notacion-normalizacion.png)
+![Representación del grafo de dependencias funcionales](../images/Notacion-normalizacion.png)
 
 En la figura se presenta un ejemplo de cómo se visualizan las dependencias. Se puede observar que cod_libro determina funcionalmente el título del libro y la editorial, como indica la correspondiente flecha; de forma análoga, num_socio determina el nombre, domicilio y el tel. del socio (suponiendo que sólo se proporciona un teléfono); mientras que ambos atributos en conjunto cod_libro y num_socio (lo que se indica mediante el recuadro que los incluye) determinan fecha_préstamo y fecha_dev.
 
@@ -1522,13 +1524,13 @@ Existen varias posibilidades que deben ser evaluadas por el diseñador a fin de
 
 La representación gráfica de una tabla es un rectángulo con una línea horizontal que lo divide en dos. La parte superior, de ancho menor, se etiqueta con el nombre de la tabla.
 
-![](../images/ROMF-notacion-1.png)
+![Representación de la tabla de transformación de la jerarquía](../images/ROMF-notacion-1.png)
 
 ##### Relación {.unnumbered .unlisted}
 
 La relación entre tablas se representa gráficamente mediante una línea que las une. En ella pueden aparecer en sus extremos diversos símbolos para indicar la cardinalidad de la relación, como se muestra a continuación:
 
-![](../images/ROMF-notacion-2.png)
+![Representación de la relación de transformación de la jerarquía](../images/ROMF-notacion-2.png)
 
 #### Ejemplo {.unnumbered .unlisted}
 
@@ -1630,7 +1632,7 @@ Dados dos tipos de elementos A y B, su representación será una matriz bidime
 
 En el cruce de una fila y una columna (C), se tendrá el modo en que se relacionan un elemento concreto de A y uno de B.
 
-![](../images/tecnicas-matriciales.png)
+![Representación de técnicas matriciales](../images/tecnicas-matriciales.png)
 
 {{< pagebreak >}}
 
@@ -1709,7 +1711,7 @@ A continuación se describen los distintos componentes que han de tenerse en cu
 - Una entrada es única si difiere en su formato o si arranca procesos diferentes.
 - Para el análisis de este componente se utiliza la siguiente matriz de complejidad:
 
-![](../images/albrecht-1.png)
+![Entradas externas en el método Albrecht](../images/albrecht-1.png)
 
 Los tipos de entrada aplicables son los siguientes:
 
@@ -1731,7 +1733,7 @@ Los tipos de entrada aplicables son los siguientes:
 
 Para el análisis de este componente se utiliza la siguiente matriz de complejidad:
 
-![](../images/albrecht-2.png)
+![Salidas externas en el método Albrecht](../images/albrecht-2.png)
 
 Los tipos de salida aplicables son los siguientes:
 
@@ -1752,7 +1754,7 @@ Los tipos de salida aplicables son los siguientes:
 - No deben incluirse aquellos grupos lógicos de datos que no sean accesibles por el usuario a través de entradas o salidas externas, ficheros de interfaz o consultas.
 - Para el análisis de este componente se utiliza la siguiente matriz de complejidad:
 
-![](../images/albrecht-3.png)
+![Grupos lógicos de datos internos en el método Albrecht](../images/albrecht-3.png)
 
 Los tipos de datos internos o ficheros aplicables son los siguientes:
 
@@ -1769,7 +1771,7 @@ Los tipos de datos internos o ficheros aplicables son los siguientes:
 
 Para el análisis de este componente se utiliza la siguiente matriz de complejidad:
 
-![](../images/albrecht-4.png)
+![Grupos lógicos de datos de interfaz en el método Albrecht](../images/albrecht-4.png)
 
 Los tipos de datos o ficheros de interfaz aplicables son los siguientes:
 
@@ -2046,13 +2048,13 @@ En esta etapa se identifican los factores que se tienen en cuenta para el cálc
 - **Número de tipos de datos de entrada** que han de ser tratados por la función, considerando que para cada tipo de datos se van a realizar las mismas operaciones de validación, tratamiento, etc.
 - **Número de tipos de datos de salida** que han de ser presentados por el sistema, teniendo en cuenta para ello el tratamiento que hay que dar les para su presentación.
 
-####### Cálculo de los Puntos Función no ajustados {.unnumbered .unlisted}
+###### Cálculo de los Puntos Función no ajustados {.unnumbered .unlisted}
 
 La tabla que aparece a continuación permite la valoración en Puntos Función no ajustados de todas las funciones que intervienen en el Sistema. Los pesos empleados para la ponderación de las entidades, tipos de datos de entrada y tipos de datos de salida han sido obtenidos por el autor del Método a partir de su experiencia y están basados en la media de la industria informática.
 
-![](../images/mark-ii-1.png)
+![Cálculo de los Puntos de Función no ajustados del método Mark II](../images/mark-ii-1.png)
 
-####### Valoración de grados de influencia {.unnumbered .unlisted}
+###### Valoración de grados de influencia {.unnumbered .unlisted}
 
 Al igual que en el método Albrecht, esta etapa tiene como objetivo la adaptación de la estimación a las condiciones de trabajo bajo las que el sistema ha de ser desarrollado.
 
@@ -2274,7 +2276,7 @@ Los tipos de documentos son los siguientes:
 
 Todos los atributos anteriores, con sus valores correspondientes, se contemplan en la siguiente tabla:
 
-![](../images/mark-ii-2.png)
+![Atributos del método Mark II](../images/mark-ii-2.png)
 
 ##### Ajuste por complejidad técnica {.unnumbered .unlisted}
 
@@ -2493,7 +2495,7 @@ Se puede concluir lo siguiente:
 - Proyectos con una importante gestión de interfaces de usuario conllevan de dos a tres veces el número de clases clave para las clases secundarias.
 - Proyectos con una gestión más sencilla de la interfaz de usuario implican una o dos veces el número de clases clave para las clases secundarias.
 
-Ejemplo:
+#### Ejemplo {.unnumbered .unlisted}
 
 Si durante la fase de análisis se encuentran unas 100 clases clave y el proyecto implica una gestión importante de la interfaz de usuario, podemos dar un promedio de 2.5 y proporcionar una estimación de unas 250 clases secundarias. El número total de clases para el proyecto estimado sería unas 350 clases.
 
@@ -2535,37 +2537,37 @@ Para representar las diferentes actividades en que se descompone un proyecto, as
 
 Así el vértice 1 del diagrama que aparece a continuación indica el suceso inicio de la actividad A y el vértice 2 el suceso fin de dicha actividad. El arco que une los vértices 1 y 2 representa la propia realización de la actividad.
 
-![](../images/PERT-1.png)
+![Representación de actividades y sucesos en el método PERT](../images/PERT-1.png)
 
 Por otra parte, como se ha dicho, un suceso puede representar el principio o fin de un conjunto de actividades. En efecto, en la siguiente figura el vértice 1 representa el suceso inicio de las actividades A, B y C.
 
-![](../images/PERT-2.png)
+![Representación de un suceso que representa el suceso inicio de un conjunto de actividades en el método PERT](../images/PERT-2.png)
 
 Mientras que en la figura que aparece a continuación, el vértice 4 representa el suceso fin de las actividades A, B y C.
 
-![](../images/PERT-3.png)
+![Representación de un suceso que representa el suceso fin de un conjunto de actividades en el método PERT](../images/PERT-3.png)
 
 Una vez descompuesto el proyecto en actividades, la fase siguiente del método PERT consiste en establecer las prelaciones existentes entre las diferentes actividades. Estas prelaciones indican el orden en que deben ejecutarse dichas actividades. El caso más sencillo son la prelaciones lineales, que se presentan cuando, para poder iniciar una actividad, es necesario que haya finalizado previamente una única actividad (la precedente).
 
 Observando la siguiente figura se aprecia que para poder iniciar la actividad B es necesario que haya finalizado la actividad A. Es decir, el vértice 2 representa el suceso fin de la actividad A y, a la vez, el suceso comienzo de la actividad B.
 
-![](../images/PERT-4.png)
+![Representación de una actividad cuyo inicio requiere haber finalizado otra actividad en el método PERT](../images/PERT-4.png)
 
 A continuación, se va a estudiar el caso de las prelaciones que originan una convergencia. En el siguiente diagrama se representa este caso. Para poder iniciar la actividad D es necesario que se hayan finalizado las actividades A, B y C. Es decir, el vértice 4 representa el suceso fin de las actividades A, B y C y, a la vez, el suceso comienzo de la actividad D.
 
-![](../images/PERT-5.png)
+![Representación de prelaciones que originan una convergencia en el método PERT](../images/PERT-5.png)
 
 El caso opuesto al anterior es el de las prelaciones que originan una divergencia, representado en el diagrama que aparece a continuación. En este caso, para poder iniciar las actividades B, C y D es necesario que se haya finalizado previamente la actividad A.
 
-![](../images/PERT-6.png)
+![Representación de prelaciones que originan una divergencia en el método PERT](../images/PERT-6.png)
 
 Sean ahora las siguientes prelaciones: la actividad A es anterior a las actividades B, C y D y dichas actividades (B, C y D) son anteriores a la actividad E. Una forma de reflejarlas es la que viene representada en el siguiente diagrama. En él se muestran las prelaciones anteriores correctamente. Pero esta representación puede resultar confusa, ya que las actividades B, C y D tienen el mismo origen y el mismo destino.
 
-![](../images/PERT-7.png)
+![Representación confusa de prelaciones en el método PERT](../images/PERT-7.png)
 
 Para resolver este problema se puede recurrir a las actividades ficticias, como se muestra en el siguiente diagrama, donde se distinguen perfectamente las actividades B, C y D, ya que las tres actividades, aun naciendo en el mismo vértice, mueren en vértices distintos.
 
-![](../images/PERT-8.png)
+![Representación de prelaciones mediante actividades ficticias en el método PERT](../images/PERT-8.png)
 
 ##### Ejemplo {.unnumbered .unlisted}
 
@@ -2593,19 +2595,19 @@ La matriz de encadenamientos consiste en una matriz cuadrada cuya dimensión es
 
 Con arreglo a esta estructura, la matriz de encadenamientos para el ejemplo es la siguiente:
 
-![](../images/PERT-9.png)
+![Matriz de encadenamientos del ejemplo del método PERT](../images/PERT-9.png)
 
 Es interesante observar que aquellas filas de la matriz en las que no aparece ninguna **X** indican las actividades que no tienen ningún precedente. Es decir, aquellas actividades cuyo suceso inicial coincide con el suceso inicio del proyecto (actividades A y B). Por otra parte, aquellas columnas en las que no aparece ninguna **X** indican las actividades que no tienen ninguna actividad siguiente, es decir, aquellas actividades cuyo suceso final coincide con el suceso fin del proyecto (actividad R).
 
 El cuadro de prelaciones está formado por dos columnas. En la primera columna están representadas todas las actividades en que se ha descompuesto el proyecto. En la segunda columna figuran las actividades precedentes de su homóloga en la primera columna. Con los datos del ejemplo se elabora el cuadro de prelaciones, que es el siguiente:
 
-![](../images/PERT-10.png)
+![Cuadro de prelaciones del ejemplo del método PERT](../images/PERT-10.png)
 
 La actividad o actividades inicio del proyecto se reconocen en el cuadro de prelaciones por no tener ninguna actividad precedente (actividades A y B). La actividad o actividades fin del proyecto se reconocen por no aparecer en la columna (2) de dicho cuadro (actividad R).
 
 A partir de la matriz de encadenamientos o del cuadro de prelaciones se construye fácilmente el grafo PERT correspondiente. Para los datos del ejemplo, el grafo PERT está representado en el siguiente diagrama.
 
-![](../images/PERT-11.png)
+![Representación del grafo del ejemplo del método PERT](../images/PERT-11.png)
 
 #### Diagrama de Gantt {#diagrama-de-gantt}
 
@@ -2631,7 +2633,7 @@ El gráfico de Gantt es la forma habitual de presentar el plan de ejecución d
 
 El siguiente diagrama es un ejemplo típico de un diagrama de Gantt, en el que aparecen fases, actividades, tareas e hitos.
 
-![Ejemplo de Diagrama de Gantt](../images/Gantt-1.png)
+![Ejemplo de diagrama de Gantt](../images/Gantt-1.png)
 
 Para que un Gantt sea realista y fiable debe ir acompañado de un gráfico que refleje la actividad de los técnicos (Histograma de Recursos) que componen el equipo del proyecto.
 
@@ -2680,7 +2682,7 @@ Esta técnica tiene como objetivo establecer los límites de recursos aproxima
 
 Como consecuencia de ello se obtiene el gráfico que aparece a continuación y que servirá para establecer los límites de la asignación de recursos.
 
-![Ejemplo de Diagrama de Gantt](../images/Gantt-2.png)
+![Gráfico de la técnica de patrón de límites del diagrama de Gantt](../images/Gantt-2.png)
 
 ##### Histograma de recursos {.unnumbered .unlisted}
 
@@ -2690,7 +2692,7 @@ A medida que se incorporan recursos al proyecto, el gráfico aumenta y al contr
 
 A continuación puede verse un ejemplo gráfico.
 
-![Ejemplo de Diagrama de Gantt](../images/Gantt-3.png)
+![Ejemplo de histograma de recursos del diagrama de Gantt](../images/Gantt-3.png)
 
 ##### Planificación de actividades y recursos {.unnumbered .unlisted}
 
@@ -2706,7 +2708,7 @@ Para realizar adecuadamente la planificación es necesario observar lo siguient
 
 Seguidamente puede verse gráficamente como debe realizarse la planificación de actividades y la de recursos.
 
-![Ejemplo de Diagrama de Gantt](../images/Gantt-4.png)
+![Ejemplo de realización de la planificación de actividades y de la de recursos en diagrama de Gantt](../images/Gantt-4.png)
 
 #### Estructura de Descomposición de Trabajo (WBS – Work Breakdown Structure) {#estructura-de-descomposicion-de-trabajo}
 
@@ -2752,7 +2754,7 @@ Sea un proyecto en que se estima un esfuerzo de 20.000 horas en un tiempo de 10 
 
 Se hace una estimación en el mes 5, y se encuentra un punto de esfuerzo equivalente a 22.000 horas (marcado con un triángulo en la figura). Se une el punto de esfuerzo inicial del eje de ordenadas (20) con el punto estimado, y la prolongación efectúa un corte en la bisectriz. Desde el punto de corte una línea vertical indica, en el eje de abscisas, que el tiempo previsto de terminación será ahora de 12,2 meses. Es decir, el proyecto se va a alargar 2,2 meses más de lo previsto inicialmente.
 
-![](../images/extrapolacion.png)
+![Ejemplo de diagrama de extrapolación](../images/extrapolacion.png)
 
 {{< pagebreak >}}
 
@@ -2877,7 +2879,7 @@ Libre.
 
 En la figura siguiente se presenta un mapa de pantallas en línea de una parte de una aplicación. El diagrama representa la navegación entre las pantallas y las teclas de función para el paso de unas a otras.
 
-![](../images/representacion.png)
+![Ejemplo de diagrama de representación](../images/representacion.png)
 
 ### Factores Críticos de Éxito {#factores-criticos-de-exito}
 
@@ -2992,37 +2994,37 @@ Para aquellos FCE no controlables, son absolutamente necesarios procedimientos q
 
    En este caso se tendría:
    
-   ![](../images/FCE-1.png)
+   ![Ejemplo de depuración de la lista de objetivos en la práctica de factores críticos de éxito](../images/FCE-1.png)
 
 3. Identificar los factores de éxito.
 
    En el ejemplo, y mediante [entrevistas](#entrevistas) con los responsables de la organización, se obtendría la siguiente tabla:
 
-   ![](../images/FCE-2.png)
+   ![Ejemplo de identificación de factores de éxito en la práctica de factores críticos de éxito](../images/FCE-2.png)
 
 4. Eliminar los factores de éxito no críticos.
 
    En el ejemplo que se sigue, se decidió que el factor de éxito «Mantener los gastos de funcionamiento en un 20% de las ventas» no exigía recursos especialmente cualificados para conseguirlo, por lo cual se eliminó de la lista.
 
-   ![](../images/FCE-3.png)
+   ![Ejemplo de eliminación de factores de éxito no críticos en la práctica de factores críticos de éxito](../images/FCE-3.png)
 
 5. Agrupar los factores de éxito de acuerdo con los objetivos.
 
    En el ejemplo, el factor de éxito «Incrementar ventas» es sinónimo del objetivo «ventas de 100 millones», por lo tanto se elimina.
 
-   ![](../images/FCE-4.png)
+   ![Ejemplo de agrupación de factores de éxito de acuerdo con los objetivos en la práctica de factores críticos de éxito](../images/FCE-4.png)
 
 6. Identificar los componentes de estos factores de éxito.
 
    En el ejemplo que se está desarrollando se ha obtenido la siguiente tabla:
 
-   ![](../images/FCE-5.png)
+   ![Ejemplo de tabla de identificación de los componentes de los factores de éxito en la práctica de factores críticos de éxito](../images/FCE-5.png)
 
 7. Seleccionar los factores críticos de éxito.
 
    En la tabla siguiente se representan en negrita los factores críticos de éxito seleccionados.
 
-   ![](../images/FCE-6.png)
+   ![Ejemplo de tabla de selección de los factores críticos de éxito en la práctica de factores críticos de éxito](../images/FCE-6.png)
 
 8. Finalizar el estudio de los factores críticos de éxito.
 
@@ -3200,7 +3202,7 @@ Se distinguen las siguientes estrategias de integración:
   Este tipo de enfoque permite un desarrollo más en paralelo que el enfoque de arriba abajo, pero presenta mayores dificultades a la hora de planificar y de gestionar.
 - **Estrategias combinadas**. A menudo es útil aplicar las estrategias anteriores conjuntamente. De este modo, se desarrollan partes del sistema con un enfoque «*top-down*», mientras que los componentes más críticos en el nivel más bajo se desarrollan siguiendo un enfoque «*bottom-up*». En este caso es necesaria una planificación cuidadosa y coordinada de modo que los componentes individuales se «encuentren» en el centro.
 
-![](../images/pruebas-integracion.png)
+![Ejemplo de relación de componentes a probar durante pruebas de integración](../images/pruebas-integracion.png)
 
 ###### Integración no incremental {.unnumbered .unlisted}
 

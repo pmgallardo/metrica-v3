@@ -55,7 +55,7 @@ Actividades
   * [Actividad MSI-CAL 3: Revisión de la Realización de las Prueba de Regresión](#msi-cal-3)
 -->
 
-## Estudio de viabilidad del sistema {#evs-cal}
+## Estudio de Viabilidad del Sistema {#evs-cal}
 
 En este proceso el grupo de aseguramiento de calidad inicia el estudio de los sistemas de información definidos en cada alternativa de solución propuesta, con el fin de identificar las condiciones en que se van a desarrollar y/o a implantar, así como las características que deben reunir en cuanto a operación, mantenibilidad y portabilidad, para satisfacer las necesidades del cliente y los requisitos especificados.
 
@@ -65,7 +65,7 @@ Una vez tomada la decisión de llevar a cabo un plan de aseguramiento de calidad
 
 El siguiente esquema muestra la correspondencia entre las actividades del proceso EVS y las de la interfaz de Aseguramiento de la Calidad.
 
-![](../images/cal-evs.jpg)
+![Correspondencia entre las actividades del proceso Estudio de Viabilidad del Sistema y las de la interfaz de Aseguramiento de la Calidad](../images/cal-evs.jpg)
 
 ### Actividad EVS-CAL 1: Identificación de las Propiedades de Calidad para el Sistema {#evs-cal-1}
 
@@ -497,7 +497,7 @@ En el proceso **Análisis del Sistema de Información** ([ASI](../01-principal/0
 - Modelos resultantes del análisis, asegurando que se han verificado y validado y que se ha realizado la trazabilidad de requisitos.
 - Plan de pruebas, comprobando que se han tenido en cuenta en su definición los criterios establecidos en el plan de aseguramiento de calidad, con el fin de facilitar en los procesos **Diseño del Sistema de Información** ([DSI](../01-principal/05-dsi.qmd)), **Construcción del Sistema de Información** ([CSI](../01-principal/06-csi.qmd)) e **Implantación y Aceptación del Sistema** ([IAS])(../01-principal/07-ias.qmd) la revisión de los distintos niveles de prueba.
 
-![](../images/cal-asi.jpg)
+![Correspondencia entre las actividades del proceso Análisis del Sistema de Información y las de la interfaz de Aseguramiento de la Calidad](../images/cal-asi.jpg)
 
 ### Actividad ASI-CAL 1: Especificación Inicial del Plan de Aseguramiento de Calidad {#asi-cal-1}
 
@@ -847,7 +847,7 @@ Se registra en el dossier de aseguramiento de calidad, la aprobación o rechazo
 
 * [Grupo de Aseguramiento de la Calidad](../04-participantes/01-participantes.qmd#perfil-analista)
 
-## Diseño del sistema de información {#dsi-cal}
+## Diseño del Sistema de Información {#dsi-cal}
 
 Las revisiones del diseño se centran en confirmar que los requisitos especificados en el proceso Análisis del Sistema de Información se han traducido en una arquitectura conforme al entorno tecnológico seleccionado.
 
@@ -857,7 +857,7 @@ También se realiza una revisión de la identificación de los requisitos no fun
 
 El siguiente esquema muestra la correspondencia entre las actividades del proceso DSI y las de la interfaz de Aseguramiento de la Calidad.
 
-![](../images/cal-dsi.jpg)
+![Correspondencia entre las actividades del proceso Diseño del Sistema de Información y las de la interfaz de Aseguramiento de la Calidad](../images/cal-dsi.jpg)
 
 ### Actividad DSI-CAL 1: Revisión de la Verificación de la Arquitectura del Sistema {#dsi-cal-1}
 
@@ -1212,7 +1212,7 @@ Se registra la aprobación o rechazo de los productos resultantes del [Diseño
 
 * [Grupo de Aseguramiento de la Calidad](../04-participantes/01-participantes.qmd#perfil-analista)
 
-## Construcción del sistema de información {#csi-cal}
+## Construcción del Sistema de Información {#csi-cal}
 
 En este proceso el grupo de aseguramiento de calidad revisa los estándares de nomenclatura y normativa aplicada en la generación del código de componentes, en la evaluación de los resultados de las pruebas, en los manuales de usuario y en el esquema de formación.
 
@@ -1220,7 +1220,7 @@ Con respecto a las pruebas, se revisa que se han llevado a cabo las pruebas unit
 
 El siguiente esquema muestra la correspondencia entre las actividades del proceso CSI y las de la interfaz de Aseguramiento de la Calidad.
 
-![](../images/cal-csi.jpg)
+![Correspondencia entre las actividades del proceso Construcción del Sistema de Información y las de la interfaz de Aseguramiento de la Calidad](../images/cal-csi.jpg)
 
 ### Actividad CSI-CAL 1: Revisión del Código de Componentes y Procedimientos {#csi-cal-1}
 
@@ -1589,7 +1589,7 @@ Se registra la aprobación o rechazo del sistema de información construido te
 
 * [Grupo de Aseguramiento de la Calidad](../04-participantes/01-participantes.qmd#perfil-analista)
 
-## Implantación y aceptación del sistema {#ias-cal}
+## Implantación y Aceptación del Sistema {#ias-cal}
 
 El grupo de aseguramiento de calidad en este proceso es responsable de revisar la existencia de un plan de implantación que se habrá elaborado conforme a la estrategia de implantación determinada en el proceso **Estudio de Viabilidad del Sistema** ([EVS](../01-principal/03-evs.qmd)) y teniendo en cuenta los requisitos de implantación establecidos en el proceso **Diseño del Sistema de Información** ([DSI](../01-principal/05-dsi.qmd)).
 
@@ -1599,7 +1599,7 @@ En cuanto al mantenimiento, el grupo de aseguramiento de calidad debe asegurar q
 
 El siguiente esquema muestra la correspondencia entre las actividades del proceso IAS y las de la interfaz de Aseguramiento de la Calidad.
 
-![](../images/cal-ias.jpg)
+![Correspondencia entre las actividades del proceso Implantación y Aceptación del Sistema y las de la interfaz de Aseguramiento de la Calidad](../images/cal-ias.jpg)
 
 ### Actividad IAS-CAL 1: Revisión del Plan de Implantación del Sistema {#ias-cal-1}
 
@@ -1963,7 +1963,7 @@ Se registra la aprobación de la implantación del sistema y se comprueba que 
 
 * [Grupo de Aseguramiento de la Calidad](../04-participantes/01-participantes.qmd#perfil-analista)
 
-## Mantenimineto del sistema de información {#msi-cal}
+## Mantenimineto del Sistema de Información {#msi-cal}
 
 En el proceso **Implantación y Aceptación del Sistema** ([IAS](../01-principal/07-ias.qmd)) se habrá determinado la necesidad de llevar a cabo un seguimiento y control de la calidad en los sistemas de información, una vez se encuentren en el entorno de producción.
 
@@ -1981,7 +1981,7 @@ En caso de revisar la ejecución de las pruebas de regresión, se registrará la
 En el siguiente gráfico se aprecian las actividades de Aseguramiento de la Calidad
 durante el Mantenimiento del Sistema de Información.
 
-![](../images/cal-msi.jpg)
+![Correspondencia entre las actividades del proceso Mantenimiento del Sistema de Información y las de la interfaz de Aseguramiento de la Calidad](../images/cal-msi.jpg)
 
 ### Actividad MSI-CAL 1: Revisión del Mantenimiento del Sistema de Información {#msi-cal-1}
 

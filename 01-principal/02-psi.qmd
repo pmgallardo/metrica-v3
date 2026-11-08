@@ -25,11 +25,11 @@ Tras analizar las prioridades relacionadas con las distintas variables que afect
 
 A continuación se incluye un gráfico que representa la secuencia de actividades del proceso PSI.
 
-![](../images/psi-actividades.jpg)
+![Relación de actividades del proceso Planificación de Sistemas de Información](../images/psi-actividades.jpg)
 
 Aunque los resultados de la actividad Estudio de la Información Relevante ([PSI 3](#psi-3)) deberán tenerse en cuenta para la definición de requisitos que se efectúa en la actividad Identificación de Requisitos ([PSI 4](#psi-4)), ambas podrán realizarse en paralelo, junto con el Estudio de los Sistemas de Información Actuales ([PSI 5](#psi-5)).
 
-![Planificación de Sistemas de Información](../images/psi-plan.jpg)
+![Relación de entradas, actividades y salidas del proceso Planificación de Sistemas de Información](../images/psi-plan.jpg)
 
 ### Actividad PSI 1: Inicio del Plan de Sistemas de Información {#psi-1}
 
@@ -401,7 +401,7 @@ De manera más concreta que en la actividad Inicio del Plan de Sistemas de Infor
 
 - Descripción general del PSI ([PSI 1.3](#psi-1-3))
 
-####### De salida {.unnumbered .unlisted}
+###### De salida {.unnumbered .unlisted}
 
 - Descripción general de procesos de la organización afectados
 - Catálogo de objetivos del PSI:

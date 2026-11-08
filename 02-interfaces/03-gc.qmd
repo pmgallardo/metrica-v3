@@ -38,7 +38,7 @@ Durante el **Estudio de Viabilidad del Sistema** ([EVS](../01-principal/03-evs.q
 
 En el siguiente gráfico se muestra la relación entre las actividades del proceso **Estudio de Viabilidad del Sistema** [EVS](../01-principal/03-evs.qmd) y las de la Gestión de la Configuración.
 
-![](../images/gescon-evs.jpg)
+![Relación entre las actividades del proceso Estudio de Viabilidad del Sistema y las de la Gestión de la Configuración](../images/gescon-evs.jpg)
 
 ### Actividad EVS-GC 1: Definición de los Requisitos de Gestión de Configuración {#evs-gc-1}
 
@@ -206,7 +206,7 @@ Otro nivel de control establecido por la gestión de configuración es el contro
 
 El siguiente gráfico muestra la relación entre las actividades de la interfaz de gestión de configuración y los procesos de desarrollo de MÉTRICA Versión 3.
 
-![](../images/gescon-asi-dsi-csi-ias.jpg)
+![Relación entre las actividades de la interfaz de Gestión de Configuración y los procesos de Desarrollo](../images/gescon-asi-dsi-csi-ias.jpg)
 
 ### Actividad GC 1: Identificación y registro de Productos {#gc-gc-1}
 

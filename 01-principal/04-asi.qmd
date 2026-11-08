@@ -28,15 +28,15 @@ La participación activa de los usuarios es una condición imprescindible para e
 
 En el siguiente gráfico se muestra la relación de actividades del proceso Análisis del Sistema de Información, tanto para desarrollos estructurados como para desarrollos orientados a objetos, distinguiendo las que se pueden realizar en paralelo de aquellas que han de realizarse secuencialmente.
 
-![](../images/asi-actividades.jpg)
+![Relación de entradas, actividades y salidas del proceso  Relación de actividades del proceso Análisis de Sistema de Información](../images/asi-actividades.jpg)
 
-ANÁLISIS DEL SISTEMAS DE INFORMACIÓN (ESTRUCTURADO)
+<!-- Análisis del Sistema de Información (Estructurado) -->
 
-![](../images/asi-plan-estructurado.jpg)
+![Relación de entradas, actividades y salidas del proceso Análisis del Sistema de Información (Estructurado)](../images/asi-plan-estructurado.jpg)
 
-ANÁLISIS DEL SISTEMAS DE INFORMACIÓN (ORIENTACIÓN A OBJETOS)
+<!-- Análisis del Sistema de Información (Orientación a Objetos) -->
 
-![](../images/asi-plan-oo.jpg)
+![Relación de entradas, actividades y salidas del proceso Análisis del Sistema de Información (Orientación a Objetos)](../images/asi-plan-oo.jpg)
 
 ### Actividad ASI 1: Definición del Sistema {#asi-1}
 
@@ -185,7 +185,7 @@ Para obtener esta información es necesario llevar a cabo sesiones de trabajo co
 * Modelo de Negocio
 * Modelo de Dominio
 
-Técnicas
+##### Técnicas {.unnumbered .unlisted}
 
 * [Diagrama de Flujo de Datos](../03-tecnicas/01-tecnicas.qmd#diagrama-de-flujo-de-datos)
 * [Modelo Entidad/Relación Extendido](../03-tecnicas/01-tecnicas.qmd#modelo-entidad-relacion-extendido)

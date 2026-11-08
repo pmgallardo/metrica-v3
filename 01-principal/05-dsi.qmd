@@ -51,13 +51,13 @@ En el siguiente gráfico se muestra la relación de actividades del proceso Dise
 
 ![Relación de actividades del Diseño del Sistema de Información](../images/dsi-actividades.jpg)
 
-Diseño del sistema información (estructurado)
+<!-- Diseño del Sistema Información (Estructurado) -->
 
-![Diseño del sistema información (estructurado)](../images/dsi-plan-estructurado.jpg)
+![Relación de entradas, actividades y salidas del proceso Diseño del sistema información (estructurado)](../images/dsi-plan-estructurado.jpg)
 
-Diseño del Sistema Información (Orientación a objetos)
+<!-- Diseño del Sistema Información (Orientación a Objetos) -->
 
-![Diseño del Sistema Información (Orientación a objetos)](../images/dsi-plan-oo.jpg)
+![Relación de entradas, actividades y salidas del proceso Diseño del Sistema Información (Orientación a objetos)](../images/dsi-plan-oo.jpg)
 
 ### Actividad DSI 1: Definición de la Arquitectura del Sistema {#dsi-1}
 

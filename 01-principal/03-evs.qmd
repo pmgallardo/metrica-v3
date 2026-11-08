@@ -12,9 +12,9 @@ Si en la organización se ha realizado con anterioridad un Plan de Sistemas de I
 
 Las actividades que engloba este proceso se recogen en la siguiente figura, en la que se indican las actividades que pueden ejecutarse en paralelo y las que precisan para su realización resultados originados en actividades anteriores.
 
-![](../images/evs-actividades.jpg)
+![Relación de actividades del proceso Estudio de viabilidad del sistema](../images/evs-actividades.jpg)
 
-![Estudio de viabilidad del sistema](../images/evs-plan.jpg	)
+![Relación de entradas, actividades y salidas del proceso Estudio de viabilidad del sistema](../images/evs-plan.jpg	)
 
 ### Actividad EVS 1: Establecimiento del Alcance del Sistema {#evs-1}
 

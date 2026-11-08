@@ -14,7 +14,7 @@ Las actividades de la Interfaz de Gestión de Proyectos se presentan en el sigui
 
 Las técnicas y prácticas utilizadas en la Gestión de Proyectos se describen en la Guía de Técnicas de MÉTRICA Versión 3. En función de las características del proyecto puede ser aconsejable emplear herramientas software de soporte a las técnicas, disponibles en el mercado.
 
-![](../images/gespro-plan.jpg)
+![Relación entre las actividades del proceso Estudio de Viabilidad del Sistema y las de la Gestión de la Configuración](../images/gespro-plan.jpg)
 
 ## Actividades de Inicio del Proyecto
 
@@ -456,7 +456,7 @@ Las Actividades de Seguimiento y Control de un proyecto se llevan a cabo desde l
 
 El siguiente gráfico muestra la secuencia de actividades de Seguimiento y Control del Proyecto.
 
-![](../images/gespro-segycontrol.jpg)
+![Secuencia de actividades de Seguimiento y Control de Proyecto](../images/gespro-segycontrol.jpg)
 
 ### Actividad GPS 1: Asignación Detallada de Tareas {#gps-1}
 
