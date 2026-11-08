@@ -13,9 +13,13 @@ jobs:
       - name: Check out repository
         uses: actions/checkout@v4
 
-      - name: Set up Quarto
+      - name: Instalar Quarto y TinyTex
         uses: quarto-dev/quarto-actions/setup@v2
+        env:
+          # Trata de evitar error 403 Forbidden por tráfico anónimo
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
+          # Instala TinyTeX de forma autenticada
           tinytex: true
 
       - name: Render and Publish
