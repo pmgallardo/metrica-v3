@@ -79,7 +79,7 @@ El siguiente esquema muestra la correspondencia entre las actividades del proces
 <td style="background-color: #000033; text-align: left; width: 20%;"><strong><span style="color: #ffffff;">PARTICIPANTES</span></strong></td>
 </tr>
 <tr>
-<td style="text-align: left; vertical-align: top;"><a href="/web/20200930051901/https://manuel.cillero.es/doc/metrica-3/interfaces/aseguramiento-de-la-calidad/evs/actividad-1/tarea-1"><strong>EVS-CAL 1.1</strong>: Constitución del Equipo de Aseguramiento de Calidad</a></td>
+<td style="text-align: left; vertical-align: top;"><a href="#evs-cal-1-1"><strong>EVS-CAL 1.1</strong>: Constitución del Equipo de Aseguramiento de Calidad</a></td>
 <td style="text-align: left; vertical-align: top;">
 <ul>
 <li>Equipo de aseguramiento de calidad</li>
@@ -88,19 +88,19 @@ El siguiente esquema muestra la correspondencia entre las actividades del proces
 </td>
 <td style="text-align: left; vertical-align: top;">
 <ul>
-<li><a href="/web/20200930051901/https://manuel.cillero.es/doc/metrica-3/tecnicas/sesiones-de-trabajo">Sesiones de trabajo</a></li>
-<li><a href="/web/20200930051901/https://manuel.cillero.es/doc/metrica-3/tecnicas/planificacion">Planificación</a></li>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#sesiones-de-trabajo">Sesiones de trabajo</a></li>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#planificacion">Planificación</a></li>
 </ul>
 </td>
 <td style="text-align: left; vertical-align: top;">
 <ul>
-<li><a href="/web/20200930051901/https://manuel.cillero.es/doc/metrica-3/participantes/perfil-analista">Grupo de Aseguramiento de la Calidad</a></li>
-<li><a href="/web/20200930051901/https://manuel.cillero.es/doc/metrica-3/participantes/perfil-jefe-de-proyecto">Jefe de Proyecto</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-analista">Grupo de Aseguramiento de la Calidad</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto">Jefe de Proyecto</a></li>
 </ul>
 </td>
 </tr>
 <tr>
-<td style="text-align: left; vertical-align: top;"><a href="/web/20200930051901/https://manuel.cillero.es/doc/metrica-3/interfaces/aseguramiento-de-la-calidad/evs/actividad-1/tarea-2"><strong>EVS-CAL 1.2</strong>: Determinación de los Sistemas de Información objeto de Aseguramiento de Calidad</a></td>
+<td style="text-align: left; vertical-align: top;"><a href="#evs-cal-1-2"><strong>EVS-CAL 1.2</strong>: Determinación de los Sistemas de Información objeto de Aseguramiento de Calidad</a></td>
 <td style="text-align: left; vertical-align: top;">
 <ul>
 <li>Sistemas de Información objeto de aseguramiento de calidad</li>
@@ -108,18 +108,18 @@ El siguiente esquema muestra la correspondencia entre las actividades del proces
 </td>
 <td style="text-align: left; vertical-align: top;">
 <ul>
-<li><a href="/web/20200930051901/https://manuel.cillero.es/doc/metrica-3/tecnicas/sesiones-de-trabajo">Sesiones de trabajo</a></li>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#sesiones-de-trabajo">Sesiones de trabajo</a></li>
 </ul>
 </td>
 <td style="text-align: left; vertical-align: top;">
 <ul>
-<li><a href="/web/20200930051901/https://manuel.cillero.es/doc/metrica-3/participantes/perfil-analista">Grupo de Aseguramiento de la Calidad</a></li>
-<li><a href="/web/20200930051901/https://manuel.cillero.es/doc/metrica-3/participantes/perfil-jefe-de-proyecto">Jefe de Proyecto</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-analista">Grupo de Aseguramiento de la Calidad</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto">Jefe de Proyecto</a></li>
 </ul>
 </td>
 </tr>
 <tr>
-<td style="text-align: left; vertical-align: top;"><a href="/web/20200930051901/https://manuel.cillero.es/doc/metrica-3/interfaces/aseguramiento-de-la-calidad/evs/actividad-1/tarea-3"><strong>EVS-CAL 1.3</strong>: Identificación de las Propiedades de Calidad</a></td>
+<td style="text-align: left; vertical-align: top;"><a href="#evs-cal-1-3"><strong>EVS-CAL 1.3</strong>: Identificación de las Propiedades de Calidad</a></td>
 <td style="text-align: left; vertical-align: top;">
 <ul>
 <li>Sistemas de Información objeto de aseguramiento de calidad
@@ -131,13 +131,13 @@ El siguiente esquema muestra la correspondencia entre las actividades del proces
 </td>
 <td style="text-align: left; vertical-align: top;">
 <ul>
-<li><a href="/web/20200930051901/https://manuel.cillero.es/doc/metrica-3/tecnicas/sesiones-de-trabajo">Sesiones de trabajo</a></li>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#sesiones-de-trabajo">Sesiones de trabajo</a></li>
 </ul>
 </td>
 <td style="text-align: left; vertical-align: top;">
 <ul>
-<li><a href="/web/20200930051901/https://manuel.cillero.es/doc/metrica-3/participantes/perfil-analista">Grupo de Aseguramiento de la Calidad</a></li>
-<li><a href="/web/20200930051901/https://manuel.cillero.es/doc/metrica-3/participantes/perfil-jefe-de-proyecto">Jefe de Proyecto</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-analista">Grupo de Aseguramiento de la Calidad</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto">Jefe de Proyecto</a></li>
 </ul>
 </td>
 </tr>
@@ -241,7 +241,7 @@ Una vez identificados para cada alternativa propuesta los sistemas de informacio
 <td style="background-color: #000033; text-align: left; width: 20%;"><strong><span style="color: #ffffff;">PARTICIPANTES</span></strong></td>
 </tr>
 <tr>
-<td style="text-align: left; vertical-align: top;"><a href="/web/20200929053956/https://manuel.cillero.es/doc/metrica-3/interfaces/aseguramiento-de-la-calidad/evs/actividad-2/tarea-1"><strong>EVS-CAL 2.1</strong>: Necesidad del Plan de Aseguramiento de Calidad para las Alternativas Propuestas</a></td>
+<td style="text-align: left; vertical-align: top;"><a href="#evs-cal-2-1"><strong>EVS-CAL 2.1</strong>: Necesidad del Plan de Aseguramiento de Calidad para las Alternativas Propuestas</a></td>
 <td style="text-align: left; vertical-align: top;">
 <ul>
 <li>Sistemas de Información objeto de aseguramiento de calidad
@@ -253,17 +253,17 @@ Una vez identificados para cada alternativa propuesta los sistemas de informacio
 </td>
 <td style="text-align: left; vertical-align: top;">
 <ul>
-<li><a href="/web/20200929053956/https://manuel.cillero.es/doc/metrica-3/tecnicas/sesiones-de-trabajo">Sesiones de trabajo</a></li>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#sesiones-de-trabajo">Sesiones de trabajo</a></li>
 </ul>
 </td>
 <td style="text-align: left; vertical-align: top;">
 <ul>
-<li><a href="/web/20200929053956/https://manuel.cillero.es/doc/metrica-3/participantes/perfil-analista">Grupo de Aseguramiento de la Calidad</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-analista">Grupo de Aseguramiento de la Calidad</a></li>
 </ul>
 </td>
 </tr>
 <tr>
-<td style="text-align: left; vertical-align: top;"><a href="/web/20200929053956/https://manuel.cillero.es/doc/metrica-3/interfaces/aseguramiento-de-la-calidad/evs/actividad-2/tarea-2"><strong>EVS-CAL 2.2</strong>: Alcance del Plan de Aseguramiento de Calidad</a></td>
+<td style="text-align: left; vertical-align: top;"><a href="#evs-cal-2-2"><strong>EVS-CAL 2.2</strong>: Alcance del Plan de Aseguramiento de Calidad</a></td>
 <td style="text-align: left; vertical-align: top;">
 <ul>
 <li>Plan de aseguramiento de calidad de cada alternativa</li>
@@ -271,17 +271,17 @@ Una vez identificados para cada alternativa propuesta los sistemas de informacio
 </td>
 <td style="text-align: left; vertical-align: top;">
 <ul>
-<li><a href="/web/20200929053956/https://manuel.cillero.es/doc/metrica-3/tecnicas/sesiones-de-trabajo">Sesiones de trabajo</a></li>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#sesiones-de-trabajo">Sesiones de trabajo</a></li>
 </ul>
 </td>
 <td style="text-align: left; vertical-align: top;">
 <ul>
-<li><a href="/web/20200929053956/https://manuel.cillero.es/doc/metrica-3/participantes/perfil-analista">Grupo de Aseguramiento de la Calidad</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-analista">Grupo de Aseguramiento de la Calidad</a></li>
 </ul>
 </td>
 </tr>
 <tr>
-<td style="text-align: left; vertical-align: top;"><a href="/web/20200929053956/https://manuel.cillero.es/doc/metrica-3/interfaces/aseguramiento-de-la-calidad/evs/actividad-2/tarea-3"><strong>EVS-CAL 2.3</strong>: Impacto en el Coste del Sistema</a></td>
+<td style="text-align: left; vertical-align: top;"><a href="#evs-cal-2-3"><strong>EVS-CAL 2.3</strong>: Impacto en el Coste del Sistema</a></td>
 <td style="text-align: left; vertical-align: top;">
 <ul>
 <li>Valoración de alternativas
@@ -293,13 +293,13 @@ Una vez identificados para cada alternativa propuesta los sistemas de informacio
 </td>
 <td style="text-align: left; vertical-align: top;">
 <ul>
-<li><a href="/web/20200929053956/https://manuel.cillero.es/doc/metrica-3/tecnicas/analisis-coste-beneficio">Análisis coste/beneficio</a></li>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#analisis-coste-beneficio">Análisis coste/beneficio</a></li>
 </ul>
 </td>
 <td style="text-align: left; vertical-align: top;">
 <ul>
-<li><a href="/web/20200929053956/https://manuel.cillero.es/doc/metrica-3/participantes/perfil-analista">Grupo de Aseguramiento de la Calidad</a></li>
-<li><a href="/web/20200929053956/https://manuel.cillero.es/doc/metrica-3/participantes/perfil-jefe-de-proyecto">Jefe de Proyecto</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-analista">Grupo de Aseguramiento de la Calidad</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto">Jefe de Proyecto</a></li>
 </ul>
 </td>
 </tr>
@@ -406,7 +406,7 @@ Este coste aporta la información necesaria para poder valorar globalmente cada
 <td style="background-color: #000033; text-align: left; width: 20%;"><strong><span style="color: #ffffff;">PARTICIPANTES</span></strong></td>
 </tr>
 <tr>
-<td style="text-align: left; vertical-align: top;"><a href="/web/20200926122253/https://manuel.cillero.es/doc/metrica-3/interfaces/aseguramiento-de-la-calidad/evs/actividad-3/tarea-1"><strong>EVS-CAL 3.1</strong>: Ajuste del Plan de Aseguramiento de Calidad</a></td>
+<td style="text-align: left; vertical-align: top;"><a href="#evs-cal-3-1"><strong>EVS-CAL 3.1</strong>: Ajuste del Plan de Aseguramiento de Calidad</a></td>
 <td style="text-align: left; vertical-align: top;">
 <ul>
 <li>Plan de aseguramiento de calidad de la alternativa elegida</li>
@@ -414,18 +414,18 @@ Este coste aporta la información necesaria para poder valorar globalmente cada
 </td>
 <td style="text-align: left; vertical-align: top;">
 <ul>
-<li><a href="/web/20200926122253/https://manuel.cillero.es/doc/metrica-3/tecnicas/sesiones-de-trabajo">Sesiones de trabajo</a></li>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#sesiones-de-trabajo">Sesiones de trabajo</a></li>
 </ul>
 </td>
 <td style="text-align: left; vertical-align: top;">
 <ul>
-<li><a href="/web/20200926122253/https://manuel.cillero.es/doc/metrica-3/participantes/perfil-analista">Grupo de Aseguramiento de la Calidad</a></li>
-<li><a href="/web/20200926122253/https://manuel.cillero.es/doc/metrica-3/participantes/perfil-jefe-de-proyecto">Jefe de Proyecto</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-analista">Grupo de Aseguramiento de la Calidad</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-jefe-de-proyecto">Jefe de Proyecto</a></li>
 </ul>
 </td>
 </tr>
 <tr>
-<td style="text-align: left; vertical-align: top;"><a href="/web/20200926122253/https://manuel.cillero.es/doc/metrica-3/interfaces/aseguramiento-de-la-calidad/evs/actividad-3/tarea-2"><strong>EVS-CAL 3.2</strong>: Aprobación del Plan de Aseguramiento de Calidad</a></td>
+<td style="text-align: left; vertical-align: top;"><a href="#evs-cal-3-2"><strong>EVS-CAL 3.2</strong>: Aprobación del Plan de Aseguramiento de Calidad</a></td>
 <td style="text-align: left; vertical-align: top;">
 <ul>
 <li>Registro de aprobación / rechazo</li>
@@ -434,7 +434,7 @@ Este coste aporta la información necesaria para poder valorar globalmente cada
 <td style="text-align: left; vertical-align: top;"></td>
 <td style="text-align: left; vertical-align: top;">
 <ul>
-<li><a href="/web/20200926122253/https://manuel.cillero.es/doc/metrica-3/participantes/perfil-analista">Grupo de Aseguramiento de la Calidad</a></li>
+<li><a href="../04-participantes/01-participantes.qmd#perfil-analista">Grupo de Aseguramiento de la Calidad</a></li>
 </ul>
 </td>
 </tr>

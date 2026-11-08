@@ -1226,7 +1226,7 @@ A partir de la solución aprobada para la petición de cambio, es necesario hace
 
 ##### Tarea GPS 8.2: Planificación de los Cambios {#gps-8-2}
 
-Una vez hecha la estimación del esfuerzo es necesario planificar las actividades necesarias para la realización del cambio, de la misma forma que en la actividad [GPI 2.4](#gpi-2-4) o la [GPS 11.1](gps-11-1), utilizando la técnica de planificación más apropiada.
+Una vez hecha la estimación del esfuerzo es necesario planificar las actividades necesarias para la realización del cambio, de la misma forma que en la actividad [GPI 2.4](#gpi-2-4) o la [GPS 11.1](#gps-11-1), utilizando la técnica de planificación más apropiada.
 
 ##### Productos {.unnumbered .unlisted}
 

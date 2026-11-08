@@ -61,7 +61,7 @@ Una vez que la petición ha sido registrada, que ha determinado el tipo de mante
 </td>
 <td style="text-align: left; vertical-align: top;">
 <ul>
-<li><a href="catalogacion">Catalogación</a></li>
+<li><a href="../03-tecnicas/01-tecnicas.qmd#catalogacion">Catalogación</a></li>
 </ul>
 </td>
 <td style="text-align: left; vertical-align: top;">
