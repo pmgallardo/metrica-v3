@@ -1,8 +1,8 @@
+name: Quarto Publish
+
 on:
   push:
     branches: main
-
-name: Quarto Publish
 
 jobs:
   build-deploy:
@@ -13,14 +13,15 @@ jobs:
       - name: Check out repository
         uses: actions/checkout@v4
 
-      - name: Instalar Quarto y TinyTex
+      - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
         env:
-          # Trata de evitar error 403 Forbidden por tráfico anónimo
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Install TinyTeX
+        uses: r-lib/actions/setup-tinytex@v2
         with:
-          # Instala TinyTeX de forma autenticada
-          tinytex: true
+          version: 'latest'
 
       - name: Render and Publish
         uses: quarto-dev/quarto-actions/publish@v2
