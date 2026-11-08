@@ -749,9 +749,19 @@ window.Quarto = {
 <p>La relación entre casos de uso es una relación unidireccional. Esta relación puede presentar uno de los dos siguientes tipos: “usa” y “extiende”.</p>
 <ul>
 <li><p>La relación “usa” se utiliza cuando se quiere reflejar un comportamiento común en varios casos de uso. Es decir, si los casos de uso A y B presentan una parte común, ésta se puede sacar a un tercer caso de uso C. Entonces, habrá una relación “usa” del caso de uso A al C y otra del B al C.</p>
-<p><img src="../images/relacion-usa.png" class="img-fluid"></p></li>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../images/relacion-usa.png" class="img-fluid figure-img"></p>
+<figcaption>Representación de la relación “usa” del diagrama de casos de uso</figcaption>
+</figure>
+</div></li>
 <li><p>La relación “extiende” se utiliza cuando se quiere reflejar un comportamiento opcional de un caso de uso. Por ejemplo, se tiene el caso de uso A que representa un comportamiento habitual del sistema. Sin embargo, dependiendo de algún factor, este caso de uso puede presentar un comportamiento adicional o ligeramente diferente, que se podría reflejar en un caso de uso B. En este caso, habrá una relación “extiende” del caso de uso B al A.</p>
-<p><img src="../images/relacion-extiende.png" class="img-fluid"></p></li>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../images/relacion-extiende.png" class="img-fluid figure-img"></p>
+<figcaption>Representación de la relación “extiende” del diagrama de casos de uso</figcaption>
+</figure>
+</div></li>
 </ul>
 </section>
 <section id="notación" class="level4 unnumbered unlisted">
@@ -761,29 +771,54 @@ window.Quarto = {
 <section id="caso-de-uso" class="level5 unnumbered unlisted">
 <h5 class="unnumbered unlisted anchored" data-anchor-id="caso-de-uso">Caso de Uso</h5>
 <p>Un caso de uso se representa mediante una elipse con el nombre del caso de uso dentro o debajo.</p>
-<p><img src="../images/caso-de-uso.png" class="img-fluid"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../images/caso-de-uso.png" class="img-fluid figure-img"></p>
+<figcaption>Representación del caso de uso en el diagrama de casos de uso</figcaption>
+</figure>
+</div>
 </section>
 <section id="actor" class="level5 unnumbered unlisted">
 <h5 class="unnumbered unlisted anchored" data-anchor-id="actor">Actor</h5>
 <p>Un actor se representa con una figura de ‘hombre de palo’ con el nombre del actor debajo de la figura.</p>
-<p><img src="../images/actor.png" class="img-fluid"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../images/actor.png" class="img-fluid figure-img"></p>
+<figcaption>Representación del actor en el diagrama de casos de uso</figcaption>
+</figure>
+</div>
 </section>
 <section id="relacion" class="level5 unnumbered unlisted">
 <h5 class="unnumbered unlisted anchored" data-anchor-id="relacion">Relación</h5>
 <p>Dependiendo del tipo de relación, la representación en los diagramas será distinta. Así pues, las relaciones entre un actor y un caso de uso se representan mediante una línea continua entre ellos. Las relaciones entre casos de uso se representan con una flecha discontinua con el nombre del tipo de relación como etiqueta. En las relaciones “extensión” la flecha parte del caso de uso con el comportamiento adicional hacia aquel que recoge el comportamiento básico y en las relaciones “usa” desde el caso de uso básico hacia el que representa el comportamiento común.</p>
-<p><img src="../images/relacion.png" class="img-fluid"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../images/relacion.png" class="img-fluid figure-img"></p>
+<figcaption>Representación de la relación en el diagrama de casos de uso</figcaption>
+</figure>
+</div>
 </section>
 <section id="paquete" class="level5 unnumbered unlisted">
 <h5 class="unnumbered unlisted anchored" data-anchor-id="paquete">Paquete</h5>
 <p>Un paquete se representa con un icono con forma de carpeta y con el nombre colocado en la ‘pestaña’. Los paquetes también pueden formar diagramas que complementen al diagrama de casos de uso (ver <a href="#diagrama-de-paquetes">Diagrama de paquetes</a>).</p>
-<p><img src="../images/paquete.png" class="img-fluid"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../images/paquete.png" class="img-fluid figure-img"></p>
+<figcaption>Representación del paquete en el diagrama de casos de uso</figcaption>
+</figure>
+</div>
 <p>(Nota.- Esta notación es la más habitual, pero MÉTRICA Versión 3 no exige su utilización).</p>
 </section>
 </section>
 <section id="ejemplo" class="level4 unnumbered unlisted">
 <h4 class="unnumbered unlisted anchored" data-anchor-id="ejemplo">Ejemplo</h4>
 <p>Estudio de una aplicación que se encarga de la gestión de los préstamos y reservas de libros y revistas en una biblioteca.</p>
-<p><img src="../images/ejemplo-casos-de-uso.png" class="img-fluid"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../images/ejemplo-casos-de-uso.png" class="img-fluid figure-img"></p>
+<figcaption>Ejemplo de diagrama de casos de uso</figcaption>
+</figure>
+</div>
 </section>
 </section>
 <section id="diagrama-de-clases" class="level3" data-number="13.2.3">
@@ -851,7 +886,12 @@ window.Quarto = {
 <p><code>visibilidad nombre (lista-de-parámetros): tipo-devuelto { propiedad }</code></p>
 <p>La visibilidad será en general publica (+), privada (-) o protegida (#), aunque como con los atributos, puede haber otros tipos de visibilidad dependiendo del lenguaje de programación.&nbsp;La lista de parámetros es una lista con los parámetros recibidos en la operación separados por comas. El formato de un parámetro es:</p>
 <p><code>nombre : tipo = valor-por-defecto</code></p>
-<p><img src="../images/clase.png" class="img-fluid"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../images/clase.png" class="img-fluid figure-img"></p>
+<figcaption>Representación de la clase en el diagrama de clases</figcaption>
+</figure>
+</div>
 <p>La notación especificada se puede simplificar según el nivel de detalle con el que se quiera trabajar en un momento dado.</p>
 </section>
 <section id="relaciones-1" class="level5 unnumbered unlisted">
@@ -865,7 +905,12 @@ window.Quarto = {
 <li><em>Navegabilidad</em>: La navegación desde una clase a la otra se representa poniendo una flecha sin relleno en el extremo de la línea, indicando el sentido de la navegación.</li>
 <li><em>Rol</em> o <em>nombre de la asociación</em>: Este nombre se coloca junto al extremo de la línea que esta unida a una clase, para expresar cómo esa clase hace uso de la otra clase con la que mantiene la asociación.</li>
 </ul>
-<p><img src="../images/asociacion.png" class="img-fluid"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../images/asociacion.png" class="img-fluid figure-img"></p>
+<figcaption>Representación de la asociación en el diagrama de clases</figcaption>
+</figure>
+</div>
 <p>Además, existen notaciones específicas para los otros tipos de relación, como son:</p>
 <ul>
 <li><em>Agregación</em>: Se representa con un rombo hueco en la clase cuya instancia es una agregación de las instancias de la otra.</li>
@@ -873,22 +918,40 @@ window.Quarto = {
 <li><em>Dependencia</em>: Una línea discontinua con una flecha apuntando a la clase cliente. La relación puede tener un estereotipo que se coloca junto a la línea, y entre el símbolo: <code>&lt;&lt; ... &gt;&gt;</code>.</li>
 <li><em>Herencia</em>: Esta relación se representa como una línea continua con una flecha hueca en el extremo que apunta a la superclase.</li>
 </ul>
-<p><img src="../images/tipos-asociacion.png" class="img-fluid"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../images/tipos-asociacion.png" class="img-fluid figure-img"></p>
+<figcaption>Representación de otros tipos de relación en el diagrama de clases</figcaption>
+</figure>
+</div>
 </section>
 <section id="interfaces-1" class="level5 unnumbered unlisted">
 <h5 class="unnumbered unlisted anchored" data-anchor-id="interfaces-1">Interfaces</h5>
 <p>Una interfaz se representa como una caja con compartimentos, igual que las clases. En la zona superior se incluye el nombre y el estereotipo &lt;&gt;. La lista de operaciones se coloca en la zona inferior, igual que en las representaciones de clases. La zona en la que se listan los atributos estará vacía o puede omitirse.</p>
 <p>Existe una representación más simple para la interfaz: un círculo pequeño asociado a una clase con el nombre de la interfaz debajo. Las operaciones de la interfaz no aparecen en esta representación; si se quiere que aparezcan, debe usarse la primera notación.</p>
 <p>Entre una clase que implementa las operaciones que una interfaz ofrece y esa interfaz se establece una relación de realización que, dependiendo de la notación elegida, se representará con una línea continua entre ellas cuando la interfaz se representa como un círculo y con una flecha hueca discontinua apuntando a la interfaz cuando se represente como una clase.</p>
-<p><img src="../images/clase-interfaz.png" class="img-fluid"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../images/clase-interfaz.png" class="img-fluid figure-img"></p>
+<figcaption>Representación de interfaces en diagrama de clases</figcaption>
+</figure>
+</div>
 </section>
 <section id="paquetes-1" class="level5 unnumbered unlisted">
 <h5 class="unnumbered unlisted anchored" data-anchor-id="paquetes-1">Paquetes</h5>
-<p>Los paquetes se representan mediante un icono con forma de carpeta y las dependencias con flechas discontinuas entre los paquetes dependientes (ver Diagrama de paquetes). Ejemplo</p>
-<p>Estudio del sistema encargado de la gestión de préstamos y reservas de libros y revistas de una biblioteca. Dependiendo del momento del desarrollo el diagrama estará más o menos detallado. Así, el diagrama tendría la siguiente estructura en el proceso de análisis:</p>
-<p><img src="../images/ejemplo-diagrama-de-clases.png" class="img-fluid"></p>
-<p>(Nota.- Esta notación es la más habitual, pero MÉTRICA Versión 3 no exige su utilización).</p>
+<p>Los paquetes se representan mediante un icono con forma de carpeta y las dependencias con flechas discontinuas entre los paquetes dependientes (ver Diagrama de paquetes).</p>
 </section>
+</section>
+<section id="ejemplo-1" class="level4 unnumbered unlisted">
+<h4 class="unnumbered unlisted anchored" data-anchor-id="ejemplo-1">Ejemplo</h4>
+<p>Estudio del sistema encargado de la gestión de préstamos y reservas de libros y revistas de una biblioteca. Dependiendo del momento del desarrollo el diagrama estará más o menos detallado. Así, el diagrama tendría la siguiente estructura en el proceso de análisis:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../images/ejemplo-diagrama-de-clases.png" class="img-fluid figure-img"></p>
+<figcaption>Representación de paquetes en el diagrama de clases</figcaption>
+</figure>
+</div>
+<p>(Nota.- Esta notación es la más habitual, pero MÉTRICA Versión 3 no exige su utilización).</p>
 </section>
 </section>
 <section id="diagrama-de-componentes" class="level3" data-number="13.2.4">
@@ -905,13 +968,23 @@ window.Quarto = {
 <section id="componente" class="level5 unnumbered unlisted">
 <h5 class="unnumbered unlisted anchored" data-anchor-id="componente">Componente</h5>
 <p>Un componente se representa como un rectángulo, con dos pequeños rectángulos superpuestos perpendicularmente en el lado izquierdo.</p>
-<p><img src="../images/componente.png" class="img-fluid"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../images/componente.png" class="img-fluid figure-img"></p>
+<figcaption>Representación del componente en el diagrama de componentes</figcaption>
+</figure>
+</div>
 <p>Para distinguir distintos tipos de componentes se les puede asignar un estereotipo, cuyo nombre estará dentro del símbolo: &lt;&lt; … &gt;&gt;</p>
 </section>
 <section id="interfaz" class="level5 unnumbered unlisted">
 <h5 class="unnumbered unlisted anchored" data-anchor-id="interfaz">Interfaz</h5>
 <p>Se representa como un pequeño círculo situado junto al componente que lo implementa y unido a él por una línea continua. La interfaz puede tener un nombre que se escribe junto al círculo. Un componente puede proporcionar más de una interfaz.</p>
-<p><img src="../images/interfaz.png" class="img-fluid"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../images/interfaz.png" class="img-fluid figure-img"></p>
+<figcaption>Representación de la interfaz en diagrama de componentes</figcaption>
+</figure>
+</div>
 </section>
 <section id="paquete-1" class="level5 unnumbered unlisted">
 <h5 class="unnumbered unlisted anchored" data-anchor-id="paquete-1">Paquete</h5>
@@ -922,8 +995,8 @@ window.Quarto = {
 <p>Una relación de dependencia se representa mediante una línea discontinua con una flecha que apunta al componente o interfaz que provee del servicio o facilidad al otro. La relación puede tener un estereotipo que se coloca junto a la línea, entre el símbolo: <code>&lt;&lt;...&gt;&gt;</code></p>
 </section>
 </section>
-<section id="ejemplo-1" class="level4 unnumbered unlisted">
-<h4 class="unnumbered unlisted anchored" data-anchor-id="ejemplo-1">Ejemplo</h4>
+<section id="ejemplo-2" class="level4 unnumbered unlisted">
+<h4 class="unnumbered unlisted anchored" data-anchor-id="ejemplo-2">Ejemplo</h4>
 <p>Sistema encargado de la gestión de los préstamos y reservas de libros y revistas en una biblioteca. El lenguaje de desarrollo será Java, y los accesos a la información del prestatario serán mediante un paquete de Base de Datos.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -939,7 +1012,9 @@ window.Quarto = {
 <p>El objetivo del diagrama de descomposición es representar la estructura jerárquica de un dominio concreto. Descripción</p>
 <p>La técnica es una estructura por niveles que se lee de arriba abajo y de izquierda a derecha, donde cada elemento se puede descomponer en otros de nivel inferior y puede ser descrito con el fin de aclarar su contenido.</p>
 <p>El diagrama de descomposición, también conocido como diagrama jerárquico, tomará distintos nombres en función del dominio al que se aplique. En el caso de MÉTRICA Versión 3, se utilizan los diagramas de descomposición funcional, de descomposición organizativo y de descomposición en diálogos. Notación</p>
-<p>Los elementos del dominio que se esté tratando se representan mediante un rectángulo, que contiene un nombre que lo identifica. Las relaciones de unos elementos con otros se representan mediante líneas que los conectan. Ejemplo</p>
+<p>Los elementos del dominio que se esté tratando se representan mediante un rectángulo, que contiene un nombre que lo identifica. Las relaciones de unos elementos con otros se representan mediante líneas que los conectan.</p>
+<section id="ejemplo-3" class="level4 unnumbered unlisted">
+<h4 class="unnumbered unlisted anchored" data-anchor-id="ejemplo-3">Ejemplo</h4>
 <p>Diagrama de Descomposición Organizativo:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -948,6 +1023,7 @@ window.Quarto = {
 </figure>
 </div>
 <p>(Nota.- Esta notación es la más habitual, pero MÉTRICA Versión 3 no exige su utilización).</p>
+</section>
 </section>
 <section id="diagrama-de-despliegue" class="level3" data-number="13.2.6">
 <h3 data-number="13.2.6" class="anchored" data-anchor-id="diagrama-de-despliegue"><span class="header-section-number">13.2.6</span> Diagrama de Despliegue</h3>
@@ -970,8 +1046,8 @@ window.Quarto = {
 <p>Las conexiones se representan con una línea continua que une ambos nodos y pueden tener una etiqueta que indique el tipo de conexión.&nbsp;(ejemplo: canal, red, protocolo, etc.)</p>
 </section>
 </section>
-<section id="ejemplo-2" class="level4 unnumbered unlisted">
-<h4 class="unnumbered unlisted anchored" data-anchor-id="ejemplo-2">Ejemplo</h4>
+<section id="ejemplo-4" class="level4 unnumbered unlisted">
+<h4 class="unnumbered unlisted anchored" data-anchor-id="ejemplo-4">Ejemplo</h4>
 <p>El diagrama representa una arquitectura compuesta por un servidor central de lógica de negocio y acceso a datos, en un monitor de teleproceso de tipo XXX, al cual hay conectados 10 servidores departamentales, con clientes (100) e impresora conectados a cada uno de ellos. No interesa tanto recoger en el diagrama la infraestructura real (la exactitud de la configuración, número de procesadores que pueden cambiar con el tiempo y en principio no afecta ni al diseño ni a la construcción), como el tipo “genérico” de los servidores, los volúmenes en el caso de que sean significativos (por ejemplo: 100 puestos por departamento).</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -1011,9 +1087,9 @@ window.Quarto = {
 <h5 class="unnumbered unlisted anchored" data-anchor-id="estructuras-del-diagrama">Estructuras del diagrama</h5>
 <p>Existen ciertas representaciones gráficas que permiten mostrar la secuencia de las llamadas entre módulos. Las posibles estructuras son:</p>
 <ul>
-<li><strong>Secuencial</strong>: un módulo llama a otros módulos una sola vez y, se ejecutan de izquierda a derecha y de arriba abajo. <img src="../images/secuencial.png" class="img-fluid"></li>
-<li><strong>Repetitiva</strong>: cada uno de los módulos inferiores se ejecuta varias veces mientras se cumpla una condición. <img src="../images/repetitiva.png" class="img-fluid"></li>
-<li><strong>Alternativa</strong>: cuando el módulo superior, en función de una decisión, llama a un módulo u otro de los de nivel inferior. <img src="../images/alternativa.png" class="img-fluid"></li>
+<li><strong>Secuencial</strong>: un módulo llama a otros módulos una sola vez y, se ejecutan de izquierda a derecha y de arriba abajo. <img src="../images/secuencial.png" class="img-fluid" alt="Representación de la estructura secuencial en el diagrama de estructura"></li>
+<li><strong>Repetitiva</strong>: cada uno de los módulos inferiores se ejecuta varias veces mientras se cumpla una condición. <img src="../images/repetitiva.png" class="img-fluid" alt="Representación de la estructura repetitiva en el diagrama de estructura"></li>
+<li><strong>Alternativa</strong>: cuando el módulo superior, en función de una decisión, llama a un módulo u otro de los de nivel inferior. <img src="../images/alternativa.png" class="img-fluid" alt="Representación de la estructura alternativa en el diagrama de estructura"></li>
 </ul>
 </section>
 <section id="principios-del-diseno-estructurado" class="level5 unnumbered unlisted">
@@ -1066,7 +1142,7 @@ window.Quarto = {
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="../images/estrategia-disenio.png" class="img-fluid figure-img"></p>
-<figcaption>Estrategia de Diseño usando Análisis de Transformación</figcaption>
+<figcaption>Gráfico explicativo de la estrategia de diseño usando Análisis de Transformación</figcaption>
 </figure>
 </div>
 </section>
@@ -1119,29 +1195,62 @@ window.Quarto = {
 <section id="modulo" class="level5 unnumbered unlisted">
 <h5 class="unnumbered unlisted anchored" data-anchor-id="modulo">Módulo</h5>
 <p>Se representa mediante un rectángulo con su nombre en el interior.</p>
-<p><img src="../images/modulo.png" class="img-fluid"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../images/modulo.png" class="img-fluid figure-img"></p>
+<figcaption>Representación del módulo en el diagrama de estructura</figcaption>
+</figure>
+</div>
 <p>Un módulo predefinido se representa añadiendo dos líneas verticales y paralelas en el interior del rectángulo.</p>
-<p><img src="../images/modulo-predefinido.png" class="img-fluid"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../images/modulo-predefinido.png" class="img-fluid figure-img"></p>
+<figcaption>Representación del módulo predefinido en el diagrama de estructura</figcaption>
+</figure>
+</div>
 </section>
 <section id="conexion-1" class="level5 unnumbered unlisted">
 <h5 class="unnumbered unlisted anchored" data-anchor-id="conexion-1">Conexión</h5>
 <p>Se representa mediante una línea terminada en punta de flecha cuya dirección indica el módulo llamado. Para llamadas a módulos estáticos se utiliza trazo continuo y para llamadas a módulos dinámicos trazo discontinuo.</p>
-<p><img src="../images/conexion.png" class="img-fluid"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../images/conexion.png" class="img-fluid figure-img"></p>
+<figcaption>Representación de conexión en el diagrama de estructura</figcaption>
+</figure>
+</div>
 </section>
 <section id="parametros" class="level5 unnumbered unlisted">
 <h5 class="unnumbered unlisted anchored" data-anchor-id="parametros">Parámetros</h5>
 <p>La representación varía según su tipo: control (<em>flags</em>) o datos.</p>
-<p><img src="../images/parametros.png" class="img-fluid"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../images/parametros.png" class="img-fluid figure-img"></p>
+<figcaption>Representación de parámetros en el diagrama de estructura</figcaption>
+</figure>
+</div>
 </section>
 <section id="almacen-de-datos" class="level5 unnumbered unlisted">
 <h5 class="unnumbered unlisted anchored" data-anchor-id="almacen-de-datos">Almacén de datos</h5>
-<p><img src="../images/almacen.png" class="img-fluid"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../images/almacen.png" class="img-fluid figure-img"></p>
+<figcaption>Representación del almacén de datos en el diagrama de estructura</figcaption>
+</figure>
+</div>
 </section>
 <section id="dispositivo-físico" class="level5 unnumbered unlisted">
 <h5 class="unnumbered unlisted anchored" data-anchor-id="dispositivo-físico">Dispositivo físico</h5>
-<p><img src="../images/dispositivo.png" class="img-fluid"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../images/dispositivo.png" class="img-fluid figure-img"></p>
+<figcaption>Representación del dispositivo físico en el diagrama de estructura</figcaption>
+</figure>
+</div>
 <p>(Nota.- Esta notación es la más habitual, pero MÉTRICA Versión 3 no exige su utilización).</p>
-<p>Ejemplo.</p>
+</section>
+</section>
+<section id="ejemplo-5" class="level4 unnumbered unlisted">
+<h4 class="unnumbered unlisted anchored" data-anchor-id="ejemplo-5">Ejemplo</h4>
 <p>El siguiente ejemplo muestra un proceso de emisión de cheques para el pago de nóminas de los empleados de una empresa. En él se diferencian los cálculos relativos a los trabajadores empleados por horas y los que poseen contrato. La lectura del fichero de empleados y la impresión de los cheques son módulos ya disponibles en las librerías del sistema, es decir, módulos predefinidos.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -1149,7 +1258,6 @@ window.Quarto = {
 <figcaption>Ejemplo de Diagrama de Estructura</figcaption>
 </figure>
 </div>
-</section>
 </section>
 </section>
 <section id="diagrama-de-flujo-de-datos" class="level3" data-number="13.2.8">
@@ -1217,16 +1325,36 @@ window.Quarto = {
 <section id="entidad-externa" class="level5 unnumbered unlisted">
 <h5 class="unnumbered unlisted anchored" data-anchor-id="entidad-externa">Entidad externa</h5>
 <p>Se representa mediante una elipse con un identificador y un nombre significativo en su interior.</p>
-<p><img src="../images/dfd-entidad.png" class="img-fluid"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../images/dfd-entidad.png" class="img-fluid figure-img"></p>
+<figcaption>Representación de la entidad externa en el diagrama de flujo de datos</figcaption>
+</figure>
+</div>
 <p>Si la entidad externa aparece varias veces en un mismo diagrama, se representa con una línea inclinada en el ángulo superior izquierdo.</p>
-<p><img src="../images/dfd-entidad-2.png" class="img-fluid"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../images/dfd-entidad-2.png" class="img-fluid figure-img"></p>
+<figcaption>Representación de la entidad externa repetida en el diagrama de flujo de datos</figcaption>
+</figure>
+</div>
 </section>
 <section id="proceso" class="level5 unnumbered unlisted">
 <h5 class="unnumbered unlisted anchored" data-anchor-id="proceso">Proceso</h5>
 <p>Se representa por un rectángulo subdividido en tres casillas donde se indica el nombre del proceso, un número identificativo y la localización.</p>
-<p><img src="../images/dfd-proceso.png" class="img-fluid"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../images/dfd-proceso.png" class="img-fluid figure-img"></p>
+<figcaption>Representación del proceso en el diagrama de flujo de datos</figcaption>
+</figure>
+</div>
 <p>Si el proceso es de último nivel, se representa con un asterisco en el ángulo inferior derecho separado con una línea inclinada.</p>
-<p><img src="../images/dfd-proceso-2.png" class="img-fluid"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../images/dfd-proceso-2.png" class="img-fluid figure-img"></p>
+<figcaption>Representación del proceso final en el diagrama de flujo de datos</figcaption>
+</figure>
+</div>
 <p>El nombre del proceso debe ser lo más representativo posible. Normalmente estará constituido por un verbo más un sustantivo.</p>
 <p>El número identificativo se representa en la parte superior izquierda e indica el nivel del DFD en que se está. Hay que resaltar que el número no indica orden de ejecución alguno entre los procesos ya que en un DFD no se representa una secuencia en el tratamiento de los datos. El número que identifica el proceso es único en el sistema y debe seguir el siguiente estándar de notación:</p>
 <ul>
@@ -1239,35 +1367,65 @@ window.Quarto = {
 <section id="almacen-de-datos-1" class="level5 unnumbered unlisted">
 <h5 class="unnumbered unlisted anchored" data-anchor-id="almacen-de-datos-1">Almacén de datos</h5>
 <p>Se representa por dos líneas paralelas cerradas en un extremo y una línea vertical que las une. En la parte derecha se indica el nombre del almacén de datos y en la parte izquierda el identificador de dicho almacén en el DFD.</p>
-<p><img src="../images/dfd-almacen.png" class="img-fluid"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../images/dfd-almacen.png" class="img-fluid figure-img"></p>
+<figcaption>Representación del almacén de datos en el diagrama de flujo de datos</figcaption>
+</figure>
+</div>
 <p>Si un almacén aparece repetido dentro un DFD se puede representar de la siguiente forma:</p>
-<p><img src="../images/dfd-almacen-2.png" class="img-fluid"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../images/dfd-almacen-2.png" class="img-fluid figure-img"></p>
+<figcaption>Representación del almacén repetido en el diagrama de flujo de datos</figcaption>
+</figure>
+</div>
 </section>
 <section id="flujo-de-datos" class="level5 unnumbered unlisted">
 <h5 class="unnumbered unlisted anchored" data-anchor-id="flujo-de-datos">Flujo de datos</h5>
 <p>Se representa por una flecha que indica la dirección de los datos, y que se etiqueta con un nombre representativo.</p>
-<p><img src="../images/dfd-flujo.png" class="img-fluid"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../images/dfd-flujo.png" class="img-fluid figure-img"></p>
+<figcaption>Representación del flujo de datos en el diagrama de flujo de datos</figcaption>
+</figure>
+</div>
 <p>La representación de los flujos de datos entre procesos y almacenes es la siguiente:</p>
-<p><img src="../images/dfd-flujo-2.png" class="img-fluid"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../images/dfd-flujo-2.png" class="img-fluid figure-img"></p>
+<figcaption>Representación del flujo de datos entre procesos y almacenes en el diagrama de flujo de datos</figcaption>
+</figure>
+</div>
 </section>
 <section id="proceso-de-control" class="level5 unnumbered unlisted">
 <h5 class="unnumbered unlisted anchored" data-anchor-id="proceso-de-control">Proceso de control</h5>
 <p>Se representa por un rectángulo, con trazo discontinuo, subdividido en tres casillas donde se indica el nombre del proceso, un número identificativo y la localización.</p>
-<p><img src="../images/dfd-control.png" class="img-fluid"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../images/dfd-control.png" class="img-fluid figure-img"></p>
+<figcaption>Representación del proceso de control en el diagrama de flujo de datos</figcaption>
+</figure>
+</div>
 </section>
 <section id="flujo-de-control" class="level5 unnumbered unlisted">
 <h5 class="unnumbered unlisted anchored" data-anchor-id="flujo-de-control">Flujo de control</h5>
 <p>Se representa por una flecha con trazo discontinuo que indica la dirección de flujo y que se etiqueta con un nombre representativo.</p>
-<p><img src="../images/dfd-control-2.png" class="img-fluid"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../images/dfd-control-2.png" class="img-fluid figure-img"></p>
+<figcaption>Representación del flujo de control en el diagrama de flujo de datos</figcaption>
+</figure>
+</div>
 </section>
 </section>
-<section id="ejemplo-3" class="level4 unnumbered unlisted">
-<h4 class="unnumbered unlisted anchored" data-anchor-id="ejemplo-3">Ejemplo</h4>
+<section id="ejemplo-6" class="level4 unnumbered unlisted">
+<h4 class="unnumbered unlisted anchored" data-anchor-id="ejemplo-6">Ejemplo</h4>
 <p>La figura es un diagrama de flujos de un Sistema Gestor de Pedidos. En él están representados todos los elementos que pueden intervenir en una Diagrama de Flujo de Datos.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="../images/dfd-ejemplo.png" class="img-fluid figure-img"></p>
-<figcaption>Ejemplo de Diagrama de Flujo de Datos</figcaption>
+<figcaption>Ejemplo de diagrama de flujo de datos</figcaption>
 </figure>
 </div>
 </section>
@@ -1275,40 +1433,75 @@ window.Quarto = {
 <h4 class="unnumbered unlisted anchored" data-anchor-id="consistencia-de-los-diagramas-de-flujos-de-datos">Consistencia de los diagramas de flujos de datos</h4>
 <p>Una vez construidos los diagramas de flujo de datos que componen el modelo de procesos del sistema de información, es necesario comprobar y asegurar su validez. Para ello, se debe estudiar cada diagrama comprobando que es legible, de poca complejidad y si los nombres asignados a sus elementos ayudan a su comprensión sin ambigüedades.</p>
 <p>Además, los diagramas deben ser consistentes. En los diagramas hay que comprobar que en un DFD resultado de una explosión:</p>
-<pre><code>No falten flujos de datos de entrada o salida que acompañaban al proceso del nivel superior.
-No aparezca algún flujo que no estuviese ya asociado al proceso de nivel superior.
-Todos los elementos del DFD resultante deben estar conectados directa o indirectamente con los flujos del proceso origen.</code></pre>
+<ul>
+<li>No falten flujos de datos de entrada o salida que acompañaban al proceso del nivel superior.</li>
+<li>No aparezca algún flujo que no estuviese ya asociado al proceso de nivel superior.</li>
+<li>Todos los elementos del DFD resultante deben estar conectados directa o indirectamente con los flujos del proceso origen.</li>
+</ul>
 <p>A continuación se incluyen ejemplos de la consistencia o inconsistencia de los diagramas de flujo de datos.</p>
 <p>Sea el diagrama de contexto de la figura. Los flujos A, C y D, entran al sistema, y el flujo B sale de él.</p>
-<p><img src="../images/dfd-contexto.png" class="img-fluid"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../images/dfd-contexto.png" class="img-fluid figure-img"></p>
+<figcaption>Diagrama de contexto para los ejemplos de consistencia e inconsistencia de los diagramas de flujos de datos</figcaption>
+</figure>
+</div>
 <section id="ejemplo-de-consistencia-de-diagramas-de-flujo-de-datos" class="level5 unnumbered unlisted">
 <h5 class="unnumbered unlisted anchored" data-anchor-id="ejemplo-de-consistencia-de-diagramas-de-flujo-de-datos">Ejemplo de consistencia de diagramas de flujo de datos</h5>
 <p>En la explosión del sistema en el diagrama de nivel 1, aparecen todos los flujos, y en su sentido correcto: A y C entran al subsistema o proceso 1, B sale del proceso 2, y D entra en el proceso 3. Se observa que el proceso 3, origina dos flujos de salida: E que va a al proceso 1, y F al proceso 2.</p>
-<p><img src="../images/dfd-nivel1.png" class="img-fluid"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../images/dfd-nivel1.png" class="img-fluid figure-img"></p>
+<figcaption>Diagrama de nivel 1 del ejemplo de consistencia de diagramas de flujos de datos</figcaption>
+</figure>
+</div>
 <p>La descomposición del proceso 1, muestra los flujos A, C y E correctamente, como entradas a las funciones del diagrama.</p>
-<p><img src="../images/dfd-proceso1.png" class="img-fluid"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../images/dfd-proceso1.png" class="img-fluid figure-img"></p>
+<figcaption>Diagrama del proceso 1 del ejemplo de consistencia de diagramas de flujos de datos</figcaption>
+</figure>
+</div>
 <p>Los demás flujos están enlazados con los almacenes A1 y A2 del mismo modo que en el diagrama anterior.</p>
 </section>
 <section id="ejemplo-de-inconsistencia-de-diagramas-de-flujo-de-datos" class="level5 unnumbered unlisted">
 <h5 class="unnumbered unlisted anchored" data-anchor-id="ejemplo-de-inconsistencia-de-diagramas-de-flujo-de-datos">Ejemplo de inconsistencia de diagramas de flujo de datos</h5>
 <p>Partiendo del mismo diagrama de contexto utilizado en el anterior ejemplo, los flujos A, C y D, que entran al sistema, y el flujo B, que sale de él, deben aparecer en la primera descomposición, el diagrama de nivel 1. En la figura se aprecia que falta el flujo D, y hay un flujo G que o bien falta en el nivel anterior, sobra en este.</p>
 <p>Por otro lado, en el proceso 3 no entra ningún flujo, no es posible por tanto que transforme datos saliendo los flujos E y F y además está desconectado del nivel anterior.</p>
-<p><img src="../images/dfd-nivel1-2.png" class="img-fluid"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../images/dfd-nivel1-2.png" class="img-fluid figure-img"></p>
+<figcaption>Diagrama de nivel 1 del ejemplo de inconsistencia de diagramas de flujos de datos</figcaption>
+</figure>
+</div>
 <p>En el siguiente paso, la inconsistencia más clara es la falta del flujo C, que entra al proceso 1, y sin embargo no aparece en su explosión.</p>
-<p><img src="../images/dfd-proceso1-2.png" class="img-fluid"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../images/dfd-proceso1-2.png" class="img-fluid figure-img"></p>
+<figcaption>Diagrama del proceso 1 del ejemplo de inconsistencia de diagramas de flujos de datos</figcaption>
+</figure>
+</div>
 <p>Además, hay otra inconsistencia respecto al almacén A1: en el diagrama del nivel anterior, el proceso 1 se conectaba con un flujo de entrada-salida este almacén, cosa que no se refleja en el diagrama de este proceso, en el que sólo aparece uno de entrada.</p>
-<p>Ejemplo de construcción.</p>
+</section>
+</section>
+<section id="ejemplo-de-construcción" class="level4 unnumbered unlisted">
+<h4 class="unnumbered unlisted anchored" data-anchor-id="ejemplo-de-construcción">Ejemplo de construcción</h4>
 <p>El caso en estudio es un modelo de procesos de un sistema de información de Conocimientos de técnicos. Según estos conocimientos, los técnicos podrán ser asignados a determinados proyectos de la organización.</p>
 <p>El sistema recogerá la información referente a los técnicos, procedente de la Dirección técnica de la organización y de los proyectos, procedente de cualquier sección o Unidad de Negocio en las que está dividida dicha organización.</p>
 <p>Las entidades externas son pues Dirección Técnica y Unidad de Negocio, que introducen los datos al sistema y hacen peticiones de consultas e informes sobre los técnicos y sus conocimientos. El diagrama de contexto será el siguiente:</p>
-<p><img src="../images/dfd-contexto-1.png" class="img-fluid"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../images/dfd-contexto-1.png" class="img-fluid figure-img"></p>
+<figcaption>Diagrama de contexto del ejemplo de construcción</figcaption>
+</figure>
+</div>
 <p>Los flujos de entrada son: Datos Técnicos, con datos de los técnicos introducidos por la Dirección Técnica, así como posibles peticiones de información sobre ellos; y Datos Unidad, que proviene de la Unidad de Negocio, conteniendo datos referentes a la unidad, de proyectos y clientes, así como posibles peticiones de consultas sobre los mismos.</p>
 <p>Los flujos de salida son: Información Técnicos, que contendrá datos de técnicos, de consulta o informes, para uso de la Dirección Técnica y Consultas Unidad, con datos requeridos por la Unidad de Negocio.</p>
 <p>El sistema de Conocimientos se descompone en el diagrama de nivel 1, conteniendo dos subsistemas. El subsistema 1 recogerá las funciones a realizar con los datos de los técnicos de la organización (actualizaciones, consultas, informes, etc.), por lo que se denomina Tratar Técnicos. El subsistema 2 contendrá las funciones asociadas al procesamiento de datos de proyectos, por lo que se le da el nombre Tratar Proyectos.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="../images/dfd-subsistema.png" class="img-fluid figure-img"></p>
-<figcaption>Ejemplo de diagrama de flujo de datos</figcaption>
+<figcaption>Diagrama de flujo de datos de nivel 1 del ejemplo de construcción</figcaption>
 </figure>
 </div>
 <p>En el diagrama se encuentran cuatro almacenes, tres de los cuales son accedidos por funciones de los dos subsistemas: A1 Conocimientos, A2 Proyectos y A3 Técnicos. El cuarto, A4 Clientes, sólo es accedido por el subsistema Tratar Proyectos.</p>
@@ -1316,16 +1509,25 @@ Todos los elementos del DFD resultante deben estar conectados directa o indirect
 <p>A partir de ahora, se centrará el ejemplo en la descomposición del subsistema 1 Tratar Técnicos, hasta llegar a su nivel más detallado.</p>
 <p>En el diagrama resultado de la explosión de Tratar Técnicos, se incluyen cuatro procesos o funciones para el tratamiento completo de éstos.</p>
 <p>El flujo de entrada Datos Técnicos se compone tanto de los datos profesionales de los técnicos, como de datos de peticiones de información sobre los mismos, por lo cual se ha dividido en dos: Datos Profesionales, que es entrada del proceso 1.1 Validar datos Técnicos y Peticiones Información Técnicos, que entra en la función 1.4 Informar.</p>
-<p><img src="../images/dfd-subsistema-2.png" class="img-fluid"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../images/dfd-subsistema-2.png" class="img-fluid figure-img"></p>
+<figcaption>Diagrama de flujo de datos del subsistema 1 Tratar Técnicos del ejemplo de construcción</figcaption>
+</figure>
+</div>
 <p>Para la validación, el proceso 1.1 Validar Datos Técnicos obtiene información del almacén A3 Técnicos y genera una salida, el flujo Datos Técnicos Correctos, que lleva los datos válidos a la función 1.2 Actualizar Almacenes Técnicos. Esta función se encarga de actualizar los almacenes A3 Técnicos y A1 Conocimientos, pero también emite un flujo al proceso 1.3 Asignar a Proyectos. Éste se encarga de hacer asignaciones de técnicos en el almacén A2 Proyectos.</p>
 <p>La función 1.4 Informar, recibe las peticiones de información sobre técnicos, las procesa utilizando los almacenes necesarios y genera el flujo Información Técnicos que irá a la entidad Dirección Técnica, según muestran los primeros diagramas.</p>
 <p>Obsérvese que para mayor claridad no se ha incluido ya ninguna entidad externa, y además, se ha repetido el almacén A3 Técnicos, evitando que el cruce de flujos oscurezca la lectura del diagrama.</p>
 <p>En este momento, todos los procesos se consideran primitivos, excepto el proceso 1.4 Informar, del que se obtiene su descomposición.&nbsp;Sus funciones han de obtener Informes Técnicos y Consultas Técnicos, flujos que componen Información Técnicos que aparecía en el nivel anterior.</p>
-<p><img src="../images/dfd-subsistema-3.png" class="img-fluid"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../images/dfd-subsistema-3.png" class="img-fluid figure-img"></p>
+<figcaption>Diagrama de flujo de datos de la función 1.4 Informar del ejemplo de construcción</figcaption>
+</figure>
+</div>
 <p>Por otro lado, también aparece dividido el flujo de entrada Peticiones Información Técnicos, diferenciando la entrada al proceso de consultas o al de emisión de informes.</p>
 <p>Por último, se puede apreciar que los almacenes son los mismos que se conectaban con el proceso en el nivel anterior y los flujos son de entrada a las funciones.</p>
 <p>(Nota.- Esta notación es la más habitual, pero MÉTRICA Versión 3 no exige su utilización).</p>
-</section>
 </section>
 </section>
 <section id="diagrama-de-interaccion" class="level3" data-number="13.2.9">
@@ -1368,18 +1570,23 @@ Todos los elementos del DFD resultante deben estar conectados directa o indirect
 <h6 class="unnumbered unlisted anchored" data-anchor-id="mensaje">Mensaje</h6>
 <p>Un mensaje se representa como una flecha horizontal entre las líneas de vida de los objetos que intercambian el mensaje. La flecha va desde el objeto que envía el mensaje al que lo recibe. Además, un objeto puede mandarse un mensaje a sí mismo, en este caso la flecha comienza y termina en su línea de vida.</p>
 <p>La flecha tiene asociada una etiqueta con el nombre del mensaje y los argumentos. También pueden ser etiquetados los mensajes con un número de secuencia, sin embargo, este número no es necesario porque la localización física de las flechas que representan a los mensajes ya indica el orden de los mismos.</p>
-<p><img src="../images/secuencia.png" class="img-fluid"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../images/secuencia.png" class="img-fluid figure-img"></p>
+<figcaption>Representación del mensaje en el diagrama de secuencia</figcaption>
+</figure>
+</div>
 <p>Los mensajes pueden presentar también condiciones e iteraciones. Una condición se representa mediante una expresión booleana encerrada entre corchetes junto a un mensaje, e indica que ese mensaje sólo es enviado en caso de ser cierta la condición.&nbsp;Una iteración se representa con un asterisco y una expresión entre corchetes, que indica el número de veces que se produce.</p>
 <p>(Nota.- Esta notación es la más habitual, pero MÉTRICA Versión 3 no exige su utilización).</p>
 </section>
 </section>
-<section id="ejemplo-4" class="level5 unnumbered unlisted">
-<h5 class="unnumbered unlisted anchored" data-anchor-id="ejemplo-4">Ejemplo</h5>
+<section id="ejemplo-7" class="level5 unnumbered unlisted">
+<h5 class="unnumbered unlisted anchored" data-anchor-id="ejemplo-7">Ejemplo</h5>
 <p>Diagrama de secuencia para el caso de uso: Prestar un ejemplar de una aplicación encargada de los préstamos y reservas de una biblioteca:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="../images/secuencia-ejemplo.png" class="img-fluid figure-img"></p>
-<figcaption>Ejemplo de Diagrama de secuencia</figcaption>
+<figcaption>Ejemplo de diagrama de secuencia</figcaption>
 </figure>
 </div>
 </section>
@@ -1405,13 +1612,13 @@ Todos los elementos del DFD resultante deben estar conectados directa o indirect
 <p>Además, los mensajes pueden tener asociadas condiciones e iteraciones que se representarán como en los diagramas de secuencia.</p>
 </section>
 </section>
-<section id="ejemplo-5" class="level5 unnumbered unlisted">
-<h5 class="unnumbered unlisted anchored" data-anchor-id="ejemplo-5">Ejemplo</h5>
+<section id="ejemplo-8" class="level5 unnumbered unlisted">
+<h5 class="unnumbered unlisted anchored" data-anchor-id="ejemplo-8">Ejemplo</h5>
 <p>Diagrama de colaboración para el caso de uso: Prestar un ejemplar de una aplicación encargada de los préstamos y reservas de una biblioteca.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="../images/colaboracion-ejemplo.png" class="img-fluid figure-img"></p>
-<figcaption>Ejemplo de Diagrama de colaboración</figcaption>
+<figcaption>Ejemplo de diagrama de colaboración</figcaption>
 </figure>
 </div>
 <p>(Nota.- Esta notación es la más habitual, pero MÉTRICA Versión 3 no exige su utilización).</p>
@@ -1444,13 +1651,13 @@ Todos los elementos del DFD resultante deben estar conectados directa o indirect
 <p>Las dependencias se representan con una flecha discontinua con inicio en el paquete que depende del otro.</p>
 </section>
 </section>
-<section id="ejemplo-6" class="level4 unnumbered unlisted">
-<h4 class="unnumbered unlisted anchored" data-anchor-id="ejemplo-6">Ejemplo</h4>
+<section id="ejemplo-9" class="level4 unnumbered unlisted">
+<h4 class="unnumbered unlisted anchored" data-anchor-id="ejemplo-9">Ejemplo</h4>
 <p>Sistema encargado de la gestión de los préstamos y reservas de libros y revistas en una biblioteca.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="../images/paquetes.png" class="img-fluid figure-img"></p>
-<figcaption>Ejemplo de Diagrama de Paquetes</figcaption>
+<figcaption>Ejemplo de diagrama de paquetes</figcaption>
 </figure>
 </div>
 <p>(Nota.- Esta notación es la más habitual, pero MÉTRICA Versión 3 no exige su utilización).</p>
@@ -1477,7 +1684,12 @@ Todos los elementos del DFD resultante deben estar conectados directa o indirect
 <p>Las acciones y actividades descritas como respuesta a eventos que no producen un cambio de estado, se representan dentro del rectángulo con el formato:</p>
 <pre class="text"><code>nombre-evento (parámetros) [condición] /acción</code></pre>
 <p>El estado inicial se representa con un pequeño circulo relleno, y el estado final como un pequeño circulo relleno con una circunferencia que lo rodea.</p>
-<p><img src="../images/estados.png" class="img-fluid"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../images/estados.png" class="img-fluid figure-img"></p>
+<figcaption>Representación del estado en el diagrama de transición de estados</figcaption>
+</figure>
+</div>
 </section>
 <section id="transicion" class="level5 unnumbered unlisted">
 <h5 class="unnumbered unlisted anchored" data-anchor-id="transicion">Transición</h5>
@@ -1485,12 +1697,12 @@ Todos los elementos del DFD resultante deben estar conectados directa o indirect
 <pre class="text"><code>nombre-evento (parámetros) [condición] /acción</code></pre>
 </section>
 </section>
-<section id="ejemplo-7" class="level4 unnumbered unlisted">
-<h4 class="unnumbered unlisted anchored" data-anchor-id="ejemplo-7">Ejemplo</h4>
+<section id="ejemplo-10" class="level4 unnumbered unlisted">
+<h4 class="unnumbered unlisted anchored" data-anchor-id="ejemplo-10">Ejemplo</h4>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="../images/estados-ejemplo.png" class="img-fluid figure-img"></p>
-<figcaption>Ejemplo de Diagrama de Transición de Estados</figcaption>
+<figcaption>Ejemplo de diagrama de transición de estados</figcaption>
 </figure>
 </div>
 <p>(Nota.- Esta notación es la más habitual, pero MÉTRICA Versión 3 no exige su utilización).</p>
@@ -1581,7 +1793,12 @@ Todos los elementos del DFD resultante deben estar conectados directa o indirect
 </ul>
 <p>Esta notación responde a los siguientes principios: las entradas son transformadas en salidas, los controles son restricciones bajo las que se desarrollan las actividades y los mecanismos son los medios, humanos o materiales, que permiten su ejecución.</p>
 <p>Cada flujo (flecha) representa planes, datos, máquinas e información, etc., y debe nombrarse con un sustantivo.</p>
-<p><img src="../images/sadt-notacion.png" class="img-fluid"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../images/sadt-notacion.png" class="img-fluid figure-img"></p>
+<figcaption>Representación de SADT</figcaption>
+</figure>
+</div>
 <p>Las actividades en los diagramas SADT no se ubican de forma aleatoria, sino por la influencia que una actividad tiene sobre otras. La más dominante, es decir, la que más influye en las restantes, debe ser normalmente la primera en la secuencia de actividades y se sitúa en la esquina superior izquierda del diagrama. Por ejemplo, si se trata de realizar un proceso de selección de personal, la actividad más dominante será la de revisar las referencias de los candidatos. La menos dominante, por el contrario, se sitúa en la esquina inferior derecha, por ejemplo, en el caso anterior, sería la de contratar o rechazar a un candidato a empleo. Cada actividad se numera siguiendo una secuencia que empieza en la que se corresponde con la actividad más dominante y así sucesivamente.</p>
 <p>La influencia de una actividad sobre otra se manifiesta en una salida de la primera que o bien es entrada o bien es un control en la segunda.</p>
 <p>Un diagrama de actividades SADT no es un diagrama de flujo de datos ya que recoge, además de las transformaciones de entrada y salida de información, las reglas que ponen restricciones a dicha transformación.&nbsp;En este sentido, las flechas documentan las interfaces entre las actividades del proceso y entre éste y su entorno.</p>
@@ -1595,10 +1812,15 @@ Todos los elementos del DFD resultante deben estar conectados directa o indirect
 </ul>
 <p>La conexión por control o entrada se da cuando una salida de una actividad se convierte en control o entrada, respectivamente, de una actividad de menor influencia. Cualquiera de las conexiones con realimentación tienen lugar cuando una salida de una actividad afecta a otra de mayor influencia como entrada o como control. La conexión de una salida de una actividad que actúa como un mecanismo de otra, implica que la primera le proporciona medios a la segunda para su ejecución (aunque este tipo de conexión es poco usual).</p>
 </section>
-<section id="ejemplo-8" class="level5 unnumbered unlisted">
-<h5 class="unnumbered unlisted anchored" data-anchor-id="ejemplo-8">Ejemplo</h5>
+<section id="ejemplo-11" class="level5 unnumbered unlisted">
+<h5 class="unnumbered unlisted anchored" data-anchor-id="ejemplo-11">Ejemplo</h5>
 <p>A continuación se muestra un ejemplo del proceso de selección de personal de una empresa mediante la técnica SADT. (MÉTRICA Versión 3 no exige la notación aquí utilizada).</p>
-<p><img src="../images/sadt.png" class="img-fluid"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../images/sadt.png" class="img-fluid figure-img"></p>
+<figcaption>Ejemplo de SADT</figcaption>
+</figure>
+</div>
 </section>
 </section>
 </section>
@@ -1706,14 +1928,14 @@ Todos los elementos del DFD resultante deben estar conectados directa o indirect
 <p><a href="../images/MERE_Jerarquia.png"></a></p>
 </section>
 </section>
-<section id="ejemplo-9" class="level4 unnumbered unlisted">
-<h4 class="unnumbered unlisted anchored" data-anchor-id="ejemplo-9">Ejemplo</h4>
+<section id="ejemplo-12" class="level4 unnumbered unlisted">
+<h4 class="unnumbered unlisted anchored" data-anchor-id="ejemplo-12">Ejemplo</h4>
 <p>Modelo entidad-relación extendido para un sistema de gestión de técnicos y su asignación a proyectos dentro de una empresa u organización.</p>
 <p>Como se aprecia en el diagrama, TÉCNICO es un subtipo de EMPLEADO, generado por especialización, pues era necesario para establecer la relación Trabaja en con PROYECTO, ya que no todos los empleados de la empresa, como los administrativos, son susceptibles de trabajar en un proyecto. La entidad TÉCNICO tendrá los atributos de EMPLEADO más el atributo nivel.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="../images/MERE_Ejemplo.png" class="img-fluid figure-img"></p>
-<figcaption>Ejemplo de Modelo Entidad/Relación Extendido</figcaption>
+<figcaption>Ejemplo de modelo entidad/relación extendido</figcaption>
 </figure>
 </div>
 <p>Los tipos de correspondencia son <code>1:N</code> entre DEPARTAMENTO y EMPLEADO, pues un departamento tiene 1 o varios empleados. Entre TÉCNICO y PROYECTO es <code>M:N</code>, pues un técnico puede trabajar en 1 o varios proyectos, y en un proyecto trabajan 1 o varios técnicos.</p>
@@ -1765,11 +1987,16 @@ Todos los elementos del DFD resultante deben estar conectados directa o indirect
 <h4 class="unnumbered unlisted anchored" data-anchor-id="notación-12">Notación</h4>
 <p>Una herramienta muy útil para visualizar las dependencias funcionales es el grafo o diagrama de dependencias funcionales, mediante el cual se representa un conjunto de atributos y las dependencias funcionales existentes entre ellos.</p>
 <p>En el grafo aparecen los nombres de los atributos unidos por flechas, las cuales indican las dependencias funcionales completas que existen entre ellos, partiendo del implicante hacia el implicado. Cuando el implicante de una dependencia no es un único atributo, es decir, se trata de un implicante compuesto, los atributos que lo componen se encierran en un recuadro y la flecha parte de éste, no de cada atributo.</p>
-<p><img src="../images/Notacion-normalizacion.png" class="img-fluid"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../images/Notacion-normalizacion.png" class="img-fluid figure-img"></p>
+<figcaption>Representación del grafo de dependencias funcionales</figcaption>
+</figure>
+</div>
 <p>En la figura se presenta un ejemplo de cómo se visualizan las dependencias. Se puede observar que cod_libro determina funcionalmente el título del libro y la editorial, como indica la correspondiente flecha; de forma análoga, num_socio determina el nombre, domicilio y el tel. del socio (suponiendo que sólo se proporciona un teléfono); mientras que ambos atributos en conjunto cod_libro y num_socio (lo que se indica mediante el recuadro que los incluye) determinan fecha_préstamo y fecha_dev.</p>
 </section>
-<section id="ejemplo-10" class="level4 unnumbered unlisted">
-<h4 class="unnumbered unlisted anchored" data-anchor-id="ejemplo-10">Ejemplo</h4>
+<section id="ejemplo-13" class="level4 unnumbered unlisted">
+<h4 class="unnumbered unlisted anchored" data-anchor-id="ejemplo-13">Ejemplo</h4>
 <p>Sea una entidad TÉCNICOS de un grupo de empresas, con los siguientes atributos:</p>
 <ul>
 <li><code>cod_empresa</code></li>
@@ -1905,16 +2132,26 @@ Todos los elementos del DFD resultante deben estar conectados directa o indirect
 <section id="tabla" class="level5 unnumbered unlisted">
 <h5 class="unnumbered unlisted anchored" data-anchor-id="tabla">Tabla</h5>
 <p>La representación gráfica de una tabla es un rectángulo con una línea horizontal que lo divide en dos. La parte superior, de ancho menor, se etiqueta con el nombre de la tabla.</p>
-<p><img src="../images/ROMF-notacion-1.png" class="img-fluid"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../images/ROMF-notacion-1.png" class="img-fluid figure-img"></p>
+<figcaption>Representación de la tabla de transformación de la jerarquía</figcaption>
+</figure>
+</div>
 </section>
 <section id="relacion-3" class="level5 unnumbered unlisted">
 <h5 class="unnumbered unlisted anchored" data-anchor-id="relacion-3">Relación</h5>
 <p>La relación entre tablas se representa gráficamente mediante una línea que las une. En ella pueden aparecer en sus extremos diversos símbolos para indicar la cardinalidad de la relación, como se muestra a continuación:</p>
-<p><img src="../images/ROMF-notacion-2.png" class="img-fluid"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../images/ROMF-notacion-2.png" class="img-fluid figure-img"></p>
+<figcaption>Representación de la relación de transformación de la jerarquía</figcaption>
+</figure>
+</div>
 </section>
 </section>
-<section id="ejemplo-11" class="level4 unnumbered unlisted">
-<h4 class="unnumbered unlisted anchored" data-anchor-id="ejemplo-11">Ejemplo</h4>
+<section id="ejemplo-14" class="level4 unnumbered unlisted">
+<h4 class="unnumbered unlisted anchored" data-anchor-id="ejemplo-14">Ejemplo</h4>
 <p>Sea el diagrama entidad-relación del ejemplo realizado para la Normalización sobre conocimientos de técnicos informáticos y su asignación a proyectos.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -2009,7 +2246,12 @@ Todos los elementos del DFD resultante deben estar conectados directa o indirect
 <h4 class="unnumbered unlisted anchored" data-anchor-id="notación-14">Notación</h4>
 <p>Dados dos tipos de elementos A y B, su representación será una matriz bidimensional NxM, siendo N el número de elementos de A, y M el número de elementos de B.</p>
 <p>En el cruce de una fila y una columna (C), se tendrá el modo en que se relacionan un elemento concreto de A y uno de B.</p>
-<p><img src="../images/tecnicas-matriciales.png" class="img-fluid"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../images/tecnicas-matriciales.png" class="img-fluid figure-img"></p>
+<figcaption>Representación de técnicas matriciales</figcaption>
+</figure>
+</div>
 <div style="page-break-after: always;"></div>
 </section>
 </section>
@@ -2088,7 +2330,12 @@ Todos los elementos del DFD resultante deben estar conectados directa o indirect
 <li>Una entrada es única si difiere en su formato o si arranca procesos diferentes.</li>
 <li>Para el análisis de este componente se utiliza la siguiente matriz de complejidad:</li>
 </ul>
-<p><img src="../images/albrecht-1.png" class="img-fluid"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../images/albrecht-1.png" class="img-fluid figure-img"></p>
+<figcaption>Entradas externas en el método Albrecht</figcaption>
+</figure>
+</div>
 <p>Los tipos de entrada aplicables son los siguientes:</p>
 <ul>
 <li>Documento tecleado.</li>
@@ -2111,7 +2358,12 @@ Todos los elementos del DFD resultante deben estar conectados directa o indirect
 <li>Una salida es única si difiere en su formato o si es generada por procesos lógicos diferentes.</li>
 </ul>
 <p>Para el análisis de este componente se utiliza la siguiente matriz de complejidad:</p>
-<p><img src="../images/albrecht-2.png" class="img-fluid"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../images/albrecht-2.png" class="img-fluid figure-img"></p>
+<figcaption>Salidas externas en el método Albrecht</figcaption>
+</figure>
+</div>
 <p>Los tipos de salida aplicables son los siguientes:</p>
 <ul>
 <li>Informe por pantalla.</li>
@@ -2133,7 +2385,12 @@ Todos los elementos del DFD resultante deben estar conectados directa o indirect
 <li>No deben incluirse aquellos grupos lógicos de datos que no sean accesibles por el usuario a través de entradas o salidas externas, ficheros de interfaz o consultas.</li>
 <li>Para el análisis de este componente se utiliza la siguiente matriz de complejidad:</li>
 </ul>
-<p><img src="../images/albrecht-3.png" class="img-fluid"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../images/albrecht-3.png" class="img-fluid figure-img"></p>
+<figcaption>Grupos lógicos de datos internos en el método Albrecht</figcaption>
+</figure>
+</div>
 <p>Los tipos de datos internos o ficheros aplicables son los siguientes:</p>
 <ul>
 <li>Fichero lógico interno.</li>
@@ -2150,7 +2407,12 @@ Todos los elementos del DFD resultante deben estar conectados directa o indirect
 <li>Los grupos lógicos internos que son a su vez interfaz, deben contarse en ambos grupos.</li>
 </ul>
 <p>Para el análisis de este componente se utiliza la siguiente matriz de complejidad:</p>
-<p><img src="../images/albrecht-4.png" class="img-fluid"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../images/albrecht-4.png" class="img-fluid figure-img"></p>
+<figcaption>Grupos lógicos de datos de interfaz en el método Albrecht</figcaption>
+</figure>
+</div>
 <p>Los tipos de datos o ficheros de interfaz aplicables son los siguientes:</p>
 <ul>
 <li>Fichero lógico interno accesible desde otra aplicación.</li>
@@ -2553,13 +2815,19 @@ Todos los elementos del DFD resultante deben estar conectados directa o indirect
 <li><strong>Número de tipos de datos de entrada</strong> que han de ser tratados por la función, considerando que para cada tipo de datos se van a realizar las mismas operaciones de validación, tratamiento, etc.</li>
 <li><strong>Número de tipos de datos de salida</strong> que han de ser presentados por el sistema, teniendo en cuenta para ello el tratamiento que hay que dar les para su presentación.</li>
 </ul>
-<section id="calculo-de-los-puntos-funcion-no-ajustados-1" class="level7 unnumbered unlisted">
-<p class="heading unnumbered unlisted">Cálculo de los Puntos Función no ajustados</p>
-<p>La tabla que aparece a continuación permite la valoración en Puntos Función no ajustados de todas las funciones que intervienen en el Sistema. Los pesos empleados para la ponderación de las entidades, tipos de datos de entrada y tipos de datos de salida han sido obtenidos por el autor del Método a partir de su experiencia y están basados en la media de la industria informática.</p>
-<p><img src="../images/mark-ii-1.png" class="img-fluid"></p>
 </section>
-<section id="valoracion-de-grados-de-influencia" class="level7 unnumbered unlisted">
-<p class="heading unnumbered unlisted">Valoración de grados de influencia</p>
+<section id="calculo-de-los-puntos-funcion-no-ajustados-1" class="level6 unnumbered unlisted">
+<h6 class="unnumbered unlisted anchored" data-anchor-id="calculo-de-los-puntos-funcion-no-ajustados-1">Cálculo de los Puntos Función no ajustados</h6>
+<p>La tabla que aparece a continuación permite la valoración en Puntos Función no ajustados de todas las funciones que intervienen en el Sistema. Los pesos empleados para la ponderación de las entidades, tipos de datos de entrada y tipos de datos de salida han sido obtenidos por el autor del Método a partir de su experiencia y están basados en la media de la industria informática.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../images/mark-ii-1.png" class="img-fluid figure-img"></p>
+<figcaption>Cálculo de los Puntos de Función no ajustados del método Mark II</figcaption>
+</figure>
+</div>
+</section>
+<section id="valoracion-de-grados-de-influencia" class="level6 unnumbered unlisted">
+<h6 class="unnumbered unlisted anchored" data-anchor-id="valoracion-de-grados-de-influencia">Valoración de grados de influencia</h6>
 <p>Al igual que en el método Albrecht, esta etapa tiene como objetivo la adaptación de la estimación a las condiciones de trabajo bajo las que el sistema ha de ser desarrollado.</p>
 <p>Mark II amplía los 14 atributos de ajuste a 19.</p>
 <p>A cada atributo se le asignará un valor entre 0 y 5, dependiendo del grado de influencia de éstos, siendo los posibles valores los siguientes:</p>
@@ -2881,8 +3149,12 @@ Todos los elementos del DFD resultante deben estar conectados directa o indirect
 <li>Dossier de Cambios.</li>
 </ul>
 <p>Todos los atributos anteriores, con sus valores correspondientes, se contemplan en la siguiente tabla:</p>
-<p><img src="../images/mark-ii-2.png" class="img-fluid"></p>
-</section>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../images/mark-ii-2.png" class="img-fluid figure-img"></p>
+<figcaption>Atributos del método Mark II</figcaption>
+</figure>
+</div>
 </section>
 </section>
 <section id="ajuste-por-complejidad-tecnica" class="level5 unnumbered unlisted">
@@ -3095,9 +3367,11 @@ Todos los elementos del DFD resultante deben estar conectados directa o indirect
 <li>Proyectos con una importante gestión de interfaces de usuario conllevan de dos a tres veces el número de clases clave para las clases secundarias.</li>
 <li>Proyectos con una gestión más sencilla de la interfaz de usuario implican una o dos veces el número de clases clave para las clases secundarias.</li>
 </ul>
-<p>Ejemplo:</p>
-<p>Si durante la fase de análisis se encuentran unas 100 clases clave y el proyecto implica una gestión importante de la interfaz de usuario, podemos dar un promedio de 2.5 y proporcionar una estimación de unas 250 clases secundarias. El número total de clases para el proyecto estimado sería unas 350 clases.</p>
 </section>
+</section>
+<section id="ejemplo-15" class="level4 unnumbered unlisted">
+<h4 class="unnumbered unlisted anchored" data-anchor-id="ejemplo-15">Ejemplo</h4>
+<p>Si durante la fase de análisis se encuentran unas 100 clases clave y el proyecto implica una gestión importante de la interfaz de usuario, podemos dar un promedio de 2.5 y proporcionar una estimación de unas 250 clases secundarias. El número total de clases para el proyecto estimado sería unas 350 clases.</p>
 <section id="umbrales-3" class="level5 unnumbered unlisted">
 <h5 class="unnumbered unlisted anchored" data-anchor-id="umbrales-3">Umbrales</h5>
 <p>Hay que tener en cuenta la complejidad de la interfaz de usuario y por otro lado es importante considerar la experiencia del equipo de desarrollo.</p>
@@ -3130,25 +3404,65 @@ Todos los elementos del DFD resultante deben estar conectados directa o indirect
 <h5 class="unnumbered unlisted anchored" data-anchor-id="notación-15">Notación</h5>
 <p>Para representar las diferentes actividades en que se descompone un proyecto, así como sus correspondiente sucesos, se utiliza una estructura de grafo. Los arcos del grafo representan las actividades, y los vértices los sucesos.</p>
 <p>Así el vértice 1 del diagrama que aparece a continuación indica el suceso inicio de la actividad A y el vértice 2 el suceso fin de dicha actividad. El arco que une los vértices 1 y 2 representa la propia realización de la actividad.</p>
-<p><img src="../images/PERT-1.png" class="img-fluid"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../images/PERT-1.png" class="img-fluid figure-img"></p>
+<figcaption>Representación de actividades y sucesos en el método PERT</figcaption>
+</figure>
+</div>
 <p>Por otra parte, como se ha dicho, un suceso puede representar el principio o fin de un conjunto de actividades. En efecto, en la siguiente figura el vértice 1 representa el suceso inicio de las actividades A, B y C.</p>
-<p><img src="../images/PERT-2.png" class="img-fluid"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../images/PERT-2.png" class="img-fluid figure-img"></p>
+<figcaption>Representación de un suceso que representa el suceso inicio de un conjunto de actividades en el método PERT</figcaption>
+</figure>
+</div>
 <p>Mientras que en la figura que aparece a continuación, el vértice 4 representa el suceso fin de las actividades A, B y C.</p>
-<p><img src="../images/PERT-3.png" class="img-fluid"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../images/PERT-3.png" class="img-fluid figure-img"></p>
+<figcaption>Representación de un suceso que representa el suceso fin de un conjunto de actividades en el método PERT</figcaption>
+</figure>
+</div>
 <p>Una vez descompuesto el proyecto en actividades, la fase siguiente del método PERT consiste en establecer las prelaciones existentes entre las diferentes actividades. Estas prelaciones indican el orden en que deben ejecutarse dichas actividades. El caso más sencillo son la prelaciones lineales, que se presentan cuando, para poder iniciar una actividad, es necesario que haya finalizado previamente una única actividad (la precedente).</p>
 <p>Observando la siguiente figura se aprecia que para poder iniciar la actividad B es necesario que haya finalizado la actividad A. Es decir, el vértice 2 representa el suceso fin de la actividad A y, a la vez, el suceso comienzo de la actividad B.</p>
-<p><img src="../images/PERT-4.png" class="img-fluid"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../images/PERT-4.png" class="img-fluid figure-img"></p>
+<figcaption>Representación de una actividad cuyo inicio requiere haber finalizado otra actividad en el método PERT</figcaption>
+</figure>
+</div>
 <p>A continuación, se va a estudiar el caso de las prelaciones que originan una convergencia. En el siguiente diagrama se representa este caso. Para poder iniciar la actividad D es necesario que se hayan finalizado las actividades A, B y C. Es decir, el vértice 4 representa el suceso fin de las actividades A, B y C y, a la vez, el suceso comienzo de la actividad D.</p>
-<p><img src="../images/PERT-5.png" class="img-fluid"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../images/PERT-5.png" class="img-fluid figure-img"></p>
+<figcaption>Representación de prelaciones que originan una convergencia en el método PERT</figcaption>
+</figure>
+</div>
 <p>El caso opuesto al anterior es el de las prelaciones que originan una divergencia, representado en el diagrama que aparece a continuación.&nbsp;En este caso, para poder iniciar las actividades B, C y D es necesario que se haya finalizado previamente la actividad A.</p>
-<p><img src="../images/PERT-6.png" class="img-fluid"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../images/PERT-6.png" class="img-fluid figure-img"></p>
+<figcaption>Representación de prelaciones que originan una divergencia en el método PERT</figcaption>
+</figure>
+</div>
 <p>Sean ahora las siguientes prelaciones: la actividad A es anterior a las actividades B, C y D y dichas actividades (B, C y D) son anteriores a la actividad E. Una forma de reflejarlas es la que viene representada en el siguiente diagrama. En él se muestran las prelaciones anteriores correctamente. Pero esta representación puede resultar confusa, ya que las actividades B, C y D tienen el mismo origen y el mismo destino.</p>
-<p><img src="../images/PERT-7.png" class="img-fluid"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../images/PERT-7.png" class="img-fluid figure-img"></p>
+<figcaption>Representación confusa de prelaciones en el método PERT</figcaption>
+</figure>
+</div>
 <p>Para resolver este problema se puede recurrir a las actividades ficticias, como se muestra en el siguiente diagrama, donde se distinguen perfectamente las actividades B, C y D, ya que las tres actividades, aun naciendo en el mismo vértice, mueren en vértices distintos.</p>
-<p><img src="../images/PERT-8.png" class="img-fluid"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../images/PERT-8.png" class="img-fluid figure-img"></p>
+<figcaption>Representación de prelaciones mediante actividades ficticias en el método PERT</figcaption>
+</figure>
+</div>
 </section>
-<section id="ejemplo-12" class="level5 unnumbered unlisted">
-<h5 class="unnumbered unlisted anchored" data-anchor-id="ejemplo-12">Ejemplo</h5>
+<section id="ejemplo-16" class="level5 unnumbered unlisted">
+<h5 class="unnumbered unlisted anchored" data-anchor-id="ejemplo-16">Ejemplo</h5>
 <p>Mediante el siguiente ejemplo, se puede realizar la construcción del diagrama PERT de un proyecto completo. Para ello, debe comenzarse por introducir los conceptos de suceso inicio del proyecto y de suceso fin del proyecto. Se entiende por suceso inicio del proyecto aquel que, representando el comienzo de una o varias actividades, no representa, sin embargo, el fin de ninguna. Por el contrario, el suceso fin del proyecto es aquel que, representando el fin de una o más de una actividad, no representa, sin embargo, el comienzo de ninguna otra actividad. A este suceso se le reconoce en el grafo al estar representado por el único vértice al que llegan, pero no salen arcos.</p>
 <p>A continuación se va a construir el grafo PERT de un proyecto cuyas actividades y prelaciones existentes entre las mismas son:</p>
 <ul>
@@ -3169,13 +3483,28 @@ Todos los elementos del DFD resultante deben estar conectados directa o indirect
 <p>Para construir el grafo PERT el primer paso debe ser recoger de una manera sistematizada la información contenida en el anterior conjunto de prelaciones. Para ello, existen básicamente dos procedimientos: la <strong>matriz de encadenamientos</strong> y el <strong>cuadro de prelaciones</strong>.</p>
 <p>La matriz de encadenamientos consiste en una matriz cuadrada cuya dimensión es igual al número de actividades en que se ha descompuesto el proyecto. Cuando un elemento de dicha matriz aparece marcado con una <strong>X</strong>, indica que para poder iniciar la actividad que corresponde a la fila que cruza ese elemento es necesario que se haya finalizado previamente la actividad que corresponde a la columna que cruza dicho elemento.</p>
 <p>Con arreglo a esta estructura, la matriz de encadenamientos para el ejemplo es la siguiente:</p>
-<p><img src="../images/PERT-9.png" class="img-fluid"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../images/PERT-9.png" class="img-fluid figure-img"></p>
+<figcaption>Matriz de encadenamientos del ejemplo del método PERT</figcaption>
+</figure>
+</div>
 <p>Es interesante observar que aquellas filas de la matriz en las que no aparece ninguna <strong>X</strong> indican las actividades que no tienen ningún precedente. Es decir, aquellas actividades cuyo suceso inicial coincide con el suceso inicio del proyecto (actividades A y B). Por otra parte, aquellas columnas en las que no aparece ninguna <strong>X</strong> indican las actividades que no tienen ninguna actividad siguiente, es decir, aquellas actividades cuyo suceso final coincide con el suceso fin del proyecto (actividad R).</p>
 <p>El cuadro de prelaciones está formado por dos columnas. En la primera columna están representadas todas las actividades en que se ha descompuesto el proyecto. En la segunda columna figuran las actividades precedentes de su homóloga en la primera columna. Con los datos del ejemplo se elabora el cuadro de prelaciones, que es el siguiente:</p>
-<p><img src="../images/PERT-10.png" class="img-fluid"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../images/PERT-10.png" class="img-fluid figure-img"></p>
+<figcaption>Cuadro de prelaciones del ejemplo del método PERT</figcaption>
+</figure>
+</div>
 <p>La actividad o actividades inicio del proyecto se reconocen en el cuadro de prelaciones por no tener ninguna actividad precedente (actividades A y B). La actividad o actividades fin del proyecto se reconocen por no aparecer en la columna (2) de dicho cuadro (actividad R).</p>
 <p>A partir de la matriz de encadenamientos o del cuadro de prelaciones se construye fácilmente el grafo PERT correspondiente. Para los datos del ejemplo, el grafo PERT está representado en el siguiente diagrama.</p>
-<p><img src="../images/PERT-11.png" class="img-fluid"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../images/PERT-11.png" class="img-fluid figure-img"></p>
+<figcaption>Representación del grafo del ejemplo del método PERT</figcaption>
+</figure>
+</div>
 </section>
 </section>
 <section id="diagrama-de-gantt" class="level4" data-number="13.3.3.2">
@@ -3200,13 +3529,13 @@ Todos los elementos del DFD resultante deben estar conectados directa o indirect
 </ul></li>
 <li>Pueden realizarse actividades en paralelo siempre que no tengan dependencia funcional u orgánica.</li>
 </ul>
-<section id="ejemplo-13" class="level6 unnumbered unlisted">
-<h6 class="unnumbered unlisted anchored" data-anchor-id="ejemplo-13">Ejemplo</h6>
+<section id="ejemplo-17" class="level6 unnumbered unlisted">
+<h6 class="unnumbered unlisted anchored" data-anchor-id="ejemplo-17">Ejemplo</h6>
 <p>El siguiente diagrama es un ejemplo típico de un diagrama de Gantt, en el que aparecen fases, actividades, tareas e hitos.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="../images/Gantt-1.png" class="img-fluid figure-img"></p>
-<figcaption>Ejemplo de Diagrama de Gantt</figcaption>
+<figcaption>Ejemplo de diagrama de Gantt</figcaption>
 </figure>
 </div>
 <p>Para que un Gantt sea realista y fiable debe ir acompañado de un gráfico que refleje la actividad de los técnicos (Histograma de Recursos) que componen el equipo del proyecto.</p>
@@ -3263,7 +3592,7 @@ Todos los elementos del DFD resultante deben estar conectados directa o indirect
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="../images/Gantt-2.png" class="img-fluid figure-img"></p>
-<figcaption>Ejemplo de Diagrama de Gantt</figcaption>
+<figcaption>Gráfico de la técnica de patrón de límites del diagrama de Gantt</figcaption>
 </figure>
 </div>
 </section>
@@ -3275,7 +3604,7 @@ Todos los elementos del DFD resultante deben estar conectados directa o indirect
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="../images/Gantt-3.png" class="img-fluid figure-img"></p>
-<figcaption>Ejemplo de Diagrama de Gantt</figcaption>
+<figcaption>Ejemplo de histograma de recursos del diagrama de Gantt</figcaption>
 </figure>
 </div>
 </section>
@@ -3297,7 +3626,7 @@ Todos los elementos del DFD resultante deben estar conectados directa o indirect
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="../images/Gantt-4.png" class="img-fluid figure-img"></p>
-<figcaption>Ejemplo de Diagrama de Gantt</figcaption>
+<figcaption>Ejemplo de realización de la planificación de actividades y de la de recursos en diagrama de Gantt</figcaption>
 </figure>
 </div>
 </section>
@@ -3332,11 +3661,16 @@ Todos los elementos del DFD resultante deben estar conectados directa o indirect
 <p>Los diagramas de extrapolación se inicializan para cada hito a evaluar en la fecha prevista de comienzo de los mismos, y se actualizan en cada etapa del seguimiento.</p>
 <p>La interpretación de estos diagramas se basa en la hipótesis de que si existe una desviación, su tendencia es a permanecer o empeorar hasta el final del proyecto, a no ser que se apliquen las medidas necesarias para evitarlo. También puede suceder que las medidas aplicadas (más recursos, nuevas tecnologías, etc.) den lugar a un acortamiento de las fechas previstas inicialmente. Por todo ello, se trata de estimar la nueva fecha de fin de proyecto extrapolando la tendencia constatada en un momento determinado del desarrollo.</p>
 <p>El método de previsión de una nueva fecha de fin de proyecto, consiste en realizar una estimación en un momento determinado del desarrollo, obteniendo un nuevo punto de horas de esfuerzo. A continuación se unirán el punto de ordenadas que indicaba el esfuerzo previsto inicial con el obtenido en la estimación, alargando la línea hasta que se corte con la bisectriz. Por último, se unirá este punto de corte con el eje de abscisas mediante una línea recta, obteniendo así la nueva previsión de tiempo para el fin del desarrollo del proyecto.</p>
-<section id="ejemplo-14" class="level6 unnumbered unlisted">
-<h6 class="unnumbered unlisted anchored" data-anchor-id="ejemplo-14">Ejemplo</h6>
+<section id="ejemplo-18" class="level6 unnumbered unlisted">
+<h6 class="unnumbered unlisted anchored" data-anchor-id="ejemplo-18">Ejemplo</h6>
 <p>Sea un proyecto en que se estima un esfuerzo de 20.000 horas en un tiempo de 10 meses. En el diagrama inicial el Esfuerzo en miles de horas es 20, y el tiempo en meses es 10.</p>
 <p>Se hace una estimación en el mes 5, y se encuentra un punto de esfuerzo equivalente a 22.000 horas (marcado con un triángulo en la figura). Se une el punto de esfuerzo inicial del eje de ordenadas (20) con el punto estimado, y la prolongación efectúa un corte en la bisectriz. Desde el punto de corte una línea vertical indica, en el eje de abscisas, que el tiempo previsto de terminación será ahora de 12,2 meses. Es decir, el proyecto se va a alargar 2,2 meses más de lo previsto inicialmente.</p>
-<p><img src="../images/extrapolacion.png" class="img-fluid"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../images/extrapolacion.png" class="img-fluid figure-img"></p>
+<figcaption>Ejemplo de diagrama de extrapolación</figcaption>
+</figure>
+</div>
 <div style="page-break-after: always;"></div>
 </section>
 </section>
@@ -3439,10 +3773,15 @@ Todos los elementos del DFD resultante deben estar conectados directa o indirect
 <section id="notación-19" class="level4 unnumbered unlisted">
 <h4 class="unnumbered unlisted anchored" data-anchor-id="notación-19">Notación</h4>
 <p>Libre.</p>
-<section id="ejemplo-15" class="level5 unnumbered unlisted">
-<h5 class="unnumbered unlisted anchored" data-anchor-id="ejemplo-15">Ejemplo</h5>
+<section id="ejemplo-19" class="level5 unnumbered unlisted">
+<h5 class="unnumbered unlisted anchored" data-anchor-id="ejemplo-19">Ejemplo</h5>
 <p>En la figura siguiente se presenta un mapa de pantallas en línea de una parte de una aplicación.&nbsp;El diagrama representa la navegación entre las pantallas y las teclas de función para el paso de unas a otras.</p>
-<p><img src="../images/representacion.png" class="img-fluid"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../images/representacion.png" class="img-fluid figure-img"></p>
+<figcaption>Ejemplo de diagrama de representación</figcaption>
+</figure>
+</div>
 </section>
 </section>
 </section>
@@ -3520,8 +3859,8 @@ Si la respuesta a alguna de estas preguntas es «no» se elimina el factor de e�
 </ol>
 <p>Para los factores críticos de éxito controlables por parte de los directivos, se deben asignar los recursos necesarios para garantizar su correcta realización, así como las herramientas e información necesarias para dicha realización.&nbsp;Asimismo, se deben establecer procedimientos que permitan asegurar un seguimiento y realimentación sobre el grado de cumplimiento de dichos factores críticos.</p>
 <p>Para aquellos FCE no controlables, son absolutamente necesarios procedimientos que permitan obtener información puntual sobre los mismos. Estos procedimientos proporcionan señales de aviso de manera que se puedan definir e implantar planes de contingencia.</p>
-<section id="ejemplo-16" class="level5 unnumbered unlisted">
-<h5 class="unnumbered unlisted anchored" data-anchor-id="ejemplo-16">Ejemplo</h5>
+<section id="ejemplo-20" class="level5 unnumbered unlisted">
+<h5 class="unnumbered unlisted anchored" data-anchor-id="ejemplo-20">Ejemplo</h5>
 <ol type="1">
 <li><p>Elaborar una lista de los objetivos de la organización.</p>
 <p>Como ejemplo de una especificación de objetivos de una organización, puede imaginarse una empresa que se plantee:</p>
@@ -3534,22 +3873,52 @@ Si la respuesta a alguna de estas preguntas es «no» se elimina el factor de e�
 <li><p>Depurar la lista de objetivos.</p>
 <p>En el ejemplo que sigue, los objetivos de «Incrementar el margen bruto en las ventas en torno al 10%» y «Mantener los gastos de funcionamiento en un 20% de las ventas», son un medio para conseguir los beneficios de 20 millones, por lo cual se eliminarán de la lista de objetivos y se considerarán factores de éxito.</p>
 <p>En este caso se tendría:</p>
-<p><img src="../images/FCE-1.png" class="img-fluid"></p></li>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../images/FCE-1.png" class="img-fluid figure-img"></p>
+<figcaption>Ejemplo de depuración de la lista de objetivos en la práctica de factores críticos de éxito</figcaption>
+</figure>
+</div></li>
 <li><p>Identificar los factores de éxito.</p>
 <p>En el ejemplo, y mediante <a href="#entrevistas">entrevistas</a> con los responsables de la organización, se obtendría la siguiente tabla:</p>
-<p><img src="../images/FCE-2.png" class="img-fluid"></p></li>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../images/FCE-2.png" class="img-fluid figure-img"></p>
+<figcaption>Ejemplo de identificación de factores de éxito en la práctica de factores críticos de éxito</figcaption>
+</figure>
+</div></li>
 <li><p>Eliminar los factores de éxito no críticos.</p>
 <p>En el ejemplo que se sigue, se decidió que el factor de éxito «Mantener los gastos de funcionamiento en un 20% de las ventas» no exigía recursos especialmente cualificados para conseguirlo, por lo cual se eliminó de la lista.</p>
-<p><img src="../images/FCE-3.png" class="img-fluid"></p></li>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../images/FCE-3.png" class="img-fluid figure-img"></p>
+<figcaption>Ejemplo de eliminación de factores de éxito no críticos en la práctica de factores críticos de éxito</figcaption>
+</figure>
+</div></li>
 <li><p>Agrupar los factores de éxito de acuerdo con los objetivos.</p>
 <p>En el ejemplo, el factor de éxito «Incrementar ventas» es sinónimo del objetivo «ventas de 100 millones», por lo tanto se elimina.</p>
-<p><img src="../images/FCE-4.png" class="img-fluid"></p></li>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../images/FCE-4.png" class="img-fluid figure-img"></p>
+<figcaption>Ejemplo de agrupación de factores de éxito de acuerdo con los objetivos en la práctica de factores críticos de éxito</figcaption>
+</figure>
+</div></li>
 <li><p>Identificar los componentes de estos factores de éxito.</p>
 <p>En el ejemplo que se está desarrollando se ha obtenido la siguiente tabla:</p>
-<p><img src="../images/FCE-5.png" class="img-fluid"></p></li>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../images/FCE-5.png" class="img-fluid figure-img"></p>
+<figcaption>Ejemplo de tabla de identificación de los componentes de los factores de éxito en la práctica de factores críticos de éxito</figcaption>
+</figure>
+</div></li>
 <li><p>Seleccionar los factores críticos de éxito.</p>
 <p>En la tabla siguiente se representan en negrita los factores críticos de éxito seleccionados.</p>
-<p><img src="../images/FCE-6.png" class="img-fluid"></p></li>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../images/FCE-6.png" class="img-fluid figure-img"></p>
+<figcaption>Ejemplo de tabla de selección de los factores críticos de éxito en la práctica de factores críticos de éxito</figcaption>
+</figure>
+</div></li>
 <li><p>Finalizar el estudio de los factores críticos de éxito.</p>
 <p>En este paso se obtiene una lista final que representa las áreas que son cruciales para el éxito de la organización, y donde la dirección debe enfocar su atención.</p></li>
 </ol>
@@ -3698,7 +4067,12 @@ Si la respuesta a alguna de estas preguntas es «no» se elimina el factor de e�
 <li><strong>De abajo arriba</strong> <strong><em>(bottom-up)</em></strong>. En este caso se crean primero los componentes de más bajo nivel (E, F) y se crean componentes conductores para simular a los componentes que los llaman. A continuación se desarrollan los componentes de más alto nivel (B, C, D) y se prueban. Por último dichos componentes se combinan con el que los llama (A). Los componentes auxiliares son necesarios en raras ocasiones. Este tipo de enfoque permite un desarrollo más en paralelo que el enfoque de arriba abajo, pero presenta mayores dificultades a la hora de planificar y de gestionar.</li>
 <li><strong>Estrategias combinadas</strong>. A menudo es útil aplicar las estrategias anteriores conjuntamente. De este modo, se desarrollan partes del sistema con un enfoque «<em>top-down</em>», mientras que los componentes más críticos en el nivel más bajo se desarrollan siguiendo un enfoque «<em>bottom-up</em>». En este caso es necesaria una planificación cuidadosa y coordinada de modo que los componentes individuales se «encuentren» en el centro.</li>
 </ul>
-<p><img src="../images/pruebas-integracion.png" class="img-fluid"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../images/pruebas-integracion.png" class="img-fluid figure-img"></p>
+<figcaption>Ejemplo de relación de componentes a probar durante pruebas de integración</figcaption>
+</figure>
+</div>
 </section>
 <section id="integracion-no-incremental" class="level6 unnumbered unlisted">
 <h6 class="unnumbered unlisted anchored" data-anchor-id="integracion-no-incremental">Integración no incremental</h6>
