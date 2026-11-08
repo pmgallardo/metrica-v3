@@ -2126,11 +2126,11 @@ Dicho plan se va completando y detallando a medida que se avanza en los restante
 
 Se plantean los siguientes niveles de prueba:
 
-* Pruebas unitarias.
-* Pruebas de integración.
-* Pruebas del sistema.
-* Pruebas de implantación.
-* Pruebas de aceptación.
+* [Pruebas unitarias](../03-tecnicas/01-tecnicas.qmd#pruebas-unitarias)
+* [Pruebas de integración](../03-tecnicas/01-tecnicas.qmd#pruebas-de-integracion).
+* [Pruebas del sistema](../03-tecnicas/01-tecnicas.qmd#pruebas-del-sistema).
+* [Pruebas de implantación](../03-tecnicas/01-tecnicas.qmd#pruebas-de-implantacion).
+* [Pruebas de aceptación](../03-tecnicas/01-tecnicas.qmd#pruebas-de-aceptacion).
 
 En esta actividad también se avanza en la definición de las pruebas de aceptación del sistema. Con la información disponible, es posible establecer los criterios de aceptación de las pruebas incluidas en dicho nivel, al poseer la información sobre los requisitos que debe cumplir el sistema, recogidos en el catálogo de requisitos.
 
