@@ -20,7 +20,7 @@ Para cuestiones relacionadas con el repositorio de ficheros desde el que se gene
 | Recurso | URL |
 | - | - |
 | Sitio web | [pmgallardo.github.io/metrica-v3](https://pmgallardo.github.io/metrica-v3) |
-| Formato PDF | [pmgallardo.github.io/metrica-v3.pdf](https://pmgallardo.github.io/metrica-v3/metrica-v3.pdf){target="_blank"} |
-| Formato EPUB | [pmgallardo.github.io/metrica-v3.epub](https://pmgallardo.github.io/metrica-v3.epub){target="_blank"} |
+| Formato PDF | [pmgallardo.github.io/metrica-v3/metrica-v3.pdf](https://pmgallardo.github.io/metrica-v3/metrica-v3.pdf){target="_blank"} |
+| Formato EPUB | [pmgallardo.github.io/metrica-v3/metrica-v3.epub](https://pmgallardo.github.io/metrica-v3/metrica-v3.epub){target="_blank"} |
 | Repositorio de ficheros fuente | [github.com/pmgallardo/metrica-v3](https://github.com/pmgallardo/metrica-v3){target="_blank"} |
 | Documentación original (PDF) | [administracionelectronica.gob.es/pae_Home/pae_Documentacion/pae_Metodolog/pae_Metrica_v3.html](https://administracionelectronica.gob.es/pae_Home/pae_Documentacion/pae_Metodolog/pae_Metrica_v3.html?idioma=es){target="_blank"} |
