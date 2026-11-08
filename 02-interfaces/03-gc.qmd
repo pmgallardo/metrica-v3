@@ -18,7 +18,7 @@ Los productos registrados en el sistema de gestión de la configuración se encu
 
 La información que puede solicitarse al sistema de gestión de la configuración es variada:
 
-- Información relacionada con Análisis, Diseño, Construcción, Implantación y Aceptación del Sistemas de Información, como productos globales que integran todos los productos que lo componen.
+- Información relacionada con [Análisis, Diseño, Construcción, Implantación y Aceptación del Sistemas de Información](#gc-gc), como productos globales que integran todos los productos que lo componen.
 - Información de un producto en concreto, su versión, estado, traza de su evolución y cualquier dato que el plan de gestión de la configuración determine de interés (por ejemplo, participantes en la elaboración o modificación del producto).
 
 ### Actividades {.unnumbered .unlisted}
@@ -34,9 +34,9 @@ La información que puede solicitarse al sistema de gestión de la configuració
 
 ## Estudio de Viabilidad del Sistema {#evs-gc}
 
-Durante el [Estudio de Viabilidad del Sistema (EVS)](../01-principal/03-evs.qmd) se realizan las actividades de la interfaz de Gestión de Configuración que permiten obtener el Plan de Gestión de Configuración para el sistema de información. Con este objetivo se definen en primer término los requisitos de gestión de configuración del sistema de información, los cuales deberán tenerse en cuenta a la hora de establecer el plan de Gestión de Configuración para la Solución propuesta ([EVS 6.2](../01-principal/03-evs.qmd#6-2)).
+Durante el **Estudio de Viabilidad del Sistema** ([EVS](../01-principal/03-evs.qmd)) se realizan las actividades de la interfaz de Gestión de Configuración que permiten obtener el Plan de Gestión de Configuración para el sistema de información. Con este objetivo se definen en primer término los requisitos de gestión de configuración del sistema de información, los cuales deberán tenerse en cuenta a la hora de establecer el plan de Gestión de Configuración para la Solución propuesta ([EVS 6.2](../01-principal/03-evs.qmd#evs-6-2)).
 
-En el siguiente gráfico se muestra la relación entre las actividades del proceso [Estudio de Viabilidad del Sistema (EVS)](../01-principal/03-evs.qmd) y las de la Gestión de la Configuración.
+En el siguiente gráfico se muestra la relación entre las actividades del proceso **Estudio de Viabilidad del Sistema** [EVS](../01-principal/03-evs.qmd) y las de la Gestión de la Configuración.
 
 ![](../images/gescon-evs.jpg)
 
@@ -75,8 +75,8 @@ El objetivo de esta tarea es identificar la necesidad de gestionar la configurac
 
 ###### De entrada {.unnumbered .unlisted}
 
-* Arquitectura de Información ([PSI 9.2](../01-principal/02-psi.qmd#9-2))
-* Identificación de Requisitos ([EVS 3.2](../01-principal/03-evs.qmd#3-2))
+* Arquitectura de Información ([PSI 9.2](../01-principal/02-psi.qmd#psi-9-2))
+* Identificación de Requisitos ([EVS 3.2](../01-principal/03-evs.qmd#evs-3-2))
 
 ###### De salida {.unnumbered .unlisted}
 
@@ -156,7 +156,7 @@ Los aspectos que debe contemplar el plan son:
 
 * Requisitos generales de gestión de configuración ([EVS-GC 1.1](#evs-gc-1-1))
 * Método o estándar de gestión de la configuración (externo)
-* Solución propuesta ([EVS 6.2](../01-principal/03-evs.qmd#6-2))
+* Solución propuesta ([EVS 6.2](../01-principal/03-evs.qmd#evs-6-2))
 
 ###### De salida {.unnumbered .unlisted}
 
@@ -305,7 +305,7 @@ En el momento en que un participante genere un producto, seleccionado como eleme
 
 El objeto de esta tarea es identificar y registrar en el sistema de gestión de la configuración los productos globales que se obtienen a lo largo del desarrollo de los procesos principales.
 
-Se realiza al finalizar los procesos [Análisis del Sistema de Información (ASI)](../01-principal/04-asi.qmd), [Diseño del Sistema de Información (DSI)](../01-principal/05-dsi.qmd), [Construcción del Sistema de Información (CSI)](../01-principal/06-csi.qmd) e [Implantación y Aceptación del Sistema (IAS)](../01-principal/07-ias.qmd), y en cada momento se registrará el producto correspondiente: Especificación de Requisitos Software, Diseño Detallado del Sistema, Sistema de Información y Sistema de Información Implantado.
+Se realiza al finalizar los procesos **Análisis del Sistema de Información** ([ASI](../01-principal/04-asi.qmd)), **Diseño del Sistema de Información** ([DSI](../01-principal/05-dsi.qmd)), **Construcción del Sistema de Información** ([CSI](../01-principal/06-csi.qmd)) e **Implantación y Aceptación del Sistema** ([IAS](../01-principal/07-ias.qmd)), y en cada momento se registrará el producto correspondiente: Especificación de Requisitos Software, Diseño Detallado del Sistema, Sistema de Información y Sistema de Información Implantado.
 
 Una vez que el sistema de información está implantado y aceptado, antes de su puesta en operación real se registra el paso a producción de la versión de dicho sistema de cara a facilitar su posterior mantenimiento.
 
@@ -336,11 +336,11 @@ El beneficio de una buena gestión de configuración en el proceso de mantenimie
 
 La interfaz de gestión de configuración en el proceso de mantenimiento es fundamental, al realizarse el control del cambio desde que se produce la notificación del mismo o de la incidencia, momento en el que se registra la solicitud de mantenimiento en el sistema de gestión de la configuración, hasta que la solución es aceptada por el usuario.
 
-Para realizar el análisis de la petición en MSI 2 es conveniente solicitar información al sistema de gestión de la configuración para identificar las versiones de los sistemas de información afectados por la petición.
+Para realizar el análisis de la petición en [MSI 2](../01-principal/08-msi.qmd) es conveniente solicitar información al sistema de gestión de la configuración para identificar las versiones de los sistemas de información afectados por la petición.
 
 Una vez que ha sido aceptada la propuesta de solución se realiza un registro del cambio en el sistema de gestión de configuración con la información obtenida del mismo relativa a las versiones de los sistemas de información y productos afectados por el cambio. Este registro constituye el nexo de unión entre la petición o peticiones de mantenimiento y los cambios que se van a realizar sobre los sistemas de información afectados. Recoge datos referentes a las versiones de los sistemas de información de los que se parte y cuáles van a ser las nuevas versiones generadas, así como las versiones de los productos concretos afectados por el cambio y cuál será la nueva versión de dichos productos. También debe registrarse en el sistema de gestión de la configuración la nueva versión de los sistemas de información y de los productos según el criterio de versionado establecido en el plan de gestión de la configuración.
 
-A partir de este momento, se realizan las actividades de los procesos [Análisis del Sistema de Información (ASI)](../01-principal/04-asi.qmd), [Diseño del Sistema de Información (DSI)](../01-principal/05-dsi.qmd), [Construcción del Sistema de Información (CSI)](../01-principal/06-csi.qmd) e [Implantación y Aceptación del Sistema (IAS)](../01-principal/07-ias.qmd) que se determinen en la actividad Registro del Cambio en el Sistema de Gestión de la Configuración ([MSI-GC 1](#msi-gc-1)), así como las actividades de interfaz de la gestión de configuración definidas en los procesos de desarrollo.
+A partir de este momento, se realizan las actividades de los procesos **Análisis del Sistema de Información** ([ASI](../01-principal/04-asi.qmd)), **Diseño del Sistema de Información** ([DSI](../01-principal/05-dsi.qmd)), Construcción del Sistema de Información ([CSI](../01-principal/06-csi.qmd)) e **Implantación y Aceptación del Sistema** ([IAS](../01-principal/07-ias.qmd)) que se determinen en la actividad **Registro del Cambio en el Sistema de Gestión de la Configuración** ([MSI-GC 1](#msi-gc-1)), así como las actividades de interfaz de la gestión de configuración definidas en los procesos de desarrollo.
 
 Una vez que el cambio ha sido realizado y aceptado se registra dicha aceptación en el sistema de gestión de la configuración.
 
@@ -409,7 +409,7 @@ Una vez aprobada la propuesta de solución se registra el cambio en el sistema d
 
 ###### De entrada {.unnumbered .unlisted}
 
-* Catálogo de peticiones ([MSI 3](../01-principal/08-msi.qmd#3))
+* Catálogo de peticiones ([MSI 3](../01-principal/08-msi.qmd#msi-3))
 
 ###### De salida {.unnumbered .unlisted}
 
